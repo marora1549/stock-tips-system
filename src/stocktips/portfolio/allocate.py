@@ -4,10 +4,15 @@ from __future__ import annotations
 from ..util import settings
 
 
-def allocate(picks: list[dict], cash: float, already_held: set[str]) -> list[dict]:
-    """picks: analysed candidates sorted by composite desc. Returns picks with `alloc_inr` set (may be 0)."""
+def allocate(picks: list[dict], cash: float, already_held: set[str], capital_inr: float | None = None) -> list[dict]:
+    """picks: analysed candidates sorted by composite desc. Returns picks with `alloc_inr` set (may be 0).
+
+    `capital_inr` is the live capital base from the ledger — the per-stock and minimum-size rules are
+    percentages of what the book actually holds, so a top-up widens them. It falls back to the seed in
+    settings.yaml only when no ledger base is supplied.
+    """
     cfg = settings()
-    cap_total = cfg["capital"]["total_inr"]
+    cap_total = capital_inr if capital_inr else cfg["capital"]["total_inr"]
     max_one = cap_total * cfg["capital"]["max_single_stock_pct"] / 100
     min_one = cap_total * cfg["capital"]["min_allocation_pct"] / 100
     thr = cfg["scoring"]["pick_threshold"]

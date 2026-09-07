@@ -5,7 +5,8 @@
 # ---------------------------------------------------------------------------
 
 capital:
-  total_inr: 100000            # working capital in rotation (paper until go-live)
+  total_inr: 100000            # SEEDS a new ledger only; after that state/ledger.json's
+                               # capital_inr is the live base — change it with `stocktips capital`
   max_single_stock_pct: 50     # hard cap: never > 50% of capital in one name
   min_allocation_pct: 15       # don't bother with slivers smaller than this
   max_open_positions: 4

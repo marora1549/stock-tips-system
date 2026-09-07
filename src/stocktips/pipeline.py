@@ -153,7 +153,7 @@ def pick_and_book(results: list[dict] | None = None, book: bool = True) -> dict:
     held = {p["symbol"] for p in led["positions"]}
     open_count = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
     room = max(0, settings()["capital"]["max_open_positions"] - open_count)
-    picks = allocmod.allocate(results, ledgermod.deployable_cash(led), held)
+    picks = allocmod.allocate(results, ledgermod.deployable_cash(led), held, capital_inr=led["capital_inr"])
     chosen = [p for p in picks if p.get("alloc_inr", 0) > 0][:room]
     booked = []
     if book:
