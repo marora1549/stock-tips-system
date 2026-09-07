@@ -103,25 +103,36 @@ def _close(led: dict, pos: dict, outcome: str, on: str) -> None:
     led["closed"].append(pos)
 
 
-def mark_to_market(led: dict, conf: dict, on: str | None = None) -> list[str]:
+def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | None = None) -> list[str]:
     """EOD update: fill pendings at today's open, walk today's bar for stops/targets, apply time stops.
 
     Returns a list of human-readable events. Updates source confidence in `conf` as outcomes realise.
+    Pass `report` to have data availability counted into it: `eligible` positions that should have had a
+    bar today, `no_data` fetch failures, `stale` last-bars older than `on`. A run where no_data ==
+    eligible > 0 is a data outage, not a quiet day — the caller decides what to do about it.
     """
     on = on or today_str()
     events: list[str] = []
+    counts = {"eligible": 0, "no_data": 0, "stale": 0, "marked": 0}
     ex = settings()["exits"]
     hold_thr = settings()["scoring"]["hold_bucket_fund_score"]
     for pos in list(led["positions"]):
+        # a pending position dated for a later session isn't due a bar yet, so it can neither be
+        # "missing" one nor count as marked — it is simply not part of today's data question
+        due = not (pos["status"] == "pending" and pos["opened"] > on)
+        counts["eligible"] += 1 if due else 0
         df = prices.history(pos["symbol"], days=120)
         if df is None or df.empty:
+            counts["no_data"] += 1 if due else 0
             events.append(f"{pos['symbol']}: no price data today")
             continue
         bar = df.iloc[-1]
         bar_date = str(df.index[-1].date())
         if bar_date != on:
+            counts["stale"] += 1 if due else 0
             log.info("%s: last bar %s != %s (holiday or data lag) — skipping", pos["symbol"], bar_date, on)
             continue
+        counts["marked"] += 1 if due else 0
         o, h, l, c = float(bar["open"]), float(bar["high"]), float(bar["low"]), float(bar["close"])
         srcs = [(pos["source_id"], 1.0)] + [(s, 0.5) for s in pos.get("corroborating_sources", [])]
 
@@ -207,6 +218,8 @@ def mark_to_market(led: dict, conf: dict, on: str | None = None) -> list[str]:
     equity = led["cash_inr"] + sum(p.get("ltp", p.get("entry") or p["entry_plan"]) * p["qty_open"] for p in led["positions"] if p["status"] in ("open", "hold")) \
         + sum(p["capital_inr"] for p in led["positions"] if p["status"] == "pending")
     led["equity_curve"] = [e for e in led["equity_curve"] if e["date"] != on] + [{"date": on, "equity": round(equity, 2)}]
+    if report is not None:
+        report.update(counts)
     return events
 
 

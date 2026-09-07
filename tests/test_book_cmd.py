@@ -149,3 +149,93 @@ def test_dashboard_payload_carries_levels_and_book_room(desk, monkeypatch, tmp_p
     assert sug["tip_id"] == "t1" and sug["n_mentions"] == 1
     # the ledger file itself never gains the derived fields
     assert "order_line" not in ledger.load()["positions"][0]
+
+
+# --------------------------------------------------------------- data-outage detection
+def test_mark_to_market_reports_data_availability(monkeypatch, tmp_path):
+    """A run that can't price anything is an outage, not a quiet day."""
+    import pandas as pd
+    monkeypatch.setattr(ledger, "PATH", tmp_path / "ledger.json")
+    monkeypatch.setattr(confidence, "PATH", tmp_path / "conf.json")
+
+    class FakeNow:
+        hour, minute = 8, 0
+        def date(self):
+            return pd.Timestamp("2026-09-08").date()
+        def strftime(self, f):
+            return "2026-09-08 08:00"
+    monkeypatch.setattr(ledger, "now_ist", lambda: FakeNow())
+
+    led = ledger.load()
+    ledger.open_position(led, candidate("AAA", entry=100.0), 20000)
+    ledger.open_position(led, candidate("BBB", entry=100.0), 20000)
+    monkeypatch.setattr(ledger.prices, "history", lambda s, days=120: None)
+
+    rep: dict = {}
+    events = ledger.mark_to_market(led, {}, on="2026-09-08", report=rep)
+    assert rep == {"eligible": 2, "no_data": 2, "stale": 0, "marked": 0}
+    assert all("no price data" in e for e in events)
+
+    # a pending position dated for a later session isn't due a bar, so it can't be "missing" one
+    rep2: dict = {}
+    ledger.mark_to_market(led, {}, on="2026-09-04", report=rep2)
+    assert rep2["eligible"] == 0 and rep2["no_data"] == 0
+
+
+def test_mark_to_market_counts_stale_bars_separately(monkeypatch, tmp_path):
+    import pandas as pd
+    monkeypatch.setattr(ledger, "PATH", tmp_path / "ledger.json")
+
+    class FakeNow:
+        hour, minute = 8, 0
+        def date(self):
+            return pd.Timestamp("2026-09-08").date()
+        def strftime(self, f):
+            return "2026-09-08 08:00"
+    monkeypatch.setattr(ledger, "now_ist", lambda: FakeNow())
+    led = ledger.load()
+    ledger.open_position(led, candidate("AAA", entry=100.0), 20000)
+
+    idx = pd.to_datetime(["2026-09-04"]).tz_localize("Asia/Kolkata")
+    stale = pd.DataFrame({"open": [100.0], "high": [101.0], "low": [99.0], "close": [100.0], "volume": [1e6]}, index=idx)
+    monkeypatch.setattr(ledger.prices, "history", lambda s, days=120: stale)
+
+    rep: dict = {}
+    ledger.mark_to_market(led, {}, on="2026-09-08", report=rep)
+    assert rep == {"eligible": 1, "no_data": 0, "stale": 1, "marked": 0}   # holiday/lag, not an outage
+
+
+def test_eod_exits_non_zero_on_total_data_outage(monkeypatch, tmp_path, capsys):
+    """The failure mode that made a broken run report SUCCEEDED."""
+    import pandas as pd
+    from stocktips import pipeline
+    from stocktips.learning import journal
+
+    monkeypatch.setattr(ledger, "PATH", tmp_path / "ledger.json")
+    monkeypatch.setattr(confidence, "PATH", tmp_path / "conf.json")
+    monkeypatch.setattr(journal, "PATH", tmp_path / "lessons.md")
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(cli, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(cli, "ROOT", tmp_path)
+    (tmp_path / "docs").mkdir()
+
+    class FakeNow:
+        hour, minute = 8, 0
+        def date(self):
+            return pd.Timestamp("2026-09-04").date()
+        def strftime(self, f):
+            return "2026-09-04 08:00"
+    monkeypatch.setattr(ledger, "now_ist", lambda: FakeNow())
+    led = ledger.load()
+    ledger.open_position(led, candidate("AAA", entry=100.0), 20000)
+    ledger.save(led)
+    monkeypatch.setattr(ledger.prices, "history", lambda s, days=120: None)
+
+    class EodArgs:
+        date = "2026-09-04"
+        force = True
+    with pytest.raises(SystemExit) as e:
+        cli.cmd_eod(EodArgs())
+    assert "DATA OUTAGE" in str(e.value) and "1 position(s)" in str(e.value)
+    # the report is still written, so the run leaves a record of the outage behind
+    assert (tmp_path / "reports" / "2026-09-04" / "eod.md").exists()

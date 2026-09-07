@@ -160,7 +160,8 @@ def cmd_eod(a):
     led = ledgermod.load()
     conf_before = json.loads(json.dumps(confidence.load()))
     conf = confidence.load()
-    events = ledgermod.mark_to_market(led, conf, on=a.date)
+    data_report: dict = {}
+    events = ledgermod.mark_to_market(led, conf, on=a.date, report=data_report)
     ledgermod.save(led)
     confidence.save(conf)
     lessons = journal.pattern_stats(led["closed"])
@@ -170,6 +171,13 @@ def cmd_eod(a):
     (pipeline.day_dir(a.date) / "eod.md").write_text(md, encoding="utf-8")
     cmd_dashboard_data(a)
     print(md)
+    # A run that could not price a single position is an outage, not a quiet day. Say so and exit
+    # non-zero so the scheduled run shows red instead of a green "nothing happened in the book today".
+    if data_report.get("eligible") and data_report["no_data"] == data_report["eligible"]:
+        sys.exit(f"DATA OUTAGE: no price data for any of the {data_report['eligible']} position(s) due a bar on "
+                 f"{a.date or today_str()} — nothing was marked to market, the ledger is unchanged, and the report "
+                 f"above says 'quiet day' only because there was nothing to read. Check network access to the price "
+                 f"source before trusting the next run.")
 
 
 def cmd_status(a):

@@ -44,8 +44,25 @@ Prepend to `reports/<date>/morning.md` a section **"Desk view"** of ≤ 12 lines
 ## 6. Commit, push, notify
 ```bash
 python -m stocktips dashboard-data
-git add -A && git commit -qm "morning $(date +%F): <n> picks" && git push
+git add -A && git commit -qm "morning $(date +%F): <n> picks"
+# Push to main, rebasing on anything an interactive session landed while this run was working.
+pushed=""
+for i in 1 2 3; do
+  git pull --rebase --autostash -q origin main && git push -q origin HEAD:main && pushed="main" && break
+  sleep $((i * 4))
+done
+# If main still refuses, never leave the run's work stranded in this container: park it on a
+# claude/-prefixed branch, which the push proxy always accepts.
+if [ -z "$pushed" ]; then
+  branch="claude/morning-$(date +%F)"
+  git push -q -u origin "HEAD:$branch" && pushed="$branch"
+fi
+echo "pushed to: ${pushed:-NOTHING}"
 ```
+If `pushed` is anything other than `main`, name that branch in the notification and say the ledger needs
+merging by hand — the state is only real once it is on `main`, which is what the next run clones from.
+If it printed `NOTHING`, say that plainly: this run's work exists nowhere but a container that is about
+to be reclaimed.
 Your final message (this becomes the push/email notification) must be ≤ 900 characters:
 ```
 📈 <date> picks (paper ₹<equity>, <ret>%)
@@ -54,3 +71,12 @@ Your final message (this becomes the push/email notification) must be ≤ 900 ch
 3. …
 Watch: … | Open book: … | Full report: reports/<date>/morning.md
 ```
+
+---
+
+## Operational notes for the unattended run
+
+Nobody is watching, so do not ask questions — make the calls yourself and finish the run. Push to `main`;
+every run leaves a commit behind, even a no-trade day. Your final turn message is what gets emailed, so it
+must stand alone in exactly the step-6 format above; if the run failed before it could book anything, say
+so plainly there instead of implying success. Paper trading only — nothing here places real orders.
