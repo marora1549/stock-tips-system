@@ -4,6 +4,11 @@
     "capital": 100000,
     "equity": 100000.0,
     "return_pct": 0.0,
+    "simple_return_pct": 0.0,
+    "initial_capital": 100000,
+    "net_flows_inr": 0,
+    "n_flows": 0,
+    "deployed_inr": 99249.75,
     "cash": 750.25,
     "open": 0,
     "pending": 3,
@@ -1077,6 +1082,39 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+12 ROCE 26.7%",
+        "+8 ROE 20.5%",
+        "-6 P/E 111",
+        "+4 3y profit CAGR 10%",
+        "+6 3y sales CAGR 21%",
+        "+5 D/E 0.01",
+        "+4 promoter 56.36%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹141,822 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.9,
+        "adx": 15.7,
+        "atr_pct": 2.48,
+        "vol_ratio": 1.52,
+        "chg_5d_pct": -1.62,
+        "chg_20d_pct": 2.52,
+        "dist_52w_high_pct": -8.13,
+        "dist_ema20_pct": 1.56,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 198.54,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
       ]
     },
     {
@@ -1149,6 +1187,40 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+6 ROCE 19.3%",
+        "+8 ROE 22.9%",
+        "-2 P/E 51.5",
+        "+8 3y profit CAGR 135%",
+        "+6 3y sales CAGR 54%",
+        "-2 D/E 1.1",
+        "+4 promoter 51.43%",
+        "-5 promoter stake down -2.79pp in 4q",
+        "+4 latest qtr PAT YoY 68%",
+        "+0 mcap ₹8,166 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 54.7,
+        "adx": 13.9,
+        "atr_pct": 2.67,
+        "vol_ratio": 2.32,
+        "chg_5d_pct": 0.37,
+        "chg_20d_pct": 2.3,
+        "dist_52w_high_pct": -13.79,
+        "dist_ema20_pct": 1.44,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 27.29,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/motilal-oswal-sees-27-upside-in-this-retail-stock-should-you-buy/articleshow/133869595.cms",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241"
       ]
     },
     {
@@ -1209,7 +1281,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 28%",
+        "+8 ROE 22.3%",
+        "-2 P/E 56.8",
+        "+8 3y profit CAGR 30%",
+        "+3 3y sales CAGR 11%",
+        "+5 D/E 0.08",
+        "+4 promoter 53.19%",
+        "+4 latest qtr PAT YoY 26.9%",
+        "+2 mcap ₹31,906 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.8,
+        "adx": 27.9,
+        "atr_pct": 2.66,
+        "vol_ratio": 0.8,
+        "chg_5d_pct": -1.7,
+        "chg_20d_pct": -2.68,
+        "dist_52w_high_pct": -4.38,
+        "dist_ema20_pct": 0.03,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 38.01,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/lalpathlab.html"
+      ]
     },
     {
       "symbol": "HYUNDAI",
@@ -1271,7 +1374,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 38.4%",
+        "+8 ROE 29.9%",
+        "+2 P/E 36.2",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 5%",
+        "+5 D/E 0.05",
+        "+4 promoter 82.5%",
+        "-5 latest qtr PAT YoY -35.1%",
+        "+4 mcap ₹179,543 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.0,
+        "adx": 26.9,
+        "atr_pct": 2.44,
+        "vol_ratio": 0.62,
+        "chg_5d_pct": 0.27,
+        "chg_20d_pct": -0.54,
+        "dist_52w_high_pct": -23.5,
+        "dist_ema20_pct": 0.94,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 153.18,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/hyundai.html"
+      ]
     },
     {
       "symbol": "VADILALIND",
@@ -1332,7 +1466,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 22%",
+        "+8 ROE 19.6%",
+        "+6 P/E 24.8",
+        "+4 3y profit CAGR 15%",
+        "+3 3y sales CAGR 12%",
+        "+5 D/E 0.27",
+        "+4 promoter 64.72%",
+        "+4 latest qtr PAT YoY 95.5%",
+        "+0 mcap ₹5,436 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 55.2,
+        "adx": 39.1,
+        "atr_pct": 3.5,
+        "vol_ratio": 0.46,
+        "chg_5d_pct": -1.56,
+        "chg_20d_pct": 2.33,
+        "dist_52w_high_pct": -10.6,
+        "dist_ema20_pct": 0.81,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 29.38,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/vadilalind.html"
+      ]
     },
     {
       "symbol": "PRUDENT",
@@ -1390,7 +1555,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 37.5%",
+        "+8 ROE 28.6%",
+        "-2 P/E 56.9",
+        "+8 3y profit CAGR 24%",
+        "+6 3y sales CAGR 30%",
+        "+5 D/E 0.04",
+        "+4 promoter 55.31%",
+        "+4 latest qtr PAT YoY 44.2%",
+        "+2 mcap ₹13,945 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.9,
+        "adx": 32.2,
+        "atr_pct": 4.91,
+        "vol_ratio": 0.56,
+        "chg_5d_pct": -8.32,
+        "chg_20d_pct": -0.33,
+        "dist_52w_high_pct": -17.95,
+        "dist_ema20_pct": 0.76,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 17.54,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/prudent.html"
+      ]
     },
     {
       "symbol": "SIEMENS",
@@ -1453,7 +1648,40 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.4%",
+        "+8 ROE 19.2%",
+        "-6 P/E 92.8",
+        "+8 3y profit CAGR 23%",
+        "+6 3y sales CAGR 15%",
+        "+5 D/E 0.02",
+        "+4 promoter 75%",
+        "+4 latest qtr PAT YoY 406.6%",
+        "+4 mcap ₹139,457 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 47.1,
+        "adx": 27.8,
+        "atr_pct": 2.39,
+        "vol_ratio": 0.42,
+        "chg_5d_pct": -2.84,
+        "chg_20d_pct": 0.03,
+        "dist_52w_high_pct": -5.64,
+        "dist_ema20_pct": -1.49,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 163.91,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/siemens.html"
+      ]
     },
     {
       "symbol": "NEULANDLAB",
@@ -1515,7 +1743,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 26.5%",
+        "+8 ROE 21.2%",
+        "-2 P/E 58.7",
+        "+8 3y profit CAGR 30%",
+        "+6 3y sales CAGR 19%",
+        "+5 D/E 0.16",
+        "+0 promoter 32.62%",
+        "+4 latest qtr PAT YoY 957.1%",
+        "+2 mcap ₹29,242 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.9,
+        "adx": 41.8,
+        "atr_pct": 2.73,
+        "vol_ratio": 0.33,
+        "chg_5d_pct": -1.0,
+        "chg_20d_pct": 2.54,
+        "dist_52w_high_pct": -4.61,
+        "dist_ema20_pct": 0.68,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 113.01,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/neulandlab.html"
+      ]
     },
     {
       "symbol": "ASTRAMICRO",
@@ -1577,7 +1836,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20.3%",
+        "+4 ROE 16%",
+        "-6 P/E 86.5",
+        "+8 3y profit CAGR 40%",
+        "+3 3y sales CAGR 13%",
+        "+5 D/E 0.22",
+        "-3 promoter 6.54%",
+        "-5 latest qtr PAT YoY -25%",
+        "+2 mcap ₹16,350 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 50.2,
+        "adx": 10.3,
+        "atr_pct": 3.64,
+        "vol_ratio": 1.24,
+        "chg_5d_pct": 2.53,
+        "chg_20d_pct": -1.53,
+        "dist_52w_high_pct": -12.85,
+        "dist_ema20_pct": 0.29,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 57.55,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/astramicro.html"
+      ]
     },
     {
       "symbol": "FINCABLES",
@@ -1643,7 +1934,39 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 16%",
+        "+4 ROE 12.3%",
+        "+6 P/E 23.5",
+        "+4 3y profit CAGR 12%",
+        "+3 3y sales CAGR 12%",
+        "+5 D/E 0",
+        "+0 promoter 35.86%",
+        "+4 latest qtr PAT YoY 52.8%",
+        "+2 mcap ₹18,717 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 52.0,
+        "adx": 33.1,
+        "atr_pct": 4.34,
+        "vol_ratio": 0.28,
+        "chg_5d_pct": -1.95,
+        "chg_20d_pct": 15.57,
+        "dist_52w_high_pct": -11.0,
+        "dist_ema20_pct": -0.21,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 290.0,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
+      ]
     },
     {
       "symbol": "SAGILITY",
@@ -1707,7 +2030,38 @@
       "corroborating_sources": [
         "brokerage_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 13.4%",
+        "+0 ROE 10.6%",
+        "+6 P/E 21",
+        "+8 3y profit CAGR 86%",
+        "+6 3y sales CAGR 19%",
+        "+5 D/E 0.12",
+        "+4 promoter 50.95%",
+        "-5 promoter stake down -16.43pp in 4q",
+        "+4 latest qtr PAT YoY 45.6%",
+        "+2 mcap ₹21,529 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.0,
+        "adx": 31.7,
+        "atr_pct": 2.76,
+        "vol_ratio": 0.33,
+        "chg_5d_pct": -2.36,
+        "chg_20d_pct": 5.27,
+        "dist_52w_high_pct": -20.64,
+        "dist_ema20_pct": 2.45,
+        "patterns": [
+          "double_bottom_confirmed"
+        ],
+        "avg_turnover_cr": 107.01,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/stocks-to-buy-under-rs-200-mehul-kothari-of-anand-rathi-recommends-three-shares-to-buy-for-short-term-11788598636353.html"
+      ]
     },
     {
       "symbol": "HAL",
@@ -1766,7 +2120,37 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 32%",
+        "+8 ROE 24%",
+        "+2 P/E 34.9",
+        "+4 3y profit CAGR 16%",
+        "+0 3y sales CAGR 7%",
+        "+5 D/E 0",
+        "+4 promoter 71.64%",
+        "+0 latest qtr PAT YoY 14.9%",
+        "+4 mcap ₹325,319 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.7,
+        "adx": 20.4,
+        "atr_pct": 2.0,
+        "vol_ratio": 0.53,
+        "chg_5d_pct": 1.28,
+        "chg_20d_pct": -1.32,
+        "dist_52w_high_pct": -5.57,
+        "dist_ema20_pct": 0.32,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 446.37,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/hal.html"
+      ]
     },
     {
       "symbol": "OIL",
@@ -1833,6 +2217,36 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "+0 ROCE 11.5%",
+        "+4 ROE 12.2%",
+        "+6 P/E 9.37",
+        "-6 3y profit CAGR -9%",
+        "-4 3y sales CAGR -3%",
+        "+2 D/E 0.65",
+        "+4 promoter 56.66%",
+        "+4 latest qtr PAT YoY 96.7%",
+        "+4 mcap ₹78,533 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.2,
+        "adx": 28.3,
+        "atr_pct": 2.52,
+        "vol_ratio": 0.84,
+        "chg_5d_pct": -0.22,
+        "chg_20d_pct": 6.42,
+        "dist_52w_high_pct": -9.21,
+        "dist_ema20_pct": 1.09,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 124.53,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -1896,6 +2310,38 @@
       ],
       "brokerages": [
         "marketsmith"
+      ],
+      "fund_why": [
+        "+0 ROCE 8.89%",
+        "+0 ROE 10.4%",
+        "-2 P/E 48.7",
+        "+8 3y profit CAGR 149%",
+        "+6 3y sales CAGR 16%",
+        "-6 D/E 3.93",
+        "+4 promoter 71.4%",
+        "-5 promoter stake down -12.01pp in 4q",
+        "+4 latest qtr PAT YoY 79.4%",
+        "+2 mcap ₹28,992 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 64.0,
+        "adx": 22.1,
+        "atr_pct": 3.93,
+        "vol_ratio": 0.53,
+        "chg_5d_pct": 3.11,
+        "chg_20d_pct": 13.3,
+        "dist_52w_high_pct": -3.73,
+        "dist_ema20_pct": 5.01,
+        "patterns": [
+          "double_bottom_confirmed",
+          "momentum_aligned"
+        ],
+        "avg_turnover_cr": 86.24,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-7-september-from-marketsmith-india-11788523305762.html"
       ]
     },
     {
@@ -1962,7 +2408,39 @@
       ],
       "src_stop": 720.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 34%",
+        "+8 ROE 24.7%",
+        "-6 P/E 83",
+        "+8 3y profit CAGR 36%",
+        "+6 3y sales CAGR 29%",
+        "+5 D/E 0.02",
+        "-3 promoter 26.87%",
+        "+4 latest qtr PAT YoY 72%",
+        "+2 mcap ₹22,825 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.5,
+        "adx": 30.5,
+        "atr_pct": 4.63,
+        "vol_ratio": 0.23,
+        "chg_5d_pct": -6.04,
+        "chg_20d_pct": 18.1,
+        "dist_52w_high_pct": -8.61,
+        "dist_ema20_pct": 0.96,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 238.91,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-gift-nifty-signals-muted-start-vaishali-parekh-recommends-three-stocks-to-buy-today-11788747852620.html"
+      ]
     },
     {
       "symbol": "APOLLOHOSP",
@@ -2022,7 +2500,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 17.4%",
+        "+8 ROE 21.2%",
+        "-2 P/E 60.1",
+        "+8 3y profit CAGR 32%",
+        "+6 3y sales CAGR 15%",
+        "-2 D/E 0.9",
+        "-3 promoter 28.02%",
+        "+4 latest qtr PAT YoY 38.3%",
+        "+4 mcap ₹126,459 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 50.3,
+        "adx": 17.6,
+        "atr_pct": 1.67,
+        "vol_ratio": 0.61,
+        "chg_5d_pct": -1.26,
+        "chg_20d_pct": -1.41,
+        "dist_52w_high_pct": -2.92,
+        "dist_ema20_pct": 0.11,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 345.52,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/apollohosp.html"
+      ]
     },
     {
       "symbol": "KPL",
@@ -2080,7 +2589,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 24.1%",
+        "+8 ROE 22.6%",
+        "-2 P/E 43.2",
+        "+8 3y profit CAGR 29%",
+        "+6 3y sales CAGR 26%",
+        "+2 D/E 0.39",
+        "+4 promoter 54.86%",
+        "+4 latest qtr PAT YoY 116.7%",
+        "+0 mcap ₹3,528 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 59.2,
+        "adx": 37.3,
+        "atr_pct": 5.01,
+        "vol_ratio": 0.65,
+        "chg_5d_pct": 3.48,
+        "chg_20d_pct": 8.6,
+        "dist_52w_high_pct": -8.32,
+        "dist_ema20_pct": 3.78,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 3.14,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/kpl.html"
+      ]
     },
     {
       "symbol": "ALKYLAMINE",
@@ -2139,7 +2678,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 41.3%",
+        "+8 ROE 41.4%",
+        "-2 P/E 54",
+        "+8 3y profit CAGR 54%",
+        "+6 3y sales CAGR 26%",
+        "+5 D/E 0.16",
+        "+4 promoter 72.04%",
+        "+4 latest qtr PAT YoY 157.9%",
+        "+2 mcap ₹10,230 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.8,
+        "adx": 26.3,
+        "atr_pct": 3.54,
+        "vol_ratio": 0.95,
+        "chg_5d_pct": 0.02,
+        "chg_20d_pct": 4.58,
+        "dist_52w_high_pct": -5.32,
+        "dist_ema20_pct": 0.96,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 21.41,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/alkylamine.html"
+      ]
     },
     {
       "symbol": "KIRLOSENG",
@@ -2200,7 +2769,39 @@
       "corroborating_sources": [
         "et_recos_page"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.6%",
+        "+4 ROE 17.5%",
+        "-2 P/E 55.7",
+        "+8 3y profit CAGR 22%",
+        "+6 3y sales CAGR 15%",
+        "-2 D/E 1.48",
+        "+0 promoter 41.06%",
+        "-5 latest qtr PAT YoY -20.1%",
+        "+2 mcap ₹31,723 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.8,
+        "adx": 15.5,
+        "atr_pct": 4.0,
+        "vol_ratio": 0.49,
+        "chg_5d_pct": 3.87,
+        "chg_20d_pct": 2.32,
+        "dist_52w_high_pct": -19.83,
+        "dist_ema20_pct": 1.54,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 89.85,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/market-trading-guide-bajaj-finance-and-a-smallcap-stock-offer-up-to-5-upside-in-near-term-heres-why/articleshow/128374085.cms",
+        "https://chartink.com/stocks/kirloseng.html"
+      ]
     },
     {
       "symbol": "GREENPLY",
@@ -2270,7 +2871,41 @@
       ],
       "src_stop": 290.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.3%",
+        "+0 ROE 11.8%",
+        "+2 P/E 34",
+        "+0 3y profit CAGR 6%",
+        "+6 3y sales CAGR 18%",
+        "+2 D/E 0.58",
+        "+4 promoter 51.93%",
+        "+4 latest qtr PAT YoY 35.7%",
+        "+0 mcap ₹3,801 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 59.7,
+        "adx": 16.3,
+        "atr_pct": 3.31,
+        "vol_ratio": 2.64,
+        "chg_5d_pct": 4.53,
+        "chg_20d_pct": 7.3,
+        "dist_52w_high_pct": -9.29,
+        "dist_ema20_pct": 3.95,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "momentum_aligned",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 3.69,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html",
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-gift-nifty-signals-muted-start-vaishali-parekh-recommends-three-stocks-to-buy-today-11788747852620.html"
+      ]
     },
     {
       "symbol": "MCX",
@@ -2334,7 +2969,34 @@
       "corroborating_sources": [
         "brokerage_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 71.4%",
+        "+8 ROE 56.3%",
+        "-2 P/E 55.4",
+        "+8 3y profit CAGR 108%",
+        "+6 3y sales CAGR 65%",
+        "+5 D/E 0",
+        "+4 latest qtr PAT YoY 103.4%",
+        "+4 mcap ₹85,287 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.0,
+        "adx": 35.0,
+        "atr_pct": 3.13,
+        "vol_ratio": 0.6,
+        "chg_5d_pct": -1.85,
+        "chg_20d_pct": 20.94,
+        "dist_52w_high_pct": -4.11,
+        "dist_ema20_pct": 5.48,
+        "patterns": [],
+        "avg_turnover_cr": 850.94,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-picks-ganesh-dongre-of-anand-rathi-recommends-3-stocks-to-buy-on-monday-target-stop-loss-other-details-11788678761802.html"
+      ]
     },
     {
       "symbol": "BAJAJ-AUTO",
@@ -2398,7 +3060,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 28.2%",
+        "+8 ROE 29.2%",
+        "+2 P/E 27.5",
+        "+8 3y profit CAGR 21%",
+        "+6 3y sales CAGR 20%",
+        "+2 D/E 0.58",
+        "+4 promoter 55.01%",
+        "+4 latest qtr PAT YoY 44.3%",
+        "+4 mcap ₹323,994 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 53.1,
+        "adx": 49.4,
+        "atr_pct": 1.94,
+        "vol_ratio": 0.39,
+        "chg_5d_pct": -2.8,
+        "chg_20d_pct": 0.97,
+        "dist_52w_high_pct": -5.45,
+        "dist_ema20_pct": -0.08,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 277.08,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/bajaj-auto.html"
+      ]
     },
     {
       "symbol": "SHAILY",
@@ -2456,7 +3149,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 29.3%",
+        "+8 ROE 26.9%",
+        "-6 P/E 87.1",
+        "+8 3y profit CAGR 69%",
+        "+6 3y sales CAGR 18%",
+        "+5 D/E 0.25",
+        "+0 promoter 41.09%",
+        "-5 promoter stake down -2.63pp in 4q",
+        "+4 latest qtr PAT YoY 17.1%",
+        "+2 mcap ₹15,397 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.9,
+        "adx": 32.6,
+        "atr_pct": 3.37,
+        "vol_ratio": 1.05,
+        "chg_5d_pct": 2.02,
+        "chg_20d_pct": -0.86,
+        "dist_52w_high_pct": -7.66,
+        "dist_ema20_pct": 2.41,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 47.36,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/shaily.html"
+      ]
     },
     {
       "symbol": "IPCALAB",
@@ -2513,7 +3237,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 17%",
+        "+4 ROE 15.7%",
+        "+2 P/E 36.1",
+        "+8 3y profit CAGR 37%",
+        "+6 3y sales CAGR 16%",
+        "+5 D/E 0.1",
+        "+0 promoter 44.72%",
+        "+4 latest qtr PAT YoY 82%",
+        "+2 mcap ₹49,528 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 62.2,
+        "adx": 33.0,
+        "atr_pct": 2.82,
+        "vol_ratio": 0.11,
+        "chg_5d_pct": -1.14,
+        "chg_20d_pct": 15.81,
+        "dist_52w_high_pct": -2.46,
+        "dist_ema20_pct": 2.29,
+        "patterns": [],
+        "avg_turnover_cr": 134.57,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/ipcalab.html"
+      ]
     },
     {
       "symbol": "APLAPOLLO",
@@ -2576,7 +3328,35 @@
       ],
       "src_stop": 2133.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 31.8%",
+        "+8 ROE 25.4%",
+        "-2 P/E 49.8",
+        "+8 3y profit CAGR 23%",
+        "+3 3y sales CAGR 13%",
+        "+5 D/E 0.09",
+        "-3 promoter 28.25%",
+        "+0 latest qtr PAT YoY 11%",
+        "+4 mcap ₹61,222 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.6,
+        "adx": 50.6,
+        "atr_pct": 2.64,
+        "vol_ratio": 0.87,
+        "chg_5d_pct": -0.92,
+        "chg_20d_pct": 9.05,
+        "dist_52w_high_pct": -4.28,
+        "dist_ema20_pct": 2.94,
+        "patterns": [],
+        "avg_turnover_cr": 147.84,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html"
+      ]
     },
     {
       "symbol": "INGERRAND",
@@ -2635,7 +3415,30 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 75%"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 57.9,
+        "adx": 31.2,
+        "atr_pct": 2.93,
+        "vol_ratio": 0.32,
+        "chg_5d_pct": -1.57,
+        "chg_20d_pct": 11.71,
+        "dist_52w_high_pct": -3.69,
+        "dist_ema20_pct": 1.91,
+        "patterns": [
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 21.18,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/ingerrand.html"
+      ]
     },
     {
       "symbol": "SANSERA",
@@ -2694,7 +3497,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.1%",
+        "+0 ROE 11.5%",
+        "-2 P/E 65.5",
+        "+8 3y profit CAGR 32%",
+        "+3 3y sales CAGR 14%",
+        "+5 D/E 0.19",
+        "-3 promoter 29.21%",
+        "+4 latest qtr PAT YoY 38.1%",
+        "+2 mcap ₹24,375 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.6,
+        "adx": 32.3,
+        "atr_pct": 3.56,
+        "vol_ratio": 0.52,
+        "chg_5d_pct": -2.86,
+        "chg_20d_pct": 2.38,
+        "dist_52w_high_pct": -4.45,
+        "dist_ema20_pct": 2.56,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 86.54,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/sansera.html"
+      ]
     },
     {
       "symbol": "BOSCHLTD",
@@ -2751,7 +3584,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.5%",
+        "+4 ROE 14.6%",
+        "-2 P/E 60.3",
+        "+4 3y profit CAGR 14%",
+        "+3 3y sales CAGR 10%",
+        "+5 D/E 0.01",
+        "+4 promoter 70.54%",
+        "-5 latest qtr PAT YoY -36.7%",
+        "+4 mcap ₹142,559 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 60.8,
+        "adx": 42.0,
+        "atr_pct": 2.43,
+        "vol_ratio": 0.95,
+        "chg_5d_pct": -3.2,
+        "chg_20d_pct": 11.25,
+        "dist_52w_high_pct": -3.2,
+        "dist_ema20_pct": 2.58,
+        "patterns": [],
+        "avg_turnover_cr": 232.02,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/boschltd.html"
+      ]
     },
     {
       "symbol": "PERSISTENT",
@@ -2813,7 +3674,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 34.4%",
+        "+8 ROE 27.2%",
+        "-2 P/E 44",
+        "+8 3y profit CAGR 28%",
+        "+6 3y sales CAGR 21%",
+        "+5 D/E 0.06",
+        "+0 promoter 30.29%",
+        "+0 latest qtr PAT YoY 13.6%",
+        "+4 mcap ₹87,551 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 49.8,
+        "adx": 18.5,
+        "atr_pct": 2.85,
+        "vol_ratio": 0.62,
+        "chg_5d_pct": -0.83,
+        "chg_20d_pct": 1.35,
+        "dist_52w_high_pct": -15.93,
+        "dist_ema20_pct": -0.93,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 262.6,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/persistent.html"
+      ]
     },
     {
       "symbol": "TIIL",
@@ -2872,7 +3764,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 16.1%",
+        "+4 ROE 15%",
+        "+6 P/E 21.2",
+        "+0 3y profit CAGR 2%",
+        "+3 3y sales CAGR 12%",
+        "+2 D/E 0.4",
+        "+4 promoter 74.74%",
+        "+4 latest qtr PAT YoY 68.3%",
+        "+0 mcap ₹7,200 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.9,
+        "adx": 49.2,
+        "atr_pct": 4.3,
+        "vol_ratio": 0.18,
+        "chg_5d_pct": -3.19,
+        "chg_20d_pct": 18.75,
+        "dist_52w_high_pct": -10.89,
+        "dist_ema20_pct": 0.79,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 29.98,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/tiil.html"
+      ]
     },
     {
       "symbol": "ARMANFIN",
@@ -2931,7 +3853,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 11.7%",
+        "+0 ROE 6.26%",
+        "+6 P/E 18.4",
+        "-6 3y profit CAGR -16%",
+        "+6 3y sales CAGR 15%",
+        "-3 promoter 22%",
+        "+4 latest qtr PAT YoY 200%",
+        "+0 mcap ₹2,141 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 57.5,
+        "adx": 22.6,
+        "atr_pct": 3.53,
+        "vol_ratio": 0.45,
+        "chg_5d_pct": 2.81,
+        "chg_20d_pct": 2.62,
+        "dist_52w_high_pct": -5.66,
+        "dist_ema20_pct": 2.76,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned"
+        ],
+        "avg_turnover_cr": 9.9,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/armanfin.html"
+      ]
     },
     {
       "symbol": "CHOLAFIN",
@@ -2992,7 +3944,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 9.71%",
+        "+8 ROE 19.4%",
+        "+2 P/E 27.2",
+        "+8 3y profit CAGR 25%",
+        "+6 3y sales CAGR 34%",
+        "+0 promoter 49.23%",
+        "+4 latest qtr PAT YoY 45.5%",
+        "+4 mcap ₹156,576 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 47.3,
+        "adx": 13.1,
+        "atr_pct": 2.42,
+        "vol_ratio": 0.8,
+        "chg_5d_pct": -1.27,
+        "chg_20d_pct": -4.49,
+        "dist_52w_high_pct": -6.08,
+        "dist_ema20_pct": -0.98,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 162.77,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/cholafin.html"
+      ]
     },
     {
       "symbol": "GRASIM",
@@ -3055,7 +4038,40 @@
         "chartink_squeeze",
         "et_recos_page"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 8.01%",
+        "-4 ROE 4.98%",
+        "+2 P/E 39.2",
+        "-6 3y profit CAGR -10%",
+        "+3 3y sales CAGR 14%",
+        "-6 D/E 2.2",
+        "+0 promoter 43.73%",
+        "+4 latest qtr PAT YoY 38.8%",
+        "+4 mcap ₹224,829 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.0,
+        "adx": 22.3,
+        "atr_pct": 2.06,
+        "vol_ratio": 0.74,
+        "chg_5d_pct": -2.06,
+        "chg_20d_pct": -2.33,
+        "dist_52w_high_pct": -3.21,
+        "dist_ema20_pct": 0.5,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 394.43,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
+      ]
     },
     {
       "symbol": "FINEORG",
@@ -3118,7 +4134,39 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.5%",
+        "+4 ROE 16.5%",
+        "+2 P/E 35.9",
+        "-6 3y profit CAGR -13%",
+        "-4 3y sales CAGR -8%",
+        "+5 D/E 0.03",
+        "+4 promoter 75%",
+        "+4 latest qtr PAT YoY 17.9%",
+        "+2 mcap ₹15,722 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 49.3,
+        "adx": 24.6,
+        "atr_pct": 2.94,
+        "vol_ratio": 0.21,
+        "chg_5d_pct": -3.08,
+        "chg_20d_pct": 1.83,
+        "dist_52w_high_pct": -5.31,
+        "dist_ema20_pct": -0.62,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 22.89,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/fineorg.html"
+      ]
     },
     {
       "symbol": "GLAXO",
@@ -3176,7 +4224,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 61.4%",
+        "+8 ROE 45.6%",
+        "-2 P/E 47.4",
+        "+4 3y profit CAGR 18%",
+        "+0 3y sales CAGR 6%",
+        "+5 D/E 0.01",
+        "+4 promoter 75%",
+        "+4 latest qtr PAT YoY 15.6%",
+        "+2 mcap ₹49,931 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 59.5,
+        "adx": 38.2,
+        "atr_pct": 2.92,
+        "vol_ratio": 0.73,
+        "chg_5d_pct": -3.37,
+        "chg_20d_pct": 13.31,
+        "dist_52w_high_pct": -5.56,
+        "dist_ema20_pct": 1.72,
+        "patterns": [],
+        "avg_turnover_cr": 58.12,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/glaxo.html"
+      ]
     },
     {
       "symbol": "JUBLCPL",
@@ -3234,7 +4310,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 40.4%",
+        "+8 ROE 33.2%",
+        "+2 P/E 25.3",
+        "+5 D/E 0.11",
+        "+4 promoter 74.36%",
+        "+0 latest qtr PAT YoY 4.5%",
+        "+0 mcap ₹3,347 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.4,
+        "adx": 23.5,
+        "atr_pct": 5.74,
+        "vol_ratio": 0.2,
+        "chg_5d_pct": -4.49,
+        "chg_20d_pct": 24.1,
+        "dist_52w_high_pct": -24.05,
+        "dist_ema20_pct": 1.92,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 8.43,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/jublcpl.html"
+      ]
     },
     {
       "symbol": "RADICO",
@@ -3294,7 +4398,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 24.2%",
+        "+8 ROE 20.3%",
+        "-6 P/E 83.8",
+        "+8 3y profit CAGR 41%",
+        "+6 3y sales CAGR 24%",
+        "+5 D/E 0.15",
+        "+0 promoter 40.19%",
+        "+4 latest qtr PAT YoY 75.6%",
+        "+4 mcap ₹59,575 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 45.9,
+        "adx": 37.0,
+        "atr_pct": 2.2,
+        "vol_ratio": 0.33,
+        "chg_5d_pct": -0.95,
+        "chg_20d_pct": -2.36,
+        "dist_52w_high_pct": -6.41,
+        "dist_ema20_pct": -1.78,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 122.93,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/radico.html"
+      ]
     },
     {
       "symbol": "AVALON",
@@ -3358,6 +4493,36 @@
       ],
       "brokerages": [
         "nomura"
+      ],
+      "fund_why": [
+        "+6 ROCE 19.5%",
+        "+4 ROE 16.9%",
+        "-6 P/E 118",
+        "+8 3y profit CAGR 29%",
+        "+6 3y sales CAGR 19%",
+        "+2 D/E 0.3",
+        "+0 promoter 44.39%",
+        "+4 latest qtr PAT YoY 150%",
+        "+2 mcap ₹15,749 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.9,
+        "adx": 44.6,
+        "atr_pct": 5.52,
+        "vol_ratio": 2.64,
+        "chg_5d_pct": -1.08,
+        "chg_20d_pct": 22.04,
+        "dist_52w_high_pct": -3.15,
+        "dist_ema20_pct": 8.74,
+        "patterns": [
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 121.59,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/buzzing-stocks-brightcom-group-shares-up-7-on-ftse-global-equity-index-inclusion-nomura-keeps-buy-on-avalon-technologies-14023544.html"
       ]
     },
     {
@@ -3428,6 +4593,38 @@
       ],
       "brokerages": [
         "nomura"
+      ],
+      "fund_why": [
+        "+0 ROCE 10%",
+        "+0 ROE 10.4%",
+        "-6 P/E 86.7",
+        "+8 3y profit CAGR 41%",
+        "+6 3y sales CAGR 44%",
+        "+5 D/E 0.14",
+        "-3 promoter 16.51%",
+        "+4 latest qtr PAT YoY 712.5%",
+        "+2 mcap ₹14,668 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 51.5,
+        "adx": 19.4,
+        "atr_pct": 4.55,
+        "vol_ratio": 0.33,
+        "chg_5d_pct": -3.26,
+        "chg_20d_pct": 1.01,
+        "dist_52w_high_pct": -6.92,
+        "dist_ema20_pct": -0.33,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 120.65,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/buzzing-stocks-brightcom-group-shares-up-7-on-ftse-global-equity-index-inclusion-nomura-keeps-buy-on-avalon-technologies-14023544.html",
+        "https://www.financialexpress.com/business/defence/made-in-india-drone-foreign-tech-inside-why-localising-critical-uav-components-is-next-battle/4332999/"
       ]
     },
     {
@@ -3489,7 +4686,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 29.9%",
+        "+8 ROE 22.4%",
+        "-6 P/E 102",
+        "+5 D/E 0.02",
+        "+4 promoter 75%",
+        "+0 latest qtr PAT YoY 2.8%",
+        "+4 mcap ₹156,441 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 45.4,
+        "adx": 20.5,
+        "atr_pct": 2.31,
+        "vol_ratio": 0.53,
+        "chg_5d_pct": -3.31,
+        "chg_20d_pct": -3.45,
+        "dist_52w_high_pct": -6.8,
+        "dist_ema20_pct": -1.35,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 119.56,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/abb.html"
+      ]
     },
     {
       "symbol": "PWL",
@@ -3557,6 +4784,37 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "-4 ROCE 4.02%",
+        "-4 ROE -0.48%",
+        "-6 P/E 614",
+        "+8 3y profit CAGR 23%",
+        "+6 3y sales CAGR 74%",
+        "+5 D/E 0.23",
+        "+4 promoter 71.27%",
+        "-5 latest qtr PAT YoY -169.3%",
+        "+2 mcap ₹37,537 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 59.3,
+        "adx": 13.5,
+        "atr_pct": 4.42,
+        "vol_ratio": 0.8,
+        "chg_5d_pct": 11.48,
+        "chg_20d_pct": 1.67,
+        "dist_52w_high_pct": -19.96,
+        "dist_ema20_pct": 5.73,
+        "patterns": [
+          "momentum_aligned"
+        ],
+        "avg_turnover_cr": 238.14,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
       ]
     },
     {
@@ -3626,6 +4884,37 @@
       ],
       "brokerages": [
         "emkay"
+      ],
+      "fund_why": [
+        "+0 ROCE 10.4%",
+        "+0 ROE 7.69%",
+        "-2 P/E 70",
+        "+4 3y profit CAGR 16%",
+        "+6 3y sales CAGR 27%",
+        "+5 D/E 0.22",
+        "+4 promoter 50.58%",
+        "+4 latest qtr PAT YoY 52.6%",
+        "+0 mcap ₹7,396 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 43.4,
+        "adx": 31.7,
+        "atr_pct": 3.52,
+        "vol_ratio": 0.48,
+        "chg_5d_pct": -5.56,
+        "chg_20d_pct": -3.37,
+        "dist_52w_high_pct": -15.66,
+        "dist_ema20_pct": -2.82,
+        "patterns": [
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 21.46,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/ethosltd.html",
+        "https://investmentguruindia.com/newsdetail/buy-ethos-ltd-for-the-target-rs-3-400-by-emkay-global-financial-services-ltd169072"
       ]
     },
     {
@@ -3686,7 +4975,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 10.2%",
+        "+0 ROE 6.67%",
+        "-6 P/E 135",
+        "+0 3y profit CAGR 6%",
+        "+0 3y sales CAGR 7%",
+        "-2 D/E 0.8",
+        "+0 promoter 41.5%",
+        "+4 latest qtr PAT YoY 90.9%",
+        "+0 mcap ₹7,937 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 55.4,
+        "adx": 37.8,
+        "atr_pct": 3.73,
+        "vol_ratio": 0.81,
+        "chg_5d_pct": -3.35,
+        "chg_20d_pct": 3.74,
+        "dist_52w_high_pct": -10.17,
+        "dist_ema20_pct": 1.25,
+        "patterns": [
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 20.96,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/dynamatech.html"
+      ]
     },
     {
       "symbol": "HAPPYFORGE",
@@ -3744,7 +5064,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 18%",
+        "+4 ROE 15%",
+        "-2 P/E 64.2",
+        "+4 3y profit CAGR 13%",
+        "+3 3y sales CAGR 9%",
+        "+5 D/E 0.16",
+        "+4 promoter 78.46%",
+        "+4 latest qtr PAT YoY 37.9%",
+        "+2 mcap ₹20,999 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 59.0,
+        "adx": 40.4,
+        "atr_pct": 4.27,
+        "vol_ratio": 0.31,
+        "chg_5d_pct": -7.57,
+        "chg_20d_pct": 15.75,
+        "dist_52w_high_pct": -9.74,
+        "dist_ema20_pct": 2.02,
+        "patterns": [],
+        "avg_turnover_cr": 27.63,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/happyforge.html"
+      ]
     },
     {
       "symbol": "BAJAJHLDNG",
@@ -3805,7 +5153,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 11%",
+        "+0 ROE 11.9%",
+        "+6 P/E 13.9",
+        "+4 3y profit CAGR 19%",
+        "+6 3y sales CAGR 29%",
+        "+5 D/E 0",
+        "+4 promoter 51.46%",
+        "-5 latest qtr PAT YoY -22.7%",
+        "+4 mcap ₹123,491 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 46.6,
+        "adx": 15.8,
+        "atr_pct": 2.26,
+        "vol_ratio": 0.66,
+        "chg_5d_pct": -4.55,
+        "chg_20d_pct": -3.11,
+        "dist_52w_high_pct": -19.93,
+        "dist_ema20_pct": -1.32,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 52.06,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/bajajhldng.html"
+      ]
     },
     {
       "symbol": "EICHERMOT",
@@ -3864,7 +5244,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 30.5%",
+        "+8 ROE 24%",
+        "+2 P/E 36.4",
+        "+8 3y profit CAGR 24%",
+        "+6 3y sales CAGR 17%",
+        "+5 D/E 0.02",
+        "+0 promoter 49.03%",
+        "+4 latest qtr PAT YoY 21.4%",
+        "+4 mcap ₹211,739 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 40.4,
+        "adx": 31.1,
+        "atr_pct": 1.9,
+        "vol_ratio": 0.87,
+        "chg_5d_pct": -3.06,
+        "chg_20d_pct": -3.32,
+        "dist_52w_high_pct": -6.32,
+        "dist_ema20_pct": -2.19,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed"
+        ],
+        "avg_turnover_cr": 331.69,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/eichermot.html"
+      ]
     },
     {
       "symbol": "JSWDULUX",
@@ -3924,7 +5335,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 22.7%",
+        "+8 ROE 19.1%",
+        "+2 P/E 37.7",
+        "+0 3y profit CAGR 2%",
+        "-4 3y sales CAGR -2%",
+        "+5 D/E 0.03",
+        "+4 promoter 61.2%",
+        "-5 promoter stake down -13.56pp in 4q",
+        "+0 latest qtr PAT YoY -12.1%",
+        "+2 mcap ₹14,463 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 60.9,
+        "adx": 30.0,
+        "atr_pct": 2.31,
+        "vol_ratio": 1.28,
+        "chg_5d_pct": 0.62,
+        "chg_20d_pct": 4.22,
+        "dist_52w_high_pct": -14.98,
+        "dist_ema20_pct": 1.87,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed"
+        ],
+        "avg_turnover_cr": 6.05,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/jswdulux.html"
+      ]
     },
     {
       "symbol": "GLAND",
@@ -3981,7 +5424,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 15.1%",
+        "+0 ROE 10.7%",
+        "-2 P/E 42.8",
+        "+0 3y profit CAGR 8%",
+        "+6 3y sales CAGR 21%",
+        "+5 D/E 0.03",
+        "+4 promoter 51.77%",
+        "+4 latest qtr PAT YoY 47.4%",
+        "+2 mcap ₹49,012 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 69.8,
+        "adx": 39.9,
+        "atr_pct": 3.09,
+        "vol_ratio": 0.9,
+        "chg_5d_pct": 3.04,
+        "chg_20d_pct": 11.48,
+        "dist_52w_high_pct": -2.25,
+        "dist_ema20_pct": 4.64,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 284.87,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/gland.html"
+      ]
     },
     {
       "symbol": "OBEROIRLTY",
@@ -4041,7 +5514,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 17.3%",
+        "+4 ROE 14.6%",
+        "+2 P/E 25.5",
+        "+0 3y profit CAGR 9%",
+        "+3 3y sales CAGR 13%",
+        "+5 D/E 0.16",
+        "+4 promoter 67.71%",
+        "+4 latest qtr PAT YoY 29.2%",
+        "+4 mcap ₹67,485 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 49.7,
+        "adx": 19.1,
+        "atr_pct": 2.41,
+        "vol_ratio": 0.3,
+        "chg_5d_pct": -0.57,
+        "chg_20d_pct": 3.59,
+        "dist_52w_high_pct": -6.49,
+        "dist_ema20_pct": -0.42,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 101.32,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/oberoirlty.html"
+      ]
     },
     {
       "symbol": "QUADFUTURE",
@@ -4104,7 +5609,27 @@
       ],
       "src_stop": 57200.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 70%"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.3,
+        "adx": 40.1,
+        "atr_pct": 5.53,
+        "vol_ratio": 0.17,
+        "chg_5d_pct": -1.16,
+        "chg_20d_pct": 12.65,
+        "dist_52w_high_pct": -13.42,
+        "dist_ema20_pct": 3.43,
+        "patterns": [],
+        "avg_turnover_cr": 94.7,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/trading-plan-nifty-50-bank-nifty-may-attempt-to-reclaim-friday-s-high-amid-consolidation-14023847.html"
+      ]
     },
     {
       "symbol": "AEROENTER",
@@ -4166,7 +5691,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 12.6%",
+        "+0 ROE 8.41%",
+        "+6 P/E 11.4",
+        "+4 3y profit CAGR 17%",
+        "+3 3y sales CAGR 14%",
+        "+5 D/E 0.05",
+        "+4 promoter 52.3%",
+        "+4 latest qtr PAT YoY 635.7%",
+        "+0 mcap ₹1,728 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 67.6,
+        "adx": 18.3,
+        "atr_pct": 4.81,
+        "vol_ratio": 2.84,
+        "chg_5d_pct": 10.26,
+        "chg_20d_pct": 20.1,
+        "dist_52w_high_pct": -0.87,
+        "dist_ema20_pct": 10.25,
+        "patterns": [
+          "breakout_60d_high_volume",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 12.22,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/aeroenter.html"
+      ]
     },
     {
       "symbol": "NETWEB",
@@ -4226,7 +5783,31 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 66.98%",
+        "-5 promoter stake down -4.05pp in 4q"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.0,
+        "adx": 32.7,
+        "atr_pct": 4.47,
+        "vol_ratio": 0.4,
+        "chg_5d_pct": -0.71,
+        "chg_20d_pct": 5.08,
+        "dist_52w_high_pct": -11.37,
+        "dist_ema20_pct": 0.35,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 1081.27,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/netweb.html"
+      ]
     },
     {
       "symbol": "ANANDRATHI",
@@ -4284,7 +5865,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 59.2%",
+        "+8 ROE 47.3%",
+        "-6 P/E 79.5",
+        "+8 3y profit CAGR 33%",
+        "+6 3y sales CAGR 31%",
+        "+5 D/E 0.08",
+        "+0 promoter 41.37%",
+        "+4 latest qtr PAT YoY 73.4%",
+        "+2 mcap ₹36,934 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 68.6,
+        "adx": 39.9,
+        "atr_pct": 1.85,
+        "vol_ratio": 1.17,
+        "chg_5d_pct": 1.06,
+        "chg_20d_pct": 4.51,
+        "dist_52w_high_pct": -1.22,
+        "dist_ema20_pct": 2.26,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 45.93,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/anandrathi.html"
+      ]
     },
     {
       "symbol": "BRIGADE",
@@ -4351,6 +5962,35 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+0 ROCE 10.5%",
+        "+0 ROE 10.5%",
+        "+2 P/E 32.6",
+        "+8 3y profit CAGR 35%",
+        "+6 3y sales CAGR 18%",
+        "-2 D/E 0.93",
+        "+0 promoter 41.1%",
+        "+4 latest qtr PAT YoY 37.3%",
+        "+2 mcap ₹22,153 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.5,
+        "adx": 36.0,
+        "atr_pct": 4.31,
+        "vol_ratio": 0.83,
+        "chg_5d_pct": 3.62,
+        "chg_20d_pct": 11.83,
+        "dist_52w_high_pct": -15.26,
+        "dist_ema20_pct": 5.99,
+        "patterns": [],
+        "avg_turnover_cr": 57.59,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279"
       ]
     },
     {
@@ -4415,7 +6055,37 @@
       ],
       "src_stop": 1390.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 17.4%",
+        "+4 ROE 15.2%",
+        "-2 P/E 66.9",
+        "+4 3y profit CAGR 19%",
+        "+6 3y sales CAGR 18%",
+        "+2 D/E 0.3",
+        "+0 promoter 33%",
+        "+0 latest qtr PAT YoY -1.3%",
+        "+2 mcap ₹38,322 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 49.2,
+        "adx": 26.7,
+        "atr_pct": 3.38,
+        "vol_ratio": 0.61,
+        "chg_5d_pct": -3.87,
+        "chg_20d_pct": -3.64,
+        "dist_52w_high_pct": -7.87,
+        "dist_ema20_pct": -0.96,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 41.05,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html"
+      ]
     },
     {
       "symbol": "APARINDS",
@@ -4477,7 +6147,39 @@
       "corroborating_sources": [
         "brokerage_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 31.8%",
+        "+8 ROE 20.3%",
+        "-2 P/E 60.7",
+        "+4 3y profit CAGR 16%",
+        "+6 3y sales CAGR 17%",
+        "+5 D/E 0.18",
+        "+4 promoter 55.42%",
+        "-5 promoter stake down -2.35pp in 4q",
+        "+4 latest qtr PAT YoY 77.6%",
+        "+4 mcap ₹73,201 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.3,
+        "adx": 45.0,
+        "atr_pct": 3.84,
+        "vol_ratio": 0.37,
+        "chg_5d_pct": -1.14,
+        "chg_20d_pct": 6.4,
+        "dist_52w_high_pct": -5.23,
+        "dist_ema20_pct": 3.13,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 262.48,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.cnbctv18.com/market/v2-retail-share-price-motilal-oswal-bull-case-expects-stock-to-double-valuations-triggers-key-risks-19985237.htm",
+        "https://chartink.com/stocks/aparinds.html"
+      ]
     },
     {
       "symbol": "SEAMECLTD",
@@ -4538,7 +6240,36 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20%",
+        "+8 ROE 21.8%",
+        "+6 P/E 17.6",
+        "+8 3y profit CAGR 106%",
+        "+6 3y sales CAGR 30%",
+        "+5 D/E 0.27",
+        "+4 promoter 72.72%",
+        "+0 latest qtr PAT YoY 6.6%",
+        "+0 mcap ₹4,512 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 73.9,
+        "adx": 30.1,
+        "atr_pct": 3.33,
+        "vol_ratio": 0.3,
+        "chg_5d_pct": 6.23,
+        "chg_20d_pct": 15.99,
+        "dist_52w_high_pct": -2.72,
+        "dist_ema20_pct": 7.15,
+        "patterns": [],
+        "avg_turnover_cr": 25.88,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-ethos-ltd-for-the-target-rs-3-400-by-emkay-global-financial-services-ltd169072",
+        "https://investmentguruindia.com/newsdetail/buy-esds-software-solutions-ltd-for-target-1-550-by-choice-institutional-equities-ltd698589"
+      ]
     },
     {
       "symbol": "PAISALO",
@@ -4601,7 +6332,40 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 12.4%",
+        "+4 ROE 14.4%",
+        "+2 P/E 28.8",
+        "+8 3y profit CAGR 35%",
+        "+6 3y sales CAGR 25%",
+        "+0 promoter 46.71%",
+        "+4 latest qtr PAT YoY 29.8%",
+        "+0 mcap ₹7,238 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 76.6,
+        "adx": 18.2,
+        "atr_pct": 3.46,
+        "vol_ratio": 2.68,
+        "chg_5d_pct": 18.1,
+        "chg_20d_pct": 13.65,
+        "dist_52w_high_pct": -0.45,
+        "dist_ema20_pct": 13.31,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_high_volume",
+          "double_bottom_confirmed",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 73.68,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/paisalo.html"
+      ]
     },
     {
       "symbol": "FCL",
@@ -4664,7 +6428,41 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 18.3%",
+        "+4 ROE 13.5%",
+        "-2 P/E 53.9",
+        "+0 3y profit CAGR 7%",
+        "+3 3y sales CAGR 14%",
+        "+5 D/E 0.01",
+        "+4 promoter 62.3%",
+        "+4 latest qtr PAT YoY 92%",
+        "+0 mcap ₹6,598 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 73.4,
+        "adx": 38.6,
+        "atr_pct": 4.96,
+        "vol_ratio": 2.55,
+        "chg_5d_pct": 11.56,
+        "chg_20d_pct": 33.29,
+        "dist_52w_high_pct": -0.0,
+        "dist_ema20_pct": 18.26,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_high_volume",
+          "gap_or_spike_today",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 79.18,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/fcl.html"
+      ]
     },
     {
       "symbol": "DATAPATTNS",
@@ -4723,7 +6521,30 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 promoter 42.41%"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 51.9,
+        "adx": 10.3,
+        "atr_pct": 3.52,
+        "vol_ratio": 0.33,
+        "chg_5d_pct": 1.74,
+        "chg_20d_pct": 3.84,
+        "dist_52w_high_pct": -8.0,
+        "dist_ema20_pct": 0.45,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 346.25,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/datapattns.html"
+      ]
     },
     {
       "symbol": "TORNTPHARM",
@@ -4785,7 +6606,40 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 15.2%",
+        "+8 ROE 27.4%",
+        "-6 P/E 83.3",
+        "+8 3y profit CAGR 22%",
+        "+3 3y sales CAGR 13%",
+        "-2 D/E 1.79",
+        "+4 promoter 60.78%",
+        "-5 promoter stake down -7.53pp in 4q",
+        "+0 latest qtr PAT YoY 3.3%",
+        "+4 mcap ₹185,789 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 47.2,
+        "adx": 14.8,
+        "atr_pct": 2.28,
+        "vol_ratio": 0.6,
+        "chg_5d_pct": -3.41,
+        "chg_20d_pct": -0.63,
+        "dist_52w_high_pct": -6.8,
+        "dist_ema20_pct": -0.99,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 150.82,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/torntpharm.html"
+      ]
     },
     {
       "symbol": "BAJAJFINSV",
@@ -4845,7 +6699,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 10.6%",
+        "+4 ROE 13.2%",
+        "+2 P/E 30.4",
+        "+4 3y profit CAGR 16%",
+        "+6 3y sales CAGR 22%",
+        "-6 D/E 5.52",
+        "+4 promoter 58.72%",
+        "+4 latest qtr PAT YoY 18.2%",
+        "+4 mcap ₹312,578 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 43.2,
+        "adx": 19.4,
+        "atr_pct": 1.86,
+        "vol_ratio": 0.64,
+        "chg_5d_pct": -3.3,
+        "chg_20d_pct": -3.31,
+        "dist_52w_high_pct": -10.96,
+        "dist_ema20_pct": -1.87,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 130.99,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/bajajfinsv.html"
+      ]
     },
     {
       "symbol": "NAVINFLUOR",
@@ -4903,7 +6789,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21%",
+        "+8 ROE 19.6%",
+        "-2 P/E 55.5",
+        "+8 3y profit CAGR 21%",
+        "+6 3y sales CAGR 17%",
+        "+2 D/E 0.32",
+        "-3 promoter 27.08%",
+        "+4 latest qtr PAT YoY 107.7%",
+        "+2 mcap ₹44,172 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 60.7,
+        "adx": 31.9,
+        "atr_pct": 2.57,
+        "vol_ratio": 0.4,
+        "chg_5d_pct": -0.8,
+        "chg_20d_pct": 5.0,
+        "dist_52w_high_pct": -1.93,
+        "dist_ema20_pct": 2.58,
+        "patterns": [],
+        "avg_turnover_cr": 114.06,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/navinfluor.html"
+      ]
     },
     {
       "symbol": "NEOGEN",
@@ -4961,7 +6875,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 6.46%",
+        "-4 ROE 3.58%",
+        "-6 P/E 169",
+        "-6 3y profit CAGR -17%",
+        "+3 3y sales CAGR 8%",
+        "-2 D/E 1.71",
+        "+4 promoter 53%",
+        "+4 latest qtr PAT YoY 70%",
+        "+0 mcap ₹6,025 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 55.4,
+        "adx": 25.1,
+        "atr_pct": 4.15,
+        "vol_ratio": 0.79,
+        "chg_5d_pct": 0.44,
+        "chg_20d_pct": 1.28,
+        "dist_52w_high_pct": -10.99,
+        "dist_ema20_pct": 2.02,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 45.16,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/neogen.html"
+      ]
     },
     {
       "symbol": "KINGFA",
@@ -5018,7 +6962,28 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 67.02%",
+        "-5 promoter stake down -7.97pp in 4q"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.9,
+        "adx": 38.7,
+        "atr_pct": 3.17,
+        "vol_ratio": 0.34,
+        "chg_5d_pct": 0.08,
+        "chg_20d_pct": 7.7,
+        "dist_52w_high_pct": -2.33,
+        "dist_ema20_pct": 3.52,
+        "patterns": [],
+        "avg_turnover_cr": 13.09,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/kingfa.html"
+      ]
     },
     {
       "symbol": "KDDL",
@@ -5077,7 +7042,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 11.7%",
+        "+0 ROE 8.9%",
+        "-2 P/E 50.4",
+        "+4 3y profit CAGR 18%",
+        "+6 3y sales CAGR 24%",
+        "+2 D/E 0.47",
+        "+4 promoter 50.15%",
+        "+4 latest qtr PAT YoY 50%",
+        "+0 mcap ₹4,942 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 66.1,
+        "adx": 30.6,
+        "atr_pct": 3.67,
+        "vol_ratio": 0.76,
+        "chg_5d_pct": 2.22,
+        "chg_20d_pct": 4.72,
+        "dist_52w_high_pct": -3.33,
+        "dist_ema20_pct": 4.09,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 20.63,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/kddl.html"
+      ]
     },
     {
       "symbol": "SUNDARMFIN",
@@ -5135,7 +7130,36 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 9.44%",
+        "+4 ROE 15%",
+        "+6 P/E 22.9",
+        "+4 3y profit CAGR 17%",
+        "+6 3y sales CAGR 21%",
+        "+0 promoter 37.21%",
+        "+4 latest qtr PAT YoY 33.9%",
+        "+4 mcap ₹52,063 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 60.0,
+        "adx": 17.4,
+        "atr_pct": 2.16,
+        "vol_ratio": 0.78,
+        "chg_5d_pct": 3.33,
+        "chg_20d_pct": 2.69,
+        "dist_52w_high_pct": -16.85,
+        "dist_ema20_pct": 2.6,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 20.69,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/sundarmfin.html"
+      ]
     },
     {
       "symbol": "INNOVACAP",
@@ -5198,7 +7222,35 @@
       ],
       "src_stop": 1118.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 15%",
+        "+4 ROE 13.7%",
+        "-2 P/E 43",
+        "+8 3y profit CAGR 28%",
+        "+6 3y sales CAGR 21%",
+        "+2 D/E 0.32",
+        "+4 promoter 50.9%",
+        "+4 latest qtr PAT YoY 41.9%",
+        "+0 mcap ₹6,630 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 69.8,
+        "adx": 37.4,
+        "atr_pct": 4.2,
+        "vol_ratio": 0.71,
+        "chg_5d_pct": 7.36,
+        "chg_20d_pct": 19.81,
+        "dist_52w_high_pct": -3.53,
+        "dist_ema20_pct": 8.16,
+        "patterns": [],
+        "avg_turnover_cr": 13.98,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html"
+      ]
     },
     {
       "symbol": "BAJFINANCE",
@@ -5262,7 +7314,38 @@
       ],
       "src_stop": 1018.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 10.9%",
+        "+8 ROE 18.2%",
+        "+2 P/E 32.2",
+        "+4 3y profit CAGR 19%",
+        "+6 3y sales CAGR 26%",
+        "+4 promoter 54.68%",
+        "+4 latest qtr PAT YoY 27.6%",
+        "+4 mcap ₹659,422 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 45.4,
+        "adx": 17.0,
+        "atr_pct": 2.02,
+        "vol_ratio": 0.61,
+        "chg_5d_pct": 0.2,
+        "chg_20d_pct": -3.91,
+        "dist_52w_high_pct": -9.97,
+        "dist_ema20_pct": -1.2,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend",
+          "pullback_to_ema50_in_uptrend"
+        ],
+        "avg_turnover_cr": 495.71,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html"
+      ]
     },
     {
       "symbol": "SYRMA",
@@ -5335,6 +7418,43 @@
       ],
       "brokerages": [
         "emkay"
+      ],
+      "fund_why": [
+        "+6 ROCE 16.8%",
+        "+4 ROE 14%",
+        "-6 P/E 84.4",
+        "+8 3y profit CAGR 39%",
+        "+6 3y sales CAGR 33%",
+        "+5 D/E 0.14",
+        "+0 promoter 42.28%",
+        "-5 promoter stake down -4.15pp in 4q",
+        "+4 latest qtr PAT YoY 112%",
+        "+2 mcap ₹31,319 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 71.9,
+        "adx": 19.8,
+        "atr_pct": 3.41,
+        "vol_ratio": 7.57,
+        "chg_5d_pct": 13.26,
+        "chg_20d_pct": 7.33,
+        "dist_52w_high_pct": -0.15,
+        "dist_ema20_pct": 10.95,
+        "patterns": [
+          "at_52w_high",
+          "bollinger_squeeze",
+          "breakout_60d_high_volume",
+          "gap_or_spike_today",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 214.43,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241"
       ]
     },
     {
@@ -5398,7 +7518,38 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 7.82%",
+        "-4 ROE 4.89%",
+        "-6 P/E 98.8",
+        "-6 3y profit CAGR -32%",
+        "+0 3y sales CAGR 4%",
+        "+5 D/E 0",
+        "+0 promoter 37.5%",
+        "+4 latest qtr PAT YoY 63.5%",
+        "+0 mcap ₹1,675 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.6,
+        "adx": 30.9,
+        "atr_pct": 2.93,
+        "vol_ratio": 0.87,
+        "chg_5d_pct": 2.78,
+        "chg_20d_pct": 3.37,
+        "dist_52w_high_pct": -16.44,
+        "dist_ema20_pct": 2.97,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned"
+        ],
+        "avg_turnover_cr": 6.42,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/wendt.html"
+      ]
     },
     {
       "symbol": "PFOCUS",
@@ -5465,6 +7616,38 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "+0 ROCE 11.5%",
+        "+4 ROE 16.5%",
+        "-6 P/E 134",
+        "+4 3y profit CAGR 10%",
+        "+0 3y sales CAGR 0%",
+        "-6 D/E 2.74",
+        "+4 promoter 60.73%",
+        "-5 promoter stake down -6.88pp in 4q",
+        "-5 latest qtr PAT YoY -141.8%",
+        "+2 mcap ₹23,897 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 60.7,
+        "adx": 24.6,
+        "atr_pct": 4.44,
+        "vol_ratio": 1.33,
+        "chg_5d_pct": 7.08,
+        "chg_20d_pct": 8.69,
+        "dist_52w_high_pct": -16.17,
+        "dist_ema20_pct": 5.53,
+        "patterns": [
+          "momentum_aligned"
+        ],
+        "avg_turnover_cr": 30.29,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/",
+        "https://www.moneycontrol.com/news/business/stocks/buy-prime-focus-target-of-rs-375-icici-securities-14024321.html"
       ]
     },
     {
@@ -5528,7 +7711,39 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 13%",
+        "+4 ROE 12.2%",
+        "+6 P/E 22.8",
+        "+8 3y profit CAGR 24%",
+        "+3 3y sales CAGR 13%",
+        "+5 D/E 0.21",
+        "+4 promoter 69.36%",
+        "+0 latest qtr PAT YoY 9.5%",
+        "+0 mcap ₹1,645 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 75.9,
+        "adx": 45.0,
+        "atr_pct": 4.46,
+        "vol_ratio": 2.71,
+        "chg_5d_pct": 8.18,
+        "chg_20d_pct": 23.72,
+        "dist_52w_high_pct": -1.09,
+        "dist_ema20_pct": 14.33,
+        "patterns": [
+          "breakout_60d_high_volume",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 5.4,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/shreepushk.html"
+      ]
     },
     {
       "symbol": "ADANIPORTS",
@@ -5586,7 +7801,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.1%",
+        "+4 ROE 16.4%",
+        "+2 P/E 29.4",
+        "+8 3y profit CAGR 27%",
+        "+6 3y sales CAGR 23%",
+        "+2 D/E 0.66",
+        "+4 promoter 66.03%",
+        "+0 latest qtr PAT YoY 10.2%",
+        "+4 mcap ₹390,636 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 49.5,
+        "adx": 23.1,
+        "atr_pct": 2.17,
+        "vol_ratio": 0.44,
+        "chg_5d_pct": 6.5,
+        "chg_20d_pct": 0.93,
+        "dist_52w_high_pct": -10.29,
+        "dist_ema20_pct": 0.29,
+        "patterns": [],
+        "avg_turnover_cr": 380.07,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/adaniports.html"
+      ]
     },
     {
       "symbol": "KOTAKBANK",
@@ -5644,7 +7887,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 6.98%",
+        "+0 ROE 11.4%",
+        "+6 P/E 21.1",
+        "+0 3y profit CAGR 9%",
+        "+6 3y sales CAGR 18%",
+        "-3 promoter 25.87%",
+        "+4 latest qtr PAT YoY 22.5%",
+        "+4 mcap ₹421,333 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 67.0,
+        "adx": 46.9,
+        "atr_pct": 1.67,
+        "vol_ratio": 0.45,
+        "chg_5d_pct": 0.93,
+        "chg_20d_pct": 7.57,
+        "dist_52w_high_pct": -6.6,
+        "dist_ema20_pct": 2.99,
+        "patterns": [],
+        "avg_turnover_cr": 473.62,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
+      ]
     },
     {
       "symbol": "FORTIS",
@@ -5724,6 +7995,37 @@
         "icicisec",
         "motilal",
         "pl"
+      ],
+      "fund_why": [
+        "+0 ROCE 13.4%",
+        "+0 ROE 11.2%",
+        "-2 P/E 64.2",
+        "+8 3y profit CAGR 27%",
+        "+3 3y sales CAGR 13%",
+        "+2 D/E 0.35",
+        "+0 promoter 31.17%",
+        "+0 latest qtr PAT YoY 2.2%",
+        "+4 mcap ₹68,565 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 44.2,
+        "adx": 7.9,
+        "atr_pct": 2.22,
+        "vol_ratio": 0.53,
+        "chg_5d_pct": 0.15,
+        "chg_20d_pct": -3.9,
+        "dist_52w_high_pct": -17.75,
+        "dist_ema20_pct": -1.09,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 117.44,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-fortis-healthcare-target-of-rs-1050-prabhudas-lilladher-2-14024013.html",
+        "https://www.moneycontrol.com/news/business/stocks/buy-fortis-healthcare-target-of-rs-1075-icici-securities-2-14024263.html"
       ]
     },
     {
@@ -5790,6 +8092,37 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "+12 ROCE 20.7%",
+        "+4 ROE 15.8%",
+        "-2 P/E 44.2",
+        "+0 3y profit CAGR 3%",
+        "+0 3y sales CAGR 7%",
+        "+5 D/E 0.01",
+        "+0 promoter 48.96%",
+        "+4 latest qtr PAT YoY 39.1%",
+        "+2 mcap ₹45,603 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 54.9,
+        "adx": 20.5,
+        "atr_pct": 2.48,
+        "vol_ratio": 1.4,
+        "chg_5d_pct": 1.06,
+        "chg_20d_pct": 2.91,
+        "dist_52w_high_pct": -22.35,
+        "dist_ema20_pct": 1.38,
+        "patterns": [
+          "double_bottom_confirmed"
+        ],
+        "avg_turnover_cr": 75.88,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-supreme-industries-target-of-rs-4035-icici-securities-14024257.html",
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -5852,7 +8185,31 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 58.97%"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 76.2,
+        "adx": 44.0,
+        "atr_pct": 4.48,
+        "vol_ratio": 1.54,
+        "chg_5d_pct": 25.47,
+        "chg_20d_pct": 22.61,
+        "dist_52w_high_pct": -0.48,
+        "dist_ema20_pct": 18.1,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_high_volume",
+          "overextended"
+        ],
+        "avg_turnover_cr": 76.22,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/smlmah.html"
+      ]
     },
     {
       "symbol": "ESABINDIA",
@@ -5916,7 +8273,35 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 90.8%",
+        "+8 ROE 59.3%",
+        "-6 P/E 175",
+        "+5 D/E 0",
+        "+4 promoter 73.72%",
+        "+0 mcap ₹9,388 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.5,
+        "adx": 32.2,
+        "atr_pct": 2.45,
+        "vol_ratio": 0.44,
+        "chg_5d_pct": -0.5,
+        "chg_20d_pct": 5.97,
+        "dist_52w_high_pct": -16.81,
+        "dist_ema20_pct": 0.5,
+        "patterns": [
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 6.32,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/esabindia.html"
+      ]
     },
     {
       "symbol": "TITAN",
@@ -5977,7 +8362,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20.5%",
+        "+8 ROE 37.7%",
+        "-6 P/E 75.8",
+        "+4 3y profit CAGR 17%",
+        "+6 3y sales CAGR 29%",
+        "-2 D/E 1.95",
+        "+4 promoter 52.9%",
+        "+4 latest qtr PAT YoY 62.9%",
+        "+4 mcap ₹441,984 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 47.8,
+        "adx": 35.7,
+        "atr_pct": 1.66,
+        "vol_ratio": 0.68,
+        "chg_5d_pct": -2.46,
+        "chg_20d_pct": -2.22,
+        "dist_52w_high_pct": -4.04,
+        "dist_ema20_pct": -1.11,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 305.93,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/titan.html"
+      ]
     },
     {
       "symbol": "AIAENG",
@@ -6039,7 +8455,35 @@
       "corroborating_sources": [
         "brokerage_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.1%",
+        "+4 ROE 17%",
+        "+2 P/E 31.1",
+        "+0 3y profit CAGR 7%",
+        "-4 3y sales CAGR -3%",
+        "+5 D/E 0",
+        "+4 promoter 58.5%",
+        "+0 latest qtr PAT YoY -1.3%",
+        "+2 mcap ₹39,448 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 37.1,
+        "adx": 16.1,
+        "atr_pct": 2.79,
+        "vol_ratio": 0.18,
+        "chg_5d_pct": -0.92,
+        "chg_20d_pct": -11.94,
+        "dist_52w_high_pct": -18.56,
+        "dist_ema20_pct": -2.71,
+        "patterns": [],
+        "avg_turnover_cr": 24.14,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/stocks-to-buy-23-800-23-600-crucial-support-for-nifty-says-anand-rathis-jigar-patel-suggests-3-stock-picks-11788751025604.html"
+      ]
     },
     {
       "symbol": "TCPLPACK",
@@ -6106,7 +8550,38 @@
       "corroborating_sources": [
         "mint_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 17.7%",
+        "+4 ROE 15.7%",
+        "+2 P/E 28.2",
+        "+0 3y profit CAGR 3%",
+        "+0 3y sales CAGR 7%",
+        "-2 D/E 0.88",
+        "+4 promoter 55.73%",
+        "+4 latest qtr PAT YoY 81.8%",
+        "+0 mcap ₹3,511 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 52.2,
+        "adx": 37.9,
+        "atr_pct": 4.98,
+        "vol_ratio": 0.63,
+        "chg_5d_pct": -1.61,
+        "chg_20d_pct": 16.51,
+        "dist_52w_high_pct": -12.83,
+        "dist_ema20_pct": -0.39,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 18.59,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/tcplpack.html",
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html"
+      ]
     },
     {
       "symbol": "LMW",
@@ -6165,7 +8640,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 5.58%",
+        "-4 ROE 4.05%",
+        "-6 P/E 108",
+        "-6 3y profit CAGR -32%",
+        "-4 3y sales CAGR -12%",
+        "+5 D/E 0",
+        "+0 promoter 30.8%",
+        "+4 latest qtr PAT YoY 409.1%",
+        "+2 mcap ₹19,769 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 51.6,
+        "adx": 46.8,
+        "atr_pct": 3.2,
+        "vol_ratio": 0.54,
+        "chg_5d_pct": -2.53,
+        "chg_20d_pct": 4.87,
+        "dist_52w_high_pct": -8.22,
+        "dist_ema20_pct": -0.82,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 15.3,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/lmw.html"
+      ]
     },
     {
       "symbol": "FLUOROCHEM",
@@ -6225,7 +8730,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 9.64%",
+        "+0 ROE 7.82%",
+        "-6 P/E 80",
+        "-6 3y profit CAGR -24%",
+        "-4 3y sales CAGR -4%",
+        "+2 D/E 0.35",
+        "+4 promoter 61.39%",
+        "+4 latest qtr PAT YoY 20.3%",
+        "+2 mcap ₹49,372 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 45.0,
+        "adx": 35.0,
+        "atr_pct": 3.46,
+        "vol_ratio": 0.32,
+        "chg_5d_pct": -4.1,
+        "chg_20d_pct": 0.38,
+        "dist_52w_high_pct": -9.24,
+        "dist_ema20_pct": -2.57,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 121.76,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/fluorochem.html"
+      ]
     },
     {
       "symbol": "PRIVISCL",
@@ -6280,7 +8815,36 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 22.3%",
+        "+8 ROE 26%",
+        "+2 P/E 37.8",
+        "+8 3y profit CAGR 144%",
+        "+6 3y sales CAGR 17%",
+        "+2 D/E 0.72",
+        "+4 promoter 60.6%",
+        "-5 promoter stake down -9.29pp in 4q",
+        "+4 latest qtr PAT YoY 43.1%",
+        "+2 mcap ₹13,218 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 37.7,
+        "adx": 31.6,
+        "atr_pct": 2.38,
+        "vol_ratio": 1.12,
+        "chg_5d_pct": -2.65,
+        "chg_20d_pct": -6.39,
+        "dist_52w_high_pct": -10.65,
+        "dist_ema20_pct": -1.96,
+        "patterns": [],
+        "avg_turnover_cr": 20.05,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/priviscl.html"
+      ]
     },
     {
       "symbol": "AMAGI",
@@ -6345,6 +8909,35 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "+0 ROCE 8%",
+        "+0 ROE 10.3%",
+        "-6 P/E 122",
+        "+8 3y profit CAGR 30%",
+        "+6 3y sales CAGR 30%",
+        "+5 D/E 0.02",
+        "-3 promoter 14.92%",
+        "+4 latest qtr PAT YoY 750%",
+        "+2 mcap ₹12,426 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 45.5,
+        "adx": 25.1,
+        "atr_pct": 5.27,
+        "vol_ratio": 0.21,
+        "chg_5d_pct": 1.05,
+        "chg_20d_pct": -11.47,
+        "dist_52w_high_pct": -21.16,
+        "dist_ema20_pct": -2.04,
+        "patterns": [],
+        "avg_turnover_cr": 97.7,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-amagi-media-labs-target-of-rs-700-icici-securities-14024275.html",
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -6405,7 +8998,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.3%",
+        "+4 ROE 15.9%",
+        "+2 P/E 31.4",
+        "+8 3y profit CAGR 93%",
+        "+3 3y sales CAGR 10%",
+        "+5 D/E 0.09",
+        "-3 promoter 19.08%",
+        "+4 latest qtr PAT YoY 36.4%",
+        "+2 mcap ₹12,520 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 50.0,
+        "adx": 13.7,
+        "atr_pct": 3.77,
+        "vol_ratio": 0.54,
+        "chg_5d_pct": 1.28,
+        "chg_20d_pct": 1.56,
+        "dist_52w_high_pct": -11.05,
+        "dist_ema20_pct": -0.29,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 131.36,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/wabag.html"
+      ]
     },
     {
       "symbol": "THANGAMAYL",
@@ -6464,7 +9087,29 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 61.61%"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 48.8,
+        "adx": 17.0,
+        "atr_pct": 3.89,
+        "vol_ratio": 0.68,
+        "chg_5d_pct": 0.78,
+        "chg_20d_pct": 1.96,
+        "dist_52w_high_pct": -26.59,
+        "dist_ema20_pct": 0.23,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 53.83,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/thangamayl.html"
+      ]
     },
     {
       "symbol": "IGL",
@@ -6532,6 +9177,35 @@
       ],
       "brokerages": [
         "geojit"
+      ],
+      "fund_why": [
+        "+6 ROCE 17.5%",
+        "+4 ROE 13.3%",
+        "+6 P/E 16",
+        "-6 3y profit CAGR -3%",
+        "+0 3y sales CAGR 5%",
+        "+5 D/E 0.01",
+        "+0 promoter 45%",
+        "-5 latest qtr PAT YoY -44.4%",
+        "+2 mcap ₹21,714 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 56.9,
+        "adx": 12.9,
+        "atr_pct": 2.29,
+        "vol_ratio": 0.36,
+        "chg_5d_pct": 3.11,
+        "chg_20d_pct": 1.98,
+        "dist_52w_high_pct": -30.57,
+        "dist_ema20_pct": 2.6,
+        "patterns": [],
+        "avg_turnover_cr": 40.0,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/",
+        "https://investmentguruindia.com/newsdetail/buy-ethos-ltd-for-the-target-rs-3-400-by-emkay-global-financial-services-ltd169072"
       ]
     },
     {
@@ -6591,7 +9265,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 12.8%",
+        "+0 ROE 11.6%",
+        "-2 P/E 52.8",
+        "+4 3y profit CAGR 14%",
+        "+6 3y sales CAGR 19%",
+        "+2 D/E 0.48",
+        "+0 promoter 47.25%",
+        "+4 latest qtr PAT YoY 22.7%",
+        "+4 mcap ₹68,395 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 46.8,
+        "adx": 12.9,
+        "atr_pct": 2.17,
+        "vol_ratio": 0.53,
+        "chg_5d_pct": 0.79,
+        "chg_20d_pct": -1.03,
+        "dist_52w_high_pct": -11.74,
+        "dist_ema20_pct": -0.65,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 71.89,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/phoenixltd.html"
+      ]
     },
     {
       "symbol": "KIRLOSBROS",
@@ -6651,7 +9355,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20.4%",
+        "+4 ROE 17.3%",
+        "+2 P/E 36",
+        "+4 3y profit CAGR 19%",
+        "+0 3y sales CAGR 7%",
+        "+5 D/E 0.1",
+        "+4 promoter 65.95%",
+        "+0 latest qtr PAT YoY 0%",
+        "+2 mcap ₹14,556 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 41.0,
+        "adx": 11.0,
+        "atr_pct": 2.74,
+        "vol_ratio": 0.58,
+        "chg_5d_pct": -3.43,
+        "chg_20d_pct": -5.49,
+        "dist_52w_high_pct": -16.18,
+        "dist_ema20_pct": -2.94,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 7.03,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/kirlosbros.html"
+      ]
     },
     {
       "symbol": "SHRIPISTON",
@@ -6714,7 +9448,39 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20.8%",
+        "+8 ROE 21.4%",
+        "+2 P/E 35.8",
+        "+8 3y profit CAGR 25%",
+        "+6 3y sales CAGR 20%",
+        "+2 D/E 0.68",
+        "+0 promoter 41.55%",
+        "-5 promoter stake down -2.2pp in 4q",
+        "+0 latest qtr PAT YoY 9.6%",
+        "+2 mcap ₹20,855 cr"
+      ],
+      "ta": {
+        "trend": "up",
+        "rsi": 50.6,
+        "adx": 17.8,
+        "atr_pct": 3.37,
+        "vol_ratio": 0.39,
+        "chg_5d_pct": -2.5,
+        "chg_20d_pct": 1.9,
+        "dist_52w_high_pct": -6.09,
+        "dist_ema20_pct": -0.62,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 35.67,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/shripiston.html"
+      ]
     },
     {
       "symbol": "SWANDEF",
@@ -6773,7 +9539,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE -7.6%",
+        "-4 ROE -124%",
+        "-8 loss-making (no P/E)",
+        "+8 3y profit CAGR 23%",
+        "+6 3y sales CAGR 347%",
+        "-6 D/E 39.83",
+        "+4 promoter 89.9%",
+        "-5 promoter stake down -5.01pp in 4q",
+        "-5 latest qtr PAT YoY -235.5%",
+        "+2 mcap ₹12,860 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 55.3,
+        "adx": 14.2,
+        "atr_pct": 4.87,
+        "vol_ratio": 0.57,
+        "chg_5d_pct": 1.1,
+        "chg_20d_pct": -5.63,
+        "dist_52w_high_pct": -10.0,
+        "dist_ema20_pct": 1.62,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 6.09,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/swandef.html"
+      ]
     },
     {
       "symbol": "HINDUNILVR",
@@ -6847,6 +9644,35 @@
         "icicisec",
         "motilal",
         "nuvama"
+      ],
+      "fund_why": [
+        "+12 ROCE 28.4%",
+        "+8 ROE 31%",
+        "-2 P/E 41.9",
+        "+4 3y profit CAGR 14%",
+        "+0 3y sales CAGR 2%",
+        "+5 D/E 0.03",
+        "+4 promoter 61.9%",
+        "+0 latest qtr PAT YoY -3.2%",
+        "+4 mcap ₹462,494 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 35.7,
+        "adx": 38.8,
+        "atr_pct": 1.54,
+        "vol_ratio": 0.45,
+        "chg_5d_pct": 0.0,
+        "chg_20d_pct": -5.74,
+        "dist_52w_high_pct": -26.24,
+        "dist_ema20_pct": -2.4,
+        "patterns": [],
+        "avg_turnover_cr": 236.63,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+        "https://www.moneycontrol.com/news/business/stocks/buy-hindustan-unilever-target-of-rs-2400-motilal-oswal-14024123.html"
       ]
     },
     {
@@ -6907,7 +9733,36 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 23.5%",
+        "+8 ROE 21.4%",
+        "-2 P/E 44.8",
+        "+8 3y profit CAGR 33%",
+        "+6 3y sales CAGR 27%",
+        "+5 D/E 0.08",
+        "-3 promoter 0%",
+        "-5 promoter stake down -30.16pp in 4q",
+        "+4 latest qtr PAT YoY 49.4%",
+        "+4 mcap ₹85,530 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.4,
+        "adx": 42.1,
+        "atr_pct": 2.51,
+        "vol_ratio": 0.52,
+        "chg_5d_pct": -2.79,
+        "chg_20d_pct": 6.63,
+        "dist_52w_high_pct": -4.51,
+        "dist_ema20_pct": 2.23,
+        "patterns": [],
+        "avg_turnover_cr": 376.42,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/coforge.html"
+      ]
     },
     {
       "symbol": "AUBANK",
@@ -6973,6 +9828,34 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "+0 ROCE 12.4%",
+        "+8 ROE 22.3%",
+        "-6 P/E 233",
+        "+8 3y profit CAGR 49%",
+        "+6 3y sales CAGR 29%",
+        "-3 promoter 22.74%",
+        "+4 mcap ₹79,426 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 44.4,
+        "adx": 20.3,
+        "atr_pct": 2.1,
+        "vol_ratio": 0.51,
+        "chg_5d_pct": -2.53,
+        "chg_20d_pct": -0.87,
+        "dist_52w_high_pct": -7.46,
+        "dist_ema20_pct": -1.76,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 160.24,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -7036,7 +9919,37 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 21.2%",
+        "+4 ROE 17.2%",
+        "-2 P/E 58.2",
+        "+8 3y profit CAGR 26%",
+        "+6 3y sales CAGR 16%",
+        "+5 D/E 0.24",
+        "+0 promoter 36.49%",
+        "+0 latest qtr PAT YoY -14.9%",
+        "+2 mcap ₹30,834 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 45.4,
+        "adx": 23.7,
+        "atr_pct": 2.69,
+        "vol_ratio": 0.97,
+        "chg_5d_pct": 2.51,
+        "chg_20d_pct": -0.5,
+        "dist_52w_high_pct": -26.19,
+        "dist_ema20_pct": -0.56,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 60.02,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
+      ]
     },
     {
       "symbol": "VAML",
@@ -7102,6 +10015,29 @@
       ],
       "brokerages": [
         "geojit"
+      ],
+      "fund_why": [
+        "+6 P/E 10.8",
+        "+4 promoter 56.38%",
+        "+4 mcap ₹171,392 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 41.9,
+        "adx": 17.2,
+        "atr_pct": 2.93,
+        "vol_ratio": 0.35,
+        "chg_5d_pct": 0.71,
+        "chg_20d_pct": -7.27,
+        "dist_52w_high_pct": -18.39,
+        "dist_ema20_pct": -1.49,
+        "patterns": [],
+        "avg_turnover_cr": 316.56,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026/amp-11788742187187.html",
+        "https://investmentguruindia.com/newsdetail/buy-ethos-ltd-for-the-target-rs-3-400-by-emkay-global-financial-services-ltd169072"
       ]
     },
     {
@@ -7161,7 +10097,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.6%",
+        "+8 ROE 32.6%",
+        "-2 P/E 47.6",
+        "-6 3y profit CAGR -15%",
+        "+3 3y sales CAGR 12%",
+        "-6 D/E 3.55",
+        "+4 promoter 58.86%",
+        "-5 latest qtr PAT YoY -31.6%",
+        "+2 mcap ₹49,535 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 51.1,
+        "adx": 30.5,
+        "atr_pct": 2.67,
+        "vol_ratio": 0.58,
+        "chg_5d_pct": 0.76,
+        "chg_20d_pct": -0.17,
+        "dist_52w_high_pct": -17.7,
+        "dist_ema20_pct": 0.94,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 44.98,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/tatacomm.html"
+      ]
     },
     {
       "symbol": "M&M",
@@ -7222,6 +10188,34 @@
       ],
       "brokerages": [
         "nomura"
+      ],
+      "fund_why": [
+        "+6 ROCE 15.1%",
+        "+8 ROE 20.3%",
+        "+6 P/E 20.5",
+        "+8 3y profit CAGR 23%",
+        "+6 3y sales CAGR 18%",
+        "-2 D/E 1.47",
+        "-3 promoter 18.44%",
+        "+4 latest qtr PAT YoY 37%",
+        "+4 mcap ₹392,482 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 33.6,
+        "adx": 28.5,
+        "atr_pct": 2.15,
+        "vol_ratio": 0.87,
+        "chg_5d_pct": -3.86,
+        "chg_20d_pct": -10.29,
+        "dist_52w_high_pct": -17.83,
+        "dist_ema20_pct": -4.24,
+        "patterns": [],
+        "avg_turnover_cr": 581.97,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -7283,7 +10277,29 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 74.23%"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.3,
+        "adx": 40.7,
+        "atr_pct": 3.89,
+        "vol_ratio": 0.35,
+        "chg_5d_pct": -2.52,
+        "chg_20d_pct": 3.77,
+        "dist_52w_high_pct": -6.26,
+        "dist_ema20_pct": 0.18,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 18.32,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/tastybite.html"
+      ]
     },
     {
       "symbol": "INDOTECH",
@@ -7344,7 +10360,31 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 72.18%",
+        "-5 promoter stake down -2.82pp in 4q"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.2,
+        "adx": 14.7,
+        "atr_pct": 4.3,
+        "vol_ratio": 0.71,
+        "chg_5d_pct": -0.65,
+        "chg_20d_pct": -3.29,
+        "dist_52w_high_pct": -8.7,
+        "dist_ema20_pct": 0.47,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "avg_turnover_cr": 9.15,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/indotech.html"
+      ]
     },
     {
       "symbol": "BPCL",
@@ -7403,7 +10443,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 25.6%",
+        "+8 ROE 28.8%",
+        "+6 P/E 8.67",
+        "+8 3y profit CAGR 107%",
+        "-4 3y sales CAGR -1%",
+        "+2 D/E 0.54",
+        "+4 promoter 52.98%",
+        "-5 latest qtr PAT YoY -127.4%",
+        "+4 mcap ₹135,426 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 45.4,
+        "adx": 9.5,
+        "atr_pct": 2.21,
+        "vol_ratio": 0.39,
+        "chg_5d_pct": -3.5,
+        "chg_20d_pct": -1.82,
+        "dist_52w_high_pct": -20.16,
+        "dist_ema20_pct": -1.27,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 160.74,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
+      ]
     },
     {
       "symbol": "HDFCBANK",
@@ -7469,6 +10540,37 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "-4 ROCE 7.02%",
+        "+4 ROE 13.6%",
+        "+6 P/E 13.8",
+        "+4 3y profit CAGR 18%",
+        "+6 3y sales CAGR 27%",
+        "-3 promoter 0%",
+        "-5 promoter stake down -25.59pp in 4q",
+        "+4 latest qtr PAT YoY 19.3%",
+        "+4 mcap ₹1,095,640 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 38.7,
+        "adx": 25.2,
+        "atr_pct": 1.66,
+        "vol_ratio": 0.39,
+        "chg_5d_pct": 0.11,
+        "chg_20d_pct": -2.9,
+        "dist_52w_high_pct": -30.45,
+        "dist_ema20_pct": -1.57,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 1870.01,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
+        "https://www.financialexpress.com/market/hdfc-bank-to-ultratech-why-top-brokerages-are-bullish-on-these-5-stocks-with-22-to-54-upside/4331970/"
       ]
     },
     {
@@ -7547,6 +10649,37 @@
       "brokerages": [
         "anandrathi",
         "bagadia"
+      ],
+      "fund_why": [
+        "+0 ROCE 12.5%",
+        "+0 ROE 11.7%",
+        "+6 P/E 19.5",
+        "+4 3y profit CAGR 10%",
+        "-4 3y sales CAGR -2%",
+        "-2 D/E 0.9",
+        "+0 promoter 32.94%",
+        "+4 latest qtr PAT YoY 18.8%",
+        "+4 mcap ₹230,820 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 46.6,
+        "adx": 13.0,
+        "atr_pct": 2.41,
+        "vol_ratio": 0.74,
+        "chg_5d_pct": 0.28,
+        "chg_20d_pct": -2.82,
+        "dist_52w_high_pct": -17.62,
+        "dist_ema20_pct": -0.56,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 504.33,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html",
+        "https://www.livemint.com/market/stock-market-news/stocks-to-buy-23-800-23-600-crucial-support-for-nifty-says-anand-rathis-jigar-patel-suggests-3-stock-picks-11788751025604.html"
       ]
     },
     {
@@ -7606,7 +10739,37 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+12 ROCE 20.5%",
+        "+4 ROE 16%",
+        "+2 P/E 35.8",
+        "+4 3y profit CAGR 13%",
+        "+3 3y sales CAGR 10%",
+        "+5 D/E 0.06",
+        "+4 promoter 54.48%",
+        "+4 latest qtr PAT YoY 26.5%",
+        "+4 mcap ₹452,275 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 42.1,
+        "adx": 18.3,
+        "atr_pct": 1.79,
+        "vol_ratio": 0.86,
+        "chg_5d_pct": -5.0,
+        "chg_20d_pct": -3.02,
+        "dist_52w_high_pct": -7.88,
+        "dist_ema20_pct": -1.78,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 291.68,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/sunpharma.html"
+      ]
     },
     {
       "symbol": "ONESOURCE",
@@ -7673,6 +10836,36 @@
       ],
       "brokerages": [
         "icicisec"
+      ],
+      "fund_why": [
+        "-4 ROCE 0.57%",
+        "-4 ROE -1.09%",
+        "-8 loss-making (no P/E)",
+        "+8 3y profit CAGR 24%",
+        "+6 3y sales CAGR 232%",
+        "+5 D/E 0.26",
+        "+0 promoter 30.48%",
+        "+2 mcap ₹17,778 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 48.3,
+        "adx": 15.6,
+        "atr_pct": 3.21,
+        "vol_ratio": 0.79,
+        "chg_5d_pct": 1.97,
+        "chg_20d_pct": -1.68,
+        "dist_52w_high_pct": -19.53,
+        "dist_ema20_pct": 0.01,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 20.22,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-onesource-specialty-pharma-target-of-rs-2400-icici-securities-2-14024221.html",
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
       ]
     },
     {
@@ -7742,6 +10935,39 @@
       ],
       "brokerages": [
         "nuvama"
+      ],
+      "fund_why": [
+        "-4 ROCE 7.65%",
+        "-4 ROE 1.24%",
+        "-6 P/E 171",
+        "-6 3y profit CAGR -43%",
+        "-4 3y sales CAGR -12%",
+        "-2 D/E 0.86",
+        "+0 promoter 42.29%",
+        "-5 promoter stake down -2.17pp in 4q",
+        "+4 latest qtr PAT YoY 1870%",
+        "+2 mcap ₹40,478 cr"
+      ],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 74.6,
+        "adx": 25.9,
+        "atr_pct": 4.4,
+        "vol_ratio": 0.36,
+        "chg_5d_pct": 7.94,
+        "chg_20d_pct": 23.29,
+        "dist_52w_high_pct": -0.0,
+        "dist_ema20_pct": 15.09,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_low_volume",
+          "overextended"
+        ],
+        "avg_turnover_cr": 97.09,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.financialexpress.com/market/hdfc-bank-to-ultratech-why-top-brokerages-are-bullish-on-these-5-stocks-with-22-to-54-upside/4331970/"
       ]
     },
     {
@@ -7803,7 +11029,36 @@
       "corroborating_sources": [
         "chartink_squeeze"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.6%",
+        "+4 ROE 15.9%",
+        "+2 P/E 31.2",
+        "+4 3y profit CAGR 17%",
+        "+6 3y sales CAGR 16%",
+        "-2 D/E 1.15",
+        "+4 latest qtr PAT YoY 15.5%",
+        "+4 mcap ₹548,310 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 46.1,
+        "adx": 14.6,
+        "atr_pct": 1.33,
+        "vol_ratio": 0.78,
+        "chg_5d_pct": -1.43,
+        "chg_20d_pct": -2.28,
+        "dist_52w_high_pct": -10.2,
+        "dist_ema20_pct": -0.7,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 525.38,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/lt.html"
+      ]
     },
     {
       "symbol": "RELIANCE",
@@ -7870,7 +11125,38 @@
       "corroborating_sources": [
         "fe_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 10.3%",
+        "+0 ROE 8.91%",
+        "+6 P/E 23.7",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 6%",
+        "+2 D/E 0.45",
+        "+4 promoter 50.48%",
+        "-5 latest qtr PAT YoY -24.6%",
+        "+4 mcap ₹1,765,996 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 49.6,
+        "adx": 13.9,
+        "atr_pct": 1.64,
+        "vol_ratio": 0.71,
+        "chg_5d_pct": 2.18,
+        "chg_20d_pct": -1.7,
+        "dist_52w_high_pct": -19.05,
+        "dist_ema20_pct": -0.08,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 1365.74,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.financialexpress.com/market/hdfc-bank-to-ultratech-why-top-brokerages-are-bullish-on-these-5-stocks-with-22-to-54-upside/4331970/",
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html"
+      ]
     },
     {
       "symbol": "GRWRHITECH",
@@ -7930,7 +11216,38 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 18.1%",
+        "+4 ROE 13.5%",
+        "-2 P/E 40.3",
+        "+8 3y profit CAGR 27%",
+        "+3 3y sales CAGR 14%",
+        "+5 D/E 0",
+        "+4 promoter 60.73%",
+        "+4 latest qtr PAT YoY 60.2%",
+        "+2 mcap ₹15,632 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 37.7,
+        "adx": 26.1,
+        "atr_pct": 3.6,
+        "vol_ratio": 3.02,
+        "chg_5d_pct": -5.32,
+        "chg_20d_pct": -3.48,
+        "dist_52w_high_pct": -15.43,
+        "dist_ema20_pct": -4.71,
+        "patterns": [
+          "bollinger_squeeze",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 43.28,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/grwrhitech.html"
+      ]
     },
     {
       "symbol": "ULTRACEMCO",
@@ -7996,6 +11313,37 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+0 ROCE 12.7%",
+        "+0 ROE 11.1%",
+        "+2 P/E 38.4",
+        "+4 3y profit CAGR 17%",
+        "+3 3y sales CAGR 12%",
+        "+2 D/E 0.31",
+        "+4 promoter 59.33%",
+        "+4 latest qtr PAT YoY 17.2%",
+        "+4 mcap ₹330,948 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 36.4,
+        "adx": 16.7,
+        "atr_pct": 1.69,
+        "vol_ratio": 0.77,
+        "chg_5d_pct": -2.03,
+        "chg_20d_pct": -6.82,
+        "dist_52w_high_pct": -14.44,
+        "dist_ema20_pct": -2.77,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 277.41,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241"
       ]
     },
     {
@@ -8061,6 +11409,26 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+4 promoter 75%"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 34.7,
+        "adx": 19.4,
+        "atr_pct": 3.25,
+        "vol_ratio": 0.97,
+        "chg_5d_pct": -3.25,
+        "chg_20d_pct": -12.41,
+        "dist_52w_high_pct": -21.25,
+        "dist_ema20_pct": -5.01,
+        "patterns": [],
+        "avg_turnover_cr": 131.29,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.financialexpress.com/market/hdfc-bank-to-ultratech-why-top-brokerages-are-bullish-on-these-5-stocks-with-22-to-54-upside/4331970/"
       ]
     },
     {
@@ -8124,7 +11492,33 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+4 promoter 74.28%"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 82.0,
+        "adx": 29.0,
+        "atr_pct": 4.97,
+        "vol_ratio": 9.3,
+        "chg_5d_pct": 42.94,
+        "chg_20d_pct": 25.13,
+        "dist_52w_high_pct": 0.0,
+        "dist_ema20_pct": 30.5,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_high_volume",
+          "gap_or_spike_today",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 6.52,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/mvgjl.html"
+      ]
     },
     {
       "symbol": "BAJAJELEC",
@@ -8185,7 +11579,34 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 2.89%",
+        "-4 ROE -0.72%",
+        "-8 loss-making (no P/E)",
+        "-4 3y sales CAGR -3%",
+        "+5 D/E 0.1",
+        "+4 promoter 62.7%",
+        "+4 latest qtr PAT YoY 4700%",
+        "+0 mcap ₹3,926 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 50.5,
+        "adx": 25.4,
+        "atr_pct": 3.27,
+        "vol_ratio": 0.98,
+        "chg_5d_pct": 4.83,
+        "chg_20d_pct": -6.22,
+        "dist_52w_high_pct": -47.92,
+        "dist_ema20_pct": 0.45,
+        "patterns": [],
+        "avg_turnover_cr": 6.86,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
+      ]
     },
     {
       "symbol": "ONGC",
@@ -8246,7 +11667,37 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 14.2%",
+        "+0 ROE 11.6%",
+        "+2 P/E 6.67",
+        "+0 3y profit CAGR 1%",
+        "-4 3y sales CAGR -1%",
+        "+2 D/E 0.47",
+        "+4 promoter 58.89%",
+        "-5 latest qtr PAT YoY -43.3%",
+        "+4 mcap ₹293,498 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 39.8,
+        "adx": 16.3,
+        "atr_pct": 1.53,
+        "vol_ratio": 0.4,
+        "chg_5d_pct": 0.66,
+        "chg_20d_pct": -2.72,
+        "dist_52w_high_pct": -24.12,
+        "dist_ema20_pct": -1.24,
+        "patterns": [
+          "bollinger_squeeze"
+        ],
+        "avg_turnover_cr": 266.53,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
+      ]
     },
     {
       "symbol": "VIKRAN",
@@ -8307,7 +11758,33 @@
       ],
       "src_stop": 57.0,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+6 ROCE 16.8%",
+        "+0 ROE 10.8%",
+        "+6 P/E 17.1",
+        "+5 D/E 0.24",
+        "+4 promoter 56.27%",
+        "-5 latest qtr PAT YoY -89.4%",
+        "+0 mcap ₹1,555 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 39.7,
+        "adx": 27.0,
+        "atr_pct": 3.51,
+        "vol_ratio": 0.55,
+        "chg_5d_pct": 2.67,
+        "chg_20d_pct": -16.79,
+        "dist_52w_high_pct": -49.05,
+        "dist_ema20_pct": -2.46,
+        "patterns": [],
+        "avg_turnover_cr": 10.7,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/buy-or-sell-gift-nifty-signals-muted-start-vaishali-parekh-recommends-three-stocks-to-buy-today-11788747852620.html"
+      ]
     },
     {
       "symbol": "UCOBANK",
@@ -8369,7 +11846,34 @@
       "corroborating_sources": [
         "brokerage_gnews"
       ],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 5.76%",
+        "+0 ROE 8.5%",
+        "+6 P/E 12.5",
+        "+8 3y profit CAGR 37%",
+        "+6 3y sales CAGR 19%",
+        "+4 promoter 90.95%",
+        "+4 latest qtr PAT YoY 23.8%",
+        "+2 mcap ₹30,672 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 32.9,
+        "adx": 17.3,
+        "atr_pct": 1.96,
+        "vol_ratio": 1.01,
+        "chg_5d_pct": -1.61,
+        "chg_20d_pct": -6.24,
+        "dist_52w_high_pct": -28.39,
+        "dist_ema20_pct": -3.47,
+        "patterns": [],
+        "avg_turnover_cr": 9.03,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/stocks-to-buy-under-rs-200-mehul-kothari-of-anand-rathi-recommends-three-shares-to-buy-for-short-term-11788598636353.html"
+      ]
     },
     {
       "symbol": "INDIGO",
@@ -8425,7 +11929,35 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "-4 ROCE 5.24%",
+        "-4 ROE -27.1%",
+        "-8 loss-making (no P/E)",
+        "+6 3y sales CAGR 16%",
+        "-6 D/E 11.15",
+        "+0 promoter 41.57%",
+        "-5 latest qtr PAT YoY -110.9%",
+        "+4 mcap ₹192,738 cr"
+      ],
+      "ta": {
+        "trend": "sideways",
+        "rsi": 39.1,
+        "adx": 20.6,
+        "atr_pct": 2.21,
+        "vol_ratio": 0.46,
+        "chg_5d_pct": -4.46,
+        "chg_20d_pct": -6.24,
+        "dist_52w_high_pct": -16.24,
+        "dist_ema20_pct": -2.65,
+        "patterns": [],
+        "avg_turnover_cr": 262.9,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms"
+      ]
     },
     {
       "symbol": "TTKPRESTIG",
@@ -8487,7 +12019,35 @@
       ],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [
+        "+0 ROCE 12.1%",
+        "+0 ROE 8.97%",
+        "+2 P/E 36.2",
+        "-6 3y profit CAGR -12%",
+        "+0 3y sales CAGR 2%",
+        "+5 D/E 0.09",
+        "+4 promoter 70.52%",
+        "+4 latest qtr PAT YoY 126.9%",
+        "+0 mcap ₹7,492 cr"
+      ],
+      "ta": {
+        "trend": "down",
+        "rsi": 31.2,
+        "adx": 21.8,
+        "atr_pct": 3.44,
+        "vol_ratio": 0.87,
+        "chg_5d_pct": -5.94,
+        "chg_20d_pct": -9.32,
+        "dist_52w_high_pct": -28.79,
+        "dist_ema20_pct": -7.05,
+        "patterns": [],
+        "avg_turnover_cr": 3.48,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://www.moneycontrol.com/podcast/kuku-fm-/"
+      ]
     },
     {
       "symbol": "GODREJCP",
@@ -8553,6 +12113,37 @@
       ],
       "brokerages": [
         "motilal"
+      ],
+      "fund_why": [
+        "+6 ROCE 18.8%",
+        "+4 ROE 16.1%",
+        "-2 P/E 42.3",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 4%",
+        "+2 D/E 0.35",
+        "+4 promoter 53.06%",
+        "+0 latest qtr PAT YoY 11.7%",
+        "+4 mcap ₹87,840 cr"
+      ],
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 21.7,
+        "adx": 46.6,
+        "atr_pct": 2.55,
+        "vol_ratio": 0.69,
+        "chg_5d_pct": -4.7,
+        "chg_20d_pct": -16.85,
+        "dist_52w_high_pct": -32.57,
+        "dist_ema20_pct": -7.44,
+        "patterns": [
+          "oversold_in_downtrend"
+        ],
+        "avg_turnover_cr": 268.44,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
       ]
     },
     {
@@ -8617,17 +12208,43 @@
       "src_targets": [],
       "src_stop": null,
       "corroborating_sources": [],
-      "brokerages": []
+      "brokerages": [],
+      "fund_why": [],
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 100.0,
+        "adx": 99.6,
+        "atr_pct": 0.02,
+        "vol_ratio": 3.83,
+        "chg_5d_pct": 0.08,
+        "chg_20d_pct": 0.36,
+        "dist_52w_high_pct": -0.66,
+        "dist_ema20_pct": 0.17,
+        "patterns": [
+          "bollinger_squeeze",
+          "overextended",
+          "volume_spike"
+        ],
+        "avg_turnover_cr": 65.0,
+        "last_bar_date": "2026-09-07"
+      },
+      "urls": [
+        "https://chartink.com/stocks/liquidadd.html"
+      ]
     }
   ],
   "analysis_day": "2026-09-07",
+  "cash_flows": [],
   "book": {
     "max_open_positions": 4,
     "open_or_pending": 3,
     "slots_left": 1,
     "deployable_cash": 750.25,
+    "capital_inr": 100000,
     "min_alloc_inr": 15000.0,
-    "max_alloc_inr": 50000.0
+    "max_alloc_inr": 50000.0,
+    "min_allocation_pct": 15,
+    "max_single_stock_pct": 50
   },
   "report_days": [
     "2026-09-07"

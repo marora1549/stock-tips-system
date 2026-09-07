@@ -5,6 +5,8 @@
   analyze           TA + fundamentals + scoring → analysis.json
   pick              allocate + book paper positions → picks.json    (--no-book for a dry run)
   book              formalise ONE analysed suggestion into a tracked paper position (book CGPOWER [--capital 25000])
+  close             discretionary exit: cancel a pending position or sell an open one (close CGPOWER [--price 940])
+  capital           deposit or withdraw capital (capital --add 50000 / --withdraw 20000)
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
@@ -115,10 +117,10 @@ def cmd_book(a):
         sys.exit(f"{sym} plan is not tradeable (stop/RR/mandate kill-switch) — use --force to override")
 
     cfg = settings()
-    cap_total = cfg["capital"]["total_inr"]
+    led = ledgermod.load()
+    cap_total = led["capital_inr"]                    # live base, so a capital top-up widens the caps
     max_one = cap_total * cfg["capital"]["max_single_stock_pct"] / 100
     min_one = cap_total * cfg["capital"]["min_allocation_pct"] / 100
-    led = ledgermod.load()
     if any(p["symbol"] == sym for p in led["positions"]):
         sys.exit(f"{sym} is already in the book — nothing to do")
     n_live = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
@@ -147,6 +149,47 @@ def cmd_book(a):
                       "entry_plan": pos["entry_plan"], "stop_loss": pos["stop_loss"], "targets": pos["targets"],
                       "timeframe": pos["timeframe"], "bucket": pos["bucket"], "fills_at_open_on": pos["opened"],
                       "cash_after": led["cash_inr"], "from_analysis": day}, indent=1))
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+
+
+def cmd_close(a):
+    """The analyst's own exit — freeing capital for a better idea is a decision, not a rule."""
+    led = ledgermod.load()
+    conf = confidence.load()
+    try:
+        pos, event = ledgermod.close_position(led, conf, a.symbol, price=a.price, note=a.note)
+    except (KeyError, ValueError) as e:
+        sys.exit(str(e))
+    ledgermod.save(led)
+    confidence.save(conf)
+    print(event)
+    print(json.dumps({"symbol": pos["symbol"], "outcome": pos["outcome"], "qty": pos["qty"],
+                      "entry": pos.get("entry"), "exit": (pos["exits"][-1]["price"] if pos.get("exits") else None),
+                      "pnl_inr": pos.get("pnl_inr"), "pnl_pct": pos.get("pnl_pct"),
+                      "cash_after": led["cash_inr"], "slots_open": len([p for p in led["positions"] if p["status"] in ("open", "pending")])}, indent=1))
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+
+
+def cmd_capital(a):
+    """Move the capital base. Recorded as a dated ledger event so the return stays honest."""
+    amount = (a.add or 0) - (a.withdraw or 0)
+    if not amount:
+        sys.exit("pass --add or --withdraw with a rupee amount")
+    led = ledgermod.load()
+    before = (led["capital_inr"], led["cash_inr"])
+    try:
+        ev = ledgermod.cash_flow(led, amount, note=a.note)
+    except ValueError as e:
+        sys.exit(str(e))
+    ledgermod.save(led)
+    st = ledgermod.stats(led)
+    print(f"capital ₹{before[0]:,.2f} → ₹{led['capital_inr']:,.2f}")
+    print(f"cash    ₹{before[1]:,.2f} → ₹{led['cash_inr']:,.2f}")
+    print(f"ledger event: {ev['date']} {ev['note']} ₹{abs(amount):,.2f}")
+    print(f"per-stock cap now ₹{led['capital_inr'] * settings()['capital']['max_single_stock_pct'] / 100:,.2f}"
+          f" · time-weighted return {st['return_pct']}%")
     if not a.no_dashboard:
         cmd_dashboard_data(a)
 
@@ -227,7 +270,9 @@ def cmd_lesson(a):
 
 ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
                    "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
-                   "corroborating_sources", "brokerages")
+                   "corroborating_sources", "brokerages", "fund_why")
+TA_FIELDS = ("trend", "rsi", "adx", "atr_pct", "vol_ratio", "chg_5d_pct", "chg_20d_pct", "dist_52w_high_pct",
+             "dist_ema20_pct", "patterns", "avg_turnover_cr", "last_bar_date")
 
 
 def _pos_for_dashboard(pos: dict) -> dict:
@@ -256,12 +301,17 @@ def cmd_dashboard_data(a):
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
             "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
             "sources": conf, "latest_picks": latest,
-            "latest_analysis": [{k: p.get(k) for k in ANALYSIS_FIELDS} for p in analysis],
+            "latest_analysis": [dict({k: p.get(k) for k in ANALYSIS_FIELDS},
+                                     ta={k: (p.get("ta") or {}).get(k) for k in TA_FIELDS},
+                                     urls=(p.get("urls") or [])[:2]) for p in analysis],
             "analysis_day": days[-1] if days else None,
+            "cash_flows": led.get("cash_flows", []),
             "book": {"max_open_positions": cap["max_open_positions"], "open_or_pending": n_live,
                      "slots_left": max(0, cap["max_open_positions"] - n_live), "deployable_cash": cash,
-                     "min_alloc_inr": round(cap["total_inr"] * cap["min_allocation_pct"] / 100, 2),
-                     "max_alloc_inr": round(cap["total_inr"] * cap["max_single_stock_pct"] / 100, 2)},
+                     "capital_inr": led["capital_inr"],
+                     "min_alloc_inr": round(led["capital_inr"] * cap["min_allocation_pct"] / 100, 2),
+                     "max_alloc_inr": round(led["capital_inr"] * cap["max_single_stock_pct"] / 100, 2),
+                     "min_allocation_pct": cap["min_allocation_pct"], "max_single_stock_pct": cap["max_single_stock_pct"]},
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
@@ -277,6 +327,8 @@ def main(argv=None):
     p = sub.add_parser("analyze"); p.set_defaults(fn=cmd_analyze)
     p = sub.add_parser("pick"); p.add_argument("--no-book", action="store_true"); p.set_defaults(fn=cmd_pick)
     p = sub.add_parser("book"); p.add_argument("symbol"); p.add_argument("--capital", type=float, default=None, help="rupees to deploy (default: deployable cash split over the free slots, capped per stock)"); p.add_argument("--date", default=None, help="report day whose analysis.json to book from (default: latest)"); p.add_argument("--force", action="store_true", help="override verdict / cap / slot checks"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_book)
+    p = sub.add_parser("close"); p.add_argument("symbol"); p.add_argument("--price", type=float, default=None, help="exit price (default: last close)"); p.add_argument("--note", default=None, help="why you exited — goes in the position notes"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_close)
+    p = sub.add_parser("capital"); p.add_argument("--add", type=float, default=None); p.add_argument("--withdraw", type=float, default=None); p.add_argument("--note", default=None); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_capital)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)
     p = sub.add_parser("analyze-symbol"); p.add_argument("symbol"); p.add_argument("--tf", default="weekly"); p.set_defaults(fn=cmd_analyze_symbol)

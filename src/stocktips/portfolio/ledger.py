@@ -37,8 +37,13 @@ PATH = STATE_DIR / "ledger.json"
 
 
 def load() -> dict:
+    """`capital.total_inr` in settings.yaml seeds a new ledger; after that `capital_inr` here is the
+    live capital base and moves only through `cash_flow()`."""
     cap = settings()["capital"]["total_inr"]
-    return read_json(PATH, {"capital_inr": cap, "cash_inr": cap, "positions": [], "closed": [], "equity_curve": [], "created": today_str()})
+    led = read_json(PATH, {"capital_inr": cap, "cash_inr": cap, "positions": [], "closed": [], "equity_curve": [],
+                           "cash_flows": [], "created": today_str()})
+    led.setdefault("cash_flows", [])          # additive: ledgers written before capital flows existed
+    return led
 
 
 def save(led: dict) -> None:
@@ -101,6 +106,67 @@ def _close(led: dict, pos: dict, outcome: str, on: str) -> None:
     led["cash_inr"] = round(led["cash_inr"] + invested + pos["realised_inr"], 2)
     led["positions"] = [p for p in led["positions"] if p["pos_id"] != pos["pos_id"]]
     led["closed"].append(pos)
+
+
+def cash_flow(led: dict, amount: float, note: str | None = None, on: str | None = None) -> dict:
+    """Deposit (amount > 0) or withdraw (amount < 0) capital.
+
+    Moves the capital base and deployable cash together, so a top-up neither shows up as a windfall
+    profit nor a drawdown: `stats()` chains returns across flow dates instead of dividing by a base
+    that changed halfway through.
+    """
+    on = on or today_str()
+    if amount == 0:
+        raise ValueError("a cash flow of zero changes nothing")
+    if amount < 0 and -amount > deployable_cash(led):
+        raise ValueError(f"cannot withdraw ₹{-amount:,.2f}: only ₹{deployable_cash(led):,.2f} is uncommitted")
+    led["capital_inr"] = round(led["capital_inr"] + amount, 2)
+    led["cash_inr"] = round(led["cash_inr"] + amount, 2)
+    ev = {"date": on, "amount": round(amount, 2), "note": note or ("deposit" if amount > 0 else "withdrawal"),
+          "capital_after": led["capital_inr"], "cash_after": led["cash_inr"]}
+    led.setdefault("cash_flows", []).append(ev)
+    return ev
+
+
+def close_position(led: dict, conf: dict, symbol: str, price: float | None = None,
+                   note: str | None = None, on: str | None = None) -> tuple[dict, str]:
+    """Discretionary exit — the analyst's call, not the plan's.
+
+    A *pending* position was never filled, so it is cancelled and its capital returned untouched; no
+    outcome is attributed to the source, because nothing happened. An *open* or *hold* position is
+    exited at `price` (default: the last close) and recorded as `manual_exit`: the realised return
+    counts towards the source's expectancy, but its score is left alone — the tip did not resolve,
+    it was pre-empted.
+    """
+    on = on or today_str()
+    sym = symbol.upper()
+    pos = next((p for p in led["positions"] if p["symbol"] == sym), None)
+    if pos is None:
+        raise KeyError(f"{sym} is not in the book")
+
+    if pos["status"] == "pending":
+        led["cash_inr"] = round(led["cash_inr"] + pos["capital_inr"], 2)
+        led["positions"] = [p for p in led["positions"] if p["pos_id"] != pos["pos_id"]]
+        pos["status"], pos["closed"], pos["outcome"] = "cancelled", on, "cancelled"
+        pos["notes"].append(f"{on}: cancelled before fill — {note or 'analyst call'}")
+        return pos, f"{sym}: CANCELLED before fill — ₹{pos['capital_inr']:,.2f} returned to cash"
+
+    if pos["status"] not in ("open", "hold"):
+        raise ValueError(f"{sym} is {pos['status']}, not open")
+    if price is None:
+        df = prices.history(pos["symbol"], days=30)
+        if df is None or df.empty:
+            raise ValueError(f"no price data for {sym} — pass --price to exit at a price you name")
+        price = float(df.iloc[-1]["close"])
+    price = round(float(price), 2)
+    qty = pos["qty_open"]
+    _book(pos, qty, price, "manual_exit", on)
+    pos["notes"].append(f"{on}: manual exit at ₹{price:,.2f} — {note or 'analyst call'}")
+    _close(led, pos, "manual_exit", on)
+    for sid, share in [(pos["source_id"], 1.0)] + [(s, 0.5) for s in pos.get("corroborating_sources", [])]:
+        confidence.record_outcome(conf, sid, symbol=sym, outcome="manual_exit", ret_pct=pos["pnl_pct"], share=share)
+    return pos, (f"{sym}: MANUAL EXIT {qty} @ ₹{price:,.2f} → closed, "
+                 f"P&L ₹{pos['pnl_inr']:,.2f} ({pos['pnl_pct']}%), ₹{pos['capital_inr'] + pos['realised_inr']:,.2f} back to cash")
 
 
 def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | None = None) -> list[str]:
@@ -227,12 +293,41 @@ def deployable_cash(led: dict) -> float:
     return max(0.0, led["cash_inr"])
 
 
+def time_weighted_return_pct(led: dict) -> float:
+    """Return that a mid-period deposit or withdrawal cannot distort.
+
+    Chain-links each sub-period of the equity curve against its own opening base, where the base is
+    the previous close plus whatever capital arrived since it. Without this, adding ₹50,000 to a
+    ₹1,00,000 book would read as a +50% day and every later percentage would be measured against the
+    wrong number.
+    """
+    curve = led.get("equity_curve") or []
+    flows = sorted(led.get("cash_flows") or [], key=lambda f: f["date"])
+    if not curve:
+        return 0.0
+    opening = round(led["capital_inr"] - sum(f["amount"] for f in flows), 2)   # capital before any flow
+    factor, prev_equity, prev_date = 1.0, opening, None
+    for point in curve:
+        arrived = sum(f["amount"] for f in flows
+                      if (prev_date is None or f["date"] > prev_date) and f["date"] <= point["date"])
+        base = prev_equity + arrived
+        if base > 0:
+            factor *= point["equity"] / base
+        prev_equity, prev_date = point["equity"], point["date"]
+    return round((factor - 1) * 100, 2)
+
+
 def stats(led: dict) -> dict:
     closed = led["closed"]
     wins = [p for p in closed if p["pnl_inr"] > 0]
     eq = led["equity_curve"][-1]["equity"] if led["equity_curve"] else led["capital_inr"]
+    flows = led.get("cash_flows") or []
+    deployed = round(sum(p.get("capital_inr", 0) for p in led["positions"] if p["status"] in ("open", "pending", "hold")), 2)
     return {
-        "capital": led["capital_inr"], "equity": eq, "return_pct": round((eq / led["capital_inr"] - 1) * 100, 2),
+        "capital": led["capital_inr"], "equity": eq, "return_pct": time_weighted_return_pct(led),
+        "simple_return_pct": round((eq / led["capital_inr"] - 1) * 100, 2),
+        "initial_capital": round(led["capital_inr"] - sum(f["amount"] for f in flows), 2),
+        "net_flows_inr": round(sum(f["amount"] for f in flows), 2), "n_flows": len(flows), "deployed_inr": deployed,
         "cash": led["cash_inr"], "open": len([p for p in led["positions"] if p["status"] == "open"]),
         "pending": len([p for p in led["positions"] if p["status"] == "pending"]), "hold": len([p for p in led["positions"] if p["status"] == "hold"]),
         "closed": len(closed), "win_rate": round(len(wins) / len(closed) * 100) if closed else None,
