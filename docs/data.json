@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-07",
+  "generated": "2026-09-08",
   "stats": {
     "capital": 100000,
-    "equity": 100000,
+    "equity": 100000.0,
     "return_pct": 0.0,
     "cash": 750.25,
     "open": 0,
@@ -162,7 +162,12 @@
     }
   ],
   "closed": [],
-  "equity_curve": [],
+  "equity_curve": [
+    {
+      "date": "2026-09-07",
+      "equity": 100000.0
+    }
+  ],
   "sources": [
     {
       "source_id": "et_recos_gnews",
@@ -8627,7 +8632,7 @@
   "report_days": [
     "2026-09-07"
   ],
-  "lessons_tail": "",
+  "lessons_tail": "# Lessons journal\n\nAppended by every EOD run. Newest at the bottom. `[machine]` = computed from the ledger, `[analyst]` = Claude's review.\n\n\n### 2026-09-08 [analyst]\nDay 1 (2026-09-07): morning run booked CGPOWER/V2RETAIL/LALPATHLAB as pending after 09:15, so opened=2026-09-08 by design — EOD correctly showed zero events, not a bug. All sources sit at neutral confidence 50 with n_resolved=0; no auto-disable or commendation checks possible yet. Watch tomorrow's open for gap-ups, especially V2RETAIL (Motilal target carried by 5 outlets, crowded calls gap).\n",
   "settings": {
     "capital": {
       "total_inr": 100000,
