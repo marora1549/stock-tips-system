@@ -1,0 +1,19 @@
+{
+  "name": "Dalal Street Desk",
+  "short_name": "Desk",
+  "description": "Paper-trading desk: vetted tips with dated targets, and the book that tracks them.",
+  "start_url": "./index.html#book",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F1216",
+  "theme_color": "#0F1216",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

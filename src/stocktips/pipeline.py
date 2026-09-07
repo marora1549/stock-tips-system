@@ -10,7 +10,7 @@ import logging
 from collections import defaultdict
 
 from .analysis import plan as planmod, scoring, ta
-from .data import fundamentals, prices
+from .data import fundamentals, prices, sparks
 from .learning import confidence
 from .portfolio import allocate as allocmod, ledger as ledgermod
 from .sources import extract, fetchers
@@ -102,6 +102,7 @@ def structure(raw: dict | None = None, reviewed: list[dict] | None = None) -> li
 def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0.5) -> list[dict]:
     structured = structured if structured is not None else read_json(day_dir() / "tips_structured.json", [])
     conf = confidence.load()
+    spark_cache = sparks.load()
     cfg = settings()
     results = []
     for t in structured:
@@ -111,6 +112,7 @@ def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0
         if df is None:
             log.info("%s: no price history", t["symbol"])
             continue
+        sparks.remember(spark_cache, t["symbol"], df)
         snap = ta.analyze(df)
         ltp = snap["close"]
         src_tgt_pct = (max(t["src_targets"]) / ltp - 1) * 100 if t.get("src_targets") else None
@@ -142,6 +144,7 @@ def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0
         for s in [t["source_id"]] + t["corroborating_sources"]:
             confidence.note_tip(conf, s)
     confidence.save(conf)
+    sparks.save(spark_cache)
     results.sort(key=lambda r: -r["composite"])
     write_json(day_dir() / "analysis.json", results)
     return results

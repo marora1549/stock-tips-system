@@ -29,7 +29,7 @@ from datetime import date, datetime, timedelta
 import pandas as pd
 
 from ..util import STATE_DIR, now_ist, read_json, settings, today_str, write_json
-from ..data import prices
+from ..data import prices, sparks
 from ..learning import confidence
 
 log = logging.getLogger(__name__)
@@ -182,6 +182,7 @@ def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | 
     on = on or today_str()
     events: list[str] = []
     counts = {"eligible": 0, "no_data": 0, "stale": 0, "marked": 0}
+    spark_cache = sparks.load()
     ex = settings()["exits"]
     hold_thr = settings()["scoring"]["hold_bucket_fund_score"]
     for pos in list(led["positions"]):
@@ -194,6 +195,7 @@ def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | 
             counts["no_data"] += 1 if due else 0
             events.append(f"{pos['symbol']}: no price data today")
             continue
+        sparks.remember(spark_cache, pos["symbol"], df)
         bar = df.iloc[-1]
         bar_date = str(df.index[-1].date())
         if bar_date != on:
@@ -288,6 +290,7 @@ def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | 
     led["equity_curve"] = [e for e in led["equity_curve"] if e["date"] != on] + [{"date": on, "equity": round(equity, 2)}]
     if report is not None:
         report.update(counts)
+    sparks.save(spark_cache)
     return events
 
 

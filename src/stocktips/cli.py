@@ -27,7 +27,7 @@ import yaml
 
 from . import pipeline, report
 from .analysis import plan as planmod, scoring, ta
-from .data import fundamentals, prices, symbols
+from .data import fundamentals, prices, sparks, symbols
 from .learning import confidence, journal
 from .portfolio import ledger as ledgermod
 from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
@@ -365,6 +365,7 @@ def _pos_for_dashboard(pos: dict, on: str | None = None) -> dict:
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
+    spark_cache = sparks.load()
     days = sorted([p.name for p in REPORTS_DIR.iterdir() if p.is_dir()]) if REPORTS_DIR.exists() else []
     latest = read_json(REPORTS_DIR / days[-1] / "picks.json", {}) if days else {}
     analysis = read_json(REPORTS_DIR / days[-1] / "analysis.json", []) if days else []
@@ -374,6 +375,10 @@ def cmd_dashboard_data(a):
     cash = ledgermod.deployable_cash(led)
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
+            "sparks": {sym: sparks.series(spark_cache, sym) for sym in
+                       {p["symbol"] for p in led["positions"]} |
+                       {p["symbol"] for p in analysis[:40] if p.get("verdict") in ("BUY", "STRONG BUY")}
+                       if sparks.series(spark_cache, sym)},
             "actions_log": (read_json(STATE_DIR / "actions_log.json", {}).get("runs") or [])[-12:],
             "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
             "sources": conf, "latest_picks": latest,

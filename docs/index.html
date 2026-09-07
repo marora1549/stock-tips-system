@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0F1216">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Desk">
 <title>Desk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,6 +142,23 @@ button{font-family:inherit}
 .tags .pill{cursor:help}
 
 /* ==================================================================== ladder */
+.spark{position:relative; margin-top:14px; height:104px; border-radius:var(--r-sm);
+  background:var(--elev-2); overflow:hidden}
+.spark svg{position:absolute; inset:0; width:100%; height:100%}
+.spark .line{fill:none; stroke:var(--green); stroke-width:2.4; vector-effect:non-scaling-stroke;
+  stroke-linejoin:round}
+.spark .fill{fill:var(--green-dim); stroke:none}
+.spark .head{fill:var(--green); stroke:var(--elev-2); stroke-width:3; vector-effect:non-scaling-stroke}
+.spark.down .line, .spark.down .head{stroke:var(--red)}
+.spark.down .line{stroke:var(--red)} .spark.down .head{fill:var(--red)}
+.spark.down .fill{fill:var(--red-dim)}
+.spark .lv{stroke-width:1; vector-effect:non-scaling-stroke; stroke-dasharray:5 4}
+.spark .lv.stop{stroke:var(--red)} .spark .lv.entry{stroke:var(--ink-3)}
+.spark .lv.tgt{stroke:var(--green-line)}
+.spark .lt{font:600 11px var(--mono); text-anchor:start; fill:var(--ink-2)}
+.spark .lt.stop{fill:var(--red)} .spark .lt.tgt{fill:var(--green)}
+.sparkmeta{position:absolute; right:12px; bottom:7px; font:500 10px/1 var(--mono); color:var(--ink-3);
+  letter-spacing:.04em}
 .ladder{margin-top:18px}
 .rail{position:relative; height:5px; background:var(--elev-3); border-radius:99px; margin:28px 0 0}
 .rail .done{position:absolute; top:0; bottom:0; left:0; background:var(--green); border-radius:99px}
@@ -303,6 +325,14 @@ td.r{text-align:right}
 .banner.warn{background:var(--amber-dim); border-color:var(--amber-dim)}
 .banner.warn .ic{color:var(--amber)}
 .banner b{color:var(--ink)}
+.need{display:flex; gap:10px; align-items:flex-start; padding:11px 14px; border-radius:var(--r-sm);
+  background:var(--elev); border:1px solid var(--line); border-left:3px solid var(--blue);
+  font-size:12.5px; line-height:1.55; color:var(--ink-2); margin-bottom:8px}
+.need .ic{color:var(--blue); margin-top:1px}
+.need b{color:var(--ink); font-weight:700}
+.need.warn{border-left-color:var(--amber)} .need.warn .ic{color:var(--amber)}
+.need.bad{border-left-color:var(--red)} .need.bad .ic{color:var(--red)}
+.need.good{border-left-color:var(--green)} .need.good .ic{color:var(--green)}
 .chartbox{background:var(--elev); border:1px solid var(--line); border-radius:var(--r); padding:16px;
   height:280px}
 .prose{font-size:13.5px; line-height:1.75; color:var(--ink-2); max-width:74ch}
@@ -579,9 +609,10 @@ function run(command, inputs, opts){
   if (opts.btn) opts.btn.classList.add('busy');
   return ghDispatch(command, inputs)
     .then(function(){
-      toast(label + ' sent to GitHub — the ledger updates in about a minute', 'ok');
+      toast(label + ' sent to GitHub — this page updates itself when it lands', 'ok');
       if (opts.queue) opts.queue();
       pollRuns(true);
+      watchForChange();
       render();
     })
     .catch(function(e){ toast('Could not run ' + label + ': ' + e.message, 'err'); })
@@ -599,6 +630,46 @@ function tagPills(tags){
     return '<span class="pill ' + (t.tone || 'flat') + '" title="' + esc(t.why || '') + '">' +
       (i ? ic(i) : '') + esc(t.label) + '</span>';
   }).join('');
+}
+
+/* Sixty sessions of closes with the plan's levels drawn across them, so the distance to each target
+   is visible as distance rather than only as a number. Returns '' when there is no history yet. */
+function sparkline(closes, o){
+  if (!closes || closes.length < 8) return '';
+  o = o || {};
+  var W = 1000, H = 132, PAD = 4;
+  // priority order, so when a stop has trailed onto the entry it is the stop that keeps its label
+  var levels = [];
+  if (o.stop) levels.push({v:o.stop, cls:'stop', name:'stop'});
+  (o.targets || []).forEach(function(t, i){ if (t) levels.push({v:t, cls:'tgt', name:'T' + (i + 1)}); });
+  if (o.entry) levels.push({v:o.entry, cls:'entry', name:'entry'});
+  var vals = closes.concat(levels.map(function(l){ return l.v; }));
+  var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+  var span = (hi - lo) || 1;
+  lo -= span * 0.04; hi += span * 0.04; span = hi - lo;
+  var x = function(i){ return PAD + i / (closes.length - 1) * (W - PAD * 2); };
+  var y = function(v){ return H - PAD - (v - lo) / span * (H - PAD * 2); };
+  var pts = closes.map(function(c, i){ return x(i).toFixed(1) + ',' + y(c).toFixed(1); }).join(' ');
+  var area = 'M' + x(0).toFixed(1) + ',' + y(closes[0]).toFixed(1) + ' L' + pts.split(' ').join(' L') +
+             ' L' + x(closes.length - 1).toFixed(1) + ',' + H + ' L' + x(0).toFixed(1) + ',' + H + ' Z';
+  var rising = closes[closes.length - 1] >= closes[0];
+  var placed = [];
+  var lines = levels.map(function(l){
+    var ly = y(l.v);
+    var line = '<line class="lv ' + l.cls + '" x1="0" x2="' + W + '" y1="' + ly.toFixed(1) +
+      '" y2="' + ly.toFixed(1) + '"/>';
+    var ty = Math.max(13, Math.min(H - 5, ly - 5));
+    if (placed.some(function(o2){ return Math.abs(o2 - ty) < 13; })) return line;   // no stacked labels
+    placed.push(ty);
+    return line + '<text class="lt ' + l.cls + '" x="8" y="' + ty.toFixed(1) + '">' + l.name + '</text>';
+  }).join('');
+  return '<div class="spark ' + (rising ? 'up' : 'down') + '">' +
+    '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+    lines + '<path class="fill" d="' + area + '"/>' +
+    '<polyline class="line" points="' + pts + '"/>' +
+    '<circle class="head" cx="' + x(closes.length - 1).toFixed(1) + '" cy="' +
+      y(closes[closes.length - 1]).toFixed(1) + '" r="7"/></svg>' +
+    '<span class="sparkmeta">' + closes.length + ' sessions</span></div>';
 }
 
 /* The ladder: stop, entry, three targets and where the price actually is — on one line.
@@ -714,13 +785,57 @@ function stat(icon, k, val, sub, cls){
     '<div class="v">' + val + '</div>' + (sub ? '<div class="s">' + sub + '</div>' : '') + '</div>';
 }
 
+/* What needs a decision today, computed rather than assumed. Silence here is a real answer. */
+function attention(){
+  var out = [];
+  positions().forEach(function(p){
+    var base = p.entry || p.entry_plan, hits = p.targets_hit || [];
+    if (p.ltp && p.stop_loss && base){
+      var room = (p.ltp - p.stop_loss) / (base - p.stop_loss || 1);
+      if (p.ltp <= p.stop_loss) out.push({tone:'bad', icon:'alert', sym:p.symbol,
+        text:'is at or through its stop of ' + rs(p.stop_loss) + ' — the evening run will close it.'});
+      else if (room < 0.35 && !hits.length) out.push({tone:'warn', icon:'shield', sym:p.symbol,
+        text:'is ' + pct((p.ltp / p.stop_loss - 1) * 100, 1) + ' above its stop with no target taken yet.'});
+    }
+    if (p.pace === 'behind') out.push({tone:'warn', icon:'clock', sym:p.symbol,
+      text:'is ' + (p.days_elapsed - p.eta_t1_days) + ' sessions past the pace it needed for T1' +
+        (p.deadline ? ', and its clock ends ' + p.deadline + '.' : '.')});
+    if (p.deadline && p.status === 'open' && !hits.length){
+      var left = Math.round((new Date(p.deadline) - new Date((DATA.generated || '') + 'T00:00:00')) / 86400000);
+      if (left >= 0 && left <= 3) out.push({tone:'warn', icon:'clock', sym:p.symbol,
+        text:'time-stops in ' + left + ' day' + (left === 1 ? '' : 's') + ' without T1 — it will be ' +
+          (String(p.bucket || '').indexOf('hot') === 0 ? 'sold.' : 'parked in the hold bucket.')});
+    }
+    if (hits.length && hits.length < (p.targets || []).length && p.stop_loss >= base)
+      out.push({tone:'good', icon:'check', sym:p.symbol,
+        text:'has taken T' + hits.length + ' and cannot lose money now — the stop is at or above entry.'});
+  });
+  var c = capacity();
+  var fast = ideaList().filter(function(p){
+    return (p.tags || []).some(function(t){ return t.key === 'momentum'; }); });
+  if (c.slots > 0 && c.cash >= c.minAlloc && fast.length)
+    out.push({tone:'info', icon:'bolt', sym:fast[0].symbol,
+      text:'is the fastest idea you can still fund — T1 about ' + (fast[0].plan.eta_days || [])[0] +
+        ' sessions out, ' + short(sizeFor(fast[0].plan.entry).capital) + ' available.'});
+  return out;
+}
+function attentionStrip(){
+  var list = attention();
+  if (!list.length) return '';
+  return '<div class="sec" style="margin-bottom:18px">' + list.slice(0, 5).map(function(a){
+    var cls = a.tone === 'bad' ? 'bad' : a.tone === 'warn' ? 'warn' : a.tone === 'good' ? 'good' : '';
+    return '<div class="need ' + cls + '">' + ic(a.icon) + '<span><b>' + esc(a.sym) + '</b> ' +
+      esc(a.text) + '</span></div>';
+  }).join('') + '</div>';
+}
+
 /* ==================================================================== the book */
 function positions(){ return (DATA.positions || []).filter(function(p){ return p.status !== 'closed'; }); }
 
 function renderBook(){
   var s = DATA.stats || {}, c = capacity(), rows = positions(), queued = intentsOf('book');
   var deployed = s.capital ? Math.round((s.deployed_inr || 0) / s.capital * 100) : 0;
-  var html = '<div class="strip">' +
+  var html = attentionStrip() + '<div class="strip">' +
     stat('wallet', 'Equity', inr(s.equity),
          '<span class="' + sgn(s.return_pct) + '">' + pct(s.return_pct) + '</span> time-weighted' +
          (s.n_flows ? ' · base ' + short(s.capital) : ''), 'wide') +
@@ -744,7 +859,7 @@ function positionCard(p){
   var tone = st === 'open' ? 'good' : st === 'hold' ? 'violet' : 'warn';
   var pace = '';
   if (p.pace === 'hit'){
-    pace = '<div class="pace on">' + ic('check') + '<span>T1 taken. The stop is trailed to <b>₹' +
+    pace = '<div class="pace on">' + ic('check') + '<span>T1 taken. The stop is trailed to <b>' +
       rs(p.stop_loss) + '</b>, so the rest rides for T2 and T3 with nothing left to lose.</span></div>';
   } else if (p.eta_t1_days){
     var late = p.pace === 'behind';
@@ -766,6 +881,7 @@ function positionCard(p){
       '<div class="right"><div class="ltp">' + rs(p.ltp != null ? p.ltp : base) + '</div>' +
       '<div class="chg ' + sgn(p.unrealised_pct) + '">' +
       (p.unrealised_pct != null ? pct(p.unrealised_pct) : 'awaiting fill') + '</div></div></div>' +
+    sparkline((DATA.sparks || {})[p.symbol], {stop:p.stop_loss, entry:base, targets:p.targets}) +
     ladder({stop:p.stop_loss, entry:base, targets:p.targets, targetPct:p.target_pct, hits:hits, now:p.ltp,
             stopPct:p.stop_loss_pct, eta:p.eta_days, entryLabel:p.entry ? 'filled' : 'planned',
             legend:'<span>' + ic('shield', 's') + 'stop ' + rs(p.stop_loss) + '</span>' +
@@ -944,6 +1060,7 @@ function ideaCard(p){
       '<div class="right"><div class="ltp">' + rs(p.ltp) + '</div>' +
       '<div class="chg ' + sgn(ta.chg_5d_pct) + '">' + pct(ta.chg_5d_pct, 1) + ' · 5d</div></div></div>' +
     '<div class="tags">' + tagPills(p.tags) + '</div>' +
+    sparkline((DATA.sparks || {})[p.symbol], {stop:pl.stop_loss, entry:pl.entry, targets:pl.targets}) +
     ladder({stop:pl.stop_loss, entry:pl.entry, targets:pl.targets, targetPct:pl.target_pct,
             stopPct:pl.stop_loss_pct, eta:pl.eta_days, entryLabel:'entry',
             legend:'<span>' + ic('shield', 's') + 'risking ' + pct(-Math.abs(pl.stop_loss_pct || 0), 1) +
@@ -1552,6 +1669,35 @@ $('#connBtn').addEventListener('click', function(){ show('console'); });
 window.addEventListener('hashchange', function(){
   var h = (location.hash || '').replace('#', '');
   if (h && h !== TAB && TABS.some(function(t){ return t.id === h; })) show(h);
+});
+
+/* Re-read data.json so a dispatched command shows up without a manual reload. */
+var REFRESH_UNTIL = 0;
+function refreshData(reason){
+  return fetch('./data.json', {cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d){
+      if (!d) return false;
+      var changed = JSON.stringify(d.stats) !== JSON.stringify(DATA.stats) ||
+                    (d.positions || []).length !== (DATA.positions || []).length ||
+                    JSON.stringify(d.actions_log || []) !== JSON.stringify(DATA.actions_log || []);
+      DATA = d;
+      render();
+      if (changed && reason === 'poll') toast('The ledger moved — this page is up to date', 'ok');
+      return changed;
+    })
+    .catch(function(){ return false; });
+}
+function watchForChange(){
+  REFRESH_UNTIL = Date.now() + 6 * 60 * 1000;   // a dispatched run lands inside a couple of minutes
+  if (watchForChange._t) return;
+  watchForChange._t = setInterval(function(){
+    if (Date.now() > REFRESH_UNTIL || document.hidden) return;
+    refreshData('poll').then(function(changed){ if (changed) REFRESH_UNTIL = 0; });
+  }, 20000);
+}
+document.addEventListener('visibilitychange', function(){
+  if (!document.hidden && DATA) refreshData('focus');
 });
 
 function render(){
