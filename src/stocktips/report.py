@@ -10,6 +10,12 @@ def _inr(x):
     return f"₹{x:,.0f}" if x is not None else "—"
 
 
+def order_line(symbol: str, qty: int, entry: float, stop: float, targets: list[float]) -> str:
+    """The exact Zerodha order to place at 9:15 — used by reports, `book` and the dashboard."""
+    t = " / ".join(f"{x:,.2f}" for x in (targets or []))
+    return f"BUY {qty} {symbol} NSE CNC limit ₹{entry:,.2f} · SL-M ₹{stop:,.2f} · GTT ₹{t}"
+
+
 def pick_block(p: dict, rank: int | None = None, alloc: dict | None = None) -> str:
     pl = p["plan"]
     t = p["ta"]

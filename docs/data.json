@@ -55,7 +55,14 @@
       "exits": [],
       "realised_inr": 0.0,
       "max_favourable_pct": 0.0,
-      "notes": []
+      "notes": [],
+      "stop_loss_pct": -5.02,
+      "target_pct": [
+        8.44,
+        12.4,
+        19.84
+      ],
+      "order_line": "BUY 45 CGPOWER NSE CNC limit ₹901.15 · SL-M ₹855.90 · GTT ₹977.23 / 1,012.90 / 1,079.95"
     },
     {
       "pos_id": "2026-09-08-V2RETAIL",
@@ -98,7 +105,14 @@
       "exits": [],
       "realised_inr": 0.0,
       "max_favourable_pct": 0.0,
-      "notes": []
+      "notes": [],
+      "stop_loss_pct": -4.45,
+      "target_pct": [
+        8.43,
+        16.0,
+        21.37
+      ],
+      "order_line": "BUY 135 V2RETAIL NSE CNC limit ₹223.50 · SL-M ₹213.56 · GTT ₹242.35 / 259.25 / 271.26"
     },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -137,7 +151,14 @@
       "exits": [],
       "realised_inr": 0.0,
       "max_favourable_pct": 0.0,
-      "notes": []
+      "notes": [],
+      "stop_loss_pct": -2.15,
+      "target_pct": [
+        7.97,
+        13.28,
+        21.25
+      ],
+      "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,901.70 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86"
     }
   ],
   "closed": [],
@@ -1038,7 +1059,20 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "d2e96d14dd",
+      "n_mentions": 5,
+      "src_entry": null,
+      "src_targets": [
+        1020.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "V2RETAIL",
@@ -1096,7 +1130,21 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "2e926806da",
+      "n_mentions": 10,
+      "src_entry": null,
+      "src_targets": [
+        275.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "LALPATHLAB",
@@ -1149,7 +1197,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "9f766df819",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "HYUNDAI",
@@ -1202,7 +1257,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "bcaee6b128",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "VADILALIND",
@@ -1256,7 +1320,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "8a8f9b92eb",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "PRUDENT",
@@ -1307,7 +1378,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "d45bb757ce",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SIEMENS",
@@ -1363,7 +1441,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "78e9f39826",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "NEULANDLAB",
@@ -1416,7 +1501,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "60ecce6ce4",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "ASTRAMICRO",
@@ -1471,7 +1565,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "edd10e4fa9",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "FINCABLES",
@@ -1528,7 +1629,16 @@
         "src_stop": null
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "2eba1735e7",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        1494.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SAGILITY",
@@ -1581,7 +1691,18 @@
         "src_stop": 42.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "9bb2eb55ec",
+      "n_mentions": 2,
+      "src_entry": 46.5,
+      "src_targets": [
+        54.0
+      ],
+      "src_stop": 42.0,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "HAL",
@@ -1631,7 +1752,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "5576c74ba1",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "OIL",
@@ -1685,7 +1815,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "dcfa513af2",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        600.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "ACMESOLAR",
@@ -1737,7 +1880,18 @@
         "src_stop": null
       },
       "source_id": "broker:marketsmith",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "553c797ca4",
+      "n_mentions": 1,
+      "src_entry": 418.0,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mint_gnews"
+      ],
+      "brokerages": [
+        "marketsmith"
+      ]
     },
     {
       "symbol": "TDPOWERSYS",
@@ -1794,7 +1948,16 @@
         "src_stop": 720.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "93e5515a3c",
+      "n_mentions": 1,
+      "src_entry": 730.0,
+      "src_targets": [
+        760.0
+      ],
+      "src_stop": 720.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "APOLLOHOSP",
@@ -1845,7 +2008,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "7a38aa0a8c",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "KPL",
@@ -1896,7 +2068,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "bc06cd1cc9",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ALKYLAMINE",
@@ -1948,7 +2127,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "b7276c7687",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "KIRLOSENG",
@@ -2000,7 +2186,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "6b17b62868",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "et_recos_page"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "GREENPLY",
@@ -2060,7 +2255,17 @@
         "src_stop": 290.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "5d603ad692",
+      "n_mentions": 2,
+      "src_entry": 303.0,
+      "src_targets": [
+        320.0,
+        330.0
+      ],
+      "src_stop": 290.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "MCX",
@@ -2113,7 +2318,18 @@
         "src_stop": 3220.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "c6a458d7f4",
+      "n_mentions": 2,
+      "src_entry": 3275.0,
+      "src_targets": [
+        3450.0
+      ],
+      "src_stop": 3220.0,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "BAJAJ-AUTO",
@@ -2168,7 +2384,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "ef868cbe04",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "SHAILY",
@@ -2219,7 +2444,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "8b68fc2410",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "IPCALAB",
@@ -2269,7 +2501,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "91966409cc",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "APLAPOLLO",
@@ -2323,7 +2562,16 @@
         "src_stop": 2133.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "a6da72ccd4",
+      "n_mentions": 1,
+      "src_entry": 2250.0,
+      "src_targets": [
+        2430.0
+      ],
+      "src_stop": 2133.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "INGERRAND",
@@ -2375,7 +2623,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "1f1014e675",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SANSERA",
@@ -2427,7 +2682,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "f6325a218c",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BOSCHLTD",
@@ -2477,7 +2739,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "cc27db1a74",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "PERSISTENT",
@@ -2530,7 +2799,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "f179cc69b3",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "TIIL",
@@ -2582,7 +2860,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "ed18df23e5",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ARMANFIN",
@@ -2634,7 +2919,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "ca71a5635f",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "CHOLAFIN",
@@ -2688,7 +2980,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "666afa4153",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "GRASIM",
@@ -2741,7 +3040,17 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "8eec690038",
+      "n_mentions": 4,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze",
+        "et_recos_page"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "FINEORG",
@@ -2795,7 +3104,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "db642ff2fc",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "GLAXO",
@@ -2846,7 +3164,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "4777ebabd2",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "JUBLCPL",
@@ -2897,7 +3222,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "73c8e8888e",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "RADICO",
@@ -2950,7 +3282,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "959d08ec43",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "AVALON",
@@ -3003,7 +3342,18 @@
         "src_stop": null
       },
       "source_id": "broker:nomura",
-      "bucket": "fails risk rules (-12 stop 8.28% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-12 stop 8.28% wider than 8.0% limit)",
+      "tip_id": "bb4a8c5911",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "nomura"
+      ]
     },
     {
       "symbol": "SHADOWFAX",
@@ -3059,7 +3409,21 @@
         "src_stop": null
       },
       "source_id": "broker:nomura",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "0683d5f1bf",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        2767.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "fe_gnews"
+      ],
+      "brokerages": [
+        "nomura"
+      ]
     },
     {
       "symbol": "ABB",
@@ -3113,7 +3477,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "cc6ecff665",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "PWL",
@@ -3168,7 +3539,20 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "6d95156171",
+      "n_mentions": 5,
+      "src_entry": null,
+      "src_targets": [
+        200.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "ETHOSLTD",
@@ -3223,7 +3607,21 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "ae5dd16aef",
+      "n_mentions": 3,
+      "src_entry": null,
+      "src_targets": [
+        3400.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "broker:emkay",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "emkay"
+      ]
     },
     {
       "symbol": "DYNAMATECH",
@@ -3276,7 +3674,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "10944de640",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "HAPPYFORGE",
@@ -3327,7 +3732,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "7dcb0c79bb",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BAJAJHLDNG",
@@ -3381,7 +3793,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "6e5d898a55",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "EICHERMOT",
@@ -3433,7 +3852,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "31d33e1f34",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "JSWDULUX",
@@ -3486,7 +3912,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "7b9ca3d6df",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "GLAND",
@@ -3536,7 +3969,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "834361d8ad",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "OBEROIRLTY",
@@ -3589,7 +4029,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "dd1eab5ca1",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "QUADFUTURE",
@@ -3643,7 +4090,16 @@
         "src_stop": 57200.0
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "aed154582e",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        58200.0
+      ],
+      "src_stop": 57200.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "AEROENTER",
@@ -3698,7 +4154,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "e32f84f6a9",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "NETWEB",
@@ -3751,7 +4214,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "1dfe488f0f",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ANANDRATHI",
@@ -3802,7 +4272,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "4ca579e770",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BRIGADE",
@@ -3855,7 +4332,21 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "fails risk rules (-12 stop 10.79% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-12 stop 10.79% wider than 8.0% limit)",
+      "tip_id": "19fe18dc16",
+      "n_mentions": 8,
+      "src_entry": null,
+      "src_targets": [
+        900.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "MEDANTA",
@@ -3910,7 +4401,16 @@
         "src_stop": 1390.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "6649c9f10c",
+      "n_mentions": 1,
+      "src_entry": 1470.0,
+      "src_targets": [
+        1590.0
+      ],
+      "src_stop": 1390.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "APARINDS",
@@ -3963,7 +4463,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.46)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.46)",
+      "tip_id": "bd3e2c7af4",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "SEAMECLTD",
@@ -4015,7 +4524,16 @@
         "src_stop": null
       },
       "source_id": "brokerage_gnews",
-      "bucket": "fails risk rules (-12 stop 8.32% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-12 stop 8.32% wider than 8.0% limit)",
+      "tip_id": "d1f81b4ae3",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        2270.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "PAISALO",
@@ -4071,7 +4589,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "0177488636",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "FCL",
@@ -4127,7 +4652,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "b2ac706526",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "DATAPATTNS",
@@ -4179,7 +4711,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "e6675a0c14",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "TORNTPHARM",
@@ -4234,7 +4773,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "105da8db37",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BAJAJFINSV",
@@ -4287,7 +4833,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "f3eba9680e",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "NAVINFLUOR",
@@ -4338,7 +4891,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.21)"
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.21)",
+      "tip_id": "e034c9f03b",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "NEOGEN",
@@ -4389,7 +4949,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "6cd3b02ae1",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "KINGFA",
@@ -4439,7 +5006,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "1e993df281",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "KDDL",
@@ -4491,7 +5065,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "fails risk rules (-12 stop 9.18% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-12 stop 9.18% wider than 8.0% limit)",
+      "tip_id": "8215b04498",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SUNDARMFIN",
@@ -4542,7 +5123,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "0decef3912",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "INNOVACAP",
@@ -4596,7 +5184,16 @@
         "src_stop": 1118.0
       },
       "source_id": "mint_gnews",
-      "bucket": "fails risk rules (-12 stop 10.51% wider than 8.0% limit; -4 source target ₹1270 below our T1 — source sees less upside)"
+      "bucket": "fails risk rules (-12 stop 10.51% wider than 8.0% limit; -4 source target ₹1270 below our T1 — source sees less upside)",
+      "tip_id": "e589d03b5f",
+      "n_mentions": 1,
+      "src_entry": 1175.0,
+      "src_targets": [
+        1270.0
+      ],
+      "src_stop": 1118.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BAJFINANCE",
@@ -4651,7 +5248,16 @@
         "src_stop": 1018.0
       },
       "source_id": "mint_gnews",
-      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.04)"
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.04)",
+      "tip_id": "a185b478df",
+      "n_mentions": 1,
+      "src_entry": 1060.0,
+      "src_targets": [
+        1145.0
+      ],
+      "src_stop": 1018.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SYRMA",
@@ -4710,7 +5316,21 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "fails risk rules (-8 pattern gap_or_spike_today; -14 pattern overextended; -12 stop 8.53% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-8 pattern gap_or_spike_today; -14 pattern overextended; -12 stop 8.53% wider than 8.0% limit)",
+      "tip_id": "2fac370560",
+      "n_mentions": 6,
+      "src_entry": null,
+      "src_targets": [
+        2050.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews",
+        "broker:emkay"
+      ],
+      "brokerages": [
+        "emkay"
+      ]
     },
     {
       "symbol": "WENDT",
@@ -4764,7 +5384,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.34)"
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.34)",
+      "tip_id": "bd1ae965d6",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "PFOCUS",
@@ -4818,7 +5447,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "fails risk rules (-12 stop 11.09% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-12 stop 11.09% wider than 8.0% limit)",
+      "tip_id": "24f3e79333",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        375.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "SHREEPUSHK",
@@ -4874,7 +5516,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "eedf7557a5",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ADANIPORTS",
@@ -4925,7 +5574,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "75ebe44dcb",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "KOTAKBANK",
@@ -4976,7 +5632,14 @@
         "src_stop": null
       },
       "source_id": "et_recos_page",
-      "bucket": "fails risk rules (-15 reward:risk to T2 only 0.92)"
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 0.92)",
+      "tip_id": "0b7a67bbab",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "FORTIS",
@@ -5032,7 +5695,31 @@
         "src_stop": null
       },
       "source_id": "broker:pl",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "9f9d943be3",
+      "n_mentions": 12,
+      "src_entry": null,
+      "src_targets": [
+        1050.0,
+        1075.0,
+        1130.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "broker:icicisec",
+        "broker:motilal",
+        "brokerage_gnews",
+        "broker:emkay",
+        "broker:choice"
+      ],
+      "brokerages": [
+        "choice",
+        "emkay",
+        "icicisec",
+        "motilal",
+        "pl"
+      ]
     },
     {
       "symbol": "SUPREMEIND",
@@ -5085,7 +5772,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "3b2cdecd62",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        4035.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "SMLMAH",
@@ -5140,7 +5840,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "31a48cd0d8",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ESABINDIA",
@@ -5195,7 +5902,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 8.96% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 8.96% wider than 8.0% limit)",
+      "tip_id": "e94946da5d",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "TITAN",
@@ -5249,7 +5965,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.04)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.04)",
+      "tip_id": "999bb594bc",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "AIAENG",
@@ -5300,7 +6023,18 @@
         "src_stop": 4100.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "fe334fefee",
+      "n_mentions": 2,
+      "src_entry": 4250.0,
+      "src_targets": [
+        4475.0
+      ],
+      "src_stop": 4100.0,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "TCPLPACK",
@@ -5356,7 +6090,18 @@
         "src_stop": 3861.0
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -12 stop 12.45% wider than 8.0% limit; -4 source target ₹4410 below our T1 — source sees less upside)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -12 stop 12.45% wider than 8.0% limit; -4 source target ₹4410 below our T1 — source sees less upside)",
+      "tip_id": "a8fa0fe326",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        4410.0
+      ],
+      "src_stop": 3861.0,
+      "corroborating_sources": [
+        "mint_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "LMW",
@@ -5408,7 +6153,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "af262594df",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "FLUOROCHEM",
@@ -5461,7 +6213,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "6c8c6f3a2a",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "PRIVISCL",
@@ -5509,7 +6268,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "d0e954aa53",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "AMAGI",
@@ -5561,7 +6327,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "f67bad2415",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        700.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "WABAG",
@@ -5614,7 +6393,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -3 ADX 13.7 no trend; -15 reward:risk to T2 only 1.39)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -3 ADX 13.7 no trend; -15 reward:risk to T2 only 1.39)",
+      "tip_id": "48e665a72e",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "THANGAMAYL",
@@ -5666,7 +6452,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "c687898b2e",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "IGL",
@@ -5720,7 +6513,21 @@
         "src_stop": null
       },
       "source_id": "broker:geojit",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "37843fcb9c",
+      "n_mentions": 3,
+      "src_entry": null,
+      "src_targets": [
+        168.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "geojit"
+      ]
     },
     {
       "symbol": "PHOENIXLTD",
@@ -5772,7 +6579,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "431f8e4d82",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "KIRLOSBROS",
@@ -5825,7 +6639,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "07b551a405",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "SHRIPISTON",
@@ -5879,7 +6700,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.08; -12 stop 9.38% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.08; -12 stop 9.38% wider than 8.0% limit)",
+      "tip_id": "2bda9b1e5f",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "SWANDEF",
@@ -5931,7 +6761,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-3 ADX 14.2 no trend; -12 stop 8.34% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-3 ADX 14.2 no trend; -12 stop 8.34% wider than 8.0% limit)",
+      "tip_id": "06edeef2f5",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "HINDUNILVR",
@@ -5983,7 +6820,29 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "44193db6a6",
+      "n_mentions": 12,
+      "src_entry": null,
+      "src_targets": [
+        2320.0,
+        2400.0,
+        2700.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "broker:icicisec",
+        "brokerage_gnews",
+        "broker:emkay",
+        "broker:nuvama"
+      ],
+      "brokerages": [
+        "emkay",
+        "icicisec",
+        "motilal",
+        "nuvama"
+      ]
     },
     {
       "symbol": "COFORGE",
@@ -6036,7 +6895,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 9.15% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 9.15% wider than 8.0% limit)",
+      "tip_id": "44d0cd0e3f",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "AUBANK",
@@ -6089,7 +6955,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "104e03cbdf",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        1250.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "BLUESTARCO",
@@ -6143,7 +7022,16 @@
         "src_stop": null
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "a95f1df357",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        1653.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "VAML",
@@ -6195,7 +7083,21 @@
         "src_stop": null
       },
       "source_id": "broker:geojit",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "6b80ece0e7",
+      "n_mentions": 3,
+      "src_entry": null,
+      "src_targets": [
+        498.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews",
+        "mint_gnews"
+      ],
+      "brokerages": [
+        "geojit"
+      ]
     },
     {
       "symbol": "TATACOMM",
@@ -6247,7 +7149,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "0d557e5af7",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "M&M",
@@ -6297,7 +7206,18 @@
         "src_stop": null
       },
       "source_id": "broker:nomura",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "fc529af0c8",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "nomura"
+      ]
     },
     {
       "symbol": "TASTYBITE",
@@ -6351,7 +7271,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.25; -12 stop 9.31% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.25; -12 stop 9.31% wider than 8.0% limit)",
+      "tip_id": "7758fc02cd",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "INDOTECH",
@@ -6405,7 +7332,14 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-3 ADX 14.7 no trend; -15 reward:risk to T2 only 1.48; -12 stop 8.7% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-3 ADX 14.7 no trend; -15 reward:risk to T2 only 1.48; -12 stop 8.7% wider than 8.0% limit)",
+      "tip_id": "1cf58d4c3a",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BPCL",
@@ -6457,7 +7391,14 @@
         "src_stop": null
       },
       "source_id": "et_recos_page",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "7eb1dbf3c8",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "HDFCBANK",
@@ -6509,7 +7450,21 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "7a19b37de6",
+      "n_mentions": 3,
+      "src_entry": null,
+      "src_targets": [
+        925.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "fe_gnews",
+        "et_recos_page"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "TATASTEEL",
@@ -6567,7 +7522,27 @@
         "src_stop": 180.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "a70df57647",
+      "n_mentions": 7,
+      "src_entry": 190.0,
+      "src_targets": [
+        196.0,
+        198.0,
+        201.0,
+        203.0,
+        205.0
+      ],
+      "src_stop": 180.0,
+      "corroborating_sources": [
+        "broker:anandrathi",
+        "broker:bagadia",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "anandrathi",
+        "bagadia"
+      ]
     },
     {
       "symbol": "SUNPHARMA",
@@ -6619,7 +7594,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.1)"
+      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.1)",
+      "tip_id": "7ccc6c2deb",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ONESOURCE",
@@ -6673,7 +7655,20 @@
         "src_stop": null
       },
       "source_id": "broker:icicisec",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "f4fd74cdd1",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [
+        2400.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "brokerages": [
+        "icicisec"
+      ]
     },
     {
       "symbol": "STLTECH",
@@ -6729,7 +7724,20 @@
         "src_stop": null
       },
       "source_id": "broker:nuvama",
-      "bucket": "fails risk rules (-14 pattern overextended; -12 stop 11.0% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-14 pattern overextended; -12 stop 11.0% wider than 8.0% limit)",
+      "tip_id": "9e6f65838b",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        1100.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "fe_gnews"
+      ],
+      "brokerages": [
+        "nuvama"
+      ]
     },
     {
       "symbol": "LT",
@@ -6781,7 +7789,16 @@
         "src_stop": null
       },
       "source_id": "chartink_ema_pullback",
-      "bucket": "fails risk rules (-4 trend sideways; -3 ADX 14.6 no trend; -15 reward:risk to T2 only 0.95)"
+      "bucket": "fails risk rules (-4 trend sideways; -3 ADX 14.6 no trend; -15 reward:risk to T2 only 0.95)",
+      "tip_id": "31bb8a2f20",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "RELIANCE",
@@ -6836,7 +7853,19 @@
         "src_stop": 1249.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "e3ec7870ac",
+      "n_mentions": 2,
+      "src_entry": 1322.0,
+      "src_targets": [
+        1428.0,
+        1766.0
+      ],
+      "src_stop": 1249.0,
+      "corroborating_sources": [
+        "fe_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "GRWRHITECH",
@@ -6889,7 +7918,14 @@
         "src_stop": null
       },
       "source_id": "chartink_squeeze",
-      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -6 volume 3.02× avg on DOWN day (distribution); -12 stop 9.0% wider than 8.0% limit)"
+      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -6 volume 3.02× avg on DOWN day (distribution); -12 stop 9.0% wider than 8.0% limit)",
+      "tip_id": "b058eb8ec8",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ULTRACEMCO",
@@ -6941,7 +7977,21 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "494aefc3e6",
+      "n_mentions": 6,
+      "src_entry": null,
+      "src_targets": [
+        13800.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "fe_gnews",
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "ENRIN",
@@ -6993,7 +8043,20 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "9a1e7273bf",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        4000.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "fe_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "MVGJL",
@@ -7049,7 +8112,14 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "06aefe9f84",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "BAJAJELEC",
@@ -7101,7 +8171,16 @@
         "src_stop": null
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "0a8222d151",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        403.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "ONGC",
@@ -7153,7 +8232,16 @@
         "src_stop": null
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "f8a0fc6059",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        297.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "VIKRAN",
@@ -7205,7 +8293,16 @@
         "src_stop": 57.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "6e2e305598",
+      "n_mentions": 1,
+      "src_entry": 59.0,
+      "src_targets": [
+        63.0
+      ],
+      "src_stop": 57.0,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "UCOBANK",
@@ -7256,7 +8353,18 @@
         "src_stop": 22.0
       },
       "source_id": "mint_gnews",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "54528202da",
+      "n_mentions": 2,
+      "src_entry": 24.5,
+      "src_targets": [
+        26.0
+      ],
+      "src_stop": 22.0,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": []
     },
     {
       "symbol": "INDIGO",
@@ -7305,7 +8413,14 @@
         "src_stop": null
       },
       "source_id": "et_recos_page",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "4418ac93fb",
+      "n_mentions": 2,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "TTKPRESTIG",
@@ -7358,7 +8473,16 @@
         "src_stop": null
       },
       "source_id": "mc_stock_ideas_gnews",
-      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tip_id": "4d673022b7",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [
+        749.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     },
     {
       "symbol": "GODREJCP",
@@ -7411,7 +8535,20 @@
         "src_stop": null
       },
       "source_id": "broker:motilal",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tip_id": "b1316d3157",
+      "n_mentions": 5,
+      "src_entry": null,
+      "src_targets": [
+        1150.0
+      ],
+      "src_stop": null,
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "brokerages": [
+        "motilal"
+      ]
     },
     {
       "symbol": "LIQUIDADD",
@@ -7468,9 +8605,25 @@
         "src_stop": null
       },
       "source_id": "chartink_52w_breakout",
-      "bucket": "fails risk rules (-10 RSI 100.0 overbought; -14 pattern overextended; -8 resistance ₹1151.22 within 1.2% overhead; -15 reward:risk to T2 only 0.03; -10 T3 0.66% < 5.0% mandate fo)"
+      "bucket": "fails risk rules (-10 RSI 100.0 overbought; -14 pattern overextended; -8 resistance ₹1151.22 within 1.2% overhead; -15 reward:risk to T2 only 0.03; -10 T3 0.66% < 5.0% mandate fo)",
+      "tip_id": "fe9f93d132",
+      "n_mentions": 1,
+      "src_entry": null,
+      "src_targets": [],
+      "src_stop": null,
+      "corroborating_sources": [],
+      "brokerages": []
     }
   ],
+  "analysis_day": "2026-09-07",
+  "book": {
+    "max_open_positions": 4,
+    "open_or_pending": 3,
+    "slots_left": 1,
+    "deployable_cash": 750.25,
+    "min_alloc_inr": 15000.0,
+    "max_alloc_inr": 50000.0
+  },
   "report_days": [
     "2026-09-07"
   ],
