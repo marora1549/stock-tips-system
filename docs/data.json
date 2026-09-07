@@ -1,0 +1,7385 @@
+{
+  "generated": "2026-09-07",
+  "stats": {
+    "capital": 100000,
+    "equity": 100000,
+    "return_pct": 0.0,
+    "cash": 100000,
+    "open": 0,
+    "pending": 0,
+    "hold": 0,
+    "closed": 0,
+    "win_rate": null,
+    "avg_win_pct": null,
+    "avg_loss_pct": null,
+    "realised_inr": 0
+  },
+  "positions": [],
+  "closed": [],
+  "equity_curve": [],
+  "sources": [
+    {
+      "source_id": "et_recos_gnews",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "et_recos_page",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 12,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "mc_stock_ideas_gnews",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 40,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "mint_gnews",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 32,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "bs_recos",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "fe_gnews",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 12,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "brokerage_gnews",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 38,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "chartink_52w_breakout",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 16,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "chartink_ema_pullback",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 80,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "chartink_squeeze",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 80,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:rupakde",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:citi",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:morganstanley",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:choice",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 2,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:motilal",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 20,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:icicisec",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 16,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:pl",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 2,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:nomura",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 6,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:geojit",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 4,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:marketsmith",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 2,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:anandrathi",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 2,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:bagadia",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 2,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:nuvama",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 4,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:axissec",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 0,
+      "n_resolved": 0,
+      "t1_hit_rate": null,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    },
+    {
+      "source_id": "broker:emkay",
+      "score": 0.0,
+      "confidence": 50,
+      "weight": 0.5,
+      "n_tips": 8,
+      "n_resolved": 0,
+      "t1_hit_rate": 0,
+      "stop_rate": null,
+      "expectancy_pct": null,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-07"
+    }
+  ],
+  "latest_picks": {
+    "date": "2026-09-07",
+    "top": [
+      {
+        "symbol": "CGPOWER",
+        "company": "CG Power and Industrial Solutions",
+        "tip_id": "d2e96d14dd",
+        "source_id": "broker:motilal",
+        "corroborating_sources": [
+          "brokerage_gnews"
+        ],
+        "n_mentions": 5,
+        "src_targets": [
+          1020.0
+        ],
+        "src_stop": null,
+        "src_entry": null,
+        "urls": [
+          "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+          "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443",
+          "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+          "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
+          "https://investmentguruindia.com/newsdetail/buy-hindustan-unilever-ltd-for-the-target-rs-2-400-by-motilal-oswal-financial-services-ltd493596"
+        ],
+        "brokerages": [
+          "motilal"
+        ],
+        "sentence": "Buy CG Power and Industrial Solutions Ltd for the Target Rs.1,020 by Motilal Oswal ... Buy UltraTech Cement Ltd for the Target Rs.13,800 by Motilal Oswal Financial Servic... Buy Physicswallah Ltd for the Target Rs.200 by Motilal Oswal Financial Services Ltd Buy Godrej Consumer Ltd for the Target Rs.",
+        "ltp": 901.1500244140625,
+        "plan": {
+          "timeframe": "monthly",
+          "entry": 901.15,
+          "entry_zone": [
+            896.64,
+            905.66
+          ],
+          "stop_loss": 855.9,
+          "stop_loss_pct": 5.02,
+          "stop_basis": "below support / near 50EMA",
+          "targets": [
+            977.23,
+            1012.9,
+            1079.95
+          ],
+          "target_pct": [
+            8.44,
+            12.4,
+            19.84
+          ],
+          "target_basis": [
+            "resistance",
+            "5×ATR",
+            "8×ATR"
+          ],
+          "reward_risk_t2": 2.47,
+          "mandate_pct": 10.0,
+          "time_stop_days": 30,
+          "ta_confidence": 84,
+          "reasons": [
+            "+14 trend strong_up",
+            "+7 RSI 53.9 healthy momentum",
+            "+5 MACD histogram positive & rising",
+            "+5 volume 1.52× avg on up day",
+            "+3 pattern bollinger_squeeze",
+            "+4 pattern momentum_aligned",
+            "+6 pattern pullback_to_ema20_in_uptrend"
+          ],
+          "tradeable": true,
+          "src_targets": [
+            1020.0
+          ],
+          "src_stop": null
+        },
+        "ta": {
+          "trend": "strong_up",
+          "rsi": 53.9,
+          "atr_pct": 2.48,
+          "adx": 15.7,
+          "vol_ratio": 1.52,
+          "patterns": [
+            "bollinger_squeeze",
+            "momentum_aligned",
+            "pullback_to_ema20_in_uptrend"
+          ],
+          "dist_52w_high_pct": -8.13,
+          "dist_ema20_pct": 1.56,
+          "dist_ema200_pct": 10.6,
+          "avg_turnover_cr": 198.54,
+          "chg_5d_pct": -1.62,
+          "chg_20d_pct": 2.52,
+          "high_52w": 980.9,
+          "last_bar_date": "2026-09-07"
+        },
+        "resistances": [
+          {
+            "price": 916.0,
+            "touches": 1
+          },
+          {
+            "price": 953.45,
+            "touches": 2
+          },
+          {
+            "price": 977.23,
+            "touches": 3
+          }
+        ],
+        "supports": [
+          {
+            "price": 890.4,
+            "touches": 2
+          },
+          {
+            "price": 860.2,
+            "touches": 1
+          },
+          {
+            "price": 814.85,
+            "touches": 1
+          },
+          {
+            "price": 799.35,
+            "touches": 2
+          }
+        ],
+        "ta_confidence": 84,
+        "fund_score": 91,
+        "fund_why": [
+          "+12 ROCE 26.7%",
+          "+8 ROE 20.5%",
+          "-6 P/E 111",
+          "+4 3y profit CAGR 10%",
+          "+6 3y sales CAGR 21%",
+          "+5 D/E 0.01",
+          "+4 promoter 56.36%",
+          "+4 latest qtr PAT YoY 15.4%",
+          "+4 mcap ₹141,822 cr"
+        ],
+        "fundamentals": {
+          "market_cap_cr": 141822.0,
+          "pe": 111.0,
+          "roce": 26.7,
+          "roe": 20.5,
+          "sales_growth_3_years": 21.0,
+          "profit_growth_3_years": 10.0,
+          "promoter_pct": 56.36,
+          "debt_to_equity": 0.01,
+          "np_yoy_growth_pct": 15.4
+        },
+        "source_weight": 0.55,
+        "source_confidence": 50,
+        "composite": 77,
+        "verdict": "BUY",
+        "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+        "alloc_inr": 40551.75,
+        "alloc_qty": 45
+      },
+      {
+        "symbol": "V2RETAIL",
+        "company": "V2 Retail",
+        "tip_id": "2e926806da",
+        "source_id": "broker:motilal",
+        "corroborating_sources": [
+          "mc_stock_ideas_gnews",
+          "brokerage_gnews"
+        ],
+        "n_mentions": 10,
+        "src_targets": [
+          275.0
+        ],
+        "src_stop": null,
+        "src_entry": null,
+        "urls": [
+          "https://m.economictimes.com/markets/stocks/news/motilal-oswal-sees-27-upside-in-this-retail-stock-should-you-buy/articleshow/133869595.cms",
+          "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+          "https://www.moneycontrol.com/news/business/stocks/buy-v2-retail-target-of-rs-275-motilal-oswal-14024152.html",
+          "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+          "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
+        ],
+        "brokerages": [
+          "motilal"
+        ],
+        "sentence": "Buy V2 Retail; target of Rs 275: Motilal Oswal. You are using an outdated browser. Please upgrade your browser to improve your experience and security. Start --> Quotes Mutual Funds ETFs Commodities Futures & Options Unlisted Shares Currency News Topic Cryptocurrency Forum Notices Videos Glossary Al",
+        "ltp": 223.5,
+        "plan": {
+          "timeframe": "long",
+          "entry": 223.5,
+          "entry_zone": [
+            222.38,
+            224.62
+          ],
+          "stop_loss": 213.56,
+          "stop_loss_pct": 4.45,
+          "stop_basis": "below support / near 50EMA",
+          "targets": [
+            242.35,
+            259.25,
+            271.26
+          ],
+          "target_pct": [
+            8.43,
+            16.0,
+            21.37
+          ],
+          "target_basis": [
+            "resistance",
+            "resistance",
+            "8×ATR"
+          ],
+          "reward_risk_t2": 3.6,
+          "mandate_pct": 10.0,
+          "time_stop_days": 30,
+          "ta_confidence": 79,
+          "reasons": [
+            "+8 trend up",
+            "+7 RSI 54.7 healthy momentum",
+            "+5 MACD histogram positive & rising",
+            "-3 ADX 13.9 no trend",
+            "+5 volume 2.32× avg on up day",
+            "+3 pattern bollinger_squeeze",
+            "+4 pattern momentum_aligned",
+            "+6 pattern pullback_to_ema20_in_uptrend",
+            "+4 reward:risk to T2 3.6"
+          ],
+          "tradeable": true,
+          "src_targets": [
+            275.0
+          ],
+          "src_stop": null
+        },
+        "ta": {
+          "trend": "up",
+          "rsi": 54.7,
+          "atr_pct": 2.67,
+          "adx": 13.9,
+          "vol_ratio": 2.32,
+          "patterns": [
+            "bollinger_squeeze",
+            "momentum_aligned",
+            "pullback_to_ema20_in_uptrend"
+          ],
+          "dist_52w_high_pct": -13.79,
+          "dist_ema20_pct": 1.44,
+          "dist_ema200_pct": 4.4,
+          "avg_turnover_cr": 27.29,
+          "chg_5d_pct": 0.37,
+          "chg_20d_pct": 2.3,
+          "high_52w": 259.25,
+          "last_bar_date": "2026-09-07"
+        },
+        "resistances": [
+          {
+            "price": 227.92,
+            "touches": 3
+          },
+          {
+            "price": 242.35,
+            "touches": 2
+          },
+          {
+            "price": 248.92,
+            "touches": 1
+          },
+          {
+            "price": 259.25,
+            "touches": 2
+          }
+        ],
+        "supports": [
+          {
+            "price": 220.57,
+            "touches": 2
+          },
+          {
+            "price": 214.63,
+            "touches": 6
+          },
+          {
+            "price": 194.12,
+            "touches": 1
+          },
+          {
+            "price": 189.13,
+            "touches": 1
+          }
+        ],
+        "ta_confidence": 79,
+        "fund_score": 77,
+        "fund_why": [
+          "+6 ROCE 19.3%",
+          "+8 ROE 22.9%",
+          "-2 P/E 51.5",
+          "+8 3y profit CAGR 135%",
+          "+6 3y sales CAGR 54%",
+          "-2 D/E 1.1",
+          "+4 promoter 51.43%",
+          "-5 promoter stake down -2.79pp in 4q",
+          "+4 latest qtr PAT YoY 68%",
+          "+0 mcap ₹8,166 cr"
+        ],
+        "fundamentals": {
+          "market_cap_cr": 8166.0,
+          "pe": 51.5,
+          "roce": 19.3,
+          "roe": 22.9,
+          "sales_growth_3_years": 54.0,
+          "profit_growth_3_years": 135.0,
+          "promoter_pct": 51.43,
+          "debt_to_equity": 1.1,
+          "np_yoy_growth_pct": 68.0
+        },
+        "source_weight": 0.6,
+        "source_confidence": 50,
+        "composite": 73,
+        "verdict": "BUY",
+        "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+        "alloc_inr": 30172.5,
+        "alloc_qty": 135
+      },
+      {
+        "symbol": "LALPATHLAB",
+        "company": "Dr. Lal Path Labs Ltd.",
+        "tip_id": "9f766df819",
+        "source_id": "chartink_squeeze",
+        "corroborating_sources": [],
+        "n_mentions": 1,
+        "src_targets": [],
+        "src_stop": null,
+        "src_entry": null,
+        "urls": [
+          "https://chartink.com/stocks/lalpathlab.html"
+        ],
+        "brokerages": [],
+        "sentence": "Buy Dr. Lal Path Labs Ltd. (NSE: LALPATHLAB) LTP 1901.1 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.26%, volume 157780.",
+        "ltp": 1901.699951171875,
+        "plan": {
+          "timeframe": "monthly",
+          "entry": 1901.7,
+          "entry_zone": [
+            1892.19,
+            1911.21
+          ],
+          "stop_loss": 1860.75,
+          "stop_loss_pct": 2.15,
+          "stop_basis": "below support",
+          "targets": [
+            2053.26,
+            2154.3,
+            2305.86
+          ],
+          "target_pct": [
+            7.97,
+            13.28,
+            21.25
+          ],
+          "target_basis": [
+            "3×ATR",
+            "5×ATR",
+            "8×ATR"
+          ],
+          "reward_risk_t2": 6.17,
+          "mandate_pct": 10.0,
+          "time_stop_days": 30,
+          "ta_confidence": 78,
+          "reasons": [
+            "+14 trend strong_up",
+            "+7 RSI 52.8 healthy momentum",
+            "+4 ADX 27.9 trending",
+            "+3 pattern bollinger_squeeze",
+            "+6 pattern pullback_to_ema20_in_uptrend",
+            "+4 reward:risk to T2 6.17"
+          ],
+          "tradeable": true,
+          "src_targets": [],
+          "src_stop": null
+        },
+        "ta": {
+          "trend": "strong_up",
+          "rsi": 52.8,
+          "atr_pct": 2.66,
+          "adx": 27.9,
+          "vol_ratio": 0.8,
+          "patterns": [
+            "bollinger_squeeze",
+            "pullback_to_ema20_in_uptrend"
+          ],
+          "dist_52w_high_pct": -4.38,
+          "dist_ema20_pct": 0.03,
+          "dist_ema200_pct": 16.26,
+          "avg_turnover_cr": 38.01,
+          "chg_5d_pct": -1.7,
+          "chg_20d_pct": -2.68,
+          "high_52w": 1988.9,
+          "last_bar_date": "2026-09-07"
+        },
+        "resistances": [
+          {
+            "price": 1980.27,
+            "touches": 3
+          }
+        ],
+        "supports": [
+          {
+            "price": 1870.1,
+            "touches": 1
+          },
+          {
+            "price": 1650.9,
+            "touches": 1
+          },
+          {
+            "price": 1610.1,
+            "touches": 1
+          },
+          {
+            "price": 1500.1,
+            "touches": 1
+          }
+        ],
+        "ta_confidence": 78,
+        "fund_score": 94,
+        "fund_why": [
+          "+12 ROCE 28%",
+          "+8 ROE 22.3%",
+          "-2 P/E 56.8",
+          "+8 3y profit CAGR 30%",
+          "+3 3y sales CAGR 11%",
+          "+5 D/E 0.08",
+          "+4 promoter 53.19%",
+          "+4 latest qtr PAT YoY 26.9%",
+          "+2 mcap ₹31,906 cr"
+        ],
+        "fundamentals": {
+          "market_cap_cr": 31906.0,
+          "pe": 56.8,
+          "roce": 28.0,
+          "roe": 22.3,
+          "sales_growth_3_years": 11.0,
+          "profit_growth_3_years": 30.0,
+          "promoter_pct": 53.19,
+          "debt_to_equity": 0.08,
+          "np_yoy_growth_pct": 26.9
+        },
+        "source_weight": 0.5,
+        "source_confidence": 50,
+        "composite": 73,
+        "verdict": "BUY",
+        "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+        "alloc_inr": 28525.5,
+        "alloc_qty": 15
+      }
+    ],
+    "chosen": [
+      {
+        "symbol": "CGPOWER",
+        "composite": 77,
+        "alloc_inr": 40551.75,
+        "alloc_qty": 45
+      },
+      {
+        "symbol": "V2RETAIL",
+        "composite": 73,
+        "alloc_inr": 30172.5,
+        "alloc_qty": 135
+      },
+      {
+        "symbol": "LALPATHLAB",
+        "composite": 73,
+        "alloc_inr": 28525.5,
+        "alloc_qty": 15
+      }
+    ],
+    "booked": [],
+    "cash_after": 100000,
+    "watch": [
+      "APLAPOLLO",
+      "INGERRAND",
+      "SANSERA",
+      "BOSCHLTD",
+      "PERSISTENT",
+      "TIIL",
+      "ARMANFIN",
+      "CHOLAFIN"
+    ]
+  },
+  "latest_analysis": [
+    {
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "verdict": "BUY",
+      "composite": 77,
+      "ta_confidence": 84,
+      "fund_score": 91,
+      "source_confidence": 50,
+      "ltp": 901.1500244140625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 901.15,
+        "entry_zone": [
+          896.64,
+          905.66
+        ],
+        "stop_loss": 855.9,
+        "stop_loss_pct": 5.02,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          977.23,
+          1012.9,
+          1079.95
+        ],
+        "target_pct": [
+          8.44,
+          12.4,
+          19.84
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.47,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 84,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.9 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 1.52× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1020.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "V2RETAIL",
+      "company": "V2 Retail",
+      "verdict": "BUY",
+      "composite": 73,
+      "ta_confidence": 79,
+      "fund_score": 77,
+      "source_confidence": 50,
+      "ltp": 223.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 223.5,
+        "entry_zone": [
+          222.38,
+          224.62
+        ],
+        "stop_loss": 213.56,
+        "stop_loss_pct": 4.45,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          242.35,
+          259.25,
+          271.26
+        ],
+        "target_pct": [
+          8.43,
+          16.0,
+          21.37
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.6,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 79,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 54.7 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 13.9 no trend",
+          "+5 volume 2.32× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.6"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          275.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "verdict": "BUY",
+      "composite": 73,
+      "ta_confidence": 78,
+      "fund_score": 94,
+      "source_confidence": 50,
+      "ltp": 1901.699951171875,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1901.7,
+        "entry_zone": [
+          1892.19,
+          1911.21
+        ],
+        "stop_loss": 1860.75,
+        "stop_loss_pct": 2.15,
+        "stop_basis": "below support",
+        "targets": [
+          2053.26,
+          2154.3,
+          2305.86
+        ],
+        "target_pct": [
+          7.97,
+          13.28,
+          21.25
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 6.17,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 78,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.8 healthy momentum",
+          "+4 ADX 27.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 6.17"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "HYUNDAI",
+      "company": "Hyundai Motor India Limited",
+      "verdict": "BUY",
+      "composite": 72,
+      "ta_confidence": 78,
+      "fund_score": 80,
+      "source_confidence": 50,
+      "ltp": 2210.89990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2210.9,
+        "entry_zone": [
+          2199.85,
+          2221.95
+        ],
+        "stop_loss": 2149.3,
+        "stop_loss_pct": 2.79,
+        "stop_basis": "below support",
+        "targets": [
+          2277.45,
+          2366.5,
+          2453.76
+        ],
+        "target_pct": [
+          3.01,
+          7.04,
+          10.98
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.53,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 78,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 56.0 healthy momentum",
+          "+4 ADX 26.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 2.53"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "VADILALIND",
+      "company": "Vadilal Industries Limited",
+      "verdict": "BUY",
+      "composite": 70,
+      "ta_confidence": 72,
+      "fund_score": 96,
+      "source_confidence": 50,
+      "ltp": 7552.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 7552.0,
+        "entry_zone": [
+          7514.24,
+          7589.76
+        ],
+        "stop_loss": 7298.32,
+        "stop_loss_pct": 3.36,
+        "stop_basis": "below support",
+        "targets": [
+          8020.0,
+          8447.0,
+          8740.45
+        ],
+        "target_pct": [
+          6.2,
+          11.85,
+          15.74
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 3.53,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 72,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 55.2 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 39.1 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.53"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "PRUDENT",
+      "company": "Prudent Corporate Advisory Services Limited",
+      "verdict": "BUY",
+      "composite": 70,
+      "ta_confidence": 71,
+      "fund_score": 97,
+      "source_confidence": 50,
+      "ltp": 3368.60009765625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3368.6,
+        "entry_zone": [
+          3351.76,
+          3385.44
+        ],
+        "stop_loss": 3120.74,
+        "stop_loss_pct": 7.36,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          3616.46,
+          3864.32,
+          4105.5
+        ],
+        "target_pct": [
+          7.36,
+          14.72,
+          21.88
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 71,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.9 healthy momentum",
+          "+4 ADX 32.2 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SIEMENS",
+      "company": "Siemens Limited",
+      "verdict": "BUY",
+      "composite": 70,
+      "ta_confidence": 71,
+      "fund_score": 95,
+      "source_confidence": 50,
+      "ltp": 3915.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3915.5,
+        "entry_zone": [
+          3895.92,
+          3935.08
+        ],
+        "stop_loss": 3835.33,
+        "stop_loss_pct": 2.05,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          4149.4,
+          4383.7,
+          4664.62
+        ],
+        "target_pct": [
+          5.97,
+          11.96,
+          19.13
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.84,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 71,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 47.1 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 27.8 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 5.84"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "NEULANDLAB",
+      "company": "Neuland Laboratories Limited",
+      "verdict": "BUY",
+      "composite": 69,
+      "ta_confidence": 68,
+      "fund_score": 93,
+      "source_confidence": 50,
+      "ltp": 22780.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 22780.0,
+        "entry_zone": [
+          22666.1,
+          22893.9
+        ],
+        "stop_loss": 21847.31,
+        "stop_loss_pct": 4.09,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          23879.33,
+          24645.37,
+          25578.06
+        ],
+        "target_pct": [
+          4.83,
+          8.19,
+          12.28
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 68,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 56.9 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 41.8 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ASTRAMICRO",
+      "company": "Astra Microwave Products Limited",
+      "verdict": "BUY",
+      "composite": 69,
+      "ta_confidence": 80,
+      "fund_score": 70,
+      "source_confidence": 50,
+      "ltp": 1708.0999755859375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1708.1,
+        "entry_zone": [
+          1699.56,
+          1716.64
+        ],
+        "stop_loss": 1645.8,
+        "stop_loss_pct": 3.65,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          1871.0,
+          2019.15,
+          2205.78
+        ],
+        "target_pct": [
+          9.54,
+          18.21,
+          29.14
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 4.99,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 80,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 50.2 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 10.3 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 4.99"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "FINCABLES",
+      "company": "Finolex Cables",
+      "verdict": "BUY",
+      "composite": 68,
+      "ta_confidence": 72,
+      "fund_score": 84,
+      "source_confidence": 50,
+      "ltp": 1222.800048828125,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1222.8,
+        "entry_zone": [
+          1216.69,
+          1228.91
+        ],
+        "stop_loss": 1180.57,
+        "stop_loss_pct": 3.45,
+        "stop_basis": "below support",
+        "targets": [
+          1374.0,
+          1488.35,
+          1647.68
+        ],
+        "target_pct": [
+          12.37,
+          21.72,
+          34.75
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 6.29,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 72,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 52.0 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 33.1 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 6.29"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1494.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SAGILITY",
+      "company": "Sagility",
+      "verdict": "BUY",
+      "composite": 68,
+      "ta_confidence": 71,
+      "fund_score": 80,
+      "source_confidence": 50,
+      "ltp": 45.939998626708984,
+      "plan": {
+        "timeframe": "long",
+        "entry": 45.94,
+        "entry_zone": [
+          45.71,
+          46.17
+        ],
+        "stop_loss": 42.76,
+        "stop_loss_pct": 6.92,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          50.77,
+          53.7,
+          56.1
+        ],
+        "target_pct": [
+          10.51,
+          16.89,
+          22.12
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.44,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 71,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 61.0 healthy momentum",
+          "+4 ADX 31.7 trending",
+          "+6 pattern double_bottom_confirmed"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          54.0
+        ],
+        "src_stop": 42.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "verdict": "BUY",
+      "composite": 68,
+      "ta_confidence": 67,
+      "fund_score": 89,
+      "source_confidence": 50,
+      "ltp": 4863.10009765625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 4863.1,
+        "entry_zone": [
+          4838.78,
+          4887.42
+        ],
+        "stop_loss": 4683.47,
+        "stop_loss_pct": 3.69,
+        "stop_basis": "below support",
+        "targets": [
+          5009.29,
+          5149.9,
+          5301.67
+        ],
+        "target_pct": [
+          3.01,
+          5.9,
+          9.02
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.6,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 67,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.7 healthy momentum",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "OIL",
+      "company": "Oil India",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 75,
+      "fund_score": 64,
+      "source_confidence": 50,
+      "ltp": 482.1000061035156,
+      "plan": {
+        "timeframe": "long",
+        "entry": 482.1,
+        "entry_zone": [
+          479.69,
+          484.51
+        ],
+        "stop_loss": 469.94,
+        "stop_loss_pct": 2.52,
+        "stop_basis": "below support",
+        "targets": [
+          528.67,
+          546.87,
+          579.14
+        ],
+        "target_pct": [
+          9.66,
+          13.43,
+          20.13
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.33,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 75,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 56.2 healthy momentum",
+          "+4 ADX 28.3 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 5.33"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          600.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Ltd",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 76,
+      "fund_score": 61,
+      "source_confidence": 50,
+      "ltp": 414.45001220703125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 414.45,
+        "entry_zone": [
+          412.38,
+          416.52
+        ],
+        "stop_loss": 390.03,
+        "stop_loss_pct": 5.89,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          430.5,
+          463.29,
+          487.71
+        ],
+        "target_pct": [
+          3.87,
+          11.78,
+          17.68
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 76,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 64.0 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+6 pattern double_bottom_confirmed",
+          "+4 pattern momentum_aligned"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "broker:marketsmith",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "TDPOWERSYS",
+      "company": "TD Power Systems",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 70,
+      "fund_score": 86,
+      "source_confidence": 50,
+      "ltp": 730.0999755859375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 730.1,
+        "entry_zone": [
+          726.45,
+          733.75
+        ],
+        "stop_loss": 679.4,
+        "stop_loss_pct": 6.94,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          798.85,
+          831.5,
+          882.2
+        ],
+        "target_pct": [
+          9.42,
+          13.89,
+          20.83
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.5 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 30.5 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-4 source target ₹760 below our T1 — source sees less upside"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          760.0
+        ],
+        "src_stop": 720.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "company": "Apollo Hospitals Enterprise Limited",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 70,
+      "fund_score": 79,
+      "source_confidence": 50,
+      "ltp": 8786.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 8786.0,
+        "entry_zone": [
+          8742.07,
+          8829.93
+        ],
+        "stop_loss": 8506.75,
+        "stop_loss_pct": 3.18,
+        "stop_basis": "below support",
+        "targets": [
+          8992.8,
+          9225.53,
+          9445.3
+        ],
+        "target_pct": [
+          2.35,
+          5.0,
+          7.5
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.57,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 50.3 healthy momentum",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "KPL",
+      "company": "Kwality Pharmaceuticals Limited",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 68,
+      "fund_score": 92,
+      "source_confidence": 50,
+      "ltp": 3400.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3400.0,
+        "entry_zone": [
+          3383.0,
+          3417.0
+        ],
+        "stop_loss": 3144.53,
+        "stop_loss_pct": 7.51,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          3708.5,
+          3910.93,
+          4166.4
+        ],
+        "target_pct": [
+          9.07,
+          15.03,
+          22.54
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 68,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 59.2 healthy momentum",
+          "+4 ADX 37.3 trending",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ALKYLAMINE",
+      "company": "Alkyl Amines Chemicals Limited",
+      "verdict": "BUY",
+      "composite": 67,
+      "ta_confidence": 65,
+      "fund_score": 97,
+      "source_confidence": 50,
+      "ltp": 2004.199951171875,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2004.2,
+        "entry_zone": [
+          1994.18,
+          2014.22
+        ],
+        "stop_loss": 1868.61,
+        "stop_loss_pct": 6.77,
+        "stop_basis": "below support",
+        "targets": [
+          2115.9,
+          2217.35,
+          2323.92
+        ],
+        "target_pct": [
+          5.57,
+          10.64,
+          15.95
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.57,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 65,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.8 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 26.3 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "KIRLOSENG",
+      "company": "Kirloskar Oil Engines Limited",
+      "verdict": "BUY",
+      "composite": 66,
+      "ta_confidence": 74,
+      "fund_score": 61,
+      "source_confidence": 50,
+      "ltp": 2180.60009765625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2180.6,
+        "entry_zone": [
+          2169.7,
+          2191.5
+        ],
+        "stop_loss": 2099.45,
+        "stop_loss_pct": 3.72,
+        "stop_basis": "below support",
+        "targets": [
+          2300.5,
+          2441.99,
+          2572.0
+        ],
+        "target_pct": [
+          5.5,
+          11.99,
+          17.95
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 3.22,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 74,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.8 healthy momentum",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.22"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "GREENPLY",
+      "company": "Greenply Industries",
+      "verdict": "BUY",
+      "composite": 66,
+      "ta_confidence": 74,
+      "fund_score": 68,
+      "source_confidence": 50,
+      "ltp": 303.3500061035156,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 303.35,
+        "entry_zone": [
+          301.83,
+          304.87
+        ],
+        "stop_loss": 287.56,
+        "stop_loss_pct": 5.21,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          334.4,
+          353.6,
+          383.75
+        ],
+        "target_pct": [
+          10.24,
+          16.57,
+          26.5
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.18,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 74,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 59.7 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-6 volume 2.64× avg on DOWN day (distribution)",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+4 pattern momentum_aligned",
+          "+1 pattern volume_spike",
+          "+4 reward:risk to T2 3.18",
+          "-4 source target ₹330 below our T1 — source sees less upside"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          320.0,
+          330.0
+        ],
+        "src_stop": 290.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange Of India",
+      "verdict": "BUY",
+      "composite": 66,
+      "ta_confidence": 61,
+      "fund_score": 95,
+      "source_confidence": 50,
+      "ltp": 3337.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3337.0,
+        "entry_zone": [
+          3320.32,
+          3353.68
+        ],
+        "stop_loss": 3180.49,
+        "stop_loss_pct": 4.69,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          3480.0,
+          3650.02,
+          3806.53
+        ],
+        "target_pct": [
+          4.29,
+          9.38,
+          14.07
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 61,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.0 healthy momentum",
+          "+4 ADX 35.0 trending",
+          "-4 source target ₹3450 below our T1 — source sees less upside"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          3450.0
+        ],
+        "src_stop": 3220.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "company": "Bajaj Auto Limited",
+      "verdict": "BUY",
+      "composite": 66,
+      "ta_confidence": 58,
+      "fund_score": 100,
+      "source_confidence": 50,
+      "ltp": 11790.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 11790.0,
+        "entry_zone": [
+          11731.05,
+          11848.95
+        ],
+        "stop_loss": 11518.12,
+        "stop_loss_pct": 2.31,
+        "stop_basis": "below support",
+        "targets": [
+          12132.58,
+          12470.0,
+          12817.75
+        ],
+        "target_pct": [
+          2.91,
+          5.77,
+          8.72
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.5,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 58,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 53.1 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 49.4 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-8 resistance ₹11859.5 within 1.2% overhead",
+          "+4 reward:risk to T2 2.5"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SHAILY",
+      "company": "Shaily Engineering Plastics Limited",
+      "verdict": "BUY",
+      "composite": 66,
+      "ta_confidence": 68,
+      "fund_score": 84,
+      "source_confidence": 50,
+      "ltp": 3338.300048828125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3338.3,
+        "entry_zone": [
+          3321.61,
+          3354.99
+        ],
+        "stop_loss": 3166.59,
+        "stop_loss_pct": 5.14,
+        "stop_basis": "below support",
+        "targets": [
+          3615.2,
+          3705.07,
+          3843.83
+        ],
+        "target_pct": [
+          8.29,
+          10.99,
+          15.14
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.14,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 68,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 58.9 healthy momentum",
+          "+4 ADX 32.6 trending",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "IPCALAB",
+      "company": "IPCA Laboratories Limited",
+      "verdict": "BUY",
+      "composite": 65,
+      "ta_confidence": 65,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 1952.300048828125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 1952.3,
+        "entry_zone": [
+          1942.54,
+          1962.06
+        ],
+        "stop_loss": 1869.61,
+        "stop_loss_pct": 4.24,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          2035.0,
+          2117.69,
+          2200.39
+        ],
+        "target_pct": [
+          4.24,
+          8.47,
+          12.71
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 65,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 62.2 healthy momentum",
+          "+4 ADX 33.0 trending"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "company": "Apl Apollo Tubes",
+      "verdict": "WATCH",
+      "composite": 64,
+      "ta_confidence": 63,
+      "fund_score": 85,
+      "source_confidence": 50,
+      "ltp": 2202.89990234375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 2202.9,
+        "entry_zone": [
+          2191.89,
+          2213.91
+        ],
+        "stop_loss": 2109.1,
+        "stop_loss_pct": 4.26,
+        "stop_basis": "below support",
+        "targets": [
+          2377.53,
+          2493.95,
+          2668.58
+        ],
+        "target_pct": [
+          7.93,
+          13.21,
+          21.14
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.1,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 63,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 61.6 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 50.6 trending",
+          "+4 reward:risk to T2 3.1"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          2430.0
+        ],
+        "src_stop": 2133.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "INGERRAND",
+      "company": "Ingersoll Rand (India) Limited",
+      "verdict": "WATCH",
+      "composite": 64,
+      "ta_confidence": 77,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 4772.2998046875,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 4772.3,
+        "entry_zone": [
+          4748.44,
+          4796.16
+        ],
+        "stop_loss": 4537.2,
+        "stop_loss_pct": 4.93,
+        "stop_basis": "below support",
+        "targets": [
+          4955.0,
+          5192.03,
+          5401.89
+        ],
+        "target_pct": [
+          3.83,
+          8.8,
+          13.19
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.79,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 77,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 57.9 healthy momentum",
+          "+4 ADX 31.2 trending",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "SANSERA",
+      "company": "Sansera Engineering Limited",
+      "verdict": "WATCH",
+      "composite": 64,
+      "ta_confidence": 72,
+      "fund_score": 67,
+      "source_confidence": 50,
+      "ltp": 3903.10009765625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3903.1,
+        "entry_zone": [
+          3883.58,
+          3922.62
+        ],
+        "stop_loss": 3742.2,
+        "stop_loss_pct": 4.12,
+        "stop_basis": "below support",
+        "targets": [
+          4062.65,
+          4319.38,
+          4527.52
+        ],
+        "target_pct": [
+          4.09,
+          10.67,
+          16.0
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.59,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 72,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 58.6 healthy momentum",
+          "+4 ADX 32.3 trending",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 2.59"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "company": "Bosch Limited",
+      "verdict": "WATCH",
+      "composite": 63,
+      "ta_confidence": 65,
+      "fund_score": 79,
+      "source_confidence": 50,
+      "ltp": 48400.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 48400.0,
+        "entry_zone": [
+          48158.0,
+          48642.0
+        ],
+        "stop_loss": 46177.95,
+        "stop_loss_pct": 4.59,
+        "stop_basis": "below support",
+        "targets": [
+          50000.0,
+          51921.4,
+          53682.1
+        ],
+        "target_pct": [
+          3.31,
+          7.28,
+          10.91
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.58,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 65,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 60.8 healthy momentum",
+          "+4 ADX 42.0 trending"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "PERSISTENT",
+      "company": "Persistent Systems Limited",
+      "verdict": "WATCH",
+      "composite": 63,
+      "ta_confidence": 57,
+      "fund_score": 91,
+      "source_confidence": 50,
+      "ltp": 5548.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5548.0,
+        "entry_zone": [
+          5520.26,
+          5575.74
+        ],
+        "stop_loss": 5363.05,
+        "stop_loss_pct": 3.33,
+        "stop_basis": "below support",
+        "targets": [
+          5698.0,
+          6022.3,
+          6259.45
+        ],
+        "target_pct": [
+          2.7,
+          8.55,
+          12.82
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.56,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 57,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 49.8 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 2.56"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "TIIL",
+      "company": "Technocraft Industries (India) Limited",
+      "verdict": "WATCH",
+      "composite": 63,
+      "ta_confidence": 65,
+      "fund_score": 79,
+      "source_confidence": 50,
+      "ltp": 3176.89990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3176.9,
+        "entry_zone": [
+          3161.02,
+          3192.78
+        ],
+        "stop_loss": 2972.13,
+        "stop_loss_pct": 6.45,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          3381.66,
+          3565.3,
+          3791.19
+        ],
+        "target_pct": [
+          6.45,
+          12.23,
+          19.34
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.9,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 65,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 56.9 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 49.2 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ARMANFIN",
+      "company": "Arman Financial Services Limited",
+      "verdict": "WATCH",
+      "composite": 63,
+      "ta_confidence": 73,
+      "fund_score": 57,
+      "source_confidence": 50,
+      "ltp": 2036.4000244140625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2036.4,
+        "entry_zone": [
+          2026.22,
+          2046.58
+        ],
+        "stop_loss": 1897.46,
+        "stop_loss_pct": 6.82,
+        "stop_basis": "below support",
+        "targets": [
+          2158.6,
+          2251.92,
+          2359.68
+        ],
+        "target_pct": [
+          6.0,
+          10.58,
+          15.88
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.55,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 73,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 57.5 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "company": "Cholamandalam Investment and Finance Company Limited",
+      "verdict": "WATCH",
+      "composite": 63,
+      "ta_confidence": 64,
+      "fund_score": 82,
+      "source_confidence": 50,
+      "ltp": 1833.800048828125,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1833.8,
+        "entry_zone": [
+          1824.63,
+          1842.97
+        ],
+        "stop_loss": 1764.63,
+        "stop_loss_pct": 3.77,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          1943.33,
+          2055.4,
+          2188.36
+        ],
+        "target_pct": [
+          5.97,
+          12.08,
+          19.33
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.2,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 64,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 47.3 neutral",
+          "-3 ADX 13.1 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 3.2"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "GRASIM",
+      "company": "Grasim Industries Limited",
+      "verdict": "WATCH",
+      "composite": 62,
+      "ta_confidence": 70,
+      "fund_score": 47,
+      "source_confidence": 50,
+      "ltp": 3301.60009765625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3301.6,
+        "entry_zone": [
+          3285.09,
+          3318.11
+        ],
+        "stop_loss": 3205.99,
+        "stop_loss_pct": 2.9,
+        "stop_basis": "below support",
+        "targets": [
+          3411.1,
+          3505.81,
+          3607.92
+        ],
+        "target_pct": [
+          3.32,
+          6.19,
+          9.28
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.14,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.0 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "FINEORG",
+      "company": "Fine Organic Industries Limited",
+      "verdict": "WATCH",
+      "composite": 62,
+      "ta_confidence": 61,
+      "fund_score": 73,
+      "source_confidence": 50,
+      "ltp": 5120.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5120.0,
+        "entry_zone": [
+          5094.4,
+          5145.6
+        ],
+        "stop_loss": 4960.57,
+        "stop_loss_pct": 3.11,
+        "stop_basis": "below support",
+        "targets": [
+          5394.06,
+          5572.16,
+          5798.24
+        ],
+        "target_pct": [
+          5.35,
+          8.83,
+          13.25
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.84,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 61,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 49.3 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 2.84"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "GLAXO",
+      "company": "GlaxoSmithKline Pharmaceuticals Limited",
+      "verdict": "WATCH",
+      "composite": 62,
+      "ta_confidence": 59,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 2947.300048828125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2947.3,
+        "entry_zone": [
+          2932.56,
+          2962.04
+        ],
+        "stop_loss": 2818.05,
+        "stop_loss_pct": 4.39,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          3054.9,
+          3205.81,
+          3335.07
+        ],
+        "target_pct": [
+          3.65,
+          8.77,
+          13.16
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 59,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 59.5 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 38.2 trending"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "JUBLCPL",
+      "company": "Jubilant Agri and Consumer Products Limited",
+      "verdict": "WATCH",
+      "composite": 62,
+      "ta_confidence": 61,
+      "fund_score": 81,
+      "source_confidence": 50,
+      "ltp": 2211.5,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2211.5,
+        "entry_zone": [
+          2200.44,
+          2222.56
+        ],
+        "stop_loss": 2043.43,
+        "stop_loss_pct": 7.6,
+        "stop_basis": "below support",
+        "targets": [
+          2479.0,
+          2592.32,
+          2911.8
+        ],
+        "target_pct": [
+          12.1,
+          17.22,
+          31.67
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.27,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 61,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.4 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "RADICO",
+      "company": "Radico Khaitan Limited",
+      "verdict": "WATCH",
+      "composite": 62,
+      "ta_confidence": 57,
+      "fund_score": 91,
+      "source_confidence": 50,
+      "ltp": 4442.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4442.5,
+        "entry_zone": [
+          4420.29,
+          4464.71
+        ],
+        "stop_loss": 4198.6,
+        "stop_loss_pct": 5.49,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          4747.0,
+          4930.3,
+          5222.98
+        ],
+        "target_pct": [
+          6.85,
+          10.98,
+          17.57
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 57,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 45.9 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 37.0 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "AVALON",
+      "company": "Avalon Technologies",
+      "verdict": "SKIP",
+      "composite": 61,
+      "ta_confidence": 59,
+      "fund_score": 76,
+      "source_confidence": 50,
+      "ltp": 2347.699951171875,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2347.7,
+        "entry_zone": [
+          2335.96,
+          2359.44
+        ],
+        "stop_loss": 2153.39,
+        "stop_loss_pct": 8.28,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          2542.01,
+          2736.32,
+          2930.63
+        ],
+        "target_pct": [
+          8.28,
+          16.55,
+          24.83
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 59,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.9 healthy momentum",
+          "+4 ADX 44.6 trending",
+          "+5 volume 2.64× avg on up day",
+          "+1 pattern volume_spike",
+          "-12 stop 8.28% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "broker:nomura",
+      "bucket": "fails risk rules (-12 stop 8.28% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "SHADOWFAX",
+      "company": "Shares of Avalon Technologies",
+      "verdict": "WATCH",
+      "composite": 61,
+      "ta_confidence": 59,
+      "fund_score": 66,
+      "source_confidence": 50,
+      "ltp": 250.0500030517578,
+      "plan": {
+        "timeframe": "long",
+        "entry": 250.05,
+        "entry_zone": [
+          248.8,
+          251.3
+        ],
+        "stop_loss": 232.83,
+        "stop_loss_pct": 6.89,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          284.19,
+          306.95,
+          341.09
+        ],
+        "target_pct": [
+          13.65,
+          22.76,
+          36.41
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.3,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 59,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 51.5 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.3",
+          "-3 source target ₹2767 implausibly far for long"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          2767.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:nomura",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ABB",
+      "company": "ABB India Limited",
+      "verdict": "WATCH",
+      "composite": 61,
+      "ta_confidence": 61,
+      "fund_score": 77,
+      "source_confidence": 50,
+      "ltp": 7385.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 7385.5,
+        "entry_zone": [
+          7348.57,
+          7422.43
+        ],
+        "stop_loss": 7049.57,
+        "stop_loss_pct": 4.55,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          7878.2,
+          8236.9,
+          8747.74
+        ],
+        "target_pct": [
+          6.67,
+          11.53,
+          18.44
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.53,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 61,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 45.4 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 2.53"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "PWL",
+      "company": "Physicswallah Ltd",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 65,
+      "fund_score": 56,
+      "source_confidence": 50,
+      "ltp": 129.64999389648438,
+      "plan": {
+        "timeframe": "long",
+        "entry": 129.65,
+        "entry_zone": [
+          129.0,
+          130.3
+        ],
+        "stop_loss": 121.45,
+        "stop_loss_pct": 6.32,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          146.84,
+          159.43,
+          161.99
+        ],
+        "target_pct": [
+          13.26,
+          22.97,
+          24.94
+        ],
+        "target_basis": [
+          "3×ATR",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 3.63,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 65,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 59.3 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 13.5 no trend",
+          "+4 pattern momentum_aligned",
+          "+4 reward:risk to T2 3.63"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          200.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "ETHOSLTD",
+      "company": "Ethos Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 56,
+      "fund_score": 71,
+      "source_confidence": 50,
+      "ltp": 2737.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 2737.5,
+        "entry_zone": [
+          2723.81,
+          2751.19
+        ],
+        "stop_loss": 2652.67,
+        "stop_loss_pct": 3.1,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          3076.55,
+          3245.9,
+          3508.78
+        ],
+        "target_pct": [
+          12.39,
+          18.57,
+          28.17
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.99,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 56,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 43.4 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 31.7 trending",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 5.99"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          3400.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "DYNAMATECH",
+      "company": "Dynamatic Technologies Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 71,
+      "fund_score": 46,
+      "source_confidence": 50,
+      "ltp": 11565.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 11565.0,
+        "entry_zone": [
+          11507.17,
+          11622.82
+        ],
+        "stop_loss": 10918.29,
+        "stop_loss_pct": 5.59,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          12030.0,
+          12681.0,
+          12875.0
+        ],
+        "target_pct": [
+          4.02,
+          9.65,
+          11.33
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.73,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 71,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 55.4 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 37.8 trending",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "HAPPYFORGE",
+      "company": "Happy Forgings Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 59,
+      "fund_score": 80,
+      "source_confidence": 50,
+      "ltp": 2229.39990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2229.4,
+        "entry_zone": [
+          2218.25,
+          2240.55
+        ],
+        "stop_loss": 2096.76,
+        "stop_loss_pct": 5.95,
+        "stop_basis": "below support",
+        "targets": [
+          2340.0,
+          2470.0,
+          2657.3
+        ],
+        "target_pct": [
+          4.96,
+          10.79,
+          19.19
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.81,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 59,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 59.0 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 40.4 trending"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "company": "Bajaj Holdings & Investment Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 61,
+      "fund_score": 74,
+      "source_confidence": 50,
+      "ltp": 11114.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 11114.0,
+        "entry_zone": [
+          11058.43,
+          11169.57
+        ],
+        "stop_loss": 10756.94,
+        "stop_loss_pct": 3.21,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          11868.98,
+          12372.3,
+          13880.0
+        ],
+        "target_pct": [
+          6.79,
+          11.32,
+          24.89
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 3.52,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 61,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 46.6 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 3.52"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "company": "Eicher Motors Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 51,
+      "fund_score": 99,
+      "source_confidence": 50,
+      "ltp": 7710.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 7710.0,
+        "entry_zone": [
+          7671.45,
+          7748.55
+        ],
+        "stop_loss": 7469.96,
+        "stop_loss_pct": 3.11,
+        "stop_basis": "below support",
+        "targets": [
+          8191.25,
+          8443.8,
+          8884.08
+        ],
+        "target_pct": [
+          6.24,
+          9.52,
+          15.23
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.06,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 51,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 40.4 neutral",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+4 reward:risk to T2 3.06"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "JSWDULUX",
+      "company": "JSW Dulux Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 61,
+      "fund_score": 74,
+      "source_confidence": 50,
+      "ltp": 3184.10009765625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3184.1,
+        "entry_zone": [
+          3168.18,
+          3200.02
+        ],
+        "stop_loss": 3054.45,
+        "stop_loss_pct": 4.07,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          3404.57,
+          3551.55,
+          3745.0
+        ],
+        "target_pct": [
+          6.92,
+          11.54,
+          17.62
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 2.83,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 61,
+        "reasons": [
+          "-4 trend sideways",
+          "+7 RSI 60.9 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+4 reward:risk to T2 2.83"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "GLAND",
+      "company": "Gland Pharma Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 61,
+      "fund_score": 75,
+      "source_confidence": 50,
+      "ltp": 2973.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 2973.5,
+        "entry_zone": [
+          2958.63,
+          2988.37
+        ],
+        "stop_loss": 2762.22,
+        "stop_loss_pct": 7.11,
+        "stop_basis": "below support",
+        "targets": [
+          3248.81,
+          3432.35,
+          3707.66
+        ],
+        "target_pct": [
+          9.26,
+          15.43,
+          24.69
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.17,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 61,
+        "reasons": [
+          "+14 trend strong_up",
+          "+4 ADX 39.9 trending",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "company": "Oberoi Realty Limited",
+      "verdict": "WATCH",
+      "composite": 60,
+      "ta_confidence": 57,
+      "fund_score": 82,
+      "source_confidence": 50,
+      "ltp": 1857.300048828125,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1857.3,
+        "entry_zone": [
+          1848.01,
+          1866.59
+        ],
+        "stop_loss": 1765.93,
+        "stop_loss_pct": 4.92,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          1977.63,
+          2081.05,
+          2215.3
+        ],
+        "target_pct": [
+          6.48,
+          12.05,
+          19.28
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.45,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 57,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 49.7 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "QUADFUTURE",
+      "company": "Futures",
+      "verdict": "WATCH",
+      "composite": 59,
+      "ta_confidence": 66,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 416.6499938964844,
+      "plan": {
+        "timeframe": "long",
+        "entry": 416.65,
+        "entry_zone": [
+          414.57,
+          418.73
+        ],
+        "stop_loss": 400.19,
+        "stop_loss_pct": 3.95,
+        "stop_basis": "below support",
+        "targets": [
+          481.25,
+          531.85,
+          600.97
+        ],
+        "target_pct": [
+          15.5,
+          27.65,
+          44.24
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 7.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 66,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 56.3 healthy momentum",
+          "+4 ADX 40.1 trending",
+          "+4 reward:risk to T2 7.0",
+          "-3 source target ₹58200 implausibly far for long"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          58200.0
+        ],
+        "src_stop": 57200.0
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "AEROENTER",
+      "company": "Aeroflex Enterprises Limited",
+      "verdict": "WATCH",
+      "composite": 59,
+      "ta_confidence": 58,
+      "fund_score": 76,
+      "source_confidence": 50,
+      "ltp": 152.66000366210938,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 152.66,
+        "entry_zone": [
+          151.9,
+          153.42
+        ],
+        "stop_loss": 141.65,
+        "stop_loss_pct": 7.21,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          163.67,
+          174.68,
+          185.69
+        ],
+        "target_pct": [
+          7.21,
+          14.42,
+          21.64
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 58,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 67.6 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 2.84× avg on up day",
+          "+8 pattern breakout_60d_high_volume",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike",
+          "-8 resistance ₹154 within 1.2% overhead"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "verdict": "WATCH",
+      "composite": 59,
+      "ta_confidence": 68,
+      "fund_score": 49,
+      "source_confidence": 50,
+      "ltp": 5152.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5152.0,
+        "entry_zone": [
+          5126.24,
+          5177.76
+        ],
+        "stop_loss": 4806.39,
+        "stop_loss_pct": 6.71,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          5497.61,
+          5813.0,
+          6188.85
+        ],
+        "target_pct": [
+          6.71,
+          12.83,
+          20.13
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.91,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 68,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.0 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 32.7 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "company": "Anand Rathi Wealth Limited",
+      "verdict": "WATCH",
+      "composite": 59,
+      "ta_confidence": 53,
+      "fund_score": 89,
+      "source_confidence": 50,
+      "ltp": 2227.60009765625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 2227.6,
+        "entry_zone": [
+          2216.46,
+          2238.74
+        ],
+        "stop_loss": 2134.37,
+        "stop_loss_pct": 4.19,
+        "stop_basis": "below support",
+        "targets": [
+          2351.35,
+          2433.85,
+          2557.6
+        ],
+        "target_pct": [
+          5.56,
+          9.26,
+          14.81
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.21,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 53,
+        "reasons": [
+          "+14 trend strong_up",
+          "+4 ADX 39.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "-8 resistance ₹2248.5 within 1.2% overhead"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BRIGADE",
+      "company": "Brigade Enterprises",
+      "verdict": "SKIP",
+      "composite": 58,
+      "ta_confidence": 53,
+      "fund_score": 70,
+      "source_confidence": 50,
+      "ltp": 679.5999755859375,
+      "plan": {
+        "timeframe": "long",
+        "entry": 679.6,
+        "entry_zone": [
+          676.2,
+          683.0
+        ],
+        "stop_loss": 606.3,
+        "stop_loss_pct": 10.79,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          802.01,
+          845.99,
+          914.16
+        ],
+        "target_pct": [
+          18.01,
+          24.48,
+          34.51
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.27,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 53,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.5 healthy momentum",
+          "+4 ADX 36.0 trending",
+          "-12 stop 10.79% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          900.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "fails risk rules (-12 stop 10.79% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "MEDANTA",
+      "company": "Global Health",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 58,
+      "fund_score": 72,
+      "source_confidence": 50,
+      "ltp": 1422.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1422.5,
+        "entry_zone": [
+          1415.39,
+          1429.61
+        ],
+        "stop_loss": 1379.57,
+        "stop_loss_pct": 3.02,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          1544.0,
+          1662.55,
+          1806.58
+        ],
+        "target_pct": [
+          8.54,
+          16.88,
+          27.0
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.59,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 58,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 49.2 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 26.7 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 5.59"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1590.0
+        ],
+        "src_stop": 1390.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "APARINDS",
+      "company": "Apar Industries Limited",
+      "verdict": "SKIP",
+      "composite": 58,
+      "ta_confidence": 47,
+      "fund_score": 90,
+      "source_confidence": 50,
+      "ltp": 17500.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 17500.0,
+        "entry_zone": [
+          17412.5,
+          17587.5
+        ],
+        "stop_loss": 16118.0,
+        "stop_loss_pct": 7.9,
+        "stop_basis": "below support",
+        "targets": [
+          18465.0,
+          19513.69,
+          20520.53
+        ],
+        "target_pct": [
+          5.51,
+          11.51,
+          17.26
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.46,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 47,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 58.3 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 45.0 trending",
+          "+3 pattern bollinger_squeeze",
+          "-15 reward:risk to T2 only 1.46"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.46)"
+    },
+    {
+      "symbol": "SEAMECLTD",
+      "company": "Seamec Ltd For",
+      "verdict": "SKIP",
+      "composite": 58,
+      "ta_confidence": 46,
+      "fund_score": 99,
+      "source_confidence": 50,
+      "ltp": 1779.0999755859375,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1779.1,
+        "entry_zone": [
+          1770.2,
+          1788.0
+        ],
+        "stop_loss": 1631.02,
+        "stop_loss_pct": 8.32,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          1956.79,
+          2075.25,
+          2252.94
+        ],
+        "target_pct": [
+          9.99,
+          16.65,
+          26.63
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 46,
+        "reasons": [
+          "+14 trend strong_up",
+          "+4 ADX 30.1 trending",
+          "-12 stop 8.32% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          2270.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "brokerage_gnews",
+      "bucket": "fails risk rules (-12 stop 8.32% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "PAISALO",
+      "company": "Paisalo Digital Limited",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 57,
+      "fund_score": 74,
+      "source_confidence": 50,
+      "ltp": 79.48999786376953,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 79.49,
+        "entry_zone": [
+          79.09,
+          79.89
+        ],
+        "stop_loss": 75.36,
+        "stop_loss_pct": 5.2,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          83.61,
+          87.74,
+          91.86
+        ],
+        "target_pct": [
+          5.18,
+          10.38,
+          15.56
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 57,
+        "reasons": [
+          "+14 trend strong_up",
+          "-10 RSI 76.6 overbought",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 2.68× avg on up day",
+          "+2 pattern at_52w_high",
+          "+8 pattern breakout_60d_high_volume",
+          "+6 pattern double_bottom_confirmed",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "FCL",
+      "company": "Fineotex Chemical Limited",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 57,
+      "fund_score": 74,
+      "source_confidence": 50,
+      "ltp": 56.65999984741211,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 56.66,
+        "entry_zone": [
+          56.38,
+          56.94
+        ],
+        "stop_loss": 52.44,
+        "stop_loss_pct": 7.45,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          60.87,
+          65.09,
+          69.3
+        ],
+        "target_pct": [
+          7.43,
+          14.88,
+          22.31
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 57,
+        "reasons": [
+          "+14 trend strong_up",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 38.6 trending",
+          "+5 volume 2.55× avg on up day",
+          "+2 pattern at_52w_high",
+          "+8 pattern breakout_60d_high_volume",
+          "-8 pattern gap_or_spike_today",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "DATAPATTNS",
+      "company": "Data Patterns (India) Limited",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 67,
+      "fund_score": 50,
+      "source_confidence": 50,
+      "ltp": 4600.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 4600.0,
+        "entry_zone": [
+          4577.0,
+          4623.0
+        ],
+        "stop_loss": 4398.8,
+        "stop_loss_pct": 4.37,
+        "stop_basis": "below support",
+        "targets": [
+          4831.7,
+          5086.06,
+          5329.09
+        ],
+        "target_pct": [
+          5.04,
+          10.57,
+          15.85
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.42,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 67,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 51.9 healthy momentum",
+          "-3 ADX 10.3 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "company": "Torrent Pharmaceuticals Limited",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 58,
+      "fund_score": 70,
+      "source_confidence": 50,
+      "ltp": 4893.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4893.0,
+        "entry_zone": [
+          4868.53,
+          4917.46
+        ],
+        "stop_loss": 4789.93,
+        "stop_loss_pct": 2.11,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          5250.0,
+          5451.9,
+          5787.24
+        ],
+        "target_pct": [
+          7.3,
+          11.42,
+          18.28
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.42,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 58,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 47.2 neutral",
+          "-6 MACD histogram negative & falling",
+          "-3 ADX 14.8 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "+4 reward:risk to T2 5.42"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "company": "Bajaj Finserv Limited",
+      "verdict": "WATCH",
+      "composite": 58,
+      "ta_confidence": 57,
+      "fund_score": 72,
+      "source_confidence": 50,
+      "ltp": 1954.4000244140625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1954.4,
+        "entry_zone": [
+          1944.63,
+          1964.17
+        ],
+        "stop_loss": 1867.22,
+        "stop_loss_pct": 4.46,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          2060.2,
+          2118.5,
+          2195.0
+        ],
+        "target_pct": [
+          5.41,
+          8.4,
+          12.31
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.88,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 57,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 43.2 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "company": "Navin Fluorine International Limited",
+      "verdict": "SKIP",
+      "composite": 57,
+      "ta_confidence": 50,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 8606.5,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 8606.5,
+        "entry_zone": [
+          8563.47,
+          8649.53
+        ],
+        "stop_loss": 8059.5,
+        "stop_loss_pct": 6.36,
+        "stop_basis": "below support",
+        "targets": [
+          8938.57,
+          9270.64,
+          9602.71
+        ],
+        "target_pct": [
+          3.86,
+          7.72,
+          11.58
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.21,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 50,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 60.7 healthy momentum",
+          "+4 ADX 31.9 trending",
+          "-15 reward:risk to T2 only 1.21"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.21)"
+    },
+    {
+      "symbol": "NEOGEN",
+      "company": "Neogen Chemicals Limited",
+      "verdict": "WATCH",
+      "composite": 57,
+      "ta_confidence": 68,
+      "fund_score": 39,
+      "source_confidence": 50,
+      "ltp": 2210.800048828125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2210.8,
+        "entry_zone": [
+          2199.75,
+          2221.85
+        ],
+        "stop_loss": 2075.97,
+        "stop_loss_pct": 6.1,
+        "stop_basis": "below support",
+        "targets": [
+          2374.0,
+          2483.9,
+          2623.99
+        ],
+        "target_pct": [
+          7.38,
+          12.35,
+          18.69
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.03,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 68,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 55.4 healthy momentum",
+          "+4 ADX 25.1 trending",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "KINGFA",
+      "company": "Kingfa Science & Technology (India) Limited",
+      "verdict": "WATCH",
+      "composite": 57,
+      "ta_confidence": 65,
+      "fund_score": 49,
+      "source_confidence": 50,
+      "ltp": 6055.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 6055.5,
+        "entry_zone": [
+          6025.22,
+          6085.78
+        ],
+        "stop_loss": 5641.65,
+        "stop_loss_pct": 6.83,
+        "stop_basis": "below support",
+        "targets": [
+          6630.93,
+          7014.55,
+          7589.98
+        ],
+        "target_pct": [
+          9.5,
+          15.84,
+          25.34
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.32,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 65,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 61.9 healthy momentum",
+          "+4 ADX 38.7 trending"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "KDDL",
+      "company": "KDDL Limited",
+      "verdict": "SKIP",
+      "composite": 57,
+      "ta_confidence": 56,
+      "fund_score": 68,
+      "source_confidence": 50,
+      "ltp": 4017.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4017.0,
+        "entry_zone": [
+          3996.91,
+          4037.08
+        ],
+        "stop_loss": 3648.07,
+        "stop_loss_pct": 9.18,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          4459.71,
+          4754.85,
+          5197.56
+        ],
+        "target_pct": [
+          11.02,
+          18.37,
+          29.39
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 56,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 66.1 healthy momentum",
+          "+4 ADX 30.6 trending",
+          "+3 pattern bollinger_squeeze",
+          "-12 stop 9.18% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "fails risk rules (-12 stop 9.18% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "SUNDARMFIN",
+      "company": "Sundaram Finance Limited",
+      "verdict": "WATCH",
+      "composite": 56,
+      "ta_confidence": 51,
+      "fund_score": 78,
+      "source_confidence": 50,
+      "ltp": 4691.39990234375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4691.4,
+        "entry_zone": [
+          4667.94,
+          4714.86
+        ],
+        "stop_loss": 4410.21,
+        "stop_loss_pct": 5.99,
+        "stop_basis": "below support",
+        "targets": [
+          4965.3,
+          5197.5,
+          5642.0
+        ],
+        "target_pct": [
+          5.84,
+          10.79,
+          20.26
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.8,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 51,
+        "reasons": [
+          "-4 trend sideways",
+          "+7 RSI 60.0 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "INNOVACAP",
+      "company": "Innova Captab",
+      "verdict": "SKIP",
+      "composite": 55,
+      "ta_confidence": 47,
+      "fund_score": 82,
+      "source_confidence": 50,
+      "ltp": 1157.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1157.5,
+        "entry_zone": [
+          1151.71,
+          1163.29
+        ],
+        "stop_loss": 1035.9,
+        "stop_loss_pct": 10.51,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          1303.42,
+          1400.7,
+          1546.62
+        ],
+        "target_pct": [
+          12.61,
+          21.01,
+          33.62
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 47,
+        "reasons": [
+          "+14 trend strong_up",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 37.4 trending",
+          "-12 stop 10.51% wider than 8.0% limit",
+          "-4 source target ₹1270 below our T1 — source sees less upside"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          1270.0
+        ],
+        "src_stop": 1118.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "fails risk rules (-12 stop 10.51% wider than 8.0% limit; -4 source target ₹1270 below our T1 — source sees less upside)"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "company": "Bajaj Finance",
+      "verdict": "SKIP",
+      "composite": 55,
+      "ta_confidence": 48,
+      "fund_score": 82,
+      "source_confidence": 50,
+      "ltp": 1059.0999755859375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 1059.1,
+        "entry_zone": [
+          1053.8,
+          1064.4
+        ],
+        "stop_loss": 996.29,
+        "stop_loss_pct": 5.93,
+        "stop_basis": "below support",
+        "targets": [
+          1107.0,
+          1124.12,
+          1176.4
+        ],
+        "target_pct": [
+          4.52,
+          6.14,
+          11.08
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.04,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 48,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 45.4 neutral",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 pattern pullback_to_ema50_in_uptrend",
+          "-15 reward:risk to T2 only 1.04"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          1145.0
+        ],
+        "src_stop": 1018.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.04)"
+    },
+    {
+      "symbol": "SYRMA",
+      "company": "Syrma SGS Technology Limited",
+      "verdict": "SKIP",
+      "composite": 55,
+      "ta_confidence": 44,
+      "fund_score": 74,
+      "source_confidence": 50,
+      "ltp": 1627.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1627.5,
+        "entry_zone": [
+          1619.36,
+          1635.64
+        ],
+        "stop_loss": 1488.7,
+        "stop_loss_pct": 8.53,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          1794.06,
+          1905.1,
+          2071.66
+        ],
+        "target_pct": [
+          10.23,
+          17.06,
+          27.29
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 44,
+        "reasons": [
+          "+14 trend strong_up",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 7.57× avg on up day",
+          "+2 pattern at_52w_high",
+          "+3 pattern bollinger_squeeze",
+          "+8 pattern breakout_60d_high_volume",
+          "-8 pattern gap_or_spike_today",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike",
+          "-12 stop 8.53% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          2050.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "fails risk rules (-8 pattern gap_or_spike_today; -14 pattern overextended; -12 stop 8.53% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "WENDT",
+      "company": "Wendt (India) Limited",
+      "verdict": "SKIP",
+      "composite": 55,
+      "ta_confidence": 62,
+      "fund_score": 39,
+      "source_confidence": 50,
+      "ltp": 8398.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 8398.0,
+        "entry_zone": [
+          8356.01,
+          8439.99
+        ],
+        "stop_loss": 7848.56,
+        "stop_loss_pct": 6.54,
+        "stop_basis": "below support",
+        "targets": [
+          8641.25,
+          9136.66,
+          9505.99
+        ],
+        "target_pct": [
+          2.9,
+          8.8,
+          13.19
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.34,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 62,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 58.6 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 30.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "-15 reward:risk to T2 only 1.34"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 1.34)"
+    },
+    {
+      "symbol": "PFOCUS",
+      "company": "Prime Focus",
+      "verdict": "SKIP",
+      "composite": 54,
+      "ta_confidence": 58,
+      "fund_score": 42,
+      "source_confidence": 50,
+      "ltp": 307.6499938964844,
+      "plan": {
+        "timeframe": "long",
+        "entry": 307.65,
+        "entry_zone": [
+          306.11,
+          309.19
+        ],
+        "stop_loss": 273.52,
+        "stop_loss_pct": 11.09,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          359.0,
+          379.48,
+          416.85
+        ],
+        "target_pct": [
+          16.69,
+          23.35,
+          35.49
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.1,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 58,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 60.7 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 pattern momentum_aligned",
+          "-12 stop 11.09% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          375.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "fails risk rules (-12 stop 11.09% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "SHREEPUSHK",
+      "company": "Shree Pushkar Chemicals & Fertilisers Limited",
+      "verdict": "AVOID",
+      "composite": 54,
+      "ta_confidence": 45,
+      "fund_score": 80,
+      "source_confidence": 50,
+      "ltp": 509.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 509.0,
+        "entry_zone": [
+          506.45,
+          511.54
+        ],
+        "stop_loss": 474.95,
+        "stop_loss_pct": 6.69,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          543.05,
+          577.1,
+          611.15
+        ],
+        "target_pct": [
+          6.69,
+          13.38,
+          20.07
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 45,
+        "reasons": [
+          "+14 trend strong_up",
+          "-10 RSI 75.9 overbought",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 45.0 trending",
+          "+5 volume 2.71× avg on up day",
+          "+8 pattern breakout_60d_high_volume",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike",
+          "-8 resistance ₹514.6 within 1.2% overhead"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "verdict": "AVOID",
+      "composite": 54,
+      "ta_confidence": 47,
+      "fund_score": 80,
+      "source_confidence": 50,
+      "ltp": 1696.5999755859375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1696.6,
+        "entry_zone": [
+          1688.12,
+          1705.08
+        ],
+        "stop_loss": 1636.97,
+        "stop_loss_pct": 3.51,
+        "stop_basis": "below support",
+        "targets": [
+          1846.74,
+          1901.85,
+          1990.52
+        ],
+        "target_pct": [
+          8.85,
+          12.1,
+          17.32
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.44,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 47,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 49.5 neutral",
+          "+5 MACD histogram positive & rising",
+          "+4 reward:risk to T2 3.44"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "company": "Kotak Mahindra Bank",
+      "verdict": "SKIP",
+      "composite": 53,
+      "ta_confidence": 50,
+      "fund_score": 63,
+      "source_confidence": 50,
+      "ltp": 423.29998779296875,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 423.3,
+        "entry_zone": [
+          421.18,
+          425.42
+        ],
+        "stop_loss": 400.29,
+        "stop_loss_pct": 5.44,
+        "stop_basis": "below support",
+        "targets": [
+          433.68,
+          444.51,
+          453.2
+        ],
+        "target_pct": [
+          2.45,
+          5.01,
+          7.06
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 0.92,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 50,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 67.0 healthy momentum",
+          "+4 ADX 46.9 trending",
+          "-15 reward:risk to T2 only 0.92"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "et_recos_page",
+      "bucket": "fails risk rules (-15 reward:risk to T2 only 0.92)"
+    },
+    {
+      "symbol": "FORTIS",
+      "company": "Fortis Healthcare",
+      "verdict": "AVOID",
+      "composite": 53,
+      "ta_confidence": 32,
+      "fund_score": 65,
+      "source_confidence": 50,
+      "ltp": 908.2999877929688,
+      "plan": {
+        "timeframe": "long",
+        "entry": 908.3,
+        "entry_zone": [
+          903.76,
+          912.84
+        ],
+        "stop_loss": 874.7,
+        "stop_loss_pct": 3.7,
+        "stop_basis": "below support",
+        "targets": [
+          983.68,
+          1013.9,
+          1104.3
+        ],
+        "target_pct": [
+          8.3,
+          11.63,
+          21.58
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 3.14,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 32,
+        "reasons": [
+          "-14 trend down",
+          "+2 RSI 44.2 neutral",
+          "-3 ADX 7.9 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 3.14"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1050.0,
+          1075.0,
+          1130.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:pl",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "company": "Supreme Industries",
+      "verdict": "AVOID",
+      "composite": 53,
+      "ta_confidence": 43,
+      "fund_score": 75,
+      "source_confidence": 50,
+      "ltp": 3596.800048828125,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3596.8,
+        "entry_zone": [
+          3578.82,
+          3614.78
+        ],
+        "stop_loss": 3516.33,
+        "stop_loss_pct": 2.24,
+        "stop_basis": "below support",
+        "targets": [
+          3826.5,
+          4074.8,
+          4311.36
+        ],
+        "target_pct": [
+          6.39,
+          13.29,
+          19.87
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.94,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 43,
+        "reasons": [
+          "-14 trend down",
+          "+7 RSI 54.9 healthy momentum",
+          "+6 pattern double_bottom_confirmed",
+          "+4 reward:risk to T2 5.94"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          4035.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SMLMAH",
+      "company": "SML Mahindra Limited",
+      "verdict": "AVOID",
+      "composite": 53,
+      "ta_confidence": 54,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 6409.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 6409.0,
+        "entry_zone": [
+          6376.95,
+          6441.04
+        ],
+        "stop_loss": 5978.78,
+        "stop_loss_pct": 6.71,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          6839.22,
+          7269.43,
+          7699.65
+        ],
+        "target_pct": [
+          6.71,
+          13.43,
+          20.14
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 54,
+        "reasons": [
+          "+14 trend strong_up",
+          "-10 RSI 76.2 overbought",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 44.0 trending",
+          "+5 volume 1.54× avg on up day",
+          "+2 pattern at_52w_high",
+          "+8 pattern breakout_60d_high_volume",
+          "-14 pattern overextended"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "ESABINDIA",
+      "company": "Esab India Limited",
+      "verdict": "SKIP",
+      "composite": 53,
+      "ta_confidence": 44,
+      "fund_score": 73,
+      "source_confidence": 50,
+      "ltp": 6089.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 6089.0,
+        "entry_zone": [
+          6058.56,
+          6119.44
+        ],
+        "stop_loss": 5543.64,
+        "stop_loss_pct": 8.96,
+        "stop_basis": "below support",
+        "targets": [
+          6370.0,
+          6535.82,
+          6759.23
+        ],
+        "target_pct": [
+          4.61,
+          7.34,
+          11.01
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 0.82,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 44,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.5 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 32.2 trending",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 0.82",
+          "-12 stop 8.96% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 8.96% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "TITAN",
+      "company": "Titan Company Limited",
+      "verdict": "SKIP",
+      "composite": 53,
+      "ta_confidence": 42,
+      "fund_score": 84,
+      "source_confidence": 50,
+      "ltp": 4977.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4977.0,
+        "entry_zone": [
+          4952.11,
+          5001.88
+        ],
+        "stop_loss": 4581.08,
+        "stop_loss_pct": 7.95,
+        "stop_basis": "below support",
+        "targets": [
+          5180.47,
+          5389.75,
+          5637.4
+        ],
+        "target_pct": [
+          4.09,
+          8.29,
+          13.27
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 1.04,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 42,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 47.8 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 35.7 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 1.04"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.04)"
+    },
+    {
+      "symbol": "AIAENG",
+      "company": "AIA Engineering",
+      "verdict": "AVOID",
+      "composite": 52,
+      "ta_confidence": 40,
+      "fund_score": 75,
+      "source_confidence": 50,
+      "ltp": 4218.39990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 4218.4,
+        "entry_zone": [
+          4197.31,
+          4239.49
+        ],
+        "stop_loss": 4120.3,
+        "stop_loss_pct": 2.33,
+        "stop_basis": "below support",
+        "targets": [
+          4394.89,
+          4571.38,
+          4775.0
+        ],
+        "target_pct": [
+          4.18,
+          8.37,
+          13.19
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 3.6,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 40,
+        "reasons": [
+          "-4 trend sideways",
+          "+4 reward:risk to T2 3.6"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          4475.0
+        ],
+        "src_stop": 4100.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "TCPLPACK",
+      "company": "TCPL Packaging Limited",
+      "verdict": "SKIP",
+      "composite": 52,
+      "ta_confidence": 43,
+      "fund_score": 68,
+      "source_confidence": 50,
+      "ltp": 3845.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3845.0,
+        "entry_zone": [
+          3825.78,
+          3864.22
+        ],
+        "stop_loss": 3366.4,
+        "stop_loss_pct": 12.45,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          4410.9,
+          4802.2,
+          5376.52
+        ],
+        "target_pct": [
+          14.72,
+          24.89,
+          39.83
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 43,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 52.2 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 37.9 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-12 stop 12.45% wider than 8.0% limit",
+          "-4 source target ₹4410 below our T1 — source sees less upside"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          4410.0
+        ],
+        "src_stop": 3861.0
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -12 stop 12.45% wider than 8.0% limit; -4 source target ₹4410 below our T1 — source sees less upside)"
+    },
+    {
+      "symbol": "LMW",
+      "company": "LMW Limited",
+      "verdict": "AVOID",
+      "composite": 52,
+      "ta_confidence": 59,
+      "fund_score": 37,
+      "source_confidence": 50,
+      "ltp": 18494.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 18494.0,
+        "entry_zone": [
+          18401.53,
+          18586.47
+        ],
+        "stop_loss": 17605.52,
+        "stop_loss_pct": 4.8,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          19382.48,
+          20140.67,
+          21159.44
+        ],
+        "target_pct": [
+          4.8,
+          8.9,
+          14.41
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.85,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 59,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 51.6 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 46.8 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "FLUOROCHEM",
+      "company": "Gujarat Fluorochemicals Limited",
+      "verdict": "AVOID",
+      "composite": 52,
+      "ta_confidence": 55,
+      "fund_score": 46,
+      "source_confidence": 50,
+      "ltp": 4500.89990234375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4500.9,
+        "entry_zone": [
+          4478.4,
+          4523.4
+        ],
+        "stop_loss": 4379.79,
+        "stop_loss_pct": 2.69,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          4958.9,
+          5280.3,
+          5747.94
+        ],
+        "target_pct": [
+          10.18,
+          17.32,
+          27.71
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 6.44,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 55,
+        "reasons": [
+          "+8 trend up",
+          "+2 RSI 45.0 neutral",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 35.0 trending",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 6.44"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "PRIVISCL",
+      "company": "Privi Speciality Chemicals Limited",
+      "verdict": "AVOID",
+      "composite": 52,
+      "ta_confidence": 36,
+      "fund_score": 93,
+      "source_confidence": 50,
+      "ltp": 3382.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3382.0,
+        "entry_zone": [
+          3365.09,
+          3398.91
+        ],
+        "stop_loss": 3172.16,
+        "stop_loss_pct": 6.2,
+        "stop_basis": "below support",
+        "targets": [
+          3590.9,
+          3756.27,
+          3785.3
+        ],
+        "target_pct": [
+          6.18,
+          11.07,
+          11.92
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.78,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 36,
+        "reasons": [
+          "-4 trend sideways"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "AMAGI",
+      "company": "Amagi Media Labs",
+      "verdict": "AVOID",
+      "composite": 51,
+      "ta_confidence": 42,
+      "fund_score": 66,
+      "source_confidence": 50,
+      "ltp": 573.4500122070312,
+      "plan": {
+        "timeframe": "long",
+        "entry": 573.45,
+        "entry_zone": [
+          570.58,
+          576.32
+        ],
+        "stop_loss": 546.77,
+        "stop_loss_pct": 4.65,
+        "stop_basis": "below support",
+        "targets": [
+          677.8,
+          727.4,
+          815.29
+        ],
+        "target_pct": [
+          18.2,
+          26.85,
+          42.17
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.77,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 42,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 45.5 neutral",
+          "+4 reward:risk to T2 5.77"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          700.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "WABAG",
+      "company": "VA Tech Wabag Limited",
+      "verdict": "SKIP",
+      "composite": 51,
+      "ta_confidence": 37,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 2004.5,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2004.5,
+        "entry_zone": [
+          1994.48,
+          2014.52
+        ],
+        "stop_loss": 1852.59,
+        "stop_loss_pct": 7.58,
+        "stop_basis": "below support",
+        "targets": [
+          2117.87,
+          2215.0,
+          2344.61
+        ],
+        "target_pct": [
+          5.66,
+          10.5,
+          16.97
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.39,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 37,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 50.0 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "-3 ADX 13.7 no trend",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 1.39"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -3 ADX 13.7 no trend; -15 reward:risk to T2 only 1.39)"
+    },
+    {
+      "symbol": "THANGAMAYL",
+      "company": "Thangamayil Jewellery Limited",
+      "verdict": "AVOID",
+      "composite": 51,
+      "ta_confidence": 50,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 5454.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 5454.0,
+        "entry_zone": [
+          5426.73,
+          5481.27
+        ],
+        "stop_loss": 5273.5,
+        "stop_loss_pct": 3.31,
+        "stop_basis": "below support",
+        "targets": [
+          6091.11,
+          6515.85,
+          7165.0
+        ],
+        "target_pct": [
+          11.68,
+          19.47,
+          31.37
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 5.88,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 50,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 48.8 neutral",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.88"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "IGL",
+      "company": "Indraprastha Gas",
+      "verdict": "AVOID",
+      "composite": 50,
+      "ta_confidence": 39,
+      "fund_score": 62,
+      "source_confidence": 50,
+      "ltp": 155.1699981689453,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 155.17,
+        "entry_zone": [
+          154.39,
+          155.95
+        ],
+        "stop_loss": 148.61,
+        "stop_loss_pct": 4.23,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          166.4,
+          171.93,
+          182.04
+        ],
+        "target_pct": [
+          7.24,
+          10.8,
+          17.32
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.55,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 39,
+        "reasons": [
+          "-14 trend down",
+          "+7 RSI 56.9 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 12.9 no trend",
+          "+4 reward:risk to T2 2.55"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          168.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:geojit",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "company": "The Phoenix Mills Limited",
+      "verdict": "AVOID",
+      "composite": 50,
+      "ta_confidence": 42,
+      "fund_score": 68,
+      "source_confidence": 50,
+      "ltp": 1915.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1915.0,
+        "entry_zone": [
+          1905.42,
+          1924.57
+        ],
+        "stop_loss": 1864.28,
+        "stop_loss_pct": 2.65,
+        "stop_basis": "below support",
+        "targets": [
+          2039.89,
+          2169.8,
+          2248.04
+        ],
+        "target_pct": [
+          6.52,
+          13.31,
+          17.39
+        ],
+        "target_basis": [
+          "3×ATR",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.02,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 42,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 46.8 neutral",
+          "-3 ADX 12.9 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.02"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "KIRLOSBROS",
+      "company": "Kirloskar Brothers Limited",
+      "verdict": "AVOID",
+      "composite": 50,
+      "ta_confidence": 36,
+      "fund_score": 83,
+      "source_confidence": 50,
+      "ltp": 1835.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1835.0,
+        "entry_zone": [
+          1825.83,
+          1844.17
+        ],
+        "stop_loss": 1786.03,
+        "stop_loss_pct": 2.67,
+        "stop_basis": "below support",
+        "targets": [
+          1992.87,
+          2098.0,
+          2189.2
+        ],
+        "target_pct": [
+          8.6,
+          14.33,
+          19.3
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 5.37,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 36,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 41.0 neutral",
+          "-6 MACD histogram negative & falling",
+          "-3 ADX 11.0 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.37"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "SHRIPISTON",
+      "company": "SPR Auto Technologies Limited",
+      "verdict": "SKIP",
+      "composite": 49,
+      "ta_confidence": 31,
+      "fund_score": 85,
+      "source_confidence": 50,
+      "ltp": 4494.2001953125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 4494.2,
+        "entry_zone": [
+          4471.73,
+          4516.67
+        ],
+        "stop_loss": 4072.56,
+        "stop_loss_pct": 9.38,
+        "stop_basis": "below support",
+        "targets": [
+          4785.8,
+          4948.37,
+          5175.46
+        ],
+        "target_pct": [
+          6.49,
+          10.11,
+          15.16
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.08,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 31,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 50.6 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 1.08",
+          "-12 stop 9.38% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.08; -12 stop 9.38% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "SWANDEF",
+      "company": "Swan Defence and Heavy Industries Limited",
+      "verdict": "SKIP",
+      "composite": 49,
+      "ta_confidence": 52,
+      "fund_score": 38,
+      "source_confidence": 50,
+      "ltp": 2474.89990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2474.9,
+        "entry_zone": [
+          2462.53,
+          2487.27
+        ],
+        "stop_loss": 2268.6,
+        "stop_loss_pct": 8.34,
+        "stop_basis": "below support",
+        "targets": [
+          2750.0,
+          2846.46,
+          3017.46
+        ],
+        "target_pct": [
+          11.12,
+          15.01,
+          21.92
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.8,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 52,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 55.3 healthy momentum",
+          "-3 ADX 14.2 no trend",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-12 stop 8.34% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-3 ADX 14.2 no trend; -12 stop 8.34% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "company": "Hindustan Unilever",
+      "verdict": "AVOID",
+      "composite": 48,
+      "ta_confidence": 16,
+      "fund_score": 85,
+      "source_confidence": 50,
+      "ltp": 1967.4000244140625,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1967.4,
+        "entry_zone": [
+          1957.56,
+          1977.24
+        ],
+        "stop_loss": 1891.45,
+        "stop_loss_pct": 3.86,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          2051.9,
+          2119.3,
+          2217.43
+        ],
+        "target_pct": [
+          4.3,
+          7.72,
+          12.71
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 16,
+        "reasons": [
+          "-24 trend strong_down"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          2320.0,
+          2400.0,
+          2700.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "COFORGE",
+      "company": "Coforge Limited",
+      "verdict": "SKIP",
+      "composite": 48,
+      "ta_confidence": 32,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 1930.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 1930.0,
+        "entry_zone": [
+          1920.35,
+          1939.65
+        ],
+        "stop_loss": 1753.39,
+        "stop_loss_pct": 9.15,
+        "stop_basis": "below support",
+        "targets": [
+          2021.2,
+          2075.59,
+          2148.39
+        ],
+        "target_pct": [
+          4.73,
+          7.54,
+          11.32
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 0.82,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 32,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 61.4 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 42.1 trending",
+          "-15 reward:risk to T2 only 0.82",
+          "-12 stop 9.15% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 0.82; -12 stop 9.15% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "AUBANK",
+      "company": "AU Small Finance Bank",
+      "verdict": "AVOID",
+      "composite": 47,
+      "ta_confidence": 35,
+      "fund_score": 67,
+      "source_confidence": 50,
+      "ltp": 1058.699951171875,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1058.7,
+        "entry_zone": [
+          1053.41,
+          1063.99
+        ],
+        "stop_loss": 1010.47,
+        "stop_loss_pct": 4.56,
+        "stop_basis": "below support",
+        "targets": [
+          1144.1,
+          1177.5,
+          1236.86
+        ],
+        "target_pct": [
+          8.07,
+          11.22,
+          16.83
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.46,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 35,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 44.4 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1250.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "company": "Blue Star",
+      "verdict": "AVOID",
+      "composite": 47,
+      "ta_confidence": 30,
+      "fund_score": 85,
+      "source_confidence": 50,
+      "ltp": 1500.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1500.5,
+        "entry_zone": [
+          1493.0,
+          1508.0
+        ],
+        "stop_loss": 1463.94,
+        "stop_loss_pct": 2.44,
+        "stop_basis": "below support",
+        "targets": [
+          1621.52,
+          1721.97,
+          1823.22
+        ],
+        "target_pct": [
+          8.07,
+          14.76,
+          21.51
+        ],
+        "target_basis": [
+          "3×ATR",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 6.06,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 30,
+        "reasons": [
+          "-24 trend strong_down",
+          "+2 RSI 45.4 neutral",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 6.06"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1653.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "VAML",
+      "company": "Vedanta Aluminium Metal Ltd For",
+      "verdict": "AVOID",
+      "composite": 47,
+      "ta_confidence": 32,
+      "fund_score": 64,
+      "source_confidence": 50,
+      "ltp": 438.25,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 438.25,
+        "entry_zone": [
+          436.06,
+          440.44
+        ],
+        "stop_loss": 426.16,
+        "stop_loss_pct": 2.76,
+        "stop_basis": "below support",
+        "targets": [
+          485.85,
+          505.12,
+          537.0
+        ],
+        "target_pct": [
+          10.86,
+          15.26,
+          22.53
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 5.53,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 32,
+        "reasons": [
+          "-14 trend down",
+          "+2 RSI 41.9 neutral",
+          "+4 reward:risk to T2 5.53"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          498.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:geojit",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "TATACOMM",
+      "company": "Tata Communications Limited",
+      "verdict": "AVOID",
+      "composite": 47,
+      "ta_confidence": 45,
+      "fund_score": 48,
+      "source_confidence": 50,
+      "ltp": 1736.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1736.5,
+        "entry_zone": [
+          1727.82,
+          1745.18
+        ],
+        "stop_loss": 1671.6,
+        "stop_loss_pct": 3.74,
+        "stop_basis": "below support",
+        "targets": [
+          1875.49,
+          1968.15,
+          2110.0
+        ],
+        "target_pct": [
+          8.0,
+          13.34,
+          21.51
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 3.57,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 45,
+        "reasons": [
+          "-14 trend down",
+          "+7 RSI 51.1 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 3.57"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "M&M",
+      "company": "M&M",
+      "verdict": "AVOID",
+      "composite": 46,
+      "ta_confidence": 24,
+      "fund_score": 87,
+      "source_confidence": 50,
+      "ltp": 3155.199951171875,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3155.2,
+        "entry_zone": [
+          3139.42,
+          3170.98
+        ],
+        "stop_loss": 3064.0,
+        "stop_loss_pct": 2.89,
+        "stop_basis": "below support",
+        "targets": [
+          3301.9,
+          3399.0,
+          3456.4
+        ],
+        "target_pct": [
+          4.65,
+          7.73,
+          9.55
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.67,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 24,
+        "reasons": [
+          "-14 trend down",
+          "-6 RSI 33.6 weak",
+          "+4 reward:risk to T2 2.67"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "broker:nomura",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "TASTYBITE",
+      "company": "Tasty Bite Eatables Limited",
+      "verdict": "SKIP",
+      "composite": 45,
+      "ta_confidence": 38,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 9884.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 9884.0,
+        "entry_zone": [
+          9834.58,
+          9933.42
+        ],
+        "stop_loss": 8963.95,
+        "stop_loss_pct": 9.31,
+        "stop_basis": "below support",
+        "targets": [
+          10544.0,
+          11038.52,
+          11615.78
+        ],
+        "target_pct": [
+          6.68,
+          11.68,
+          17.52
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.25,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 38,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.3 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 40.7 trending",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 1.25",
+          "-12 stop 9.31% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.25; -12 stop 9.31% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "INDOTECH",
+      "company": "Indo Tech Transformers Limited",
+      "verdict": "SKIP",
+      "composite": 45,
+      "ta_confidence": 40,
+      "fund_score": 49,
+      "source_confidence": 50,
+      "ltp": 3679.39990234375,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3679.4,
+        "entry_zone": [
+          3661.0,
+          3697.8
+        ],
+        "stop_loss": 3359.22,
+        "stop_loss_pct": 8.7,
+        "stop_basis": "below support",
+        "targets": [
+          4012.27,
+          4154.57,
+          4392.15
+        ],
+        "target_pct": [
+          9.05,
+          12.91,
+          19.37
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.48,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 40,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.2 healthy momentum",
+          "-3 ADX 14.7 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-15 reward:risk to T2 only 1.48",
+          "-12 stop 8.7% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-3 ADX 14.7 no trend; -15 reward:risk to T2 only 1.48; -12 stop 8.7% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "BPCL",
+      "company": "BPCL",
+      "verdict": "AVOID",
+      "composite": 43,
+      "ta_confidence": 22,
+      "fund_score": 85,
+      "source_confidence": 50,
+      "ltp": 312.70001220703125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 312.7,
+        "entry_zone": [
+          311.14,
+          314.26
+        ],
+        "stop_loss": 303.38,
+        "stop_loss_pct": 2.98,
+        "stop_basis": "below support",
+        "targets": [
+          319.28,
+          333.43,
+          343.8
+        ],
+        "target_pct": [
+          2.1,
+          6.63,
+          9.95
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.22,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 22,
+        "reasons": [
+          "-14 trend down",
+          "+2 RSI 45.4 neutral",
+          "-6 MACD histogram negative & falling",
+          "-3 ADX 9.5 no trend",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "et_recos_page",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "company": "HDFC Bank",
+      "verdict": "AVOID",
+      "composite": 43,
+      "ta_confidence": 24,
+      "fund_score": 66,
+      "source_confidence": 50,
+      "ltp": 709.7999877929688,
+      "plan": {
+        "timeframe": "long",
+        "entry": 709.8,
+        "entry_zone": [
+          706.25,
+          713.35
+        ],
+        "stop_loss": 680.27,
+        "stop_loss_pct": 4.16,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          739.75,
+          768.85,
+          804.28
+        ],
+        "target_pct": [
+          4.22,
+          8.32,
+          13.31
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 24,
+        "reasons": [
+          "-24 trend strong_down",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          925.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "company": "Patel. Tata Steel",
+      "verdict": "AVOID",
+      "composite": 43,
+      "ta_confidence": 22,
+      "fund_score": 62,
+      "source_confidence": 50,
+      "ltp": 184.8699951171875,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 184.87,
+        "entry_zone": [
+          183.95,
+          185.79
+        ],
+        "stop_loss": 180.37,
+        "stop_loss_pct": 2.43,
+        "stop_basis": "below support",
+        "targets": [
+          199.44,
+          211.1,
+          224.4
+        ],
+        "target_pct": [
+          7.88,
+          14.19,
+          21.38
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 5.83,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 22,
+        "reasons": [
+          "-24 trend strong_down",
+          "+2 RSI 46.6 neutral",
+          "-3 ADX 13.0 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.83"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          196.0,
+          198.0,
+          201.0,
+          203.0,
+          205.0
+        ],
+        "src_stop": 180.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "company": "Sun Pharmaceutical Industries Limited",
+      "verdict": "SKIP",
+      "composite": 43,
+      "ta_confidence": 20,
+      "fund_score": 92,
+      "source_confidence": 50,
+      "ltp": 1885.5999755859375,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1885.6,
+        "entry_zone": [
+          1876.17,
+          1895.03
+        ],
+        "stop_loss": 1738.61,
+        "stop_loss_pct": 7.8,
+        "stop_basis": "below support",
+        "targets": [
+          1984.8,
+          2046.9,
+          2155.92
+        ],
+        "target_pct": [
+          5.26,
+          8.55,
+          14.34
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 1.1,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 20,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 42.1 neutral",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze",
+          "-15 reward:risk to T2 only 1.1"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -15 reward:risk to T2 only 1.1)"
+    },
+    {
+      "symbol": "ONESOURCE",
+      "company": "Onesource Specialty Pharma",
+      "verdict": "AVOID",
+      "composite": 42,
+      "ta_confidence": 30,
+      "fund_score": 55,
+      "source_confidence": 50,
+      "ltp": 1549.0,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1549.0,
+        "entry_zone": [
+          1541.25,
+          1556.74
+        ],
+        "stop_loss": 1498.87,
+        "stop_loss_pct": 3.24,
+        "stop_basis": "below support",
+        "targets": [
+          1747.6,
+          1822.12,
+          1925.0
+        ],
+        "target_pct": [
+          12.82,
+          17.63,
+          24.27
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 5.45,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 30,
+        "reasons": [
+          "-24 trend strong_down",
+          "+2 RSI 48.3 neutral",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.45"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          2400.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:icicisec",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "STLTECH",
+      "company": "Sterlite Technologies",
+      "verdict": "SKIP",
+      "composite": 42,
+      "ta_confidence": 40,
+      "fund_score": 25,
+      "source_confidence": 50,
+      "ltp": 786.2999877929688,
+      "plan": {
+        "timeframe": "long",
+        "entry": 786.3,
+        "entry_zone": [
+          782.37,
+          790.23
+        ],
+        "stop_loss": 699.8,
+        "stop_loss_pct": 11.0,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          890.1,
+          959.3,
+          1063.1
+        ],
+        "target_pct": [
+          13.2,
+          22.0,
+          35.2
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 40,
+        "reasons": [
+          "+14 trend strong_up",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 25.9 trending",
+          "+2 pattern at_52w_high",
+          "+1 pattern breakout_60d_low_volume",
+          "-14 pattern overextended",
+          "-12 stop 11.0% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [
+          1100.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:nuvama",
+      "bucket": "fails risk rules (-14 pattern overextended; -12 stop 11.0% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "verdict": "SKIP",
+      "composite": 42,
+      "ta_confidence": 23,
+      "fund_score": 72,
+      "source_confidence": 50,
+      "ltp": 3987.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 3987.0,
+        "entry_zone": [
+          3967.07,
+          4006.93
+        ],
+        "stop_loss": 3831.45,
+        "stop_loss_pct": 3.9,
+        "stop_basis": "below support",
+        "targets": [
+          4066.57,
+          4135.45,
+          4440.0
+        ],
+        "target_pct": [
+          2.0,
+          3.72,
+          11.36
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 0.95,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 23,
+        "reasons": [
+          "-4 trend sideways",
+          "+2 RSI 46.1 neutral",
+          "-3 ADX 14.6 no trend",
+          "+3 pattern bollinger_squeeze",
+          "-15 reward:risk to T2 only 0.95"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_ema_pullback",
+      "bucket": "fails risk rules (-4 trend sideways; -3 ADX 14.6 no trend; -15 reward:risk to T2 only 0.95)"
+    },
+    {
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries",
+      "verdict": "AVOID",
+      "composite": 40,
+      "ta_confidence": 22,
+      "fund_score": 61,
+      "source_confidence": 50,
+      "ltp": 1304.800048828125,
+      "plan": {
+        "timeframe": "long",
+        "entry": 1304.8,
+        "entry_zone": [
+          1298.28,
+          1311.32
+        ],
+        "stop_loss": 1277.72,
+        "stop_loss_pct": 2.08,
+        "stop_basis": "below support",
+        "targets": [
+          1372.05,
+          1432.25,
+          1611.8
+        ],
+        "target_pct": [
+          5.15,
+          9.77,
+          23.53
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 4.71,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 22,
+        "reasons": [
+          "-24 trend strong_down",
+          "+2 RSI 49.6 neutral",
+          "-3 ADX 13.9 no trend",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 4.71"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1428.0,
+          1766.0
+        ],
+        "src_stop": 1249.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "GRWRHITECH",
+      "company": "Garware Hi-Tech Films Limited",
+      "verdict": "SKIP",
+      "composite": 40,
+      "ta_confidence": 16,
+      "fund_score": 84,
+      "source_confidence": 50,
+      "ltp": 6757.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 6757.5,
+        "entry_zone": [
+          6723.71,
+          6791.29
+        ],
+        "stop_loss": 6149.62,
+        "stop_loss_pct": 9.0,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          7443.0,
+          7990.0,
+          8702.7
+        ],
+        "target_pct": [
+          10.14,
+          18.24,
+          28.79
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.03,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 16,
+        "reasons": [
+          "-4 trend sideways",
+          "-6 MACD histogram negative & falling",
+          "-6 volume 3.02× avg on DOWN day (distribution)",
+          "+3 pattern bollinger_squeeze",
+          "+1 pattern volume_spike",
+          "-12 stop 9.0% wider than 8.0% limit"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_squeeze",
+      "bucket": "fails risk rules (-4 trend sideways; -6 MACD histogram negative & falling; -6 volume 3.02× avg on DOWN day (distribution); -12 stop 9.0% wider than 8.0% limit)"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement",
+      "verdict": "AVOID",
+      "composite": 39,
+      "ta_confidence": 13,
+      "fund_score": 73,
+      "source_confidence": 50,
+      "ltp": 11217.0,
+      "plan": {
+        "timeframe": "long",
+        "entry": 11217.0,
+        "entry_zone": [
+          11160.91,
+          11273.08
+        ],
+        "stop_loss": 10586.3,
+        "stop_loss_pct": 5.62,
+        "stop_basis": "below support",
+        "targets": [
+          11721.2,
+          12242.0,
+          13110.0
+        ],
+        "target_pct": [
+          4.49,
+          9.14,
+          16.88
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "52w high"
+        ],
+        "reward_risk_t2": 1.63,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 13,
+        "reasons": [
+          "-24 trend strong_down",
+          "-6 MACD histogram negative & falling",
+          "+3 pattern bollinger_squeeze"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          13800.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "ENRIN",
+      "company": "Siemens Energy India",
+      "verdict": "AVOID",
+      "composite": 39,
+      "ta_confidence": 24,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 3124.699951171875,
+      "plan": {
+        "timeframe": "long",
+        "entry": 3124.7,
+        "entry_zone": [
+          3109.08,
+          3140.32
+        ],
+        "stop_loss": 2998.53,
+        "stop_loss_pct": 4.04,
+        "stop_basis": "below support",
+        "targets": [
+          3429.8,
+          3639.0,
+          3948.63
+        ],
+        "target_pct": [
+          9.76,
+          16.46,
+          26.37
+        ],
+        "target_basis": [
+          "3×ATR",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 4.08,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 24,
+        "reasons": [
+          "-14 trend down",
+          "-6 RSI 34.7 weak",
+          "+4 reward:risk to T2 4.08"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          4000.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "MVGJL",
+      "company": "Manoj Vaibhav Gems N Jewellers Limited",
+      "verdict": "AVOID",
+      "composite": 38,
+      "ta_confidence": 25,
+      "fund_score": 54,
+      "source_confidence": 50,
+      "ltp": 215.8800048828125,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 215.88,
+        "entry_zone": [
+          214.8,
+          216.96
+        ],
+        "stop_loss": 199.77,
+        "stop_loss_pct": 7.46,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          231.99,
+          248.1,
+          264.21
+        ],
+        "target_pct": [
+          7.46,
+          14.92,
+          22.39
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 25,
+        "reasons": [
+          "-4 trend sideways",
+          "-10 RSI 82.0 overbought",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 9.3× avg on up day",
+          "+2 pattern at_52w_high",
+          "+8 pattern breakout_60d_high_volume",
+          "-8 pattern gap_or_spike_today",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "BAJAJELEC",
+      "company": "Bajaj Electricals",
+      "verdict": "AVOID",
+      "composite": 37,
+      "ta_confidence": 27,
+      "fund_score": 43,
+      "source_confidence": 50,
+      "ltp": 340.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 340.5,
+        "entry_zone": [
+          338.8,
+          342.2
+        ],
+        "stop_loss": 328.35,
+        "stop_loss_pct": 3.57,
+        "stop_basis": "below support",
+        "targets": [
+          367.95,
+          391.95,
+          432.55
+        ],
+        "target_pct": [
+          8.06,
+          15.11,
+          27.03
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 4.23,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 27,
+        "reasons": [
+          "-24 trend strong_down",
+          "+7 RSI 50.5 healthy momentum",
+          "+4 reward:risk to T2 4.23"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          403.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "ONGC",
+      "company": "ONGC",
+      "verdict": "AVOID",
+      "composite": 37,
+      "ta_confidence": 23,
+      "fund_score": 53,
+      "source_confidence": 50,
+      "ltp": 233.32000732421875,
+      "plan": {
+        "timeframe": "long",
+        "entry": 233.32,
+        "entry_zone": [
+          232.15,
+          234.49
+        ],
+        "stop_loss": 229.64,
+        "stop_loss_pct": 1.58,
+        "stop_basis": "below support",
+        "targets": [
+          243.6,
+          254.2,
+          261.96
+        ],
+        "target_pct": [
+          4.41,
+          8.95,
+          12.27
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 5.67,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 23,
+        "reasons": [
+          "-24 trend strong_down",
+          "+3 pattern bollinger_squeeze",
+          "+4 reward:risk to T2 5.67"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          297.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "VIKRAN",
+      "company": "Vikran Engineering",
+      "verdict": "AVOID",
+      "composite": 37,
+      "ta_confidence": 17,
+      "fund_score": 66,
+      "source_confidence": 50,
+      "ltp": 60.33000183105469,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 60.33,
+        "entry_zone": [
+          60.03,
+          60.63
+        ],
+        "stop_loss": 56.52,
+        "stop_loss_pct": 6.32,
+        "stop_basis": "below support",
+        "targets": [
+          63.54,
+          66.69,
+          69.87
+        ],
+        "target_pct": [
+          5.32,
+          10.54,
+          15.81
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 1.67,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 17,
+        "reasons": [
+          "-24 trend strong_down",
+          "+5 MACD histogram positive & rising",
+          "-4 source target ₹63 below our T1 — source sees less upside"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          63.0
+        ],
+        "src_stop": 57.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "UCOBANK",
+      "company": "UCO Bank",
+      "verdict": "AVOID",
+      "composite": 37,
+      "ta_confidence": 10,
+      "fund_score": 76,
+      "source_confidence": 50,
+      "ltp": 24.489999771118164,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 24.49,
+        "entry_zone": [
+          24.37,
+          24.61
+        ],
+        "stop_loss": 23.77,
+        "stop_loss_pct": 2.94,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          25.21,
+          25.8,
+          26.44
+        ],
+        "target_pct": [
+          2.94,
+          5.35,
+          7.96
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 1.82,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 10,
+        "reasons": [
+          "-24 trend strong_down",
+          "-6 RSI 32.9 weak"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          26.0
+        ],
+        "src_stop": 22.0
+      },
+      "source_id": "mint_gnews",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "INDIGO",
+      "company": "IndiGo",
+      "verdict": "AVOID",
+      "composite": 36,
+      "ta_confidence": 28,
+      "fund_score": 33,
+      "source_confidence": 50,
+      "ltp": 5000.5,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5000.5,
+        "entry_zone": [
+          4975.5,
+          5025.5
+        ],
+        "stop_loss": 4861.57,
+        "stop_loss_pct": 2.78,
+        "stop_basis": "below support",
+        "targets": [
+          5166.48,
+          5302.5,
+          5483.13
+        ],
+        "target_pct": [
+          3.32,
+          6.04,
+          9.65
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.17,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 28,
+        "reasons": [
+          "-4 trend sideways",
+          "-8 resistance ₹5056 within 1.2% overhead"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "et_recos_page",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "TTKPRESTIG",
+      "company": "TTK Prestige",
+      "verdict": "AVOID",
+      "composite": 36,
+      "ta_confidence": 18,
+      "fund_score": 59,
+      "source_confidence": 50,
+      "ltp": 549.1500244140625,
+      "plan": {
+        "timeframe": "long",
+        "entry": 549.15,
+        "entry_zone": [
+          546.4,
+          551.9
+        ],
+        "stop_loss": 508.44,
+        "stop_loss_pct": 7.41,
+        "stop_basis": "below support",
+        "targets": [
+          613.03,
+          656.0,
+          700.11
+        ],
+        "target_pct": [
+          11.63,
+          19.46,
+          27.49
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.62,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 18,
+        "reasons": [
+          "-14 trend down",
+          "-6 RSI 31.2 weak",
+          "-6 MACD histogram negative & falling",
+          "+4 reward:risk to T2 2.62"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          749.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "mc_stock_ideas_gnews",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)"
+    },
+    {
+      "symbol": "GODREJCP",
+      "company": "Godrej Consumer Ltd",
+      "verdict": "AVOID",
+      "composite": 30,
+      "ta_confidence": 0,
+      "fund_score": 68,
+      "source_confidence": 50,
+      "ltp": 858.9500122070312,
+      "plan": {
+        "timeframe": "long",
+        "entry": 858.95,
+        "entry_zone": [
+          854.66,
+          863.24
+        ],
+        "stop_loss": 804.2,
+        "stop_loss_pct": 6.37,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          948.0,
+          980.85,
+          1055.2
+        ],
+        "target_pct": [
+          10.37,
+          14.19,
+          22.85
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "resistance"
+        ],
+        "reward_risk_t2": 2.23,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 0,
+        "reasons": [
+          "-24 trend strong_down",
+          "-6 RSI 21.7 weak",
+          "-6 MACD histogram negative & falling",
+          "-8 pattern oversold_in_downtrend"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1150.0
+        ],
+        "src_stop": null
+      },
+      "source_id": "broker:motilal",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)"
+    },
+    {
+      "symbol": "LIQUIDADD",
+      "company": "LIQUIDADD",
+      "verdict": "SKIP",
+      "composite": 30,
+      "ta_confidence": 10,
+      "fund_score": 50,
+      "source_confidence": 50,
+      "ltp": 1143.6500244140625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 1143.65,
+        "entry_zone": [
+          1137.93,
+          1149.37
+        ],
+        "stop_loss": 1112.73,
+        "stop_loss_pct": 2.7,
+        "stop_basis": "below support",
+        "targets": [
+          1144.04,
+          1144.43,
+          1151.22
+        ],
+        "target_pct": [
+          0.03,
+          0.07,
+          0.66
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 0.03,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 10,
+        "reasons": [
+          "+14 trend strong_up",
+          "-10 RSI 100.0 overbought",
+          "+4 ADX 99.6 trending",
+          "+5 volume 3.83× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "-14 pattern overextended",
+          "+1 pattern volume_spike",
+          "-8 resistance ₹1151.22 within 1.2% overhead",
+          "-15 reward:risk to T2 only 0.03",
+          "-10 T3 0.66% < 5.0% mandate for weekly"
+        ],
+        "tradeable": false,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "source_id": "chartink_52w_breakout",
+      "bucket": "fails risk rules (-10 RSI 100.0 overbought; -14 pattern overextended; -8 resistance ₹1151.22 within 1.2% overhead; -15 reward:risk to T2 only 0.03; -10 T3 0.66% < 5.0% mandate fo)"
+    }
+  ],
+  "report_days": [
+    "2026-09-07"
+  ],
+  "lessons_tail": "",
+  "settings": {
+    "capital": {
+      "total_inr": 100000,
+      "max_single_stock_pct": 50,
+      "min_allocation_pct": 15,
+      "max_open_positions": 4
+    },
+    "mandate": {
+      "weekly_target_pct": 5.0,
+      "monthly_target_pct": 10.0,
+      "weekly_time_stop_days": 10,
+      "monthly_time_stop_days": 30,
+      "intraday_allowed": false
+    },
+    "risk": {
+      "max_stop_loss_pct": 8.0,
+      "min_reward_risk_t2": 1.5,
+      "min_avg_turnover_cr": 2.0,
+      "min_price_inr": 20
+    },
+    "exits": {
+      "t1_fraction": 0.4,
+      "t2_fraction": 0.3,
+      "t3_fraction": 0.3,
+      "trail_after_t1": "breakeven",
+      "trail_after_t2": "t1"
+    },
+    "scoring": {
+      "w_ta": 0.5,
+      "w_fund": 0.2,
+      "w_src": 0.3,
+      "pick_threshold": 65,
+      "hold_bucket_fund_score": 65,
+      "top_n": 3
+    }
+  }
+}

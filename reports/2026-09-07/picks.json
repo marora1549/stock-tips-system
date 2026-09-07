@@ -1,0 +1,485 @@
+{
+  "date": "2026-09-07",
+  "top": [
+    {
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "tip_id": "d2e96d14dd",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "n_mentions": 5,
+      "src_targets": [
+        1020.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+        "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
+        "https://investmentguruindia.com/newsdetail/buy-hindustan-unilever-ltd-for-the-target-rs-2-400-by-motilal-oswal-financial-services-ltd493596"
+      ],
+      "brokerages": [
+        "motilal"
+      ],
+      "sentence": "Buy CG Power and Industrial Solutions Ltd for the Target Rs.1,020 by Motilal Oswal ... Buy UltraTech Cement Ltd for the Target Rs.13,800 by Motilal Oswal Financial Servic... Buy Physicswallah Ltd for the Target Rs.200 by Motilal Oswal Financial Services Ltd Buy Godrej Consumer Ltd for the Target Rs.",
+      "ltp": 901.1500244140625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 901.15,
+        "entry_zone": [
+          896.64,
+          905.66
+        ],
+        "stop_loss": 855.9,
+        "stop_loss_pct": 5.02,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          977.23,
+          1012.9,
+          1079.95
+        ],
+        "target_pct": [
+          8.44,
+          12.4,
+          19.84
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.47,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 84,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.9 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 1.52× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1020.0
+        ],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.9,
+        "atr_pct": 2.48,
+        "adx": 15.7,
+        "vol_ratio": 1.52,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -8.13,
+        "dist_ema20_pct": 1.56,
+        "dist_ema200_pct": 10.6,
+        "avg_turnover_cr": 198.54,
+        "chg_5d_pct": -1.62,
+        "chg_20d_pct": 2.52,
+        "high_52w": 980.9,
+        "last_bar_date": "2026-09-07"
+      },
+      "resistances": [
+        {
+          "price": 916.0,
+          "touches": 1
+        },
+        {
+          "price": 953.45,
+          "touches": 2
+        },
+        {
+          "price": 977.23,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 890.4,
+          "touches": 2
+        },
+        {
+          "price": 860.2,
+          "touches": 1
+        },
+        {
+          "price": 814.85,
+          "touches": 1
+        },
+        {
+          "price": 799.35,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 84,
+      "fund_score": 91,
+      "fund_why": [
+        "+12 ROCE 26.7%",
+        "+8 ROE 20.5%",
+        "-6 P/E 111",
+        "+4 3y profit CAGR 10%",
+        "+6 3y sales CAGR 21%",
+        "+5 D/E 0.01",
+        "+4 promoter 56.36%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹141,822 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 141822.0,
+        "pe": 111.0,
+        "roce": 26.7,
+        "roe": 20.5,
+        "sales_growth_3_years": 21.0,
+        "profit_growth_3_years": 10.0,
+        "promoter_pct": 56.36,
+        "debt_to_equity": 0.01,
+        "np_yoy_growth_pct": 15.4
+      },
+      "source_weight": 0.55,
+      "source_confidence": 50,
+      "composite": 77,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "alloc_inr": 40551.75,
+      "alloc_qty": 45
+    },
+    {
+      "symbol": "V2RETAIL",
+      "company": "V2 Retail",
+      "tip_id": "2e926806da",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews"
+      ],
+      "n_mentions": 10,
+      "src_targets": [
+        275.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/motilal-oswal-sees-27-upside-in-this-retail-stock-should-you-buy/articleshow/133869595.cms",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+        "https://www.moneycontrol.com/news/business/stocks/buy-v2-retail-target-of-rs-275-motilal-oswal-14024152.html",
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
+      ],
+      "brokerages": [
+        "motilal"
+      ],
+      "sentence": "Buy V2 Retail; target of Rs 275: Motilal Oswal. You are using an outdated browser. Please upgrade your browser to improve your experience and security. Start --> Quotes Mutual Funds ETFs Commodities Futures & Options Unlisted Shares Currency News Topic Cryptocurrency Forum Notices Videos Glossary Al",
+      "ltp": 223.5,
+      "plan": {
+        "timeframe": "long",
+        "entry": 223.5,
+        "entry_zone": [
+          222.38,
+          224.62
+        ],
+        "stop_loss": 213.56,
+        "stop_loss_pct": 4.45,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          242.35,
+          259.25,
+          271.26
+        ],
+        "target_pct": [
+          8.43,
+          16.0,
+          21.37
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.6,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 79,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 54.7 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 13.9 no trend",
+          "+5 volume 2.32× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.6"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          275.0
+        ],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "up",
+        "rsi": 54.7,
+        "atr_pct": 2.67,
+        "adx": 13.9,
+        "vol_ratio": 2.32,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -13.79,
+        "dist_ema20_pct": 1.44,
+        "dist_ema200_pct": 4.4,
+        "avg_turnover_cr": 27.29,
+        "chg_5d_pct": 0.37,
+        "chg_20d_pct": 2.3,
+        "high_52w": 259.25,
+        "last_bar_date": "2026-09-07"
+      },
+      "resistances": [
+        {
+          "price": 227.92,
+          "touches": 3
+        },
+        {
+          "price": 242.35,
+          "touches": 2
+        },
+        {
+          "price": 248.92,
+          "touches": 1
+        },
+        {
+          "price": 259.25,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 220.57,
+          "touches": 2
+        },
+        {
+          "price": 214.63,
+          "touches": 6
+        },
+        {
+          "price": 194.12,
+          "touches": 1
+        },
+        {
+          "price": 189.13,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 79,
+      "fund_score": 77,
+      "fund_why": [
+        "+6 ROCE 19.3%",
+        "+8 ROE 22.9%",
+        "-2 P/E 51.5",
+        "+8 3y profit CAGR 135%",
+        "+6 3y sales CAGR 54%",
+        "-2 D/E 1.1",
+        "+4 promoter 51.43%",
+        "-5 promoter stake down -2.79pp in 4q",
+        "+4 latest qtr PAT YoY 68%",
+        "+0 mcap ₹8,166 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 8166.0,
+        "pe": 51.5,
+        "roce": 19.3,
+        "roe": 22.9,
+        "sales_growth_3_years": 54.0,
+        "profit_growth_3_years": 135.0,
+        "promoter_pct": 51.43,
+        "debt_to_equity": 1.1,
+        "np_yoy_growth_pct": 68.0
+      },
+      "source_weight": 0.6,
+      "source_confidence": 50,
+      "composite": 73,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "alloc_inr": 30172.5,
+      "alloc_qty": 135
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "tip_id": "9f766df819",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "n_mentions": 1,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/lalpathlab.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Dr. Lal Path Labs Ltd. (NSE: LALPATHLAB) LTP 1901.1 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.26%, volume 157780.",
+      "ltp": 1901.699951171875,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1901.7,
+        "entry_zone": [
+          1892.19,
+          1911.21
+        ],
+        "stop_loss": 1860.75,
+        "stop_loss_pct": 2.15,
+        "stop_basis": "below support",
+        "targets": [
+          2053.26,
+          2154.3,
+          2305.86
+        ],
+        "target_pct": [
+          7.97,
+          13.28,
+          21.25
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 6.17,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 78,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.8 healthy momentum",
+          "+4 ADX 27.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 6.17"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.8,
+        "atr_pct": 2.66,
+        "adx": 27.9,
+        "vol_ratio": 0.8,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -4.38,
+        "dist_ema20_pct": 0.03,
+        "dist_ema200_pct": 16.26,
+        "avg_turnover_cr": 38.01,
+        "chg_5d_pct": -1.7,
+        "chg_20d_pct": -2.68,
+        "high_52w": 1988.9,
+        "last_bar_date": "2026-09-07"
+      },
+      "resistances": [
+        {
+          "price": 1980.27,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 1870.1,
+          "touches": 1
+        },
+        {
+          "price": 1650.9,
+          "touches": 1
+        },
+        {
+          "price": 1610.1,
+          "touches": 1
+        },
+        {
+          "price": 1500.1,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 78,
+      "fund_score": 94,
+      "fund_why": [
+        "+12 ROCE 28%",
+        "+8 ROE 22.3%",
+        "-2 P/E 56.8",
+        "+8 3y profit CAGR 30%",
+        "+3 3y sales CAGR 11%",
+        "+5 D/E 0.08",
+        "+4 promoter 53.19%",
+        "+4 latest qtr PAT YoY 26.9%",
+        "+2 mcap ₹31,906 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 31906.0,
+        "pe": 56.8,
+        "roce": 28.0,
+        "roe": 22.3,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 30.0,
+        "promoter_pct": 53.19,
+        "debt_to_equity": 0.08,
+        "np_yoy_growth_pct": 26.9
+      },
+      "source_weight": 0.5,
+      "source_confidence": 50,
+      "composite": 73,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "alloc_inr": 28525.5,
+      "alloc_qty": 15
+    }
+  ],
+  "chosen": [
+    {
+      "symbol": "CGPOWER",
+      "composite": 77,
+      "alloc_inr": 40551.75,
+      "alloc_qty": 45
+    },
+    {
+      "symbol": "V2RETAIL",
+      "composite": 73,
+      "alloc_inr": 30172.5,
+      "alloc_qty": 135
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "composite": 73,
+      "alloc_inr": 28525.5,
+      "alloc_qty": 15
+    }
+  ],
+  "booked": [],
+  "cash_after": 100000,
+  "watch": [
+    "APLAPOLLO",
+    "INGERRAND",
+    "SANSERA",
+    "BOSCHLTD",
+    "PERSISTENT",
+    "TIIL",
+    "ARMANFIN",
+    "CHOLAFIN"
+  ]
+}

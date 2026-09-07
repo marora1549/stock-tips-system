@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# stock-tips-system — global settings
+# Everything the pipeline treats as a "rule" lives here, so a rule change is a
+# one-line diff with git history, not a code change.
+# ---------------------------------------------------------------------------
+
+capital:
+  total_inr: 100000            # working capital in rotation (paper until go-live)
+  max_single_stock_pct: 50     # hard cap: never > 50% of capital in one name
+  min_allocation_pct: 15       # don't bother with slivers smaller than this
+  max_open_positions: 4
+
+mandate:
+  # Return the tip must plausibly deliver (T3) to be worth capital, by timeframe
+  weekly_target_pct: 5.0
+  monthly_target_pct: 10.0
+  # Time stops (trading days). If T1 not hit by then → exit (or → hold bucket if fundamentals strong)
+  weekly_time_stop_days: 10
+  monthly_time_stop_days: 30
+  intraday_allowed: false      # intraday tips are logged but never allocated
+
+risk:
+  max_stop_loss_pct: 8.0       # skip tips whose TA stop-loss is wider than this
+  min_reward_risk_t2: 1.5      # (T2-entry)/(entry-SL) must be >= this
+  min_avg_turnover_cr: 2.0     # skip illiquid names (avg 20d turnover, crore)
+  min_price_inr: 20            # skip penny stocks
+
+exits:
+  # Stepped profit booking: fraction of the ORIGINAL quantity sold at each target
+  t1_fraction: 0.40
+  t2_fraction: 0.30
+  t3_fraction: 0.30
+  trail_after_t1: "breakeven"  # SL → entry after T1 is hit
+  trail_after_t2: "t1"         # SL → T1 after T2 is hit
+
+scoring:
+  # composite = w_ta*TA + w_fund*FUND + w_src*SOURCE(0-100)
+  w_ta: 0.50
+  w_fund: 0.20
+  w_src: 0.30
+  pick_threshold: 65           # composite needed to be a "pick" (BUY); STRONG BUY at +13
+  hold_bucket_fund_score: 65   # fundamentals score at/above which a stuck position → hold, not exit
+  top_n: 3
+
+source_confidence:
+  # Raw score starts at 0 for every new source. Outcomes add/subtract, older
+  # outcomes decay so a source can redeem itself (or lose trust) over time.
+  decay_per_outcome: 0.95
+  reward_t1: 10
+  reward_t2: 5
+  reward_t3: 5
+  penalty_stop_loss: -15
+  penalty_time_stop_loss: -6
+  reward_time_stop_gain: 2
+  # weight into composite = 0.5 + 0.5*tanh(score / scale): unknown source = 0.5 (neutral)
+  tanh_scale: 25
+  # a source is auto-disabled if score < this AND it has >= min_outcomes_to_disable outcomes
+  disable_below: -40
+  min_outcomes_to_disable: 8
+
+data:
+  history_days: 400
+  cache_ttl_minutes: 30
+  user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+
+schedule:
+  timezone: Asia/Kolkata
+  morning_run: "08:15"
+  eod_run: "15:45"
