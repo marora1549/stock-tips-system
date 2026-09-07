@@ -4,6 +4,7 @@
   structure         merge duplicates → tips_structured.json   (--reviewed FILE to use Claude-corrected tips)
   analyze           TA + fundamentals + scoring → analysis.json
   pick              allocate + book paper positions → picks.json    (--no-book for a dry run)
+  book              formalise ONE analysed suggestion into a tracked paper position (book CGPOWER [--capital 25000])
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
@@ -91,6 +92,65 @@ def cmd_pick(a):
     print(md)
 
 
+def _latest_analysis_day(day: str | None) -> str:
+    if day:
+        return day
+    days = sorted(p.name for p in REPORTS_DIR.iterdir() if p.is_dir() and (p / "analysis.json").exists()) if REPORTS_DIR.exists() else []
+    if not days:
+        sys.exit("no analysis.json in reports/ — run `analyze` first")
+    return days[-1]
+
+
+def cmd_book(a):
+    """Formalise one suggestion into a tracked paper position (what the dashboard's Formalise button asks for)."""
+    day = _latest_analysis_day(a.date)
+    results = read_json(REPORTS_DIR / day / "analysis.json", [])
+    sym = a.symbol.upper()
+    cand = next((p for p in results if p["symbol"] == sym), None)
+    if cand is None:
+        sys.exit(f"{sym} not in reports/{day}/analysis.json — analysed today: {len(results)} names")
+    if cand["verdict"] not in ("BUY", "STRONG BUY") and not a.force:
+        sys.exit(f"{sym} is {cand['verdict']} (composite {cand['composite']}), not a BUY — use --force to override")
+    if not cand["plan"].get("tradeable") and not a.force:
+        sys.exit(f"{sym} plan is not tradeable (stop/RR/mandate kill-switch) — use --force to override")
+
+    cfg = settings()
+    cap_total = cfg["capital"]["total_inr"]
+    max_one = cap_total * cfg["capital"]["max_single_stock_pct"] / 100
+    min_one = cap_total * cfg["capital"]["min_allocation_pct"] / 100
+    led = ledgermod.load()
+    if any(p["symbol"] == sym for p in led["positions"]):
+        sys.exit(f"{sym} is already in the book — nothing to do")
+    n_live = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
+    room = cfg["capital"]["max_open_positions"] - n_live
+    if room <= 0 and not a.force:
+        sys.exit(f"no room: {n_live} open/pending vs cap {cfg['capital']['max_open_positions']} — close something first")
+    cash = ledgermod.deployable_cash(led)
+    # default: spread the deployable cash over the free slots (>= the minimum, <= the per-stock cap),
+    # so formalising one name doesn't starve the slots left for the rest
+    fair_share = max(min_one, cash / max(1, room))
+    amt = float(a.capital) if a.capital else min(max_one, fair_share, cash)
+    if amt > cash + 1e-6:
+        sys.exit(f"only {cash:,.2f} deployable cash, asked for {amt:,.2f}")
+    if amt > max_one + 1e-6 and not a.force:
+        sys.exit(f"{amt:,.2f} exceeds the {cfg['capital']['max_single_stock_pct']}%/stock cap ({max_one:,.2f})")
+    if amt < min_one and not a.force:
+        sys.exit(f"{amt:,.2f} is below the {cfg['capital']['min_allocation_pct']}% minimum allocation ({min_one:,.2f}) — deployable cash {cash:,.2f}")
+
+    pos = ledgermod.open_position(led, cand, amt)
+    if pos is None:
+        sys.exit(f"could not book {sym} (qty would be 0 at entry {cand['plan']['entry']})")
+    ledgermod.save(led)
+    pl = cand["plan"]
+    print(report.order_line(sym, pos["qty"], pl["entry"], pl["stop_loss"], pl["targets"]))
+    print(json.dumps({"pos_id": pos["pos_id"], "symbol": sym, "qty": pos["qty"], "capital_inr": pos["capital_inr"],
+                      "entry_plan": pos["entry_plan"], "stop_loss": pos["stop_loss"], "targets": pos["targets"],
+                      "timeframe": pos["timeframe"], "bucket": pos["bucket"], "fills_at_open_on": pos["opened"],
+                      "cash_after": led["cash_inr"], "from_analysis": day}, indent=1))
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+
+
 def cmd_eod(a):
     closed = _market_closed(a.date or today_str())
     if closed and not a.force:
@@ -157,15 +217,45 @@ def cmd_lesson(a):
     print("lesson recorded")
 
 
+ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
+                   "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
+                   "corroborating_sources", "brokerages")
+
+
+def _pos_for_dashboard(pos: dict) -> dict:
+    """Ledger position + the derived levels the dashboard shows (never written back to state/)."""
+    d = dict(pos)
+    base = d.get("entry") or d.get("entry_plan")
+    if base:
+        if d.get("stop_loss") is not None:
+            d["stop_loss_pct"] = round((d["stop_loss"] / base - 1) * 100, 2)
+        d["target_pct"] = [round((t / base - 1) * 100, 2) for t in (d.get("targets") or [])]
+        d["order_line"] = report.order_line(d["symbol"], d.get("qty_open") or d.get("qty") or 0, base, d.get("stop_loss") or 0.0, d.get("targets") or [])
+    return d
+
+
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
     days = sorted([p.name for p in REPORTS_DIR.iterdir() if p.is_dir()]) if REPORTS_DIR.exists() else []
     latest = read_json(REPORTS_DIR / days[-1] / "picks.json", {}) if days else {}
     analysis = read_json(REPORTS_DIR / days[-1] / "analysis.json", []) if days else []
-    data = {"generated": today_str(), "stats": ledgermod.stats(led), "positions": led["positions"], "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
-            "sources": conf, "latest_picks": latest, "latest_analysis": [{k: p[k] for k in ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence", "ltp", "plan", "source_id", "bucket")} for p in analysis],
-            "report_days": days[-60:], "lessons_tail": journal.tail(4000), "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
+    cfg = settings()
+    cap = cfg["capital"]
+    n_live = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
+    cash = ledgermod.deployable_cash(led)
+    data = {"generated": today_str(), "stats": ledgermod.stats(led),
+            "positions": [_pos_for_dashboard(p) for p in led["positions"]],
+            "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
+            "sources": conf, "latest_picks": latest,
+            "latest_analysis": [{k: p.get(k) for k in ANALYSIS_FIELDS} for p in analysis],
+            "analysis_day": days[-1] if days else None,
+            "book": {"max_open_positions": cap["max_open_positions"], "open_or_pending": n_live,
+                     "slots_left": max(0, cap["max_open_positions"] - n_live), "deployable_cash": cash,
+                     "min_alloc_inr": round(cap["total_inr"] * cap["min_allocation_pct"] / 100, 2),
+                     "max_alloc_inr": round(cap["total_inr"] * cap["max_single_stock_pct"] / 100, 2)},
+            "report_days": days[-60:], "lessons_tail": journal.tail(4000),
+            "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
 
 
@@ -178,6 +268,7 @@ def main(argv=None):
     p = sub.add_parser("structure"); p.add_argument("--reviewed"); p.set_defaults(fn=cmd_structure)
     p = sub.add_parser("analyze"); p.set_defaults(fn=cmd_analyze)
     p = sub.add_parser("pick"); p.add_argument("--no-book", action="store_true"); p.set_defaults(fn=cmd_pick)
+    p = sub.add_parser("book"); p.add_argument("symbol"); p.add_argument("--capital", type=float, default=None, help="rupees to deploy (default: deployable cash split over the free slots, capped per stock)"); p.add_argument("--date", default=None, help="report day whose analysis.json to book from (default: latest)"); p.add_argument("--force", action="store_true", help="override verdict / cap / slot checks"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_book)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)
     p = sub.add_parser("analyze-symbol"); p.add_argument("symbol"); p.add_argument("--tf", default="weekly"); p.set_defaults(fn=cmd_analyze_symbol)

@@ -43,7 +43,7 @@ state/                   the brain — committed on every run
   universe_cache.json    NSE symbol master (weekly refresh, seed in data/EQUITY_L.csv)
 reports/<date>/          tips_raw.json → tips_reviewed.json → tips_structured.json → analysis.json → picks.json → morning.md / eod.md
 prompts/                 analyst_persona.md (loaded every run), morning_run.md, eod_run.md (the scheduled-task playbooks)
-docs/                    static dashboard (GitHub Pages): index.html reads data.json
+docs/                    static dashboard (GitHub Pages): index.html reads data.json — Suggestions (with a Formalise button) and Active investments, both as entry/stop/T1-T3 level tables
 src/stocktips/           the package — data/, sources/, analysis/, portfolio/, learning/, pipeline.py, report.py, cli.py
 tests/                   ledger lifecycle, extraction, plan geometry (no network)
 ```
@@ -57,6 +57,8 @@ python -m stocktips morning --no-book      # full dry run, nothing booked
 python -m stocktips morning                # books paper positions (fills at next open)
 python -m stocktips eod                    # after 15:30 IST
 python -m stocktips status
+python -m stocktips book CGPOWER           # formalise one analysed suggestion into a tracked paper position
+python -m stocktips book CGPOWER --capital 25000   # ...with an explicit allocation
 python -m stocktips analyze-symbol TATASTEEL --tf weekly
 python -m stocktips add-source --kind telegram --id tg_foo --channel foo --name "Telegram — @foo"
 python -m stocktips lesson "Breakouts on 1.5x volume kept failing in a falling Nifty — require Nifty > 20EMA for breakout picks."
@@ -70,6 +72,21 @@ Every candidate gets three independent 0–100 numbers. **TA confidence** starts
 ## Targets and stops
 
 Stops go a hair below the nearest qualifying swing support (≥ 0.6 ATR away, ≤ 8%), else 1.5 ATR (weekly) / 2.5 ATR (monthly). Targets go to successive swing resistances when one sits in the expected band, else 1.5 / 3 / 4.5 ATR (weekly) or 3 / 5 / 8 ATR (monthly); the 52-week high is a natural T3 when it is in reach. Exits are stepped 40/30/30 with the stop trailing to breakeven after T1 and to T1 after T2. A weekly idea that hasn't hit T1 in 10 trading days (30 for monthly) is time-stopped: exited if the fundamentals score is < 65 ("hot potato"), parked in the HOLD bucket if ≥ 65.
+
+## The dashboard's two sections
+
+`docs/index.html` splits the desk in two:
+
+* **Suggestions** — every BUY-grade candidate from the latest `analysis.json` that is *not* already in the ledger, as a level table: entry zone, stop (₹ and %), T1/T2/T3 (₹ and %), R:R, timeframe, and a separate **Tipster said** column so the source's claim is never confused with our levels. Cards for the top three carry the TA/fundamentals/source scores and the reasons behind the TA number.
+* **Active investments** — what the ledger is actually tracking (pending / open / hold), with the same level table plus fill price, quantity, LTP, unrealised %, time-stop deadline and bucket, and a ✔ on each target already hit.
+
+GitHub Pages is static, so **Formalise → track** cannot write `state/ledger.json` itself. It queues the trade in the browser (respecting the live caps: free slots, deployable cash, per-stock cap, minimum allocation), moves it into Active as `queued`, and prints the one command that commits it:
+
+```bash
+PYTHONPATH=src python -m stocktips book V2RETAIL --capital 19668
+```
+
+The queue entry clears itself as soon as `data.json` comes back carrying that position, so the ledger stays the single source of truth. `book` applies the same caps server-side and refuses anything that isn't a BUY with a tradeable plan (`--force` to override).
 
 ## Adding sources
 
