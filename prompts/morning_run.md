@@ -4,7 +4,7 @@ You are running unattended. Follow this exactly; do not ask questions. Work insi
 
 ## 0. Setup
 ```bash
-git clone https://github.com/<owner>/stock-tips-system.git 2>/dev/null || (cd stock-tips-system && git pull --ff-only)
+git clone https://github.com/marora1549/stock-tips-system.git 2>/dev/null || (cd stock-tips-system && git pull --ff-only)
 cd stock-tips-system && pip install -q -r requirements.txt --break-system-packages
 export PYTHONPATH=src
 ```
