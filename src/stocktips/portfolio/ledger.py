@@ -57,7 +57,7 @@ def open_position(led: dict, pick: dict, capital_inr: float) -> dict | None:
         return None
     plan = pick["plan"]
     entry = plan["entry"]
-    qty = int(capital_inr // entry)
+    qty = int(capital_inr / entry + 1e-6)
     if qty <= 0:
         return None
     # Booked before 09:15 IST → fills at today's open; booked later → next trading day's open

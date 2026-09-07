@@ -4,9 +4,9 @@
     "capital": 100000,
     "equity": 100000,
     "return_pct": 0.0,
-    "cash": 100000,
+    "cash": 750.25,
     "open": 0,
-    "pending": 0,
+    "pending": 3,
     "hold": 0,
     "closed": 0,
     "win_rate": null,
@@ -14,7 +14,132 @@
     "avg_loss_pct": null,
     "realised_inr": 0
   },
-  "positions": [],
+  "positions": [
+    {
+      "pos_id": "2026-09-08-CGPOWER",
+      "tip_id": "d2e96d14dd",
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "pending",
+      "entry_plan": 901.15,
+      "entry": null,
+      "qty": 45,
+      "qty_open": 45,
+      "capital_inr": 40551.75,
+      "stop_loss": 855.9,
+      "initial_stop": 855.9,
+      "targets": [
+        977.23,
+        1012.9,
+        1079.95
+      ],
+      "targets_hit": [],
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": null,
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "ta_confidence": 84,
+      "fund_score": 91,
+      "composite": 77,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
+    },
+    {
+      "pos_id": "2026-09-08-V2RETAIL",
+      "tip_id": "2e926806da",
+      "symbol": "V2RETAIL",
+      "company": "V2 Retail",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "pending",
+      "entry_plan": 223.5,
+      "entry": null,
+      "qty": 135,
+      "qty_open": 135,
+      "capital_inr": 30172.5,
+      "stop_loss": 213.56,
+      "initial_stop": 213.56,
+      "targets": [
+        242.35,
+        259.25,
+        271.26
+      ],
+      "targets_hit": [],
+      "timeframe": "long",
+      "time_stop_days": 30,
+      "deadline": null,
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews"
+      ],
+      "ta_confidence": 79,
+      "fund_score": 77,
+      "composite": 73,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
+    },
+    {
+      "pos_id": "2026-09-08-LALPATHLAB",
+      "tip_id": "9f766df819",
+      "symbol": "LALPATHLAB",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "pending",
+      "entry_plan": 1901.7,
+      "entry": null,
+      "qty": 15,
+      "qty_open": 15,
+      "capital_inr": 28525.5,
+      "stop_loss": 1860.75,
+      "initial_stop": 1860.75,
+      "targets": [
+        2053.26,
+        2154.3,
+        2305.86
+      ],
+      "targets_hit": [],
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": null,
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "ta_confidence": 78,
+      "fund_score": 94,
+      "composite": 73,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
+    }
+  ],
   "closed": [],
   "equity_curve": [],
   "sources": [
@@ -841,8 +966,12 @@
         "alloc_qty": 15
       }
     ],
-    "booked": [],
-    "cash_after": 100000,
+    "booked": [
+      "2026-09-08-CGPOWER",
+      "2026-09-08-V2RETAIL",
+      "2026-09-08-LALPATHLAB"
+    ],
+    "cash_after": 2651.95,
     "watch": [
       "APLAPOLLO",
       "INGERRAND",

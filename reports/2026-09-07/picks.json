@@ -470,8 +470,12 @@
       "alloc_qty": 15
     }
   ],
-  "booked": [],
-  "cash_after": 100000,
+  "booked": [
+    "2026-09-08-CGPOWER",
+    "2026-09-08-V2RETAIL",
+    "2026-09-08-LALPATHLAB"
+  ],
+  "cash_after": 2651.95,
   "watch": [
     "APLAPOLLO",
     "INGERRAND",

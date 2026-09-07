@@ -1,7 +1,21 @@
-# Morning picks — Mon 07 Sep 2026, 14:52 IST
+# Morning picks — Mon 07 Sep 2026, 15:00 IST
 
-Paper book: equity ₹100,000 (+0.0%) · cash ₹100,000 · open 0 · pending 0 · hold 0 · closed 0
+Paper book: equity ₹100,000 (+0.0%) · cash ₹2,652 · open 0 · pending 3 · hold 0 · closed 0
 Gathered **269 raw tips** from 10 sources → 122 analysed → 3 actionable.
+
+## Desk view (analyst layer — written by Claude in this session; in production this section is written by the scheduled run)
+
+**Context.** Nifty has closed lower four weeks running and broke 24,000 support this morning (ET "Ahead of Market", Mint weekly wrap); breadth is poor, so today's screen is deliberately tilted to *pullbacks inside intact uptrends* rather than breakouts. Run executed after 09:15, so all three paper positions fill at **Tuesday 8 Sep's open**; the EOD run cancels any that gap > 3% above plan.
+
+**1. CGPOWER — BUY 45 @ ₹901 (₹40.6k, 40%).** Why this chart: EMA20>50>200, price sitting on the 20-EMA with RSI 54 and rising MACD — a textbook pullback in a strong trend, plus the widest Bollinger squeeze in 6 months. Motilal's ₹1,020 target (+13%) is corroborated by our own structure (T2 ₹1,013 is a swing resistance, not their number). What makes me wrong: a close below ₹856 (below the ₹860 swing low and the 50-EMA) says the pullback is a top. Fundamentals 91 → hold-capable; P/E 111 is the one ugly number. Order: `BUY 45 CGPOWER NSE CNC limit 905 · SL-M 855.9 · GTT 977 / 1013 / 1080`.
+
+**2. V2RETAIL — BUY 135 @ ₹223.5 (₹30.2k, 30%).** Motilal initiated with ₹275 (27% base case) on Friday; five outlets carried it, so expect some Tuesday open premium — the 3% gap rule protects us. Chart: uptrend, RSI 55, 2.3× volume on Friday's up-bar, resistance cluster at ₹228 then ₹242 (T1). What makes me wrong: a close under ₹213.6 (below the six-touch ₹214.6 support) — that support has held all quarter, so a break is decisive. Fundamentals 77 but note promoter stake down 2.8pp in 4 quarters. Order: `BUY 135 V2RETAIL NSE CNC limit 224.5 · SL-M 213.5 · GTT 242 / 259 / 271`.
+
+**3. LALPATHLAB — BUY 15 @ ₹1,902 (₹28.5k, 28%).** System-generated (Chartink squeeze scan), no human tipster — the cleanest test of whether the TA engine alone earns its keep. Strong uptrend (ADX 28), 4% off the 52w high, tight ₹1,860 stop (−2.2%) gives R:R 6 to T2. Caveat: volume is light (0.8× avg), so this is a coiled-spring bet, not a momentum one; if it does not clear ₹1,980 within two weeks the 30-day monthly clock still runs. Fundamentals 94 → hold-capable. Order: `BUY 15 LALPATHLAB NSE CNC limit 1911 · SL-M 1860 · GTT 2053 / 2154 / 2306`.
+
+**Passed on:** HYUNDAI (comp 72) — good chart but three stronger names ahead of it and the 4-position cap leaves one slot for tomorrow. Tata Steel is the most-tipped name today (5 analysts, ₹196–205 targets) but scores only WATCH: it is below the 200-EMA in a downtrend; consensus is not a pattern.
+
+**Honesty note.** Every source starts at confidence 50 today, so the source term is neutral for all three; the ranking is 70% chart, 30% business quality. That is what it should be on day one.
 
 ### 1. CG Power and Industrial Solutions (NSE: CGPOWER) — BUY · composite 77
 
@@ -177,6 +191,13 @@ Stepped exit: book 40% at T1 (SL→entry), 30% at T2 (SL→T1), rest at T3.
 | LIQUIDADD | SKIP | 30 | 10 | 50 | 50 | weekly | 1,143.7 | 1,112.73 | 1,144.04 | 1,144.43 | 1,151.22 | 0.03 | chartink_52w_breakout |
 
 </details>
+
+## Open book
+| symbol | status | entry | qty | SL | targets hit | unrealised | deadline | bucket |
+|---|---|---|---|---|---|---|---|---|
+| CGPOWER | pending | 901.15 | 45/45 | 855.9 | [] | —% | — | hold-capable |
+| V2RETAIL | pending | 223.5 | 135/135 | 213.56 | [] | —% | — | hold-capable |
+| LALPATHLAB | pending | 1901.7 | 14/14 | 1860.75 | [] | —% | — | hold-capable |
 
 ## Source confidence (top / bottom)
 | source | conf | score | tips | resolved | T1 hit% | stop% | expectancy% |
