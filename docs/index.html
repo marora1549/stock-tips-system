@@ -3,911 +3,1317 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dalal Street Desk</title>
+<meta name="theme-color" content="#0F1216">
+<title>Desk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <style>
-/* ============================================================ tokens */
+/* ==================================================================== tokens */
 :root{
-  --paper:#FBFAF7; --surface:#FFFFFF; --surface-2:#F4F2ED; --surface-3:#EDEAE2;
-  --hair:#E6E2D9; --rule:#D3CEC1; --rule-strong:#B6AF9E;
-  --ink:#16181C; --ink-2:#565C67; --ink-3:#666C76;
-  --accent:#1E4B7A; --accent-2:#2F6BA8; --accent-wash:rgba(30,75,122,.07);
-  --gain:#12603C; --gain-wash:rgba(18,96,60,.07);
-  --loss:#96292B; --loss-wash:rgba(150,41,43,.06);
-  --warn:#87610A; --warn-wash:rgba(135,97,10,.09);
-  --focus:#2F6BA8;
-  --serif:"Newsreader","Iowan Old Style",Georgia,"Times New Roman",serif;
-  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --ease:cubic-bezier(.32,.72,0,1);
+  --bg:#0F1216; --elev:#171B21; --elev-2:#1E242C; --elev-3:#252C36;
+  --line:#262E38; --line-2:#323B47;
+  --ink:#E9EEF5; --ink-2:#9BA5B4; --ink-3:#8F98A5;
+  --blue:#74A6F8; --blue-solid:#2E6FE0; --blue-dim:rgba(75,139,244,.16); --blue-line:rgba(75,139,244,.36);
+  --green:#19C57F; --green-dim:rgba(25,197,127,.13); --green-line:rgba(25,197,127,.32);
+  --red:#F6767F; --red-dim:rgba(246,118,127,.14); --red-line:rgba(246,118,127,.34);
+  --amber:#F0A93B; --amber-dim:rgba(240,169,59,.14);
+  --violet:#A98BFA; --violet-dim:rgba(169,139,250,.14);
+  --bar:rgba(15,18,22,.9);
+  --shadow:0 6px 18px -6px rgba(0,0,0,.55);
+  --r:14px; --r-sm:10px; --r-pill:999px;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ease:cubic-bezier(.22,.68,0,1);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#0E1013; --surface:#14171B; --surface-2:#191D22; --surface-3:#1F242A;
-    --hair:#242830; --rule:#31373F; --rule-strong:#4A515B;
-    --ink:#E9E7E2; --ink-2:#A3A9B4; --ink-3:#7E858F;
-    --accent:#8CB4E2; --accent-2:#A6C7EE; --accent-wash:rgba(140,180,226,.10);
-    --gain:#4FBE86; --gain-wash:rgba(79,190,134,.10);
-    --loss:#E08078; --loss-wash:rgba(224,128,120,.10);
-    --warn:#D8AC5A; --warn-wash:rgba(216,172,90,.12);
-    --focus:#A6C7EE;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0E1013; --surface:#14171B; --surface-2:#191D22; --surface-3:#1F242A;
-  --hair:#242830; --rule:#31373F; --rule-strong:#4A515B;
-  --ink:#E9E7E2; --ink-2:#A3A9B4; --ink-3:#767D89;
-  --accent:#8CB4E2; --accent-2:#A6C7EE; --accent-wash:rgba(140,180,226,.10);
-  --gain:#4FBE86; --gain-wash:rgba(79,190,134,.10);
-  --loss:#E08078; --loss-wash:rgba(224,128,120,.10);
-  --warn:#D8AC5A; --warn-wash:rgba(216,172,90,.12);
-  --focus:#A6C7EE;
+:root[data-theme="light"]{
+  --bg:#F4F6F9; --elev:#FFFFFF; --elev-2:#F1F4F8; --elev-3:#E7ECF3;
+  --line:#E3E8EF; --line-2:#D3DAE4;
+  --ink:#0E1420; --ink-2:#4A5568; --ink-3:#5B6675;
+  --blue:#1B5CCC; --blue-solid:#1B5CCC; --blue-dim:rgba(27,92,204,.10); --blue-line:rgba(27,92,204,.28);
+  --green:#046B41; --green-dim:rgba(4,107,65,.10); --green-line:rgba(4,107,65,.26);
+  --red:#AE222C; --red-dim:rgba(174,34,44,.09); --red-line:rgba(174,34,44,.24);
+  --amber:#8A5A08; --amber-dim:rgba(138,90,8,.10);
+  --violet:#6134D2; --violet-dim:rgba(97,52,210,.10);
+  --bar:rgba(244,246,249,.92);
+  --shadow:0 6px 18px -6px rgba(16,24,40,.22);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
-  margin:0; background:var(--paper); color:var(--ink);
-  font:400 14px/1.55 var(--sans); font-variant-numeric:tabular-nums;
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 14px/1.5 var(--sans); font-variant-numeric:tabular-nums;
   -webkit-font-smoothing:antialiased;
 }
-::selection{background:var(--accent-wash); color:var(--ink)}
-:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:2px}
-* ::-webkit-scrollbar{height:10px; width:10px}
-* ::-webkit-scrollbar-track{background:transparent}
-* ::-webkit-scrollbar-thumb{background:var(--rule); border-radius:6px; border:3px solid var(--paper)}
-* ::-webkit-scrollbar-thumb:hover{background:var(--rule-strong)}
-a{color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px}
-.wrap{max-width:1360px; margin:0 auto; padding:0 28px 96px}
-.num{font-family:var(--mono); font-feature-settings:"zero" 1}
-.icon{width:15px; height:15px; flex:0 0 auto; stroke:currentColor; fill:none;
-  stroke-width:1.25; stroke-linecap:round; stroke-linejoin:round; vertical-align:-2px}
-.icon.sm{width:13px; height:13px; stroke-width:1.4}
+::selection{background:var(--blue-dim); color:var(--ink)}
+:focus-visible{outline:2px solid var(--blue); outline-offset:2px; border-radius:6px}
+::-webkit-scrollbar{width:10px; height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:99px; border:3px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:var(--ink-3)}
+a{color:var(--blue); text-underline-offset:3px}
+button{font-family:inherit}
+.ic{width:16px; height:16px; flex:0 0 auto; stroke:currentColor; fill:none; stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round}
+.ic.s{width:13px; height:13px; stroke-width:1.8}
+.ic.l{width:20px; height:20px}
+.n{font-family:var(--mono); font-feature-settings:"zero" 1; letter-spacing:-.02em}
+.up{color:var(--green)} .down{color:var(--red)} .mut{color:var(--ink-3)}
+.wrap{max-width:1180px; margin:0 auto; padding:0 16px 96px}
 
-/* ============================================================ masthead */
-.masthead{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between;
-  gap:16px; padding:36px 0 14px; border-bottom:1px solid var(--rule)}
-.masthead h1{margin:0; font:500 31px/1.05 var(--serif); letter-spacing:-.015em}
-.masthead h1 em{font-style:italic; font-weight:400; color:var(--ink-2)}
-.dateline{text-align:right; font-size:12px; color:var(--ink-2); line-height:1.7}
-.dateline .mark{display:inline-flex; align-items:center; gap:5px; margin-top:2px;
-  font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+/* ==================================================================== app bar */
+.appbar{position:sticky; top:0; z-index:50; background:var(--bar);
+  backdrop-filter:blur(14px) saturate(1.4); border-bottom:1px solid var(--line)}
+.appbar-in{max-width:1180px; margin:0 auto; padding:11px 16px; display:flex; align-items:center; gap:12px}
+.brand{display:flex; align-items:center; gap:9px; font-weight:800; font-size:15px; letter-spacing:-.02em}
+.brand .dot{width:9px; height:9px; border-radius:50%; background:var(--ink-3)}
+.brand small{font-weight:500; color:var(--ink-3); font-size:11px; letter-spacing:0}
+.bar-eq{margin-left:auto; display:flex; align-items:baseline; gap:9px}
+.bar-eq .v{font:600 16px/1 var(--mono); letter-spacing:-.03em}
+.bar-eq .d{font:600 12px/1 var(--mono)}
+.iconbtn{display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px;
+  border-radius:var(--r-sm); border:1px solid var(--line); background:var(--elev); color:var(--ink-2);
+  cursor:pointer; transition:all .16s var(--ease)}
+.iconbtn:hover{color:var(--ink); border-color:var(--line-2); background:var(--elev-2)}
+.iconbtn.live{color:var(--green); border-color:var(--green-line); background:var(--green-dim)}
 
-/* ============================================================ figures band */
-.figures{display:flex; flex-wrap:wrap; align-items:stretch; border-bottom:1px solid var(--rule)}
-.fig{flex:1 1 150px; padding:18px 22px 17px; border-right:1px solid var(--hair); min-width:0}
-.fig:first-child{padding-left:0}
-.fig:last-child{border-right:0}
-.fig .lab{display:flex; align-items:center; gap:5px; font-size:10px; letter-spacing:.13em;
-  text-transform:uppercase; color:var(--ink-3); margin-bottom:7px; white-space:nowrap}
-.fig .val{font:400 25px/1.1 var(--serif); letter-spacing:-.01em; white-space:nowrap}
-.fig .val.small{font-size:20px}
-.fig .sub{margin-top:5px; font-size:11.5px; color:var(--ink-2); white-space:nowrap;
-  overflow:hidden; text-overflow:ellipsis}
-.fig.lead{flex-basis:220px}
-.fig.lead .val{font-size:33px; font-weight:500}
-.fig.act{flex:0 0 auto; display:flex; align-items:center; padding-right:0}
-[data-anim] .fig{opacity:0; transform:translateY(6px)}
-[data-anim="in"] .fig{opacity:1; transform:none; transition:opacity .5s var(--ease), transform .5s var(--ease)}
+/* ==================================================================== tabs */
+.tabs{position:sticky; top:57px; z-index:40; background:var(--bg); border-bottom:1px solid var(--line);
+  margin-bottom:20px}
+.tabs-in{max-width:1180px; margin:0 auto; padding:0 16px; display:flex; gap:2px; overflow-x:auto;
+  scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{display:inline-flex; align-items:center; gap:7px; padding:13px 14px 12px; border:0; background:none;
+  color:var(--ink-3); font:600 13.5px/1 var(--sans); cursor:pointer; white-space:nowrap;
+  border-bottom:2px solid transparent; transition:color .16s var(--ease)}
+.tab:hover{color:var(--ink-2)}
+.tab[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--blue)}
+.tab .badge{font:600 10.5px/1 var(--mono); padding:3px 6px; border-radius:var(--r-pill);
+  background:var(--elev-2); color:var(--ink-3)}
+.tab[aria-selected="true"] .badge{background:var(--blue-dim); color:var(--blue)}
+.view{display:none}
+.view.on{display:block; animation:rise .34s var(--ease)}
+@keyframes rise{from{opacity:0; transform:translateY(7px)} to{opacity:1; transform:none}}
+@media (prefers-reduced-motion:reduce){ .view.on{animation:none} }
 
-/* ============================================================ sections */
-section{margin-top:52px}
-.shead{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between;
-  gap:10px 18px; padding-bottom:9px; border-bottom:1px solid var(--rule)}
-.shead h2{margin:0; font:500 21px/1.2 var(--serif); letter-spacing:-.01em;
-  display:flex; align-items:center; gap:9px}
-.shead h2 .icon{width:17px; height:17px; color:var(--ink-3)}
-.shead .note{font-size:12px; color:var(--ink-2); max-width:62ch}
-.shead .count{font-family:var(--mono); font-size:11.5px; color:var(--ink-3)}
-.subnote{margin:12px 0 0; font-size:12.5px; line-height:1.7; color:var(--ink-2); max-width:80ch}
-.subnote code{font-family:var(--mono); font-size:11.5px; background:var(--surface-2);
-  padding:1px 4px; border-radius:3px}
+/* ==================================================================== stats */
+.strip{display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr)); gap:10px; margin-bottom:18px}
+.stat{background:var(--elev); border:1px solid var(--line); border-radius:var(--r); padding:13px 15px}
+.stat .k{display:flex; align-items:center; gap:6px; font-size:11px; font-weight:600; color:var(--ink-3);
+  text-transform:uppercase; letter-spacing:.06em; margin-bottom:7px}
+.stat .v{font:600 21px/1.1 var(--mono); letter-spacing:-.03em}
+.stat .s{margin-top:5px; font-size:11.5px; color:var(--ink-2)}
+.stat.wide{grid-column:span 2}
 
-/* ============================================================ capacity rail */
-.rail{display:flex; flex-wrap:wrap; gap:0; margin-top:14px; border:1px solid var(--hair);
-  border-radius:3px; background:var(--surface); overflow:hidden}
-.rail .cell{padding:9px 15px; border-right:1px solid var(--hair); font-size:12px; color:var(--ink-2);
-  display:flex; align-items:center; gap:7px}
-.rail .cell:last-child{border-right:0}
-.rail .cell b{color:var(--ink); font-family:var(--mono); font-weight:500}
-.rail .cell.tight{color:var(--warn); background:var(--warn-wash)}
-.rail .cell.tight .icon{color:var(--warn)}
+/* ==================================================================== cards */
+.card{background:var(--elev); border:1px solid var(--line); border-radius:var(--r);
+  margin-bottom:12px; overflow:hidden;
+  transition:border-color .16s var(--ease)}
+.card:hover{border-color:var(--line-2)}
+.card-in{padding:15px 16px}
+.chead{display:flex; align-items:flex-start; gap:12px}
+.sym{font:700 16px/1.2 var(--sans); letter-spacing:-.02em; display:flex; align-items:center; gap:8px;
+  flex-wrap:wrap}
+.co{font-size:12px; color:var(--ink-3); margin-top:2px; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; max-width:34ch}
+.right{margin-left:auto; text-align:right; flex:0 0 auto}
+.ltp{font:600 17px/1.15 var(--mono); letter-spacing:-.03em}
+.chg{font:600 12px/1.4 var(--mono); margin-top:2px}
 
-/* ============================================================ tables */
-.tablewrap{overflow-x:auto; margin-top:2px}
+/* pills */
+.pill{display:inline-flex; align-items:center; gap:5px; font:600 10.5px/1 var(--sans);
+  padding:4px 8px; border-radius:var(--r-pill); white-space:nowrap; letter-spacing:.02em}
+.pill .ic{width:11px; height:11px; stroke-width:2}
+.pill.good{background:var(--green-dim); color:var(--green); box-shadow:inset 0 0 0 1px var(--green-line)}
+.pill.bad{background:var(--red-dim); color:var(--red); box-shadow:inset 0 0 0 1px var(--red-line)}
+.pill.warn{background:var(--amber-dim); color:var(--amber)}
+.pill.flat{background:var(--elev-2); color:var(--ink-2)}
+.pill.info{background:var(--blue-dim); color:var(--blue)}
+.pill.violet{background:var(--violet-dim); color:var(--violet)}
+.pill.strong{background:var(--green); color:#04140C; box-shadow:none}
+:root[data-theme="light"] .pill.strong{color:#fff}
+.tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:9px}
+.tags .pill{cursor:help}
+
+/* ==================================================================== ladder */
+.ladder{margin-top:18px}
+.rail{position:relative; height:5px; background:var(--elev-3); border-radius:99px; margin:28px 0 0}
+.rail .done{position:absolute; top:0; bottom:0; left:0; background:var(--green); border-radius:99px}
+.rail .zone-loss{position:absolute; top:0; bottom:0; left:0; background:var(--red-dim); border-radius:99px}
+.mk{position:absolute; top:50%; transform:translate(-50%,-50%); display:flex; flex-direction:column;
+  align-items:center}
+.mk .tick{width:2px; height:13px; background:var(--line-2); border-radius:2px}
+.mk .lab{position:absolute; bottom:13px; left:50%; transform:translateX(-50%); white-space:nowrap;
+  font:600 10px/1.2 var(--mono); color:var(--ink-2); text-align:center}
+.mk .sub{position:absolute; top:14px; left:50%; transform:translateX(-50%); white-space:nowrap;
+  font:500 10px/1.2 var(--mono); color:var(--ink-2)}
+.mk.stop .tick{background:var(--red)} .mk.stop .lab{color:var(--red)}
+.mk.entry .tick{background:var(--ink-3)}
+.mk.tgt .tick{background:var(--green-line)} .mk.tgt .lab{color:var(--ink-2)}
+.mk.tgt.hit .tick{background:var(--green); height:16px} .mk.tgt.hit .lab{color:var(--green)}
+.mk.now{z-index:3}
+.mk.now .dot{width:13px; height:13px; border-radius:50%; background:var(--blue);
+  border:2.5px solid var(--elev); box-shadow:0 0 0 3px var(--blue-dim)}
+.mk.now .lab{color:var(--blue); font-weight:700; bottom:15px}
+.ladder-legend{display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:34px; font-size:11.5px;
+  color:var(--ink-3)}
+.ladder-legend span{display:inline-flex; align-items:center; gap:5px}
+
+/* ==================================================================== eta */
+.etas{display:flex; flex-wrap:wrap; gap:7px; margin-top:13px; align-items:center}
+.eta{display:inline-flex; align-items:baseline; gap:6px; padding:6px 10px; border-radius:var(--r-sm);
+  background:var(--elev-2); border:1px solid var(--line)}
+.eta b{font:700 10px/1 var(--sans); letter-spacing:.06em; color:var(--ink-3)}
+.eta .d{font:600 12.5px/1 var(--mono)}
+.eta .p{font:500 10.5px/1 var(--mono); color:var(--ink-3)}
+.eta .ic{width:11px; height:11px; stroke-width:2.2; color:var(--green)}
+.eta.hit{background:var(--green-dim); border-color:var(--green-line)}
+.eta.hit b, .eta.hit .d{color:var(--green)}
+.eta.soon .d{color:var(--green)}
+.eta.late{border-color:var(--amber-dim)} .eta.late .d{color:var(--amber)}
+.eta.unknown .d{color:var(--ink-3)}
+.pace{display:flex; align-items:flex-start; gap:8px; margin-top:12px; padding:10px 12px;
+  border-radius:var(--r-sm); background:var(--elev-2); font-size:12.5px; line-height:1.5; color:var(--ink-2)}
+.pace .ic{color:var(--ink-3); margin-top:1px}
+.pace.on{background:var(--green-dim); color:var(--green)} .pace.on .ic{color:var(--green)}
+.pace.behind{background:var(--amber-dim); color:var(--amber)} .pace.behind .ic{color:var(--amber)}
+.pace b{font-family:var(--mono); font-weight:600}
+
+/* ==================================================================== facts + meters */
+.facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(92px,1fr)); gap:12px 14px; margin-top:15px;
+  padding-top:14px; border-top:1px solid var(--line)}
+.fact .k{font-size:10px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink-3); margin-bottom:4px; white-space:nowrap}
+.fact .v{font:600 13px/1.25 var(--mono); letter-spacing:-.02em}
+.fact .v small{font:500 10.5px/1.35 var(--mono); color:var(--ink-3); display:block; margin-top:3px}
+.meters{display:flex; gap:14px; margin-top:13px; flex-wrap:wrap}
+.meter{flex:1 1 84px; min-width:84px}
+.meter .top{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:5px}
+.meter .lab{font-size:10px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-3)}
+.meter .val{font:600 12px/1 var(--mono)}
+.meter .bar{height:4px; border-radius:99px; background:var(--elev-3); overflow:hidden}
+.meter .bar i{display:block; height:100%; border-radius:99px}
+.meter .bar i.b{background:var(--blue)} .meter .bar i.g{background:var(--green)}
+.meter .bar i.v{background:var(--violet)} .meter .bar i.a{background:var(--amber)}
+
+/* ==================================================================== buttons */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:7px;
+  font:600 13px/1 var(--sans); padding:10px 15px; border-radius:var(--r-sm);
+  border:1px solid var(--line-2); background:var(--elev-2); color:var(--ink); cursor:pointer;
+  transition:all .16s var(--ease)}
+.btn:hover{background:var(--elev-3); border-color:var(--ink-3)}
+.btn:active{transform:scale(.985)}
+.btn.pri{background:var(--blue-solid); border-color:var(--blue-solid); color:#fff}
+.btn.pri:hover{filter:brightness(1.1); background:var(--blue-solid)}
+.btn.buy{background:var(--green); border-color:var(--green); color:#04150D}
+:root[data-theme="light"] .btn.buy{color:#fff}
+.btn.buy:hover{filter:brightness(1.06)}
+.btn.sell{background:transparent; border-color:var(--red-line); color:var(--red)}
+.btn.sell:hover{background:var(--red-dim); border-color:var(--red)}
+.btn.ghost{background:transparent; border-color:transparent; color:var(--ink-2)}
+.btn.ghost:hover{background:var(--elev-2); color:var(--ink)}
+.btn.sm{padding:7px 11px; font-size:12px}
+.btn.block{width:100%}
+.btn[disabled]{opacity:.4; cursor:not-allowed}
+.btn[disabled]:hover{filter:none; background:var(--elev-2); border-color:var(--line-2)}
+.btn.busy{position:relative; color:transparent !important}
+.btn.busy:after{content:''; position:absolute; width:14px; height:14px; border-radius:50%;
+  border:2px solid rgba(255,255,255,.35); border-top-color:#fff; animation:spin .7s linear infinite}
+.btn.ghost.busy:after,.btn.sell.busy:after{border-color:var(--line-2); border-top-color:var(--ink)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.actions{display:flex; flex-wrap:wrap; gap:8px; margin-top:15px}
+.actions .grow{flex:1 1 auto}
+
+/* ==================================================================== controls */
+.controls{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:16px}
+.seg{display:inline-flex; background:var(--elev); border:1px solid var(--line); border-radius:var(--r-sm);
+  padding:3px; gap:2px}
+.seg button{border:0; background:none; color:var(--ink-3); font:600 12px/1 var(--sans); padding:7px 11px;
+  border-radius:7px; cursor:pointer; white-space:nowrap; display:inline-flex; align-items:center; gap:5px;
+  transition:all .16s var(--ease)}
+.seg button:hover{color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--elev-3); color:var(--ink)}
+.field{position:relative; display:inline-flex; align-items:center}
+.field .ic{position:absolute; left:11px; color:var(--ink-3); pointer-events:none}
+input[type=text],input[type=search],input[type=number],input[type=password],select,textarea{
+  font:400 13px/1.4 var(--sans); padding:9px 12px; border-radius:var(--r-sm);
+  border:1px solid var(--line); background:var(--elev); color:var(--ink); width:100%}
+input.pad{padding-left:32px}
+input::placeholder,textarea::placeholder{color:var(--ink-3)}
+input:focus,select:focus,textarea:focus{outline:none; border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-dim)}
+textarea{resize:vertical; min-height:76px; font-family:var(--sans)}
+select{appearance:none; cursor:pointer; padding-right:30px}
+label.lbl{display:block; font-size:11px; font-weight:600; letter-spacing:.05em; text-transform:uppercase;
+  color:var(--ink-3); margin-bottom:6px}
+.grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px}
+.grid3{display:grid; grid-template-columns:repeat(auto-fit,minmax(116px,1fr)); gap:12px}
+
+/* ==================================================================== drawer */
+.more{border-top:1px solid var(--line); background:var(--elev-2);
+  display:grid; grid-template-rows:0fr; transition:grid-template-rows .3s var(--ease)}
+.card.open .more{grid-template-rows:1fr}
+.more>div{min-height:0; overflow:hidden}
+.more-in{padding:16px}
+.mgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(212px,1fr)); gap:18px 22px}
+.mcol{min-width:0}
+.mcol h5{margin:0 0 8px; font:600 10.5px/1 var(--sans); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ink-3)}
+.kv{display:flex; justify-content:space-between; gap:10px; font-size:12.5px; padding:3.5px 0;
+  border-bottom:1px solid var(--line)}
+.kv:last-child{border-bottom:0}
+.kv span:first-child{color:var(--ink-2); min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.kv span:last-child{font-family:var(--mono); font-size:11.5px; font-weight:500; white-space:nowrap}
+.why{display:flex; gap:8px; font-size:12.5px; padding:2.5px 0; line-height:1.45}
+.why .n{font-family:var(--mono); font-size:11px; font-weight:600; min-width:27px; text-align:right; flex:0 0 auto}
+.why.p .n{color:var(--green)} .why.m .n{color:var(--red)}
+.why span:last-child{min-width:0; overflow-wrap:anywhere; color:var(--ink-2)}
+.code{display:flex; align-items:center; gap:9px; margin-top:11px; padding:10px 12px; background:var(--bg);
+  border:1px solid var(--line); border-radius:var(--r-sm)}
+.code code{flex:1; font:500 11.5px/1.5 var(--mono); overflow-x:auto; white-space:pre; color:var(--ink-2)}
+
+/* ==================================================================== tables */
+.tw{overflow-x:auto; background:var(--elev); border:1px solid var(--line); border-radius:var(--r)}
 table{width:100%; border-collapse:collapse; font-size:13px}
-thead th{
-  position:sticky; top:0; z-index:2; background:var(--paper);
-  padding:11px 10px 8px; text-align:left; white-space:nowrap;
-  font:500 9.5px/1.3 var(--sans); letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
-  border-bottom:1px solid var(--rule);
-}
-thead th.grouped{border-bottom:0; padding-bottom:2px; color:var(--ink-3); text-align:center}
-thead tr.groups th{padding-top:13px}
-thead th.r{text-align:right}
-tbody td{padding:11px 10px; border-bottom:1px solid var(--hair); white-space:nowrap; vertical-align:top}
-tbody tr.row:hover{background:var(--surface-2)}
-tbody tr.row.open-row{background:var(--surface-2)}
+th{padding:12px 13px; text-align:left; white-space:nowrap; font:600 10px/1 var(--sans);
+  letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); border-bottom:1px solid var(--line)}
+th.r{text-align:right}
+td{padding:12px 13px; border-bottom:1px solid var(--line); white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--elev-2)}
 td.r{text-align:right}
-.sym{font:500 14px/1.3 var(--sans); letter-spacing:-.005em}
-.co{font-size:11.5px; color:var(--ink-2); margin-top:1px; max-width:24ch; overflow:hidden;
-  text-overflow:ellipsis; white-space:nowrap}
-.srcid{display:flex; align-items:center; gap:4px; font-size:10.5px; color:var(--ink-3); margin-top:3px}
-.srcid .icon{width:11px; height:11px; stroke-width:1.5}
-.price{font-family:var(--mono); font-size:13px; font-weight:500}
-.delta{font-family:var(--mono); font-size:10.5px; color:var(--ink-3); display:block; margin-top:2px}
-td.stop{background:var(--loss-wash)}
-td.stop .price{color:var(--loss)}
-td.stop .delta{color:var(--loss); opacity:.8}
-td.tgt{background:var(--gain-wash)}
-td.tgt .delta{color:var(--gain); opacity:.85}
-td.tgt.t1{box-shadow:inset 1px 0 0 var(--hair)}
-td.tgt.hit .price{color:var(--gain)}
-td.tgt .tick{display:inline-block; margin-left:5px; color:var(--gain); vertical-align:-1px}
-.pos{color:var(--gain)} .neg{color:var(--loss)} .mut{color:var(--ink-3)}
-.said{font-family:var(--mono); font-size:11px; color:var(--ink-3); line-height:1.5}
-.scores{display:flex; align-items:baseline; gap:7px}
-.scores .comp{font:500 16px/1 var(--serif); font-family:var(--serif)}
-.scores .trio{font-family:var(--mono); font-size:10.5px; color:var(--ink-3)}
-.tag{display:inline-flex; align-items:center; gap:4px; font-size:10px; font-weight:500;
-  letter-spacing:.09em; text-transform:uppercase; padding:2.5px 7px; border-radius:2px; white-space:nowrap}
-.tag.buy{background:var(--gain-wash); color:var(--gain); box-shadow:inset 0 0 0 1px rgba(18,96,60,.18)}
-.tag.watch{background:var(--surface-3); color:var(--ink-2)}
-.tag.avoid{background:var(--loss-wash); color:var(--loss); box-shadow:inset 0 0 0 1px rgba(150,41,43,.18)}
-.tag.open{background:var(--gain-wash); color:var(--gain)}
-.tag.pending{background:var(--warn-wash); color:var(--warn)}
-.tag.hold{background:var(--accent-wash); color:var(--accent)}
-.tag.queued{background:var(--accent-wash); color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent-wash)}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .tag.buy{box-shadow:inset 0 0 0 1px rgba(79,190,134,.24)}
-  :root:not([data-theme="light"]) .tag.avoid{box-shadow:inset 0 0 0 1px rgba(224,128,120,.24)}
-}
-.stack{display:flex; flex-direction:column; gap:2px}
 
-/* ============================================================ controls */
-.btn{
-  display:inline-flex; align-items:center; gap:6px; font:500 12px/1 var(--sans);
-  padding:7px 12px; border:1px solid var(--rule); border-radius:3px;
-  background:var(--surface); color:var(--ink); cursor:pointer; white-space:nowrap;
-  transition:border-color .18s var(--ease), background .18s var(--ease), color .18s var(--ease);
-}
-.btn:hover{border-color:var(--accent); color:var(--accent)}
-.btn.primary{background:var(--accent); border-color:var(--accent); color:var(--surface)}
-:root[data-theme="dark"] .btn.primary, .btn.primary{color:var(--paper)}
-.btn.primary:hover{background:var(--accent-2); border-color:var(--accent-2); color:var(--paper)}
-.btn.quiet{border-color:transparent; background:transparent; color:var(--ink-2); padding:6px 8px}
-.btn.quiet:hover{color:var(--accent); background:var(--accent-wash)}
-.btn.danger:hover{border-color:var(--loss); color:var(--loss)}
-.btn[disabled]{opacity:.42; cursor:not-allowed}
-.btn[disabled]:hover{border-color:var(--rule); color:var(--ink)}
-.btn.sm{padding:5px 9px; font-size:11.5px}
-.expander{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px;
-  border:0; background:transparent; color:var(--ink-3); cursor:pointer; padding:0; border-radius:3px}
-.expander:hover{color:var(--accent); background:var(--accent-wash)}
-.expander .icon{transition:transform .22s var(--ease)}
-.expander[aria-expanded="true"] .icon{transform:rotate(90deg)}
-.filters{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:14px}
-.seg{display:inline-flex; border:1px solid var(--hair); border-radius:3px; overflow:hidden}
-.seg button{font:500 11.5px/1 var(--sans); padding:7px 12px; border:0; border-right:1px solid var(--hair);
-  background:var(--surface); color:var(--ink-2); cursor:pointer; transition:all .18s var(--ease)}
-.seg button:last-child{border-right:0}
-.seg button[aria-pressed="true"]{background:var(--accent-wash); color:var(--accent)}
-.seg button:hover{color:var(--accent)}
-input.search{font:400 12.5px/1 var(--sans); padding:7px 11px; border:1px solid var(--hair);
-  border-radius:3px; background:var(--surface); color:var(--ink); width:170px}
-input.search::placeholder{color:var(--ink-3)}
-input.search:focus{border-color:var(--accent); outline:none}
-
-/* ============================================================ detail drawer */
-tr.detail>td{padding:0; border-bottom:1px solid var(--hair); background:var(--surface-2)}
-.drawer{overflow:hidden; display:grid; grid-template-rows:0fr; transition:grid-template-rows .28s var(--ease)}
-tr.detail.shown .drawer{grid-template-rows:1fr}
-.drawer>div{min-height:0}
-.dgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(236px,1fr)); gap:22px 28px;
-  padding:20px 10px 24px}
-.dcol{min-width:0}
-.dcol h4{margin:0 0 9px; font:500 10px/1 var(--sans); letter-spacing:.13em;
-  text-transform:uppercase; color:var(--ink-3)}
-.dcol ul{margin:0; padding:0; list-style:none; font-size:12.5px; line-height:1.75}
-.dcol li{display:flex; gap:8px; justify-content:space-between; border-bottom:1px dotted var(--hair); padding:1px 0}
-.dcol li span:last-child{font-family:var(--mono); font-size:11.5px; color:var(--ink-2); white-space:nowrap}
-.dcol li span:first-child{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.reason{display:flex; gap:7px; font-size:12.5px; line-height:1.6; padding:1.5px 0}
-.reason span:last-child{min-width:0; overflow-wrap:anywhere}
-.reason .n{font-family:var(--mono); font-size:11px; min-width:26px; text-align:right; color:var(--ink-3)}
-.reason.up .n{color:var(--gain)} .reason.down .n{color:var(--loss)}
-.pat{display:inline-block; max-width:100%; overflow-wrap:anywhere; font-size:11px; font-family:var(--mono); color:var(--ink-2);
-  background:var(--surface-3); padding:2px 7px; border-radius:2px; margin:0 4px 4px 0}
-.order{display:flex; align-items:center; gap:9px; margin-top:10px; padding:9px 11px;
-  background:var(--surface); border:1px solid var(--hair); border-radius:3px}
-.order code{flex:1; font-family:var(--mono); font-size:11.5px; color:var(--ink); overflow-x:auto; white-space:pre}
-
-/* ============================================================ intents */
-.intent{border:1px solid var(--rule); border-radius:3px; background:var(--surface); padding:14px 16px; margin-top:12px}
-.intent .ihead{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:10px}
-.intent .isym{font:500 15px/1.2 var(--serif); display:flex; align-items:center; gap:8px}
-.intent .imeta{font-family:var(--mono); font-size:11.5px; color:var(--ink-2)}
-.intent .why{font-size:12px; color:var(--ink-2); margin-top:6px; max-width:74ch}
-
-/* ============================================================ chart + prose */
-.chartbox{margin-top:18px; height:290px}
-.prose{margin-top:16px; font-size:13.5px; line-height:1.72; max-width:72ch; color:var(--ink)}
-.prose h4{margin:22px 0 6px; font:500 15px/1.3 var(--serif)}
+/* ==================================================================== misc */
+.sec{margin-bottom:26px}
+.sec-h{display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap}
+.sec-h h3{margin:0; font:700 15px/1.2 var(--sans); letter-spacing:-.02em; display:flex; align-items:center; gap:8px}
+.sec-h h3 .ic{color:var(--ink-3)}
+.sec-h .note{font-size:12px; color:var(--ink-3); margin-left:auto; text-align:right}
+.hint{font-size:12px; line-height:1.65; color:var(--ink-3); margin:10px 0 0}
+.hint code{font-family:var(--mono); font-size:11.5px; background:var(--elev-2); padding:1px 5px; border-radius:4px}
+.hint b{color:var(--ink-2)}
+.empty{background:var(--elev); border:1px dashed var(--line-2); border-radius:var(--r);
+  padding:38px 20px; text-align:center; color:var(--ink-3); font-size:13px}
+.empty .ic{width:22px; height:22px; display:block; margin:0 auto 12px; color:var(--ink-3)}
+.empty b{display:block; color:var(--ink-2); font-size:14px; margin-bottom:5px}
+.banner{display:flex; gap:11px; align-items:flex-start; padding:13px 15px; border-radius:var(--r);
+  background:var(--blue-dim); border:1px solid var(--blue-line); font-size:12.5px; line-height:1.65;
+  color:var(--ink-2); margin-bottom:16px}
+.banner .ic{color:var(--blue); margin-top:1px}
+.banner.warn{background:var(--amber-dim); border-color:var(--amber-dim)}
+.banner.warn .ic{color:var(--amber)}
+.banner b{color:var(--ink)}
+.chartbox{background:var(--elev); border:1px solid var(--line); border-radius:var(--r); padding:16px;
+  height:280px}
+.prose{font-size:13.5px; line-height:1.75; color:var(--ink-2); max-width:74ch}
+.prose h4{margin:20px 0 6px; font:700 14px/1.3 var(--sans); color:var(--ink)}
 .prose h4:first-child{margin-top:0}
-.prose p{margin:8px 0; color:var(--ink-2)}
 .prose table{margin:12px 0; font-size:12.5px}
-.prose td,.prose th{white-space:normal; padding:7px 10px}
+.prose td,.prose th{white-space:normal}
 .prose code{font-family:var(--mono); font-size:12px}
-.prose ul{padding-left:18px; color:var(--ink-2)}
-
-/* ============================================================ empty + meter */
-.empty{padding:34px 12px; text-align:center; color:var(--ink-2); font-size:13px;
-  border-bottom:1px solid var(--hair)}
-.empty .icon{width:20px; height:20px; color:var(--ink-3); display:block; margin:0 auto 10px}
-.meter{width:76px; height:4px; background:var(--surface-3); border-radius:2px; overflow:hidden; margin-top:5px}
-.meter i{display:block; height:100%; background:var(--accent)}
-.meter i.hot{background:var(--gain)} .meter i.cold{background:var(--loss)}
-.foot{margin-top:64px; padding-top:18px; border-top:1px solid var(--rule);
-  font-size:11.5px; line-height:1.9; color:var(--ink-3); display:flex; flex-wrap:wrap;
-  gap:6px 22px; justify-content:space-between}
-.foot code{font-family:var(--mono)}
-.errbox{max-width:520px; margin:90px auto; text-align:center; color:var(--ink)}
-.errbox h2{font:500 22px/1.3 var(--serif); margin:0 0 10px}
-.errbox p{color:var(--ink-2); font-size:13px}
-@media (max-width:720px){
-  .wrap{padding:0 18px 72px}
-  .masthead{padding-top:26px}
-  .masthead h1{font-size:25px}
-  .dateline{text-align:left}
-  .fig{flex-basis:calc(50% - 1px); padding:14px 16px; border-bottom:1px solid var(--hair)}
-  .fig:first-child{padding-left:0}
-  .fig.lead .val{font-size:28px}
-  .fig.act{flex-basis:100%; padding:14px 0}
-  section{margin-top:40px}
+.log{font-size:12.5px}
+.log .row{display:flex; gap:11px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--line)}
+.log .row:last-child{border-bottom:0}
+.log .when{font:500 11px/1.5 var(--mono); color:var(--ink-3); flex:0 0 84px}
+.log .what{flex:1; min-width:0}
+.log .what b{font-family:var(--mono); font-size:12px}
+.log pre{margin:6px 0 0; padding:9px 11px; background:var(--bg); border:1px solid var(--line);
+  border-radius:8px; font:500 11px/1.55 var(--mono); color:var(--ink-3); overflow-x:auto;
+  white-space:pre-wrap; max-height:160px}
+.toast{position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(90px);
+  background:var(--elev-3); color:var(--ink); border-radius:var(--r-pill);
+  padding:11px 20px; font-size:13px; font-weight:500; box-shadow:var(--shadow); z-index:99; border:0;
+  transition:transform .32s var(--ease), opacity .32s var(--ease); opacity:0; max-width:88vw;
+  display:flex; align-items:center; gap:9px}
+.toast.show{transform:translateX(-50%); opacity:1}
+.toast.err .ic{color:var(--red)}
+.toast.ok .ic{color:var(--green)}
+.foot{margin-top:34px; padding-top:16px; border-top:1px solid var(--line); font-size:11.5px;
+  line-height:1.8; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:6px 20px; justify-content:space-between}
+@media (max-width:640px){
+  .wrap{padding:0 12px 96px}
+  .appbar-in{padding:10px 12px}
+  .tabs-in{padding:0 12px}
+  .tabs{top:55px}
+  .card-in{padding:14px}
+  .brand small{display:none}
+  .stat .v{font-size:19px}
+  .stat.wide{grid-column:span 2}
 }
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <symbol id="i-book" viewBox="0 0 16 16"><path d="M2.5 3.2v9.6a1 1 0 0 0 1 1H13"/><path d="M13 13.8V2.2H3.5a1 1 0 0 0-1 1"/><path d="M5.2 5.8h5.2M5.2 8.2h3.4"/></symbol>
-  <symbol id="i-target" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.6"/><circle cx="8" cy="8" r="2.1"/><path d="M8 .8v1.9M8 13.3v1.9M.8 8h1.9M13.3 8h1.9"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 16 16"><path d="M8 1.6 3 3.3v4.1c0 3 2 5.5 5 7 3-1.5 5-4 5-7V3.3L8 1.6Z"/><path d="M8 5.6v3.1M6.6 7.4 8 8.8l1.4-1.4"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2"/><path d="M8 4.4V8l2.5 1.6"/></symbol>
-  <symbol id="i-source" viewBox="0 0 16 16"><path d="M2.6 12.4a1 1 0 1 0 .01 0"/><path d="M2.6 8.6a4.8 4.8 0 0 1 4.8 4.8"/><path d="M2.6 4.8a8.6 8.6 0 0 1 8.6 8.6"/></symbol>
-  <symbol id="i-wallet" viewBox="0 0 16 16"><path d="M13.4 5.4H3.2a1 1 0 0 1 0-2h8.6"/><path d="M2.2 4.4v7.2a1 1 0 0 0 1 1h10.2V5.4H3.2"/><path d="M10.6 8.6h1.6"/></symbol>
-  <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 3.4v9.2M3.4 8h9.2"/></symbol>
-  <symbol id="i-exit" viewBox="0 0 16 16"><path d="M9.4 2.6H3.4a1 1 0 0 0-1 1v8.8a1 1 0 0 0 1 1h6"/><path d="M11.4 5.6 13.8 8l-2.4 2.4M6.6 8h7"/></symbol>
-  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3.4 8.4 6.4 11.4 12.6 5"/></symbol>
-  <symbol id="i-chevron" viewBox="0 0 16 16"><path d="M6.2 3.6 10.6 8l-4.4 4.4"/></symbol>
-  <symbol id="i-copy" viewBox="0 0 16 16"><rect x="5.6" y="5.6" width="8" height="8" rx="1"/><path d="M10.4 3.4V3a.6.6 0 0 0-.6-.6H3a.6.6 0 0 0-.6.6v6.8c0 .3.3.6.6.6h.4"/></symbol>
-  <symbol id="i-trash" viewBox="0 0 16 16"><path d="M3 4.6h10M6.2 4.6V3.2a.8.8 0 0 1 .8-.8h2a.8.8 0 0 1 .8.8v1.4"/><path d="M4.4 4.6l.6 8a.9.9 0 0 0 .9.8h4.2a.9.9 0 0 0 .9-.8l.6-8"/></symbol>
-  <symbol id="i-alert" viewBox="0 0 16 16"><path d="M8 2.4 1.8 13.2h12.4L8 2.4Z"/><path d="M8 6.4v3.1"/><path d="M8 11.4h.01"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 16 16"><path d="M2.2 13h11.6"/><path d="M2.6 10.2 6 6.4l2.6 2.4 4.4-5"/></symbol>
-  <symbol id="i-ledger" viewBox="0 0 16 16"><rect x="2.4" y="2.4" width="11.2" height="11.2" rx="1"/><path d="M2.4 6.2h11.2M6.2 6.2v7.4"/></symbol>
-  <symbol id="i-note" viewBox="0 0 16 16"><path d="M3.4 2.4h9.2v11.2H3.4z"/><path d="M5.6 5.6h4.8M5.6 8h4.8M5.6 10.4h3"/></symbol>
-  <symbol id="i-rise" viewBox="0 0 16 16"><path d="M4 11 11 4"/><path d="M6.6 4H11v4.4"/></symbol>
-  <symbol id="i-fall" viewBox="0 0 16 16"><path d="M4 4.6 11 11.6"/><path d="M11 7.2v4.4H6.6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 16 16"><path d="M2.6 3.4v9.2a1.2 1.2 0 0 0 1.2 1.2h9.6"/><path d="M13.4 13.8V2.2H3.8a1.2 1.2 0 0 0-1.2 1.2"/><path d="M5.6 5.9h5.2M5.6 8.3h3.4"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 16 16"><path d="M8 1.8a4.2 4.2 0 0 0-2.4 7.7v1.3h4.8V9.5A4.2 4.2 0 0 0 8 1.8Z"/><path d="M6.4 12.7h3.2M7 14.2h2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.7"/><circle cx="8" cy="8" r="2.2"/><path d="M8 .7v2M8 13.3v2M.7 8h2M13.3 8h2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 16 16"><path d="M8 1.5 3 3.2v4.2c0 3 2 5.5 5 7 3-1.5 5-4 5-7V3.2L8 1.5Z"/><path d="M8 5.6v3M6.6 7.3 8 8.7l1.4-1.4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.3"/><path d="M8 4.3V8l2.6 1.6"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 16 16"><path d="M9.3 1.6 3.4 9.1h3.5l-.6 5.3 5.9-7.5H8.7l.6-5.3Z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 16 16"><path d="M13.5 5.3H3.2a1.05 1.05 0 0 1 0-2.1h8.6"/><path d="M2.2 4.3v7.4a1.1 1.1 0 0 0 1.1 1.1h10.2V5.3H3.2"/><path d="M10.7 8.6h1.6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 3.2v9.6M3.2 8h9.6"/></symbol>
+  <symbol id="i-exit" viewBox="0 0 16 16"><path d="M9.4 2.5H3.6a1.1 1.1 0 0 0-1.1 1.1v8.8a1.1 1.1 0 0 0 1.1 1.1h5.8"/><path d="M11.3 5.4 13.9 8l-2.6 2.6M6.4 8h7.4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3.2 8.4 6.3 11.5 12.8 4.8"/></symbol>
+  <symbol id="i-x" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 16 16"><path d="M4 6.2 8 10.2l4-4"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 16 16"><rect x="5.6" y="5.6" width="8.2" height="8.2" rx="1.4"/><path d="M10.4 3.3V2.9a.7.7 0 0 0-.7-.7H2.9a.7.7 0 0 0-.7.7v6.8c0 .4.3.7.7.7h.4"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 16 16"><path d="M2.9 4.5h10.2M6.2 4.5V3.1a.9.9 0 0 1 .9-.9h1.8a.9.9 0 0 1 .9.9v1.4"/><path d="M4.3 4.5l.6 8.1a1 1 0 0 0 1 .9h4.2a1 1 0 0 0 1-.9l.6-8.1"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 16 16"><path d="M8 2.2 1.6 13.3h12.8L8 2.2Z"/><path d="M8 6.3v3.1"/><path d="M8 11.4h.01"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 16 16"><path d="M2.2 13.2h11.6"/><path d="M2.6 10.4 6 6.5l2.6 2.4 4.5-5.1"/></symbol>
+  <symbol id="i-rss" viewBox="0 0 16 16"><path d="M3 12.6a1 1 0 1 0 .01 0"/><path d="M2.8 8.4a4.9 4.9 0 0 1 4.9 4.9"/><path d="M2.8 4.5a8.8 8.8 0 0 1 8.8 8.8"/></symbol>
+  <symbol id="i-note" viewBox="0 0 16 16"><path d="M3.4 2.3h9.2v11.4H3.4z"/><path d="M5.7 5.5h4.6M5.7 8h4.6M5.7 10.5h3"/></symbol>
+  <symbol id="i-term" viewBox="0 0 16 16"><rect x="1.9" y="2.7" width="12.2" height="10.6" rx="1.4"/><path d="M4.6 6.4 6.4 8l-1.8 1.6M8.4 10h3"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3.2"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.2 3.2l1.1 1.1M11.7 11.7l1.1 1.1M12.8 3.2l-1.1 1.1M4.3 11.7l-1.1 1.1"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 16 16"><path d="M13.4 9.9A5.9 5.9 0 0 1 6.1 2.6a5.9 5.9 0 1 0 7.3 7.3Z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 16 16"><path d="M6.6 8.6a2.6 2.6 0 0 0 3.9.3l1.9-1.9a2.6 2.6 0 0 0-3.7-3.7l-1.1 1.1"/><path d="M9.4 7.4a2.6 2.6 0 0 0-3.9-.3L3.6 9a2.6 2.6 0 0 0 3.7 3.7l1.1-1.1"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 16 16"><path d="M2.4 5.4h8.2M8.4 3.2l2.2 2.2-2.2 2.2"/><path d="M13.6 10.6H5.4M7.6 8.4 5.4 10.6l2.2 2.2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M4.6 2.9 13 8l-8.4 5.1V2.9Z"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 16 16"><path d="M2.4 11.6a6.4 6.4 0 1 1 11.2 0"/><path d="M8 8.4l2.8-2.2"/><circle cx="8" cy="9.4" r="1.1"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 16 16"><path d="M8 2.2v11.6M4 5.4h8"/><path d="M2 9.4 4 5.6l2 3.8a2 2 0 0 1-4 0ZM10 9.4l2-3.8 2 3.8a2 2 0 0 1-4 0Z"/></symbol>
 </defs></svg>
 
-<div class="wrap" id="app">
-  <header class="masthead">
-    <h1>Dalal Street <em>Desk</em></h1>
-    <div class="dateline" id="dateline"></div>
-  </header>
+<div class="appbar"><div class="appbar-in">
+  <div class="brand"><span class="dot" id="liveDot"></span>Desk<small id="brandSub"></small></div>
+  <div class="bar-eq"><span class="v n" id="barEq">—</span><span class="d n" id="barRet"></span></div>
+  <button class="iconbtn" id="themeBtn" title="Theme" aria-label="Switch theme"></button>
+  <button class="iconbtn" id="connBtn" title="Connection" aria-label="Connection"><svg class="ic"><use href="#i-link"/></svg></button>
+</div></div>
 
-  <div class="figures" id="figures" data-anim></div>
+<nav class="tabs"><div class="tabs-in" id="tabbar" role="tablist"></div></nav>
 
-  <section id="s-active">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-book"/></svg>The book</h2>
-      <div class="count" id="activeCount"></div>
-    </div>
-    <p class="subnote">Capital committed and tracked. Exits run themselves — the stop, the stepped
-      targets, the time stop — but you can leave any position early to free capital for a better idea.</p>
-    <div class="tablewrap" id="activeTable"></div>
-    <div id="intents"></div>
-  </section>
-
-  <section id="s-sugg">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-target"/></svg>Suggestions</h2>
-      <div class="count" id="suggCount"></div>
-    </div>
-    <p class="subnote">Every BUY-grade name the desk vetted today, whether or not there is capital for
-      it. The levels are ours, read off the chart; what the tipster claimed sits in its own column and is
-      never used as a level.</p>
-    <div class="rail" id="capacityRail"></div>
-    <div class="filters" id="suggFilters"></div>
-    <div class="tablewrap" id="suggTable"></div>
-    <p class="subnote" id="suggNote"></p>
-  </section>
-
-  <section id="s-equity">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-chart"/></svg>Equity</h2>
-      <div class="count" id="equityCount"></div>
-    </div>
-    <div class="chartbox"><canvas id="equityChart"></canvas></div>
-  </section>
-
-  <section id="s-flows" hidden>
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-wallet"/></svg>Capital flows</h2>
-    </div>
-    <div class="tablewrap" id="flowsTable"></div>
-  </section>
-
-  <section id="s-closed">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-ledger"/></svg>Closed trades</h2>
-      <div class="count" id="closedCount"></div>
-    </div>
-    <div class="tablewrap" id="closedTable"></div>
-  </section>
-
-  <section id="s-sources">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-source"/></svg>Source ledger</h2>
-      <div class="count">50 = untested</div>
-    </div>
-    <div class="tablewrap" id="sourceTable"></div>
-  </section>
-
-  <section id="s-lessons">
-    <div class="shead">
-      <h2><svg class="icon"><use href="#i-note"/></svg>Lessons</h2>
-    </div>
-    <div class="prose" id="lessons"></div>
-  </section>
-
+<div class="wrap" id="shell">
+  <div id="v-book" class="view" role="tabpanel"></div>
+  <div id="v-ideas" class="view" role="tabpanel"></div>
+  <div id="v-journal" class="view" role="tabpanel"></div>
+  <div id="v-sources" class="view" role="tabpanel"></div>
+  <div id="v-console" class="view" role="tabpanel"></div>
   <footer class="foot" id="foot"></footer>
 </div>
+<div class="toast" id="toast"></div>
 
 <script>
-/* ===================================================================== format */
+/* ==================================================================== helpers */
+function $(s, r){ return (r || document).querySelector(s); }
+function el(tag, cls){ var n = document.createElement(tag); if (cls) n.className = cls; return n; }
+function esc(s){ if (s == null) return ''; return String(s).replace(/[&<>"']/g, function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function ic(id, cls){ return '<svg class="ic ' + (cls || '') + '"><use href="#i-' + id + '"/></svg>'; }
 function inr(n, dec){
-  if (n === null || n === undefined || isNaN(n)) return '—';
+  if (n == null || isNaN(n)) return '—';
   var neg = n < 0; n = Math.abs(Number(n));
-  var fixed = n.toFixed(dec === undefined ? 0 : dec);
-  var parts = fixed.split('.'), i = parts[0], d = parts[1];
-  var last3 = i.slice(-3), rest = i.slice(0, -3);
-  if (rest !== '') last3 = ',' + last3;
-  var out = rest.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + last3;
-  return (neg ? '−₹' : '₹') + out + (d ? '.' + d : '');
+  var f = n.toFixed(dec == null ? 0 : dec).split('.'), i = f[0], d = f[1];
+  var l3 = i.slice(-3), rest = i.slice(0, -3);
+  if (rest !== '') l3 = ',' + l3;
+  return (neg ? '−₹' : '₹') + rest.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + l3 + (d ? '.' + d : '');
 }
-function compact(n){
-  if (n === null || n === undefined || isNaN(n)) return '—';
-  var a = Math.abs(n);
-  if (a >= 1e7) return (n / 1e7).toFixed(2) + ' cr';
-  if (a >= 1e5) return (n / 1e5).toFixed(2) + ' L';
+function short(n){
+  if (n == null || isNaN(n)) return '—';
+  var a = Math.abs(n), s = n < 0 ? '−₹' : '₹';
+  if (a >= 1e7) return s + (a / 1e7).toFixed(2) + 'cr';
+  if (a >= 1e5) return s + (a / 1e5).toFixed(2) + 'L';
+  if (a >= 1000) return s + (a / 1000).toFixed(1) + 'k';
   return inr(n);
 }
-function num(n, dec){
-  if (n === null || n === undefined || isNaN(n)) return '—';
-  return Number(n).toFixed(dec === undefined ? 2 : dec);
+function rs(n){ return inr(n, 2); }
+function num(n, d){ return (n == null || isNaN(n)) ? '—' : Number(n).toFixed(d == null ? 2 : d); }
+function pct(n, d){
+  if (n == null || isNaN(n)) return '—';
+  d = d == null ? 2 : d;
+  return (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n).toFixed(d) + '%';
 }
-function pct(n, dec){
-  if (n === null || n === undefined || isNaN(n)) return '—';
-  dec = dec === undefined ? 2 : dec;
-  return (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n).toFixed(dec) + '%';
-}
-function signClass(n){
-  if (n === null || n === undefined || isNaN(n) || n === 0) return 'mut';
-  return n > 0 ? 'pos' : 'neg';
-}
-function esc(s){
-  if (s === null || s === undefined) return '';
-  return String(s).replace(/[&<>"']/g, function(c){
-    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-  });
-}
-function ico(id, cls){ return '<svg class="icon ' + (cls || '') + '"><use href="#i-' + id + '"/></svg>'; }
-function longDate(iso){
+function sgn(n){ return (n == null || isNaN(n) || n === 0) ? 'mut' : n > 0 ? 'up' : 'down'; }
+function ago(iso){
   if (!iso) return '';
-  var d = new Date(iso + 'T00:00:00');
-  if (isNaN(d)) return iso;
-  return d.toLocaleDateString('en-IN', {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+  var t = new Date(iso);
+  if (isNaN(t)) return String(iso);
+  var m = Math.round((Date.now() - t.getTime()) / 60000);
+  if (m < 2) return 'just now';
+  if (m < 60) return m + 'm ago';
+  if (m < 1440) return Math.round(m / 60) + 'h ago';
+  return Math.round(m / 1440) + 'd ago';
+}
+function toast(msg, kind){
+  var t = $('#toast');
+  t.className = 'toast show ' + (kind || '');
+  t.innerHTML = ic(kind === 'err' ? 'alert' : 'check') + '<span>' + esc(msg) + '</span>';
+  clearTimeout(toast._t);
+  toast._t = setTimeout(function(){ t.className = 'toast ' + (kind || ''); }, 4600);
+}
+function copy(text){
+  var done = function(){ toast('Copied to clipboard', 'ok'); };
+  var fb = function(){
+    var ta = el('textarea'); ta.value = text; ta.style.cssText = 'position:fixed;opacity:0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) {}
+    document.body.removeChild(ta);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fb);
+  else fb();
 }
 
-/* ===================================================================== state */
-var IKEY = 'stocktips.intents.v2';
-var DATA = null;
-var FILTER = {tf:'all', q:'', affordable:false};
+/* ==================================================================== state */
+var DATA = null, TAB = 'book', RUNS = [], POLLS = 0;
+var IKEY = 'stocktips.intents.v2', GKEY = 'stocktips.gh.v1', TKEY = 'stocktips.theme.v1';
+var SORT = 'eta', FILTER = {tf:'all', q:'', afford:false, tag:''};
+var GH = {token:'', repo:'', ok:false};
+var REPO = (function(){
+  var m = location.hostname.match(/^([^.]+)\.github\.io$/);
+  var seg = location.pathname.split('/').filter(Boolean);
+  if (m) return {owner:m[1], repo:seg[0] || (m[1] + '.github.io')};
+  return {owner:'marora1549', repo:'stock-tips-system'};
+})();
 
-function loadIntents(){
-  try { var v = JSON.parse(localStorage.getItem(IKEY) || '[]'); return Array.isArray(v) ? v : []; }
-  catch (e) { return []; }
-}
-function saveIntents(list){ try { localStorage.setItem(IKEY, JSON.stringify(list)); } catch (e) {} }
+function store(k, v){ try { v === undefined ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+function recall(k, d){ try { var v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }
+function intents(){ var v = recall(IKEY, []); return Array.isArray(v) ? v : []; }
+function setIntents(v){ store(IKEY, v); }
 
 /* An intent clears itself the moment the ledger reflects it, so the queue can never drift. */
-function reconcileIntents(){
+function reconcile(){
   var held = {};
   ((DATA && DATA.positions) || []).forEach(function(p){ held[p.symbol] = true; });
   var capital = (DATA && DATA.book && DATA.book.capital_inr) || 0;
-  var kept = loadIntents().filter(function(x){
+  var before = intents();
+  var kept = before.filter(function(x){
     if (x.kind === 'book') return !held[x.symbol];
     if (x.kind === 'close') return !!held[x.symbol];
     if (x.kind === 'capital') return x.capitalWas === capital;
     return false;
   });
-  if (kept.length !== loadIntents().length) saveIntents(kept);
+  if (kept.length !== before.length) setIntents(kept);
   return kept;
 }
-function intentsFor(kind, symbol){
-  return loadIntents().filter(function(x){ return x.kind === kind && (!symbol || x.symbol === symbol); });
+function intentsOf(kind, sym){
+  return intents().filter(function(x){ return x.kind === kind && (!sym || x.symbol === sym); });
 }
 function capacity(){
-  var b = (DATA && DATA.book) || {};
-  var q = loadIntents();
-  var queuedOut = q.filter(function(x){ return x.kind === 'book'; });
-  var freeing = q.filter(function(x){ return x.kind === 'close'; })
-                 .reduce(function(s, x){ return s + (x.returns || 0); }, 0);
-  var added = q.filter(function(x){ return x.kind === 'capital'; })
-               .reduce(function(s, x){ return s + (x.amount || 0); }, 0);
-  var slots = Math.max(0, (b.slots_left || 0) - queuedOut.length + intentsFor('close').length);
-  var cash = Math.max(0, (b.deployable_cash || 0) + freeing + added
-                        - queuedOut.reduce(function(s, x){ return s + (x.capital || 0); }, 0));
-  // a queued top-up raises the percentage ceilings it implies, so the rail stays internally
-  // consistent — you can queue capital and then size a position against it in the same sitting
+  var b = (DATA && DATA.book) || {}, q = intents();
+  var out = q.filter(function(x){ return x.kind === 'book'; });
+  var freeing = q.filter(function(x){ return x.kind === 'close'; }).reduce(function(s, x){ return s + (x.returns || 0); }, 0);
+  var added = q.filter(function(x){ return x.kind === 'capital'; }).reduce(function(s, x){ return s + (x.amount || 0); }, 0);
   var maxPct = b.max_single_stock_pct || 50, minPct = b.min_allocation_pct || 15;
   var capital = (b.capital_inr || 0) + added;
   return {
-    slots: slots, cash: cash, maxOpen: b.max_open_positions || 0,
-    live: (b.open_or_pending || 0) + queuedOut.length - intentsFor('close').length,
+    slots: Math.max(0, (b.slots_left || 0) - out.length + intentsOf('close').length),
+    cash: Math.max(0, (b.deployable_cash || 0) + freeing + added -
+                      out.reduce(function(s, x){ return s + (x.capital || 0); }, 0)),
+    maxOpen: b.max_open_positions || 0, base: b.capital_inr || 0, capital: capital, queuedCapital: added,
     minAlloc: Math.round(capital * minPct / 100), maxAlloc: Math.round(capital * maxPct / 100),
-    capital: capital, base: b.capital_inr || 0, queuedCapital: added, maxPct: maxPct, minPct: minPct
+    maxPct: maxPct, minPct: minPct
   };
 }
 function sizeFor(entry){
   var c = capacity();
   var alloc = Math.min(c.maxAlloc, Math.max(c.minAlloc, c.cash / Math.max(1, c.slots)), c.cash);
   var qty = Math.floor(alloc / entry);
-  return {qty: qty, capital: Math.round(qty * entry * 100) / 100, ok: c.slots > 0 && alloc >= c.minAlloc && qty >= 1, cap: c};
+  return {qty:qty, capital:Math.round(qty * entry * 100) / 100,
+          ok:c.slots > 0 && alloc >= c.minAlloc && qty >= 1, cap:c};
 }
 function orderLine(sym, qty, entry, stop, targets){
-  return 'BUY ' + qty + ' ' + sym + ' NSE CNC limit ₹' + num(entry) +
-         ' · SL-M ₹' + num(stop) + ' · GTT ₹' + (targets || []).map(function(t){ return num(t); }).join(' / ');
-}
-function commandFor(x){
-  if (x.kind === 'book')    return 'python -m stocktips book ' + x.symbol + ' --capital ' + Math.round(x.capital);
-  if (x.kind === 'close')   return 'python -m stocktips close ' + x.symbol + (x.note ? ' --note "' + x.note + '"' : '');
-  if (x.kind === 'capital') return 'python -m stocktips capital --add ' + Math.round(x.amount);
-  return '';
-}
-function copyText(text, btn){
-  var label = btn.querySelector('.t');
-  var done = function(){
-    var was = label ? label.textContent : btn.textContent;
-    if (label) label.textContent = 'Copied'; else btn.textContent = 'Copied';
-    setTimeout(function(){ if (label) label.textContent = was; else btn.textContent = was; }, 1200);
-  };
-  var fallback = function(){
-    var ta = document.createElement('textarea');
-    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand('copy'); done(); } catch (e) {}
-    document.body.removeChild(ta);
-  };
-  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fallback);
-  else fallback();
+  return 'BUY ' + qty + ' ' + sym + ' NSE CNC limit ₹' + num(entry) + ' · SL-M ₹' + num(stop) +
+         ' · GTT ₹' + (targets || []).map(function(t){ return num(t); }).join(' / ');
 }
 
-/* ===================================================================== cells */
-function levelCell(v, p, kind, hit){
-  if (v === null || v === undefined || isNaN(v)) return '<td class="r ' + kind + '">—</td>';
-  return '<td class="r ' + kind + (hit ? ' hit' : '') + '">' +
-    '<span class="price">₹' + num(v) + (hit ? '<span class="tick">' + ico('check', 'sm') + '</span>' : '') + '</span>' +
-    (p === null || p === undefined || isNaN(p) ? '' : '<span class="delta">' + pct(p, 1) + '</span>') + '</td>';
+/* ==================================================================== github bridge */
+var API = 'https://api.github.com';
+function heads(token){
+  return {Authorization:'Bearer ' + (token || GH.token), Accept:'application/vnd.github+json',
+          'X-GitHub-Api-Version':'2022-11-28'};
 }
-function instrumentCell(sym, company, source, extra, badge){
-  return '<td><div class="sym">' + esc(sym) + (badge ? ' ' + badge : '') + '</div>' +
-    (company ? '<div class="co">' + esc(company) + '</div>' : '') +
-    (source ? '<div class="srcid">' + ico('source') + esc(source) + (extra ? ' · ' + esc(extra) : '') + '</div>' : '') +
-    '</td>';
+function ghCheck(token){
+  return fetch(API + '/repos/' + REPO.owner + '/' + REPO.repo, {headers:heads(token)})
+    .then(function(r){
+      if (!r.ok) throw new Error(r.status === 401 ? 'token rejected by GitHub'
+        : r.status === 404 ? 'this token cannot see ' + REPO.owner + '/' + REPO.repo : 'GitHub returned ' + r.status);
+      return r.json();
+    })
+    .then(function(repo){
+      if (!repo.permissions || !repo.permissions.push) throw new Error('token is read-only — it needs Contents: write');
+      GH = {token:token, repo:repo.full_name, ok:true};
+      store(GKEY, {token:token});
+      return repo;
+    })
+    .catch(function(e){ GH.ok = false; throw e; });
 }
-function expanderCell(id){
-  return '<td style="width:26px;padding-right:0"><button class="expander" data-act="expand" data-id="' + id +
-    '" aria-expanded="false" aria-label="Details">' + ico('chevron') + '</button></td>';
+function ghDispatch(command, inputs){
+  var body = {ref:'main', inputs:Object.assign({command:command}, inputs || {})};
+  Object.keys(body.inputs).forEach(function(k){
+    if (body.inputs[k] == null || String(body.inputs[k]).trim() === '') delete body.inputs[k];
+    else body.inputs[k] = String(body.inputs[k]);
+  });
+  return fetch(API + '/repos/' + REPO.owner + '/' + REPO.repo + '/actions/workflows/desk.yml/dispatches',
+               {method:'POST', headers:heads(), body:JSON.stringify(body)})
+    .then(function(r){
+      if (r.status === 204) return true;
+      return r.text().then(function(t){
+        var msg = t;
+        try { msg = JSON.parse(t).message || t; } catch (e) {}
+        throw new Error(msg || ('HTTP ' + r.status));
+      });
+    });
 }
-function kv(label, value){ return '<li><span>' + esc(label) + '</span><span>' + value + '</span></li>'; }
+function pollRuns(kick){
+  if (!GH.ok) return;
+  if (kick) POLLS = 0;
+  fetch(API + '/repos/' + REPO.owner + '/' + REPO.repo + '/actions/workflows/desk.yml/runs?per_page=8',
+        {headers:heads()})
+    .then(function(r){ return r.ok ? r.json() : {workflow_runs:[]}; })
+    .then(function(j){
+      RUNS = j.workflow_runs || [];
+      if (TAB === 'console') renderConsole();
+      var busy = RUNS.some(function(r){ return r.status === 'queued' || r.status === 'in_progress'; });
+      if ((busy || kick) && POLLS < 45){ POLLS++; setTimeout(pollRuns, busy ? 6000 : 9000); }
+    })
+    .catch(function(){});
+}
 
-/* ===================================================================== figures */
-function renderFigures(){
-  var s = DATA.stats || {}, c = capacity();
-  var deployedPct = s.capital ? Math.round((s.deployed_inr || 0) / s.capital * 100) : 0;
-  var figs = [
-    {cls:'lead', icon:'ledger', lab:'Equity', val:inr(s.equity),
-     sub:'<span class="' + signClass(s.return_pct) + '">' + pct(s.return_pct) + '</span> time-weighted' +
-         (s.n_flows ? ' · base ' + inr(s.capital) : '')},
-    {icon:'wallet', lab:'Deployable cash', val:inr(s.cash), small:true,
-     sub:deployedPct + '% of the base at work'},
-    {icon:'book', lab:'Positions', val:(s.open || 0) + s.pending + s.hold + ' / ' + c.maxOpen, small:true,
-     sub:s.open + ' open, ' + s.pending + ' pending, ' + s.hold + ' hold'},
-    {icon:'target', lab:'Realised', val:inr(s.realised_inr), small:true,
-     sub:s.closed ? (s.closed + ' closed · ' + (s.win_rate === null ? '—' : s.win_rate + '% won')) : 'no closed trades yet'},
-    {icon:(s.return_pct >= 0 ? 'rise' : 'fall'), lab:'Per-stock ceiling',
-     val:inr(Math.round(c.base * c.maxPct / 100)), small:true,
-     sub:c.maxPct + '% of base, min ' + compact(Math.round(c.base * c.minPct / 100))}
-  ];
-  document.getElementById('figures').innerHTML =
-    figs.map(function(f){
-      return '<div class="fig ' + (f.cls || '') + '">' +
-        '<div class="lab">' + ico(f.icon) + f.lab + '</div>' +
-        '<div class="val' + (f.small ? ' small' : '') + '">' + f.val + '</div>' +
-        (f.sub ? '<div class="sub">' + f.sub + '</div>' : '') + '</div>';
-    }).join('') +
-    '<div class="fig act"><button class="btn" data-act="capital">' + ico('plus') + 'Add capital</button></div>';
-}
-
-/* ===================================================================== the book */
-function activeRows(){
-  return (DATA.positions || []).filter(function(p){ return p.status !== 'closed'; });
-}
-function renderActive(){
-  var el = document.getElementById('activeTable');
-  var rows = activeRows();
-  var queuedBooks = intentsFor('book');
-  document.getElementById('activeCount').textContent =
-    rows.length + ' tracked' + (queuedBooks.length ? ' · ' + queuedBooks.length + ' queued' : '');
-
-  if (!rows.length && !queuedBooks.length){
-    el.innerHTML = '<div class="empty">' + ico('book') +
-      'Nothing tracked yet. Formalise a suggestion below and it appears here as a position.</div>';
-    return;
+/* Run a command for real when connected; otherwise queue it and hand over the CLI line. */
+function run(command, inputs, opts){
+  opts = opts || {};
+  var label = opts.label || command;
+  if (!GH.ok){
+    if (opts.queue){ opts.queue(); toast('Queued — connect GitHub in Console to run it from here'); render(); }
+    else toast('Connect GitHub in the Console tab to run this from here', 'err');
+    return Promise.resolve();
   }
-
-  var body = rows.map(function(p){
-    var base = p.entry || p.entry_plan, t = p.targets || [], tp = p.target_pct || [], hits = p.targets_hit || [];
-    var st = (p.status || '').toLowerCase();
-    var pnl = p.unrealised_pct;
-    return '<tr class="row" data-id="pos-' + esc(p.symbol) + '">' +
-      expanderCell('pos-' + esc(p.symbol)) +
-      instrumentCell(p.symbol, p.company, p.source_id) +
-      '<td><span class="tag ' + st + '">' + esc(p.status) + '</span>' +
-        '<div class="delta">' + esc(p.timeframe || '') +
-        (st === 'pending' ? ' · fills ' + esc(p.opened || '')
-                          : (p.deadline ? ' · by ' + esc(p.deadline) : '')) + '</div></td>' +
-      '<td class="r"><span class="price">₹' + num(base) + '</span>' +
-        (p.entry ? '' : '<span class="delta">planned</span>') + '</td>' +
-      '<td class="r"><span class="price">' + (p.qty_open != null ? p.qty_open : p.qty) + '</span>' +
-        '<span class="delta">' + inr(p.capital_inr) + '</span></td>' +
-      levelCell(p.stop_loss, p.stop_loss_pct == null ? null : -Math.abs(p.stop_loss_pct), 'stop') +
-      levelCell(t[0], tp[0], 'tgt t1', hits.indexOf(1) !== -1) +
-      levelCell(t[1], tp[1], 'tgt', hits.indexOf(2) !== -1) +
-      levelCell(t[2], tp[2], 'tgt', hits.indexOf(3) !== -1) +
-      '<td class="r"><span class="price">' + (p.ltp != null ? '₹' + num(p.ltp) : '—') + '</span>' +
-        '<span class="delta ' + signClass(pnl) + '">' + pct(pnl) + '</span></td>' +
-      '<td class="r">' + (intentsFor('close', p.symbol).length
-        ? '<span class="tag queued">' + ico('check', 'sm') + 'exit queued</span>'
-        : '<button class="btn sm danger" data-act="close" data-sym="' + esc(p.symbol) + '">' +
-          ico('exit') + (st === 'pending' ? 'Cancel' : 'Exit') + '</button>') + '</td>' +
-    '</tr>' + detailRow('pos-' + esc(p.symbol), positionDetail(p), 11);
-  }).join('');
-
-  var queued = queuedBooks.map(function(x){
-    var pctOf = function(v){ return x.entry ? (v / x.entry - 1) * 100 : null; };
-    var t = x.targets || [];
-    return '<tr class="row">' +
-      '<td></td>' +
-      instrumentCell(x.symbol, x.company, x.source) +
-      '<td><span class="tag queued">' + ico('clock', 'sm') + 'queued</span>' +
-        '<div class="delta">' + esc(x.timeframe || '') + ' · ' + esc(x.ts || '') + '</div></td>' +
-      '<td class="r"><span class="price">₹' + num(x.entry) + '</span><span class="delta">planned</span></td>' +
-      '<td class="r"><span class="price">' + x.qty + '</span><span class="delta">' + inr(x.capital) + '</span></td>' +
-      levelCell(x.stop, x.stop ? -Math.abs(pctOf(x.stop)) : null, 'stop') +
-      levelCell(t[0], pctOf(t[0]), 'tgt t1') + levelCell(t[1], pctOf(t[1]), 'tgt') + levelCell(t[2], pctOf(t[2]), 'tgt') +
-      '<td class="r">—</td>' +
-      '<td class="r"><button class="btn sm quiet" data-act="drop" data-sym="' + esc(x.symbol) +
-        '" data-kind="book">' + ico('trash') + 'Drop</button></td>' +
-    '</tr>';
-  }).join('');
-
-  el.innerHTML = '<table><thead>' +
-    '<tr class="groups"><th colspan="5"></th>' +
-      '<th class="grouped">Stop</th><th class="grouped" colspan="3">Targets</th><th colspan="2"></th></tr>' +
-    '<tr><th></th><th>Instrument</th><th>Status</th><th class="r">Entry</th><th class="r">Qty</th>' +
-      '<th class="r">SL</th><th class="r">T1</th><th class="r">T2</th><th class="r">T3</th>' +
-      '<th class="r">Last · P&amp;L</th><th class="r">Act</th></tr>' +
-    '</thead><tbody>' + body + queued + '</tbody></table>';
+  if (opts.btn) opts.btn.classList.add('busy');
+  return ghDispatch(command, inputs)
+    .then(function(){
+      toast(label + ' sent to GitHub — the ledger updates in about a minute', 'ok');
+      if (opts.queue) opts.queue();
+      pollRuns(true);
+      render();
+    })
+    .catch(function(e){ toast('Could not run ' + label + ': ' + e.message, 'err'); })
+    .then(function(){ if (opts.btn) opts.btn.classList.remove('busy'); });
 }
 
-function positionDetail(p){
-  var base = p.entry || p.entry_plan;
-  var exits = (p.exits || []).map(function(e){
-    return kv(e.date + ' · ' + e.reason.replace(/_/g, ' '), e.qty + ' @ ₹' + num(e.price) + ' · ' + inr(e.pnl_inr));
+/* ==================================================================== pieces */
+var TAG_ICON = {fundamentals:'scale', technicals:'chart', momentum:'bolt', 'tight-stop':'shield',
+  asymmetric:'target', corroborated:'rss', 'slow-clock':'clock', sluggish:'clock',
+  'weak-books':'alert', 'hot-potato':'alert', trend:'gauge'};
+function tagPills(tags){
+  if (!tags || !tags.length) return '';
+  return tags.map(function(t){
+    var i = TAG_ICON[t.key];
+    return '<span class="pill ' + (t.tone || 'flat') + '" title="' + esc(t.why || '') + '">' +
+      (i ? ic(i) : '') + esc(t.label) + '</span>';
   }).join('');
-  return '<div class="dgrid">' +
-    '<div class="dcol"><h4>Position</h4><ul>' +
-      kv('Booked', esc(p.booked || '—')) +
-      kv('Fills / filled at', esc(p.opened || '—')) +
-      kv('Initial stop', '₹' + num(p.initial_stop)) +
-      kv('Time stop', (p.time_stop_days || '—') + ' trading days') +
-      kv('Bucket', esc((p.bucket || '').replace('hold-capable', 'hold-capable').replace('hot-potato', 'hot potato'))) +
-      kv('Best seen', pct(p.max_favourable_pct, 1)) +
-    '</ul></div>' +
-    '<div class="dcol"><h4>Scores at entry</h4><ul>' +
-      kv('Composite', p.composite != null ? p.composite : '—') +
-      kv('Technical', p.ta_confidence != null ? p.ta_confidence : '—') +
-      kv('Fundamentals', p.fund_score != null ? p.fund_score : '—') +
-      kv('Source', esc(p.source_id || '—')) +
-      ((p.corroborating_sources || []).length ? kv('Corroborated by', esc(p.corroborating_sources.join(', '))) : '') +
-    '</ul></div>' +
-    '<div class="dcol"><h4>Chart read</h4>' +
-      ((p.patterns || []).length
-        ? (p.patterns || []).map(function(x){ return '<span class="pat">' + esc(x.replace(/_/g, ' ')) + '</span>'; }).join('')
-        : '<span class="delta">no named pattern</span>') +
-      (exits ? '<h4 style="margin-top:16px">Exits</h4><ul>' + exits + '</ul>' : '') +
-      ((p.notes || []).length ? '<h4 style="margin-top:16px">Notes</h4><ul>' +
-        p.notes.map(function(n){ return '<li><span>' + esc(n) + '</span><span></span></li>'; }).join('') + '</ul>' : '') +
+}
+
+/* The ladder: stop, entry, three targets and where the price actually is — on one line.
+   Labels are laid out in two lanes and coincident marks are merged, because a stop trailed to
+   breakeven sits exactly on the entry and two labels in one place read as neither. */
+function ladder(o){
+  var ts = (o.targets || []).filter(function(x){ return x != null; });
+  var entry = o.entry, stop = o.stop, now = o.now, hits = o.hits || [];
+  if (!entry || !ts.length) return '';
+  var lo = Math.min(stop || entry, entry, now || entry);
+  var hi = Math.max.apply(null, ts.concat([now || entry, entry]));
+  var span = (hi - lo) || 1, pad = span * 0.07;
+  lo -= pad; hi += pad; span = hi - lo;
+  var at = function(v){ return Math.max(0, Math.min(100, (v - lo) / span * 100)); };
+
+  var marks = [];
+  if (stop){
+    var breakeven = Math.abs(stop - entry) / entry < 0.0015;
+    marks.push({cls:'stop', v:stop, lab:inr(stop, 2),
+                sub:breakeven ? 'stop = entry' : (o.stopPct != null ? pct(-Math.abs(o.stopPct), 1) : ''),
+                merged:breakeven});
+  }
+  if (!marks.length || !marks[0].merged){
+    marks.push({cls:'entry', v:entry, lab:inr(entry, 2), sub:o.entryLabel || 'entry'});
+  }
+  ts.forEach(function(t, i){
+    var hit = hits.indexOf(i + 1) !== -1;
+    var bits = [];
+    if (!hit && o.targetPct && o.targetPct[i] != null) bits.push(pct(o.targetPct[i], 1));
+    if (!hit && o.eta && o.eta[i]) bits.push('~' + o.eta[i] + 'd');
+    marks.push({cls:'tgt' + (hit ? ' hit' : ''), v:t, lab:'T' + (i + 1) + ' ' + inr(t, 2),
+                sub:hit ? 'taken' : bits.join(' · ')});
+  });
+  if (now) marks.push({cls:'now', v:now, lab:inr(now, 2), sub:''});
+
+  marks.forEach(function(m){ m.at = at(m.v); });
+  marks.sort(function(a, b){ return a.at - b.at; });
+  // anything within 9% of the rail of its neighbour drops to the second label lane
+  var lastByLane = [-99, -99];
+  marks.forEach(function(m){
+    var lane = (m.at - lastByLane[0] > 9) ? 0 : (m.at - lastByLane[1] > 9 ? 1 : 0);
+    m.lane = lane;
+    lastByLane[lane] = m.at;
+  });
+
+  var html = [];
+  if (stop) html.push('<div class="zone-loss" style="width:' + at(stop).toFixed(2) + '%"></div>');
+  html.push('<div class="done" style="width:' +
+    at(now && now > entry ? Math.min(now, hi) : entry).toFixed(2) + '%"></div>');
+  marks.forEach(function(m){
+    var up = m.lane ? ' style="bottom:26px"' : '';
+    var down = m.lane ? ' style="top:27px"' : '';
+    html.push('<div class="mk ' + m.cls + '" style="left:' + m.at.toFixed(2) + '%">' +
+      '<span class="lab"' + up + '>' + esc(m.lab) + '</span>' +
+      (m.cls === 'now' ? '<span class="dot"></span>' : '<span class="tick"></span>') +
+      (m.sub ? '<span class="sub"' + down + '>' + esc(m.sub) + '</span>' : '') + '</div>');
+  });
+  var tall = marks.some(function(m){ return m.lane === 1; });
+  return '<div class="ladder"><div class="rail"' + (tall ? ' style="margin-top:42px"' : '') + '>' +
+    html.join('') + '</div><div class="ladder-legend"' + (tall ? ' style="margin-top:48px"' : '') + '>' +
+    (o.legend || '') + '</div></div>';
+}
+
+function etaChips(plan, hits){
+  var eta = plan.eta_days || [], tp = plan.target_pct || [], clock = plan.time_stop_days;
+  hits = hits || [];
+  var none = !eta.length || eta.every(function(d){ return d == null; });
+  if (none){
+    return '<div class="etas"><span class="eta unknown">' + ic('clock') + '<b>PACE</b>' +
+      '<span class="d">not yet dated</span></span>' +
+      '<span class="hint" style="margin:0">no measurable directional drift — the evening run will date these</span></div>';
+  }
+  return '<div class="etas">' + eta.map(function(d, i){
+    var hit = hits.indexOf(i + 1) !== -1;
+    var cls = hit ? 'hit' : d == null ? 'unknown'
+            : (clock && d <= Math.max(2, clock / 3)) ? 'soon' : (clock && d > clock) ? 'late' : '';
+    return '<span class="eta ' + cls + '">' + (hit ? ic('check') : '') + '<b>T' + (i + 1) + '</b>' +
+      '<span class="d">' + (hit ? 'taken' : d == null ? '—' : '~' + d + 'd') + '</span>' +
+      (tp[i] != null ? '<span class="p">' + pct(tp[i], 1) + '</span>' : '') + '</span>';
+  }).join('') + (plan.pace_pct_day ? '<span class="eta"><b>PACE</b><span class="d">' +
+      num(plan.pace_pct_day, 2) + '%</span><span class="p">a session</span></span>' : '') + '</div>';
+}
+
+function meters(items){
+  return '<div class="meters">' + items.map(function(m){
+    return '<div class="meter"><div class="top"><span class="lab">' + esc(m.k) + '</span>' +
+      '<span class="val n">' + (m.v == null ? '—' : m.v) + '</span></div>' +
+      '<div class="bar"><i class="' + m.c + '" style="width:' + Math.max(2, Math.min(100, m.v || 0)) + '%"></i></div></div>';
+  }).join('') + '</div>';
+}
+function facts(items){
+  return '<div class="facts">' + items.map(function(f){
+    return '<div class="fact"><div class="k">' + esc(f.k) + '</div><div class="v">' + f.v +
+      (f.s ? '<small>' + f.s + '</small>' : '') + '</div></div>';
+  }).join('') + '</div>';
+}
+function kv(k, v){ return '<div class="kv"><span>' + esc(k) + '</span><span>' + v + '</span></div>'; }
+function whyList(list){
+  if (!list || !list.length) return '<span class="hint">nothing recorded</span>';
+  return list.map(function(r){
+    var m = String(r).match(/^([+-]\d+(?:\.\d+)?)\s*(.*)$/);
+    var n = m ? m[1] : '', rest = m ? m[2] : r;
+    return '<div class="why ' + (n.charAt(0) === '+' ? 'p' : n.charAt(0) === '-' ? 'm' : '') + '">' +
+      '<span class="n">' + esc(n) + '</span><span>' + esc(rest) + '</span></div>';
+  }).join('');
+}
+function codeRow(text){
+  return '<div class="code"><code>' + esc(text) + '</code>' +
+    '<button class="btn sm ghost" data-act="copy" data-text="' + esc(text) + '">' + ic('copy') + 'Copy</button></div>';
+}
+function stat(icon, k, val, sub, cls){
+  return '<div class="stat ' + (cls || '') + '"><div class="k">' + ic(icon) + esc(k) + '</div>' +
+    '<div class="v">' + val + '</div>' + (sub ? '<div class="s">' + sub + '</div>' : '') + '</div>';
+}
+
+/* ==================================================================== the book */
+function positions(){ return (DATA.positions || []).filter(function(p){ return p.status !== 'closed'; }); }
+
+function renderBook(){
+  var s = DATA.stats || {}, c = capacity(), rows = positions(), queued = intentsOf('book');
+  var deployed = s.capital ? Math.round((s.deployed_inr || 0) / s.capital * 100) : 0;
+  var html = '<div class="strip">' +
+    stat('wallet', 'Equity', inr(s.equity),
+         '<span class="' + sgn(s.return_pct) + '">' + pct(s.return_pct) + '</span> time-weighted' +
+         (s.n_flows ? ' · base ' + short(s.capital) : ''), 'wide') +
+    stat('flow', 'Deployable', inr(c.cash), deployed + '% of the base at work') +
+    stat('book', 'Slots', c.slots + ' free', 'of ' + c.maxOpen + ' · up to ' + short(c.maxAlloc) + ' each') +
+    stat('target', 'Realised', inr(s.realised_inr),
+         s.closed ? s.closed + ' closed · ' + (s.win_rate == null ? '—' : s.win_rate + '% won')
+                  : 'no closed trades yet') +
+    '</div>';
+  html += (rows.length || queued.length)
+    ? rows.map(positionCard).join('') + queued.map(queuedCard).join('')
+    : '<div class="empty">' + ic('book', 'l') + '<b>Nothing tracked yet</b>' +
+      'Take an idea from the Ideas tab and it lands here with its stop, its targets and its clock.</div>';
+  html += pendingPanel();
+  $('#v-book').innerHTML = html;
+}
+
+function positionCard(p){
+  var base = p.entry || p.entry_plan, hits = p.targets_hit || [], st = (p.status || '').toLowerCase();
+  var exiting = intentsOf('close', p.symbol).length > 0;
+  var tone = st === 'open' ? 'good' : st === 'hold' ? 'violet' : 'warn';
+  var pace = '';
+  if (p.pace === 'hit'){
+    pace = '<div class="pace on">' + ic('check') + '<span>T1 taken. The stop is trailed to <b>₹' +
+      rs(p.stop_loss) + '</b>, so the rest rides for T2 and T3 with nothing left to lose.</span></div>';
+  } else if (p.eta_t1_days){
+    var late = p.pace === 'behind';
+    pace = '<div class="pace ' + (late ? 'behind' : 'on') + '">' + ic(late ? 'alert' : 'clock') +
+      '<span>Session <b>' + p.days_elapsed + '</b> of the <b>~' + p.eta_t1_days +
+      '</b> its own pace needs to reach T1' +
+      (late ? ' — behind schedule, and the ' + p.time_stop_days + '-session clock ends ' + esc(p.deadline || 'soon') + '.'
+            : ', so about <b>' + Math.max(0, p.days_left_on_eta) + '</b> to go.') + '</span></div>';
+  } else if (st === 'pending'){
+    pace = '<div class="pace">' + ic('clock') + '<span>Fills at the <b>' + esc(p.opened || '') +
+      '</b> open. If it gaps more than 3% above ' + rs(base) + ' the order is cancelled instead of chased.</span></div>';
+  }
+  return '<div class="card" data-card="pos-' + esc(p.symbol) + '"><div class="card-in">' +
+    '<div class="chead"><div style="min-width:0">' +
+      '<div class="sym">' + esc(p.symbol) + '<span class="pill ' + tone + '">' + esc(p.status) + '</span>' +
+      (String(p.bucket || '').indexOf('hot') === 0 ? '<span class="pill warn">' + ic('alert') + 'hot potato</span>'
+                                                   : '<span class="pill flat">' + ic('scale') + 'hold-capable</span>') +
+      '</div><div class="co">' + esc(p.company || '') + '</div></div>' +
+      '<div class="right"><div class="ltp">' + rs(p.ltp != null ? p.ltp : base) + '</div>' +
+      '<div class="chg ' + sgn(p.unrealised_pct) + '">' +
+      (p.unrealised_pct != null ? pct(p.unrealised_pct) : 'awaiting fill') + '</div></div></div>' +
+    ladder({stop:p.stop_loss, entry:base, targets:p.targets, targetPct:p.target_pct, hits:hits, now:p.ltp,
+            stopPct:p.stop_loss_pct, eta:p.eta_days, entryLabel:p.entry ? 'filled' : 'planned',
+            legend:'<span>' + ic('shield', 's') + 'stop ' + rs(p.stop_loss) + '</span>' +
+              '<span>' + ic('target', 's') + hits.length + ' of ' + (p.targets || []).length + ' targets taken</span>' +
+              (p.progress_t1_pct != null ? '<span>' + ic('gauge', 's') + p.progress_t1_pct + '% of the way to T1</span>' : '') +
+              '<span>' + ic('rss', 's') + esc(p.source_id || '') + '</span>'}) +
+    pace +
+    facts([
+      {k:'Qty', v:(p.qty_open != null ? p.qty_open : p.qty), s:inr(p.capital_inr)},
+      {k:p.entry ? 'Entry' : 'Planned entry', v:rs(base)},
+      {k:'Stop', v:'<span class="down">' + rs(p.stop_loss) + '</span>',
+       s:p.stop_loss_pct != null ? pct(-Math.abs(p.stop_loss_pct), 1) : ''},
+      {k:'Horizon', v:esc(p.timeframe || '—'),
+       s:p.deadline ? 'by ' + esc(p.deadline) : (p.time_stop_days || '—') + ' sessions'},
+      {k:'Booked at', v:(p.composite != null ? p.composite : '—'),
+       s:'chart ' + (p.ta_confidence || '—') + ' · books ' + (p.fund_score || '—')},
+      {k:'Realised', v:'<span class="' + sgn(p.realised_inr) + '">' + inr(p.realised_inr) + '</span>',
+       s:p.max_favourable_pct ? 'best ' + pct(p.max_favourable_pct, 1) : ''}
+    ]) +
+    '<div class="actions">' +
+      (exiting ? '<span class="pill info">' + ic('clock') + 'exit queued</span>'
+               : '<button class="btn sell" data-act="close" data-sym="' + esc(p.symbol) + '">' + ic('exit') +
+                 (st === 'pending' ? 'Cancel before fill' : 'Exit now') + '</button>') +
+      '<button class="btn ghost grow" data-act="more" data-card="pos-' + esc(p.symbol) + '">' +
+        ic('chev') + 'Details</button></div>' +
+    '</div><div class="more"><div><div class="more-in">' + positionMore(p) + '</div></div></div></div>';
+}
+
+function positionMore(p){
+  var exits = (p.exits || []).map(function(e){
+    return kv(e.date + ' · ' + String(e.reason).replace(/_/g, ' '),
+              e.qty + ' @ ₹' + num(e.price) + ' · ' + inr(e.pnl_inr));
+  }).join('') || '<span class="hint">no partial exits yet</span>';
+  return '<div class="mgrid">' +
+    '<div class="mcol"><h5>Position</h5>' +
+      kv('Booked', esc(p.booked || '—')) + kv('Fills', esc(p.opened || '—')) +
+      kv('Initial stop', rs(p.initial_stop)) +
+      kv('Pace at entry', p.pace_pct_day ? num(p.pace_pct_day, 2) + '%/session' : '—') +
+      kv('Momentum at entry', p.momentum_score != null ? p.momentum_score : '—') +
+      kv('ETA at entry', (p.eta_days || []).length ? (p.eta_days || []).map(function(d){ return d ? d + 'd' : '—'; }).join(' · ') : '—') +
     '</div>' +
-    '<div class="dcol" style="grid-column:1/-1"><h4>Order as placed</h4>' +
-      '<div class="order"><code>' + esc(p.order_line || orderLine(p.symbol, p.qty_open || p.qty, base, p.stop_loss, p.targets)) + '</code>' +
-      '<button class="btn sm" data-act="copy" data-text="' + esc(p.order_line || '') + '">' + ico('copy') + '<span class="t">Copy</span></button></div>' +
+    '<div class="mcol"><h5>Exits taken</h5>' + exits +
+      ((p.notes || []).length ? '<h5 style="margin-top:14px">Notes</h5>' + p.notes.map(function(n){
+        return '<div class="why"><span class="n"></span><span>' + esc(n) + '</span></div>'; }).join('') : '') +
+    '</div>' +
+    '<div class="mcol"><h5>Pattern read at entry</h5>' +
+      ((p.patterns || []).length ? p.patterns.map(function(x){
+        return '<span class="pill flat" style="margin:0 5px 5px 0">' + esc(String(x).replace(/_/g, ' ')) + '</span>';
+      }).join('') : '<span class="hint">no named pattern</span>') +
+      '<div class="hint">' + esc(p.bucket || '') + '</div></div>' +
+    '<div class="mcol" style="grid-column:1/-1"><h5>Order as placed</h5>' +
+      codeRow(p.order_line || orderLine(p.symbol, p.qty_open || p.qty, p.entry || p.entry_plan, p.stop_loss, p.targets)) +
     '</div></div>';
 }
 
-function detailRow(id, html, cols){
-  return '<tr class="detail" data-detail="' + id + '"><td colspan="' + cols + '">' +
-    '<div class="drawer"><div>' + html + '</div></div></td></tr>';
+function queuedCard(x){
+  return '<div class="card"><div class="card-in"><div class="chead"><div style="min-width:0">' +
+    '<div class="sym">' + esc(x.symbol) + '<span class="pill info">' + ic('clock') + 'queued</span></div>' +
+    '<div class="co">' + esc(x.company || '') + '</div></div>' +
+    '<div class="right"><div class="ltp">' + rs(x.entry) + '</div>' +
+    '<div class="chg mut">' + x.qty + ' sh · ' + short(x.capital) + '</div></div></div>' +
+    ladder({stop:x.stop, entry:x.entry, targets:x.targets, hits:[], entryLabel:'planned', eta:x.eta,
+            targetPct:(x.targets || []).map(function(t){ return x.entry ? (t / x.entry - 1) * 100 : null; }),
+            stopPct:(x.stop && x.entry) ? (x.stop / x.entry - 1) * 100 : null,
+            legend:'<span>' + ic('clock', 's') + 'waiting for the command to finish</span>'}) +
+    codeRow('python -m stocktips book ' + x.symbol + ' --capital ' + Math.round(x.capital)) +
+    '<div class="actions"><button class="btn ghost" data-act="drop" data-kind="book" data-sym="' +
+      esc(x.symbol) + '">' + ic('trash') + 'Drop from queue</button></div></div></div>';
 }
 
-/* ===================================================================== suggestions */
-function suggestionList(){
+function pendingPanel(){
+  var pend = intents().filter(function(x){ return x.kind !== 'book'; });
+  if (!pend.length) return '';
+  return '<div class="sec" style="margin-top:22px"><div class="sec-h"><h3>' + ic('term') + 'Waiting on the ledger</h3>' +
+    '<span class="note">' + (GH.ok ? 'sent to GitHub — clears when the ledger agrees'
+      : 'connect GitHub in Console to run these') + '</span></div>' +
+    pend.map(function(x){
+      var cmd = x.kind === 'close'
+        ? 'python -m stocktips close ' + x.symbol + (x.note ? ' --note "' + x.note + '"' : '')
+        : 'python -m stocktips capital --add ' + Math.round(x.amount);
+      var head = x.kind === 'close' ? ic('exit') + 'Exit ' + esc(x.symbol) : ic('wallet') + 'Add ' + inr(x.amount);
+      return '<div class="card"><div class="card-in"><div class="chead"><div class="sym">' + head + '</div>' +
+        '<div class="right"><span class="pill info">' + ic('clock') + esc(x.ts || '') + '</span></div></div>' +
+        (x.note ? '<div class="hint">' + esc(x.note) + '</div>' : '') + codeRow(cmd) +
+        '<div class="actions"><button class="btn ghost" data-act="drop" data-kind="' + x.kind +
+        '" data-sym="' + esc(x.symbol || '') + '">' + ic('trash') + 'Drop</button></div></div></div>';
+    }).join('') + '</div>';
+}
+
+/* ==================================================================== ideas */
+function ideaList(){
   var held = {};
   ((DATA && DATA.positions) || []).forEach(function(p){ held[p.symbol] = true; });
-  intentsFor('book').forEach(function(x){ held[x.symbol] = true; });
+  intentsOf('book').forEach(function(x){ held[x.symbol] = true; });
   var q = FILTER.q.trim().toUpperCase();
-  return ((DATA && DATA.latest_analysis) || []).filter(function(p){
+  var list = ((DATA && DATA.latest_analysis) || []).filter(function(p){
     if (!(p.verdict === 'BUY' || p.verdict === 'STRONG BUY')) return false;
     if (held[p.symbol] || !p.plan || !p.plan.entry) return false;
     if (FILTER.tf !== 'all' && (p.plan.timeframe || '') !== FILTER.tf) return false;
-    if (FILTER.affordable && !sizeFor(p.plan.entry).ok) return false;
+    if (FILTER.afford && !sizeFor(p.plan.entry).ok) return false;
+    if (FILTER.tag && !(p.tags || []).some(function(t){ return t.key === FILTER.tag; })) return false;
     if (q && (p.symbol + ' ' + (p.company || '') + ' ' + (p.source_id || '')).toUpperCase().indexOf(q) === -1) return false;
     return true;
-  }).sort(function(a, b){ return (b.composite || 0) - (a.composite || 0); });
+  });
+  var key = {
+    eta: function(p){ var d = (p.plan.eta_days || [])[0]; return d == null ? 1e6 : d; },
+    composite: function(p){ return -(p.composite || 0); },
+    momentum: function(p){ return -((p.ta && p.ta.momentum_score) || 0); },
+    rr: function(p){ return -(p.plan.reward_risk_t2 || 0); },
+    fund: function(p){ return -(p.fund_score || 0); },
+    upside: function(p){ return -((p.plan.target_pct || [])[2] || 0); }
+  }[SORT] || function(p){ return -(p.composite || 0); };
+  return list.sort(function(a, b){
+    var d = key(a) - key(b);
+    return d !== 0 ? d : (b.composite || 0) - (a.composite || 0);
+  });
 }
 
-function renderCapacityRail(){
-  var c = capacity(), tight = c.slots <= 0 || c.cash < c.minAlloc;
-  var cells = [
-    {i:'book', h:'Slots', v:c.slots + ' free of ' + c.maxOpen, tight:c.slots <= 0},
-    {i:'wallet', h:'Deployable', v:inr(c.cash), tight:c.cash < c.minAlloc},
-    {i:'target', h:'Per stock', v:'up to ' + inr(c.maxAlloc)},
-    {i:'shield', h:'Minimum', v:inr(c.minAlloc)}
-  ];
-  document.getElementById('capacityRail').innerHTML =
-    cells.map(function(x){
-      return '<div class="cell' + (x.tight ? ' tight' : '') + '">' + ico(x.i) + x.h + ' <b>' + x.v + '</b></div>';
-    }).join('') +
-    (c.queuedCapital ? '<div class="cell">' + ico('wallet') + 'Includes <b>' + inr(c.queuedCapital) +
-      '</b> queued top-up — provisional until the command runs</div>' : '') +
-    (tight ? '<div class="cell tight">' + ico('alert') +
-      'Fully committed — exit a position or add capital to take a new one</div>' : '');
-}
+function renderIdeas(){
+  var list = ideaList(), c = capacity();
+  var all = ((DATA.latest_analysis || []).filter(function(p){
+    return p.verdict === 'BUY' || p.verdict === 'STRONG BUY'; })).length;
+  var dated = list.filter(function(p){ return (p.plan.eta_days || [])[0]; }).length;
+  var tight = c.slots <= 0 || c.cash < c.minAlloc;
+  var sorts = [['eta','Soonest to T1','bolt'],['composite','Conviction',''],['momentum','Momentum',''],
+               ['rr','Reward:risk',''],['upside','Upside',''],['fund','Fundamentals','']];
+  var tfs = [['all','All'],['weekly','Weekly'],['monthly','Monthly'],['long','Long']];
+  var tagf = [['','Any'],['fundamentals','Fundamentals'],['technicals','Chart'],['momentum','Fast movers']];
 
-function renderFilters(){
-  var tfs = ['all', 'weekly', 'monthly', 'long'];
-  document.getElementById('suggFilters').innerHTML =
-    '<div class="seg">' + tfs.map(function(t){
-      return '<button data-act="tf" data-tf="' + t + '" aria-pressed="' + (FILTER.tf === t) + '">' +
-        (t === 'all' ? 'All horizons' : t) + '</button>';
-    }).join('') + '</div>' +
-    '<div class="seg"><button data-act="afford" aria-pressed="' + FILTER.affordable + '">' +
-      'Only what I can size today</button></div>' +
-    '<input class="search" id="suggSearch" type="search" placeholder="Symbol or source" value="' + esc(FILTER.q) + '">';
-}
-
-function renderSuggestions(){
-  var list = suggestionList(), el = document.getElementById('suggTable');
-  var total = ((DATA.latest_analysis || []).filter(function(p){
-    return p.verdict === 'BUY' || p.verdict === 'STRONG BUY';
-  })).length;
-  document.getElementById('suggCount').textContent =
-    list.length + (list.length === total ? '' : ' of ' + total) + ' BUY-grade · ' +
-    (DATA.latest_analysis || []).length + ' analysed ' + (DATA.analysis_day || '');
-
-  if (!list.length){
-    el.innerHTML = '<div class="empty">' + ico('target') +
-      (total ? 'No suggestion matches these filters.' : 'No BUY-grade name outstanding — everything the desk likes is already in the book.') +
-      '</div>';
-  } else {
-    var body = list.map(function(p){
-      var pl = p.plan || {}, t = pl.targets || [], tp = pl.target_pct || [];
-      var size = sizeFor(pl.entry);
-      var zone = (pl.entry_zone && pl.entry_zone.length === 2)
-        ? '₹' + num(pl.entry_zone[0]) + '–' + num(pl.entry_zone[1]) : '₹' + num(pl.entry);
-      var said = (p.src_targets && p.src_targets.length)
-        ? p.src_targets.map(function(x){ return '₹' + inr(x).slice(1); }).join(' ') : '—';
-      var id = 'sug-' + esc(p.symbol);
-      return '<tr class="row" data-id="' + id + '">' +
-        expanderCell(id) +
-        instrumentCell(p.symbol, p.company, p.source_id, p.n_mentions > 1 ? p.n_mentions + ' mentions' : '',
-                       '<span class="tag buy">' + esc(p.verdict) + '</span>') +
-        '<td><div class="scores"><span class="comp">' + (p.composite != null ? p.composite : '—') + '</span>' +
-          '<span class="trio">' + (p.ta_confidence != null ? p.ta_confidence : '–') + '·' +
-          (p.fund_score != null ? p.fund_score : '–') + '·' + (p.source_confidence != null ? p.source_confidence : '–') +
-          '</span></div><div class="meter"><i style="width:' + Math.max(4, Math.min(100, p.composite || 0)) + '%"></i></div></td>' +
-        '<td class="r"><span class="price">' + zone + '</span></td>' +
-        levelCell(pl.stop_loss, pl.stop_loss_pct == null ? null : -Math.abs(pl.stop_loss_pct), 'stop') +
-        levelCell(t[0], tp[0], 'tgt t1') + levelCell(t[1], tp[1], 'tgt') + levelCell(t[2], tp[2], 'tgt') +
-        '<td class="r"><span class="price' + (pl.reward_risk_t2 < 1.5 ? '" style="color:var(--warn)' : '') + '">' +
-          (pl.reward_risk_t2 != null ? num(pl.reward_risk_t2) : '—') + '</span>' +
-          '<span class="delta">' + esc(pl.timeframe || '') + '</span></td>' +
-        '<td class="said">' + said + '<br>SL ' + (p.src_stop != null ? '₹' + inr(p.src_stop).slice(1) : '—') + '</td>' +
-        '<td class="r"><button class="btn sm primary" data-act="book" data-sym="' + esc(p.symbol) + '"' +
-          (size.ok ? '' : ' disabled') + '>' + ico('plus') + 'Take</button>' +
-          '<div class="delta">' + (size.ok ? size.qty + ' sh · ' + compact(size.capital) : 'no room') + '</div></td>' +
-      '</tr>' + detailRow(id, suggestionDetail(p), 11);
-    }).join('');
-
-    el.innerHTML = '<table><thead>' +
-      '<tr class="groups"><th colspan="4"></th>' +
-        '<th class="grouped">Stop</th><th class="grouped" colspan="3">Targets — ours</th><th colspan="3"></th></tr>' +
-      '<tr><th></th><th>Instrument</th><th>Score</th><th class="r">Entry zone</th>' +
-        '<th class="r">SL</th><th class="r">T1</th><th class="r">T2</th><th class="r">T3</th>' +
-        '<th class="r">R:R</th><th>Tipster said</th><th class="r">Act</th></tr>' +
-      '</thead><tbody>' + body + '</tbody></table>';
+  var html = '';
+  if (tight){
+    html += '<div class="banner warn">' + ic('alert') + '<div><b>Fully committed.</b> ' + c.slots + ' of ' +
+      c.maxOpen + ' slots free and ' + inr(c.cash) + ' deployable against a ' + inr(c.minAlloc) +
+      ' minimum position. Everything below is still vetted and dated — exit a position in The book, or add ' +
+      'capital in Console, and the Take buttons come back.</div></div>';
   }
+  html += '<div class="controls">' +
+    '<div class="seg">' + sorts.map(function(s){
+      return '<button data-act="sort" data-sort="' + s[0] + '" aria-pressed="' + (SORT === s[0]) + '">' +
+        (s[2] ? ic(s[2]) : '') + s[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="seg">' + tfs.map(function(t){
+      return '<button data-act="tf" data-tf="' + t[0] + '" aria-pressed="' + (FILTER.tf === t[0]) + '">' +
+        t[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="seg">' + tagf.map(function(t){
+      return '<button data-act="tag" data-tag="' + t[0] + '" aria-pressed="' + (FILTER.tag === t[0]) + '">' +
+        t[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="seg"><button data-act="afford" aria-pressed="' + FILTER.afford + '">Affordable now</button></div>' +
+    '<div class="field" style="flex:1 1 180px"><svg class="ic"><use href="#i-target"/></svg>' +
+    '<input class="pad" type="search" id="ideaSearch" placeholder="Symbol, company or source  ( / )" value="' +
+    esc(FILTER.q) + '"></div></div>';
 
-  document.getElementById('suggNote').innerHTML =
-    '<b>Take</b> queues the trade on this device and prints the one command that writes it to ' +
-    '<code>state/ledger.json</code>; the queue entry clears itself once the ledger comes back with the position. ' +
-    'Nothing here places a real order.';
+  html += '<div class="sec-h"><h3>' + ic('bulb') +
+    (SORT === 'eta' ? 'Soonest to their first target' : 'Vetted ideas') + '</h3><span class="note">' +
+    list.length + (list.length === all ? '' : ' of ' + all) + ' BUY-grade · ' +
+    (DATA.latest_analysis || []).length + ' analysed ' + esc(DATA.analysis_day || '') +
+    (dated ? ' · ' + dated + ' dated' : '') + '</span></div>';
+
+  html += list.length ? list.map(ideaCard).join('')
+    : '<div class="empty">' + ic('bulb', 'l') + '<b>Nothing matches</b>' +
+      (all ? 'Loosen a filter — there are ' + all + ' BUY-grade names today.'
+           : 'The desk found nothing worth buying today. That is a normal outcome, not a failure.') + '</div>';
+  $('#v-ideas').innerHTML = html;
 }
 
-function suggestionDetail(p){
-  var pl = p.plan || {}, ta = p.ta || {};
-  var reasons = (pl.reasons || []).map(function(r){
-    var m = r.match(/^([+-]\d+)\s*(.*)$/);
-    var n = m ? m[1] : '', rest = m ? m[2] : r;
-    return '<div class="reason ' + (n.charAt(0) === '+' ? 'up' : n.charAt(0) === '-' ? 'down' : '') + '">' +
-      '<span class="n">' + esc(n) + '</span><span>' + esc(rest) + '</span></div>';
-  }).join('') || '<span class="delta">no scoring detail recorded</span>';
-  var fund = (p.fund_why || []).map(function(r){
-    var m = r.match(/^([+-]\d+)\s*(.*)$/);
-    var n = m ? m[1] : '', rest = m ? m[2] : r;
-    return '<div class="reason ' + (n.charAt(0) === '+' ? 'up' : n.charAt(0) === '-' ? 'down' : '') + '">' +
-      '<span class="n">' + esc(n) + '</span><span>' + esc(rest) + '</span></div>';
-  }).join('') || '<span class="delta">no fundamentals available</span>';
-  var size = sizeFor(pl.entry);
-  var links = (p.urls || []).map(function(u, i){
-    return '<a href="' + esc(u) + '" target="_blank" rel="noopener">source ' + (i + 1) + '</a>';
-  }).join(' · ');
+function ideaCard(p){
+  var pl = p.plan || {}, ta = p.ta || {}, size = sizeFor(pl.entry);
+  var eta1 = (pl.eta_days || [])[0];
+  var zone = (pl.entry_zone && pl.entry_zone.length === 2)
+    ? rs(pl.entry_zone[0]) + '–' + num(pl.entry_zone[1]) : rs(pl.entry);
+  return '<div class="card" data-card="idea-' + esc(p.symbol) + '"><div class="card-in">' +
+    '<div class="chead"><div style="min-width:0">' +
+      '<div class="sym">' + esc(p.symbol) +
+        '<span class="pill ' + (p.verdict === 'STRONG BUY' ? 'strong' : 'good') + '">' + esc(p.verdict) + '</span>' +
+        (eta1 ? '<span class="pill info">' + ic('bolt') + 'T1 ~' + eta1 + ' sessions</span>' : '') +
+      '</div><div class="co">' + esc(p.company || '') + '</div></div>' +
+      '<div class="right"><div class="ltp">' + rs(p.ltp) + '</div>' +
+      '<div class="chg ' + sgn(ta.chg_5d_pct) + '">' + pct(ta.chg_5d_pct, 1) + ' · 5d</div></div></div>' +
+    '<div class="tags">' + tagPills(p.tags) + '</div>' +
+    ladder({stop:pl.stop_loss, entry:pl.entry, targets:pl.targets, targetPct:pl.target_pct,
+            stopPct:pl.stop_loss_pct, eta:pl.eta_days, entryLabel:'entry',
+            legend:'<span>' + ic('shield', 's') + 'risking ' + pct(-Math.abs(pl.stop_loss_pct || 0), 1) +
+              ' to make ' + pct((pl.target_pct || [])[2], 1) + '</span>' +
+              '<span>' + ic('scale', 's') + 'reward:risk ' + num(pl.reward_risk_t2) + ' to T2</span>' +
+              '<span>' + ic('clock', 's') + esc(pl.timeframe || '') + ' · ' + (pl.time_stop_days || '—') +
+              '-session clock</span>'}) +
+    etaChips(pl, []) +
+    meters([{k:'Conviction', v:p.composite, c:'b'}, {k:'Chart', v:p.ta_confidence, c:'g'},
+            {k:'Business', v:p.fund_score, c:'v'}, {k:'Momentum', v:ta.momentum_score, c:'a'},
+            {k:'Source', v:p.source_confidence, c:'b'}]) +
+    facts([
+      {k:'Entry zone', v:zone},
+      {k:'Stop', v:'<span class="down">' + rs(pl.stop_loss) + '</span>', s:pct(-Math.abs(pl.stop_loss_pct || 0), 1)},
+      {k:'Targets', v:rs((pl.targets || [])[0]),
+       s:rs((pl.targets || [])[1]) + ' · ' + rs((pl.targets || [])[2])},
+      {k:'Tipster said', v:(p.src_targets || []).length ? rs(Math.max.apply(null, p.src_targets)) : '—',
+       s:p.src_stop != null ? 'their SL ₹' + num(p.src_stop) : 'no stop given'},
+      {k:'Liquidity', v:num(ta.avg_turnover_cr, 1) + 'cr', s:'20-day average'},
+      {k:'Size now', v:size.ok ? size.qty + ' sh' : '—', s:size.ok ? short(size.capital) : 'no capital free'}
+    ]) +
+    '<div class="actions">' +
+      '<button class="btn buy" data-act="book" data-sym="' + esc(p.symbol) + '"' + (size.ok ? '' : ' disabled') +
+      '>' + ic('plus') + 'Take' + (size.ok ? ' · ' + short(size.capital) : '') + '</button>' +
+      '<button class="btn ghost grow" data-act="more" data-card="idea-' + esc(p.symbol) + '">' +
+      ic('chev') + 'Why this one</button></div>' +
+    '</div><div class="more"><div><div class="more-in">' + ideaMore(p) + '</div></div></div></div>';
+}
 
-  return '<div class="dgrid">' +
-    '<div class="dcol"><h4>Why the chart</h4>' + reasons +
-      ((ta.patterns || []).length ? '<div style="margin-top:10px">' +
-        ta.patterns.map(function(x){ return '<span class="pat">' + esc(x.replace(/_/g, ' ')) + '</span>'; }).join('') +
-        '</div>' : '') + '</div>' +
-    '<div class="dcol"><h4>Tape</h4><ul>' +
-      kv('Trend', esc((ta.trend || '—').replace(/_/g, ' '))) +
-      kv('RSI 14 / ADX', num(ta.rsi, 1) + ' / ' + num(ta.adx, 1)) +
+function ideaMore(p){
+  var pl = p.plan || {}, ta = p.ta || {}, size = sizeFor(pl.entry);
+  var links = (p.urls || []).map(function(u, i){
+    return '<a href="' + esc(u) + '" target="_blank" rel="noopener">source ' + (i + 1) + '</a>'; }).join(' · ');
+  return '<div class="mgrid">' +
+    '<div class="mcol"><h5>Why the chart</h5>' + whyList(pl.reasons) +
+      ((ta.patterns || []).length ? '<div style="margin-top:9px">' + ta.patterns.map(function(x){
+        return '<span class="pill flat" style="margin:0 5px 5px 0">' + esc(String(x).replace(/_/g, ' ')) + '</span>';
+      }).join('') + '</div>' : '') + '</div>' +
+    '<div class="mcol"><h5>How fast it travels</h5>' +
+      kv('Net pace', pl.pace_pct_day ? num(pl.pace_pct_day, 2) + '%/session' : '—') +
+      kv('Daily swing', ta.amplitude_pct_day ? num(ta.amplitude_pct_day, 2) + '%' : '—') +
+      kv('Efficiency', ta.efficiency != null ? num(ta.efficiency, 2) : '—') +
+      kv('Up days (20)', ta.up_day_share != null ? Math.round(ta.up_day_share * 100) + '%' : '—') +
       kv('ATR', num(ta.atr_pct, 2) + '%') +
+      '<div class="hint">Pace is the daily swing multiplied by how much of it is directional, so ' +
+      'distance divided by pace is a number of sessions.</div></div>' +
+    '<div class="mcol"><h5>Tape</h5>' +
+      kv('Trend', esc(String(ta.trend || '—').replace(/_/g, ' '))) +
+      kv('RSI / ADX', num(ta.rsi, 1) + ' / ' + num(ta.adx, 1)) +
       kv('Volume vs 20d', num(ta.vol_ratio, 2) + '×') +
       kv('5d / 20d', pct(ta.chg_5d_pct, 1) + ' / ' + pct(ta.chg_20d_pct, 1)) +
       kv('From 52w high', pct(ta.dist_52w_high_pct, 1)) +
-      kv('Turnover', num(ta.avg_turnover_cr, 1) + ' cr') +
-      kv('Last bar', esc(ta.last_bar_date || '—')) +
-    '</ul></div>' +
-    '<div class="dcol"><h4>Business</h4>' + fund +
-      '<div style="margin-top:10px" class="delta">' + esc(p.bucket || '') + '</div></div>' +
-    '<div class="dcol"><h4>The tip itself</h4><ul>' +
-      kv('Source', esc(p.source_id || '—')) +
-      kv('Mentions', p.n_mentions || 1) +
+      kv('Last bar', esc(ta.last_bar_date || '—')) + '</div>' +
+    '<div class="mcol"><h5>The business</h5>' + whyList(p.fund_why) +
+      '<div class="hint">' + esc(p.bucket || '') + '</div></div>' +
+    '<div class="mcol"><h5>The tip</h5>' +
+      kv('Source', esc(p.source_id || '—')) + kv('Mentions', p.n_mentions || 1) +
       ((p.brokerages || []).length ? kv('Brokerage', esc(p.brokerages.join(', '))) : '') +
-      kv('They said entry', p.src_entry != null ? '₹' + num(p.src_entry) : '—') +
-      kv('They said target', (p.src_targets || []).length ? p.src_targets.map(function(x){ return '₹' + num(x); }).join(', ') : '—') +
-      kv('They said stop', p.src_stop != null ? '₹' + num(p.src_stop) : '—') +
-      kv('Our T3', (pl.targets || [])[2] != null ? '₹' + num(pl.targets[2]) : '—') +
-    '</ul>' + (links ? '<div style="margin-top:9px;font-size:12px">' + links + '</div>' : '') + '</div>' +
-    '<div class="dcol" style="grid-column:1/-1"><h4>If taken now' +
-      (size.ok ? '' : ' — no capital for it today') + '</h4>' +
-      '<div class="order"><code>' + esc(size.ok
-        ? orderLine(p.symbol, size.qty, pl.entry, pl.stop_loss, pl.targets)
-        : 'Exit a position or add capital, then this becomes: ' + orderLine(p.symbol, 1, pl.entry, pl.stop_loss, pl.targets)) +
-      '</code>' + (size.ok ? '<button class="btn sm" data-act="copy" data-text="' +
-        esc(orderLine(p.symbol, size.qty, pl.entry, pl.stop_loss, pl.targets)) + '">' + ico('copy') +
-        '<span class="t">Copy</span></button>' : '') + '</div>' +
-      '<div class="delta" style="margin-top:7px">Stepped exits: 40% at T1 with the stop to breakeven, ' +
-      '30% at T2 with the stop to T1, the rest at T3. Time stop ' + (pl.time_stop_days || '—') + ' trading days.</div>' +
-    '</div></div>';
+      kv('Their entry', p.src_entry != null ? rs(p.src_entry) : '—') +
+      kv('Their target', (p.src_targets || []).length ? p.src_targets.map(function(x){ return rs(x); }).join(', ') : '—') +
+      kv('Their stop', p.src_stop != null ? rs(p.src_stop) : '—') +
+      kv('Our T3', (pl.targets || [])[2] != null ? rs(pl.targets[2]) : '—') +
+      (links ? '<div class="hint">' + links + '</div>' : '') + '</div>' +
+    '<div class="mcol" style="grid-column:1/-1"><h5>' +
+      (size.ok ? 'The order this would place' : 'No capital for it today') + '</h5>' +
+      codeRow(size.ok ? orderLine(p.symbol, size.qty, pl.entry, pl.stop_loss, pl.targets)
+                      : orderLine(p.symbol, 1, pl.entry, pl.stop_loss, pl.targets)) +
+      '<div class="hint">Stepped exits: 40% at T1 and the stop moves to breakeven, 30% at T2 and the stop ' +
+      'moves to T1, the rest at T3. ' + (pl.time_stop_days || '—') + ' sessions without T1 and it is ' +
+      ((p.fund_score || 0) >= 65 ? 'parked in the hold bucket rather than dumped.' : 'sold — this one is momentum only.') +
+      '</div></div></div>';
 }
 
-/* ===================================================================== intents panel */
-function renderIntents(){
-  var el = document.getElementById('intents'), list = loadIntents();
-  if (!list.length){ el.innerHTML = ''; return; }
-  el.innerHTML = '<p class="subnote" style="margin-top:18px">' + ico('clock') +
-    ' Queued on this device. Run each command to commit it to the paper ledger — the entry disappears ' +
-    'from here the moment the ledger agrees.</p>' +
-    list.map(function(x){
-      var cmd = commandFor(x);
-      var head = x.kind === 'capital'
-        ? ico('wallet') + 'Add ' + inr(x.amount)
-        : ico(x.kind === 'book' ? 'plus' : 'exit') + esc(x.symbol);
-      var meta = x.kind === 'book' ? x.qty + ' sh · ' + inr(x.capital) + (x.composite != null ? ' · composite ' + x.composite : '')
-               : x.kind === 'close' ? (x.status === 'pending' ? 'cancel before fill · ' + inr(x.returns) + ' returned'
-                                                              : 'exit at last close · about ' + inr(x.returns) + ' back')
-               : 'base ' + inr(x.capitalWas) + ' → ' + inr(x.capitalWas + x.amount);
-      return '<div class="intent"><div class="ihead"><div class="isym">' + head + '</div>' +
-        '<div class="imeta">' + esc(meta) + '</div></div>' +
-        (x.note ? '<div class="why">' + esc(x.note) + '</div>' : '') +
-        '<div class="order"><code>' + esc(cmd) + '</code>' +
-        '<button class="btn sm" data-act="copy" data-text="' + esc(cmd) + '">' + ico('copy') + '<span class="t">Copy</span></button>' +
-        '<button class="btn sm quiet" data-act="drop" data-sym="' + esc(x.symbol || '') + '" data-kind="' + x.kind + '">' +
-        ico('trash') + 'Drop</button></div></div>';
-    }).join('');
+/* ==================================================================== journal */
+function renderJournal(){
+  var s = DATA.stats || {}, closed = DATA.closed || [], flows = DATA.cash_flows || [];
+  var html = '<div class="strip">' +
+    stat('chart', 'Time-weighted', pct(s.return_pct), 'chain-linked across every capital flow') +
+    stat('scale', 'Win rate', s.win_rate == null ? '—' : s.win_rate + '%',
+         s.closed ? s.closed + ' closed trades' : 'nothing closed yet') +
+    stat('bolt', 'Average win', pct(s.avg_win_pct, 1), 'average loss ' + pct(s.avg_loss_pct, 1)) +
+    stat('wallet', 'Net flows', inr(s.net_flows_inr),
+         (s.n_flows || 0) + ' movement' + (s.n_flows === 1 ? '' : 's')) + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('chart') + 'Equity</h3><span class="note">' +
+    (DATA.equity_curve || []).length + ' sessions</span></div>' +
+    '<div class="chartbox"><canvas id="eqChart"></canvas></div></div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('book') + 'Closed trades</h3></div>' +
+    (closed.length
+      ? '<div class="tw"><table><thead><tr><th>Instrument</th><th>Outcome</th><th class="r">Entry</th>' +
+        '<th class="r">P&amp;L</th><th class="r">Return</th><th class="r">Sessions</th><th>Source</th>' +
+        '</tr></thead><tbody>' + closed.slice().reverse().map(function(c){
+          return '<tr><td><b>' + esc(c.symbol) + '</b><div class="co">' + esc(c.company || '') + '</div></td>' +
+            '<td><span class="pill ' + ((c.pnl_inr || 0) > 0 ? 'good' : 'bad') + '">' +
+            esc(String(c.outcome || '').replace(/_/g, ' ')) + '</span></td>' +
+            '<td class="r n">' + rs(c.entry) + '</td>' +
+            '<td class="r n ' + sgn(c.pnl_inr) + '">' + inr(c.pnl_inr) + '</td>' +
+            '<td class="r n ' + sgn(c.pnl_pct) + '">' + pct(c.pnl_pct) + '</td>' +
+            '<td class="r n">' + (c.days_held != null ? c.days_held : '—') + '</td>' +
+            '<td class="mut">' + esc(c.source_id || '') + '</td></tr>';
+        }).join('') + '</tbody></table></div>'
+      : '<div class="empty">' + ic('book', 'l') + '<b>No closed trade yet</b>' +
+        'The track record starts with the first exit.</div>') + '</div>';
+
+  if (flows.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('wallet') + 'Capital flows</h3></div>' +
+      '<div class="tw"><table><thead><tr><th>Date</th><th>Movement</th><th class="r">Amount</th>' +
+      '<th class="r">Base after</th><th class="r">Cash after</th></tr></thead><tbody>' +
+      flows.slice().reverse().map(function(f){
+        return '<tr><td class="n">' + esc(f.date) + '</td><td>' + esc(f.note || '') + '</td>' +
+          '<td class="r n ' + sgn(f.amount) + '">' + inr(f.amount) + '</td>' +
+          '<td class="r n">' + inr(f.capital_after) + '</td>' +
+          '<td class="r n">' + inr(f.cash_after) + '</td></tr>';
+      }).join('') + '</tbody></table></div></div>';
+  }
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('note') + 'Lessons</h3>' +
+    '<span class="note">appended by every evening run</span></div>' +
+    '<div class="card"><div class="card-in prose">' + mdToHtml(DATA.lessons_tail || '') + '</div></div></div>';
+  $('#v-journal').innerHTML = html;
+  try { drawChart(); } catch (e) {
+    var cv = $('#eqChart');
+    if (cv) cv.parentElement.innerHTML = '<div class="empty">' + ic('chart', 'l') +
+      '<b>Chart unavailable</b>' + esc(e.message) + '</div>';
+  }
 }
 
-/* ===================================================================== other tables */
-function renderFlows(){
-  var flows = DATA.cash_flows || [], sec = document.getElementById('s-flows');
-  if (!flows.length){ sec.hidden = true; return; }
-  sec.hidden = false;
-  document.getElementById('flowsTable').innerHTML = '<table><thead><tr>' +
-    '<th>Date</th><th>Movement</th><th class="r">Amount</th><th class="r">Base after</th><th class="r">Cash after</th>' +
-    '</tr></thead><tbody>' + flows.slice().reverse().map(function(f){
-      return '<tr class="row"><td>' + esc(f.date) + '</td><td>' + esc(f.note || '') + '</td>' +
-        '<td class="r"><span class="price ' + signClass(f.amount) + '">' + inr(f.amount) + '</span></td>' +
-        '<td class="r"><span class="price">' + inr(f.capital_after) + '</span></td>' +
-        '<td class="r"><span class="price">' + inr(f.cash_after) + '</span></td></tr>';
-    }).join('') + '</tbody></table>';
-}
-
-function renderClosed(){
-  var closed = DATA.closed || [], el = document.getElementById('closedTable');
-  document.getElementById('closedCount').textContent = closed.length ? closed.length + ' recorded' : '';
-  if (!closed.length){
-    el.innerHTML = '<div class="empty">' + ico('ledger') +
-      'No closed trade yet. This is where the track record accumulates.</div>';
+function drawChart(){
+  var cv = $('#eqChart'), curve = DATA.equity_curve || [];
+  if (!cv) return;
+  if (!curve.length || typeof Chart === 'undefined'){
+    cv.parentElement.innerHTML = '<div class="empty">' + ic('chart', 'l') + '<b>' +
+      (curve.length ? 'Chart library unavailable' : 'No curve yet') + '</b>' +
+      (curve.length ? 'cdnjs did not load.' : 'It starts after the first evening run.') + '</div>';
     return;
   }
-  el.innerHTML = '<table><thead><tr><th>Instrument</th><th>Outcome</th><th class="r">Entry</th>' +
-    '<th class="r">P&amp;L</th><th class="r">Return</th><th class="r">Days</th><th>Horizon</th></tr></thead><tbody>' +
-    closed.slice().reverse().map(function(c){
-      var win = (c.pnl_inr || 0) > 0;
-      return '<tr class="row">' + instrumentCell(c.symbol, c.company, c.source_id) +
-        '<td><span class="tag ' + (win ? 'buy' : 'avoid') + '">' + esc((c.outcome || '').replace(/_/g, ' ')) + '</span></td>' +
-        '<td class="r"><span class="price">₹' + num(c.entry) + '</span></td>' +
-        '<td class="r"><span class="price ' + signClass(c.pnl_inr) + '">' + inr(c.pnl_inr) + '</span></td>' +
-        '<td class="r"><span class="price ' + signClass(c.pnl_pct) + '">' + pct(c.pnl_pct) + '</span></td>' +
-        '<td class="r"><span class="price">' + (c.days_held != null ? c.days_held : '—') + '</span></td>' +
-        '<td>' + esc(c.timeframe || '') + '</td></tr>';
-    }).join('') + '</tbody></table>';
+  var css = getComputedStyle(document.documentElement);
+  var ink3 = css.getPropertyValue('--ink-3').trim(), line = css.getPropertyValue('--line').trim();
+  var blue = css.getPropertyValue('--blue').trim(), base = (DATA.stats || {}).capital || 0;
+  var g = cv.getContext('2d').createLinearGradient(0, 0, 0, 250);
+  g.addColorStop(0, css.getPropertyValue('--blue-dim').trim());
+  g.addColorStop(1, 'rgba(0,0,0,0)');
+  new Chart(cv.getContext('2d'), {
+    type:'line',
+    data:{labels:curve.map(function(p){ return p.date; }), datasets:[
+      {label:'Equity', data:curve.map(function(p){ return p.equity; }), borderColor:blue, backgroundColor:g,
+       borderWidth:2, fill:true, tension:.24, pointRadius:curve.length > 40 ? 0 : 3, pointBackgroundColor:blue},
+      {label:'Capital base', data:curve.map(function(){ return base; }), borderColor:ink3, borderWidth:1,
+       borderDash:[4,4], pointRadius:0, fill:false}]},
+    options:{
+      responsive:true, maintainAspectRatio:false, interaction:{mode:'index', intersect:false},
+      plugins:{
+        legend:{labels:{color:ink3, boxWidth:10, boxHeight:2, font:{family:'Manrope', size:11}}},
+        tooltip:{backgroundColor:css.getPropertyValue('--elev-3').trim(),
+                 titleColor:css.getPropertyValue('--ink').trim(),
+                 bodyColor:css.getPropertyValue('--ink-2').trim(), borderColor:line, borderWidth:1,
+                 padding:10, displayColors:false, bodyFont:{family:'JetBrains Mono', size:11.5},
+                 callbacks:{label:function(c){ return inr(c.parsed.y); }}}},
+      scales:{
+        x:{ticks:{color:ink3, font:{family:'JetBrains Mono', size:10}, maxRotation:0, autoSkipPadding:20},
+           grid:{color:line, drawTicks:false}, border:{color:line}},
+        y:{ticks:{color:ink3, font:{family:'JetBrains Mono', size:10}, callback:function(v){ return short(v); }},
+           grid:{color:line, drawTicks:false}, border:{display:false}}}
+    }
+  });
 }
 
+/* ==================================================================== sources */
 function renderSources(){
   var srcs = (DATA.sources || []).slice().sort(function(a, b){ return (b.score || 0) - (a.score || 0); });
-  var el = document.getElementById('sourceTable');
-  if (!srcs.length){ el.innerHTML = '<div class="empty">' + ico('source') + 'No source tracked yet.</div>'; return; }
-  el.innerHTML = '<table><thead><tr><th>Source</th><th>Confidence</th><th class="r">Score</th>' +
-    '<th class="r">Tips</th><th class="r">Resolved</th><th class="r">T1 hit</th><th class="r">Stopped</th>' +
-    '<th class="r">Expectancy</th><th class="r">Days to T1</th></tr></thead><tbody>' +
-    srcs.map(function(s){
-      var c = s.confidence != null ? s.confidence : 50;
-      var cls = c > 55 ? 'hot' : c < 45 ? 'cold' : '';
-      return '<tr class="row"' + (s.enabled === false ? ' style="opacity:.45"' : '') + '>' +
-        '<td><div class="sym" style="font-size:13px">' + esc(s.source_id) + '</div>' +
-        (s.enabled === false ? '<div class="delta">auto-disabled</div>' : '') + '</td>' +
-        '<td><span class="price">' + c + '</span><div class="meter"><i class="' + cls +
-          '" style="width:' + c + '%"></i></div></td>' +
-        '<td class="r"><span class="price">' + (s.score != null ? (s.score > 0 ? '+' : '') + num(s.score, 1) : '—') + '</span></td>' +
-        '<td class="r"><span class="price">' + (s.n_tips != null ? s.n_tips : '—') + '</span></td>' +
-        '<td class="r"><span class="price">' + (s.n_resolved != null ? s.n_resolved : '—') + '</span></td>' +
-        '<td class="r"><span class="price">' + (s.t1_hit_rate != null ? s.t1_hit_rate + '%' : '—') + '</span></td>' +
-        '<td class="r"><span class="price">' + (s.stop_rate != null ? s.stop_rate + '%' : '—') + '</span></td>' +
-        '<td class="r"><span class="price ' + signClass(s.expectancy_pct) + '">' +
-          (s.expectancy_pct != null ? pct(s.expectancy_pct) : '—') + '</span></td>' +
-        '<td class="r"><span class="price">' + (s.avg_days_to_t1 != null ? num(s.avg_days_to_t1, 1) : '—') + '</span></td>' +
-      '</tr>';
-    }).join('') + '</tbody></table>';
+  var html = '<div class="banner">' + ic('rss') + '<div>Every source starts at <b>50</b> and moves only on ' +
+    'realised outcomes: +10 for T1, +5 each for T2 and T3, −15 for a stop, with older outcomes decaying so a ' +
+    'source can redeem itself. Eight resolved tips below −40 and it switches off automatically. A tip you paste ' +
+    'in yourself is graded exactly the same way.</div></div>';
+  html += srcs.length
+    ? '<div class="tw"><table><thead><tr><th>Source</th><th>Confidence</th><th class="r">Score</th>' +
+      '<th class="r">Tips</th><th class="r">Resolved</th><th class="r">T1 hit</th><th class="r">Stopped</th>' +
+      '<th class="r">Expectancy</th><th class="r">Sessions to T1</th></tr></thead><tbody>' +
+      srcs.map(function(s){
+        var c = s.confidence != null ? s.confidence : 50;
+        return '<tr' + (s.enabled === false ? ' style="opacity:.45"' : '') + '>' +
+          '<td><b>' + esc(s.source_id) + '</b>' +
+          (s.enabled === false ? '<div class="co">auto-disabled</div>' : '') + '</td>' +
+          '<td style="min-width:118px"><div class="meter"><div class="top">' +
+            '<span class="val n">' + c + '</span></div><div class="bar"><i class="' +
+            (c > 55 ? 'g' : c < 45 ? 'a' : 'b') + '" style="width:' + c + '%"></i></div></div></td>' +
+          '<td class="r n">' + (s.score != null ? (s.score > 0 ? '+' : '') + num(s.score, 1) : '—') + '</td>' +
+          '<td class="r n">' + (s.n_tips != null ? s.n_tips : '—') + '</td>' +
+          '<td class="r n">' + (s.n_resolved != null ? s.n_resolved : '—') + '</td>' +
+          '<td class="r n">' + (s.t1_hit_rate != null ? s.t1_hit_rate + '%' : '—') + '</td>' +
+          '<td class="r n">' + (s.stop_rate != null ? s.stop_rate + '%' : '—') + '</td>' +
+          '<td class="r n ' + sgn(s.expectancy_pct) + '">' +
+            (s.expectancy_pct != null ? pct(s.expectancy_pct) : '—') + '</td>' +
+          '<td class="r n">' + (s.avg_days_to_t1 != null ? num(s.avg_days_to_t1, 1) : '—') + '</td></tr>';
+      }).join('') + '</tbody></table></div>'
+    : '<div class="empty">' + ic('rss', 'l') + '<b>No source tracked yet</b></div>';
+  $('#v-sources').innerHTML = html;
 }
 
+/* ==================================================================== console */
+function renderConsole(){
+  var log = DATA.actions_log || [], on = GH.ok, c = capacity();
+  var html = '';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('link') + 'Connection</h3>' +
+    '<span class="note">' + esc(REPO.owner + '/' + REPO.repo) + '</span></div>' +
+    '<div class="card"><div class="card-in">' +
+    (on
+      ? '<div class="chead"><div class="sym">' + ic('check') + 'Connected' +
+        '<span class="pill good">write access</span></div><div class="right">' +
+        '<button class="btn sm ghost" data-act="disconnect">' + ic('x') + 'Disconnect</button></div></div>' +
+        '<div class="hint">Every button on this page now runs the real command in GitHub Actions and commits ' +
+        'the result. The token never leaves this browser except to api.github.com.</div>'
+      : '<div class="sym">' + ic('link') + 'Not connected<span class="pill flat">read-only</span></div>' +
+        '<div class="hint">This page is static, so it asks GitHub to run the command for you. Paste a ' +
+        '<b>fine-grained personal access token</b> scoped to <code>' + esc(REPO.owner + '/' + REPO.repo) +
+        '</code> with <b>Contents: read and write</b> and <b>Actions: read and write</b>. It is stored in this ' +
+        'browser only and sent only to api.github.com — but anyone using this browser profile can use it, so ' +
+        'scope it to this one repository and give it the shortest expiry you can live with.</div>' +
+        '<div class="grid2" style="margin-top:13px">' +
+        '<div><label class="lbl">Token</label><input type="password" id="ghToken" placeholder="github_pat_…" ' +
+        'autocomplete="off" spellcheck="false"></div>' +
+        '<div style="align-self:end"><button class="btn pri block" data-act="connect">' + ic('link') +
+        'Connect</button></div></div>' +
+        '<div class="hint"><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" ' +
+        'rel="noopener">Create one on GitHub</a> · without it the buttons still work, they just hand you the ' +
+        'command to paste.</div>') +
+    '</div></div></div>';
+
+  var acts = [
+    {c:'morning', i:'play', t:'Run the morning pipeline',
+     d:'Gather every source, extract, analyse, and rebuild the pick list — without the analyst review pass.'},
+    {c:'eod', i:'clock', t:'Run the evening mark-to-market',
+     d:'Fill pendings at the open, walk today\'s bar for stops and targets, apply time stops, update source scores.'},
+    {c:'analyze', i:'gauge', t:'Re-analyse today\'s tips',
+     d:'Recompute every plan, pace and target date from the latest bars. Cheap and safe to repeat.'},
+    {c:'pick', i:'bulb', t:'Rebuild the pick list', d:'A dry run — writes the report, books nothing.'},
+    {c:'dashboard-data', i:'chart', t:'Refresh this page\'s data', d:'Regenerate data.json from the current ledger.'}
+  ];
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('play') + 'Run the pipeline</h3>' +
+    '<span class="note">each one commits its result</span></div>' +
+    acts.map(function(a){
+      return '<div class="card"><div class="card-in"><div class="chead"><div style="min-width:0">' +
+        '<div class="sym">' + ic(a.i) + esc(a.t) + '</div>' +
+        '<div class="hint" style="margin-top:5px">' + esc(a.d) + '</div></div><div class="right">' +
+        '<button class="btn ' + (a.c === 'eod' || a.c === 'morning' ? 'pri' : '') + '" data-act="cmd" ' +
+        'data-cmd="' + a.c + '"' + (on ? '' : ' disabled') + '>' + ic('play') + 'Run</button>' +
+        '</div></div></div></div>';
+    }).join('') + (on ? '' : '<div class="hint">Connect above to enable these.</div>') + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('plus') + 'Log a tip you were sent</h3>' +
+    '<span class="note">paste it and the form fills itself</span></div><div class="card"><div class="card-in">' +
+    '<label class="lbl">The message</label><textarea id="tipText" placeholder="Paste the WhatsApp or Telegram ' +
+    'message — e.g. Buy TATASTEEL above 180, target 195 / 210, SL 168, 1 month view"></textarea>' +
+    '<div class="grid3" style="margin-top:12px">' +
+    '<div><label class="lbl">Symbol</label><input type="text" id="tipSym" placeholder="TATASTEEL"></div>' +
+    '<div><label class="lbl">Targets</label><input type="text" id="tipTgt" placeholder="195, 210"></div>' +
+    '<div><label class="lbl">Stop</label><input type="text" id="tipStop" placeholder="168"></div>' +
+    '<div><label class="lbl">Their entry</label><input type="text" id="tipEntry" placeholder="optional"></div>' +
+    '<div><label class="lbl">Horizon</label><select id="tipTf"><option value="weekly">weekly</option>' +
+    '<option value="monthly">monthly</option><option value="long">long</option>' +
+    '<option value="intraday">intraday</option></select></div>' +
+    '<div><label class="lbl">Who sent it</label><input type="text" id="tipSrc" value="manual:mohan"></div></div>' +
+    '<div class="actions"><button class="btn pri" data-act="add-tip"' + (on ? '' : ' disabled') + '>' +
+    ic('plus') + 'Log the tip</button><button class="btn ghost" data-act="parse-tip">' + ic('bolt') +
+    'Re-read the message</button></div>' +
+    '<div class="hint">It joins today\'s tip list and is analysed like any other. The source starts at ' +
+    'confidence 0 and earns its weight from outcomes — a tip from you gets no head start. Run ' +
+    '<b>Re-analyse</b> afterwards to see it scored.</div></div></div></div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('wallet') + 'Capital</h3>' +
+    '<span class="note">base ' + inr(c.base) + '</span></div><div class="card"><div class="card-in">' +
+    '<div class="grid2"><div><label class="lbl">Amount</label>' +
+    '<input type="text" id="capAmt" placeholder="50000"></div>' +
+    '<div><label class="lbl">Note</label><input type="text" id="capNote" placeholder="conviction top-up"></div></div>' +
+    '<div class="actions"><button class="btn buy" data-act="cap-add"' + (on ? '' : ' disabled') + '>' +
+    ic('plus') + 'Deposit</button><button class="btn sell" data-act="cap-out"' + (on ? '' : ' disabled') + '>' +
+    ic('exit') + 'Withdraw</button></div>' +
+    '<div class="hint">The base moves with it, so the ' + c.maxPct + '% per-stock ceiling (' +
+    inr(c.maxAlloc) + ') and the ' + c.minPct + '% minimum (' + inr(c.minAlloc) + ') move too. Returns stay ' +
+    'chain-linked across the date, so a top-up cannot read as a gain.</div></div></div></div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('note') + 'Record a lesson</h3>' +
+    '<span class="note">the morning run reads the tail of this file first</span></div>' +
+    '<div class="card"><div class="card-in"><textarea id="lessonText" placeholder="What you learned, dated and ' +
+    'concrete. Rules only change with evidence from ten closed positions — this is where the evidence ' +
+    'accumulates."></textarea><div class="actions"><button class="btn pri" data-act="lesson"' +
+    (on ? '' : ' disabled') + '>' + ic('note') + 'Append to the journal</button></div></div></div></div>';
+
+  if (RUNS.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('term') + 'Live runs</h3>' +
+      '<span class="note">from GitHub Actions</span></div><div class="card"><div class="card-in log">' +
+      RUNS.slice(0, 6).map(function(r){
+        var tone = r.conclusion === 'success' ? 'good' : r.conclusion === 'failure' ? 'bad'
+                 : (r.status === 'in_progress' || r.status === 'queued') ? 'info' : 'flat';
+        return '<div class="row"><span class="when">' + esc(ago(r.created_at)) + '</span><span class="what">' +
+          '<b>' + esc(String(r.display_title || r.name || 'desk').slice(0, 68)) + '</b> ' +
+          '<span class="pill ' + tone + '">' + esc(r.conclusion || r.status) + '</span> ' +
+          '<a href="' + esc(r.html_url) + '" target="_blank" rel="noopener">open</a></span></div>';
+      }).join('') + '</div></div></div>';
+  }
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') + 'What the desk did</h3>' +
+    '<span class="note">committed with every action, so it shows without a token</span></div>' +
+    (log.length
+      ? '<div class="card"><div class="card-in log">' + log.slice().reverse().map(function(r){
+          return '<div class="row"><span class="when">' + esc(r.at || '') + '</span><span class="what">' +
+            '<b>' + esc(r.command || '') + (r.symbol ? ' ' + esc(r.symbol) : '') + '</b>' +
+            (r.by ? ' <span class="mut">by ' + esc(r.by) + '</span>' : '') +
+            (r.run_url ? ' <a href="' + esc(r.run_url) + '" target="_blank" rel="noopener">run</a>' : '') +
+            (r.output ? '<pre>' + esc(r.output) + '</pre>' : '') + '</span></div>';
+        }).join('') + '</div></div>'
+      : '<div class="empty">' + ic('flow', 'l') + '<b>Nothing run from here yet</b>' +
+        'Anything you run from this page is logged into the repo, so it stays visible afterwards.</div>') +
+    '</div>';
+  $('#v-console').innerHTML = html;
+}
+
+/* Best-effort read of a pasted tip. It fills a form the analyst then checks — it never decides. */
+function parseTip(text){
+  var raw = String(text || '');
+  // 11,750 is one number and ₹ is not a digit; do that before anything else looks for numbers
+  var t = ' ' + raw.replace(/(\d),(?=\d\d\d\b)/g, '$1').replace(/[₹]/g, ' ').replace(/\s+/g, ' ') + ' ';
+  var out = {};
+  var first = function(re){
+    var m = t.match(re);
+    if (!m) return null;
+    var n = (m[1].match(/\d+(?:\.\d+)?/) || [])[0];
+    return n == null ? null : Number(n);
+  };
+  // a target keyword, then the run of numbers and separators that follows it — stopping at the
+  // first token that is neither, so "977 / 1013 / 1080 and beyond" yields three prices, not none
+  var tm = t.match(/(?:targets?|tgt|tp|target price)\s*(?:of|at|:|-|is|are)?\s*((?:\d[\d.]*\s*(?:\/|,|-|–|&|and|then|\+)?\s*){1,3})/i);
+  if (tm){
+    var tg = (tm[1].match(/\d+(?:\.\d+)?/g) || []).map(Number).slice(0, 3);
+    if (tg.length) out.target = tg.join(', ');
+  }
+  var sl = first(/(?:sl|stop\s*loss|stoploss|stop)\s*(?:of|at|:|-|is)?\s*([\d.]+)/i);
+  if (sl != null) out.stop = sl;
+  var en = first(/(?:cmp|entry|accumulate)\b[^\d]{0,20}?([\d.]+)/i);   // "accumulate INFY at 1560"
+  if (en == null) en = first(/\b(?:above|around|near|abv)\s*(?:rs\.?)?\s*([\d.]+)/i);
+  if (en == null) en = first(/\bbuy\b[^\d]{0,24}?([\d.]+)/i);
+  if (en != null) out.entry = en;
+
+  var skip = {BUY:1, SELL:1, HOLD:1, SL:1, TGT:1, TP:1, CMP:1, TARGET:1, TARGETS:1, NSE:1, BSE:1,
+              STOP:1, STOPLOSS:1, LOSS:1, INR:1, RS:1, GTT:1, CNC:1, MIS:1, VIEW:1, PRICE:1,
+              ACCUMULATE:1, ABOVE:1, AROUND:1, NEAR:1, AND:1, THEN:1, BOOK:1, PROFIT:1};
+  var words = raw.match(/\b[A-Z][A-Z0-9&-]{1,14}\b/g) || [];
+  for (var i = 0; i < words.length; i++){
+    if (!skip[words[i]] && !/^\d+$/.test(words[i])){ out.symbol = words[i]; break; }
+  }
+  if (/\b(intraday|today only|scalp|btst)\b/i.test(t)) out.timeframe = 'intraday';
+  else if (/\b(month|monthly|swing|4-6 week|6 week|quarter)\b/i.test(t)) out.timeframe = 'monthly';
+  else if (/\b(long term|longterm|1 year|one year|investment|multi.?year)\b/i.test(t)) out.timeframe = 'long';
+  return out;
+}
+function fillTipForm(){
+  var p = parseTip($('#tipText') ? $('#tipText').value : '');
+  var set = function(id, v){ var n = $(id); if (n && v != null && v !== '') n.value = v; };
+  set('#tipSym', p.symbol); set('#tipTgt', p.target); set('#tipStop', p.stop); set('#tipEntry', p.entry);
+  if (p.timeframe && $('#tipTf')) $('#tipTf').value = p.timeframe;
+  var found = Object.keys(p).length;
+  toast(found ? 'Read ' + found + ' field' + (found === 1 ? '' : 's') + ' — check them before logging'
+              : 'Could not read anything from that — fill it in by hand', found ? 'ok' : 'err');
+}
+
+/* ==================================================================== markdown */
 function mdToHtml(md){
-  if (!md || !md.trim()) return '<p>Nothing recorded yet. The evening run writes one honest sentence a day here.</p>';
+  if (!md || !md.trim()) return '<p>Nothing recorded yet.</p>';
   var lines = md.replace(/\r\n/g, '\n').split('\n'), out = [], i = 0;
   function inline(t){
     return esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>')
@@ -922,11 +1328,11 @@ function mdToHtml(md){
       var rows = [];
       while (i < lines.length && /^\|.*\|\s*$/.test(lines[i])){ rows.push(lines[i]); i++; }
       if (rows.length && /^\|?[\s:|-]+\|?$/.test(rows[1] || '')) rows.splice(1, 1);
-      out.push('<table><tbody>' + rows.map(function(r, ri){
+      out.push('<div class="tw"><table><tbody>' + rows.map(function(r, ri){
         var cells = r.replace(/^\||\|$/g, '').split('|').map(function(c){ return c.trim(); });
         var tag = ri === 0 ? 'th' : 'td';
         return '<tr>' + cells.map(function(c){ return '<' + tag + '>' + inline(c) + '</' + tag + '>'; }).join('') + '</tr>';
-      }).join('') + '</tbody></table>');
+      }).join('') + '</tbody></table></div>');
       continue;
     }
     if (/^[-*]\s+/.test(line)){
@@ -945,196 +1351,254 @@ function mdToHtml(md){
   return out.join('\n');
 }
 
-function renderChart(){
-  var canvas = document.getElementById('equityChart');
-  var curve = DATA.equity_curve || [], cap = (DATA.stats && DATA.stats.capital) || 0;
-  document.getElementById('equityCount').textContent =
-    curve.length ? curve.length + (curve.length === 1 ? ' session' : ' sessions') : '';
-  if (!curve.length || typeof Chart === 'undefined'){
-    canvas.parentElement.innerHTML = '<div class="empty">' + ico('chart') +
-      (curve.length ? 'Chart library unavailable.' : 'The curve starts after the first evening run.') + '</div>';
+/* ==================================================================== actions */
+function takeIdea(sym, btn){
+  var s = ideaList().filter(function(p){ return p.symbol === sym; })[0];
+  if (!s){ toast(sym + ' is no longer on the list — reload', 'err'); return; }
+  var pl = s.plan || {}, size = sizeFor(pl.entry), c = size.cap;
+  if (c.slots <= 0){ toast('No slots free — exit a position or add capital', 'err'); return; }
+  if (!size.ok){
+    toast('Only ' + inr(c.cash) + ' deployable against a ' + inr(c.minAlloc) + ' minimum position', 'err');
     return;
   }
-  var css = getComputedStyle(document.documentElement);
-  var ink3 = css.getPropertyValue('--ink-3').trim(), hair = css.getPropertyValue('--hair').trim();
-  var accent = css.getPropertyValue('--accent').trim();
-  new Chart(canvas.getContext('2d'), {
-    type: 'line',
-    data: {
-      labels: curve.map(function(p){ return p.date; }),
-      datasets: [
-        {label:'Equity', data: curve.map(function(p){ return p.equity; }), borderColor: accent,
-         backgroundColor: css.getPropertyValue('--accent-wash').trim(), borderWidth: 1.6, fill: true,
-         tension: .18, pointRadius: curve.length > 40 ? 0 : 2.5, pointBackgroundColor: accent},
-        {label:'Capital base', data: curve.map(function(){ return cap; }), borderColor: ink3,
-         borderWidth: 1, borderDash: [4, 4], pointRadius: 0, fill: false}
-      ]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      interaction: {mode:'index', intersect:false},
-      plugins: {
-        legend: {labels:{color: ink3, boxWidth: 10, boxHeight: 2, font:{family:'IBM Plex Sans', size: 11}}},
-        tooltip: {backgroundColor: css.getPropertyValue('--ink').trim(),
-                  titleColor: css.getPropertyValue('--paper').trim(),
-                  bodyColor: css.getPropertyValue('--paper').trim(), displayColors: false, padding: 9,
-                  bodyFont:{family:'IBM Plex Mono', size: 11.5}, titleFont:{family:'IBM Plex Sans', size: 11},
-                  callbacks:{label: function(c){ return inr(c.parsed.y); }}}
-      },
-      scales: {
-        x: {ticks:{color: ink3, font:{family:'IBM Plex Mono', size: 10.5}, maxRotation: 0, autoSkipPadding: 22},
-            grid:{color: hair, drawTicks: false}, border:{color: hair}},
-        y: {ticks:{color: ink3, font:{family:'IBM Plex Mono', size: 10.5},
-                   callback: function(v){ return compact(v); }},
-            grid:{color: hair, drawTicks: false}, border:{display: false}}
-      }
+  var eta = (pl.eta_days || [])[0];
+  if (!window.confirm('Take ' + sym + '?\n\n' + orderLine(sym, size.qty, pl.entry, pl.stop_loss, pl.targets) +
+      '\n\n' + inr(size.capital) + ' of ' + inr(c.cash) + ' deployable' +
+      (eta ? '\nT1 about ' + eta + ' sessions out at its current pace' : '') +
+      '\nReward:risk ' + num(pl.reward_risk_t2) + ' to T2 · conviction ' + s.composite +
+      '\n\nPaper trading only.')) return;
+  run('book', {symbol:sym, amount:Math.round(size.capital)}, {
+    label:'Take ' + sym, btn:btn,
+    queue:function(){
+      var list = intents();
+      list.push({kind:'book', symbol:sym, company:s.company, source:s.source_id, entry:pl.entry,
+                 stop:pl.stop_loss, targets:pl.targets || [], eta:pl.eta_days, timeframe:pl.timeframe,
+                 qty:size.qty, capital:size.capital, composite:s.composite,
+                 ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
+      setIntents(list);
     }
   });
 }
 
-/* ===================================================================== actions */
-function takeSuggestion(sym){
-  var s = suggestionList().filter(function(p){ return p.symbol === sym; })[0];
-  if (!s){ window.alert(sym + ' is no longer outstanding — reload the page.'); return; }
-  var pl = s.plan || {}, size = sizeFor(pl.entry), c = size.cap;
-  if (c.slots <= 0){
-    window.alert('No room: ' + c.live + ' of ' + c.maxOpen + ' position slots are taken.\n\n' +
-      'Exit a position from the book, or add capital.');
-    return;
-  }
-  if (!size.ok){
-    window.alert('Not enough deployable cash: ' + inr(c.cash) + ' free against a ' + inr(c.minAlloc) +
-      ' minimum position (' + c.minPct + '% of the ₹' + inr(c.capital).slice(1) + ' base).\n\n' +
-      'Exit a position, or add capital.');
-    return;
-  }
-  if (!window.confirm('Take ' + sym + ' into the book?\n\n' +
-      orderLine(sym, size.qty, pl.entry, pl.stop_loss, pl.targets) + '\n\n' +
-      inr(size.capital) + ' of ' + inr(c.cash) + ' deployable · ' + (pl.timeframe || '?') +
-      ' · R:R ' + num(pl.reward_risk_t2) + ' · composite ' + s.composite + '\n\nPaper trading only.')) return;
-  var list = loadIntents();
-  list.push({kind:'book', symbol:sym, company:s.company, source:s.source_id, entry:pl.entry,
-             stop:pl.stop_loss, targets:pl.targets || [], timeframe:pl.timeframe, qty:size.qty,
-             capital:size.capital, composite:s.composite, ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
-  saveIntents(list);
-  renderDesk();
-}
-
-function closePosition(sym){
-  var p = activeRows().filter(function(x){ return x.symbol === sym; })[0];
+function exitPosition(sym, btn){
+  var p = positions().filter(function(x){ return x.symbol === sym; })[0];
   if (!p) return;
-  var pending = p.status === 'pending';
-  var qty = p.qty_open != null ? p.qty_open : p.qty;
+  var pending = p.status === 'pending', qty = p.qty_open != null ? p.qty_open : p.qty;
   var back = pending ? p.capital_inr
-                     : Math.round((p.ltp != null ? p.ltp : (p.entry || p.entry_plan)) * qty * 100) / 100;
+    : Math.round((p.ltp != null ? p.ltp : (p.entry || p.entry_plan)) * qty * 100) / 100;
   var msg = pending
-    ? 'Cancel ' + sym + ' before it fills?\n\n' + inr(p.capital_inr) +
-      ' returns to cash and the slot frees up. Nothing was ever bought, so no outcome is recorded ' +
-      'against the source.'
-    : 'Exit ' + sym + ' now?\n\n' + qty + ' shares at the last close (₹' + num(p.ltp) + ') ≈ ' + inr(back) +
-      ' back to cash, P&L ' + pct(p.unrealised_pct) + '.\n\nThis is your call, not the plan’s: it is ' +
-      'recorded as a manual exit, so the return counts towards the source’s expectancy but not its score.';
+    ? 'Cancel ' + sym + ' before it fills?\n\n' + inr(p.capital_inr) + ' returns to cash and the slot frees ' +
+      'up. Nothing was bought, so no outcome is recorded against the source.'
+    : 'Exit ' + sym + ' now?\n\n' + qty + ' shares at the last close (' + rs(p.ltp) + ') ≈ ' + inr(back) +
+      ' back to cash, P&L ' + pct(p.unrealised_pct) + '.\n\nRecorded as a manual exit: the return counts ' +
+      'towards the source’s expectancy but not its score, because this is your call, not the tip’s.';
   if (!window.confirm(msg)) return;
-  var note = window.prompt('Why? (goes into the position notes)', 'freeing capital for a stronger idea');
+  var note = window.prompt('Why? (kept in the position notes)', 'freeing capital for a stronger idea');
   if (note === null) return;
-  var list = loadIntents();
-  list.push({kind:'close', symbol:sym, status:p.status, returns:back, note:note,
-             ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
-  saveIntents(list);
-  renderDesk();
+  run('close', {symbol:sym, note:note}, {
+    label:(pending ? 'Cancel ' : 'Exit ') + sym, btn:btn,
+    queue:function(){
+      var list = intents();
+      list.push({kind:'close', symbol:sym, status:p.status, returns:back, note:note,
+                 ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
+      setIntents(list);
+    }
+  });
 }
 
-function addCapital(){
+function moveCapital(raw, note, btn, out){
   var c = capacity();
-  var raw = window.prompt('Add how much capital, in rupees?\n\nThe base moves from ' + inr(c.capital) +
-    ', which widens the per-stock ceiling (' + c.maxPct + '%) and the minimum position (' + c.minPct + '%). ' +
-    'Returns are chain-linked across the date, so a top-up cannot read as a gain.', '50000');
-  if (raw === null) return;
-  var amount = Math.round(Number(String(raw).replace(/[^0-9.\-]/g, '')));
-  if (!amount || isNaN(amount) || amount <= 0){ window.alert('Enter a positive rupee amount.'); return; }
-  var list = loadIntents();
-  list.push({kind:'capital', amount:amount, capitalWas:c.capital,
-             ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
-  saveIntents(list);
-  renderDesk();
-}
-
-function toggleDetail(id, btn){
-  var row = document.querySelector('tr.detail[data-detail="' + id + '"]');
-  if (!row) return;
-  var shown = row.classList.toggle('shown');
-  btn.setAttribute('aria-expanded', shown ? 'true' : 'false');
-  var owner = document.querySelector('tr.row[data-id="' + id + '"]');
-  if (owner) owner.classList.toggle('open-row', shown);
+  var amount = Math.round(Number(String(raw == null ? '' : raw).replace(/[^0-9.]/g, '')));
+  if (!amount || isNaN(amount) || amount <= 0){ toast('Enter a rupee amount', 'err'); return; }
+  if (out && amount > c.cash){ toast('Only ' + inr(c.cash) + ' is uncommitted', 'err'); return; }
+  var after = c.base + (out ? -amount : amount);
+  if (!window.confirm((out ? 'Withdraw ' : 'Deposit ') + inr(amount) + '?\n\nBase ' + inr(c.base) + ' → ' +
+      inr(after) + '\nPer-stock ceiling becomes ' + inr(Math.round(after * c.maxPct / 100)) +
+      '\nMinimum position becomes ' + inr(Math.round(after * c.minPct / 100)))) return;
+  run('capital', out ? {withdraw:amount, note:note} : {amount:amount, note:note}, {
+    label:(out ? 'Withdraw ' : 'Deposit ') + inr(amount), btn:btn,
+    queue:function(){
+      if (out) return;
+      var list = intents();
+      list.push({kind:'capital', amount:amount, capitalWas:c.base, note:note,
+                 ts:new Date().toISOString().slice(0, 16).replace('T', ' ')});
+      setIntents(list);
+    }
+  });
 }
 
 document.addEventListener('click', function(e){
-  var el = e.target && e.target.closest ? e.target.closest('[data-act]') : null;
-  if (!el) return;
-  var act = el.getAttribute('data-act'), sym = el.getAttribute('data-sym');
-  if (act === 'book') takeSuggestion(sym);
-  else if (act === 'close') closePosition(sym);
-  else if (act === 'capital') addCapital();
-  else if (act === 'copy') copyText(el.getAttribute('data-text'), el);
-  else if (act === 'expand') toggleDetail(el.getAttribute('data-id'), el);
-  else if (act === 'tf'){ FILTER.tf = el.getAttribute('data-tf'); renderFilters(); renderSuggestions(); }
-  else if (act === 'afford'){ FILTER.affordable = !FILTER.affordable; renderFilters(); renderSuggestions(); }
+  var t = e.target && e.target.closest ? e.target.closest('[data-act]') : null;
+  if (!t) return;
+  var act = t.getAttribute('data-act'), sym = t.getAttribute('data-sym');
+  var val = function(id){ var n = $(id); return n ? String(n.value || '').trim() : ''; };
+  if (act === 'book') takeIdea(sym, t);
+  else if (act === 'close') exitPosition(sym, t);
+  else if (act === 'copy') copy(t.getAttribute('data-text'));
+  else if (act === 'more'){
+    var card = document.querySelector('[data-card="' + t.getAttribute('data-card') + '"]');
+    if (card) card.classList.toggle('open');
+  }
+  else if (act === 'sort'){ SORT = t.getAttribute('data-sort'); renderIdeas(); }
+  else if (act === 'tf'){ FILTER.tf = t.getAttribute('data-tf'); renderIdeas(); }
+  else if (act === 'tag'){ FILTER.tag = t.getAttribute('data-tag'); renderIdeas(); }
+  else if (act === 'afford'){ FILTER.afford = !FILTER.afford; renderIdeas(); }
   else if (act === 'drop'){
-    var kind = el.getAttribute('data-kind');
-    var what = kind === 'capital' ? 'the queued capital top-up' : sym;
-    if (window.confirm('Drop ' + what + ' from the queue? It was never written to the ledger.')){
-      saveIntents(loadIntents().filter(function(x){
-        return !(x.kind === kind && (kind === 'capital' || x.symbol === sym));
-      }));
-      renderDesk();
+    var kind = t.getAttribute('data-kind');
+    if (window.confirm('Drop this from the queue? It was never written to the ledger.')){
+      setIntents(intents().filter(function(x){
+        return !(x.kind === kind && (kind === 'capital' || x.symbol === sym)); }));
+      render();
     }
+  }
+  else if (act === 'connect'){
+    var tok = val('#ghToken');
+    if (!tok){ toast('Paste a token first', 'err'); return; }
+    t.classList.add('busy');
+    ghCheck(tok)
+      .then(function(){ toast('Connected — the buttons are live', 'ok'); pollRuns(true); render(); })
+      .catch(function(err){ toast(err.message, 'err'); })
+      .then(function(){ t.classList.remove('busy'); });
+  }
+  else if (act === 'disconnect'){
+    GH = {token:'', repo:'', ok:false}; store(GKEY, undefined); RUNS = [];
+    toast('Token removed from this browser'); render();
+  }
+  else if (act === 'cmd'){
+    var cmd = t.getAttribute('data-cmd');
+    if (!window.confirm('Run ' + cmd + ' now?\n\nIt runs in GitHub Actions against the live ledger and ' +
+        'commits whatever it changes.')) return;
+    run(cmd, {}, {label:cmd, btn:t});
+  }
+  else if (act === 'parse-tip') fillTipForm();
+  else if (act === 'add-tip'){
+    if (!val('#tipSym')){ toast('Which symbol? Paste the message and press Re-read, or type it', 'err'); return; }
+    run('add-tip', {symbol:val('#tipSym'), source:val('#tipSrc') || 'manual:mohan', target:val('#tipTgt'),
+                    stop:val('#tipStop'), entry:val('#tipEntry'), timeframe:val('#tipTf'), text:val('#tipText')},
+        {label:'Log ' + val('#tipSym'), btn:t});
+  }
+  else if (act === 'cap-add') moveCapital(val('#capAmt'), val('#capNote'), t, false);
+  else if (act === 'cap-out') moveCapital(val('#capAmt'), val('#capNote'), t, true);
+  else if (act === 'lesson'){
+    var text = val('#lessonText');
+    if (text.length < 12){ toast('Write a sentence worth keeping', 'err'); return; }
+    run('lesson', {text:text}, {label:'Lesson', btn:t});
   }
 });
 document.addEventListener('input', function(e){
-  if (e.target && e.target.id === 'suggSearch'){ FILTER.q = e.target.value; renderSuggestions(); }
+  if (e.target && e.target.id === 'ideaSearch'){
+    FILTER.q = e.target.value;
+    clearTimeout(window._sq);
+    window._sq = setTimeout(function(){
+      renderIdeas();
+      var s = $('#ideaSearch'); if (s){ s.focus(); s.setSelectionRange(s.value.length, s.value.length); }
+    }, 160);
+  }
 });
 
-/* ===================================================================== boot */
-function renderDesk(){
-  reconcileIntents();
-  renderFigures();
-  renderCapacityRail();
-  renderFilters();
-  renderActive();
-  renderSuggestions();
-  renderIntents();
+/* ==================================================================== shell */
+var TABS = [
+  {id:'book', label:'The book', icon:'book', count:function(){ return positions().length; }},
+  {id:'ideas', label:'Ideas', icon:'bulb', count:function(){ return ideaList().length; }},
+  {id:'journal', label:'Journal', icon:'chart', count:function(){ return (DATA.closed || []).length || null; }},
+  {id:'sources', label:'Sources', icon:'rss', count:function(){ return (DATA.sources || []).length; }},
+  {id:'console', label:'Console', icon:'term', count:function(){ return null; }}
+];
+function renderTabs(){
+  $('#tabbar').innerHTML = TABS.map(function(t){
+    var n = t.count();
+    return '<button class="tab" role="tab" data-tab="' + t.id + '" aria-selected="' + (TAB === t.id) + '">' +
+      ic(t.icon) + t.label + (n ? '<span class="badge">' + n + '</span>' : '') + '</button>';
+  }).join('');
 }
+function show(tab){
+  TAB = tab;
+  if (location.hash !== '#' + tab) location.hash = '#' + tab;
+  TABS.forEach(function(t){ $('#v-' + t.id).classList.toggle('on', t.id === tab); });
+  renderTabs();
+  if (tab === 'journal') renderJournal();
+  if (tab === 'sources') renderSources();
+  if (tab === 'console') renderConsole();
+}
+document.addEventListener('click', function(e){
+  var t = e.target && e.target.closest ? e.target.closest('[data-tab]') : null;
+  if (t) show(t.getAttribute('data-tab'));
+});
+document.addEventListener('keydown', function(e){
+  if (e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+  var i = ['1','2','3','4','5'].indexOf(e.key);
+  if (i !== -1){ show(TABS[i].id); return; }
+  if (e.key === '/'){
+    show('ideas');
+    setTimeout(function(){ var s = $('#ideaSearch'); if (s) s.focus(); }, 60);
+    e.preventDefault();
+  }
+});
+
+function applyTheme(mode){
+  document.documentElement.setAttribute('data-theme', mode);
+  store(TKEY, mode);
+  var b = $('#themeBtn');
+  b.innerHTML = '<svg class="ic"><use href="#i-' + (mode === 'dark' ? 'sun' : 'moon') + '"/></svg>';
+  b.title = mode === 'dark' ? 'Switch to light' : 'Switch to dark';
+  var m = document.querySelector('meta[name=theme-color]');
+  if (m) m.setAttribute('content', mode === 'dark' ? '#0F1216' : '#F4F6F9');
+  if (DATA && TAB === 'journal') renderJournal();
+}
+$('#themeBtn').addEventListener('click', function(){
+  applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+});
+$('#connBtn').addEventListener('click', function(){ show('console'); });
+window.addEventListener('hashchange', function(){
+  var h = (location.hash || '').replace('#', '');
+  if (h && h !== TAB && TABS.some(function(t){ return t.id === h; })) show(h);
+});
+
+function render(){
+  reconcile();
+  var s = DATA.stats || {};
+  $('#barEq').textContent = inr(s.equity);
+  $('#barRet').innerHTML = '<span class="' + sgn(s.return_pct) + '">' + pct(s.return_pct) + '</span>';
+  $('#brandSub').textContent = DATA.analysis_day ? '· ' + DATA.analysis_day : '';
+  $('#liveDot').style.background = GH.ok ? 'var(--green)' : 'var(--ink-3)';
+  $('#liveDot').style.boxShadow = GH.ok ? '0 0 0 3px var(--green-dim)' : 'none';
+  $('#connBtn').classList.toggle('live', GH.ok);
+  $('#connBtn').title = GH.ok ? 'Connected to GitHub' : 'Not connected';
+  renderBook();
+  renderIdeas();
+  renderTabs();
+  if (TAB === 'journal') renderJournal();
+  if (TAB === 'sources') renderSources();
+  if (TAB === 'console') renderConsole();
+  var st = DATA.settings || {}, r = st.risk || {}, m = st.mandate || {};
+  $('#foot').innerHTML =
+    '<span>Stops never wider than ' + (r.max_stop_loss_pct || 8) + '% · reward:risk to T2 at least ' +
+    (r.min_reward_risk_t2 || 1.5) + ' · time stops ' + (m.weekly_time_stop_days || 10) + ' and ' +
+    (m.monthly_time_stop_days || 30) + ' sessions · at most ' + ((st.capital || {}).max_open_positions || 4) +
+    ' open</span><span>Paper trading, not investment advice · data generated ' + esc(DATA.generated || '—') + '</span>';
+}
+
+applyTheme(recall(TKEY, (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark'));
+var savedToken = recall(GKEY, null);
 
 fetch('./data.json', {cache:'no-store'})
   .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
   .then(function(data){
     DATA = data;
-    var day = data.analysis_day || data.generated;
-    document.getElementById('dateline').innerHTML =
-      esc(longDate(day)) + '<br>' +
-      '<span class="mark">' + ico('alert', 'sm') + 'paper trading · generated ' + esc(data.generated || '—') + '</span>';
-    renderDesk();
-    renderFlows();
-    renderClosed();
-    renderSources();
-    document.getElementById('lessons').innerHTML = mdToHtml(data.lessons_tail || '');
-    var s = data.settings || {}, r = s.risk || {}, m = s.mandate || {};
-    document.getElementById('foot').innerHTML =
-      '<span>Stops never wider than ' + (r.max_stop_loss_pct || 8) + '% · reward:risk to T2 at least ' +
-      (r.min_reward_risk_t2 || 1.5) + ' · time stops ' + (m.weekly_time_stop_days || 10) + ' and ' +
-      (m.monthly_time_stop_days || 30) + ' trading days</span>' +
-      '<span>Paper trading, not investment advice · <code>state/ledger.json</code> is the record</span>';
-    try { renderChart(); } catch (err) {
-      document.getElementById('equityChart').parentElement.innerHTML =
-        '<div class="empty">' + ico('chart') + 'Chart unavailable (' + esc(err.message) + ').</div>';
+    var h = (location.hash || '').replace('#', '');
+    TAB = TABS.some(function(t){ return t.id === h; }) ? h : 'book';
+    render();
+    show(TAB);
+    if (savedToken && savedToken.token){
+      ghCheck(savedToken.token)
+        .then(function(){ render(); pollRuns(true); })
+        .catch(function(){ store(GKEY, undefined); render(); });
     }
-    requestAnimationFrame(function(){ document.getElementById('figures').setAttribute('data-anim', 'in'); });
   })
   .catch(function(err){
-    document.getElementById('app').innerHTML =
-      '<div class="errbox"><h2>The desk has no data to read</h2>' +
-      '<p><code>docs/data.json</code> is missing or malformed — run <code>python -m stocktips dashboard-data</code> ' +
-      'and push. (' + esc(err.message) + ')</p></div>';
+    $('#shell').innerHTML = '<div class="empty" style="margin-top:60px">' + ic('alert', 'l') +
+      '<b>No data to read</b><code>docs/data.json</code> is missing or malformed. Run ' +
+      '<code>python -m stocktips dashboard-data</code> and push. (' + esc(err.message) + ')</div>';
   });
 </script>
 </body>

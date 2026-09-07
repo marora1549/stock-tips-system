@@ -74,6 +74,8 @@ def open_position(led: dict, pick: dict, capital_inr: float) -> dict | None:
         "entry_plan": entry, "entry": None, "qty": qty, "qty_open": qty, "capital_inr": round(qty * entry, 2),
         "stop_loss": plan["stop_loss"], "initial_stop": plan["stop_loss"], "targets": plan["targets"], "targets_hit": [],
         "timeframe": plan["timeframe"], "time_stop_days": plan["time_stop_days"], "deadline": None,
+        "eta_days": plan.get("eta_days") or [], "pace_pct_day": plan.get("pace_pct_day"),
+        "momentum_score": plan.get("momentum_score"),
         "source_id": pick["source_id"], "corroborating_sources": pick.get("corroborating_sources", []),
         "ta_confidence": pick["ta_confidence"], "fund_score": pick["fund_score"], "composite": pick["composite"],
         "bucket": "hold-capable" if pick["fund_score"] >= settings()["scoring"]["hold_bucket_fund_score"] else "hot-potato",

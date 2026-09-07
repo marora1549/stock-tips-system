@@ -132,11 +132,12 @@ def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0
             verdict, bucket = scoring.verdict(comp, plan, fscore)
         results.append({
             **{k: t[k] for k in ("symbol", "company", "tip_id", "source_id", "corroborating_sources", "n_mentions", "src_targets", "src_stop", "src_entry", "urls", "brokerages", "sentence")},
-            "ltp": ltp, "plan": plan, "ta": {k: snap[k] for k in ("trend", "rsi", "atr_pct", "adx", "vol_ratio", "patterns", "dist_52w_high_pct", "dist_ema20_pct", "dist_ema200_pct", "avg_turnover_cr", "chg_5d_pct", "chg_20d_pct", "high_52w", "last_bar_date")},
+            "ltp": ltp, "plan": plan, "ta": {k: snap[k] for k in ("trend", "rsi", "atr_pct", "adx", "vol_ratio", "patterns", "dist_52w_high_pct", "dist_ema20_pct", "dist_ema200_pct", "avg_turnover_cr", "chg_5d_pct", "chg_20d_pct", "high_52w", "last_bar_date", "momentum_score", "drift_pct_day", "efficiency", "amplitude_pct_day", "up_day_share")},
             "resistances": snap["resistances"][:4], "supports": snap["supports"][:4],
             "ta_confidence": plan["ta_confidence"], "fund_score": fscore, "fund_why": fwhy, "fundamentals": {k: v for k, v in (f or {}).items() if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity", "promoter_pct", "sales_growth_3_years", "profit_growth_3_years", "np_yoy_growth_pct")},
             "source_weight": round(w, 3), "source_confidence": confidence.display(conf.get(t["source_id"], {}).get("score", 0.0)),
             "composite": comp, "verdict": verdict, "bucket": bucket,
+            "tags": scoring.tags(plan, snap, fscore, t["n_mentions"], len(t["corroborating_sources"])),
         })
         for s in [t["source_id"]] + t["corroborating_sources"]:
             confidence.note_tip(conf, s)

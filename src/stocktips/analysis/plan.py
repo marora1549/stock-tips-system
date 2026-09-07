@@ -49,6 +49,23 @@ def classify_timeframe(text: str | None, src_target_pct: float | None, default: 
     return default
 
 
+def eta_days(target_pct: list[float], drift_pct_day: float | None, time_stop: int) -> dict:
+    """When each target should land, from how fast the stock actually travels.
+
+    A target without a date is a wish. `drift_pct_day` is net directional progress per session
+    (median daily amplitude x trend efficiency), so distance / drift is a number of sessions. The
+    estimate is deliberately blunt — no compounding, no volatility path — and capped at 3x the time
+    stop, because past that the honest answer is "not on this clock".
+    """
+    if not drift_pct_day or drift_pct_day <= 0.02:
+        return {"eta_days": [None] * len(target_pct), "eta_basis": "no measurable directional drift",
+                "pace_pct_day": drift_pct_day, "t1_inside_clock": False}
+    cap = time_stop * 3
+    days = [min(cap, max(1, int(round(p / drift_pct_day)))) if p and p > 0 else None for p in target_pct]
+    return {"eta_days": days, "eta_basis": f"{drift_pct_day}%/session of net directional progress",
+            "pace_pct_day": drift_pct_day, "t1_inside_clock": bool(days and days[0] and days[0] <= time_stop)}
+
+
 def build_plan(ta: dict, timeframe: str, entry: float | None = None, src_targets: list[float] | None = None,
                src_stop: float | None = None) -> dict:
     cfg = settings()
@@ -170,6 +187,17 @@ def build_plan(ta: dict, timeframe: str, entry: float | None = None, src_targets
             add(-4, f"source target ₹{st:g} below our T1 — source sees less upside")
         elif st > px * (1.6 if monthly_like else 1.25):
             add(-3, f"source target ₹{st:g} implausibly far for {tf}")
+    eta = eta_days(tgt_pct, ta.get("drift_pct_day"), time_stop)
+    # A target the stock cannot reach before its own time stop is the most common way a "good" idea
+    # dies: right direction, wrong clock. Score it, and reward genuine pace.
+    if eta["eta_days"][0] is None:
+        add(-6, "no directional drift to put a date on T1")
+    elif not eta["t1_inside_clock"]:
+        add(-10, f"T1 needs ~{eta['eta_days'][0]}d at this pace vs a {time_stop}d clock")
+    elif eta["eta_days"][0] <= max(2, time_stop // 4):
+        add(6, f"pace puts T1 ~{eta['eta_days'][0]}d out, well inside the {time_stop}d clock")
+    elif eta["eta_days"][0] <= time_stop // 2:
+        add(3, f"pace puts T1 ~{eta['eta_days'][0]}d out")
     conf = int(max(0, min(95, round(conf))))
 
     ok = tf != "intraday" or mand["intraday_allowed"]
@@ -181,4 +209,6 @@ def build_plan(ta: dict, timeframe: str, entry: float | None = None, src_targets
         "ta_confidence": conf, "reasons": reasons,
         "tradeable": ok and sl_pct <= risk["max_stop_loss_pct"] and rr_t2 >= risk["min_reward_risk_t2"] and ta["avg_turnover_cr"] >= risk["min_avg_turnover_cr"] and ta["close"] >= risk["min_price_inr"],
         "src_targets": src_targets or [], "src_stop": src_stop,
+        "momentum_score": ta.get("momentum_score"), "efficiency": ta.get("efficiency"),
+        "amplitude_pct_day": ta.get("amplitude_pct_day"), **eta,
     }

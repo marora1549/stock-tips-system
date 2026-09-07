@@ -68,6 +68,31 @@ def cluster_levels(levels: list[float], tol_pct: float = 1.5) -> list[dict]:
     return out
 
 
+def velocity(close: pd.Series, n: int = 20) -> dict:
+    """How fast this stock actually travels, and how much of that travel is directional.
+
+    `amplitude_pct_day` is the median absolute daily move — the typical distance covered in a session.
+    `efficiency` is Kaufman's ratio: net move over the sum of the individual moves, so 1.0 is a
+    straight line and 0.1 is chop that ends where it began. Their product is the net progress a day
+    is worth in the trend's direction, which is what turns a target into a date instead of a hope.
+    """
+    seg = close.tail(n + 1)
+    if len(seg) < 6:
+        return {"amplitude_pct_day": None, "efficiency": None, "drift_pct_day": None, "up_day_share": None}
+    d = seg.diff().dropna()
+    travel = float(d.abs().sum())
+    net = float(seg.iloc[-1] - seg.iloc[0])
+    amp = float((d.abs() / seg.shift(1).dropna()).median() * 100)
+    eff = abs(net) / travel if travel else 0.0
+    drift = amp * eff * (1 if net >= 0 else -1)
+    return {
+        "amplitude_pct_day": round(amp, 3),
+        "efficiency": round(eff, 3),
+        "drift_pct_day": round(drift, 3),
+        "up_day_share": round(float((d > 0).mean()), 2),
+    }
+
+
 def analyze(df: pd.DataFrame) -> dict:
     """Full TA snapshot from daily bars (needs >= 60 rows; 250+ preferred)."""
     df = df.copy()
@@ -103,6 +128,10 @@ def analyze(df: pd.DataFrame) -> dict:
         high_52w=round(float(df["high"].tail(250).max()), 2), low_52w=round(float(df["low"].tail(250).min()), 2),
         last_bar_date=str(df.index[-1].date()),
     )
+    out.update(velocity(c, 20))
+    # 0-100 pace: 0.6%/day of net directional progress is a fast mover, and reads as ~86
+    d = out.get("drift_pct_day")
+    out["momentum_score"] = int(round(100 * np.tanh(max(0.0, d or 0.0) / 0.45))) if d is not None else None
     out["dist_52w_high_pct"] = round((px / out["high_52w"] - 1) * 100, 2)
     out["dist_ema20_pct"] = round((px / out["ema20"] - 1) * 100, 2)
     out["dist_ema50_pct"] = round((px / out["ema50"] - 1) * 100, 2)
