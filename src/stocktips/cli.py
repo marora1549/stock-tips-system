@@ -536,6 +536,27 @@ def _pos_for_dashboard(pos: dict, on: str | None = None) -> dict:
     return d
 
 
+def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
+    """One pre-open candidate, married to whatever the session has since made of it."""
+    keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
+            "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
+            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
+            "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
+    out = {k: cand.get(k) for k in keys}
+    out["catalyst_reasons"] = cand.get("reasons") or []
+    live = next((c for c in (session.get("candidates") or []) if c.get("symbol") == cand["symbol"]), None)
+    if live:
+        out["session"] = {k: live.get(k) for k in
+                          ("state", "band", "band_rule", "gap_pct", "open", "prev_close", "vwap",
+                           "last", "day_high", "day_low", "from_open_pct", "opening_range",
+                           "or_volume_multiple", "acts", "why_not", "watch", "trigger", "stop",
+                           "stop_pct", "stop_note", "targets", "target_pct", "target_basis",
+                           "reward_risk_t2", "targets_hit", "triggered", "stopped", "entered_at",
+                           "stopped_at", "max_favourable_pct", "size", "order_line", "reasons")}
+    return out
+
+
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
@@ -550,6 +571,17 @@ def cmd_dashboard_data(a):
     cash = ledgermod.deployable_cash(led)
     # rank the same records the page shows, so a contender carries the tags its idea card carries
     suggestions = [_suggestion(p) for p in analysis]
+    # the intraday desk's own payload: today's card, the session state, and the trained brain
+    intra_day = None
+    for d in reversed(days[-6:]):
+        if (REPORTS_DIR / d / "preopen.json").exists():
+            intra_day = d
+            break
+    pre = read_json(REPORTS_DIR / intra_day / "preopen.json", {}) if intra_day else {}
+    session = read_json(REPORTS_DIR / intra_day / "intraday.json", {}) if intra_day else {}
+    book = daybook.load()
+    classes = eventscore.load()
+
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
             "sparks": {sym: sparks.series(spark_cache, sym) for sym in
@@ -569,6 +601,28 @@ def cmd_dashboard_data(a):
                      "min_alloc_inr": round(led["capital_inr"] * cap["min_allocation_pct"] / 100, 2),
                      "max_alloc_inr": round(led["capital_inr"] * cap["max_single_stock_pct"] / 100, 2),
                      "min_allocation_pct": cap["min_allocation_pct"], "max_single_stock_pct": cap["max_single_stock_pct"]},
+            "intraday": {
+                "day": intra_day,
+                "generated_at": pre.get("generated_at"),
+                "checked_at": session.get("checked_at"),
+                "events_read": pre.get("events_read", 0),
+                "wires": pre.get("sources", {}),
+                "trade": [_intraday_for_dashboard(c, session) for c in (pre.get("trade") or [])],
+                "watch": [_intraday_for_dashboard(c, session) for c in (pre.get("watch") or [])],
+                "avoid": [{k: c.get(k) for k in ("symbol", "company", "event_label", "title", "url",
+                                                 "source_id", "catalyst", "verdict_note")}
+                          for c in (pre.get("avoid") or [])],
+                "skipped": (pre.get("skipped") or [])[:20],
+                "trades": session.get("trades") or [],
+                "stats": daybook.stats(book),
+                "closed": (book.get("closed") or [])[-30:],
+                "event_classes": eventscore.summary(classes),
+                "settings": pre.get("settings") or {k: (settings().get("intraday", {}) or {}).get(k)
+                                                    for k in ("gap_modest_pct", "gap_wide_pct",
+                                                              "max_stop_pct", "force_flat_at",
+                                                              "notional_inr", "risk_per_trade_pct",
+                                                              "max_positions")},
+            },
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)

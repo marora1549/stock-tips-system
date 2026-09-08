@@ -43,6 +43,11 @@ SPEC: dict[str, dict] = {
                                            "url": "--url"},
                     "bools": {"dry_run": "--dry-run"}, "needs": ["text"]},
     "contenders": {"pos": None, "flags": {"amount": "--top"}, "needs": []},
+    "preopen":   {"pos": None, "flags": {"amount": "--limit"}, "needs": [],
+                  "bools": {"force": "--force", "refresh": "--refresh"}},
+    "intraday":  {"pos": None, "flags": {}, "needs": []},
+    "intraday-close": {"cli": "intraday", "pos": None, "flags": {}, "needs": [], "bare": ["--close"]},
+    "daybook":   {"pos": None, "flags": {}, "needs": []},
     "lesson":    {"pos": "text", "flags": {}, "needs": ["text"]},
     "add-source": {"pos": None, "flags": {"source": "--id", "kind": "--kind", "channel": "--channel",
                                           "url": "--url", "query": "--query", "note": "--name"},
@@ -107,8 +112,8 @@ def build_argv(given: dict[str, str] | None = None) -> list[str]:
         if value and flag:
             argv += [flag, value]
     for key, flag in spec.get("bools", {}).items():
-        if got.get(key, "").lower() not in FALSEY:
-            argv.append(flag)
+        if flag and got.get(key, "").lower() not in FALSEY:
+            argv.append(flag)      # a None flag means "accepted and ignored", same as in `flags`
     argv += spec.get("bare", [])
     return argv
 

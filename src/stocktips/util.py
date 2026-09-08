@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import math
 import os
 import re
 import time
@@ -65,11 +66,37 @@ def read_json(path: Path, default: Any):
             return default
 
 
+def _json_safe(x: Any) -> Any:
+    """NaN and Infinity are valid Python floats and invalid JSON.
+
+    `json.dump` writes them as the bare tokens `NaN` and `Infinity`, which `JSON.parse` rejects — so
+    a single non-finite number anywhere in docs/data.json blanks the entire dashboard, with nothing
+    on the page to say why. One arrived from RSI on a stock that had not had a down day in a
+    fortnight. They become `null` here, which every reader already handles.
+    """
+    if isinstance(x, bool):
+        return x
+    if isinstance(x, float):
+        return x if math.isfinite(x) else None
+    if isinstance(x, dict):
+        return {k: _json_safe(v) for k, v in x.items()}
+    if isinstance(x, (list, tuple)):
+        return [_json_safe(v) for v in x]
+    if not isinstance(x, (str, bytes, int, type(None))) and hasattr(x, "item"):
+        try:                                  # numpy scalars: np.float64("nan") is not a float
+            return _json_safe(x.item())
+        except Exception:
+            return x
+    return x
+
+
 def write_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False, default=str)
+        # allow_nan=False so anything _json_safe missed raises here rather than shipping a file the
+        # browser cannot read
+        json.dump(_json_safe(data), f, indent=2, ensure_ascii=False, default=str, allow_nan=False)
     os.replace(tmp, path)
 
 

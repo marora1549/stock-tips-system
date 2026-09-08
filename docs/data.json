@@ -18940,6 +18940,48 @@
     "min_allocation_pct": 15,
     "max_single_stock_pct": 50
   },
+  "intraday": {
+    "day": null,
+    "generated_at": null,
+    "checked_at": null,
+    "events_read": 0,
+    "wires": {},
+    "trade": [],
+    "watch": [],
+    "avoid": [],
+    "skipped": [],
+    "trades": [],
+    "stats": {
+      "notional_inr": 100000.0,
+      "n_trades": 0,
+      "n_open": 0,
+      "open_symbols": [],
+      "n_wins": 0,
+      "n_losses": 0,
+      "hit_rate": null,
+      "pnl_inr": 0,
+      "return_on_notional_pct": 0.0,
+      "avg_r": null,
+      "best_inr": 0,
+      "worst_inr": 0,
+      "avg_win_inr": null,
+      "avg_loss_inr": null,
+      "n_days_traded": 0,
+      "pnl_by_day": {},
+      "n_candidates_seen": 0
+    },
+    "closed": [],
+    "event_classes": [],
+    "settings": {
+      "gap_modest_pct": 2.0,
+      "gap_wide_pct": 5.0,
+      "max_stop_pct": 1.5,
+      "force_flat_at": "15:10",
+      "notional_inr": 100000,
+      "risk_per_trade_pct": 0.75,
+      "max_positions": 2
+    }
+  },
   "report_days": [
     "2026-09-07",
     "2026-09-08"

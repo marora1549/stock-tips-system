@@ -144,6 +144,28 @@ def test_no_browser_input_is_interpolated_into_a_shell_step():
             f"step {step.get('name')!r} interpolates an input into its shell — pass it through env: instead")
 
 
+def test_no_spec_entry_can_put_a_none_into_argv():
+    """A flag of None means "accepted and ignored". Appending it would hand argparse a None."""
+    for command, spec in desk.SPEC.items():
+        inputs = {"command": command}
+        for key in list(spec.get("flags", {})) + list(spec.get("bools", {})) + ([spec["pos"]] if spec["pos"] else []):
+            inputs[key] = "x"
+        for need in spec["needs"]:
+            if need.startswith("one_of:"):
+                inputs[need.split(":", 1)[1].split(",")[0]] = "x"
+            else:
+                inputs[need] = "x"
+        argv = dispatch(**inputs)
+        assert all(isinstance(a, str) for a in argv), f"{command} produced {argv}"
+
+
+def test_the_new_intraday_commands_reach_the_right_cli():
+    assert dispatch(command="preopen") == ["preopen"]
+    assert dispatch(command="preopen", args='{"force": true}') == ["preopen", "--force"]
+    assert dispatch(command="intraday") == ["intraday"]
+    assert dispatch(command="intraday-close") == ["intraday", "--close"]
+
+
 def test_every_flag_the_runner_can_emit_exists_on_that_cli_command():
     import argparse
     from stocktips import cli
@@ -169,6 +191,6 @@ def test_every_flag_the_runner_can_emit_exists_on_that_cli_command():
         target = spec.get("cli", command)
         assert target in parsers, f"{command} dispatches to a CLI command that does not exist: {target}"
         known = {s for a in parsers[target]._actions for s in a.option_strings}
-        for flag in list(spec["flags"].values()) + spec.get("bare", []):
+        for flag in list(spec["flags"].values()) + list(spec.get("bools", {}).values()) + spec.get("bare", []):
             if flag:
                 assert flag in known, f"{command} would pass {flag}, which `stocktips {target}` does not accept"

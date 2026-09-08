@@ -108,9 +108,13 @@ def stats(d: dict | None = None) -> dict:
     pnl = round(sum(t.get("pnl_inr") or 0 for t in closed), 2)
     rs = [t["r_multiple"] for t in closed if t.get("r_multiple") is not None]
     days = d.get("days", {})
-    by_day = {}
-    for date, rec in days.items():
-        by_day[date] = round(sum(t.get("pnl_inr") or 0 for t in rec.get("trades", [])), 2)
+    # grouped from `closed`, the same list every other number here comes from. Reading it off
+    # days[].trades instead gave a second source of truth that disagreed with the total.
+    by_day: dict[str, float] = {}
+    for t in closed:
+        date = t.get("date")
+        if date:
+            by_day[date] = round(by_day.get(date, 0.0) + (t.get("pnl_inr") or 0), 2)
     open_now = [t for r in days.values() for t in r.get("trades", []) if t.get("status") == "open"]
     return {
         "notional_inr": notional,

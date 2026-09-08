@@ -322,6 +322,65 @@ label.lbl{display:block; font-size:11px; font-weight:600; letter-spacing:.05em; 
 .vsnote .ic{width:12px; height:12px; stroke-width:2; margin-top:3px; flex:0 0 auto; color:var(--ink-3)}
 .pre-sum{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; align-items:center}
 
+/* ==================================================================== the intraday desk */
+.gapbar{margin-top:15px}
+.gapbar .track{position:relative; height:34px; border-radius:var(--r-sm); overflow:hidden;
+  display:flex; border:1px solid var(--line)}
+.gapbar .zone{position:relative; display:flex; align-items:center; justify-content:center;
+  font:600 10px/1 var(--sans); letter-spacing:.04em; text-transform:uppercase; color:var(--ink-3);
+  border-right:1px solid var(--line); overflow:hidden; white-space:nowrap; padding:0 6px}
+.gapbar .zone .tight{display:none}
+.gapbar .zone:last-child{border-right:0}
+.gapbar .zone.go{background:var(--green-dim); color:var(--green)}
+.gapbar .zone.cond{background:var(--amber-dim); color:var(--amber)}
+.gapbar .zone.no{background:var(--red-dim); color:var(--red)}
+.gapbar .mark{position:absolute; top:-3px; bottom:-3px; width:2px; background:var(--ink);
+  z-index:2; border-radius:2px}
+.gapbar .mark:after{content:attr(data-label); position:absolute; top:-19px; left:50%;
+  transform:translateX(-50%); white-space:nowrap; font:700 11px/1 var(--mono); color:var(--ink)}
+.gapbar .scale{display:flex; justify-content:space-between; margin-top:6px;
+  font:500 10px/1 var(--mono); color:var(--ink-3)}
+.gapbar .rule{margin-top:11px; display:flex; gap:8px; align-items:flex-start; font-size:12.5px;
+  line-height:1.6; color:var(--ink-2)}
+.gapbar .rule .ic{margin-top:2px; flex:0 0 auto}
+.gapbar .rule.go .ic{color:var(--green)} .gapbar .rule.cond .ic{color:var(--amber)}
+.gapbar .rule.no .ic{color:var(--red)}
+.gapbar .rule b{color:var(--ink)}
+
+.hero{display:flex; align-items:baseline; gap:10px; margin-top:13px; padding:12px 14px;
+  background:var(--elev-2); border-radius:var(--r-sm); flex-wrap:wrap}
+.hero .big{font:600 24px/1 var(--mono); letter-spacing:-.04em}
+.hero .lab{font-size:11.5px; color:var(--ink-2); line-height:1.5; flex:1 1 160px; min-width:0}
+.hero.est .big{color:var(--ink-2)}
+
+.headline{margin-top:12px; padding-left:12px; border-left:2px solid var(--line-2);
+  font-size:13px; line-height:1.6; color:var(--ink-2)}
+.headline b{color:var(--ink); font-weight:600}
+.headline .meta{display:block; margin-top:5px; font:500 11px/1.5 var(--mono); color:var(--ink-3)}
+.headline a{color:var(--blue)}
+
+.state{display:inline-flex; align-items:center; gap:5px; font:700 10px/1 var(--sans);
+  letter-spacing:.07em; text-transform:uppercase; padding:5px 9px; border-radius:var(--r-pill)}
+.state.waiting{background:var(--elev-3); color:var(--ink-2)}
+.state.triggered{background:var(--green); color:#04150D}
+:root[data-theme="light"] .state.triggered{color:#fff}
+.state.stopped{background:var(--red-dim); color:var(--red); box-shadow:inset 0 0 0 1px var(--red-line)}
+.state.voided{background:var(--amber-dim); color:var(--amber)}
+.state.done, .state.expired{background:var(--elev-3); color:var(--ink-3)}
+.state.no-data{background:var(--elev-3); color:var(--ink-3)}
+
+.classbar{display:grid; grid-template-columns:minmax(120px,1.1fr) 1fr minmax(88px,auto); gap:12px;
+  align-items:center; padding:9px 0; border-bottom:1px solid var(--line); font-size:12.5px}
+.classbar:last-child{border-bottom:0}
+.classbar .who{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.classbar .who small{display:block; font:500 10.5px/1.4 var(--mono); color:var(--ink-3)}
+.classbar .bar{height:7px; border-radius:99px; background:var(--elev-3); overflow:hidden; position:relative}
+.classbar .bar i{display:block; height:100%; border-radius:99px; background:var(--green)}
+.classbar .bar i.thin{background:var(--ink-3)}
+.classbar .num{text-align:right; font:600 12px/1.3 var(--mono); white-space:nowrap}
+.classbar .num small{display:block; font:500 10px/1.4 var(--mono); color:var(--ink-3)}
+.classbar.untested{opacity:.55}
+
 /* ==================================================================== tables */
 .tw{overflow-x:auto; background:var(--elev); border:1px solid var(--line); border-radius:var(--r)}
 .tw.scroll{max-height:322px; overflow-y:auto}
@@ -392,6 +451,8 @@ td.r{text-align:right}
 .foot{margin-top:34px; padding-top:16px; border-top:1px solid var(--line); font-size:11.5px;
   line-height:1.8; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:6px 20px; justify-content:space-between}
 @media (max-width:640px){
+  .gapbar .zone .wide{display:none}
+  .gapbar .zone .tight{display:inline}
   .wrap{padding:0 12px 96px}
   .appbar-in{padding:10px 12px}
   .tabs-in{padding:0 12px}
@@ -427,6 +488,7 @@ td.r{text-align:right}
   <symbol id="i-sun" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3.2"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.2 3.2l1.1 1.1M11.7 11.7l1.1 1.1M12.8 3.2l-1.1 1.1M4.3 11.7l-1.1 1.1"/></symbol>
   <symbol id="i-moon" viewBox="0 0 16 16"><path d="M13.4 9.9A5.9 5.9 0 0 1 6.1 2.6a5.9 5.9 0 1 0 7.3 7.3Z"/></symbol>
   <symbol id="i-link" viewBox="0 0 16 16"><path d="M6.6 8.6a2.6 2.6 0 0 0 3.9.3l1.9-1.9a2.6 2.6 0 0 0-3.7-3.7l-1.1 1.1"/><path d="M9.4 7.4a2.6 2.6 0 0 0-3.9-.3L3.6 9a2.6 2.6 0 0 0 3.7 3.7l1.1-1.1"/></symbol>
+  <symbol id="i-news" viewBox="0 0 16 16"><path d="M2.2 3.6h9.1v9.4a1.1 1.1 0 0 1-1.1 1.1H3.3a1.1 1.1 0 0 1-1.1-1.1V3.6Z"/><path d="M11.3 6.1h1.4a1.1 1.1 0 0 1 1.1 1.1v5.8a1.1 1.1 0 0 1-1.1 1.1"/><path d="M4.4 6h4.7M4.4 8.3h4.7M4.4 10.6h2.9"/></symbol>
   <symbol id="i-flow" viewBox="0 0 16 16"><path d="M2.4 5.4h8.2M8.4 3.2l2.2 2.2-2.2 2.2"/><path d="M13.6 10.6H5.4M7.6 8.4 5.4 10.6l2.2 2.2"/></symbol>
   <symbol id="i-play" viewBox="0 0 16 16"><path d="M4.6 2.9 13 8l-8.4 5.1V2.9Z"/></symbol>
   <symbol id="i-gauge" viewBox="0 0 16 16"><path d="M2.4 11.6a6.4 6.4 0 1 1 11.2 0"/><path d="M8 8.4l2.8-2.2"/><circle cx="8" cy="9.4" r="1.1"/></symbol>
@@ -444,6 +506,7 @@ td.r{text-align:right}
 
 <div class="wrap" id="shell">
   <div id="v-book" class="view" role="tabpanel"></div>
+  <div id="v-intraday" class="view" role="tabpanel"></div>
   <div id="v-ideas" class="view" role="tabpanel"></div>
   <div id="v-journal" class="view" role="tabpanel"></div>
   <div id="v-sources" class="view" role="tabpanel"></div>
@@ -1470,6 +1533,354 @@ function renderMojoPreview(){
     'rather than guessed.</div>';
 }
 
+/* ==================================================================== the intraday desk
+   The news desk. `intraday` in data.json is the 08:00 card — what the overnight wires said and what
+   the desk scored it at — married to whatever the session runs have since made of it. */
+function intra(){ return DATA.intraday || {}; }
+
+/* The gap ladder, drawn. This is the rule that matters: a +1% open and a +9% open are not the same
+   trade, and the third zone is the one that stops a +12% top being bought. Once the market opens,
+   the actual gap is marked on it, so the reader sees which branch they are in rather than working
+   it out. */
+function gapLadder(plan, session){
+  var st = (intra().settings) || {};
+  var modest = Number(st.gap_modest_pct != null ? st.gap_modest_pct : 2);
+  var wide = Number(st.gap_wide_pct != null ? st.gap_wide_pct : 5);
+  var lo = -1, hi = Math.max(8, wide + 3);
+  var span = hi - lo;
+  var pos = function(v){ return Math.max(0, Math.min(100, (v - lo) / span * 100)); };
+  var zones = [
+    {cls:'go', w:pos(modest) - pos(lo), label:'break of the range', tight:'break'},
+    {cls:'cond', w:pos(wide) - pos(modest), label:'only if strong', tight:'if strong'},
+    {cls:'no', w:100 - pos(wide), label:'no fresh entry', tight:'no entry'}
+  ];
+  var gap = session && session.gap_pct != null ? Number(session.gap_pct) : null;
+  var band = session && session.band;
+  var rule = band ? (BAND_TONE[band] || 'cond') : null;
+  return '<div class="gapbar">' +
+    '<div class="track">' + zones.map(function(z){
+      // both labels ship; CSS picks the one that fits, so no resize listener is needed
+      return '<div class="zone ' + z.cls + '" style="flex:0 0 ' + z.w.toFixed(2) + '%">' +
+        (z.w > 14 ? '<span class="wide">' + esc(z.label) + '</span>' +
+                    '<span class="tight">' + esc(z.tight) + '</span>' : '') + '</div>';
+    }).join('') +
+    (gap != null ? '<div class="mark" style="left:' + pos(gap).toFixed(2) + '%" data-label="' +
+      pct(gap, 1) + '"></div>' : '') + '</div>' +
+    '<div class="scale"><span>' + lo + '%</span><span>' + modest + '%</span><span>' + wide +
+      '%</span><span>+' + hi + '%</span></div>' +
+    (session && session.band_rule
+      ? '<div class="rule ' + rule + '">' + ic(rule === 'no' ? 'shield' : rule === 'cond' ? 'alert' : 'check') +
+        '<span><b>Opened ' + pct(gap, 2) + ' — ' + esc(session.band) + '.</b> ' +
+        esc(session.band_rule) + (session.why_not ? ' — ' + esc(session.why_not) + '.' : '.') + '</span></div>'
+      : '<div class="rule cond">' + ic('clock') + '<span>Before the open the levels are not knowable — ' +
+        'they come from the range the market makes in its first ' +
+        ((plan && plan.opening_range_minutes) || 15) + ' minutes. What is knowable is the rule.</span></div>') +
+    '</div>';
+}
+var BAND_TONE = {flat:'go', modest:'go', wide:'cond', runaway:'no', gap_down:'no', unknown:'cond'};
+
+function materialityHero(c){
+  var r = c.materiality_ratio, size = c.size_inr_cr, rev = c.revenue_ttm_cr;
+  if (r && size && rev){
+    // "3.2× a year's revenue" and "0.1× a year's revenue" are the same sentence describing very
+    // different facts. Below a quarter of a year, a percentage is the honest way to say it.
+    var head = r >= 0.25 ? num(r, 1) + '×' : Math.round(r * 100) + '%';
+    var tail = r >= 0.25 ? 'a year of its own revenue' : 'of a year of its own revenue';
+    return '<div class="hero' + (c.size_estimated || r < 0.25 ? ' est' : '') + '">' +
+      '<div class="big">' + head + '</div>' +
+      '<div class="lab">' + tail + ' — ' + inr(size) + 'cr of order against ' +
+      inr(rev) + 'cr of sales' + (c.size_estimated ? '. <b>Estimated</b> from the capacity: ' +
+      esc(c.size_basis || '') : '') + '</div></div>';
+  }
+  if (size){
+    return '<div class="hero est"><div class="big">' + inr(size) + 'cr</div>' +
+      '<div class="lab">nothing to measure it against — no revenue figure for this name' +
+      (c.size_estimated ? ', and the size itself is estimated' : '') + '</div></div>';
+  }
+  return '<div class="hero est"><div class="big">—</div><div class="lab">the announcement gave no ' +
+    'size and none could be estimated, so materiality is unknown</div></div>';
+}
+
+function newsHeadline(c){
+  return '<div class="headline"><b>' + esc(c.title || '') + '</b>' +
+    '<span class="meta">' + esc(c.source_id || '') +
+    (c.n_reports > 1 ? ' + ' + (c.n_reports - 1) + ' more' : '') +
+    ' · ' + esc(c.published || '') +
+    (c.url ? ' · <a href="' + esc(c.url) + '" target="_blank" rel="noopener">read it</a>' : '') +
+    '</span></div>';
+}
+
+function newsTags(c){
+  var out = [];
+  if (c.route === 'named') out.push({t:'good', i:'target', l:'named in the story', w:c.why_this_name});
+  else if (c.route === 'sympathy') out.push({t:'warn', i:'rss', l:'sympathy play · ' +
+    Math.round((c.directness || 0) * 100) + '%', w:c.why_this_name});
+  else if (c.route === 'theme') out.push({t:'info', i:'flow', l:'via the ' + esc(c.theme || 'theme') +
+    ' map', w:c.why_this_name});
+  if (c.certainty != null && c.certainty < 1)
+    out.push({t:'warn', i:'alert', l:Math.round(c.certainty * 100) + '% firm',
+              w:'not a signed contract yet'});
+  if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong books · ' + c.fund_score,
+              w:(c.fund_why || []).slice(0, 4).join('; ')});
+  else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak books · ' + c.fund_score,
+              w:'a pop on a weak balance sheet fades'});
+  var f = c.freshness || {};
+  if (f.window === 'overnight') out.push({t:'good', i:'clock', l:'overnight', w:f.why});
+  else if (f.window === 'in-session') out.push({t:'warn', i:'clock', l:'already seen', w:f.why});
+  var ta = c.ta || {};
+  if (ta.trend) out.push({t:String(ta.trend).indexOf('up') >= 0 ? 'good' : 'flat', i:'gauge',
+                          l:String(ta.trend).replace('_', ' '), w:'daily trend regime'});
+  if ((c.corroborating_sources || []).length)
+    out.push({t:'info', i:'rss', l:c.corroborating_sources.length + ' other wires',
+              w:c.corroborating_sources.join(', ')});
+  var cs = c.class_score || {};
+  if (!cs.untested && cs.n)
+    out.push({t:cs.avg_open_to_high_pct >= 1.5 ? 'good' : 'flat', i:'flow',
+              l:'this kind of news: ' + pct(cs.avg_open_to_high_pct, 1) + ' avg',
+              w:'over ' + cs.n + ' graded events, average travel from the open'});
+  return '<div class="tags">' + out.map(function(o){
+    return '<span class="pill ' + o.t + '" title="' + esc(o.w || '') + '">' + ic(o.i) + esc(o.l) +
+      '</span>';
+  }).join('') + '</div>';
+}
+
+function sessionLevels(s){
+  if (!s || !s.trigger) return '';
+  return facts([
+    {k:'Trigger', v:rs(s.trigger), s:'break of the range high'},
+    {k:'Stop', v:'<span class="down">' + rs(s.stop) + '</span>',
+     s:pct(-Math.abs(s.stop_pct || 0), 2) + ' · ' + esc(s.stop_note || '')},
+    {k:'Targets', v:rs((s.targets || [])[0]),
+     s:rs((s.targets || [])[1]) + ' · ' + rs((s.targets || [])[2])},
+    {k:'Reward:risk', v:num(s.reward_risk_t2), s:'to T2'},
+    {k:'Size', v:(s.size && s.size.qty ? s.size.qty + ' sh' : '—'),
+     s:(s.size && s.size.qty ? short(s.size.capital_inr) + ' · risk ' + inr(s.size.risk_inr) : 'no size')},
+    {k:'Now', v:rs(s.last), s:pct(s.from_open_pct, 2) + ' from the open'}
+  ]);
+}
+
+function intradayCard(c, rank){
+  var s = c.session || null, plan = c.plan || {};
+  var state = s && s.state ? s.state : 'waiting';
+  var ta = c.ta || {};
+  return '<div class="card" data-card="intra-' + esc(c.symbol) + '"><div class="card-in">' +
+    '<div class="chead"><div style="min-width:0">' +
+      '<div class="sym">' + esc(c.symbol) +
+        '<span class="pill ' + (c.verdict === 'TRADE' ? 'strong' : 'good') + '">' +
+        esc(c.event_label || '') + '</span>' +
+        '<span class="state ' + esc(state) + '">' + esc(state.replace('-', ' ')) + '</span>' +
+      '</div><div class="co">' + esc(c.company || '') + '</div></div>' +
+      '<div class="right"><div class="ltp">' + (c.catalyst != null ? c.catalyst : '—') + '</div>' +
+      '<div class="chg mut">catalyst</div></div></div>' +
+    newsHeadline(c) +
+    materialityHero(c) +
+    newsTags(c) +
+    gapLadder(plan, s) +
+    (s && s.opening_range
+      ? '<div class="pace' + (s.acts ? ' on' : ' behind') + '">' + ic(s.acts ? 'check' : 'shield') +
+        '<span>First ' + s.opening_range.minutes + ' minutes ran <b>' + rs(s.opening_range.low) +
+        '–' + rs(s.opening_range.high) + '</b> and closed ' +
+        Math.round((s.opening_range.close_position || 0) * 100) + '% up that range' +
+        (s.or_volume_multiple ? ' on <b>' + num(s.or_volume_multiple, 1) + '×</b> the normal opening volume' : '') +
+        (s.vwap ? ' · VWAP <b>' + rs(s.vwap) + '</b>' : '') + '.</span></div>'
+      : '') +
+    ((s && s.watch) ? '<div class="need warn">' + ic('clock') + '<div>' + esc(s.watch.note) +
+      '</div></div>' : '') +
+    sessionLevels(s) +
+    (!s || !s.trigger ? facts([
+      {k:'Last close', v:rs(c.ltp), s:'the gap is measured off this'},
+      {k:'Day range', v:pct(plan.expected_day_range_pct, 1), s:'daily ATR'},
+      {k:'Liquidity', v:num(ta.avg_turnover_cr, 0) + 'cr', s:'20-day average'},
+      {k:'Fundamentals', v:(c.fund_score != null ? c.fund_score : '—'), s:'out of 100'},
+      {k:'Off 52w high', v:pct(-Math.abs(ta.dist_52w_high_pct || 0), 1), s:'daily'},
+      {k:'Flat by', v:esc(plan.force_flat_at || '15:10'), s:'intraday means intraday'}
+    ]) : '') +
+    (s && s.order_line && c.verdict === 'TRADE'
+      ? '<div class="code">' + ic('term') + '<code>' + esc(s.order_line) + '</code>' +
+        '<button class="btn sm ghost" data-act="copy" data-text="' + esc(s.order_line) + '">' +
+        ic('copy') + 'Copy</button></div>'
+      : '') +
+    '<div class="actions"><button class="btn ghost grow" data-act="more" data-card="intra-' +
+      esc(c.symbol) + '">' + ic('chev') + 'The arithmetic</button></div>' +
+    '</div><div class="more"><div><div class="more-in">' + intradayMore(c) + '</div></div></div></div>';
+}
+
+function intradayMore(c){
+  var s = c.session || {};
+  var cols = [];
+  cols.push('<div class="mcol"><h5>Why it scored ' + (c.catalyst != null ? c.catalyst : '—') + '</h5>' +
+    (c.catalyst_reasons || []).map(function(r){
+      var lead = String(r).trim().split(' ')[0];
+      var tone = lead.charAt(0) === '+' ? 'p' : lead.charAt(0) === '-' ? 'm' : '';
+      return '<div class="why ' + tone + '"><span class="n">' + esc(lead) + '</span><span>' +
+        esc(String(r).trim().slice(lead.length).trim()) + '</span></div>';
+    }).join('') + '</div>');
+  if ((s.reasons || []).length)
+    cols.push('<div class="mcol"><h5>What the session did</h5>' + s.reasons.map(function(r){
+      return '<div class="kv"><span>' + esc(r) + '</span><span></span></div>';
+    }).join('') + '</div>');
+  var f = c.fundamentals || {}, ta = c.ta || {};
+  cols.push('<div class="mcol"><h5>The business</h5>' +
+    [['Revenue (TTM)', f.revenue_ttm_cr ? inr(f.revenue_ttm_cr) + 'cr' : '—'],
+     ['Market cap', f.market_cap_cr ? inr(f.market_cap_cr) + 'cr' : '—'],
+     ['P/E', num(f.pe, 1)], ['ROCE', pct(f.roce, 0)], ['D/E', num(f.debt_to_equity, 2)],
+     ['Promoter', pct(f.promoter_pct, 1)]].map(function(kv){
+      return '<div class="kv"><span>' + kv[0] + '</span><span>' + kv[1] + '</span></div>';
+    }).join('') + '</div>');
+  cols.push('<div class="mcol"><h5>The chart</h5>' +
+    [['Trend', esc(String(ta.trend || '—').replace('_', ' '))], ['RSI', num(ta.rsi, 1)],
+     ['ADX', num(ta.adx, 0)], ['ATR', pct(ta.atr_pct, 2)],
+     ['1-day', pct(ta.chg_1d_pct, 2)], ['5-day', pct(ta.chg_5d_pct, 2)],
+     ['Turnover', num(ta.avg_turnover_cr, 0) + 'cr'], ['Last bar', esc(ta.last_bar_date || '—')]].map(function(kv){
+      return '<div class="kv"><span>' + kv[0] + '</span><span>' + kv[1] + '</span></div>';
+    }).join('') + '</div>');
+  return '<div class="mgrid">' + cols.join('') + '</div>';
+}
+
+function classScoreboard(){
+  var rows = intra().event_classes || [];
+  if (!rows.length){
+    return '<div class="empty">' + ic('flow', 'l') + '<b>Nothing graded yet</b>' +
+      'Every candidate is scored at the close on how far it travelled from the open. After a few ' +
+      'weeks this table is the desk\'s own opinion of what each kind of news is worth — replacing ' +
+      'the estimates it started with.</div>';
+  }
+  var max = Math.max.apply(null, rows.map(function(r){ return Math.abs(r.avg_open_to_high_pct || 0); }).concat([1]));
+  return '<div class="card"><div class="card-in">' + rows.map(function(r){
+    var v = r.avg_open_to_high_pct;
+    var w = r.untested ? 0 : Math.max(2, Math.abs(v || 0) / max * 100);
+    var moved = (r.prior != null && r.effective != null) ? r.effective - r.prior : 0;
+    return '<div class="classbar' + (r.untested ? ' untested' : '') + '">' +
+      '<div class="who">' + esc(String(r.event).replace(/_/g, ' ')) +
+        '<small>' + (r.untested ? 'no graded events yet'
+          : r.n + ' graded · ' + Math.round((r.hit_rate || 0) * 100) + '% moved') + '</small></div>' +
+      '<div class="bar"><i class="' + (v >= 1.5 ? '' : 'thin') + '" style="width:' + w.toFixed(1) +
+        '%"></i></div>' +
+      '<div class="num">' + (r.untested ? '—' : pct(v, 1)) +
+        '<small>weight ' + num(r.effective, 0) +
+        (moved ? ' (' + (moved > 0 ? '+' : '') + num(moved, 0) + ')' : ' (seed)') + '</small></div>' +
+      '</div>';
+  }).join('') + '</div>' +
+    '<div class="hint">Average travel from the open, per kind of news, over every candidate the ' +
+    'desk has graded — whether or not a plan ever triggered. <b>Weight</b> is what the catalyst ' +
+    'score actually uses: the seed it started with, moved by these outcomes. A class can be halved ' +
+    'or doubled by evidence, never inverted.</div>';
+}
+
+function renderIntraday(){
+  var d = intra();
+  var trade = d.trade || [], watch = d.watch || [], avoid = d.avoid || [];
+  var st = d.stats || {}, html = '';
+
+  if (!d.day){
+    $('#v-intraday').innerHTML = '<div class="empty">' + ic('news', 'l') +
+      '<b>No pre-open card yet</b>' +
+      'The 08:00 run reads the overnight corporate wires, scores what it finds against the ' +
+      'company\'s own revenue and its chart, and lands here before the market opens. Run ' +
+      '<b>preopen</b> from the Console, or wait for tomorrow morning.</div>' +
+      '<div class="sec" style="margin-top:22px"><div class="sec-h"><h3>' + ic('flow') +
+      'What each kind of news has been worth</h3></div>' + classScoreboard() + '</div>';
+    return;
+  }
+
+  var wires = d.wires || {};
+  var fed = Object.keys(wires).filter(function(k){ return (wires[k] || {}).docs; }).length;
+  html += '<div class="strip">' +
+    stat('news', 'Card for', esc(d.day), esc(d.generated_at || '') + ' IST') +
+    stat('target', 'To trade', String(trade.length), trade.length ? esc(trade.map(function(c){ return c.symbol; }).join(', ')) : 'nothing cleared the bar') +
+    stat('rss', 'Events read', String(d.events_read || 0), fed + ' of ' + Object.keys(wires).length + ' wires answered') +
+    stat('clock', 'Session', d.checked_at ? esc(d.checked_at.slice(-5)) : 'not yet', st.n_open ? st.n_open + ' open · ' + esc((st.open_symbols || []).join(', ')) : 'nothing open') +
+    stat('wallet', 'Day book', '<span class="' + sgn(st.pnl_inr) + '">' + inr(st.pnl_inr) + '</span>', (st.n_trades || 0) + ' closed · ' + (st.hit_rate != null ? Math.round(st.hit_rate * 100) + '% hit' : 'no record yet')) +
+    '</div>';
+
+  if (trade.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('target') + 'Trade</h3>' +
+      '<span class="note">every level from the chart · the plan is a rule about the open</span></div>' +
+      trade.map(intradayCard).join('') + '</div>';
+  } else {
+    html += '<div class="sec"><div class="empty">' + ic('target', 'l') +
+      '<b>Nothing cleared the bar today</b>' +
+      'The wires were read and scored; none of it was worth a plan. Cash is a position.</div></div>';
+  }
+
+  if (watch.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('bulb') + 'Watch</h3>' +
+      '<span class="note">real news, not enough on its own</span></div>' +
+      '<div class="tw"><table><thead><tr><th>Symbol</th><th>Event</th><th class="r">Catalyst</th>' +
+      '<th class="r">Size</th><th class="r">Books</th><th>Route</th><th>Gap</th><th></th></tr></thead><tbody>' +
+      watch.map(function(c){
+        var s = c.session || {};
+        var size = c.materiality_ratio ? num(c.materiality_ratio, 1) + '× rev'
+                 : (c.size_inr_cr ? inr(c.size_inr_cr) + 'cr' : '—');
+        return '<tr><td><b>' + esc(c.symbol) + '</b></td><td>' + esc(c.event_label || '') + '</td>' +
+          '<td class="r n">' + (c.catalyst != null ? c.catalyst : '—') + '</td>' +
+          '<td class="r n">' + size + '</td><td class="r n">' + (c.fund_score != null ? c.fund_score : '—') + '</td>' +
+          '<td>' + esc(c.route || '—') + (c.route === 'sympathy' ? ' ' + Math.round((c.directness || 0) * 100) + '%' : '') + '</td>' +
+          '<td class="n">' + (s.gap_pct != null ? pct(s.gap_pct, 1) : '—') + '</td>' +
+          '<td>' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">story</a>' : '') + '</td></tr>';
+      }).join('') + '</tbody></table></div></div>';
+  }
+
+  if (avoid.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('alert') + 'Avoid</h3>' +
+      '<span class="note">do not buy today — and exit if you hold it</span></div>' +
+      avoid.map(function(c){
+        return '<div class="need bad">' + ic('alert') + '<div><b>' + esc(c.symbol) + '</b> — ' +
+          esc(c.event_label || '') + '. ' + esc(c.title || '') +
+          (c.url ? ' <a href="' + esc(c.url) + '" target="_blank" rel="noopener">story</a>' : '') +
+          '</div></div>';
+      }).join('') + '</div>';
+  }
+
+  var closed = d.closed || [];
+  if (closed.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') + 'The day book</h3>' +
+      '<span class="note">' + inr(st.notional_inr) + ' notional · paper only</span></div>' +
+      '<div class="strip" style="margin-bottom:12px">' +
+      stat('wallet', 'Realised', '<span class="' + sgn(st.pnl_inr) + '">' + inr(st.pnl_inr) + '</span>', pct(st.return_on_notional_pct, 2) + ' of notional') +
+      stat('target', 'Hit rate', st.hit_rate != null ? Math.round(st.hit_rate * 100) + '%' : '—', (st.n_wins || 0) + ' of ' + (st.n_trades || 0)) +
+      stat('scale', 'Average R', num(st.avg_r, 2), 'per trade, at the stop') +
+      stat('chart', 'Best / worst', inr(st.best_inr) + ' / ' + inr(st.worst_inr), (st.n_days_traded || 0) + ' days traded') +
+      '</div>' +
+      '<div class="tw scroll"><table><thead><tr><th>Date</th><th>Symbol</th><th>Event</th>' +
+      '<th>Band</th><th class="r">Entry</th><th class="r">Exit</th><th>Why out</th>' +
+      '<th class="r">R</th><th class="r">P&amp;L</th></tr></thead><tbody>' +
+      closed.slice().reverse().map(function(t){
+        return '<tr><td class="n">' + esc(t.date || '') + '</td><td><b>' + esc(t.symbol) + '</b></td>' +
+          '<td>' + esc(String(t.event_label || t.event || '').replace(/_/g, ' ')) + '</td>' +
+          '<td>' + esc(t.band || '—') + '</td>' +
+          '<td class="r n">' + rs(t.entry) + '</td><td class="r n">' + rs(t.exit) + '</td>' +
+          '<td>' + esc(String(t.exit_reason || '').replace(/_/g, ' ')) + '</td>' +
+          '<td class="r n ' + sgn(t.r_multiple) + '">' + num(t.r_multiple, 2) + '</td>' +
+          '<td class="r n ' + sgn(t.pnl_inr) + '">' + inr(t.pnl_inr) + '</td></tr>';
+      }).join('') + '</tbody></table></div></div>';
+  }
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') +
+    'What each kind of news has been worth</h3><span class="note">the part that gets trained</span>' +
+    '</div>' + classScoreboard() + '</div>';
+
+  var sk = d.skipped || [];
+  if (sk.length){
+    html += '<div class="sec"><div class="sec-h"><h3>' + ic('x') + 'Read and dropped</h3>' +
+      '<span class="note">' + sk.length + ' events</span></div><div class="card"><div class="card-in log">' +
+      sk.map(function(x){
+        return '<div class="row"><span class="when">' + esc(x.symbol || '') + '</span>' +
+          '<span class="what">' + esc(String(x.event || '').replace(/_/g, ' ')) +
+          ' <span class="mut">' + esc(x.why || '') + '</span></span></div>';
+      }).join('') + '</div></div></div>';
+  }
+
+  var s2 = d.settings || {};
+  html += '<div class="hint">Day book ' + inr(s2.notional_inr) + ' notional, at most ' +
+    s2.max_positions + ' positions, ' + s2.risk_per_trade_pct + '% of notional risked per trade — ' +
+    'the stop sizes the position, not the cash. Gap ladder ' + s2.gap_modest_pct + '% / ' +
+    s2.gap_wide_pct + '%. Stop never wider than ' + s2.max_stop_pct + '%. Flat by ' +
+    s2.force_flat_at + '. Paper trading throughout; nothing on this page places an order.</div>';
+
+  $('#v-intraday').innerHTML = html;
+}
+
 /* ==================================================================== console */
 function renderConsole(){
   var log = DATA.actions_log || [], on = GH.ok, c = capacity();
@@ -1501,6 +1912,14 @@ function renderConsole(){
     '</div></div></div>';
 
   var acts = [
+    {c:'preopen', i:'news', t:'Run the pre-open news scan',
+     d:'Read the overnight corporate wires, score what they carry against each company\'s own ' +
+       'revenue and its chart, and write today\'s Intraday card. This is the 08:00 run.'},
+    {c:'intraday', i:'clock', t:'Check the session',
+     d:'The real gap and the real opening range: which plans the rule now allows, and which stood aside.'},
+    {c:'intraday-close', i:'exit', t:'Settle the day and grade the news',
+     d:'Exit every open day trade at what the tape gave, then move each event class and news wire ' +
+       'on what its stocks actually did from the open.'},
     {c:'morning', i:'play', t:'Run the morning pipeline',
      d:'Gather every source, extract, analyse, and rebuild the pick list — without the analyst review pass.'},
     {c:'eod', i:'clock', t:'Run the evening mark-to-market',
@@ -1872,6 +2291,8 @@ document.addEventListener('input', function(e){
 /* ==================================================================== shell */
 var TABS = [
   {id:'book', label:'The book', icon:'book', count:function(){ return positions().length; }},
+  {id:'intraday', label:'Intraday', icon:'news',
+   count:function(){ return ((intra().trade || []).length) || null; }},
   {id:'ideas', label:'Ideas', icon:'bulb', count:function(){ return ideaList().length; }},
   {id:'journal', label:'Journal', icon:'chart', count:function(){ return (DATA.closed || []).length || null; }},
   {id:'sources', label:'Sources', icon:'rss', count:function(){ return (DATA.sources || []).length; }},
@@ -1889,6 +2310,7 @@ function show(tab){
   if (location.hash !== '#' + tab) location.hash = '#' + tab;
   TABS.forEach(function(t){ $('#v-' + t.id).classList.toggle('on', t.id === tab); });
   renderTabs();
+  if (tab === 'intraday') renderIntraday();
   if (tab === 'journal') renderJournal();
   if (tab === 'sources') renderSources();
   if (tab === 'console') renderConsole();
@@ -1899,7 +2321,7 @@ document.addEventListener('click', function(e){
 });
 document.addEventListener('keydown', function(e){
   if (e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
-  var i = ['1','2','3','4','5'].indexOf(e.key);
+  var i = ['1','2','3','4','5','6'].indexOf(e.key);
   if (i !== -1){ show(TABS[i].id); return; }
   if (e.key === '/'){
     show('ideas');
@@ -1969,6 +2391,7 @@ function render(){
   renderBook();
   renderIdeas();
   renderTabs();
+  if (TAB === 'intraday') renderIntraday();
   if (TAB === 'journal') renderJournal();
   if (TAB === 'sources') renderSources();
   if (TAB === 'console') renderConsole();
