@@ -100,6 +100,7 @@ python -m stocktips preopen --refresh      # 08:00: overnight corporate news →
 python -m stocktips intraday               # the session check: the real gap, the real opening range
 python -m stocktips intraday --close       # settle the day at what the tape gave, then grade the news
 python -m stocktips daybook                # the intraday record, and what each kind of news has been worth
+python -m stocktips read --url https://...  # score one story you found yourself  (--add to put it on today's card)
 python -m stocktips analyze-symbol TATASTEEL --tf weekly
 python -m stocktips add-source --kind telegram --id tg_foo --channel foo --name "Telegram — @foo"
 python -m stocktips lesson "Breakouts on 1.5x volume kept failing in a falling Nifty — require Nifty > 20EMA for breakout picks."
@@ -333,6 +334,20 @@ stop is never wider than 1.5%, the position is sized by the risk budget rather t
 everything is flat by 15:10. The day book (`state/daybook.json`) is deliberately separate from the
 positional ledger: an equity curve means nothing if half its entries are round trips inside one bar
 of the other half.
+
+### The story you found yourself
+
+The article that started this was read on a phone at mid-morning. So there is a path for exactly
+that — `stocktips read --url …` or `--text …`, and a paste box in the Console beside the Markets Mojo
+one. It uses the same extractor, the same beneficiary map and the same catalyst score as the 08:00
+run, so the answer sits beside that run's rather than being a second opinion reached differently.
+`--add` folds it into today's card, and the card records that a story was added by hand.
+
+One subtlety worth knowing: the freshness term measures when the news *landed*, not when you read it,
+so an overnight story pasted at 10:30 still scores +12 for being published outside market hours. That
+is correct about the news and completely silent about the thing that actually cost money. So the read
+is warned about separately — *the market has been open 75 minutes; the score above is what this news
+was worth at the open* — rather than the score being quietly fudged.
 
 ### Training it
 

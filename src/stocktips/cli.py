@@ -263,6 +263,12 @@ def cmd_preopen(a):
 
 def cmd_intraday(a):
     """The session runs: 09:35 for the opening range, midday for the trail, 15:20 to settle."""
+    day = a.date or now_ist().date().isoformat()
+    closed = _market_closed(day)
+    if closed and not a.force:
+        print(f"market closed on {day} ({closed}) — there is no session to watch "
+              f"(use --force to look anyway)")
+        return
     if a.close:
         out = pipeline.intraday_close(date=a.date)
         if not a.no_dashboard:
@@ -698,6 +704,7 @@ def main(argv=None):
     p = sub.add_parser("intraday")
     p.add_argument("--close", action="store_true", help="settle the day's trades and grade the news")
     p.add_argument("--date", default=None)
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
     p.add_argument("--no-dashboard", action="store_true")
     p.set_defaults(fn=cmd_intraday)
     p = sub.add_parser("read")
