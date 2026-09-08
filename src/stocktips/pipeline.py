@@ -17,6 +17,8 @@ from .sources import events, extract, fetchers
 from .util import (CONFIG_DIR, REPORTS_DIR, load_yaml, now_ist, read_json, settings, sources_config,
                    today_str, write_json)
 
+MAX_SYMBOLS_PRICED = 40      # how many distinct symbols one pre-open run will fetch data for
+
 # the TA fields the intraday card carries; the positional card's list lives in cli.py
 ANALYSIS_TA_FIELDS = ("trend", "rsi", "adx", "atr_pct", "vol_ratio", "chg_1d_pct", "chg_5d_pct",
                       "dist_52w_high_pct", "dist_ema200_pct", "avg_turnover_cr", "high_52w",
@@ -216,6 +218,20 @@ def gather_news(max_age_hours: float = 20) -> dict:
     return out
 
 
+def _ceiling(ev: dict, fresh: dict) -> int:
+    """The most this event could score if every unknown broke its way.
+
+    Granting the best materiality band, perfect fundamentals, the best plausible chart bonus and the
+    freshness the story actually has. Deliberately optimistic, because its job is to *order* the
+    queue of symbols worth paying for — not to reject anything. A gate tight enough to reject would
+    also drop true positives, and a missed GE Vernova costs more than a wasted request.
+    """
+    directness = float(ev.get("directness") or 1.0)
+    base = float(ev.get("event_prior") or 0) * float(ev.get("certainty") or 1.0) * directness
+    corroboration = min(6, 3 * len(ev.get("corroborating_sources") or []))
+    return int(round(base + 26 * directness + 10 + 13 + fresh["points"] + corroboration))
+
+
 def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None = None) -> dict:
     """Score every overnight event and write the pre-open card → reports/<date>/preopen.json.
 
@@ -234,29 +250,52 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
     raw = raw if raw is not None else read_json(day_dir(date) / "news_raw.json", None) or gather_news()
 
     ranked, skipped = [], []
+    spark_cache = sparks.load()
+
+    # Free checks first. Then order what is left by the most it could possibly score and price only
+    # that many symbols, because everything past this point costs a Yahoo request and a Screener
+    # request — and those two are what rate-limit and take a whole run down with them.
+    queue = []
     for ev in raw["events"]:
-        # cheap gate first: a stale story or a name three steps from the news never needs a chart
         fresh = catalyst.freshness(ev.get("published_utc"), now)
-        if fresh["window"] == "stale" or ev["directness"] < events.DIRECTNESS_FLOOR:
-            skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")},
-                            "why": fresh["why"] if fresh["window"] == "stale" else "too indirect"})
+        drop = (fresh["why"] if fresh["window"] == "stale"
+                else "too indirect for the news to matter to it"
+                if ev["directness"] < events.DIRECTNESS_FLOOR else None)
+        if drop:
+            skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")}, "why": drop})
             continue
-        df = prices.history(ev["symbol"])
+        queue.append((_ceiling(ev, fresh), ev))
+    queue.sort(key=lambda x: -x[0])
+
+    # one chart and one fundamentals page per symbol, however many events name it
+    charts: dict[str, object] = {}
+    books: dict[str, tuple] = {}
+    for ceiling, ev in queue:
+        sym = ev["symbol"]
+        if sym not in charts:
+            if len(charts) >= MAX_SYMBOLS_PRICED:
+                skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")},
+                                "why": f"queue was full at {MAX_SYMBOLS_PRICED} symbols and this "
+                                       f"scored at most {ceiling}"})
+                continue
+            charts[sym] = prices.history(sym)
+        df = charts[sym]
         if df is None:
             skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")},
                             "why": "no price history"})
             continue
         snap = ta.analyze(df)
-        f = fundamentals.fetch(ev["symbol"])
-        fscore, fwhy = fundamentals.score(f)
+        if sym not in books:
+            f = fundamentals.fetch(sym)
+            books[sym] = (f, *fundamentals.score(f))
+        f, fscore, fwhy = books[sym]
         cat = catalyst.score(
             ev, fundamentals=f, fund_score=fscore, ta=snap,
             class_prior=eventscore.prior(class_state, ev["event"], ev.get("event_prior", 0)),
             source_weight=confidence.weight(conf.get(ev["source_id"], {}).get("score", 0.0)),
             now=now)
         plan = intradaymod.preopen_plan(snap["close"], snap, cfg)
-        sparks.remember(spark_cache := sparks.load(), ev["symbol"], df)
-        sparks.save(spark_cache)
+        sparks.remember(spark_cache, ev["symbol"], df)
         ranked.append({
             **ev, **cat, "plan": plan, "fund_score": fscore, "fund_why": fwhy,
             "ltp": snap["close"],
@@ -268,6 +307,7 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
             "class_score": eventscore.display(class_state, ev["event"]),
         })
 
+    sparks.save(spark_cache)
     ranked.sort(key=lambda r: (-r["catalyst"], r["symbol"]))
     contenders_ = [r for r in ranked if r["verdict"] == "TRADE"][:limit]
     out = {

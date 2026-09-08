@@ -307,3 +307,65 @@ def test_a_news_class_that_keeps_fading_loses_weight_and_one_that_travels_gains_
     assert (eventscore.prior(d, "jv_partnership", 12) - 12) < (eventscore.prior(d, "order_win", 30) - 30) / 3
     ranked = [r["event"] for r in eventscore.summary(d)]
     assert ranked.index("order_win") < ranked.index("analyst_upgrade")
+
+
+# ------------------------------------------------------------------ what the run costs
+def test_one_symbol_is_priced_once_however_many_events_name_it(monkeypatch, tmp_path):
+    """A wire can hand over the same company under two event classes, and a busy morning can hand
+    over fifty names. Each extra fetch is a Yahoo request and a Screener request, and those are what
+    rate-limit and take a whole run down."""
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    charts, books = [], []
+
+    def history(symbol, days=None, interval="1d"):
+        if interval == "1d":
+            charts.append(symbol)
+            return daily_bars()
+        return MODEST_DAY
+
+    monkeypatch.setattr(pipeline.prices, "history", history)
+    monkeypatch.setattr(pipeline.fundamentals, "fetch",
+                        lambda sym: books.append(sym) or dict(FUNDAMENTALS))
+
+    base = events.merge(events.scan(STORY, "corp_bs_capitalmarket"))[0]
+    # the same symbol under three different classes, plus one other name
+    raw = {"events": [base,
+                      {**base, "event": "order_win", "event_prior": 30},
+                      {**base, "event": "analyst_upgrade", "event_prior": 10},
+                      {**base, "symbol": "POWERINDIA", "route": "theme", "directness": 1.0}],
+           "sources": {}}
+    pipeline.preopen(raw, now=PREOPEN_NOW, date="2026-09-08")
+    assert charts.count("GVT&D") == 1, f"priced GVT&D {charts.count('GVT&D')} times"
+    assert books.count("GVT&D") == 1
+    assert sorted(set(charts)) == ["GVT&D", "POWERINDIA"]
+
+
+def test_the_queue_is_capped_and_the_best_events_are_priced_first(monkeypatch, tmp_path):
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(pipeline, "MAX_SYMBOLS_PRICED", 2)
+    seen = []
+    monkeypatch.setattr(pipeline.prices, "history",
+                        lambda s, days=None, interval="1d": (seen.append(s) or daily_bars())
+                        if interval == "1d" else MODEST_DAY)
+    monkeypatch.setattr(pipeline.fundamentals, "fetch", lambda sym: dict(FUNDAMENTALS))
+
+    base = events.merge(events.scan(STORY, "corp_bs_capitalmarket"))[0]
+    raw = {"events": [
+        {**base, "symbol": "WEAK", "event": "corporate_action", "event_prior": 8, "directness": 0.4},
+        {**base, "symbol": "STRONG", "event": "order_win", "event_prior": 30, "directness": 1.0},
+        {**base, "symbol": "MIDDLE", "event": "regulatory_approval", "event_prior": 26, "directness": 1.0},
+    ], "sources": {}}
+    card = pipeline.preopen(raw, now=PREOPEN_NOW, date="2026-09-08")
+    assert set(seen) == {"STRONG", "MIDDLE"}, f"priced {seen}"
+    assert any("queue was full" in s["why"] for s in card["skipped"])
+
+
+def test_a_stale_story_costs_no_requests_at_all(monkeypatch, tmp_path):
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(pipeline.prices, "history",
+                        lambda *a, **k: pytest.fail("a stale story should never be priced"))
+    base = events.merge(events.scan(STORY, "corp_bs_capitalmarket"))[0]
+    raw = {"events": [{**base, "published_utc": "2026-09-01T10:00:00+00:00"}], "sources": {}}
+    card = pipeline.preopen(raw, now=PREOPEN_NOW, date="2026-09-08")
+    assert card["trade"] == [] and card["skipped"]
+    assert "days old" in card["skipped"][0]["why"]
