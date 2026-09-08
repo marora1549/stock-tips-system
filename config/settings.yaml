@@ -62,7 +62,7 @@ source_confidence:
 intraday:
   # The news-catalyst day book. Separate from the positional ledger on purpose: this money is in
   # and out inside one session, and mixing the two would make both records unreadable.
-  enabled: true
+  enabled: true                # the kill switch: false stops preopen and every session run at once
   notional_inr: 100000         # the day book's own notional capital (paper)
   max_positions: 2             # two names is already a lot to watch inside a session
   max_per_trade_pct: 40        # of the day book, per name

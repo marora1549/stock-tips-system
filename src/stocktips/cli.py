@@ -236,12 +236,30 @@ def cmd_contenders(a):
     print(json.dumps({"day": day, "ideas_considered": len(results), "contenders": top}, indent=1, ensure_ascii=False))
 
 
+def _intraday_off() -> str | None:
+    """The one switch that turns the news desk off, honoured by every command that is part of it.
+
+    A settings key nothing reads is a lie about the system, and this one is the kill switch: if the
+    intraday experiment is not working, `intraday.enabled: false` in config/settings.yaml should stop
+    it everywhere rather than requiring four routines to be disabled one at a time.
+    """
+    cfg = settings().get("intraday", {}) or {}
+    if cfg.get("enabled", True):
+        return None
+    return ("the intraday desk is switched off — set intraday.enabled: true in config/settings.yaml "
+            "to turn it back on")
+
+
 def cmd_preopen(a):
     """The 08:00 run: read overnight corporate news and say what to do about it before the open.
 
     Its output is an email, so the report's first line has to stand alone — that may be all that
     gets read on a phone at eight in the morning.
     """
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
     closed = _market_closed(today_str())
     if closed and not a.force:
         print(f"market closed today ({closed}) — nothing opens, so there is nothing to be early for")
@@ -263,6 +281,10 @@ def cmd_preopen(a):
 
 def cmd_intraday(a):
     """The session runs: 09:35 for the opening range, midday for the trail, 15:20 to settle."""
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
     day = a.date or now_ist().date().isoformat()
     closed = _market_closed(day)
     if closed and not a.force:

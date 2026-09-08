@@ -477,3 +477,19 @@ def test_the_gather_stops_at_the_wall_clock_even_with_budget_left(monkeypatch, t
     assert raw["cut_short"], "it must say which wires the clock cost it"
     assert any("deadline" in w["why"] for w in raw["cut_short"])
     assert raw["seconds"] >= 90
+
+
+def test_the_kill_switch_stops_every_part_of_the_news_desk(monkeypatch, capsys):
+    """A settings key nothing reads is a lie about the system. This one has to actually stop it."""
+    from stocktips import cli
+    import stocktips.util as util
+
+    real = util.settings()
+    monkeypatch.setattr(util, "settings",
+                        lambda: {**real, "intraday": {**real.get("intraday", {}), "enabled": False}})
+    monkeypatch.setattr(cli, "settings", util.settings)
+
+    for argv in (["preopen"], ["intraday"], ["intraday", "--close"]):
+        capsys.readouterr()
+        cli.main(argv)
+        assert "switched off" in capsys.readouterr().out, f"{argv} ran anyway"
