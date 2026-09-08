@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0F1216">
+<meta name="theme-color" content="#F4F6F9">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="./icon.svg">
@@ -37,7 +37,7 @@
   --line:#E3E8EF; --line-2:#D3DAE4;
   --ink:#0E1420; --ink-2:#4A5568; --ink-3:#5B6675;
   --blue:#1B5CCC; --blue-solid:#1B5CCC; --blue-dim:rgba(27,92,204,.10); --blue-line:rgba(27,92,204,.28);
-  --green:#046B41; --green-dim:rgba(4,107,65,.10); --green-line:rgba(4,107,65,.26);
+  --green:#046B41; --green-dim:rgba(4,107,65,.10); --green-line:rgba(4,107,65,.38);
   --red:#AE222C; --red-dim:rgba(174,34,44,.09); --red-line:rgba(174,34,44,.24);
   --amber:#8A5A08; --amber-dim:rgba(138,90,8,.10);
   --violet:#6134D2; --violet-dim:rgba(97,52,210,.10);
@@ -157,7 +157,7 @@ button{font-family:inherit}
 .spark .lv.tgt{stroke:var(--green-line)}
 .spark .lt{font:600 11px var(--mono); text-anchor:start; fill:var(--ink-2)}
 .spark .lt.stop{fill:var(--red)} .spark .lt.tgt{fill:var(--green)}
-.sparkmeta{position:absolute; right:12px; bottom:7px; font:500 10px/1 var(--mono); color:var(--ink-3);
+.sparkmeta{position:absolute; right:12px; top:8px; font:500 10px/1 var(--mono); color:var(--ink-3);
   letter-spacing:.04em}
 .ladder{margin-top:18px}
 .rail{position:relative; height:5px; background:var(--elev-3); border-radius:99px; margin:28px 0 0}
@@ -335,6 +335,7 @@ td.r{text-align:right}
 .need.good{border-left-color:var(--green)} .need.good .ic{color:var(--green)}
 .chartbox{background:var(--elev); border:1px solid var(--line); border-radius:var(--r); padding:16px;
   height:280px}
+.chartbox.blank{height:auto; padding:0; border:0; background:none}
 .prose{font-size:13.5px; line-height:1.75; color:var(--ink-2); max-width:74ch}
 .prose h4{margin:20px 0 6px; font:700 14px/1.3 var(--sans); color:var(--ink)}
 .prose h4:first-child{margin-top:0}
@@ -1184,7 +1185,8 @@ function renderJournal(){
   $('#v-journal').innerHTML = html;
   try { drawChart(); } catch (e) {
     var cv = $('#eqChart');
-    if (cv) cv.parentElement.innerHTML = '<div class="empty">' + ic('chart', 'l') +
+    if (cv) cv.parentElement.className = 'chartbox blank';
+    cv.parentElement.innerHTML = '<div class="empty">' + ic('chart', 'l') +
       '<b>Chart unavailable</b>' + esc(e.message) + '</div>';
   }
 }
@@ -1193,6 +1195,7 @@ function drawChart(){
   var cv = $('#eqChart'), curve = DATA.equity_curve || [];
   if (!cv) return;
   if (!curve.length || typeof Chart === 'undefined'){
+    cv.parentElement.className = 'chartbox blank';
     cv.parentElement.innerHTML = '<div class="empty">' + ic('chart', 'l') + '<b>' +
       (curve.length ? 'Chart library unavailable' : 'No curve yet') + '</b>' +
       (curve.length ? 'cdnjs did not load.' : 'It starts after the first evening run.') + '</div>';
@@ -1724,7 +1727,7 @@ function render(){
     ' open</span><span>Paper trading, not investment advice · data generated ' + esc(DATA.generated || '—') + '</span>';
 }
 
-applyTheme(recall(TKEY, (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark'));
+applyTheme(recall(TKEY, 'light'));   // the desk reads light unless you switch it
 var savedToken = recall(GKEY, null);
 
 fetch('./data.json', {cache:'no-store'})
