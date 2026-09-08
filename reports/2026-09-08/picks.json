@@ -1,0 +1,458 @@
+{
+  "date": "2026-09-08",
+  "top": [
+    {
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "tip_id": "9a6b4f5440",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "n_mentions": 5,
+      "src_targets": [
+        1020.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
+        "https://investmentguruindia.com/newsdetail/buy-fortis-healthcare-ltd-for-the-target-rs-1-130-by-motilal-oswal-financial-services-ltd101279",
+        "https://investmentguruindia.com/newsdetail/buy-hindustan-unilever-ltd-for-the-target-rs-2-400-by-motilal-oswal-financial-services-ltd493596",
+        "https://investmentguruindia.com/newsdetail/buy-brigade-enterprises-ltd-for-the-target-rs-900-by-motilal-oswal-financial-services-ltd872241",
+        "https://investmentguruindia.com/newsdetail/buy-v2-retail-ltd-for-the-target-rs-275-by-motilal-oswal-financial-services-ltd672443"
+      ],
+      "brokerages": [
+        "motilal"
+      ],
+      "sentence": "Buy CG Power and Industrial Solutions Ltd for the Target Rs.1,020 by Motilal Oswal ... Buy UltraTech Cement Ltd for the Target Rs.13,800 by Motilal Oswal Financial Servic... Buy Physicswallah Ltd for the Target Rs.200 by Motilal Oswal Financial Services Ltd Buy Godrej Consumer Ltd for the Target Rs.",
+      "ltp": 895.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 895.0,
+        "entry_zone": [
+          890.52,
+          899.47
+        ],
+        "stop_loss": 855.9,
+        "stop_loss_pct": 4.37,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          953.45,
+          1006.75,
+          1073.8
+        ],
+        "target_pct": [
+          6.53,
+          12.49,
+          19.98
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.86,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 88,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.4 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 1.74× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 2.86"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          1020.0
+        ],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.4,
+        "atr_pct": 2.5,
+        "adx": 15.7,
+        "vol_ratio": 1.74,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -8.76,
+        "dist_ema20_pct": 0.94,
+        "dist_ema200_pct": 9.85,
+        "avg_turnover_cr": 200.86,
+        "chg_5d_pct": -2.29,
+        "chg_20d_pct": 1.82,
+        "high_52w": 980.9,
+        "last_bar_date": "2026-09-07"
+      },
+      "resistances": [
+        {
+          "price": 900.0,
+          "touches": 1
+        },
+        {
+          "price": 916.0,
+          "touches": 1
+        },
+        {
+          "price": 953.45,
+          "touches": 2
+        },
+        {
+          "price": 977.23,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 887.1,
+          "touches": 1
+        },
+        {
+          "price": 860.2,
+          "touches": 1
+        },
+        {
+          "price": 814.85,
+          "touches": 1
+        },
+        {
+          "price": 799.35,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 88,
+      "fund_score": 91,
+      "fund_why": [
+        "+12 ROCE 26.7%",
+        "+8 ROE 20.5%",
+        "-6 P/E 111",
+        "+4 3y profit CAGR 10%",
+        "+6 3y sales CAGR 21%",
+        "+5 D/E 0.01",
+        "+4 promoter 56.36%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹141,003 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 141003.0,
+        "pe": 111.0,
+        "roce": 26.7,
+        "roe": 20.5,
+        "sales_growth_3_years": 21.0,
+        "profit_growth_3_years": 10.0,
+        "promoter_pct": 56.36,
+        "debt_to_equity": 0.01,
+        "np_yoy_growth_pct": 15.4
+      },
+      "source_weight": 0.55,
+      "source_confidence": 50,
+      "composite": 79,
+      "verdict": "STRONG BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "analyst_note": "Already an open pending position (booked 2026-09-07, fills at today's open). This is corroborating buy flow on an existing holding, not a fresh capital allocation — no cash is available today regardless (3 positions already committed ~99% of capital).",
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "tip_id": "5576c74ba1",
+      "source_id": "chartink_ema_pullback",
+      "corroborating_sources": [
+        "chartink_squeeze",
+        "broker:clsa",
+        "fe_gnews"
+      ],
+      "n_mentions": 3,
+      "src_targets": [
+        5481
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/hal.html",
+        "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/"
+      ],
+      "brokerages": [
+        "clsa"
+      ],
+      "sentence": "Buy Hindustan Aeronautics Ltd (NSE: HAL) LTP 4855.2 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -0.02%, volume 602641.",
+      "ltp": 4856.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 4856.0,
+        "entry_zone": [
+          4831.72,
+          4880.28
+        ],
+        "stop_loss": 4683.47,
+        "stop_loss_pct": 3.55,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          5149.9,
+          5358.15,
+          5659.44
+        ],
+        "target_pct": [
+          6.05,
+          10.34,
+          16.55
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.91,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 76,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.1 healthy momentum",
+          "+5 volume 1.54× avg on up day",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 2.91"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          5481
+        ],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.1,
+        "atr_pct": 2.07,
+        "adx": 21.2,
+        "vol_ratio": 1.54,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -5.71,
+        "dist_ema20_pct": 0.21,
+        "dist_ema200_pct": 8.14,
+        "avg_turnover_cr": 449.26,
+        "chg_5d_pct": -0.1,
+        "chg_20d_pct": -1.1,
+        "high_52w": 5149.9,
+        "last_bar_date": "2026-09-04"
+      },
+      "resistances": [
+        {
+          "price": 5149.9,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 4270.6,
+          "touches": 3
+        },
+        {
+          "price": 4161.9,
+          "touches": 2
+        },
+        {
+          "price": 3952.0,
+          "touches": 1
+        },
+        {
+          "price": 3825.5,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 76,
+      "fund_score": 89,
+      "fund_why": [
+        "+12 ROCE 32%",
+        "+8 ROE 24%",
+        "+2 P/E 34.8",
+        "+4 3y profit CAGR 16%",
+        "+0 3y sales CAGR 7%",
+        "+5 D/E 0",
+        "+4 promoter 71.64%",
+        "+0 latest qtr PAT YoY 14.9%",
+        "+4 mcap ₹324,704 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 324704.0,
+        "pe": 34.8,
+        "roce": 32.0,
+        "roe": 24.0,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 16.0,
+        "promoter_pct": 71.64,
+        "debt_to_equity": 0.0,
+        "np_yoy_growth_pct": 14.9
+      },
+      "source_weight": 0.65,
+      "source_confidence": 50,
+      "composite": 75,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "HYUNDAI",
+      "company": "Hyundai Motor India Limited",
+      "tip_id": "bcaee6b128",
+      "source_id": "chartink_ema_pullback",
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "n_mentions": 2,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/hyundai.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Hyundai Motor India Ltd (NSE: HYUNDAI) LTP 2210 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 0.23%, volume 508562.",
+      "ltp": 2205.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 2205.0,
+        "entry_zone": [
+          2193.97,
+          2216.02
+        ],
+        "stop_loss": 2149.3,
+        "stop_loss_pct": 2.53,
+        "stop_basis": "below support",
+        "targets": [
+          2277.45,
+          2366.5,
+          2454.66
+        ],
+        "target_pct": [
+          3.29,
+          7.32,
+          11.32
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.9,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 78,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 55.2 healthy momentum",
+          "+4 ADX 29.0 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 2.9"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 55.2,
+        "atr_pct": 2.52,
+        "adx": 29.0,
+        "vol_ratio": 0.76,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -23.7,
+        "dist_ema20_pct": 0.78,
+        "dist_ema200_pct": 6.74,
+        "avg_turnover_cr": 154.24,
+        "chg_5d_pct": -2.73,
+        "chg_20d_pct": 0.2,
+        "high_52w": 2890.0,
+        "last_bar_date": "2026-09-04"
+      },
+      "resistances": [
+        {
+          "price": 2277.45,
+          "touches": 2
+        },
+        {
+          "price": 2366.5,
+          "touches": 1
+        },
+        {
+          "price": 2890.0,
+          "touches": 1
+        }
+      ],
+      "supports": [
+        {
+          "price": 2160.1,
+          "touches": 1
+        },
+        {
+          "price": 2124.9,
+          "touches": 2
+        },
+        {
+          "price": 1927.5,
+          "touches": 1
+        },
+        {
+          "price": 1888.85,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 78,
+      "fund_score": 80,
+      "fund_why": [
+        "+12 ROCE 38.4%",
+        "+8 ROE 29.9%",
+        "+2 P/E 36.3",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 5%",
+        "+5 D/E 0.05",
+        "+4 promoter 82.5%",
+        "-5 latest qtr PAT YoY -35.1%",
+        "+4 mcap ₹179,572 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 179572.0,
+        "pe": 36.3,
+        "roce": 38.4,
+        "roe": 29.9,
+        "sales_growth_3_years": 5.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 82.5,
+        "debt_to_equity": 0.05,
+        "np_yoy_growth_pct": -35.1
+      },
+      "source_weight": 0.55,
+      "source_confidence": 50,
+      "composite": 72,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 750.25,
+  "watch": [
+    "TDPOWERSYS",
+    "TCPLPACK",
+    "MEDANTA",
+    "APLAPOLLO",
+    "APARINDS",
+    "BAJAJ-AUTO",
+    "INGERRAND",
+    "AVALON"
+  ]
+}
