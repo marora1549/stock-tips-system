@@ -294,8 +294,38 @@ label.lbl{display:block; font-size:11px; font-weight:600; letter-spacing:.05em; 
   border:1px solid var(--line); border-radius:var(--r-sm)}
 .code code{flex:1; font:500 11.5px/1.5 var(--mono); overflow-x:auto; white-space:pre; color:var(--ink-2)}
 
+/* ==================================================================== the head-to-head */
+.podium{display:grid; grid-template-columns:repeat(auto-fit,minmax(304px,1fr)); gap:12px}
+.cnd{background:var(--elev); border:1px solid var(--line); border-radius:var(--r);
+  display:flex; flex-direction:column; min-width:0}
+.cnd.first{border-color:var(--green-line)}
+.cnd-h{display:flex; gap:11px; align-items:flex-start; padding:14px 15px 0}
+.rank{flex:0 0 auto; width:25px; height:25px; border-radius:8px; display:grid; place-items:center;
+  font:700 12.5px/1 var(--mono); background:var(--elev-3); color:var(--ink-2)}
+.cnd.first .rank{background:var(--green); color:#04150D}
+:root[data-theme="light"] .cnd.first .rank{color:#fff}
+.cnd-b{padding:0 15px 15px}
+.score{margin-left:auto; text-align:right; flex:0 0 auto}
+.score .v{font:600 17px/1.1 var(--mono); letter-spacing:-.03em}
+.score .k{font-size:9.5px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3)}
+.vs{width:100%; border-collapse:collapse; margin-top:13px; font-size:12px}
+.vs th{padding:0 0 6px; font-size:9.5px; letter-spacing:.07em; border-bottom:1px solid var(--line)}
+.vs th.r, .vs td.r{text-align:right}
+.vs td{padding:7px 0; border-bottom:1px solid var(--line); white-space:nowrap;
+  font:500 11.5px/1.3 var(--mono)}
+.vs tbody tr:last-child td{border-bottom:0}
+.vs tbody tr:hover{background:none}
+.vs td.k{font:500 12px/1.3 var(--sans); color:var(--ink-2); white-space:normal}
+.vs .theirs{color:var(--ink-3)}
+.vs .ours{color:var(--ink)}
+.vsnote{display:flex; gap:7px; font-size:11.5px; line-height:1.55; color:var(--ink-3); margin-top:9px}
+.vsnote .ic{width:12px; height:12px; stroke-width:2; margin-top:3px; flex:0 0 auto; color:var(--ink-3)}
+.pre-sum{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; align-items:center}
+
 /* ==================================================================== tables */
 .tw{overflow-x:auto; background:var(--elev); border:1px solid var(--line); border-radius:var(--r)}
+.tw.scroll{max-height:322px; overflow-y:auto}
+.tw.scroll thead th{position:sticky; top:0; background:var(--elev); z-index:1}
 table{width:100%; border-collapse:collapse; font-size:13px}
 th{padding:12px 13px; text-align:left; white-space:nowrap; font:600 10px/1 var(--sans);
   letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); border-bottom:1px solid var(--line)}
@@ -566,12 +596,18 @@ function ghCheck(token){
     })
     .catch(function(e){ GH.ok = false; throw e; });
 }
+/* workflow_dispatch takes ten inputs and the desk has more fields than that, so these keep their own
+   input and everything else is packed into `args` as JSON. scripts/desk_command.py unpacks it. */
+var NAMED = ['command', 'symbol', 'amount', 'price', 'source', 'text', 'note'];
 function ghDispatch(command, inputs){
-  var body = {ref:'main', inputs:Object.assign({command:command}, inputs || {})};
-  Object.keys(body.inputs).forEach(function(k){
-    if (body.inputs[k] == null || String(body.inputs[k]).trim() === '') delete body.inputs[k];
-    else body.inputs[k] = String(body.inputs[k]);
+  var all = Object.assign({command:command}, inputs || {}), named = {}, extra = {};
+  Object.keys(all).forEach(function(k){
+    var v = all[k];
+    if (v == null || v === false || String(v).trim() === '') return;
+    (NAMED.indexOf(k) >= 0 ? named : extra)[k] = v === true ? '1' : String(v);
   });
+  if (Object.keys(extra).length) named.args = JSON.stringify(extra);
+  var body = {ref:'main', inputs:named};
   return fetch(API + '/repos/' + REPO.owner + '/' + REPO.repo + '/actions/workflows/desk.yml/dispatches',
                {method:'POST', headers:heads(), body:JSON.stringify(body)})
     .then(function(r){
@@ -1012,7 +1048,7 @@ function renderIdeas(){
   var tfs = [['all','All'],['weekly','Weekly'],['monthly','Monthly'],['long','Long']];
   var tagf = [['','Any'],['fundamentals','Fundamentals'],['technicals','Chart'],['momentum','Fast movers']];
 
-  var html = '';
+  var html = contendersBlock();
   if (tight){
     html += '<div class="banner warn">' + ic('alert') + '<div><b>Fully committed.</b> ' + c.slots + ' of ' +
       c.maxOpen + ' slots free and ' + inr(c.cash) + ' deployable against a ' + inr(c.minAlloc) +
@@ -1264,6 +1300,176 @@ function renderSources(){
   $('#v-sources').innerHTML = html;
 }
 
+/* ==================================================================== the head-to-head
+   `contenders` in data.json is the desk's own ranking: composite, then the clock, momentum,
+   corroboration, and a penalty when a tipster wants more than the chart offers. This draws it
+   with both sides of every level side by side, so the divergence is on the page. */
+function vsTable(v){
+  if (!v) return '';
+  var row = function(k, theirs, ours){
+    return '<tr><td class="k">' + k + '</td><td class="r theirs">' + theirs +
+           '</td><td class="r ours">' + ours + '</td></tr>';
+  };
+  var t = (v.our_targets || []);
+  return '<table class="vs"><thead><tr><th></th><th class="r">They said</th>' +
+    '<th class="r">This desk</th></tr></thead><tbody>' +
+    row('Entry', v.src_entry != null ? rs(v.src_entry) : '—', v.our_entry != null ? rs(v.our_entry) : '—') +
+    row('Target', v.src_target != null ? rs(v.src_target) : '—',
+        t.length ? rs(t[0]) + ' → ' + num(t[t.length - 1]) : '—') +
+    row('Stop', v.src_stop != null ? rs(v.src_stop) : '—', v.our_stop != null ? rs(v.our_stop) : '—') +
+    row('Upside', v.src_upside_pct != null ? pct(v.src_upside_pct, 1) : '—',
+        v.our_upside_pct != null ? pct(v.our_upside_pct, 1) : '—') +
+    row('Risk', v.src_risk_pct != null ? pct(-Math.abs(v.src_risk_pct), 1) : 'no stop given',
+        v.our_risk_pct != null ? pct(-Math.abs(v.our_risk_pct), 1) : '—') +
+    '</tbody></table>' +
+    (v.notes || []).map(function(n){
+      return '<div class="vsnote">' + ic('flow', 's') + '<span>' + esc(n) + '</span></div>';
+    }).join('');
+}
+function contenderCard(c){
+  var idea = (DATA.latest_analysis || []).filter(function(p){ return p.symbol === c.symbol; })[0] || {};
+  var pl = idea.plan || {}, size = sizeFor(pl.entry || c.ltp);
+  return '<div class="cnd' + (c.rank === 1 ? ' first' : '') + '">' +
+    '<div class="cnd-h"><div class="rank">' + c.rank + '</div><div style="min-width:0">' +
+      '<div class="sym">' + esc(c.symbol) +
+      (c.held ? '<span class="pill flat">' + ic('book') + 'held</span>' : '') + '</div>' +
+      '<div class="co">' + esc(c.company || '') + ' · ' + esc(c.source_id || '') + '</div></div>' +
+      '<div class="score"><div class="v">' + num(c.contender_score, 1) + '</div>' +
+      '<div class="k">score</div></div></div>' +
+    '<div class="cnd-b">' +
+      '<div class="tags">' +
+        '<span class="pill ' + (c.verdict === 'STRONG BUY' ? 'strong' : 'good') + '">' + esc(c.verdict || '') + '</span>' +
+        (c.eta_days ? '<span class="pill info">' + ic('bolt') + 'T1 ~' + c.eta_days + ' sessions</span>'
+                    : '<span class="pill warn">' + ic('clock') + 'no date on T1</span>') +
+        tagPills(c.tags) + '</div>' +
+      vsTable(c.vs_source) +
+      '<div style="margin-top:13px">' + (c.why || []).map(function(w){
+        var lead = String(w).split(' ')[0];
+        var tone = lead.charAt(0) === '+' ? 'p' : lead.charAt(0) === '-' ? 'm' : '';
+        return '<div class="why ' + tone + '"><span class="n">' + esc(lead) + '</span><span>' +
+               esc(String(w).slice(lead.length).trim()) + '</span></div>';
+      }).join('') + '</div>' +
+      '<div class="actions">' +
+        (c.held
+          ? '<button class="btn ghost grow" disabled>' + ic('check') + 'Already in the book</button>'
+          : '<button class="btn buy grow" data-act="book" data-sym="' + esc(c.symbol) + '"' +
+            (size.ok ? '' : ' disabled') + '>' + ic('plus') + 'Take' +
+            (size.ok ? ' · ' + short(size.capital) : ' · no room') + '</button>') +
+      '</div></div></div>';
+}
+function contendersBlock(){
+  var top = DATA.contenders || [];
+  if (!top.length) return '';
+  var mojo = (DATA.latest_analysis || []).filter(function(p){
+    return String(p.source_id || '').indexOf('mojo') === 0; }).length;
+  return '<div class="sec"><div class="sec-h"><h3>' + ic('target') + 'The final ' + top.length +
+    '</h3><span class="note">' + (DATA.latest_analysis || []).length + ' ideas ranked head to head' +
+    (mojo ? ' · ' + mojo + ' from Markets Mojo' : '') + '</span></div>' +
+    '<div class="podium">' + top.map(contenderCard).join('') + '</div>' +
+    '<div class="hint">Ranked on conviction, then on the clock — how many sessions the chart\'s own drift ' +
+    'needs to reach T1 — then momentum, then whether a second source said the same thing. A tipster ' +
+    'asking for more than the chart offers loses points rather than gaining them. Every level in the ' +
+    '<b>This desk</b> column comes from the chart; theirs is recorded only to be compared.</div></div>';
+}
+
+/* ==================================================================== markets mojo pre-flight
+   A read-only read of a pasted Markets Mojo screen, so the page can say what it saw before anything
+   is dispatched. src/stocktips/sources/mojo.py does the real parse and the symbol matching; this
+   deliberately guesses no symbols. */
+var MOJO_CALL = {buy:'buy', sell:'sell', hold:'hold', accumulate:'buy', reduce:'sell'};
+var MOJO_MCAP = {'large cap':1, 'mid cap':1, 'small cap':1, 'micro cap':1, 'nano cap':1};
+var MOJO_FIELDS = ['mcap', 'sector', 'current_price', 'days_change', 'src_entry', 'entry_date',
+                   'src_target', 'src_stop', 'performance', 'days_since', 'returns_till_target'];
+var MOJO_LABELS = {'call':'action', 'call type':'call_type', 'recommended price':'src_entry',
+  'target price':'src_target', 'stop loss':'src_stop', 'recommended on':'entry_date',
+  'performance':'performance', 'returns till target':'returns_till_target', 'current price':'current_price',
+  'cmp':'current_price', 'sector':'sector', 'mcap':'mcap', 'probable success rate':'success_rate'};
+function mojoNum(v){
+  var t = String(v == null ? '' : v).replace(/^\s*rs\.?\s*/i, '').replace(/[,₹\s]/g, '');
+  return /^-?\d+(?:\.\d+)?$/.test(t) ? Number(t) : null;
+}
+function mojoFinish(r){
+  var entry = mojoNum(r.src_entry), target = mojoNum(r.src_target);
+  var dir = (entry != null && target != null && target < entry) ? 'short' : 'long';
+  return {company:String(r.company || '').trim(), action:dir === 'short' ? 'sell' : (r.action || 'buy'),
+          direction:dir, entry:entry, target:target, stop:mojoNum(r.src_stop),
+          call_type:r.call_type || '', date:r.entry_date || ''};
+}
+function parseMojo(text){
+  var lines = String(text || '').replace(/\r\n/g, '\n').split('\n')
+    .map(function(l){ return l.trim(); }).filter(function(l){ return l; });
+  var out = [], i = 0;
+  while (i < lines.length){                      // the bulk table: name, Buy/Sell, then eleven fields
+    var word = MOJO_CALL[lines[i].toLowerCase()];
+    var name = i > 0 ? lines[i - 1] : '';
+    if (!word || !name || MOJO_CALL[name.toLowerCase()] || MOJO_MCAP[name.toLowerCase()] ||
+        mojoNum(name) != null || i + 2 + MOJO_FIELDS.length > lines.length){ i++; continue; }
+    var row = {company:name, action:word, call_type:lines[i + 1]};
+    MOJO_FIELDS.forEach(function(k, n){ row[k] = lines[i + 2 + n]; });
+    if (!MOJO_MCAP[String(row.mcap).toLowerCase()] || mojoNum(row.src_entry) == null ||
+        mojoNum(row.src_target) == null){ i++; continue; }
+    out.push(mojoFinish(row));
+    i += 2 + MOJO_FIELDS.length;
+  }
+  if (out.length) return out;
+
+  var one = {}, used = {};                       // or one call's detail panel: label, then value
+  lines.forEach(function(line, n){
+    var key = MOJO_LABELS[line.replace(/[:\s]+$/, '').toLowerCase()];
+    if (!key) return;
+    for (var j = n + 1; j < Math.min(n + 3, lines.length); j++){
+      if (!lines[j]) continue;
+      if (MOJO_LABELS[lines[j].toLowerCase()]) break;
+      one[key] = lines[j]; used[n] = 1; used[j] = 1;
+      break;
+    }
+  });
+  if (!one.action || mojoNum(one.src_entry) == null || mojoNum(one.src_target) == null) return [];
+  one.action = MOJO_CALL[String(one.action).toLowerCase()] || 'buy';
+  one.company = lines.filter(function(line, n){
+    return !used[n] && /[A-Za-z]{3}/.test(line) && !MOJO_CALL[line.toLowerCase()] && mojoNum(line) == null;
+  })[0] || '';
+  return [mojoFinish(one)];
+}
+function renderMojoPreview(){
+  var box = $('#mojoPre');
+  if (!box) return;
+  var text = ($('#mojoText') || {}).value || '';
+  if (!text.trim()){ box.innerHTML = ''; return; }
+  var rows = parseMojo(text);
+  if (!rows.length){
+    box.innerHTML = '<div class="need warn">' + ic('alert') + '<div><b>Cannot read that yet.</b> ' +
+      'Copy either the whole calls table off Markets Mojo, or one call\'s detail panel — labels and ' +
+      'all. Blank lines and the header row are fine.</div></div>';
+    return;
+  }
+  var longs = rows.filter(function(r){ return r.direction === 'long'; });
+  var named = rows.filter(function(r){ return r.company; }).length;
+  box.innerHTML = '<div class="pre-sum">' +
+      '<span class="pill good">' + ic('check') + rows.length + ' call' + (rows.length > 1 ? 's' : '') + ' read</span>' +
+      '<span class="pill info">' + longs.length + ' buy</span>' +
+      (rows.length - longs.length ? '<span class="pill flat">' + (rows.length - longs.length) +
+        ' sell — logged, never booked</span>' : '') +
+      (named < rows.length ? '<span class="pill warn">' + ic('alert') + (rows.length - named) +
+        ' with no name — fill Symbol below</span>' : '') + '</div>' +
+    '<div class="tw scroll" style="margin-top:11px"><table><thead><tr><th>Stock</th><th>Call</th>' +
+    '<th class="r">Their entry</th><th class="r">Target</th><th class="r">Stop</th>' +
+    '<th class="r">Their upside</th></tr></thead><tbody>' +
+    rows.map(function(r){
+      var up = (r.entry && r.target) ? (r.target / r.entry - 1) * 100 : null;
+      return '<tr><td>' + esc(r.company || '—') + '</td>' +
+        '<td><span class="pill ' + (r.direction === 'long' ? 'good' : 'flat') + '">' +
+        esc(r.action) + '</span></td>' +
+        '<td class="r n">' + (r.entry != null ? rs(r.entry) : '—') + '</td>' +
+        '<td class="r n">' + (r.target != null ? rs(r.target) : '—') + '</td>' +
+        '<td class="r n">' + (r.stop != null ? rs(r.stop) : '—') + '</td>' +
+        '<td class="r n ' + sgn(up) + '">' + (up != null ? pct(up, 1) : '—') + '</td></tr>';
+    }).join('') + '</tbody></table></div>' +
+    '<div class="hint">This is only what the paste says. The import matches every name against the NSE ' +
+    'master, and a name that could be two companies comes back <b>unresolved with its candidates</b> ' +
+    'rather than guessed.</div>';
+}
+
 /* ==================================================================== console */
 function renderConsole(){
   var log = DATA.actions_log || [], on = GH.ok, c = capacity();
@@ -1314,6 +1520,28 @@ function renderConsole(){
         'data-cmd="' + a.c + '"' + (on ? '' : ' disabled') + '>' + ic('play') + 'Run</button>' +
         '</div></div></div></div>';
     }).join('') + (on ? '' : '<div class="hint">Connect above to enable these.</div>') + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('rss') + 'Import from Markets Mojo</h3>' +
+    '<span class="note">paste the table or one call</span></div><div class="card"><div class="card-in">' +
+    '<label class="lbl">The pasted screen</label>' +
+    '<textarea id="mojoText" rows="6" spellcheck="false" placeholder="Select the whole calls table on ' +
+    'Markets Mojo and paste it here — header row, blank lines and all. One call\'s detail panel ' +
+    '(Call / BUY / Recommended Price / …) works too."></textarea>' +
+    '<div id="mojoPre"></div>' +
+    '<div class="grid2" style="margin-top:12px">' +
+    '<div><label class="lbl">Source id</label><input type="text" id="mojoSrc" value="mojo"></div>' +
+    '<div><label class="lbl">Symbol <span class="mut">(only if the paste has no name)</span></label>' +
+    '<input type="text" id="mojoSym" placeholder="KENNAMET"></div></div>' +
+    '<div class="actions"><button class="btn pri" data-act="mojo-import"' + (on ? '' : ' disabled') + '>' +
+    ic('plus') + 'Import the calls</button>' +
+    '<button class="btn" data-act="mojo-dry"' + (on ? '' : ' disabled') + '>' + ic('bolt') +
+    'Dry run first</button>' +
+    '<button class="btn ghost" data-act="mojo-clear">' + ic('x') + 'Clear</button></div>' +
+    '<div class="hint">Every call joins today\'s tip list under <code>mojo</code> and is analysed like ' +
+    'any other — chart, business, and how well that source has actually done. Mojo starts at confidence ' +
+    '0 and earns its weight from outcomes. Their <b>Sell</b> calls are logged so the source is graded on ' +
+    'them too, but this desk is long-only and never books a short. Run <b>Re-analyse</b> afterwards, then ' +
+    'look at <b>The final 3</b> on the Ideas tab.</div></div></div></div>';
 
   html += '<div class="sec"><div class="sec-h"><h3>' + ic('plus') + 'Log a tip you were sent</h3>' +
     '<span class="note">paste it and the form fills itself</span></div><div class="card"><div class="card-in">' +
@@ -1381,6 +1609,7 @@ function renderConsole(){
         'Anything you run from this page is logged into the repo, so it stays visible afterwards.</div>') +
     '</div>';
   $('#v-console').innerHTML = html;
+  renderMojoPreview();
 }
 
 /* Best-effort read of a pasted tip. It fills a form the analyst then checks — it never decides. */
@@ -1590,6 +1819,25 @@ document.addEventListener('click', function(e){
         'commits whatever it changes.')) return;
     run(cmd, {}, {label:cmd, btn:t});
   }
+  else if (act === 'mojo-import' || act === 'mojo-dry'){
+    var paste = ($('#mojoText') || {}).value || '';
+    var seen = parseMojo(paste);
+    if (!seen.length){ toast('Nothing readable in that paste yet', 'err'); return; }
+    var unnamed = seen.filter(function(r){ return !r.company; }).length;
+    if (unnamed && !val('#mojoSym')){
+      toast(unnamed + ' call' + (unnamed > 1 ? 's have' : ' has') + ' no stock name — fill Symbol', 'err');
+      return;
+    }
+    var dry = act === 'mojo-dry';
+    run('import-tips', {source:val('#mojoSrc') || 'mojo', text:paste, symbol:val('#mojoSym'),
+                        dry_run:dry ? '1' : ''},
+        {label:(dry ? 'Dry run of ' : 'Import of ') + seen.length + ' Mojo call' + (seen.length > 1 ? 's' : ''),
+         btn:t});
+  }
+  else if (act === 'mojo-clear'){
+    var box = $('#mojoText');
+    if (box){ box.value = ''; renderMojoPreview(); box.focus(); }
+  }
   else if (act === 'parse-tip') fillTipForm();
   else if (act === 'add-tip'){
     if (!val('#tipSym')){ toast('Which symbol? Paste the message and press Re-read, or type it', 'err'); return; }
@@ -1606,6 +1854,11 @@ document.addEventListener('click', function(e){
   }
 });
 document.addEventListener('input', function(e){
+  if (e.target && e.target.id === 'mojoText'){
+    clearTimeout(window._mj);
+    window._mj = setTimeout(renderMojoPreview, 180);
+    return;
+  }
   if (e.target && e.target.id === 'ideaSearch'){
     FILTER.q = e.target.value;
     clearTimeout(window._sq);

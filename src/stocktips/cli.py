@@ -2,6 +2,8 @@
 
   gather            fetch all sources → reports/<date>/tips_raw.json
   add-tip           log a tip you were sent by hand (add-tip --source manual:mohan --symbol TATASTEEL ...)
+  import-tips       paste a Markets Mojo table or call panel → tips (import-tips --file paste.txt)
+  contenders        rank every analysed idea head to head → the final top 3
   structure         merge duplicates → tips_structured.json   (--reviewed FILE to use Claude-corrected tips)
   analyze           TA + fundamentals + scoring → analysis.json
   pick              allocate + book paper positions → picks.json    (--no-book for a dry run)
@@ -27,9 +29,10 @@ from pathlib import Path
 import yaml
 
 from . import pipeline, report
-from .analysis import plan as planmod, scoring, ta
+from .analysis import contenders, plan as planmod, scoring, ta
 from .data import fundamentals, prices, sparks, symbols
 from .learning import confidence, journal
+from .sources import mojo
 from .portfolio import ledger as ledgermod
 from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
                    today_str, write_json)
@@ -73,6 +76,28 @@ def cmd_gather(a):
     print(json.dumps({"tips": len(raw["tips"]), "needs_review": n_rev, "sources": raw["sources"], "file": str(pipeline.day_dir() / "tips_raw.json")}, indent=1))
 
 
+def _tip_record(*, source, symbol, company, action="buy", entry=None, targets=(), stop=None,
+                timeframe="weekly", text=None, url=None, extracted_by="manual",
+                extraction_confidence=0.9, symbol_confidence=1.0, symbol_method="manual", published=None):
+    """One tip in the shape `structure`/`analyze` expect, whoever it came from.
+
+    The source's entry, targets and stop are recorded as claims. Nothing downstream treats them as
+    levels — `build_plan` reads the chart and only glances at them.
+    """
+    tgt = sorted(float(t) for t in targets if t)
+    return {
+        "id": short_hash(f"{source}|{symbol}|{tgt}|{today_str()}"), "source_id": source, "brokerage": None,
+        "url": url or "", "title": (text or "")[:120],
+        "published": published or now_ist().strftime("%a, %d %b %Y %H:%M:%S %z"),
+        "company": company, "symbol": symbol,
+        "symbol_confidence": symbol_confidence, "symbol_method": symbol_method,
+        "action": action, "src_entry": entry, "src_entry_hi": None, "src_targets": tgt,
+        "src_stop": stop, "src_upside_pct": None, "src_duration": timeframe,
+        "default_timeframe": timeframe, "sentence": text or f"{action} {symbol}",
+        "extracted_by": extracted_by, "extraction_confidence": extraction_confidence, "needs_review": False,
+    }
+
+
 def cmd_add_tip(a):
     """A tip from WhatsApp, Telegram, a friend, a screenshot — logged so its source gets graded too.
 
@@ -92,15 +117,9 @@ def cmd_add_tip(a):
     if any(t["symbol"] == sym and t["source_id"] == a.source for t in raw["tips"]):
         log.warning("%s from %s is already in today's tips — adding a second entry", sym, a.source)
     targets = [float(x) for x in (a.target or "").replace(" ", "").split(",") if x] if a.target else []
-    tip = {
-        "id": short_hash(f"{a.source}|{sym}|{a.target}|{today_str()}"), "source_id": a.source, "brokerage": None,
-        "url": a.url or "", "title": (a.text or "")[:120], "published": now_ist().strftime("%a, %d %b %Y %H:%M:%S %z"),
-        "company": a.company or master.name_of(sym), "symbol": sym, "symbol_confidence": 1.0, "symbol_method": "manual:" + how,
-        "action": a.action, "src_entry": a.entry, "src_entry_hi": None, "src_targets": sorted(targets),
-        "src_stop": a.stop, "src_upside_pct": None, "src_duration": a.timeframe,
-        "default_timeframe": a.timeframe, "sentence": a.text or f"{a.action} {sym}",
-        "extracted_by": "manual", "extraction_confidence": 0.9, "needs_review": False,
-    }
+    tip = _tip_record(source=a.source, symbol=sym, company=a.company or master.name_of(sym), action=a.action,
+                      entry=a.entry, targets=targets, stop=a.stop, timeframe=a.timeframe, text=a.text,
+                      url=a.url, extracted_by="manual", symbol_method="manual:" + how)
     raw["tips"].append(tip)
     raw["sources"][a.source] = raw["sources"].get(a.source, 0) + 1
     write_json(path, raw)
@@ -112,6 +131,104 @@ def cmd_add_tip(a):
                       "src_targets": tip["src_targets"], "src_stop": a.stop, "timeframe": a.timeframe,
                       "file": str(path), "tips_today": len(raw["tips"]),
                       "source_confidence": confidence.display(conf[a.source]["score"])}, indent=1))
+
+
+def cmd_import_tips(a):
+    """Paste a Markets Mojo screen — the table or one call's panel — and let it become tips.
+
+    Nothing about it is trusting: the names are matched against the NSE master offline, a name that
+    could be two companies is **skipped with its candidates** rather than guessed, and Mojo's own
+    entry/target/stop are filed as claims. Their Sell calls are logged so the source still gets
+    graded on them, but `structure` drops non-buy calls, so a short can never reach the book.
+    """
+    text = a.text
+    if a.file:
+        text = Path(a.file).read_text(encoding="utf-8", errors="replace")
+    if not text and not sys.stdin.isatty():
+        text = sys.stdin.read()
+    if not (text or "").strip():
+        sys.exit("nothing to import — pass --text, --file, or pipe the paste in on stdin")
+
+    rows = mojo.parse(text)
+    if not rows:
+        sys.exit("could not read a single call out of that paste — the Markets Mojo table (name, Buy/Sell, "
+                 "call type, then the eleven columns) or one call's detail panel are the two shapes it knows")
+
+    master = symbols.master()
+    day = pipeline.day_dir()
+    path = day / "tips_raw.json"
+    raw = read_json(path, None) or {"date": today_str(), "sources": {}, "tips": [], "docs": []}
+    existing = {(t["symbol"], t["source_id"], tuple(t.get("src_targets") or [])) for t in raw["tips"]}
+
+    imported, duplicates, skipped, logged_only = [], [], [], []
+    for row in rows:
+        name = row["company_raw"]
+        if not name and a.symbol:
+            name = a.symbol
+        hit = mojo.resolve_name(name, master)
+        if not hit["symbol"]:
+            skipped.append({"name": name or "(no name in the paste)", "reason": hit["method"],
+                            "entry": row["src_entry"], "target": (row["src_targets"] or [None])[0],
+                            "candidates": hit["candidates"][:4]})
+            continue
+        sym = hit["symbol"]
+        key = (sym, a.source, tuple(sorted(row["src_targets"])))
+        if key in existing:
+            duplicates.append(sym)
+            continue
+        sentence = (f"{row['action']} {sym} · {row['call_type'] or row['timeframe']} · their entry "
+                    f"₹{row['src_entry']:,.2f}, target ₹{(row['src_targets'] or [0])[0]:,.2f}"
+                    + (f", stop ₹{row['src_stop']:,.2f}" if row["src_stop"] else "")
+                    + (f" · called {row['entry_date']}" if row["entry_date"] else ""))
+        tip = _tip_record(source=a.source, symbol=sym, company=hit["company"], action=row["action"],
+                          entry=row["src_entry"], targets=row["src_targets"], stop=row["src_stop"],
+                          timeframe=row["timeframe"], text=sentence, url=a.url,
+                          extracted_by="mojo", extraction_confidence=round(min(0.9, hit["confidence"]), 3),
+                          symbol_confidence=hit["confidence"], symbol_method="mojo:" + hit["method"])
+        tip["src_claim"] = {k: row[k] for k in ("performance_pct", "returns_till_target_pct", "days_since",
+                                               "entry_date", "sector", "mcap", "direction", "call_type")}
+        if row["action"] != "buy":
+            logged_only.append(sym)
+        if not a.dry_run:
+            raw["tips"].append(tip)
+            raw["sources"][a.source] = raw["sources"].get(a.source, 0) + 1
+            existing.add(key)
+        imported.append({"symbol": sym, "company": hit["company"], "action": row["action"],
+                         "confidence": hit["confidence"], "method": hit["method"],
+                         "src_entry": row["src_entry"], "src_target": (row["src_targets"] or [None])[0],
+                         "src_stop": row["src_stop"], "id": None if a.dry_run else tip["id"]})
+
+    if not a.dry_run and imported:
+        write_json(path, raw)
+        conf = confidence.load()
+        confidence.ensure(conf, a.source)          # starts at 0 like every other source
+        confidence.save(conf)
+
+    out = {"source_id": a.source, "rows_read": len(rows), "imported": imported,
+           "duplicates": duplicates, "skipped": skipped,
+           "logged_not_bookable": logged_only, "dry_run": bool(a.dry_run),
+           "file": None if a.dry_run else str(path), "tips_today": len(raw["tips"])}
+    print(json.dumps(out, indent=1, ensure_ascii=False))
+    if skipped:
+        print(f"\n{len(skipped)} row(s) need a name I will not guess at:", file=sys.stderr)
+        for sk in skipped:
+            cands = ", ".join(f"{c['symbol']} ({c['company']})" for c in sk["candidates"]) or "no close match"
+            print(f"  {sk['name']}: {sk['reason']} — candidates: {cands}", file=sys.stderr)
+        print("  re-run one of these with: add-tip --source " + a.source + " --symbol <SYMBOL> ...", file=sys.stderr)
+    if logged_only:
+        print(f"\nlogged but never bookable (this desk is long-only): {', '.join(logged_only)}", file=sys.stderr)
+
+
+def cmd_contenders(a):
+    """The head-to-head: every analysed idea ranked against every other, top few named."""
+    day = a.date or (sorted(p.name for p in REPORTS_DIR.iterdir() if p.is_dir())[-1] if REPORTS_DIR.exists() else today_str())
+    results = read_json(REPORTS_DIR / day / "analysis.json", [])
+    if not results:
+        sys.exit(f"no analysis.json for {day} — run analyze first")
+    led = ledgermod.load()
+    held = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
+    top = contenders.rank([_suggestion(r) for r in results], n=a.top, held=held)
+    print(json.dumps({"day": day, "ideas_considered": len(results), "contenders": top}, indent=1, ensure_ascii=False))
 
 
 def cmd_structure(a):
@@ -373,7 +490,10 @@ def cmd_dashboard_data(a):
     cfg = settings()
     cap = cfg["capital"]
     n_live = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
+    live = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
     cash = ledgermod.deployable_cash(led)
+    # rank the same records the page shows, so a contender carries the tags its idea card carries
+    suggestions = [_suggestion(p) for p in analysis]
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
             "sparks": {sym: sparks.series(spark_cache, sym) for sym in
@@ -383,7 +503,8 @@ def cmd_dashboard_data(a):
             "actions_log": (read_json(STATE_DIR / "actions_log.json", {}).get("runs") or [])[-12:],
             "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
             "sources": conf, "latest_picks": latest,
-            "latest_analysis": [_suggestion(p) for p in analysis],
+            "latest_analysis": suggestions,
+            "contenders": contenders.rank(suggestions, n=3, held=live),
             "analysis_day": days[-1] if days else None,
             "cash_flows": led.get("cash_flows", []),
             "book": {"max_open_positions": cap["max_open_positions"], "open_or_pending": n_live,
@@ -414,6 +535,15 @@ def main(argv=None):
     p.add_argument("--timeframe", choices=["weekly", "monthly", "long", "intraday"], default="weekly")
     p.add_argument("--action", choices=["buy", "sell", "hold"], default="buy")
     p.set_defaults(fn=cmd_add_tip)
+    p = sub.add_parser("import-tips")
+    p.add_argument("--source", default="mojo", help="source id these calls are graded under (default: mojo)")
+    p.add_argument("--file", help="file holding the pasted screen")
+    p.add_argument("--text", help="the pasted screen itself")
+    p.add_argument("--symbol", help="name for a detail-panel paste that did not include one")
+    p.add_argument("--url", default="https://www.marketsmojo.com/")
+    p.add_argument("--dry-run", action="store_true", help="show what would be imported, write nothing")
+    p.set_defaults(fn=cmd_import_tips)
+    p = sub.add_parser("contenders"); p.add_argument("--top", type=int, default=3); p.add_argument("--date", default=None); p.set_defaults(fn=cmd_contenders)
     p = sub.add_parser("structure"); p.add_argument("--reviewed"); p.set_defaults(fn=cmd_structure)
     p = sub.add_parser("analyze"); p.set_defaults(fn=cmd_analyze)
     p = sub.add_parser("pick"); p.add_argument("--no-book", action="store_true"); p.set_defaults(fn=cmd_pick)
