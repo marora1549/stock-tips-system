@@ -389,27 +389,47 @@ BEATS = {
 SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 
 
-def class_for(blob: str, classes: list[dict], who: dict) -> dict:
-    """Which of the story's events belongs to *this* company.
+def sentences_about(blob: str, name: str | None) -> list[str]:
+    """The article's sentences that actually mention this company."""
+    if not name:
+        return []
+    low = name.lower()
+    return [x for x in SENTENCE_SPLIT.split(blob) if low in x.lower()]
 
-    Two steps, both deliberately blunt. First, for a company the article names, only the classes
-    whose wording appears in a sentence that mentions that company are eligible — which is what
-    keeps a market-wrap article from filing every company in it under the same event. Second,
-    `BEATS` decides between what is left, and a negative class always wins, because "wins an order
-    and pledges promoter shares" is not a story to buy.
+
+def class_for(blob: str, classes: list[dict], who: dict) -> dict | None:
+    """Which of the story's events belongs to *this* company — or None when none of them do.
+
+    Returning None is the important case. A "stocks to watch" column names a dozen companies and
+    says something eventful about one of them: without this, Bharat Electronics' ₹2,100cr defence
+    order was filed against Cipla, Reliance and Titan as well, at full directness, because they were
+    named in the same article. Three false candidates from one column, on one of the wires this desk
+    reads every morning.
+
+    So for a company the article names, only the classes whose wording appears in a sentence that
+    also mentions that company are eligible — and if none do, the article mentions the company
+    without reporting an event about it, which is not a trade. `BEATS` then decides between what is
+    left, and a negative class always wins, because "wins an order and pledges promoter shares" is
+    not a story to buy.
 
     Nearest-phrase attribution was tried first and rejected: in the GE Vernova piece "as Power Grid
     secures the project" sits ten characters closer to the company's name than "emerged as the L1
     bidder" does, so proximity filed a bid as a signed contract. Grammar is not distance.
     """
     pool = classes
-    if who.get("route") == "named" and who.get("as_written"):
-        low_name = who["as_written"].lower()
-        sents = [x for x in SENTENCE_SPLIT.split(blob) if low_name in x.lower()]
-        if sents:
-            joined = " ".join(s.lower() for s in sents)
-            near = [c for c in classes if c["phrase"].lower()[:40] in joined]
-            pool = near or classes
+    if who.get("route") == "named":
+        sents = sentences_about(blob, who.get("as_written"))
+        joined = " ".join(x.lower() for x in sents)
+        pool = [c for c in classes if c["phrase"].lower()[:40] in joined]
+        if not pool:
+            # A company in the headline is normally what the story is about, even when the eventful
+            # sentence refers to it only by pronoun — so it keeps the story's event. But a headline
+            # that lists five companies is a roundup, and appearing in that list says nothing at
+            # all: "Stocks to watch: Reliance, Tata Motors, Bharat Electronics, Cipla, Titan" was
+            # handing BEL's ₹2,100cr defence order to the other four.
+            if who.get("in_body_only") or who.get("title_is_roundup"):
+                return None
+            pool = classes
 
     negatives = [c for c in pool if c["sign"] < 0]
     pool = negatives or pool
@@ -451,10 +471,20 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
     people = beneficiaries(blob, title, matched_themes)
     if not people:
         return []
+    # A headline naming three or more companies is a roundup, not a story about any of them.
+    roundup = len(_named_symbols("", title)) >= 3
 
     out = []
     for who in people:
-        top = class_for(blob, classes, who)
+        top = class_for(blob, classes, {**who, "title_is_roundup": roundup})
+        if top is None:
+            continue          # named in the article, but the article reports no event about it
+        mine = size
+        if who["route"] == "named":
+            own = sentences_about(blob, who.get("as_written"))
+            local = [m for m in money_in_crore(" ".join(own), usd_inr) if m["context"] == "contract"]
+            if local:
+                mine = {"inr_cr": local[0]["inr_cr"], "estimated": False, "basis": local[0]["text"]}
         out.append({
             "id": short_hash(f"{who['symbol']}|{top['event']}|{title[:80]}"),
             "symbol": who["symbol"], "company": who["company"],
@@ -463,8 +493,8 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
             "also_matched": [c["event"] for c in classes if c["event"] != top["event"]][:3],
             "route": who["route"], "directness": who["weight"], "why_this_name": who["why"],
             "theme": who["theme"], "themes_matched": [t["id"] for t in matched_themes],
-            "size_inr_cr": (size or {}).get("inr_cr"), "size_estimated": (size or {}).get("estimated", False),
-            "size_basis": (size or {}).get("basis"),
+            "size_inr_cr": (mine or {}).get("inr_cr"), "size_estimated": (mine or {}).get("estimated", False),
+            "size_basis": (mine or {}).get("basis"),
             "capacity": caps[0] if caps else None,
             "source_id": source_id, "url": doc.get("url", ""), "title": title[:200],
             "published": doc.get("published", ""),
