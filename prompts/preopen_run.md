@@ -70,6 +70,14 @@ git add -A && git commit -m "preopen <date>" && git push
 ```
 The commit is what the portal reads, so the Intraday tab is live the moment this finishes.
 
+**If the push fails, send the email anyway.** The email is the product of this run and it needs
+nothing from git — everything in it was computed from live data a minute ago. A failed push costs the
+portal and it costs the 09:35 and 15:20 runs, which read `reports/<date>/preopen.json` and will find
+nothing; it does not cost the reader their morning. So: finish the email, and add one line at the top
+saying the card could not be committed, quoting the git error, and that the session runs will
+therefore have nothing to act on. The usual cause is a routine created without the repository
+attached as a source, which can clone a public repo but cannot push to it.
+
 ## 5. The email (this is the deliverable)
 Reply with `preopen.md` as written, with your own checks folded in — and hold to its shape, because
 the first line may be all that gets read on a phone at eight in the morning:

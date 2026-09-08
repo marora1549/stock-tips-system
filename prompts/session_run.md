@@ -12,6 +12,11 @@ export PYTHONPATH=src
 Weekend or holiday → stop. No `reports/<date>/preopen.json` → say so in one line and stop; there is
 nothing to watch and this run must not invent candidates of its own.
 
+When the card is missing, say which of the two it is, because they need different fixes: the 08:00
+run did not happen, or it happened and could not push. `git log --oneline -3` tells you — a pre-open
+commit for today means the second, which is usually a routine created without the repository
+attached as a source (it can clone a public repo but not push to it).
+
 ## 1. Which run is this
 Look at the clock, because the three firings do different work.
 

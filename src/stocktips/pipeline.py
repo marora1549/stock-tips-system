@@ -372,7 +372,11 @@ def intraday_watch(now=None, date: str | None = None) -> dict:
     date = date or now.date().isoformat()
     card = read_json(day_dir(date) / "preopen.json", None)
     if not card:
-        return {"date": date, "error": f"no preopen.json for {date} — run preopen first"}
+        return {"date": date, "error": (
+            f"no reports/{date}/preopen.json — either the 08:00 pre-open run did not happen, or it "
+            f"ran and could not push its card. `git log --oneline -3` distinguishes them: a pre-open "
+            f"commit for {date} means the push failed, which is usually a routine created without "
+            f"the repository attached as a source. This run does not invent candidates of its own.")}
     book = daybook.load()
     rec = daybook.record_candidates(book, card.get("trade", []), date)
 
