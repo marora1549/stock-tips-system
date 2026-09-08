@@ -21,6 +21,7 @@ import argparse
 import json
 import logging
 import sys
+from pathlib import Path
 
 import yaml
 
@@ -71,7 +72,7 @@ def cmd_gather(a):
 
 
 def cmd_structure(a):
-    reviewed = read_json(a.reviewed, None) if a.reviewed else read_json(pipeline.day_dir() / "tips_reviewed.json", None)
+    reviewed = read_json(Path(a.reviewed), None) if a.reviewed else read_json(pipeline.day_dir() / "tips_reviewed.json", None)
     s = pipeline.structure(None, reviewed)
     print(json.dumps([{k: t[k] for k in ("symbol", "source_id", "n_mentions", "src_targets", "src_stop", "extraction_confidence", "needs_review")} for t in s], indent=1))
 
