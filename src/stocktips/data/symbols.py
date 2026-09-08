@@ -200,3 +200,107 @@ def master() -> SymbolMaster:
     if _master is None:
         _master = SymbolMaster()
     return _master
+
+
+# ------------------------------------------------------------------ offline bulk name matching
+SUFFIXES = re.compile(r"\b(ltd|limited|india|indian|corp|corporation|corpn|company|co|the|inc|"
+                      r"industries|inds|enterprises|enterp)\b")
+
+
+def _tokens(name: str) -> list[str]:
+    t = re.sub(r"[^a-z0-9]+", " ", (name or "").lower())
+    return [w for w in t.split() if w]
+
+
+def _is_subsequence(short: str, long: str) -> bool:
+    it = iter(long)
+    return all(ch in it for ch in short)
+
+
+def _score(query: str, candidate: str) -> float:
+    """How well a truncated Mojo name fits a full NSE company name. 0 when it does not."""
+    q, c = _tokens(query), _tokens(candidate)
+    if not q or not c:
+        return 0.0
+    if q == c:
+        return 1.0
+
+    squashed_q, squashed_c = "".join(q), "".join(c)
+    if squashed_c.startswith(squashed_q):                       # "adani enterp" in "adani enterprises"
+        return 0.94 + 0.05 * len(squashed_q) / max(len(squashed_c), 1)
+
+    # every query token must open a distinct candidate token, in order: "motil oswal fin"
+    # against "motilal oswal financial services"
+    ci = 0
+    matched = 0
+    for token in q:
+        while ci < len(c):
+            if c[ci].startswith(token) or (len(token) >= 4 and _is_subsequence(token, c[ci])):
+                matched += 1
+                ci += 1
+                break
+            ci += 1
+        else:
+            break
+    if matched == len(q):
+        covered = sum(len(t) for t in q) / max(sum(len(t) for t in c), 1)
+        return 0.80 + 0.14 * min(1.0, covered)
+
+    # last resort: ignore word boundaries entirely — "dr lal pathlabs" vs "dr lal path labs"
+    if _is_subsequence(squashed_q, squashed_c) and len(squashed_q) >= 0.55 * len(squashed_c):
+        return 0.72 + 0.1 * len(squashed_q) / max(len(squashed_c), 1)
+    return 0.0
+
+
+def resolve_offline(name: str, master=None, floor: float = 0.72, margin: float = 0.06) -> dict:
+    """→ {symbol, company, confidence, method, candidates}. `symbol` is None when it is not clear.
+
+    Offline and deterministic: the NSE master only, never a network lookup. `SymbolMaster.resolve`
+    falls through to Moneycontrol's autosuggest when its fuzzy match is weak, which is right for a
+    handful of tips a day and wrong for a news scan that throws hundreds of capitalised phrases at
+    it — every miss then costs three blocked requests. This is the resolver for bulk work.
+
+    Two companies that fit within `margin` of each other leave the answer ambiguous with both
+    named, for a person to settle: a tip on the wrong symbol is worse than no tip.
+    """
+    master = master if master is not None else globals()["master"]()
+    query = (name or "").strip()
+    out = {"symbol": None, "company": None, "confidence": 0.0, "method": "unresolved", "candidates": []}
+    if not query:
+        return out
+
+    upper = query.upper()
+    if upper in master.by_symbol:                               # they sometimes paste the ticker
+        row = master.by_symbol[upper]
+        return {"symbol": upper, "company": row["name"], "confidence": 1.0, "method": "symbol", "candidates": []}
+
+    # Rank on the names as written first. Only when nothing clears the floor is the comparison
+    # retried with boilerplate ("ltd", "corpn", "enterprises") stripped off both sides — stripping
+    # early would collapse "Adani Enterp." and "Adani Power" onto the same "adani".
+    def rank(strip: bool) -> list[tuple[float, str, str]]:
+        q = SUFFIXES.sub(" ", " " + query.lower() + " ") if strip else query
+        found = []
+        for row in master.rows:
+            name_ = SUFFIXES.sub(" ", " " + row["name"].lower() + " ") if strip else row["name"]
+            sc = _score(q, name_)
+            if sc > 0:
+                found.append((sc, row["symbol"], row["name"]))
+        found.sort(key=lambda x: (-x[0], len(x[2])))
+        return found
+
+    scored = rank(False)
+    if not scored or scored[0][0] < floor:
+        scored = rank(True) or scored
+    if not scored:
+        return out
+    out["candidates"] = [{"symbol": s, "company": n, "confidence": round(sc, 3)} for sc, s, n in scored[:4]]
+
+    best = scored[0]
+    if best[0] < floor:
+        return out
+    rival = next((s for s in scored[1:] if s[1] != best[1]), None)
+    if rival and best[0] - rival[0] < margin:
+        out["method"] = "ambiguous"
+        return out
+    out.update(symbol=best[1], company=best[2], confidence=round(best[0], 3), method="name")
+    return out

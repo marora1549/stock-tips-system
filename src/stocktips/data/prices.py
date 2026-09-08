@@ -11,6 +11,7 @@ from __future__ import annotations
 import logging
 import time
 from datetime import timedelta
+from urllib.parse import quote
 
 import pandas as pd
 
@@ -29,8 +30,11 @@ YF_HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 
 
 def _yahoo_chart(symbol: str, rng: str, interval: str) -> dict | None:
+    # NSE tickers can contain "&" (GVT&D, M&M). Unencoded it ends the path segment at the ampersand,
+    # so the request asks for a different symbol — or none — and the desk silently has no history.
+    sym = quote(symbol, safe="")
     for n in (1, 2):
-        r = http().get(YF_CHART.format(n=n, sym=symbol), params={"range": rng, "interval": interval, "includePrePost": "false"},
+        r = http().get(YF_CHART.format(n=n, sym=sym), params={"range": rng, "interval": interval, "includePrePost": "false"},
                        headers=YF_HEADERS, ttl=timedelta(hours=6) if interval == "1d" else None)
         if r is not None and r.status_code == 200:
             try:
