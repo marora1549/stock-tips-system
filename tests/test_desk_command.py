@@ -10,7 +10,12 @@ os.environ.setdefault("STOCKTIPS_ROOT", str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
+import yaml  # noqa: E402
+
 import desk_command as desk  # noqa: E402
+
+FIXTURES = ROOT / "tests" / "fixtures"
+WORKFLOW = yaml.safe_load((ROOT / ".github" / "workflows" / "desk.yml").read_text(encoding="utf-8"))
 
 
 @pytest.fixture(autouse=True)
@@ -75,11 +80,68 @@ def test_blank_and_whitespace_inputs_are_treated_as_absent():
         dispatch(command="book", symbol="   ")
 
 
+def test_extra_fields_ride_along_as_json():
+    """workflow_dispatch allows ten inputs; the rest arrive in DESK_ARGS."""
+    argv = dispatch(command="add-tip", source="manual:mohan", symbol="INFY",
+                    args='{"target": "1700,1800", "stop": "1490", "timeframe": "monthly"}')
+    assert argv[:5] == ["add-tip", "--source", "manual:mohan", "--symbol", "INFY"]
+    assert set(zip(argv[5::2], argv[6::2])) == {("--target", "1700,1800"), ("--stop", "1490"),
+                                                ("--timeframe", "monthly")}
+
+
+def test_json_extras_cannot_overwrite_a_real_input():
+    """Otherwise a check on `symbol` could be passed and then quietly re-pointed."""
+    argv = dispatch(command="book", symbol="CGPOWER", args='{"symbol": "RELIANCE", "amount": "500"}')
+    assert argv == ["book", "CGPOWER", "--capital", "500"]
+
+
+def test_malformed_json_is_refused_rather_than_half_read():
+    for blob in ('{"stop": ', '[1,2,3]', '"just a string"', "{'stop': 1}"):
+        with pytest.raises(SystemExit, match="DESK_ARGS"):
+            dispatch(command="book", symbol="CGPOWER", args=blob)
+
+
+def test_a_switch_is_on_unless_it_is_explicitly_off():
+    assert "--dry-run" in dispatch(command="import-tips", text="paste", args='{"dry_run": true}')
+    assert "--dry-run" in dispatch(command="import-tips", text="paste", args='{"dry_run": "1"}')
+    for off in ("false", "0", "no", ""):
+        assert "--dry-run" not in dispatch(command="import-tips", text="paste", args='{"dry_run": "%s"}' % off)
+    assert "--dry-run" not in dispatch(command="import-tips", text="paste")
+
+
+def test_a_whole_pasted_screen_is_one_argument():
+    paste = (FIXTURES / "mojo_table.txt").read_text(encoding="utf-8")
+    argv = dispatch(command="import-tips", source="mojo", text=paste)
+    assert argv[:3] == ["import-tips", "--source", "mojo"]
+    assert argv.count(paste.strip()) == 1
+
+
 def test_every_workflow_choice_is_a_command_the_runner_accepts():
-    import yaml
-    wf = yaml.safe_load((ROOT / ".github" / "workflows" / "desk.yml").read_text(encoding="utf-8"))
-    choices = wf[True]["workflow_dispatch"]["inputs"]["command"]["options"]   # PyYAML reads `on:` as True
+    choices = WORKFLOW[True]["workflow_dispatch"]["inputs"]["command"]["options"]   # PyYAML reads `on:` as True
     assert set(choices) == set(desk.SPEC), "the workflow's choices and the runner's spec have drifted apart"
+
+
+def test_the_workflow_stays_inside_githubs_ten_input_limit():
+    inputs = WORKFLOW[True]["workflow_dispatch"]["inputs"]
+    assert len(inputs) <= 10, f"workflow_dispatch accepts 10 inputs; this asks for {len(inputs)} — move some into args"
+
+
+def test_every_named_input_reaches_the_runner():
+    inputs = set(WORKFLOW[True]["workflow_dispatch"]["inputs"]) - {"args"}
+    passed = set()
+    for step in WORKFLOW["jobs"]["run"]["steps"]:
+        for k, v in (step.get("env") or {}).items():
+            if k.startswith("DESK_") and "inputs." in str(v):
+                passed.add(str(v).split("inputs.")[1].split("}")[0].strip())
+    assert inputs <= passed, f"the workflow declares inputs it never forwards: {inputs - passed}"
+
+
+def test_no_browser_input_is_interpolated_into_a_shell_step():
+    """`run: git commit -m "${{ inputs.note }}"` would be a shell injection with a browser at one end."""
+    for step in WORKFLOW["jobs"]["run"]["steps"]:
+        script = step.get("run") or ""
+        assert "inputs." not in script, (
+            f"step {step.get('name')!r} interpolates an input into its shell — pass it through env: instead")
 
 
 def test_every_flag_the_runner_can_emit_exists_on_that_cli_command():

@@ -2,7 +2,15 @@ name: desk
 
 # The dashboard's hands. docs/index.html asks GitHub to run this workflow, this workflow runs the
 # same `stocktips` command the analyst would have typed, and the commit it pushes is what the
-# dashboard reads back. Inputs never touch a shell — scripts/desk_command.py turns them into argv.
+# dashboard reads back.
+#
+# Two rules hold this together:
+#   * inputs never touch a shell — scripts/desk_command.py turns them into argv, in Python;
+#   * nothing a browser sends is interpolated into a `run:` block. Every use goes through `env:`
+#     and is quoted, so `${{ inputs.symbol }}` never becomes part of a command line.
+#
+# `workflow_dispatch` allows ten inputs and the desk has more fields than that, so the common ones
+# are named and the rest ride along as JSON in `args`.
 on:
   workflow_dispatch:
     inputs:
@@ -15,6 +23,8 @@ on:
           - close
           - capital
           - add-tip
+          - import-tips
+          - contenders
           - lesson
           - add-source
           - gather
@@ -27,55 +37,25 @@ on:
           - status
           - dashboard-data
       symbol:
-        description: NSE symbol, or a company name for add-tip
+        description: NSE symbol, or a company name for add-tip / import-tips
         required: false
       amount:
-        description: Rupees — allocation for book, deposit for capital
-        required: false
-      withdraw:
-        description: Rupees to withdraw (capital only)
+        description: Rupees — allocation for book, deposit for capital, count for contenders
         required: false
       price:
         description: Exit price (close only)
         required: false
-      target:
-        description: Target price, or a comma-separated list (add-tip)
-        required: false
-      stop:
-        description: Stop-loss price (add-tip)
-        required: false
-      entry:
-        description: Entry price the source quoted (add-tip)
-        required: false
-      timeframe:
-        description: weekly / monthly / long / intraday
-        required: false
-      action:
-        description: buy / sell / hold (add-tip)
-        required: false
       source:
-        description: Source id, e.g. manual:mohan
-        required: false
-      company:
-        description: Company name (add-tip)
-        required: false
-      url:
-        description: Link to the tip (add-tip)
-        required: false
-      kind:
-        description: Source kind (add-source)
-        required: false
-      channel:
-        description: Telegram channel (add-source)
-        required: false
-      query:
-        description: Search query (add-source)
+        description: Source id, e.g. manual:mohan or mojo
         required: false
       text:
-        description: The lesson, or the original message for add-tip
+        description: The lesson, the add-tip message, or the whole pasted screen for import-tips
         required: false
       note:
         description: Free-text note recorded with the action
+        required: false
+      args:
+        description: 'JSON for the rest: {"target":"1700,1800","stop":"1490","timeframe":"monthly"}'
         required: false
 
 permissions:
@@ -109,21 +89,11 @@ jobs:
           DESK_COMMAND: ${{ inputs.command }}
           DESK_SYMBOL: ${{ inputs.symbol }}
           DESK_AMOUNT: ${{ inputs.amount }}
-          DESK_WITHDRAW: ${{ inputs.withdraw }}
           DESK_PRICE: ${{ inputs.price }}
-          DESK_TARGET: ${{ inputs.target }}
-          DESK_STOP: ${{ inputs.stop }}
-          DESK_ENTRY: ${{ inputs.entry }}
-          DESK_TIMEFRAME: ${{ inputs.timeframe }}
-          DESK_ACTION: ${{ inputs.action }}
           DESK_SOURCE: ${{ inputs.source }}
-          DESK_COMPANY: ${{ inputs.company }}
-          DESK_URL: ${{ inputs.url }}
-          DESK_KIND: ${{ inputs.kind }}
-          DESK_CHANNEL: ${{ inputs.channel }}
-          DESK_QUERY: ${{ inputs.query }}
           DESK_TEXT: ${{ inputs.text }}
           DESK_NOTE: ${{ inputs.note }}
+          DESK_ARGS: ${{ inputs.args }}
         run: python scripts/desk_command.py | tee /tmp/desk-output.txt
 
       - name: Refresh the dashboard payload
@@ -145,6 +115,11 @@ jobs:
 
       - name: Commit and push
         if: always() && steps.run.outcome == 'success'
+        env:
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
+          DESK_ACTOR: ${{ github.actor }}
+          DESK_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           git config user.name  "desk (dashboard)"
           git config user.email "noreply@anthropic.com"
@@ -153,9 +128,9 @@ jobs:
             exit 0
           fi
           git add -A
-          git commit -qm "desk: ${{ inputs.command }} ${{ inputs.symbol }}${{ inputs.amount }}" \
-            -m "Dispatched from the dashboard by ${{ github.actor }}." \
-            -m "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          git commit -qm "desk: ${DESK_COMMAND} ${DESK_SYMBOL}" \
+            -m "Dispatched from the dashboard by ${DESK_ACTOR}." \
+            -m "Run: ${DESK_RUN_URL}"
           for i in 1 2 3; do
             git pull --rebase --autostash -q origin main && git push -q origin HEAD:main && exit 0
             sleep $((i * 4))
@@ -165,8 +140,11 @@ jobs:
 
       - name: Show what the command said
         if: always()
+        env:
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
         run: |
-          echo '### `stocktips ${{ inputs.command }} ${{ inputs.symbol }}`' >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          tail -c 8000 /tmp/desk-output.txt >> $GITHUB_STEP_SUMMARY || true
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          printf '### `stocktips %s %s`\n' "$DESK_COMMAND" "$DESK_SYMBOL" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          tail -c 8000 /tmp/desk-output.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
