@@ -9,12 +9,18 @@ from __future__ import annotations
 import logging
 from collections import defaultdict
 
-from .analysis import plan as planmod, scoring, ta
+from .analysis import catalyst, intraday as intradaymod, plan as planmod, scoring, ta
 from .data import fundamentals, prices, sparks
-from .learning import confidence
-from .portfolio import allocate as allocmod, ledger as ledgermod
-from .sources import extract, fetchers
-from .util import REPORTS_DIR, read_json, settings, sources_config, today_str, write_json
+from .learning import confidence, eventscore
+from .portfolio import allocate as allocmod, daybook, ledger as ledgermod
+from .sources import events, extract, fetchers
+from .util import (CONFIG_DIR, REPORTS_DIR, load_yaml, now_ist, read_json, settings, sources_config,
+                   today_str, write_json)
+
+# the TA fields the intraday card carries; the positional card's list lives in cli.py
+ANALYSIS_TA_FIELDS = ("trend", "rsi", "adx", "atr_pct", "vol_ratio", "chg_1d_pct", "chg_5d_pct",
+                      "dist_52w_high_pct", "dist_ema200_pct", "avg_turnover_cr", "high_52w",
+                      "momentum_score", "last_bar_date")
 
 log = logging.getLogger(__name__)
 
@@ -171,3 +177,283 @@ def pick_and_book(results: list[dict] | None = None, book: bool = True) -> dict:
            "cash_after": led["cash_inr"], "watch": [p["symbol"] for p in results if p["verdict"] == "WATCH"][:8]}
     write_json(day_dir() / "picks.json", out)
     return out
+
+
+# ==================================================================== the intraday desk
+def news_sources() -> list[dict]:
+    """The corporate-news registry, kept apart from the tip sources on purpose."""
+    return (load_yaml(CONFIG_DIR / "news_sources.yaml") or {}).get("sources") or []
+
+
+def gather_news(max_age_hours: float = 20) -> dict:
+    """Fetch the corporate wires and read events out of them → reports/<date>/news_raw.json.
+
+    20 hours by default rather than the tip pipeline's 36: this run is about what the market has not
+    seen yet, and yesterday morning's story has been priced for a day and a half.
+    """
+    conf = confidence.load()
+    usd = float(settings().get("data", {}).get("usd_inr", 88.0))
+    out = {"date": today_str(), "sources": {}, "events": [], "docs": []}
+    for src in news_sources():
+        if not src.get("enabled", True):
+            continue
+        if not conf.get(src["id"], {}).get("enabled", True):
+            log.info("%s disabled by confidence rule — skipped", src["id"])
+            continue
+        docs = fetchers.fetch_source(src, max_age_hours=max_age_hours)
+        found = []
+        for d in docs:
+            found += events.scan(d, src["id"], usd_inr=usd)
+            out["docs"].append({"source_id": src["id"], "url": d["url"], "title": d["title"],
+                                "published": d["published"], "chars": len(d["text"])})
+        out["sources"][src["id"]] = {"docs": len(docs), "events": len(found)}
+        out["events"] += found
+        confidence.ensure(conf, src["id"])
+    confidence.save(conf)
+    out["events"] = events.merge(out["events"])
+    write_json(day_dir() / "news_raw.json", out)
+    log.info("gathered %d events from %d news sources", len(out["events"]), len(out["sources"]))
+    return out
+
+
+def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None = None) -> dict:
+    """Score every overnight event and write the pre-open card → reports/<date>/preopen.json.
+
+    This is the run whose output is an email at 08:00. Everything expensive — prices, fundamentals —
+    is fetched only for names that already cleared the cheap checks, because a wire can produce
+    fifty events and forty of them are about companies whose charts nobody needs to see.
+    """
+    cfg = settings().get("intraday", {}) or {}
+    conf = confidence.load()
+    class_state = eventscore.load()
+    now = now or now_ist()
+    # The run is dated by the session it is for, not by the wall clock. A pre-open run fired at
+    # 08:00 IST and a replay handed an explicit `now` must both write into the day they are about,
+    # and `today_str()` has already rolled over for anyone running this from a UTC evening.
+    date = date or now.date().isoformat()
+    raw = raw if raw is not None else read_json(day_dir(date) / "news_raw.json", None) or gather_news()
+
+    ranked, skipped = [], []
+    for ev in raw["events"]:
+        # cheap gate first: a stale story or a name three steps from the news never needs a chart
+        fresh = catalyst.freshness(ev.get("published_utc"), now)
+        if fresh["window"] == "stale" or ev["directness"] < events.DIRECTNESS_FLOOR:
+            skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")},
+                            "why": fresh["why"] if fresh["window"] == "stale" else "too indirect"})
+            continue
+        df = prices.history(ev["symbol"])
+        if df is None:
+            skipped.append({**{k: ev[k] for k in ("symbol", "event", "title", "source_id")},
+                            "why": "no price history"})
+            continue
+        snap = ta.analyze(df)
+        f = fundamentals.fetch(ev["symbol"])
+        fscore, fwhy = fundamentals.score(f)
+        cat = catalyst.score(
+            ev, fundamentals=f, fund_score=fscore, ta=snap,
+            class_prior=eventscore.prior(class_state, ev["event"], ev.get("event_prior", 0)),
+            source_weight=confidence.weight(conf.get(ev["source_id"], {}).get("score", 0.0)),
+            now=now)
+        plan = intradaymod.preopen_plan(snap["close"], snap, cfg)
+        sparks.remember(spark_cache := sparks.load(), ev["symbol"], df)
+        sparks.save(spark_cache)
+        ranked.append({
+            **ev, **cat, "plan": plan, "fund_score": fscore, "fund_why": fwhy,
+            "ltp": snap["close"],
+            "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
+            "fundamentals": {k: v for k, v in (f or {}).items()
+                             if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity",
+                                      "promoter_pct", "revenue_ttm_cr", "revenue_basis",
+                                      "sales_growth_3_years", "profit_growth_3_years")},
+            "class_score": eventscore.display(class_state, ev["event"]),
+        })
+
+    ranked.sort(key=lambda r: (-r["catalyst"], r["symbol"]))
+    contenders_ = [r for r in ranked if r["verdict"] == "TRADE"][:limit]
+    out = {
+        "date": date, "generated_at": now.strftime("%Y-%m-%d %H:%M"),
+        "sources": raw.get("sources", {}), "events_read": len(raw["events"]),
+        "trade": contenders_,
+        "watch": [r for r in ranked if r["verdict"] == "WATCH"][:limit],
+        "avoid": [r for r in ranked if r["verdict"] == "AVOID"][:limit],
+        "skipped": skipped[:40],
+        "settings": {k: cfg.get(k) for k in ("gap_modest_pct", "gap_wide_pct", "max_stop_pct",
+                                             "force_flat_at", "notional_inr", "risk_per_trade_pct",
+                                             "max_positions")},
+    }
+    write_json(day_dir(date) / "preopen.json", out)
+    log.info("pre-open: %d events → %d TRADE, %d WATCH, %d AVOID",
+             len(raw["events"]), len(out["trade"]), len(out["watch"]), len(out["avoid"]))
+    return out
+
+
+def intraday_watch(now=None, date: str | None = None) -> dict:
+    """The session check: what the open actually did, and which plans the rule now allows.
+
+    Called at 09:35 for the opening range, again mid-session, and at 15:20 to settle. It is the only
+    place a paper trade is opened, and it opens one only because the trigger printed on the tape —
+    not because the news was good.
+    """
+    cfg = settings().get("intraday", {}) or {}
+    now = now or now_ist()
+    date = date or now.date().isoformat()
+    card = read_json(day_dir(date) / "preopen.json", None)
+    if not card:
+        return {"date": date, "error": f"no preopen.json for {date} — run preopen first"}
+    book = daybook.load()
+    rec = daybook.record_candidates(book, card.get("trade", []), date)
+
+    watched = card.get("trade", []) + card.get("watch", [])
+    live = []
+    for cand in watched:
+        sym = cand["symbol"]
+        bars = prices.history(sym, interval="5m")
+        daily = prices.history(sym)
+        if bars is None or bars.empty:
+            live.append({**_intraday_card(cand), "state": "no-data",
+                         "reasons": ["no intraday bars — the feed has nothing for this symbol yet"]})
+            continue
+        prev_close = cand.get("plan", {}).get("reference_close") or cand.get("ltp")
+        plan = intradaymod.session_plan(prev_close, bars, cand.get("ta") or {}, daily, now=now, c=cfg, day=date)
+        size = intradaymod.size_for(plan, cfg) if plan.get("trigger") else {"qty": 0}
+        row = {**_intraday_card(cand), **plan, "size": size}
+        if plan.get("trigger"):
+            row["order_line"] = intradaymod.order_line(sym, plan, size.get("qty") or 0)
+        # a trade is written only when the tape triggered it, and only for a TRADE-grade catalyst
+        if (plan.get("state") in ("triggered", "stopped", "done") and cand.get("verdict") == "TRADE"
+                and (size.get("qty") or 0) > 0):
+            daybook.open_trade(book, symbol=sym, plan=plan, qty=size["qty"], event=cand, date=date)
+        live.append(row)
+
+    live.sort(key=lambda r: (r.get("state") != "triggered", -(r.get("catalyst") or 0)))
+    out = {"date": date, "checked_at": now.strftime("%Y-%m-%d %H:%M"), "candidates": live,
+           "trades": rec["trades"], "book": daybook.stats(book),
+           "settled": rec.get("settled", False)}
+    daybook.save(book)
+    write_json(day_dir(date) / "intraday.json", out)
+    return out
+
+
+def _intraday_card(cand: dict) -> dict:
+    """The parts of a pre-open candidate the session view carries forward."""
+    keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
+            "reasons", "size_inr_cr", "size_estimated", "materiality_ratio", "revenue_ttm_cr",
+            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "directness", "route", "why_this_name", "theme", "ltp", "ta", "fundamentals",
+            "freshness", "class_score", "published")
+    out = {k: cand.get(k) for k in keys}
+    out["catalyst_reasons"] = cand.get("reasons") or []
+    out["reasons"] = []
+    return out
+
+
+def intraday_close(now=None, date: str | None = None) -> dict:
+    """Settle the day: exit every open trade at what the tape gave, then grade the news.
+
+    The exit is taken from the bars rather than asked for: the stop if it was breached, the highest
+    target that traded, else the price at the forced-flat time. Grading uses open→high and
+    open→close for *every* candidate, including the ones that never triggered — a piece of news that
+    moved a stock 4% is evidence about that class of news whether or not the plan caught it.
+    """
+    now = now or now_ist()
+    date = date or now.date().isoformat()
+    card = read_json(day_dir(date) / "preopen.json", None) or {}
+    book = daybook.load()
+    rec = daybook.day(book, date)
+    conf = confidence.load()
+    classes = eventscore.load()
+    settled, graded = [], []
+
+    watched = (card.get("trade") or []) + (card.get("watch") or [])
+    # One story that moves four related names is one piece of evidence about that kind of news, not
+    # four. The Barmer story surfaced GE Vernova and three sympathy plays; grading the class once per
+    # name would let a single afternoon define it. The most direct beneficiary is the observation.
+    counts_for: dict[tuple, str] = {}
+    for cand in sorted(watched, key=lambda c: -(c.get("directness") or 0)):
+        key = (cand.get("event"), cand.get("url") or cand.get("title"))
+        counts_for.setdefault(key, cand["symbol"])
+
+    for cand in watched:
+        sym = cand["symbol"]
+        bars = prices.history(sym, interval="5m")
+        today = intradaymod.session_bars(bars, date) if bars is not None else None
+        if today is None or today.empty:
+            continue
+        open_px = float(today["open"].iloc[0])
+        high = float(today["high"].max())
+        close_px = float(today["close"].iloc[-1])
+        o2h = round((high / open_px - 1) * 100, 2)
+        o2c = round((close_px / open_px - 1) * 100, 2)
+
+        # grade the news itself, whether or not a trade happened — a story that moved a stock 4% is
+        # evidence about that class of news even if no plan ever triggered
+        key = (cand.get("event"), cand.get("url") or cand.get("title"))
+        counted = counts_for.get(key) == sym
+        if counted:
+            eventscore.note_outcome(classes, cand["event"], open_to_high_pct=o2h, open_to_close_pct=o2c,
+                                    symbol=sym, seed_prior=cand.get("event_prior") or 0, on=date)
+        graded.append({"symbol": sym, "event": cand["event"], "open_to_high_pct": o2h,
+                       "open_to_close_pct": o2c, "verdict": cand.get("verdict"),
+                       "catalyst": cand.get("catalyst"), "triggered": None,
+                       "counted_for_class": counted})
+
+        trade = next((t for t in rec["trades"] if t["symbol"] == sym and t["status"] == "open"), None)
+        if trade is None:
+            continue
+        graded[-1]["triggered"] = True
+        exit_px, reason = _settled_exit(today, trade, now)
+        daybook.settle_trade(book, sym, exit_price=exit_px, reason=reason, date=date,
+                             open_to_high_pct=o2h, open_to_close_pct=o2c)
+        settled.append({"symbol": sym, "exit": exit_px, "reason": reason,
+                        "pnl_inr": trade.get("pnl_inr"), "r_multiple": trade.get("r_multiple")})
+        # and grade the wire that carried it, on the trade's own R
+        _note_news_source(conf, trade)
+
+    rec["settled"] = True
+    daybook.save(book)
+    eventscore.save(classes)
+    confidence.save(conf)
+    out = {"date": date, "settled_at": now.strftime("%Y-%m-%d %H:%M"), "exits": settled,
+           "graded": graded, "book": daybook.stats(book), "classes": eventscore.summary(classes)}
+    write_json(day_dir(date) / "intraday_close.json", out)
+    log.info("intraday close %s: %d exits, %d events graded", date, len(settled), len(graded))
+    return out
+
+
+def _settled_exit(today, trade: dict, now) -> tuple[float, str]:
+    """What the tape actually gave: the stop if breached, else the best target reached, else the
+    price at the forced-flat time. Order matters, and the stop is checked first — assuming the
+    target came first when both printed in one bar would flatter every record the desk keeps."""
+    ran = intradaymod.walk(today, trade["entry"], trade["stop"], trade.get("targets") or [])
+    if ran["stopped"]:
+        return trade["stop"], ("stopped in the entry bar" if ran["entry_bar_same_bar_stop"] else "stop")
+    hit = ran["targets_hit"]
+    targets = trade.get("targets") or []
+    if hit:
+        return targets[min(hit, len(targets)) - 1], f"target_{min(hit, len(targets))}"
+    flat = str((settings().get("intraday", {}) or {}).get("force_flat_at", "15:10"))
+    upto = today[[str(ts.time())[:5] <= flat for ts in today.index]]
+    last = upto if not upto.empty else today
+    return round(float(last["close"].iloc[-1]), 2), f"squared off at {flat}"
+
+
+def _note_news_source(conf: dict, trade: dict) -> None:
+    """Move the news source's confidence on the trade's R, using the same scale as tip outcomes."""
+    sid = trade.get("source_id")
+    if not sid:
+        return
+    row = confidence.ensure(conf, sid)
+    r = trade.get("r_multiple")
+    if r is None:
+        return
+    sc = settings().get("source_confidence", {})
+    decay = float(sc.get("decay_per_outcome", 0.95))
+    delta = max(-15.0, min(15.0, r * 6.0))
+    row["score"] = round(float(row.get("score") or 0.0) * decay + delta, 3)
+    row["n_resolved"] = int(row.get("n_resolved") or 0) + 1
+    row["sum_return_pct"] = round(float(row.get("sum_return_pct") or 0.0) + (trade.get("return_pct") or 0.0), 2)
+    row["history"] = (row.get("history") or [] + [])[-99:] + [{
+        "date": trade.get("date"), "symbol": trade.get("symbol"), "outcome": trade.get("exit_reason"),
+        "ret_pct": trade.get("return_pct"), "delta": round(delta, 2), "kind": "intraday",
+    }]
+    row["last_seen"] = trade.get("date") or today_str()

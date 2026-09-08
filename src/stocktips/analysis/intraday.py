@@ -82,14 +82,16 @@ def preopen_plan(prev_close: float, ta: dict | None = None, c: dict | None = Non
     ta = ta or {}
     atr_pct = ta.get("atr_pct")
     day_range = round(prev_close * (atr_pct or 2.5) / 100, 2)
+    # flat and modest share a rule, so they share a row — a ladder that repeats itself reads as
+    # though there is a distinction to think about when there is not
     ladder = []
-    for band, upper in (("flat", 0.5), ("modest", float(c.get("gap_modest_pct", 2.0))),
+    for band, upper in (("modest", float(c.get("gap_modest_pct", 2.0))),
                         ("wide", float(c.get("gap_wide_pct", 5.0))), ("runaway", None)):
         ladder.append({
             "band": band,
             "gap_upto_pct": upper,
             "rule": BAND_RULE[band],
-            "acts": band not in ("runaway",),
+            "acts": band != "runaway",
         })
     return {
         "reference_close": round(prev_close, 2),

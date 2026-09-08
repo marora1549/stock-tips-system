@@ -11,6 +11,9 @@
   close             discretionary exit: cancel a pending position or sell an open one (close CGPOWER [--price 940])
   capital           deposit or withdraw capital (capital --add 50000 / --withdraw 20000)
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
+  preopen           08:00: overnight corporate news → catalyst scores → reports/<date>/preopen.md
+  intraday          session check: the real gap and opening range  (--close to settle and grade)
+  daybook           the intraday record, and what each kind of news has been worth
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
   analyze-symbol    ad-hoc: full TA plan for one NSE symbol  (analyze-symbol TCS --tf monthly)
@@ -31,7 +34,8 @@ import yaml
 from . import pipeline, report
 from .analysis import contenders, plan as planmod, scoring, ta
 from .data import fundamentals, prices, sparks, symbols
-from .learning import confidence, journal
+from .learning import confidence, eventscore, journal
+from .portfolio import daybook
 from .sources import mojo
 from .portfolio import ledger as ledgermod
 from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
@@ -229,6 +233,58 @@ def cmd_contenders(a):
     held = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
     top = contenders.rank([_suggestion(r) for r in results], n=a.top, held=held)
     print(json.dumps({"day": day, "ideas_considered": len(results), "contenders": top}, indent=1, ensure_ascii=False))
+
+
+def cmd_preopen(a):
+    """The 08:00 run: read overnight corporate news and say what to do about it before the open.
+
+    Its output is an email, so the report's first line has to stand alone — that may be all that
+    gets read on a phone at eight in the morning.
+    """
+    closed = _market_closed(today_str())
+    if closed and not a.force:
+        print(f"market closed today ({closed}) — nothing opens, so there is nothing to be early for")
+        return
+    day = a.date or now_ist().date().isoformat()
+    raw = None if a.refresh else read_json(pipeline.day_dir(day) / "news_raw.json", None)
+    if raw is None:
+        raw = pipeline.gather_news(max_age_hours=a.max_age)
+    card = pipeline.preopen(raw, limit=a.limit, date=day)
+    md = report.preopen(card)
+    (pipeline.day_dir(day) / "preopen.md").write_text(md, encoding="utf-8")
+    book = daybook.load()
+    daybook.record_candidates(book, card.get("trade", []))
+    daybook.save(book)
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_intraday(a):
+    """The session runs: 09:35 for the opening range, midday for the trail, 15:20 to settle."""
+    if a.close:
+        out = pipeline.intraday_close(date=a.date)
+        if not a.no_dashboard:
+            cmd_dashboard_data(a)
+        print(json.dumps({"date": out["date"], "exits": out["exits"],
+                          "graded": len(out["graded"]), "book": out["book"]}, indent=1))
+        return
+    card = pipeline.intraday_watch(date=a.date)
+    if card.get("error"):
+        sys.exit(card["error"])
+    md = report.intraday(card)
+    (pipeline.day_dir(a.date) / "intraday.md").write_text(md, encoding="utf-8")
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_daybook(a):
+    """The intraday record: what it has actually made, and what each kind of news has been worth."""
+    book = daybook.load()
+    print(json.dumps({"stats": daybook.stats(book),
+                      "event_classes": eventscore.summary(eventscore.load()),
+                      "recent": book.get("closed", [])[-8:]}, indent=1))
 
 
 def cmd_structure(a):
@@ -550,6 +606,20 @@ def main(argv=None):
     p = sub.add_parser("book"); p.add_argument("symbol"); p.add_argument("--capital", type=float, default=None, help="rupees to deploy (default: deployable cash split over the free slots, capped per stock)"); p.add_argument("--date", default=None, help="report day whose analysis.json to book from (default: latest)"); p.add_argument("--force", action="store_true", help="override verdict / cap / slot checks"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_book)
     p = sub.add_parser("close"); p.add_argument("symbol"); p.add_argument("--price", type=float, default=None, help="exit price (default: last close)"); p.add_argument("--note", default=None, help="why you exited — goes in the position notes"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_close)
     p = sub.add_parser("capital"); p.add_argument("--add", type=float, default=None); p.add_argument("--withdraw", type=float, default=None); p.add_argument("--note", default=None); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_capital)
+    p = sub.add_parser("preopen")
+    p.add_argument("--max-age", type=float, default=20, help="how far back to read news (hours)")
+    p.add_argument("--refresh", action="store_true", help="re-fetch the wires instead of reusing news_raw.json")
+    p.add_argument("--limit", type=int, default=8)
+    p.add_argument("--date", default=None, help="the session this run is for (default: today in IST)")
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_preopen)
+    p = sub.add_parser("intraday")
+    p.add_argument("--close", action="store_true", help="settle the day's trades and grade the news")
+    p.add_argument("--date", default=None)
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_intraday)
+    p = sub.add_parser("daybook"); p.set_defaults(fn=cmd_daybook)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)
     p = sub.add_parser("analyze-symbol"); p.add_argument("symbol"); p.add_argument("--tf", default="weekly"); p.set_defaults(fn=cmd_analyze_symbol)

@@ -22,6 +22,8 @@ REDIRECT = [
     ("stocktips.learning.journal", "PATH", "lessons.md"),
     ("stocktips.data.sparks", "PATH", "price_cache.json"),
     ("stocktips.data.symbols", "UNIVERSE_PATH", "universe_cache.json"),
+    ("stocktips.portfolio.daybook", "PATH", "daybook.json"),
+    ("stocktips.learning.eventscore", "PATH", "event_classes.json"),
 ]
 
 

@@ -1,0 +1,125 @@
+# ---------------------------------------------------------------------------
+# Corporate-news sources for the pre-open run.
+#
+# Deliberately separate from config/sources.yaml. Those sources are read by the *recommendation*
+# extractor looking for "buy X, target Y, stop Z"; these carry order wins and approvals, which have
+# none of those, and running one extractor over the other's feed produces confident nonsense.
+#
+# `kind` reuses the fetchers in sources/fetchers.py — gnews, rss, page — so nothing new had to be
+# written to fetch these. Confidence is tracked per id in state/sources_confidence.json exactly as
+# for tip sources, and starts at 0: a wire that is reliably early will earn weight, and one that
+# reprints yesterday's move as today's news will lose it.
+#
+# The `stocks to watch` columns matter more than they look. The Indian press publishes them between
+# 07:00 and 08:30, and they are precisely an aggregation of overnight corporate news — which is the
+# only window where the whole move is still ahead of the open.
+#
+# Feed URLs could not be verified from the environment this file was written in (its egress proxy
+# refuses news hosts). A dead feed yields zero documents and says so in the run summary rather than
+# failing the run, so the first live pre-open report is what confirms which of these actually
+# respond. Prune the silent ones then.
+# ---------------------------------------------------------------------------
+
+sources:
+  # ---------------- the pre-open columns: overnight corporate news, aggregated ----------------
+  - id: corp_stocks_to_watch
+    name: "Stocks to watch / stocks in news (pre-open columns, cross-publisher)"
+    kind: gnews
+    query: "\"stocks to watch\" OR \"stocks in news\" OR \"stocks in focus\" OR \"buzzing stocks\""
+    category: corporate
+    enabled: true
+
+  # ---------------- order wins and awards ----------------
+  - id: corp_orders
+    name: "Order wins, contract awards and L1 calls"
+    kind: gnews
+    query: "\"wins order\" OR \"bags order\" OR \"order worth\" OR \"letter of award\" OR \"emerges as L1\" OR \"lowest bidder\" OR \"secures contract\""
+    category: corporate
+    enabled: true
+
+  - id: corp_orders_bse
+    name: "Order and contract announcements (exchange filings, via Google News)"
+    kind: gnews
+    query: "\"receives order\" OR \"work order\" OR \"LoA\" OR \"order inflow\" NSE OR BSE"
+    category: corporate
+    enabled: true
+
+  # ---------------- approvals and regulatory ----------------
+  - id: corp_approvals
+    name: "Drug and regulatory approvals"
+    kind: gnews
+    query: "USFDA approval OR \"receives final approval\" OR \"establishment inspection report\" OR \"ANDA approval\" OR \"CDSCO approval\""
+    category: corporate
+    enabled: true
+
+  - id: corp_regulatory_action
+    name: "Regulatory action, notices and observations"
+    kind: gnews
+    query: "\"Form 483\" OR \"import alert\" OR \"warning letter\" OR \"SEBI order\" OR \"GST notice\" OR \"income tax search\" company"
+    category: corporate
+    enabled: true
+
+  # ---------------- results and guidance ----------------
+  - id: corp_results
+    name: "Quarterly results, beats and misses"
+    kind: gnews
+    query: "\"Q1 results\" OR \"Q2 results\" OR \"Q3 results\" OR \"Q4 results\" profit jumps OR profit falls OR \"beats estimates\""
+    category: corporate
+    enabled: true
+
+  # ---------------- capacity, capex, deals ----------------
+  - id: corp_expansion
+    name: "Capacity, capex, JVs and index changes"
+    kind: gnews
+    query: "\"commissions\" capacity OR \"signs MoU\" OR \"joint venture\" OR \"included in Nifty\" OR \"MSCI inclusion\" India company"
+    category: corporate
+    enabled: true
+
+  # ---------------- publisher wires ----------------
+  # Business Standard's capital-market wire carries exchange filings almost verbatim and is often
+  # the first place an L1 letter shows up — it was the first report of the GE Vernova one.
+  - id: corp_bs_capitalmarket
+    name: "Business Standard — capital market news"
+    kind: gnews
+    query: "wins OR bags OR secures OR approval OR order"
+    publisher: business-standard.com
+    category: corporate
+    enabled: true
+
+  - id: corp_mc_buzzing
+    name: "Moneycontrol — buzzing stocks"
+    kind: rss
+    url: https://www.moneycontrol.com/rss/buzzingstocks.xml
+    category: corporate
+    enabled: true
+
+  - id: corp_mc_results
+    name: "Moneycontrol — results"
+    kind: rss
+    url: https://www.moneycontrol.com/rss/results.xml
+    category: corporate
+    enabled: true
+
+  - id: corp_bs_markets_rss
+    name: "Business Standard — markets"
+    kind: rss
+    url: https://www.business-standard.com/rss/markets-106.rss
+    category: corporate
+    enabled: true
+
+  - id: corp_et_markets_rss
+    name: "Economic Times — markets"
+    kind: rss
+    url: https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms
+    category: corporate
+    enabled: true
+
+  # sahi.com is where the GE Vernova story was read too late. Its own feed is unverified from here;
+  # the Google News route works regardless of whether the direct feed exists.
+  - id: corp_sahi
+    name: "Sahi — corporate news"
+    kind: gnews
+    query: "order OR approval OR wins OR project"
+    publisher: sahi.com
+    category: corporate
+    enabled: true
