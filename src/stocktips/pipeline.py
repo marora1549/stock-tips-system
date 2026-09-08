@@ -497,3 +497,105 @@ def _note_news_source(conf: dict, trade: dict) -> None:
         "ret_pct": trade.get("return_pct"), "delta": round(delta, 2), "kind": "intraday",
     }]
     row["last_seen"] = trade.get("date") or today_str()
+
+def read_one_story(text: str | None = None, url: str | None = None, *, title: str | None = None,
+                   published: str | None = None, source_id: str = "manual:read",
+                   now=None, date: str | None = None) -> dict:
+    """Score one story the desk owner found for themselves.
+
+    The GE Vernova article was read at mid-morning on a phone. This is the path for exactly that: a
+    URL or a pasted body goes through the same extractor, the same beneficiary map and the same
+    catalyst score as the 08:00 run, so the answer is comparable rather than a second opinion from a
+    different method. The freshness term will usually mark it in-session and dock it, which is the
+    honest reading — by the time you are reading it, the market has too.
+    """
+    now = now or now_ist()
+    date = date or now.date().isoformat()
+    cfg = settings().get("intraday", {}) or {}
+    body = text or ""
+    if url and not body.strip():
+        body = fetchers.article_text(url)
+        if not body:
+            return {"error": f"could not read anything at {url}", "candidates": []}
+    if not body.strip():
+        return {"error": "nothing to read — pass the article text or a URL", "candidates": []}
+
+    lines = [ln.strip() for ln in body.replace("\r\n", "\n").split("\n") if ln.strip()]
+    doc = {
+        "url": url or "",
+        # a pasted article's first line is nearly always its headline
+        "title": (title or (lines[0] if lines and len(lines[0]) < 200 else ""))[:200],
+        "published": published or now.strftime("%a, %d %b %Y %H:%M:%S %z"),
+        "text": body,
+    }
+    found = events.merge(events.scan(doc, source_id,
+                                     usd_inr=float(settings().get("data", {}).get("usd_inr", 88.0))))
+    if not found:
+        return {"error": "read it, but found no corporate event and no NSE name it implicates",
+                "candidates": [], "title": doc["title"]}
+
+    conf = confidence.load()
+    confidence.ensure(conf, source_id)
+    confidence.save(conf)
+    classes = eventscore.load()
+    out = []
+    for ev in found:
+        df = prices.history(ev["symbol"])
+        if df is None:
+            out.append({**ev, "verdict": "SKIP", "verdict_note": "no price history for this symbol",
+                        "catalyst": None, "reasons": []})
+            continue
+        snap = ta.analyze(df)
+        f = fundamentals.fetch(ev["symbol"])
+        fscore, fwhy = fundamentals.score(f)
+        cat = catalyst.score(ev, fundamentals=f, fund_score=fscore, ta=snap,
+                             class_prior=eventscore.prior(classes, ev["event"], ev.get("event_prior", 0)),
+                             source_weight=confidence.weight(conf.get(source_id, {}).get("score", 0.0)),
+                             now=now)
+        out.append({**ev, **cat, "fund_score": fscore, "fund_why": fwhy, "ltp": snap["close"],
+                    "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
+                    "fundamentals": {k: v for k, v in (f or {}).items()
+                                     if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity",
+                                              "promoter_pct", "revenue_ttm_cr", "revenue_basis")},
+                    "plan": intradaymod.preopen_plan(snap["close"], snap, cfg),
+                    "class_score": eventscore.display(classes, ev["event"])})
+    out.sort(key=lambda r: -(r.get("catalyst") or -999))
+
+    # The freshness term measures when the news landed, not when you read it — so an overnight story
+    # pasted at 10:30 still scores +12, which is right about the news and silent about the thing
+    # that actually cost money last time. Say it separately.
+    warning = None
+    at = now.time()
+    if catalyst.OPEN_T <= at <= catalyst.CLOSE_T:
+        mins = (now.hour * 60 + now.minute) - (catalyst.OPEN_T.hour * 60 + catalyst.OPEN_T.minute)
+        warning = (f"The market has been open {mins} minutes. The score above is what this news was "
+                   f"worth at the open; whatever it was going to do to the price has partly or "
+                   f"wholly happened. Check the day's range before acting on any of it.")
+    return {"date": date, "read_at": now.strftime("%Y-%m-%d %H:%M"), "title": doc["title"],
+            "url": doc["url"], "source_id": source_id, "candidates": out,
+            "read_during_session": warning}
+
+
+def add_to_preopen(story: dict, date: str | None = None) -> dict:
+    """Fold a hand-read story into today's card, so the portal and the session runs pick it up."""
+    date = date or story.get("date") or today_str()
+    card = read_json(day_dir(date) / "preopen.json", None)
+    if card is None:
+        return {"error": f"no preopen.json for {date} — run preopen first, then add to it"}
+    added = []
+    for c in story.get("candidates") or []:
+        bucket = {"TRADE": "trade", "WATCH": "watch", "AVOID": "avoid"}.get(c.get("verdict"))
+        if not bucket:
+            continue
+        rows = card.setdefault(bucket, [])
+        if any(r.get("symbol") == c["symbol"] and r.get("event") == c.get("event") for r in rows):
+            continue
+        rows.append(c)
+        added.append(f"{c['symbol']} → {bucket}")
+    for key in ("trade", "watch"):
+        card[key] = sorted(card.get(key) or [], key=lambda r: -(r.get("catalyst") or 0))
+    card["hand_read"] = (card.get("hand_read") or []) + [{
+        "title": story.get("title"), "url": story.get("url"), "at": story.get("read_at"),
+        "added": added}]
+    write_json(day_dir(date) / "preopen.json", card)
+    return {"date": date, "added": added}

@@ -268,3 +268,31 @@ def intraday(card: dict) -> str:
     out += ["", f"Day book: {b.get('n_trades', 0)} closed{live}, ₹{b.get('pnl_inr', 0):,.0f} realised on "
                 f"₹{b.get('notional_inr', 0):,.0f} notional. Paper only."]
     return "\n".join(out)
+
+
+def one_story(story: dict) -> str:
+    """One hand-read story, scored — printed for the CLI and for the portal's paste box."""
+    if story.get("error") and not story.get("candidates"):
+        return f"# Could not use that story\n\n{story['error']}\n"
+    out = [f"# {story.get('title') or 'Story'}", "",
+           f"*read {story.get('read_at', '')} · {story.get('source_id', '')}"
+           + (f" · [source]({story['url']})" if story.get("url") else "") + "*", ""]
+    if story.get("read_during_session"):
+        out += ["> **Read during the session.** " + story["read_during_session"], ""]
+    cands = story.get("candidates") or []
+    if not cands:
+        out += [story.get("error") or "No NSE name implicated.", ""]
+        return "\n".join(out)
+    lead = cands[0]
+    verdicts = ", ".join(f"{c['symbol']} {c.get('verdict')}"
+                         + (f" ({c['catalyst']})" if c.get("catalyst") is not None else "")
+                         for c in cands[:4])
+    out[0] = f"# {lead['symbol']} {lead.get('verdict')} — {story.get('title') or 'story'}"
+    out.insert(3, f"**{verdicts}**")
+    out.insert(4, "")
+    for i, c in enumerate(cands, 1):
+        if c.get("catalyst") is None:
+            out += [f"### {i}. {c['symbol']} — {c.get('verdict_note') or 'not scored'}", ""]
+            continue
+        out += [preopen_card(c, i)]
+    return "\n".join(out)

@@ -13,6 +13,7 @@
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
   preopen           08:00: overnight corporate news → catalyst scores → reports/<date>/preopen.md
   intraday          session check: the real gap and opening range  (--close to settle and grade)
+  read              score one story you found yourself (read --url ... / --text ... [--add])
   daybook           the intraday record, and what each kind of news has been worth
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
@@ -285,6 +286,32 @@ def cmd_daybook(a):
     print(json.dumps({"stats": daybook.stats(book),
                       "event_classes": eventscore.summary(eventscore.load()),
                       "recent": book.get("closed", [])[-8:]}, indent=1))
+
+
+def cmd_read(a):
+    """Score one story you found yourself — the path for the article read too late.
+
+    Same extractor, same beneficiary map, same catalyst score as the 08:00 run, so the answer sits
+    beside that run's rather than being a second opinion arrived at differently.
+    """
+    text = a.text
+    if a.file:
+        text = Path(a.file).read_text(encoding="utf-8", errors="replace")
+    if not text and not a.url and not sys.stdin.isatty():
+        text = sys.stdin.read()
+    story = pipeline.read_one_story(text=text, url=a.url, title=a.title, published=a.published,
+                                   source_id=a.source, date=a.date)
+    if story.get("error") and not story.get("candidates"):
+        sys.exit(story["error"])
+    print(report.one_story(story))
+    if a.add:
+        res = pipeline.add_to_preopen(story, date=a.date)
+        if res.get("error"):
+            print("\n" + res["error"], file=sys.stderr)
+        else:
+            print("\nadded to " + res["date"] + ": " + (", ".join(res["added"]) or "nothing scored high enough"))
+            if not a.no_dashboard:
+                cmd_dashboard_data(a)
 
 
 def cmd_structure(a):
@@ -673,6 +700,18 @@ def main(argv=None):
     p.add_argument("--date", default=None)
     p.add_argument("--no-dashboard", action="store_true")
     p.set_defaults(fn=cmd_intraday)
+    p = sub.add_parser("read")
+    p.add_argument("--url", help="the story's URL — fetched and read")
+    p.add_argument("--text", help="the article body, pasted")
+    p.add_argument("--file", help="a file holding the article body")
+    p.add_argument("--title", help="the headline, if the paste does not start with it")
+    p.add_argument("--published", help="RFC-822 or ISO timestamp; defaults to now, which usually "
+                                       "means the freshness term marks it as already seen")
+    p.add_argument("--source", default="manual:read", help="source id it is graded under")
+    p.add_argument("--date", default=None)
+    p.add_argument("--add", action="store_true", help="fold it into today's pre-open card")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_read)
     p = sub.add_parser("daybook"); p.set_defaults(fn=cmd_daybook)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)

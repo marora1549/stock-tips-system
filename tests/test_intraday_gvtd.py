@@ -369,3 +369,71 @@ def test_a_stale_story_costs_no_requests_at_all(monkeypatch, tmp_path):
     card = pipeline.preopen(raw, now=PREOPEN_NOW, date="2026-09-08")
     assert card["trade"] == [] and card["skipped"]
     assert "days old" in card["skipped"][0]["why"]
+
+
+# ------------------------------------------------------------------ the article read by hand
+def test_a_story_you_found_yourself_goes_through_the_same_machinery(desk, monkeypatch):
+    """The path for the article read at mid-morning. Same extractor, same map, same score — so the
+    answer sits beside the 08:00 run's rather than being a second opinion reached differently."""
+    story = pipeline.read_one_story(text=STORY["text"], title=STORY["title"], url=STORY["url"],
+                                    published=STORY["published"], now=PREOPEN_NOW, date="2026-09-08")
+    assert not story.get("error"), story
+    lead = story["candidates"][0]
+    assert lead["symbol"] == "GVT&D" and lead["event"] == "l1_bidder"
+    assert lead["verdict"] == "TRADE"
+    assert lead["materiality_ratio"] > 3.0
+    assert lead["plan"]["gap_ladder"][-1]["acts"] is False
+
+    md = report.one_story(story)
+    assert md.splitlines()[0].startswith("# GVT&D TRADE")
+
+
+def test_reading_it_late_is_scored_as_late(desk):
+    """Pasting it at 11:00 must not launder a stale story into a fresh one."""
+    late = pipeline.read_one_story(text=STORY["text"], title=STORY["title"],
+                                   now=datetime(2026, 9, 8, 11, 0, tzinfo=IST), date="2026-09-08")
+    early = pipeline.read_one_story(text=STORY["text"], title=STORY["title"], url=STORY["url"],
+                                    published=STORY["published"], now=PREOPEN_NOW, date="2026-09-08")
+    assert late["candidates"][0]["freshness"]["window"] == "in-session"
+    assert late["candidates"][0]["catalyst"] < early["candidates"][0]["catalyst"]
+
+
+def test_a_story_with_no_event_says_so_rather_than_inventing_one(desk):
+    got = pipeline.read_one_story(text="The Nifty ended flat on Monday as banks dragged. "
+                                       "Reliance Industries and Titan Company closed lower.")
+    assert got["candidates"] == [] and "no corporate event" in got["error"]
+
+
+def test_it_can_be_folded_into_todays_card(desk):
+    pipeline.preopen(pipeline.gather_news(), now=PREOPEN_NOW, date="2026-09-08")
+    story = pipeline.read_one_story(text=STORY["text"], title="Alkem Laboratories wins order worth Rs 4,000 crore",
+                                    now=PREOPEN_NOW, date="2026-09-08")
+    res = pipeline.add_to_preopen(story, date="2026-09-08")
+    assert not res.get("error"), res
+    card = pipeline.read_json(pipeline.day_dir("2026-09-08") / "preopen.json", {})
+    assert card.get("hand_read"), "the card should record that a story was added by hand"
+    buckets = [c["symbol"] for c in (card.get("trade") or []) + (card.get("watch") or [])]
+    assert "GVT&D" in buckets
+
+
+def test_folding_into_a_day_with_no_card_refuses_rather_than_creating_one(desk):
+    story = pipeline.read_one_story(text=STORY["text"], title=STORY["title"], now=PREOPEN_NOW,
+                                    date="2026-09-08")
+    res = pipeline.add_to_preopen(story, date="2026-01-01")
+    assert "no preopen.json" in res.get("error", "")
+
+
+def test_reading_an_overnight_story_mid_session_says_the_market_has_moved(desk):
+    """The freshness term is about when the news landed, so an overnight story pasted at 10:30 still
+    scores +12 — right about the news, and silent about the thing that actually cost money."""
+    mid = pipeline.read_one_story(text=STORY["text"], title=STORY["title"],
+                                  published=STORY["published"],
+                                  now=datetime(2026, 9, 8, 10, 30, tzinfo=IST), date="2026-09-08")
+    assert mid["candidates"][0]["freshness"]["window"] == "overnight"
+    assert mid["read_during_session"], "must warn separately from the score"
+    assert "75 minutes" in mid["read_during_session"]
+    assert "Read during the session" in report.one_story(mid)
+
+    before = pipeline.read_one_story(text=STORY["text"], title=STORY["title"],
+                                     published=STORY["published"], now=PREOPEN_NOW, date="2026-09-08")
+    assert before["read_during_session"] is None

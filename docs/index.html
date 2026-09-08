@@ -407,6 +407,8 @@ td.r{text-align:right}
   padding:38px 20px; text-align:center; color:var(--ink-3); font-size:13px}
 .empty .ic{width:22px; height:22px; display:block; margin:0 auto 12px; color:var(--ink-3)}
 .empty b{display:block; color:var(--ink-2); font-size:14px; margin-bottom:5px}
+.empty code{font-family:var(--mono); font-size:12px; background:var(--elev-2); padding:1px 5px;
+  border-radius:4px; color:var(--ink-2)}
 .banner{display:flex; gap:11px; align-items:flex-start; padding:13px 15px; border-radius:var(--r);
   background:var(--blue-dim); border:1px solid var(--blue-line); font-size:12.5px; line-height:1.65;
   color:var(--ink-2); margin-bottom:16px}
@@ -1777,7 +1779,8 @@ function renderIntraday(){
       '<b>No pre-open card yet</b>' +
       'The 08:00 run reads the overnight corporate wires, scores what it finds against the ' +
       'company\'s own revenue and its chart, and lands here before the market opens. Run ' +
-      '<b>preopen</b> from the Console, or wait for tomorrow morning.</div>' +
+      '<code>preopen</code> from the Console, paste a story you found yourself, or wait for ' +
+      'tomorrow morning.</div>' +
       '<div class="sec" style="margin-top:22px"><div class="sec-h"><h3>' + ic('flow') +
       'What each kind of news has been worth</h3></div>' + classScoreboard() + '</div>';
     return;
@@ -1939,6 +1942,25 @@ function renderConsole(){
         'data-cmd="' + a.c + '"' + (on ? '' : ' disabled') + '>' + ic('play') + 'Run</button>' +
         '</div></div></div></div>';
     }).join('') + (on ? '' : '<div class="hint">Connect above to enable these.</div>') + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('news') + 'Read a story yourself</h3>' +
+    '<span class="note">a link, or the article pasted</span></div><div class="card"><div class="card-in">' +
+    '<div class="grid2"><div><label class="lbl">The link</label>' +
+    '<input type="text" id="newsUrl" placeholder="https://…" spellcheck="false"></div>' +
+    '<div><label class="lbl">Headline <span class="mut">(if you paste without one)</span></label>' +
+    '<input type="text" id="newsTitle" placeholder="optional"></div></div>' +
+    '<label class="lbl" style="margin-top:12px;display:block">…or the article body</label>' +
+    '<textarea id="newsText" rows="5" placeholder="Paste the story. The first line is taken as the ' +
+    'headline unless you fill one in above."></textarea>' +
+    '<div class="actions"><button class="btn pri" data-act="read-news"' + (on ? '' : ' disabled') + '>' +
+    ic('gauge') + 'Score it</button>' +
+    '<button class="btn" data-act="read-news-add"' + (on ? '' : ' disabled') + '>' + ic('plus') +
+    'Score it and add to today\'s card</button></div>' +
+    '<div class="hint">Same extractor, same beneficiary map and same catalyst score as the 08:00 ' +
+    'run, so the answer sits beside that run\'s rather than being a second opinion reached a ' +
+    'different way. Note that a story you are reading during the session will be scored as ' +
+    '<b>already seen</b> and docked for it — that is the honest reading, and it is exactly the ' +
+    'penalty the pre-open run exists to avoid paying.</div></div></div></div>';
 
   html += '<div class="sec"><div class="sec-h"><h3>' + ic('rss') + 'Import from Markets Mojo</h3>' +
     '<span class="note">paste the table or one call</span></div><div class="card"><div class="card-in">' +
@@ -2252,6 +2274,16 @@ document.addEventListener('click', function(e){
                         dry_run:dry ? '1' : ''},
         {label:(dry ? 'Dry run of ' : 'Import of ') + seen.length + ' Mojo call' + (seen.length > 1 ? 's' : ''),
          btn:t});
+  }
+  else if (act === 'read-news' || act === 'read-news-add'){
+    var u = val('#newsUrl'), body = val('#newsText');
+    if (!u && body.length < 80){
+      toast('Paste the story, or give me its link', 'err');
+      return;
+    }
+    run('read', {url:u, text:body, note:val('#newsTitle'), source:'manual:read',
+                 add:act === 'read-news-add' ? '1' : ''},
+        {label:act === 'read-news-add' ? 'Score and add' : 'Score the story', btn:t});
   }
   else if (act === 'mojo-clear'){
     var box = $('#mojoText');
