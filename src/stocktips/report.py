@@ -190,9 +190,15 @@ def preopen(card: dict) -> str:
 
     src = card.get("sources") or {}
     fed = [s for s, v in src.items() if (v or {}).get("docs")]
+    cut = [s for s, v in src.items() if (v or {}).get("skipped")]
     out = [head, "",
-           f"*{at} IST · {card.get('events_read', 0)} events read from {len(fed)} of {len(src)} wires · "
-           f"paper trading only, nothing here places an order.*", ""]
+           f"*{at} IST · {card.get('events_read', 0)} events read from {len(fed)} of {len(src)} wires"
+           + (f", {len(cut)} not reached before the deadline" if cut else "")
+           + " · paper trading only, nothing here places an order.*", ""]
+    if cut:
+        out += [f"> {len(cut)} wire{'s' if len(cut) > 1 else ''} were not reached: "
+                f"{', '.join(cut)}. A story the desk never fetched is a different failure from one "
+                f"it read and scored low.", ""]
 
     if trade:
         out += ["## Trade", "", "These cleared the bar. Every level comes from the chart, and the "

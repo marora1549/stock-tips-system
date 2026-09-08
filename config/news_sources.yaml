@@ -18,6 +18,12 @@
 # refuses news hosts). A dead feed yields zero documents and says so in the run summary rather than
 # failing the run, so the first live pre-open report is what confirms which of these actually
 # respond. Prune the silent ones then.
+#
+# **Order matters.** The pre-open run has a hard deadline — it must be scored and emailed before
+# 09:15 — so it spends a fixed article budget down this list in order and reports the wires it never
+# reached. Keep the ones most likely to carry an overnight corporate story at the top. A wire that is
+# consistently cut off is an argument for moving it up or dropping something else, not for raising
+# the budget.
 # ---------------------------------------------------------------------------
 
 sources:

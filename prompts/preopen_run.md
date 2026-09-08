@@ -28,6 +28,12 @@ and `preopen.md`.
 
 Read `preopen.md`. It is already in the shape the email needs.
 
+The gather is budgeted — a cap per wire, a cap per run, and a wall clock — because this run has to be
+finished before 09:15. `news_raw.json` carries `budget`, `seconds` and `cut_short`. If wires were cut
+short, say so in the email: a story the desk never fetched is a different failure from a story it read
+and scored low, and only the reader can tell you which of the two mattered. If the run finishes with
+budget to spare, say that too — it means the list can grow.
+
 ## 2. Check the three things a regex cannot
 The scoring is arithmetic and it is honest, but it can be confidently wrong in ways you can see:
 

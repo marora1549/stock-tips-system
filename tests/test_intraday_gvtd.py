@@ -437,3 +437,43 @@ def test_reading_an_overnight_story_mid_session_says_the_market_has_moved(desk):
     before = pipeline.read_one_story(text=STORY["text"], title=STORY["title"],
                                      published=STORY["published"], now=PREOPEN_NOW, date="2026-09-08")
     assert before["read_during_session"] is None
+
+
+# ------------------------------------------------------------------ the run has a deadline
+def test_the_gather_stops_when_it_runs_out_of_article_budget(monkeypatch, tmp_path):
+    """The first live run spent eighteen minutes on roughly a thousand fetches and was still going,
+    for a run that has to be scored and emailed before 09:15."""
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    wires = [{"id": f"w{i}", "kind": "gnews", "enabled": True} for i in range(6)]
+    monkeypatch.setattr(pipeline, "news_sources", lambda: wires)
+    asked = []
+
+    def fetch(src, max_age_hours=36, limit=None):
+        asked.append((src["id"], limit))
+        return [dict(STORY) for _ in range(limit or 25)]
+
+    monkeypatch.setattr(pipeline.fetchers, "fetch_source", fetch)
+    raw = pipeline.gather_news(per_source=4, total=10)
+    assert sum(v["docs"] for v in raw["sources"].values()) <= 10
+    assert raw["cut_short"], "the wires it could not reach must be named"
+    assert all(w["why"] == "out of article budget" for w in raw["cut_short"])
+    # and the last wire it did reach was asked for only what was left
+    assert asked[-1][1] <= 4
+
+
+def test_the_gather_stops_at_the_wall_clock_even_with_budget_left(monkeypatch, tmp_path):
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(pipeline, "news_sources",
+                        lambda: [{"id": f"w{i}", "kind": "gnews", "enabled": True} for i in range(4)])
+    clock = {"t": 0.0}
+    monkeypatch.setattr(pipeline.time, "monotonic", lambda: clock["t"])
+
+    def slow(src, max_age_hours=36, limit=None):
+        clock["t"] += 60          # each wire takes a minute
+        return [dict(STORY)]
+
+    monkeypatch.setattr(pipeline.fetchers, "fetch_source", slow)
+    raw = pipeline.gather_news(deadline_s=90, per_source=8, total=500)
+    assert raw["cut_short"], "it must say which wires the clock cost it"
+    assert any("deadline" in w["why"] for w in raw["cut_short"])
+    assert raw["seconds"] >= 90

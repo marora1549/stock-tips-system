@@ -7,6 +7,7 @@ regexes flagged `needs_review`) and after `analyze` (to write the narrative).
 from __future__ import annotations
 
 import logging
+import time
 from collections import defaultdict
 
 from .analysis import catalyst, intraday as intradaymod, plan as planmod, scoring, ta
@@ -187,22 +188,52 @@ def news_sources() -> list[dict]:
     return (load_yaml(CONFIG_DIR / "news_sources.yaml") or {}).get("sources") or []
 
 
-def gather_news(max_age_hours: float = 20) -> dict:
+NEWS_DOCS_PER_SOURCE = 8     # articles hydrated per wire
+NEWS_DOCS_TOTAL = 55         # articles hydrated per run, across all wires
+NEWS_DEADLINE_S = 420        # and a wall clock, because 09:15 does not wait
+
+
+def gather_news(max_age_hours: float = 20, deadline_s: float | None = None,
+                per_source: int | None = None, total: int | None = None) -> dict:
     """Fetch the corporate wires and read events out of them → reports/<date>/news_raw.json.
 
     20 hours by default rather than the tip pipeline's 36: this run is about what the market has not
     seen yet, and yesterday morning's story has been priced for a day and a half.
+
+    **Budgeted, because this run has a deadline.** Every article costs a fetch, and a Google News
+    link costs two more to decode before that. Thirteen wires at twenty-five articles each is nearly
+    a thousand requests, which took the first live run past eighteen minutes and still going — for a
+    run that has to be finished, scored and emailed before 09:15. So: a cap per wire, a cap per run,
+    and a wall clock. When the budget runs out the run says so in its summary rather than pretending
+    it read everything; a wire that is consistently cut off is an argument for reordering the list,
+    not for raising the cap.
     """
+    deadline_s = NEWS_DEADLINE_S if deadline_s is None else deadline_s
+    per_source = NEWS_DOCS_PER_SOURCE if per_source is None else per_source
+    budget = NEWS_DOCS_TOTAL if total is None else total
+    started = time.monotonic()
+
     conf = confidence.load()
     usd = float(settings().get("data", {}).get("usd_inr", 88.0))
-    out = {"date": today_str(), "sources": {}, "events": [], "docs": []}
+    out = {"date": today_str(), "sources": {}, "events": [], "docs": [],
+           "budget": {"per_source": per_source, "total": budget, "deadline_s": deadline_s},
+           "cut_short": []}
     for src in news_sources():
         if not src.get("enabled", True):
             continue
         if not conf.get(src["id"], {}).get("enabled", True):
             log.info("%s disabled by confidence rule — skipped", src["id"])
             continue
-        docs = fetchers.fetch_source(src, max_age_hours=max_age_hours)
+        spent = time.monotonic() - started
+        if budget <= 0 or spent > deadline_s:
+            out["cut_short"].append({"source_id": src["id"],
+                                     "why": "out of article budget" if budget <= 0
+                                            else f"past the {deadline_s:.0f}s deadline"})
+            out["sources"][src["id"]] = {"docs": 0, "events": 0, "skipped": True}
+            continue
+        docs = fetchers.fetch_source(src, max_age_hours=max_age_hours,
+                                     limit=min(per_source, budget))
+        budget -= len(docs)
         found = []
         for d in docs:
             found += events.scan(d, src["id"], usd_inr=usd)
@@ -213,8 +244,10 @@ def gather_news(max_age_hours: float = 20) -> dict:
         confidence.ensure(conf, src["id"])
     confidence.save(conf)
     out["events"] = events.merge(out["events"])
+    out["seconds"] = round(time.monotonic() - started, 1)
     write_json(day_dir() / "news_raw.json", out)
-    log.info("gathered %d events from %d news sources", len(out["events"]), len(out["sources"]))
+    log.info("gathered %d events from %d wires in %.0fs (%d cut short)",
+             len(out["events"]), len(out["sources"]), out["seconds"], len(out["cut_short"]))
     return out
 
 
