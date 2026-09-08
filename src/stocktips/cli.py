@@ -1,6 +1,7 @@
 """`python -m stocktips <command>`
 
   gather            fetch all sources → reports/<date>/tips_raw.json
+  add-tip           log a tip you were sent by hand (add-tip --source manual:mohan --symbol TATASTEEL ...)
   structure         merge duplicates → tips_structured.json   (--reviewed FILE to use Claude-corrected tips)
   analyze           TA + fundamentals + scoring → analysis.json
   pick              allocate + book paper positions → picks.json    (--no-book for a dry run)
@@ -26,11 +27,12 @@ from pathlib import Path
 import yaml
 
 from . import pipeline, report
-from .analysis import plan as planmod, ta
-from .data import fundamentals, prices
+from .analysis import plan as planmod, scoring, ta
+from .data import fundamentals, prices, sparks, symbols
 from .learning import confidence, journal
 from .portfolio import ledger as ledgermod
-from .util import CONFIG_DIR, REPORTS_DIR, ROOT, read_json, settings, today_str, write_json
+from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
+                   today_str, write_json)
 
 
 def _market_closed(day: str) -> str | None:
@@ -69,6 +71,47 @@ def cmd_gather(a):
     raw = pipeline.gather(max_age_hours=a.max_age)
     n_rev = sum(1 for t in raw["tips"] if t.get("needs_review"))
     print(json.dumps({"tips": len(raw["tips"]), "needs_review": n_rev, "sources": raw["sources"], "file": str(pipeline.day_dir() / "tips_raw.json")}, indent=1))
+
+
+def cmd_add_tip(a):
+    """A tip from WhatsApp, Telegram, a friend, a screenshot — logged so its source gets graded too.
+
+    Manual sources start at confidence 0 like every other source and earn their weight from outcomes;
+    a tip from the desk owner gets no bonus for being his.
+    """
+    master = symbols.master()
+    sym, sym_conf, how = master.resolve(a.symbol)
+    if sym is None:
+        sys.exit(f"could not resolve {a.symbol!r} to an NSE symbol ({how}) — check the spelling, or watch for a "
+                 f"demerger/rename (Tata Motors → TMCV/TMPV, Zomato → ETERNAL). Not guessing.")
+    if sym != a.symbol.upper():
+        print(f"resolved {a.symbol!r} → {sym} ({how}, {sym_conf:.2f})")
+    day = pipeline.day_dir()
+    path = day / "tips_raw.json"
+    raw = read_json(path, None) or {"date": today_str(), "sources": {}, "tips": [], "docs": []}
+    if any(t["symbol"] == sym and t["source_id"] == a.source for t in raw["tips"]):
+        log.warning("%s from %s is already in today's tips — adding a second entry", sym, a.source)
+    targets = [float(x) for x in (a.target or "").replace(" ", "").split(",") if x] if a.target else []
+    tip = {
+        "id": short_hash(f"{a.source}|{sym}|{a.target}|{today_str()}"), "source_id": a.source, "brokerage": None,
+        "url": a.url or "", "title": (a.text or "")[:120], "published": now_ist().strftime("%a, %d %b %Y %H:%M:%S %z"),
+        "company": a.company or master.name_of(sym), "symbol": sym, "symbol_confidence": 1.0, "symbol_method": "manual:" + how,
+        "action": a.action, "src_entry": a.entry, "src_entry_hi": None, "src_targets": sorted(targets),
+        "src_stop": a.stop, "src_upside_pct": None, "src_duration": a.timeframe,
+        "default_timeframe": a.timeframe, "sentence": a.text or f"{a.action} {sym}",
+        "extracted_by": "manual", "extraction_confidence": 0.9, "needs_review": False,
+    }
+    raw["tips"].append(tip)
+    raw["sources"][a.source] = raw["sources"].get(a.source, 0) + 1
+    write_json(path, raw)
+    conf = confidence.load()
+    confidence.ensure(conf, a.source)
+    confidence.save(conf)
+    print(tip["id"])
+    print(json.dumps({"tip_id": tip["id"], "symbol": sym, "company": tip["company"], "source_id": a.source,
+                      "src_targets": tip["src_targets"], "src_stop": a.stop, "timeframe": a.timeframe,
+                      "file": str(path), "tips_today": len(raw["tips"]),
+                      "source_confidence": confidence.display(conf[a.source]["score"])}, indent=1))
 
 
 def cmd_structure(a):
@@ -271,26 +314,59 @@ def cmd_lesson(a):
 
 ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
                    "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
-                   "corroborating_sources", "brokerages", "fund_why")
+                   "corroborating_sources", "brokerages", "fund_why", "tags")
 TA_FIELDS = ("trend", "rsi", "adx", "atr_pct", "vol_ratio", "chg_5d_pct", "chg_20d_pct", "dist_52w_high_pct",
-             "dist_ema20_pct", "patterns", "avg_turnover_cr", "last_bar_date")
+             "dist_ema20_pct", "patterns", "avg_turnover_cr", "last_bar_date", "momentum_score", "drift_pct_day",
+             "efficiency", "amplitude_pct_day", "up_day_share")
 
 
-def _pos_for_dashboard(pos: dict) -> dict:
-    """Ledger position + the derived levels the dashboard shows (never written back to state/)."""
+def _suggestion(p: dict) -> dict:
+    """One analysed candidate, shaped for the page.
+
+    Tags are recomputed here rather than only read, so a record written before tags existed still
+    arrives labelled — the momentum tags simply stay absent until there is a pace to measure.
+    """
+    ta_snap = {k: (p.get("ta") or {}).get(k) for k in TA_FIELDS}
+    out = {k: p.get(k) for k in ANALYSIS_FIELDS}
+    out["ta"] = ta_snap
+    out["urls"] = (p.get("urls") or [])[:2]
+    if not out.get("tags"):
+        out["tags"] = scoring.tags(p.get("plan") or {}, p.get("ta") or {}, p.get("fund_score") or 0,
+                                   p.get("n_mentions") or 1, len(p.get("corroborating_sources") or []))
+    return out
+
+
+def _pos_for_dashboard(pos: dict, on: str | None = None) -> dict:
+    """Ledger position + the derived numbers the dashboard shows (never written back to state/)."""
     d = dict(pos)
     base = d.get("entry") or d.get("entry_plan")
     if base:
         if d.get("stop_loss") is not None:
             d["stop_loss_pct"] = round((d["stop_loss"] / base - 1) * 100, 2)
         d["target_pct"] = [round((t / base - 1) * 100, 2) for t in (d.get("targets") or [])]
-        d["order_line"] = report.order_line(d["symbol"], d.get("qty_open") or d.get("qty") or 0, base, d.get("stop_loss") or 0.0, d.get("targets") or [])
+        d["order_line"] = report.order_line(d["symbol"], d.get("qty_open") or d.get("qty") or 0, base,
+                                            d.get("stop_loss") or 0.0, d.get("targets") or [])
+        # how far along the road to T1 it actually is, and whether it is keeping to its own timetable
+        t1 = (d.get("targets") or [None])[0]
+        ltp = d.get("ltp")
+        if t1 and ltp and t1 > base:
+            d["progress_t1_pct"] = max(0, min(100, round((ltp - base) / (t1 - base) * 100)))
+        if d.get("status") in ("open", "hold") and d.get("opened"):
+            elapsed = ledgermod.trading_days_between(d["opened"], on or today_str())
+            d["days_elapsed"] = elapsed
+            eta = (d.get("eta_days") or [None])[0]
+            if eta:
+                d["eta_t1_days"] = eta
+                d["pace"] = ("hit" if 1 in (d.get("targets_hit") or [])
+                             else "behind" if elapsed > eta else "on-track")
+                d["days_left_on_eta"] = eta - elapsed
     return d
 
 
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
+    spark_cache = sparks.load()
     days = sorted([p.name for p in REPORTS_DIR.iterdir() if p.is_dir()]) if REPORTS_DIR.exists() else []
     latest = read_json(REPORTS_DIR / days[-1] / "picks.json", {}) if days else {}
     analysis = read_json(REPORTS_DIR / days[-1] / "analysis.json", []) if days else []
@@ -300,11 +376,14 @@ def cmd_dashboard_data(a):
     cash = ledgermod.deployable_cash(led)
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
+            "sparks": {sym: sparks.series(spark_cache, sym) for sym in
+                       {p["symbol"] for p in led["positions"]} |
+                       {p["symbol"] for p in analysis[:40] if p.get("verdict") in ("BUY", "STRONG BUY")}
+                       if sparks.series(spark_cache, sym)},
+            "actions_log": (read_json(STATE_DIR / "actions_log.json", {}).get("runs") or [])[-12:],
             "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
             "sources": conf, "latest_picks": latest,
-            "latest_analysis": [dict({k: p.get(k) for k in ANALYSIS_FIELDS},
-                                     ta={k: (p.get("ta") or {}).get(k) for k in TA_FIELDS},
-                                     urls=(p.get("urls") or [])[:2]) for p in analysis],
+            "latest_analysis": [_suggestion(p) for p in analysis],
             "analysis_day": days[-1] if days else None,
             "cash_flows": led.get("cash_flows", []),
             "book": {"max_open_positions": cap["max_open_positions"], "open_or_pending": n_live,
@@ -324,6 +403,17 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("morning"); p.add_argument("--no-book", action="store_true"); p.add_argument("--skip-review", action="store_true"); p.add_argument("--max-age", type=float, default=36); p.add_argument("--force", action="store_true", help="run even on a weekend/holiday"); p.set_defaults(fn=cmd_morning)
     p = sub.add_parser("gather"); p.add_argument("--max-age", type=float, default=36); p.set_defaults(fn=cmd_gather)
+    p = sub.add_parser("add-tip")
+    p.add_argument("--source", required=True, help="manual:<who> — e.g. manual:mohan, manual:tg_friend")
+    p.add_argument("--symbol", required=True)
+    for k in ("company", "text", "url"):
+        p.add_argument("--" + k)
+    p.add_argument("--entry", type=float, default=None)
+    p.add_argument("--target", help="one price or a comma-separated list")
+    p.add_argument("--stop", type=float, default=None)
+    p.add_argument("--timeframe", choices=["weekly", "monthly", "long", "intraday"], default="weekly")
+    p.add_argument("--action", choices=["buy", "sell", "hold"], default="buy")
+    p.set_defaults(fn=cmd_add_tip)
     p = sub.add_parser("structure"); p.add_argument("--reviewed"); p.set_defaults(fn=cmd_structure)
     p = sub.add_parser("analyze"); p.set_defaults(fn=cmd_analyze)
     p = sub.add_parser("pick"); p.add_argument("--no-book", action="store_true"); p.set_defaults(fn=cmd_pick)

@@ -166,6 +166,8 @@
       "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,901.70 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86"
     }
   ],
+  "sparks": {},
+  "actions_log": [],
   "closed": [],
   "equity_curve": [
     {
@@ -1120,6 +1122,32 @@
         "+4 latest qtr PAT YoY 15.4%",
         "+4 mcap ₹141,003 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 91"
+        },
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 88"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 52.4,
@@ -1136,7 +1164,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 200.86,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -1222,6 +1255,32 @@
         "+0 latest qtr PAT YoY 14.9%",
         "+4 mcap ₹324,704 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 76"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 53.1,
@@ -1236,7 +1295,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 449.26,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/hal.html",
@@ -1315,6 +1379,38 @@
         "-5 latest qtr PAT YoY -35.1%",
         "+4 mcap ₹179,572 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 80"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 78"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.53% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.2,
@@ -1330,7 +1426,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 154.24,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/hyundai.html"
@@ -1417,6 +1518,38 @@
         "+4 latest qtr PAT YoY 38.9%",
         "+2 mcap ₹15,011 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 66"
+        },
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 80"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.32"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 61.3,
@@ -1433,7 +1566,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 178.19,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/news/why-systematix-is-bullish-on-apollo-micro-systems-after-47-ytd-rally-check-target-price/articleshow/133874090.cms"
@@ -1520,6 +1658,26 @@
         "+4 latest qtr PAT YoY 35.7%",
         "+0 mcap ₹3,775 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 82"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 61.0,
@@ -1537,7 +1695,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 3.26,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026-11788742187187.html",
@@ -1614,6 +1777,26 @@
         "+4 latest qtr PAT YoY 44.2%",
         "+2 mcap ₹13,945 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 97"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 51.9,
@@ -1629,7 +1812,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 17.38,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/prudent.html"
@@ -1707,6 +1895,26 @@
         "+4 latest qtr PAT YoY 957.1%",
         "+2 mcap ₹29,342 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 93"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.6,
@@ -1722,7 +1930,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 120.99,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/neulandlab.html"
@@ -1800,6 +2013,32 @@
         "-5 latest qtr PAT YoY -25%",
         "+2 mcap ₹16,251 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 70"
+        },
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 80"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.74"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 50.6,
@@ -1816,7 +2055,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 57.99,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/astramicro.html"
@@ -1896,6 +2140,26 @@
         "+4 latest qtr PAT YoY 103.4%",
         "+4 mcap ₹84,917 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 95"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 62.8,
@@ -1908,7 +2172,12 @@
         "dist_ema20_pct": 5.29,
         "patterns": [],
         "avg_turnover_cr": 855.16,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html",
@@ -1995,6 +2264,32 @@
         "+4 latest qtr PAT YoY 112%",
         "+2 mcap ₹31,524 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 74"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "corroborated",
+          "label": "6 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 53.1,
@@ -2010,7 +2305,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 157.29,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -2085,6 +2385,26 @@
         "+4 latest qtr PAT YoY 41.7%",
         "+0 mcap ₹5,740 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 86"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.7,
@@ -2099,7 +2419,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 14.82,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/lumaxind.html"
@@ -2177,6 +2502,32 @@
         "+4 latest qtr PAT YoY 406.6%",
         "+4 mcap ₹139,849 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 95"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.8"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.07% away"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.1,
@@ -2193,7 +2544,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 164.47,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/siemens.html"
@@ -2274,6 +2630,32 @@
         "+4 latest qtr PAT YoY 38.8%",
         "+4 mcap ₹224,740 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 76"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 56.7,
@@ -2290,7 +2672,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 423.16,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
@@ -2366,6 +2753,26 @@
         "+0 latest qtr PAT YoY -5%",
         "+0 mcap ₹3,134 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 74"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 65.0,
@@ -2380,7 +2787,12 @@
           "momentum_aligned"
         ],
         "avg_turnover_cr": 32.24,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/rishabh.html"
@@ -2456,6 +2868,20 @@
         "+4 latest qtr PAT YoY 116.7%",
         "+0 mcap ₹3,540 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 92"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 54.9,
@@ -2471,7 +2897,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 3.5,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/kpl.html"
@@ -2548,6 +2979,32 @@
         "+4 latest qtr PAT YoY 25.2%",
         "+4 mcap ₹95,513 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 80"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 72"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.17"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 54.8,
@@ -2563,7 +3020,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 138.75,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/auropharma.html"
@@ -2647,6 +3109,26 @@
         "+4 latest qtr PAT YoY 71%",
         "+2 mcap ₹12,073 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 81"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 64.9,
@@ -2663,7 +3145,12 @@
           "momentum_aligned"
         ],
         "avg_turnover_cr": 49.12,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/raja-venkatraman-recommends-three-stocks-for-8-september-11788800507147.html"
@@ -2750,6 +3237,32 @@
         "+4 latest qtr PAT YoY 79.4%",
         "+2 mcap ₹29,205 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 74"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 66.6,
@@ -2766,7 +3279,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 84.88,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-7-september-from-marketsmith-india-11788523305762.html"
@@ -2844,6 +3362,26 @@
         "+0 latest qtr PAT YoY 9.6%",
         "+2 mcap ₹20,834 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 53.6,
@@ -2859,7 +3397,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 36.21,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/shripiston.html"
@@ -2934,6 +3477,20 @@
         "+4 latest qtr PAT YoY 17.1%",
         "+2 mcap ₹15,402 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 84"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.5,
@@ -2948,7 +3505,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 47.81,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/shaily.html"
@@ -3023,6 +3585,20 @@
         "+4 latest qtr PAT YoY 95.5%",
         "+0 mcap ₹5,396 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 96"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.0,
@@ -3037,7 +3613,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 30.03,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/vadilalind.html"
@@ -3113,6 +3694,20 @@
         "+4 latest qtr PAT YoY 73.4%",
         "+2 mcap ₹36,928 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 66.6,
@@ -3127,7 +3722,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 46.05,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/anandrathi.html"
@@ -3204,6 +3804,20 @@
         "+4 latest qtr PAT YoY 26.9%",
         "+2 mcap ₹31,923 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 94"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.2,
@@ -3220,7 +3834,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 39.34,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/lalpathlab.html"
@@ -3301,6 +3920,20 @@
         "+4 latest qtr PAT YoY 72%",
         "+2 mcap ₹22,939 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 86"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.3,
@@ -3316,7 +3949,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 239.65,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/buy-or-sell-gift-nifty-signals-muted-start-vaishali-parekh-recommends-three-stocks-to-buy-today-11788747852620.html"
@@ -3400,6 +4038,26 @@
         "+4 latest qtr PAT YoY 81.8%",
         "+0 mcap ₹3,515 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 62.8,
@@ -3412,7 +4070,12 @@
         "dist_ema20_pct": 5.96,
         "patterns": [],
         "avg_turnover_cr": 18.24,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026-11788742187187.html",
@@ -3495,6 +4158,26 @@
         "+0 latest qtr PAT YoY -1.3%",
         "+2 mcap ₹38,250 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 72"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 70"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 56.9,
@@ -3507,7 +4190,12 @@
         "dist_ema20_pct": 2.23,
         "patterns": [],
         "avg_turnover_cr": 42.08,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026-11788742187187.html"
@@ -3586,6 +4274,20 @@
         "+0 latest qtr PAT YoY 11%",
         "+4 mcap ₹61,501 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 63.3,
@@ -3598,7 +4300,12 @@
         "dist_ema20_pct": 3.45,
         "patterns": [],
         "avg_turnover_cr": 149.11,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026-11788742187187.html"
@@ -3674,6 +4381,20 @@
         "+4 latest qtr PAT YoY 77.6%",
         "+4 mcap ₹74,231 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 90"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 57.7,
@@ -3688,7 +4409,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 271.68,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/aparinds.html"
@@ -3767,6 +4493,32 @@
         "+4 latest qtr PAT YoY 44.3%",
         "+4 mcap ₹324,269 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 100"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.39% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 53.4,
@@ -3782,7 +4534,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 277.96,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/bajaj-auto.html"
@@ -3849,6 +4606,26 @@
       "fund_why": [
         "+4 promoter 75%"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 77"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.3,
@@ -3864,7 +4641,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 21.34,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/ingerrand.html"
@@ -3947,6 +4729,32 @@
         "+4 latest qtr PAT YoY 150%",
         "+2 mcap ₹15,717 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.69"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 57.0,
@@ -3959,7 +4767,12 @@
         "dist_ema20_pct": 2.68,
         "patterns": [],
         "avg_turnover_cr": 110.48,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/markets/buzzing-stocks-brightcom-group-shares-up-7-on-ftse-global-equity-index-inclusion-nomura-keeps-buy-on-avalon-technologies-14023544.html"
@@ -4045,6 +4858,38 @@
         "-5 latest qtr PAT YoY -169.3%",
         "+2 mcap ₹37,616 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 6.64"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 55.5,
@@ -4060,7 +4905,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 229.79,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -4134,6 +4984,20 @@
         "-5 latest qtr PAT YoY -36.7%",
         "+4 mcap ₹141,655 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 79"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.2,
@@ -4146,7 +5010,12 @@
         "dist_ema20_pct": 1.86,
         "patterns": [],
         "avg_turnover_cr": 234.04,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/boschltd.html"
@@ -4222,6 +5091,20 @@
         "+4 latest qtr PAT YoY 45.5%",
         "+4 mcap ₹157,848 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.3,
@@ -4238,7 +5121,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 171.67,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/cholafin.html"
@@ -4314,6 +5202,26 @@
         "+4 latest qtr PAT YoY 75.2%",
         "+4 mcap ₹51,764 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.08"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 47.2,
@@ -4329,7 +5237,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 72.46,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -4408,6 +5321,26 @@
         "+4 latest qtr PAT YoY 45.6%",
         "+2 mcap ₹21,511 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 80"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.0,
@@ -4420,7 +5353,12 @@
         "dist_ema20_pct": 4.67,
         "patterns": [],
         "avg_turnover_cr": 108.64,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/stocks-to-buy-under-rs-200-mehul-kothari-of-anand-rathi-recommends-three-shares-to-buy-for-short-term-11788598636353.html"
@@ -4496,6 +5434,20 @@
         "+4 latest qtr PAT YoY 120.6%",
         "+4 mcap ₹103,167 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 96"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 51.3,
@@ -4511,7 +5463,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 262.67,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/ofss.html"
@@ -4589,6 +5546,26 @@
         "+4 latest qtr PAT YoY 17.9%",
         "+2 mcap ₹15,713 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 73"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 51.3,
@@ -4604,7 +5581,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 24.63,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/fineorg.html"
@@ -4678,6 +5660,20 @@
         "+4 latest qtr PAT YoY 15.6%",
         "+4 mcap ₹50,107 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 60.6,
@@ -4690,7 +5686,12 @@
         "dist_ema20_pct": 2.28,
         "patterns": [],
         "avg_turnover_cr": 56.38,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/glaxo.html"
@@ -4767,6 +5768,26 @@
         "+4 latest qtr PAT YoY 60.2%",
         "+2 mcap ₹16,150 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 84"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.63"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 49.5,
@@ -4782,7 +5803,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 41.53,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/grwrhitech.html"
@@ -4858,6 +5884,26 @@
         "+0 latest qtr PAT YoY 13.6%",
         "+4 mcap ₹87,394 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 91"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.47"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 49.5,
@@ -4873,7 +5919,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 265.88,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/persistent.html"
@@ -4949,6 +6000,20 @@
         "+4 latest qtr PAT YoY 75.6%",
         "+4 mcap ₹59,542 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 91"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 46.0,
@@ -4964,7 +6029,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 123.44,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/radico.html"
@@ -5041,6 +6111,20 @@
         "+4 latest qtr PAT YoY 29.2%",
         "+4 mcap ₹67,176 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.1,
@@ -5057,7 +6141,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 101.72,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/oberoirlty.html"
@@ -5134,6 +6223,32 @@
         "-5 latest qtr PAT YoY -31.6%",
         "+2 mcap ₹49,562 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 75"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.36"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 54.2,
@@ -5149,7 +6264,12 @@
           "momentum_aligned"
         ],
         "avg_turnover_cr": 45.34,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/tatacomm.html"
@@ -5223,6 +6343,32 @@
         "+4 latest qtr PAT YoY 38.1%",
         "+0 mcap ₹5,943 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.37"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 53.7,
@@ -5237,7 +6383,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 18.92,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -5316,6 +6467,20 @@
         "+4 latest qtr PAT YoY 190.2%",
         "+2 mcap ₹15,090 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 66.8,
@@ -5331,7 +6496,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 16.97,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-8-september-2026-11788828772209.html"
@@ -5416,6 +6586,32 @@
         "+4 latest qtr PAT YoY 52.6%",
         "+0 mcap ₹7,349 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 71"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.23"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 49.0,
@@ -5430,7 +6626,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 21.42,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-esds-software-solutions-ltd-for-target-1-550-by-choice-institutional-equities-ltd698589",
@@ -5512,6 +6713,14 @@
         "-5 latest qtr PAT YoY -140.4%",
         "+0 mcap ₹6,681 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 51.5,
@@ -5526,7 +6735,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 18.33,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.business-standard.com/markets/news"
@@ -5602,6 +6816,26 @@
         "+4 latest qtr PAT YoY 90.9%",
         "+0 mcap ₹7,857 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.5,
@@ -5617,7 +6851,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 21.09,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/dynamatech.html"
@@ -5698,6 +6937,38 @@
         "+0 latest qtr PAT YoY 3.3%",
         "+4 mcap ₹186,913 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 70"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.28"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.09% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.6,
@@ -5714,7 +6985,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 151.97,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/torntpharm.html"
@@ -5782,6 +7058,26 @@
       "fund_why": [
         "+0 promoter 42.41%"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 51.2,
@@ -5797,7 +7093,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 350.55,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/datapattns.html"
@@ -5871,6 +7172,20 @@
         "+4 latest qtr PAT YoY 68.3%",
         "+0 mcap ₹7,179 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 79"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 58.3,
@@ -5883,7 +7198,12 @@
         "dist_ema20_pct": 1.43,
         "patterns": [],
         "avg_turnover_cr": 29.85,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/tiil.html"
@@ -5957,6 +7277,20 @@
         "+4 latest qtr PAT YoY 37.9%",
         "+2 mcap ₹21,060 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 80"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.8,
@@ -5969,7 +7303,12 @@
         "dist_ema20_pct": 2.65,
         "patterns": [],
         "avg_turnover_cr": 28.32,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/happyforge.html"
@@ -6046,6 +7385,20 @@
         "+0 latest qtr PAT YoY -12.1%",
         "+2 mcap ₹14,513 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 74"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.13"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 59.8,
@@ -6061,7 +7414,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 5.9,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/jswdulux.html"
@@ -6134,6 +7492,20 @@
         "+4 latest qtr PAT YoY 47.4%",
         "+2 mcap ₹49,066 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 75"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.8,
@@ -6148,7 +7520,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 287.08,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/gland.html"
@@ -6227,6 +7604,26 @@
         "+4 latest qtr PAT YoY 65.5%",
         "+4 mcap ₹247,284 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 84"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.3,
@@ -6239,7 +7636,12 @@
         "dist_ema20_pct": 5.26,
         "patterns": [],
         "avg_turnover_cr": 388.69,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
@@ -6309,6 +7711,26 @@
         "+4 promoter 67.02%",
         "-5 promoter stake down -7.97pp in 4q"
       ],
+      "tags": [
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 57.9,
@@ -6323,7 +7745,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 13.36,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/kingfa.html"
@@ -6392,6 +7819,20 @@
         "+4 promoter 66.98%",
         "-5 promoter stake down -4.05pp in 4q"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 54.4,
@@ -6407,7 +7848,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 1089.93,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/netweb.html"
@@ -6483,6 +7929,20 @@
         "+4 latest qtr PAT YoY 38.1%",
         "+2 mcap ₹24,314 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 67"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 52.5,
@@ -6498,7 +7958,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 87.98,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/sansera.html"
@@ -6576,6 +8041,20 @@
         "+4 latest qtr PAT YoY 64.5%",
         "+4 mcap ₹196,306 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 42.0,
@@ -6591,7 +8070,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 378.65,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -6673,6 +8157,32 @@
         "-5 latest qtr PAT YoY -20.1%",
         "+2 mcap ₹31,648 cr"
       ],
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 73"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.61"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 54.8,
@@ -6688,7 +8198,12 @@
           "momentum_aligned"
         ],
         "avg_turnover_cr": 97.35,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/market-trading-guide-bajaj-finance-and-a-smallcap-stock-offer-up-to-5-upside-in-near-term-heres-why/articleshow/128374085.cms"
@@ -6767,6 +8282,20 @@
         "+4 latest qtr PAT YoY 92%",
         "+0 mcap ₹6,598 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 74"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 73.4,
@@ -6785,7 +8314,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 79.31,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/fcl.html"
@@ -6852,6 +8386,20 @@
       "fund_why": [
         "+4 promoter 74.23%"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 56.0,
@@ -6866,7 +8414,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 18.42,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/tastybite.html"
@@ -6944,6 +8497,32 @@
         "+4 latest qtr PAT YoY 63.5%",
         "+0 mcap ₹1,668 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 39"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 52.1,
@@ -6959,7 +8538,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 6.31,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/wendt.html"
@@ -7034,6 +8618,20 @@
         "+4 latest qtr PAT YoY 31%",
         "+2 mcap ₹43,906 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 93"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 43.7,
@@ -7048,7 +8646,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 28.23,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/ajantpharm.html"
@@ -7123,6 +8726,32 @@
         "-5 latest qtr PAT YoY -235.5%",
         "+2 mcap ₹13,149 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 38"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 70"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 60.5,
@@ -7137,7 +8766,12 @@
           "momentum_aligned"
         ],
         "avg_turnover_cr": 6.0,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/swandef.html"
@@ -7212,6 +8846,20 @@
         "+4 latest qtr PAT YoY 50%",
         "+0 mcap ₹4,910 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 64.9,
@@ -7226,7 +8874,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 20.76,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/kddl.html"
@@ -7300,6 +8953,26 @@
         "+0 latest qtr PAT YoY 10.2%",
         "+4 mcap ₹390,360 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 80"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 6.02"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.9% away"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 51.2,
@@ -7312,7 +8985,12 @@
         "dist_ema20_pct": 0.95,
         "patterns": [],
         "avg_turnover_cr": 389.87,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/adaniports.html"
@@ -7390,6 +9068,26 @@
         "+0 latest qtr PAT YoY 2.8%",
         "+4 mcap ₹157,533 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 77"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 46.5,
@@ -7407,7 +9105,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 124.19,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/abb.html"
@@ -7490,6 +9193,20 @@
         "+4 latest qtr PAT YoY 41.9%",
         "+0 mcap ₹6,663 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 74.6,
@@ -7506,7 +9223,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 13.75,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-7-september-2026-11788742187187.html"
@@ -7585,6 +9307,20 @@
         "+4 latest qtr PAT YoY 27.6%",
         "+4 mcap ₹659,951 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 45.7,
@@ -7601,7 +9337,12 @@
           "pullback_to_ema50_in_uptrend"
         ],
         "avg_turnover_cr": 499.89,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html"
@@ -7682,6 +9423,32 @@
         "-5 latest qtr PAT YoY -142.2%",
         "+2 mcap ₹17,467 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 36"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.2,
@@ -7694,7 +9461,12 @@
         "dist_ema20_pct": 7.04,
         "patterns": [],
         "avg_turnover_cr": 85.32,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-esds-software-solutions-ltd-for-target-1-550-by-choice-institutional-equities-ltd698589"
@@ -7773,6 +9545,20 @@
         "+4 latest qtr PAT YoY 47.6%",
         "+0 mcap ₹5,438 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 71"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 70.0,
@@ -7788,7 +9574,12 @@
           "breakout_60d_high_volume"
         ],
         "avg_turnover_cr": 13.0,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/artemismed.html"
@@ -7863,6 +9654,26 @@
         "+4 latest qtr PAT YoY 409.1%",
         "+2 mcap ₹19,818 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 37"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 56.2,
@@ -7877,7 +9688,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 16.16,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/lmw.html"
@@ -7954,6 +9770,26 @@
         "+4 latest qtr PAT YoY 22.5%",
         "+4 mcap ₹419,891 cr"
       ],
+      "tags": [
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 65.4,
@@ -7966,7 +9802,12 @@
         "dist_ema20_pct": 2.72,
         "patterns": [],
         "avg_turnover_cr": 477.63,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
@@ -8061,6 +9902,32 @@
         "+0 latest qtr PAT YoY -3.2%",
         "+4 mcap ₹460,520 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.8"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.66% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "10 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 36.6,
@@ -8073,7 +9940,12 @@
         "dist_ema20_pct": -2.35,
         "patterns": [],
         "avg_turnover_cr": 243.08,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-hindustan-unilever-target-of-rs-2400-motilal-oswal-14024123.html",
@@ -8158,6 +10030,26 @@
         "+4 latest qtr PAT YoY 37.3%",
         "+2 mcap ₹22,155 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 70"
+        },
+        {
+          "key": "corroborated",
+          "label": "7 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.1,
@@ -8170,7 +10062,12 @@
         "dist_ema20_pct": 9.25,
         "patterns": [],
         "avg_turnover_cr": 60.39,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -8270,6 +10167,26 @@
         "+0 latest qtr PAT YoY 2.2%",
         "+4 mcap ₹68,701 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 65"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.6"
+        },
+        {
+          "key": "corroborated",
+          "label": "11 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 42.7,
@@ -8284,7 +10201,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 124.83,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-fortis-healthcare-target-of-rs-1130-motilal-oswal-14024141.html",
@@ -8360,6 +10282,20 @@
         "+4 latest qtr PAT YoY 107.7%",
         "+2 mcap ₹44,149 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 60.7,
@@ -8372,7 +10308,12 @@
         "dist_ema20_pct": 2.55,
         "patterns": [],
         "avg_turnover_cr": 114.99,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/navinfluor.html"
@@ -8440,6 +10381,20 @@
         "+4 promoter 72.18%",
         "-5 promoter stake down -2.82pp in 4q"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 52.3,
@@ -8455,7 +10410,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 9.11,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/indotech.html"
@@ -8539,6 +10499,32 @@
         "-5 latest qtr PAT YoY -141.8%",
         "+2 mcap ₹24,278 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 42"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 60.4,
@@ -8551,7 +10537,12 @@
         "dist_ema20_pct": 5.92,
         "patterns": [],
         "avg_turnover_cr": 28.65,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-prime-focus-target-of-rs-375-icici-securities-14024321.html",
@@ -8633,6 +10624,32 @@
         "+4 latest qtr PAT YoY 15.5%",
         "+4 mcap ₹550,209 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 72"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.4"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.55% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 47.8,
@@ -8647,7 +10664,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 530.25,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/",
@@ -8726,6 +10748,20 @@
         "+4 latest qtr PAT YoY 29.8%",
         "+0 mcap ₹7,223 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 74"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 76.5,
@@ -8743,7 +10779,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 76.56,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/paisalo.html"
@@ -8820,6 +10861,26 @@
         "+4 promoter 73.72%",
         "+0 mcap ₹9,377 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 73"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 53.2,
@@ -8835,7 +10896,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 6.31,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/esabindia.html"
@@ -8911,6 +10977,26 @@
         "+4 latest qtr PAT YoY 21.4%",
         "+4 mcap ₹210,613 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 99"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.89"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.1% away"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 34.7,
@@ -8926,7 +11012,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 332.5,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/eichermot.html"
@@ -9001,6 +11092,26 @@
         "+4 latest qtr PAT YoY 26.5%",
         "+4 mcap ₹454,674 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 92"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.21"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.9% away"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 43.8,
@@ -9015,7 +11126,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 294.25,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/sunpharma.html"
@@ -9089,6 +11205,26 @@
         "+4 latest qtr PAT YoY 750%",
         "+2 mcap ₹17,113 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 44"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 55.0,
@@ -9103,7 +11239,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 73.36,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -9185,6 +11326,26 @@
         "+4 latest qtr PAT YoY 750%",
         "+2 mcap ₹12,661 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 66"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.66"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 42.0,
@@ -9197,7 +11358,12 @@
         "dist_ema20_pct": -3.99,
         "patterns": [],
         "avg_turnover_cr": 97.2,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-amagi-media-labs-target-of-rs-700-icici-securities-14024275.html",
@@ -9272,6 +11438,20 @@
         "+4 promoter 70.87%",
         "+0 mcap ₹5,587 cr"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 65.1,
@@ -9284,7 +11464,12 @@
         "dist_ema20_pct": 7.4,
         "patterns": [],
         "avg_turnover_cr": 22.09,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-8-september-2026-11788828772209.html"
@@ -9362,6 +11547,20 @@
         "+4 latest qtr PAT YoY 635.7%",
         "+0 mcap ₹1,751 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 68.8,
@@ -9379,7 +11578,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 12.85,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/aeroenter.html"
@@ -9456,6 +11660,32 @@
         "+4 latest qtr PAT YoY 38.3%",
         "+4 mcap ₹125,955 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 79"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.21"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.66% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 43.1,
@@ -9470,7 +11700,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 353.3,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/apollohosp.html"
@@ -9548,6 +11783,26 @@
         "+4 latest qtr PAT YoY 20.3%",
         "+2 mcap ₹49,768 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.52"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.0,
@@ -9563,7 +11818,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 121.24,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/fluorochem.html"
@@ -9635,6 +11895,14 @@
         "+4 latest qtr PAT YoY 43.1%",
         "+2 mcap ₹13,213 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 93"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 35.3,
@@ -9647,7 +11915,12 @@
         "dist_ema20_pct": -2.59,
         "patterns": [],
         "avg_turnover_cr": 19.95,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/priviscl.html"
@@ -9721,6 +11994,14 @@
         "+0 latest qtr PAT YoY 9.9%",
         "+2 mcap ₹30,363 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 69"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 69.5,
@@ -9733,7 +12014,12 @@
         "dist_ema20_pct": 6.45,
         "patterns": [],
         "avg_turnover_cr": 171.64,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -9809,6 +12095,20 @@
         "-5 latest qtr PAT YoY -43.6%",
         "+4 mcap ₹117,096 cr"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.0,
@@ -9821,7 +12121,12 @@
         "dist_ema20_pct": 2.09,
         "patterns": [],
         "avg_turnover_cr": 89.77,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-citi-maintains-sell-on-hindustan-zinc-motilal-oswal-raises-target-price-on-gopal-snacks/articleshow/131082386.cms"
@@ -9891,6 +12196,20 @@
       "fund_why": [
         "+4 promoter 74.28%"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.25"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 69.5,
@@ -9908,7 +12227,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 3.12,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/mvgjl.html"
@@ -9975,6 +12299,20 @@
       "fund_why": [
         "+4 promoter 61.61%"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.3"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 49.5,
@@ -9989,7 +12327,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 54.54,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/thangamayl.html"
@@ -10062,6 +12405,14 @@
         "+4 latest qtr PAT YoY 33.9%",
         "+4 mcap ₹52,311 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 78"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 57.4,
@@ -10076,7 +12427,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 20.26,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/sundarmfin.html"
@@ -10154,6 +12510,20 @@
         "+4 latest qtr PAT YoY 36.4%",
         "+2 mcap ₹12,548 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 50.3,
@@ -10168,7 +12538,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 131.76,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -10236,6 +12611,26 @@
       "fund_why": [
         "+4 promoter 51%"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.28"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.03% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 56.7,
@@ -10250,7 +12645,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 35.66,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -10325,6 +12725,26 @@
         "+0 promoter 39.58%",
         "+4 mcap ₹63,429 cr"
       ],
+      "tags": [
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.0,
@@ -10337,7 +12757,12 @@
         "dist_ema20_pct": 3.2,
         "patterns": [],
         "avg_turnover_cr": 800.94,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
@@ -10412,6 +12837,26 @@
         "+4 latest qtr PAT YoY 22.7%",
         "+4 mcap ₹68,138 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.11"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.14% away"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 45.2,
@@ -10426,7 +12871,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 72.41,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/phoenixltd.html"
@@ -10502,6 +12952,20 @@
         "+0 latest qtr PAT YoY 0%",
         "+2 mcap ₹14,551 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 83"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.11"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 44.5,
@@ -10516,7 +12980,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 7.97,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/kirlosbros.html"
@@ -10599,6 +13068,20 @@
         "+4 latest qtr PAT YoY 110.8%",
         "+0 mcap ₹8,317 cr"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 69.4,
@@ -10614,7 +13097,12 @@
           "overextended"
         ],
         "avg_turnover_cr": 58.8,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-7-september-from-marketsmith-india-11788523305762.html"
@@ -10702,6 +13190,32 @@
         "+4 latest qtr PAT YoY 68%",
         "+0 mcap ₹8,110 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 77"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.65"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.57% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "12 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 42.8,
@@ -10716,7 +13230,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 25.1,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -10795,6 +13314,20 @@
         "+0 latest qtr PAT YoY 11.7%",
         "+0 mcap ₹9,460 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.35"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 58.6,
@@ -10807,7 +13340,12 @@
         "dist_ema20_pct": 3.02,
         "patterns": [],
         "avg_turnover_cr": 41.7,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/"
@@ -10882,6 +13420,14 @@
         "+4 latest qtr PAT YoY 18.2%",
         "+4 mcap ₹310,576 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 72"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 40.5,
@@ -10896,7 +13442,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 131.81,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/bajajfinsv.html"
@@ -10978,6 +13529,26 @@
         "-5 latest qtr PAT YoY -24.6%",
         "+4 mcap ₹1,772,085 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.86"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.43% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 51.0,
@@ -10992,7 +13563,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 1383.82,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html"
@@ -11062,6 +13638,20 @@
       "fund_why": [
         "+4 promoter 58.97%"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 76.0,
@@ -11077,7 +13667,12 @@
           "overextended"
         ],
         "avg_turnover_cr": 77.37,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/smlmah.html"
@@ -11157,6 +13752,26 @@
         "+4 latest qtr PAT YoY 62.9%",
         "+4 mcap ₹443,449 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 84"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 49.6,
@@ -11172,7 +13787,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 307.68,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/titan.html"
@@ -11253,6 +13873,14 @@
         "-5 latest qtr PAT YoY -45.1%",
         "+2 mcap ₹15,138 cr"
       ],
+      "tags": [
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 61.7,
@@ -11267,7 +13895,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 35.36,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/raja-venkatraman-recommends-three-stocks-for-8-september-11788800507147.html"
@@ -11347,6 +13980,26 @@
         "-5 latest qtr PAT YoY -69.1%",
         "+4 mcap ₹69,355 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.61"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.49% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 49.5,
@@ -11359,7 +14012,12 @@
         "dist_ema20_pct": 0.41,
         "patterns": [],
         "avg_turnover_cr": 461.61,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.business-standard.com/markets/news/aster-dm-sparc-among-3-stocks-looking-strong-on-tech-charts-says-geojit-126090800092_1.html"
@@ -11436,6 +14094,20 @@
         "+4 latest qtr PAT YoY 49.4%",
         "+4 mcap ₹85,716 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 62.2,
@@ -11448,7 +14120,12 @@
         "dist_ema20_pct": 2.46,
         "patterns": [],
         "avg_turnover_cr": 377.99,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -11527,6 +14204,14 @@
         "+0 latest qtr PAT YoY -14.1%",
         "+2 mcap ₹12,805 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 63.2,
@@ -11539,7 +14224,12 @@
         "dist_ema20_pct": 5.65,
         "patterns": [],
         "avg_turnover_cr": 67.68,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.business-standard.com/markets/news/tech-stock-picks-kotak-sec-is-bullish-on-godrej-agro-one-more-stock-126090800087_1.html"
@@ -11617,6 +14307,20 @@
         "+0 latest qtr PAT YoY -1.3%",
         "+2 mcap ₹39,419 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 75"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 37.8,
@@ -11629,7 +14333,12 @@
         "dist_ema20_pct": -2.69,
         "patterns": [],
         "avg_turnover_cr": 24.76,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/stocks-to-buy-23-800-23-600-crucial-support-for-nifty-says-anand-rathis-jigar-patel-suggests-3-stock-picks-11788751025604.html"
@@ -11702,6 +14411,26 @@
         "+4 latest qtr PAT YoY 67%",
         "+4 mcap ₹53,502 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 38"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 58.2,
@@ -11714,7 +14443,12 @@
         "dist_ema20_pct": 2.09,
         "patterns": [],
         "avg_turnover_cr": 78.82,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/piramalfin.html"
@@ -11792,6 +14526,14 @@
         "+0 latest qtr PAT YoY 4.7%",
         "+4 mcap ₹821,306 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 44.6,
@@ -11806,7 +14548,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 596.81,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms"
@@ -11891,6 +14638,26 @@
         "+0 latest qtr PAT YoY 6.6%",
         "+0 mcap ₹4,525 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 93"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 77.3,
@@ -11905,7 +14672,12 @@
           "overextended"
         ],
         "avg_turnover_cr": 25.73,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-esds-software-solutions-ltd-for-target-1-550-by-choice-institutional-equities-ltd698589"
@@ -11980,6 +14752,32 @@
         "+4 promoter 56.38%",
         "+4 mcap ₹171,627 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.88"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.65% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 41.5,
@@ -11992,7 +14790,12 @@
         "dist_ema20_pct": -1.76,
         "patterns": [],
         "avg_turnover_cr": 331.6,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-esds-software-solutions-ltd-for-target-1-550-by-choice-institutional-equities-ltd698589"
@@ -12072,6 +14875,26 @@
         "+0 latest qtr PAT YoY 5.1%",
         "+2 mcap ₹39,070 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.22"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.83% away"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 44.1,
@@ -12084,7 +14907,12 @@
         "dist_ema20_pct": -1.61,
         "patterns": [],
         "avg_turnover_cr": 53.97,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.business-standard.com/markets/news/tech-stock-picks-kotak-sec-is-bullish-on-godrej-agro-one-more-stock-126090800087_1.html"
@@ -12163,6 +14991,20 @@
         "-5 latest qtr PAT YoY -127.4%",
         "+4 mcap ₹135,752 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 45.6,
@@ -12177,7 +15019,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 161.37,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
@@ -12255,6 +15102,26 @@
         "+4 latest qtr PAT YoY 19.3%",
         "+4 mcap ₹1,095,177 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 66"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.49% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 39.0,
@@ -12269,7 +15136,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 1877.56,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms"
@@ -12351,6 +15223,32 @@
         "+4 latest qtr PAT YoY 39.1%",
         "+2 mcap ₹45,704 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 75"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.45"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.46% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 44.8,
@@ -12363,7 +15261,12 @@
         "dist_ema20_pct": -1.91,
         "patterns": [],
         "avg_turnover_cr": 72.22,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-supreme-industries-target-of-rs-4035-icici-securities-14024257.html"
@@ -12443,6 +15346,20 @@
         "+4 latest qtr PAT YoY 2810%",
         "+0 mcap ₹3,801 cr"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 72.3,
@@ -12457,7 +15374,12 @@
           "overextended"
         ],
         "avg_turnover_cr": 97.08,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-8-september-2026-11788828772209.html"
@@ -12537,6 +15459,20 @@
         "+4 latest qtr PAT YoY 117.9%",
         "+0 mcap ₹6,146 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 73"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 74.7,
@@ -12551,7 +15487,12 @@
           "overextended"
         ],
         "avg_turnover_cr": 94.44,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-8-september-2026-11788828772209.html"
@@ -12629,6 +15570,26 @@
         "+4 latest qtr PAT YoY 23.8%",
         "+2 mcap ₹30,622 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.54% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 36.1,
@@ -12641,7 +15602,12 @@
         "dist_ema20_pct": -2.67,
         "patterns": [],
         "avg_turnover_cr": 8.95,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/stocks-to-buy-under-rs-200-mehul-kothari-of-anand-rathi-recommends-three-shares-to-buy-for-short-term-11788598636353.html"
@@ -12725,6 +15691,32 @@
         "+0 latest qtr PAT YoY 8.9%",
         "+4 mcap ₹295,315 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 95"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.84"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 1.69% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 45.6,
@@ -12739,7 +15731,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 378.97,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/"
@@ -12815,6 +15812,26 @@
         "-5 latest qtr PAT YoY -184.1%",
         "+2 mcap ₹29,244 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 30"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 59.7,
@@ -12829,7 +15846,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 85.11,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/pplpharma.html"
@@ -12903,6 +15925,14 @@
         "+0 latest qtr PAT YoY -13.5%",
         "+0 mcap ₹5,293 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 79"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 59.2,
@@ -12917,7 +15947,12 @@
           "double_bottom_confirmed"
         ],
         "avg_turnover_cr": 29.91,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/stock-insights/special-situations-alert/one-stock-two-businesses-this-demerger-will-unlock-value-the-market-is-missing/4333185/"
@@ -12987,6 +16022,20 @@
       "fund_why": [
         "+0 promoter 44.15%"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 52.2,
@@ -13001,7 +16050,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 9.45,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -13078,6 +16132,14 @@
         "+4 latest qtr PAT YoY 127.8%",
         "+2 mcap ₹26,999 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 97"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 34.0,
@@ -13092,7 +16154,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 151.98,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -13186,6 +16253,32 @@
         "+4 latest qtr PAT YoY 18.8%",
         "+4 mcap ₹231,707 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.86"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.82% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "7 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 48.1,
@@ -13200,7 +16293,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 507.67,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/buy-or-sell-sumeet-bagadia-recommends-three-stocks-to-buy-on-monday-7-september-2026-11788580369064.html",
@@ -13277,6 +16375,26 @@
         "+4 latest qtr PAT YoY 70%",
         "+0 mcap ₹6,043 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 39"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "up",
         "rsi": 48.6,
@@ -13292,7 +16410,12 @@
           "pullback_to_ema20_in_uptrend"
         ],
         "avg_turnover_cr": 48.93,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/neogen.html"
@@ -13374,6 +16497,32 @@
         "+0 latest qtr PAT YoY -5.8%",
         "+0 mcap ₹3,717 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 78"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 5.9"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.14% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 43.4,
@@ -13386,7 +16535,12 @@
         "dist_ema20_pct": -1.43,
         "patterns": [],
         "avg_turnover_cr": 3.66,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/"
@@ -13465,6 +16619,20 @@
         "+4 latest qtr PAT YoY 2020%",
         "+0 mcap ₹6,461 cr"
       ],
+      "tags": [
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 76.8,
@@ -13482,7 +16650,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 41.43,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/centum.html"
@@ -13563,6 +16736,32 @@
         "+0 promoter 30.48%",
         "+2 mcap ₹17,801 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 7.32"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.53% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 46.2,
@@ -13577,7 +16776,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 21.23,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.moneycontrol.com/news/business/stocks/buy-onesource-specialty-pharma-target-of-rs-2400-icici-securities-2-14024221.html"
@@ -13652,6 +16856,14 @@
         "+4 promoter 89.35%",
         "+0 mcap ₹7,897 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 66"
+        }
+      ],
       "ta": {
         "trend": "sideways",
         "rsi": 70.7,
@@ -13664,7 +16876,12 @@
         "dist_ema20_pct": 7.22,
         "patterns": [],
         "avg_turnover_cr": 47.57,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/raja-venkatraman-recommends-three-stocks-for-8-september-11788800507147.html"
@@ -13740,6 +16957,14 @@
         "-5 latest qtr PAT YoY -89.4%",
         "+0 mcap ₹1,563 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 66"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 40.9,
@@ -13752,7 +16977,12 @@
         "dist_ema20_pct": -2.02,
         "patterns": [],
         "avg_turnover_cr": 10.8,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.livemint.com/market/stock-market-news/buy-or-sell-gift-nifty-signals-muted-start-vaishali-parekh-recommends-three-stocks-to-buy-today-11788747852620.html"
@@ -13833,6 +17063,20 @@
         "+4 latest qtr PAT YoY 17.2%",
         "+4 mcap ₹329,304 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 73"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 35.4,
@@ -13847,7 +17091,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 278.99,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -13921,6 +17170,20 @@
         "+4 latest qtr PAT YoY 28.6%",
         "+4 mcap ₹100,454 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.81% away"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 35.3,
@@ -13933,7 +17196,12 @@
         "dist_ema20_pct": -2.92,
         "patterns": [],
         "avg_turnover_cr": 127.83,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14006,6 +17274,14 @@
         "-5 latest qtr PAT YoY -215%",
         "+0 mcap ₹4,100 cr"
       ],
+      "tags": [
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 36.7,
@@ -14018,7 +17294,12 @@
         "dist_ema20_pct": -4.51,
         "patterns": [],
         "avg_turnover_cr": 13.23,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14084,6 +17365,26 @@
       "fund_why": [
         "+4 promoter 74.93%"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.5"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.59% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 39.0,
@@ -14096,7 +17397,12 @@
         "dist_ema20_pct": -3.75,
         "patterns": [],
         "avg_turnover_cr": 259.86,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14171,6 +17477,26 @@
         "-5 latest qtr PAT YoY -51.4%",
         "+2 mcap ₹32,147 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.41"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.32% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 37.4,
@@ -14183,7 +17509,12 @@
         "dist_ema20_pct": -4.11,
         "patterns": [],
         "avg_turnover_cr": 55.56,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14255,6 +17586,14 @@
         "-5 latest qtr PAT YoY -15.2%",
         "+2 mcap ₹16,044 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 82"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 34.8,
@@ -14267,7 +17606,12 @@
         "dist_ema20_pct": -4.75,
         "patterns": [],
         "avg_turnover_cr": 38.73,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14341,6 +17685,14 @@
         "+4 latest qtr PAT YoY 2584.6%",
         "+2 mcap ₹26,725 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 79"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 36.3,
@@ -14355,7 +17707,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 36.23,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14432,6 +17789,26 @@
         "-5 latest qtr PAT YoY -141.5%",
         "+2 mcap ₹48,356 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 41"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.4% away"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 46.7,
@@ -14446,7 +17823,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 114.62,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
@@ -14522,6 +17904,14 @@
         "+0 latest qtr PAT YoY -9.1%",
         "+4 mcap ₹401,178 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 29.3,
@@ -14536,7 +17926,12 @@
           "oversold_in_downtrend"
         ],
         "avg_turnover_cr": 437.0,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms"
@@ -14602,6 +17997,14 @@
       "fund_why": [
         "+4 promoter 81.45%"
       ],
+      "tags": [
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 39.4,
@@ -14614,7 +18017,12 @@
         "dist_ema20_pct": -3.06,
         "patterns": [],
         "avg_turnover_cr": 5.98,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-citi-maintains-sell-on-hindustan-zinc-motilal-oswal-raises-target-price-on-gopal-snacks/articleshow/131082386.cms"
@@ -14691,6 +18099,32 @@
         "-5 latest qtr PAT YoY -110.9%",
         "+4 mcap ₹193,372 cr"
       ],
+      "tags": [
+        {
+          "key": "weak-books",
+          "label": "Weak books",
+          "tone": "bad",
+          "why": "business score 33"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.32% away"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "down",
         "rsi": 37.2,
@@ -14703,7 +18137,12 @@
         "dist_ema20_pct": -3.38,
         "patterns": [],
         "avg_turnover_cr": 266.39,
-        "last_bar_date": "2026-09-04"
+        "last_bar_date": "2026-09-04",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms"
@@ -14785,6 +18224,20 @@
         "+0 latest qtr PAT YoY 11.7%",
         "+4 mcap ₹88,199 cr"
       ],
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 68"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 22.1,
@@ -14799,7 +18252,12 @@
           "oversold_in_downtrend"
         ],
         "avg_turnover_cr": 271.1,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://investmentguruindia.com/newsdetail/buy-syrma-sgs-technology-ltd-for-the-target-rs-2-050-by-emkay-global-financial-services-ltd602023",
@@ -14884,6 +18342,26 @@
         "+4 latest qtr PAT YoY 51.5%",
         "+2 mcap ₹23,250 cr"
       ],
+      "tags": [
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.1"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_down",
         "rsi": 45.8,
@@ -14898,7 +18376,12 @@
           "bollinger_squeeze"
         ],
         "avg_turnover_cr": 23.52,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://www.financialexpress.com/market/modi-3-0-capex-boost-clsa-sees-up-to-75-upside-in-lampt-hal-irb-amp-3-other-stocks-4333401/"
@@ -14969,6 +18452,26 @@
       "corroborating_sources": [],
       "brokerages": [],
       "fund_why": [],
+      "tags": [
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.7% away"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
       "ta": {
         "trend": "strong_up",
         "rsi": 100.0,
@@ -14985,7 +18488,12 @@
           "volume_spike"
         ],
         "avg_turnover_cr": 65.55,
-        "last_bar_date": "2026-09-07"
+        "last_bar_date": "2026-09-07",
+        "momentum_score": null,
+        "drift_pct_day": null,
+        "efficiency": null,
+        "amplitude_pct_day": null,
+        "up_day_share": null
       },
       "urls": [
         "https://chartink.com/stocks/liquidadd.html"

