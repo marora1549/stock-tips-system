@@ -1,0 +1,22 @@
+{
+  "EIEL": [
+    {
+      "date": "2026-09-09",
+      "source": "markets_mojo",
+      "their_score": 37.0,
+      "their_stance": "sell",
+      "my_score": 92,
+      "note": "the 92 that started this: three years of negative operating cash flow, borrowings +80%, sales growth 46% to 7.5% — none of it read",
+      "gap": 55.0
+    },
+    {
+      "date": "2026-09-09",
+      "source": "markets_mojo",
+      "their_score": 37.0,
+      "their_stance": "sell",
+      "my_score": 32,
+      "note": "same company, rebuilt scorer: cash flow read, TTM column no longer taken for a financial year, correlated ratios counted once",
+      "gap": -5.0
+    }
+  ]
+}

@@ -155,9 +155,13 @@ def preopen_card(c: dict, rank: int) -> str:
              "",
              f"- Size: {_ratio_words(c)}",
              f"- Why this name: {c.get('why_this_name', '')} ({c.get('route')})",
-             f"- Business: fundamentals {c.get('fund_score')}/100"
-             + (" — " + "; ".join(c.get("fund_caps") or []) if c.get("fund_caps") else ""),]
-    for fl in (c.get("fund_flags") or []):
+             (f"- Business: **not rated** — "
+              + (c.get("fund_why") or ["no reason given"])[0].replace("not rated: ", "", 1)
+              if c.get("fund_unrated") else
+              f"- Business: fundamentals {c.get('fund_score')}/100 (90 is this scorer's ceiling)"
+              + (" — " + "; ".join(c.get("fund_caps") or []) if c.get("fund_caps") else "")),]
+    # an unrated name already carries its one reason on the line above; repeating it is noise
+    for fl in ([] if c.get("fund_unrated") else (c.get("fund_flags") or [])):
         lines.append(f"  - ⚑ {fl}")
     for con in (c.get("screener_cons") or [])[:3]:
         lines.append(f"  - Screener says: {con}")

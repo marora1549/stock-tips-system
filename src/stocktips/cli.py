@@ -35,7 +35,7 @@ import yaml
 from . import pipeline, report
 from .analysis import contenders, plan as planmod, scoring, ta
 from .data import fundamentals, prices, sparks, symbols
-from .learning import confidence, eventscore, journal
+from .learning import confidence, eventscore, fundcalib, journal
 from .portfolio import daybook
 from .sources import mojo
 from .portfolio import ledger as ledgermod
@@ -540,6 +540,77 @@ def cmd_lesson(a):
     print("lesson recorded")
 
 
+def cmd_fund_verdict(a):
+    """Record somebody else's verdict on a company next to mine.
+
+    Markets Mojo is a paid, manual read: slow, but a second opinion that owes nothing to my
+    arithmetic. Enviro Infra is why this exists — 92 from me against 37 and a SELL from them, and
+    the only reason the gap was ever noticed is that a person read both and said so. Recording
+    every such pair turns that into a number the system tracks: `fund-audit` reports whether I am
+    running systematically generous, and against whom.
+    """
+    sym = a.symbol.upper()
+    mine = a.my_score
+    if mine is None:
+        f = fundamentals.fetch(sym)
+        got = fundamentals.assess(f)
+        mine = got["score"]
+        print(f"scored {sym} now: {mine}/100" + (" (unrated)" if got.get("unrated") else ""))
+    d = fundcalib.load_verdicts()
+    row = fundcalib.note_verdict(d, sym, source=a.source, their_score=a.their_score,
+                                 their_stance=a.stance or "", my_score=mine, note=a.note or "",
+                                 on=a.date)
+    fundcalib.save_verdicts(d)
+    print(json.dumps({"symbol": sym, **row}, indent=1))
+    if row.get("gap") is not None and abs(row["gap"]) >= 20:
+        print(f"\n⚑ {abs(row['gap']):.0f}-point disagreement with {a.source}. That is a case to go "
+              f"and look at, not a rounding difference.")
+
+
+def cmd_fund_audit(a):
+    """Has the fundamentals score ever been right? Both ledgers, in words.
+
+    Everything else the desk believes is graded — a tip source by its outcomes, an event class by
+    open-to-high travel. The fundamentals number was graded by nobody, which is why a 92 on a
+    cash-burning company could stand for weeks. This is the report that makes it answerable.
+    """
+    calib = fundcalib.load()
+    verdicts = fundcalib.load_verdicts()
+
+    print("fundamentals score against realised outcome")
+    print("  band     scored  settled   avg return   hit rate")
+    for r in fundcalib.table(calib):
+        avg = f"{r['avg_return_pct']:+7.2f}%" if r["avg_return_pct"] is not None else "      —"
+        hit = f"{r['hit_rate']:.0%}" if r["hit_rate"] is not None else "  —"
+        thin = "  (too few to read)" if r["thin"] and r["n_settled"] else "  (nothing settled)" if r["thin"] else ""
+        print(f"  {r['bucket']:8s} {r['n_scored']:6d} {r['n_settled']:8d}   {avg}   {hit:>8s}{thin}")
+    inv = fundcalib.inversions(calib)
+    if inv:
+        print("\n  ⚑ the score is not ranking these bands correctly:")
+        for line in inv:
+            print(f"    - {line}")
+    elif not any(not r["thin"] for r in fundcalib.table(calib)):
+        print("\n  no band has enough settled trades to say anything yet. That is the honest "
+              "state:\n  the score is unproven, and until it is graded it should be read as an "
+              "opinion.")
+
+    print("\nfundamentals score against outside verdicts")
+    rows = fundcalib.bias(verdicts)
+    if not rows:
+        print("  none recorded")
+    for r in rows:
+        print(f"  {r['source']:16s} n={r['n']:<3d} mean gap {r['mean_gap']:+6.1f}  "
+              f"mean |gap| {r['mean_abs_gap']:5.1f}  worst {r['worst']:+6.1f}  — {r['reading']}")
+    dis = fundcalib.disagreements(verdicts, threshold=a.threshold)
+    if dis:
+        print(f"\n  disagreements of {a.threshold:.0f} points or more — "
+              f"the standing list to review:")
+        for r in dis:
+            print(f"    {r['symbol']:12s} {r['date']}  me {r['my_score']:>3}  "
+                  f"{r['source']} {r['their_score']:>5} {r['their_stance']:<6s} gap {r['gap']:+.0f}"
+                  + (f"  — {r['note']}" if r.get("note") else ""))
+
+
 ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
                    "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
                    "corroborating_sources", "brokerages", "fund_why", "tags")
@@ -595,7 +666,8 @@ def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
     """One pre-open candidate, married to whatever the session has since made of it."""
     keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
             "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
-            "fund_score", "fund_why", "fund_flags", "fund_caps", "screener_pros", "screener_cons",
+            "fund_score", "fund_why", "fund_flags", "fund_caps", "fund_unrated",
+            "screener_pros", "screener_cons",
             "source_id", "corroborating_sources", "url", "title",
             "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
             "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
@@ -637,6 +709,8 @@ def cmd_dashboard_data(a):
     session = read_json(REPORTS_DIR / intra_day / "intraday.json", {}) if intra_day else {}
     book = daybook.load()
     classes = eventscore.load()
+    calib = fundcalib.load()
+    verdicts = fundcalib.load_verdicts()
 
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
@@ -678,6 +752,15 @@ def cmd_dashboard_data(a):
                                                               "max_stop_pct", "force_flat_at",
                                                               "notional_inr", "risk_per_trade_pct",
                                                               "max_positions")},
+            },
+            # the fundamentals score's own report card, on the page rather than behind a command:
+            # a number nobody is checking is how the 92 survived
+            "fundamentals_audit": {
+                "buckets": fundcalib.table(calib),
+                "inversions": fundcalib.inversions(calib),
+                "bias": fundcalib.bias(verdicts),
+                "disagreements": fundcalib.disagreements(verdicts)[:12],
+                "ceiling": fundamentals.BASE + sum(hi for hi, _ in fundamentals.BUDGET.values()),
             },
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
@@ -753,6 +836,20 @@ def main(argv=None):
         p.add_argument("--" + k.replace("_", "-"), dest=k)
     p.add_argument("--category", default="tipster"); p.set_defaults(fn=cmd_add_source)
     p = sub.add_parser("lesson"); p.add_argument("text"); p.set_defaults(fn=cmd_lesson)
+    p = sub.add_parser("fund-verdict", help="record an outside verdict on a company next to mine")
+    p.add_argument("symbol")
+    p.add_argument("--source", required=True, help="who said it, e.g. markets_mojo, screener")
+    p.add_argument("--their-score", type=float, dest="their_score", default=None,
+                   help="their score out of 100")
+    p.add_argument("--stance", default=None, help="buy / hold / sell, if they gave one")
+    p.add_argument("--my-score", type=int, dest="my_score", default=None,
+                   help="my score; omit to score the company now")
+    p.add_argument("--note", default=None)
+    p.add_argument("--date", default=None)
+    p.set_defaults(fn=cmd_fund_verdict)
+    p = sub.add_parser("fund-audit", help="has the fundamentals score ever been right?")
+    p.add_argument("--threshold", type=float, default=20.0)
+    p.set_defaults(fn=cmd_fund_audit)
     p = sub.add_parser("dashboard-data"); p.set_defaults(fn=cmd_dashboard_data)
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO if a.verbose else logging.WARNING, format="%(levelname)s %(name)s: %(message)s")

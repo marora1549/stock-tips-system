@@ -30,7 +30,7 @@ import pandas as pd
 
 from ..util import STATE_DIR, now_ist, read_json, settings, today_str, write_json
 from ..data import prices, sparks
-from ..learning import confidence
+from ..learning import confidence, fundcalib
 
 log = logging.getLogger(__name__)
 PATH = STATE_DIR / "ledger.json"
@@ -73,6 +73,9 @@ def open_position(led: dict, pick: dict, capital_inr: float) -> dict | None:
         "opened": str(open_day), "booked": now.strftime("%Y-%m-%d %H:%M"), "status": "pending",   # pending → open at first EOD on/after `opened`
         "entry_plan": entry, "entry": None, "qty": qty, "qty_open": qty, "capital_inr": round(qty * entry, 2),
         "stop_loss": plan["stop_loss"], "initial_stop": plan["stop_loss"], "targets": plan["targets"], "targets_hit": [],
+        # what the fundamentals score claimed about this name on the day it was booked, kept so the
+        # claim can be graded against the result rather than forgotten
+        "fund_score_at_entry": pick.get("fund_score"),
         "timeframe": plan["timeframe"], "time_stop_days": plan["time_stop_days"], "deadline": None,
         "eta_days": plan.get("eta_days") or [], "pace_pct_day": plan.get("pace_pct_day"),
         "momentum_score": plan.get("momentum_score"),
@@ -82,6 +85,15 @@ def open_position(led: dict, pick: dict, capital_inr: float) -> dict | None:
         "patterns": pick.get("ta", {}).get("patterns", []), "exits": [], "realised_inr": 0.0, "max_favourable_pct": 0.0, "notes": [],
     }
     led["positions"].append(pos)
+    if pick.get("fund_score") is not None:
+        # The fundamentals score is now on the record for this trade. Nothing reads it back into
+        # the scorer — it exists so that "do the names I score highly actually do better?" has an
+        # answer, which it did not when Enviro Infra was carrying a 92.
+        calib = fundcalib.load()
+        fundcalib.note_entry(calib, pos["symbol"], score=pick["fund_score"],
+                             flags=pick.get("fund_flags"), caps=pick.get("fund_caps"),
+                             unrated=bool(pick.get("fund_unrated")), on=pos["opened"])
+        fundcalib.save(calib)
     led["cash_inr"] = round(led["cash_inr"] - pos["capital_inr"], 2)
     return pos
 
@@ -108,6 +120,11 @@ def _close(led: dict, pos: dict, outcome: str, on: str) -> None:
     led["cash_inr"] = round(led["cash_inr"] + invested + pos["realised_inr"], 2)
     led["positions"] = [p for p in led["positions"] if p["pos_id"] != pos["pos_id"]]
     led["closed"].append(pos)
+    if pos.get("fund_score_at_entry") is not None:
+        calib = fundcalib.load()
+        if fundcalib.settle(calib, pos["symbol"], outcome=outcome,
+                            ret_pct=pos["pnl_pct"], on=on) is not None:
+            fundcalib.save(calib)
 
 
 def cash_flow(led: dict, amount: float, note: str | None = None, on: str | None = None) -> dict:

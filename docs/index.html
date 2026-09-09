@@ -1622,13 +1622,16 @@ function newsTags(c){
   if (c.certainty != null && c.certainty < 1)
     out.push({t:'warn', i:'alert', l:Math.round(c.certainty * 100) + '% firm',
               w:'not a signed contract yet'});
-  if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong books · ' + c.fund_score,
+  // A lender's accounts do not answer these questions, so no number is claimed for one.
+  if (c.fund_unrated) out.push({t:'warn', i:'shield', l:'books not rated',
+              w:(c.fund_why || [])[0] || 'this scorer does not fit this kind of company'});
+  else if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong books · ' + c.fund_score,
               w:(c.fund_why || []).slice(0, 4).join('; ')});
   else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak books · ' + c.fund_score,
               w:'a pop on a weak balance sheet fades'});
   // A red flag is not a term in an average — it is the reason the score has a ceiling, and it
   // belongs on the card in words. This desk scored a cash-burning company 92 once.
-  (c.fund_flags || []).forEach(function(fl){
+  (c.fund_unrated ? [] : (c.fund_flags || [])).forEach(function(fl){
     out.push({t:'bad', i:'alert', l:fl.length > 46 ? fl.slice(0, 44) + '…' : fl, w:fl});
   });
   (c.fund_caps || []).forEach(function(cp){
@@ -1774,6 +1777,64 @@ function intradayMore(c){
   return '<div class="mgrid">' + cols.join('') + '</div>';
 }
 
+function fundAudit(){
+  var a = (DATA.fundamentals_audit) || {};
+  var buckets = a.buckets || [], bias = a.bias || [], dis = a.disagreements || [];
+  var settled = buckets.reduce(function(n, b){ return n + (b.n_settled || 0); }, 0);
+  var out = '';
+
+  if (a.inversions && a.inversions.length){
+    out += '<div class="card"><div class="card-in log">' + a.inversions.map(function(t){
+      return '<div class="row"><span class="when bad">backwards</span>' +
+        '<span class="what"><b>The score is not ranking these bands correctly.</b> ' +
+        esc(t) + '</span></div>';
+    }).join('') + '</div></div>';
+  }
+
+  out += '<div class="tw"><table>' +
+    '<thead><tr><th>Score band</th><th class="r">Scored</th><th class="r">Settled</th>' +
+    '<th class="r">Avg return</th><th class="r">Hit rate</th></tr></thead><tbody>' +
+    buckets.map(function(b){
+      return '<tr' + (b.thin ? ' class="mut"' : '') + '><td>' + esc(b.bucket) + ' / 100</td>' +
+        '<td class="r n">' + (b.n_scored || 0) + '</td>' +
+        '<td class="r n">' + (b.n_settled || 0) + '</td>' +
+        '<td class="r n ' + sgn(b.avg_return_pct) + '">' +
+          (b.avg_return_pct == null ? '—' : pct(b.avg_return_pct, 2)) + '</td>' +
+        '<td class="r n">' + (b.hit_rate == null ? '—'
+          : Math.round(b.hit_rate * 100) + '%') + '</td></tr>';
+    }).join('') + '</tbody></table></div>' +
+    (settled ? '' : '<div class="hint">Nothing has settled yet, so the score is unproven. Read it ' +
+      'as an opinion until this table is able to contradict it.</div>');
+
+  if (bias.length){
+    out += '<div class="card"><div class="card-in">' + bias.map(function(r){
+      return '<div class="kv"><span>' + esc(r.source).replace(/_/g, ' ') +
+        ' <small class="mut">' + r.n + ' compared</small></span>' +
+        '<span class="n">' + (r.mean_gap > 0 ? '+' : '') + num(r.mean_gap, 1) +
+        ' <small class="mut">' + esc(r.reading) + '</small></span></div>';
+    }).join('') + '</div></div>';
+  }
+
+  if (dis.length){
+    out += '<div class="sec-h" style="margin-top:18px"><h4>Where an outside desk disagreed</h4>' +
+      '<span class="note">the standing list to go and look at</span></div>' +
+      '<div class="card"><div class="card-in log">' + dis.map(function(r){
+        return '<div class="row"><span class="when">' + esc(r.symbol) + '</span>' +
+          '<span class="what"><b>' + (r.gap > 0 ? '+' : '') + num(r.gap, 0) + '</b> — ' +
+          'mine ' + r.my_score + ', ' + esc(String(r.source).replace(/_/g, ' ')) + ' ' +
+          num(r.their_score, 0) + (r.their_stance ? ' (' + esc(r.their_stance) + ')' : '') +
+          (r.note ? ' <span class="mut">' + esc(r.note) + '</span>' : '') +
+          '</span></div>';
+      }).join('') + '</div></div>';
+  }
+
+  out += '<div class="hint">The highest score this scorer can produce is ' +
+    num(a.ceiling || 90, 0) + ' out of 100. A public ratio page cannot tell the 90th percentile ' +
+    'from the 99th, and the last ten points are withheld rather than handed out. Enviro Infra ' +
+    'scored 92 here once, with three years of negative operating cash flow that nothing read.</div>';
+  return out;
+}
+
 function classScoreboard(){
   var rows = intra().event_classes || [];
   if (!rows.length){
@@ -1897,6 +1958,10 @@ function renderIntraday(){
   html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') +
     'What each kind of news has been worth</h3><span class="note">the part that gets trained</span>' +
     '</div>' + classScoreboard() + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') +
+    'Has the fundamentals score ever been right?</h3>' +
+    '<span class="note">the score, graded like everything else</span></div>' + fundAudit() + '</div>';
 
   var sk = d.skipped || [];
   if (sk.length){

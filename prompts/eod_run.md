@@ -26,9 +26,22 @@ and push (the report is the record), and make the outage the first line of the n
 For every event in the report, one sentence of honest attribution:
 * Stop hit: was the stop inside normal noise (< 1 ATR)? Was the pattern real? Did the source's tip arrive after the move?
 * Target hit: which reason in `plan.reasons` deserves the credit? Would a tighter/looser target have been better?
-* Time stop / hold: was the fundamentals score right to park it?
+* Time stop / hold: was the fundamentals score right to park it? A position closing today has just
+  settled its score in `state/fundamentals_calibration.json` — say whether the score earned its
+  keep on this one, in a clause.
 * Pending cancelled on gap-up: note which source's calls keep gapping — that is information about the source's timing.
 Then check `state/sources_confidence.json` for any source whose `n_resolved ≥ 8` and `score < −40` — it has been auto-disabled; say so. Any source with ≥ 10 resolved outcomes and T1 hit-rate ≥ 60% deserves a sentence too.
+
+Then run `PYTHONPATH=src python -m stocktips.cli fund-audit`. Two findings are reportable and
+neither is optional:
+* **an inversion** — names scored highly returning less than names scored poorly, over enough
+  settled trades to mean it. That is the fundamentals score failing to carry information, and it
+  goes at the top of the review, not in a footnote.
+* **a bias** — running eight points or more generous against an outside desk across three or more
+  names. Say the number and the direction.
+
+If neither is present and nothing has settled, say that too: an ungraded score is an opinion, and
+Enviro Infra's 92 stood for weeks precisely because nobody said so out loud.
 
 Record the review:
 ```bash

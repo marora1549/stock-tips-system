@@ -34,7 +34,7 @@ short, say so in the email: a story the desk never fetched is a different failur
 and scored low, and only the reader can tell you which of the two mattered. If the run finishes with
 budget to spare, say that too — it means the list can grow.
 
-## 2. Check the three things a regex cannot
+## 2. Check the four things a regex cannot
 The scoring is arithmetic and it is honest, but it can be confidently wrong in ways you can see:
 
 1. **Is the beneficiary right?** Open the story for every TRADE-grade name. If the article names a
@@ -50,6 +50,26 @@ The scoring is arithmetic and it is honest, but it can be confidently wrong in w
    on the previous session, the score has already penalised it — but check whether the *event* is
    yesterday's event with a new dateline. If it is, drop it and say why.
 
+4. **Does the fundamentals number survive being read out loud?** This desk once scored a company
+   92 out of 100 with three consecutive years of negative operating cash flow, and the number stood
+   for weeks because nobody checked it against anything. So for every TRADE-grade name, read the
+   score's own breakdown — `fund_why`, `fund_flags`, `fund_caps` — and ask whether a person would
+   sign it. Two specific things to look for:
+   * **A high score with no flags is the dangerous shape**, not the reassuring one. Open the
+     Screener page and confirm the cash-flow row was actually read. `fy_labels` in the payload names
+     the columns the growth figures came from; if the last one is not the last financial year, the
+     score is answering a question about the wrong dates and you must say so.
+   * **The number must travel with its dissent.** `screener_cons` is Screener's own list of
+     objections, printed verbatim. If a con contradicts the score — capitalised interest, working
+     capital blowing out, promoter selling — that belongs in the email next to the number, whatever
+     the arithmetic said.
+
+   Then, when the outside verdict is available, put it on the record:
+   `PYTHONPATH=src python -m stocktips.cli fund-verdict SYMBOL --source markets_mojo --their-score N
+   --stance sell`. And run `fund-audit` once per run: if it reports the score ranking bands
+   backwards, that finding goes in the email above the picks, because it means the number the picks
+   rest on is not carrying information.
+
 When you correct something, fix the data too where the fix belongs in a file:
 * wrong or missing beneficiary for a kind of news → add it to `config/themes.yaml` with a weight
   and a one-line reason;
@@ -57,6 +77,9 @@ When you correct something, fix the data too where the fix belongs in a file:
   say plainly that it should be disabled;
 * a systematic extractor mistake → that is a code fix and a test, not a hand-edit. Open it as a note
   in your email rather than patching state.
+* a fundamentals figure that disagrees with the company's own filing → that is a parser bug, and it
+  gets a fixture and a test in `tests/test_fundamentals.py` naming the company it was found on. Four
+  separate scoring defects were found that way; none of them showed up as an error.
 
 ## 3. Do not invent levels
 Every price in the email comes from `preopen.json`. The plan before the open is deliberately a *rule*
