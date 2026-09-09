@@ -11,6 +11,10 @@
   close             discretionary exit: cancel a pending position or sell an open one (close CGPOWER [--price 940])
   capital           deposit or withdraw capital (capital --add 50000 / --withdraw 20000)
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
+  preopen           08:00: overnight corporate news → catalyst scores → reports/<date>/preopen.md
+  intraday          session check: the real gap and opening range  (--close to settle and grade)
+  read              score one story you found yourself (read --url ... / --text ... [--add])
+  daybook           the intraday record, and what each kind of news has been worth
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
   analyze-symbol    ad-hoc: full TA plan for one NSE symbol  (analyze-symbol TCS --tf monthly)
@@ -31,7 +35,8 @@ import yaml
 from . import pipeline, report
 from .analysis import contenders, plan as planmod, scoring, ta
 from .data import fundamentals, prices, sparks, symbols
-from .learning import confidence, journal
+from .learning import confidence, eventscore, journal
+from .portfolio import daybook
 from .sources import mojo
 from .portfolio import ledger as ledgermod
 from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
@@ -229,6 +234,112 @@ def cmd_contenders(a):
     held = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
     top = contenders.rank([_suggestion(r) for r in results], n=a.top, held=held)
     print(json.dumps({"day": day, "ideas_considered": len(results), "contenders": top}, indent=1, ensure_ascii=False))
+
+
+def _intraday_off() -> str | None:
+    """The one switch that turns the news desk off, honoured by every command that is part of it.
+
+    A settings key nothing reads is a lie about the system, and this one is the kill switch: if the
+    intraday experiment is not working, `intraday.enabled: false` in config/settings.yaml should stop
+    it everywhere rather than requiring four routines to be disabled one at a time.
+    """
+    cfg = settings().get("intraday", {}) or {}
+    if cfg.get("enabled", True):
+        return None
+    return ("the intraday desk is switched off — set intraday.enabled: true in config/settings.yaml "
+            "to turn it back on")
+
+
+def cmd_preopen(a):
+    """The 08:00 run: read overnight corporate news and say what to do about it before the open.
+
+    Its output is an email, so the report's first line has to stand alone — that may be all that
+    gets read on a phone at eight in the morning.
+    """
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
+    closed = _market_closed(today_str())
+    if closed and not a.force:
+        print(f"market closed today ({closed}) — nothing opens, so there is nothing to be early for")
+        return
+    day = a.date or now_ist().date().isoformat()
+    raw = None if a.refresh else read_json(pipeline.day_dir(day) / "news_raw.json", None)
+    if raw is None:
+        raw = pipeline.gather_news(max_age_hours=a.max_age)
+    card = pipeline.preopen(raw, limit=a.limit, date=day)
+    md = report.preopen(card)
+    (pipeline.day_dir(day) / "preopen.md").write_text(md, encoding="utf-8")
+    book = daybook.load()
+    daybook.record_candidates(book, card.get("trade", []))
+    daybook.save(book)
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_intraday(a):
+    """The session runs: 09:35 for the opening range, midday for the trail, 15:20 to settle."""
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
+    day = a.date or now_ist().date().isoformat()
+    closed = _market_closed(day)
+    if closed and not a.force:
+        print(f"market closed on {day} ({closed}) — there is no session to watch "
+              f"(use --force to look anyway)")
+        return
+    if a.close:
+        out = pipeline.intraday_close(date=a.date)
+        if not a.no_dashboard:
+            cmd_dashboard_data(a)
+        print(json.dumps({"date": out["date"], "exits": out["exits"],
+                          "graded": len(out["graded"]), "book": out["book"]}, indent=1))
+        return
+    card = pipeline.intraday_watch(date=a.date)
+    if card.get("error"):
+        sys.exit(card["error"])
+    md = report.intraday(card)
+    (pipeline.day_dir(a.date) / "intraday.md").write_text(md, encoding="utf-8")
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_daybook(a):
+    """The intraday record: what it has actually made, and what each kind of news has been worth."""
+    book = daybook.load()
+    print(json.dumps({"stats": daybook.stats(book),
+                      "event_classes": eventscore.summary(eventscore.load()),
+                      "recent": book.get("closed", [])[-8:]}, indent=1))
+
+
+def cmd_read(a):
+    """Score one story you found yourself — the path for the article read too late.
+
+    Same extractor, same beneficiary map, same catalyst score as the 08:00 run, so the answer sits
+    beside that run's rather than being a second opinion arrived at differently.
+    """
+    text = a.text
+    if a.file:
+        text = Path(a.file).read_text(encoding="utf-8", errors="replace")
+    if not text and not a.url and not sys.stdin.isatty():
+        text = sys.stdin.read()
+    story = pipeline.read_one_story(text=text, url=a.url, title=a.title, published=a.published,
+                                   source_id=a.source, date=a.date)
+    if story.get("error") and not story.get("candidates"):
+        sys.exit(story["error"])
+    print(report.one_story(story))
+    if a.add:
+        res = pipeline.add_to_preopen(story, date=a.date)
+        if res.get("error"):
+            print("\n" + res["error"], file=sys.stderr)
+        else:
+            print("\nadded to " + res["date"] + ": " + (", ".join(res["added"]) or "nothing scored high enough"))
+            if not a.no_dashboard:
+                cmd_dashboard_data(a)
 
 
 def cmd_structure(a):
@@ -480,6 +591,27 @@ def _pos_for_dashboard(pos: dict, on: str | None = None) -> dict:
     return d
 
 
+def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
+    """One pre-open candidate, married to whatever the session has since made of it."""
+    keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
+            "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
+            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
+            "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
+    out = {k: cand.get(k) for k in keys}
+    out["catalyst_reasons"] = cand.get("reasons") or []
+    live = next((c for c in (session.get("candidates") or []) if c.get("symbol") == cand["symbol"]), None)
+    if live:
+        out["session"] = {k: live.get(k) for k in
+                          ("state", "band", "band_rule", "gap_pct", "open", "prev_close", "vwap",
+                           "last", "day_high", "day_low", "from_open_pct", "opening_range",
+                           "or_volume_multiple", "acts", "why_not", "watch", "trigger", "stop",
+                           "stop_pct", "stop_note", "targets", "target_pct", "target_basis",
+                           "reward_risk_t2", "targets_hit", "triggered", "stopped", "entered_at",
+                           "stopped_at", "max_favourable_pct", "size", "order_line", "reasons")}
+    return out
+
+
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
@@ -494,6 +626,17 @@ def cmd_dashboard_data(a):
     cash = ledgermod.deployable_cash(led)
     # rank the same records the page shows, so a contender carries the tags its idea card carries
     suggestions = [_suggestion(p) for p in analysis]
+    # the intraday desk's own payload: today's card, the session state, and the trained brain
+    intra_day = None
+    for d in reversed(days[-6:]):
+        if (REPORTS_DIR / d / "preopen.json").exists():
+            intra_day = d
+            break
+    pre = read_json(REPORTS_DIR / intra_day / "preopen.json", {}) if intra_day else {}
+    session = read_json(REPORTS_DIR / intra_day / "intraday.json", {}) if intra_day else {}
+    book = daybook.load()
+    classes = eventscore.load()
+
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
             "sparks": {sym: sparks.series(spark_cache, sym) for sym in
@@ -513,6 +656,28 @@ def cmd_dashboard_data(a):
                      "min_alloc_inr": round(led["capital_inr"] * cap["min_allocation_pct"] / 100, 2),
                      "max_alloc_inr": round(led["capital_inr"] * cap["max_single_stock_pct"] / 100, 2),
                      "min_allocation_pct": cap["min_allocation_pct"], "max_single_stock_pct": cap["max_single_stock_pct"]},
+            "intraday": {
+                "day": intra_day,
+                "generated_at": pre.get("generated_at"),
+                "checked_at": session.get("checked_at"),
+                "events_read": pre.get("events_read", 0),
+                "wires": pre.get("sources", {}),
+                "trade": [_intraday_for_dashboard(c, session) for c in (pre.get("trade") or [])],
+                "watch": [_intraday_for_dashboard(c, session) for c in (pre.get("watch") or [])],
+                "avoid": [{k: c.get(k) for k in ("symbol", "company", "event_label", "title", "url",
+                                                 "source_id", "catalyst", "verdict_note")}
+                          for c in (pre.get("avoid") or [])],
+                "skipped": (pre.get("skipped") or [])[:20],
+                "trades": session.get("trades") or [],
+                "stats": daybook.stats(book),
+                "closed": (book.get("closed") or [])[-30:],
+                "event_classes": eventscore.summary(classes),
+                "settings": pre.get("settings") or {k: (settings().get("intraday", {}) or {}).get(k)
+                                                    for k in ("gap_modest_pct", "gap_wide_pct",
+                                                              "max_stop_pct", "force_flat_at",
+                                                              "notional_inr", "risk_per_trade_pct",
+                                                              "max_positions")},
+            },
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
@@ -550,6 +715,33 @@ def main(argv=None):
     p = sub.add_parser("book"); p.add_argument("symbol"); p.add_argument("--capital", type=float, default=None, help="rupees to deploy (default: deployable cash split over the free slots, capped per stock)"); p.add_argument("--date", default=None, help="report day whose analysis.json to book from (default: latest)"); p.add_argument("--force", action="store_true", help="override verdict / cap / slot checks"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_book)
     p = sub.add_parser("close"); p.add_argument("symbol"); p.add_argument("--price", type=float, default=None, help="exit price (default: last close)"); p.add_argument("--note", default=None, help="why you exited — goes in the position notes"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_close)
     p = sub.add_parser("capital"); p.add_argument("--add", type=float, default=None); p.add_argument("--withdraw", type=float, default=None); p.add_argument("--note", default=None); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_capital)
+    p = sub.add_parser("preopen")
+    p.add_argument("--max-age", type=float, default=20, help="how far back to read news (hours)")
+    p.add_argument("--refresh", action="store_true", help="re-fetch the wires instead of reusing news_raw.json")
+    p.add_argument("--limit", type=int, default=8)
+    p.add_argument("--date", default=None, help="the session this run is for (default: today in IST)")
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_preopen)
+    p = sub.add_parser("intraday")
+    p.add_argument("--close", action="store_true", help="settle the day's trades and grade the news")
+    p.add_argument("--date", default=None)
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_intraday)
+    p = sub.add_parser("read")
+    p.add_argument("--url", help="the story's URL — fetched and read")
+    p.add_argument("--text", help="the article body, pasted")
+    p.add_argument("--file", help="a file holding the article body")
+    p.add_argument("--title", help="the headline, if the paste does not start with it")
+    p.add_argument("--published", help="RFC-822 or ISO timestamp; defaults to now, which usually "
+                                       "means the freshness term marks it as already seen")
+    p.add_argument("--source", default="manual:read", help="source id it is graded under")
+    p.add_argument("--date", default=None)
+    p.add_argument("--add", action="store_true", help="fold it into today's pre-open card")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_read)
+    p = sub.add_parser("daybook"); p.set_defaults(fn=cmd_daybook)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)
     p = sub.add_parser("analyze-symbol"); p.add_argument("symbol"); p.add_argument("--tf", default="weekly"); p.set_defaults(fn=cmd_analyze_symbol)

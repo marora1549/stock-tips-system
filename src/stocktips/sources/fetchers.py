@@ -223,7 +223,13 @@ def fetch_telegram(src: dict, max_age_hours: float = 36) -> list[dict]:
 FETCHERS = {"gnews": fetch_gnews, "page": fetch_page, "rss": fetch_rss, "chartink": fetch_chartink, "telegram": fetch_telegram}
 
 
-def fetch_source(src: dict, max_age_hours: float = 36) -> list[dict]:
+def fetch_source(src: dict, max_age_hours: float = 36, limit: int | None = None) -> list[dict]:
+    """Documents from one source, bodies hydrated.
+
+    `limit` caps how many are hydrated. Hydration is the expensive half — an article fetch, and for
+    a Google News link two more requests to decode it first — so a caller with a deadline (the
+    pre-open run has to be finished before 09:15) can say how much it is willing to pay here.
+    """
     fn = FETCHERS.get(src.get("kind"))
     if fn is None:
         log.info("%s: kind '%s' not implemented yet — skipped", src["id"], src.get("kind"))
@@ -233,6 +239,8 @@ def fetch_source(src: dict, max_age_hours: float = 36) -> list[dict]:
     except Exception as e:  # a broken source must never kill the run
         log.exception("%s failed: %s", src["id"], e)
         return []
+    if limit is not None:
+        docs = docs[:max(0, limit)]
     # hydrate article bodies (and swap Google News links for the publisher URL)
     for d in docs:
         if not d.get("text") and d.get("url"):

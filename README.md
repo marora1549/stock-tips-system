@@ -1,14 +1,30 @@
 # stock-tips-system
 
-A self-learning desk that gathers Indian stock tips from cluttered public sources, vets them with its own
+Two desks in one repo, both unattended, both driveable from a portal on your phone.
+
+**The positional desk** gathers Indian stock tips from cluttered public sources, vets them with its own
 technical analysis, gives each an exact entry, stop-loss and three stepped targets **with a date on each
-target**, scores every tipster by what they actually delivered, and paper-trades ₹1,00,000 in rotation —
-twice a day, unattended, from a scheduled Claude task, and on demand from a portal you can drive from
-your phone.
+target**, scores every tipster by what they actually delivered, and paper-trades ₹1,00,000 in rotation.
+
+**The intraday desk** reads overnight corporate news — order wins, L1 calls, approvals — works out which
+listed name actually trades on it, measures the event against that company's own annual revenue, and puts
+a plan on the page **before the market opens**. Its plan is a rule about the gap rather than an entry
+price, because a stock that opens +9% and one that opens +1% are not the same trade.
 
 **Status: paper trading.** Nothing here places real orders. The point of the first months is to build a track record you can trust (`state/ledger.json`, `state/sources_confidence.json`) before any broker integration.
 
 ## How a day works
+
+Two clocks. The news desk runs before the open and inside the session; the positional desk runs on the
+open and after the close.
+
+```
+08:00  preopen      overnight wires → events → beneficiaries → catalyst → THE EMAIL
+08:15  morning      the tip pipeline: gather → analyse → pick → paper allocation
+09:35  intraday     the real gap and opening range; trigger, stand aside, or void
+15:20  intraday --close   settle at what the tape gave, then grade every event class
+15:45  eod          mark the positional book to market, grade the tip sources
+```
 
 ```
 08:15 IST  morning run                         15:45 IST  EOD run
@@ -38,7 +54,9 @@ Deterministic Python does everything that must be reproducible (fetching, TA mat
 
 ```
 config/settings.yaml     every rule: capital, mandate (5%/10%), risk caps, stepped exits, scoring weights, confidence dynamics
-config/sources.yaml      the source registry (add a source = add a YAML block; confidence starts at 0)
+config/sources.yaml      the tip source registry (add a source = add a YAML block; confidence starts at 0)
+config/news_sources.yaml the corporate-news wires for the pre-open run (kept apart from the tip sources)
+config/themes.yaml       who actually trades on a piece of news — 13 themes, 66 NSE names, cost-per-unit rules
 config/holidays.yaml     NSE holidays (verify each December)
 state/                   the brain — committed on every run
   ledger.json            paper positions, closed trades, equity curve
@@ -46,9 +64,12 @@ state/                   the brain — committed on every run
   lessons.md             machine + analyst lessons, appended daily
   actions_log.json       the last 20 commands the portal ran, with their output
   price_cache.json       last 60 closes per symbol, for the portal's charts (market data, not a record)
+  daybook.json           the intraday day book — paper trades opened and closed inside one session
+  event_classes.json     what each kind of news has actually been worth (open→high, per class)
   universe_cache.json    NSE symbol master (weekly refresh, seed in data/EQUITY_L.csv)
 reports/<date>/          tips_raw.json → tips_reviewed.json → tips_structured.json → analysis.json → picks.json → morning.md / eod.md
-prompts/                 analyst_persona.md (loaded every run), morning_run.md, eod_run.md (the scheduled-task playbooks)
+prompts/                 analyst_persona.md (loaded every run) + the scheduled-task playbooks:
+                         morning_run.md, eod_run.md, preopen_run.md, session_run.md
 docs/                    the portal (GitHub Pages): index.html + data.json + manifest — five tabs, and every CLI command as a button
 .github/workflows/       desk.yml — the workflow the portal dispatches to run a command and commit the result
 scripts/                 desk_command.py (env → argv, no shell), record_run.py (the visible action log)
@@ -75,6 +96,11 @@ python -m stocktips import-tips --file mojo-paste.txt --dry-run   # read a Marke
 python -m stocktips import-tips --file mojo-paste.txt             # ...and log every call it resolved
 pbpaste | python -m stocktips import-tips --source mojo           # or straight off the clipboard
 python -m stocktips contenders --top 3     # rank today's ideas head to head, with each tipster's claim beside our plan
+python -m stocktips preopen --refresh      # 08:00: overnight corporate news → catalyst scores → preopen.md (the email)
+python -m stocktips intraday               # the session check: the real gap, the real opening range
+python -m stocktips intraday --close       # settle the day at what the tape gave, then grade the news
+python -m stocktips daybook                # the intraday record, and what each kind of news has been worth
+python -m stocktips read --url https://...  # score one story you found yourself  (--add to put it on today's card)
 python -m stocktips analyze-symbol TATASTEEL --tf weekly
 python -m stocktips add-source --kind telegram --id tg_foo --channel foo --name "Telegram — @foo"
 python -m stocktips lesson "Breakouts on 1.5x volume kept failing in a falling Nifty — require Nifty > 20EMA for breakout picks."
@@ -92,11 +118,12 @@ Stops go a hair below the nearest qualifying swing support (≥ 0.6 ATR away, �
 ## The portal
 
 `docs/index.html` is one self-contained page — vanilla JS, Chart.js from cdnjs, Manrope and JetBrains
-Mono from Google Fonts — reading `docs/data.json`. Five tabs, light by default, installable to a phone
+Mono from Google Fonts — reading `docs/data.json`. Six tabs, light by default, installable to a phone
 home screen, and everything the CLI can do is a button on it.
 
 ```
 The book    positions with a 60-session price chart, the plan drawn across it, and a target ladder
+Intraday    today's news candidates, the gap ladder drawn, and what each kind of news has been worth
 Ideas       the final 3 head to head, then every BUY-grade name, sorted by which should pay first
 Journal     equity curve, closed trades, capital flows, the lessons file
 Sources     the confidence table — what each tipster has actually earned
@@ -225,6 +252,128 @@ filled, so it is cancelled and its capital returned, and no outcome is attribute
 nothing happened. An **open** or **hold** position sells at the last close (or `--price`) and is
 recorded as `manual_exit`: the realised return counts towards the source's expectancy, but its score is
 left alone, because the tip did not resolve — it was pre-empted.
+
+## The intraday desk
+
+On 7 September 2026 Power Grid named **GE Vernova T&D India** L1 bidder for a 6,000 MW HVDC terminal
+station at Barmer. The announcement carried a capacity and no rupee value. The stock rose 7.4% that
+day; on the 8th Nomura put the contract at ₹12,980 crore and it ran to about +12% before closing near
++9%. The desk owner read the story mid-morning on the 8th, after the move.
+
+That was a timing loss, not an analysis loss — and the whole of this half of the repo exists to turn
+it into a page on the desk at 08:00.
+
+### The signal has a clock
+
+```
+15:30 IST ─────────── overnight ─────────── 09:15 IST ────── session ────── 15:30 IST
+           ▲ the whole move is still ahead of you        ▲ you are chasing
+```
+
+An order win on the wire at 19:40 is a gift. The same story republished at 11:00 the next day looks
+identical in an RSS feed and is a trap. Freshness is therefore not a tiebreaker in the score, it is
+most of the score.
+
+### Four problems the tip pipeline does not solve
+
+**Events, not recommendations.** `sources/events.py` looks for who, what happened, how big and how
+sure, across 17 classes — including the negative ones, because *do not buy this today and exit it if
+you hold it* is also actionable. "Emerges as L1 bidder" is its own class: in Indian PSU tendering it
+converts almost always, so it carries 80% certainty rather than being read as a signed order.
+
+**The named company is usually not the tradable one.** The headline says *Power Grid secures the
+project*, and POWERGRID is too large to move on its own capex. `config/themes.yaml` maps the event's
+vocabulary to the names that supply the thing, each with a directness weight and a one-line reason you
+can disagree with. Its `buyers` list stops the awarding party being read as the beneficiary of its own
+spending. And a story with a named winner is not a story about the whole theme — GE Vernova won that
+bid and Hitachi Energy did not, so theme peers are demoted to *sympathy* weight rather than emitted as
+equals.
+
+**Size is usually absent, and always relative.** That filing gave a capacity, so the hvdc theme's
+cost-per-unit rule turned 6,000 MW into ≈₹12,600cr — 2.9% off Nomura's number, from the capacity
+alone. What then matters is the ratio: **₹13,000cr against ₹3,900cr of revenue is 3.3 years of sales
+in one letter.** The same order at Larsen & Toubro would be a rounding error. Note also that the
+biggest number in an article is usually the wrong one — that story carries both the ₹12,980cr contract
+and the ₹26,000cr *project* capex, and the supplier only books the first — so amounts are ranked by
+the words they sit beside, not by size.
+
+**A good story on a bad chart is still a bad trade.** Fundamentals gate it, the daily chart
+contextualises it, and liquidity vetoes it outright: below ₹5cr of daily turnover the position cannot
+be exited at the price the plan assumes.
+
+### The catalyst score
+
+Additive, every term carrying its reason in words, so the email explains itself:
+
+```
+event class      order win +30 · L1 bidder +24 · approval +26 · earnings beat +22 · MoU +12
+                 and the negatives: raid −22 · order cancelled −24 · QIP −16 · pledge −18
+materiality      ≥1× revenue +26 · ½–1× +18 · ¼–½× +12 · <10% +2 · unknown 0, and it says so
+fundamentals     ≥70 +10 · 50–69 +4 · <40 −10
+the chart        near the 52w high on volume +8 · below the 200-day −6 · already ran >6% −14
+freshness        overnight +12 · during yesterday's session −8 · older than 36h −20
+corroboration    a second independent wire +3 each, capped
+liquidity        under ₹5cr a day — a veto, not a penalty
+```
+
+`TRADE` at 62, `WATCH` at 45, `AVOID` for the negative classes.
+
+### The plan that stops you buying the top
+
+Never "buy it" — a rule keyed on what the open actually does:
+
+```
+gap ≤ +2%      buy the break of the first 15-minute high; stop under its low
+gap +2 to +5%  the same, but only if that range closes in its top third on >3× normal volume
+gap > +5%      NO fresh entry at the open. A pullback that reclaims VWAP, or nothing.
+```
+
+The third line is the discipline. Targets are measured moves of the opening range, capped at 1.5× the
+daily ATR, because a +15% target on a stock that travels 3% a day is arithmetic and not a plan. The
+stop is never wider than 1.5%, the position is sized by the risk budget rather than the cash, and
+everything is flat by 15:10. The day book (`state/daybook.json`) is deliberately separate from the
+positional ledger: an equity curve means nothing if half its entries are round trips inside one bar
+of the other half.
+
+### The story you found yourself
+
+The article that started this was read on a phone at mid-morning. So there is a path for exactly
+that — `stocktips read --url …` or `--text …`, and a paste box in the Console beside the Markets Mojo
+one. It uses the same extractor, the same beneficiary map and the same catalyst score as the 08:00
+run, so the answer sits beside that run's rather than being a second opinion reached differently.
+`--add` folds it into today's card, and the card records that a story was added by hand.
+
+One subtlety worth knowing: the freshness term measures when the news *landed*, not when you read it,
+so an overnight story pasted at 10:30 still scores +12 for being published outside market hours. That
+is correct about the news and completely silent about the thing that actually cost money. So the read
+is warned about separately — *the market has been open 75 minutes; the score above is what this news
+was worth at the open* — rather than the score being quietly fudged.
+
+### Training it
+
+At 15:20 every candidate is graded on how far it travelled from the open — **whether or not a plan
+ever triggered**, because a story that moved a stock 4% is evidence about that class of news either
+way. One story that moves four related names counts once, using the most direct beneficiary; four
+would let a single afternoon define a class.
+
+Those outcomes move two sets of weights, with the decay the tip sources already use:
+
+* **the news wire** — some are reliably early and some reprint yesterday's move with a new dateline;
+* **the event class** — the priors above are estimates written in one evening. `prior + adjust` is
+  what the scorer actually uses, and evidence can halve or double a class but never invert its sign.
+  The Intraday tab shows that table, so "analyst upgrade · 14 graded · 0% moved · weight 0 (−10)" is
+  visible rather than buried.
+
+There is no model to fit. It is an honest ledger of what each kind of news was worth, kept in git.
+
+### Does this need a server?
+
+Not yet, and `notes/intraday-design.md` sets out why in full. The product is an email at 08:00 and a
+page showing the plan and how it went; a routine sends the email and a static page reads a committed
+JSON. Three things would force a move, and only these three: reacting inside 90 seconds of the wire
+(a different strategy, not a faster one), live quotes in the page during the session rather than the
+last committed check, or placing real orders — which needs a vault for a broker key, and stops this
+being paper trading.
 
 ## Adding sources
 

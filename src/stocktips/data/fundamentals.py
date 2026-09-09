@@ -11,6 +11,7 @@ import logging
 import re
 import time
 from datetime import timedelta
+from urllib.parse import quote
 
 from ..util import http
 
@@ -95,7 +96,7 @@ def _parse(h: str) -> dict:
             net_worth = (eq or 0) + (res or 0)
             d["debt_to_equity"] = round(bor / net_worth, 2) if net_worth > 0 else 9.99
 
-    # Quarterly: last 2 quarters net profit for trend
+    # Quarterly: last 2 quarters net profit for trend, and trailing revenue
     qs = re.search(r'id="quarters".*?</section>', h, re.S)
     if qs:
         vals = _row_values(qs.group(0), "Net Profit")
@@ -103,12 +104,28 @@ def _parse(h: str) -> dict:
             if len(vals) >= 5:
                 d["np_latest_q"], d["np_yoy_q"] = vals[-1], vals[-5]
                 d["np_yoy_growth_pct"] = round((vals[-1] / abs(vals[-5]) - 1) * 100, 1) if vals[-5] else None
+        # Trailing twelve months of sales — the denominator for "is this order material?". The last
+        # four quarters beat the last annual column, which can be nine months stale by Q3.
+        sales_q = _row_values(qs.group(0), "Sales") or _row_values(qs.group(0), "Revenue")
+        if len(sales_q) >= 4:
+            d["revenue_ttm_cr"] = round(sum(sales_q[-4:]), 2)
+            d["revenue_basis"] = "trailing 4 quarters"
+
+    # Annual sales, as the fallback and for the growth read
+    pl = re.search(r'id="profit-loss".*?</section>', h, re.S)
+    if pl:
+        sales_y = _row_values(pl.group(0), "Sales") or _row_values(pl.group(0), "Revenue")
+        if sales_y:
+            d["revenue_fy_cr"] = sales_y[-1]
+            d.setdefault("revenue_ttm_cr", sales_y[-1])
+            d.setdefault("revenue_basis", "last reported financial year")
     return d
 
 
 def fetch(symbol: str) -> dict | None:
+    sym = quote(symbol, safe="")      # GVT&D, M&M: an unencoded "&" cuts the path short
     for mode in ("consolidated/", ""):
-        r = http().get(SCREENER.format(sym=symbol, mode=mode), ttl=timedelta(hours=24))
+        r = http().get(SCREENER.format(sym=sym, mode=mode), ttl=timedelta(hours=24))
         if r is not None and not r.headers.get("X-From-Cache"):
             time.sleep(0.8)   # screener.in rate-limits bursts
         if r is not None and r.status_code == 200 and "Market Cap" in r.text:

@@ -25,6 +25,11 @@ on:
           - add-tip
           - import-tips
           - contenders
+          - preopen
+          - intraday
+          - intraday-close
+          - daybook
+          - read
           - lesson
           - add-source
           - gather

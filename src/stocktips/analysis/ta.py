@@ -14,11 +14,17 @@ def ema(s: pd.Series, n: int) -> pd.Series:
 
 
 def rsi(close: pd.Series, n: int = 14) -> pd.Series:
+    """Wilder's RSI. A window with no down days at all makes the denominator zero — which is not a
+    hypothetical here, it is what an upper-circuit run looks like — so those bars take the
+    conventional extremes (100 with no losses, 0 with no gains) instead of becoming NaN and
+    silently poisoning everything downstream."""
     d = close.diff()
     up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean()
     dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean()
-    rs = up / dn.replace(0, np.nan)
-    return 100 - 100 / (1 + rs)
+    out = 100 - 100 / (1 + up / dn.replace(0, np.nan))
+    out = out.where(~((dn == 0) & (up > 0)), 100.0)
+    out = out.where(~((up == 0) & (dn > 0)), 0.0)
+    return out.where(~((up == 0) & (dn == 0)), 50.0)
 
 
 def atr(df: pd.DataFrame, n: int = 14) -> pd.Series:
