@@ -92,19 +92,12 @@ sources:
     category: corporate
     enabled: true
 
-  - id: corp_mc_buzzing
-    name: "Moneycontrol — buzzing stocks"
-    kind: rss
-    url: https://www.moneycontrol.com/rss/buzzingstocks.xml
-    category: corporate
-    enabled: true
-
-  - id: corp_mc_results
-    name: "Moneycontrol — results"
-    kind: rss
-    url: https://www.moneycontrol.com/rss/results.xml
-    category: corporate
-    enabled: true
+  # Dropped after the first live run, 9 Sep 2026: both returned zero articles, and checking the
+  # feeds directly showed a lastBuildDate stuck in 2024 — Moneycontrol has abandoned these URLs.
+  # A dead wire is not a quiet news day, and leaving it enabled spends budget on nothing.
+  #   corp_mc_buzzing  https://www.moneycontrol.com/rss/buzzingstocks.xml
+  #   corp_mc_results  https://www.moneycontrol.com/rss/results.xml
+  # Moneycontrol is still read through Google News under corp_orders and corp_results.
 
   - id: corp_bs_markets_rss
     name: "Business Standard — markets"
@@ -119,6 +112,7 @@ sources:
     url: https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms
     category: corporate
     enabled: true
+    # unverified as of 10 Sep 2026: the 9 Sep run ran out of article budget before reaching it
 
   # sahi.com is where the GE Vernova story was read too late. Its own feed is unverified from here;
   # the Google News route works regardless of whether the direct feed exists.

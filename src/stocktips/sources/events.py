@@ -30,7 +30,7 @@ from email.utils import parsedate_to_datetime
 
 from ..data.symbols import master as symbol_master, resolve_offline
 from ..util import CONFIG_DIR, load_yaml, short_hash
-from .extract import clean, company_names_in
+from .extract import BOILERPLATE, company_names_in
 
 log = logging.getLogger(__name__)
 
@@ -386,7 +386,21 @@ BEATS = {
     "pledge": {"stake_buy"},
 }
 
-SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+# Newlines matter as much as full stops here. Headlines and ticker items carry no trailing period, so
+# splitting on punctuation alone merges a company's name and an unrelated headline's rupee figure into
+# one "sentence" — which is how a ₹24,700cr shipbuilding number ended up attached to a ₹97.66cr wagon
+# order. `extract.clean` collapses all whitespace, so this module must not use it on the body.
+SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+|\n+")
+
+
+def clean_blocks(text: str) -> str:
+    """Tidy the text without destroying its line structure, and drop boilerplate lines."""
+    lines = []
+    for raw in (text or "").replace("\r\n", "\n").split("\n"):
+        line = re.sub(r"[ \t\xa0]+", " ", raw).strip()
+        if line and not BOILERPLATE.search(line):
+            lines.append(line)
+    return "\n".join(lines)
 
 
 def sentences_about(blob: str, name: str | None) -> list[str]:
@@ -448,8 +462,11 @@ for _winner, _losers in BEATS.items():
 def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
     """One article → one event record per tradable name it implicates. [] when it implicates none."""
     title = doc.get("title") or ""
-    body = clean(doc.get("text") or "")
-    blob = (title + ". " + body)[:12000]
+    body = clean_blocks(doc.get("text") or "")
+    blob = (title + "\n" + body)[:12000]
+    # A body recovered by scraping every paragraph on the page — no article container, no JSON-LD —
+    # is an aggregator or an unparseable layout, and its text is not evidence about who did what.
+    trusted_body = doc.get("body_how") in (None, "", "container", "jsonld")
 
     classes = classify(blob)
     if not classes:
@@ -469,8 +486,16 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
 
     ts = _published_ts(doc.get("published"))
     people = beneficiaries(blob, title, matched_themes)
-    if not people:
-        return []
+    # With a single named subject the article's figure is legitimately about it; with several, a
+    # figure has to be found beside the company it belongs to or not used at all.
+    n_named = sum(1 for b in people if b["route"] == "named")
+    if not trusted_body:
+        # Only what the headline itself says survives: a company named in the title is what the page
+        # is about, and a theme play inferred from untrusted text is two guesses stacked.
+        titled = set(_named_symbols("", title))
+        people = [b for b in people if b["route"] == "named" and b["symbol"] in titled]
+        if not people:
+            return []
     # A headline naming three or more companies is a roundup, not a story about any of them.
     roundup = len(_named_symbols("", title)) >= 3
 
@@ -482,9 +507,15 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
         mine = size
         if who["route"] == "named":
             own = sentences_about(blob, who.get("as_written"))
-            local = [m for m in money_in_crore(" ".join(own), usd_inr) if m["context"] == "contract"]
+            local = [m for m in money_in_crore("\n".join(own), usd_inr) if m["context"] == "contract"]
             if local:
                 mine = {"inr_cr": local[0]["inr_cr"], "estimated": False, "basis": local[0]["text"]}
+            elif n_named > 1:
+                # The article names this company and gives no figure for it. Handing it the
+                # article's biggest number is how "Vishnu Chemicals commissions new plant" acquired
+                # the ₹404.88cr from a railway bid two lines away. Unknown is the honest answer, and
+                # the catalyst score already says so out loud.
+                mine = None
         out.append({
             "id": short_hash(f"{who['symbol']}|{top['event']}|{title[:80]}"),
             "symbol": who["symbol"], "company": who["company"],

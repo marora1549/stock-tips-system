@@ -217,6 +217,11 @@ def _is_subsequence(short: str, long: str) -> bool:
     return all(ch in it for ch in short)
 
 
+PREFIX_MIN_CHARS = 6      # a prefix shorter than this is a fragment, not a name
+PREFIX_MIN_COVER = 0.45   # and it has to be most of the candidate before it means anything
+NAME_MIN_CHARS = 5        # a query this short resolves as a ticker or not at all
+
+
 def _score(query: str, candidate: str) -> float:
     """How well a truncated Mojo name fits a full NSE company name. 0 when it does not."""
     q, c = _tokens(query), _tokens(candidate)
@@ -226,7 +231,12 @@ def _score(query: str, candidate: str) -> float:
         return 1.0
 
     squashed_q, squashed_c = "".join(q), "".join(c)
-    if squashed_c.startswith(squashed_q):                       # "adani enterp" in "adani enterprises"
+    # "adani enterp" in "adani enterprises" — but a *short* prefix is not a name, it is a fragment.
+    # "LGE" is a prefix of "lgelectronics" and scored 0.946, so a ticker headline about "Babcock LGE"
+    # (a UK marine-engineering unit) was filed as LG Electronics India. A prefix has to cover a real
+    # share of the candidate before it means anything.
+    if squashed_c.startswith(squashed_q) and len(squashed_q) >= PREFIX_MIN_CHARS \
+            and len(squashed_q) >= PREFIX_MIN_COVER * len(squashed_c):
         return 0.94 + 0.05 * len(squashed_q) / max(len(squashed_c), 1)
 
     # every query token must open a distinct candidate token, in order: "motil oswal fin"
@@ -273,6 +283,9 @@ def resolve_offline(name: str, master=None, floor: float = 0.72, margin: float =
     if upper in master.by_symbol:                               # they sometimes paste the ticker
         row = master.by_symbol[upper]
         return {"symbol": upper, "company": row["name"], "confidence": 1.0, "method": "symbol", "candidates": []}
+    if len(re.sub(r"[^a-z0-9]+", "", query.lower())) < NAME_MIN_CHARS:
+        out["method"] = "too-short"                             # not a ticker, and too little to match on
+        return out
 
     # Rank on the names as written first. Only when nothing clears the floor is the comparison
     # retried with boilerplate ("ltd", "corpn", "enterprises") stripped off both sides — stripping

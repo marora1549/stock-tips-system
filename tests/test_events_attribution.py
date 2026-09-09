@@ -73,3 +73,60 @@ def test_a_negative_event_beats_a_positive_one_in_the_same_story():
     assert "SUZLON" in got
     assert got["SUZLON"]["sign"] == -1, "a dilution alongside an order win is not a story to buy"
     assert got["SUZLON"]["event"] == "dilution"
+
+
+# ------------------------------------------------------------------ what day one live actually cost
+AGGREGATOR = json.loads((FIX / "news_aggregator_ticker.json").read_text(encoding="utf-8"))
+
+
+def test_an_aggregator_page_yields_only_what_its_headline_is_about():
+    """The first live pre-open run graded two names TRADE and both were wrong.
+
+    The page was an aggregator: a ₹97.66cr wagon-leasing story with a rail of unrelated ticker
+    headlines beside it. The scraper read the whole page as article text, so a "Kendrapara
+    shipbuilding cluster ... Rs 24,700 crore" headline became the order's size (7.9× revenue instead
+    of 3%), and Suzlon — which appears nowhere but in another ticker line — was filed as a named
+    beneficiary of the Jupiter Wagons order.
+    """
+    got = syms(AGGREGATOR, "corp_orders")
+    assert set(got) == {"JWL"}, f"expected only the headline's subject, got {sorted(got)}"
+    assert got["JWL"]["size_inr_cr"] == 97.66, "the size must be the one in its own sentence"
+    assert got["JWL"]["event"] == "order_win"
+
+
+def test_a_body_scraped_from_every_paragraph_is_not_trusted_for_attribution():
+    """`body_how` says how the text was found. `paragraphs` means no article container matched."""
+    trusted = dict(AGGREGATOR, body_how="container")
+    assert len(syms(trusted, "corp_orders")) > 1, "a trusted body may implicate more names"
+    assert set(syms(AGGREGATOR, "corp_orders")) == {"JWL"}
+
+
+def test_a_named_company_with_no_figure_of_its_own_gets_none_not_the_articles_biggest():
+    """"Vishnu Chemicals commissions new plant" acquired ₹404.88cr from a railway bid two lines away."""
+    trusted = dict(AGGREGATOR, body_how="container")
+    got = syms(trusted, "corp_orders")
+    assert got["VISHNU"]["size_inr_cr"] is None
+    assert got["JWL"]["size_inr_cr"] == 97.66
+
+
+def test_a_single_subject_story_still_takes_the_articles_figure():
+    """The fix must not cost the ordinary case, where the article's number is about its subject."""
+    doc = {"url": "u", "title": "Bharat Electronics bags radar order", "body_how": "container",
+           "published": "Tue, 09 Sep 2026 07:00:00 +0530",
+           "text": "The order is worth Rs 900 crore.\nThe company said it won the contract from the "
+                   "Ministry of Defence and will execute it over two years."}
+    assert syms(doc)["BEL"]["size_inr_cr"] == 900.0
+
+
+def test_page_furniture_is_stripped_before_the_body_is_read():
+    from stocktips.sources import fetchers
+    page = ('<html><body><article><p>' + 'Jupiter Wagons said it received an order worth Rs 97.66 '
+            'crore from GATX India for the supply of freight wagons on lease. ' * 3 + '</p></article>'
+            '<aside class="related-news"><p>Kendrapara shipbuilding cluster to draw Rs 24,700 crore</p>'
+            '<p>Suzlon bags new order from Ayana Renewable Power for wind turbines</p></aside>'
+            '<div class="trending-ticker"><p>RVNL wins Rs 404.88 crore rail electrification bid</p></div>'
+            '</body></html>')
+    stripped = fetchers.strip_furniture(page)
+    assert "Jupiter Wagons" in stripped
+    for gone in ("Kendrapara", "Suzlon", "RVNL", "24,700", "404.88"):
+        assert gone not in stripped, f"{gone} survived the furniture strip"
