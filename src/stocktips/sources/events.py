@@ -241,16 +241,21 @@ def themes() -> list[dict]:
     return _THEMES
 
 
+def _kw_present(kw: str, low: str) -> bool:
+    """Word-bounded search — a plain substring check lets "cable" fire on "applicable"."""
+    return re.search(r"(?<!\w)" + re.escape(kw.strip()) + r"(?!\w)", low) is not None
+
+
 def themes_in(text: str) -> list[dict]:
     """Which themes this story belongs to, with the keyword that put it there."""
     low = " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
     hits = []
     for t in themes():
-        got = [k for k in t.get("match", []) if k in low]
+        got = [k for k in t.get("match", []) if _kw_present(k, low)]
         if not got:
             continue
         need = t.get("require")
-        if need and not any(k in low for k in need):
+        if need and not any(_kw_present(k, low) for k in need):
             continue
         hits.append({**t, "matched": got})
     return hits

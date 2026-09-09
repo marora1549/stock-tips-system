@@ -462,6 +462,21 @@ def test_the_gather_stops_when_it_runs_out_of_article_budget(monkeypatch, tmp_pa
     assert asked[-1][1] <= 4
 
 
+def test_news_raw_records_how_each_body_was_read(monkeypatch, tmp_path):
+    """`body_how` decides whether a candidate's attribution is trusted — it must survive into
+    news_raw.json, or nobody reviewing the run can tell how many stories came from an aggregator."""
+    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr(pipeline, "news_sources",
+                        lambda: [{"id": "w0", "kind": "gnews", "enabled": True}])
+
+    def fetch(src, max_age_hours=36, limit=None, deadline=None, **kw):
+        return [{**STORY, "body_how": "paragraphs"}]
+
+    monkeypatch.setattr(pipeline.fetchers, "fetch_source", fetch)
+    raw = pipeline.gather_news()
+    assert raw["docs"][0]["body_how"] == "paragraphs"
+
+
 def test_the_gather_stops_at_the_wall_clock_even_with_budget_left(monkeypatch, tmp_path):
     monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path / "reports")
     monkeypatch.setattr(pipeline, "news_sources",

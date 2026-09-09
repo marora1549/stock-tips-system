@@ -1,0 +1,1172 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09 08:59",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 10
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 16
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 10
+    },
+    "corp_approvals": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 26
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 39,
+  "trade": [],
+  "watch": [
+    {
+      "id": "438770329f",
+      "symbol": "EIEL",
+      "company": "Enviro Infra Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded a major engineering, procurement, and construction (epc) turnkey contract",
+      "also_matched": [
+        "capacity_expansion",
+        "analyst_downgrade",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "roads_infra"
+      ],
+      "size_inr_cr": 189.99,
+      "size_estimated": false,
+      "size_basis": "₹189.99 crore",
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-in-focus-today-enviro-infra-nlc-india-berger-paints-sanofi-india-fusion-finance-and-others/article71445401.ece",
+      "title": "Stocks to watch today: Enviro Infra, NLC India, Berger Paints, Sanofi India, Fusion Finance and others",
+      "published": "Wed, 09 Sep 2026 01:45:15 GMT",
+      "published_utc": "2026-09-09T01:45:15+00:00",
+      "sentence": "awarded a major engineering, procurement, and construction (epc) turnkey contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-in-focus-today-enviro-infra-nlc-india-berger-paints-sanofi-india-fusion-finance-and-others/article71445401.ece"
+      ],
+      "n_reports": 1,
+      "catalyst": 53,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+30 Order win",
+        "+7 ₹190cr against ₹1,263cr of revenue — 0.2× a year's sales, a tenth of a year's revenue",
+        "+10 fundamentals 92/100",
+        "-6 4.3% below the 200-day average — fighting the trend",
+        "+12 published Wed 07:15, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.15,
+      "revenue_ttm_cr": 1263.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 07:15, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 196.2,
+        "atr_pct": 3.19,
+        "expected_day_range_inr": 6.26,
+        "expected_day_range_pct": 3.19,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 92,
+      "fund_why": [
+        "+12 ROCE 20.2%",
+        "+4 ROE 16.8%",
+        "+6 P/E 18.7",
+        "+8 3y profit CAGR 50%",
+        "+6 3y sales CAGR 50%",
+        "+2 D/E 0.34",
+        "+4 promoter 70.19%",
+        "+0 latest qtr PAT YoY 7.1%",
+        "+0 mcap ₹3,444 cr"
+      ],
+      "ltp": 196.1999969482422,
+      "ta": {
+        "trend": "down",
+        "rsi": 42.6,
+        "adx": 22.2,
+        "atr_pct": 3.19,
+        "vol_ratio": 1.32,
+        "chg_1d_pct": -1.07,
+        "chg_5d_pct": 2.82,
+        "dist_52w_high_pct": -28.94,
+        "dist_ema200_pct": -4.28,
+        "avg_turnover_cr": 15.46,
+        "high_52w": 276.1,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 3444.0,
+        "pe": 18.7,
+        "roce": 20.2,
+        "roe": 16.8,
+        "sales_growth_3_years": 50.0,
+        "profit_growth_3_years": 50.0,
+        "promoter_pct": 70.19,
+        "debt_to_equity": 0.34,
+        "revenue_ttm_cr": 1263.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "871c3a7fb3",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "largest private port operator",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1,
+      "catalyst": 49,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+27 Order win (theme at 90%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 80/100",
+        "+12 published Tue 21:35, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 40431.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 21:35, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 1710.0,
+        "atr_pct": 2.16,
+        "expected_day_range_inr": 36.94,
+        "expected_day_range_pct": 2.16,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 80,
+      "fund_why": [
+        "+0 ROCE 14.1%",
+        "+4 ROE 16.4%",
+        "+2 P/E 29.6",
+        "+8 3y profit CAGR 27%",
+        "+6 3y sales CAGR 23%",
+        "+2 D/E 0.66",
+        "+4 promoter 66.03%",
+        "+0 latest qtr PAT YoY 10.2%",
+        "+4 mcap ₹393,977 cr"
+      ],
+      "ltp": 1710.0,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 51.7,
+        "adx": 23.3,
+        "atr_pct": 2.16,
+        "vol_ratio": 0.53,
+        "chg_1d_pct": 0.16,
+        "chg_5d_pct": 7.34,
+        "dist_52w_high_pct": -9.58,
+        "dist_ema200_pct": 4.89,
+        "avg_turnover_cr": 381.97,
+        "high_52w": 1891.1,
+        "momentum_score": 11,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 393977.0,
+        "pe": 29.6,
+        "roce": 14.1,
+        "roe": 16.4,
+        "sales_growth_3_years": 23.0,
+        "profit_growth_3_years": 27.0,
+        "promoter_pct": 66.03,
+        "debt_to_equity": 0.66,
+        "revenue_ttm_cr": 40431.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "df57349c94",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "commercial and defence shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1,
+      "catalyst": 46,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+24 Order win (theme at 80%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 78/100",
+        "+12 published Tue 21:35, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 5047.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 21:35, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 1528.2,
+        "atr_pct": 2.23,
+        "expected_day_range_inr": 34.08,
+        "expected_day_range_pct": 2.23,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 78,
+      "fund_why": [
+        "+6 ROCE 16.2%",
+        "+4 ROE 12.5%",
+        "-2 P/E 59.1",
+        "+8 3y profit CAGR 40%",
+        "+6 3y sales CAGR 29%",
+        "+5 D/E 0.28",
+        "+4 promoter 67.91%",
+        "-5 latest qtr PAT YoY -19.7%",
+        "+2 mcap ₹40,204 cr"
+      ],
+      "ltp": 1528.199951171875,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 58.6,
+        "adx": 12.7,
+        "atr_pct": 2.23,
+        "vol_ratio": 1.02,
+        "chg_1d_pct": 1.45,
+        "chg_5d_pct": 3.54,
+        "dist_52w_high_pct": -22.81,
+        "dist_ema200_pct": 0.12,
+        "avg_turnover_cr": 129.05,
+        "high_52w": 1979.9,
+        "momentum_score": 17,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 40204.0,
+        "pe": 59.1,
+        "roce": 16.2,
+        "roe": 12.5,
+        "sales_growth_3_years": 29.0,
+        "profit_growth_3_years": 40.0,
+        "promoter_pct": 67.91,
+        "debt_to_equity": 0.28,
+        "revenue_ttm_cr": 5047.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "c7a8356174",
+      "symbol": "NLCINDIA",
+      "company": "NLC India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged a wind power project order",
+      "also_matched": [
+        "dilution",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+      "title": "Stocks to watch, Sept 9: Oil-sensitives, Coforge, Raymond, Adani Energy, NLC India, Berger Paints, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:33:39 GMT",
+      "published_utc": "2026-09-09T02:33:39+00:00",
+      "sentence": "bagged a wind power project order",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09",
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 4,
+      "catalyst": 46,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+30 Order win",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 58/100",
+        "-6 4.7% below the 200-day average — fighting the trend",
+        "+12 published Wed 08:03, outside market hours — the move is still ahead of the open",
+        "+6 reported independently by 2 other sources"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 18380.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 08:03, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 272.25,
+        "atr_pct": 2.6,
+        "expected_day_range_inr": 7.08,
+        "expected_day_range_pct": 2.6,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 58,
+      "fund_why": [
+        "+0 ROCE 10.4%",
+        "+4 ROE 17.5%",
+        "+6 P/E 11.8",
+        "+4 3y profit CAGR 16%",
+        "+0 3y sales CAGR 3%",
+        "-2 D/E 1.3",
+        "+4 promoter 69.47%",
+        "-5 promoter stake down -2.73pp in 4q",
+        "-5 latest qtr PAT YoY -48%",
+        "+2 mcap ₹37,751 cr"
+      ],
+      "ltp": 272.25,
+      "ta": {
+        "trend": "down",
+        "rsi": 42.1,
+        "adx": 30.1,
+        "atr_pct": 2.6,
+        "vol_ratio": 0.52,
+        "chg_1d_pct": 1.1,
+        "chg_5d_pct": -0.75,
+        "dist_52w_high_pct": -29.8,
+        "dist_ema200_pct": -4.68,
+        "avg_turnover_cr": 37.91,
+        "high_52w": 387.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 37751.0,
+        "pe": 11.8,
+        "roce": 10.4,
+        "roe": 17.5,
+        "sales_growth_3_years": 3.0,
+        "profit_growth_3_years": 16.0,
+        "promoter_pct": 69.47,
+        "debt_to_equity": 1.3,
+        "revenue_ttm_cr": 18380.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "d5915dfd00",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1,
+      "catalyst": 45,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+8 L1 bidder (80% firm, sympathy at 40%)",
+        "+7 ₹20,000cr against ₹33,785cr of revenue — 0.6× a year's sales, over half a year of revenue",
+        "+10 fundamentals 89/100",
+        "+8 2.3% from the 52-week high on 2.5× volume — breakout-ready",
+        "+12 published Tue 23:48, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.592,
+      "revenue_ttm_cr": 33785.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 23:48, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 24,
+      "direction": "long",
+      "plan": {
+        "reference_close": 5031.1,
+        "atr_pct": 2.16,
+        "expected_day_range_inr": 108.67,
+        "expected_day_range_pct": 2.16,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 89,
+      "fund_why": [
+        "+12 ROCE 32%",
+        "+8 ROE 24%",
+        "+2 P/E 36.1",
+        "+4 3y profit CAGR 16%",
+        "+0 3y sales CAGR 7%",
+        "+5 D/E 0",
+        "+4 promoter 71.64%",
+        "+0 latest qtr PAT YoY 14.9%",
+        "+4 mcap ₹336,467 cr"
+      ],
+      "ltp": 5031.10009765625,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 64.3,
+        "adx": 21.5,
+        "atr_pct": 2.16,
+        "vol_ratio": 2.54,
+        "chg_1d_pct": 3.61,
+        "chg_5d_pct": 4.78,
+        "dist_52w_high_pct": -2.31,
+        "dist_ema200_pct": 11.91,
+        "avg_turnover_cr": 498.96,
+        "high_52w": 5149.9,
+        "momentum_score": 17,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 336467.0,
+        "pe": 36.1,
+        "roce": 32.0,
+        "roe": 24.0,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 16.0,
+        "promoter_pct": 71.64,
+        "debt_to_equity": 0.0,
+        "revenue_ttm_cr": 33785.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "517ed94b7e",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 97.0,
+      "size_estimated": false,
+      "size_basis": "Rs 97 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jupiter-wagons-bags-order-worth-over-rs-97-crore",
+      "title": "Jupiter Wagons bags order worth over Rs 97 crore",
+      "published": "Tue, 08 Sep 2026 22:05:40 GMT",
+      "published_utc": "2026-09-08T22:05:40+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://biginfo.in/news/jupiter-wagons-bags-order-worth-over-rs-97-crore",
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": 45,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+30 Order win",
+        "+2 ₹97cr against ₹3,127cr of revenue — 0.0× a year's sales, small against revenue",
+        "+4 fundamentals 58/100",
+        "-6 13.9% below the 200-day average — fighting the trend",
+        "+12 published Wed 03:35, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": 0.031,
+      "revenue_ttm_cr": 3127.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 03:35, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 242.41,
+        "atr_pct": 2.56,
+        "expected_day_range_inr": 6.21,
+        "expected_day_range_pct": 2.56,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 58,
+      "fund_why": [
+        "+0 ROCE 9.16%",
+        "+0 ROE 6.39%",
+        "-2 P/E 58.2",
+        "+4 3y profit CAGR 15%",
+        "+3 3y sales CAGR 12%",
+        "+2 D/E 0.33",
+        "+4 promoter 68.31%",
+        "-5 latest qtr PAT YoY -16.1%",
+        "+2 mcap ₹10,360 cr"
+      ],
+      "ltp": 242.41000366210938,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 39.3,
+        "adx": 11.3,
+        "atr_pct": 2.56,
+        "vol_ratio": 0.78,
+        "chg_1d_pct": -1.05,
+        "chg_5d_pct": 0.02,
+        "dist_52w_high_pct": -32.33,
+        "dist_ema200_pct": -13.86,
+        "avg_turnover_cr": 15.1,
+        "high_52w": 358.25,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 10360.0,
+        "pe": 58.2,
+        "roce": 9.16,
+        "roe": 6.39,
+        "sales_growth_3_years": 12.0,
+        "profit_growth_3_years": 15.0,
+        "promoter_pct": 68.31,
+        "debt_to_equity": 0.33,
+        "revenue_ttm_cr": 3127.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "avoid": [
+    {
+      "id": "a8642d36fe",
+      "symbol": "RAYMOND",
+      "company": "Raymond Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential allotment",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 214.71,
+      "size_estimated": false,
+      "size_basis": "₹214.71 crore",
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+      "title": "Stocks to watch, Sept 9: Oil-sensitives, Coforge, Raymond, Adani Energy, NLC India, Berger Paints, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:33:39 GMT",
+      "published_utc": "2026-09-09T02:33:39+00:00",
+      "sentence": "preferential allotment",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09"
+      ],
+      "n_reports": 2,
+      "catalyst": 3,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        "+2 ₹215cr against ₹2,294cr of revenue — 0.1× a year's sales, small against revenue",
+        "+4 fundamentals 57/100",
+        "-14 already up 15.8% in the last session — the move may be behind you",
+        "+8 1.3% from the 52-week high on 6.3× volume — breakout-ready",
+        "+5 ADX 32 with the trend up — moves carry here",
+        "+12 published Wed 08:03, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.094,
+      "revenue_ttm_cr": 2294.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 08:03, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 857.8,
+        "atr_pct": 4.07,
+        "expected_day_range_inr": 34.91,
+        "expected_day_range_pct": 4.07,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 57,
+      "fund_why": [
+        "-4 ROCE 3.14%",
+        "+8 ROE 168%",
+        "+2 P/E 34",
+        "+8 3y profit CAGR 109%",
+        "-4 3y sales CAGR -35%",
+        "+2 D/E 0.37",
+        "+0 promoter 48.87%",
+        "-5 latest qtr PAT YoY -99.4%",
+        "+0 mcap ₹5,711 cr"
+      ],
+      "ltp": 857.7999877929688,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 81.7,
+        "adx": 32.3,
+        "atr_pct": 4.07,
+        "vol_ratio": 6.35,
+        "chg_1d_pct": 15.79,
+        "chg_5d_pct": 35.76,
+        "dist_52w_high_pct": -1.29,
+        "dist_ema200_pct": 46.54,
+        "avg_turnover_cr": 159.91,
+        "high_52w": 869.0,
+        "momentum_score": 98,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 5711.0,
+        "pe": 34.0,
+        "roce": 3.14,
+        "roe": 168.0,
+        "sales_growth_3_years": -35.0,
+        "profit_growth_3_years": 109.0,
+        "promoter_pct": 48.87,
+        "debt_to_equity": 0.37,
+        "revenue_ttm_cr": 2294.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "f208a83ec2",
+      "symbol": "BIOCON",
+      "company": "Biocon Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 638.4,
+      "size_estimated": false,
+      "size_basis": "Rs 638.4 crore",
+      "capacity": {
+        "value": 180.0,
+        "unit": "MW",
+        "text": "180 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-biocon-fermenta-biotech-shadowfax-innovision-enviro-infra-engineers-moschip-technologies-raymond-in-focus-on-09-september-14025613.html",
+      "title": "Stocks to Watch Today: Biocon, Fermenta Biotech, Shadowfax, Innovision, Enviro Infra Engineers, Moschip Technologies, Raymond in focus on 09 September",
+      "published": "Wed, 09 Sep 2026 01:15:29 GMT",
+      "published_utc": "2026-09-09T01:15:29+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-biocon-fermenta-biotech-shadowfax-innovision-enviro-infra-engineers-moschip-technologies-raymond-in-focus-on-09-september-14025613.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-biocon-bank-of-baroda-tcs-sanofi-india-and-tata-capital/articleshow/133910314.cms",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09"
+      ],
+      "n_reports": 3,
+      "catalyst": 1,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Broker downgrade (50% firm)",
+        "+2 ₹638cr against ₹17,322cr of revenue — 0.0× a year's sales, small against revenue",
+        " 0 fundamentals 41/100",
+        "-6 1.6% below the 200-day average — fighting the trend",
+        "+12 published Wed 06:45, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.037,
+      "revenue_ttm_cr": 17322.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 06:45, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 392.3,
+        "atr_pct": 2.13,
+        "expected_day_range_inr": 8.36,
+        "expected_day_range_pct": 2.13,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 41,
+      "fund_why": [
+        "-4 ROCE 3.61%",
+        "-4 ROE 1.4%",
+        "-6 P/E 87.9",
+        "-6 3y profit CAGR -15%",
+        "+6 3y sales CAGR 15%",
+        "+2 D/E 0.45",
+        "+0 promoter 44.68%",
+        "-5 promoter stake down -9.77pp in 4q",
+        "+4 latest qtr PAT YoY 53.9%",
+        "+4 mcap ₹63,933 cr"
+      ],
+      "ltp": 392.29998779296875,
+      "ta": {
+        "trend": "down",
+        "rsi": 31.2,
+        "adx": 15.1,
+        "atr_pct": 2.13,
+        "vol_ratio": 1.07,
+        "chg_1d_pct": 0.23,
+        "chg_5d_pct": -2.18,
+        "dist_52w_high_pct": -12.27,
+        "dist_ema200_pct": -1.63,
+        "avg_turnover_cr": 107.28,
+        "high_52w": 447.15,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 63933.0,
+        "pe": 87.9,
+        "roce": 3.61,
+        "roe": 1.4,
+        "sales_growth_3_years": 15.0,
+        "profit_growth_3_years": -15.0,
+        "promoter_pct": 44.68,
+        "debt_to_equity": 0.45,
+        "revenue_ttm_cr": 17322.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

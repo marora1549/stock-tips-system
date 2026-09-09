@@ -1,0 +1,2012 @@
+{
+  "date": "2026-09-09",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 10
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 16
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 10
+    },
+    "corp_approvals": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 26
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "438770329f",
+      "symbol": "EIEL",
+      "company": "Enviro Infra Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded a major engineering, procurement, and construction (epc) turnkey contract",
+      "also_matched": [
+        "capacity_expansion",
+        "analyst_downgrade",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "roads_infra"
+      ],
+      "size_inr_cr": 189.99,
+      "size_estimated": false,
+      "size_basis": "₹189.99 crore",
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-in-focus-today-enviro-infra-nlc-india-berger-paints-sanofi-india-fusion-finance-and-others/article71445401.ece",
+      "title": "Stocks to watch today: Enviro Infra, NLC India, Berger Paints, Sanofi India, Fusion Finance and others",
+      "published": "Wed, 09 Sep 2026 01:45:15 GMT",
+      "published_utc": "2026-09-09T01:45:15+00:00",
+      "sentence": "awarded a major engineering, procurement, and construction (epc) turnkey contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-in-focus-today-enviro-infra-nlc-india-berger-paints-sanofi-india-fusion-finance-and-others/article71445401.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "18c8f9208f",
+      "symbol": "HAZOOR",
+      "company": "Hazoor Multi Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags pudhupatti fee plaza user fee collection contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+      "title": "Hazoor Multi Projects bags Pudhupatti fee plaza user fee collection contract",
+      "published": "Tue, 08 Sep 2026 12:01:13 GMT",
+      "published_utc": "2026-09-08T12:01:13+00:00",
+      "sentence": "bags pudhupatti fee plaza user fee collection contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fc7d660173",
+      "symbol": "INNOVISION",
+      "company": "Innovision Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa",
+      "also_matched": [
+        "dilution",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 243.6,
+      "size_estimated": false,
+      "size_basis": "Rs 243.6 crore",
+      "capacity": {
+        "value": 200.0,
+        "unit": "MW",
+        "text": "200 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09",
+      "title": "Top stocks in news: Biocon, TCS, Bank of Baroda, NLC India, Innovision, GE Shipping, Moschip, Raymond",
+      "published": "Wed, 09 Sep 2026 02:02:31 GMT",
+      "published_utc": "2026-09-09T02:02:31+00:00",
+      "sentence": "received a letter of award (loa",
+      "corroborating_sources": [
+        "corp_orders_bse",
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09",
+        "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "517ed94b7e",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 97.0,
+      "size_estimated": false,
+      "size_basis": "Rs 97 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jupiter-wagons-bags-order-worth-over-rs-97-crore",
+      "title": "Jupiter Wagons bags order worth over Rs 97 crore",
+      "published": "Tue, 08 Sep 2026 22:05:40 GMT",
+      "published_utc": "2026-09-08T22:05:40+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://biginfo.in/news/jupiter-wagons-bags-order-worth-over-rs-97-crore",
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "c7a8356174",
+      "symbol": "NLCINDIA",
+      "company": "NLC India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged a wind power project order",
+      "also_matched": [
+        "dilution",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+      "title": "Stocks to watch, Sept 9: Oil-sensitives, Coforge, Raymond, Adani Energy, NLC India, Berger Paints, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:33:39 GMT",
+      "published_utc": "2026-09-09T02:33:39+00:00",
+      "sentence": "bagged a wind power project order",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09",
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "9611535023",
+      "symbol": "SJVN",
+      "company": "SJVN Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+      "title": "NLC India subsidiary gets Letter of Award for 200 MW wind project from SJVN",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "published_utc": "2026-09-08T16:34:15+00:00",
+      "sentence": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "871c3a7fb3",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "largest private port operator",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c5f8b8b266",
+      "symbol": "ABBOTINDIA",
+      "company": "Abbott India Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives fda approval",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1.05,
+      "size_estimated": false,
+      "size_basis": "10.5 million (no order wording nearby)",
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://grafa.com/en/news/united-states/abbott-fda-approval-tactiflex-duo-afib-ablation-catheter",
+      "title": "Abbott receives FDA approval for AFib ablation catheter",
+      "published": "Tue, 08 Sep 2026 14:58:44 GMT",
+      "published_utc": "2026-09-08T14:58:44+00:00",
+      "sentence": "receives fda approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://grafa.com/en/news/united-states/abbott-fda-approval-tactiflex-duo-afib-ablation-catheter",
+        "https://www.stocktitan.net/news/ABT/abbott-receives-fda-approval-for-its-tacti-flex-tm-duo-ablation-e3bxipmko0u3.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "df57349c94",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "commercial and defence shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e446dd72b",
+      "symbol": "GVT&D",
+      "company": "GE Vernova T&D India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "one of two Indian HVDC terminal suppliers with a local LCC line",
+      "theme": "hvdc",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "88393eab04",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9e8b075365",
+      "symbol": "BSOFT",
+      "company": "BIRLASOFT LIMITED",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit surges",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/birlasoft-q1-results-net-profit-jumps-51-yoy-to-1-610-mn/46782282",
+      "title": "Birlasoft Q1FY27 net profit surges 51% to ₹1,610 Mn on margin gains",
+      "published": "Tue, 08 Sep 2026 10:26:46 GMT",
+      "published_utc": "2026-09-08T10:26:46+00:00",
+      "sentence": "net profit surges",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/birlasoft-q1-results-net-profit-jumps-51-yoy-to-1-610-mn/46782282"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "83e807738d",
+      "symbol": "GRSE",
+      "company": "Garden Reach Shipbuilders & Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.7,
+      "why_this_name": "shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8d159b83e5",
+      "symbol": "POWERINDIA",
+      "company": "Hitachi Energy India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "substation automation and switchgear",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "15dd776279",
+      "symbol": "SCI",
+      "company": "Shipping Corporation Of India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.6,
+      "why_this_name": "Shipping Corporation of India",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "published_utc": "2026-09-08T16:05:05+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a8642d36fe",
+      "symbol": "RAYMOND",
+      "company": "Raymond Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential allotment",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 214.71,
+      "size_estimated": false,
+      "size_basis": "₹214.71 crore",
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+      "title": "Stocks to watch, Sept 9: Oil-sensitives, Coforge, Raymond, Adani Energy, NLC India, Berger Paints, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:33:39 GMT",
+      "published_utc": "2026-09-09T02:33:39+00:00",
+      "sentence": "preferential allotment",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "f208a83ec2",
+      "symbol": "BIOCON",
+      "company": "Biocon Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 638.4,
+      "size_estimated": false,
+      "size_basis": "Rs 638.4 crore",
+      "capacity": {
+        "value": 180.0,
+        "unit": "MW",
+        "text": "180 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-biocon-fermenta-biotech-shadowfax-innovision-enviro-infra-engineers-moschip-technologies-raymond-in-focus-on-09-september-14025613.html",
+      "title": "Stocks to Watch Today: Biocon, Fermenta Biotech, Shadowfax, Innovision, Enviro Infra Engineers, Moschip Technologies, Raymond in focus on 09 September",
+      "published": "Wed, 09 Sep 2026 01:15:29 GMT",
+      "published_utc": "2026-09-09T01:15:29+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-biocon-fermenta-biotech-shadowfax-innovision-enviro-infra-engineers-moschip-technologies-raymond-in-focus-on-09-september-14025613.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-biocon-bank-of-baroda-tcs-sanofi-india-and-tata-capital/articleshow/133910314.cms",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "1f01ebc135",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 49000.0,
+      "size_estimated": false,
+      "size_basis": "Rs. 49,000 crore (no order wording nearby)",
+      "capacity": {
+        "value": 3000.0,
+        "unit": "MW",
+        "text": "3 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869",
+      "title": "KUSUM Comp-C: Torrent Green Commissions 322 MWp Solar Projects in Maharashtra",
+      "published": "Tue, 08 Sep 2026 08:42:10 GMT",
+      "published_utc": "2026-09-08T08:42:10+00:00",
+      "sentence": "secured the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "006ce2fffc",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 219.07,
+      "size_estimated": false,
+      "size_basis": "₹219.07 crore",
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+      "title": "Innovision bags order worth Rs 219 crore from NHAI for toll collection on Indore–Dewas highway",
+      "published": "Tue, 08 Sep 2026 11:20:12 GMT",
+      "published_utc": "2026-09-08T11:20:12+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+        "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "36a6e50806",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+      "title": "NLC India subsidiary gets Letter of Award for 200 MW wind project from SJVN",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "published_utc": "2026-09-08T16:34:15+00:00",
+      "sentence": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "05f1f09d10",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 219.07,
+      "size_estimated": false,
+      "size_basis": "₹219.07 crore",
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+      "title": "Innovision bags order worth Rs 219 crore from NHAI for toll collection on Indore–Dewas highway",
+      "published": "Tue, 08 Sep 2026 11:20:12 GMT",
+      "published_utc": "2026-09-08T11:20:12+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+        "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "6faf48b7cc",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+      "title": "NLC India subsidiary gets Letter of Award for 200 MW wind project from SJVN",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "published_utc": "2026-09-08T16:34:15+00:00",
+      "sentence": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "ed0c973281",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 219.07,
+      "size_estimated": false,
+      "size_basis": "₹219.07 crore",
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+      "title": "Innovision bags order worth Rs 219 crore from NHAI for toll collection on Indore–Dewas highway",
+      "published": "Tue, 08 Sep 2026 11:20:12 GMT",
+      "published_utc": "2026-09-08T11:20:12+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+        "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "8da802c670",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 49000.0,
+      "size_estimated": false,
+      "size_basis": "Rs. 49,000 crore (no order wording nearby)",
+      "capacity": {
+        "value": 3000.0,
+        "unit": "MW",
+        "text": "3 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869",
+      "title": "KUSUM Comp-C: Torrent Green Commissions 322 MWp Solar Projects in Maharashtra",
+      "published": "Tue, 08 Sep 2026 08:42:10 GMT",
+      "published_utc": "2026-09-08T08:42:10+00:00",
+      "sentence": "secured the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "69caf6afff",
+      "symbol": "TCS",
+      "company": "Tata Consultancy Services Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "roads_infra"
+      ],
+      "size_inr_cr": 122.6,
+      "size_estimated": false,
+      "size_basis": "₹ 122.6 crore",
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-innovision-tcs-bank-of-baroda-shares-on-wed-9-sept-triggers-11788875139167.html",
+      "title": "Top stocks in focus today: Investors must watch Innovision, TCS, Bank of Baroda shares on Wed, 9 Sept | Triggers",
+      "published": "Tue, 08 Sep 2026 18:30:19 GMT",
+      "published_utc": "2026-09-08T18:30:19+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-innovision-tcs-bank-of-baroda-shares-on-wed-9-sept-triggers-11788875139167.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5656d36132",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a significant order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 219.0,
+      "size_estimated": false,
+      "size_basis": "Rs 219 cr",
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html",
+      "title": "Jupiter Wagons inks Rs 97.66-cr wagon purchase agreement with GATX India",
+      "published": "Tue, 08 Sep 2026 12:21:34 GMT",
+      "published_utc": "2026-09-08T12:21:34+00:00",
+      "sentence": "secured a significant order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d81e1e1ddd",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 49000.0,
+      "size_estimated": false,
+      "size_basis": "Rs. 49,000 crore (no order wording nearby)",
+      "capacity": {
+        "value": 3000.0,
+        "unit": "MW",
+        "text": "3 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869",
+      "title": "KUSUM Comp-C: Torrent Green Commissions 322 MWp Solar Projects in Maharashtra",
+      "published": "Tue, 08 Sep 2026 08:42:10 GMT",
+      "published_utc": "2026-09-08T08:42:10+00:00",
+      "sentence": "secured the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c23cc8aeae",
+      "symbol": "GRINFRA",
+      "company": "G R Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "G R Infraprojects",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 219.07,
+      "size_estimated": false,
+      "size_basis": "₹219.07 crore",
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+      "title": "Innovision bags order worth Rs 219 crore from NHAI for toll collection on Indore–Dewas highway",
+      "published": "Tue, 08 Sep 2026 11:20:12 GMT",
+      "published_utc": "2026-09-08T11:20:12+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+        "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "4745ca9ada",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ce12fe346a",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d5915dfd00",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4aa2421750",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": 26000.0,
+      "size_estimated": false,
+      "size_basis": "₹26,000 crore",
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4f3726f8c3",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": 26000.0,
+      "size_estimated": false,
+      "size_basis": "₹26,000 crore",
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4d597bcc7d",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8fb55f8fdd",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+      "title": "NLC India subsidiary gets Letter of Award for 200 MW wind project from SJVN",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "published_utc": "2026-09-08T16:34:15+00:00",
+      "sentence": "received a letter of award (loa) from sjvn ltd for development of a 200 mw wind power project",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+        "https://www.tradingview.com/news/cnbctv:046d53622094b:0/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "a5bfc810be",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 49000.0,
+      "size_estimated": false,
+      "size_basis": "Rs. 49,000 crore (no order wording nearby)",
+      "capacity": {
+        "value": 3000.0,
+        "unit": "MW",
+        "text": "3 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869",
+      "title": "KUSUM Comp-C: Torrent Green Commissions 322 MWp Solar Projects in Maharashtra",
+      "published": "Tue, 08 Sep 2026 08:42:10 GMT",
+      "published_utc": "2026-09-08T08:42:10+00:00",
+      "sentence": "secured the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ac6b5618c2",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": 26000.0,
+      "size_estimated": false,
+      "size_basis": "₹26,000 crore",
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "df3c9a2d8d",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "published_utc": "2026-09-08T18:18:17+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0ce244b774",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "hvdc",
+        "transmission_epc",
+        "data_centre"
+      ],
+      "size_inr_cr": 26000.0,
+      "size_estimated": false,
+      "size_basis": "₹26,000 crore",
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MW",
+        "text": "6,000 Mw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "published_utc": "2026-09-08T15:00:51+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-in-focus-today-enviro-infra-nlc-india-berger-paints-sanofi-india-fusion-finance-and-others/article71445401.ece",
+      "title": "Stocks to watch today: Enviro Infra, NLC India, Berger Paints, Sanofi India, Fusion Finance and others",
+      "published": "Wed, 09 Sep 2026 01:45:15 GMT",
+      "chars": 8285,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-biocon-fermenta-biotech-shadowfax-innovision-enviro-infra-engineers-moschip-technologies-raymond-in-focus-on-09-september-14025613.html",
+      "title": "Stocks to Watch Today: Biocon, Fermenta Biotech, Shadowfax, Innovision, Enviro Infra Engineers, Moschip Technologies, Raymond in focus on 09 September",
+      "published": "Wed, 09 Sep 2026 01:15:29 GMT",
+      "chars": 9022,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sun-pharma-suzlon-energy-omcs-biocon-ihcl-tata-power-126090900126_1.html",
+      "title": "Stocks to watch: Sun Pharma, Suzlon Energy, OMCs, Biocon, IHCL, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:39:59 GMT",
+      "chars": 6815,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-9-oil-sensitives-coforge-raymond-adani-energy-nlc-india-berger-paints-tata-power/article-199993/",
+      "title": "Stocks to watch, Sept 9: Oil-sensitives, Coforge, Raymond, Adani Energy, NLC India, Berger Paints, Tata Power",
+      "published": "Wed, 09 Sep 2026 02:33:39 GMT",
+      "chars": 9259,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-biocon-bank-of-baroda-tcs-sanofi-india-and-tata-capital/articleshow/133910314.cms",
+      "title": "Stocks in news: Biocon, Bank of Baroda, TCS, Sanofi India and Tata Capital",
+      "published": "Wed, 09 Sep 2026 00:30:00 GMT",
+      "chars": 8510,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-biocon-tcs-bank-of-baroda-nlc-india-innovision-ge-shipping-moschip-raymond-554118-2026-09-09",
+      "title": "Top stocks in news: Biocon, TCS, Bank of Baroda, NLC India, Innovision, GE Shipping, Moschip, Raymond",
+      "published": "Wed, 09 Sep 2026 02:02:31 GMT",
+      "chars": 5248,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-innovision-tcs-bank-of-baroda-shares-on-wed-9-sept-triggers-11788875139167.html",
+      "title": "Top stocks in focus today: Investors must watch Innovision, TCS, Bank of Baroda shares on Wed, 9 Sept | Triggers",
+      "published": "Tue, 08 Sep 2026 18:30:19 GMT",
+      "chars": 5313,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/news/defence/tata-emerges-lowest-bidder-for-rs-20000-crore-project-zorawar-light-tank-mahindra-to-also-develop-prototype/articleshow/133937116.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank; Mahindra to also develop protot",
+      "published": "Tue, 08 Sep 2026 18:18:17 GMT",
+      "chars": 3179,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jupiter-wagons-bags-order-worth-over-rs-97-crore",
+      "title": "Jupiter Wagons bags order worth over Rs 97 crore",
+      "published": "Tue, 08 Sep 2026 22:05:40 GMT",
+      "chars": 700,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/nlc-india-share-price-subsidiary-gets-letter-of-award-for-200-mw-wind-project-from-sjvn-19986994.htm",
+      "title": "NLC India subsidiary gets Letter of Award for 200 MW wind project from SJVN",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "chars": 2063,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/rvnl-lowest-bidder-for-rs-4048.8-million-east-coast-rail-project/97072",
+      "title": "RVNL Lowest Bidder For Rs 4,048.8 Million East Coast Rail Project",
+      "published": "Tue, 08 Sep 2026 10:06:17 GMT",
+      "chars": 6034,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://inspenet.com/en/news/babcock-lge-contract-four-new-vlgc/",
+      "title": "Babcock LGE secures contract for four new VLGCs",
+      "published": "Tue, 08 Sep 2026 16:05:05 GMT",
+      "chars": 4358,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.moneycontrol.com/news/business/markets/innovision-shares-in-focus-on-nhai-toll-collection-contract-in-madhya-pradesh-14025498.html",
+      "title": "Innovision shares in focus on NHAI toll collection contract in Madhya Pradesh",
+      "published": "Wed, 09 Sep 2026 01:34:38 GMT",
+      "chars": 3495,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businesstoday.in/markets/stocks/story/adani-energy-shares-in-focus-as-arm-signs-2500-mw-power-deal-with-msedcl-554125-2026-09-09",
+      "title": "Adani Energy shares in focus as arm signs 2,500 MW power deal with MSEDCL",
+      "published": "Wed, 09 Sep 2026 02:49:05 GMT",
+      "chars": 3149,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:046d53622094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-08 — cnbctv:046d53622094b:0",
+      "published": "Tue, 08 Sep 2026 16:34:15 GMT",
+      "chars": 1835,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.businessupturn.com/business/innovision-bags-order-worth-rs-219-crore-from-nhai-for-toll-collection-on-indore-dewas-highway/",
+      "title": "Innovision bags order worth Rs 219 crore from NHAI for toll collection on Indore–Dewas highway",
+      "published": "Tue, 08 Sep 2026 11:20:12 GMT",
+      "chars": 2315,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://m.economictimes.com/industry/healthcare/biotech/pharmaceuticals/sandoz-bets-big-on-biosimilars-aims-to-double-group-sales-by-2035/articleshow/133939416.cms",
+      "title": "Sandoz bets big on biosimilars, aims to double group sales by 2035",
+      "published": "Tue, 08 Sep 2026 19:14:38 GMT",
+      "chars": 4056,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/gland-pharma-scheduled-to-interact-with-institutional-investors-in-september-2026-3013-PE1_COR",
+      "title": "Gland Pharma Scheduled to Interact with Institutional Investors in September 2026",
+      "published": "Tue, 08 Sep 2026 16:23:21 GMT",
+      "chars": 4243,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://m.economictimes.com/industry/healthcare/biotech/pharmaceuticals/sun-pharma-gets-ratings-boost-from-moodys-sp-over-usd-11-75-bn-organon-co-acquisition-bid/articleshow/133920411.cms",
+      "title": "Sun Pharma gets ratings boost from Moody's, S&P over USD 11.75-bn Organon & Co acquisition bid",
+      "published": "Tue, 08 Sep 2026 10:32:54 GMT",
+      "chars": 3240,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://grafa.com/en/news/united-states/abbott-fda-approval-tactiflex-duo-afib-ablation-catheter",
+      "title": "Abbott receives FDA approval for AFib ablation catheter",
+      "published": "Tue, 08 Sep 2026 14:58:44 GMT",
+      "chars": 1769,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/biocon-partners-with-bahiafarma-bionovis-for-pertuzumab-under-brazils-10-year-pdp-program-178902",
+      "title": "Biocon Partners With Bahiafarma, Bionovis for Pertuzumab Under Brazil's 10-Year PDP Program",
+      "published": "Tue, 08 Sep 2026 14:24:31 GMT",
+      "chars": 5241,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/lupin-plans-analyst-investor-meetings-september-17-21/50414644",
+      "title": "Lupin to attend Kotak, J.P. Morgan investor meets in September",
+      "published": "Tue, 08 Sep 2026 15:21:18 GMT",
+      "chars": 2327,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.stocktitan.net/news/ABT/abbott-receives-fda-approval-for-its-tacti-flex-tm-duo-ablation-e3bxipmko0u3.html",
+      "title": "10.5 million people in the U.S. live with hearts that beat too fast, too slow or irregularly. Abbott gets FDA approval.",
+      "published": "Tue, 08 Sep 2026 12:00:00 GMT",
+      "chars": 16301,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://markets.financialcontent.com/wral/article/bizwire-2026-9-9-bbnx-investor-alert-securities-class-action-filed-against-beta-bionics-inc-investors-encouraged-to-contact-kirby-mcinerney-llp",
+      "title": "Securities Class Action Filed Against Beta Bionics, Inc. – Investors Encouraged to Contact Kirby McInerney LLP",
+      "published": "Wed, 09 Sep 2026 00:00:00 GMT",
+      "chars": 4731,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://medshadow.org/drug-updates-recalls/fda-recalls-and-warnings/sildenafil-tadalafil-erectile-dysfunction-ingredient-recall/",
+      "title": "FDA Recalls and Warnings: Erectile Dysfunction Drug Ingredients Recalled Over Serious Quality Control Concerns",
+      "published": "Tue, 08 Sep 2026 19:31:35 GMT",
+      "chars": 20000,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vama-industries-sets-sep-2-board-meeting-fy26-results-agm-date/49469510",
+      "title": "Vama Industries revenue falls 77% in FY26; standalone profit drops to ₹2.1 lakh",
+      "published": "Tue, 08 Sep 2026 20:54:05 GMT",
+      "chars": 3414,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/apnimed-q2-results-eps-beats-estimates-sales-12-08m/50446306",
+      "title": "Apnimed Q2 Results: EPS beats estimates, sales at $12.08M",
+      "published": "Tue, 08 Sep 2026 21:38:39 GMT",
+      "chars": 1765,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/seshachal-technologies-schedules-32nd-agm-september-30-2026/50398271",
+      "title": "Seshachal Technologies profit falls 91% in FY26 as revenue doubles",
+      "published": "Tue, 08 Sep 2026 07:34:23 GMT",
+      "chars": 3844,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/everest-organics-fy26-results-net-profit-turns-positive-554-65-lakh/50414048",
+      "title": "Everest Organics FY26 Results: Net profit turns positive at ₹554.65 lakh",
+      "published": "Tue, 08 Sep 2026 11:56:21 GMT",
+      "chars": 3917,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/birlasoft-q1-results-net-profit-jumps-51-yoy-to-1-610-mn/46782282",
+      "title": "Birlasoft Q1FY27 net profit surges 51% to ₹1,610 Mn on margin gains",
+      "published": "Tue, 08 Sep 2026 10:26:46 GMT",
+      "chars": 5455,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/aarey-drugs-closes-books-36th-agm-september-24-30/50428548",
+      "title": "Aarey Drugs closes books for 36th AGM from September 24 to 30",
+      "published": "Tue, 08 Sep 2026 16:01:33 GMT",
+      "chars": 3242,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/caspian-corporate-services-schedules-board-meeting-sept-4/49815416",
+      "title": "Caspian Corporate Services sets book closure dates for 15th AGM",
+      "published": "Tue, 08 Sep 2026 16:53:31 GMT",
+      "chars": 5514,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/sarup-industries-schedules-47th-agm-september-30-2026/50399846",
+      "title": "Sarup Industries schedules 47th AGM for September 30, 2026",
+      "published": "Tue, 08 Sep 2026 08:00:33 GMT",
+      "chars": 4110,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/kusum-comp-c-torrent-green-commissions-322-mwp-solar-projects-in-maharashtra-12505869",
+      "title": "KUSUM Comp-C: Torrent Green Commissions 322 MWp Solar Projects in Maharashtra",
+      "published": "Tue, 08 Sep 2026 08:42:10 GMT",
+      "chars": 3577,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/torrent-power-launches-322-mwp-solar-projects-nashik-maharashtra/50391738",
+      "title": "Torrent Power commissions 322 MWp solar projects in Maharashtra under MSKVY",
+      "published": "Tue, 08 Sep 2026 09:54:06 GMT",
+      "chars": 2857,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/08/torrent-power-commissions-322-mwp-decentralized-solar-portfolio-in-maharashtra/",
+      "title": "Torrent Power Commissions 322 MWp Decentralized Solar Portfolio In Maharashtra",
+      "published": "Tue, 08 Sep 2026 11:49:51 GMT",
+      "chars": 3512,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://tradebrains.in/indian-markets/torrent-green-energy-commissions-322-mwp-decentralized-solar-capacity-across-50-sites-in-nashik-12506703",
+      "title": "Torrent Green Energy Commissions 322 MWp Decentralized Solar Capacity Across 50 Sites In Nashik",
+      "published": "Tue, 08 Sep 2026 09:41:26 GMT",
+      "chars": 5675,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.financialexpress.com/business/industry-torrent-green-energy-commissions-322-mw-solar-projects-across-50-sites-in-maharashtra-4334350/lite/",
+      "title": "Torrent Green Energy commissions 322 MW solar projects across 50 sites in Maharashtra",
+      "published": "Tue, 08 Sep 2026 11:26:31 GMT",
+      "chars": 3120,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/finance/stock-market/stocks-to-watch-today-september-9-heg-biocon-berger-paints-csb-bank-bank-of-baroda/",
+      "title": "Stocks to watch today, September 9: HEG, Biocon, Berger Paints, CSB Bank, Bank of Baroda and more",
+      "published": "Wed, 09 Sep 2026 02:45:13 GMT",
+      "chars": 2373,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/hazoor-multi-projects-bags-pudhupatti-fee-plaza-user-fee-collection-contract-126090801098_1.html",
+      "title": "Hazoor Multi Projects bags Pudhupatti fee plaza user fee collection contract",
+      "published": "Tue, 08 Sep 2026 12:01:13 GMT",
+      "chars": 1286,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/ge-vernova-t-d-s-hvdc-order-win-boosts-long-term-revenue-visibility-126090801487_1.html",
+      "title": "Order inflow boost, revenue visibility for GE Vernova T&D India",
+      "published": "Tue, 08 Sep 2026 15:00:51 GMT",
+      "chars": 4900,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/areion-s-maiden-gift-city-fund-secures-usd-50-million-in-commitments-within-three-months-of-launch-126090800934_1.html",
+      "title": "Areion's maiden GIFT City fund secures USD 50 million in commitments within three months of launch",
+      "published": "Tue, 08 Sep 2026 11:00:02 GMT",
+      "chars": 3796,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-pachwara-plaza-toll-collection-contract-worth-rs-24-52-cr-126090801179_1.html",
+      "title": "Innovision bags NHAI's Pachwara plaza toll collection contract worth Rs 24.52 cr",
+      "published": "Tue, 08 Sep 2026 12:21:27 GMT",
+      "chars": 1336,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/innovision-bags-nhai-s-toll-collection-contract-worth-rs-219-cr-126090801162_1.html",
+      "title": "Innovision bags NHAI's toll collection contract worth Rs 219 cr",
+      "published": "Tue, 08 Sep 2026 12:20:10 GMT",
+      "chars": 1318,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/tcs-secures-bid-to-build-ai-enabled-digital-governance-platform-for-odisha-government-126090800903_1.html",
+      "title": "TCS secures bid to build AI-enabled digital governance platform for Odisha Government",
+      "published": "Tue, 08 Sep 2026 10:36:45 GMT",
+      "chars": 3148,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jupiter-wagons-inks-rs-97-66-cr-wagon-purchase-agreement-with-gatx-india-126090801180_1.html",
+      "title": "Jupiter Wagons inks Rs 97.66-cr wagon purchase agreement with GATX India",
+      "published": "Tue, 08 Sep 2026 12:21:34 GMT",
+      "chars": 1520,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ascensive-receives-tribal-youth-skill-development-mandate-in-maharashtra-126090801123_1.html",
+      "title": "Ascensive receives tribal youth skill development mandate in Maharashtra",
+      "published": "Tue, 08 Sep 2026 12:02:48 GMT",
+      "chars": 1272,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/park-medi-world-sets-up-subsidiary-for-prayagraj-hospital-126090900139_1.html",
+      "title": "Park Medi World sets up subsidiary for Prayagraj hospital",
+      "published": "Wed, 09 Sep 2026 08:31:02 +0530",
+      "chars": 195,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sun-pharma-suzlon-energy-omcs-biocon-ihcl-tata-power-126090900126_1.html",
+      "title": "Stocks to watch: Sun Pharma, Suzlon Energy, OMCs, Biocon, IHCL, Tata Power",
+      "published": "Wed, 09 Sep 2026 08:09:59 +0530",
+      "chars": 186,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-jump-1-in-early-trade-amid-escalating-us-iran-tensions-126090900104_1.html",
+      "title": "Oil heads for $100, Asia stocks subdued as West Asia tensions escalate",
+      "published": "Wed, 09 Sep 2026 07:59:29 +0530",
+      "chars": 97,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/hal-divis-labs-among-3-stocks-mofsl-s-chandan-taparia-is-bullish-on-126090900119_1.html",
+      "title": "HAL, Divis Labs among 3 stocks MOFSL's Chandan Taparia is bullish on",
+      "published": "Wed, 09 Sep 2026 07:49:01 +0530",
+      "chars": 159,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-9-nse-bse-sensex-today-nifty50-gift-nifty-brent-crude-oil-prices-126090900115_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals gap-down open; Asia mkts mixed; Brent above $99",
+      "published": "Wed, 09 Sep 2026 07:48:26 +0530",
+      "chars": 151,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-outlook-2-technical-stock-ideas-for-today-by-hdfc-sec-s-vinay-rajani-126090900116_1.html",
+      "title": "Nifty outlook, 2 technical stock ideas for today by HDFC Sec's Vinay Rajani",
+      "published": "Wed, 09 Sep 2026 07:39:59 +0530",
+      "chars": 102,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/6-ipos-open-today-experts-weigh-top-bets-amid-crowded-primary-market-126090900113_1.html",
+      "title": "6 IPOs open today: Experts weigh top bets amid crowded primary market",
+      "published": "Wed, 09 Sep 2026 07:19:32 +0530",
+      "chars": 166,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/closing-auction-leaves-retail-options-traders-caught-both-ways-126090801400_1.html",
+      "title": "Closing auction leaves retail options traders caught both ways",
+      "published": "Tue, 08 Sep 2026 22:40:30 +0530",
+      "chars": 69,
+      "body_how": "none"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_et_markets_rss",
+      "why": "out of article budget"
+    },
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 59.9
+}

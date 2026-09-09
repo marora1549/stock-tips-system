@@ -118,6 +118,14 @@ def test_a_single_subject_story_still_takes_the_articles_figure():
     assert syms(doc)["BEL"]["size_inr_cr"] == 900.0
 
 
+def test_a_theme_keyword_does_not_fire_inside_an_unrelated_word():
+    """"applicable law" contains the literal substring "cable" — a live US securities-suit wire hit
+    the power_cables theme this way and fanned a Beta Bionics lawsuit out to five Indian cable
+    stocks as a regulatory-action AVOID. Keyword matching must respect word boundaries."""
+    assert events.themes_in("under the applicable law and ethical rules") == []
+    assert events.themes_in("KEI supplies EHV cable to the project") != []
+
+
 def test_page_furniture_is_stripped_before_the_body_is_read():
     from stocktips.sources import fetchers
     page = ('<html><body><article><p>' + 'Jupiter Wagons said it received an order worth Rs 97.66 '
