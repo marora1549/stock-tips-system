@@ -220,3 +220,20 @@ def test_the_comparison_states_both_sides():
 def test_a_held_name_is_flagged_as_held():
     top = contenders.rank([_idea("MINE", 70, 10)], n=1, held={"MINE"})
     assert top[0]["held"] is True
+
+
+# ------------------------------------------------------------------ fragments are not names
+def test_a_short_fragment_never_resolves_to_a_company():
+    """"LGE" is a prefix of "lgelectronics" and used to score 0.946, so a ticker headline about
+    "Babcock LGE" — a UK marine-engineering unit — was filed as LG Electronics India."""
+    from stocktips.data import symbols
+    master = FakeMaster([("LGEINDIA", "LG Electronics India Limited"),
+                         ("TATASTEEL", "Tata Steel Limited"),
+                         ("RELIANCE", "Reliance Industries Limited")])
+    for fragment in ("LGE", "TAT", "REL", "GE", "IND"):
+        hit = symbols.resolve_offline(fragment, master, floor=0.72)
+        assert hit["symbol"] is None, f"{fragment} resolved to {hit['symbol']}"
+    assert symbols.resolve_offline("Babcock LGE", master, floor=0.72)["symbol"] is None
+    # the full names still work
+    assert symbols.resolve_offline("LG Electronics India", master)["symbol"] == "LGEINDIA"
+    assert symbols.resolve_offline("Tata Steel", master)["symbol"] == "TATASTEEL"
