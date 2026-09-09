@@ -448,8 +448,9 @@ def test_the_gather_stops_when_it_runs_out_of_article_budget(monkeypatch, tmp_pa
     monkeypatch.setattr(pipeline, "news_sources", lambda: wires)
     asked = []
 
-    def fetch(src, max_age_hours=36, limit=None):
+    def fetch(src, max_age_hours=36, limit=None, deadline=None, **kw):
         asked.append((src["id"], limit))
+        assert deadline is not None, "the deadline must reach the fetcher, not just the loop"
         return [dict(STORY) for _ in range(limit or 25)]
 
     monkeypatch.setattr(pipeline.fetchers, "fetch_source", fetch)
@@ -468,7 +469,7 @@ def test_the_gather_stops_at_the_wall_clock_even_with_budget_left(monkeypatch, t
     clock = {"t": 0.0}
     monkeypatch.setattr(pipeline.time, "monotonic", lambda: clock["t"])
 
-    def slow(src, max_age_hours=36, limit=None):
+    def slow(src, max_age_hours=36, limit=None, deadline=None, **kw):
         clock["t"] += 60          # each wire takes a minute
         return [dict(STORY)]
 

@@ -61,7 +61,20 @@ Two or three sentences, and prefer the uncomfortable version:
 git add -A && git commit -m "intraday <date> <hh:mm>" && git push
 ```
 
-## 4. The reply
+## 4. Deliver it, then reply
+
+The platform's own notification has proved unreliable for quiet successful runs, so at **15:20**
+send the day's record explicitly first:
+
+```
+SendUserFile(files=["reports/<date>/intraday.md"], status="proactive",
+             caption="Session <date> — <the same first line as your reply>")
+```
+
+At 09:35 and midday, send the file only if something actually triggered or was voided — a push
+notification per uneventful check is noise, and noise is how a real one gets ignored.
+
+## 5. The reply
 One short message. First line: the state of the day — `Session <date> 09:35 — GVT&D triggered at
 ₹2,045, ALKEM stood aside (+5.6% gap)`, or `Session <date> 09:35 — nothing triggered`. Then the table
 from `reports/<date>/intraday.md`, then your two sentences. At 15:20 add the day's P&L, the running

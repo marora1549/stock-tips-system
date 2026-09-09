@@ -50,7 +50,7 @@ def _rss_items(xml: str) -> list[dict]:
 _GNEWS_URL_CACHE = CACHE_DIR / "gnews_urls.json"
 
 
-def resolve_gnews_url(link: str) -> str | None:
+def resolve_gnews_url(link: str, timeout: int | None = None, retries: int | None = None) -> str | None:
     """Decode a news.google.com/rss/articles/<id> link into the publisher URL.
 
     Google no longer redirects these server-side; the id must be exchanged via the
@@ -67,7 +67,7 @@ def resolve_gnews_url(link: str) -> str | None:
         return cache[aid]
     s = http().s
     try:
-        r = s.get(f"https://news.google.com/rss/articles/{aid}?oc=5", timeout=20)
+        r = s.get(f"https://news.google.com/rss/articles/{aid}?oc=5", timeout=timeout or 20)
         sg = re.search(r'data-n-a-sg="([^"]+)"', r.text)
         ts = re.search(r'data-n-a-ts="([^"]+)"', r.text)
         if not (sg and ts):
@@ -76,7 +76,8 @@ def resolve_gnews_url(link: str) -> str | None:
         req = ["Fbv4je", f'["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{aid}",{ts.group(1)},"{sg.group(1)}"]']
         payload = "f.req=" + quote(json.dumps([[req]]))
         r2 = s.post("https://news.google.com/_/DotsSplashUi/data/batchexecute", data=payload,
-                    headers={"content-type": "application/x-www-form-urlencoded;charset=UTF-8"}, timeout=20)
+                    headers={"content-type": "application/x-www-form-urlencoded;charset=UTF-8"},
+                    timeout=timeout or 20)
         parsed = json.loads(r2.text.split("\n\n")[1])
         url = json.loads(parsed[0][2])[1]
         cache[aid] = url
@@ -88,41 +89,80 @@ def resolve_gnews_url(link: str) -> str | None:
         return None
 
 
-def article_text(url: str) -> str:
-    """Fetch an article and return its readable text (title + paragraphs)."""
+# Page furniture: related-headline rails, tickers, "also read" rails, newsletter boxes. On an
+# aggregator these outnumber the article, and on the first live pre-open run one of them cost real
+# money — a "Kendrapara shipbuilding cluster ... Rs 24,700 crore" ticker headline sitting beside a
+# ₹97.66cr wagon-leasing story was read as part of it, so a 3%-of-revenue order scored as 7.9×.
+FURNITURE_TAGS = re.compile(r"<(aside|nav|footer|header|form|figure|figcaption)\b.*?</\1\s*>", re.S | re.I)
+FURNITURE_CLASS = re.compile(
+    r'<(div|section|ul|ol)\b[^>]*(?:class|id)="[^"]*'
+    r'(?:related|trending|ticker|marquee|sidebar|side-bar|also-?read|more-?news|read-?more|'
+    r'recommend|popular|widget|breadcrumb|newsletter|comment|share|social|tag-?list|'
+    r'latest-?news|top-?news|you-?may|next-?story|prev-?story|advert|promo)'
+    r'[^"]*"[^>]*>.*?</\1\s*>', re.S | re.I)
+
+
+def strip_furniture(h: str) -> str:
+    """Remove the parts of a page that are not the article, as far as regex can reach.
+
+    Nesting means this cannot be exact, so it is a reduction rather than a guarantee — which is why
+    `article_body` also reports *how* it found the body. A page whose body could only be recovered by
+    scraping every <p> on it is not trusted downstream.
+    """
+    for rx in (FURNITURE_TAGS, FURNITURE_CLASS):
+        for _ in range(3):                       # a few passes, for shallow nesting
+            h, n = rx.subn(" ", h)
+            if not n:
+                break
+    return h
+
+
+def article_body(url: str, timeout: int | None = None, retries: int | None = None) -> dict:
+    """→ {text, how}. `how` is `container`, `jsonld`, `paragraphs`, or `none`.
+
+    `paragraphs` means no article container was recognised and the text is every paragraph on the
+    page — normal for aggregators, and not to be trusted for attributing an event to a company.
+    """
     if "news.google.com" in url:
-        url = resolve_gnews_url(url) or ""
+        url = resolve_gnews_url(url, timeout=timeout, retries=retries) or ""
         if not url or re.search(r"/topic/|/videos?/|/slideshow/", url):
-            return ""
-    r = http().get(url, timeout=25)
+            return {"text": "", "how": "none"}
+    r = http().get(url, timeout=timeout or 25, retries=3 if retries is None else retries)
     if r is None or r.status_code != 200:
-        return ""
+        return {"text": "", "how": "none"}
     # Publishers often omit charset in headers; requests then assumes ISO-8859-1 and ₹ becomes "â¹"
     raw = r.content
     if re.search(rb'charset=["\']?utf-?8', raw[:4000], re.I) or b"\xe2\x82\xb9" in raw:
         h = raw.decode("utf-8", errors="replace")
     else:
         h = r.text
-    # Prefer article body containers
-    body = ""
+    h = strip_furniture(h)
+
+    body, how = "", "none"
     for pat in (r'<article[^>]*>(.*?)</article>', r'class="artText[^"]*"[^>]*>(.*?)</div>\s*<div', r'class="[^"]*article[_-]?(?:body|content|text)[^"]*"[^>]*>(.*?)</div>\s*</div>',
                 r'<div[^>]+class="[^"]*(?:content_wrapper|story-content|storyContent|contentSec|page-content)[^"]*"[^>]*>(.*?)</div>\s*</div>'):
         m = re.search(pat, h, re.S | re.I)
         if m and len(strip_html(m.group(1))) > 400:
-            body = m.group(1)
+            body, how = m.group(1), "container"
             break
     if not body:
         paras = re.findall(r"<p[^>]*>(.*?)</p>", h, re.S)
         body = "\n".join(p for p in paras if len(strip_html(p)) > 40)
+        how = "paragraphs" if body else "none"
     text = strip_html(body)
-    # JSON-LD description/articleBody is often the cleanest
+    # JSON-LD articleBody is the publisher's own idea of the article, so it beats both
     m = re.search(r'"articleBody"\s*:\s*"((?:[^"\\]|\\.)*)"', h)
     if m and len(m.group(1)) > len(text):
         try:
-            text = strip_html(json.loads('"' + m.group(1) + '"'))
+            text, how = strip_html(json.loads('"' + m.group(1) + '"')), "jsonld"
         except Exception:
             pass
-    return text[:20000]
+    return {"text": text[:20000], "how": how if text else "none"}
+
+
+def article_text(url: str, timeout: int | None = None, retries: int | None = None) -> str:
+    """Just the readable text. See `article_body` when you need to know how it was found."""
+    return article_body(url, timeout=timeout, retries=retries)["text"]
 
 
 def fetch_gnews(src: dict, max_age_hours: float = 36) -> list[dict]:
@@ -223,12 +263,20 @@ def fetch_telegram(src: dict, max_age_hours: float = 36) -> list[dict]:
 FETCHERS = {"gnews": fetch_gnews, "page": fetch_page, "rss": fetch_rss, "chartink": fetch_chartink, "telegram": fetch_telegram}
 
 
-def fetch_source(src: dict, max_age_hours: float = 36, limit: int | None = None) -> list[dict]:
+def fetch_source(src: dict, max_age_hours: float = 36, limit: int | None = None,
+                 deadline: float | None = None, request_timeout: int | None = None,
+                 retries: int | None = None) -> list[dict]:
     """Documents from one source, bodies hydrated.
 
-    `limit` caps how many are hydrated. Hydration is the expensive half — an article fetch, and for
-    a Google News link two more requests to decode it first — so a caller with a deadline (the
-    pre-open run has to be finished before 09:15) can say how much it is willing to pay here.
+    `limit` caps how many are hydrated. Hydration is the expensive half — an article fetch, and for a
+    Google News link two more requests to decode it first — so a caller with a deadline can say how
+    much it is willing to pay here.
+
+    `deadline` is a `time.monotonic()` stamp, checked **before every hydration**, because a count is
+    not a time limit. An unreachable host does not fail fast: at the default 20-second timeout with
+    three retries and backoff, one dead article costs about a minute and eight of them cost nine. A
+    budget enforced only *between* sources can therefore be spent entirely inside the first one,
+    which is how the first live pre-open run reached eleven minutes.
     """
     fn = FETCHERS.get(src.get("kind"))
     if fn is None:
@@ -241,15 +289,22 @@ def fetch_source(src: dict, max_age_hours: float = 36, limit: int | None = None)
         return []
     if limit is not None:
         docs = docs[:max(0, limit)]
+    unhydrated = 0
     # hydrate article bodies (and swap Google News links for the publisher URL)
     for d in docs:
+        if deadline is not None and time.monotonic() > deadline:
+            unhydrated += 1
+            continue
         if not d.get("text") and d.get("url"):
             if "news.google.com" in d["url"]:
-                real = resolve_gnews_url(d["url"])
+                real = resolve_gnews_url(d["url"], timeout=request_timeout, retries=retries)
                 if not real:
                     continue
                 d["url"] = real
             if re.search(r"/(topic|tag|author|videos?|slideshow|photos?|live-blog|liveblog)/", d["url"]) or d["url"].rstrip("/").count("/") <= 3:
                 continue  # aggregation/topic pages, video, live blogs — not a recommendation article
-            d["text"] = article_text(d["url"])
+            got = article_body(d["url"], timeout=request_timeout, retries=retries)
+            d["text"], d["body_how"] = got["text"], got["how"]
+    if unhydrated:
+        log.warning("%s: gave up on %d article(s) — past the deadline", src["id"], unhydrated)
     return [d for d in docs if d.get("text")]

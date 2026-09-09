@@ -78,9 +78,25 @@ saying the card could not be committed, quoting the git error, and that the sess
 therefore have nothing to act on. The usual cause is a routine created without the repository
 attached as a source, which can clone a public repo but cannot push to it.
 
-## 5. The email (this is the deliverable)
-Reply with `preopen.md` as written, with your own checks folded in — and hold to its shape, because
-the first line may be all that gets read on a phone at eight in the morning:
+## 5. Deliver it twice, because once has not been working
+
+The platform emails your final message only when it judges the run noteworthy, and a quiet
+successful run has twice now produced no email at all — the only notification that has ever arrived
+was a *failure* report. So do not rely on that path alone.
+
+**Send the file explicitly**, before you write your reply:
+
+```
+SendUserFile(files=["reports/<date>/preopen.md"], status="proactive",
+             caption="Pre-open <date> — <the same first line as your reply>")
+```
+
+`status="proactive"` is the one that reaches a phone. Do this on every run, including a run with
+nothing to trade — "nothing cleared the bar" is information the desk owner wants at 08:00, and its
+absence is indistinguishable from the system being broken.
+
+Then reply with `preopen.md` as written, with your own checks folded in — and hold to its shape,
+because the first line may be all that gets read on a phone at eight in the morning:
 
 * **First line stands alone**: either `Pre-open <date> — N to trade: SYM (score), SYM (score)`, or
   `Pre-open <date> — nothing worth trading on the news`. Nothing cleared the bar is a real and

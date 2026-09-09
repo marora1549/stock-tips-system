@@ -191,6 +191,11 @@ def news_sources() -> list[dict]:
 NEWS_DOCS_PER_SOURCE = 8     # articles hydrated per wire
 NEWS_DOCS_TOTAL = 55         # articles hydrated per run, across all wires
 NEWS_DEADLINE_S = 420        # and a wall clock, because 09:15 does not wait
+# A wire that cannot answer in ten seconds is not worth waiting for at eight in the morning. The
+# defaults (20s, three tries, doubling backoff) cost about a minute per dead article, which is how a
+# per-run budget got spent inside a single source.
+NEWS_REQUEST_TIMEOUT_S = 10
+NEWS_RETRIES = 2
 
 
 def gather_news(max_age_hours: float = 20, deadline_s: float | None = None,
@@ -232,7 +237,10 @@ def gather_news(max_age_hours: float = 20, deadline_s: float | None = None,
             out["sources"][src["id"]] = {"docs": 0, "events": 0, "skipped": True}
             continue
         docs = fetchers.fetch_source(src, max_age_hours=max_age_hours,
-                                     limit=min(per_source, budget))
+                                     limit=min(per_source, budget),
+                                     deadline=started + deadline_s,
+                                     request_timeout=NEWS_REQUEST_TIMEOUT_S,
+                                     retries=NEWS_RETRIES)
         budget -= len(docs)
         found = []
         for d in docs:
