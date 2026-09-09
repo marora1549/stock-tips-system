@@ -1,5 +1,39 @@
 [
   {
+    "symbol": "ASTRAMICRO",
+    "company": "Astra Microwave Products Limited",
+    "tip_id": "edd10e4fa9",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [
+      "broker:citi",
+      "fe_gnews",
+      "broker:jefferies",
+      "et_recos_gnews"
+    ],
+    "n_mentions": 4,
+    "src_targets": [
+      1900.0,
+      2055.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Astra Microwave Products Limited (NSE: ASTRAMICRO) LTP 1757.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 2.67%, volume 793737.",
+    "urls": [
+      "https://chartink.com/stocks/astramicro.html",
+      "https://www.financialexpress.com/market/rs-1-1-lakh-crore-defence-order-push-macquarie-jefferies-hal-bel-solar-industries-astra-stock-target-price-upside-dac-4334113/",
+      "https://www.financialexpress.com/market/rs-1-1-lakh-cr-defence-boost-motilal-oswal-names-bel-preferred-pick-lists-4-stocks-to-watch-4334212/",
+      "https://economictimes.indiatimes.com/markets/stocks/news/3"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "citi",
+      "jefferies"
+    ]
+  },
+  {
     "symbol": "JINDALSTEL",
     "company": "Jindal Steel & Power",
     "tip_id": "374283293a",
@@ -61,8 +95,8 @@
     "default_timeframe": null,
     "sentence": "retained a Buy on IndiGo but cut its target price amid cost pressures and geopolitical disruptions, while Motilal Oswal sees strong upside in Maruti Suzuki supported by product launches and exports. Now, gift ETPrime subscription to your friend for Free! Connect with an ETPrime expert for personaliz",
     "urls": [
-      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
-      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms"
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
     ],
     "needs_review": false,
     "extraction_confidence": 0.8,
@@ -135,9 +169,9 @@
     "default_timeframe": null,
     "sentence": "upgrades Kotak Mahindra Bank to Buy Brokerage firms remain positive on select frontline stocks, with Goldman Sachs raising its target price on UltraTech Cements and Elara Capital maintaining a Buy on BPCL while upgrading Kotak Mahindra Bank, citing resilient earnings and improving fundamentals. Now,",
     "urls": [
-      "https://www.marketsmojo.com/news/stock-recommendation/kotak-mahindra-bank-ltd-is-rated-buy-by-marketsmojo-4186473",
       "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
-      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms",
+      "https://www.marketsmojo.com/news/stock-recommendation/kotak-mahindra-bank-ltd-is-rated-buy-by-marketsmojo-4186473"
     ],
     "needs_review": false,
     "extraction_confidence": 0.8,
@@ -164,9 +198,9 @@
     "default_timeframe": "weekly",
     "sentence": "Buy Grasim Industries Limited (NSE: GRASIM) LTP 3306.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 0.13%, volume 875447.",
     "urls": [
-      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
       "https://chartink.com/stocks/grasim.html",
-      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms"
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
     ],
     "needs_review": false,
     "extraction_confidence": 1.0,
@@ -190,8 +224,8 @@
     "default_timeframe": null,
     "sentence": "maintaining an Outperform rating on HDFC Bank amid valuation comfort and earnings visibility. Now, gift ETPrime subscription to your friend for Free! Connect with an ETPrime expert for personalized support and guidance Get a Call Back +91 9484700004 What’s Included with Get daily trade ideas from SE",
     "urls": [
-      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
-      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms"
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
     ],
     "needs_review": false,
     "extraction_confidence": 0.8,
@@ -219,8 +253,8 @@
     "default_timeframe": null,
     "sentence": "Buy Siemens Energy India; target of Rs 3655: Prabhudas Lilladher. Start from just ₹1. Stay on top of the latest tech trends and biggest startup news. We wish to reiterate that Moneycontrol does not solicit funds from investors and neither does it promise any assured returns. Reproduction of news art",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
       "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
       "https://www.moneycontrol.com/news/business/stocks/buy-siemens-energy-india-target-of-rs-3655-prabhudas-lilladher-14024998.html"
     ],
     "needs_review": false,
@@ -275,8 +309,8 @@
     "default_timeframe": null,
     "sentence": "Buy Adani Ports and SEZ; target of Rs 2130: Motilal Oswal. Start from just ₹1. Stay on top of the latest tech trends and biggest startup news. We wish to reiterate that Moneycontrol does not solicit funds from investors and neither does it promise any assured returns. Reproduction of news articles, ",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-adani-ports-sez-ltd-for-the-target-rs-2-130-by-motilal-oswal-financial-services-ltd439153",
-      "https://www.moneycontrol.com/news/business/stocks/buy-adani-ports-and-sez-target-of-rs-2130-motilal-oswal-2-14025005.html"
+      "https://www.moneycontrol.com/news/business/stocks/buy-adani-ports-and-sez-target-of-rs-2130-motilal-oswal-2-14025005.html",
+      "https://investmentguruindia.com/newsdetail/buy-adani-ports-sez-ltd-for-the-target-rs-2-130-by-motilal-oswal-financial-services-ltd439153"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -318,10 +352,9 @@
     "corroborating_sources": [
       "mc_stock_ideas_gnews",
       "broker:emkay",
-      "bs_recos",
       "brokerage_gnews"
     ],
-    "n_mentions": 4,
+    "n_mentions": 3,
     "src_targets": [
       5300.0,
       6000.0
@@ -332,9 +365,8 @@
     "default_timeframe": null,
     "sentence": "retained its ‘buy’ rating on GE Vernova T&D India and raised its target price to Rs 6,000 per share, implying around 37 percent upside from Monday’s closing price. The brokerage described the company’s estimated Rs 13,000-crore HVDC order as a landmark win that enhances its long-term growth outlook.",
     "urls": [
-      "https://www.moneycontrol.com/news/business/markets/ge-vernova-t-d-india-shares-jump-8-to-lead-midcap-gainers-nomura-sees-big-upside-post-hvdc-order-14024835.html",
-      "https://www.business-standard.com/markets/news",
       "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://www.moneycontrol.com/news/business/markets/ge-vernova-t-d-india-shares-jump-8-to-lead-midcap-gainers-nomura-sees-big-upside-post-hvdc-order-14024835.html",
       "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
@@ -365,6 +397,36 @@
     "needs_review": false,
     "extraction_confidence": 0.9,
     "brokerages": []
+  },
+  {
+    "symbol": "MCX",
+    "company": "MCX",
+    "tip_id": "6c11764d62",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [
+      "brokerage_gnews",
+      "broker:bernstein",
+      "mc_stock_ideas_gnews"
+    ],
+    "n_mentions": 3,
+    "src_targets": [
+      3520.0,
+      3830.0
+    ],
+    "src_stop": 3230.0,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "MCX | Buy | Target Price: ₹3,520 | Stop Loss: ₹3,230After a sharp upmove, the stock witnessed a healthy dip and has bounced back from its 20 EMA, indicating buying interest at lower levels. It has also given an inside-bar breakout on the daily chart, suggesting a potential continuation of the uptren",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/markets/bse-stock-rating-bernstein-initiates-with-underperform-as-derivatives-growth-normalises-check-target-price-14025718.html",
+      "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "bernstein"
+    ]
   },
   {
     "symbol": "NH",
@@ -411,6 +473,50 @@
     "extraction_confidence": 0.9,
     "brokerages": [
       "marketsmith"
+    ]
+  },
+  {
+    "symbol": "APOLLO",
+    "company": "Apollo Micro Systems",
+    "tip_id": "1b7f5fca8e",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": "1-6 months",
+    "default_timeframe": null,
+    "sentence": "Stocks to buy: Apollo Micro Systems, BHEL among 5 shares Bajaj Broking's expert recommends for 1 to 6 months.",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-apollo-micro-systems-bhel-among-5-shares-bajaj-brokings-expert-recommends-for-1-to-6-months-11788869891710.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "bajajbroking"
+    ]
+  },
+  {
+    "symbol": "BHEL",
+    "company": "BHEL",
+    "tip_id": "146ae0bc32",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": "1-6 months",
+    "default_timeframe": null,
+    "sentence": "Stocks to buy: Apollo Micro Systems, BHEL among 5 shares Bajaj Broking's expert recommends for 1 to 6 months.",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-apollo-micro-systems-bhel-among-5-shares-bajaj-brokings-expert-recommends-for-1-to-6-months-11788869891710.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "bajajbroking"
     ]
   },
   {
@@ -482,50 +588,6 @@
     "brokerages": []
   },
   {
-    "symbol": "APOLLO",
-    "company": "Apollo Micro Systems",
-    "tip_id": "1b7f5fca8e",
-    "source_id": "mint_gnews",
-    "corroborating_sources": [],
-    "n_mentions": 1,
-    "src_targets": [],
-    "src_stop": null,
-    "src_entry": null,
-    "src_duration": "1-6 months",
-    "default_timeframe": null,
-    "sentence": "Stocks to buy: Apollo Micro Systems, BHEL among 5 shares Bajaj Broking's expert recommends for 1 to 6 months.",
-    "urls": [
-      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-apollo-micro-systems-bhel-among-5-shares-bajaj-brokings-expert-recommends-for-1-to-6-months-11788869891710.html"
-    ],
-    "needs_review": false,
-    "extraction_confidence": 0.7,
-    "brokerages": [
-      "bajajbroking"
-    ]
-  },
-  {
-    "symbol": "BHEL",
-    "company": "BHEL",
-    "tip_id": "146ae0bc32",
-    "source_id": "mint_gnews",
-    "corroborating_sources": [],
-    "n_mentions": 1,
-    "src_targets": [],
-    "src_stop": null,
-    "src_entry": null,
-    "src_duration": "1-6 months",
-    "default_timeframe": null,
-    "sentence": "Stocks to buy: Apollo Micro Systems, BHEL among 5 shares Bajaj Broking's expert recommends for 1 to 6 months.",
-    "urls": [
-      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-apollo-micro-systems-bhel-among-5-shares-bajaj-brokings-expert-recommends-for-1-to-6-months-11788869891710.html"
-    ],
-    "needs_review": false,
-    "extraction_confidence": 0.7,
-    "brokerages": [
-      "bajajbroking"
-    ]
-  },
-  {
     "symbol": "DIVISLAB",
     "company": "Divi's Laboratories Limited",
     "tip_id": "ab40c6ebfe",
@@ -544,35 +606,11 @@
     "default_timeframe": "weekly",
     "sentence": "Buy Divi's Laboratories Limited (NSE: DIVISLAB) LTP 9575 — matched scan 'Chartink — 52-week-high breakout with 1.5x volume', day change 2.79%, volume 838906.",
     "urls": [
-      "https://chartink.com/stocks/divislab.html",
-      "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
+      "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html",
+      "https://chartink.com/stocks/divislab.html"
     ],
     "needs_review": false,
     "extraction_confidence": 1.0,
-    "brokerages": []
-  },
-  {
-    "symbol": "MCX",
-    "company": "MCX",
-    "tip_id": "6c11764d62",
-    "source_id": "mint_gnews",
-    "corroborating_sources": [
-      "brokerage_gnews"
-    ],
-    "n_mentions": 2,
-    "src_targets": [
-      3520.0
-    ],
-    "src_stop": 3230.0,
-    "src_entry": null,
-    "src_duration": null,
-    "default_timeframe": null,
-    "sentence": "MCX | Buy | Target Price: ₹3,520 | Stop Loss: ₹3,230After a sharp upmove, the stock witnessed a healthy dip and has bounced back from its 20 EMA, indicating buying interest at lower levels. It has also given an inside-bar breakout on the daily chart, suggesting a potential continuation of the uptren",
-    "urls": [
-      "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
-    ],
-    "needs_review": false,
-    "extraction_confidence": 0.9,
     "brokerages": []
   },
   {
@@ -670,10 +708,10 @@
     "default_timeframe": null,
     "sentence": "Buy Beml Ltd For Target Rs.2,700 By Geojit Financial Services Ltd Buy Fortis Healthcare Ltd For Target 1,050 by Prabhudas Liladhar Capital Ltd Accumulate Hindustan Unilever Ltd For Target 2,320 by Prabhudas Liladhar Capital Ltd Buy Syrma SGS Technology Ltd for the Target Rs 2,050 by Emkay Global Fin",
     "urls": [
-      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-for-short-term-angel-one-beml-among-6-stocks-experts-recommend-buying-do-you-own-any/amp-11788836081966.html",
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
       "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
-      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-for-short-term-angel-one-beml-among-6-stocks-experts-recommend-buying-do-you-own-any-11788836081966.html"
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
+      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-for-short-term-angel-one-beml-among-6-stocks-experts-recommend-buying-do-you-own-any-11788836081966.html",
+      "https://www.livemint.com/market/stock-market-news/stocks-to-buy-for-short-term-angel-one-beml-among-6-stocks-experts-recommend-buying-do-you-own-any/amp-11788836081966.html"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -966,38 +1004,6 @@
     ]
   },
   {
-    "symbol": "ASTRAMICRO",
-    "company": "Astra Microwave Products Limited",
-    "tip_id": "edd10e4fa9",
-    "source_id": "chartink_squeeze",
-    "corroborating_sources": [
-      "broker:citi",
-      "fe_gnews",
-      "broker:jefferies"
-    ],
-    "n_mentions": 3,
-    "src_targets": [
-      1900.0,
-      2055.0
-    ],
-    "src_stop": null,
-    "src_entry": null,
-    "src_duration": null,
-    "default_timeframe": "monthly",
-    "sentence": "Buy Astra Microwave Products Limited (NSE: ASTRAMICRO) LTP 1757.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 2.67%, volume 793737.",
-    "urls": [
-      "https://www.financialexpress.com/market/rs-1-1-lakh-cr-defence-boost-motilal-oswal-names-bel-preferred-pick-lists-4-stocks-to-watch-4334212/",
-      "https://chartink.com/stocks/astramicro.html",
-      "https://www.financialexpress.com/market/rs-1-1-lakh-crore-defence-order-push-macquarie-jefferies-hal-bel-solar-industries-astra-stock-target-price-upside-dac-4334113/"
-    ],
-    "needs_review": false,
-    "extraction_confidence": 1.0,
-    "brokerages": [
-      "citi",
-      "jefferies"
-    ]
-  },
-  {
     "symbol": "DATAPATTNS",
     "company": "Data Patterns",
     "tip_id": "8ac2bfbbe9",
@@ -1089,8 +1095,8 @@
     "default_timeframe": null,
     "sentence": "Buy GMR Airports Ltd for the Target Rs 120 by Emkay Global Financial Services Ltd. Buy GE Vernova T&D India Ltd for the Target Rs 5,300 by Emkay Global Financial Serv... Buy GMR Airports Ltd for the Target Rs 120 by Emkay Global Financial Services Ltd Buy Siemens Energy India Ltd For Target 3,655 by",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
-      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399"
+      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -1116,8 +1122,8 @@
     "default_timeframe": null,
     "sentence": "Buy Fortis Healthcare Ltd For Target 1,050 by Prabhudas Liladhar Capital Ltd Accumulate Hindustan Unilever Ltd For Target 2,320 by Prabhudas Liladhar Capital Ltd Buy Syrma SGS Technology Ltd for the Target Rs 2,050 by Emkay Global Financial Serv... Buy Ethos Ltd for the Target Rs 3,400 by Emkay Glob",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
-      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399"
+      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -1143,8 +1149,8 @@
     "default_timeframe": null,
     "sentence": "Accumulate Hindustan Unilever Ltd For Target 2,320 by Prabhudas Liladhar Capital Ltd Buy Syrma SGS Technology Ltd for the Target Rs 2,050 by Emkay Global Financial Serv... Buy Ethos Ltd for the Target Rs 3,400 by Emkay Global Financial Services Ltd Buy ESDS Software Solutions Ltd For Target 1,550 by",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
-      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399"
+      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -1170,9 +1176,9 @@
     "default_timeframe": null,
     "sentence": "Buy Syrma SGS Technology Ltd for the Target Rs 2,050 by Emkay Global Financial Serv... Buy Ethos Ltd for the Target Rs 3,400 by Emkay Global Financial Services Ltd Buy ESDS Software Solutions Ltd For Target 1,550 by Choice Institutional Equities Ltd Not Rated Nephrocare Health Services Ltd For Targe",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
       "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
-      "https://www.livemint.com/market/stock-market-news/buy-syrma-sgs-technology-shares-over-120-returns-in-6-months-emkay-sees-41-more-upside-in-12-months-target-price-11788861212658.html"
+      "https://www.livemint.com/market/stock-market-news/buy-syrma-sgs-technology-shares-over-120-returns-in-6-months-emkay-sees-41-more-upside-in-12-months-target-price-11788861212658.html",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,
@@ -1199,9 +1205,9 @@
     "default_timeframe": "monthly",
     "sentence": "Buy Ethos Ltd (NSE: ETHOSLTD) LTP 2761.5 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 0.54%, volume 17259.",
     "urls": [
-      "https://chartink.com/stocks/ethosltd.html",
+      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
       "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
-      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399"
+      "https://chartink.com/stocks/ethosltd.html"
     ],
     "needs_review": false,
     "extraction_confidence": 1.0,
@@ -1227,8 +1233,8 @@
     "default_timeframe": null,
     "sentence": "Buy ESDS Software Solutions Ltd For Target 1,550 by Choice Institutional Equities Ltd Not Rated Nephrocare Health Services Ltd For Target Not Rated by Choice Institutio... We initiate coverage on GMR Airports (GMRAIRPO) with BUY and TP of Rs120, based on 25x EV/EBITDA for the domestic airport busine",
     "urls": [
-      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429",
-      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399"
+      "https://investmentguruindia.com/newsdetail/buy-gmr-airports-ltd-for-the-target-rs-120-by-emkay-global-financial-services-ltd131399",
+      "https://investmentguruindia.com/newsdetail/buy-ge-vernova-t-d-india-ltd-for-the-target-rs-5-300-by-emkay-global-financial-services-ltd394429"
     ],
     "needs_review": false,
     "extraction_confidence": 0.9,

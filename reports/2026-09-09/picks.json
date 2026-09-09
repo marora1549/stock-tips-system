@@ -2,162 +2,6 @@
   "date": "2026-09-09",
   "top": [
     {
-      "symbol": "ASTRAMICRO",
-      "company": "Astra Microwave Products Limited",
-      "tip_id": "edd10e4fa9",
-      "source_id": "chartink_squeeze",
-      "corroborating_sources": [
-        "broker:citi",
-        "fe_gnews",
-        "broker:jefferies"
-      ],
-      "n_mentions": 3,
-      "src_targets": [
-        1900.0,
-        2055.0
-      ],
-      "src_stop": null,
-      "src_entry": null,
-      "urls": [
-        "https://www.financialexpress.com/market/rs-1-1-lakh-cr-defence-boost-motilal-oswal-names-bel-preferred-pick-lists-4-stocks-to-watch-4334212/",
-        "https://chartink.com/stocks/astramicro.html",
-        "https://www.financialexpress.com/market/rs-1-1-lakh-crore-defence-order-push-macquarie-jefferies-hal-bel-solar-industries-astra-stock-target-price-upside-dac-4334113/"
-      ],
-      "brokerages": [
-        "citi",
-        "jefferies"
-      ],
-      "sentence": "Buy Astra Microwave Products Limited (NSE: ASTRAMICRO) LTP 1757.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 2.67%, volume 793737.",
-      "ltp": 1757.300048828125,
-      "plan": {
-        "timeframe": "long",
-        "entry": 1757.3,
-        "entry_zone": [
-          1748.51,
-          1766.09
-        ],
-        "stop_loss": 1679.56,
-        "stop_loss_pct": 4.42,
-        "stop_basis": "below support / near 50EMA",
-        "targets": [
-          1960.0,
-          2073.75,
-          2263.62
-        ],
-        "target_pct": [
-          11.53,
-          18.01,
-          28.81
-        ],
-        "target_basis": [
-          "resistance",
-          "5×ATR",
-          "8×ATR"
-        ],
-        "reward_risk_t2": 4.07,
-        "mandate_pct": 10.0,
-        "time_stop_days": 30,
-        "ta_confidence": 79,
-        "reasons": [
-          "+14 trend strong_up",
-          "+7 RSI 55.3 healthy momentum",
-          "+5 MACD histogram positive & rising",
-          "-3 ADX 11.1 no trend",
-          "+5 volume 2.3× avg on up day",
-          "+3 pattern bollinger_squeeze",
-          "+4 pattern momentum_aligned",
-          "+4 reward:risk to T2 4.07"
-        ],
-        "tradeable": true,
-        "src_targets": [
-          1900.0,
-          2055.0
-        ],
-        "src_stop": null
-      },
-      "ta": {
-        "trend": "strong_up",
-        "rsi": 55.3,
-        "atr_pct": 3.6,
-        "adx": 11.1,
-        "vol_ratio": 2.3,
-        "patterns": [
-          "bollinger_squeeze",
-          "momentum_aligned"
-        ],
-        "dist_52w_high_pct": -10.34,
-        "dist_ema20_pct": 2.85,
-        "dist_ema200_pct": 28.85,
-        "avg_turnover_cr": 58.79,
-        "chg_5d_pct": 4.2,
-        "chg_20d_pct": 3.15,
-        "high_52w": 1960.0,
-        "last_bar_date": "2026-09-08"
-      },
-      "resistances": [
-        {
-          "price": 1800.0,
-          "touches": 1
-        },
-        {
-          "price": 1871.0,
-          "touches": 1
-        },
-        {
-          "price": 1960.0,
-          "touches": 2
-        }
-      ],
-      "supports": [
-        {
-          "price": 1688.0,
-          "touches": 1
-        },
-        {
-          "price": 1654.07,
-          "touches": 3
-        },
-        {
-          "price": 1296.3,
-          "touches": 1
-        },
-        {
-          "price": 1074.9,
-          "touches": 2
-        }
-      ],
-      "ta_confidence": 79,
-      "fund_score": 70,
-      "fund_why": [
-        "+12 ROCE 20.3%",
-        "+4 ROE 16%",
-        "-6 P/E 88.3",
-        "+8 3y profit CAGR 40%",
-        "+3 3y sales CAGR 13%",
-        "+5 D/E 0.22",
-        "-3 promoter 6.54%",
-        "-5 latest qtr PAT YoY -25%",
-        "+2 mcap ₹16,685 cr"
-      ],
-      "fundamentals": {
-        "market_cap_cr": 16685.0,
-        "pe": 88.3,
-        "roce": 20.3,
-        "roe": 16.0,
-        "sales_growth_3_years": 13.0,
-        "profit_growth_3_years": 40.0,
-        "promoter_pct": 6.54,
-        "debt_to_equity": 0.22,
-        "np_yoy_growth_pct": -25.0
-      },
-      "source_weight": 0.65,
-      "source_confidence": 50,
-      "composite": 73,
-      "verdict": "BUY",
-      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
-      "alloc_inr": 0.0
-    },
-    {
       "symbol": "DIVISLAB",
       "company": "Divi's Laboratories Limited",
       "tip_id": "ab40c6ebfe",
@@ -173,8 +17,8 @@
       "src_stop": 9050.0,
       "src_entry": null,
       "urls": [
-        "https://chartink.com/stocks/divislab.html",
-        "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
+        "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html",
+        "https://chartink.com/stocks/divislab.html"
       ],
       "brokerages": [],
       "sentence": "Buy Divi's Laboratories Limited (NSE: DIVISLAB) LTP 9575 — matched scan 'Chartink — 52-week-high breakout with 1.5x volume', day change 2.79%, volume 838906.",
@@ -221,7 +65,18 @@
         "src_targets": [
           9800.0
         ],
-        "src_stop": 9050.0
+        "src_stop": 9050.0,
+        "momentum_score": 79,
+        "efficiency": 0.414,
+        "amplitude_pct_day": 1.169,
+        "eta_days": [
+          7,
+          13,
+          20
+        ],
+        "eta_basis": "0.484%/session of net directional progress",
+        "pace_pct_day": 0.484,
+        "t1_inside_clock": true
       },
       "ta": {
         "trend": "strong_up",
@@ -240,7 +95,12 @@
         "chg_5d_pct": 4.47,
         "chg_20d_pct": 11.62,
         "high_52w": 9588.0,
-        "last_bar_date": "2026-09-08"
+        "last_bar_date": "2026-09-08",
+        "momentum_score": 79,
+        "drift_pct_day": 0.484,
+        "efficiency": 0.414,
+        "amplitude_pct_day": 1.169,
+        "up_day_share": 0.7
       },
       "resistances": [],
       "supports": [
@@ -290,167 +150,431 @@
       "composite": 72,
       "verdict": "BUY",
       "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 84"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 74"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "alloc_inr": 0.0
     },
     {
-      "symbol": "HINDCOPPER",
-      "company": "Hindustan Copper",
-      "tip_id": "c8b04c29a0",
-      "source_id": "mint_gnews",
-      "corroborating_sources": [],
-      "n_mentions": 1,
+      "symbol": "ASTRAMICRO",
+      "company": "Astra Microwave Products Limited",
+      "tip_id": "edd10e4fa9",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [
+        "broker:citi",
+        "fe_gnews",
+        "broker:jefferies",
+        "et_recos_gnews"
+      ],
+      "n_mentions": 4,
       "src_targets": [
-        565.0
+        1900.0,
+        2055.0
       ],
-      "src_stop": 519.0,
-      "src_entry": 533.0,
+      "src_stop": null,
+      "src_entry": null,
       "urls": [
-        "https://www.livemint.com/market/stock-market-news/breakout-stocks-to-buy-or-sell-sumeet-bagadia-recommends-five-shares-to-buy-today-9-september-2026-11788915118182.html"
+        "https://chartink.com/stocks/astramicro.html",
+        "https://www.financialexpress.com/market/rs-1-1-lakh-crore-defence-order-push-macquarie-jefferies-hal-bel-solar-industries-astra-stock-target-price-upside-dac-4334113/",
+        "https://www.financialexpress.com/market/rs-1-1-lakh-cr-defence-boost-motilal-oswal-names-bel-preferred-pick-lists-4-stocks-to-watch-4334212/",
+        "https://economictimes.indiatimes.com/markets/stocks/news/3"
       ],
-      "brokerages": [],
-      "sentence": "Hindustan Copper: Buy at ₹ 533, Target ₹ 565, Stop Loss ₹ 519 HINDCOPPER has taken strong support from a rising trendline and witnessed a retracement towards the 100-day EMA, indicating buying interest emerging from the key support zone. The stock has also closed above its 20-day and 50-day EMAs, wh",
-      "ltp": 532.8499755859375,
+      "brokerages": [
+        "citi",
+        "jefferies"
+      ],
+      "sentence": "Buy Astra Microwave Products Limited (NSE: ASTRAMICRO) LTP 1757.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 2.67%, volume 793737.",
+      "ltp": 1757.300048828125,
       "plan": {
-        "timeframe": "weekly",
-        "entry": 532.85,
+        "timeframe": "long",
+        "entry": 1757.3,
         "entry_zone": [
-          530.19,
-          535.51
+          1748.51,
+          1766.09
         ],
-        "stop_loss": 512.42,
-        "stop_loss_pct": 3.83,
-        "stop_basis": "below support",
+        "stop_loss": 1679.56,
+        "stop_loss_pct": 4.42,
+        "stop_basis": "below support / near 50EMA",
         "targets": [
-          570.4,
-          586.75,
-          618.1
+          1960.0,
+          2073.75,
+          2263.62
         ],
         "target_pct": [
-          7.05,
-          10.12,
-          16.0
+          11.53,
+          18.01,
+          28.81
         ],
         "target_basis": [
           "resistance",
-          "resistance",
-          "resistance"
+          "5×ATR",
+          "8×ATR"
         ],
-        "reward_risk_t2": 2.64,
-        "mandate_pct": 5.0,
-        "time_stop_days": 10,
-        "ta_confidence": 73,
+        "reward_risk_t2": 4.07,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 69,
         "reasons": [
           "+14 trend strong_up",
-          "+7 RSI 51.3 healthy momentum",
-          "+6 pattern double_bottom_confirmed",
-          "+6 pattern pullback_to_ema20_in_uptrend",
-          "+4 reward:risk to T2 2.64",
-          "-4 source target ₹565 below our T1 — source sees less upside"
+          "+7 RSI 55.3 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "-3 ADX 11.1 no trend",
+          "+5 volume 2.3× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+4 reward:risk to T2 4.07",
+          "-10 T1 needs ~70d at this pace vs a 30d clock"
         ],
         "tradeable": true,
         "src_targets": [
-          565.0
+          1900.0,
+          2055.0
         ],
-        "src_stop": 519.0
+        "src_stop": null,
+        "momentum_score": 35,
+        "efficiency": 0.082,
+        "amplitude_pct_day": 1.991,
+        "eta_days": [
+          70,
+          90,
+          90
+        ],
+        "eta_basis": "0.164%/session of net directional progress",
+        "pace_pct_day": 0.164,
+        "t1_inside_clock": false
       },
       "ta": {
         "trend": "strong_up",
-        "rsi": 51.3,
-        "atr_pct": 3.74,
-        "adx": 17.5,
-        "vol_ratio": 1.42,
+        "rsi": 55.3,
+        "atr_pct": 3.6,
+        "adx": 11.1,
+        "vol_ratio": 2.3,
         "patterns": [
-          "double_bottom_confirmed",
-          "pullback_to_ema20_in_uptrend"
+          "bollinger_squeeze",
+          "momentum_aligned"
         ],
-        "dist_52w_high_pct": -29.89,
-        "dist_ema20_pct": 0.44,
-        "dist_ema200_pct": 8.77,
-        "avg_turnover_cr": 957.13,
-        "chg_5d_pct": 1.18,
-        "chg_20d_pct": -0.08,
-        "high_52w": 760.05,
-        "last_bar_date": "2026-09-08"
+        "dist_52w_high_pct": -10.34,
+        "dist_ema20_pct": 2.85,
+        "dist_ema200_pct": 28.85,
+        "avg_turnover_cr": 58.79,
+        "chg_5d_pct": 4.2,
+        "chg_20d_pct": 3.15,
+        "high_52w": 1960.0,
+        "last_bar_date": "2026-09-08",
+        "momentum_score": 35,
+        "drift_pct_day": 0.164,
+        "efficiency": 0.082,
+        "amplitude_pct_day": 1.991,
+        "up_day_share": 0.5
       },
       "resistances": [
         {
-          "price": 570.4,
+          "price": 1800.0,
+          "touches": 1
+        },
+        {
+          "price": 1871.0,
+          "touches": 1
+        },
+        {
+          "price": 1960.0,
           "touches": 2
-        },
-        {
-          "price": 586.75,
-          "touches": 1
-        },
-        {
-          "price": 618.1,
-          "touches": 1
-        },
-        {
-          "price": 628.7,
-          "touches": 1
         }
       ],
       "supports": [
         {
-          "price": 528.25,
+          "price": 1688.0,
           "touches": 1
         },
         {
-          "price": 515.0,
+          "price": 1654.07,
+          "touches": 3
+        },
+        {
+          "price": 1296.3,
           "touches": 1
         },
         {
-          "price": 497.5,
+          "price": 1074.9,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 69,
+      "fund_score": 70,
+      "fund_why": [
+        "+12 ROCE 20.3%",
+        "+4 ROE 16%",
+        "-6 P/E 88.3",
+        "+8 3y profit CAGR 40%",
+        "+3 3y sales CAGR 13%",
+        "+5 D/E 0.22",
+        "-3 promoter 6.54%",
+        "-5 latest qtr PAT YoY -25%",
+        "+2 mcap ₹16,685 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 16685.0,
+        "pe": 88.3,
+        "roce": 20.3,
+        "roe": 16.0,
+        "sales_growth_3_years": 13.0,
+        "profit_growth_3_years": 40.0,
+        "promoter_pct": 6.54,
+        "debt_to_equity": 0.22,
+        "np_yoy_growth_pct": -25.0
+      },
+      "source_weight": 0.7,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound books",
+          "tone": "good",
+          "why": "business score 70"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 70 sessions against a 30-session stop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.07"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "MCX",
+      "company": "MCX",
+      "tip_id": "6c11764d62",
+      "source_id": "mint_gnews",
+      "corroborating_sources": [
+        "brokerage_gnews",
+        "broker:bernstein",
+        "mc_stock_ideas_gnews"
+      ],
+      "n_mentions": 3,
+      "src_targets": [
+        3520.0,
+        3830.0
+      ],
+      "src_stop": 3230.0,
+      "src_entry": null,
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/bse-stock-rating-bernstein-initiates-with-underperform-as-derivatives-growth-normalises-check-target-price-14025718.html",
+        "https://www.livemint.com/market/stock-market-news/shares-to-buy-or-sell-chandan-taparia-of-motilal-oswal-recommends-three-stocks-to-buy-today-8-september-2026-11788797680657.html"
+      ],
+      "brokerages": [
+        "bernstein"
+      ],
+      "sentence": "MCX | Buy | Target Price: ₹3,520 | Stop Loss: ₹3,230After a sharp upmove, the stock witnessed a healthy dip and has bounced back from its 20 EMA, indicating buying interest at lower levels. It has also given an inside-bar breakout on the daily chart, suggesting a potential continuation of the uptren",
+      "ltp": 3342.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3342.0,
+        "entry_zone": [
+          3325.29,
+          3358.71
+        ],
+        "stop_loss": 3084.32,
+        "stop_loss_pct": 7.71,
+        "stop_basis": "2.5×ATR",
+        "targets": [
+          3651.21,
+          3857.35,
+          4166.56
+        ],
+        "target_pct": [
+          9.25,
+          15.42,
+          24.67
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 62,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.3 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 34.9 trending",
+          "+3 pace puts T1 ~13d out"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          3520.0,
+          3830.0
+        ],
+        "src_stop": 3230.0,
+        "momentum_score": 92,
+        "efficiency": 0.341,
+        "amplitude_pct_day": 2.087,
+        "eta_days": [
+          13,
+          22,
+          35
+        ],
+        "eta_basis": "0.711%/session of net directional progress",
+        "pace_pct_day": 0.711,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.3,
+        "atr_pct": 3.08,
+        "adx": 34.9,
+        "vol_ratio": 0.55,
+        "patterns": [],
+        "dist_52w_high_pct": -3.97,
+        "dist_ema20_pct": 5.1,
+        "dist_ema200_pct": 26.42,
+        "avg_turnover_cr": 818.46,
+        "chg_5d_pct": 1.18,
+        "chg_20d_pct": 15.44,
+        "high_52w": 3480.0,
+        "last_bar_date": "2026-09-08",
+        "momentum_score": 92,
+        "drift_pct_day": 0.711,
+        "efficiency": 0.341,
+        "amplitude_pct_day": 2.087,
+        "up_day_share": 0.65
+      },
+      "resistances": [
+        {
+          "price": 3400.0,
           "touches": 1
         },
         {
-          "price": 485.15,
+          "price": 3480.0,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 2758.9,
+          "touches": 2
+        },
+        {
+          "price": 2707.0,
+          "touches": 1
+        },
+        {
+          "price": 2571.5,
+          "touches": 2
+        },
+        {
+          "price": 2260.0,
           "touches": 1
         }
       ],
-      "ta_confidence": 73,
-      "fund_score": 99,
+      "ta_confidence": 62,
+      "fund_score": 95,
       "fund_why": [
-        "+12 ROCE 42.4%",
-        "+8 ROE 32.9%",
-        "-2 P/E 42.7",
-        "+8 3y profit CAGR 50%",
-        "+6 3y sales CAGR 22%",
-        "+5 D/E 0.03",
-        "+4 promoter 66.14%",
-        "+4 latest qtr PAT YoY 162.7%",
-        "+4 mcap ₹51,528 cr"
+        "+12 ROCE 71.4%",
+        "+8 ROE 56.3%",
+        "-2 P/E 55.3",
+        "+8 3y profit CAGR 108%",
+        "+6 3y sales CAGR 65%",
+        "+5 D/E 0",
+        "+4 latest qtr PAT YoY 103.4%",
+        "+4 mcap ₹85,218 cr"
       ],
       "fundamentals": {
-        "market_cap_cr": 51528.0,
-        "pe": 42.7,
-        "roce": 42.4,
-        "roe": 32.9,
-        "sales_growth_3_years": 22.0,
-        "profit_growth_3_years": 50.0,
-        "promoter_pct": 66.14,
-        "debt_to_equity": 0.03,
-        "np_yoy_growth_pct": 162.7
+        "market_cap_cr": 85218.0,
+        "pe": 55.3,
+        "roce": 71.4,
+        "roe": 56.3,
+        "sales_growth_3_years": 65.0,
+        "profit_growth_3_years": 108.0,
+        "debt_to_equity": 0.0,
+        "np_yoy_growth_pct": 103.4
       },
-      "source_weight": 0.5,
+      "source_weight": 0.65,
       "source_confidence": 50,
-      "composite": 71,
+      "composite": 70,
       "verdict": "BUY",
       "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 95"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
       "alloc_inr": 0.0
     }
   ],
   "chosen": [],
   "booked": [],
-  "cash_after": 750.25,
+  "cash_after": 1511.5,
   "watch": [
-    "GRASIM",
+    "TITAGARH",
     "INDOSTAR",
-    "APARINDS",
-    "PERSISTENT",
-    "INGERRAND",
-    "APOLLO",
-    "FINEORG",
-    "GLAXO"
+    "HYUNDAI",
+    "AUROPHARMA",
+    "KIRLOSENG",
+    "LUMAXIND",
+    "RADICO",
+    "MPSLTD"
   ]
 }
