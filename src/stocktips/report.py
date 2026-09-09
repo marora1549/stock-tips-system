@@ -155,7 +155,13 @@ def preopen_card(c: dict, rank: int) -> str:
              "",
              f"- Size: {_ratio_words(c)}",
              f"- Why this name: {c.get('why_this_name', '')} ({c.get('route')})",
-             f"- Business: fundamentals {c.get('fund_score')}/100",
+             f"- Business: fundamentals {c.get('fund_score')}/100"
+             + (" — " + "; ".join(c.get("fund_caps") or []) if c.get("fund_caps") else ""),]
+    for fl in (c.get("fund_flags") or []):
+        lines.append(f"  - ⚑ {fl}")
+    for con in (c.get("screener_cons") or [])[:3]:
+        lines.append(f"  - Screener says: {con}")
+    lines += [
              f"- Chart: last close ₹{c.get('ltp'):,.2f}, {ta.get('trend', '?')}, ATR {ta.get('atr_pct')}%, "
              f"{abs(ta.get('dist_52w_high_pct') or 0):.1f}% off the 52-week high, "
              f"₹{ta.get('avg_turnover_cr') or 0:,.0f}cr a day",

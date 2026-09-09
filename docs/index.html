@@ -1626,6 +1626,14 @@ function newsTags(c){
               w:(c.fund_why || []).slice(0, 4).join('; ')});
   else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak books · ' + c.fund_score,
               w:'a pop on a weak balance sheet fades'});
+  // A red flag is not a term in an average — it is the reason the score has a ceiling, and it
+  // belongs on the card in words. This desk scored a cash-burning company 92 once.
+  (c.fund_flags || []).forEach(function(fl){
+    out.push({t:'bad', i:'alert', l:fl.length > 46 ? fl.slice(0, 44) + '…' : fl, w:fl});
+  });
+  (c.fund_caps || []).forEach(function(cp){
+    out.push({t:'warn', i:'shield', l:'score capped', w:cp});
+  });
   var f = c.freshness || {};
   if (f.window === 'overnight') out.push({t:'good', i:'clock', l:'overnight', w:f.why});
   else if (f.window === 'in-session') out.push({t:'warn', i:'clock', l:'already seen', w:f.why});
@@ -1724,11 +1732,38 @@ function intradayMore(c){
   var f = c.fundamentals || {}, ta = c.ta || {};
   cols.push('<div class="mcol"><h5>The business</h5>' +
     [['Revenue (TTM)', f.revenue_ttm_cr ? inr(f.revenue_ttm_cr) + 'cr' : '—'],
+     ['Operating cash flow', f.cfo_cr != null ? '<span class="' + sgn(f.cfo_cr) + '">' +
+       inr(f.cfo_cr) + 'cr</span>' + (f.cfo_negative_streak ? ' (' + f.cfo_negative_streak +
+       'y negative)' : '') : 'not read'],
+     ['Sales growth, last yr', f.sales_growth_1y_pct != null ? pct(f.sales_growth_1y_pct, 1) : '—'],
+     ['Profit growth, last yr', f.profit_growth_1y_pct != null ? pct(f.profit_growth_1y_pct, 1) : '—'],
+     ['Interest cover', f.interest_cover != null ? num(f.interest_cover, 1) + '×' : '—'],
+     ['Borrowings', f.borrowings_growth_pct != null ? pct(f.borrowings_growth_pct, 0) + ' yoy' : '—'],
+     ['Institutions', f.institutional_pct != null ? pct(f.institutional_pct, 2) : '—'],
      ['Market cap', f.market_cap_cr ? inr(f.market_cap_cr) + 'cr' : '—'],
      ['P/E', num(f.pe, 1)], ['ROCE', pct(f.roce, 0)], ['D/E', num(f.debt_to_equity, 2)],
      ['Promoter', pct(f.promoter_pct, 1)]].map(function(kv){
       return '<div class="kv"><span>' + kv[0] + '</span><span>' + kv[1] + '</span></div>';
     }).join('') + '</div>');
+  if ((c.fund_why || []).length || (c.screener_cons || []).length){
+    cols.push('<div class="mcol"><h5>Why ' + (c.fund_score != null ? c.fund_score : '—') +
+      ' out of 100</h5>' +
+      (c.fund_why || []).map(function(w){
+        var lead = String(w).trim().split(' ')[0];
+        var tone = lead.charAt(0) === '+' ? 'p' : lead.charAt(0) === '-' ? 'm' : '';
+        return '<div class="why ' + tone + '"><span class="n">' + esc(lead) + '</span><span>' +
+          esc(String(w).trim().slice(lead.length).trim()) + '</span></div>';
+      }).join('') +
+      ((c.screener_cons || []).length
+        ? '<h5 style="margin-top:14px">Screener disagrees</h5>' + c.screener_cons.map(function(x){
+            return '<div class="why m"><span class="n">⚑</span><span>' + esc(x) + '</span></div>';
+          }).join('') : '') +
+      ((c.screener_pros || []).length
+        ? '<h5 style="margin-top:14px">Screener agrees</h5>' + c.screener_pros.map(function(x){
+            return '<div class="why p"><span class="n">✓</span><span>' + esc(x) + '</span></div>';
+          }).join('') : '') +
+      '</div>');
+  }
   cols.push('<div class="mcol"><h5>The chart</h5>' +
     [['Trend', esc(String(ta.trend || '—').replace('_', ' '))], ['RSI', num(ta.rsi, 1)],
      ['ADX', num(ta.adx, 0)], ['ATR', pct(ta.atr_pct, 2)],

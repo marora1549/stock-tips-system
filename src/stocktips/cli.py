@@ -595,7 +595,8 @@ def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
     """One pre-open candidate, married to whatever the session has since made of it."""
     keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
             "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
-            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "fund_score", "fund_why", "fund_flags", "fund_caps", "screener_pros", "screener_cons",
+            "source_id", "corroborating_sources", "url", "title",
             "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
             "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
     out = {k: cand.get(k) for k in keys}

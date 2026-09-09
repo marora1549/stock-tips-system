@@ -329,8 +329,10 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
         snap = ta.analyze(df)
         if sym not in books:
             f = fundamentals.fetch(sym)
-            books[sym] = (f, *fundamentals.score(f))
-        f, fscore, fwhy = books[sym]
+            got = fundamentals.assess(f)
+            books[sym] = (f, got["score"], got["why"], got.get("flags") or [],
+                          got.get("caps") or [])
+        f, fscore, fwhy, fflags, fcaps = books[sym]
         cat = catalyst.score(
             ev, fundamentals=f, fund_score=fscore, ta=snap,
             class_prior=eventscore.prior(class_state, ev["event"], ev.get("event_prior", 0)),
@@ -340,6 +342,9 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
         sparks.remember(spark_cache, ev["symbol"], df)
         ranked.append({
             **ev, **cat, "plan": plan, "fund_score": fscore, "fund_why": fwhy,
+            "fund_flags": fflags, "fund_caps": fcaps,
+            "screener_pros": (f or {}).get("screener_pros") or [],
+            "screener_cons": (f or {}).get("screener_cons") or [],
             "ltp": snap["close"],
             "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
             "fundamentals": {k: v for k, v in (f or {}).items()
@@ -593,12 +598,17 @@ def read_one_story(text: str | None = None, url: str | None = None, *, title: st
             continue
         snap = ta.analyze(df)
         f = fundamentals.fetch(ev["symbol"])
-        fscore, fwhy = fundamentals.score(f)
+        fa = fundamentals.assess(f)
+        fscore, fwhy = fa["score"], fa["why"]
         cat = catalyst.score(ev, fundamentals=f, fund_score=fscore, ta=snap,
                              class_prior=eventscore.prior(classes, ev["event"], ev.get("event_prior", 0)),
                              source_weight=confidence.weight(conf.get(source_id, {}).get("score", 0.0)),
                              now=now)
-        out.append({**ev, **cat, "fund_score": fscore, "fund_why": fwhy, "ltp": snap["close"],
+        out.append({**ev, **cat, "fund_score": fscore, "fund_why": fwhy,
+                    "fund_flags": fa.get("flags") or [], "fund_caps": fa.get("caps") or [],
+                    "screener_pros": (f or {}).get("screener_pros") or [],
+                    "screener_cons": (f or {}).get("screener_cons") or [],
+                    "ltp": snap["close"],
                     "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
                     "fundamentals": {k: v for k, v in (f or {}).items()
                                      if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity",
