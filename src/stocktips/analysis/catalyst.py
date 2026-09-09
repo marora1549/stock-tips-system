@@ -117,7 +117,12 @@ def score(event: dict, *, fundamentals: dict | None = None, fund_score: int | No
     size = event.get("size_inr_cr")
     revenue = f.get("revenue_ttm_cr")
     ratio = None
-    if size and revenue and revenue > 0:
+    if size and not event.get("size_is_own_order", True):
+        # the order belongs to the company this one is a peer of, so there is no ratio to take
+        add(0, f"₹{size:,.0f}cr, but that is the order the winner took — this name is a peer, so "
+               f"there is no materiality to measure against its own revenue")
+        size = None
+    elif size and revenue and revenue > 0:
         ratio = size / revenue
         pts, band = _band(ratio)
         est = " (estimated from capacity)" if event.get("size_estimated") else ""
