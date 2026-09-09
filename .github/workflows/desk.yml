@@ -1,0 +1,155 @@
+name: desk
+
+# The dashboard's hands. docs/index.html asks GitHub to run this workflow, this workflow runs the
+# same `stocktips` command the analyst would have typed, and the commit it pushes is what the
+# dashboard reads back.
+#
+# Two rules hold this together:
+#   * inputs never touch a shell — scripts/desk_command.py turns them into argv, in Python;
+#   * nothing a browser sends is interpolated into a `run:` block. Every use goes through `env:`
+#     and is quoted, so `${{ inputs.symbol }}` never becomes part of a command line.
+#
+# `workflow_dispatch` allows ten inputs and the desk has more fields than that, so the common ones
+# are named and the rest ride along as JSON in `args`.
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: What to run
+        required: true
+        type: choice
+        options:
+          - book
+          - close
+          - capital
+          - add-tip
+          - import-tips
+          - contenders
+          - preopen
+          - intraday
+          - intraday-close
+          - daybook
+          - read
+          - lesson
+          - add-source
+          - gather
+          - structure
+          - analyze
+          - pick
+          - pick-book
+          - eod
+          - morning
+          - status
+          - dashboard-data
+      symbol:
+        description: NSE symbol, or a company name for add-tip / import-tips
+        required: false
+      amount:
+        description: Rupees — allocation for book, deposit for capital, count for contenders
+        required: false
+      price:
+        description: Exit price (close only)
+        required: false
+      source:
+        description: Source id, e.g. manual:mohan or mojo
+        required: false
+      text:
+        description: The lesson, the add-tip message, or the whole pasted screen for import-tips
+        required: false
+      note:
+        description: Free-text note recorded with the action
+        required: false
+      args:
+        description: 'JSON for the rest: {"target":"1700,1800","stop":"1490","timeframe":"monthly"}'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: desk-state          # the ledger has one writer at a time, whoever asked first
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -q -r requirements.txt
+
+      - name: Run the command
+        id: run
+        env:
+          PYTHONPATH: src
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
+          DESK_AMOUNT: ${{ inputs.amount }}
+          DESK_PRICE: ${{ inputs.price }}
+          DESK_SOURCE: ${{ inputs.source }}
+          DESK_TEXT: ${{ inputs.text }}
+          DESK_NOTE: ${{ inputs.note }}
+          DESK_ARGS: ${{ inputs.args }}
+        run: python scripts/desk_command.py | tee /tmp/desk-output.txt
+
+      - name: Refresh the dashboard payload
+        if: always() && steps.run.outcome == 'success'
+        env:
+          PYTHONPATH: src
+        run: python -m stocktips dashboard-data
+
+      - name: Record the run so the dashboard can show it
+        if: always() && steps.run.outcome == 'success'
+        env:
+          PYTHONPATH: src
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
+          DESK_AMOUNT: ${{ inputs.amount }}
+          DESK_ACTOR: ${{ github.actor }}
+          DESK_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/record_run.py /tmp/desk-output.txt
+
+      - name: Commit and push
+        if: always() && steps.run.outcome == 'success'
+        env:
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
+          DESK_ACTOR: ${{ github.actor }}
+          DESK_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git config user.name  "desk (dashboard)"
+          git config user.email "noreply@anthropic.com"
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "no state change — nothing to commit"
+            exit 0
+          fi
+          git add -A
+          git commit -qm "desk: ${DESK_COMMAND} ${DESK_SYMBOL}" \
+            -m "Dispatched from the dashboard by ${DESK_ACTOR}." \
+            -m "Run: ${DESK_RUN_URL}"
+          for i in 1 2 3; do
+            git pull --rebase --autostash -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 4))
+          done
+          echo "::error::could not push the state change to main"
+          exit 1
+
+      - name: Show what the command said
+        if: always()
+        env:
+          DESK_COMMAND: ${{ inputs.command }}
+          DESK_SYMBOL: ${{ inputs.symbol }}
+        run: |
+          printf '### `stocktips %s %s`\n' "$DESK_COMMAND" "$DESK_SYMBOL" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          tail -c 8000 /tmp/desk-output.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

@@ -130,3 +130,175 @@ def eod(events: list[str], led: dict, conf_before: dict, conf_after: dict, machi
     out.append("## Recent lessons")
     out.append(journal.tail(2500) or "_none yet_")
     return "\n".join(out)
+
+
+# ==================================================================== the pre-open email
+def _ratio_words(c: dict) -> str:
+    r, size, rev = c.get("materiality_ratio"), c.get("size_inr_cr"), c.get("revenue_ttm_cr")
+    if r and size and rev:
+        est = ", estimated from the capacity" if c.get("size_estimated") else ""
+        return f"₹{size:,.0f}cr against ₹{rev:,.0f}cr of revenue — **{r:.1f}× a year's sales**{est}"
+    if size:
+        return f"₹{size:,.0f}cr{', estimated from the capacity' if c.get('size_estimated') else ''}"
+    return "no size given and none estimable"
+
+
+def preopen_card(c: dict, rank: int) -> str:
+    plan = c.get("plan") or {}
+    ta = c.get("ta") or {}
+    lines = [f"### {rank}. {c['symbol']} — {c.get('company', '')}",
+             "",
+             f"**{c.get('event_label')}** · catalyst **{c.get('catalyst')}** · {c.get('verdict')} — {c.get('verdict_note')}",
+             "",
+             f"> {c.get('title', '')}  ",
+             f"> {c.get('source_id', '')} · [story]({c.get('url', '')}) · published {c.get('published', '')}",
+             "",
+             f"- Size: {_ratio_words(c)}",
+             f"- Why this name: {c.get('why_this_name', '')} ({c.get('route')})",
+             f"- Business: fundamentals {c.get('fund_score')}/100",
+             f"- Chart: last close ₹{c.get('ltp'):,.2f}, {ta.get('trend', '?')}, ATR {ta.get('atr_pct')}%, "
+             f"{abs(ta.get('dist_52w_high_pct') or 0):.1f}% off the 52-week high, "
+             f"₹{ta.get('avg_turnover_cr') or 0:,.0f}cr a day",
+             ""]
+    if plan.get("gap_ladder"):
+        lines += ["**The plan depends on the open:**", ""]
+        for step in plan["gap_ladder"]:
+            upto = f"up to {step['gap_upto_pct']:+g}%" if step["gap_upto_pct"] is not None else "above that"
+            lines.append(f"- gap {upto} → {step['rule']}")
+        lines += ["",
+                  f"Stop never wider than {plan.get('max_stop_pct')}%. No new entry after "
+                  f"{plan.get('no_new_entry_after')}. Flat by {plan.get('force_flat_at')}.",
+                  ""]
+    lines += ["<details><summary>the arithmetic</summary>", ""]
+    lines += [f"- {r}" for r in (c.get("reasons") or [])]
+    lines += ["", "</details>", ""]
+    return "\n".join(lines)
+
+
+def preopen(card: dict) -> str:
+    """The 08:00 email. First line has to stand alone — it may be all that gets read on a phone."""
+    trade, watch, avoid = card.get("trade") or [], card.get("watch") or [], card.get("avoid") or []
+    date, at = card.get("date"), card.get("generated_at", "")
+    if not trade and not watch and not avoid:
+        head = f"# Pre-open {date} — nothing worth trading on the news"
+    elif not trade:
+        head = (f"# Pre-open {date} — no trade, {len(watch)} to watch: "
+                + ", ".join(c["symbol"] for c in watch[:4]))
+    else:
+        head = (f"# Pre-open {date} — {len(trade)} to trade: "
+                + ", ".join(f"{c['symbol']} ({c['catalyst']})" for c in trade))
+
+    src = card.get("sources") or {}
+    fed = [s for s, v in src.items() if (v or {}).get("docs")]
+    cut = [s for s, v in src.items() if (v or {}).get("skipped")]
+    out = [head, "",
+           f"*{at} IST · {card.get('events_read', 0)} events read from {len(fed)} of {len(src)} wires"
+           + (f", {len(cut)} not reached before the deadline" if cut else "")
+           + " · paper trading only, nothing here places an order.*", ""]
+    if cut:
+        out += [f"> {len(cut)} wire{'s' if len(cut) > 1 else ''} were not reached: "
+                f"{', '.join(cut)}. A story the desk never fetched is a different failure from one "
+                f"it read and scored low.", ""]
+
+    if trade:
+        out += ["## Trade", "", "These cleared the bar. Every level comes from the chart, and the "
+                "plan is a rule about the open — not an instruction to buy at 09:15.", ""]
+        out += [preopen_card(c, i) for i, c in enumerate(trade, 1)]
+    if watch:
+        out += ["## Watch", "",
+                "Real news, not enough on its own. Worth a glance at how they open — but note the "
+                "route: a sympathy play is a peer of the company the story is actually about.", "",
+                "| Symbol | Event | Catalyst | Size | Fundamentals | Route | Story |",
+                "|---|---|---:|---:|---:|---|---|"]
+        for c in watch:
+            r = c.get("materiality_ratio")
+            size = (f"{r:.1f}× revenue" if r else
+                    (f"₹{c['size_inr_cr']:,.0f}cr" if c.get("size_inr_cr") else "—"))
+            route = c.get("route") or "—"
+            if route == "sympathy":
+                route = f"sympathy ({(c.get('directness') or 0):.0%})"
+            out.append(f"| {c['symbol']} | {c.get('event_label')} | {c.get('catalyst')} | {size} | "
+                       f"{c.get('fund_score')} | {route} | [link]({c.get('url', '')}) |")
+        out.append("")
+    if avoid:
+        out += ["## Avoid", "",
+                "Negative catalysts. Do not buy these today, and exit them if you hold them.", ""]
+        for c in avoid:
+            out.append(f"- **{c['symbol']}** — {c.get('event_label')}: {c.get('title', '')} "
+                       f"([story]({c.get('url', '')}))")
+        out.append("")
+
+    skipped = card.get("skipped") or []
+    if skipped:
+        out += ["<details><summary>" + f"{len(skipped)} events read and dropped" + "</summary>", ""]
+        out += [f"- {s['symbol']} ({s.get('event')}) — {s.get('why')}" for s in skipped[:25]]
+        out += ["", "</details>", ""]
+    st = card.get("settings") or {}
+    out += ["---", "",
+            f"Day book: ₹{st.get('notional_inr', 0):,.0f} notional, at most {st.get('max_positions')} "
+            f"positions, {st.get('risk_per_trade_pct')}% of notional risked per trade. "
+            f"Gap ladder {st.get('gap_modest_pct')}% / {st.get('gap_wide_pct')}%. "
+            f"Flat by {st.get('force_flat_at')}."]
+    return "\n".join(out)
+
+
+def intraday(card: dict) -> str:
+    """The session check, for the 09:35 and midday runs."""
+    rows = card.get("candidates") or []
+    acted = [r for r in rows if r.get("state") in ("triggered", "stopped", "done")]
+    head = (f"# Session {card.get('date')} {card.get('checked_at', '')[-5:]} — "
+            + (", ".join(f"{r['symbol']} {r['state']}" for r in acted) if acted
+               else f"nothing triggered ({len(rows)} watched)"))
+    out = [head, ""]
+    if not rows:
+        return head + "\n\nNo pre-open candidates for today.\n"
+    out += ["| Symbol | Gap | Band | State | Trigger | Stop | Targets | Now | From open |",
+            "|---|---:|---|---|---:|---:|---|---:|---:|"]
+    for r in rows:
+        tg = " / ".join(f"{t:,.0f}" for t in (r.get("targets") or [])) or "—"
+        out.append(f"| {r['symbol']} | {r.get('gap_pct', '—')}% | {r.get('band', '—')} | "
+                   f"{r.get('state', '—')} | {r.get('trigger') or '—'} | {r.get('stop') or '—'} | {tg} | "
+                   f"{r.get('last') or '—'} | {r.get('from_open_pct', '—')}% |")
+    out.append("")
+    for r in rows:
+        if r.get("why_not"):
+            out.append(f"- **{r['symbol']}** stood aside: {r['why_not']}")
+        elif r.get("order_line") and r.get("verdict") == "TRADE":
+            out.append(f"- **{r['symbol']}** — `{r['order_line']}`")
+        elif r.get("trigger") and r.get("verdict") != "TRADE":
+            # a WATCH name gets its levels, not a line to paste into a broker
+            out.append(f"- **{r['symbol']}** is on watch, not on the book: the break is "
+                       f"₹{r['trigger']:,.2f} with a stop at ₹{r['stop']:,.2f} if you decide it earns one")
+    b = card.get("book") or {}
+    live = f", {b['n_open']} still open ({', '.join(b.get('open_symbols') or [])})" if b.get("n_open") else ""
+    out += ["", f"Day book: {b.get('n_trades', 0)} closed{live}, ₹{b.get('pnl_inr', 0):,.0f} realised on "
+                f"₹{b.get('notional_inr', 0):,.0f} notional. Paper only."]
+    return "\n".join(out)
+
+
+def one_story(story: dict) -> str:
+    """One hand-read story, scored — printed for the CLI and for the portal's paste box."""
+    if story.get("error") and not story.get("candidates"):
+        return f"# Could not use that story\n\n{story['error']}\n"
+    out = [f"# {story.get('title') or 'Story'}", "",
+           f"*read {story.get('read_at', '')} · {story.get('source_id', '')}"
+           + (f" · [source]({story['url']})" if story.get("url") else "") + "*", ""]
+    if story.get("read_during_session"):
+        out += ["> **Read during the session.** " + story["read_during_session"], ""]
+    cands = story.get("candidates") or []
+    if not cands:
+        out += [story.get("error") or "No NSE name implicated.", ""]
+        return "\n".join(out)
+    lead = cands[0]
+    verdicts = ", ".join(f"{c['symbol']} {c.get('verdict')}"
+                         + (f" ({c['catalyst']})" if c.get("catalyst") is not None else "")
+                         for c in cands[:4])
+    out[0] = f"# {lead['symbol']} {lead.get('verdict')} — {story.get('title') or 'story'}"
+    out.insert(3, f"**{verdicts}**")
+    out.insert(4, "")
+    for i, c in enumerate(cands, 1):
+        if c.get("catalyst") is None:
+            out += [f"### {i}. {c['symbol']} — {c.get('verdict_note') or 'not scored'}", ""]
+            continue
+        out += [preopen_card(c, i)]
+    return "\n".join(out)

@@ -59,6 +59,34 @@ source_confidence:
   disable_below: -40
   min_outcomes_to_disable: 8
 
+intraday:
+  # The news-catalyst day book. Separate from the positional ledger on purpose: this money is in
+  # and out inside one session, and mixing the two would make both records unreadable.
+  enabled: true                # the kill switch: false stops preopen and every session run at once
+  notional_inr: 100000         # the day book's own notional capital (paper)
+  max_positions: 2             # two names is already a lot to watch inside a session
+  max_per_trade_pct: 40        # of the day book, per name
+  risk_per_trade_pct: 0.75     # of the day book, at the stop — this is what sizes the position
+
+  # The gap ladder. A +1% open and a +9% open are not the same trade, and the third band is the
+  # whole discipline: GE Vernova gapped hard and topped at +12% inside the first hour, so buying
+  # the open was buying the top.
+  gap_modest_pct: 2.0          # up to here: buy the break of the opening range
+  gap_wide_pct: 5.0            # up to here: same, but only on a strong close and real volume
+                               # above it: no fresh entry at the open — VWAP reclaim or nothing
+  opening_range_minutes: 15
+  or_close_in_top_third: 0.66  # where the opening range must close, in the wide band
+  or_volume_multiple: 3.0      # opening-range volume against a normal 15 minutes, in the wide band
+
+  max_stop_pct: 1.5            # a day trade's stop is never wider than this
+  min_stop_pct: 0.5            # nor tighter — noise would take you out
+  target_r: [1.0, 1.75, 2.5]   # measured moves of the opening range
+  max_target_atr: 1.5          # and never further than this much of the daily ATR from the open
+  no_new_entry_after: "14:00"  # too late in the day to start
+  force_flat_at: "15:10"       # intraday means intraday
+  min_turnover_cr: 5.0         # a position you cannot exit is not a position
+  min_catalyst: 62             # the catalyst score a name needs before it gets a plan at all
+
 data:
   history_days: 400
   cache_ttl_minutes: 30

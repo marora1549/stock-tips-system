@@ -1,6 +1,9 @@
 """`python -m stocktips <command>`
 
   gather            fetch all sources → reports/<date>/tips_raw.json
+  add-tip           log a tip you were sent by hand (add-tip --source manual:mohan --symbol TATASTEEL ...)
+  import-tips       paste a Markets Mojo table or call panel → tips (import-tips --file paste.txt)
+  contenders        rank every analysed idea head to head → the final top 3
   structure         merge duplicates → tips_structured.json   (--reviewed FILE to use Claude-corrected tips)
   analyze           TA + fundamentals + scoring → analysis.json
   pick              allocate + book paper positions → picks.json    (--no-book for a dry run)
@@ -8,6 +11,10 @@
   close             discretionary exit: cancel a pending position or sell an open one (close CGPOWER [--price 940])
   capital           deposit or withdraw capital (capital --add 50000 / --withdraw 20000)
   morning           gather → structure → analyze → pick → reports/<date>/morning.md   (--no-book)
+  preopen           08:00: overnight corporate news → catalyst scores → reports/<date>/preopen.md
+  intraday          session check: the real gap and opening range  (--close to settle and grade)
+  read              score one story you found yourself (read --url ... / --text ... [--add])
+  daybook           the intraday record, and what each kind of news has been worth
   eod               mark-to-market, update source confidence, machine lessons → reports/<date>/eod.md
   status            one-screen summary of the book and sources
   analyze-symbol    ad-hoc: full TA plan for one NSE symbol  (analyze-symbol TCS --tf monthly)
@@ -21,15 +28,19 @@ import argparse
 import json
 import logging
 import sys
+from pathlib import Path
 
 import yaml
 
 from . import pipeline, report
-from .analysis import plan as planmod, ta
-from .data import fundamentals, prices
-from .learning import confidence, journal
+from .analysis import contenders, plan as planmod, scoring, ta
+from .data import fundamentals, prices, sparks, symbols
+from .learning import confidence, eventscore, journal
+from .portfolio import daybook
+from .sources import mojo
 from .portfolio import ledger as ledgermod
-from .util import CONFIG_DIR, REPORTS_DIR, ROOT, read_json, settings, today_str, write_json
+from .util import (CONFIG_DIR, REPORTS_DIR, ROOT, STATE_DIR, now_ist, read_json, settings, short_hash,
+                   today_str, write_json)
 
 
 def _market_closed(day: str) -> str | None:
@@ -70,8 +81,269 @@ def cmd_gather(a):
     print(json.dumps({"tips": len(raw["tips"]), "needs_review": n_rev, "sources": raw["sources"], "file": str(pipeline.day_dir() / "tips_raw.json")}, indent=1))
 
 
+def _tip_record(*, source, symbol, company, action="buy", entry=None, targets=(), stop=None,
+                timeframe="weekly", text=None, url=None, extracted_by="manual",
+                extraction_confidence=0.9, symbol_confidence=1.0, symbol_method="manual", published=None):
+    """One tip in the shape `structure`/`analyze` expect, whoever it came from.
+
+    The source's entry, targets and stop are recorded as claims. Nothing downstream treats them as
+    levels — `build_plan` reads the chart and only glances at them.
+    """
+    tgt = sorted(float(t) for t in targets if t)
+    return {
+        "id": short_hash(f"{source}|{symbol}|{tgt}|{today_str()}"), "source_id": source, "brokerage": None,
+        "url": url or "", "title": (text or "")[:120],
+        "published": published or now_ist().strftime("%a, %d %b %Y %H:%M:%S %z"),
+        "company": company, "symbol": symbol,
+        "symbol_confidence": symbol_confidence, "symbol_method": symbol_method,
+        "action": action, "src_entry": entry, "src_entry_hi": None, "src_targets": tgt,
+        "src_stop": stop, "src_upside_pct": None, "src_duration": timeframe,
+        "default_timeframe": timeframe, "sentence": text or f"{action} {symbol}",
+        "extracted_by": extracted_by, "extraction_confidence": extraction_confidence, "needs_review": False,
+    }
+
+
+def cmd_add_tip(a):
+    """A tip from WhatsApp, Telegram, a friend, a screenshot — logged so its source gets graded too.
+
+    Manual sources start at confidence 0 like every other source and earn their weight from outcomes;
+    a tip from the desk owner gets no bonus for being his.
+    """
+    master = symbols.master()
+    sym, sym_conf, how = master.resolve(a.symbol)
+    if sym is None:
+        sys.exit(f"could not resolve {a.symbol!r} to an NSE symbol ({how}) — check the spelling, or watch for a "
+                 f"demerger/rename (Tata Motors → TMCV/TMPV, Zomato → ETERNAL). Not guessing.")
+    if sym != a.symbol.upper():
+        print(f"resolved {a.symbol!r} → {sym} ({how}, {sym_conf:.2f})")
+    day = pipeline.day_dir()
+    path = day / "tips_raw.json"
+    raw = read_json(path, None) or {"date": today_str(), "sources": {}, "tips": [], "docs": []}
+    if any(t["symbol"] == sym and t["source_id"] == a.source for t in raw["tips"]):
+        log.warning("%s from %s is already in today's tips — adding a second entry", sym, a.source)
+    targets = [float(x) for x in (a.target or "").replace(" ", "").split(",") if x] if a.target else []
+    tip = _tip_record(source=a.source, symbol=sym, company=a.company or master.name_of(sym), action=a.action,
+                      entry=a.entry, targets=targets, stop=a.stop, timeframe=a.timeframe, text=a.text,
+                      url=a.url, extracted_by="manual", symbol_method="manual:" + how)
+    raw["tips"].append(tip)
+    raw["sources"][a.source] = raw["sources"].get(a.source, 0) + 1
+    write_json(path, raw)
+    conf = confidence.load()
+    confidence.ensure(conf, a.source)
+    confidence.save(conf)
+    print(tip["id"])
+    print(json.dumps({"tip_id": tip["id"], "symbol": sym, "company": tip["company"], "source_id": a.source,
+                      "src_targets": tip["src_targets"], "src_stop": a.stop, "timeframe": a.timeframe,
+                      "file": str(path), "tips_today": len(raw["tips"]),
+                      "source_confidence": confidence.display(conf[a.source]["score"])}, indent=1))
+
+
+def cmd_import_tips(a):
+    """Paste a Markets Mojo screen — the table or one call's panel — and let it become tips.
+
+    Nothing about it is trusting: the names are matched against the NSE master offline, a name that
+    could be two companies is **skipped with its candidates** rather than guessed, and Mojo's own
+    entry/target/stop are filed as claims. Their Sell calls are logged so the source still gets
+    graded on them, but `structure` drops non-buy calls, so a short can never reach the book.
+    """
+    text = a.text
+    if a.file:
+        text = Path(a.file).read_text(encoding="utf-8", errors="replace")
+    if not text and not sys.stdin.isatty():
+        text = sys.stdin.read()
+    if not (text or "").strip():
+        sys.exit("nothing to import — pass --text, --file, or pipe the paste in on stdin")
+
+    rows = mojo.parse(text)
+    if not rows:
+        sys.exit("could not read a single call out of that paste — the Markets Mojo table (name, Buy/Sell, "
+                 "call type, then the eleven columns) or one call's detail panel are the two shapes it knows")
+
+    master = symbols.master()
+    day = pipeline.day_dir()
+    path = day / "tips_raw.json"
+    raw = read_json(path, None) or {"date": today_str(), "sources": {}, "tips": [], "docs": []}
+    existing = {(t["symbol"], t["source_id"], tuple(t.get("src_targets") or [])) for t in raw["tips"]}
+
+    imported, duplicates, skipped, logged_only = [], [], [], []
+    for row in rows:
+        name = row["company_raw"]
+        if not name and a.symbol:
+            name = a.symbol
+        hit = mojo.resolve_name(name, master)
+        if not hit["symbol"]:
+            skipped.append({"name": name or "(no name in the paste)", "reason": hit["method"],
+                            "entry": row["src_entry"], "target": (row["src_targets"] or [None])[0],
+                            "candidates": hit["candidates"][:4]})
+            continue
+        sym = hit["symbol"]
+        key = (sym, a.source, tuple(sorted(row["src_targets"])))
+        if key in existing:
+            duplicates.append(sym)
+            continue
+        sentence = (f"{row['action']} {sym} · {row['call_type'] or row['timeframe']} · their entry "
+                    f"₹{row['src_entry']:,.2f}, target ₹{(row['src_targets'] or [0])[0]:,.2f}"
+                    + (f", stop ₹{row['src_stop']:,.2f}" if row["src_stop"] else "")
+                    + (f" · called {row['entry_date']}" if row["entry_date"] else ""))
+        tip = _tip_record(source=a.source, symbol=sym, company=hit["company"], action=row["action"],
+                          entry=row["src_entry"], targets=row["src_targets"], stop=row["src_stop"],
+                          timeframe=row["timeframe"], text=sentence, url=a.url,
+                          extracted_by="mojo", extraction_confidence=round(min(0.9, hit["confidence"]), 3),
+                          symbol_confidence=hit["confidence"], symbol_method="mojo:" + hit["method"])
+        tip["src_claim"] = {k: row[k] for k in ("performance_pct", "returns_till_target_pct", "days_since",
+                                               "entry_date", "sector", "mcap", "direction", "call_type")}
+        if row["action"] != "buy":
+            logged_only.append(sym)
+        if not a.dry_run:
+            raw["tips"].append(tip)
+            raw["sources"][a.source] = raw["sources"].get(a.source, 0) + 1
+            existing.add(key)
+        imported.append({"symbol": sym, "company": hit["company"], "action": row["action"],
+                         "confidence": hit["confidence"], "method": hit["method"],
+                         "src_entry": row["src_entry"], "src_target": (row["src_targets"] or [None])[0],
+                         "src_stop": row["src_stop"], "id": None if a.dry_run else tip["id"]})
+
+    if not a.dry_run and imported:
+        write_json(path, raw)
+        conf = confidence.load()
+        confidence.ensure(conf, a.source)          # starts at 0 like every other source
+        confidence.save(conf)
+
+    out = {"source_id": a.source, "rows_read": len(rows), "imported": imported,
+           "duplicates": duplicates, "skipped": skipped,
+           "logged_not_bookable": logged_only, "dry_run": bool(a.dry_run),
+           "file": None if a.dry_run else str(path), "tips_today": len(raw["tips"])}
+    print(json.dumps(out, indent=1, ensure_ascii=False))
+    if skipped:
+        print(f"\n{len(skipped)} row(s) need a name I will not guess at:", file=sys.stderr)
+        for sk in skipped:
+            cands = ", ".join(f"{c['symbol']} ({c['company']})" for c in sk["candidates"]) or "no close match"
+            print(f"  {sk['name']}: {sk['reason']} — candidates: {cands}", file=sys.stderr)
+        print("  re-run one of these with: add-tip --source " + a.source + " --symbol <SYMBOL> ...", file=sys.stderr)
+    if logged_only:
+        print(f"\nlogged but never bookable (this desk is long-only): {', '.join(logged_only)}", file=sys.stderr)
+
+
+def cmd_contenders(a):
+    """The head-to-head: every analysed idea ranked against every other, top few named."""
+    day = a.date or (sorted(p.name for p in REPORTS_DIR.iterdir() if p.is_dir())[-1] if REPORTS_DIR.exists() else today_str())
+    results = read_json(REPORTS_DIR / day / "analysis.json", [])
+    if not results:
+        sys.exit(f"no analysis.json for {day} — run analyze first")
+    led = ledgermod.load()
+    held = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
+    top = contenders.rank([_suggestion(r) for r in results], n=a.top, held=held)
+    print(json.dumps({"day": day, "ideas_considered": len(results), "contenders": top}, indent=1, ensure_ascii=False))
+
+
+def _intraday_off() -> str | None:
+    """The one switch that turns the news desk off, honoured by every command that is part of it.
+
+    A settings key nothing reads is a lie about the system, and this one is the kill switch: if the
+    intraday experiment is not working, `intraday.enabled: false` in config/settings.yaml should stop
+    it everywhere rather than requiring four routines to be disabled one at a time.
+    """
+    cfg = settings().get("intraday", {}) or {}
+    if cfg.get("enabled", True):
+        return None
+    return ("the intraday desk is switched off — set intraday.enabled: true in config/settings.yaml "
+            "to turn it back on")
+
+
+def cmd_preopen(a):
+    """The 08:00 run: read overnight corporate news and say what to do about it before the open.
+
+    Its output is an email, so the report's first line has to stand alone — that may be all that
+    gets read on a phone at eight in the morning.
+    """
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
+    closed = _market_closed(today_str())
+    if closed and not a.force:
+        print(f"market closed today ({closed}) — nothing opens, so there is nothing to be early for")
+        return
+    day = a.date or now_ist().date().isoformat()
+    raw = None if a.refresh else read_json(pipeline.day_dir(day) / "news_raw.json", None)
+    if raw is None:
+        raw = pipeline.gather_news(max_age_hours=a.max_age)
+    card = pipeline.preopen(raw, limit=a.limit, date=day)
+    md = report.preopen(card)
+    (pipeline.day_dir(day) / "preopen.md").write_text(md, encoding="utf-8")
+    book = daybook.load()
+    daybook.record_candidates(book, card.get("trade", []))
+    daybook.save(book)
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_intraday(a):
+    """The session runs: 09:35 for the opening range, midday for the trail, 15:20 to settle."""
+    off = _intraday_off()
+    if off:
+        print(off)
+        return
+    day = a.date or now_ist().date().isoformat()
+    closed = _market_closed(day)
+    if closed and not a.force:
+        print(f"market closed on {day} ({closed}) — there is no session to watch "
+              f"(use --force to look anyway)")
+        return
+    if a.close:
+        out = pipeline.intraday_close(date=a.date)
+        if not a.no_dashboard:
+            cmd_dashboard_data(a)
+        print(json.dumps({"date": out["date"], "exits": out["exits"],
+                          "graded": len(out["graded"]), "book": out["book"]}, indent=1))
+        return
+    card = pipeline.intraday_watch(date=a.date)
+    if card.get("error"):
+        sys.exit(card["error"])
+    md = report.intraday(card)
+    (pipeline.day_dir(a.date) / "intraday.md").write_text(md, encoding="utf-8")
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+    print(md)
+
+
+def cmd_daybook(a):
+    """The intraday record: what it has actually made, and what each kind of news has been worth."""
+    book = daybook.load()
+    print(json.dumps({"stats": daybook.stats(book),
+                      "event_classes": eventscore.summary(eventscore.load()),
+                      "recent": book.get("closed", [])[-8:]}, indent=1))
+
+
+def cmd_read(a):
+    """Score one story you found yourself — the path for the article read too late.
+
+    Same extractor, same beneficiary map, same catalyst score as the 08:00 run, so the answer sits
+    beside that run's rather than being a second opinion arrived at differently.
+    """
+    text = a.text
+    if a.file:
+        text = Path(a.file).read_text(encoding="utf-8", errors="replace")
+    if not text and not a.url and not sys.stdin.isatty():
+        text = sys.stdin.read()
+    story = pipeline.read_one_story(text=text, url=a.url, title=a.title, published=a.published,
+                                   source_id=a.source, date=a.date)
+    if story.get("error") and not story.get("candidates"):
+        sys.exit(story["error"])
+    print(report.one_story(story))
+    if a.add:
+        res = pipeline.add_to_preopen(story, date=a.date)
+        if res.get("error"):
+            print("\n" + res["error"], file=sys.stderr)
+        else:
+            print("\nadded to " + res["date"] + ": " + (", ".join(res["added"]) or "nothing scored high enough"))
+            if not a.no_dashboard:
+                cmd_dashboard_data(a)
+
+
 def cmd_structure(a):
-    reviewed = read_json(a.reviewed, None) if a.reviewed else read_json(pipeline.day_dir() / "tips_reviewed.json", None)
+    reviewed = read_json(Path(a.reviewed), None) if a.reviewed else read_json(pipeline.day_dir() / "tips_reviewed.json", None)
     s = pipeline.structure(None, reviewed)
     print(json.dumps([{k: t[k] for k in ("symbol", "source_id", "n_mentions", "src_targets", "src_stop", "extraction_confidence", "needs_review")} for t in s], indent=1))
 
@@ -270,40 +542,112 @@ def cmd_lesson(a):
 
 ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
                    "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
-                   "corroborating_sources", "brokerages", "fund_why")
+                   "corroborating_sources", "brokerages", "fund_why", "tags")
 TA_FIELDS = ("trend", "rsi", "adx", "atr_pct", "vol_ratio", "chg_5d_pct", "chg_20d_pct", "dist_52w_high_pct",
-             "dist_ema20_pct", "patterns", "avg_turnover_cr", "last_bar_date")
+             "dist_ema20_pct", "patterns", "avg_turnover_cr", "last_bar_date", "momentum_score", "drift_pct_day",
+             "efficiency", "amplitude_pct_day", "up_day_share")
 
 
-def _pos_for_dashboard(pos: dict) -> dict:
-    """Ledger position + the derived levels the dashboard shows (never written back to state/)."""
+def _suggestion(p: dict) -> dict:
+    """One analysed candidate, shaped for the page.
+
+    Tags are recomputed here rather than only read, so a record written before tags existed still
+    arrives labelled — the momentum tags simply stay absent until there is a pace to measure.
+    """
+    ta_snap = {k: (p.get("ta") or {}).get(k) for k in TA_FIELDS}
+    out = {k: p.get(k) for k in ANALYSIS_FIELDS}
+    out["ta"] = ta_snap
+    out["urls"] = (p.get("urls") or [])[:2]
+    if not out.get("tags"):
+        out["tags"] = scoring.tags(p.get("plan") or {}, p.get("ta") or {}, p.get("fund_score") or 0,
+                                   p.get("n_mentions") or 1, len(p.get("corroborating_sources") or []))
+    return out
+
+
+def _pos_for_dashboard(pos: dict, on: str | None = None) -> dict:
+    """Ledger position + the derived numbers the dashboard shows (never written back to state/)."""
     d = dict(pos)
     base = d.get("entry") or d.get("entry_plan")
     if base:
         if d.get("stop_loss") is not None:
             d["stop_loss_pct"] = round((d["stop_loss"] / base - 1) * 100, 2)
         d["target_pct"] = [round((t / base - 1) * 100, 2) for t in (d.get("targets") or [])]
-        d["order_line"] = report.order_line(d["symbol"], d.get("qty_open") or d.get("qty") or 0, base, d.get("stop_loss") or 0.0, d.get("targets") or [])
+        d["order_line"] = report.order_line(d["symbol"], d.get("qty_open") or d.get("qty") or 0, base,
+                                            d.get("stop_loss") or 0.0, d.get("targets") or [])
+        # how far along the road to T1 it actually is, and whether it is keeping to its own timetable
+        t1 = (d.get("targets") or [None])[0]
+        ltp = d.get("ltp")
+        if t1 and ltp and t1 > base:
+            d["progress_t1_pct"] = max(0, min(100, round((ltp - base) / (t1 - base) * 100)))
+        if d.get("status") in ("open", "hold") and d.get("opened"):
+            elapsed = ledgermod.trading_days_between(d["opened"], on or today_str())
+            d["days_elapsed"] = elapsed
+            eta = (d.get("eta_days") or [None])[0]
+            if eta:
+                d["eta_t1_days"] = eta
+                d["pace"] = ("hit" if 1 in (d.get("targets_hit") or [])
+                             else "behind" if elapsed > eta else "on-track")
+                d["days_left_on_eta"] = eta - elapsed
     return d
+
+
+def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
+    """One pre-open candidate, married to whatever the session has since made of it."""
+    keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
+            "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
+            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
+            "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
+    out = {k: cand.get(k) for k in keys}
+    out["catalyst_reasons"] = cand.get("reasons") or []
+    live = next((c for c in (session.get("candidates") or []) if c.get("symbol") == cand["symbol"]), None)
+    if live:
+        out["session"] = {k: live.get(k) for k in
+                          ("state", "band", "band_rule", "gap_pct", "open", "prev_close", "vwap",
+                           "last", "day_high", "day_low", "from_open_pct", "opening_range",
+                           "or_volume_multiple", "acts", "why_not", "watch", "trigger", "stop",
+                           "stop_pct", "stop_note", "targets", "target_pct", "target_basis",
+                           "reward_risk_t2", "targets_hit", "triggered", "stopped", "entered_at",
+                           "stopped_at", "max_favourable_pct", "size", "order_line", "reasons")}
+    return out
 
 
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
+    spark_cache = sparks.load()
     days = sorted([p.name for p in REPORTS_DIR.iterdir() if p.is_dir()]) if REPORTS_DIR.exists() else []
     latest = read_json(REPORTS_DIR / days[-1] / "picks.json", {}) if days else {}
     analysis = read_json(REPORTS_DIR / days[-1] / "analysis.json", []) if days else []
     cfg = settings()
     cap = cfg["capital"]
     n_live = len([p for p in led["positions"] if p["status"] in ("open", "pending")])
+    live = {p["symbol"] for p in led["positions"] if p["status"] in ("open", "pending")}
     cash = ledgermod.deployable_cash(led)
+    # rank the same records the page shows, so a contender carries the tags its idea card carries
+    suggestions = [_suggestion(p) for p in analysis]
+    # the intraday desk's own payload: today's card, the session state, and the trained brain
+    intra_day = None
+    for d in reversed(days[-6:]):
+        if (REPORTS_DIR / d / "preopen.json").exists():
+            intra_day = d
+            break
+    pre = read_json(REPORTS_DIR / intra_day / "preopen.json", {}) if intra_day else {}
+    session = read_json(REPORTS_DIR / intra_day / "intraday.json", {}) if intra_day else {}
+    book = daybook.load()
+    classes = eventscore.load()
+
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
+            "sparks": {sym: sparks.series(spark_cache, sym) for sym in
+                       {p["symbol"] for p in led["positions"]} |
+                       {p["symbol"] for p in analysis[:40] if p.get("verdict") in ("BUY", "STRONG BUY")}
+                       if sparks.series(spark_cache, sym)},
+            "actions_log": (read_json(STATE_DIR / "actions_log.json", {}).get("runs") or [])[-12:],
             "closed": led["closed"][-50:], "equity_curve": led["equity_curve"],
             "sources": conf, "latest_picks": latest,
-            "latest_analysis": [dict({k: p.get(k) for k in ANALYSIS_FIELDS},
-                                     ta={k: (p.get("ta") or {}).get(k) for k in TA_FIELDS},
-                                     urls=(p.get("urls") or [])[:2]) for p in analysis],
+            "latest_analysis": suggestions,
+            "contenders": contenders.rank(suggestions, n=3, held=live),
             "analysis_day": days[-1] if days else None,
             "cash_flows": led.get("cash_flows", []),
             "book": {"max_open_positions": cap["max_open_positions"], "open_or_pending": n_live,
@@ -312,6 +656,28 @@ def cmd_dashboard_data(a):
                      "min_alloc_inr": round(led["capital_inr"] * cap["min_allocation_pct"] / 100, 2),
                      "max_alloc_inr": round(led["capital_inr"] * cap["max_single_stock_pct"] / 100, 2),
                      "min_allocation_pct": cap["min_allocation_pct"], "max_single_stock_pct": cap["max_single_stock_pct"]},
+            "intraday": {
+                "day": intra_day,
+                "generated_at": pre.get("generated_at"),
+                "checked_at": session.get("checked_at"),
+                "events_read": pre.get("events_read", 0),
+                "wires": pre.get("sources", {}),
+                "trade": [_intraday_for_dashboard(c, session) for c in (pre.get("trade") or [])],
+                "watch": [_intraday_for_dashboard(c, session) for c in (pre.get("watch") or [])],
+                "avoid": [{k: c.get(k) for k in ("symbol", "company", "event_label", "title", "url",
+                                                 "source_id", "catalyst", "verdict_note")}
+                          for c in (pre.get("avoid") or [])],
+                "skipped": (pre.get("skipped") or [])[:20],
+                "trades": session.get("trades") or [],
+                "stats": daybook.stats(book),
+                "closed": (book.get("closed") or [])[-30:],
+                "event_classes": eventscore.summary(classes),
+                "settings": pre.get("settings") or {k: (settings().get("intraday", {}) or {}).get(k)
+                                                    for k in ("gap_modest_pct", "gap_wide_pct",
+                                                              "max_stop_pct", "force_flat_at",
+                                                              "notional_inr", "risk_per_trade_pct",
+                                                              "max_positions")},
+            },
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
@@ -323,12 +689,59 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("morning"); p.add_argument("--no-book", action="store_true"); p.add_argument("--skip-review", action="store_true"); p.add_argument("--max-age", type=float, default=36); p.add_argument("--force", action="store_true", help="run even on a weekend/holiday"); p.set_defaults(fn=cmd_morning)
     p = sub.add_parser("gather"); p.add_argument("--max-age", type=float, default=36); p.set_defaults(fn=cmd_gather)
+    p = sub.add_parser("add-tip")
+    p.add_argument("--source", required=True, help="manual:<who> — e.g. manual:mohan, manual:tg_friend")
+    p.add_argument("--symbol", required=True)
+    for k in ("company", "text", "url"):
+        p.add_argument("--" + k)
+    p.add_argument("--entry", type=float, default=None)
+    p.add_argument("--target", help="one price or a comma-separated list")
+    p.add_argument("--stop", type=float, default=None)
+    p.add_argument("--timeframe", choices=["weekly", "monthly", "long", "intraday"], default="weekly")
+    p.add_argument("--action", choices=["buy", "sell", "hold"], default="buy")
+    p.set_defaults(fn=cmd_add_tip)
+    p = sub.add_parser("import-tips")
+    p.add_argument("--source", default="mojo", help="source id these calls are graded under (default: mojo)")
+    p.add_argument("--file", help="file holding the pasted screen")
+    p.add_argument("--text", help="the pasted screen itself")
+    p.add_argument("--symbol", help="name for a detail-panel paste that did not include one")
+    p.add_argument("--url", default="https://www.marketsmojo.com/")
+    p.add_argument("--dry-run", action="store_true", help="show what would be imported, write nothing")
+    p.set_defaults(fn=cmd_import_tips)
+    p = sub.add_parser("contenders"); p.add_argument("--top", type=int, default=3); p.add_argument("--date", default=None); p.set_defaults(fn=cmd_contenders)
     p = sub.add_parser("structure"); p.add_argument("--reviewed"); p.set_defaults(fn=cmd_structure)
     p = sub.add_parser("analyze"); p.set_defaults(fn=cmd_analyze)
     p = sub.add_parser("pick"); p.add_argument("--no-book", action="store_true"); p.set_defaults(fn=cmd_pick)
     p = sub.add_parser("book"); p.add_argument("symbol"); p.add_argument("--capital", type=float, default=None, help="rupees to deploy (default: deployable cash split over the free slots, capped per stock)"); p.add_argument("--date", default=None, help="report day whose analysis.json to book from (default: latest)"); p.add_argument("--force", action="store_true", help="override verdict / cap / slot checks"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_book)
     p = sub.add_parser("close"); p.add_argument("symbol"); p.add_argument("--price", type=float, default=None, help="exit price (default: last close)"); p.add_argument("--note", default=None, help="why you exited — goes in the position notes"); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_close)
     p = sub.add_parser("capital"); p.add_argument("--add", type=float, default=None); p.add_argument("--withdraw", type=float, default=None); p.add_argument("--note", default=None); p.add_argument("--no-dashboard", action="store_true"); p.set_defaults(fn=cmd_capital)
+    p = sub.add_parser("preopen")
+    p.add_argument("--max-age", type=float, default=20, help="how far back to read news (hours)")
+    p.add_argument("--refresh", action="store_true", help="re-fetch the wires instead of reusing news_raw.json")
+    p.add_argument("--limit", type=int, default=8)
+    p.add_argument("--date", default=None, help="the session this run is for (default: today in IST)")
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_preopen)
+    p = sub.add_parser("intraday")
+    p.add_argument("--close", action="store_true", help="settle the day's trades and grade the news")
+    p.add_argument("--date", default=None)
+    p.add_argument("--force", action="store_true", help="run even on a weekend/holiday")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_intraday)
+    p = sub.add_parser("read")
+    p.add_argument("--url", help="the story's URL — fetched and read")
+    p.add_argument("--text", help="the article body, pasted")
+    p.add_argument("--file", help="a file holding the article body")
+    p.add_argument("--title", help="the headline, if the paste does not start with it")
+    p.add_argument("--published", help="RFC-822 or ISO timestamp; defaults to now, which usually "
+                                       "means the freshness term marks it as already seen")
+    p.add_argument("--source", default="manual:read", help="source id it is graded under")
+    p.add_argument("--date", default=None)
+    p.add_argument("--add", action="store_true", help="fold it into today's pre-open card")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_read)
+    p = sub.add_parser("daybook"); p.set_defaults(fn=cmd_daybook)
     p = sub.add_parser("eod"); p.add_argument("--date", default=None); p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_eod)
     p = sub.add_parser("status"); p.set_defaults(fn=cmd_status)
     p = sub.add_parser("analyze-symbol"); p.add_argument("symbol"); p.add_argument("--tf", default="weekly"); p.set_defaults(fn=cmd_analyze_symbol)

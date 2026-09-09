@@ -1,0 +1,181 @@
+# ---------------------------------------------------------------------------
+# Who actually trades on a piece of news.
+#
+# A headline names the buyer — "Power Grid secures 6,000 MW Barmer HVDC project" — but POWERGRID is
+# a ₹3 lakh crore utility that will not move on a capex plan. The names that move are the ones that
+# *supply* the thing. This file is that map, and it is the system's domain knowledge: every story
+# that teaches it something should be added here rather than encoded in Python.
+#
+# Each theme carries:
+#   match        keywords in the article that put a story in this theme (lowercase, substring)
+#   require      optional: at least one of these must also appear, to keep "solar" out of a story
+#                about solar eclipses
+#   plays        the NSE symbols that trade on it, each with:
+#                  weight   1.0 = the direct supplier, 0.5 = a credible second-order name.
+#                           This becomes the `directness` term in the catalyst score, so a
+#                           second-order name needs a bigger event to clear the same bar.
+#                  why      one line, shown on the page — the reader must be able to disagree
+#   cost_per     optional: turns a capacity figure into a rupee estimate when the announcement
+#                gives none. `unit` is the capacity unit as written; `inr_cr` is crore per unit.
+#                These are order-of-magnitude public figures, and the score says "estimated" when
+#                it uses one.
+#   buyers       names that appear as the *awarding* party in this theme. A story is not a buy
+#                signal for the buyer, and listing them here stops the buyer being scored as the
+#                beneficiary of its own capex.
+# ---------------------------------------------------------------------------
+
+themes:
+  - id: hvdc
+    name: HVDC transmission
+    match: ["hvdc", "high voltage direct current", "lcc terminal", "converter station",
+            "bipole", "±800 kv", "800 kv", "synchronous condenser"]
+    cost_per: {unit: MW, inr_cr: 2.1, note: "±800 kV LCC terminal station, supply + execution"}
+    buyers: [POWERGRID, NTPC, SJVN, NHPC, ADANIENSOL]
+    plays:
+      - {symbol: "GVT&D", weight: 1.0, why: "one of two Indian HVDC terminal suppliers with a local LCC line"}
+      - {symbol: POWERINDIA, weight: 1.0, why: "Hitachi Energy — the other HVDC terminal supplier"}
+      - {symbol: SIEMENS, weight: 0.5, why: "grid technology arm bids HVDC and HVAC substations"}
+      - {symbol: ENRIN, weight: 0.5, why: "Siemens Energy India — transmission products into the same projects"}
+      - {symbol: ABB, weight: 0.4, why: "electrification and automation content in converter stations"}
+
+  - id: transmission_epc
+    name: Transmission lines and substations
+    match: ["transmission line", "substation", "sub-station", "ehv", "765 kv", "400 kv",
+            "transmission system", "tbcb", "inter-state transmission"]
+    cost_per: {unit: km, inr_cr: 1.6, note: "765 kV double-circuit line, turnkey"}
+    buyers: [POWERGRID, ADANIENSOL, NTPC]
+    plays:
+      - {symbol: KPIL, weight: 1.0, why: "Kalpataru Projects — transmission EPC order book"}
+      - {symbol: KEC, weight: 1.0, why: "KEC International — transmission towers and turnkey lines"}
+      - {symbol: TARIL, weight: 0.8, why: "Transformers and Rectifiers — power transformers into substations"}
+      - {symbol: APARINDS, weight: 0.7, why: "conductors and cables for EHV lines"}
+      - {symbol: SKIPPER, weight: 0.6, why: "transmission towers and structures"}
+      - {symbol: POWERINDIA, weight: 0.5, why: "substation automation and switchgear"}
+
+  - id: power_cables
+    name: Cables and wires
+    match: ["cable", "conductor", "wire harness", "ehv cable", "elastomeric"]
+    plays:
+      - {symbol: POLYCAB, weight: 1.0, why: "largest listed cables and wires maker"}
+      - {symbol: KEI, weight: 1.0, why: "EHV cables and house wire"}
+      - {symbol: RRKABEL, weight: 0.8, why: "wires and cables, retail-led"}
+      - {symbol: APARINDS, weight: 0.8, why: "conductors, speciality oils, cables"}
+      - {symbol: FINCABLES, weight: 0.7, why: "Finolex Cables"}
+
+  - id: defence
+    name: Defence orders
+    match: ["defence ministry", "ministry of defence", "mod signs", "drdo", "indian army",
+            "indian navy", "indian air force", "acceptance of necessity", "aon ", "emergency procurement"]
+    buyers: []
+    plays:
+      - {symbol: HAL, weight: 1.0, why: "aircraft, helicopters, engines"}
+      - {symbol: BEL, weight: 1.0, why: "radars, electronic warfare, missile electronics"}
+      - {symbol: BDL, weight: 1.0, why: "missiles and torpedoes"}
+      - {symbol: MAZDOCK, weight: 1.0, why: "warships and submarines"}
+      - {symbol: COCHINSHIP, weight: 0.9, why: "shipbuilding and repair"}
+      - {symbol: GRSE, weight: 0.9, why: "Garden Reach — warships"}
+      - {symbol: SOLARINDS, weight: 0.8, why: "defence explosives and ammunition"}
+      - {symbol: DATAPATTNS, weight: 0.8, why: "defence electronics"}
+      - {symbol: PARAS, weight: 0.7, why: "Paras Defence — optics and drones"}
+      - {symbol: ZENTEC, weight: 0.6, why: "simulators and training systems"}
+      - {symbol: BEML, weight: 0.6, why: "defence mobility and rail products"}
+
+  - id: railways
+    name: Railway orders
+    match: ["indian railways", "railway board", "vande bharat", "rvnl", "dedicated freight corridor",
+            "kavach", "metro rail", "rolling stock", "wagon"]
+    buyers: [IRCTC, CONCOR]
+    plays:
+      - {symbol: TITAGARH, weight: 1.0, why: "wagons and metro rolling stock"}
+      - {symbol: TEXRAIL, weight: 1.0, why: "Texmaco — wagons and rail EPC"}
+      - {symbol: RVNL, weight: 0.9, why: "railway project execution"}
+      - {symbol: IRCON, weight: 0.9, why: "railway construction"}
+      - {symbol: RAILTEL, weight: 0.7, why: "railway telecom and Kavach networks"}
+      - {symbol: BEML, weight: 0.7, why: "metro coaches and rail equipment"}
+      - {symbol: JWL, weight: 0.8, why: "Jupiter Wagons"}
+      - {symbol: HBLENGINE, weight: 0.7, why: "HBL Engineering — Kavach train protection"}
+
+  - id: solar_manufacturing
+    name: Solar cells and modules
+    match: ["solar module", "solar cell", "pv module", "gigawatt", " gw ", "alcs list", "almm",
+            "photovoltaic", "topcon"]
+    require: ["solar", "renewable", "module", "cell", "pv"]
+    cost_per: {unit: MW, inr_cr: 0.35, note: "module supply, domestic content"}
+    buyers: [NTPC, SJVN, NHPC, ADANIGREEN]
+    plays:
+      - {symbol: WAAREEENER, weight: 1.0, why: "largest listed module maker"}
+      - {symbol: PREMIERENE, weight: 1.0, why: "Premier Energies — cells and modules"}
+      - {symbol: WEBELSOLAR, weight: 0.8, why: "Websol Energy — cells"}
+      - {symbol: BORORENEW, weight: 0.7, why: "Borosil Renewables — solar glass"}
+      - {symbol: SWSOLAR, weight: 0.6, why: "Sterling and Wilson Renewable — solar EPC"}
+
+  - id: power_generation
+    name: Generation capacity and BTG
+    match: ["thermal power", "supercritical", "btg", "boiler turbine generator", "ultra mega",
+            "pumped storage", "hydro project", "nuclear"]
+    cost_per: {unit: MW, inr_cr: 8.5, note: "supercritical thermal, EPC"}
+    buyers: [NTPC, NHPC, SJVN, TATAPOWER, JSWENERGY, ADANIPOWER]
+    plays:
+      - {symbol: BHEL, weight: 1.0, why: "boiler-turbine-generator sets for thermal and nuclear"}
+      - {symbol: THERMAX, weight: 0.8, why: "boilers and heat recovery"}
+      - {symbol: TRITURBINE, weight: 0.6, why: "Triveni Turbine — industrial steam turbines"}
+      - {symbol: LT, weight: 0.5, why: "power EPC and heavy engineering"}
+
+  - id: data_centre
+    name: Data centres and AI capacity
+    match: ["data centre", "data center", "hyperscale", "colocation", "ai factory", "gpu cluster"]
+    cost_per: {unit: MW, inr_cr: 45.0, note: "hyperscale data centre, all-in"}
+    plays:
+      - {symbol: ANANTRAJ, weight: 0.9, why: "data centre build-out"}
+      - {symbol: NETWEB, weight: 0.9, why: "servers and HPC/AI systems"}
+      - {symbol: TATACOMM, weight: 0.6, why: "colocation and connectivity"}
+      - {symbol: POLYCAB, weight: 0.4, why: "power and structured cabling content"}
+
+  - id: pharma_approval
+    name: Drug approvals and inspections
+    match: ["usfda", "us fda", "anda", "abbreviated new drug", "establishment inspection report",
+            "eir", "form 483", "cdsco", "dcgi", "ema approval", "orphan drug", "tentative approval"]
+    plays: []      # the beneficiary is always the company named in the story; no supply chain here
+
+  - id: shipping_ports
+    name: Ports, shipping and shipbuilding
+    match: ["port concession", "cargo terminal", "shipyard", "dry dock", "container terminal",
+            "shipbuilding order"]
+    plays:
+      - {symbol: ADANIPORTS, weight: 0.9, why: "largest private port operator"}
+      - {symbol: MAZDOCK, weight: 0.8, why: "shipbuilding capacity"}
+      - {symbol: COCHINSHIP, weight: 0.8, why: "commercial and defence shipbuilding"}
+      - {symbol: GRSE, weight: 0.7, why: "shipbuilding"}
+      - {symbol: SCI, weight: 0.6, why: "Shipping Corporation of India"}
+
+  - id: semiconductors
+    name: Semiconductor and electronics manufacturing
+    match: ["semiconductor fab", "osat", "atmp", "chip plant", "pli scheme electronics",
+            "display fab", "compound semiconductor"]
+    plays:
+      - {symbol: CGPOWER, weight: 0.9, why: "OSAT joint venture in Sanand"}
+      - {symbol: KAYNES, weight: 0.9, why: "Kaynes Semicon — OSAT and EMS"}
+      - {symbol: DIXON, weight: 0.7, why: "electronics manufacturing at scale"}
+      - {symbol: AMBER, weight: 0.6, why: "electronics and components"}
+      - {symbol: SYRMA, weight: 0.6, why: "EMS"}
+
+  - id: water_infra
+    name: Water and irrigation projects
+    match: ["jal jeevan", "water supply project", "irrigation project", "desalination",
+            "sewage treatment", "stp project"]
+    plays:
+      - {symbol: WABAG, weight: 1.0, why: "VA Tech Wabag — water and wastewater treatment EPC"}
+      - {symbol: IONEXCHANG, weight: 0.8, why: "Ion Exchange — water treatment"}
+      - {symbol: WELENT, weight: 0.5, why: "Welspun Enterprises — water and road infrastructure"}
+
+  - id: roads_infra
+    name: Roads and highways
+    match: ["nhai", "national highway", "hybrid annuity", "bot toll", "expressway",
+            "bharatmala", "road project"]
+    cost_per: {unit: km, inr_cr: 22.0, note: "four-lane highway, EPC"}
+    plays:
+      - {symbol: KNRCON, weight: 1.0, why: "highway EPC"}
+      - {symbol: PNCINFRA, weight: 1.0, why: "highway EPC"}
+      - {symbol: HGINFRA, weight: 1.0, why: "highway and rail EPC"}
+      - {symbol: GRINFRA, weight: 0.9, why: "G R Infraprojects"}
+      - {symbol: IRB, weight: 0.6, why: "toll assets and BOT"}
