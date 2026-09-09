@@ -1,3 +1,24 @@
+# End-of-day ledger update — Wed 09 Sep 2026, 15:47 IST
+
+Equity ₹101,675 (+1.68%) · cash ₹1,512 · realised ₹0 · open 3 · hold 0 · closed 0
+
+## Events
+- nothing happened in the book today
+
+## Source confidence changes
+- none
+
+## What the ledger says works (all closed positions)
+No closed positions yet.
+
+## Open book
+| symbol | status | entry | LTP | unrealised | SL | hit | deadline | bucket |
+|---|---|---|---|---|---|---|---|---|
+| CGPOWER | open | 894.9 | 926.9500122070312 | 3.58% | 855.9 | [] | 2026-10-20 | hold-capable |
+| V2RETAIL | open | 222.2 | 219.6699981689453 | -1.14% | 213.56 | [] | 2026-10-20 | hold-capable |
+| LALPATHLAB | open | 1881.4 | 1919.699951171875 | 2.04% | 1860.75 | [] | 2026-10-20 | hold-capable |
+
+## Recent lessons
 # Lessons journal
 
 Appended by every EOD run. Newest at the bottom. `[machine]` = computed from the ledger, `[analyst]` = Claude's review.
@@ -8,6 +29,3 @@ Day 1 (2026-09-07): morning run booked CGPOWER/V2RETAIL/LALPATHLAB as pending af
 
 ### 2026-09-08 [analyst]
 2026-09-08: all 3 pendings (CGPOWER, V2RETAIL, LALPATHLAB) filled clean at open, every fill below plan (no gap-ups) — V2RETAIL's flagged crowded-call gap risk didn't show up today, one data point only. No stop/target/time-stop hits, day 1 for all three. All sources still n_resolved=0, so no auto-disable or commendation checks fire yet — desk needs its first resolved trade. Capital fully committed (cash Rs1,512), no room for new picks until a position resolves.
-
-### 2026-09-09 [analyst]
-2026-09-09: quiet day, no stop/target/time-stop events — day 2 for all three positions (deadline 2026-10-20, plenty of runway). CGPOWER +3.6% and LALPATHLAB +2.0% tracking toward T1 cleanly on no unusual volume; V2RETAIL -1.1% is normal chop, well inside its 855.9/213.56 stops, no reason to touch it. All sources still n_resolved=0 (up to 57 tips logged for mc_stock_ideas_gnews/et_recos_page) — desk has zero closed trades so no auto-disable or commendation checks can fire yet; book is full (cash Rs1,512) so today added no new picks regardless.
