@@ -20,7 +20,8 @@ TIME_STOP_FALLBACK = {"intraday": 1, "weekly": 10, "monthly": 30, "long": 90}
 def _clock(plan: dict) -> tuple[float, str]:
     """Reward reaching T1 well inside the timeframe; punish a target the drift cannot reach."""
     horizon = plan.get("time_stop_days") or TIME_STOP_FALLBACK.get(plan.get("timeframe"), 30)
-    eta = plan.get("eta_days")
+    eta_days = plan.get("eta_days")
+    eta = eta_days[0] if isinstance(eta_days, list) else eta_days
     if not eta or eta <= 0:
         return -8.0, "no measurable drift — T1 has no date on it"
     ratio = eta / max(horizon, 1)
