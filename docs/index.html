@@ -1828,6 +1828,21 @@ function fundAudit(){
       }).join('') + '</div></div>';
   }
 
+  var b = DATA.build || {};
+  var bad = (b.canaries || []).filter(function(c){ return !c.ok; });
+  if (bad.length){
+    out = '<div class="card"><div class="card-in log">' +
+      '<div class="row"><span class="when bad">stale</span><span class="what">' +
+      '<b>These numbers were produced by an older scorer.</b> ' + bad.length + ' of ' +
+      (b.canaries || []).length + ' known-answer checks fail against the code at ' +
+      esc(b.head || '?') + ' on ' + esc(b.branch || '?') + ': ' +
+      bad.map(function(c){ return esc(c.name); }).join('; ') +
+      '. Merge the branch carrying the fix, then re-run.</span></div></div></div>' + out;
+  } else if (b.head){
+    out += '<div class="hint">Scored by ' + esc(b.branch || '?') + ' at ' + esc(b.head) +
+      ', with all ' + (b.canaries || []).length + ' known-answer checks passing.</div>';
+  }
+
   out += '<div class="hint">The highest score this scorer can produce is ' +
     num(a.ceiling || 90, 0) + ' out of 100. A public ratio page cannot tell the 90th percentile ' +
     'from the 99th, and the last ten points are withheld rather than handed out. Enviro Infra ' +

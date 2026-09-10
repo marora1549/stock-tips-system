@@ -34,6 +34,7 @@ import yaml
 
 from . import pipeline, report
 from .analysis import contenders, plan as planmod, scoring, ta
+from . import selfcheck
 from .data import fundamentals, prices, sparks, symbols
 from .learning import confidence, eventscore, fundcalib, journal
 from .portfolio import daybook
@@ -540,6 +541,34 @@ def cmd_lesson(a):
     print("lesson recorded")
 
 
+def cmd_selfcheck(a):
+    """Is the code in this container the code that was fixed?
+
+    A passing test suite says the repository is correct. It says nothing about what a routine
+    actually cloned. On 10 September the 08:00 run mailed a card scoring Enviro Infra 92 — a
+    number that had been corrected to 32 the day before — because the correction was on a branch
+    and the routine clones `main`. Nothing failed. The run succeeded, the email arrived, and the
+    output looked completely normal, which is precisely why it needed catching by something other
+    than a person reading it.
+    """
+    ok, rows = selfcheck.run()
+    print(f"scorer canaries — {selfcheck.branch()} @ {selfcheck.head()}")
+    for r in rows:
+        print(f"  {'PASS' if r['ok'] else 'FAIL'}  {r['name']}")
+        print(f"        got {r['found']!r}, want {r['want']}")
+        if not r["ok"]:
+            print(f"        this is the {r['was']} failure, returning")
+    if ok:
+        print(f"\nall {len(rows)} canaries pass — this container is running the corrected scorer")
+        return
+    bad = [r for r in rows if not r["ok"]]
+    print(f"\n{len(bad)} of {len(rows)} FAILED. The code in this container is older than the "
+          f"corrections in this repository's history.\nDo not present this run's fundamentals "
+          f"numbers as current. Say so at the top of the email, name the failing canaries, and "
+          f"check whether a branch carrying the fix is still unmerged.")
+    sys.exit(3)
+
+
 def cmd_rescore(a):
     """Re-run the fundamentals scorer over a report that was written by an older version of it.
 
@@ -808,6 +837,12 @@ def cmd_dashboard_data(a):
                 "disagreements": fundcalib.disagreements(verdicts)[:12],
                 "ceiling": fundamentals.BASE + sum(hi for hi, _ in fundamentals.BUDGET.values()),
             },
+            # Which code produced this page. The portal was showing a fundamentals score of 92
+            # from a scorer that had already been corrected to say 32, and nothing on the page
+            # said which version had computed it.
+            "build": {"head": selfcheck.head(), "branch": selfcheck.branch(),
+                      "canaries": [{k: r[k] for k in ("name", "ok", "want")}
+                                   for r in selfcheck.canaries()]},
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
@@ -882,6 +917,8 @@ def main(argv=None):
         p.add_argument("--" + k.replace("_", "-"), dest=k)
     p.add_argument("--category", default="tipster"); p.set_defaults(fn=cmd_add_source)
     p = sub.add_parser("lesson"); p.add_argument("text"); p.set_defaults(fn=cmd_lesson)
+    p = sub.add_parser("selfcheck", help="known-answer checks against the code in this container")
+    p.set_defaults(fn=cmd_selfcheck)
     p = sub.add_parser("rescore", help="re-run the fundamentals scorer over an existing report")
     p.add_argument("--date", default=None)
     p.add_argument("--reason", default=None, help="why the scorer changed")
