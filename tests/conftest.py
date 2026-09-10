@@ -60,6 +60,32 @@ def _seed_universe(path: Path) -> None:
     path.write_text(json.dumps({"fetched": datetime.now().isoformat(), "rows": rows}), encoding="utf-8")
 
 
+def pytest_configure(config):
+    """Under STOCKTIPS_NO_NETWORK, make a real outbound connection raise instead of succeed.
+
+    "The suite makes zero outbound requests" is a claim that has been true and is load-bearing —
+    a test that quietly reaches Screener or Yahoo is slow, flaky, and passes or fails on somebody
+    else's uptime. Nothing enforced it. Locally it stays off, because a developer poking at a live
+    page from a scratch script should not be fought with; CI sets it, so a regression that adds a
+    real fetch fails there instead of becoming an intermittent mystery months later.
+    """
+    if not os.environ.get("STOCKTIPS_NO_NETWORK"):
+        return
+    import requests
+
+    # Guarded at the requests layer, not at the socket. A socket-level host allowlist cannot see
+    # through an egress proxy — in a sandbox where HTTPS_PROXY points at 127.0.0.1, every call to
+    # screener.in looks like a connection to localhost and sails through. `requests` is where all
+    # of this codebase's outbound traffic goes, the URL is right there in the error, and it
+    # behaves the same everywhere.
+    def refuse(self, method, url, *a, **kw):
+        raise RuntimeError(
+            f"the test suite tried to fetch {method} {url}. Tests must not touch the network — "
+            f"stub the fetch or add a fixture. (STOCKTIPS_NO_NETWORK is set.)")
+
+    requests.Session.request = refuse
+
+
 @pytest.fixture(autouse=True)
 def isolate_state(monkeypatch, tmp_path):
     import importlib
