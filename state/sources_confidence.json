@@ -1,7 +1,7 @@
 {
   "et_recos_gnews": {
     "score": 0.0,
-    "n_tips": 4,
+    "n_tips": 5,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -13,12 +13,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "et_recos_gnews"
   },
   "et_recos_page": {
     "score": 0.0,
-    "n_tips": 47,
+    "n_tips": 55,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -30,12 +30,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "et_recos_page"
   },
   "mc_stock_ideas_gnews": {
     "score": 0.0,
-    "n_tips": 57,
+    "n_tips": 72,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -47,10 +47,61 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "mc_stock_ideas_gnews"
   },
   "mint_gnews": {
+    "score": 0.0,
+    "n_tips": 93,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-09-10",
+    "id": "mint_gnews"
+  },
+  "bs_recos": {
+    "score": 0.0,
+    "n_tips": 6,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-09-10",
+    "id": "bs_recos"
+  },
+  "fe_gnews": {
+    "score": 0.0,
+    "n_tips": 36,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-09-10",
+    "id": "fe_gnews"
+  },
+  "brokerage_gnews": {
     "score": 0.0,
     "n_tips": 78,
     "n_resolved": 0,
@@ -64,63 +115,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
-    "id": "mint_gnews"
-  },
-  "bs_recos": {
-    "score": 0.0,
-    "n_tips": 5,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-09-08",
-    "id": "bs_recos"
-  },
-  "fe_gnews": {
-    "score": 0.0,
-    "n_tips": 28,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
-    "id": "fe_gnews"
-  },
-  "brokerage_gnews": {
-    "score": 0.0,
-    "n_tips": 76,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "brokerage_gnews"
   },
   "chartink_52w_breakout": {
     "score": 0.0,
-    "n_tips": 37,
+    "n_tips": 46,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -132,12 +132,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "chartink_52w_breakout"
   },
   "chartink_ema_pullback": {
     "score": 0.0,
-    "n_tips": 160,
+    "n_tips": 200,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -149,12 +149,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": 0.0,
-    "n_tips": 160,
+    "n_tips": 200,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -166,7 +166,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "chartink_squeeze"
   },
   "broker:rupakde": {
@@ -188,7 +188,7 @@
   },
   "broker:citi": {
     "score": 0.0,
-    "n_tips": 3,
+    "n_tips": 4,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -200,7 +200,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:citi"
   },
   "broker:morganstanley": {
@@ -239,7 +239,7 @@
   },
   "broker:motilal": {
     "score": 0.0,
-    "n_tips": 31,
+    "n_tips": 33,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -251,7 +251,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:motilal"
   },
   "broker:icicisec": {
@@ -273,7 +273,7 @@
   },
   "broker:pl": {
     "score": 0.0,
-    "n_tips": 4,
+    "n_tips": 6,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -285,7 +285,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:pl"
   },
   "broker:nomura": {
@@ -324,7 +324,7 @@
   },
   "broker:marketsmith": {
     "score": 0.0,
-    "n_tips": 4,
+    "n_tips": 6,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -336,7 +336,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:marketsmith"
   },
   "broker:anandrathi": {
@@ -375,7 +375,7 @@
   },
   "broker:nuvama": {
     "score": 0.0,
-    "n_tips": 6,
+    "n_tips": 8,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -387,7 +387,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:nuvama"
   },
   "broker:axissec": {
@@ -443,23 +443,6 @@
   },
   "broker:elara": {
     "score": 0.0,
-    "n_tips": 4,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-08",
-    "last_seen": "2026-09-09",
-    "id": "broker:elara"
-  },
-  "broker:clsa": {
-    "score": 0.0,
     "n_tips": 6,
     "n_resolved": 0,
     "n_t1": 0,
@@ -472,10 +455,10 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-09",
-    "id": "broker:clsa"
+    "last_seen": "2026-09-10",
+    "id": "broker:elara"
   },
-  "broker:jefferies": {
+  "broker:clsa": {
     "score": 0.0,
     "n_tips": 8,
     "n_resolved": 0,
@@ -489,7 +472,24 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
+    "id": "broker:clsa"
+  },
+  "broker:jefferies": {
+    "score": 0.0,
+    "n_tips": 14,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-08",
+    "last_seen": "2026-09-10",
     "id": "broker:jefferies"
   },
   "broker:ubs": {
@@ -511,6 +511,23 @@
   },
   "broker:bernstein": {
     "score": 0.0,
+    "n_tips": 2,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
+    "id": "broker:bernstein"
+  },
+  "broker:kotaksec": {
+    "score": 0.0,
     "n_tips": 1,
     "n_resolved": 0,
     "n_t1": 0,
@@ -523,24 +540,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-09",
-    "id": "broker:bernstein"
-  },
-  "broker:kotaksec": {
-    "score": 0.0,
-    "n_tips": 0,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-09",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-10",
     "id": "broker:kotaksec"
   },
   "broker:angelone": {
@@ -763,5 +763,22 @@
     "first_seen": "2026-09-10",
     "last_seen": "2026-09-10",
     "id": "corp_sahi"
+  },
+  "broker:ambit": {
+    "score": 0.0,
+    "n_tips": 1,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "id": "broker:ambit"
   }
 }
