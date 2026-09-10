@@ -41,10 +41,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 3.98,
+      "max_favourable_pct": 4.03,
       "notes": [],
-      "ltp": 926.9500122070312,
-      "unrealised_pct": 3.58
+      "ltp": 914.5499877929688,
+      "unrealised_pct": 2.2
     },
     {
       "pos_id": "2026-09-08-V2RETAIL",
@@ -88,8 +88,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 0.64,
       "notes": [],
-      "ltp": 219.6699981689453,
-      "unrealised_pct": -1.14
+      "ltp": 218.1300048828125,
+      "unrealised_pct": -1.83
     },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -129,8 +129,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 4.28,
       "notes": [],
-      "ltp": 1919.699951171875,
-      "unrealised_pct": 2.04
+      "ltp": 1916.699951171875,
+      "unrealised_pct": 1.88
     }
   ],
   "closed": [],
@@ -146,6 +146,10 @@
     {
       "date": "2026-09-09",
       "equity": 101675.2
+    },
+    {
+      "date": "2026-09-10",
+      "equity": 100864.3
     }
   ],
   "created": "2026-09-07",
