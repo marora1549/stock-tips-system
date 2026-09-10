@@ -1,0 +1,570 @@
+{
+  "date": "2026-09-10",
+  "top": [
+    {
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange of India",
+      "tip_id": "b2f9b7bcf7",
+      "source_id": "broker:bernstein",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "bs_recos",
+        "fe_gnews"
+      ],
+      "n_mentions": 3,
+      "src_targets": [
+        3830.0
+      ],
+      "src_stop": null,
+      "src_entry": 3342.0,
+      "urls": [
+        "https://www.financialexpress.com/market/mcx-vs-bse-bernstein-rates-one-stock-outperform-sees-80-performance-divergence-ahead-4335054/lite/",
+        "https://www.moneycontrol.com/news/business/markets/bse-stock-rating-bernstein-initiates-with-underperform-as-derivatives-growth-normalises-check-target-price-14025718.html",
+        "https://www.business-standard.com/markets/news"
+      ],
+      "brokerages": [
+        "bernstein"
+      ],
+      "sentence": "Meanwhile, Bernstein is more constructive on Multi Commodity Exchange of India (MCX) , initiating coverage with an ‘outperform’ rating and a target price of Rs 3,830 per share.",
+      "ltp": 3350.0,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 3350.0,
+        "entry_zone": [
+          3333.25,
+          3366.75
+        ],
+        "stop_loss": 3149.77,
+        "stop_loss_pct": 5.98,
+        "stop_basis": "below support",
+        "targets": [
+          3653.09,
+          3855.15,
+          4158.24
+        ],
+        "target_pct": [
+          9.05,
+          15.08,
+          24.13
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.52,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 66,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.6 healthy momentum",
+          "-6 MACD histogram negative & falling",
+          "+4 ADX 35.0 trending",
+          "+4 reward:risk to T2 2.52",
+          "+3 pace puts T1 ~15d out"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          3830.0
+        ],
+        "src_stop": null,
+        "momentum_score": 88,
+        "efficiency": 0.305,
+        "amplitude_pct_day": 2.005,
+        "eta_days": [
+          15,
+          25,
+          39
+        ],
+        "eta_basis": "0.612%/session of net directional progress",
+        "pace_pct_day": 0.612,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.6,
+        "atr_pct": 3.02,
+        "adx": 35.0,
+        "vol_ratio": 0.91,
+        "patterns": [],
+        "dist_52w_high_pct": -3.74,
+        "dist_ema20_pct": 4.81,
+        "dist_ema200_pct": 26.39,
+        "avg_turnover_cr": 763.27,
+        "chg_5d_pct": 1.95,
+        "chg_20d_pct": 12.79,
+        "high_52w": 3480.0,
+        "last_bar_date": "2026-09-09",
+        "momentum_score": 88,
+        "drift_pct_day": 0.612,
+        "efficiency": 0.305,
+        "amplitude_pct_day": 2.005,
+        "up_day_share": 0.65
+      },
+      "resistances": [
+        {
+          "price": 3400.0,
+          "touches": 1
+        },
+        {
+          "price": 3480.0,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 2758.9,
+          "touches": 2
+        },
+        {
+          "price": 2707.0,
+          "touches": 1
+        },
+        {
+          "price": 2571.5,
+          "touches": 2
+        },
+        {
+          "price": 2260.0,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 66,
+      "fund_score": 95,
+      "fund_why": [
+        "+12 ROCE 71.4%",
+        "+8 ROE 56.3%",
+        "-2 P/E 55.4",
+        "+8 3y profit CAGR 108%",
+        "+6 3y sales CAGR 65%",
+        "+5 D/E 0",
+        "+4 latest qtr PAT YoY 103.4%",
+        "+4 mcap ₹85,422 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 85422.0,
+        "pe": 55.4,
+        "roce": 71.4,
+        "roe": 56.3,
+        "sales_growth_3_years": 65.0,
+        "profit_growth_3_years": 108.0,
+        "debt_to_equity": 0.0,
+        "np_yoy_growth_pct": 103.4
+      },
+      "source_weight": 0.65,
+      "source_confidence": 50,
+      "composite": 72,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 95"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "CORONA",
+      "company": "CORONA Remedies Limited",
+      "tip_id": "411a8d8353",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "n_mentions": 1,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/corona.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Corona Remedies Ltd (NSE: CORONA) LTP 2197.2 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 4.97%, volume 262842.",
+      "ltp": 2093.199951171875,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 2093.2,
+        "entry_zone": [
+          2082.73,
+          2103.67
+        ],
+        "stop_loss": 2024.83,
+        "stop_loss_pct": 3.27,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          2270.1,
+          2383.95,
+          2558.4
+        ],
+        "target_pct": [
+          8.45,
+          13.89,
+          22.22
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 4.25,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 72,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 51.1 healthy momentum",
+          "+4 ADX 29.1 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 4.25",
+          "-6 no directional drift to put a date on T1"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 0,
+        "efficiency": 0.017,
+        "amplitude_pct_day": 1.067,
+        "eta_days": [
+          null,
+          null,
+          null
+        ],
+        "eta_basis": "no measurable directional drift",
+        "pace_pct_day": -0.019,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 51.1,
+        "atr_pct": 2.78,
+        "adx": 29.1,
+        "vol_ratio": 0.55,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -7.79,
+        "dist_ema20_pct": 0.13,
+        "dist_ema200_pct": 7.31,
+        "avg_turnover_cr": 3.77,
+        "chg_5d_pct": 2.95,
+        "chg_20d_pct": -0.4,
+        "high_52w": 2270.1,
+        "last_bar_date": "2026-09-08",
+        "momentum_score": 0,
+        "drift_pct_day": -0.019,
+        "efficiency": 0.017,
+        "amplitude_pct_day": 1.067,
+        "up_day_share": 0.5
+      },
+      "resistances": [
+        {
+          "price": 2100.7,
+          "touches": 1
+        },
+        {
+          "price": 2192.8,
+          "touches": 1
+        },
+        {
+          "price": 2270.1,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 2024.75,
+          "touches": 2
+        },
+        {
+          "price": 1657.2,
+          "touches": 2
+        },
+        {
+          "price": 1602.8,
+          "touches": 1
+        },
+        {
+          "price": 1506.5,
+          "touches": 3
+        }
+      ],
+      "ta_confidence": 72,
+      "fund_score": 97,
+      "fund_why": [
+        "+12 ROCE 33.3%",
+        "+8 ROE 29.5%",
+        "-2 P/E 63.3",
+        "+8 3y profit CAGR 33%",
+        "+6 3y sales CAGR 17%",
+        "+5 D/E 0.22",
+        "+4 promoter 69%",
+        "+4 latest qtr PAT YoY 30.4%",
+        "+2 mcap ₹13,438 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 13438.0,
+        "pe": 63.3,
+        "roce": 33.3,
+        "roe": 29.5,
+        "sales_growth_3_years": 17.0,
+        "profit_growth_3_years": 33.0,
+        "promoter_pct": 69.0,
+        "debt_to_equity": 0.22,
+        "np_yoy_growth_pct": 30.4
+      },
+      "source_weight": 0.5,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 97"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 72"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace -0.019%/session — mostly chop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.25"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "tip_id": "9f766df819",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "n_mentions": 1,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/lalpathlab.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Dr. Lal Path Labs Ltd. (NSE: LALPATHLAB) LTP 1919.7 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 0.38%, volume 205022.",
+      "ltp": 1912.5,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1912.5,
+        "entry_zone": [
+          1902.94,
+          1922.06
+        ],
+        "stop_loss": 1860.75,
+        "stop_loss_pct": 2.71,
+        "stop_basis": "below support",
+        "targets": [
+          2064.0,
+          2165.0,
+          2316.5
+        ],
+        "target_pct": [
+          7.92,
+          13.2,
+          21.12
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 4.88,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 72,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.6 healthy momentum",
+          "+4 ADX 27.9 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 4.88",
+          "-6 no directional drift to put a date on T1"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 0,
+        "efficiency": 0.113,
+        "amplitude_pct_day": 0.681,
+        "eta_days": [
+          null,
+          null,
+          null
+        ],
+        "eta_basis": "no measurable directional drift",
+        "pace_pct_day": -0.077,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.6,
+        "atr_pct": 2.64,
+        "adx": 27.9,
+        "vol_ratio": 0.46,
+        "patterns": [
+          "bollinger_squeeze",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -3.84,
+        "dist_ema20_pct": 0.55,
+        "dist_ema200_pct": 16.91,
+        "avg_turnover_cr": 37.37,
+        "chg_5d_pct": -1.14,
+        "chg_20d_pct": -2.12,
+        "high_52w": 1988.9,
+        "last_bar_date": "2026-09-08",
+        "momentum_score": 0,
+        "drift_pct_day": -0.077,
+        "efficiency": 0.113,
+        "amplitude_pct_day": 0.681,
+        "up_day_share": 0.55
+      },
+      "resistances": [
+        {
+          "price": 1980.27,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 1870.1,
+          "touches": 1
+        },
+        {
+          "price": 1650.9,
+          "touches": 1
+        },
+        {
+          "price": 1610.1,
+          "touches": 1
+        },
+        {
+          "price": 1500.1,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 72,
+      "fund_score": 94,
+      "fund_why": [
+        "+12 ROCE 28%",
+        "+8 ROE 22.3%",
+        "-2 P/E 57.3",
+        "+8 3y profit CAGR 30%",
+        "+3 3y sales CAGR 11%",
+        "+5 D/E 0.08",
+        "+4 promoter 53.19%",
+        "+4 latest qtr PAT YoY 26.9%",
+        "+2 mcap ₹32,222 cr"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 32222.0,
+        "pe": 57.3,
+        "roce": 28.0,
+        "roe": 22.3,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 30.0,
+        "promoter_pct": 53.19,
+        "debt_to_equity": 0.08,
+        "np_yoy_growth_pct": 26.9
+      },
+      "source_weight": 0.5,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 94"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 72"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace -0.077%/session — mostly chop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.88"
+        },
+        {
+          "key": "tight-stop",
+          "label": "Tight stop",
+          "tone": "good",
+          "why": "stop only 2.71% away"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 1511.5,
+  "watch": [
+    "APOLLOHOSP",
+    "LUMAXIND",
+    "ANANDRATHI",
+    "AUROPHARMA",
+    "SANSERA",
+    "ARTEMISMED",
+    "JYOTICNC",
+    "KIRLOSENG"
+  ]
+}

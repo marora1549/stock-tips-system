@@ -172,6 +172,19 @@ def note_verdict(d: dict, symbol: str, *, source: str, their_score: float | None
     return row
 
 
+def _superseded(rows: list[dict], i: int) -> bool:
+    """Was this comparison replaced by a later one, from the same desk, on the same day?
+
+    Fixing the scorer and re-comparing the same company writes a second row. Both belong in the
+    history — the +55 on Enviro Infra is the record of what went wrong and it is not being quietly
+    deleted — but counting both in the bias would let a corrected mistake keep reporting itself
+    forever. A row stands unless a later row for the same source and date replaces it.
+    """
+    r = rows[i]
+    return any(later["source"] == r["source"] and later.get("date") == r.get("date")
+               for later in rows[i + 1:])
+
+
 def bias(d: dict, source: str | None = None) -> list[dict]:
     """Am I systematically generous or harsh, and against whom?
 
@@ -180,8 +193,10 @@ def bias(d: dict, source: str | None = None) -> list[dict]:
     """
     by: dict[str, list[float]] = {}
     for rows in d.values():
-        for r in rows:
+        for i, r in enumerate(rows):
             if r.get("gap") is None or (source and r["source"] != source):
+                continue
+            if _superseded(rows, i):
                 continue
             by.setdefault(r["source"], []).append(r["gap"])
     out = []
@@ -207,8 +222,8 @@ def disagreements(d: dict, threshold: float = 20.0) -> list[dict]:
     """
     out = []
     for symbol, rows in d.items():
-        for r in rows:
+        for i, r in enumerate(rows):
             if r.get("gap") is not None and abs(r["gap"]) >= threshold:
-                out.append({"symbol": symbol, **r})
+                out.append({"symbol": symbol, "superseded": _superseded(rows, i), **r})
     out.sort(key=lambda r: -abs(r["gap"]))
     return out

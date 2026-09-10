@@ -96,7 +96,7 @@ def test_tags_call_out_the_bad_ones_too():
     plan = {"ta_confidence": 62, "eta_days": [38, 60, 90], "time_stop_days": 10, "pace_pct_day": 0.05,
             "reward_risk_t2": 1.6, "stop_loss_pct": 7.4}
     keys = {t["key"]: t for t in scoring.tags(plan, {"momentum_score": 11, "trend": "sideways"}, 38)}
-    assert keys["weak-books"]["tone"] == "bad"
+    assert keys["weak-fundamentals"]["tone"] == "bad"
     assert keys["sluggish"]["tone"] == "warn"
     assert keys["slow-clock"]["tone"] == "warn" and "10-session" in keys["slow-clock"]["why"]
     assert keys["hot-potato"]["tone"] == "warn"

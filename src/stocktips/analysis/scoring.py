@@ -42,9 +42,9 @@ def tags(plan: dict, ta: dict, fund_score: int, n_mentions: int = 1, corroborati
     if fund_score >= 80:
         out.append({"key": "fundamentals", "label": "Fundamentals", "tone": "good", "why": f"business score {fund_score}"})
     elif fund_score >= 65:
-        out.append({"key": "fundamentals", "label": "Sound books", "tone": "good", "why": f"business score {fund_score}"})
+        out.append({"key": "fundamentals", "label": "Sound fundamentals", "tone": "good", "why": f"business score {fund_score}"})
     elif fund_score < 45:
-        out.append({"key": "weak-books", "label": "Weak books", "tone": "bad", "why": f"business score {fund_score}"})
+        out.append({"key": "weak-fundamentals", "label": "Weak fundamentals", "tone": "bad", "why": f"business score {fund_score}"})
 
     if ta_conf >= 80:
         out.append({"key": "technicals", "label": "Chart", "tone": "good", "why": f"TA confidence {ta_conf}"})

@@ -216,22 +216,127 @@ def test_a_debt_free_company_is_not_charged_for_a_missing_ratio():
     assert got["score"] >= 70
 
 
-def test_a_lender_is_not_graded_by_an_industrial_model():
-    """Bajaj Finance was capped at 45 for 'operating cash flow negative 12 years running' — which
-    for an NBFC is not a finding: disbursing a loan is an operating outflow, so a growing lender's
-    operating cash flow is negative by construction. Capping the number was not enough, because
-    the sentence printed under it was false."""
-    got = fu.assess({"roce": 12.0, "roe": 20.0, "pe": 30.0, "market_cap_cr": 500000.0,
-                     "promoter_pct": 54.0, "debt_to_equity": 3.8, "cfo_cr": -40000.0,
-                     "cfo_negative_streak": 12, "sector": "Financial Services",
-                     "industry": "Finance",
-                     "model_misfit": "Finance — borrowings are this company's raw material"})
-    assert got["unrated"] is True
-    assert got["score"] == 50, "neutral, and declared unrated"
-    assert not got["caps"], "no ceiling, because no scoring happened"
-    assert "not rated" in got["why"][0]
-    assert not any("negative" in w and "cash flow" in w for w in got["why"]), \
-        "and above all it must not print a false reason"
+def test_a_lender_is_read_on_a_lender_s_accounts():
+    """AU Small Finance is in Markets Mojo's highest-rated 1% of four thousand stocks, and this
+    system ranked it **last** of four names on 67 out of 100 — computed from a debt-to-equity
+    ratio that means nothing for a bank. Declining to score it was the first fix, and it was
+    useless: an unrated bank still sorts below a rated one. So a lender is scored, on its own
+    accounts."""
+    au = {"sector": "Financial Services", "industry": "Banks", "is_lender": True,
+          "lender_note": "read as a lender", "net_npa_pct": 0.76, "gross_npa_pct": 2.1,
+          "net_npa_rising": False, "roa_pct": 1.51, "roe": 14.2, "nim_pct": 5.21,
+          "nii_growth_1y_pct": 13.7, "assets_growth_pct": 21.5, "book_value": 267.0,
+          "price": 1060.0, "pe": 27.9, "promoter_pct": 22.9, "institutional_pct": 68.79,
+          # the industrial poison pills, which must not be reachable
+          "debt_to_equity": 5.4, "cfo_cr": -9000.0, "cfo_negative_streak": 6}
+    got = fu.assess(au)
+    assert got["lender"] is True
+    assert got["score"] >= 75, "a bank with a 0.76% net NPA and 1.5% ROA is a good bank"
+    joined = " ".join(got["why"])
+    assert "net NPA" in joined and "return on assets" in joined
+    assert "operating cash flow" not in joined, "a lender's cash flow is not read this way"
+    assert "D/E" not in joined, "nor is its leverage, which is the business model"
+    assert not any("cash flow" in c for c in got["caps"]), \
+        "and above all it must not carry a false reason"
+
+
+def test_a_clean_loan_book_cannot_carry_a_bank_that_does_not_earn():
+    """Yes Bank came out of the first lender scorer at 74 on a 0.2% net NPA — with a 7.1% ROE and
+    a 2.18% margin. A pristine book it cannot make money on is not a good bank."""
+    yes = {"is_lender": True, "lender_note": "x", "net_npa_pct": 0.2, "gross_npa_pct": 1.3,
+           "roa_pct": 0.79, "roe": 7.1, "nim_pct": 2.18, "nii_growth_1y_pct": 9.4,
+           "book_value": 20.0, "price": 27.0, "pe": 18.7, "institutional_pct": 70.16}
+    got = fu.assess(yes)
+    assert got["score"] < 65, "clean assets do not compensate for not earning on them"
+
+
+def test_a_bad_loan_book_is_a_ceiling_not_a_deduction():
+    """Same principle as the cash burn: a bank whose net book is 4% impaired is not a good bank
+    with a caveat, whatever its return on equity looks like."""
+    got = fu.assess({"is_lender": True, "lender_note": "x", "net_npa_pct": 6.2,
+                     "gross_npa_pct": 11.0, "roa_pct": 1.6, "roe": 22.0, "nim_pct": 5.0,
+                     "nii_growth_1y_pct": 30.0, "book_value": 100.0, "price": 120.0, "pe": 9.0,
+                     "institutional_pct": 30.0})
+    assert got["score"] <= 40
+    assert any("impaired" in c for c in got["caps"])
+
+
+def test_a_rising_bad_loan_share_is_flagged_even_while_still_low():
+    """Direction before level: 0.9% and climbing every quarter is the early state of a problem."""
+    got = fu.assess({"is_lender": True, "lender_note": "x", "net_npa_pct": 0.9,
+                     "net_npa_series": [0.4, 0.55, 0.7, 0.9], "net_npa_rising": True,
+                     "gross_npa_pct": 2.2, "roa_pct": 1.6, "roe": 17.0, "nim_pct": 4.4,
+                     "nii_growth_1y_pct": 20.0, "book_value": 100.0, "price": 150.0, "pe": 15.0,
+                     "institutional_pct": 30.0})
+    assert got["score"] <= 55
+    assert any("climbing" in c for c in got["caps"])
+
+
+def test_a_lender_whose_book_cannot_be_inspected_is_still_declined():
+    """The honest remainder. IRFC publishes no NPA rows, and a loan book nobody can look at is
+    not gradeable — that is different from a bad one."""
+    got = fu.assess({"is_lender": True, "lender_note": "x", "roe": 12.8, "pe": 26.0,
+                     "book_value": 40.0, "price": 130.0})
+    assert got["unrated"] is True and got["score"] == 50
+    assert "no NPA rows" in got["why"][0]
+
+
+def test_cash_conversion_is_measured_against_reported_profit_not_an_assumed_margin():
+    """profit_fy_cr was only ever set on the lender path, so every industrial company's cash
+    conversion was computed against an assumed 10% net margin. Adani Ports — a 28%-margin
+    business — therefore showed "526% of profit" and collected the bonus for excellent
+    conversion. Every high-margin company was being flattered and every thin one punished."""
+    real = fu.assess({"roce": 14.0, "roe": 16.0, "pe": 30.0, "market_cap_cr": 400000.0,
+                      "promoter_pct": 66.0, "revenue_fy_cr": 38736.0, "profit_fy_cr": 12800.0,
+                      "cfo_cr": 20356.0, "cfo_negative_streak": 0})
+    assert any("159% of profit" in w for w in real["why"]), \
+        "the ratio must come from the profit the company reported"
+
+    # and with no profit figure at all, no conversion claim is made either way
+    blind = fu.assess({"roce": 14.0, "roe": 16.0, "pe": 30.0, "market_cap_cr": 400000.0,
+                       "promoter_pct": 66.0, "revenue_fy_cr": 38736.0, "cfo_cr": 20356.0,
+                       "cfo_negative_streak": 0})
+    assert not any("% of profit" in w for w in blind["why"])
+
+
+def test_four_bad_quarters_do_not_read_the_same_as_one():
+    """Markets Mojo's headline on Shakti Pumps is 'negative results for the last 4 consecutive
+    quarters'. This scorer read only the latest quarter, so a run of four and a single bad print
+    scored identically."""
+    base = {"roce": 23.6, "roe": 18.0, "pe": 27.2, "market_cap_cr": 5773.0, "promoter_pct": 50.4,
+            "revenue_fy_cr": 1400.0, "profit_fy_cr": 260.0, "cfo_cr": 124.0,
+            "cfo_negative_streak": 0, "np_yoy_growth_pct": -46.4, "book_value": 138.0,
+            "price": 468.0}
+    one = fu.assess({**base, "pat_down_quarters": 1})
+    four = fu.assess({**base, "pat_down_quarters": 4})
+    assert four["score"] < one["score"] - 8, "a run must cost more than a single print"
+    assert any("4 consecutive quarters of falling profit" in fl for fl in four["flags"]), \
+        "and it must be named as a finding, not just subtracted"
+
+
+def test_return_on_capital_is_read_against_the_price_paid_for_it():
+    """A 14% ROCE bought at 4.3 times book returns 3.3% on the money actually spent. The level of
+    ROCE on its own never asks that question, and it is the whole of Markets Mojo's valuation
+    objection to Adani Ports."""
+    dear = fu.assess({"roce": 14.0, "roe": 16.0, "pe": 30.0, "market_cap_cr": 400000.0,
+                      "promoter_pct": 66.0, "book_value": 416.0, "price": 1775.0,
+                      "revenue_fy_cr": 38736.0, "profit_fy_cr": 12800.0, "cfo_cr": 20356.0})
+    cheap = fu.assess({"roce": 14.0, "roe": 16.0, "pe": 30.0, "market_cap_cr": 400000.0,
+                       "promoter_pct": 66.0, "book_value": 416.0, "price": 500.0,
+                       "revenue_fy_cr": 38736.0, "profit_fy_cr": 12800.0, "cfo_cr": 20356.0})
+    assert dear["score"] < cheap["score"], "the same business costs more or less"
+    assert any("on what you pay" in w for w in dear["why"])
+
+
+def test_a_promoter_selling_in_one_quarter_is_not_hidden_by_the_four_quarter_net():
+    """Adani Ports' promoters sold 1.99% in a single quarter. The four-quarter change read +0.14%,
+    because they had bought earlier in the year, so nothing fired at all."""
+    got = fu.assess({"roce": 14.0, "roe": 16.0, "pe": 30.0, "market_cap_cr": 400000.0,
+                     "promoter_pct": 66.03, "promoter_pct_chg_1q": -1.99,
+                     "promoter_pct_chg_4q": 0.14, "revenue_fy_cr": 38736.0,
+                     "profit_fy_cr": 12800.0, "cfo_cr": 20356.0, "book_value": 416.0,
+                     "price": 1775.0})
+    assert any("sold 1.99pp in the last quarter" in w for w in got["why"])
 
 
 def test_a_sheet_that_contradicts_itself_caps_lower_than_a_sheet_with_gaps():

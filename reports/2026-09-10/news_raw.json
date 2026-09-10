@@ -1,0 +1,1059 @@
+{
+  "date": "2026-09-10",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 7
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 20
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 1,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "3b3ec30553",
+      "symbol": "EIEL",
+      "company": "Enviro Infra Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives loi for 180 mw wind power project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 180.0,
+        "unit": "MW",
+        "text": "180 MW"
+      },
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/enviro-infra-engineers-receives-loi-for-180-mw-wind-power-project-126090901458_1.html",
+      "title": "Enviro Infra Engineers receives LoI for 180 MW wind power project",
+      "published": "Wed, 09 Sep 2026 19:31:03 +0530",
+      "published_utc": "2026-09-09T14:01:03+00:00",
+      "sentence": "receives loi for 180 mw wind power project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/enviro-infra-engineers-receives-loi-for-180-mw-wind-power-project-126090901458_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8f9ec590e8",
+      "symbol": "GPTINFRA",
+      "company": "GPT Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a contract",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 114.82,
+      "size_estimated": false,
+      "size_basis": "Rs 114.82 crore",
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html",
+      "title": "GPT Infraprojects arm bags Rs 114.82-cr contract from Northeast Frontier Railways",
+      "published": "Wed, 09 Sep 2026 13:46:01 GMT",
+      "published_utc": "2026-09-09T13:46:01+00:00",
+      "sentence": "received a contract",
+      "corroborating_sources": [
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "dd2fec6ec4",
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 'large' offshore contract from ongc larsen & toubro secures 'large' offshore contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/larsen-toubro-secures-large-offshore-contract-from-ongc-126090900617_1.html",
+      "title": "Larsen & Toubro secures 'large' offshore contract from ONGC",
+      "published": "Wed, 09 Sep 2026 08:01:46 GMT",
+      "published_utc": "2026-09-09T08:01:46+00:00",
+      "sentence": "secures 'large' offshore contract from ongc larsen & toubro secures 'large' offshore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/larsen-toubro-secures-large-offshore-contract-from-ongc-126090900617_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ceff3132e5",
+      "symbol": "ONGC",
+      "company": "Oil & Natural Gas Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins 'large' order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_lt-energy-hydrocarbon-offshore-wins-large-activity-7503353695070433280-aVIW",
+      "title": "L&T Energy Hydrocarbon Offshore wins 'large' order worth up to ₹5,000 crore from ONGC - CNBC TV18",
+      "published": "Wed, 09 Sep 2026 07:28:46 GMT",
+      "published_utc": "2026-09-09T07:28:46+00:00",
+      "sentence": "wins 'large' order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_lt-energy-hydrocarbon-offshore-wins-large-activity-7503353695070433280-aVIW",
+        "https://www.business-standard.com/companies/news/l-t-secures-large-order-from-ongc-126090900493_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/larsen-toubro-secures-large-offshore-contract-from-ongc-126090900617_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "2d1fe643d5",
+      "symbol": "REDINGTON",
+      "company": "Redington Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables",
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MW",
+        "text": "600 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/adani-ent-redington-l-and-t-among-buzzing-stocks-as-sensex-tumbles-over-400-pts-nifty-trades-below-23-600/article-200032/",
+      "title": "Adani Ent, Redington, L&T among buzzing stocks as SENSEX tumbles over 400 pts; NIFTY trades below 23,600",
+      "published": "Wed, 09 Sep 2026 07:45:30 GMT",
+      "published_utc": "2026-09-09T07:45:30+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/adani-ent-redington-l-and-t-among-buzzing-stocks-as-sensex-tumbles-over-400-pts-nifty-trades-below-23-600/article-200032/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1616ddf92a",
+      "symbol": "SHAKTIPUMP",
+      "company": "Shakti Pumps (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 235.0,
+      "size_estimated": false,
+      "size_basis": "Rs 235 cr",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "published_utc": "2026-09-09T13:46:09+00:00",
+      "sentence": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "476ce999b4",
+      "symbol": "AUBANK",
+      "company": "AU Small Finance Bank Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives rbi approval",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/iciciamc-receives-rbi-approval-to-pick-up-to-9-95-stake-in-au-small-finance-bank-126090901295_1.html",
+      "title": "ICICIAMC receives RBI approval to pick up to 9.95% stake in AU Small Finance Bank",
+      "published": "Wed, 09 Sep 2026 12:46:06 GMT",
+      "published_utc": "2026-09-09T12:46:06+00:00",
+      "sentence": "receives rbi approval",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/iciciamc-receives-rbi-approval-to-pick-up-to-9-95-stake-in-au-small-finance-bank-126090901295_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "4f02f57a84",
+      "symbol": "ICICIAMC",
+      "company": "ICICI Prudential Asset Management Company Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives rbi approval",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/iciciamc-receives-rbi-approval-to-pick-up-to-9-95-stake-in-au-small-finance-bank-126090901295_1.html",
+      "title": "ICICIAMC receives RBI approval to pick up to 9.95% stake in AU Small Finance Bank",
+      "published": "Wed, 09 Sep 2026 12:46:06 GMT",
+      "published_utc": "2026-09-09T12:46:06+00:00",
+      "sentence": "receives rbi approval",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/iciciamc-receives-rbi-approval-to-pick-up-to-9-95-stake-in-au-small-finance-bank-126090901295_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "d9c15153ef",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received the letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/apsez-secures-bid-to-develop-operate-two-dry-bulk-berths-at-paradip-126090901229_1.html",
+      "title": "APSEZ secures bid to develop, operate two dry bulk berths at Paradip",
+      "published": "Wed, 09 Sep 2026 12:29:49 GMT",
+      "published_utc": "2026-09-09T12:29:49+00:00",
+      "sentence": "received the letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/apsez-secures-bid-to-develop-operate-two-dry-bulk-berths-at-paradip-126090901229_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e79c5f8579",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received the letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/apsez-secures-bid-to-develop-operate-two-dry-bulk-berths-at-paradip-126090901229_1.html",
+      "title": "APSEZ secures bid to develop, operate two dry bulk berths at Paradip",
+      "published": "Wed, 09 Sep 2026 12:29:49 GMT",
+      "published_utc": "2026-09-09T12:29:49+00:00",
+      "sentence": "received the letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/apsez-secures-bid-to-develop-operate-two-dry-bulk-berths-at-paradip-126090901229_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d51671e223",
+      "symbol": "DGCONTENT",
+      "company": "Digicontent Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives regulatory approval",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/smt-s-supraflex-cruz-coronary-stent-receives-regulatory-approval-in-canada-126090900638_1.html",
+      "title": "SMT's Supraflex Cruz Coronary Stent Receives Regulatory Approval in Canada",
+      "published": "Wed, 09 Sep 2026 08:20:11 GMT",
+      "published_utc": "2026-09-09T08:20:11+00:00",
+      "sentence": "receives regulatory approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/smt-s-supraflex-cruz-coronary-stent-receives-regulatory-approval-in-canada-126090900638_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e1c3a2b01",
+      "symbol": "UMESLTD",
+      "company": "Usha Martin Education & Solutions Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jump",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 9.85,
+      "size_estimated": false,
+      "size_basis": "₹98.5 million (no order wording nearby)",
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Wed, 09 Sep 2026 14:49:25 GMT",
+      "published_utc": "2026-09-09T14:49:25+00:00",
+      "sentence": "profit jump",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4e3d257c81",
+      "symbol": "KEI",
+      "company": "KEI Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures up to ₹5,000 cr offshore order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "EHV cables and house wire",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 cr",
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-secures-up-to-5-000-cr-offshore-order-for-west-coast-energy-projects-126090901179_1.html",
+      "title": "L&T secures up to ₹5,000 cr offshore order for west coast energy projects",
+      "published": "Wed, 09 Sep 2026 12:06:55 GMT",
+      "published_utc": "2026-09-09T12:06:55+00:00",
+      "sentence": "secures up to ₹5,000 cr offshore order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-secures-up-to-5-000-cr-offshore-order-for-west-coast-energy-projects-126090901179_1.html",
+        "https://www.business-standard.com/companies/news/l-t-secures-large-order-from-ongc-126090900493_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "9072078332",
+      "symbol": "POLYCAB",
+      "company": "Polycab India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures large offshore order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed cables and wires maker",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "5,000 crore",
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-secures-large-order-from-ongc-126090900493_1.html",
+      "title": "L&T secures large offshore order from ONGC for west coast projects",
+      "published": "Wed, 09 Sep 2026 07:50:04 GMT",
+      "published_utc": "2026-09-09T07:50:04+00:00",
+      "sentence": "secures large offshore order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-secures-large-order-from-ongc-126090900493_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d51cb41dc5",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 235.92,
+      "size_estimated": false,
+      "size_basis": "Rs. 235.92 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "published_utc": "2026-09-09T13:46:09+00:00",
+      "sentence": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "6bd83a2757",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 235.92,
+      "size_estimated": false,
+      "size_basis": "Rs. 235.92 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "published_utc": "2026-09-09T13:46:09+00:00",
+      "sentence": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "70eb26581f",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 235.92,
+      "size_estimated": false,
+      "size_basis": "Rs. 235.92 crore",
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "published_utc": "2026-09-09T13:46:09+00:00",
+      "sentence": "wins order worth rs 235 cr from msedcl shakti pumps wins order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html"
+      ],
+      "n_reports": 3
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-irb-infrastructure-shakti-pumps-dilip-buildcon-indian-bank-khadim-india-icici-bank-wipro-in-focus-on-10-september-14026548.html",
+      "title": "Stocks to Watch Today: IRB Infrastructure, Shakti Pumps, Dilip Buildcon, Indian Bank, Khadim India, ICICI...",
+      "published": "Thu, 10 Sep 2026 01:06:54 GMT",
+      "chars": 8542
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-reliance-industries-wipro-icici-bank-coal-india-and-hindustan-zinc/articleshow/133988014.cms",
+      "title": "Stocks in news: Reliance Industries, Wipro, ICICI Bank, Coal India and Hindustan Zinc",
+      "published": "Thu, 10 Sep 2026 00:30:00 GMT",
+      "chars": 8027
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-icici-bank-wipro-coal-india-indian-bank-hind-zinc-irb-infra-gaja-capital-554425-2026-09-10",
+      "title": "Top stocks in news: ICICI Bank, Wipro, Coal India, Indian Bank, Hind Zinc, IRB Infra, Gaja Capital",
+      "published": "Thu, 10 Sep 2026 01:48:33 GMT",
+      "chars": 4677
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/adani-ent-redington-l-and-t-among-buzzing-stocks-as-sensex-tumbles-over-400-pts-nifty-trades-below-23-600/article-200032/",
+      "title": "Adani Ent, Redington, L&T among buzzing stocks as SENSEX tumbles over 400 pts; NIFTY trades below 23,600",
+      "published": "Wed, 09 Sep 2026 07:45:30 GMT",
+      "chars": 8326
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-coal-india-shakti-pumps-wipro-shares-on-thu-10-sept-triggers-11788964212253.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Coal India, Shakti Pumps, Wipro shares on Thu, 10 Sept | Triggers",
+      "published": "Wed, 09 Sep 2026 15:16:33 GMT",
+      "chars": 6441
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/tm/tm.asp?date=9/10/2026&title=Bajaj-Finance-Acquires-5-Stake-in-TrueFan-AI--Suzlon-Energy-Strengthens-Renewable-Energy-Order-Book--Top-Buzzing-Stocks-Today",
+      "title": "Indian Stock Market News, Equity Market and Sensex Today in India",
+      "published": "Thu, 10 Sep 2026 00:30:00 GMT",
+      "chars": 7892
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/gpt-infra-wins-northeast-frontier-railway-order-worth-115-crore-3541-PE1_COR",
+      "title": "GPT Infra Wins Northeast Frontier Railway Order Worth ₹115 Crore",
+      "published": "Wed, 09 Sep 2026 09:56:04 GMT",
+      "chars": 3296
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://satnews.com/2026/09/09/arianespace-secures-contract-for-10-ariane-64-launch-vehicles-allocating-six-missions-to-amazon-leo/",
+      "title": "Arianespace Secures Contract for 10 Ariane 64 Launch Vehicles, Allocating Six Missions to Amazon Leo",
+      "published": "Wed, 09 Sep 2026 20:32:45 GMT",
+      "chars": 3279
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "chars": 1343
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_lt-energy-hydrocarbon-offshore-wins-large-activity-7503353695070433280-aVIW",
+      "title": "L&T Energy Hydrocarbon Offshore wins 'large' order worth up to ₹5,000 crore from ONGC - CNBC TV18",
+      "published": "Wed, 09 Sep 2026 07:28:46 GMT",
+      "chars": 468
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/adani-ports-share-price-two-dry-bulk-berths-order-paradip-port-odisha-domestic-capacity-expansion-19987552.htm",
+      "title": "Adani Ports shares gain as it wins order for two dry bulk berths at Paradip Port",
+      "published": "Wed, 09 Sep 2026 10:28:06 GMT",
+      "chars": 2155
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/jyoti-moves-up-as-its-switchgear-division-bags-order-worth-rs-6-64-crore576264",
+      "title": "Jyoti moves up as its Switchgear Division bags order worth Rs 6.64 crore",
+      "published": "Wed, 09 Sep 2026 10:55:49 GMT",
+      "chars": 1234
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/sensex-nifty-plunge-for-3rd-day-it-shares-slide-for-6th-day-126090901003_1.html",
+      "title": "Sensex, Nifty plunge for 3rd day; IT shares slide for 6th day",
+      "published": "Wed, 09 Sep 2026 10:34:01 GMT",
+      "chars": 2435
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ems-receives-loa-for-operations-of-varshamedi-fee-plaza-in-gujarat-126090900930_1.html",
+      "title": "EMS receives LoA for operations of Varshamedi Fee Plaza in Gujarat",
+      "published": "Wed, 09 Sep 2026 10:01:09 GMT",
+      "chars": 2180
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/raymond-ltd-leads-losers-in-a-group-126090900932_1.html",
+      "title": "Raymond Ltd leads losers in 'A' group",
+      "published": "Wed, 09 Sep 2026 10:01:30 GMT",
+      "chars": 3612
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.psuconnect.in/corporate-news/adani-ports-wins-loa-for-two-dry-bulk-berths-at-paradip-port",
+      "title": "APSEZ Wins LOA for 18 MMT Dry Bulk Berths at Paradip Port",
+      "published": "Wed, 09 Sep 2026 11:00:00 GMT",
+      "chars": 1438
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.bayer.com/media/en-us/us-fda-grants-accelerated-approval-to-bayers-targeted-therapy-sevabertinib-as-a-first-line-treatment-option-for-adults-with-her2-mutant-non-small-cell-lung-cancer/",
+      "title": "U.S. FDA grants accelerated approval to Bayer’s targeted therapy sevabertinib as a first-line treatment option for adults with HER2-mutant non-small cell lung cancer",
+      "published": "Wed, 09 Sep 2026 18:20:02 GMT",
+      "chars": 9689
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.goodreturns.in/news/cipla-shares-slip-despite-usfda-nod-for-generic-ventolin-inhaler-should-you-buy-or-sell-pharma-stock-011-1504285.html",
+      "title": "Cipla Shares Slip Despite USFDA Nod for Generic Ventolin Inhaler; Should You Buy or Sell This Pharma Stock?",
+      "published": "Wed, 09 Sep 2026 13:17:20 GMT",
+      "chars": 2953
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.biospace.com/press-releases/xeris-hosts-webinar-detailing-its-comprehensive-development-program-for-xp-8121-an-investigational-once-weekly-subcutaneous-levothyroxine-for-hypothyroidism",
+      "title": "Xeris Hosts Webinar Detailing Its Comprehensive Development Program for XP-8121, an Investigational, Once-Weekly Subcutaneous Levothyroxine for Hypothyroidism",
+      "published": "Wed, 09 Sep 2026 14:02:02 GMT",
+      "chars": 12333
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/abbott-laboratories-stock-gains-after-fda-approval-and-strong-guidance/70074534",
+      "title": "Abbott Laboratories stock gains after FDA approval and strong guidance",
+      "published": "Wed, 09 Sep 2026 10:02:20 GMT",
+      "chars": 2285
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.prnewswire.com/news-releases/bbnx-shareholder-alert-november-3-2026-lead-plaintiff-deadline-in-beta-bionics-inc-securities-class-action---contact-levi--korsinsky-302873657.html",
+      "title": "BBNX Shareholder Alert: November 3, 2026 Lead Plaintiff Deadline in Beta Bionics, Inc. Securities Class Action - Contact Levi & Korsinsky",
+      "published": "Wed, 09 Sep 2026 14:09:00 GMT",
+      "chars": 6620
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://pluang.com/en/news-feed/peringatan-pemegang-saham-bbnx-batas-waktu-november-2026",
+      "title": "Beta Bionics faces a securities lawsuit after F...",
+      "published": "Wed, 09 Sep 2026 14:23:35 GMT",
+      "chars": 2207
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.statnews.com/2026/09/09/health-news-telemedicine-company-offers-glp-1s-for-addiction/",
+      "title": "Telemedicine company offers GLP-1s for addiction",
+      "published": "Wed, 09 Sep 2026 11:57:30 GMT",
+      "chars": 7681
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://pluang.com/en/news-feed/caleres-buktikan-kinerja-kuartal-2-yang-kuat",
+      "title": "Caleres Q2 EPS beats estimates despite revenue miss; stock jumps 10% on strong profitability and cash position.",
+      "published": "Wed, 09 Sep 2026 23:42:23 GMT",
+      "chars": 2121
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Wed, 09 Sep 2026 14:49:25 GMT",
+      "chars": 4572
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.livemint.com/market/market-stats/paluck-technologies-q3-results-s0006978",
+      "title": "Paluck Technologies Q3 Results 2026 - Find Paluck Technologies Q3 Earnings Result | Paluck Technologies Q3 results",
+      "published": "Wed, 09 Sep 2026 19:31:45 GMT",
+      "chars": 279
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shelter-infra-fy26-results-net-loss-widens-4-55-lakh-revenue-falls/49714887",
+      "title": "Shelter Infra FY26 loss widens to ₹4.55 lakh as revenue falls",
+      "published": "Wed, 09 Sep 2026 17:57:10 GMT",
+      "chars": 4993
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.tikr.com/blog/boston-scientific-bsx-stock-falls-cyberattack-sales-profit-impact",
+      "title": "Boston Scientific Stock Falls 6% Following Cyberattack Impact on Sales and Profit Targets",
+      "published": "Wed, 09 Sep 2026 11:17:47 GMT",
+      "chars": 5000
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/09/kabra-extrusiontechnik-commissions-10-mw-20-mwh-bess-project-in-rajasthan/",
+      "title": "Kabra Extrusiontechnik Commissions 10 MW/20 MWh BESS Project in Rajasthan",
+      "published": "Wed, 09 Sep 2026 11:56:44 GMT",
+      "chars": 2709
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.businessupturn.com/business/corporates/kabra-extrusiontechnik-commissions-10-mw-20-mwh-battery-energy-storage-project-in-rajasthan/",
+      "title": "Kabra Extrusiontechnik commissions 10 MW/20 MWh BESS project at Phalodi, Rajasthan",
+      "published": "Wed, 09 Sep 2026 07:04:41 GMT",
+      "chars": 4288
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://metrorailtoday.com/news/india-commissions-1506-km-dedicated-freight-railway-corridor-connecting-jnpa-to-new-dadri",
+      "title": "India commissions 1,506-km dedicated freight railway corridor connecting JNPA to New Dadri",
+      "published": "Wed, 09 Sep 2026 09:01:48 GMT",
+      "chars": 6272
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 13:46:09 GMT",
+      "chars": 1343
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/iciciamc-receives-rbi-approval-to-pick-up-to-9-95-stake-in-au-small-finance-bank-126090901295_1.html",
+      "title": "ICICIAMC receives RBI approval to pick up to 9.95% stake in AU Small Finance Bank",
+      "published": "Wed, 09 Sep 2026 12:46:06 GMT",
+      "chars": 1312
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/smt-s-supraflex-cruz-coronary-stent-receives-regulatory-approval-in-canada-126090900638_1.html",
+      "title": "SMT's Supraflex Cruz Coronary Stent Receives Regulatory Approval in Canada",
+      "published": "Wed, 09 Sep 2026 08:20:11 GMT",
+      "chars": 5289
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-secures-up-to-5-000-cr-offshore-order-for-west-coast-energy-projects-126090901179_1.html",
+      "title": "L&T secures up to ₹5,000 cr offshore order for west coast energy projects",
+      "published": "Wed, 09 Sep 2026 12:06:55 GMT",
+      "chars": 2941
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html",
+      "title": "GPT Infraprojects arm bags Rs 114.82-cr contract from Northeast Frontier Railways",
+      "published": "Wed, 09 Sep 2026 13:46:01 GMT",
+      "chars": 1414
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-secures-large-order-from-ongc-126090900493_1.html",
+      "title": "L&T secures large offshore order from ONGC for west coast projects",
+      "published": "Wed, 09 Sep 2026 07:50:04 GMT",
+      "chars": 2109
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/larsen-toubro-secures-large-offshore-contract-from-ongc-126090900617_1.html",
+      "title": "Larsen & Toubro secures 'large' offshore contract from ONGC",
+      "published": "Wed, 09 Sep 2026 08:01:46 GMT",
+      "chars": 3641
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/apsez-secures-bid-to-develop-operate-two-dry-bulk-berths-at-paradip-126090901229_1.html",
+      "title": "APSEZ secures bid to develop, operate two dry bulk berths at Paradip",
+      "published": "Wed, 09 Sep 2026 12:29:49 GMT",
+      "chars": 3834
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-nifty-could-edge-lower-to-23-300-hal-among-3-stock-ideas-ajit-mishra-126091000103_1.html",
+      "title": "Nifty could edge lower to 23,300; HAL among 3 stock ideas: Ajit Mishra",
+      "published": "Thu, 10 Sep 2026 07:55:13 +0530",
+      "chars": 165
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-10-nse-bse-sensex-today-nifty-gift-nifty-us-iran-tension-brent-crude-prices-ipo-today-126091000102_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asian markets decline as Brent crosses $101",
+      "published": "Thu, 10 Sep 2026 07:47:48 +0530",
+      "chars": 152
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-cross-100-as-iran-us-attacks-deepen-crude-supply-fears-126091000096_1.html",
+      "title": "Oil prices cross $100 as Iran-US attacks deepen crude supply fears",
+      "published": "Thu, 10 Sep 2026 07:42:01 +0530",
+      "chars": 151
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/l-t-iifl-finance-follow-rec-into-india-s-emerging-tokenised-bond-market-126090901624_1.html",
+      "title": "L&T, IIFL Finance follow REC into India's emerging tokenised bond market",
+      "published": "Wed, 09 Sep 2026 21:28:33 +0530",
+      "chars": 167
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-proposes-easier-director-eligibility-norms-for-key-mii-officials-126090901169_1.html",
+      "title": "Sebi proposes easier director eligibility, norms for key MII officials",
+      "published": "Wed, 09 Sep 2026 20:19:59 +0530",
+      "chars": 999
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/enviro-infra-engineers-receives-loi-for-180-mw-wind-power-project-126090901458_1.html",
+      "title": "Enviro Infra Engineers receives LoI for 180 MW wind power project",
+      "published": "Wed, 09 Sep 2026 19:31:03 +0530",
+      "chars": 32
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/shakti-pumps-wins-order-worth-rs-235-cr-from-msedcl-126090901430_1.html",
+      "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
+      "published": "Wed, 09 Sep 2026 19:16:09 +0530",
+      "chars": 1343
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/gpt-infraprojects-arm-bags-rs-114-82-cr-contract-from-northeast-frontier-railways-126090901429_1.html",
+      "title": "GPT Infraprojects arm bags Rs 114.82-cr contract from Northeast Frontier Railways",
+      "published": "Wed, 09 Sep 2026 19:16:01 +0530",
+      "chars": 1414
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/hero-motors-fixes-ipo-price-band-at-rs-79-84-for-rs-1000-crore-issue-know-important-dates-other-details/articleshow/133991003.cms",
+      "title": "Hero Motors fixes IPO price band at Rs 79-84 for Rs 1,000-crore issue. Know important dates, other details",
+      "published": "Thu, 10 Sep 2026 07:59:19 +0530",
+      "chars": 401
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-10-crude-oil-at-101-as-iran-attack-on-10-ships-raises-supply-fears-120-in-sight/articleshow/133990953.cms",
+      "title": "Oil Price Today (September 10): Crude oil at $101 as Iran attack on 10 ships raises supply fears. $120 in sight?",
+      "published": "Thu, 10 Sep 2026 07:54:29 +0530",
+      "chars": 455
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-little-changed-with-us-inflation-data-in-sight/articleshow/133990880.cms",
+      "title": "Gold little changed with US inflation data in sight",
+      "published": "Thu, 10 Sep 2026 07:51:54 +0530",
+      "chars": 424
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/currency-markets-subdued-as-oil-shock-lifts-global-yields-ecb-u-s-inflation-eyed/articleshow/133990813.cms",
+      "title": "Currency markets subdued as oil shock lifts global yields; ECB, U.S. inflation eyed",
+      "published": "Thu, 10 Sep 2026 07:47:56 +0530",
+      "chars": 459
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/brent-holds-above-100-as-tanker-attacks-deepen-supply-fear/articleshow/133990750.cms",
+      "title": "Brent holds above $100 as tanker attacks deepen supply fear",
+      "published": "Thu, 10 Sep 2026 07:44:38 +0530",
+      "chars": 443
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-5-stocks-cross-below-their-200-dmas/slideshow/133990670.cms",
+      "title": "Negative Breakout: These 5 stocks cross below their 200 DMAs",
+      "published": "Thu, 10 Sep 2026 07:37:29 +0530",
+      "chars": 104
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jpmorgan-unit-mansi-share-gets-nod-to-trade-but-cant-participate-in-cas/articleshow/133989698.cms",
+      "title": "JPMorgan unit, Mansi Share gets nod to trade, but can’t participate in CAS",
+      "published": "Thu, 10 Sep 2026 07:23:29 +0530",
+      "chars": 404
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/focus-lighting-secures-10-17-crore-l-t-order-for-street-lighting-poles-4584-PE1_COR",
+      "title": "Focus Lighting Secures ₹10-17 Crore L&T Order For Street Lighting Poles",
+      "published": "Wed, 09 Sep 2026 12:16:29 GMT",
+      "chars": 4076
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 121.7
+}

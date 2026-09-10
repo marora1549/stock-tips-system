@@ -168,6 +168,11 @@ def _parse(h: str) -> dict:
                 d[key] = vals[-1]
                 if len(vals) >= 5:
                     d[key + "_chg_4q"] = round(vals[-1] - vals[-5], 2)
+                if len(vals) >= 2:
+                    # A sharp cut in one quarter is a different signal from a slow drift, and it
+                    # is the one Markets Mojo leads with. Adani Ports' promoters sold 1.99% in a
+                    # single quarter while the four-quarter change read +0.14%.
+                    d[key + "_chg_1q"] = round(vals[-1] - vals[-2], 2)
     m = re.search(r"pledged[^<]*?<[^>]*>\s*([\d.]+)\s*%", h, re.I | re.S) or re.search(r"Pledged percentage[^\d]*([\d.]+)", h, re.I)
     if m:
         d["pledged_pct"] = float(m.group(1))
@@ -192,6 +197,18 @@ def _parse(h: str) -> dict:
             if len(vals) >= 5:
                 d["np_latest_q"], d["np_yoy_q"] = vals[-1], vals[-5]
                 d["np_yoy_growth_pct"] = round((vals[-1] / abs(vals[-5]) - 1) * 100, 1) if vals[-5] else None
+            # How many quarters in a row have come in below the same quarter a year earlier.
+            # "Four consecutive negative results" is the headline of Markets Mojo's SELL on Shakti
+            # Pumps, and this scorer was reading only the latest quarter — one bad print and a run
+            # of four looked identical to it.
+            streak = 0
+            for i in range(len(vals) - 1, 3, -1):
+                if vals[i] < vals[i - 4]:
+                    streak += 1
+                else:
+                    break
+            if streak:
+                d["pat_down_quarters"] = streak
         # Trailing twelve months of sales — the denominator for "is this order material?". The last
         # four quarters beat the last annual column, which can be nine months stale by Q3.
         sales_q, sq_labels = _period_values(qs.group(0), "Sales")
@@ -227,6 +244,13 @@ def _parse(h: str) -> dict:
         d.update(_pair_growth(sales_y, "sales"))
         d.update(_pair_growth(_period_values(blk, "Net Profit")[0], "profit"))
         d.update(_pair_growth(_period_values(blk, "Operating Profit")[0], "opm_abs"))
+        # The cash-conversion base. Without this it fell back to assuming a 10% net margin on
+        # revenue, so Adani Ports — a 28%-margin business — showed operating cash flow at "526% of
+        # profit" and collected the +8 for excellent conversion. Every high-margin company was
+        # being flattered and every thin-margin one punished, on a number nobody had measured.
+        profit_y = _period_values(blk, "Net Profit")[0]
+        if profit_y:
+            d["profit_fy_cr"] = profit_y[-1]
         opm = _period_values(blk, "OPM %")[0]
         if len(opm) >= 2:
             d["opm_pct"], d["opm_pct_prev"] = opm[-1], opm[-2]
@@ -288,6 +312,22 @@ def _parse(h: str) -> dict:
         if len(interest) >= 5 and interest[-5]:
             d["interest_growth_yoy_pct"] = round((interest[-1] / abs(interest[-5]) - 1) * 100, 1)
 
+    # Return on capital over time, not just its level. Adani Ports earns 14% today, which reads
+    # fine — but it has earned between 10% and 17% for a decade, so the capital going in is not
+    # producing more than the capital already there. A level says what a business is; a decade of
+    # levels says whether it is compounding.
+    rt = re.search(r'id="ratios".*?</section>', h, re.S)
+    if rt:
+        roce_hist = _period_values(rt.group(0), "ROCE %")[0]
+        if len(roce_hist) >= 5:
+            d["roce_series"] = roce_hist[-8:]
+            recent, older = roce_hist[-3:], roce_hist[-8:-3]
+            if older:
+                d["roce_now_avg"] = round(sum(recent) / len(recent), 1)
+                d["roce_then_avg"] = round(sum(older) / len(older), 1)
+                d["roce_drift_pp"] = round(d["roce_now_avg"] - d["roce_then_avg"], 1)
+            d["roce_is_decade_low"] = roce_hist[-1] <= min(roce_hist)
+
     # Screener's own Pros and Cons, verbatim. This is the part of the page worth having that no
     # score of mine can replace: an independent read, in words, from someone else's arithmetic. The
     # desk owner's objection to a single confident number was fair, and the answer is not a better
@@ -316,14 +356,79 @@ def _parse(h: str) -> dict:
     both = f"{d.get('sector','')} {d.get('industry','')}".lower()
     if any(t in both for t in ("bank", "financial services", "insurance", "nbfc",
                                "finance", "capital market")):
-        d["model_misfit"] = (f"Screener files it under {d.get('industry') or d.get('sector')}, "
-                             "where borrowings are the raw material and interest is the cost of "
-                             "goods — debt ratios, interest cover and operating cash flow do not "
-                             "mean here what they mean elsewhere")
+        d["is_lender"] = True
+        d["lender_note"] = (f"Screener files this under {d.get('industry') or d.get('sector')}, "
+                            "where borrowings are the raw material and interest is the cost of "
+                            "goods — so it is read on asset quality, spread and return on assets, "
+                            "not on debt ratios and operating cash flow")
+        d.update(_parse_lender(h))
 
     warn = _self_check(d)
     if warn:
         d["parse_warnings"] = warn
+    return d
+
+
+def _parse_lender(h: str) -> dict:
+    """The rows a bank is actually judged on, which the industrial reader never looked at.
+
+    AU Small Finance is in Markets Mojo's highest-rated 1% of four thousand stocks. This system
+    ranked it **last** of four names, on 67 out of 100, computed from a debt-to-equity ratio that
+    means nothing for a lender. Declining to score it — the previous fix — was honest and useless:
+    an unrated bank still sorts below a rated one. A lender has its own accounts and Screener
+    publishes them, so it gets its own reading.
+
+    Net non-performing assets are the number. A bank is a portfolio of loans, and what matters is
+    what share of them is going bad and in which direction; everything else is second. Then return
+    on assets (a lender's real efficiency measure, since equity is leverage by design), the spread
+    it earns, its growth in net interest income, and price against book — because a bank is bought
+    on book value, not on earnings multiples.
+    """
+    d: dict = {}
+    q = re.search(r'id="quarters".*?</section>', h, re.S)
+    pl = re.search(r'id="profit-loss".*?</section>', h, re.S)
+    bs = re.search(r'id="balance-sheet".*?</section>', h, re.S)
+
+    if q:
+        net = _period_values(q.group(0), "Net NPA %")[0]
+        gross = _period_values(q.group(0), "Gross NPA %")[0]
+        if net:
+            d["net_npa_pct"] = net[-1]
+            d["net_npa_series"] = net[-5:]
+            window = net[-4:]
+            # "rising" means the latest is the worst of the recent window and worse than it started
+            d["net_npa_rising"] = (len(window) >= 3 and window[-1] == max(window)
+                                   and window[-1] > window[0])
+        if gross:
+            d["gross_npa_pct"] = gross[-1]
+
+    if pl:
+        rev = _period_values(pl.group(0), "Revenue")[0]
+        interest = _period_values(pl.group(0), "Interest")[0]
+        profit = _period_values(pl.group(0), "Net Profit")[0]
+        if rev and interest and len(rev) == len(interest):
+            # Screener's "Revenue" for a lender is interest earned; net interest income is what is
+            # left after paying for the money. Its own "Financing Margin %" row is unreliable on
+            # bank pages (AU's reads 10, 12, 5, 3, 4) so it is computed here instead.
+            nii = [round(r - i, 2) for r, i in zip(rev, interest)]
+            d["nii_series_cr"] = nii[-5:]
+            d["nii_cr"] = nii[-1]
+            d.update(_pair_growth(nii, "nii"))
+        if profit:
+            d["profit_fy_cr"] = profit[-1]
+
+    if bs:
+        assets = _period_values(bs.group(0), "Total Assets")[0]
+        if assets:
+            d["total_assets_cr"] = assets[-1]
+            if len(assets) >= 2:
+                avg = (assets[-1] + assets[-2]) / 2
+                d["assets_growth_pct"] = round((assets[-1] / abs(assets[-2]) - 1) * 100, 1)
+                # return on *average* assets, which is how a bank reports it and how Mojo quotes it
+                if d.get("profit_fy_cr") is not None and avg:
+                    d["roa_pct"] = round(d["profit_fy_cr"] / avg * 100, 2)
+                if d.get("nii_cr") is not None and avg:
+                    d["nim_pct"] = round(d["nii_cr"] / avg * 100, 2)
     return d
 
 
@@ -362,6 +467,13 @@ def _self_check(d: dict) -> list[str]:
             w.append(f"{name} ends at {other[-1]} but the P&L ends at {labs[-1]} — "
                      "two sections read to different dates")
 
+    cfo, pat = d.get("cfo_cr"), d.get("profit_fy_cr")
+    if cfo is not None and pat:
+        ratio = cfo / abs(pat)
+        if not -8 <= ratio <= 8:
+            w.append(f"operating cash flow is {ratio:.0%} of net profit — one of the two figures "
+                     "is being read from the wrong row")
+
     ttm, fy = d.get("revenue_ttm_cr"), d.get("revenue_fy_cr")
     if ttm and fy and not 0.4 <= ttm / fy <= 2.6:
         w.append(f"trailing revenue ₹{ttm:,.0f}cr against last year's ₹{fy:,.0f}cr — "
@@ -398,14 +510,25 @@ def _pair_growth(series: list[float], name: str) -> dict:
     return out
 
 
-def _recency(d: dict) -> tuple[int, int]:
-    """How current and how deep a parsed sheet is — the key both modes are compared on."""
+def _usefulness(d: dict) -> tuple[int, int, int]:
+    """How good a parsed sheet is at answering the questions that will be asked of it.
+
+    Recency alone is not enough. HDFC Bank's consolidated page is as current as its standalone one
+    and carries the Net NPA row — with every cell blank, because Screener only computes it
+    standalone. Preferring consolidated on a tie therefore graded the country's largest private
+    bank "not rated: no NPA rows". So the comparison is: how recent, then whether the section this
+    kind of company is actually judged on came back populated, then how deep.
+    """
     labs = d.get("fy_labels") or []
     year = 0
     if labs:
         m = re.search(r"(\d{4})", labs[-1])
         year = int(m.group(1)) if m else 0
-    return (year, len(labs))
+    if d.get("is_lender"):
+        answers = 1 if d.get("net_npa_pct") is not None else 0
+    else:
+        answers = 1 if d.get("cfo_cr") is not None else 0
+    return (year, answers, len(labs))
 
 
 def fetch(symbol: str) -> dict | None:
@@ -414,8 +537,9 @@ def fetch(symbol: str) -> dict | None:
     GE Vernova T&D India publishes a consolidated page whose profit-and-loss table holds exactly
     one column, **Dec 2010**. Taking consolidated on sight scored that company 55 out of 100 off a
     sixteen-year-old sheet, with no flag and no gap, because every check I had asked whether a
-    figure was present rather than whether it was current. So both views are parsed and the more
-    recent, deeper one wins; if they tie, consolidated wins, which is the right default.
+    figure was present rather than whether it was current. Both views are therefore parsed and
+    compared on `_usefulness` — recency, then whether the decisive section came back populated,
+    then depth. If they tie, consolidated wins, which is the right default.
     """
     sym = quote(symbol, safe="")      # GVT&D, M&M: an unencoded "&" cuts the path short
     best: dict | None = None
@@ -427,10 +551,15 @@ def fetch(symbol: str) -> dict | None:
             continue
         d = _parse(r.text)
         d["source"] = f"screener.in/{mode or 'standalone'}"
-        if best is None or _recency(d) > _recency(best):
+        if best is None or _usefulness(d) > _usefulness(best):
             if best is not None:
-                d["mode_note"] = (f"read {d['source']} rather than {best['source']}: "
-                                  f"the latter's last annual column is {(best.get('fy_labels') or ['—'])[-1]}")
+                stale = (best.get("fy_labels") or ["—"])[-1]
+                d["mode_note"] = (
+                    f"read {d['source']} rather than {best['source']}: "
+                    + (f"the latter's last annual column is {stale}"
+                       if _usefulness(d)[0] > _usefulness(best)[0]
+                       else "the latter's page does not carry the figures this kind of company is "
+                            "judged on"))
             best = d
     return best
 
@@ -465,6 +594,17 @@ BUDGET = {
 }
 BASE = 50.0
 
+# A lender is a portfolio of loans. What matters is what share is going bad and which way it is
+# moving; then what the assets earn, what spread funds it, and what is being paid for the book.
+# Same arithmetic as BUDGET, same +40 total, same 90 ceiling — a different set of questions.
+LENDER_BUDGET = {
+    "asset_quality": (14, -22),   # net and gross NPA, and the direction of net NPA
+    "returns":       (10, -14),   # return on average assets, return on equity
+    "growth":        (8, -12),    # net interest income, and the book it is earned on
+    "value":         (5, -10),    # price to book, price to earnings
+    "ownership":     (3, -8),     # promoter and institutional holding
+}
+
 
 def assess(f: dict | None) -> dict:
     """→ {score, why, flags, caps, coverage}. The full read; `score()` is the two-value wrapper.
@@ -479,6 +619,139 @@ def assess(f: dict | None) -> dict:
 
     out = score(f, _internal=True)
     return out
+
+
+def _compose(base: float, got: dict, budget: dict, why: list) -> float:
+    """Each dimension's net contribution, clamped to what that dimension is allowed to be worth.
+
+    A clamp is reported: "profitability was as good as profitability gets" is a different statement
+    from "profitability was worth twenty points", and the second one is how a company reached 100.
+    """
+    s = base
+    for dim, total in got.items():
+        hi, lo = budget.get(dim, (99, -99))
+        clamped = max(lo, min(hi, total))
+        s += clamped
+        if clamped != round(total, 2):
+            why.append(f"  ({dim.replace('_', ' ')} counted {clamped:+g} of {total:+g} — its terms "
+                       f"measure the same thing more than once, so it is worth {hi:+g} at most)")
+    return s
+
+
+def _score_lender(f: dict, _internal: bool = False):
+    """A bank or an NBFC, read on the accounts a lender actually has.
+
+    The four names in one morning's card scored 87, 92, 80 and 67. Markets Mojo, independently,
+    said 36 SELL, 37 SELL, 51 HOLD and 71 BUY. The 67 was AU Small Finance — a bank Mojo places in
+    the highest-rated 1% of four thousand stocks — and it came last here because it was being asked
+    industrial questions. This asks it the right ones.
+    """
+    why: list[str] = []
+    flags: list[str] = []
+    caps: list[tuple[int, str]] = []
+    got: dict[str, float] = {}
+    cur = "asset_quality"
+
+    def flag(ceiling: int, reason: str):
+        flags.append(reason)
+        caps.append((ceiling, reason))
+
+    def add(points, reason):
+        got[cur] = got.get(cur, 0.0) + points
+        why.append(f"{'+' if points >= 0 else ''}{points:g} {reason}")
+
+    net_npa, gross_npa = f.get("net_npa_pct"), f.get("gross_npa_pct")
+    if net_npa is None:
+        note = ("not rated: this is a lender, but Screener's page for it carries no NPA rows, and "
+                "a loan book that cannot be inspected cannot be graded")
+        out = {"score": 50, "raw_score": 50, "why": [note], "flags": [note], "caps": [],
+               "unrated": True, "lender": True, "coverage": {"missing": ["asset quality"]}}
+        return out if _internal else (50, [note])
+
+    add(12 if net_npa < 1 else 6 if net_npa < 2 else -10 if net_npa > 3 else 0,
+        f"net NPA {net_npa:g}% of the book")
+    if gross_npa is not None:
+        add(4 if gross_npa < 2.5 else -8 if gross_npa > 5 else 0, f"gross NPA {gross_npa:g}%")
+    if f.get("net_npa_rising"):
+        add(-8, "net NPA has risen in each of the last quarters")
+        flag(55, f"the bad-loan share is climbing, now {net_npa:g}%")
+    if net_npa > 4:
+        # A bank whose net book is 4% impaired is not a good bank with a caveat. The equity is
+        # thin against that number and no return on it changes the arithmetic.
+        flag(40, f"net NPA {net_npa:g}% — the loan book is impaired")
+
+    cur = "returns"
+    roa = f.get("roa_pct")
+    if roa is not None:
+        add(10 if roa >= 1.5 else 6 if roa >= 1.0 else 0 if roa >= 0.8 else -6 if roa >= 0.6
+            else -12, f"return on assets {roa:g}%")
+        if roa < 0.4:
+            flag(50, f"return on assets {roa:g}% — the book barely earns")
+    roe = f.get("roe")
+    if roe is not None:
+        # Yes Bank came out at 74 on a 0.2% net NPA with a 7.1% ROE — a clean book it cannot earn
+        # anything on. A lender that does not out-earn its own cost of equity is not a good bank.
+        add(6 if roe >= 15 else 3 if roe >= 12 else -6 if roe < 10 else 0, f"ROE {roe:g}%")
+    nim = f.get("nim_pct")
+    if nim is not None:
+        add(4 if nim >= 4 else 2 if nim >= 3 else -4 if nim < 2.5 else 0,
+            f"net interest margin {nim:g}% of assets")
+
+    cur = "growth"
+    nii_g = f.get("nii_growth_1y_pct")
+    if nii_g is not None:
+        add(8 if nii_g >= 18 else 5 if nii_g >= 10 else -8 if nii_g < 0 else 0,
+            f"net interest income {nii_g:+.1f}% last year")
+    ag = f.get("assets_growth_pct")
+    if ag is not None:
+        # Growing the book far faster than the income it earns is how a lender buys market share
+        # with credit standards, and the bad loans arrive two years later.
+        if ag > 18 and nii_g is not None and nii_g < ag * 0.6:
+            add(-6, f"the book grew {ag:.0f}% while net interest income grew {nii_g:.0f}% — "
+                    f"lending faster than it is earning")
+        elif ag >= 12:
+            add(3, f"the book grew {ag:.0f}%")
+        elif ag < 0:
+            add(-6, f"the book shrank {ag:.0f}%")
+
+    cur = "value"
+    bv, price, pe = f.get("book_value"), f.get("price"), f.get("pe")
+    if bv and price:
+        pb = round(price / bv, 2)
+        # A bank is bought on book. Two times book for a lender earning 1.5% on assets is a
+        # different proposition from two times book for one earning 0.6%.
+        add(6 if pb < 1.5 else 3 if pb < 2.5 else -4 if pb > 4 else 0, f"price to book {pb:g}")
+    if pe is not None:
+        add(4 if pe <= 18 else 2 if pe <= 28 else -6 if pe > 45 else 0, f"P/E {pe:g}")
+
+    cur = "ownership"
+    pr = f.get("promoter_pct")
+    if pr is not None:
+        chg = f.get("promoter_pct_chg_4q")
+        if chg is not None and chg <= -1.5:
+            add(-5, f"promoter stake down {abs(chg):g}pp over four quarters")
+    inst = f.get("institutional_pct")
+    if inst is not None:
+        add(4 if inst >= 25 else 2 if inst >= 12 else -4 if inst < 4 else 0,
+            f"institutions hold {inst:g}%")
+
+    for warning in (f.get("parse_warnings") or []):
+        flag(60, f"the page did not read cleanly — {warning}")
+
+    raw = int(max(0, min(100, round(_compose(BASE, got, LENDER_BUDGET, why)))))
+    final = raw
+    applied = []
+    for ceiling, reason in sorted(caps):
+        if final > ceiling:
+            applied.append(f"capped at {ceiling}: {reason}")
+            final = ceiling
+    why += [f"⚑ {a}" for a in applied]
+    why.append(f"  (read as a lender: {f.get('lender_note', '')})")
+
+    if _internal:
+        return {"score": final, "raw_score": raw, "why": why, "flags": flags, "caps": applied,
+                "lender": True, "coverage": {"missing": []}}
+    return final, why
 
 
 def score(f: dict | None, _internal: bool = False):
@@ -507,12 +780,8 @@ def score(f: dict | None, _internal: bool = False):
     # an operating outflow, so a growing NBFC's operating cash flow is negative by construction.
     # Capping the number was not enough, because the reason printed underneath it was false. There
     # is no honest way to run this scorer on a balance-sheet business, so it does not run.
-    if f.get("model_misfit"):
-        note = ("not rated: this scorer reads an operating company's accounts. "
-                + f["model_misfit"])
-        out = {"score": 50, "raw_score": 50, "why": [note], "flags": [note], "caps": [],
-               "unrated": True, "coverage": {"missing": []}}
-        return out if _internal else (50, [note])
+    if f.get("is_lender"):
+        return _score_lender(f, _internal=_internal)
 
     roe, roce, pe = f.get("roe"), f.get("roce"), f.get("pe")
     if roce is not None:
@@ -531,6 +800,17 @@ def score(f: dict | None, _internal: bool = False):
         add(8 if pg3 >= 20 else 4 if pg3 >= 10 else -6 if pg3 < 0 else 0, f"3y profit CAGR {pg3:g}%")
     if sg3 is not None:
         add(6 if sg3 >= 15 else 3 if sg3 >= 8 else -4 if sg3 < 0 else 0, f"3y sales CAGR {sg3:g}%")
+    drift = f.get("roce_drift_pp")
+    if drift is not None:
+        if drift <= -3:
+            add(-6, f"return on capital has drifted from {f['roce_then_avg']:g}% to "
+                    f"{f['roce_now_avg']:g}% — the newer capital earns less than the old")
+        elif drift >= 4:
+            add(4, f"return on capital has improved from {f['roce_then_avg']:g}% to "
+                   f"{f['roce_now_avg']:g}%")
+    if f.get("roce_is_decade_low") and (roce or 0) < 20:
+        add(-4, f"ROCE {roce:g}% is the lowest in the years on the page")
+
     cur = "balance"
     de = f.get("debt_to_equity")
     if de is not None:
@@ -539,9 +819,12 @@ def score(f: dict | None, _internal: bool = False):
     pr = f.get("promoter_pct")
     if pr is not None:
         add(4 if pr >= 50 else 0 if pr >= 30 else -3, f"promoter {pr:g}%")
+        q1 = f.get("promoter_pct_chg_1q")
         chg = f.get("promoter_pct_chg_4q")
-        if chg is not None and chg <= -2:
-            add(-5, f"promoter stake down {chg:g}pp in 4q")
+        if q1 is not None and q1 <= -1.0:
+            add(-6, f"promoters sold {abs(q1):g}pp in the last quarter alone")
+        elif chg is not None and chg <= -2:
+            add(-5, f"promoter stake down {abs(chg):g}pp over four quarters")
     if f.get("pledged_pct"):
         add(-8 if f["pledged_pct"] > 20 else -3, f"pledge {f['pledged_pct']:g}%")
     cur = "growth"
@@ -558,10 +841,9 @@ def score(f: dict | None, _internal: bool = False):
     cfo, pat = f.get("cfo_cr"), f.get("np_latest_q")
     pat_fy = f.get("profit_fy_cr")
     conv = None
-    if cfo is not None and (f.get("revenue_fy_cr") or 0):
-        base = pat_fy or (f.get("revenue_fy_cr") or 0) * 0.1
-        if base:
-            conv = cfo / abs(base)
+    if cfo is not None and pat_fy:
+        # measured against the profit the company reported, never against an assumed margin
+        conv = cfo / abs(pat_fy)
     if cfo is not None:
         if cfo < 0:
             add(-14, f"operating cash flow ₹{cfo:,.0f}cr — the business consumed cash last year")
@@ -625,7 +907,30 @@ def score(f: dict | None, _internal: bool = False):
             add(3, f"institutions hold {inst:g}%")
 
     # ---------------------------------------------------------------- price against growth
+    down = f.get("pat_down_quarters") or 0
+    if down >= 3:
+        add(-10, f"profit has come in below the year-ago quarter {down} quarters running")
+        flag(50, f"{down} consecutive quarters of falling profit")
+    elif down == 2:
+        add(-4, "profit has come in below the year-ago quarter two quarters running")
+
     cur = "value"
+    bv, price = f.get("book_value"), f.get("price")
+    if bv and price and bv > 0:
+        pb = round(price / bv, 2)
+        # Adani Ports at 30x earnings and 4.3x book collected +2 for its P/E and nothing else.
+        # Book value is the second half of the valuation question and it was not being asked.
+        add(3 if pb < 2 else 0 if pb < 4 else -4 if pb < 8 else -8, f"price to book {pb:g}")
+        # What the buyer earns on what the buyer pays. Markets Mojo's objection to Adani Ports is
+        # "a 3.1 enterprise value to capital employed on an ROCE of 11.6" — which is the same
+        # arithmetic: a business earning 14% on its capital, bought at 4.3 times that capital,
+        # returns 3.3% on the money actually spent. The level of ROCE alone never asks this.
+        if roce:
+            yield_pct = round(roce / pb, 1)
+            if yield_pct < 4:
+                add(-6, f"ROCE {roce:g}% bought at {pb:g}× book is {yield_pct:g}% on what you pay")
+            elif yield_pct >= 12:
+                add(4, f"ROCE {roce:g}% at {pb:g}× book is {yield_pct:g}% on what you pay")
     peg = f.get("peg")
     if peg is None and f.get("pe") and f.get("profit_growth_1y_pct"):
         g = f["profit_growth_1y_pct"]
@@ -654,19 +959,7 @@ def score(f: dict | None, _internal: bool = False):
     for warning in (f.get("parse_warnings") or []):
         flag(60, f"the page did not read cleanly — {warning}")
 
-    # Compose: each dimension's net contribution, clamped to what that dimension is allowed to be
-    # worth. A clamp is reported, because "profitability was as good as profitability gets" is a
-    # different statement from "profitability was worth twenty points".
-    s = BASE
-    for dim, total in got.items():
-        hi, lo = BUDGET.get(dim, (99, -99))
-        clamped = max(lo, min(hi, total))
-        s += clamped
-        if clamped != round(total, 2):
-            why.append(f"  ({dim} counted {clamped:+g} of {total:+g} — its terms measure the same "
-                       f"thing more than once, so it is worth {hi:+g} at most)")
-
-    raw = int(max(0, min(100, round(s))))
+    raw = int(max(0, min(100, round(_compose(BASE, got, BUDGET, why)))))
     final = raw
     applied = []
     for ceiling, reason in sorted(caps):

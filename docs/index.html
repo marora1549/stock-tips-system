@@ -724,7 +724,7 @@ function run(command, inputs, opts){
 /* ==================================================================== pieces */
 var TAG_ICON = {fundamentals:'scale', technicals:'chart', momentum:'bolt', 'tight-stop':'shield',
   asymmetric:'target', corroborated:'rss', 'slow-clock':'clock', sluggish:'clock',
-  'weak-books':'alert', 'hot-potato':'alert', trend:'gauge'};
+  'weak-fundamentals':'alert', 'hot-potato':'alert', trend:'gauge'};
 function tagPills(tags){
   if (!tags || !tags.length) return '';
   return tags.map(function(t){
@@ -999,7 +999,7 @@ function positionCard(p){
       {k:'Horizon', v:esc(p.timeframe || '—'),
        s:p.deadline ? 'by ' + esc(p.deadline) : (p.time_stop_days || '—') + ' sessions'},
       {k:'Booked at', v:(p.composite != null ? p.composite : '—'),
-       s:'chart ' + (p.ta_confidence || '—') + ' · books ' + (p.fund_score || '—')},
+       s:'chart ' + (p.ta_confidence || '—') + ' · fundamentals ' + (p.fund_score || '—')},
       {k:'Realised', v:'<span class="' + sgn(p.realised_inr) + '">' + inr(p.realised_inr) + '</span>',
        s:p.max_favourable_pct ? 'best ' + pct(p.max_favourable_pct, 1) : ''}
     ]) +
@@ -1623,11 +1623,11 @@ function newsTags(c){
     out.push({t:'warn', i:'alert', l:Math.round(c.certainty * 100) + '% firm',
               w:'not a signed contract yet'});
   // A lender's accounts do not answer these questions, so no number is claimed for one.
-  if (c.fund_unrated) out.push({t:'warn', i:'shield', l:'books not rated',
+  if (c.fund_unrated) out.push({t:'warn', i:'shield', l:'fundamentals not rated',
               w:(c.fund_why || [])[0] || 'this scorer does not fit this kind of company'});
-  else if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong books · ' + c.fund_score,
+  else if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong fundamentals · ' + c.fund_score,
               w:(c.fund_why || []).slice(0, 4).join('; ')});
-  else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak books · ' + c.fund_score,
+  else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak fundamentals · ' + c.fund_score,
               w:'a pop on a weak balance sheet fades'});
   // A red flag is not a term in an average — it is the reason the score has a ceiling, and it
   // belongs on the card in words. This desk scored a cash-burning company 92 once.
@@ -1906,7 +1906,7 @@ function renderIntraday(){
     html += '<div class="sec"><div class="sec-h"><h3>' + ic('bulb') + 'Watch</h3>' +
       '<span class="note">real news, not enough on its own</span></div>' +
       '<div class="tw"><table><thead><tr><th>Symbol</th><th>Event</th><th class="r">Catalyst</th>' +
-      '<th class="r">Size</th><th class="r">Books</th><th>Route</th><th>Gap</th><th></th></tr></thead><tbody>' +
+      '<th class="r">Size</th><th class="r">Fundamentals</th><th>Route</th><th>Gap</th><th></th></tr></thead><tbody>' +
       watch.map(function(c){
         var s = c.session || {};
         var size = c.materiality_ratio ? num(c.materiality_ratio, 1) + '× rev'

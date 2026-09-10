@@ -140,3 +140,30 @@ def test_neither_ledger_can_reach_the_scorer():
     assert "fundamentals" not in src.replace("fundamentals_calibration", "").replace(
         "fundamentals_verdicts", "").replace("fundamentals score", "").replace(
         "fundamentals number", ""), "the ledgers must not import or call the scorer"
+
+
+def test_a_corrected_score_supersedes_the_one_it_replaced():
+    """Fixing the scorer and re-comparing the same company writes a second row. Both belong in the
+    history — the +55 on Enviro Infra is the record of what went wrong and is not being quietly
+    deleted — but counting both would let a corrected mistake keep reporting itself forever."""
+    d = fc.load_verdicts()
+    fc.note_verdict(d, "EIEL", source="markets_mojo", their_score=37, their_stance="sell",
+                    my_score=92, note="before the rebuild", on="2026-09-09")
+    fc.note_verdict(d, "EIEL", source="markets_mojo", their_score=37, their_stance="sell",
+                    my_score=32, note="after the rebuild", on="2026-09-09")
+    row = next(r for r in fc.bias(d) if r["source"] == "markets_mojo")
+    assert row["n"] == 1, "one company, one current comparison"
+    assert row["mean_gap"] == pytest.approx(-5.0), "the corrected score is the one that counts"
+
+    kept = fc.disagreements(d)
+    assert len(kept) == 1 and kept[0]["gap"] == 55.0
+    assert kept[0]["superseded"] is True, "still on the record, and labelled"
+
+
+def test_a_second_look_on_a_later_day_is_not_a_supersede():
+    """Re-comparing the same name months later is new evidence, not a correction."""
+    d = fc.load_verdicts()
+    fc.note_verdict(d, "EIEL", source="markets_mojo", their_score=37, my_score=50, on="2026-09-09")
+    fc.note_verdict(d, "EIEL", source="markets_mojo", their_score=40, my_score=44, on="2026-11-09")
+    row = next(r for r in fc.bias(d) if r["source"] == "markets_mojo")
+    assert row["n"] == 2, "two dates, two observations"

@@ -540,6 +540,51 @@ def cmd_lesson(a):
     print("lesson recorded")
 
 
+def cmd_rescore(a):
+    """Re-run the fundamentals scorer over a report that was written by an older version of it.
+
+    A pre-open card is a record of what the desk believed that morning, and the numbers in it were
+    computed by whatever the scorer was at 08:00. When the scorer is corrected during the day the
+    card does not correct itself — so the morning EIEL carried 92 on a page that had already been
+    rebuilt to say 32.
+
+    This is a code path rather than an edit to the file, and it says so in the report: the original
+    score is kept as `fund_score_at_run` and the reason for the change is recorded, so the card
+    still shows what was believed at the time as well as what is believed now.
+    """
+    day = a.date or sorted(p.name for p in REPORTS_DIR.iterdir() if p.is_dir())[-1]
+    changed, seen = [], 0
+    for name in ("preopen.json", "analysis.json"):
+        path = REPORTS_DIR / day / name
+        doc = read_json(path, None)
+        if doc is None:
+            continue
+        buckets = ([doc.get(k) or [] for k in ("trade", "watch", "avoid")]
+                   if isinstance(doc, dict) else [doc])
+        for cards in buckets:
+            for c in cards:
+                sym = c.get("symbol")
+                if not sym or c.get("fund_score") is None:
+                    continue
+                seen += 1
+                got = fundamentals.assess(fundamentals.fetch(sym))
+                was = c["fund_score"]
+                if was == got["score"] and not got.get("unrated"):
+                    continue
+                c.setdefault("fund_score_at_run", was)
+                c.update(fund_score=got["score"], fund_why=got["why"],
+                         fund_flags=got.get("flags") or [], fund_caps=got.get("caps") or [],
+                         fund_unrated=bool(got.get("unrated")),
+                         fund_rescored=f"{a.reason or 'scorer corrected'} (was {was})")
+                changed.append((sym, was, got["score"], bool(got.get("unrated"))))
+        write_json(path, doc)
+    for sym, was, now, unrated in changed:
+        print(f"  {sym:12} {was:>3} -> {'unrated' if unrated else now}")
+    print(f"{len(changed)} of {seen} rescored in reports/{day}")
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+
+
 def cmd_fund_verdict(a):
     """Record somebody else's verdict on a company next to mine.
 
@@ -608,6 +653,7 @@ def cmd_fund_audit(a):
         for r in dis:
             print(f"    {r['symbol']:12s} {r['date']}  me {r['my_score']:>3}  "
                   f"{r['source']} {r['their_score']:>5} {r['their_stance']:<6s} gap {r['gap']:+.0f}"
+                  + ("  [superseded, kept as the record]" if r.get("superseded") else "")
                   + (f"  — {r['note']}" if r.get("note") else ""))
 
 
@@ -836,6 +882,11 @@ def main(argv=None):
         p.add_argument("--" + k.replace("_", "-"), dest=k)
     p.add_argument("--category", default="tipster"); p.set_defaults(fn=cmd_add_source)
     p = sub.add_parser("lesson"); p.add_argument("text"); p.set_defaults(fn=cmd_lesson)
+    p = sub.add_parser("rescore", help="re-run the fundamentals scorer over an existing report")
+    p.add_argument("--date", default=None)
+    p.add_argument("--reason", default=None, help="why the scorer changed")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_rescore)
     p = sub.add_parser("fund-verdict", help="record an outside verdict on a company next to mine")
     p.add_argument("symbol")
     p.add_argument("--source", required=True, help="who said it, e.g. markets_mojo, screener")
