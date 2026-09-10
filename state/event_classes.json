@@ -1,0 +1,56 @@
+{
+  "order_win": {
+    "id": "order_win",
+    "prior": 30,
+    "adjust": 2.66,
+    "n": 3,
+    "n_up": 2,
+    "sum_open_to_high_pct": 5.21,
+    "sum_open_to_close_pct": -0.62,
+    "history": [
+      {
+        "date": "2026-09-10",
+        "symbol": "SHAKTIPUMP",
+        "open_to_high_pct": 3.36,
+        "open_to_close_pct": 0.11,
+        "delta": 3.02
+      },
+      {
+        "date": "2026-09-10",
+        "symbol": "EIEL",
+        "open_to_high_pct": 1.85,
+        "open_to_close_pct": -0.13,
+        "delta": 1.55
+      },
+      {
+        "date": "2026-09-10",
+        "symbol": "ADANIPORTS",
+        "open_to_high_pct": 0.0,
+        "open_to_close_pct": -0.6,
+        "delta": -1.54
+      }
+    ],
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10"
+  },
+  "regulatory_approval": {
+    "id": "regulatory_approval",
+    "prior": 26,
+    "adjust": 0.423,
+    "n": 1,
+    "n_up": 0,
+    "sum_open_to_high_pct": 0.75,
+    "sum_open_to_close_pct": -0.28,
+    "history": [
+      {
+        "date": "2026-09-10",
+        "symbol": "AUBANK",
+        "open_to_high_pct": 0.75,
+        "open_to_close_pct": -0.28,
+        "delta": 0.42
+      }
+    ],
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10"
+  }
+}
