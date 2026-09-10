@@ -34,8 +34,9 @@ import yaml
 
 from . import pipeline, report
 from .analysis import contenders, plan as planmod, scoring, ta
+from . import selfcheck
 from .data import fundamentals, prices, sparks, symbols
-from .learning import confidence, eventscore, journal
+from .learning import confidence, eventscore, fundcalib, journal
 from .portfolio import daybook
 from .sources import mojo
 from .portfolio import ledger as ledgermod
@@ -540,6 +541,151 @@ def cmd_lesson(a):
     print("lesson recorded")
 
 
+def cmd_selfcheck(a):
+    """Is the code in this container the code that was fixed?
+
+    A passing test suite says the repository is correct. It says nothing about what a routine
+    actually cloned. On 10 September the 08:00 run mailed a card scoring Enviro Infra 92 — a
+    number that had been corrected to 32 the day before — because the correction was on a branch
+    and the routine clones `main`. Nothing failed. The run succeeded, the email arrived, and the
+    output looked completely normal, which is precisely why it needed catching by something other
+    than a person reading it.
+    """
+    ok, rows = selfcheck.run()
+    print(f"scorer canaries — {selfcheck.branch()} @ {selfcheck.head()}")
+    for r in rows:
+        print(f"  {'PASS' if r['ok'] else 'FAIL'}  {r['name']}")
+        print(f"        got {r['found']!r}, want {r['want']}")
+        if not r["ok"]:
+            print(f"        this is the {r['was']} failure, returning")
+    if ok:
+        print(f"\nall {len(rows)} canaries pass — this container is running the corrected scorer")
+        return
+    bad = [r for r in rows if not r["ok"]]
+    print(f"\n{len(bad)} of {len(rows)} FAILED. The code in this container is older than the "
+          f"corrections in this repository's history.\nDo not present this run's fundamentals "
+          f"numbers as current. Say so at the top of the email, name the failing canaries, and "
+          f"check whether a branch carrying the fix is still unmerged.")
+    sys.exit(3)
+
+
+def cmd_rescore(a):
+    """Re-run the fundamentals scorer over a report that was written by an older version of it.
+
+    A pre-open card is a record of what the desk believed that morning, and the numbers in it were
+    computed by whatever the scorer was at 08:00. When the scorer is corrected during the day the
+    card does not correct itself — so the morning EIEL carried 92 on a page that had already been
+    rebuilt to say 32.
+
+    This is a code path rather than an edit to the file, and it says so in the report: the original
+    score is kept as `fund_score_at_run` and the reason for the change is recorded, so the card
+    still shows what was believed at the time as well as what is believed now.
+    """
+    day = a.date or sorted(p.name for p in REPORTS_DIR.iterdir() if p.is_dir())[-1]
+    changed, seen = [], 0
+    for name in ("preopen.json", "analysis.json"):
+        path = REPORTS_DIR / day / name
+        doc = read_json(path, None)
+        if doc is None:
+            continue
+        buckets = ([doc.get(k) or [] for k in ("trade", "watch", "avoid")]
+                   if isinstance(doc, dict) else [doc])
+        for cards in buckets:
+            for c in cards:
+                sym = c.get("symbol")
+                if not sym or c.get("fund_score") is None:
+                    continue
+                seen += 1
+                got = fundamentals.assess(fundamentals.fetch(sym))
+                was = c["fund_score"]
+                if was == got["score"] and not got.get("unrated"):
+                    continue
+                c.setdefault("fund_score_at_run", was)
+                c.update(fund_score=got["score"], fund_why=got["why"],
+                         fund_flags=got.get("flags") or [], fund_caps=got.get("caps") or [],
+                         fund_unrated=bool(got.get("unrated")),
+                         fund_rescored=f"{a.reason or 'scorer corrected'} (was {was})")
+                changed.append((sym, was, got["score"], bool(got.get("unrated"))))
+        write_json(path, doc)
+    for sym, was, now, unrated in changed:
+        print(f"  {sym:12} {was:>3} -> {'unrated' if unrated else now}")
+    print(f"{len(changed)} of {seen} rescored in reports/{day}")
+    if not a.no_dashboard:
+        cmd_dashboard_data(a)
+
+
+def cmd_fund_verdict(a):
+    """Record somebody else's verdict on a company next to mine.
+
+    Markets Mojo is a paid, manual read: slow, but a second opinion that owes nothing to my
+    arithmetic. Enviro Infra is why this exists — 92 from me against 37 and a SELL from them, and
+    the only reason the gap was ever noticed is that a person read both and said so. Recording
+    every such pair turns that into a number the system tracks: `fund-audit` reports whether I am
+    running systematically generous, and against whom.
+    """
+    sym = a.symbol.upper()
+    mine = a.my_score
+    if mine is None:
+        f = fundamentals.fetch(sym)
+        got = fundamentals.assess(f)
+        mine = got["score"]
+        print(f"scored {sym} now: {mine}/100" + (" (unrated)" if got.get("unrated") else ""))
+    d = fundcalib.load_verdicts()
+    row = fundcalib.note_verdict(d, sym, source=a.source, their_score=a.their_score,
+                                 their_stance=a.stance or "", my_score=mine, note=a.note or "",
+                                 on=a.date)
+    fundcalib.save_verdicts(d)
+    print(json.dumps({"symbol": sym, **row}, indent=1))
+    if row.get("gap") is not None and abs(row["gap"]) >= 20:
+        print(f"\n⚑ {abs(row['gap']):.0f}-point disagreement with {a.source}. That is a case to go "
+              f"and look at, not a rounding difference.")
+
+
+def cmd_fund_audit(a):
+    """Has the fundamentals score ever been right? Both ledgers, in words.
+
+    Everything else the desk believes is graded — a tip source by its outcomes, an event class by
+    open-to-high travel. The fundamentals number was graded by nobody, which is why a 92 on a
+    cash-burning company could stand for weeks. This is the report that makes it answerable.
+    """
+    calib = fundcalib.load()
+    verdicts = fundcalib.load_verdicts()
+
+    print("fundamentals score against realised outcome")
+    print("  band     scored  settled   avg return   hit rate")
+    for r in fundcalib.table(calib):
+        avg = f"{r['avg_return_pct']:+7.2f}%" if r["avg_return_pct"] is not None else "      —"
+        hit = f"{r['hit_rate']:.0%}" if r["hit_rate"] is not None else "  —"
+        thin = "  (too few to read)" if r["thin"] and r["n_settled"] else "  (nothing settled)" if r["thin"] else ""
+        print(f"  {r['bucket']:8s} {r['n_scored']:6d} {r['n_settled']:8d}   {avg}   {hit:>8s}{thin}")
+    inv = fundcalib.inversions(calib)
+    if inv:
+        print("\n  ⚑ the score is not ranking these bands correctly:")
+        for line in inv:
+            print(f"    - {line}")
+    elif not any(not r["thin"] for r in fundcalib.table(calib)):
+        print("\n  no band has enough settled trades to say anything yet. That is the honest "
+              "state:\n  the score is unproven, and until it is graded it should be read as an "
+              "opinion.")
+
+    print("\nfundamentals score against outside verdicts")
+    rows = fundcalib.bias(verdicts)
+    if not rows:
+        print("  none recorded")
+    for r in rows:
+        print(f"  {r['source']:16s} n={r['n']:<3d} mean gap {r['mean_gap']:+6.1f}  "
+              f"mean |gap| {r['mean_abs_gap']:5.1f}  worst {r['worst']:+6.1f}  — {r['reading']}")
+    dis = fundcalib.disagreements(verdicts, threshold=a.threshold)
+    if dis:
+        print(f"\n  disagreements of {a.threshold:.0f} points or more — "
+              f"the standing list to review:")
+        for r in dis:
+            print(f"    {r['symbol']:12s} {r['date']}  me {r['my_score']:>3}  "
+                  f"{r['source']} {r['their_score']:>5} {r['their_stance']:<6s} gap {r['gap']:+.0f}"
+                  + ("  [superseded, kept as the record]" if r.get("superseded") else "")
+                  + (f"  — {r['note']}" if r.get("note") else ""))
+
+
 ANALYSIS_FIELDS = ("symbol", "company", "verdict", "composite", "ta_confidence", "fund_score", "source_confidence",
                    "ltp", "plan", "source_id", "bucket", "tip_id", "n_mentions", "src_entry", "src_targets", "src_stop",
                    "corroborating_sources", "brokerages", "fund_why", "tags")
@@ -595,7 +741,9 @@ def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
     """One pre-open candidate, married to whatever the session has since made of it."""
     keys = ("symbol", "company", "event", "event_label", "catalyst", "verdict", "verdict_note",
             "size_inr_cr", "size_estimated", "size_basis", "materiality_ratio", "revenue_ttm_cr",
-            "fund_score", "fund_why", "source_id", "corroborating_sources", "url", "title",
+            "fund_score", "fund_why", "fund_flags", "fund_caps", "fund_unrated",
+            "screener_pros", "screener_cons",
+            "source_id", "corroborating_sources", "url", "title",
             "published", "directness", "route", "why_this_name", "theme", "ltp", "ta",
             "fundamentals", "freshness", "class_score", "plan", "certainty", "n_reports")
     out = {k: cand.get(k) for k in keys}
@@ -636,6 +784,8 @@ def cmd_dashboard_data(a):
     session = read_json(REPORTS_DIR / intra_day / "intraday.json", {}) if intra_day else {}
     book = daybook.load()
     classes = eventscore.load()
+    calib = fundcalib.load()
+    verdicts = fundcalib.load_verdicts()
 
     data = {"generated": today_str(), "stats": ledgermod.stats(led),
             "positions": [_pos_for_dashboard(p) for p in led["positions"]],
@@ -678,6 +828,21 @@ def cmd_dashboard_data(a):
                                                               "notional_inr", "risk_per_trade_pct",
                                                               "max_positions")},
             },
+            # the fundamentals score's own report card, on the page rather than behind a command:
+            # a number nobody is checking is how the 92 survived
+            "fundamentals_audit": {
+                "buckets": fundcalib.table(calib),
+                "inversions": fundcalib.inversions(calib),
+                "bias": fundcalib.bias(verdicts),
+                "disagreements": fundcalib.disagreements(verdicts)[:12],
+                "ceiling": fundamentals.BASE + sum(hi for hi, _ in fundamentals.BUDGET.values()),
+            },
+            # Which code produced this page. The portal was showing a fundamentals score of 92
+            # from a scorer that had already been corrected to say 32, and nothing on the page
+            # said which version had computed it.
+            "build": {"head": selfcheck.head(), "branch": selfcheck.branch(),
+                      "canaries": [{k: r[k] for k in ("name", "ok", "want")}
+                                   for r in selfcheck.canaries()]},
             "report_days": days[-60:], "lessons_tail": journal.tail(4000),
             "settings": {k: settings()[k] for k in ("capital", "mandate", "risk", "exits", "scoring")}}
     write_json(ROOT / "docs" / "data.json", data)
@@ -752,6 +917,27 @@ def main(argv=None):
         p.add_argument("--" + k.replace("_", "-"), dest=k)
     p.add_argument("--category", default="tipster"); p.set_defaults(fn=cmd_add_source)
     p = sub.add_parser("lesson"); p.add_argument("text"); p.set_defaults(fn=cmd_lesson)
+    p = sub.add_parser("selfcheck", help="known-answer checks against the code in this container")
+    p.set_defaults(fn=cmd_selfcheck)
+    p = sub.add_parser("rescore", help="re-run the fundamentals scorer over an existing report")
+    p.add_argument("--date", default=None)
+    p.add_argument("--reason", default=None, help="why the scorer changed")
+    p.add_argument("--no-dashboard", action="store_true")
+    p.set_defaults(fn=cmd_rescore)
+    p = sub.add_parser("fund-verdict", help="record an outside verdict on a company next to mine")
+    p.add_argument("symbol")
+    p.add_argument("--source", required=True, help="who said it, e.g. markets_mojo, screener")
+    p.add_argument("--their-score", type=float, dest="their_score", default=None,
+                   help="their score out of 100")
+    p.add_argument("--stance", default=None, help="buy / hold / sell, if they gave one")
+    p.add_argument("--my-score", type=int, dest="my_score", default=None,
+                   help="my score; omit to score the company now")
+    p.add_argument("--note", default=None)
+    p.add_argument("--date", default=None)
+    p.set_defaults(fn=cmd_fund_verdict)
+    p = sub.add_parser("fund-audit", help="has the fundamentals score ever been right?")
+    p.add_argument("--threshold", type=float, default=20.0)
+    p.set_defaults(fn=cmd_fund_audit)
     p = sub.add_parser("dashboard-data"); p.set_defaults(fn=cmd_dashboard_data)
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO if a.verbose else logging.WARNING, format="%(levelname)s %(name)s: %(message)s")

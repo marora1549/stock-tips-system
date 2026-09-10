@@ -241,16 +241,21 @@ def themes() -> list[dict]:
     return _THEMES
 
 
+def _kw_present(kw: str, low: str) -> bool:
+    """Word-bounded search — a plain substring check lets "cable" fire on "applicable"."""
+    return re.search(r"(?<!\w)" + re.escape(kw.strip()) + r"(?!\w)", low) is not None
+
+
 def themes_in(text: str) -> list[dict]:
     """Which themes this story belongs to, with the keyword that put it there."""
     low = " " + re.sub(r"\s+", " ", (text or "").lower()) + " "
     hits = []
     for t in themes():
-        got = [k for k in t.get("match", []) if k in low]
+        got = [k for k in t.get("match", []) if _kw_present(k, low)]
         if not got:
             continue
         need = t.get("require")
-        if need and not any(k in low for k in need):
+        if need and not any(_kw_present(k, low) for k in need):
             continue
         hits.append({**t, "matched": got})
     return hits
@@ -277,6 +282,14 @@ NAME_FLOOR = 0.86      # a news scan throws hundreds of capitalised phrases at t
                        # confident hit becomes a candidate, because a wrong symbol is a wrong trade
 DIRECTNESS_FLOOR = 0.3   # below this the link to the news is too thin to email anyone about
 MAX_BENEFICIARIES = 6    # one story, a handful of names — not a sector
+
+# Something has to tie the story to this market before the theme map fans it out. "Babcock LGE
+# secures contract for four new VLGCs" is a UK marine-engineering firm building gas carriers for a
+# European operator; the shipping theme fired on it and produced Adani Ports and Cochin Shipyard as
+# candidates. A theme play with nobody named is already one inference — inferring the country too is
+# two, and the second one was simply wrong.
+INDIA_ANCHOR = re.compile(r"(?<!\w)(?:india|indian|nse|bse|sebi|nifty|sensex|crore|lakh|rupee|rs\.?\s*\d|₹)",
+                          re.I)
 
 
 def _named_symbols(text: str, title: str) -> dict[str, dict]:
@@ -489,6 +502,8 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
     # With a single named subject the article's figure is legitimately about it; with several, a
     # figure has to be found beside the company it belongs to or not used at all.
     n_named = sum(1 for b in people if b["route"] == "named")
+    if people and all(b["route"] != "named" for b in people) and not INDIA_ANCHOR.search(blob):
+        return []                # a theme fan-out onto a story that never mentions this market
     if not trusted_body:
         # Only what the headline itself says survives: a company named in the title is what the page
         # is about, and a theme play inferred from untrusted text is two guesses stacked.
@@ -505,6 +520,14 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
         if top is None:
             continue          # named in the article, but the article reports no event about it
         mine = size
+        # Only a company the article names can claim the order as its own. Everything reached
+        # through the theme map — sympathy peer or full theme play — is an inference about who
+        # benefits, not a record of who was awarded. Dividing the winner's order by an inferred
+        # beneficiary's revenue produced "HAL · 0.6× revenue" off Tata's ₹20,000cr tank bid, which
+        # reads as a fact about HAL and is not one. The deal size is still worth showing; the ratio
+        # is not, and that holds even when the winner is unlisted and the peers are the only way to
+        # trade it.
+        own_order = who["route"] == "named"
         if who["route"] == "named":
             own = sentences_about(blob, who.get("as_written"))
             local = [m for m in money_in_crore("\n".join(own), usd_inr) if m["context"] == "contract"]
@@ -525,7 +548,7 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
             "route": who["route"], "directness": who["weight"], "why_this_name": who["why"],
             "theme": who["theme"], "themes_matched": [t["id"] for t in matched_themes],
             "size_inr_cr": (mine or {}).get("inr_cr"), "size_estimated": (mine or {}).get("estimated", False),
-            "size_basis": (mine or {}).get("basis"),
+            "size_basis": (mine or {}).get("basis"), "size_is_own_order": own_order,
             "capacity": caps[0] if caps else None,
             "source_id": source_id, "url": doc.get("url", ""), "title": title[:200],
             "published": doc.get("published", ""),

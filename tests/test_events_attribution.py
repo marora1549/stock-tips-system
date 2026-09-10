@@ -118,6 +118,14 @@ def test_a_single_subject_story_still_takes_the_articles_figure():
     assert syms(doc)["BEL"]["size_inr_cr"] == 900.0
 
 
+def test_a_theme_keyword_does_not_fire_inside_an_unrelated_word():
+    """"applicable law" contains the literal substring "cable" — a live US securities-suit wire hit
+    the power_cables theme this way and fanned a Beta Bionics lawsuit out to five Indian cable
+    stocks as a regulatory-action AVOID. Keyword matching must respect word boundaries."""
+    assert events.themes_in("under the applicable law and ethical rules") == []
+    assert events.themes_in("KEI supplies EHV cable to the project") != []
+
+
 def test_page_furniture_is_stripped_before_the_body_is_read():
     from stocktips.sources import fetchers
     page = ('<html><body><article><p>' + 'Jupiter Wagons said it received an order worth Rs 97.66 '
@@ -130,3 +138,65 @@ def test_page_furniture_is_stripped_before_the_body_is_read():
     assert "Jupiter Wagons" in stripped
     for gone in ("Kendrapara", "Suzlon", "RVNL", "24,700", "404.88"):
         assert gone not in stripped, f"{gone} survived the furniture strip"
+
+
+def test_a_theme_fan_out_needs_something_tying_the_story_to_this_market():
+    """"Babcock LGE secures contract for four new VLGCs" is a UK marine-engineering firm building gas
+    carriers for a European operator at a Korean yard. The shipping theme fired on it and produced
+    Adani Ports and Cochin Shipyard as candidates on the 9 Sep re-run. A theme play with nobody
+    named is already one inference; inferring the country as well is two, and the second was wrong.
+    """
+    uk = {"url": "u", "title": "Babcock LGE secures contract for four new VLGCs", "body_how": "container",
+          "published": "Tue, 09 Sep 2026 06:00:00 +0530",
+          "text": "Babcock LGE has secured a contract to supply cargo handling systems for four new "
+                  "very large gas carriers. The shipbuilding order was placed by a European operator "
+                  "and the vessels will be delivered from a South Korean yard."}
+    assert events.scan(uk, "corp_orders") == []
+
+    # the same theme, anchored here, still works
+    ind = dict(uk, title="Cochin Shipyard bags shipbuilding order worth Rs 1,200 crore",
+               text="Cochin Shipyard said it has secured a shipbuilding order worth Rs 1,200 crore "
+                    "from an Indian operator for four vessels.")
+    assert "COCHINSHIP" in syms(ind)
+
+
+def test_only_a_named_company_may_claim_the_order_as_its_own():
+    """"HAL · 0.6x revenue" came off Tata's ₹20,000cr tank bid — HAL did not win that order. It reads
+    as a fact about HAL and is not one. This holds for a theme play too, not just a sympathy peer:
+    when the winner is unlisted, the listed names are the only way to trade it and still did not
+    win it."""
+    doc = {"url": "u", "body_how": "container",
+           "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank",
+           "published": "Tue, 09 Sep 2026 06:30:00 +0530",
+           "text": "Tata Advanced Systems has emerged as the lowest bidder for the Rs 20,000 crore "
+                   "Project Zorawar light tank programme of the Ministry of Defence."}
+    got = syms(doc, "corp_orders")
+    assert got, "the listed defence names are still the way to trade an unlisted winner"
+    for sym, e in got.items():
+        assert e["route"] != "named", f"{sym} is not named in that story"
+        assert e["size_is_own_order"] is False
+        assert e["size_inr_cr"] == 20000.0, "the deal size is still worth showing"
+
+    # and the scorer must refuse to turn it into a ratio
+    from stocktips.analysis import catalyst
+    from datetime import datetime, timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30))
+    hal = got["HAL"]
+    got_score = catalyst.score(hal, fundamentals={"revenue_ttm_cr": 33800.0, "market_cap_cr": 320000.0},
+                               fund_score=89, ta={"avg_turnover_cr": 900.0, "close": 4800.0},
+                               now=datetime(2026, 9, 9, 8, 0, tzinfo=ist))
+    assert got_score["materiality_ratio"] is None
+    assert any("the order the winner took" in r for r in got_score["reasons"])
+
+
+def test_the_named_winner_keeps_its_materiality():
+    """The fix must not cost the case the whole system exists for."""
+    from stocktips.analysis import catalyst
+    from datetime import datetime, timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30))
+    lead = events.merge(events.scan(SINGLE, "w"))[0]
+    assert lead["symbol"] == "GVT&D" and lead["size_is_own_order"] is True
+    scored = catalyst.score(lead, fundamentals={"revenue_ttm_cr": 3900.0, "market_cap_cr": 51000.0},
+                            fund_score=78, ta={"avg_turnover_cr": 210.0, "close": 2000.0},
+                            now=datetime(2026, 9, 8, 8, 0, tzinfo=ist))
+    assert scored["materiality_ratio"] > 3.0

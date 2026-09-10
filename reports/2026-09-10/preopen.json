@@ -141,17 +141,28 @@
         "force_flat_at": "15:10",
         "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
       },
-      "fund_score": 87,
+      "fund_score": 39,
       "fund_why": [
         "+12 ROCE 23.6%",
         "+8 ROE 18%",
         "+2 P/E 27.2",
         "+8 3y profit CAGR 120%",
         "+6 3y sales CAGR 41%",
+        "+4 return on capital has improved from 15.8% to 36.7%",
         "+2 D/E 0.3",
         "+4 promoter 50.36%",
         "-5 latest qtr PAT YoY -46.4%",
-        "+0 mcap ₹5,773 cr"
+        "+0 mcap ₹5,773 cr",
+        "+3 operating cash flow ₹124cr, only 48% of profit",
+        "-8 sales growth has stalled: 7.2% last year against 83.5% the year before",
+        "-5 the profit 3-year CAGR of 120% is history — last year was -36.8%",
+        "-5 the sales 3-year CAGR of 41% is history — last year was 7.2%",
+        "-3 interest cover 5.53×",
+        "-4 interest cost up 50% year on year",
+        "-10 borrowings up 197% year on year",
+        "-10 profit has come in below the year-ago quarter 4 quarters running",
+        "+0 price to book 3.39",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)"
       ],
       "ltp": 467.79998779296875,
       "ta": {
@@ -187,7 +198,14 @@
         "hit_rate": null,
         "adjust": 0.0,
         "untested": true
-      }
+      },
+      "fund_score_at_run": 87,
+      "fund_flags": [
+        "4 consecutive quarters of falling profit"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 87)"
     },
     {
       "id": "3b3ec30553",
@@ -275,17 +293,29 @@
         "force_flat_at": "15:10",
         "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
       },
-      "fund_score": 92,
+      "fund_score": 26,
       "fund_why": [
         "+12 ROCE 20.2%",
         "+4 ROE 16.8%",
-        "+6 P/E 19.7",
+        "+6 P/E 19.8",
         "+8 3y profit CAGR 50%",
         "+6 3y sales CAGR 50%",
+        "-6 return on capital has drifted from 49.3% to 33% — the newer capital earns less than the old",
         "+2 D/E 0.34",
         "+4 promoter 70.19%",
         "+0 latest qtr PAT YoY 7.1%",
-        "+0 mcap ₹3,617 cr"
+        "+0 mcap ₹3,640 cr",
+        "-14 operating cash flow ₹-63cr — the business consumed cash last year",
+        "-8 sales growth has stalled: 7.5% last year against 46.2% the year before",
+        "-5 the profit 3-year CAGR of 50% is history — last year was 6.2%",
+        "-5 the sales 3-year CAGR of 50% is history — last year was 7.5%",
+        "-6 interest cover 5.43× and falling",
+        "-4 interest cost up 100% year on year",
+        "-6 borrowings up 80% year on year",
+        "-5 institutions hold 1.37% — desks with their own analysts are staying out",
+        "+0 price to book 2.95",
+        "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)"
       ],
       "ltp": 206.05999755859375,
       "ta": {
@@ -321,7 +351,16 @@
         "hit_rate": null,
         "adjust": 0.0,
         "untested": true
-      }
+      },
+      "fund_score_at_run": 92,
+      "fund_flags": [
+        "operating cash flow has been negative 3 years running",
+        "borrowings up 80% while the business burned cash — the growth is being funded, not earned",
+        "interest cover has fallen every quarter to 5.43×"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 92)"
     },
     {
       "id": "e79c5f8579",
@@ -405,7 +444,7 @@
         "force_flat_at": "15:10",
         "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
       },
-      "fund_score": 80,
+      "fund_score": 63,
       "fund_why": [
         "+0 ROCE 14.1%",
         "+4 ROE 16.4%",
@@ -414,8 +453,16 @@
         "+6 3y sales CAGR 23%",
         "+2 D/E 0.66",
         "+4 promoter 66.03%",
+        "-6 promoters sold 1.99pp in the last quarter alone",
         "+0 latest qtr PAT YoY 10.2%",
-        "+4 mcap ₹408,953 cr"
+        "+4 mcap ₹408,953 cr",
+        "+8 operating cash flow ₹20,356cr, 159% of profit — profit is turning into cash",
+        "-3 interest cover 5.75×",
+        "+3 institutions hold 29.18%",
+        "-4 price to book 4.27",
+        "-6 ROCE 14.1% bought at 4.27× book is 3.3% on what you pay",
+        "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
       ],
       "ltp": 1775.0,
       "ta": {
@@ -451,7 +498,12 @@
         "hit_rate": null,
         "adjust": 0.0,
         "untested": true
-      }
+      },
+      "fund_score_at_run": 80,
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
     },
     {
       "id": "476ce999b4",
@@ -541,15 +593,22 @@
         "force_flat_at": "15:10",
         "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
       },
-      "fund_score": 67,
+      "fund_score": 87,
       "fund_why": [
-        "+0 ROCE 12.4%",
-        "+8 ROE 22.3%",
-        "-6 P/E 234",
-        "+8 3y profit CAGR 49%",
-        "+6 3y sales CAGR 29%",
-        "-3 promoter 22.74%",
-        "+4 mcap ₹79,599 cr"
+        "+12 net NPA 0.76% of the book",
+        "+4 gross NPA 2.1%",
+        "+10 return on assets 1.51%",
+        "+3 ROE 14.2%",
+        "+4 net interest margin 5.21% of assets",
+        "+5 net interest income +13.7% last year",
+        "+3 the book grew 22%",
+        "+0 price to book 3.97",
+        "+2 P/E 27.9",
+        "+4 institutions hold 68.79%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so it is worth +14 at most)",
+        "  (returns counted +10 of +17 — its terms measure the same thing more than once, so it is worth +10 at most)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
       ],
       "ltp": 1073.699951171875,
       "ta": {
@@ -584,7 +643,12 @@
         "hit_rate": null,
         "adjust": 0.0,
         "untested": true
-      }
+      },
+      "fund_score_at_run": 67,
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 67)"
     }
   ],
   "avoid": [],

@@ -128,7 +128,8 @@ def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0
         tf = planmod.classify_timeframe((t.get("src_duration") or "") + " " + (t.get("sentence") or ""), src_tgt_pct, default=t.get("default_timeframe") or "weekly")
         plan = planmod.build_plan(snap, tf, entry=None, src_targets=t.get("src_targets"), src_stop=t.get("src_stop"))
         f = fundamentals.fetch(t["symbol"])
-        fscore, fwhy = fundamentals.score(f)
+        fa = fundamentals.assess(f)
+        fscore, fwhy = fa["score"], fa["why"]
         # source weight: primary source, nudged by corroboration
         w = confidence.weight(conf.get(t["source_id"], {}).get("score", 0.0))
         if t["corroborating_sources"]:
@@ -145,7 +146,12 @@ def analyze(structured: list[dict] | None = None, min_extraction_conf: float = 0
             **{k: t[k] for k in ("symbol", "company", "tip_id", "source_id", "corroborating_sources", "n_mentions", "src_targets", "src_stop", "src_entry", "urls", "brokerages", "sentence")},
             "ltp": ltp, "plan": plan, "ta": {k: snap[k] for k in ("trend", "rsi", "atr_pct", "adx", "vol_ratio", "patterns", "dist_52w_high_pct", "dist_ema20_pct", "dist_ema200_pct", "avg_turnover_cr", "chg_5d_pct", "chg_20d_pct", "high_52w", "last_bar_date", "momentum_score", "drift_pct_day", "efficiency", "amplitude_pct_day", "up_day_share")},
             "resistances": snap["resistances"][:4], "supports": snap["supports"][:4],
-            "ta_confidence": plan["ta_confidence"], "fund_score": fscore, "fund_why": fwhy, "fundamentals": {k: v for k, v in (f or {}).items() if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity", "promoter_pct", "sales_growth_3_years", "profit_growth_3_years", "np_yoy_growth_pct")},
+            "ta_confidence": plan["ta_confidence"], "fund_score": fscore, "fund_why": fwhy,
+            "fund_flags": fa.get("flags") or [], "fund_caps": fa.get("caps") or [],
+            "fund_unrated": bool(fa.get("unrated")),
+            "screener_pros": (f or {}).get("screener_pros") or [],
+            "screener_cons": (f or {}).get("screener_cons") or [],
+            "fundamentals": {k: v for k, v in (f or {}).items() if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity", "promoter_pct", "sales_growth_3_years", "profit_growth_3_years", "np_yoy_growth_pct", "cfo_cr", "cfo_negative_streak", "borrowings_growth_pct", "interest_cover", "sales_growth_1y_pct", "profit_growth_1y_pct", "institutional_pct", "sector", "industry", "revenue_fy_label")},
             "source_weight": round(w, 3), "source_confidence": confidence.display(conf.get(t["source_id"], {}).get("score", 0.0)),
             "composite": comp, "verdict": verdict, "bucket": bucket,
             "tags": scoring.tags(plan, snap, fscore, t["n_mentions"], len(t["corroborating_sources"])),
@@ -246,7 +252,8 @@ def gather_news(max_age_hours: float = 20, deadline_s: float | None = None,
         for d in docs:
             found += events.scan(d, src["id"], usd_inr=usd)
             out["docs"].append({"source_id": src["id"], "url": d["url"], "title": d["title"],
-                                "published": d["published"], "chars": len(d["text"])})
+                                "published": d["published"], "chars": len(d["text"]),
+                                "body_how": d.get("body_how", "none")})
         out["sources"][src["id"]] = {"docs": len(docs), "events": len(found)}
         out["events"] += found
         confidence.ensure(conf, src["id"])
@@ -328,8 +335,10 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
         snap = ta.analyze(df)
         if sym not in books:
             f = fundamentals.fetch(sym)
-            books[sym] = (f, *fundamentals.score(f))
-        f, fscore, fwhy = books[sym]
+            got = fundamentals.assess(f)
+            books[sym] = (f, got["score"], got["why"], got.get("flags") or [],
+                          got.get("caps") or [], bool(got.get("unrated")))
+        f, fscore, fwhy, fflags, fcaps, funrated = books[sym]
         cat = catalyst.score(
             ev, fundamentals=f, fund_score=fscore, ta=snap,
             class_prior=eventscore.prior(class_state, ev["event"], ev.get("event_prior", 0)),
@@ -339,6 +348,9 @@ def preopen(raw: dict | None = None, now=None, limit: int = 8, date: str | None 
         sparks.remember(spark_cache, ev["symbol"], df)
         ranked.append({
             **ev, **cat, "plan": plan, "fund_score": fscore, "fund_why": fwhy,
+            "fund_flags": fflags, "fund_caps": fcaps, "fund_unrated": bool(funrated),
+            "screener_pros": (f or {}).get("screener_pros") or [],
+            "screener_cons": (f or {}).get("screener_cons") or [],
             "ltp": snap["close"],
             "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
             "fundamentals": {k: v for k, v in (f or {}).items()
@@ -592,12 +604,18 @@ def read_one_story(text: str | None = None, url: str | None = None, *, title: st
             continue
         snap = ta.analyze(df)
         f = fundamentals.fetch(ev["symbol"])
-        fscore, fwhy = fundamentals.score(f)
+        fa = fundamentals.assess(f)
+        fscore, fwhy = fa["score"], fa["why"]
         cat = catalyst.score(ev, fundamentals=f, fund_score=fscore, ta=snap,
                              class_prior=eventscore.prior(classes, ev["event"], ev.get("event_prior", 0)),
                              source_weight=confidence.weight(conf.get(source_id, {}).get("score", 0.0)),
                              now=now)
-        out.append({**ev, **cat, "fund_score": fscore, "fund_why": fwhy, "ltp": snap["close"],
+        out.append({**ev, **cat, "fund_score": fscore, "fund_why": fwhy,
+                    "fund_flags": fa.get("flags") or [], "fund_caps": fa.get("caps") or [],
+                    "fund_unrated": bool(fa.get("unrated")),
+                    "screener_pros": (f or {}).get("screener_pros") or [],
+                    "screener_cons": (f or {}).get("screener_cons") or [],
+                    "ltp": snap["close"],
                     "ta": {k: snap.get(k) for k in ANALYSIS_TA_FIELDS},
                     "fundamentals": {k: v for k, v in (f or {}).items()
                                      if k in ("market_cap_cr", "pe", "roce", "roe", "debt_to_equity",

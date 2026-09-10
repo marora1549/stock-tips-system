@@ -129,16 +129,9 @@
       }
     ],
     "ta_confidence": 66,
-    "fund_score": 95,
+    "fund_score": 50,
     "fund_why": [
-      "+12 ROCE 71.4%",
-      "+8 ROE 56.3%",
-      "-2 P/E 55.4",
-      "+8 3y profit CAGR 108%",
-      "+6 3y sales CAGR 65%",
-      "+5 D/E 0",
-      "+4 latest qtr PAT YoY 103.4%",
-      "+4 mcap ₹85,422 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 85422.0,
@@ -174,7 +167,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 95,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 95)"
   },
   {
     "symbol": "CORONA",
@@ -302,17 +302,30 @@
       }
     ],
     "ta_confidence": 72,
-    "fund_score": 97,
+    "fund_score": 69,
     "fund_why": [
       "+12 ROCE 33.3%",
       "+8 ROE 29.5%",
-      "-2 P/E 63.3",
+      "-2 P/E 63.5",
       "+8 3y profit CAGR 33%",
       "+6 3y sales CAGR 17%",
+      "+4 return on capital has improved from 21.8% to 29.7%",
       "+5 D/E 0.22",
       "+4 promoter 69%",
       "+4 latest qtr PAT YoY 30.4%",
-      "+2 mcap ₹13,438 cr"
+      "+2 mcap ₹13,438 cr",
+      "+8 operating cash flow ₹229cr, 124% of profit — profit is turning into cash",
+      "+4 interest cover 31×",
+      "-4 interest cost up 50% year on year",
+      "-6 borrowings up 92% year on year",
+      "+3 institutions hold 16.53%",
+      "-8 price to book 18.01",
+      "-6 ROCE 33.3% bought at 18.01× book is 1.8% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 13438.0,
@@ -361,7 +374,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 97,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 97)"
   },
   {
     "symbol": "LALPATHLAB",
@@ -481,7 +499,7 @@
       }
     ],
     "ta_confidence": 72,
-    "fund_score": 94,
+    "fund_score": 69,
     "fund_why": [
       "+12 ROCE 28%",
       "+8 ROE 22.3%",
@@ -491,7 +509,20 @@
       "+5 D/E 0.08",
       "+4 promoter 53.19%",
       "+4 latest qtr PAT YoY 26.9%",
-      "+2 mcap ₹32,222 cr"
+      "+2 mcap ₹32,222 cr",
+      "+8 operating cash flow ₹636cr, 125% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: 3.7% last year against 35.9% the year before",
+      "-5 the profit 3-year CAGR of 30% is history — last year was 3.7%",
+      "+4 interest cover 41.33×",
+      "+3 institutions hold 38.94%",
+      "-8 price to book 12.8",
+      "-6 ROCE 28% bought at 12.8× book is 2.2% on what you pay",
+      "-6 PEG 15.66 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 32222.0,
@@ -546,7 +577,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 94,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 94)"
   },
   {
     "symbol": "HINDCOPPER",
@@ -682,17 +718,26 @@
       }
     ],
     "ta_confidence": 67,
-    "fund_score": 99,
+    "fund_score": 75,
     "fund_why": [
       "+12 ROCE 42.4%",
       "+8 ROE 32.9%",
       "-2 P/E 42.6",
       "+8 3y profit CAGR 50%",
       "+6 3y sales CAGR 22%",
+      "+4 return on capital has improved from 6% to 28%",
       "+5 D/E 0.03",
       "+4 promoter 66.14%",
       "+4 latest qtr PAT YoY 162.7%",
-      "+4 mcap ₹51,475 cr"
+      "+4 mcap ₹51,475 cr",
+      "+8 operating cash flow ₹1,474cr, 160% of profit — profit is turning into cash",
+      "-8 price to book 15.38",
+      "-6 ROCE 42.4% bought at 15.38× book is 2.8% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 51475.0,
@@ -729,7 +774,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 99,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 99)"
   },
   {
     "symbol": "SIEMENS",
@@ -858,17 +908,29 @@
       }
     ],
     "ta_confidence": 66,
-    "fund_score": 95,
+    "fund_score": 53,
     "fund_why": [
       "+12 ROCE 21.4%",
       "+8 ROE 19.2%",
       "-6 P/E 93.6",
       "+8 3y profit CAGR 23%",
       "+6 3y sales CAGR 15%",
+      "+4 return on capital has improved from 15.6% to 19.7%",
       "+5 D/E 0.02",
       "+4 promoter 75%",
       "+4 latest qtr PAT YoY 406.6%",
-      "+4 mcap ₹140,636 cr"
+      "+4 mcap ₹140,636 cr",
+      "-14 operating cash flow ₹-535cr — the business consumed cash last year",
+      "-8 profit growth has stalled: 1.3% last year against 38.5% the year before",
+      "+3 institutions hold 15.57%",
+      "-8 price to book 10.15",
+      "-6 ROCE 21.4% bought at 10.15× book is 2.1% on what you pay",
+      "-6 PEG 70.91 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -26 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 140636.0,
@@ -917,7 +979,15 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 95,
+    "fund_flags": [
+      "the page did not read cleanly — cash flow ends at Mar 2026 but the P&L ends at Mar 2026 18m — two sections read to different dates",
+      "the page did not read cleanly — borrowings ends at Mar 2026 but the P&L ends at Mar 2026 18m — two sections read to different dates"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 95)"
   },
   {
     "symbol": "CGPOWER",
@@ -1045,17 +1115,29 @@
       }
     ],
     "ta_confidence": 67,
-    "fund_score": 91,
+    "fund_score": 60,
     "fund_why": [
       "+12 ROCE 26.7%",
       "+8 ROE 20.5%",
       "-6 P/E 115",
       "+4 3y profit CAGR 10%",
       "+6 3y sales CAGR 21%",
+      "+4 return on capital has improved from 21.8% to 37%",
       "+5 D/E 0.01",
       "+4 promoter 56.36%",
       "+4 latest qtr PAT YoY 15.4%",
-      "+4 mcap ₹146,036 cr"
+      "+4 mcap ₹146,036 cr",
+      "+3 operating cash flow ₹702cr, only 59% of profit",
+      "-10 borrowings up 188% year on year",
+      "+3 institutions hold 30.2%",
+      "-8 price to book 18.32",
+      "-6 ROCE 26.7% bought at 18.32× book is 1.5% on what you pay",
+      "-6 PEG 4.95 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -26 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 146036.0,
@@ -1104,7 +1186,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 91,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 91)"
   },
   {
     "symbol": "NEULANDLAB",
@@ -1227,17 +1314,28 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 93,
+    "fund_score": 73,
     "fund_why": [
       "+12 ROCE 26.5%",
       "+8 ROE 21.2%",
       "-2 P/E 59.8",
       "+8 3y profit CAGR 30%",
       "+6 3y sales CAGR 19%",
+      "+4 return on capital has improved from 10.8% to 26%",
       "+5 D/E 0.16",
       "+0 promoter 32.62%",
       "+4 latest qtr PAT YoY 957.1%",
-      "+2 mcap ₹29,759 cr"
+      "+2 mcap ₹29,759 cr",
+      "+8 operating cash flow ₹347cr, 95% of profit — profit is turning into cash",
+      "+4 interest cover 31.86×",
+      "-6 borrowings up 92% year on year",
+      "+3 institutions hold 37.6%",
+      "-8 price to book 15.88",
+      "-6 ROCE 26.5% bought at 15.88× book is 1.7% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 29759.0,
@@ -1298,7 +1396,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 93,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 93)"
   },
   {
     "symbol": "ADANIPORTS",
@@ -1427,7 +1530,7 @@
       }
     ],
     "ta_confidence": 69,
-    "fund_score": 80,
+    "fund_score": 63,
     "fund_why": [
       "+0 ROCE 14.1%",
       "+4 ROE 16.4%",
@@ -1436,8 +1539,16 @@
       "+6 3y sales CAGR 23%",
       "+2 D/E 0.66",
       "+4 promoter 66.03%",
+      "-6 promoters sold 1.99pp in the last quarter alone",
       "+0 latest qtr PAT YoY 10.2%",
-      "+4 mcap ₹408,953 cr"
+      "+4 mcap ₹408,953 cr",
+      "+8 operating cash flow ₹20,356cr, 159% of profit — profit is turning into cash",
+      "-3 interest cover 5.75×",
+      "+3 institutions hold 29.18%",
+      "-4 price to book 4.27",
+      "-6 ROCE 14.1% bought at 4.27× book is 3.3% on what you pay",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 408953.0,
@@ -1486,7 +1597,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 80,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
   },
   {
     "symbol": "CHOLAFIN",
@@ -1624,16 +1740,22 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 82,
+    "fund_score": 69,
     "fund_why": [
-      "+0 ROCE 9.71%",
-      "+8 ROE 19.4%",
+      "+0 net NPA 2.95% of the book",
+      "+0 gross NPA 4.5%",
+      "+10 return on assets 2.34%",
+      "+6 ROE 19.3%",
+      "+4 net interest margin 7.45% of assets",
+      "+8 net interest income +25.1% last year",
+      "+3 the book grew 22%",
+      "-4 price to book 5.12",
       "+2 P/E 27.2",
-      "+8 3y profit CAGR 25%",
-      "+6 3y sales CAGR 34%",
-      "+0 promoter 49.23%",
-      "+4 latest qtr PAT YoY 45.5%",
-      "+4 mcap ₹156,209 cr"
+      "+4 institutions hold 45.08%",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 156209.0,
@@ -1681,7 +1803,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 82,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 82)"
   },
   {
     "symbol": "VADILALIND",
@@ -1806,17 +1933,27 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 96,
+    "fund_score": 74,
     "fund_why": [
       "+12 ROCE 22%",
       "+8 ROE 19.6%",
       "+6 P/E 24.5",
       "+4 3y profit CAGR 15%",
       "+3 3y sales CAGR 12%",
+      "+4 return on capital has improved from 17.8% to 24.7%",
       "+5 D/E 0.27",
       "+4 promoter 64.72%",
       "+4 latest qtr PAT YoY 95.5%",
-      "+0 mcap ₹5,365 cr"
+      "+0 mcap ₹5,365 cr",
+      "+8 operating cash flow ₹143cr, 92% of profit — profit is turning into cash",
+      "+4 interest cover 41.5×",
+      "-4 price to book 6.31",
+      "-6 ROCE 22% bought at 6.31× book is 3.5% on what you pay",
+      "-6 PEG 7.36 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +15 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 5365.0,
@@ -1865,7 +2002,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 96,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 96)"
   },
   {
     "symbol": "HYUNDAI",
@@ -1993,17 +2135,23 @@
       }
     ],
     "ta_confidence": 68,
-    "fund_score": 80,
+    "fund_score": 67,
     "fund_why": [
       "+12 ROCE 38.4%",
       "+8 ROE 29.9%",
       "+2 P/E 35.8",
       "+0 3y profit CAGR 5%",
       "+0 3y sales CAGR 5%",
+      "+4 return on capital has improved from 28% to 47.7%",
       "+5 D/E 0.05",
       "+4 promoter 82.5%",
       "-5 latest qtr PAT YoY -35.1%",
-      "+4 mcap ₹177,329 cr"
+      "+4 mcap ₹177,329 cr",
+      "+8 operating cash flow ₹7,321cr, 135% of profit — profit is turning into cash",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-8 price to book 8.87",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 177329.0,
@@ -2052,7 +2200,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 80,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
   },
   {
     "symbol": "APOLLOHOSP",
@@ -2182,7 +2335,7 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 79,
+    "fund_score": 65,
     "fund_why": [
       "+6 ROCE 17.4%",
       "+8 ROE 21.2%",
@@ -2192,7 +2345,15 @@
       "-2 D/E 0.9",
       "-3 promoter 28.02%",
       "+4 latest qtr PAT YoY 38.3%",
-      "+4 mcap ₹128,932 cr"
+      "+4 mcap ₹128,932 cr",
+      "+8 operating cash flow ₹2,856cr, 143% of profit — profit is turning into cash",
+      "+3 institutions hold 65.21%",
+      "-8 price to book 13.61",
+      "-6 ROCE 17.4% bought at 13.61× book is 1.3% on what you pay",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 128932.0,
@@ -2247,7 +2408,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 79,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 79)"
   },
   {
     "symbol": "LUMAXIND",
@@ -2372,7 +2538,7 @@
       }
     ],
     "ta_confidence": 63,
-    "fund_score": 86,
+    "fund_score": 69,
     "fund_why": [
       "+6 ROCE 17.7%",
       "+8 ROE 22%",
@@ -2382,7 +2548,13 @@
       "-2 D/E 1.06",
       "+4 promoter 75%",
       "+4 latest qtr PAT YoY 41.7%",
-      "+0 mcap ₹5,810 cr"
+      "+0 mcap ₹5,810 cr",
+      "+8 operating cash flow ₹373cr, 217% of profit — profit is turning into cash",
+      "-4 price to book 6.33",
+      "-6 ROCE 17.7% bought at 6.33× book is 2.8% on what you pay",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 5810.0,
@@ -2419,7 +2591,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 86,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 86)"
   },
   {
     "symbol": "ANANDRATHI",
@@ -2540,17 +2717,9 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 89,
+    "fund_score": 50,
     "fund_why": [
-      "+12 ROCE 59.2%",
-      "+8 ROE 47.3%",
-      "-6 P/E 77.9",
-      "+8 3y profit CAGR 33%",
-      "+6 3y sales CAGR 31%",
-      "+5 D/E 0.08",
-      "+0 promoter 41.37%",
-      "+4 latest qtr PAT YoY 73.4%",
-      "+2 mcap ₹36,207 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 36207.0,
@@ -2605,7 +2774,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 89,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 89)"
   },
   {
     "symbol": "AUROPHARMA",
@@ -2725,7 +2901,7 @@
       }
     ],
     "ta_confidence": 67,
-    "fund_score": 80,
+    "fund_score": 71,
     "fund_why": [
       "+0 ROCE 12.9%",
       "+0 ROE 10.1%",
@@ -2735,7 +2911,16 @@
       "+5 D/E 0.21",
       "+4 promoter 51.88%",
       "+4 latest qtr PAT YoY 25.2%",
-      "+4 mcap ₹97,751 cr"
+      "+4 mcap ₹97,751 cr",
+      "+8 operating cash flow ₹5,526cr, 158% of profit — profit is turning into cash",
+      "+4 interest cover 18.43×",
+      "+3 institutions hold 41.43%",
+      "+0 price to book 2.61",
+      "-6 PEG 46.91 — priced for growth it is not delivering",
+      "  (growth counted +8 of +15 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 97751.0,
@@ -2778,7 +2963,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 80,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
   },
   {
     "symbol": "SANSERA",
@@ -2909,7 +3099,7 @@
       }
     ],
     "ta_confidence": 63,
-    "fund_score": 67,
+    "fund_score": 62,
     "fund_why": [
       "+0 ROCE 14.5%",
       "+0 ROE 11.8%",
@@ -2919,7 +3109,16 @@
       "+5 D/E 0.19",
       "-3 promoter 29.21%",
       "+4 latest qtr PAT YoY 38.1%",
-      "+2 mcap ₹25,809 cr"
+      "+2 mcap ₹25,809 cr",
+      "+8 operating cash flow ₹387cr, 118% of profit — profit is turning into cash",
+      "+4 interest cover 16.33×",
+      "+3 institutions hold 52.56%",
+      "-8 price to book 8.36",
+      "-6 ROCE 14.5% bought at 8.36× book is 1.7% on what you pay",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +15 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 25809.0,
@@ -2962,7 +3161,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 67,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 67)"
   },
   {
     "symbol": "ARTEMISMED",
@@ -3082,18 +3286,24 @@
       }
     ],
     "ta_confidence": 68,
-    "fund_score": 71,
+    "fund_score": 64,
     "fund_why": [
       "+0 ROCE 14.6%",
       "+4 ROE 12%",
       "-2 P/E 48.4",
       "+8 3y profit CAGR 41%",
       "+3 3y sales CAGR 14%",
+      "+4 return on capital has improved from 8.8% to 14.7%",
       "+5 D/E 0.28",
       "+4 promoter 58.39%",
-      "-5 promoter stake down -8.14pp in 4q",
+      "-5 promoter stake down 8.14pp over four quarters",
       "+4 latest qtr PAT YoY 47.6%",
-      "+0 mcap ₹5,609 cr"
+      "+0 mcap ₹5,609 cr",
+      "+8 operating cash flow ₹132cr, 127% of profit — profit is turning into cash",
+      "-4 price to book 6",
+      "-6 ROCE 14.6% bought at 6× book is 2.4% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +19 — its terms measure the same thing more than once, so it is worth +8 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 5609.0,
@@ -3130,7 +3340,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 71,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 71)"
   },
   {
     "symbol": "JYOTICNC",
@@ -3251,17 +3466,32 @@
       }
     ],
     "ta_confidence": 63,
-    "fund_score": 81,
+    "fund_score": 34,
     "fund_why": [
       "+12 ROCE 21.3%",
       "+8 ROE 18.2%",
       "-6 P/E 71.3",
       "+8 3y profit CAGR 157%",
       "+6 3y sales CAGR 31%",
+      "+4 return on capital has improved from 2.8% to 22%",
       "+2 D/E 0.43",
       "+4 promoter 62.55%",
       "-5 latest qtr PAT YoY -19.7%",
-      "+2 mcap ₹22,948 cr"
+      "+2 mcap ₹22,948 cr",
+      "-6 operating cash flow ₹54cr, just 16% of profit",
+      "-8 profit growth has stalled: 6.3% last year against 109.3% the year before",
+      "-5 the profit 3-year CAGR of 157% is history — last year was 6.3%",
+      "-6 interest cover 4.54× and falling",
+      "-4 interest cost up 100% year on year",
+      "-6 borrowings up 72% year on year",
+      "+3 institutions hold 18.88%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-8 price to book 11.47",
+      "-6 ROCE 21.3% bought at 11.47× book is 1.9% on what you pay",
+      "-6 PEG 11.26 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -26 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 22948.0,
@@ -3298,7 +3528,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 81,
+    "fund_flags": [
+      "interest cover has fallen every quarter to 4.54×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 81)"
   },
   {
     "symbol": "WABAG",
@@ -3432,17 +3669,25 @@
       }
     ],
     "ta_confidence": 57,
-    "fund_score": 87,
+    "fund_score": 72,
     "fund_why": [
       "+12 ROCE 21.3%",
       "+4 ROE 15.9%",
       "+2 P/E 33.4",
       "+8 3y profit CAGR 93%",
       "+3 3y sales CAGR 10%",
+      "+4 return on capital has improved from 14.2% to 20.3%",
       "+5 D/E 0.09",
       "-3 promoter 19.08%",
       "+4 latest qtr PAT YoY 36.4%",
-      "+2 mcap ₹13,316 cr"
+      "+2 mcap ₹13,316 cr",
+      "+3 operating cash flow ₹207cr, only 56% of profit",
+      "-3 interest cover 4.71×",
+      "+3 institutions hold 24.58%",
+      "-4 price to book 5.17",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +19 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 13316.0,
@@ -3485,7 +3730,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 87,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 87)"
   },
   {
     "symbol": "KIRLOSENG",
@@ -3624,7 +3874,7 @@
       }
     ],
     "ta_confidence": 65,
-    "fund_score": 61,
+    "fund_score": 50,
     "fund_why": [
       "+0 ROCE 14.6%",
       "+4 ROE 17.5%",
@@ -3634,7 +3884,15 @@
       "-2 D/E 1.48",
       "+0 promoter 41.06%",
       "-5 latest qtr PAT YoY -20.1%",
-      "+2 mcap ₹32,304 cr"
+      "+2 mcap ₹32,304 cr",
+      "+8 operating cash flow ₹932cr, 166% of profit — profit is turning into cash",
+      "-12 interest cover 2.59× — thin",
+      "+3 institutions hold 37.33%",
+      "-8 price to book 8.92",
+      "-6 ROCE 14.6% bought at 8.92× book is 1.6% on what you pay",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +9 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 32304.0,
@@ -3677,7 +3935,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 61,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 61)"
   },
   {
     "symbol": "GRASIM",
@@ -3810,17 +4073,24 @@
       }
     ],
     "ta_confidence": 64,
-    "fund_score": 47,
+    "fund_score": 11,
     "fund_why": [
       "+0 ROCE 8.01%",
       "-4 ROE 4.98%",
       "+2 P/E 39.1",
       "-6 3y profit CAGR -10%",
       "+3 3y sales CAGR 14%",
+      "-4 ROCE 8.01% is the lowest in the years on the page",
       "-6 D/E 2.2",
       "+0 promoter 43.73%",
       "+4 latest qtr PAT YoY 38.8%",
-      "+4 mcap ₹224,577 cr"
+      "+4 mcap ₹224,577 cr",
+      "-14 operating cash flow ₹-17,810cr — the business consumed cash last year",
+      "-12 interest cover 2.59× — thin",
+      "+3 institutions hold 30.76%",
+      "+0 price to book 2.17",
+      "-6 ROCE 8.01% bought at 2.17× book is 3.7% on what you pay",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 224577.0,
@@ -3863,7 +4133,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 47,
+    "fund_flags": [
+      "operating cash flow has been negative 4 years running"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 47)"
   },
   {
     "symbol": "JSWINFRA",
@@ -4001,7 +4278,7 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 71,
+    "fund_score": 49,
     "fund_why": [
       "+0 ROCE 13.6%",
       "+4 ROE 15.3%",
@@ -4010,9 +4287,20 @@
       "+6 3y sales CAGR 19%",
       "+2 D/E 0.63",
       "+4 promoter 73.93%",
-      "-5 promoter stake down -9.68pp in 4q",
+      "-6 promoters sold 9.68pp in the last quarter alone",
       "+0 latest qtr PAT YoY -8.2%",
-      "+4 mcap ₹79,546 cr"
+      "+4 mcap ₹79,546 cr",
+      "+8 operating cash flow ₹2,022cr, 131% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: 1.7% last year against 31.0% the year before",
+      "-5 the profit 3-year CAGR of 29% is history — last year was 1.7%",
+      "-4 interest cost up 86% year on year",
+      "+3 institutions hold 20.4%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-4 price to book 6.58",
+      "-6 ROCE 13.6% bought at 6.58× book is 2.1% on what you pay",
+      "-6 PEG 30 — priced for growth it is not delivering",
+      "  (value counted -10 of -18 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 79546.0,
@@ -4067,7 +4355,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 71,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 71)"
   },
   {
     "symbol": "KDDL",
@@ -4187,7 +4480,7 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 68,
+    "fund_score": 61,
     "fund_why": [
       "+0 ROCE 11.7%",
       "+0 ROE 8.9%",
@@ -4197,7 +4490,13 @@
       "+2 D/E 0.47",
       "+4 promoter 50.15%",
       "+4 latest qtr PAT YoY 50%",
-      "+0 mcap ₹4,812 cr"
+      "+0 mcap ₹4,812 cr",
+      "+8 operating cash flow ₹144cr, 107% of profit — profit is turning into cash",
+      "-4 price to book 4.46",
+      "-6 ROCE 11.7% bought at 4.46× book is 2.6% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 4812.0,
@@ -4246,7 +4545,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 68,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 68)"
   },
   {
     "symbol": "AJANTPHARM",
@@ -4367,18 +4671,28 @@
       }
     ],
     "ta_confidence": 55,
-    "fund_score": 93,
+    "fund_score": 58,
     "fund_why": [
       "+12 ROCE 34.5%",
       "+8 ROE 27.1%",
       "+2 P/E 38.9",
       "+8 3y profit CAGR 24%",
       "+3 3y sales CAGR 13%",
+      "+4 return on capital has improved from 27% to 33%",
       "+5 D/E 0.06",
       "+4 promoter 63.49%",
-      "-5 promoter stake down -2.77pp in 4q",
+      "-6 promoters sold 2.76pp in the last quarter alone",
       "+4 latest qtr PAT YoY 31%",
-      "+2 mcap ₹44,166 cr"
+      "+2 mcap ₹44,166 cr",
+      "+3 operating cash flow ₹529cr, only 50% of profit",
+      "-10 borrowings up 453% year on year",
+      "+3 institutions hold 29.48%",
+      "-8 price to book 9.76",
+      "-6 ROCE 34.5% bought at 9.76× book is 3.5% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +19 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 44166.0,
@@ -4421,7 +4735,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 93,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 93)"
   },
   {
     "symbol": "PRUDENT",
@@ -4545,17 +4864,9 @@
       }
     ],
     "ta_confidence": 54,
-    "fund_score": 97,
+    "fund_score": 50,
     "fund_why": [
-      "+12 ROCE 37.5%",
-      "+8 ROE 28.6%",
-      "-2 P/E 55.8",
-      "+8 3y profit CAGR 24%",
-      "+6 3y sales CAGR 30%",
-      "+5 D/E 0.04",
-      "+4 promoter 55.31%",
-      "+4 latest qtr PAT YoY 44.2%",
-      "+2 mcap ₹13,675 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 13675.0,
@@ -4592,7 +4903,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 97,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 97)"
   },
   {
     "symbol": "GRWRHITECH",
@@ -4723,17 +5041,27 @@
       }
     ],
     "ta_confidence": 59,
-    "fund_score": 84,
+    "fund_score": 73,
     "fund_why": [
       "+6 ROCE 18.1%",
       "+4 ROE 13.5%",
       "-2 P/E 40.4",
       "+8 3y profit CAGR 27%",
       "+3 3y sales CAGR 14%",
+      "+4 return on capital has improved from 11.4% to 17.7%",
       "+5 D/E 0",
       "+4 promoter 60.73%",
       "+4 latest qtr PAT YoY 60.2%",
-      "+2 mcap ₹15,688 cr"
+      "+2 mcap ₹15,688 cr",
+      "+8 operating cash flow ₹275cr, 81% of profit — profit is turning into cash",
+      "-8 sales growth has stalled: 0.5% last year against 25.8% the year before",
+      "-5 the profit 3-year CAGR of 27% is history — last year was 2.1%",
+      "-4 price to book 5.91",
+      "-6 ROCE 18.1% bought at 5.91× book is 3.1% on what you pay",
+      "-6 PEG 19.15 — priced for growth it is not delivering",
+      "  (value counted -10 of -18 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 15688.0,
@@ -4776,7 +5104,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 84,
+    "fund_flags": [
+      "could not read borrowing trend — this score is a partial view"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 84)"
   },
   {
     "symbol": "TBOTEK",
@@ -4897,7 +5232,7 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 76,
+    "fund_score": 36,
     "fund_why": [
       "+6 ROCE 18.3%",
       "+4 ROE 17.4%",
@@ -4907,7 +5242,17 @@
       "+2 D/E 0.49",
       "+0 promoter 44.4%",
       "+4 latest qtr PAT YoY 31.7%",
-      "+2 mcap ₹18,689 cr"
+      "+2 mcap ₹18,689 cr",
+      "-14 operating cash flow ₹-21cr — the business consumed cash last year",
+      "-4 interest cost up 200% year on year",
+      "-10 borrowings up 253% year on year",
+      "+3 institutions hold 50.02%",
+      "-8 price to book 12.03",
+      "-6 ROCE 18.3% bought at 12.03× book is 1.5% on what you pay",
+      "-6 PEG 11.41 — priced for growth it is not delivering",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 18689.0,
@@ -4950,7 +5295,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 76,
+    "fund_flags": [
+      "borrowings up 253% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 76)"
   },
   {
     "symbol": "AETHER",
@@ -5071,7 +5423,7 @@
       }
     ],
     "ta_confidence": 62,
-    "fund_score": 73,
+    "fund_score": 54,
     "fund_why": [
       "+0 ROCE 11.9%",
       "+0 ROE 9.66%",
@@ -5081,7 +5433,17 @@
       "+5 D/E 0.19",
       "+4 promoter 74.92%",
       "+4 latest qtr PAT YoY 34%",
-      "+2 mcap ₹21,381 cr"
+      "+2 mcap ₹21,381 cr",
+      "+3 operating cash flow ₹142cr, only 65% of profit",
+      "+4 interest cover 17.17×",
+      "-10 borrowings up 129% year on year",
+      "+3 institutions hold 17.91%",
+      "-8 price to book 8.71",
+      "-6 ROCE 11.9% bought at 8.71× book is 1.4% on what you pay",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 21381.0,
@@ -5124,7 +5486,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 73,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 73)"
   },
   {
     "symbol": "TDPOWERSYS",
@@ -5247,17 +5614,26 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 86,
+    "fund_score": 67,
     "fund_why": [
       "+12 ROCE 34%",
       "+8 ROE 24.7%",
       "-6 P/E 85.8",
       "+8 3y profit CAGR 36%",
       "+6 3y sales CAGR 29%",
+      "+4 return on capital has improved from 11.8% to 29.7%",
       "+5 D/E 0.02",
       "-3 promoter 26.87%",
       "+4 latest qtr PAT YoY 72%",
-      "+2 mcap ₹23,594 cr"
+      "+2 mcap ₹23,594 cr",
+      "+3 operating cash flow ₹129cr, only 54% of profit",
+      "+3 institutions hold 50.06%",
+      "-8 price to book 22.01",
+      "-6 ROCE 34% bought at 22.01× book is 1.5% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 23594.0,
@@ -5306,7 +5682,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 86,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 86)"
   },
   {
     "symbol": "ADANIPOWER",
@@ -5445,17 +5826,28 @@
       }
     ],
     "ta_confidence": 59,
-    "fund_score": 79,
+    "fund_score": 68,
     "fund_why": [
       "+6 ROCE 17.2%",
       "+8 ROE 21.1%",
       "+2 P/E 29.1",
       "+0 3y profit CAGR 6%",
       "+3 3y sales CAGR 12%",
+      "+4 return on capital has improved from 12% to 24%",
       "-2 D/E 0.84",
       "+4 promoter 74.96%",
       "+4 latest qtr PAT YoY 47.3%",
-      "+4 mcap ₹414,428 cr"
+      "+4 mcap ₹414,428 cr",
+      "+8 operating cash flow ₹20,514cr, 158% of profit — profit is turning into cash",
+      "+3 institutions hold 15.83%",
+      "-4 price to book 6.38",
+      "-6 ROCE 17.2% bought at 6.38× book is 2.7% on what you pay",
+      "-6 PEG 16.82 — priced for growth it is not delivering",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -14 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 414428.0,
@@ -5504,7 +5896,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 79,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 79)"
   },
   {
     "symbol": "BAJAJ-AUTO",
@@ -5632,7 +6029,7 @@
       }
     ],
     "ta_confidence": 48,
-    "fund_score": 100,
+    "fund_score": 48,
     "fund_why": [
       "+12 ROCE 28.2%",
       "+8 ROE 29.2%",
@@ -5642,7 +6039,19 @@
       "+2 D/E 0.58",
       "+4 promoter 55.01%",
       "+4 latest qtr PAT YoY 44.3%",
-      "+4 mcap ₹323,994 cr"
+      "+4 mcap ₹323,994 cr",
+      "-6 operating cash flow ₹2,597cr, just 25% of profit",
+      "+4 interest cover 11.7×",
+      "-4 interest cost up 73% year on year",
+      "-10 borrowings up 143% year on year",
+      "+3 institutions hold 22.43%",
+      "-8 price to book 8.49",
+      "-6 ROCE 28.2% bought at 8.49× book is 3.3% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 323994.0,
@@ -5697,7 +6106,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 100,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 100)"
   },
   {
     "symbol": "FLUOROCHEM",
@@ -5819,17 +6233,30 @@
       }
     ],
     "ta_confidence": 68,
-    "fund_score": 48,
+    "fund_score": 41,
     "fund_why": [
       "+0 ROCE 9.64%",
       "+0 ROE 7.82%",
       "-6 P/E 84.6",
       "-6 3y profit CAGR -24%",
       "-4 3y sales CAGR -4%",
+      "-6 return on capital has drifted from 16.2% to 10% — the newer capital earns less than the old",
       "+2 D/E 0.35",
       "+4 promoter 61.39%",
       "+4 latest qtr PAT YoY 20.3%",
-      "+4 mcap ₹52,231 cr"
+      "+4 mcap ₹52,231 cr",
+      "+8 operating cash flow ₹961cr, 167% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: 5.1% last year against 25.5% the year before",
+      "+4 interest cover 16.38×",
+      "+3 institutions hold 17.74%",
+      "-4 price to book 6.64",
+      "-6 ROCE 9.64% bought at 6.64× book is 1.5% on what you pay",
+      "-6 PEG 16.49 — priced for growth it is not delivering",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted -16 of -20 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 52231.0,
@@ -5878,7 +6305,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 48,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 48)"
   },
   {
     "symbol": "GLAXO",
@@ -6000,17 +6432,27 @@
       }
     ],
     "ta_confidence": 55,
-    "fund_score": 87,
+    "fund_score": 61,
     "fund_why": [
       "+12 ROCE 61.4%",
       "+8 ROE 45.6%",
       "-2 P/E 46.5",
       "+4 3y profit CAGR 18%",
       "+0 3y sales CAGR 6%",
+      "+4 return on capital has improved from 35% to 58.3%",
       "+5 D/E 0.01",
       "+4 promoter 75%",
       "+4 latest qtr PAT YoY 15.6%",
-      "+2 mcap ₹48,962 cr"
+      "+2 mcap ₹48,962 cr",
+      "+8 operating cash flow ₹903cr, 87% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: 11.6% last year against 57.3% the year before",
+      "-10 borrowings up 230% year on year",
+      "-8 price to book 21.57",
+      "-6 ROCE 61.4% bought at 21.57× book is 2.8% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 48962.0,
@@ -6047,7 +6489,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 87,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 87)"
   },
   {
     "symbol": "HAPPYFORGE",
@@ -6165,17 +6612,29 @@
       }
     ],
     "ta_confidence": 59,
-    "fund_score": 80,
+    "fund_score": 68,
     "fund_why": [
       "+6 ROCE 18%",
       "+4 ROE 15%",
       "-2 P/E 65",
       "+4 3y profit CAGR 13%",
       "+3 3y sales CAGR 9%",
+      "-6 return on capital has drifted from 24% to 20% — the newer capital earns less than the old",
+      "-4 ROCE 18% is the lowest in the years on the page",
       "+5 D/E 0.16",
       "+4 promoter 78.46%",
       "+4 latest qtr PAT YoY 37.9%",
-      "+2 mcap ₹21,298 cr"
+      "+2 mcap ₹21,298 cr",
+      "+8 operating cash flow ₹445cr, 147% of profit — profit is turning into cash",
+      "+4 interest cover 47×",
+      "-4 interest cost up 50% year on year",
+      "+3 institutions hold 17.42%",
+      "-8 price to book 9.99",
+      "-6 ROCE 18% bought at 9.99× book is 1.8% on what you pay",
+      "-6 PEG 4.96 — priced for growth it is not delivering",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 21298.0,
@@ -6206,7 +6665,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 80,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
   },
   {
     "symbol": "BOSCHLTD",
@@ -6323,7 +6787,7 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 79,
+    "fund_score": 64,
     "fund_why": [
       "+12 ROCE 21.5%",
       "+4 ROE 14.6%",
@@ -6333,7 +6797,15 @@
       "+5 D/E 0.01",
       "+4 promoter 70.54%",
       "-5 latest qtr PAT YoY -36.7%",
-      "+4 mcap ₹144,826 cr"
+      "+4 mcap ₹144,826 cr",
+      "+3 operating cash flow ₹2,175cr, only 78% of profit",
+      "+3 institutions hold 22.27%",
+      "-8 price to book 9.76",
+      "-6 ROCE 21.5% bought at 9.76× book is 2.2% on what you pay",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 144826.0,
@@ -6370,7 +6842,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 79,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 79)"
   },
   {
     "symbol": "APARINDS",
@@ -6492,18 +6969,29 @@
       }
     ],
     "ta_confidence": 52,
-    "fund_score": 90,
+    "fund_score": 63,
     "fund_why": [
       "+12 ROCE 31.8%",
       "+8 ROE 20.3%",
       "-2 P/E 60.6",
       "+4 3y profit CAGR 16%",
       "+6 3y sales CAGR 17%",
+      "+4 return on capital has improved from 31.6% to 36.3%",
       "+5 D/E 0.18",
       "+4 promoter 55.42%",
-      "-5 promoter stake down -2.35pp in 4q",
+      "-6 promoters sold 2.34pp in the last quarter alone",
       "+4 latest qtr PAT YoY 77.6%",
-      "+4 mcap ₹73,059 cr"
+      "+4 mcap ₹73,059 cr",
+      "+8 operating cash flow ₹968cr, 99% of profit — profit is turning into cash",
+      "-4 interest cost up 43% year on year",
+      "-6 borrowings up 63% year on year",
+      "+3 institutions hold 36.24%",
+      "-8 price to book 12.99",
+      "-6 ROCE 31.8% bought at 12.99× book is 2.4% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 73059.0,
@@ -6540,7 +7028,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 90,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 90)"
   },
   {
     "symbol": "VOLTAMP",
@@ -6663,10 +7156,26 @@
       }
     ],
     "ta_confidence": 70,
-    "fund_score": 45,
+    "fund_score": 67,
     "fund_why": [
+      "+12 ROCE 23.5%",
+      "+4 ROE 17.4%",
+      "+2 P/E 35.3",
+      "+4 3y profit CAGR 14%",
+      "+6 3y sales CAGR 16%",
+      "+4 return on capital has improved from 18.4% to 28.3%",
+      "+5 D/E 0",
       "+0 promoter 30%",
-      "-5 promoter stake down -7.8pp in 4q"
+      "-5 promoter stake down 7.8pp over four quarters",
+      "+0 latest qtr PAT YoY 13.7%",
+      "+2 mcap ₹11,199 cr",
+      "+3 operating cash flow ₹140cr, only 46% of profit",
+      "+3 institutions hold 55.38%",
+      "-4 price to book 6.25",
+      "-6 ROCE 23.5% bought at 6.25× book is 3.8% on what you pay",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -6707,7 +7216,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 45,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 45)"
   },
   {
     "symbol": "FOSECOIND",
@@ -6828,16 +7342,25 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 66,
+    "fund_score": 61,
     "fund_why": [
-      "+6 ROCE 17.4%",
-      "+4 ROE 12.6%",
-      "-2 P/E 44",
+      "+6 ROCE 16.4%",
+      "+0 ROE 11.9%",
+      "-2 P/E 52.2",
+      "+8 3y profit CAGR 21%",
+      "+3 3y sales CAGR 14%",
       "+5 D/E 0",
       "+4 promoter 63.54%",
-      "-5 promoter stake down -11.44pp in 4q",
-      "+4 latest qtr PAT YoY 63.6%",
-      "+0 mcap ₹4,583 cr"
+      "-5 promoter stake down 11.44pp over four quarters",
+      "+0 latest qtr PAT YoY 4.5%",
+      "+0 mcap ₹4,583 cr",
+      "+8 operating cash flow ₹92cr, 123% of profit — profit is turning into cash",
+      "-5 institutions hold 0.46% — desks with their own analysts are staying out",
+      "-4 price to book 4.41",
+      "-6 ROCE 16.4% bought at 4.41× book is 3.7% on what you pay",
+      "-6 PEG 19.05 — priced for growth it is not delivering",
+      "  (value counted -10 of -18 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 4583.0,
@@ -6874,7 +7397,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 66,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 66)"
   },
   {
     "symbol": "INGERRAND",
@@ -6997,9 +7525,26 @@
       }
     ],
     "ta_confidence": 67,
-    "fund_score": 54,
+    "fund_score": 75,
     "fund_why": [
-      "+4 promoter 75%"
+      "+12 ROCE 57.1%",
+      "+8 ROE 43%",
+      "-2 P/E 54",
+      "+4 3y profit CAGR 13%",
+      "+0 3y sales CAGR 7%",
+      "+4 return on capital has improved from 29% to 56%",
+      "+5 D/E 0.01",
+      "+4 promoter 75%",
+      "+4 latest qtr PAT YoY 18.6%",
+      "+2 mcap ₹14,816 cr",
+      "+8 operating cash flow ₹274cr, 107% of profit — profit is turning into cash",
+      "-8 price to book 24.07",
+      "-6 ROCE 57.1% bought at 24.07× book is 2.4% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +12 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -7034,7 +7579,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "ADANIENT",
@@ -7161,7 +7711,7 @@
       }
     ],
     "ta_confidence": 76,
-    "fund_score": 28,
+    "fund_score": 0,
     "fund_why": [
       "-4 ROCE 5.8%",
       "-4 ROE -3.38%",
@@ -7169,9 +7719,21 @@
       "-4 3y sales CAGR -8%",
       "-2 D/E 1.32",
       "+4 promoter 71.97%",
-      "-5 promoter stake down -2pp in 4q",
+      "-6 promoters sold 2.87pp in the last quarter alone",
       "-5 latest qtr PAT YoY -249.8%",
-      "+4 mcap ₹420,199 cr"
+      "+4 mcap ₹420,199 cr",
+      "-6 operating cash flow ₹2,357cr, just 24% of profit",
+      "-8 profit growth has stalled: 24.3% last year against 140.0% the year before",
+      "-12 interest cover 2.07× — thin",
+      "-4 interest cost up 134% year on year",
+      "+3 institutions hold 21.26%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-4 price to book 4.95",
+      "-6 ROCE 5.8% bought at 4.95× book is 1.2% on what you pay",
+      "-6 PEG 7.28 — priced for growth it is not delivering",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted -16 of -17 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 420199.0,
@@ -7232,7 +7794,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 28,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 28)"
   },
   {
     "symbol": "FINEORG",
@@ -7353,17 +7920,28 @@
       }
     ],
     "ta_confidence": 54,
-    "fund_score": 73,
+    "fund_score": 45,
     "fund_why": [
       "+12 ROCE 21.5%",
       "+4 ROE 16.5%",
       "+2 P/E 36",
       "-6 3y profit CAGR -13%",
       "-4 3y sales CAGR -8%",
+      "-6 return on capital has drifted from 40.4% to 26% — the newer capital earns less than the old",
       "+5 D/E 0.03",
       "+4 promoter 75%",
       "+4 latest qtr PAT YoY 17.9%",
-      "+2 mcap ₹15,785 cr"
+      "+2 mcap ₹15,785 cr",
+      "+8 operating cash flow ₹430cr, 103% of profit — profit is turning into cash",
+      "-10 borrowings up 2167% year on year",
+      "+3 institutions hold 15.99%",
+      "-4 price to book 5.92",
+      "-6 ROCE 21.5% bought at 5.92× book is 3.6% on what you pay",
+      "-6 PEG 21.05 — priced for growth it is not delivering",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -14 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 15785.0,
@@ -7406,7 +7984,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 73,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 73)"
   },
   {
     "symbol": "TORNTPHARM",
@@ -7534,18 +8117,32 @@
       }
     ],
     "ta_confidence": 54,
-    "fund_score": 70,
+    "fund_score": 50,
     "fund_why": [
       "+6 ROCE 15.2%",
       "+8 ROE 27.4%",
       "-6 P/E 84",
       "+8 3y profit CAGR 22%",
       "+3 3y sales CAGR 13%",
+      "+4 return on capital has improved from 16.8% to 21.7%",
       "-2 D/E 1.79",
       "+4 promoter 60.78%",
-      "-5 promoter stake down -7.53pp in 4q",
+      "-6 promoters sold 7.53pp in the last quarter alone",
       "+0 latest qtr PAT YoY 3.3%",
-      "+4 mcap ₹187,521 cr"
+      "+4 mcap ₹187,521 cr",
+      "+8 operating cash flow ₹3,023cr, 141% of profit — profit is turning into cash",
+      "-6 interest cover 5.46× and falling",
+      "-4 interest cost up 445% year on year",
+      "-10 borrowings up 369% year on year",
+      "+3 institutions hold 30.74%",
+      "-8 price to book 19.88",
+      "-6 ROCE 15.2% bought at 19.88× book is 0.8% on what you pay",
+      "-6 PEG 7.07 — priced for growth it is not delivering",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -26 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +15 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted -18 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 187521.0,
@@ -7600,7 +8197,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 70,
+    "fund_flags": [
+      "interest cover has fallen every quarter to 5.46×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 70)"
   },
   {
     "symbol": "AZAD",
@@ -7725,17 +8329,28 @@
       }
     ],
     "ta_confidence": 56,
-    "fund_score": 70,
+    "fund_score": 30,
     "fund_why": [
       "+0 ROCE 11.9%",
       "+0 ROE 9.09%",
       "-6 P/E 130",
       "+8 3y profit CAGR 150%",
       "+6 3y sales CAGR 34%",
+      "-6 return on capital has drifted from 19% to 15% — the newer capital earns less than the old",
+      "-4 ROCE 11.9% is the lowest in the years on the page",
       "+2 D/E 0.31",
       "+4 promoter 55.84%",
       "+4 latest qtr PAT YoY 20.7%",
-      "+2 mcap ₹18,115 cr"
+      "+2 mcap ₹18,115 cr",
+      "-14 operating cash flow ₹-119cr — the business consumed cash last year",
+      "-4 interest cost up 67% year on year",
+      "-6 borrowings up 80% year on year",
+      "+3 institutions hold 23.62%",
+      "-8 price to book 11.84",
+      "-6 ROCE 11.9% bought at 11.84× book is 1% on what you pay",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 18115.0,
@@ -7790,7 +8405,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 70,
+    "fund_flags": [
+      "borrowings up 80% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 70)"
   },
   {
     "symbol": "GALAXYSURF",
@@ -7907,17 +8529,26 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 63,
+    "fund_score": 59,
     "fund_why": [
       "+0 ROCE 13.5%",
       "+0 ROE 10.9%",
       "+6 P/E 22.3",
       "-6 3y profit CAGR -10%",
       "+0 3y sales CAGR 6%",
+      "-6 return on capital has drifted from 24% to 15.7% — the newer capital earns less than the old",
+      "-4 ROCE 13.5% is the lowest in the years on the page",
       "+5 D/E 0.09",
       "+4 promoter 70.91%",
       "+4 latest qtr PAT YoY 110.1%",
-      "+0 mcap ₹8,115 cr"
+      "+0 mcap ₹8,115 cr",
+      "+8 operating cash flow ₹333cr, 125% of profit — profit is turning into cash",
+      "+4 interest cover 27.67×",
+      "+3 institutions hold 17.33%",
+      "+0 price to book 2.96",
+      "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 8115.0,
@@ -7954,7 +8585,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 63,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 63)"
   },
   {
     "symbol": "OBEROIRLTY",
@@ -8080,17 +8716,27 @@
       }
     ],
     "ta_confidence": 51,
-    "fund_score": 86,
+    "fund_score": 85,
     "fund_why": [
       "+6 ROCE 17.3%",
       "+4 ROE 14.6%",
       "+6 P/E 24.7",
       "+0 3y profit CAGR 9%",
       "+3 3y sales CAGR 13%",
+      "+4 return on capital has improved from 12.2% to 16.7%",
       "+5 D/E 0.16",
       "+4 promoter 67.71%",
       "+4 latest qtr PAT YoY 29.2%",
-      "+4 mcap ₹65,448 cr"
+      "+4 mcap ₹65,448 cr",
+      "+3 operating cash flow ₹1,380cr, only 55% of profit",
+      "+4 interest cover 14.12×",
+      "+3 institutions hold 29.94%",
+      "+0 price to book 3.65",
+      "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 65448.0,
@@ -8139,7 +8785,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 86,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 86)"
   },
   {
     "symbol": "HAL",
@@ -8259,17 +8910,27 @@
       }
     ],
     "ta_confidence": 45,
-    "fund_score": 89,
+    "fund_score": 75,
     "fund_why": [
       "+12 ROCE 32%",
       "+8 ROE 24%",
-      "+2 P/E 35.9",
+      "+2 P/E 36.2",
       "+4 3y profit CAGR 16%",
       "+0 3y sales CAGR 7%",
+      "+4 return on capital has improved from 28% to 35%",
       "+5 D/E 0",
       "+4 promoter 71.64%",
       "+0 latest qtr PAT YoY 14.9%",
-      "+4 mcap ₹334,421 cr"
+      "+4 mcap ₹337,424 cr",
+      "+8 operating cash flow ₹10,906cr, 120% of profit — profit is turning into cash",
+      "+3 institutions hold 21.24%",
+      "-8 price to book 8.22",
+      "-6 ROCE 32% bought at 8.22× book is 3.9% on what you pay",
+      "-6 PEG 4.03 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -18 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 334421.0,
@@ -8318,7 +8979,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 89,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 89)"
   },
   {
     "symbol": "CONFIPET",
@@ -8436,17 +9102,22 @@
       }
     ],
     "ta_confidence": 55,
-    "fund_score": 72,
+    "fund_score": 68,
     "fund_why": [
       "+0 ROCE 9.23%",
       "+0 ROE 6.76%",
       "+6 P/E 22.4",
       "+0 3y profit CAGR 5%",
       "+6 3y sales CAGR 29%",
+      "-6 return on capital has drifted from 16.4% to 10.3% — the newer capital earns less than the old",
       "+2 D/E 0.54",
       "+4 promoter 57.38%",
       "+4 latest qtr PAT YoY 215%",
-      "+0 mcap ₹3,012 cr"
+      "+0 mcap ₹3,012 cr",
+      "+8 operating cash flow ₹400cr, 412% of profit — profit is turning into cash",
+      "-5 institutions hold 1% — desks with their own analysts are staying out",
+      "+0 price to book 2.12",
+      "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 3012.0,
@@ -8483,7 +9154,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 72,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 72)"
   },
   {
     "symbol": "CARTRADE",
@@ -8605,16 +9281,27 @@
       }
     ],
     "ta_confidence": 55,
-    "fund_score": 73,
+    "fund_score": 65,
     "fund_why": [
       "+0 ROCE 11.8%",
       "+0 ROE 9.65%",
       "-2 P/E 61.7",
       "+8 3y profit CAGR 89%",
       "+6 3y sales CAGR 29%",
+      "+4 return on capital has improved from -0.6% to 8%",
       "+5 D/E 0.06",
       "+4 latest qtr PAT YoY 21.3%",
-      "+2 mcap ₹14,685 cr"
+      "+2 mcap ₹14,685 cr",
+      "+8 operating cash flow ₹257cr, 105% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: 68.3% last year against 625.0% the year before",
+      "+4 interest cover 21×",
+      "+3 institutions hold 70%",
+      "-4 price to book 5.83",
+      "-6 ROCE 11.8% bought at 5.83× book is 2% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 14685.0,
@@ -8650,7 +9337,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 73,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 73)"
   },
   {
     "symbol": "JUBLCPL",
@@ -8779,7 +9471,7 @@
       }
     ],
     "ta_confidence": 51,
-    "fund_score": 81,
+    "fund_score": 57,
     "fund_why": [
       "+12 ROCE 40.4%",
       "+8 ROE 33.2%",
@@ -8787,7 +9479,14 @@
       "+5 D/E 0.11",
       "+4 promoter 74.36%",
       "+0 latest qtr PAT YoY 4.5%",
-      "+0 mcap ₹3,320 cr"
+      "+0 mcap ₹3,320 cr",
+      "+3 operating cash flow ₹75cr, only 59% of profit",
+      "-8 profit growth has stalled: 45.5% last year against 193.3% the year before",
+      "+4 interest cover 34×",
+      "-5 institutions hold 0.45% — desks with their own analysts are staying out",
+      "-4 price to book 7.21",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 3320.0,
@@ -8824,7 +9523,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 81,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 81)"
   },
   {
     "symbol": "KINGFA",
@@ -8937,10 +9641,25 @@
       }
     ],
     "ta_confidence": 65,
-    "fund_score": 49,
+    "fund_score": 61,
     "fund_why": [
+      "+12 ROCE 23.2%",
+      "+4 ROE 17.4%",
+      "+2 P/E 37",
+      "+8 3y profit CAGR 32%",
+      "+3 3y sales CAGR 12%",
+      "+4 return on capital has improved from 12.8% to 28%",
+      "+5 D/E 0.01",
       "+4 promoter 67.02%",
-      "-5 promoter stake down -7.97pp in 4q"
+      "-5 promoter stake down 7.97pp over four quarters",
+      "+4 latest qtr PAT YoY 100%",
+      "+0 mcap ₹8,344 cr",
+      "-6 operating cash flow ₹66cr, just 36% of profit",
+      "+3 institutions hold 16.53%",
+      "-4 price to book 5.96",
+      "-6 ROCE 23.2% bought at 5.96× book is 3.9% on what you pay",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +19 — its terms measure the same thing more than once, so it is worth +8 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -8969,7 +9688,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 49,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 49)"
   },
   {
     "symbol": "POLYMED",
@@ -9096,17 +9820,29 @@
       }
     ],
     "ta_confidence": 57,
-    "fund_score": 69,
+    "fund_score": 38,
     "fund_why": [
       "+0 ROCE 12.5%",
       "+0 ROE 9.02%",
       "-2 P/E 54.6",
       "+4 3y profit CAGR 15%",
       "+6 3y sales CAGR 19%",
+      "-4 ROCE 12.5% is the lowest in the years on the page",
       "+5 D/E 0.11",
       "+4 promoter 62.42%",
       "+0 latest qtr PAT YoY -8.6%",
-      "+2 mcap ₹17,475 cr"
+      "+2 mcap ₹17,475 cr",
+      "+3 operating cash flow ₹246cr, only 77% of profit",
+      "-8 profit growth has stalled: -5.3% last year against 31.4% the year before",
+      "+4 interest cover 20.83×",
+      "-4 interest cost up 100% year on year",
+      "-6 borrowings up 97% year on year",
+      "+3 institutions hold 21.64%",
+      "-10 profit has come in below the year-ago quarter 3 quarters running",
+      "-4 price to book 5.63",
+      "-6 ROCE 12.5% bought at 5.63× book is 2.2% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 17475.0,
@@ -9149,7 +9885,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 69,
+    "fund_flags": [
+      "3 consecutive quarters of falling profit"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 69)"
   },
   {
     "symbol": "PCBL",
@@ -9289,17 +10032,26 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 45,
+    "fund_score": 28,
     "fund_why": [
       "-4 ROCE 7.75%",
       "-4 ROE 5.56%",
       "-2 P/E 49.8",
       "-6 3y profit CAGR -21%",
       "+3 3y sales CAGR 12%",
+      "-6 return on capital has drifted from 18.6% to 11.3% — the newer capital earns less than the old",
       "-2 D/E 1.25",
       "+4 promoter 53.38%",
       "+4 latest qtr PAT YoY 64.9%",
-      "+2 mcap ₹13,179 cr"
+      "+2 mcap ₹13,179 cr",
+      "+8 operating cash flow ₹1,576cr, 796% of profit — profit is turning into cash",
+      "-8 sales growth has stalled: -2.6% last year against 30.9% the year before",
+      "-3 interest cover 4.26×",
+      "+3 institutions hold 17.05%",
+      "+0 price to book 3.28",
+      "-6 ROCE 7.75% bought at 3.28× book is 2.4% on what you pay",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 13179.0,
@@ -9342,7 +10094,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 45,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 45)"
   },
   {
     "symbol": "DYNAMATECH",
@@ -9476,7 +10233,7 @@
       }
     ],
     "ta_confidence": 64,
-    "fund_score": 46,
+    "fund_score": 50,
     "fund_why": [
       "+0 ROCE 10.2%",
       "+0 ROE 6.67%",
@@ -9486,7 +10243,13 @@
       "-2 D/E 0.8",
       "+0 promoter 41.5%",
       "+4 latest qtr PAT YoY 90.9%",
-      "+0 mcap ₹7,895 cr"
+      "+0 mcap ₹7,895 cr",
+      "+8 operating cash flow ₹95cr, 297% of profit — profit is turning into cash",
+      "-3 interest cover 3.67×",
+      "+3 institutions hold 26.12%",
+      "-8 price to book 9.29",
+      "-6 ROCE 10.2% bought at 9.29× book is 1.1% on what you pay",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 7895.0,
@@ -9523,7 +10286,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 46,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 46)"
   },
   {
     "symbol": "CRISIL",
@@ -9648,17 +10416,9 @@
       }
     ],
     "ta_confidence": 46,
-    "fund_score": 90,
+    "fund_score": 50,
     "fund_why": [
-      "+12 ROCE 32.6%",
-      "+8 ROE 24.5%",
-      "+2 P/E 38.8",
-      "+0 3y profit CAGR 7%",
-      "+3 3y sales CAGR 10%",
-      "+5 D/E 0.1",
-      "+4 promoter 66.64%",
-      "+4 latest qtr PAT YoY 25.6%",
-      "+2 mcap ₹34,302 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 34302.0,
@@ -9695,7 +10455,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 90,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 90)"
   },
   {
     "symbol": "SKFINDUS",
@@ -9820,9 +10587,24 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 54,
+    "fund_score": 52,
     "fund_why": [
-      "+4 promoter 52.58%"
+      "+12 ROCE 29.9%",
+      "+8 ROE 26.6%",
+      "+2 P/E 38.2",
+      "+5 D/E 0",
+      "+4 promoter 52.58%",
+      "+0 latest qtr PAT YoY -13.9%",
+      "+2 mcap ₹14,691 cr",
+      "+3 operating cash flow ₹164cr, only 75% of profit",
+      "-10 borrowings up 150% year on year",
+      "+3 institutions hold 34.26%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-8 price to book 9.94",
+      "-6 ROCE 29.9% bought at 9.94× book is 3% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -9857,7 +10639,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [
+      "the page did not read cleanly — only 2 annual column(s) on the page — too few to read a trend from"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "BALAMINES",
@@ -9978,17 +10767,25 @@
       }
     ],
     "ta_confidence": 61,
-    "fund_score": 55,
+    "fund_score": 30,
     "fund_why": [
       "+0 ROCE 11%",
       "+0 ROE 8.74%",
       "+2 P/E 37.4",
       "-6 3y profit CAGR -20%",
       "-4 3y sales CAGR -15%",
+      "-6 return on capital has drifted from 32.4% to 13% — the newer capital earns less than the old",
+      "-4 ROCE 11% is the lowest in the years on the page",
       "+5 D/E 0.07",
       "+4 promoter 54.56%",
       "+4 latest qtr PAT YoY 110.8%",
-      "+0 mcap ₹7,644 cr"
+      "+0 mcap ₹7,644 cr",
+      "+8 operating cash flow ₹184cr, 109% of profit — profit is turning into cash",
+      "-10 borrowings up 1109% year on year",
+      "+0 price to book 3.87",
+      "-6 ROCE 11% bought at 3.87× book is 2.8% on what you pay",
+      "-6 PEG 5.95 — priced for growth it is not delivering",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 7644.0,
@@ -10025,7 +10822,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 55,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 55)"
   },
   {
     "symbol": "ABB",
@@ -10153,15 +10955,30 @@
       }
     ],
     "ta_confidence": 47,
-    "fund_score": 77,
+    "fund_score": 60,
     "fund_why": [
       "+12 ROCE 29.9%",
       "+8 ROE 22.4%",
       "-6 P/E 102",
+      "+8 3y profit CAGR 30%",
+      "+6 3y sales CAGR 16%",
+      "+4 return on capital has improved from 15.4% to 33.3%",
       "+5 D/E 0.02",
       "+4 promoter 75%",
       "+0 latest qtr PAT YoY 2.8%",
-      "+4 mcap ₹156,844 cr"
+      "+4 mcap ₹156,844 cr",
+      "+3 operating cash flow ₹1,220cr, only 73% of profit",
+      "-8 profit growth has stalled: -10.9% last year against 50.7% the year before",
+      "-5 the profit 3-year CAGR of 30% is history — last year was -10.9%",
+      "-6 borrowings up 71% year on year",
+      "+3 institutions hold 17.56%",
+      "-8 price to book 16.78",
+      "-6 ROCE 29.9% bought at 16.78× book is 1.8% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)",
+      "⚑ capped at 60: the page did not read cleanly — borrowings ends at Jun 2026 but the P&L ends at Dec 2025 — two sections read to different dates"
     ],
     "fundamentals": {
       "market_cap_cr": 156844.0,
@@ -10204,7 +11021,16 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 77,
+    "fund_flags": [
+      "the page did not read cleanly — borrowings ends at Jun 2026 but the P&L ends at Dec 2025 — two sections read to different dates"
+    ],
+    "fund_caps": [
+      "capped at 60: the page did not read cleanly — borrowings ends at Jun 2026 but the P&L ends at Dec 2025 — two sections read to different dates"
+    ],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 77)"
   },
   {
     "symbol": "TIIL",
@@ -10322,7 +11148,7 @@
       }
     ],
     "ta_confidence": 49,
-    "fund_score": 79,
+    "fund_score": 88,
     "fund_why": [
       "+6 ROCE 16.1%",
       "+4 ROE 15%",
@@ -10332,7 +11158,13 @@
       "+2 D/E 0.4",
       "+4 promoter 74.74%",
       "+4 latest qtr PAT YoY 68.3%",
-      "+0 mcap ₹7,188 cr"
+      "+0 mcap ₹7,188 cr",
+      "+8 operating cash flow ₹243cr, 83% of profit — profit is turning into cash",
+      "+4 interest cover 12.71×",
+      "+0 price to book 3.55",
+      "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 7188.0,
@@ -10369,7 +11201,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 79,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 79)"
   },
   {
     "symbol": "INDUSINDBK",
@@ -10507,16 +11344,22 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 42,
+    "fund_score": 39,
     "fund_why": [
-      "-4 ROCE 5.68%",
-      "-4 ROE 1.36%",
-      "-2 P/E 59.2",
-      "-6 3y profit CAGR -51%",
-      "+3 3y sales CAGR 8%",
-      "-3 promoter 15.82%",
-      "+4 latest qtr PAT YoY 71.7%",
-      "+4 mcap ₹78,226 cr"
+      "+12 net NPA 0.95% of the book",
+      "+0 gross NPA 3.25%",
+      "-12 return on assets 0.16%",
+      "-6 ROE 1.36%",
+      "+2 net interest margin 3.28% of assets",
+      "-8 net interest income -5.5% last year",
+      "-6 the book shrank -2%",
+      "+6 price to book 1.19",
+      "-6 P/E 59.2",
+      "+4 institutions hold 71.03%",
+      "  (returns counted -14 of -16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted -12 of -14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 78226.0,
@@ -10576,7 +11419,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 42,
+    "fund_flags": [
+      "return on assets 0.16% — the book barely earns"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 42)"
   },
   {
     "symbol": "APOLLO",
@@ -10703,17 +11553,27 @@
       }
     ],
     "ta_confidence": 51,
-    "fund_score": 66,
+    "fund_score": 22,
     "fund_why": [
       "+0 ROCE 14.5%",
       "+0 ROE 11.8%",
       "-6 P/E 129",
       "+8 3y profit CAGR 76%",
       "+6 3y sales CAGR 45%",
+      "+4 return on capital has improved from 9.3% to 13.3%",
       "+2 D/E 0.41",
       "+0 promoter 49.98%",
+      "-6 promoters sold 2pp in the last quarter alone",
       "+4 latest qtr PAT YoY 38.9%",
-      "+2 mcap ₹15,698 cr"
+      "+2 mcap ₹15,698 cr",
+      "-14 operating cash flow ₹-130cr — the business consumed cash last year",
+      "-3 interest cover 4.91×",
+      "-6 borrowings up 62% year on year",
+      "-8 price to book 11.47",
+      "-6 ROCE 14.5% bought at 11.47× book is 1.3% on what you pay",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 15698.0,
@@ -10744,7 +11604,14 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 66,
+    "fund_flags": [
+      "borrowings up 62% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 66)"
   },
   {
     "symbol": "FINCABLES",
@@ -10871,17 +11738,23 @@
       }
     ],
     "ta_confidence": 42,
-    "fund_score": 80,
+    "fund_score": 66,
     "fund_why": [
       "+6 ROCE 16%",
       "+4 ROE 12.3%",
       "+2 P/E 25.9",
       "+4 3y profit CAGR 12%",
       "+3 3y sales CAGR 12%",
+      "-4 ROCE 16% is the lowest in the years on the page",
       "+5 D/E 0",
       "+0 promoter 35.86%",
       "+4 latest qtr PAT YoY 52.8%",
-      "+2 mcap ₹20,699 cr"
+      "+2 mcap ₹20,699 cr",
+      "-6 operating cash flow ₹49cr, just 7% of profit",
+      "+3 institutions hold 26.36%",
+      "+0 price to book 3.4",
+      "-6 PEG 14 — priced for growth it is not delivering",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 20699.0,
@@ -10924,7 +11797,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 80,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 80)"
   },
   {
     "symbol": "CHENNPETRO",
@@ -11048,17 +11926,29 @@
       }
     ],
     "ta_confidence": 47,
-    "fund_score": 77,
+    "fund_score": 60,
     "fund_why": [
       "+12 ROCE 34.9%",
       "+8 ROE 31.8%",
       "+2 P/E 5.72",
       "-6 3y profit CAGR -5%",
       "-4 3y sales CAGR -6%",
+      "+4 return on capital has improved from 11.2% to 24.7%",
       "+5 D/E 0.18",
       "+4 promoter 67.29%",
       "+4 latest qtr PAT YoY 2477.5%",
-      "+2 mcap ₹23,891 cr"
+      "+2 mcap ₹23,891 cr",
+      "+8 operating cash flow ₹2,945cr, 95% of profit — profit is turning into cash",
+      "+4 interest cover 29.9×",
+      "-4 interest cost up 40% year on year",
+      "+3 institutions hold 15.99%",
+      "+0 price to book 2.15",
+      "+4 ROCE 34.9% at 2.15× book is 16.2% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)",
+      "⚑ capped at 60: the page did not read cleanly — profit growth 1y pct came out at 1,350% — the growth read is unsafe"
     ],
     "fundamentals": {
       "market_cap_cr": 23891.0,
@@ -11089,7 +11979,16 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 77,
+    "fund_flags": [
+      "the page did not read cleanly — profit growth 1y pct came out at 1,350% — the growth read is unsafe"
+    ],
+    "fund_caps": [
+      "capped at 60: the page did not read cleanly — profit growth 1y pct came out at 1,350% — the growth read is unsafe"
+    ],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 77)"
   },
   {
     "symbol": "PAISALO",
@@ -11208,16 +12107,23 @@
       }
     ],
     "ta_confidence": 48,
-    "fund_score": 74,
+    "fund_score": 75,
     "fund_why": [
-      "+0 ROCE 12.4%",
-      "+4 ROE 14.4%",
-      "+2 P/E 28.8",
-      "+8 3y profit CAGR 35%",
-      "+6 3y sales CAGR 25%",
-      "+0 promoter 46.71%",
-      "+4 latest qtr PAT YoY 29.8%",
-      "+0 mcap ₹7,269 cr"
+      "+12 net NPA 0.48% of the book",
+      "+4 gross NPA 0.69%",
+      "+10 return on assets 4.1%",
+      "+3 ROE 14.4%",
+      "+4 net interest margin 9.64% of assets",
+      "+8 net interest income +27.8% last year",
+      "+3 the book grew 20%",
+      "-4 price to book 4.06",
+      "+0 P/E 28.8",
+      "-5 promoter stake down 1.5pp over four quarters",
+      "+2 institutions hold 13.62%",
+      "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so it is worth +14 at most)",
+      "  (returns counted +10 of +17 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 7269.0,
@@ -11247,7 +12153,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 74,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 74)"
   },
   {
     "symbol": "PRIVISCL",
@@ -11366,7 +12277,7 @@
       }
     ],
     "ta_confidence": 41,
-    "fund_score": 93,
+    "fund_score": 68,
     "fund_why": [
       "+12 ROCE 22.3%",
       "+8 ROE 26%",
@@ -11375,9 +12286,16 @@
       "+6 3y sales CAGR 17%",
       "+2 D/E 0.72",
       "+4 promoter 60.6%",
-      "-5 promoter stake down -9.29pp in 4q",
+      "-5 promoter stake down 9.29pp over four quarters",
       "+4 latest qtr PAT YoY 43.1%",
-      "+2 mcap ₹13,820 cr"
+      "+2 mcap ₹13,820 cr",
+      "+8 operating cash flow ₹550cr, 174% of profit — profit is turning into cash",
+      "-8 price to book 9.8",
+      "-6 ROCE 22.3% bought at 9.8× book is 2.3% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 13820.0,
@@ -11420,7 +12338,12 @@
         "tone": "good",
         "why": "stop only 2.24% away"
       }
-    ]
+    ],
+    "fund_score_at_run": 93,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 93)"
   },
   {
     "symbol": "MEDANTA",
@@ -11545,17 +12468,29 @@
       }
     ],
     "ta_confidence": 48,
-    "fund_score": 72,
+    "fund_score": 66,
     "fund_why": [
       "+6 ROCE 17.4%",
       "+4 ROE 15.2%",
       "-2 P/E 69.5",
       "+4 3y profit CAGR 19%",
       "+6 3y sales CAGR 18%",
+      "+4 return on capital has improved from 9.8% to 19%",
       "+2 D/E 0.3",
       "+0 promoter 33%",
       "+0 latest qtr PAT YoY -1.3%",
-      "+2 mcap ₹39,804 cr"
+      "+2 mcap ₹39,804 cr",
+      "+8 operating cash flow ₹714cr, 129% of profit — profit is turning into cash",
+      "+4 interest cover 10.63×",
+      "-4 interest cost up 93% year on year",
+      "-6 borrowings up 66% year on year",
+      "+3 institutions hold 26.35%",
+      "-8 price to book 10.07",
+      "-6 ROCE 17.4% bought at 10.07× book is 1.7% on what you pay",
+      "-6 PEG 4.58 — priced for growth it is not delivering",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 39804.0,
@@ -11592,7 +12527,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 72,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 72)"
   },
   {
     "symbol": "JSWDULUX",
@@ -11719,18 +12659,27 @@
       }
     ],
     "ta_confidence": 46,
-    "fund_score": 74,
+    "fund_score": 54,
     "fund_why": [
       "+12 ROCE 22.7%",
       "+8 ROE 19.1%",
       "+2 P/E 37.7",
       "+0 3y profit CAGR 2%",
       "-4 3y sales CAGR -2%",
+      "+4 return on capital has improved from 27.2% to 35.7%",
       "+5 D/E 0.03",
       "+4 promoter 61.2%",
-      "-5 promoter stake down -13.56pp in 4q",
+      "-5 promoter stake down 13.56pp over four quarters",
       "+0 latest qtr PAT YoY -12.1%",
-      "+2 mcap ₹14,478 cr"
+      "+2 mcap ₹14,478 cr",
+      "-6 operating cash flow ₹93cr, just 5% of profit",
+      "+4 interest cover 38.33×",
+      "+3 institutions hold 30.45%",
+      "-4 price to book 5.91",
+      "-6 ROCE 22.7% bought at 5.91× book is 3.8% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 14478.0,
@@ -11761,7 +12710,12 @@
         "tone": "warn",
         "why": "T1 needs about 39 sessions against a 30-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 74,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 74)"
   },
   {
     "symbol": "ASTRAMICRO",
@@ -11896,17 +12850,27 @@
       }
     ],
     "ta_confidence": 48,
-    "fund_score": 70,
+    "fund_score": 69,
     "fund_why": [
       "+12 ROCE 20.3%",
       "+4 ROE 16%",
       "-6 P/E 85.7",
       "+8 3y profit CAGR 40%",
       "+3 3y sales CAGR 13%",
+      "+4 return on capital has improved from 10.8% to 19.3%",
       "+5 D/E 0.22",
       "-3 promoter 6.54%",
       "-5 latest qtr PAT YoY -25%",
-      "+2 mcap ₹16,199 cr"
+      "+2 mcap ₹16,199 cr",
+      "+8 operating cash flow ₹387cr, 201% of profit — profit is turning into cash",
+      "-3 interest cover 3×",
+      "+3 institutions hold 26.83%",
+      "-8 price to book 12.36",
+      "-6 ROCE 20.3% bought at 12.36× book is 1.6% on what you pay",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +10 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 16199.0,
@@ -11949,7 +12913,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 70,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 70)"
   },
   {
     "symbol": "COCHINSHIP",
@@ -12077,7 +13046,7 @@
       }
     ],
     "ta_confidence": 44,
-    "fund_score": 78,
+    "fund_score": 13,
     "fund_why": [
       "+6 ROCE 16.2%",
       "+4 ROE 12.5%",
@@ -12087,7 +13056,18 @@
       "+5 D/E 0.28",
       "+4 promoter 67.91%",
       "-5 latest qtr PAT YoY -19.7%",
-      "+2 mcap ₹40,935 cr"
+      "+2 mcap ₹40,935 cr",
+      "-14 operating cash flow ₹-1,234cr — the business consumed cash last year",
+      "-8 sales growth has stalled: 4.2% last year against 25.9% the year before",
+      "-5 the profit 3-year CAGR of 40% is history — last year was -13.3%",
+      "-5 the sales 3-year CAGR of 29% is history — last year was 4.2%",
+      "-4 interest cost up 108% year on year",
+      "-10 borrowings up 199% year on year",
+      "-10 profit has come in below the year-ago quarter 4 quarters running",
+      "-4 price to book 6.98",
+      "-6 ROCE 16.2% bought at 6.98× book is 2.3% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 40935.0,
@@ -12118,7 +13098,16 @@
         "tone": "warn",
         "why": "T1 needs about 55 sessions against a 30-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 78,
+    "fund_flags": [
+      "operating cash flow has been negative 3 years running",
+      "borrowings up 199% while the business burned cash — the growth is being funded, not earned",
+      "4 consecutive quarters of falling profit"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 78)"
   },
   {
     "symbol": "GRANULES",
@@ -12243,17 +13232,25 @@
       }
     ],
     "ta_confidence": 48,
-    "fund_score": 70,
+    "fund_score": 67,
     "fund_why": [
       "+6 ROCE 15.5%",
       "+4 ROE 13.8%",
       "+2 P/E 33.7",
       "+0 3y profit CAGR 5%",
       "+0 3y sales CAGR 6%",
+      "-6 return on capital has drifted from 18.6% to 15.3% — the newer capital earns less than the old",
       "+2 D/E 0.3",
       "+0 promoter 38.01%",
       "+4 latest qtr PAT YoY 59.3%",
-      "+2 mcap ₹21,925 cr"
+      "+2 mcap ₹21,925 cr",
+      "+8 operating cash flow ₹793cr, 133% of profit — profit is turning into cash",
+      "+4 interest cover 16.14×",
+      "+3 institutions hold 33.61%",
+      "-4 price to book 4.32",
+      "-6 ROCE 15.5% bought at 4.32× book is 3.6% on what you pay",
+      "  (balance counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 21925.0,
@@ -12296,7 +13293,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 70,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 70)"
   },
   {
     "symbol": "BHEL",
@@ -12425,18 +13427,27 @@
       }
     ],
     "ta_confidence": 50,
-    "fund_score": 59,
+    "fund_score": 58,
     "fund_why": [
       "+0 ROCE 9.14%",
       "+0 ROE 6.23%",
       "-2 P/E 62.1",
       "+8 3y profit CAGR 36%",
       "+3 3y sales CAGR 13%",
+      "+4 return on capital has improved from 0.8% to 5.7%",
       "+2 D/E 0.31",
       "+4 promoter 58.17%",
-      "-5 promoter stake down -5pp in 4q",
+      "-5 promoter stake down 5pp over four quarters",
       "-5 latest qtr PAT YoY -17.3%",
-      "+4 mcap ₹151,017 cr"
+      "+4 mcap ₹151,017 cr",
+      "+8 operating cash flow ₹5,837cr, 365% of profit — profit is turning into cash",
+      "-3 interest cover 3.6×",
+      "+3 institutions hold 31.87%",
+      "-4 price to book 5.78",
+      "-6 ROCE 9.14% bought at 5.78× book is 1.6% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +10 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 151017.0,
@@ -12473,7 +13484,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 59,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 59)"
   },
   {
     "symbol": "ABSLAMC",
@@ -12607,17 +13623,9 @@
       }
     ],
     "ta_confidence": 37,
-    "fund_score": 93,
+    "fund_score": 50,
     "fund_why": [
-      "+12 ROCE 32.2%",
-      "+8 ROE 25.2%",
-      "+2 P/E 30.6",
-      "+4 3y profit CAGR 18%",
-      "+6 3y sales CAGR 15%",
-      "+5 D/E 0.02",
-      "+4 promoter 74.72%",
-      "+0 latest qtr PAT YoY 11.6%",
-      "+2 mcap ₹30,860 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 30860.0,
@@ -12654,7 +13662,14 @@
         "tone": "warn",
         "why": "T1 needs about 76 sessions against a 30-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 93,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 93)"
   },
   {
     "symbol": "CCL",
@@ -12789,17 +13804,24 @@
       }
     ],
     "ta_confidence": 41,
-    "fund_score": 84,
+    "fund_score": 74,
     "fund_why": [
       "+6 ROCE 15.8%",
       "+8 ROE 18%",
       "+2 P/E 34.1",
       "+4 3y profit CAGR 11%",
       "+6 3y sales CAGR 29%",
+      "-6 return on capital has drifted from 17.2% to 13.7% — the newer capital earns less than the old",
       "+2 D/E 0.56",
       "+0 promoter 46.14%",
       "+4 latest qtr PAT YoY 62.5%",
-      "+2 mcap ₹14,751 cr"
+      "+2 mcap ₹14,751 cr",
+      "+8 operating cash flow ₹858cr, 221% of profit — profit is turning into cash",
+      "+3 institutions hold 33.17%",
+      "-4 price to book 6.28",
+      "-6 ROCE 15.8% bought at 6.28× book is 2.5% on what you pay",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 14751.0,
@@ -12848,7 +13870,12 @@
         "tone": "good",
         "why": "stop only 2.84% away"
       }
-    ]
+    ],
+    "fund_score_at_run": 84,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 84)"
   },
   {
     "symbol": "LICHSGFIN",
@@ -12969,16 +13996,21 @@
       }
     ],
     "ta_confidence": 47,
-    "fund_score": 69,
+    "fund_score": 78,
     "fund_why": [
-      "+0 ROCE 8.59%",
-      "+4 ROE 14.4%",
-      "+2 P/E 5.32",
-      "+8 3y profit CAGR 25%",
-      "+3 3y sales CAGR 8%",
-      "+0 promoter 45.24%",
-      "+0 latest qtr PAT YoY 9.9%",
-      "+2 mcap ₹30,528 cr"
+      "+6 net NPA 1.12% of the book",
+      "+4 gross NPA 2.14%",
+      "+10 return on assets 1.75%",
+      "+3 ROE 14.4%",
+      "+0 net interest margin 2.82% of assets",
+      "+0 net interest income +5.8% last year",
+      "+6 price to book 0.74",
+      "+4 P/E 5.33",
+      "+4 institutions hold 42.49%",
+      "  (returns counted +10 of +13 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted +5 of +10 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 30528.0,
@@ -13008,7 +14040,12 @@
         "tone": "good",
         "why": "reward:risk to T2 is 3.65"
       }
-    ]
+    ],
+    "fund_score_at_run": 69,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 69)"
   },
   {
     "symbol": "GLENMARK",
@@ -13134,17 +14171,26 @@
       }
     ],
     "ta_confidence": 34,
-    "fund_score": 100,
+    "fund_score": 87,
     "fund_why": [
       "+12 ROCE 39.8%",
       "+8 ROE 23.6%",
       "+6 P/E 22",
       "+8 3y profit CAGR 61%",
       "+3 3y sales CAGR 14%",
+      "+4 return on capital has improved from 14% to 23.7%",
       "+5 D/E 0.06",
       "+0 promoter 46.65%",
       "+4 latest qtr PAT YoY 927.7%",
-      "+4 mcap ₹68,722 cr"
+      "+4 mcap ₹68,722 cr",
+      "+8 operating cash flow ₹3,445cr, 253% of profit — profit is turning into cash",
+      "+4 interest cover 14.91×",
+      "+3 institutions hold 39.49%",
+      "-4 price to book 6.55",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +19 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 68722.0,
@@ -13181,7 +14227,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 100,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 100)"
   },
   {
     "symbol": "JINDALSTEL",
@@ -13306,7 +14357,7 @@
       }
     ],
     "ta_confidence": 49,
-    "fund_score": 57,
+    "fund_score": 54,
     "fund_why": [
       "+0 ROCE 9.7%",
       "+0 ROE 8.22%",
@@ -13316,7 +14367,14 @@
       "+2 D/E 0.44",
       "+4 promoter 62.71%",
       "-5 latest qtr PAT YoY -43.6%",
-      "+4 mcap ₹116,953 cr"
+      "+4 mcap ₹116,953 cr",
+      "+8 operating cash flow ₹7,204cr, 214% of profit — profit is turning into cash",
+      "-3 interest cover 4.85×",
+      "-4 interest cost up 84% year on year",
+      "+3 institutions hold 28.36%",
+      "+0 price to book 2.3",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 116953.0,
@@ -13359,7 +14417,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 57,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 57)"
   },
   {
     "symbol": "NOVARTIND",
@@ -13481,9 +14544,23 @@
       }
     ],
     "ta_confidence": 51,
-    "fund_score": 54,
+    "fund_score": 47,
     "fund_why": [
-      "+4 promoter 70.68%"
+      "+6 ROCE 16.3%",
+      "+0 ROE 11.6%",
+      "-2 P/E 55.2",
+      "-6 3y profit CAGR -3%",
+      "-4 3y sales CAGR -2%",
+      "+4 return on capital has improved from 8.8% to 16.3%",
+      "+5 D/E 0",
+      "+4 promoter 70.68%",
+      "+0 latest qtr PAT YoY 14.3%",
+      "+0 mcap ₹5,398 cr",
+      "+3 operating cash flow ₹47cr, only 51% of profit",
+      "-5 institutions hold 1.54% — desks with their own analysts are staying out",
+      "-4 price to book 6.6",
+      "-6 ROCE 16.3% bought at 6.6× book is 2.5% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -13518,7 +14595,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "TITAN",
@@ -13641,7 +14723,7 @@
       }
     ],
     "ta_confidence": 35,
-    "fund_score": 84,
+    "fund_score": 68,
     "fund_why": [
       "+12 ROCE 20.5%",
       "+8 ROE 37.7%",
@@ -13651,7 +14733,16 @@
       "-2 D/E 1.95",
       "+4 promoter 52.9%",
       "+4 latest qtr PAT YoY 62.9%",
-      "+4 mcap ₹444,337 cr"
+      "+4 mcap ₹444,337 cr",
+      "+8 operating cash flow ₹5,590cr, 110% of profit — profit is turning into cash",
+      "+3 institutions hold 30.54%",
+      "-8 price to book 28.28",
+      "-6 ROCE 20.5% bought at 28.28× book is 0.7% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 444337.0,
@@ -13694,7 +14785,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 84,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 84)"
   },
   {
     "symbol": "SUNDARMFIN",
@@ -13819,16 +14915,22 @@
       }
     ],
     "ta_confidence": 41,
-    "fund_score": 78,
+    "fund_score": 79,
     "fund_why": [
-      "+0 ROCE 9.44%",
-      "+4 ROE 15%",
-      "+6 P/E 23.1",
-      "+4 3y profit CAGR 17%",
-      "+6 3y sales CAGR 21%",
-      "+0 promoter 37.21%",
-      "+4 latest qtr PAT YoY 33.9%",
-      "+4 mcap ₹52,530 cr"
+      "+6 net NPA 1.27% of the book",
+      "+4 gross NPA 2.14%",
+      "+10 return on assets 2.88%",
+      "+6 ROE 15.9%",
+      "+4 net interest margin 6.36% of assets",
+      "+8 net interest income +23.1% last year",
+      "+3 the book grew 15%",
+      "-4 price to book 4.13",
+      "+2 P/E 26.5",
+      "+4 institutions hold 26.58%",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 52530.0,
@@ -13858,7 +14960,12 @@
         "tone": "warn",
         "why": "T1 needs about 40 sessions against a 30-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 78,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 78)"
   },
   {
     "symbol": "WENDT",
@@ -14164,17 +15271,25 @@
       }
     ],
     "ta_confidence": 32,
-    "fund_score": 95,
+    "fund_score": 72,
     "fund_why": [
       "+12 ROCE 38.7%",
       "+8 ROE 29.7%",
       "+2 P/E 26",
       "+4 3y profit CAGR 14%",
       "+6 3y sales CAGR 15%",
+      "+4 return on capital has improved from 25.8% to 38.7%",
       "+5 D/E 0.1",
       "+4 promoter 68.34%",
       "+4 latest qtr PAT YoY 42.9%",
-      "+0 mcap ₹4,761 cr"
+      "+0 mcap ₹4,761 cr",
+      "+8 operating cash flow ₹197cr, 114% of profit — profit is turning into cash",
+      "-8 sales growth has stalled: 5.6% last year against 33.4% the year before",
+      "-10 borrowings up 1425% year on year",
+      "-4 price to book 7.97",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +10 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 4761.0,
@@ -14211,7 +15326,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 95,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 95)"
   },
   {
     "symbol": "KOTAKBANK",
@@ -14335,16 +15455,22 @@
       }
     ],
     "ta_confidence": 40,
-    "fund_score": 63,
+    "fund_score": 85,
     "fund_why": [
-      "-4 ROCE 6.98%",
+      "+12 net NPA 0.36% of the book",
+      "+4 gross NPA 1.45%",
+      "+10 return on assets 2.05%",
       "+0 ROE 11.4%",
-      "+6 P/E 20.6",
-      "+0 3y profit CAGR 9%",
-      "+6 3y sales CAGR 18%",
-      "-3 promoter 25.87%",
-      "+4 latest qtr PAT YoY 22.5%",
-      "+4 mcap ₹411,833 cr"
+      "+4 net interest margin 4.27% of assets",
+      "+0 net interest income +7.4% last year",
+      "+3 the book grew 14%",
+      "+3 price to book 2.27",
+      "+2 P/E 20.6",
+      "+4 institutions hold 62.92%",
+      "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so it is worth +14 at most)",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 411833.0,
@@ -14386,7 +15512,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 63,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 63)"
   },
   {
     "symbol": "PAYTM",
@@ -14515,16 +15646,9 @@
       }
     ],
     "ta_confidence": 43,
-    "fund_score": 57,
+    "fund_score": 50,
     "fund_why": [
-      "-4 ROCE 4.96%",
-      "-4 ROE 4.64%",
-      "-6 P/E 138",
-      "+8 3y profit CAGR 34%",
-      "+0 3y sales CAGR 2%",
-      "+5 D/E 0.01",
-      "+4 latest qtr PAT YoY 78.9%",
-      "+4 mcap ₹112,378 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 112378.0,
@@ -14566,7 +15690,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 57,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 57)"
   },
   {
     "symbol": "WELCORP",
@@ -14692,17 +15823,29 @@
       }
     ],
     "ta_confidence": 25,
-    "fund_score": 99,
+    "fund_score": 71,
     "fund_why": [
       "+12 ROCE 22.9%",
       "+8 ROE 19.4%",
       "+2 P/E 29.8",
       "+8 3y profit CAGR 119%",
       "+6 3y sales CAGR 20%",
+      "+4 return on capital has improved from 16.2% to 21.3%",
       "+5 D/E 0.26",
       "+0 promoter 49.73%",
       "+4 latest qtr PAT YoY 200.3%",
-      "+4 mcap ₹68,810 cr"
+      "+4 mcap ₹68,810 cr",
+      "+8 operating cash flow ₹3,204cr, 198% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: -14.8% last year against 67.4% the year before",
+      "-5 the profit 3-year CAGR of 119% is history — last year was -14.8%",
+      "+4 interest cover 15.38×",
+      "-10 borrowings up 110% year on year",
+      "+3 institutions hold 34.57%",
+      "-4 price to book 7.52",
+      "-6 ROCE 22.9% bought at 7.52× book is 3% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +9 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 68810.0,
@@ -14739,7 +15882,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 99,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 99)"
   },
   {
     "symbol": "STLTECH",
@@ -14859,18 +16007,25 @@
       }
     ],
     "ta_confidence": 58,
-    "fund_score": 25,
+    "fund_score": 24,
     "fund_why": [
       "-4 ROCE 7.65%",
       "-4 ROE 1.24%",
       "-6 P/E 188",
       "-6 3y profit CAGR -43%",
       "-4 3y sales CAGR -12%",
+      "-6 return on capital has drifted from 16% to 4.7% — the newer capital earns less than the old",
       "-2 D/E 0.86",
       "+0 promoter 42.29%",
-      "-5 promoter stake down -2.17pp in 4q",
+      "-6 promoters sold 2.23pp in the last quarter alone",
       "+4 latest qtr PAT YoY 1870%",
-      "+2 mcap ₹44,500 cr"
+      "+2 mcap ₹44,500 cr",
+      "+8 operating cash flow ₹520cr, 929% of profit — profit is turning into cash",
+      "+3 institutions hold 32.98%",
+      "-8 price to book 18.62",
+      "-6 ROCE 7.65% bought at 18.62× book is 0.4% on what you pay",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 44500.0,
@@ -14907,7 +16062,15 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 25,
+    "fund_flags": [
+      "the page did not read cleanly — operating cash flow is 929% of net profit — one of the two figures is being read from the wrong row",
+      "the page did not read cleanly — profit growth prev 1y pct came out at -316% — the growth read is unsafe"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 25)"
   },
   {
     "symbol": "HBLENGINE",
@@ -15045,17 +16208,24 @@
       }
     ],
     "ta_confidence": 29,
-    "fund_score": 92,
+    "fund_score": 79,
     "fund_why": [
       "+12 ROCE 58.4%",
       "+8 ROE 45.3%",
       "+2 P/E 25.2",
       "+8 3y profit CAGR 105%",
       "+6 3y sales CAGR 34%",
+      "+4 return on capital has improved from 8.6% to 40.3%",
       "+5 D/E 0.03",
       "+4 promoter 59.11%",
       "-5 latest qtr PAT YoY -23.8%",
-      "+2 mcap ₹20,238 cr"
+      "+2 mcap ₹20,238 cr",
+      "+8 operating cash flow ₹738cr, 91% of profit — profit is turning into cash",
+      "-8 price to book 9.14",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (growth counted +8 of +13 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 20238.0,
@@ -15092,7 +16262,12 @@
         "tone": "good",
         "why": "reward:risk to T2 is 3.0"
       }
-    ]
+    ],
+    "fund_score_at_run": 92,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 92)"
   },
   {
     "symbol": "CPPLUS",
@@ -15215,7 +16390,7 @@
       }
     ],
     "ta_confidence": 28,
-    "fund_score": 93,
+    "fund_score": 58,
     "fund_why": [
       "+12 ROCE 28.6%",
       "+8 ROE 25.4%",
@@ -15225,7 +16400,20 @@
       "+5 D/E 0.14",
       "+4 promoter 74.71%",
       "+4 latest qtr PAT YoY 330.3%",
-      "+2 mcap ₹44,317 cr"
+      "+2 mcap ₹44,317 cr",
+      "-6 operating cash flow ₹13cr, just 4% of profit",
+      "-8 profit growth has stalled: 4.8% last year against 205.2% the year before",
+      "-5 the profit 3-year CAGR of 48% is history — last year was 4.8%",
+      "+4 interest cover 51×",
+      "+3 institutions hold 19.96%",
+      "-8 price to book 23.56",
+      "-6 ROCE 28.6% bought at 23.56× book is 1.2% on what you pay",
+      "-6 PEG 19.17 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -26 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 44317.0,
@@ -15262,7 +16450,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 93,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 93)"
   },
   {
     "symbol": "BAJAJHLDNG",
@@ -15384,17 +16577,9 @@
       }
     ],
     "ta_confidence": 36,
-    "fund_score": 74,
+    "fund_score": 50,
     "fund_why": [
-      "+0 ROCE 11%",
-      "+0 ROE 11.9%",
-      "+6 P/E 13.9",
-      "+4 3y profit CAGR 19%",
-      "+6 3y sales CAGR 29%",
-      "+5 D/E 0",
-      "+4 promoter 51.46%",
-      "-5 latest qtr PAT YoY -22.7%",
-      "+4 mcap ₹123,287 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 123287.0,
@@ -15437,7 +16622,14 @@
         "tone": "good",
         "why": "stop only 2.62% away"
       }
-    ]
+    ],
+    "fund_score_at_run": 74,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 74)"
   },
   {
     "symbol": "NH",
@@ -15567,17 +16759,32 @@
       }
     ],
     "ta_confidence": 33,
-    "fund_score": 76,
+    "fund_score": 52,
     "fund_why": [
       "+6 ROCE 15.5%",
       "+8 ROE 20.5%",
       "-2 P/E 44.8",
       "+4 3y profit CAGR 12%",
       "+6 3y sales CAGR 20%",
+      "+4 return on capital has improved from 16.4% to 21%",
       "-2 D/E 1.29",
       "+4 promoter 63.27%",
       "+0 latest qtr PAT YoY 5.1%",
-      "+2 mcap ₹38,636 cr"
+      "+2 mcap ₹38,636 cr",
+      "+8 operating cash flow ₹1,621cr, 201% of profit — profit is turning into cash",
+      "-6 interest cover 5.38× and falling",
+      "-4 interest cost up 93% year on year",
+      "-10 borrowings up 141% year on year",
+      "+3 institutions hold 18.45%",
+      "-8 price to book 8.52",
+      "-6 ROCE 15.5% bought at 8.52× book is 1.8% on what you pay",
+      "-6 PEG 23.58 — priced for growth it is not delivering",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +14 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted -18 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 38636.0,
@@ -15608,7 +16815,14 @@
         "tone": "warn",
         "why": "T1 needs about 24 sessions against a 10-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 76,
+    "fund_flags": [
+      "interest cover has fallen every quarter to 5.38×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 76)"
   },
   {
     "symbol": "ARVIND",
@@ -15739,7 +16953,7 @@
       }
     ],
     "ta_confidence": 39,
-    "fund_score": 56,
+    "fund_score": 57,
     "fund_why": [
       "+0 ROCE 14.7%",
       "+0 ROE 10.8%",
@@ -15748,8 +16962,14 @@
       "+0 3y sales CAGR 4%",
       "+2 D/E 0.41",
       "+0 promoter 38.09%",
+      "-6 promoters sold 1.44pp in the last quarter alone",
       "+0 latest qtr PAT YoY 5.5%",
-      "+2 mcap ₹15,528 cr"
+      "+2 mcap ₹15,528 cr",
+      "+8 operating cash flow ₹867cr, 203% of profit — profit is turning into cash",
+      "-3 interest cover 4.44×",
+      "+3 institutions hold 38.66%",
+      "+0 price to book 3.71",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 15528.0,
@@ -15798,7 +17018,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 56,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 56)"
   },
   {
     "symbol": "MARICO",
@@ -15937,7 +17162,7 @@
       }
     ],
     "ta_confidence": 22,
-    "fund_score": 92,
+    "fund_score": 75,
     "fund_why": [
       "+12 ROCE 47%",
       "+8 ROE 42.8%",
@@ -15947,7 +17172,19 @@
       "+5 D/E 0.13",
       "+4 promoter 58.92%",
       "+4 latest qtr PAT YoY 27.1%",
-      "+4 mcap ₹105,822 cr"
+      "+4 mcap ₹105,822 cr",
+      "+8 operating cash flow ₹2,084cr, 115% of profit — profit is turning into cash",
+      "+4 interest cover 39×",
+      "-4 interest cost up 110% year on year",
+      "+3 institutions hold 36.27%",
+      "-8 price to book 25.12",
+      "-6 ROCE 47% bought at 25.12× book is 1.9% on what you pay",
+      "-6 PEG 5.99 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +11 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 105822.0,
@@ -15996,7 +17233,12 @@
         "tone": "flat",
         "why": "the same name from more than one place"
       }
-    ]
+    ],
+    "fund_score_at_run": 92,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 92)"
   },
   {
     "symbol": "KIRLOSBROS",
@@ -16127,17 +17369,27 @@
       }
     ],
     "ta_confidence": 30,
-    "fund_score": 83,
+    "fund_score": 77,
     "fund_why": [
       "+12 ROCE 20.4%",
       "+4 ROE 17.3%",
       "+2 P/E 36.3",
       "+4 3y profit CAGR 19%",
       "+0 3y sales CAGR 7%",
+      "+4 return on capital has improved from 13.4% to 25%",
       "+5 D/E 0.1",
       "+4 promoter 65.95%",
       "+0 latest qtr PAT YoY 0%",
-      "+2 mcap ₹14,692 cr"
+      "+2 mcap ₹14,692 cr",
+      "+8 operating cash flow ₹334cr, 89% of profit — profit is turning into cash",
+      "+4 interest cover 14.5×",
+      "+3 institutions hold 16.64%",
+      "-4 price to book 5.97",
+      "-6 ROCE 20.4% bought at 5.97× book is 3.4% on what you pay",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 14692.0,
@@ -16174,7 +17426,12 @@
         "tone": "good",
         "why": "reward:risk to T2 is 3.64"
       }
-    ]
+    ],
+    "fund_score_at_run": 83,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 83)"
   },
   {
     "symbol": "BAJAJFINSV",
@@ -16300,17 +17557,9 @@
       }
     ],
     "ta_confidence": 33,
-    "fund_score": 72,
+    "fund_score": 50,
     "fund_why": [
-      "+0 ROCE 10.6%",
-      "+4 ROE 13.2%",
-      "+2 P/E 30",
-      "+4 3y profit CAGR 16%",
-      "+6 3y sales CAGR 22%",
-      "-6 D/E 5.52",
-      "+4 promoter 58.72%",
-      "+4 latest qtr PAT YoY 18.2%",
-      "+4 mcap ₹308,717 cr"
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
     ],
     "fundamentals": {
       "market_cap_cr": 308717.0,
@@ -16341,7 +17590,14 @@
         "tone": "warn",
         "why": "pace -0.139%/session — mostly chop"
       }
-    ]
+    ],
+    "fund_score_at_run": 72,
+    "fund_flags": [
+      "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+    ],
+    "fund_caps": [],
+    "fund_unrated": true,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 72)"
   },
   {
     "symbol": "IDEA",
@@ -16468,7 +17724,7 @@
       }
     ],
     "ta_confidence": 44,
-    "fund_score": 28,
+    "fund_score": 16,
     "fund_why": [
       "-4 ROCE -1.72%",
       "-8 loss-making (no P/E)",
@@ -16477,7 +17733,10 @@
       "-6 D/E 9.99",
       "-3 promoter 25.64%",
       "-5 latest qtr PAT YoY -156.8%",
-      "+4 mcap ₹168,148 cr"
+      "+4 mcap ₹168,148 cr",
+      "+3 operating cash flow ₹19,411cr, only 56% of profit",
+      "-12 interest cover 0.98× — thin",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 168148.0,
@@ -16520,7 +17779,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 28,
+    "fund_flags": [
+      "the page did not read cleanly — profit growth prev 1y pct came out at -188% — the growth read is unsafe"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 28)"
   },
   {
     "symbol": "KAYNES",
@@ -16656,17 +17922,27 @@
       }
     ],
     "ta_confidence": 28,
-    "fund_score": 68,
+    "fund_score": 28,
     "fund_why": [
       "+0 ROCE 12.7%",
       "+0 ROE 8.69%",
       "-2 P/E 70",
       "+8 3y profit CAGR 51%",
       "+6 3y sales CAGR 48%",
+      "-6 return on capital has drifted from 18.5% to 14% — the newer capital earns less than the old",
+      "-4 ROCE 12.7% is the lowest in the years on the page",
       "+5 D/E 0.19",
       "+4 promoter 53.46%",
       "-5 latest qtr PAT YoY -25.3%",
-      "+2 mcap ₹24,301 cr"
+      "+2 mcap ₹24,301 cr",
+      "-14 operating cash flow ₹-600cr — the business consumed cash last year",
+      "-6 interest cover 4× and falling",
+      "+3 institutions hold 17.6%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "-4 price to book 5.11",
+      "-6 ROCE 12.7% bought at 5.11× book is 2.5% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 24301.0,
@@ -16703,7 +17979,15 @@
         "tone": "flat",
         "why": "the same name from more than one place"
       }
-    ]
+    ],
+    "fund_score_at_run": 68,
+    "fund_flags": [
+      "operating cash flow has been negative 2 years running",
+      "interest cover has fallen every quarter to 4×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 68)"
   },
   {
     "symbol": "GLAND",
@@ -16822,17 +18106,25 @@
       }
     ],
     "ta_confidence": 27,
-    "fund_score": 75,
+    "fund_score": 67,
     "fund_why": [
       "+6 ROCE 15.1%",
       "+0 ROE 10.7%",
       "-2 P/E 43.6",
       "+0 3y profit CAGR 8%",
       "+6 3y sales CAGR 21%",
+      "-6 return on capital has drifted from 22.7% to 13.7% — the newer capital earns less than the old",
       "+5 D/E 0.03",
       "+4 promoter 51.77%",
       "+4 latest qtr PAT YoY 47.4%",
-      "+2 mcap ₹49,922 cr"
+      "+2 mcap ₹49,922 cr",
+      "+8 operating cash flow ₹1,031cr, 100% of profit — profit is turning into cash",
+      "+3 institutions hold 39.18%",
+      "-4 price to book 4.81",
+      "-6 ROCE 15.1% bought at 4.81× book is 3.1% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 49922.0,
@@ -16869,7 +18161,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 75,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 75)"
   },
   {
     "symbol": "NEOGEN",
@@ -16991,17 +18288,29 @@
       }
     ],
     "ta_confidence": 43,
-    "fund_score": 39,
+    "fund_score": 0,
     "fund_why": [
       "-4 ROCE 6.46%",
       "-4 ROE 3.58%",
       "-6 P/E 174",
       "-6 3y profit CAGR -17%",
       "+3 3y sales CAGR 8%",
+      "-6 return on capital has drifted from 18.4% to 8% — the newer capital earns less than the old",
+      "-4 ROCE 6.46% is the lowest in the years on the page",
       "-2 D/E 1.71",
       "+4 promoter 53%",
       "+4 latest qtr PAT YoY 70%",
-      "+0 mcap ₹6,175 cr"
+      "+0 mcap ₹6,175 cr",
+      "-14 operating cash flow ₹-231cr — the business consumed cash last year",
+      "-12 interest cover 2.29× — thin",
+      "-4 interest cost up 62% year on year",
+      "-10 borrowings up 134% year on year",
+      "+3 institutions hold 23.71%",
+      "-4 price to book 7.3",
+      "-6 ROCE 6.46% bought at 7.3× book is 0.9% on what you pay",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted -18 of -28 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 6175.0,
@@ -17044,7 +18353,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 39,
+    "fund_flags": [
+      "borrowings up 134% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 39)"
   },
   {
     "symbol": "LGEINDIA",
@@ -17174,9 +18490,26 @@
       }
     ],
     "ta_confidence": 34,
-    "fund_score": 54,
+    "fund_score": 67,
     "fund_why": [
-      "+4 promoter 85%"
+      "+12 ROCE 32.3%",
+      "+8 ROE 24.7%",
+      "-2 P/E 61.3",
+      "+0 3y profit CAGR 8%",
+      "+0 3y sales CAGR 7%",
+      "+4 return on capital has improved from 32.7% to 45.3%",
+      "+5 D/E 0.06",
+      "+4 promoter 85%",
+      "+4 latest qtr PAT YoY 27.3%",
+      "+4 mcap ₹111,848 cr",
+      "+8 operating cash flow ₹1,721cr, 102% of profit — profit is turning into cash",
+      "-8 profit growth has stalled: -23.5% last year against 45.8% the year before",
+      "-8 price to book 14.58",
+      "-6 ROCE 32.3% bought at 14.58× book is 2.2% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -17211,7 +18544,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "SHRIPISTON",
@@ -17338,18 +18676,30 @@
       }
     ],
     "ta_confidence": 16,
-    "fund_score": 85,
+    "fund_score": 52,
     "fund_why": [
       "+12 ROCE 20.8%",
       "+8 ROE 21.4%",
       "+2 P/E 35.8",
       "+8 3y profit CAGR 25%",
       "+6 3y sales CAGR 20%",
+      "+4 return on capital has improved from 16.2% to 25%",
       "+2 D/E 0.68",
       "+0 promoter 41.55%",
-      "-5 promoter stake down -2.2pp in 4q",
+      "-6 promoters sold 2.2pp in the last quarter alone",
       "+0 latest qtr PAT YoY 9.6%",
-      "+2 mcap ₹20,878 cr"
+      "+2 mcap ₹20,878 cr",
+      "+8 operating cash flow ₹625cr, 111% of profit — profit is turning into cash",
+      "-4 interest cost up 278% year on year",
+      "-10 borrowings up 287% year on year",
+      "+3 institutions hold 24.39%",
+      "-4 price to book 6.83",
+      "-6 ROCE 20.8% bought at 6.83× book is 3% on what you pay",
+      "-6 PEG 4.11 — priced for growth it is not delivering",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -14 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 20878.0,
@@ -17398,7 +18748,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads up"
       }
-    ]
+    ],
+    "fund_score_at_run": 85,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 85)"
   },
   {
     "symbol": "INDOTECH",
@@ -17519,10 +18874,28 @@
       }
     ],
     "ta_confidence": 34,
-    "fund_score": 49,
+    "fund_score": 59,
     "fund_why": [
+      "+12 ROCE 40.4%",
+      "+8 ROE 28.4%",
+      "+2 P/E 39.1",
+      "+8 3y profit CAGR 53%",
+      "+6 3y sales CAGR 28%",
+      "+4 return on capital has improved from 7.8% to 37.3%",
+      "+5 D/E 0.01",
       "+4 promoter 72.18%",
-      "-5 promoter stake down -2.82pp in 4q"
+      "-6 promoters sold 2.82pp in the last quarter alone",
+      "+4 latest qtr PAT YoY 36.8%",
+      "+0 mcap ₹3,885 cr",
+      "+3 operating cash flow ₹57cr, only 61% of profit",
+      "+4 interest cover 32×",
+      "-5 institutions hold 0.33% — desks with their own analysts are staying out",
+      "-8 price to book 10.39",
+      "-6 ROCE 40.4% bought at 10.39× book is 3.9% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -17557,7 +18930,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 49,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 49)"
   },
   {
     "symbol": "PERSISTENT",
@@ -17687,17 +19065,29 @@
       }
     ],
     "ta_confidence": 17,
-    "fund_score": 91,
+    "fund_score": 69,
     "fund_why": [
       "+12 ROCE 34.4%",
       "+8 ROE 27.2%",
       "-2 P/E 43",
       "+8 3y profit CAGR 28%",
       "+6 3y sales CAGR 21%",
+      "+4 return on capital has improved from 23% to 31.3%",
       "+5 D/E 0.06",
       "+0 promoter 30.29%",
       "+0 latest qtr PAT YoY 13.6%",
-      "+4 mcap ₹85,485 cr"
+      "+4 mcap ₹85,485 cr",
+      "+8 operating cash flow ₹1,767cr, 95% of profit — profit is turning into cash",
+      "+4 interest cover 24.03×",
+      "-4 interest cost up 71% year on year",
+      "-6 borrowings up 53% year on year",
+      "+3 institutions hold 51.04%",
+      "-8 price to book 10.9",
+      "-6 ROCE 34.4% bought at 10.9× book is 3.2% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 85485.0,
@@ -17728,7 +19118,12 @@
         "tone": "warn",
         "why": "pace -0.035%/session — mostly chop"
       }
-    ]
+    ],
+    "fund_score_at_run": 91,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 91)"
   },
   {
     "symbol": "POLYCAB",
@@ -17857,17 +19252,29 @@
       }
     ],
     "ta_confidence": 9,
-    "fund_score": 99,
+    "fund_score": 75,
     "fund_why": [
       "+12 ROCE 33.2%",
       "+8 ROE 23%",
       "-2 P/E 44",
       "+8 3y profit CAGR 28%",
       "+6 3y sales CAGR 27%",
+      "+4 return on capital has improved from 25.6% to 31.3%",
       "+5 D/E 0.02",
       "+4 promoter 61.46%",
       "+4 latest qtr PAT YoY 32.8%",
-      "+4 mcap ₹125,888 cr"
+      "+4 mcap ₹125,888 cr",
+      "+8 operating cash flow ₹3,811cr, 141% of profit — profit is turning into cash",
+      "+4 interest cover 14.2×",
+      "-4 interest cost up 57% year on year",
+      "+3 institutions hold 26.62%",
+      "-8 price to book 10.47",
+      "-6 ROCE 33.2% bought at 10.47× book is 3.2% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -16 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 125888.0,
@@ -17904,7 +19311,12 @@
         "tone": "flat",
         "why": "the same name from more than one place"
       }
-    ]
+    ],
+    "fund_score_at_run": 99,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 99)"
   },
   {
     "symbol": "SUNPHARMA",
@@ -18030,17 +19442,30 @@
       }
     ],
     "ta_confidence": 14,
-    "fund_score": 92,
+    "fund_score": 73,
     "fund_why": [
       "+12 ROCE 20.5%",
       "+4 ROE 16%",
       "+2 P/E 35.4",
       "+4 3y profit CAGR 13%",
       "+3 3y sales CAGR 10%",
+      "+4 return on capital has improved from 13.2% to 19.3%",
       "+5 D/E 0.06",
       "+4 promoter 54.48%",
       "+4 latest qtr PAT YoY 26.5%",
-      "+4 mcap ₹447,452 cr"
+      "+4 mcap ₹447,452 cr",
+      "+8 operating cash flow ₹12,419cr, 108% of profit — profit is turning into cash",
+      "+4 interest cover 44.18×",
+      "-6 borrowings up 96% year on year",
+      "+3 institutions hold 36.6%",
+      "-4 price to book 5.36",
+      "-6 ROCE 20.5% bought at 5.36× book is 3.8% on what you pay",
+      "-6 PEG 7.14 — priced for growth it is not delivering",
+      "  (returns counted +10 of +16 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -14 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +15 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 447452.0,
@@ -18071,7 +19496,12 @@
         "tone": "warn",
         "why": "pace -0.092%/session — mostly chop"
       }
-    ]
+    ],
+    "fund_score_at_run": 92,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 92)"
   },
   {
     "symbol": "BPCL",
@@ -18202,17 +19632,28 @@
       }
     ],
     "ta_confidence": 11,
-    "fund_score": 85,
+    "fund_score": 55,
     "fund_why": [
       "+12 ROCE 25.6%",
       "+8 ROE 28.8%",
       "+6 P/E 8.5",
       "+8 3y profit CAGR 107%",
       "-4 3y sales CAGR -1%",
+      "+4 return on capital has improved from 13.6% to 24.7%",
       "+2 D/E 0.54",
       "+4 promoter 52.98%",
       "-5 latest qtr PAT YoY -127.4%",
-      "+4 mcap ₹131,695 cr"
+      "+4 mcap ₹131,695 cr",
+      "+8 operating cash flow ₹50,769cr, 196% of profit — profit is turning into cash",
+      "-12 interest cover -6.47× — thin",
+      "+3 institutions hold 37.91%",
+      "+3 price to book 1.32",
+      "+4 ROCE 25.6% at 1.32× book is 19.4% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted +5 of +13 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)",
+      "⚑ capped at 55: interest cover has fallen every quarter to -6.47×"
     ],
     "fundamentals": {
       "market_cap_cr": 131695.0,
@@ -18249,7 +19690,16 @@
         "tone": "flat",
         "why": "the same name from more than one place"
       }
-    ]
+    ],
+    "fund_score_at_run": 85,
+    "fund_flags": [
+      "interest cover has fallen every quarter to -6.47×"
+    ],
+    "fund_caps": [
+      "capped at 55: interest cover has fallen every quarter to -6.47×"
+    ],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 85)"
   },
   {
     "symbol": "INOXWIND",
@@ -18384,17 +19834,28 @@
       }
     ],
     "ta_confidence": 21,
-    "fund_score": 68,
+    "fund_score": 21,
     "fund_why": [
       "+0 ROCE 10.6%",
       "+0 ROE 7.5%",
       "+2 P/E 38.8",
       "+8 3y profit CAGR 38%",
       "+6 3y sales CAGR 81%",
+      "+4 return on capital has improved from -6% to 9%",
       "+5 D/E 0.25",
       "+0 promoter 44.18%",
       "-5 latest qtr PAT YoY -34%",
-      "+2 mcap ₹13,375 cr"
+      "+2 mcap ₹13,375 cr",
+      "-14 operating cash flow ₹-598cr — the business consumed cash last year",
+      "-8 sales growth has stalled: 23.6% last year against 103.7% the year before",
+      "-5 the profit 3-year CAGR of 38% is history — last year was 2.5%",
+      "-12 interest cover 2.67× — thin",
+      "-4 interest cost up 68% year on year",
+      "+3 institutions hold 24.55%",
+      "-4 profit has come in below the year-ago quarter two quarters running",
+      "+0 price to book 2.1",
+      "-6 PEG 15.46 — priced for growth it is not delivering",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 13375.0,
@@ -18425,7 +19886,14 @@
         "tone": "warn",
         "why": "T1 needs about 30 sessions against a 10-session stop"
       }
-    ]
+    ],
+    "fund_score_at_run": 68,
+    "fund_flags": [
+      "interest cover has fallen every quarter to 2.67×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 68)"
   },
   {
     "symbol": "LAURUSLABS",
@@ -18549,17 +20017,27 @@
       }
     ],
     "ta_confidence": 20,
-    "fund_score": 65,
+    "fund_score": 62,
     "fund_why": [
       "+6 ROCE 17.8%",
       "+8 ROE 18.3%",
       "-6 P/E 95.7",
       "+0 3y profit CAGR 4%",
       "+0 3y sales CAGR 4%",
+      "-6 return on capital has drifted from 22.2% to 11.3% — the newer capital earns less than the old",
       "+2 D/E 0.48",
       "-3 promoter 27.47%",
       "+4 latest qtr PAT YoY 123.5%",
-      "+4 mcap ₹104,658 cr"
+      "+4 mcap ₹104,658 cr",
+      "+8 operating cash flow ₹1,624cr, 182% of profit — profit is turning into cash",
+      "+4 interest cover 15.19×",
+      "+3 institutions hold 41.73%",
+      "-8 price to book 19.73",
+      "-6 ROCE 17.8% bought at 19.73× book is 0.9% on what you pay",
+      "  (returns counted +10 of +14 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -20 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +6 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 104658.0,
@@ -18596,7 +20074,12 @@
         "tone": "flat",
         "why": "EMA 20/50/200 stack reads strong up"
       }
-    ]
+    ],
+    "fund_score_at_run": 65,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 65)"
   },
   {
     "symbol": "TASTYBITE",
@@ -18716,9 +20199,25 @@
       }
     ],
     "ta_confidence": 22,
-    "fund_score": 54,
+    "fund_score": 50,
     "fund_why": [
-      "+4 promoter 74.23%"
+      "+0 ROCE 14%",
+      "+0 ROE 10.9%",
+      "-2 P/E 69.5",
+      "+0 3y profit CAGR 5%",
+      "+0 3y sales CAGR 5%",
+      "-6 return on capital has drifted from 19.6% to 14% — the newer capital earns less than the old",
+      "+5 D/E 0.12",
+      "+4 promoter 74.23%",
+      "+0 latest qtr PAT YoY 7.9%",
+      "+0 mcap ₹2,521 cr",
+      "+8 operating cash flow ₹59cr, 169% of profit — profit is turning into cash",
+      "+4 interest cover 15.24×",
+      "-4 price to book 7.37",
+      "-6 ROCE 14% bought at 7.37× book is 1.9% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (balance counted +5 of +9 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -18753,7 +20252,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "PRESTIGE",
@@ -18880,7 +20384,7 @@
       }
     ],
     "ta_confidence": 14,
-    "fund_score": 64,
+    "fund_score": 46,
     "fund_why": [
       "+0 ROCE 10.4%",
       "+0 ROE 7.53%",
@@ -18890,7 +20394,16 @@
       "-2 D/E 1.09",
       "+4 promoter 60.95%",
       "+0 latest qtr PAT YoY -13.1%",
-      "+4 mcap ₹66,350 cr"
+      "+4 mcap ₹66,350 cr",
+      "+8 operating cash flow ₹3,223cr, 247% of profit — profit is turning into cash",
+      "-12 interest cover 2.03× — thin",
+      "+3 institutions hold 36.78%",
+      "-4 price to book 4.07",
+      "-6 ROCE 10.4% bought at 4.07× book is 2.6% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +10 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 66350.0,
@@ -18921,7 +20434,14 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 64,
+    "fund_flags": [
+      "interest cover has fallen every quarter to 2.03×"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 64)"
   },
   {
     "symbol": "HDFCBANK",
@@ -19051,17 +20571,22 @@
     ],
     "supports": [],
     "ta_confidence": 0,
-    "fund_score": 66,
+    "fund_score": 78,
     "fund_why": [
-      "-4 ROCE 7.02%",
-      "+4 ROE 13.6%",
-      "+6 P/E 13.4",
-      "+4 3y profit CAGR 18%",
-      "+6 3y sales CAGR 27%",
-      "-3 promoter 0%",
-      "-5 promoter stake down -25.59pp in 4q",
-      "+4 latest qtr PAT YoY 19.3%",
-      "+4 mcap ₹1,059,108 cr"
+      "+12 net NPA 0.41% of the book",
+      "+4 gross NPA 1.17%",
+      "+10 return on assets 1.8%",
+      "+3 ROE 14%",
+      "+2 net interest margin 3.11% of assets",
+      "+0 net interest income +4.9% last year",
+      "+3 price to book 1.86",
+      "+4 P/E 14.2",
+      "-5 promoter stake down 25.59pp over four quarters",
+      "+4 institutions hold 83.57%",
+      "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so it is worth +14 at most)",
+      "  (returns counted +10 of +15 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted +5 of +7 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
     ],
     "fundamentals": {
       "market_cap_cr": 1059108.0,
@@ -19097,7 +20622,12 @@
         "tone": "flat",
         "why": "the same name from more than one place"
       }
-    ]
+    ],
+    "fund_score_at_run": 66,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 66)"
   },
   {
     "symbol": "GOPAL",
@@ -19217,9 +20747,27 @@
       }
     ],
     "ta_confidence": 14,
-    "fund_score": 54,
+    "fund_score": 22,
     "fund_why": [
-      "+4 promoter 81.45%"
+      "+0 ROCE 11.7%",
+      "-4 ROE 4.72%",
+      "-2 P/E 59.4",
+      "-6 3y profit CAGR -43%",
+      "+0 3y sales CAGR 3%",
+      "-6 return on capital has drifted from 27.3% to 20% — the newer capital earns less than the old",
+      "-4 ROCE 11.7% is the lowest in the years on the page",
+      "+2 D/E 0.32",
+      "+4 promoter 81.45%",
+      "+4 latest qtr PAT YoY 333.3%",
+      "+0 mcap ₹3,264 cr",
+      "+3 operating cash flow ₹46cr, only 62% of profit",
+      "+4 interest cover 10.33×",
+      "-4 interest cost up 50% year on year",
+      "-10 borrowings up 130% year on year",
+      "-4 price to book 6.82",
+      "-6 ROCE 11.7% bought at 6.82× book is 1.7% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -19248,7 +20796,12 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   },
   {
     "symbol": "INDIGO",
@@ -19379,16 +20932,25 @@
       }
     ],
     "ta_confidence": 16,
-    "fund_score": 33,
+    "fund_score": 21,
     "fund_why": [
       "-4 ROCE 5.24%",
       "-4 ROE -27.1%",
       "-8 loss-making (no P/E)",
       "+6 3y sales CAGR 16%",
+      "+4 return on capital has improved from -3% to 15.3%",
       "-6 D/E 11.15",
       "+0 promoter 41.57%",
       "-5 latest qtr PAT YoY -110.9%",
-      "+4 mcap ₹192,367 cr"
+      "+4 mcap ₹192,367 cr",
+      "+8 operating cash flow ₹23,470cr, 980% of profit — profit is turning into cash",
+      "-12 interest cover 2.09× — thin",
+      "+3 institutions hold 52.17%",
+      "-10 profit has come in below the year-ago quarter 5 quarters running",
+      "-8 price to book 27.64",
+      "-6 ROCE 5.24% bought at 27.64× book is 0.2% on what you pay",
+      "  (value counted -10 of -22 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 192367.0,
@@ -19437,7 +20999,16 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 33,
+    "fund_flags": [
+      "5 consecutive quarters of falling profit",
+      "the page did not read cleanly — operating cash flow is 980% of net profit — one of the two figures is being read from the wrong row",
+      "the page did not read cleanly — profit growth 1y pct came out at -133% — the growth read is unsafe"
+    ],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 33)"
   },
   {
     "symbol": "PHOENIXLTD",
@@ -19560,17 +21131,25 @@
       }
     ],
     "ta_confidence": 5,
-    "fund_score": 68,
+    "fund_score": 62,
     "fund_why": [
       "+0 ROCE 12.8%",
       "+0 ROE 11.6%",
       "-2 P/E 52",
       "+4 3y profit CAGR 14%",
       "+6 3y sales CAGR 19%",
+      "+4 return on capital has improved from 7.8% to 12%",
       "+2 D/E 0.48",
       "+0 promoter 47.25%",
       "+4 latest qtr PAT YoY 22.7%",
-      "+4 mcap ₹67,433 cr"
+      "+4 mcap ₹67,433 cr",
+      "+8 operating cash flow ₹2,426cr, 156% of profit — profit is turning into cash",
+      "+3 institutions hold 49.11%",
+      "-4 price to book 6.14",
+      "-6 ROCE 12.8% bought at 6.14× book is 2.1% on what you pay",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +18 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (size counted +1 of +4 — its terms measure the same thing more than once, so it is worth +1 at most)"
     ],
     "fundamentals": {
       "market_cap_cr": 67433.0,
@@ -19601,7 +21180,12 @@
         "tone": "warn",
         "why": "pace -0.05%/session — mostly chop"
       }
-    ]
+    ],
+    "fund_score_at_run": 68,
+    "fund_flags": [],
+    "fund_caps": [],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 68)"
   },
   {
     "symbol": "GRSE",
@@ -19735,9 +21319,28 @@
       }
     ],
     "ta_confidence": 0,
-    "fund_score": 54,
+    "fund_score": 40,
     "fund_why": [
-      "+4 promoter 74.5%"
+      "+12 ROCE 42.8%",
+      "+8 ROE 31.6%",
+      "+2 P/E 35.7",
+      "+8 3y profit CAGR 50%",
+      "+6 3y sales CAGR 40%",
+      "+4 return on capital has improved from 20.2% to 35.7%",
+      "+5 D/E 0.01",
+      "+4 promoter 74.5%",
+      "+4 latest qtr PAT YoY 44.2%",
+      "+2 mcap ₹28,568 cr",
+      "-14 operating cash flow ₹-290cr — the business consumed cash last year",
+      "-10 borrowings up 270% year on year",
+      "-8 price to book 10.89",
+      "-6 ROCE 42.8% bought at 10.89× book is 3.9% on what you pay",
+      "  (returns counted +10 of +20 — its terms measure the same thing more than once, so it is worth +10 at most)",
+      "  (value counted -10 of -12 — its terms measure the same thing more than once, so it is worth +5 at most)",
+      "  (growth counted +8 of +22 — its terms measure the same thing more than once, so it is worth +8 at most)",
+      "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so it is worth +3 at most)",
+      "  (size counted +1 of +2 — its terms measure the same thing more than once, so it is worth +1 at most)",
+      "⚑ capped at 40: borrowings up 270% while the business burned cash — the growth is being funded, not earned"
     ],
     "fundamentals": {
       "market_cap_cr": null,
@@ -19772,6 +21375,15 @@
         "tone": "warn",
         "why": "momentum only — exit at target or stop, never hold through a stall"
       }
-    ]
+    ],
+    "fund_score_at_run": 54,
+    "fund_flags": [
+      "borrowings up 270% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_caps": [
+      "capped at 40: borrowings up 270% while the business burned cash — the growth is being funded, not earned"
+    ],
+    "fund_unrated": false,
+    "fund_rescored": "scorer rebuilt: cash conversion measured against reported profit, correlated ratios counted once, lenders read on asset quality (was 54)"
   }
 ]

@@ -7,7 +7,22 @@ You are running unattended. Work inside the `stock-tips-system` repo. Load `prom
 git clone https://github.com/marora1549/stock-tips-system.git 2>/dev/null || (cd stock-tips-system && git pull --ff-only)
 cd stock-tips-system && pip install -q -r requirements.txt --break-system-packages
 export PYTHONPATH=src
+python -m stocktips selfcheck; canaries=$?
+# What else is out there that this run is not running
+curl -s "https://api.github.com/repos/marora1549/stock-tips-system/pulls?state=open" \
+  | python -c "import json,sys;[print(f\"OPEN PR #{p['number']}: {p['title']} ({p['head']['ref']})\") for p in json.load(sys.stdin)]" 2>/dev/null
 ```
+
+**If `selfcheck` exits non-zero, that is the first thing in your email, before the picks.** It
+means the code in this container is older than the corrections in this repository's history — and
+the output will otherwise look completely normal. On 10 September the 08:00 run mailed a card
+scoring Enviro Infra 92, a number that had been corrected to 32 the day before, because the
+correction was on a branch and this clone takes `main`. Nothing failed. The run succeeded, the
+email arrived, and only a person reading it against a paid research note caught it.
+
+So when a canary fails: name which ones, name the open PR if the listing shows one, say plainly
+that **the fundamentals numbers in this email are not current**, and run everything else anyway —
+the prices, the news and the technicals are all live and still worth having.
 Weekend/holiday → one-line `reports/<date>/eod.md`, commit, stop.
 
 ## 1. Mark to market
@@ -26,9 +41,22 @@ and push (the report is the record), and make the outage the first line of the n
 For every event in the report, one sentence of honest attribution:
 * Stop hit: was the stop inside normal noise (< 1 ATR)? Was the pattern real? Did the source's tip arrive after the move?
 * Target hit: which reason in `plan.reasons` deserves the credit? Would a tighter/looser target have been better?
-* Time stop / hold: was the fundamentals score right to park it?
+* Time stop / hold: was the fundamentals score right to park it? A position closing today has just
+  settled its score in `state/fundamentals_calibration.json` — say whether the score earned its
+  keep on this one, in a clause.
 * Pending cancelled on gap-up: note which source's calls keep gapping — that is information about the source's timing.
 Then check `state/sources_confidence.json` for any source whose `n_resolved ≥ 8` and `score < −40` — it has been auto-disabled; say so. Any source with ≥ 10 resolved outcomes and T1 hit-rate ≥ 60% deserves a sentence too.
+
+Then run `PYTHONPATH=src python -m stocktips.cli fund-audit`. Two findings are reportable and
+neither is optional:
+* **an inversion** — names scored highly returning less than names scored poorly, over enough
+  settled trades to mean it. That is the fundamentals score failing to carry information, and it
+  goes at the top of the review, not in a footnote.
+* **a bias** — running eight points or more generous against an outside desk across three or more
+  names. Say the number and the direction.
+
+If neither is present and nothing has settled, say that too: an ungraded score is an opinion, and
+Enviro Infra's 92 stood for weeks precisely because nobody said so out loud.
 
 Record the review:
 ```bash

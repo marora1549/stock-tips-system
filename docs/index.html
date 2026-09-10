@@ -724,7 +724,7 @@ function run(command, inputs, opts){
 /* ==================================================================== pieces */
 var TAG_ICON = {fundamentals:'scale', technicals:'chart', momentum:'bolt', 'tight-stop':'shield',
   asymmetric:'target', corroborated:'rss', 'slow-clock':'clock', sluggish:'clock',
-  'weak-books':'alert', 'hot-potato':'alert', trend:'gauge'};
+  'weak-fundamentals':'alert', 'hot-potato':'alert', trend:'gauge'};
 function tagPills(tags){
   if (!tags || !tags.length) return '';
   return tags.map(function(t){
@@ -999,7 +999,7 @@ function positionCard(p){
       {k:'Horizon', v:esc(p.timeframe || '—'),
        s:p.deadline ? 'by ' + esc(p.deadline) : (p.time_stop_days || '—') + ' sessions'},
       {k:'Booked at', v:(p.composite != null ? p.composite : '—'),
-       s:'chart ' + (p.ta_confidence || '—') + ' · books ' + (p.fund_score || '—')},
+       s:'chart ' + (p.ta_confidence || '—') + ' · fundamentals ' + (p.fund_score || '—')},
       {k:'Realised', v:'<span class="' + sgn(p.realised_inr) + '">' + inr(p.realised_inr) + '</span>',
        s:p.max_favourable_pct ? 'best ' + pct(p.max_favourable_pct, 1) : ''}
     ]) +
@@ -1622,10 +1622,21 @@ function newsTags(c){
   if (c.certainty != null && c.certainty < 1)
     out.push({t:'warn', i:'alert', l:Math.round(c.certainty * 100) + '% firm',
               w:'not a signed contract yet'});
-  if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong books · ' + c.fund_score,
+  // A lender's accounts do not answer these questions, so no number is claimed for one.
+  if (c.fund_unrated) out.push({t:'warn', i:'shield', l:'fundamentals not rated',
+              w:(c.fund_why || [])[0] || 'this scorer does not fit this kind of company'});
+  else if ((c.fund_score || 0) >= 70) out.push({t:'good', i:'scale', l:'strong fundamentals · ' + c.fund_score,
               w:(c.fund_why || []).slice(0, 4).join('; ')});
-  else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak books · ' + c.fund_score,
+  else if ((c.fund_score || 0) < 40) out.push({t:'bad', i:'alert', l:'weak fundamentals · ' + c.fund_score,
               w:'a pop on a weak balance sheet fades'});
+  // A red flag is not a term in an average — it is the reason the score has a ceiling, and it
+  // belongs on the card in words. This desk scored a cash-burning company 92 once.
+  (c.fund_unrated ? [] : (c.fund_flags || [])).forEach(function(fl){
+    out.push({t:'bad', i:'alert', l:fl.length > 46 ? fl.slice(0, 44) + '…' : fl, w:fl});
+  });
+  (c.fund_caps || []).forEach(function(cp){
+    out.push({t:'warn', i:'shield', l:'score capped', w:cp});
+  });
   var f = c.freshness || {};
   if (f.window === 'overnight') out.push({t:'good', i:'clock', l:'overnight', w:f.why});
   else if (f.window === 'in-session') out.push({t:'warn', i:'clock', l:'already seen', w:f.why});
@@ -1724,11 +1735,38 @@ function intradayMore(c){
   var f = c.fundamentals || {}, ta = c.ta || {};
   cols.push('<div class="mcol"><h5>The business</h5>' +
     [['Revenue (TTM)', f.revenue_ttm_cr ? inr(f.revenue_ttm_cr) + 'cr' : '—'],
+     ['Operating cash flow', f.cfo_cr != null ? '<span class="' + sgn(f.cfo_cr) + '">' +
+       inr(f.cfo_cr) + 'cr</span>' + (f.cfo_negative_streak ? ' (' + f.cfo_negative_streak +
+       'y negative)' : '') : 'not read'],
+     ['Sales growth, last yr', f.sales_growth_1y_pct != null ? pct(f.sales_growth_1y_pct, 1) : '—'],
+     ['Profit growth, last yr', f.profit_growth_1y_pct != null ? pct(f.profit_growth_1y_pct, 1) : '—'],
+     ['Interest cover', f.interest_cover != null ? num(f.interest_cover, 1) + '×' : '—'],
+     ['Borrowings', f.borrowings_growth_pct != null ? pct(f.borrowings_growth_pct, 0) + ' yoy' : '—'],
+     ['Institutions', f.institutional_pct != null ? pct(f.institutional_pct, 2) : '—'],
      ['Market cap', f.market_cap_cr ? inr(f.market_cap_cr) + 'cr' : '—'],
      ['P/E', num(f.pe, 1)], ['ROCE', pct(f.roce, 0)], ['D/E', num(f.debt_to_equity, 2)],
      ['Promoter', pct(f.promoter_pct, 1)]].map(function(kv){
       return '<div class="kv"><span>' + kv[0] + '</span><span>' + kv[1] + '</span></div>';
     }).join('') + '</div>');
+  if ((c.fund_why || []).length || (c.screener_cons || []).length){
+    cols.push('<div class="mcol"><h5>Why ' + (c.fund_score != null ? c.fund_score : '—') +
+      ' out of 100</h5>' +
+      (c.fund_why || []).map(function(w){
+        var lead = String(w).trim().split(' ')[0];
+        var tone = lead.charAt(0) === '+' ? 'p' : lead.charAt(0) === '-' ? 'm' : '';
+        return '<div class="why ' + tone + '"><span class="n">' + esc(lead) + '</span><span>' +
+          esc(String(w).trim().slice(lead.length).trim()) + '</span></div>';
+      }).join('') +
+      ((c.screener_cons || []).length
+        ? '<h5 style="margin-top:14px">Screener disagrees</h5>' + c.screener_cons.map(function(x){
+            return '<div class="why m"><span class="n">⚑</span><span>' + esc(x) + '</span></div>';
+          }).join('') : '') +
+      ((c.screener_pros || []).length
+        ? '<h5 style="margin-top:14px">Screener agrees</h5>' + c.screener_pros.map(function(x){
+            return '<div class="why p"><span class="n">✓</span><span>' + esc(x) + '</span></div>';
+          }).join('') : '') +
+      '</div>');
+  }
   cols.push('<div class="mcol"><h5>The chart</h5>' +
     [['Trend', esc(String(ta.trend || '—').replace('_', ' '))], ['RSI', num(ta.rsi, 1)],
      ['ADX', num(ta.adx, 0)], ['ATR', pct(ta.atr_pct, 2)],
@@ -1737,6 +1775,79 @@ function intradayMore(c){
       return '<div class="kv"><span>' + kv[0] + '</span><span>' + kv[1] + '</span></div>';
     }).join('') + '</div>');
   return '<div class="mgrid">' + cols.join('') + '</div>';
+}
+
+function fundAudit(){
+  var a = (DATA.fundamentals_audit) || {};
+  var buckets = a.buckets || [], bias = a.bias || [], dis = a.disagreements || [];
+  var settled = buckets.reduce(function(n, b){ return n + (b.n_settled || 0); }, 0);
+  var out = '';
+
+  if (a.inversions && a.inversions.length){
+    out += '<div class="card"><div class="card-in log">' + a.inversions.map(function(t){
+      return '<div class="row"><span class="when bad">backwards</span>' +
+        '<span class="what"><b>The score is not ranking these bands correctly.</b> ' +
+        esc(t) + '</span></div>';
+    }).join('') + '</div></div>';
+  }
+
+  out += '<div class="tw"><table>' +
+    '<thead><tr><th>Score band</th><th class="r">Scored</th><th class="r">Settled</th>' +
+    '<th class="r">Avg return</th><th class="r">Hit rate</th></tr></thead><tbody>' +
+    buckets.map(function(b){
+      return '<tr' + (b.thin ? ' class="mut"' : '') + '><td>' + esc(b.bucket) + ' / 100</td>' +
+        '<td class="r n">' + (b.n_scored || 0) + '</td>' +
+        '<td class="r n">' + (b.n_settled || 0) + '</td>' +
+        '<td class="r n ' + sgn(b.avg_return_pct) + '">' +
+          (b.avg_return_pct == null ? '—' : pct(b.avg_return_pct, 2)) + '</td>' +
+        '<td class="r n">' + (b.hit_rate == null ? '—'
+          : Math.round(b.hit_rate * 100) + '%') + '</td></tr>';
+    }).join('') + '</tbody></table></div>' +
+    (settled ? '' : '<div class="hint">Nothing has settled yet, so the score is unproven. Read it ' +
+      'as an opinion until this table is able to contradict it.</div>');
+
+  if (bias.length){
+    out += '<div class="card"><div class="card-in">' + bias.map(function(r){
+      return '<div class="kv"><span>' + esc(r.source).replace(/_/g, ' ') +
+        ' <small class="mut">' + r.n + ' compared</small></span>' +
+        '<span class="n">' + (r.mean_gap > 0 ? '+' : '') + num(r.mean_gap, 1) +
+        ' <small class="mut">' + esc(r.reading) + '</small></span></div>';
+    }).join('') + '</div></div>';
+  }
+
+  if (dis.length){
+    out += '<div class="sec-h" style="margin-top:18px"><h4>Where an outside desk disagreed</h4>' +
+      '<span class="note">the standing list to go and look at</span></div>' +
+      '<div class="card"><div class="card-in log">' + dis.map(function(r){
+        return '<div class="row"><span class="when">' + esc(r.symbol) + '</span>' +
+          '<span class="what"><b>' + (r.gap > 0 ? '+' : '') + num(r.gap, 0) + '</b> — ' +
+          'mine ' + r.my_score + ', ' + esc(String(r.source).replace(/_/g, ' ')) + ' ' +
+          num(r.their_score, 0) + (r.their_stance ? ' (' + esc(r.their_stance) + ')' : '') +
+          (r.note ? ' <span class="mut">' + esc(r.note) + '</span>' : '') +
+          '</span></div>';
+      }).join('') + '</div></div>';
+  }
+
+  var b = DATA.build || {};
+  var bad = (b.canaries || []).filter(function(c){ return !c.ok; });
+  if (bad.length){
+    out = '<div class="card"><div class="card-in log">' +
+      '<div class="row"><span class="when bad">stale</span><span class="what">' +
+      '<b>These numbers were produced by an older scorer.</b> ' + bad.length + ' of ' +
+      (b.canaries || []).length + ' known-answer checks fail against the code at ' +
+      esc(b.head || '?') + ' on ' + esc(b.branch || '?') + ': ' +
+      bad.map(function(c){ return esc(c.name); }).join('; ') +
+      '. Merge the branch carrying the fix, then re-run.</span></div></div></div>' + out;
+  } else if (b.head){
+    out += '<div class="hint">Scored by ' + esc(b.branch || '?') + ' at ' + esc(b.head) +
+      ', with all ' + (b.canaries || []).length + ' known-answer checks passing.</div>';
+  }
+
+  out += '<div class="hint">The highest score this scorer can produce is ' +
+    num(a.ceiling || 90, 0) + ' out of 100. A public ratio page cannot tell the 90th percentile ' +
+    'from the 99th, and the last ten points are withheld rather than handed out. Enviro Infra ' +
+    'scored 92 here once, with three years of negative operating cash flow that nothing read.</div>';
+  return out;
 }
 
 function classScoreboard(){
@@ -1810,7 +1921,7 @@ function renderIntraday(){
     html += '<div class="sec"><div class="sec-h"><h3>' + ic('bulb') + 'Watch</h3>' +
       '<span class="note">real news, not enough on its own</span></div>' +
       '<div class="tw"><table><thead><tr><th>Symbol</th><th>Event</th><th class="r">Catalyst</th>' +
-      '<th class="r">Size</th><th class="r">Books</th><th>Route</th><th>Gap</th><th></th></tr></thead><tbody>' +
+      '<th class="r">Size</th><th class="r">Fundamentals</th><th>Route</th><th>Gap</th><th></th></tr></thead><tbody>' +
       watch.map(function(c){
         var s = c.session || {};
         var size = c.materiality_ratio ? num(c.materiality_ratio, 1) + '× rev'
@@ -1862,6 +1973,10 @@ function renderIntraday(){
   html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') +
     'What each kind of news has been worth</h3><span class="note">the part that gets trained</span>' +
     '</div>' + classScoreboard() + '</div>';
+
+  html += '<div class="sec"><div class="sec-h"><h3>' + ic('flow') +
+    'Has the fundamentals score ever been right?</h3>' +
+    '<span class="note">the score, graded like everything else</span></div>' + fundAudit() + '</div>';
 
   var sk = d.skipped || [];
   if (sk.length){

@@ -7,7 +7,22 @@ You are running unattended. Follow this exactly; do not ask questions. Work insi
 git clone https://github.com/marora1549/stock-tips-system.git 2>/dev/null || (cd stock-tips-system && git pull --ff-only)
 cd stock-tips-system && pip install -q -r requirements.txt --break-system-packages
 export PYTHONPATH=src
+python -m stocktips selfcheck; canaries=$?
+# What else is out there that this run is not running
+curl -s "https://api.github.com/repos/marora1549/stock-tips-system/pulls?state=open" \
+  | python -c "import json,sys;[print(f\"OPEN PR #{p['number']}: {p['title']} ({p['head']['ref']})\") for p in json.load(sys.stdin)]" 2>/dev/null
 ```
+
+**If `selfcheck` exits non-zero, that is the first thing in your email, before the picks.** It
+means the code in this container is older than the corrections in this repository's history — and
+the output will otherwise look completely normal. On 10 September the 08:00 run mailed a card
+scoring Enviro Infra 92, a number that had been corrected to 32 the day before, because the
+correction was on a branch and this clone takes `main`. Nothing failed. The run succeeded, the
+email arrived, and only a person reading it against a paid research note caught it.
+
+So when a canary fails: name which ones, name the open PR if the listing shows one, say plainly
+that **the fundamentals numbers in this email are not current**, and run everything else anyway —
+the prices, the news and the technicals are all live and still worth having.
 If today is an NSE holiday (check `config/holidays.yaml`, else reason from the date), or a weekend, write a one-line `reports/<date>/morning.md` saying so, commit, and stop.
 
 ## 1. Gather

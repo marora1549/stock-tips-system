@@ -1,0 +1,55 @@
+{
+  "EIEL": [
+    {
+      "date": "2026-09-09",
+      "source": "markets_mojo",
+      "their_score": 37.0,
+      "their_stance": "sell",
+      "my_score": 92,
+      "note": "the 92 that started this: three years of negative operating cash flow, borrowings +80%, sales growth 46% to 7.5% — none of it read",
+      "gap": 55.0
+    },
+    {
+      "date": "2026-09-09",
+      "source": "markets_mojo",
+      "their_score": 37.0,
+      "their_stance": "sell",
+      "my_score": 32,
+      "note": "same company, rebuilt scorer: cash flow read, TTM column no longer taken for a financial year, correlated ratios counted once",
+      "gap": -5.0
+    }
+  ],
+  "SHAKTIPUMP": [
+    {
+      "date": "2026-09-10",
+      "source": "markets_mojo",
+      "their_score": 36.0,
+      "their_stance": "sell",
+      "my_score": 39,
+      "note": "4 consecutive negative quarters, PAT(9M) -60.9%, institutional holding down 2.34pp to 7.46%, -42% over the year",
+      "gap": 3.0
+    }
+  ],
+  "ADANIPORTS": [
+    {
+      "date": "2026-09-10",
+      "source": "markets_mojo",
+      "their_score": 51.0,
+      "their_stance": "hold",
+      "my_score": 63,
+      "note": "healthy long-term growth but very expensive: EV/capital employed 3.1 on an ROCE of 11.6, promoters cut 1.99pp in the quarter, PEG 3.2",
+      "gap": 12.0
+    }
+  ],
+  "AUBANK": [
+    {
+      "date": "2026-09-10",
+      "source": "markets_mojo",
+      "their_score": 71.0,
+      "their_stance": "buy",
+      "my_score": 87,
+      "note": "highest-rated 1% of 4,000 stocks: ROA 1.60%, NII +25.77% CAGR, CAR 21.5%, institutional holding 68.79%",
+      "gap": 16.0
+    }
+  ]
+}
