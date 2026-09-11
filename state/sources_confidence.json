@@ -289,17 +289,25 @@
     "id": "broker:morganstanley"
   },
   "broker:motilal": {
-    "score": 0.0,
+    "score": -15.0,
     "n_tips": 36,
-    "n_resolved": 0,
+    "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 0,
+    "n_sl": 1,
     "n_timestop": 0,
-    "sum_return_pct": 0.0,
+    "sum_return_pct": -3.89,
     "days_to_t1": [],
-    "history": [],
+    "history": [
+      {
+        "date": "2026-09-11",
+        "symbol": "V2RETAIL",
+        "outcome": "stop_loss",
+        "ret_pct": -3.89,
+        "delta": -15.0
+      }
+    ],
     "enabled": true,
     "first_seen": "2026-09-07",
     "last_seen": "2026-09-11",
@@ -425,17 +433,25 @@
     "id": "broker:ubs"
   },
   "brokerage_gnews": {
-    "score": 0.0,
+    "score": -7.5,
     "n_tips": 86,
-    "n_resolved": 0,
+    "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 0,
+    "n_sl": 1,
     "n_timestop": 0,
-    "sum_return_pct": 0.0,
+    "sum_return_pct": -3.89,
     "days_to_t1": [],
-    "history": [],
+    "history": [
+      {
+        "date": "2026-09-11",
+        "symbol": "V2RETAIL",
+        "outcome": "stop_loss",
+        "ret_pct": -3.89,
+        "delta": -7.5
+      }
+    ],
     "enabled": true,
     "first_seen": "2026-09-07",
     "last_seen": "2026-09-11",
@@ -748,17 +764,25 @@
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
-    "score": 0.0,
+    "score": -7.5,
     "n_tips": 89,
-    "n_resolved": 0,
+    "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 0,
+    "n_sl": 1,
     "n_timestop": 0,
-    "sum_return_pct": 0.0,
+    "sum_return_pct": -3.89,
     "days_to_t1": [],
-    "history": [],
+    "history": [
+      {
+        "date": "2026-09-11",
+        "symbol": "V2RETAIL",
+        "outcome": "stop_loss",
+        "ret_pct": -3.89,
+        "delta": -7.5
+      }
+    ],
     "enabled": true,
     "first_seen": "2026-09-07",
     "last_seen": "2026-09-11",
@@ -814,5 +838,22 @@
     "first_seen": "2026-09-11",
     "last_seen": "2026-09-11",
     "id": "broker:iifl"
+  },
+  "chartink_rsi_oversold_bounce": {
+    "score": 0.0,
+    "n_tips": 0,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11",
+    "id": "chartink_rsi_oversold_bounce"
   }
 }

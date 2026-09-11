@@ -1,125 +1,83 @@
-# ---------------------------------------------------------------------------
-# Source registry. Every tip carries a source_id; confidence is tracked per
-# source_id in state/sources_confidence.json (starts at 0).
-#
-# kind:
-#   gnews     — Google News RSS query (fresh, cross-publisher). `query` is the
-#               search; `publisher` restricts by site:. Articles are fetched and
-#               tips extracted from text.
-#   page      — a listing page; article links matching `link_pattern` are fetched
-#   rss       — a plain RSS feed
-#   chartink  — a Chartink scan clause (system-generated candidates, not human tips)
-#   screener  — a Screener.in saved screen URL (needs public screen)
-#   telegram  — public channel via t.me/s/<channel> preview
-#   youtube   — (planned) channel transcript fetcher
-#   x         — (planned) X/Twitter handle
-#
-# Confidence is per source_id, so the same publisher split by column/analyst
-# (e.g. et_buy_sell_hold vs et_trading_guide) learns separately — useful, because
-# a paper's brokerage-roundup column and its "5 stocks to buy" listicle are not
-# equally reliable.
-# ---------------------------------------------------------------------------
-
 sources:
-  # ---------------- mainstream financial press ----------------
-  - id: et_recos_gnews
-    name: "Economic Times — stock recommendations (via Google News)"
-    kind: gnews
-    query: "stocks to buy OR \"buy sell or hold\" OR \"target price\" OR \"stock recommendations\""
-    publisher: economictimes.indiatimes.com
-    category: press
-    enabled: true
-
-  - id: et_recos_page
-    name: "Economic Times — /markets/stocks/recos"
-    kind: page
-    url: https://economictimes.indiatimes.com/markets/stocks/recos
-    link_pattern: "/markets/stocks/(recos|news)/[^\"']+\\.cms"
-    category: press
-    enabled: true
-
-  - id: mc_stock_ideas_gnews
-    name: "Moneycontrol — stock ideas / buy-sell calls (via Google News)"
-    kind: gnews
-    query: "\"buy\" stock target OR \"stocks to buy\" OR \"trade spotlight\" OR \"hot stocks\""
-    publisher: moneycontrol.com
-    category: press
-    enabled: true
-
-  - id: mint_gnews
-    name: "Mint — stock picks (via Google News)"
-    kind: gnews
-    query: "\"stocks to buy\" OR \"stock recommendations\" OR \"buy or sell\""
-    publisher: livemint.com
-    category: press
-    enabled: true
-
-  - id: bs_recos
-    name: "Business Standard — stock recommendations"
-    kind: page
-    url: https://www.business-standard.com/markets/stock-recommendations
-    link_pattern: "https://www.business-standard.com/markets/[^\"']+"
-    category: press
-    enabled: true
-
-  - id: fe_gnews
-    name: "Financial Express — stock picks (via Google News)"
-    kind: gnews
-    query: "\"stocks to buy\" OR \"buy\" \"target\""
-    publisher: financialexpress.com
-    category: press
-    enabled: true
-
-  # ---------------- brokerage research (as syndicated) ----------------
-  # The extractor tags the *brokerage* named in the text (Motilal, ICICI Direct,
-  # HDFC Sec, Axis, Kotak, Sharekhan, Angel One, Nuvama, Emkay, Citi, MS, ...)
-  # as a sub-source: source_id becomes  broker:<slug>  so each house is scored
-  # separately from the newspaper that carried the call.
-  - id: brokerage_gnews
-    name: "Brokerage calls (Motilal, ICICI Direct, HDFC Sec, Axis, Kotak, Angel One, Nuvama, Emkay…)"
-    kind: gnews
-    query: "(\"Motilal Oswal\" OR \"ICICI Direct\" OR \"HDFC Securities\" OR \"Axis Securities\" OR \"Kotak\" OR \"Sharekhan\" OR \"Angel One\" OR \"Nuvama\" OR \"Emkay\" OR \"Anand Rathi\" OR \"Choice\") (\"buy\" OR \"target price\") stock"
-    publisher: ""
-    category: brokerage
-    enabled: true
-
-  # ---------------- quant screeners (system-generated candidates) ----------------
-  - id: chartink_52w_breakout
-    name: "Chartink — 52-week-high breakout with 1.5x volume"
-    kind: chartink
-    clause: "( {cash} ( latest close > latest max( 250 , latest high ) * 0.99 and latest volume > latest sma( latest volume , 20 ) * 1.5 and latest close > 50 and latest sma( latest volume , 20 ) * latest close > 50000000 ) )"
-    default_timeframe: weekly
-    category: screener
-    enabled: true
-
-  - id: chartink_ema_pullback
-    name: "Chartink — pullback to 20 EMA in strong uptrend"
-    kind: chartink
-    clause: "( {cash} ( latest ema( latest close , 20 ) > latest ema( latest close , 50 ) and latest ema( latest close , 50 ) > latest ema( latest close , 200 ) and latest low <= latest ema( latest close , 20 ) * 1.02 and latest close >= latest ema( latest close , 20 ) * 0.99 and latest rsi( 14 ) > 45 and latest rsi( 14 ) < 62 and latest sma( latest volume , 20 ) * latest close > 50000000 ) )"
-    default_timeframe: weekly
-    category: screener
-    enabled: true
-
-  - id: chartink_squeeze
-    name: "Chartink — Bollinger squeeze (pre-breakout consolidation)"
-    kind: chartink
-    clause: "( {cash} ( latest upper bollinger band( 20 , 2 ) / latest lower bollinger band( 20 , 2 ) < 1.08 and latest close > latest ema( latest close , 200 ) and latest sma( latest volume , 20 ) * latest close > 50000000 ) )"
-    default_timeframe: monthly
-    category: screener
-    enabled: true
-
-  # ---------------- tipsters (add handles as Mohan supplies them) ----------------
-  # - id: tg_<channel>
-  #   name: "Telegram — @<channel>"
-  #   kind: telegram
-  #   channel: <channel>
-  #   category: tipster
-  #   enabled: true
-  # - id: yt_<channel>
-  #   kind: youtube
-  #   channel: <channel-id-or-handle>
-  #   enabled: false      # fetcher not yet implemented
-  # - id: x_<handle>
-  #   kind: x
-  #   handle: <handle>
-  #   enabled: false      # fetcher not yet implemented
+- id: et_recos_gnews
+  name: Economic Times — stock recommendations (via Google News)
+  kind: gnews
+  query: stocks to buy OR "buy sell or hold" OR "target price" OR "stock recommendations"
+  publisher: economictimes.indiatimes.com
+  category: press
+  enabled: true
+- id: et_recos_page
+  name: Economic Times — /markets/stocks/recos
+  kind: page
+  url: https://economictimes.indiatimes.com/markets/stocks/recos
+  link_pattern: /markets/stocks/(recos|news)/[^"']+\.cms
+  category: press
+  enabled: true
+- id: mc_stock_ideas_gnews
+  name: Moneycontrol — stock ideas / buy-sell calls (via Google News)
+  kind: gnews
+  query: '"buy" stock target OR "stocks to buy" OR "trade spotlight" OR "hot stocks"'
+  publisher: moneycontrol.com
+  category: press
+  enabled: true
+- id: mint_gnews
+  name: Mint — stock picks (via Google News)
+  kind: gnews
+  query: '"stocks to buy" OR "stock recommendations" OR "buy or sell"'
+  publisher: livemint.com
+  category: press
+  enabled: true
+- id: bs_recos
+  name: Business Standard — stock recommendations
+  kind: page
+  url: https://www.business-standard.com/markets/stock-recommendations
+  link_pattern: https://www.business-standard.com/markets/[^"']+
+  category: press
+  enabled: true
+- id: fe_gnews
+  name: Financial Express — stock picks (via Google News)
+  kind: gnews
+  query: '"stocks to buy" OR "buy" "target"'
+  publisher: financialexpress.com
+  category: press
+  enabled: true
+- id: brokerage_gnews
+  name: Brokerage calls (Motilal, ICICI Direct, HDFC Sec, Axis, Kotak, Angel One, Nuvama, Emkay…)
+  kind: gnews
+  query: ("Motilal Oswal" OR "ICICI Direct" OR "HDFC Securities" OR "Axis Securities" OR "Kotak" OR "Sharekhan" OR "Angel One" OR "Nuvama" OR "Emkay" OR "Anand Rathi" OR "Choice") ("buy" OR "target price")
+    stock
+  publisher: ''
+  category: brokerage
+  enabled: true
+- id: chartink_52w_breakout
+  name: Chartink — 52-week-high breakout with 1.5x volume
+  kind: chartink
+  clause: ( {cash} ( latest close > latest max( 250 , latest high ) * 0.99 and latest volume > latest sma( latest volume , 20 ) * 1.5 and latest close > 50 and latest sma( latest volume , 20 ) * latest
+    close > 50000000 ) )
+  default_timeframe: weekly
+  category: screener
+  enabled: true
+- id: chartink_ema_pullback
+  name: Chartink — pullback to 20 EMA in strong uptrend
+  kind: chartink
+  clause: ( {cash} ( latest ema( latest close , 20 ) > latest ema( latest close , 50 ) and latest ema( latest close , 50 ) > latest ema( latest close , 200 ) and latest low <= latest ema( latest close ,
+    20 ) * 1.02 and latest close >= latest ema( latest close , 20 ) * 0.99 and latest rsi( 14 ) > 45 and latest rsi( 14 ) < 62 and latest sma( latest volume , 20 ) * latest close > 50000000 ) )
+  default_timeframe: weekly
+  category: screener
+  enabled: true
+- id: chartink_squeeze
+  name: Chartink — Bollinger squeeze (pre-breakout consolidation)
+  kind: chartink
+  clause: ( {cash} ( latest upper bollinger band( 20 , 2 ) / latest lower bollinger band( 20 , 2 ) < 1.08 and latest close > latest ema( latest close , 200 ) and latest sma( latest volume , 20 ) * latest
+    close > 50000000 ) )
+  default_timeframe: monthly
+  category: screener
+  enabled: true
+- id: chartink_rsi_oversold_bounce
+  name: Chartink — RSI oversold bounce with volume confirmation
+  kind: chartink
+  category: screener
+  enabled: true
+  clause: ( {cash} ( latest rsi( 14 ) > 30 and 1 day ago rsi( 14 ) <= 30 and latest close > 1 day ago close and latest volume > latest sma( latest volume , 20 ) * 1.2 and latest sma( latest volume , 20
+    ) * latest close > 50000000 ) )
+  default_timeframe: weekly
