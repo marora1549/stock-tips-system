@@ -633,8 +633,16 @@ def _compose(base: float, got: dict, budget: dict, why: list) -> float:
         clamped = max(lo, min(hi, total))
         s += clamped
         if clamped != round(total, 2):
+            # Quote the bound that actually bound. Acutaas came out of a live run reading
+            # "value counted -10 of -20 ... so it is worth +5 at most" — the clamp was on the
+            # downside and the sentence quoted the upside, so a dimension that cost ten points
+            # read as if it had earned five.
+            if clamped == hi:
+                limit = f"the most it can add is {hi:+g}"
+            else:
+                limit = f"the most it can cost is {lo:+g}"
             why.append(f"  ({dim.replace('_', ' ')} counted {clamped:+g} of {total:+g} — its terms "
-                       f"measure the same thing more than once, so it is worth {hi:+g} at most)")
+                       f"measure the same thing more than once, so {limit})")
     return s
 
 
