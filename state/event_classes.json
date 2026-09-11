@@ -1,0 +1,22 @@
+{
+  "order_win": {
+    "id": "order_win",
+    "prior": 30,
+    "adjust": 2.304,
+    "n": 1,
+    "n_up": 1,
+    "sum_open_to_high_pct": 2.56,
+    "sum_open_to_close_pct": 2.36,
+    "history": [
+      {
+        "date": "2026-09-11",
+        "symbol": "POWERMECH",
+        "open_to_high_pct": 2.56,
+        "open_to_close_pct": 2.36,
+        "delta": 2.3
+      }
+    ],
+    "first_seen": "2026-09-11",
+    "last_seen": "2026-09-11"
+  }
+}

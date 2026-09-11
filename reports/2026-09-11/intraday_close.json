@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-11",
+  "settled_at": "2026-09-11 15:24",
+  "exits": [],
+  "graded": [
+    {
+      "symbol": "POWERMECH",
+      "event": "order_win",
+      "open_to_high_pct": 2.56,
+      "open_to_close_pct": 2.36,
+      "verdict": "WATCH",
+      "catalyst": 53,
+      "triggered": null,
+      "counted_for_class": true
+    }
+  ],
+  "book": {
+    "notional_inr": 100000.0,
+    "n_trades": 0,
+    "n_open": 0,
+    "open_symbols": [],
+    "n_wins": 0,
+    "n_losses": 0,
+    "hit_rate": null,
+    "pnl_inr": 0,
+    "return_on_notional_pct": 0.0,
+    "avg_r": null,
+    "best_inr": 0,
+    "worst_inr": 0,
+    "avg_win_inr": null,
+    "avg_loss_inr": null,
+    "n_days_traded": 0,
+    "pnl_by_day": {},
+    "n_candidates_seen": 0
+  },
+  "classes": [
+    {
+      "event": "order_win",
+      "prior": 30,
+      "effective": 32.3,
+      "n": 1,
+      "avg_open_to_high_pct": 2.56,
+      "avg_open_to_close_pct": 2.36,
+      "hit_rate": 1.0,
+      "adjust": 2.3,
+      "untested": false
+    }
+  ]
+}
