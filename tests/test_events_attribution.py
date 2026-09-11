@@ -200,3 +200,37 @@ def test_the_named_winner_keeps_its_materiality():
                             fund_score=78, ta={"avg_turnover_cr": 210.0, "close": 2000.0},
                             now=datetime(2026, 9, 8, 8, 0, tzinfo=ist))
     assert scored["materiality_ratio"] > 3.0
+
+
+def test_a_hypothetical_is_not_an_earnings_miss():
+    """Pearl Global Industries, 11 Sep 2026: a Q2 FY27 preview with no board meeting date yet was
+    AVOID-flagged as an earnings miss off "If that rate ever normalises, reported net profit falls
+    without anything changing in operations." Nothing had fallen; nothing had even been reported."""
+    got = events.classify("if that rate ever normalises, reported net profit falls without anything "
+                           "changing in operations.")
+    assert not any(c["event"] == "earnings_miss" for c in got)
+
+
+def test_a_reported_miss_still_classifies():
+    """The guard must not cost the case the whole event exists for."""
+    got = events.classify("Pearl Global Industries Q2 results: net profit falls 18% year on year.")
+    assert any(c["event"] == "earnings_miss" for c in got)
+
+
+def test_a_sympathy_echo_does_not_corroborate_a_named_story():
+    """11 Sep 2026: a Kothari Industrial rally story mentioned an old LoA "from Indian Railways'
+    Integral Coach Factory" in passing. The railway-orders theme fanned that one phrase out onto
+    TEXRAIL as a sympathy order-win — merge() then folded it into TEXRAIL's own, separately-named
+    order win as if the Kothari story were a second witness to it, complete with a citation link
+    that never mentions Texmaco Rail. A sympathy fan-out must never corroborate a named report,
+    even when both land on the same symbol and event class."""
+    named = {"symbol": "TEXRAIL", "event": "order_win", "event_prior": 30, "directness": 1.0,
+             "route": "named", "source_id": "corp_stocks_to_watch", "url": "https://livemint/texrail"}
+    sympathy = {"symbol": "TEXRAIL", "event": "order_win", "event_prior": 30, "directness": 0.4,
+                "route": "sympathy", "source_id": "corp_orders_bse", "url": "https://tv/kothari"}
+    got = {e["symbol"]: e for e in events.merge([named, sympathy])}
+    tex = got["TEXRAIL"]
+    assert tex["route"] == "named"
+    assert tex["n_reports"] == 1, "a sympathy echo is not a second report of the named story"
+    assert tex["corroborating_sources"] == []
+    assert "https://tv/kothari" not in tex["urls"], "the Kothari link says nothing about Texmaco Rail"

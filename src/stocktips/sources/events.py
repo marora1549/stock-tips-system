@@ -261,17 +261,37 @@ def themes_in(text: str) -> list[dict]:
     return hits
 
 
+# Pearl Global Industries was AVOID-flagged as an "earnings miss" on 11 September 2026 off a preview
+# article that had not yet reported: "If that rate ever normalises, reported net profit falls
+# without anything changing in operations." The pattern is a true reading of the sentence and a false
+# reading of the company — nothing has fallen, it is a hypothetical about a tax rate. classify() scans
+# a 12,000-char blob with no notion of a sentence being conditional, so any preview/analysis piece can
+# manufacture a "miss" or a "beat" out of a what-if. Skip a match whose immediate lead-in is
+# conditional and take the next occurrence of the same pattern instead.
+_CONDITIONAL_LEADIN = re.compile(r"\b(?:if|unless|hypothetical(?:ly)?|assuming|were (?:it|that|this)|"
+                                  r"in case|suppose|what if)\b")
+_CONDITIONAL_WINDOW = 60
+
+
+def _conditional(low: str, start: int) -> bool:
+    return bool(_CONDITIONAL_LEADIN.search(low[max(0, start - _CONDITIONAL_WINDOW):start]))
+
+
 def classify(text: str) -> list[dict]:
     """Every event class the text matches, strongest prior magnitude first."""
     low = re.sub(r"\s+", " ", (text or "").lower())
     out = []
     for cid, spec in EVENT_CLASSES.items():
         for pat in spec["patterns"]:
-            m = re.search(pat, low, re.I)
-            if m:
+            hit = None
+            for m in re.finditer(pat, low, re.I):
+                if not _conditional(low, m.start()):
+                    hit = m
+                    break
+            if hit:
                 out.append({"event": cid, "label": spec["label"], "sign": spec["sign"],
                             "certainty": spec["certainty"], "prior": spec["prior"],
-                            "phrase": m.group(0)[:120], "at": m.start()})
+                            "phrase": hit.group(0)[:120], "at": hit.start()})
                 break
     out.sort(key=lambda d: (-abs(d["prior"]), d["at"]))
     return out
@@ -559,7 +579,18 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
 
 
 def merge(events: list[dict]) -> list[dict]:
-    """One event per (symbol, class); repeat coverage becomes corroboration, not duplicates."""
+    """One event per (symbol, class); repeat coverage becomes corroboration, not duplicates.
+
+    A Kothari Industrial rally story on 10 Sep 2026 mentioned, deep in a paragraph about school
+    breakfast contracts, that it once won a small LoA "from Indian Railways' Integral Coach Factory"
+    — one theme keyword, enough to fan the "railway orders" theme out onto TEXRAIL, TITAGARH, IRCON,
+    RVNL and JWL as sympathy plays. TEXRAIL also had its own real, separately-named order win that
+    morning, and the two landed on the same (symbol, event) key: the sympathy mention became
+    "reported independently by 1 other source", with the Kothari URL cited as if it corroborated
+    Texmaco Rail — a story that never names Texmaco Rail is not a second witness to its order. A
+    "named" report and a "sympathy" fan-out are different kinds of claim about different underlying
+    stories; only same-route reports corroborate each other.
+    """
     by_key: dict[tuple, dict] = {}
     for e in sorted(events, key=lambda x: (-abs(x["event_prior"]), -(x["directness"]))):
         key = (e["symbol"], e["event"])
@@ -568,6 +599,8 @@ def merge(events: list[dict]) -> list[dict]:
             by_key[key] = {**e, "corroborating_sources": [], "urls": [e["url"]] if e["url"] else [],
                            "n_reports": 1}
             continue
+        if e["route"] != keep["route"]:
+            continue          # a sympathy/theme echo is not a witness to the named story
         keep["n_reports"] += 1
         if e["source_id"] != keep["source_id"] and e["source_id"] not in keep["corroborating_sources"]:
             keep["corroborating_sources"].append(e["source_id"])
