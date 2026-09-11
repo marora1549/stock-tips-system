@@ -357,3 +357,29 @@ def test_the_self_check_stays_quiet_on_a_sound_sheet():
          "sales_growth_prev_1y_pct": 46.23, "profit_growth_1y_pct": 6.21,
          "promoter_pct": 70.19, "institutional_pct": 1.37, "opm_pct": 24.0, "pe": 19.8}
     assert fu._self_check(d) == []
+
+
+def test_a_clamp_quotes_the_bound_that_actually_bound():
+    """Found in a live morning card, not in a test. Acutaas printed
+
+        (value counted -10 of -20 ... so it is worth +5 at most)
+
+    — the clamp was on the downside and the sentence quoted the upside, so a dimension that cost
+    the company ten points read as though it had earned five. The number was right; the
+    explanation under it was not, which is the kind of defect that survives because nobody checks
+    prose against arithmetic."""
+    dear = fu.assess({"roce": 31.6, "roe": 24.0, "pe": 73.2, "market_cap_cr": 28257.0,
+                      "promoter_pct": 32.66, "book_value": 200.0, "price": 3416.0,
+                      "revenue_fy_cr": 2000.0, "profit_fy_cr": 356.0, "cfo_cr": 292.0,
+                      "cfo_negative_streak": 0})
+    clamps = [w for w in dear["why"] if "measure the same thing" in w]
+    assert clamps, "this sheet must clamp at least one dimension"
+    for line in clamps:
+        counted = float(line.split("counted ")[1].split(" of ")[0])
+        if counted < 0:
+            assert "the most it can cost" in line, f"a downside clamp quoting the upside: {line}"
+            assert "can add" not in line
+        else:
+            assert "the most it can add" in line, f"an upside clamp quoting the downside: {line}"
+    assert any("the most it can cost" in w for w in clamps), \
+        "17x book on a 73 P/E must bind the valuation floor — the exact live case"

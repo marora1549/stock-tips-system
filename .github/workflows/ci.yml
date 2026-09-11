@@ -1,0 +1,62 @@
+name: ci
+
+# The gate that did not exist.
+#
+# On 10 September the 08:00 routine mailed a card scoring Enviro Infra 92 — a number corrected to
+# 32 the day before. Nothing failed: 190 tests passed, the routine succeeded, the email arrived and
+# looked completely normal. The correction was on a branch and the routine clones `main`.
+#
+# `stocktips selfcheck` now catches that at 08:00, in the container, after the fact. This catches
+# it *before the merge*, which is the only place it can actually be prevented — and it means the
+# claims made in every commit message ("204 tests", "zero outbound requests", "no live state
+# touched") are enforced rather than asserted by whoever happened to run them last.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONPATH: src
+      # A test that quietly reaches Screener or Yahoo is slow, flaky, and passes or fails on
+      # somebody else's uptime. tests/conftest.py refuses outbound requests when this is set.
+      STOCKTIPS_NO_NETWORK: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -q -r requirements.txt pytest
+
+      - name: Tests
+        run: python -m pytest -q
+
+      - name: The test suite must not have written into state/
+        # It has, twice: two fixtures redirected ledger.PATH but not sparks.PATH, and a probe
+        # script wrote the real source scores. tests/conftest.py redirects every path now, and
+        # this proves the guard still covers them rather than trusting that it does.
+        run: git diff --exit-code -- state/ reports/ docs/data.json
+
+      - name: Scorer canaries
+        # The same seven known-answer checks the routines run at 08:00, run here instead against
+        # the code about to land on main.
+        run: python -m stocktips selfcheck
+
+      - name: The dashboard must parse and its data must be renderable
+        run: |
+          python scripts/check_dashboard.py
