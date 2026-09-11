@@ -1,0 +1,1614 @@
+{
+  "date": "2026-09-11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 8
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 5,
+      "events": 14
+    },
+    "corp_approvals": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 5
+    },
+    "corp_expansion": {
+      "docs": 8,
+      "events": 7
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_bs_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "36f291da4f",
+      "symbol": "BPCL",
+      "company": "Bharat Petroleum Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+      "title": "Bharat Petroleum Corporation Ltd eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:26 GMT",
+      "published_utc": "2026-09-10T08:46:26+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6bdfa1f727",
+      "symbol": "CEINSYS",
+      "company": "Ceinsys Tech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 28.0,
+      "size_estimated": false,
+      "size_basis": "Rs 28 cr",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 75.0,
+        "unit": "MW",
+        "text": "75 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html",
+      "title": "Ceinsys Tech receives electrical substation work order worth Rs 28 cr",
+      "published": "Thu, 10 Sep 2026 08:34:02 GMT",
+      "published_utc": "2026-09-10T08:34:02+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "4912c6c6b3",
+      "symbol": "DEVIT",
+      "company": "Dev Information Technology Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins enterprise technology order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/devit-wins-enterprise-technology-order-from-cpri-bangalore-126091001441_1.html",
+      "title": "DEVIT wins enterprise technology order from CPRI, Bangalore",
+      "published": "Thu, 10 Sep 2026 14:34:24 GMT",
+      "published_utc": "2026-09-10T14:34:24+00:00",
+      "sentence": "wins enterprise technology order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/devit-wins-enterprise-technology-order-from-cpri-bangalore-126091001441_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0d8718027f",
+      "symbol": "EIEL",
+      "company": "Enviro Infra Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins enviro infra shares rally 10% in two sessions on back-to-back order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 180.0,
+        "unit": "MW",
+        "text": "180 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/enviro-infra-shares-rally-10-in-two-sessions-on-back-to-back-order-wins-126091000627_1.html",
+      "title": "Enviro Infra shares rally 10% in two sessions on back-to-back order wins",
+      "published": "Thu, 10 Sep 2026 08:58:47 GMT",
+      "published_utc": "2026-09-10T08:58:47+00:00",
+      "sentence": "wins enviro infra shares rally 10% in two sessions on back-to-back order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/enviro-infra-shares-rally-10-in-two-sessions-on-back-to-back-order-wins-126091000627_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e4a5d6d26d",
+      "symbol": "INDIANB",
+      "company": "Indian Bank",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/indian-bank-eases-for-fifth-straight-session-126091000617_1.html",
+      "title": "Indian Bank eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:34 GMT",
+      "published_utc": "2026-09-10T08:46:34+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/indian-bank-eases-for-fifth-straight-session-126091000617_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "02122b472a",
+      "symbol": "JASH",
+      "company": "Jash Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 66.0,
+      "size_estimated": false,
+      "size_basis": "Rs 66 cr",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jash-engineering-secures-orders-worth-rs-66-cr-in-aug-26-126091000642_1.html",
+      "title": "Jash Engineering secures orders worth Rs 66 cr in Aug'26",
+      "published": "Thu, 10 Sep 2026 09:01:14 GMT",
+      "published_utc": "2026-09-10T09:01:14+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/jash-engineering-secures-orders-worth-rs-66-cr-in-aug-26-126091000642_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "68becfe6be",
+      "symbol": "KOTIC",
+      "company": "Kothari Industrial Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins had taken the company's disclosed order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 14.5,
+      "size_estimated": false,
+      "size_basis": "Rs.14.5 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "published_utc": "2026-09-10T10:02:21+00:00",
+      "sentence": "wins had taken the company's disclosed order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e2710d3d3c",
+      "symbol": "NILAINFRA",
+      "company": "Nila Infrastructures Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "win fresh work and replace the lost order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/real-estate/nila-infrastructures-nse-nilainfra-can-it-surprise-the-market-after-a-setback",
+      "title": "Nila Infrastructures (NSE: NILAINFRA): Growth Story Meets a Setback",
+      "published": "Thu, 10 Sep 2026 13:12:00 GMT",
+      "published_utc": "2026-09-10T13:12:00+00:00",
+      "sentence": "win fresh work and replace the lost order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/real-estate/nila-infrastructures-nse-nilainfra-can-it-surprise-the-market-after-a-setback"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f511378a80",
+      "symbol": "POWERMECH",
+      "company": "Power Mech Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged by power mech hyderabad-based epc firm power mech projects has bagged a new order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 970.0,
+      "size_estimated": false,
+      "size_basis": "Rs 970 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2.0,
+        "unit": "MW",
+        "text": "2 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/order-worth-rs-970-crore-bagged-by-power-mech",
+      "title": "Order worth Rs 970 crore bagged by Power Mech",
+      "published": "Thu, 10 Sep 2026 18:59:09 GMT",
+      "published_utc": "2026-09-10T18:59:09+00:00",
+      "sentence": "bagged by power mech hyderabad-based epc firm power mech projects has bagged a new order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/order-worth-rs-970-crore-bagged-by-power-mech"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d60cb9660f",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [
+        "dilution",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 27.82,
+      "size_estimated": false,
+      "size_basis": "₹ 27.82 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 150.0,
+        "unit": "MW",
+        "text": "150 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-fino-payments-kims-texmaco-rail-shares-on-fri-11-sept-triggers-11789037727262.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Fino Payments, KIMS, Texmaco Rail shares on Fri, 11 Sept | Triggers",
+      "published": "Thu, 10 Sep 2026 14:12:33 GMT",
+      "published_utc": "2026-09-10T14:12:33+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-fino-payments-kims-texmaco-rail-shares-on-fri-11-sept-triggers-11789037727262.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d52b670dbf",
+      "symbol": "DGCONTENT",
+      "company": "Digicontent Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags rs 50 crore international order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 50.0,
+      "size_estimated": false,
+      "size_basis": "Rs 50 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/kalind-limited-bags-rs-50-crore-international-order-from-ghana-based-ame-saki-mining-and-construction-126091001064_1.html",
+      "title": "Kalind Limited Bags Rs 50 Crore International Order from Ghana-Based AME SAKI Mining and Construction",
+      "published": "Thu, 10 Sep 2026 12:00:09 GMT",
+      "published_utc": "2026-09-10T12:00:09+00:00",
+      "sentence": "bags rs 50 crore international order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/kalind-limited-bags-rs-50-crore-international-order-from-ghana-based-ame-saki-mining-and-construction-126091001064_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9418d52e21",
+      "symbol": "HINDALCO",
+      "company": "Hindalco Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded an order",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 27.82,
+      "size_estimated": false,
+      "size_basis": "Rs 27.82 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59485",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Thu, 10 Sep 2026 15:08:48 GMT",
+      "published_utc": "2026-09-10T15:08:48+00:00",
+      "sentence": "awarded an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59485"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d45a0e5280",
+      "symbol": "PATELENG",
+      "company": "Patel Engineering Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit was up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/patel-engineering-q2-results-fy27-preview-date-expectations",
+      "title": "Patel Engineering Q2 FY27: Date and Expectations",
+      "published": "Thu, 10 Sep 2026 08:45:00 GMT",
+      "published_utc": "2026-09-10T08:45:00+00:00",
+      "sentence": "net profit was up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/patel-engineering-q2-results-fy27-preview-date-expectations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4b64cf48db",
+      "symbol": "PGEL",
+      "company": "PG Electroplast Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit was up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/pg-electroplast-q2-results-fy27-preview-date-expectations",
+      "title": "PG Electroplast Q2 FY27: Date and Expectations",
+      "published": "Thu, 10 Sep 2026 08:31:00 GMT",
+      "published_utc": "2026-09-10T08:31:00+00:00",
+      "sentence": "net profit was up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/pg-electroplast-q2-results-fy27-preview-date-expectations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "967d758cb1",
+      "symbol": "PGIL",
+      "company": "Pearl Global Industries Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit was up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/pearl-global-industries-q2-results-fy27-preview-date-expectations",
+      "title": "Pearl Global Industries Q2 FY27: Date and Outlook",
+      "published": "Thu, 10 Sep 2026 08:33:00 GMT",
+      "published_utc": "2026-09-10T08:33:00+00:00",
+      "sentence": "net profit was up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/pearl-global-industries-q2-results-fy27-preview-date-expectations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8bda26f275",
+      "symbol": "PICCADIL",
+      "company": "Piccadily Agro Industries Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit was up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/piccadily-agro-industries-q2-results-fy27-preview-date-expectations",
+      "title": "Piccadily Agro Q2 FY27 Results: Date and Outlook",
+      "published": "Thu, 10 Sep 2026 08:35:00 GMT",
+      "published_utc": "2026-09-10T08:35:00+00:00",
+      "sentence": "net profit was up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/piccadily-agro-industries-q2-results-fy27-preview-date-expectations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e1c3a2b01",
+      "symbol": "UMESLTD",
+      "company": "Usha Martin Education & Solutions Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jump",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 9.85,
+      "size_estimated": false,
+      "size_basis": "₹98.5 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Thu, 10 Sep 2026 22:05:22 GMT",
+      "published_utc": "2026-09-10T22:05:22+00:00",
+      "sentence": "profit jump",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f3531d9cb5",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 35 mw of wind power capacity",
+      "also_matched": [
+        "order_win",
+        "dilution",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-hdfc-bank-voda-idea-kotak-bank-premier-energies-bharat-forge-juniper-green-554735-2026-09-11",
+      "title": "Top stocks in news: HDFC Bank, Voda Idea, Kotak Bank, Premier Energies, Bharat Forge, Juniper Green",
+      "published": "Fri, 11 Sep 2026 02:08:47 GMT",
+      "published_utc": "2026-09-11T02:08:47+00:00",
+      "sentence": "commissioned 35 mw of wind power capacity",
+      "corroborating_sources": [
+        "corp_expansion"
+      ],
+      "urls": [
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-hdfc-bank-voda-idea-kotak-bank-premier-energies-bharat-forge-juniper-green-554735-2026-09-11",
+        "https://www.cnbctv18.com/business/companies/juniper-green-energy-commissions-35-mw-of-wind-capacity-in-gujarat-19988782.htm/amp",
+        "https://scanx.trade/stock-market-news/companies/juniper-green-energy-adds-6-25-mw-wind-capacity-total-hits-2-594-mwp/50437004"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "8a9659f175",
+      "symbol": "MILKYMIST",
+      "company": "Milky Mist Dairy Food Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹40 crore yogurt plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 40.0,
+      "size_estimated": false,
+      "size_basis": "Rs 40 cr (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/milky-mist-dairy-food-commissions-40-crore-yogurt-plant/50596172",
+      "title": "Milky Mist Dairy commissions ₹40 crore yogurt plant in Tamil Nadu",
+      "published": "Fri, 11 Sep 2026 02:22:43 GMT",
+      "published_utc": "2026-09-11T02:22:43+00:00",
+      "sentence": "commissions ₹40 crore yogurt plant",
+      "corroborating_sources": [
+        "corp_stocks_to_watch"
+      ],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/milky-mist-dairy-food-commissions-40-crore-yogurt-plant/50596172",
+        "https://timesofindia.indiatimes.com/city/chennai/milky-mist-commissions-40-cr-skyr-greek-yoghurt-plant/articleshow/134019316.cms",
+        "https://www.dtnext.in/news/business/milky-mist-commissions-rs-40-cr-skyr-greek-yoghurt-plant-in-tn",
+        "https://www.thehindubusinessline.com/companies/milky-mist-commissions-new-high-protein-skyr-and-yoghurt-plant/article71452388.ece/amp/",
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-11-2026-godrej-properties-orient-tech/50635857"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "bc7bade285",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 35 mw of wind power capacity",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-canara-bank-vodafone-idea-premier-energies-and-acme-solar/articleshow/133995333.cms",
+      "title": "Stocks in news: Canara Bank, Vodafone Idea, Premier Energies and ACME Solar",
+      "published": "Fri, 11 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-11T00:30:00+00:00",
+      "sentence": "commissioned 35 mw of wind power capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-canara-bank-vodafone-idea-premier-energies-and-acme-solar/articleshow/133995333.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d4eeae4dec",
+      "symbol": "TATASTEEL",
+      "company": "Tata Steel Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions india's 1st coke oven gas injection project at its odisha plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/indl-goods/svs/steel/tata-steel-commissions-indias-1st-coke-oven-gas-injection-project-at-its-odisha-plant/articleshow/134015576.cms",
+      "title": "Tata Steel commissions India's 1st coke oven gas injection project at its Odisha plant",
+      "published": "Thu, 10 Sep 2026 14:44:35 GMT",
+      "published_utc": "2026-09-10T14:44:35+00:00",
+      "sentence": "commissions india's 1st coke oven gas injection project at its odisha plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/indl-goods/svs/steel/tata-steel-commissions-indias-1st-coke-oven-gas-injection-project-at-its-odisha-plant/articleshow/134015576.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "568591e66a",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 28.0,
+      "size_estimated": false,
+      "size_basis": "Rs 28 cr",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 75.0,
+        "unit": "MW",
+        "text": "75 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html",
+      "title": "Ceinsys Tech receives electrical substation work order worth Rs 28 cr",
+      "published": "Thu, 10 Sep 2026 08:34:02 GMT",
+      "published_utc": "2026-09-10T08:34:02+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [
+        "corp_orders_bse",
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/indian-bank-eases-for-fifth-straight-session-126091000617_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/jash-engineering-secures-orders-worth-rs-66-cr-in-aug-26-126091000642_1.html",
+        "https://www.business-standard.com/markets/news/enviro-infra-shares-rally-10-in-two-sessions-on-back-to-back-order-wins-126091000627_1.html"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "c4232c7914",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 28.0,
+      "size_estimated": false,
+      "size_basis": "Rs 28 cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+      "title": "Bharat Petroleum Corporation Ltd eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:26 GMT",
+      "published_utc": "2026-09-10T08:46:26+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/indian-bank-eases-for-fifth-straight-session-126091000617_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/jash-engineering-secures-orders-worth-rs-66-cr-in-aug-26-126091000642_1.html",
+        "https://www.business-standard.com/markets/news/enviro-infra-shares-rally-10-in-two-sessions-on-back-to-back-order-wins-126091000627_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "d5de0dec37",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "earnings_beat",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hdfc-bank-neogen-chemicals-premier-energies-shankesh-jewellers-qualiance-international-lotus-developers-in-focus-on-11-september-14027481.html",
+      "title": "Stocks to Watch Today: HDFC Bank, Neogen Chemicals, Premier Energies, Shankesh Jewellers, Qualiance...",
+      "published": "Fri, 11 Sep 2026 01:24:39 GMT",
+      "published_utc": "2026-09-11T01:24:39+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hdfc-bank-neogen-chemicals-premier-energies-shankesh-jewellers-qualiance-international-lotus-developers-in-focus-on-11-september-14027481.html",
+        "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-hdfc-bank-voda-idea-kotak-bank-premier-energies-bharat-forge-juniper-green-554735-2026-09-11"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "347e0f67bc",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins had taken the company's disclosed order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 14.5,
+      "size_estimated": false,
+      "size_basis": "Rs.14.5 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "published_utc": "2026-09-10T10:02:21+00:00",
+      "sentence": "wins had taken the company's disclosed order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "202d097a6a",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins had taken the company's disclosed order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 14.5,
+      "size_estimated": false,
+      "size_basis": "Rs.14.5 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "published_utc": "2026-09-10T10:02:21+00:00",
+      "sentence": "wins had taken the company's disclosed order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1b0159d387",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins had taken the company's disclosed order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 14.5,
+      "size_estimated": false,
+      "size_basis": "Rs.14.5 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "published_utc": "2026-09-10T10:02:21+00:00",
+      "sentence": "wins had taken the company's disclosed order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a635a030cc",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins had taken the company's disclosed order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 14.5,
+      "size_estimated": false,
+      "size_basis": "Rs.14.5 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "published_utc": "2026-09-10T10:02:21+00:00",
+      "sentence": "wins had taken the company's disclosed order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2635a223e7",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives electrical substation work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 28.0,
+      "size_estimated": false,
+      "size_basis": "Rs 28 cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+      "title": "Bharat Petroleum Corporation Ltd eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:26 GMT",
+      "published_utc": "2026-09-10T08:46:26+00:00",
+      "sentence": "receives electrical substation work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6348e97836",
+      "symbol": "KEI",
+      "company": "KEI Industries Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹40 crore yogurt plant",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "EHV cables and house wire",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables",
+        "data_centre"
+      ],
+      "size_inr_cr": 27.72,
+      "size_estimated": false,
+      "size_basis": "$3.15 million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-11-2026-godrej-properties-orient-tech/50635857",
+      "title": "Stocks to Watch Today, September 11, 2026: Godrej Properties, ORIENT TECH, Sterlite Technologies, Responsive Industries and Shree Pushkar Chemicals",
+      "published": "Fri, 11 Sep 2026 01:52:03 GMT",
+      "published_utc": "2026-09-11T01:52:03+00:00",
+      "sentence": "commissions ₹40 crore yogurt plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-11-2026-godrej-properties-orient-tech/50635857"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hdfc-bank-neogen-chemicals-premier-energies-shankesh-jewellers-qualiance-international-lotus-developers-in-focus-on-11-september-14027481.html",
+      "title": "Stocks to Watch Today: HDFC Bank, Neogen Chemicals, Premier Energies, Shankesh Jewellers, Qualiance...",
+      "published": "Fri, 11 Sep 2026 01:24:39 GMT",
+      "chars": 9967,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-canara-bank-vodafone-idea-premier-energies-and-acme-solar/articleshow/133995333.cms",
+      "title": "Stocks in news: Canara Bank, Vodafone Idea, Premier Energies and ACME Solar",
+      "published": "Fri, 11 Sep 2026 00:30:00 GMT",
+      "chars": 7772,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=09/11/2026&story=2&title=3-Stocks-to-Watch-for-the-Long-Term&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "3 Stocks to Watch for the Long Term",
+      "published": "Fri, 11 Sep 2026 02:30:00 GMT",
+      "chars": 12160,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-hdfc-bank-voda-idea-kotak-bank-premier-energies-bharat-forge-juniper-green-554735-2026-09-11",
+      "title": "Top stocks in news: HDFC Bank, Voda Idea, Kotak Bank, Premier Energies, Bharat Forge, Juniper Green",
+      "published": "Fri, 11 Sep 2026 02:08:47 GMT",
+      "chars": 5072,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-fino-payments-kims-texmaco-rail-shares-on-fri-11-sept-triggers-11789037727262.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Fino Payments, KIMS, Texmaco Rail shares on Fri, 11 Sept | Triggers",
+      "published": "Thu, 10 Sep 2026 14:12:33 GMT",
+      "chars": 5059,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59485",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Thu, 10 Sep 2026 15:08:48 GMT",
+      "chars": 3554,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-11-2026-godrej-properties-orient-tech/50635857",
+      "title": "Stocks to Watch Today, September 11, 2026: Godrej Properties, ORIENT TECH, Sterlite Technologies, Responsive Industries and Shree Pushkar Chemicals",
+      "published": "Fri, 11 Sep 2026 01:52:03 GMT",
+      "chars": 3958,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.ssbcrack.com/2026/09/tata-advanced-systems-emerges-as-lowest-bidder-for-%E2%82%B920000-crore-zorawar-light-tank-programme.html",
+      "title": "Tata Advanced Systems Emerges as Lowest Bidder for ₹20,000 Crore Zorawar Light Tank Programme",
+      "published": "Thu, 10 Sep 2026 12:33:20 GMT",
+      "chars": 9130,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/order-worth-rs-970-crore-bagged-by-power-mech",
+      "title": "Order worth Rs 970 crore bagged by Power Mech",
+      "published": "Thu, 10 Sep 2026 18:59:09 GMT",
+      "chars": 698,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/ge-vernova-emerges-as-l1-bidder-for-power-grid-hvdc-project/97219",
+      "title": "GE Vernova Emerges as L1 Bidder for Power Grid HVDC Project",
+      "published": "Thu, 10 Sep 2026 12:56:18 GMT",
+      "chars": 5825,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html",
+      "title": "Ceinsys Tech receives electrical substation work order worth Rs 28 cr",
+      "published": "Thu, 10 Sep 2026 08:34:02 GMT",
+      "chars": 1315,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/real-estate/nila-infrastructures-nse-nilainfra-can-it-surprise-the-market-after-a-setback",
+      "title": "Nila Infrastructures (NSE: NILAINFRA): Growth Story Meets a Setback",
+      "published": "Thu, 10 Sep 2026 13:12:00 GMT",
+      "chars": 7026,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:cb6d79926f2cb:0-kothari-industrial-share-price-zooms-11-stock-down-74-in-one-year-what-s-fuelling-the-rally/",
+      "title": "Kothari Industrial share price zooms 11%! Stock down 74% in one year | What's fuelling the rally?",
+      "published": "Thu, 10 Sep 2026 10:02:21 GMT",
+      "chars": 3286,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bharat-petroleum-corporation-ltd-eases-for-fifth-straight-session-126091000616_1.html",
+      "title": "Bharat Petroleum Corporation Ltd eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:26 GMT",
+      "chars": 2133,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/indian-bank-eases-for-fifth-straight-session-126091000617_1.html",
+      "title": "Indian Bank eases for fifth straight session",
+      "published": "Thu, 10 Sep 2026 08:46:34 GMT",
+      "chars": 2013,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.latestly.com/agency-news/business-news-kalind-limited-bags-rs-50-crore-international-order-from-ghana-based-ame-saki-mining-and-construction-7598464.html",
+      "title": "Business News",
+      "published": "Thu, 10 Sep 2026 10:42:25 GMT",
+      "chars": 5200,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/regulatory/enspryng-mogad-fda-approval-grants-priority/",
+      "title": "Roche moves Enspryng toward first approved MOGAD therapy",
+      "published": "Thu, 10 Sep 2026 09:33:07 GMT",
+      "chars": 2117,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://univest.in/blogs/multibagger-drugmaker-stock-rises-848-percent-in-3-years",
+      "title": "Multibagger Drugmaker Stock Up 848% in 3 Years: What Drove It",
+      "published": "Thu, 10 Sep 2026 18:02:29 GMT",
+      "chars": 13816,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/dr-reddys-schedules-analyst-institutional-investor-meetings-september/50589113",
+      "title": "Dr Reddys schedules analyst and institutional investor meetings for September",
+      "published": "Thu, 10 Sep 2026 12:34:51 GMT",
+      "chars": 2364,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://markets.businessinsider.com/news/stocks/xortx-announces-initiation-of-clinical-and-commercial-manufacturing-of-xorlo-1036537635",
+      "title": "XORTX Announces Initiation of Clinical and Commercial Manufacturing of XORLO™",
+      "published": "Thu, 10 Sep 2026 21:04:17 GMT",
+      "chars": 7492,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/indoco-remedies-goa-plant-clears-ukmhra-cgmp-inspection-126091000640_1.html",
+      "title": "Indoco Remedies' Goa plant clears UKMHRA cGMP inspection",
+      "published": "Thu, 10 Sep 2026 09:01:02 GMT",
+      "chars": 2865,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/her2-mutated-lung-cancer-treatment-fda-grants/",
+      "title": "Bayer’s Hyrnuo joins Boehringer’s Hernexeos in first-line HER2-mutant NSCLC",
+      "published": "Thu, 10 Sep 2026 09:11:19 GMT",
+      "chars": 2429,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/bayer-stock-reacts-to-deutsche-bank-and-barclays-targets-after-fda-cancer/70081722",
+      "title": "Bayer stock reacts to Deutsche Bank and Barclays targets after FDA cancer drug approval - ad-hoc-news.de",
+      "published": "Thu, 10 Sep 2026 13:17:26 GMT",
+      "chars": 4396,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://wkzo.com/2026/09/10/us-fda-pauses-new-enrollment-in-biohavens-epilepsy-drug-trials/",
+      "title": "US FDA pauses new enrollment in Biohaven’s epilepsy drug trials",
+      "published": "Thu, 10 Sep 2026 17:42:43 GMT",
+      "chars": 1972,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.livelawbiz.com/amp/securities-law/sat/securities-appellate-tribunal-dismisses-karvy-stock-broking-appeal-against-sebi-order-refuses-condone-688-day-delay-549543",
+      "title": "SAT Mumbai Refuses To Condon Karvy's 688-Day Delay Against SEBI Order, Finds Reasons Not Genuine",
+      "published": "Thu, 10 Sep 2026 09:29:33 GMT",
+      "chars": 4445,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.moneycontrol.com/news/business/markets/sat-rejects-karvy-stock-broking-and-c-parthasarathy-s-appeal-over-688-day-delay-14027151.html/amp",
+      "title": "SAT rejects Karvy Stock Broking and C Parthasarathy's appeal over 688-day delay",
+      "published": "Thu, 10 Sep 2026 10:44:53 GMT",
+      "chars": 6241,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.prnewswire.com/news-releases/bbnx-shareholder-alert-investors-with-losses-may-seek-to-lead-the-class-action-in-beta-bionics-inc-securities-lawsuit---contact-suewallst-302874886.html",
+      "title": "BBNX Shareholder Alert: Investors With Losses May Seek to Lead the Class Action in Beta Bionics, Inc. Securities Lawsuit - Contact SueWallSt",
+      "published": "Thu, 10 Sep 2026 14:10:00 GMT",
+      "chars": 6371,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://650keni.iheart.com/content/2026-09-10-fda-probes-salmonella-outbreak-tied-to-recalled-broccoli-sprouts/",
+      "title": "FDA Probes Salmonella Outbreak Tied To Recalled Broccoli Sprouts",
+      "published": "Thu, 10 Sep 2026 19:44:00 GMT",
+      "chars": 3505,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Thu, 10 Sep 2026 22:05:22 GMT",
+      "chars": 4578,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/indogulf-cropsciences-q2-results-fy27-preview-date-expectations",
+      "title": "Indogulf Cropsciences Q2 FY27: Date and Outlook",
+      "published": "Thu, 10 Sep 2026 11:59:00 GMT",
+      "chars": 12184,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vama-industries-sets-sep-2-board-meeting-fy26-results-agm-date/49469510",
+      "title": "Vama Industries revenue falls 77% in FY26; standalone profit drops to ₹2.1 lakh",
+      "published": "Thu, 10 Sep 2026 17:32:09 GMT",
+      "chars": 3410,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/pearl-global-industries-q2-results-fy27-preview-date-expectations",
+      "title": "Pearl Global Industries Q2 FY27: Date and Outlook",
+      "published": "Thu, 10 Sep 2026 08:33:00 GMT",
+      "chars": 12291,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/piccadily-agro-industries-q2-results-fy27-preview-date-expectations",
+      "title": "Piccadily Agro Q2 FY27 Results: Date and Outlook",
+      "published": "Thu, 10 Sep 2026 08:35:00 GMT",
+      "chars": 12361,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/challani-capital-fy26-results-net-profit-drops-60-74-95-lakh/50589017",
+      "title": "Challani Capital FY26 Results: Net profit drops 60% to ₹74.95 lakh",
+      "published": "Thu, 10 Sep 2026 12:34:50 GMT",
+      "chars": 4001,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/pg-electroplast-q2-results-fy27-preview-date-expectations",
+      "title": "PG Electroplast Q2 FY27: Date and Expectations",
+      "published": "Thu, 10 Sep 2026 08:31:00 GMT",
+      "chars": 11997,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/patel-engineering-q2-results-fy27-preview-date-expectations",
+      "title": "Patel Engineering Q2 FY27: Date and Expectations",
+      "published": "Thu, 10 Sep 2026 08:45:00 GMT",
+      "chars": 12036,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/milky-mist-dairy-food-commissions-40-crore-yogurt-plant/50596172",
+      "title": "Milky Mist Dairy commissions ₹40 crore yogurt plant in Tamil Nadu",
+      "published": "Fri, 11 Sep 2026 02:22:43 GMT",
+      "chars": 3810,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://timesofindia.indiatimes.com/city/chennai/milky-mist-commissions-40-cr-skyr-greek-yoghurt-plant/articleshow/134019316.cms",
+      "title": "Milky Mist commissions ₹40 cr skyr, greek yoghurt plant",
+      "published": "Thu, 10 Sep 2026 16:14:00 GMT",
+      "chars": 1510,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.dtnext.in/news/business/milky-mist-commissions-rs-40-cr-skyr-greek-yoghurt-plant-in-tn",
+      "title": "Milky Mist commissions Rs 40 cr Skyr, Greek yoghurt plant in TN",
+      "published": "Thu, 10 Sep 2026 16:05:29 GMT",
+      "chars": 1762,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/business/companies/juniper-green-energy-commissions-35-mw-of-wind-capacity-in-gujarat-19988782.htm/amp",
+      "title": "Juniper Green Energy commissions 35 MW of wind capacity in Gujarat",
+      "published": "Thu, 10 Sep 2026 15:16:07 GMT",
+      "chars": 1615,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-adds-6-25-mw-wind-capacity-total-hits-2-594-mwp/50437004",
+      "title": "Juniper Green Energy commissions 35 MW wind capacity in hybrid project",
+      "published": "Thu, 10 Sep 2026 13:06:28 GMT",
+      "chars": 2933,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.sahi.com/news/milky-mist-commissions-40-crore-skyr-and-greek-yogurt-plant-at-perundurai-8758896-PE1_",
+      "title": "Milky Mist Commissions ₹40 Crore Skyr And Greek Yogurt Plant At Perundurai",
+      "published": "Fri, 11 Sep 2026 00:38:57 GMT",
+      "chars": 4247,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.thehindubusinessline.com/companies/milky-mist-commissions-new-high-protein-skyr-and-yoghurt-plant/article71452388.ece/amp/",
+      "title": "Milky Mist commissions new high-protein Skyr and Yoghurt plant",
+      "published": "Thu, 10 Sep 2026 14:53:18 GMT",
+      "chars": 1531,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/indl-goods/svs/steel/tata-steel-commissions-indias-1st-coke-oven-gas-injection-project-at-its-odisha-plant/articleshow/134015576.cms",
+      "title": "Tata Steel commissions India's 1st coke oven gas injection project at its Odisha plant",
+      "published": "Thu, 10 Sep 2026 14:44:35 GMT",
+      "chars": 3024,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jash-engineering-secures-orders-worth-rs-66-cr-in-aug-26-126091000642_1.html",
+      "title": "Jash Engineering secures orders worth Rs 66 cr in Aug'26",
+      "published": "Thu, 10 Sep 2026 09:01:14 GMT",
+      "chars": 1263,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/npst-wins-award-for-best-digital-banking-platform-126091001318_1.html",
+      "title": "NPST wins award for Best Digital Banking Platform",
+      "published": "Thu, 10 Sep 2026 13:46:14 GMT",
+      "chars": 1735,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/systematic-industries-gains-on-rs-82-42-crore-powergrid-order-126091000385_1.html",
+      "title": "Systematic Industries gains on Rs 82.42 crore POWERGRID order",
+      "published": "Thu, 10 Sep 2026 07:01:21 GMT",
+      "chars": 2449,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/devit-wins-enterprise-technology-order-from-cpri-bangalore-126091001441_1.html",
+      "title": "DEVIT wins enterprise technology order from CPRI, Bangalore",
+      "published": "Thu, 10 Sep 2026 14:34:24 GMT",
+      "chars": 1685,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ceinsys-tech-receives-electrical-substation-work-order-worth-rs-28-cr-126091000573_1.html",
+      "title": "Ceinsys Tech receives electrical substation work order worth Rs 28 cr",
+      "published": "Thu, 10 Sep 2026 08:34:02 GMT",
+      "chars": 1315,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/enviro-infra-shares-rally-10-in-two-sessions-on-back-to-back-order-wins-126091000627_1.html",
+      "title": "Enviro Infra shares rally 10% in two sessions on back-to-back order wins",
+      "published": "Thu, 10 Sep 2026 08:58:47 GMT",
+      "chars": 4558,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/kalind-limited-bags-rs-50-crore-international-order-from-ghana-based-ame-saki-mining-and-construction-126091001064_1.html",
+      "title": "Kalind Limited Bags Rs 50 Crore International Order from Ghana-Based AME SAKI Mining and Construction",
+      "published": "Thu, 10 Sep 2026 12:00:09 GMT",
+      "chars": 4459,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/cricket/news/shafali-backs-india-s-middle-order-to-deliver-in-bangladesh-semifinal-126090901602_1.html",
+      "title": "Shafali backs India's middle order to deliver in Bangladesh semifinal",
+      "published": "Thu, 10 Sep 2026 07:45:36 GMT",
+      "chars": 4019,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-11-nse-bse-sensex-today-nifty-gift-nifty-crude-oil-price-today-126091100093_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty down 100 pts; Asian markets tumble on rising bond yields, oil prices",
+      "published": "Fri, 11 Sep 2026 07:59:53 +0530",
+      "chars": 194,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/adani-ports-among-3-stock-ideas-for-today-by-bonanza-s-kunal-kamble-126091100091_1.html",
+      "title": "Adani Ports among 3 stock ideas for today by Bonanza's Kunal Kamble",
+      "published": "Fri, 11 Sep 2026 07:48:59 +0530",
+      "chars": 144,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-set-to-end-week-above-100-for-first-time-in-nearly-4-months-126091100083_1.html",
+      "title": "Oil prices set to end week above $100 for first time in nearly 4 months",
+      "published": "Fri, 11 Sep 2026 07:30:32 +0530",
+      "chars": 154,
+      "body_how": "none"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_et_markets_rss",
+      "why": "out of article budget"
+    },
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 69.6
+}
