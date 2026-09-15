@@ -234,3 +234,125 @@ def test_a_sympathy_echo_does_not_corroborate_a_named_story():
     assert tex["n_reports"] == 1, "a sympathy echo is not a second report of the named story"
     assert tex["corroborating_sources"] == []
     assert "https://tv/kothari" not in tex["urls"], "the Kothari link says nothing about Texmaco Rail"
+
+
+# ---------------------------------------------------------------------------------------------
+# 15 September 2026: the card recommended HAL on a story that never mentions HAL. The link was
+# right and the story was real — ITCONS E-Solutions, a staffing firm, won a Rs 83.05 lakh manpower
+# contract from the Indian Navy. "Indian Navy" and "Ministry of Defence" are defence-theme
+# keywords, so the theme map fanned the order onto BDL, BEL, HAL, MAZDOCK, COCHINSHIP and GRSE.
+# ---------------------------------------------------------------------------------------------
+
+ITCONS_TITLE = "ITCONS E-Solutions bags order worth Rs 83 lakh"
+ITCONS_TEXT = ("ITCONS E-Solutions announced that it has received a manpower outsourcing services "
+               "order worth Rs 83.05 lakh from the Indian Navy, Department of Military Affairs, "
+               "Ministry of Defence, for the deployment of 11 resources.")
+
+
+def test_a_trivial_order_does_not_fan_a_theme_across_a_sector():
+    """The order was Rs 0.83 crore. HAL books Rs 33,785 crore of revenue a year, so this contract
+    is 0.002% of it — and HAL had nothing to do with it in any case. A sympathy trade needs an
+    order large enough to change what the sector is worth."""
+    doc = {"url": "u", "title": ITCONS_TITLE, "text": ITCONS_TEXT, "published": "",
+           "body_how": "feed"}
+    assert syms(doc, "corp_bs_markets_rss") == {}, \
+        "a sub-crore staffing contract is routine business, not a signal about defence primes"
+
+
+def test_the_same_story_at_a_material_size_still_fans_out():
+    """The floor must not blind the system to the case it exists for: a large order whose winner
+    is unlisted, where the listed names are the only way to trade it."""
+    doc = {"url": "u", "body_how": "container", "published": "",
+           "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank",
+           "text": "Tata Advanced Systems has emerged as the lowest bidder for the Rs 20,000 "
+                   "crore Project Zorawar light tank programme of the Ministry of Defence."}
+    got = syms(doc, "corp_orders")
+    assert got, "a Rs 20,000cr defence award must still reach the listed defence names"
+    assert all(e["route"] != "named" for e in got.values()), "none of them won it"
+
+
+def test_a_doc_that_does_not_say_where_its_text_came_from_is_not_trusted():
+    """The mechanism that let HAL through.
+
+    `body_how` is only set when the scraper hydrates an article, and hydration is skipped when a
+    feed already supplied text — so the key was simply absent on every RSS item. It was read as
+    None, None was on the trusted list, and the blurb was trusted for theme inference. Meanwhile
+    the run recorded the same doc as "none" in news_raw.json. The audit record said untrusted and
+    the code had said trusted, which is exactly why nobody could see it.
+
+    Unknown provenance now fails closed.
+    """
+    material = {"url": "u", "published": "",
+                "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank",
+                "text": "Tata Advanced Systems has emerged as the lowest bidder for the Rs 20,000 "
+                        "crore Project Zorawar light tank programme of the Ministry of Defence."}
+    assert syms({**material, "body_how": "container"}, "corp_orders"), "a trusted body fans out"
+    assert syms(dict(material), "corp_orders") == {}, \
+        "the same doc with no stated provenance must not be trusted for a theme play"
+
+
+def test_every_hydrated_doc_states_its_provenance():
+    """The guard above is only worth having if real docs always carry the key — otherwise it turns
+    into a silent kill-switch on live traffic instead of a check."""
+    import inspect
+
+    from stocktips.sources import fetchers
+
+    src = inspect.getsource(fetchers.fetch_source)
+    assert 'setdefault("body_how", "feed")' in src, \
+        "a doc whose text came from the feed must say so, or scan() will distrust everything"
+    assert 'd["text"], d["body_how"] = got["text"], got["how"]' in src, \
+        "and a hydrated doc must carry the how that article_body() reported"
+
+
+# ---------------------------------------------------------------------------------------------
+# 15 September 2026, the same card: Aurobindo Pharma appeared as "Approval · 95% firm · catalyst
+# 48" on a clean FDA inspection. The article says the FDA "concluded an inspection at its API
+# manufacturing unit in Andhra Pradesh with zero observations" — no product was approved.
+# ---------------------------------------------------------------------------------------------
+
+CLEARANCE = ("Aurobindo Pharma said the US Food and Drug Administration (FDA) has concluded an "
+             "inspection at its API manufacturing unit in Andhra Pradesh with zero observations. "
+             "The inspection was conducted from September 7 to 11, 2026.")
+
+
+def test_a_clean_inspection_is_not_an_approval():
+    """They differ in kind, not degree. An approval grants the right to sell something new, so it
+    adds revenue that was not there before. A clean inspection confirms a plant may carry on doing
+    exactly what it already does — it removes a risk rather than adding a business."""
+    got = events.classify(CLEARANCE)
+    assert got, "the clean inspection is still an event worth recording"
+    assert got[0]["event"] == "regulatory_clearance"
+    assert got[0]["event"] != "regulatory_approval"
+    assert got[0]["prior"] < events.EVENT_CLASSES["regulatory_approval"]["prior"], \
+        "and it must not carry an approval's weight"
+
+
+def test_a_real_approval_is_untouched():
+    """The split must not cost the system the event it actually wants."""
+    got = events.classify("Aurobindo Pharma receives final approval from USFDA for its generic "
+                          "tablets, clearing the way for a US launch this quarter")
+    assert got[0]["event"] == "regulatory_approval"
+
+
+def test_a_form_483_still_beats_a_clearance_in_the_same_article():
+    """An article reporting observations is reporting bad news, however the good phrase reads."""
+    got = events.classify("USFDA issues Form 483 with 5 observations after inspecting the unit, "
+                          "reversing an earlier zero observations outcome")
+    assert got[0]["event"] == "regulatory_action" and got[0]["prior"] < 0
+
+
+def test_the_clearance_does_not_reach_the_card_on_its_own():
+    """Aurobindo scored 48 and reached WATCH. On the seed for its real class it scores well under
+    the threshold, which is what the desk owner said when he read it: a clean audit at one API
+    plant is not, by itself, a reason to expect the stock to move."""
+    from stocktips.analysis import catalyst
+
+    spec = events.EVENT_CLASSES["regulatory_clearance"]
+    ev = {"symbol": "AUROPHARMA", "event": "regulatory_clearance", "event_label": spec["label"],
+          "certainty": spec["certainty"], "event_prior": spec["prior"], "route": "named",
+          "directness": 0.85, "size_inr_cr": None}
+    got = catalyst.score(ev, fundamentals={"revenue_ttm_cr": 31000.0}, fund_score=71,
+                         ta={"adx": 26, "trend": "up"}, class_prior=spec["prior"],
+                         source_weight=0.5, now=None)
+    assert got["catalyst"] < 40, f"scored {got['catalyst']}, still high enough to surface"

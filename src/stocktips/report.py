@@ -143,12 +143,29 @@ def _ratio_words(c: dict) -> str:
     return "no size given and none estimable"
 
 
+def _class_caveat(c: dict) -> str:
+    """Say when the weight behind a catalyst is a guess nobody has checked.
+
+    Every event class ships with a hand-written prior — an order win is worth 30, an approval 26 —
+    and `learning/eventscore.py` exists to replace those seeds with what each class has actually
+    been worth. Until a class has graded outcomes the number in front of the reader is an
+    estimate written on one evening, and the card was presenting it in the same voice as a
+    measured one. The dashboard already marks an untested class; the email did not.
+    """
+    cs = c.get("class_score") or {}
+    if cs.get("untested") or not cs.get("n"):
+        return ("  \n  *(the weight behind this catalyst is a seed — this event class has no "
+                "graded outcomes yet, so the number is an estimate, not a measurement)*")
+    return f"  \n  *(this class has {cs['n']} graded outcomes behind it)*"
+
+
 def preopen_card(c: dict, rank: int) -> str:
     plan = c.get("plan") or {}
     ta = c.get("ta") or {}
     lines = [f"### {rank}. {c['symbol']} — {c.get('company', '')}",
              "",
-             f"**{c.get('event_label')}** · catalyst **{c.get('catalyst')}** · {c.get('verdict')} — {c.get('verdict_note')}",
+             f"**{c.get('event_label')}** · catalyst **{c.get('catalyst')}** · {c.get('verdict')} — {c.get('verdict_note')}"
+             + _class_caveat(c),
              "",
              f"> {c.get('title', '')}  ",
              f"> {c.get('source_id', '')} · [story]({c.get('url', '')}) · published {c.get('published', '')}",

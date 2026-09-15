@@ -54,8 +54,28 @@ EVENT_CLASSES: dict[str, dict] = {
         "label": "Approval", "sign": 1, "certainty": 0.95, "prior": 26,
         "patterns": [r"\b(?:usfda|us fda|cdsco|dcgi|ema)\b[^.]{0,60}\bapprov",
                      r"\bfinal approval\b", r"\btentative approval\b", r"\banda approval\b",
-                     r"\breceives?\b[^.]{0,40}\bapproval\b", r"\bestablishment inspection report\b",
-                     r"\bzero (?:483s?|observations?)\b", r"\bpatent granted\b"],
+                     r"\breceives?\b[^.]{0,40}\bapproval\b", r"\bpatent granted\b"],
+    },
+    # A clean inspection is not an approval, and filing it as one was worth 26 points it had not
+    # earned. Aurobindo Pharma cleared an API plant inspection with zero observations on 15 Sep
+    # 2026 and the card called it "Approval · 95% firm", scoring +21 — the same weight an ANDA
+    # final approval gets.
+    #
+    # The two are different in kind. An approval grants the right to sell something new, so it
+    # adds revenue that was not there before. A clean inspection confirms a plant may carry on
+    # doing exactly what it was already doing: it removes a risk rather than adding a business.
+    # For a company with many sites, one unit clearing a routine audit changes no forecast.
+    #
+    # It is still mildly good news — an overhang lifts, and for a company under a live import
+    # alert it can matter a great deal — so it is a class of its own rather than deleted, seeded
+    # low and left for the outcome loop to price. `prior` is a seed here, not a verdict.
+    "regulatory_clearance": {
+        "label": "Inspection cleared", "sign": 1, "certainty": 0.9, "prior": 8,
+        "patterns": [r"\bzero (?:483s?|observations?)\b", r"\bno (?:483s?|observations?)\b",
+                     r"\bwithout any observations?\b", r"\bnil observations?\b",
+                     r"\bestablishment inspection report\b", r"\bEIR\b",
+                     r"\bvoluntary action indicated\b", r"\bVAI\b",
+                     r"\b(?:inspection|audit) (?:closed|concluded)\b[^.]{0,40}\bno\b"],
     },
     "index_inclusion": {
         "label": "Index inclusion", "sign": 1, "certainty": 1.0, "prior": 18,
@@ -308,6 +328,10 @@ MAX_BENEFICIARIES = 6    # one story, a handful of names — not a sector
 # European operator; the shipping theme fired on it and produced Adani Ports and Cochin Shipyard as
 # candidates. A theme play with nobody named is already one inference — inferring the country too is
 # two, and the second one was simply wrong.
+# The smallest order that can plausibly re-rate a sector. Every theme constituent here books
+# thousands of crore a year; below this the news is routine business, not a signal about anyone.
+THEME_MIN_CR = 50.0
+
 INDIA_ANCHOR = re.compile(r"(?<!\w)(?:india|indian|nse|bse|sebi|nifty|sensex|crore|lakh|rupee|rs\.?\s*\d|₹)",
                           re.I)
 
@@ -413,7 +437,8 @@ def _published_ts(published: str | None) -> datetime | None:
 BEATS = {
     "l1_bidder": {"order_win"},                     # an L1 call is not a signed order
     "order_cancellation": {"order_win", "l1_bidder"},
-    "regulatory_action": {"regulatory_approval"},   # a Form 483 is not an approval
+    # a Form 483 is not an approval, and it is not a clean inspection either
+    "regulatory_action": {"regulatory_approval", "regulatory_clearance"},
     "earnings_miss": {"earnings_beat"},
     "analyst_downgrade": {"analyst_upgrade"},
     "pledge": {"stake_buy"},
@@ -499,7 +524,14 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
     blob = (title + "\n" + body)[:12000]
     # A body recovered by scraping every paragraph on the page — no article container, no JSON-LD —
     # is an aggregator or an unparseable layout, and its text is not evidence about who did what.
-    trusted_body = doc.get("body_how") in (None, "", "container", "jsonld")
+    # `body_how` says where the text came from, and an ABSENT key is not a licence to trust it.
+    # It used to be: a missing key read as None, None was on the trusted list, and `body_how` is
+    # only ever set when the scraper hydrates an article — which it skips when a feed already
+    # supplied text. So every RSS item was silently trusted, while pipeline.py recorded the same
+    # doc as "none" via a default. The audit record and the decision disagreed, which is why this
+    # survived: news_raw.json said untrusted and the code had said trusted.
+    how = doc.get("body_how") or "unknown"
+    trusted_body = how in ("container", "jsonld", "feed")
 
     classes = classify(blob)
     if not classes:
@@ -524,6 +556,15 @@ def scan(doc: dict, source_id: str, usd_inr: float = 88.0) -> list[dict]:
     n_named = sum(1 for b in people if b["route"] == "named")
     if people and all(b["route"] != "named" for b in people) and not INDIA_ANCHOR.search(blob):
         return []                # a theme fan-out onto a story that never mentions this market
+    # An ₹83 lakh manpower contract awarded by the Navy fanned "defence" onto BDL, BEL, HAL,
+    # MAZDOCK, COCHINSHIP and GRSE — six companies with no connection to it beyond the customer's
+    # name. A sympathy trade needs an order large enough to change what the sector is worth, and
+    # sub-₹50cr is routine business for every constituent of every theme in this map.
+    if size and not size.get("estimated") and size["inr_cr"] < THEME_MIN_CR:
+        people = [b for b in people if b["route"] == "named"]
+        if not people:
+            return []
+
     if not trusted_body:
         # Only what the headline itself says survives: a company named in the title is what the page
         # is about, and a theme play inferred from untrusted text is two guesses stacked.

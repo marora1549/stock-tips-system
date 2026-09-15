@@ -295,6 +295,11 @@ def fetch_source(src: dict, max_age_hours: float = 36, limit: int | None = None,
         if deadline is not None and time.monotonic() > deadline:
             unhydrated += 1
             continue
+        if d.get("text"):
+            # The feed supplied this text, so hydration is skipped — but the doc must still say
+            # where its text came from. Leaving the key unset made `scan()` read it as None and
+            # trust it, while the report recorded it as "none". Name it.
+            d.setdefault("body_how", "feed")
         if not d.get("text") and d.get("url"):
             if "news.google.com" in d["url"]:
                 real = resolve_gnews_url(d["url"], timeout=request_timeout, retries=retries)
