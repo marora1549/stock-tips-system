@@ -253,7 +253,7 @@ def gather_news(max_age_hours: float = 20, deadline_s: float | None = None,
             found += events.scan(d, src["id"], usd_inr=usd)
             out["docs"].append({"source_id": src["id"], "url": d["url"], "title": d["title"],
                                 "published": d["published"], "chars": len(d["text"]),
-                                "body_how": d.get("body_how", "none")})
+                                "body_how": d.get("body_how") or "unknown"})
         out["sources"][src["id"]] = {"docs": len(docs), "events": len(found)}
         out["events"] += found
         confidence.ensure(conf, src["id"])

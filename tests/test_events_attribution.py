@@ -234,3 +234,72 @@ def test_a_sympathy_echo_does_not_corroborate_a_named_story():
     assert tex["n_reports"] == 1, "a sympathy echo is not a second report of the named story"
     assert tex["corroborating_sources"] == []
     assert "https://tv/kothari" not in tex["urls"], "the Kothari link says nothing about Texmaco Rail"
+
+
+# ---------------------------------------------------------------------------------------------
+# 15 September 2026: the card recommended HAL on a story that never mentions HAL. The link was
+# right and the story was real — ITCONS E-Solutions, a staffing firm, won a Rs 83.05 lakh manpower
+# contract from the Indian Navy. "Indian Navy" and "Ministry of Defence" are defence-theme
+# keywords, so the theme map fanned the order onto BDL, BEL, HAL, MAZDOCK, COCHINSHIP and GRSE.
+# ---------------------------------------------------------------------------------------------
+
+ITCONS_TITLE = "ITCONS E-Solutions bags order worth Rs 83 lakh"
+ITCONS_TEXT = ("ITCONS E-Solutions announced that it has received a manpower outsourcing services "
+               "order worth Rs 83.05 lakh from the Indian Navy, Department of Military Affairs, "
+               "Ministry of Defence, for the deployment of 11 resources.")
+
+
+def test_a_trivial_order_does_not_fan_a_theme_across_a_sector():
+    """The order was Rs 0.83 crore. HAL books Rs 33,785 crore of revenue a year, so this contract
+    is 0.002% of it — and HAL had nothing to do with it in any case. A sympathy trade needs an
+    order large enough to change what the sector is worth."""
+    doc = {"url": "u", "title": ITCONS_TITLE, "text": ITCONS_TEXT, "published": "",
+           "body_how": "feed"}
+    assert syms(doc, "corp_bs_markets_rss") == {}, \
+        "a sub-crore staffing contract is routine business, not a signal about defence primes"
+
+
+def test_the_same_story_at_a_material_size_still_fans_out():
+    """The floor must not blind the system to the case it exists for: a large order whose winner
+    is unlisted, where the listed names are the only way to trade it."""
+    doc = {"url": "u", "body_how": "container", "published": "",
+           "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank",
+           "text": "Tata Advanced Systems has emerged as the lowest bidder for the Rs 20,000 "
+                   "crore Project Zorawar light tank programme of the Ministry of Defence."}
+    got = syms(doc, "corp_orders")
+    assert got, "a Rs 20,000cr defence award must still reach the listed defence names"
+    assert all(e["route"] != "named" for e in got.values()), "none of them won it"
+
+
+def test_a_doc_that_does_not_say_where_its_text_came_from_is_not_trusted():
+    """The mechanism that let HAL through.
+
+    `body_how` is only set when the scraper hydrates an article, and hydration is skipped when a
+    feed already supplied text — so the key was simply absent on every RSS item. It was read as
+    None, None was on the trusted list, and the blurb was trusted for theme inference. Meanwhile
+    the run recorded the same doc as "none" in news_raw.json. The audit record said untrusted and
+    the code had said trusted, which is exactly why nobody could see it.
+
+    Unknown provenance now fails closed.
+    """
+    material = {"url": "u", "published": "",
+                "title": "Tata emerges lowest bidder for Rs 20,000-crore Project Zorawar light tank",
+                "text": "Tata Advanced Systems has emerged as the lowest bidder for the Rs 20,000 "
+                        "crore Project Zorawar light tank programme of the Ministry of Defence."}
+    assert syms({**material, "body_how": "container"}, "corp_orders"), "a trusted body fans out"
+    assert syms(dict(material), "corp_orders") == {}, \
+        "the same doc with no stated provenance must not be trusted for a theme play"
+
+
+def test_every_hydrated_doc_states_its_provenance():
+    """The guard above is only worth having if real docs always carry the key — otherwise it turns
+    into a silent kill-switch on live traffic instead of a check."""
+    import inspect
+
+    from stocktips.sources import fetchers
+
+    src = inspect.getsource(fetchers.fetch_source)
+    assert 'setdefault("body_how", "feed")' in src, \
+        "a doc whose text came from the feed must say so, or scan() will distrust everything"
+    assert 'd["text"], d["body_how"] = got["text"], got["how"]' in src, \
+        "and a hydrated doc must carry the how that article_body() reported"
