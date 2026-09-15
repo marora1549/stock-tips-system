@@ -26,3 +26,6 @@ Events: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)
 
 ### 2026-09-11 [analyst]
 2026-09-11 (Friday input growth): registered chartink_rsi_oversold_bounce at confidence 0 — the existing 3 screener sources (52w breakout, EMA20 pullback, Bollinger squeeze) are all trend-continuation setups; nothing in the source table screens a reversal-from-oversold bounce, and double_bottom_confirmed is a named TA pattern with no dedicated feeder. Clause: RSI crossing back above 30 with an up day and volume >1.2x 20d avg, liquid names only. No login/payment required (public Chartink scan).
+
+### 2026-09-15 [analyst]
+2026-09-15: quiet day, no stop/target/time-stop events, day 5 for CGPOWER/LALPATHLAB (deadline 2026-10-20). CGPOWER -4.1% has drifted to within 0.2% of its 855.9 stop on no unusual volume -- worth a look tomorrow, not yet a breakdown; LALPATHLAB +1.3% still clean toward T1. All sources still n_resolved=1 (V2RETAIL only), so no auto-disable/commendation thresholds fire. fund-audit: nothing settled in any fundamentals band, so no inversion to report -- score remains unproven. markets_mojo bias unchanged at +6.5/n=4, still under the 8-point bar. Book full at 2 open (cash Rs30,342), no new picks regardless.
