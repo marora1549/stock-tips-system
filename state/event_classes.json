@@ -1,0 +1,42 @@
+{
+  "order_win": {
+    "id": "order_win",
+    "prior": 30,
+    "adjust": -5.158,
+    "n": 1,
+    "n_up": 0,
+    "sum_open_to_high_pct": 0.21,
+    "sum_open_to_close_pct": -4.83,
+    "history": [
+      {
+        "date": "2026-09-15",
+        "symbol": "HAL",
+        "open_to_high_pct": 0.21,
+        "open_to_close_pct": -4.83,
+        "delta": -5.16
+      }
+    ],
+    "first_seen": "2026-09-15",
+    "last_seen": "2026-09-15"
+  },
+  "regulatory_approval": {
+    "id": "regulatory_approval",
+    "prior": 26,
+    "adjust": -3.142,
+    "n": 1,
+    "n_up": 0,
+    "sum_open_to_high_pct": 0.0,
+    "sum_open_to_close_pct": -2.38,
+    "history": [
+      {
+        "date": "2026-09-15",
+        "symbol": "AUROPHARMA",
+        "open_to_high_pct": 0.0,
+        "open_to_close_pct": -2.38,
+        "delta": -3.14
+      }
+    ],
+    "first_seen": "2026-09-15",
+    "last_seen": "2026-09-15"
+  }
+}
