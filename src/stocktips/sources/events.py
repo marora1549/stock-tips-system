@@ -54,8 +54,28 @@ EVENT_CLASSES: dict[str, dict] = {
         "label": "Approval", "sign": 1, "certainty": 0.95, "prior": 26,
         "patterns": [r"\b(?:usfda|us fda|cdsco|dcgi|ema)\b[^.]{0,60}\bapprov",
                      r"\bfinal approval\b", r"\btentative approval\b", r"\banda approval\b",
-                     r"\breceives?\b[^.]{0,40}\bapproval\b", r"\bestablishment inspection report\b",
-                     r"\bzero (?:483s?|observations?)\b", r"\bpatent granted\b"],
+                     r"\breceives?\b[^.]{0,40}\bapproval\b", r"\bpatent granted\b"],
+    },
+    # A clean inspection is not an approval, and filing it as one was worth 26 points it had not
+    # earned. Aurobindo Pharma cleared an API plant inspection with zero observations on 15 Sep
+    # 2026 and the card called it "Approval · 95% firm", scoring +21 — the same weight an ANDA
+    # final approval gets.
+    #
+    # The two are different in kind. An approval grants the right to sell something new, so it
+    # adds revenue that was not there before. A clean inspection confirms a plant may carry on
+    # doing exactly what it was already doing: it removes a risk rather than adding a business.
+    # For a company with many sites, one unit clearing a routine audit changes no forecast.
+    #
+    # It is still mildly good news — an overhang lifts, and for a company under a live import
+    # alert it can matter a great deal — so it is a class of its own rather than deleted, seeded
+    # low and left for the outcome loop to price. `prior` is a seed here, not a verdict.
+    "regulatory_clearance": {
+        "label": "Inspection cleared", "sign": 1, "certainty": 0.9, "prior": 8,
+        "patterns": [r"\bzero (?:483s?|observations?)\b", r"\bno (?:483s?|observations?)\b",
+                     r"\bwithout any observations?\b", r"\bnil observations?\b",
+                     r"\bestablishment inspection report\b", r"\bEIR\b",
+                     r"\bvoluntary action indicated\b", r"\bVAI\b",
+                     r"\b(?:inspection|audit) (?:closed|concluded)\b[^.]{0,40}\bno\b"],
     },
     "index_inclusion": {
         "label": "Index inclusion", "sign": 1, "certainty": 1.0, "prior": 18,
@@ -417,7 +437,8 @@ def _published_ts(published: str | None) -> datetime | None:
 BEATS = {
     "l1_bidder": {"order_win"},                     # an L1 call is not a signed order
     "order_cancellation": {"order_win", "l1_bidder"},
-    "regulatory_action": {"regulatory_approval"},   # a Form 483 is not an approval
+    # a Form 483 is not an approval, and it is not a clean inspection either
+    "regulatory_action": {"regulatory_approval", "regulatory_clearance"},
     "earnings_miss": {"earnings_beat"},
     "analyst_downgrade": {"analyst_upgrade"},
     "pledge": {"stake_buy"},

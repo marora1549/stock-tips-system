@@ -303,3 +303,56 @@ def test_every_hydrated_doc_states_its_provenance():
         "a doc whose text came from the feed must say so, or scan() will distrust everything"
     assert 'd["text"], d["body_how"] = got["text"], got["how"]' in src, \
         "and a hydrated doc must carry the how that article_body() reported"
+
+
+# ---------------------------------------------------------------------------------------------
+# 15 September 2026, the same card: Aurobindo Pharma appeared as "Approval · 95% firm · catalyst
+# 48" on a clean FDA inspection. The article says the FDA "concluded an inspection at its API
+# manufacturing unit in Andhra Pradesh with zero observations" — no product was approved.
+# ---------------------------------------------------------------------------------------------
+
+CLEARANCE = ("Aurobindo Pharma said the US Food and Drug Administration (FDA) has concluded an "
+             "inspection at its API manufacturing unit in Andhra Pradesh with zero observations. "
+             "The inspection was conducted from September 7 to 11, 2026.")
+
+
+def test_a_clean_inspection_is_not_an_approval():
+    """They differ in kind, not degree. An approval grants the right to sell something new, so it
+    adds revenue that was not there before. A clean inspection confirms a plant may carry on doing
+    exactly what it already does — it removes a risk rather than adding a business."""
+    got = events.classify(CLEARANCE)
+    assert got, "the clean inspection is still an event worth recording"
+    assert got[0]["event"] == "regulatory_clearance"
+    assert got[0]["event"] != "regulatory_approval"
+    assert got[0]["prior"] < events.EVENT_CLASSES["regulatory_approval"]["prior"], \
+        "and it must not carry an approval's weight"
+
+
+def test_a_real_approval_is_untouched():
+    """The split must not cost the system the event it actually wants."""
+    got = events.classify("Aurobindo Pharma receives final approval from USFDA for its generic "
+                          "tablets, clearing the way for a US launch this quarter")
+    assert got[0]["event"] == "regulatory_approval"
+
+
+def test_a_form_483_still_beats_a_clearance_in_the_same_article():
+    """An article reporting observations is reporting bad news, however the good phrase reads."""
+    got = events.classify("USFDA issues Form 483 with 5 observations after inspecting the unit, "
+                          "reversing an earlier zero observations outcome")
+    assert got[0]["event"] == "regulatory_action" and got[0]["prior"] < 0
+
+
+def test_the_clearance_does_not_reach_the_card_on_its_own():
+    """Aurobindo scored 48 and reached WATCH. On the seed for its real class it scores well under
+    the threshold, which is what the desk owner said when he read it: a clean audit at one API
+    plant is not, by itself, a reason to expect the stock to move."""
+    from stocktips.analysis import catalyst
+
+    spec = events.EVENT_CLASSES["regulatory_clearance"]
+    ev = {"symbol": "AUROPHARMA", "event": "regulatory_clearance", "event_label": spec["label"],
+          "certainty": spec["certainty"], "event_prior": spec["prior"], "route": "named",
+          "directness": 0.85, "size_inr_cr": None}
+    got = catalyst.score(ev, fundamentals={"revenue_ttm_cr": 31000.0}, fund_score=71,
+                         ta={"adx": 26, "trend": "up"}, class_prior=spec["prior"],
+                         source_weight=0.5, now=None)
+    assert got["catalyst"] < 40, f"scored {got['catalyst']}, still high enough to surface"
