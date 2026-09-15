@@ -35,7 +35,7 @@
   },
   "broker:angelone": {
     "score": 0.0,
-    "n_tips": 1,
+    "n_tips": 3,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -47,7 +47,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-09",
+    "last_seen": "2026-09-15",
     "id": "broker:angelone"
   },
   "broker:axissec": {
@@ -222,7 +222,7 @@
   },
   "broker:jefferies": {
     "score": 0.0,
-    "n_tips": 16,
+    "n_tips": 21,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -234,7 +234,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "broker:jefferies"
   },
   "broker:kotaksec": {
@@ -332,7 +332,7 @@
   },
   "broker:nuvama": {
     "score": 0.0,
-    "n_tips": 10,
+    "n_tips": 15,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -344,7 +344,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "broker:nuvama"
   },
   "broker:parekh": {
@@ -366,7 +366,7 @@
   },
   "broker:pl": {
     "score": 0.0,
-    "n_tips": 7,
+    "n_tips": 8,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -378,7 +378,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "broker:pl"
   },
   "broker:rupakde": {
@@ -459,7 +459,7 @@
   },
   "bs_recos": {
     "score": 0.0,
-    "n_tips": 8,
+    "n_tips": 13,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -471,12 +471,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "bs_recos"
   },
   "chartink_52w_breakout": {
     "score": 0.0,
-    "n_tips": 53,
+    "n_tips": 60,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -488,12 +488,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "chartink_52w_breakout"
   },
   "chartink_ema_pullback": {
     "score": 0.0,
-    "n_tips": 240,
+    "n_tips": 280,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -505,12 +505,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": 0.0,
-    "n_tips": 240,
+    "n_tips": 280,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -522,7 +522,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "chartink_squeeze"
   },
   "corp_approvals": {
@@ -748,7 +748,7 @@
   },
   "fe_gnews": {
     "score": 0.0,
-    "n_tips": 39,
+    "n_tips": 49,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -760,12 +760,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
     "score": -7.5,
-    "n_tips": 89,
+    "n_tips": 94,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -785,12 +785,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "mc_stock_ideas_gnews"
   },
   "mint_gnews": {
     "score": 0.0,
-    "n_tips": 116,
+    "n_tips": 121,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -802,7 +802,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "mint_gnews"
   },
   "mojo": {
@@ -841,7 +841,7 @@
   },
   "chartink_rsi_oversold_bounce": {
     "score": 0.0,
-    "n_tips": 0,
+    "n_tips": 5,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -853,7 +853,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-11",
+    "last_seen": "2026-09-15",
     "id": "chartink_rsi_oversold_bounce"
   }
 }
