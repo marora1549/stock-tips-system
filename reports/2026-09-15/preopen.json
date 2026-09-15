@@ -1,0 +1,533 @@
+{
+  "date": "2026-09-15",
+  "generated_at": "2026-09-15 08:10",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events_read": 13,
+  "trade": [],
+  "watch": [
+    {
+      "id": "44c481532f",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 52,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+30 Order win",
+        " 0 ₹1cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+10 fundamentals 83/100",
+        "+12 published Tue 08:04, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 33785.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 08:04, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 30,
+      "direction": "long",
+      "plan": {
+        "reference_close": 4905.0,
+        "atr_pct": 2.19,
+        "expected_day_range_inr": 107.42,
+        "expected_day_range_pct": 2.19,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 83,
+      "fund_why": [
+        "+12 ROCE 32%",
+        "+8 ROE 24%",
+        "+2 P/E 35.2",
+        "+4 3y profit CAGR 16%",
+        "+0 3y sales CAGR 7%",
+        "+4 return on capital has improved from 28% to 35%",
+        "+5 D/E 0",
+        "+4 promoter 71.64%",
+        "+0 latest qtr PAT YoY 14.9%",
+        "+4 mcap ₹328,034 cr",
+        "+8 operating cash flow ₹10,906cr, 120% of profit — profit is turning into cash",
+        "+3 institutions hold 21.24%",
+        "-4 price to book 7.99",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 26.0%",
+        "Company has been maintaining a healthy dividend payout of 31.9%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 7.99 times its book value",
+        "The company has delivered a poor sales growth of 7.78% over past five years.",
+        "Earnings include an other income of Rs.3,897 Cr.",
+        "Working capital days have increased from 153 days to 301 days"
+      ],
+      "ltp": 4905.0,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.5,
+        "adx": 20.5,
+        "atr_pct": 2.19,
+        "vol_ratio": 0.83,
+        "chg_1d_pct": -0.91,
+        "chg_5d_pct": 2.93,
+        "dist_52w_high_pct": -4.76,
+        "dist_ema200_pct": 8.78,
+        "avg_turnover_cr": 453.57,
+        "high_52w": 5149.9,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-11"
+      },
+      "fundamentals": {
+        "market_cap_cr": 328034.0,
+        "pe": 35.2,
+        "roce": 32.0,
+        "roe": 24.0,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 16.0,
+        "promoter_pct": 71.64,
+        "debt_to_equity": 0.0,
+        "revenue_ttm_cr": 33785.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "b9d19b642b",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "zero observations",
+      "also_matched": [
+        "dilution",
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms",
+      "title": "Stocks in news: Tata Group stocks, HDFC Bank, Coforge, HFCL, Sun Pharma and Varun Beverages",
+      "published": "Tue, 15 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-15T00:30:00+00:00",
+      "sentence": "zero observations",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms"
+      ],
+      "n_reports": 1,
+      "catalyst": 48,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+21 Approval (95% firm, named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 71/100",
+        "+5 ADX 26 with the trend up — moves carry here",
+        "+12 published Tue 06:00, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 34935.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 06:00, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 26,
+      "direction": "long",
+      "plan": {
+        "reference_close": 1679.8,
+        "atr_pct": 2.31,
+        "expected_day_range_inr": 38.8,
+        "expected_day_range_pct": 2.31,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 71,
+      "fund_why": [
+        "+0 ROCE 12.9%",
+        "+0 ROE 10.1%",
+        "+2 P/E 25.6",
+        "+8 3y profit CAGR 23%",
+        "+3 3y sales CAGR 11%",
+        "+5 D/E 0.21",
+        "+4 promoter 51.88%",
+        "+4 latest qtr PAT YoY 25.2%",
+        "+4 mcap ₹96,652 cr",
+        "+8 operating cash flow ₹5,526cr, 158% of profit — profit is turning into cash",
+        "+4 interest cover 18.43×",
+        "+3 institutions hold 41.43%",
+        "+0 price to book 2.58",
+        "-6 PEG 46.55 — priced for growth it is not delivering",
+        "  (growth counted +8 of +15 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Stock is trading at 2.57 times its book value",
+        "The company has delivered a poor sales growth of 6.32% over past five years.",
+        "Company has a low return on equity of 10.8% over last 3 years.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 1679.800048828125,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 57.0,
+        "adx": 26.1,
+        "atr_pct": 2.31,
+        "vol_ratio": 0.6,
+        "chg_1d_pct": 0.68,
+        "chg_5d_pct": 2.6,
+        "dist_52w_high_pct": -2.17,
+        "dist_ema200_pct": 17.13,
+        "avg_turnover_cr": 135.87,
+        "high_52w": 1717.0,
+        "momentum_score": 8,
+        "last_bar_date": "2026-09-11"
+      },
+      "fundamentals": {
+        "market_cap_cr": 96652.0,
+        "pe": 25.6,
+        "roce": 12.9,
+        "roe": 10.1,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 23.0,
+        "promoter_pct": 51.88,
+        "debt_to_equity": 0.21,
+        "revenue_ttm_cr": 34935.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "avoid": [
+    {
+      "id": "22b5ddae39",
+      "symbol": "PPLPHARMA",
+      "company": "Piramal Pharma Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/piramal-pharma-share-price-gets-7-observations-from-us-fda-at-morpeth-uk-facility-19990378.htm",
+      "title": "Piramal Pharma gets 7 observations from US FDA at Morpeth UK facility",
+      "published": "Mon, 14 Sep 2026 15:13:19 GMT",
+      "published_utc": "2026-09-14T15:13:19+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/piramal-pharma-share-price-gets-7-observations-from-us-fda-at-morpeth-uk-facility-19990378.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": -15,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 18/100 — a pop on a weak balance sheet fades",
+        "+5 ADX 31 with the trend up — moves carry here",
+        "+12 published Mon 20:43, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 9206.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 20:43, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 211.35,
+        "atr_pct": 3.65,
+        "expected_day_range_inr": 7.71,
+        "expected_day_range_pct": 3.65,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 18,
+      "fund_why": [
+        "-4 ROCE 2.52%",
+        "-4 ROE -3.83%",
+        "-8 loss-making (no P/E)",
+        "-6 3y profit CAGR -31%",
+        "+3 3y sales CAGR 8%",
+        "+2 D/E 0.7",
+        "+0 promoter 34.8%",
+        "-5 latest qtr PAT YoY -184.1%",
+        "+2 mcap ₹28,138 cr",
+        "+8 operating cash flow ₹1,653cr, 507% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: -458.2% last year against 405.6% the year before",
+        "-12 interest cover 2.22× — thin",
+        "+3 institutions hold 27.08%",
+        "+0 price to book 3.44",
+        "-6 ROCE 2.52% bought at 3.44× book is 0.7% on what you pay",
+        "  (value counted -10 of -14 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — profit growth 1y pct came out at -458% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Stock is trading at 3.44 times its book value",
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 7.03% over past five years.",
+        "Company has a low return on equity of -0.88% over last 3 years.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 211.35000610351562,
+      "ta": {
+        "trend": "up",
+        "rsi": 51.7,
+        "adx": 30.6,
+        "atr_pct": 3.65,
+        "vol_ratio": 0.73,
+        "chg_1d_pct": -0.54,
+        "chg_5d_pct": -1.46,
+        "dist_52w_high_pct": -8.87,
+        "dist_ema200_pct": 15.02,
+        "avg_turnover_cr": 100.86,
+        "high_52w": 231.93,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-11"
+      },
+      "fundamentals": {
+        "market_cap_cr": 28138.0,
+        "pe": null,
+        "roce": 2.52,
+        "roe": -3.83,
+        "sales_growth_3_years": 8.0,
+        "profit_growth_3_years": -31.0,
+        "promoter_pct": 34.8,
+        "debt_to_equity": 0.7,
+        "revenue_ttm_cr": 9206.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

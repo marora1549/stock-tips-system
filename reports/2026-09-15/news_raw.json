@@ -1,0 +1,963 @@
+{
+  "date": "2026-09-15",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "b84fea94fa",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c7dac77d5e",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "44c481532f",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "15dd8abd95",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "296bb87b6b",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4c57a5f9bf",
+      "symbol": "GRSE",
+      "company": "Garden Reach Shipbuilders & Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "Garden Reach — warships",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.83,
+      "size_estimated": false,
+      "size_basis": "Rs 83 lakh",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "published_utc": "2026-09-15T02:34:01+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5557c2d475",
+      "symbol": "FOCUS",
+      "company": "Focus Lighting and Fixtures Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/moodys:95ea0a146ca2d:0-top-stocks-in-focus-tomorrow-investors-must-watch-hdfc-bank-hcl-tech-sun-pharma-shares-on-tue-15-sept-triggers/",
+      "title": "Top stocks in focus tomorrow: Investors must watch HDFC Bank, HCL Tech, Sun Pharma shares on Tue, 15 Sept | Triggers",
+      "published": "Mon, 14 Sep 2026 17:50:55 GMT",
+      "published_utc": "2026-09-14T17:50:55+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:95ea0a146ca2d:0-top-stocks-in-focus-tomorrow-investors-must-watch-hdfc-bank-hcl-tech-sun-pharma-shares-on-tue-15-sept-triggers/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c8e6c9ba08",
+      "symbol": "ASPINWALL",
+      "company": "Aspinwall and Company Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/scholar-rock-wins-first-usfda-approval-for-isembyld-to-treat-spinal-muscular-atrophy-179230",
+      "title": "Scholar Rock Wins First USFDA Approval for Isembyld to Treat Spinal Muscular Atrophy",
+      "published": "Mon, 14 Sep 2026 14:44:18 GMT",
+      "published_utc": "2026-09-14T14:44:18+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://medicaldialogues.in/amp/news/industry/pharma/scholar-rock-wins-first-usfda-approval-for-isembyld-to-treat-spinal-muscular-atrophy-179230"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b9d19b642b",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "zero observations",
+      "also_matched": [
+        "dilution",
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms",
+      "title": "Stocks in news: Tata Group stocks, HDFC Bank, Coforge, HFCL, Sun Pharma and Varun Beverages",
+      "published": "Tue, 15 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-15T00:30:00+00:00",
+      "sentence": "zero observations",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "22b5ddae39",
+      "symbol": "PPLPHARMA",
+      "company": "Piramal Pharma Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/piramal-pharma-share-price-gets-7-observations-from-us-fda-at-morpeth-uk-facility-19990378.htm",
+      "title": "Piramal Pharma gets 7 observations from US FDA at Morpeth UK facility",
+      "published": "Mon, 14 Sep 2026 15:13:19 GMT",
+      "published_utc": "2026-09-14T15:13:19+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/piramal-pharma-share-price-gets-7-observations-from-us-fda-at-morpeth-uk-facility-19990378.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "630390613f",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win",
+        "regulatory_approval",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-sept-15-hdfc-bank-bse-broking-firms-hcl-tech-deccan-gold-mines-cesc-glenmark-bhel-patel-airtemp-lenskart-heidelberg-au-small-fiance-bank-gland-pharma/article71466536.ece",
+      "title": "Stocks to watch, Sept 15: HDFC Bank, BSE, HCL Tech, Deccan Gold Mines, CESC, Glenmark, BHEL, and more",
+      "published": "Tue, 15 Sep 2026 01:26:21 GMT",
+      "published_utc": "2026-09-15T01:26:21+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-sept-15-hdfc-bank-bse-broking-firms-hcl-tech-deccan-gold-mines-cesc-glenmark-bhel-patel-airtemp-lenskart-heidelberg-au-small-fiance-bank-gland-pharma/article71466536.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "dd85bd34ae",
+      "symbol": "HCLTECH",
+      "company": "HCL Technologies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/moodys:95ea0a146ca2d:0-top-stocks-in-focus-tomorrow-investors-must-watch-hdfc-bank-hcl-tech-sun-pharma-shares-on-tue-15-sept-triggers/",
+      "title": "Top stocks in focus tomorrow: Investors must watch HDFC Bank, HCL Tech, Sun Pharma shares on Tue, 15 Sept | Triggers",
+      "published": "Mon, 14 Sep 2026 17:50:55 GMT",
+      "published_utc": "2026-09-14T17:50:55+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:95ea0a146ca2d:0-top-stocks-in-focus-tomorrow-investors-must-watch-hdfc-bank-hcl-tech-sun-pharma-shares-on-tue-15-sept-triggers/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4125cb02c3",
+      "symbol": "LEMONTREE",
+      "company": "Lemon Tree Hotels Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/rj-corp-to-acquire-49-stake-in-arum-hotels-under-joint-venture-with-lemon-tree-hotels/",
+      "title": "RJ Corp to acquire 49% stake in Arum Hotels under joint venture with Lemon Tree Hotels",
+      "published": "Mon, 14 Sep 2026 16:03:48 GMT",
+      "published_utc": "2026-09-14T16:03:48+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [
+        "corp_stocks_to_watch"
+      ],
+      "urls": [
+        "https://businessupturn.com/business/rj-corp-to-acquire-49-stake-in-arum-hotels-under-joint-venture-with-lemon-tree-hotels/",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms"
+      ],
+      "n_reports": 2
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/moneycontrol_stocks-to-watch-today-hdfc-bank-lalithaa-activity-7505434012480438272-faVk",
+      "title": "Stocks to Watch Today: HDFC Bank, Lalithaa Jewellery, Horizon Industrial Parks, Solar Industries, Aurobindo Pharma, Raymond, Coforge, Pranav Constructions in focus on 15 September- Moneycontrol.com",
+      "published": "Tue, 15 Sep 2026 01:15:12 GMT",
+      "chars": 416,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-sept-15-hdfc-bank-bse-broking-firms-hcl-tech-deccan-gold-mines-cesc-glenmark-bhel-patel-airtemp-lenskart-heidelberg-au-small-fiance-bank-gland-pharma/article71466536.ece",
+      "title": "Stocks to watch, Sept 15: HDFC Bank, BSE, HCL Tech, Deccan Gold Mines, CESC, Glenmark, BHEL, and more",
+      "published": "Tue, 15 Sep 2026 01:26:21 GMT",
+      "chars": 12403,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-coforge-hfcl-sun-pharma-and-varun-beverages/articleshow/134245046.cms",
+      "title": "Stocks in news: Tata Group stocks, HDFC Bank, Coforge, HFCL, Sun Pharma and Varun Beverages",
+      "published": "Tue, 15 Sep 2026 00:30:00 GMT",
+      "chars": 9221,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hdfc-bank-lalithaa-jewellery-horizon-industrial-parks-solar-industries-aurobindo-pharma-raymond-coforge-pranav-constructions-in-focus-on-15-september-14029621.html",
+      "title": "Stocks to Watch Today: HDFC Bank, Lalithaa Jewellery, Horizon Industrial Parks, Solar Industries,...",
+      "published": "Mon, 14 Sep 2026 18:34:56 GMT",
+      "chars": 14540,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/tm/tm.asp?date=9/15/2026&title=Digilogic-Systems-Secures-Major-Defence-Contract--Fino-Payments-Bank-Reports-Strong-August-Growth--Top-Buzzing-Stocks-Today",
+      "title": "Indian Stock Market News, Equity Market and Sensex Today in India",
+      "published": "Tue, 15 Sep 2026 00:30:00 GMT",
+      "chars": 8370,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/waaree-energies-premier-energies-vikram-solar-us-finalises-steep-duties-on-indian-solar-imports-stocks-in-focus/article-200235/",
+      "title": "Waaree Energies, Premier Energies, Vikram Solar: US finalises steep duties on Indian solar imports; stocks in focus",
+      "published": "Tue, 15 Sep 2026 01:51:25 GMT",
+      "chars": 5036,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.telecompaper.com/news/hughes-secures-contract-to-deliver-leo-satellite-connectivity-for-brazil-voting-stations--1582521",
+      "title": "Hughes secures contract to deliver LEO satellite connectivity for Brazil voting stations",
+      "published": "Mon, 14 Sep 2026 06:40:41 GMT",
+      "chars": 675,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/moodys:95ea0a146ca2d:0-top-stocks-in-focus-tomorrow-investors-must-watch-hdfc-bank-hcl-tech-sun-pharma-shares-on-tue-15-sept-triggers/",
+      "title": "Top stocks in focus tomorrow: Investors must watch HDFC Bank, HCL Tech, Sun Pharma shares on Tue, 15 Sept | Triggers",
+      "published": "Mon, 14 Sep 2026 17:50:55 GMT",
+      "chars": 4340,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/scholar-rock-wins-first-usfda-approval-for-isembyld-to-treat-spinal-muscular-atrophy-179230",
+      "title": "Scholar Rock Wins First USFDA Approval for Isembyld to Treat Spinal Muscular Atrophy",
+      "published": "Mon, 14 Sep 2026 14:44:18 GMT",
+      "chars": 2704,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/strides-pharma-receives-3-usfda-observations-for-alathur-formulations-facility",
+      "title": "Strides Pharma Receives 3 USFDA Observations For Alathur Formulations Facility",
+      "published": "Tue, 15 Sep 2026 00:55:43 GMT",
+      "chars": 4211,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/strides-pharma-shares-in-focus-after-usfda-issues-three-observations-14029527.html",
+      "title": "Strides Pharma shares in focus after USFDA issues three observations",
+      "published": "Tue, 15 Sep 2026 02:15:00 GMT",
+      "chars": 3456,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/isembyld-fda-approval-approves-scholar-rocks-as/",
+      "title": "US FDA approves Scholar Rock’s Isembyld as first muscle-targeted SMA therapy",
+      "published": "Mon, 14 Sep 2026 11:52:00 GMT",
+      "chars": 2406,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/aurobindo-pharma-unit-iv-api-facility-concludes-us-fda-inspection-with-zero-observations",
+      "title": "Aurobindo Pharma Unit-IV API Facility Concludes US FDA Inspection With Zero Observations",
+      "published": "Tue, 15 Sep 2026 00:29:36 GMT",
+      "chars": 3962,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/indian-patent-office-issues-draft-pharma-patent-examination-guidelines-seeks-greater-consistency-in-scrutiny-179231",
+      "title": "Indian Patent Office Issues Draft Pharma Patent Examination Guidelines, Seeks Greater Consistency in...",
+      "published": "Mon, 14 Sep 2026 14:56:14 GMT",
+      "chars": 4707,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.stocktitan.net/news/TAK/u-s-fda-accepts-new-drug-application-under-priority-review-for-7ppwo0p35o35.html",
+      "title": "About 70% had clear or almost clear skin after 16 weeks with a daily psoriasis pill",
+      "published": "Mon, 14 Sep 2026 07:00:00 GMT",
+      "chars": 20000,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/fake-cancer-drugs-icu-injections-allegedly-supplied-to-90-bengaluru-hospitals-pharmacy-owner-held-179233",
+      "title": "Fake Cancer Drugs, ICU Injections Allegedly Supplied to 90+ Bengaluru Hospitals, Pharmacy Owner Held",
+      "published": "Mon, 14 Sep 2026 15:16:46 GMT",
+      "chars": 4134,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/strides-pharma-receives-3-usfda-observations-for-alathur-formulations-facility",
+      "title": "Strides Pharma Receives 3 USFDA Observations For Alathur Formulations Facility",
+      "published": "Tue, 15 Sep 2026 00:55:43 GMT",
+      "chars": 4211,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://money.rediff.com/news/market/piramal-pharma-uk-facility-gets-7-us-fda-observations/54335420260914",
+      "title": "Piramal Pharma UK Facility Gets 7 US FDA Observations",
+      "published": "Mon, 14 Sep 2026 16:46:12 GMT",
+      "chars": 1329,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/piramal-pharma-share-price-gets-7-observations-from-us-fda-at-morpeth-uk-facility-19990378.htm",
+      "title": "Piramal Pharma gets 7 observations from US FDA at Morpeth UK facility",
+      "published": "Mon, 14 Sep 2026 15:13:19 GMT",
+      "chars": 2518,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.moneycontrol.com/news/business/markets/strides-pharma-shares-in-focus-after-usfda-issues-three-observations-14029527.html",
+      "title": "Strides Pharma shares in focus after USFDA issues three observations",
+      "published": "Tue, 15 Sep 2026 02:15:00 GMT",
+      "chars": 3456,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.thewrap.com/industry-news/business/musk-release-date-alex-gibney-documentary/",
+      "title": "'Musk' Documentary Moves Release Date Up a Week Amid Rave Reviews and Legal Threats",
+      "published": "Mon, 14 Sep 2026 20:22:07 GMT",
+      "chars": 2376,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.whalesbook.com/corporate-news/English/healthcarebiotech/Piramal-Pharma-Receives-US-FDA-Form-483-for-Morpeth-UK-Facility/6aa802e4f2017017ae69b164",
+      "title": "Piramal Pharma Receives US FDA Form-483 for Morpeth, UK Facility",
+      "published": "Mon, 14 Sep 2026 14:23:40 GMT",
+      "chars": 2231,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/associated-ceramics-sets-sep-4-board-meeting-fix-agm-details/49825614",
+      "title": "Associated Ceramics confirms Sep 30 AGM date and e-voting window",
+      "published": "Mon, 14 Sep 2026 10:57:14 GMT",
+      "chars": 4768,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/corporate-news/English/renewables/ACME-Solar-Commissions-5363-MW-BESS-Capacity-in-Rajasthan-FDRE-Project/6aa827b3f2017017ae69bbe7",
+      "title": "ACME Solar Commissions 53.63 MW BESS Capacity in Rajasthan FDRE Project",
+      "published": "Mon, 14 Sep 2026 16:59:42 GMT",
+      "chars": 2919,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/acme-solar-holdings-commissions-phase-i-of-bess-project-in-rajasthan/",
+      "title": "Acme Solar Holdings commissions Phase-I of BESS project in Rajasthan",
+      "published": "Mon, 14 Sep 2026 17:05:33 GMT",
+      "chars": 1875,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.indiasnews.net/news/279305561/rosatom-in-talks-with-indian-private-companies-to-build-nuclear-plants-ceo",
+      "title": "Rosatom in talks with Indian private companies to build nuclear plants - CEO",
+      "published": "Mon, 14 Sep 2026 17:17:00 GMT",
+      "chars": 2952,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/corporate-news/Telugu/renewables/ACME-Solar-Commissions-5363-MW-BESS-Capacity-in-Rajasthan-FDRE-Project/6aa827b3f2017017ae69bbe7",
+      "title": "ACME Solar: రాజస్థాన్‌లో భారీ ప్రాజెక్ట్.. **53.63 MW** BESS సామర్థ్యంతో కార్యకలాపాలు ప్రారంభం!",
+      "published": "Mon, 14 Sep 2026 16:59:42 GMT",
+      "chars": 1238,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/corporate-news/Gujarati/renewables/ACME-Solar-Commissions-5363-MW-BESS-Capacity-in-Rajasthan-FDRE-Project/6aa827b3f2017017ae69bbe7",
+      "title": "ACME Solar: રાજસ્થાન પ્રોજેક્ટમાં મોટી સિદ્ધિ, **53.63 MW** ની BESS ક્ષમતા કાર્યરત",
+      "published": "Mon, 14 Sep 2026 16:59:42 GMT",
+      "chars": 1275,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/rj-corp-to-acquire-49-stake-in-arum-hotels-under-joint-venture-with-lemon-tree-hotels/",
+      "title": "RJ Corp to acquire 49% stake in Arum Hotels under joint venture with Lemon Tree Hotels",
+      "published": "Mon, 14 Sep 2026 16:03:48 GMT",
+      "chars": 2378,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/madras-hc-order-offers-hope-for-gst-credit-on-properties-built-for-rent-126091400892_1.html",
+      "title": "Madras HC order offers hope for GST credit on properties built for rent",
+      "published": "Mon, 14 Sep 2026 15:28:19 GMT",
+      "chars": 5233,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/goa-nightclub-fire-3-accused-surrender-before-mapusa-court-after-sc-order-126091400330_1.html",
+      "title": "Goa nightclub fire: 3 accused surrender before Mapusa court after SC order",
+      "published": "Mon, 14 Sep 2026 08:23:40 GMT",
+      "chars": 4019,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/external-affairs-defence-security/news/india-to-export-654-mw-power-to-nepal-18-hours-a-day-till-december-end-126091400388_1.html",
+      "title": "India to export 654 MW power to Nepal for 18 hours a day till December end",
+      "published": "Mon, 14 Sep 2026 09:00:16 GMT",
+      "chars": 2801,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/pvt-life-insurers-bond-fra-participation-slips-amid-falling-non-par-share-126091400527_1.html",
+      "title": "Pvt life insurers' Bond FRA participation slips amid falling non-par share",
+      "published": "Mon, 14 Sep 2026 12:14:27 GMT",
+      "chars": 4250,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/beijing-hits-back-at-anthropic-ceo-s-call-to-curb-china-s-ai-development-126091400460_1.html",
+      "title": "Beijing hits back at Anthropic CEO's call to curb China's AI development",
+      "published": "Mon, 14 Sep 2026 10:11:58 GMT",
+      "chars": 5472,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/specials/best-of-bs-opinion-maturity-lies-in-managing-risks-that-progress-creates-126091500014_1.html",
+      "title": "Best of BS Opinion: Maturity lies in managing risks that progress creates",
+      "published": "Tue, 15 Sep 2026 00:45:43 GMT",
+      "chars": 4411,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-launches-hindi-information-service-jan-soochna-seva-on-hindi-diwas-126091400454_1.html",
+      "title": "SC launches Hindi information service 'Jan Soochna Seva' on Hindi Diwas",
+      "published": "Mon, 14 Sep 2026 10:11:09 GMT",
+      "chars": 2848,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/india-mercosur-ease-coo-process-as-two-sides-launch-talks-to-expand-pta-126091400988_1.html",
+      "title": "India, Mercosur ease CoO process as two sides launch talks to expand PTA",
+      "published": "Mon, 14 Sep 2026 16:48:04 GMT",
+      "chars": 4111,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/itcons-e-solutions-bags-order-worth-rs-83-lakh-126091500080_1.html",
+      "title": "ITCONS E-Solutions bags order worth Rs 83 lakh",
+      "published": "Tue, 15 Sep 2026 08:04:01 +0530",
+      "chars": 218,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-outlook-2-stock-ideas-for-today-by-angel-one-s-hitesh-rathi-126091500079_1.html",
+      "title": "Nifty outlook, 2 stock ideas for today by Angel One's Hitesh Rathi",
+      "published": "Tue, 15 Sep 2026 08:03:15 +0530",
+      "chars": 164,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-15-nse-bse-sensex-today-nifty-gift-nifty-crude-oil-price-today-pranav-construction-ipo-listing-126091500075_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Asian markets fall as firm oil prices weigh",
+      "published": "Tue, 15 Sep 2026 07:56:13 +0530",
+      "chars": 171,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/paytm-among-3-stock-ideas-for-today-by-choice-equity-s-sachin-gupta-126091500074_1.html",
+      "title": "Paytm among 3 stock ideas for today by Choice Equity's Sachin Gupta",
+      "published": "Tue, 15 Sep 2026 07:38:02 +0530",
+      "chars": 181,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-vs-bse-comparing-dividends-bonuses-splits-for-shareholders-126091400315_1.html",
+      "title": "NSE vs BSE: Comparing dividends, bonuses & splits for shareholders",
+      "published": "Tue, 15 Sep 2026 07:37:56 +0530",
+      "chars": 190,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-rises-as-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-126091500058_1.html",
+      "title": "Oil rises as Saudi pipeline outage, fresh attacks raise supply concerns",
+      "published": "Tue, 15 Sep 2026 07:31:51 +0530",
+      "chars": 192,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/regulatory-changes-hit-derivatives-volumes-daily-contracts-fall-23-in-aug-126091401052_1.html",
+      "title": "Regulatory changes hit derivatives volumes; daily contracts fall 23% in Aug",
+      "published": "Mon, 14 Sep 2026 23:40:49 +0530",
+      "chars": 90,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/tata-sons-road-to-listing-charter-changes-disclosures-ofs-in-focus-126091400694_1.html",
+      "title": "Tata Sons' listing: Charter changes, disclosure scrutiny and OFS in focus",
+      "published": "Mon, 14 Sep 2026 18:49:18 +0530",
+      "chars": 149,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-6-stocks-cross-above-their-200-dmas/slideshow/134250267.cms",
+      "title": "Positive Breakout: These 6 stocks cross above their 200 DMAs",
+      "published": "Tue, 15 Sep 2026 07:44:29 +0530",
+      "chars": 151,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-15-crude-oil-rises-to-107-as-saudi-energy-infra-attacks-raise-supply-fears-what-are-experts-saying/articleshow/134250161.cms",
+      "title": "Oil Price Today (September 15): Crude oil rises to $107 as Saudi energy infra attacks raise supply fears. What are experts saying?",
+      "published": "Tue, 15 Sep 2026 07:41:57 +0530",
+      "chars": 428,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/central-banks-resume-interest-rate-hikes-amid-oil-shock-and-rising-inflation-trends/articleshow/134250003.cms",
+      "title": "Central banks turn hawkish again as oil shock stokes inflation",
+      "published": "Tue, 15 Sep 2026 07:40:08 +0530",
+      "chars": 360,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-near-two-week-high-as-oil-surge-lifts-yields-fed-hike-bets/articleshow/134250138.cms",
+      "title": "Dollar near two-week high as oil surge lifts yields, Fed hike bets",
+      "published": "Tue, 15 Sep 2026 07:38:29 +0530",
+      "chars": 413,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-oil-gains-strengthen-case-for-elevated-interest-rates/articleshow/134250095.cms",
+      "title": "Gold slips as oil gains strengthen case for elevated interest rates",
+      "published": "Tue, 15 Sep 2026 07:36:05 +0530",
+      "chars": 416,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-rise-as-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns/articleshow/134250064.cms",
+      "title": "Oil prices rise as Saudi pipeline outage, fresh attacks raise supply concerns",
+      "published": "Tue, 15 Sep 2026 07:31:35 +0530",
+      "chars": 393,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bourses-and-brokers-may-win-from-indias-proposed-auction-revamp/articleshow/134249897.cms",
+      "title": "Bourses and brokers may win from India’s proposed auction revamp",
+      "published": "Tue, 15 Sep 2026 07:14:29 +0530",
+      "chars": 426,
+      "body_how": "none"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/kec-international-secures-infrastructure-contracts-valued-at-1-300-crore",
+      "title": "KEC International Secures Infrastructure Contracts Valued At ₹1,300 Crore",
+      "published": "Mon, 14 Sep 2026 08:08:44 GMT",
+      "chars": 3968,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/kec-international-wins-orders-worth-1-300-crore",
+      "title": "KEC International Wins Orders Worth ₹1,300 Crore",
+      "published": "Tue, 15 Sep 2026 01:10:14 GMT",
+      "chars": 3856,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 104.4
+}
