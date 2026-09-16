@@ -1,0 +1,1736 @@
+{
+  "date": "2026-09-16",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 7
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 9
+    },
+    "corp_approvals": {
+      "docs": 7,
+      "events": 5
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 4
+    },
+    "corp_et_markets_rss": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "5a834a8984",
+      "symbol": "BBL",
+      "company": "Bharat Bijlee Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received the order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.05,
+      "size_estimated": false,
+      "size_basis": "₹4.59 lakh (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/bharat-bijlee-ltd-penalised-4-59-lakh-income-tax-department/51018760",
+      "title": "Bharat Bijlee Ltd penalised ₹4.59 lakh by Income Tax Department",
+      "published": "Tue, 15 Sep 2026 11:56:23 GMT",
+      "published_utc": "2026-09-15T11:56:23+00:00",
+      "sentence": "received the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/bharat-bijlee-ltd-penalised-4-59-lakh-income-tax-department/51018760"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b1ee03ed1b",
+      "symbol": "DIACABS",
+      "company": "Diamond Power Infrastructure Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 179.43,
+      "size_estimated": false,
+      "size_basis": "Rs 179.43 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 871.0,
+        "unit": "km",
+        "text": "871 kms"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/diamond-power-infrastructure-touches-roof-on-bagging-loa-worth-rs-179-43-crore-from-aeml239976",
+      "title": "Diamond Power Infrastructure touches roof on bagging LoA worth Rs 179.43 crore from AEML",
+      "published": "Tue, 15 Sep 2026 08:52:22 GMT",
+      "published_utc": "2026-09-15T08:52:22+00:00",
+      "sentence": "received a letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/diamond-power-infrastructure-touches-roof-on-bagging-loa-worth-rs-179-43-crore-from-aeml239976",
+        "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "884780bd78",
+      "symbol": "SAATVIKGL",
+      "company": "Saatvik Green Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received an order",
+      "also_matched": [
+        "analyst_downgrade",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1041.63,
+      "size_estimated": false,
+      "size_basis": "Rs 1,041.63 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-kanohar-electricals-prasol-chemicals-groww-saatvik-green-energy-sonata-software-nbcc-india-pesticides-in-focus-on-16-september-14030660.html",
+      "title": "Stocks to Watch Today: Kanohar Electricals, Prasol Chemicals, Groww, Saatvik Green Energy, Sonata...",
+      "published": "Tue, 15 Sep 2026 21:17:20 GMT",
+      "published_utc": "2026-09-15T21:17:20+00:00",
+      "sentence": "received an order",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-kanohar-electricals-prasol-chemicals-groww-saatvik-green-energy-sonata-software-nbcc-india-pesticides-in-focus-on-16-september-14030660.html",
+        "https://biginfo.in/news/saatvik-green-bags-order-worth-rs-1042-crore-from-seci",
+        "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+        "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
+        "https://www.business-standard.com/markets/capital-market-news/saatvik-green-energy-bags-rs-1-042-cr-solar-module-order-126091600097_1.html"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "fb7c9f30ec",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 2648.8,
+      "size_estimated": false,
+      "size_basis": "$301 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-after-usfda-issues-one-observation-for-telangana-facility-14030516.html",
+      "title": "Aurobindo Pharma shares in focus after USFDA issues one observation for Telangana facility",
+      "published": "Wed, 16 Sep 2026 01:35:03 GMT",
+      "published_utc": "2026-09-16T01:35:03+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-after-usfda-issues-one-observation-for-telangana-facility-14030516.html",
+        "https://www.thehindu.com/business/Industry/aurobindo-pharma-wins-us-fda-approval-for-generic-asthma-inhaler/article71469168.ece",
+        "https://www.thehindubusinessline.com/companies/aurobindo-pharma-gets-usfda-approval-for-generic-inhalation-aerosol-for-asthma-patients/article71467611.ece",
+        "https://www.business-standard.com/markets/capital-market-news/aurobindo-pharma-receives-usfda-approval-for-beclomethasone-dipropionate-hfa-inhalation-aerosol-126091500646_1.html",
+        "https://scanx.trade/stock-market-news/companies/aurobindo-pharma-gets-usfda-nod-beclomethasone-hfa-aerosol/51004109"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "12098104d0",
+      "symbol": "VARDMNPOLY",
+      "company": "Vardhman Polytex Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vardhman-polytex-allots-55-lakh-equity-shares-on-conversion-of-warrants-126091500663_1.html",
+      "title": "Vardhman Polytex allots 55 lakh equity shares on conversion of warrants",
+      "published": "Tue, 15 Sep 2026 10:01:35 GMT",
+      "published_utc": "2026-09-15T10:01:35+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/vardhman-polytex-allots-55-lakh-equity-shares-on-conversion-of-warrants-126091500663_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1d6ace600c",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded this contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 871.0,
+        "unit": "km",
+        "text": "871 kms"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html",
+      "title": "Multibagger Diamond Power hits 5% upper band for third day; here's why",
+      "published": "Tue, 15 Sep 2026 07:07:03 GMT",
+      "published_utc": "2026-09-15T07:07:03+00:00",
+      "sentence": "awarded this contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "047ec2673a",
+      "symbol": "INDIQUBE",
+      "company": "Indiqube Spaces Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://startupbeat.com/space-cargo-unlimited-secures-contract-for-in-space-manufacturing-missions-aboard-spacexs-starfall-re-entry-vehicle/39599/",
+      "title": "Space Cargo Unlimited Secures Contract for In-Space Manufacturing Missions Aboard SpaceX's Starfall Re-entry Vehicle",
+      "published": "Tue, 15 Sep 2026 14:40:25 GMT",
+      "published_utc": "2026-09-15T14:40:25+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://startupbeat.com/space-cargo-unlimited-secures-contract-for-in-space-manufacturing-missions-aboard-spacexs-starfall-re-entry-vehicle/39599/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4475b01288",
+      "symbol": "INDIANB",
+      "company": "Indian Bank",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 7110.0,
+      "size_estimated": false,
+      "size_basis": "₹7,110 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/indian-bank-q4-results-net-profit-rises-4-9-yoy-to-rs-3100-crore-nii-up-11-29/",
+      "title": "Indian Bank Q4 Results: Net profit rises 4.9% YoY to Rs 3,100 crore, NII up 11.29%",
+      "published": "Tue, 15 Sep 2026 21:07:24 GMT",
+      "published_utc": "2026-09-15T21:07:24+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/finance/stock-market/quarterly-results/indian-bank-q4-results-net-profit-rises-4-9-yoy-to-rs-3100-crore-nii-up-11-29/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "de5bda3bf9",
+      "symbol": "NYKAA",
+      "company": "FSN E-Commerce Ventures Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit was up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/nykaa-q2-results-fy27-preview-date-expectations",
+      "title": "Nykaa Q2 FY27 Results Preview",
+      "published": "Tue, 15 Sep 2026 10:59:25 GMT",
+      "published_utc": "2026-09-15T10:59:25+00:00",
+      "sentence": "net profit was up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/nykaa-q2-results-fy27-preview-date-expectations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ebf585c20e",
+      "symbol": "PPLPHARMA",
+      "company": "Piramal Pharma Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/cnbctv:0b0fd91bb094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-15 — cnbctv:0b0fd91bb094b:0",
+      "published": "Tue, 15 Sep 2026 08:53:31 GMT",
+      "published_utc": "2026-09-15T08:53:31+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:0b0fd91bb094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3e4673534b",
+      "symbol": "GROWW",
+      "company": "Billionbrains Garage Ventures Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-kanohar-electricals-prasol-chemicals-groww-saatvik-green-energy-sonata-software-nbcc-india-pesticides-in-focus-on-16-september-14030660.html",
+      "title": "Stocks to Watch Today: Kanohar Electricals, Prasol Chemicals, Groww, Saatvik Green Energy, Sonata...",
+      "published": "Tue, 15 Sep 2026 21:17:20 GMT",
+      "published_utc": "2026-09-15T21:17:20+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-kanohar-electricals-prasol-chemicals-groww-saatvik-green-energy-sonata-software-nbcc-india-pesticides-in-focus-on-16-september-14030660.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-yes-bank-vedanta-groww-bhel-bharat-forge-and-nbcc/articleshow/134275479.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "eb20f35cff",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 40 mw wind component, total capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 500.0,
+        "unit": "MWh",
+        "text": "500 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-adds-6-25-mw-wind-capacity-total-hits-2-594-mwp/50437004",
+      "title": "Juniper Green Energy commissions 40 MW wind component, total capacity hits ~2,679 MWp",
+      "published": "Tue, 15 Sep 2026 23:33:48 GMT",
+      "published_utc": "2026-09-15T23:33:48+00:00",
+      "sentence": "commissions 40 mw wind component, total capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/juniper-green-energy-adds-6-25-mw-wind-capacity-total-hits-2-594-mwp/50437004",
+        "https://www.thehindubusinessline.com/companies/juniper-green-energy-commissions-101-mw-wind-capacity-across-3-states/article71467749.ece"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "8c8e561ac0",
+      "symbol": "BANKBARODA",
+      "company": "Bank of Baroda",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/",
+      "title": "NSE IPO: 10 key things retail investors should know from the RHP",
+      "published": "Tue, 15 Sep 2026 07:55:09 GMT",
+      "published_utc": "2026-09-15T07:55:09+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8414eff1c0",
+      "symbol": "GICRE",
+      "company": "General Insurance Corporation of India",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/",
+      "title": "NSE IPO: 10 key things retail investors should know from the RHP",
+      "published": "Tue, 15 Sep 2026 07:55:09 GMT",
+      "published_utc": "2026-09-15T07:55:09+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ce704660c9",
+      "symbol": "NIACL",
+      "company": "The New India Assurance Company Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/",
+      "title": "NSE IPO: 10 key things retail investors should know from the RHP",
+      "published": "Tue, 15 Sep 2026 07:55:09 GMT",
+      "published_utc": "2026-09-15T07:55:09+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b301fb840b",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "railways",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 24000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 24,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece",
+      "title": "Stocks to watch, Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
+      "published": "Wed, 16 Sep 2026 01:38:11 GMT",
+      "published_utc": "2026-09-16T01:38:11+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece",
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-16-paytm-yes-bank-r-r-kabel-bhel-titagarh-rail-systems-vikram-solar-nbcc/article-200308/",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-yes-bank-vedanta-groww-bhel-bharat-forge-and-nbcc/articleshow/134275479.cms"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "f7454aba59",
+      "symbol": "BLUESTARCO",
+      "company": "Blue Star Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "railways",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 223.6,
+      "size_estimated": false,
+      "size_basis": "Rs 223.6 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece",
+      "title": "Stocks to watch, Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
+      "published": "Wed, 16 Sep 2026 01:38:11 GMT",
+      "published_utc": "2026-09-16T01:38:11+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e84aabae76",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "commercial and defence shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "defence",
+        "railways",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece",
+      "title": "Stocks to watch, Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
+      "published": "Wed, 16 Sep 2026 01:38:11 GMT",
+      "published_utc": "2026-09-16T01:38:11+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "12b4d2f0e9",
+      "symbol": "KEI",
+      "company": "KEI Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded this contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "EHV cables and house wire",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 179.43,
+      "size_estimated": false,
+      "size_basis": "₹179.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 871.0,
+        "unit": "km",
+        "text": "871 kms"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html",
+      "title": "Multibagger Diamond Power hits 5% upper band for third day; here's why",
+      "published": "Tue, 15 Sep 2026 07:07:03 GMT",
+      "published_utc": "2026-09-15T07:07:03+00:00",
+      "sentence": "awarded this contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "24d8df4a9c",
+      "symbol": "POLYCAB",
+      "company": "Polycab India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded this contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed cables and wires maker",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 179.43,
+      "size_estimated": false,
+      "size_basis": "₹179.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 871.0,
+        "unit": "km",
+        "text": "871 kms"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html",
+      "title": "Multibagger Diamond Power hits 5% upper band for third day; here's why",
+      "published": "Tue, 15 Sep 2026 07:07:03 GMT",
+      "published_utc": "2026-09-15T07:07:03+00:00",
+      "sentence": "awarded this contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "48e0b605cb",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1042.0,
+      "size_estimated": false,
+      "size_basis": "₹1,042 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6350.0,
+        "unit": "MW",
+        "text": "6.35 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+      "title": "Saatvik Green Energy shares in focus after bagging order worth ₹1,042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 13:11:22 GMT",
+      "published_utc": "2026-09-15T13:11:22+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+        "https://www.business-standard.com/markets/capital-market-news/saatvik-green-energy-bags-rs-1-042-cr-solar-module-order-126091600097_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "65488d2448",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "defence",
+        "railways",
+        "solar_manufacturing",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1000.0,
+        "unit": "MW",
+        "text": "1 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-16-paytm-yes-bank-r-r-kabel-bhel-titagarh-rail-systems-vikram-solar-nbcc/article-200308/",
+      "title": "Stocks to watch, Sept 16: Paytm, YES Bank, R R Kabel, BHEL, Titagarh Rail Systems, Vikram Solar, NBCC",
+      "published": "Wed, 16 Sep 2026 02:28:32 GMT",
+      "published_utc": "2026-09-16T02:28:32+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-16-paytm-yes-bank-r-r-kabel-bhel-titagarh-rail-systems-vikram-solar-nbcc/article-200308/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e4c9d6eb4e",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1042.0,
+      "size_estimated": false,
+      "size_basis": "₹1,042 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6350.0,
+        "unit": "MW",
+        "text": "6.35 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+      "title": "Saatvik Green Energy shares in focus after bagging order worth ₹1,042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 13:11:22 GMT",
+      "published_utc": "2026-09-15T13:11:22+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [
+        "corp_expansion",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+        "https://taiyangnews.info/markets/india-solar-pv-news-snippets-september-15-2026",
+        "https://www.business-standard.com/markets/capital-market-news/saatvik-green-energy-bags-rs-1-042-cr-solar-module-order-126091600097_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "1175205f95",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "jv with",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 15500.0,
+        "unit": "MW",
+        "text": "15.5 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://taiyangnews.info/markets/india-solar-pv-news-snippets-september-15-2026",
+      "title": "India Solar PV News Snippets: Raana Semiconductors To Launch 12-Inch CZ Machine & More",
+      "published": "Tue, 15 Sep 2026 11:42:58 GMT",
+      "published_utc": "2026-09-15T11:42:58+00:00",
+      "sentence": "jv with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://taiyangnews.info/markets/india-solar-pv-news-snippets-september-15-2026"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f6c5e5bd9a",
+      "symbol": "LUMINO",
+      "company": "Lumino Industries Limited",
+      "event": "analyst_upgrade",
+      "event_label": "Broker upgrade",
+      "sign": 1,
+      "certainty": 0.5,
+      "event_prior": 10,
+      "phrase": "upgraded its rating",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6.3,
+        "unit": "MW",
+        "text": "6.3 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html",
+      "title": "Crisil Ratings upgrades ratings of Lumino Industries to 'A+' with 'stable' outlook",
+      "published": "Tue, 15 Sep 2026 11:01:24 GMT",
+      "published_utc": "2026-09-15T11:01:24+00:00",
+      "sentence": "upgraded its rating",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c1d5ed0534",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2041.07,
+      "size_estimated": false,
+      "size_basis": "Rs 2,041.07 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6.3,
+        "unit": "MW",
+        "text": "6.3 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html",
+      "title": "Crisil Ratings upgrades ratings of Lumino Industries to 'A+' with 'stable' outlook",
+      "published": "Tue, 15 Sep 2026 11:01:24 GMT",
+      "published_utc": "2026-09-15T11:01:24+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "892a74147d",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2041.07,
+      "size_estimated": false,
+      "size_basis": "Rs 2,041.07 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6.3,
+        "unit": "MW",
+        "text": "6.3 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html",
+      "title": "Crisil Ratings upgrades ratings of Lumino Industries to 'A+' with 'stable' outlook",
+      "published": "Tue, 15 Sep 2026 11:01:24 GMT",
+      "published_utc": "2026-09-15T11:01:24+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "394b29afac",
+      "symbol": "APARINDS",
+      "company": "Apar Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded this contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "conductors, speciality oils, cables",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 179.43,
+      "size_estimated": false,
+      "size_basis": "₹179.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 871.0,
+        "unit": "km",
+        "text": "871 kms"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html",
+      "title": "Multibagger Diamond Power hits 5% upper band for third day; here's why",
+      "published": "Tue, 15 Sep 2026 07:07:03 GMT",
+      "published_utc": "2026-09-15T07:07:03+00:00",
+      "sentence": "awarded this contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e2294f346",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1042.0,
+      "size_estimated": false,
+      "size_basis": "₹1,042 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6350.0,
+        "unit": "MW",
+        "text": "6.35 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+      "title": "Saatvik Green Energy shares in focus after bagging order worth ₹1,042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 13:11:22 GMT",
+      "published_utc": "2026-09-15T13:11:22+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [
+        "corp_expansion",
+        "corp_bs_markets_rss"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+        "https://taiyangnews.info/markets/india-solar-pv-news-snippets-september-15-2026",
+        "https://www.business-standard.com/markets/capital-market-news/saatvik-green-energy-bags-rs-1-042-cr-solar-module-order-126091600097_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "fd4b959f45",
+      "symbol": "CRISIL",
+      "company": "Crisil Limited",
+      "event": "analyst_upgrade",
+      "event_label": "Broker upgrade",
+      "sign": 1,
+      "certainty": 0.5,
+      "event_prior": 10,
+      "phrase": "upgraded its rating",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6.3,
+        "unit": "MW",
+        "text": "6.3 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html",
+      "title": "Crisil Ratings upgrades ratings of Lumino Industries to 'A+' with 'stable' outlook",
+      "published": "Tue, 15 Sep 2026 11:01:24 GMT",
+      "published_utc": "2026-09-15T11:01:24+00:00",
+      "sentence": "upgraded its rating",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "36ecce6435",
+      "symbol": "DCAL",
+      "company": "Dishman Carbogen Amcis Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "no form 483 notice or observations",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dishman-carbogen-amcis-subsidiary-clears-us-fda-inspection-without/50757284",
+      "title": "Dishman Carbogen Amcis unit passes US FDA inspection without issues",
+      "published": "Tue, 15 Sep 2026 23:22:31 GMT",
+      "published_utc": "2026-09-15T23:22:31+00:00",
+      "sentence": "no form 483 notice or observations",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/dishman-carbogen-amcis-subsidiary-clears-us-fda-inspection-without/50757284"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ea104a3a6f",
+      "symbol": "FOCUS",
+      "company": "Focus Lighting and Fixtures Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "zero observations",
+      "also_matched": [
+        "regulatory_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://univest.in/blogs/aurobindo-pharma-share-price-zero-usfda-observations",
+      "title": "Aurobindo Pharma Share Price in Focus as Srikakulam API Facility Gets Zero USFDA Observations",
+      "published": "Tue, 15 Sep 2026 07:48:00 GMT",
+      "published_utc": "2026-09-15T07:48:00+00:00",
+      "sentence": "zero observations",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/aurobindo-pharma-share-price-zero-usfda-observations"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-16-bharat-forge-titagarh-rail-bhel-cochin-shipyard-thermax-blue-star-allen-blenders-tata-communications-mazagon-dock/article71470888.ece",
+      "title": "Stocks to watch, Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
+      "published": "Wed, 16 Sep 2026 01:38:11 GMT",
+      "chars": 8035,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-sept-16-paytm-yes-bank-r-r-kabel-bhel-titagarh-rail-systems-vikram-solar-nbcc/article-200308/",
+      "title": "Stocks to watch, Sept 16: Paytm, YES Bank, R R Kabel, BHEL, Titagarh Rail Systems, Vikram Solar, NBCC",
+      "published": "Wed, 16 Sep 2026 02:28:32 GMT",
+      "chars": 6087,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-september-16-paytm-bhel-bharat-forge-tempsens-instruments-groww-126091600096_1.html",
+      "title": "Stocks to watch: Paytm, BHEL, Bharat Forge, Tempsens Instruments, Groww",
+      "published": "Wed, 16 Sep 2026 02:28:17 GMT",
+      "chars": 4932,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-kanohar-electricals-prasol-chemicals-groww-saatvik-green-energy-sonata-software-nbcc-india-pesticides-in-focus-on-16-september-14030660.html",
+      "title": "Stocks to Watch Today: Kanohar Electricals, Prasol Chemicals, Groww, Saatvik Green Energy, Sonata...",
+      "published": "Tue, 15 Sep 2026 21:17:20 GMT",
+      "chars": 8799,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-yes-bank-vedanta-groww-bhel-bharat-forge-and-nbcc/articleshow/134275479.cms",
+      "title": "Stocks in news: Yes Bank, Vedanta, Groww, BHEL, Bharat Forge and NBCC",
+      "published": "Wed, 16 Sep 2026 00:30:00 GMT",
+      "chars": 9429,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=09/16/2026&story=2&title=4-Power-Stocks-to-Watch-Amid-the-Data-Center-Boom&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "4 Power Stocks to Watch Amid the Data Center Boom",
+      "published": "Wed, 16 Sep 2026 02:30:00 GMT",
+      "chars": 17933,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/saatvik-green-bags-order-worth-rs-1042-crore-from-seci",
+      "title": "Saatvik Green bags order worth Rs 1042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 22:39:46 GMT",
+      "chars": 527,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/saatvik-green-energy-shares-in-focus-after-bagging-order-worth-1-042-crore-from-seci/article-200299/",
+      "title": "Saatvik Green Energy shares in focus after bagging order worth ₹1,042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 13:11:22 GMT",
+      "chars": 2720,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://economictimes.indiatimes.com/industry/renewables/saatvik-green-energy-bags-order-worth-rs-1042-crore-from-seci/articleshow/134267699.cms",
+      "title": "Saatvik Green Energy bags order worth Rs 1042 crore from SECI",
+      "published": "Tue, 15 Sep 2026 15:14:03 GMT",
+      "chars": 1186,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://cyprusshippingnews.com/2026/09/16/odfjell-drilling-received-letter-of-award-from-var-energi/",
+      "title": "Odfjell Drilling received Letter of Award from Vår Energi",
+      "published": "Wed, 16 Sep 2026 02:31:28 GMT",
+      "chars": 4843,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/patels-airtemp-india-touches-the-roof-on-bagging-order-worth-rs-226-crore740183",
+      "title": "Patels Airtemp (India) touches the roof on bagging order worth Rs 226 crore",
+      "published": "Tue, 15 Sep 2026 08:58:22 GMT",
+      "chars": 1281,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://startupbeat.com/space-cargo-unlimited-secures-contract-for-in-space-manufacturing-missions-aboard-spacexs-starfall-re-entry-vehicle/39599/",
+      "title": "Space Cargo Unlimited Secures Contract for In-Space Manufacturing Missions Aboard SpaceX's Starfall Re-entry Vehicle",
+      "published": "Tue, 15 Sep 2026 14:40:25 GMT",
+      "chars": 3098,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/atishay-nse-atishay-secures-423-crore-work-order-for-digitization-from-ludhiana",
+      "title": "Atishay Limited Wins ₹4.23 Crore Contract for Records Digitization",
+      "published": "Tue, 15 Sep 2026 11:13:00 GMT",
+      "chars": 3665,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://upstox.com/news/market-news/ipo/nse-ipo-10-key-things-retail-investors-should-know-from-the-rhp/article-200193/",
+      "title": "NSE IPO: 10 key things retail investors should know from the RHP",
+      "published": "Tue, 15 Sep 2026 07:55:09 GMT",
+      "chars": 3041,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/news/multibagger-diamond-power-hits-5-upper-band-for-third-day-here-s-why-126091500381_1.html",
+      "title": "Multibagger Diamond Power hits 5% upper band for third day; here's why",
+      "published": "Tue, 15 Sep 2026 07:07:03 GMT",
+      "chars": 4456,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/diamond-power-infrastructure-touches-roof-on-bagging-loa-worth-rs-179-43-crore-from-aeml239976",
+      "title": "Diamond Power Infrastructure touches roof on bagging LoA worth Rs 179.43 crore from AEML",
+      "published": "Tue, 15 Sep 2026 08:52:22 GMT",
+      "chars": 1634,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/aurobindo-pharma-unit-iv-api-facility-concludes-us-fda-inspection-with-zero-observations",
+      "title": "Aurobindo Pharma Gains USFDA Approval for Inhalation Aerosol in $301 Million Market",
+      "published": "Tue, 15 Sep 2026 14:52:42 GMT",
+      "chars": 4355,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-after-usfda-issues-one-observation-for-telangana-facility-14030516.html",
+      "title": "Aurobindo Pharma shares in focus after USFDA issues one observation for Telangana facility",
+      "published": "Wed, 16 Sep 2026 01:35:03 GMT",
+      "chars": 3626,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.thehindu.com/business/Industry/aurobindo-pharma-wins-us-fda-approval-for-generic-asthma-inhaler/article71469168.ece",
+      "title": "Aurobindo Pharma wins U.S. FDA approval for generic asthma inhaler",
+      "published": "Tue, 15 Sep 2026 15:07:48 GMT",
+      "chars": 1088,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.thehindubusinessline.com/companies/aurobindo-pharma-gets-usfda-approval-for-generic-inhalation-aerosol-for-asthma-patients/article71467611.ece",
+      "title": "Aurobindo Pharma gets USFDA approval for generic inhalation aerosol for asthma patients",
+      "published": "Tue, 15 Sep 2026 10:36:01 GMT",
+      "chars": 4870,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.business-standard.com/markets/capital-market-news/aurobindo-pharma-receives-usfda-approval-for-beclomethasone-dipropionate-hfa-inhalation-aerosol-126091500646_1.html",
+      "title": "Aurobindo Pharma receives USFDA approval for Beclomethasone Dipropionate HFA Inhalation Aerosol",
+      "published": "Tue, 15 Sep 2026 09:46:01 GMT",
+      "chars": 1837,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/aurobindo-pharma-gets-usfda-nod-beclomethasone-hfa-aerosol/51004109",
+      "title": "Aurobindo Pharma gets USFDA approval for Beclomethasone HFA aerosol",
+      "published": "Tue, 15 Sep 2026 08:08:47 GMT",
+      "chars": 3758,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/aurobindo-pharma-gets-usfda-nod-for-first-metered-dose-inhaler-beclomethasone-aerosol-179322",
+      "title": "Aurobindo Pharma Gets USFDA Nod for First Metered-Dose Inhaler, Beclomethasone Aerosol",
+      "published": "Tue, 15 Sep 2026 16:49:20 GMT",
+      "chars": 2643,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.raps.org/resource/fda-warns-bausch-and-lomb-indian-api-maker-for-gmp-issues.html",
+      "title": "FDA warns Bausch and Lomb, Indian API maker for GMP issues",
+      "published": "Tue, 15 Sep 2026 20:54:00 GMT",
+      "chars": 7569,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/cnbctv:0b0fd91bb094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-15 — cnbctv:0b0fd91bb094b:0",
+      "published": "Tue, 15 Sep 2026 08:53:31 GMT",
+      "chars": 2205,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://univest.in/blogs/aurobindo-pharma-share-price-zero-usfda-observations",
+      "title": "Aurobindo Pharma Share Price in Focus as Srikakulam API Facility Gets Zero USFDA Observations",
+      "published": "Tue, 15 Sep 2026 07:48:00 GMT",
+      "chars": 9368,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dishman-carbogen-amcis-subsidiary-clears-us-fda-inspection-without/50757284",
+      "title": "Dishman Carbogen Amcis unit passes US FDA inspection without issues",
+      "published": "Tue, 15 Sep 2026 23:22:31 GMT",
+      "chars": 2604,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://pluang.com/en/news-feed/laporan-keuangan-evolution-petroleum-epm-q4-2026-sinyal-campuran",
+      "title": "Evolution Petroleum posts mixed Q4 results with adjusted loss but revenue beats estimates",
+      "published": "Tue, 15 Sep 2026 22:04:54 GMT",
+      "chars": 2570,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/bharat-bijlee-ltd-penalised-4-59-lakh-income-tax-department/51018760",
+      "title": "Bharat Bijlee Ltd penalised ₹4.59 lakh by Income Tax Department",
+      "published": "Tue, 15 Sep 2026 11:56:23 GMT",
+      "chars": 2140,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/nykaa-q2-results-fy27-preview-date-expectations",
+      "title": "Nykaa Q2 FY27 Results Preview",
+      "published": "Tue, 15 Sep 2026 10:59:25 GMT",
+      "chars": 13801,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/fusion-finance-q2-results-fy27-preview-date-expectations",
+      "title": "Fusion Finance Q2 FY27 Results Preview",
+      "published": "Tue, 15 Sep 2026 07:33:00 GMT",
+      "chars": 15593,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/indian-bank-q4-results-net-profit-rises-4-9-yoy-to-rs-3100-crore-nii-up-11-29/",
+      "title": "Indian Bank Q4 Results: Net profit rises 4.9% YoY to Rs 3,100 crore, NII up 11.29%",
+      "published": "Tue, 15 Sep 2026 21:07:24 GMT",
+      "chars": 1473,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.sahi.com/news/acme-solar-unit-starts-rajasthan-bess-phase-i-with-53-63-mw-300-mwh-capacity",
+      "title": "ACME Solar Subsidiary Commissions Phase-I of Rajasthan BESS Project with 53.63 MW/300 MWh Capacity",
+      "published": "Tue, 15 Sep 2026 23:32:19 GMT",
+      "chars": 3776,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/15/kirloskar-ferrous-commissions-35-mwp-solar-plant-at-jalna-in-maharashtra/",
+      "title": "Kirloskar Ferrous Expands Solar Capacity to 105 MW in Jalna",
+      "published": "Tue, 15 Sep 2026 09:10:29 GMT",
+      "chars": 4248,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-adds-6-25-mw-wind-capacity-total-hits-2-594-mwp/50437004",
+      "title": "Juniper Green Energy commissions 40 MW wind component, total capacity hits ~2,679 MWp",
+      "published": "Tue, 15 Sep 2026 23:33:48 GMT",
+      "chars": 2493,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.thehindubusinessline.com/companies/juniper-green-energy-commissions-101-mw-wind-capacity-across-3-states/article71467749.ece",
+      "title": "Juniper Green Energy commissions 101 MW wind capacity in September",
+      "published": "Tue, 15 Sep 2026 11:09:47 GMT",
+      "chars": 4766,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://taiyangnews.info/markets/india-solar-pv-news-snippets-september-15-2026",
+      "title": "India Solar PV News Snippets: Raana Semiconductors To Launch 12-Inch CZ Machine & More",
+      "published": "Tue, 15 Sep 2026 11:42:58 GMT",
+      "chars": 4053,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/markets/capital-market-news/neuland-lab-commissions-its-first-peptide-manufacturing-module-126091500593_1.html",
+      "title": "Neuland Lab commissions its first peptide manufacturing module",
+      "published": "Tue, 15 Sep 2026 09:21:28 GMT",
+      "chars": 2779,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.outlookbusiness.com/amp/story/corporate/juniper-green-energy-commissions-101-mw-wind-capacity-across-3-states-in-september",
+      "title": "Juniper Green Energy Commissions 101 MW Wind Capacity Across 3 States In September",
+      "published": "Tue, 15 Sep 2026 11:51:16 GMT",
+      "chars": 1457,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/aurobindo-pharma-receives-usfda-approval-for-beclomethasone-dipropionate-hfa-inhalation-aerosol-126091500646_1.html",
+      "title": "Aurobindo Pharma receives USFDA approval for Beclomethasone Dipropionate HFA Inhalation Aerosol",
+      "published": "Tue, 15 Sep 2026 09:46:01 GMT",
+      "chars": 1837,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/personal-finance/credit-card-cashback-referral-bonus-online-wins-what-s-taxable-in-india-126091500634_1.html",
+      "title": "Credit-card cashback, referral bonus, online wins: What's taxable in India?",
+      "published": "Tue, 15 Sep 2026 09:47:07 GMT",
+      "chars": 11055,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-quashes-seven-itat-orders-in-patanjali-case-flags-undue-haste-126091501033_1.html",
+      "title": "Delhi HC quashes seven ITAT orders in Patanjali case, flags 'undue haste'",
+      "published": "Tue, 15 Sep 2026 13:27:33 GMT",
+      "chars": 3294,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-high-court-seeks-openai-reply-on-ani-challenge-to-copyright-ruling-126091501292_1.html",
+      "title": "Delhi High Court seeks OpenAI reply on ANI challenge to copyright ruling",
+      "published": "Tue, 15 Sep 2026 16:09:07 GMT",
+      "chars": 2921,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/personal-finance/rera-or-consumer-commission-why-forum-should-be-chosen-with-care-126091501234_1.html",
+      "title": "Rera or consumer commission: Why forum should be chosen with care",
+      "published": "Tue, 15 Sep 2026 15:25:35 GMT",
+      "chars": 4894,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vardhman-polytex-allots-55-lakh-equity-shares-on-conversion-of-warrants-126091500663_1.html",
+      "title": "Vardhman Polytex allots 55 lakh equity shares on conversion of warrants",
+      "published": "Tue, 15 Sep 2026 10:01:35 GMT",
+      "chars": 1389,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/odisha-sicsem-silicon-carbide-semiconductor-unit-bhubaneswar-ism-126091600089_1.html",
+      "title": "Odisha clears ₹3,406 crore SiCSem semiconductor unit near Bhubaneswar",
+      "published": "Wed, 16 Sep 2026 02:09:10 GMT",
+      "chars": 5416,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/crisil-ratings-upgrades-ratings-of-lumino-industries-to-a-with-stable-outlook-126091500789_1.html",
+      "title": "Crisil Ratings upgrades ratings of Lumino Industries to 'A+' with 'stable' outlook",
+      "published": "Tue, 15 Sep 2026 11:01:24 GMT",
+      "chars": 4773,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/saatvik-green-energy-bags-rs-1-042-cr-solar-module-order-126091600097_1.html",
+      "title": "Saatvik Green Energy bags Rs 1,042-cr solar module order",
+      "published": "Wed, 16 Sep 2026 08:04:01 +0530",
+      "chars": 194,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-16-nse-bse-sensex-today-nifty-gift-nifty-crude-oil-price-today-kanohar-electricals-ipo-listing-126091600091_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Asian markets mixed ahead of US Fed rate decision",
+      "published": "Wed, 16 Sep 2026 07:58:22 +0530",
+      "chars": 198,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-september-16-paytm-bhel-bharat-forge-tempsens-instruments-groww-126091600096_1.html",
+      "title": "Stocks to watch: Paytm, BHEL, Bharat Forge, Tempsens Instruments, Groww",
+      "published": "Wed, 16 Sep 2026 07:58:17 +0530",
+      "chars": 134,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-breaches-23-172-support-acme-solar-among-2-stock-ideas-vinay-rajani-126091600095_1.html",
+      "title": "Technical view: Nifty's next important support at 22,700, says Vinay Rajani",
+      "published": "Wed, 16 Sep 2026 07:56:49 +0530",
+      "chars": 89,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-support-slips-to-22-950-kalyan-jewellers-dlf-on-analyst-radar-126091600090_1.html",
+      "title": "Nifty support slips to 22,950; Kalyan Jewellers, DLF on analyst radar",
+      "published": "Wed, 16 Sep 2026 07:42:13 +0530",
+      "chars": 163,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/crude-oil-spike-drags-rupee-to-nearly-96-per-dollar-nifty-dips-1-2-126091501452_1.html",
+      "title": "Crude oil spike drags rupee to nearly 96 per dollar; Nifty dips 1.2%",
+      "published": "Tue, 15 Sep 2026 23:32:58 +0530",
+      "chars": 89,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bharat-forge-collaborates-with-pratt-whitney-canada-126091501122_1.html",
+      "title": "Bharat Forge collaborates with Pratt & Whitney Canada",
+      "published": "Tue, 15 Sep 2026 19:50:02 +0530",
+      "chars": 83,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/wcil-commences-operations-at-gati-shakti-cargo-terminal-in-morbi-126091501095_1.html",
+      "title": "WCIL commences operations at Gati Shakti Cargo Terminal in Morbi",
+      "published": "Tue, 15 Sep 2026 19:31:06 +0530",
+      "chars": 329,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_et_markets_rss",
+      "why": "out of article budget"
+    },
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 49.9
+}

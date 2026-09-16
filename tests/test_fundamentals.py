@@ -383,3 +383,20 @@ def test_a_clamp_quotes_the_bound_that_actually_bound():
             assert "the most it can add" in line, f"an upside clamp quoting the downside: {line}"
     assert any("the most it can cost" in w for w in clamps), \
         "17x book on a 73 P/E must bind the valuation floor — the exact live case"
+
+
+def test_a_decade_low_flag_with_no_current_roce_does_not_crash():
+    """VARDMNPOLY, found in the 2026-09-16 pre-open run: crashed the whole run before any card
+    could be written, not just this one company's score.
+
+    Screener's ratios table gave a full ROCE history (so `roce_is_decade_low` is set from it),
+    but the quick-ratios block that feeds `f["roce"]` did not parse for this company, so `roce`
+    is None. The old condition was `(roce or 0) < 20`, which reads a missing ROCE as 0% and fires
+    the decade-low penalty anyway — then formats `roce:g` on a NoneType and blows up with a
+    TypeError. A missing current ROCE is a coverage gap, not evidence of a decade low."""
+    vardmnpoly = {"roce": None, "roce_series": [15.0, 12.0, -18.0, -16.0, -10.0, 1.0, 28.0, -34.0],
+                  "roce_now_avg": -1.7, "roce_then_avg": -3.4, "roce_drift_pp": 1.7,
+                  "roce_is_decade_low": True}
+    got = fu.assess(vardmnpoly)
+    assert not any("is the lowest in the years on the page" in w for w in got["why"]), \
+        "no current ROCE to call a decade low"

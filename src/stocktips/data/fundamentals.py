@@ -816,7 +816,7 @@ def score(f: dict | None, _internal: bool = False):
         elif drift >= 4:
             add(4, f"return on capital has improved from {f['roce_then_avg']:g}% to "
                    f"{f['roce_now_avg']:g}%")
-    if f.get("roce_is_decade_low") and (roce or 0) < 20:
+    if roce is not None and f.get("roce_is_decade_low") and roce < 20:
         add(-4, f"ROCE {roce:g}% is the lowest in the years on the page")
 
     cur = "balance"

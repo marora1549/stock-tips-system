@@ -71,7 +71,7 @@ EVENT_CLASSES: dict[str, dict] = {
     # low and left for the outcome loop to price. `prior` is a seed here, not a verdict.
     "regulatory_clearance": {
         "label": "Inspection cleared", "sign": 1, "certainty": 0.9, "prior": 8,
-        "patterns": [r"\bzero (?:483s?|observations?)\b", r"\bno (?:483s?|observations?)\b",
+        "patterns": [r"\bzero (?:483s?|observations?)\b", r"\bno\b[^.]{0,20}\b(?:483s?|observations?)\b",
                      r"\bwithout any observations?\b", r"\bnil observations?\b",
                      r"\bestablishment inspection report\b", r"\bEIR\b",
                      r"\bvoluntary action indicated\b", r"\bVAI\b",
@@ -297,6 +297,21 @@ def _conditional(low: str, start: int) -> bool:
     return bool(_CONDITIONAL_LEADIN.search(low[max(0, start - _CONDITIONAL_WINDOW):start]))
 
 
+# 16 Sep 2026: "Dishman Carbogen Amcis unit passes US FDA inspection without issues ... No Form 483
+# notice or observations raised by the regulator" scored AVOID off the bare phrase "form 483" —
+# the desk would have told a reader to sell a clean-inspection story because the phrase for the
+# bad outcome and the phrase for its absence share three words. classify() has no notion of the
+# phrase immediately in front of a match being a negation, same blind spot _conditional() exists
+# to cover for "if". Skip a match whose immediate lead-in denies it and take the next occurrence
+# of the same pattern instead.
+_NEGATION_LEADIN = re.compile(r"\b(?:no|not|never|without|zero|nil|none|absen(?:t|ce))\b")
+_NEGATION_WINDOW = 15
+
+
+def _negated(low: str, start: int) -> bool:
+    return bool(_NEGATION_LEADIN.search(low[max(0, start - _NEGATION_WINDOW):start]))
+
+
 def classify(text: str) -> list[dict]:
     """Every event class the text matches, strongest prior magnitude first."""
     low = re.sub(r"\s+", " ", (text or "").lower())
@@ -305,7 +320,7 @@ def classify(text: str) -> list[dict]:
         for pat in spec["patterns"]:
             hit = None
             for m in re.finditer(pat, low, re.I):
-                if not _conditional(low, m.start()):
+                if not _conditional(low, m.start()) and not _negated(low, m.start()):
                     hit = m
                     break
             if hit:

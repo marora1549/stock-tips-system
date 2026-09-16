@@ -356,3 +356,30 @@ def test_the_clearance_does_not_reach_the_card_on_its_own():
                          ta={"adx": 26, "trend": "up"}, class_prior=spec["prior"],
                          source_weight=0.5, now=None)
     assert got["catalyst"] < 40, f"scored {got['catalyst']}, still high enough to surface"
+
+
+# ---------------------------------------------------------------------------------------------
+# 16 September 2026: "Dishman Carbogen Amcis unit passes US FDA inspection without issues ... No
+# Form 483 notice or observations raised by the regulator" was AVOID-flagged as a regulatory
+# action off the bare substring "form 483" in the negated sentence. The article is the good
+# outcome, not the bad one.
+# ---------------------------------------------------------------------------------------------
+
+DCAL_CLEAN = ("Dishman Carbogen Amcis subsidiary passed first US FDA inspection. Inspection at "
+              "Vionnaz, Switzerland site concluded September 11, 2026. No Form 483 notice or "
+              "observations raised by the regulator. The facility did not receive a Form 483 "
+              "notice, which is typically issued for significant violations or deficiencies "
+              "found during such audits. The absence of a Form 483 is a critical operational "
+              "indicator.")
+
+
+def test_no_form_483_is_not_a_regulatory_action():
+    got = events.classify(DCAL_CLEAN)
+    assert not any(c["event"] == "regulatory_action" for c in got), \
+        "the article says a Form 483 was NOT issued — that is not the bad outcome"
+
+
+def test_no_form_483_still_reads_as_a_clean_inspection():
+    got = events.classify(DCAL_CLEAN)
+    assert got and got[0]["event"] == "regulatory_clearance", \
+        "the denial should still register as the mildly good news it is, not vanish entirely"
