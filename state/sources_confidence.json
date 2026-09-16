@@ -855,5 +855,22 @@
     "first_seen": "2026-09-11",
     "last_seen": "2026-09-15",
     "id": "chartink_rsi_oversold_bounce"
+  },
+  "broker:goldman": {
+    "score": 0.0,
+    "n_tips": 0,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-16",
+    "last_seen": "2026-09-16",
+    "id": "broker:goldman"
   }
 }
