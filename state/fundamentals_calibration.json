@@ -1,0 +1,26 @@
+{
+  "buckets": {
+    "75-100": {
+      "id": "75-100",
+      "n": 1,
+      "n_settled": 0,
+      "n_up": 0,
+      "sum_return_pct": 0.0,
+      "n_flagged": 0,
+      "first_seen": "2026-09-16"
+    }
+  },
+  "entries": [
+    {
+      "date": "2026-09-16",
+      "symbol": "KPIL",
+      "score": 87,
+      "bucket": "75-100",
+      "flags": [],
+      "caps": [],
+      "unrated": false,
+      "outcome": null,
+      "ret_pct": null
+    }
+  ]
+}
