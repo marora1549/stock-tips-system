@@ -1,0 +1,1544 @@
+{
+  "date": "2026-09-17",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 14
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 14
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 1,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "d2368ab428",
+      "symbol": "FORTIS",
+      "company": "Fortis Healthcare Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "won a ₹69 crore epc order",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 20.0,
+        "unit": "MW",
+        "text": "20MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263",
+      "title": "Stocks to Watch Today, September 17, 2026: Tahmar Enterprises, Infosys, Candour Techtex, Mazagon Dock Shipbuilders and Fortis Healthcare",
+      "published": "Thu, 17 Sep 2026 01:51:41 GMT",
+      "published_utc": "2026-09-17T01:51:41+00:00",
+      "sentence": "won a ₹69 crore epc order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "092e54715b",
+      "symbol": "INFY",
+      "company": "Infosys Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "won a ₹69 crore epc order",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 20.0,
+        "unit": "MW",
+        "text": "20MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263",
+      "title": "Stocks to Watch Today, September 17, 2026: Tahmar Enterprises, Infosys, Candour Techtex, Mazagon Dock Shipbuilders and Fortis Healthcare",
+      "published": "Thu, 17 Sep 2026 01:51:41 GMT",
+      "published_utc": "2026-09-17T01:51:41+00:00",
+      "sentence": "won a ₹69 crore epc order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ed04f98d04",
+      "symbol": "SAATVIKGL",
+      "company": "Saatvik Green Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [
+        "dilution",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/",
+      "title": "Paytm, Groww, Saatvik Green among buzzing stocks as SENSEX climbs 430 pts; NIFTY trades above 23,250",
+      "published": "Wed, 16 Sep 2026 07:49:39 GMT",
+      "published_utc": "2026-09-16T07:49:39+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0d8b9e883c",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112",
+      "title": "HG Infra Engineering receives ₹9.4 Cr GST notice from Karnataka",
+      "published": "Wed, 16 Sep 2026 12:26:31 GMT",
+      "published_utc": "2026-09-16T12:26:31+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ec179abb9f",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112",
+      "title": "HG Infra Engineering receives ₹9.4 Cr GST notice from Karnataka",
+      "published": "Wed, 16 Sep 2026 12:26:31 GMT",
+      "published_utc": "2026-09-16T12:26:31+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "10e928f715",
+      "symbol": "PRAKASHSTL",
+      "company": "Prakash Steelage Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "regulatory_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 91.11,
+      "size_estimated": false,
+      "size_basis": "₹9,111.13 lakh (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/prakash-steelage-hold-35th-agm-via-video-conference-september-28/49874682",
+      "title": "Prakash Steelage revenue up 17% in FY26; profit falls 35% to ₹84 lakh",
+      "published": "Wed, 16 Sep 2026 15:21:27 GMT",
+      "published_utc": "2026-09-16T15:21:27+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/prakash-steelage-hold-35th-agm-via-video-conference-september-28/49874682"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bfa5190ded",
+      "symbol": "FORTIS",
+      "company": "Fortis Healthcare Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledged shares",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html",
+      "title": "Fortis moves SC against HC forensic audit order in company transactions",
+      "published": "Wed, 16 Sep 2026 11:51:27 GMT",
+      "published_utc": "2026-09-16T11:51:27+00:00",
+      "sentence": "pledged shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "849e73f095",
+      "symbol": "INFY",
+      "company": "Infosys Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 28.1,
+        "unit": "MW",
+        "text": "28.1 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
+      "published": "Wed, 16 Sep 2026 17:18:53 GMT",
+      "published_utc": "2026-09-16T17:18:53+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fd361148b4",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 28.1,
+        "unit": "MW",
+        "text": "28.1 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
+      "published": "Wed, 16 Sep 2026 17:18:53 GMT",
+      "published_utc": "2026-09-16T17:18:53+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "435f0493b1",
+      "symbol": "DAICHI",
+      "company": "Dai-Ichi Karkaria Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledged shares",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2562.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,562 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html",
+      "title": "Fortis moves SC against HC forensic audit order in company transactions",
+      "published": "Wed, 16 Sep 2026 11:51:27 GMT",
+      "published_utc": "2026-09-16T11:51:27+00:00",
+      "sentence": "pledged shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "88f189ba48",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commission the full 300 mw solar capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 4160.0,
+        "unit": "MWh",
+        "text": "4.16 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/09/16/acme-solar-commissions-66-68-mw-solar-and-300-mwh-bess-capacity-in-rajasthan/",
+      "title": "ACME Solar commissions 66.68 MW solar and 300 MWh BESS capacity in Rajasthan",
+      "published": "Wed, 16 Sep 2026 08:10:49 GMT",
+      "published_utc": "2026-09-16T08:10:49+00:00",
+      "sentence": "commission the full 300 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.pv-magazine-india.com/2026/09/16/acme-solar-commissions-66-68-mw-solar-and-300-mwh-bess-capacity-in-rajasthan/",
+        "https://solarbytes.info/india-bytes/acme-solar-commissions-66-68-mw-solar-and-300-mwh-bess-india-12541375"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "36c51a67ab",
+      "symbol": "GROWW",
+      "company": "Billionbrains Garage Ventures Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/",
+      "title": "Paytm, Groww, Saatvik Green among buzzing stocks as SENSEX climbs 430 pts; NIFTY trades above 23,250",
+      "published": "Wed, 16 Sep 2026 07:49:39 GMT",
+      "published_utc": "2026-09-16T07:49:39+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "779682f0f9",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, a defence order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 105.08,
+      "size_estimated": false,
+      "size_basis": "Rs 105.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "published_utc": "2026-09-16T12:50:35+00:00",
+      "sentence": "wins, a defence order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2e8f92086a",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, a defence order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 105.08,
+      "size_estimated": false,
+      "size_basis": "Rs 105.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "published_utc": "2026-09-16T12:50:35+00:00",
+      "sentence": "wins, a defence order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c95f687633",
+      "symbol": "BPCL",
+      "company": "Bharat Petroleum Corporation Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html",
+      "title": "BharatPe moves Delhi HC against Centrum, JBCG over Unity Bank warrants",
+      "published": "Wed, 16 Sep 2026 16:52:49 GMT",
+      "published_utc": "2026-09-16T16:52:49+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "73cb6ff9ca",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, a defence order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 105.08,
+      "size_estimated": false,
+      "size_basis": "Rs 105.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "published_utc": "2026-09-16T12:50:35+00:00",
+      "sentence": "wins, a defence order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a0f2a38636",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, a defence order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 105.08,
+      "size_estimated": false,
+      "size_basis": "Rs 105.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "published_utc": "2026-09-16T12:50:35+00:00",
+      "sentence": "wins, a defence order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "51f82af181",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, a defence order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 105.08,
+      "size_estimated": false,
+      "size_basis": "Rs 105.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "published_utc": "2026-09-16T12:50:35+00:00",
+      "sentence": "wins, a defence order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a2e0d2af03",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "pharma_approval",
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 28.1,
+        "unit": "MW",
+        "text": "28.1 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-infosys-mazagon-dock-fortis-healthcare-jsw-energy-and-kalpataru-projects/articleshow/134296725.cms",
+      "title": "Stocks in news: Infosys, Mazagon Dock, Fortis Healthcare, JSW Energy and Kalpataru Projects",
+      "published": "Thu, 17 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-17T00:30:00+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-infosys-mazagon-dock-fortis-healthcare-jsw-energy-and-kalpataru-projects/articleshow/134296725.cms",
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "88f4a88b31",
+      "symbol": "JUNIPER",
+      "company": "Juniper Hotels Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html",
+      "title": "BharatPe moves Delhi HC against Centrum, JBCG over Unity Bank warrants",
+      "published": "Wed, 16 Sep 2026 16:52:49 GMT",
+      "published_utc": "2026-09-16T16:52:49+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html",
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "69492ff731",
+      "symbol": "APLLTD",
+      "company": "Alembic Pharmaceuticals Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation",
+        "pharma_approval",
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": 1710.0,
+      "size_estimated": false,
+      "size_basis": "₹1,710 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tempsens-instruments-alembic-pharma-manipal-payment-rentomojo-highway-infra-gr-infraprojects-fortis-healthcare-in-focus-on-17-september-14031527.html",
+      "title": "Stocks to Watch Today: Tempsens Instruments, Alembic Pharma, Manipal Payment, Rentomojo, Highway Infra, GR...",
+      "published": "Wed, 16 Sep 2026 20:43:27 GMT",
+      "published_utc": "2026-09-16T20:43:27+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [
+        "corp_approvals"
+      ],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tempsens-instruments-alembic-pharma-manipal-payment-rentomojo-highway-infra-gr-infraprojects-fortis-healthcare-in-focus-on-17-september-14031527.html",
+        "https://www.cnbctv18.com/market/stocks/alembic-pharmaceuticals-share-price-gets-usfda-inspection-closure-for-vadodara-bioequivalence-facility-19992117.htm",
+        "https://businessupturn.com/business/alembic-pharmaceuticals-receives-usfda-inspection-closure-for-vadodara-facility/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "64204e9483",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "75da6192c7",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0609ea5074",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 19000.0,
+        "unit": "MW",
+        "text": "19 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+      "title": "GREW Solar partners US firm to produce 4 GW hybrid-tandem solar modules",
+      "published": "Wed, 16 Sep 2026 14:11:50 GMT",
+      "published_utc": "2026-09-16T14:11:50+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+        "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "80b2d8bb93",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 19000.0,
+        "unit": "MW",
+        "text": "19 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+      "title": "GREW Solar partners US firm to produce 4 GW hybrid-tandem solar modules",
+      "published": "Wed, 16 Sep 2026 14:11:50 GMT",
+      "published_utc": "2026-09-16T14:11:50+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+        "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "74ea232d9a",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e07f1a89b9",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 248.0,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 19000.0,
+        "unit": "MW",
+        "text": "19 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+      "title": "GREW Solar partners US firm to produce 4 GW hybrid-tandem solar modules",
+      "published": "Wed, 16 Sep 2026 14:11:50 GMT",
+      "published_utc": "2026-09-16T14:11:50+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+        "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html"
+      ],
+      "n_reports": 2
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-sept-17-reliance-infosys-krsnaa-mazagon-dock-motilal-oswal-granules-fine-organic-chem-venus-pipes-highway-infra/article71475140.ece",
+      "title": "Buzzing stocks for Sept 17: Reliance, Infosys, Krsnaa, Mazagon Dock, Motilal Oswal, Granules, Fine Organic Chem, Venus Pipes, Highway Infra",
+      "published": "Thu, 17 Sep 2026 01:42:26 GMT",
+      "chars": 9629,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tempsens-instruments-alembic-pharma-manipal-payment-rentomojo-highway-infra-gr-infraprojects-fortis-healthcare-in-focus-on-17-september-14031527.html",
+      "title": "Stocks to Watch Today: Tempsens Instruments, Alembic Pharma, Manipal Payment, Rentomojo, Highway Infra, GR...",
+      "published": "Wed, 16 Sep 2026 20:43:27 GMT",
+      "chars": 7615,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-infosys-mazagon-dock-fortis-healthcare-jsw-energy-and-kalpataru-projects/articleshow/134296725.cms",
+      "title": "Stocks in news: Infosys, Mazagon Dock, Fortis Healthcare, JSW Energy and Kalpataru Projects",
+      "published": "Thu, 17 Sep 2026 00:30:00 GMT",
+      "chars": 7769,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
+      "published": "Wed, 16 Sep 2026 17:18:53 GMT",
+      "chars": 4422,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-17-2026-tahmar-enterprises-infosys/51154263",
+      "title": "Stocks to Watch Today, September 17, 2026: Tahmar Enterprises, Infosys, Candour Techtex, Mazagon Dock Shipbuilders and Fortis Healthcare",
+      "published": "Thu, 17 Sep 2026 01:51:41 GMT",
+      "chars": 4956,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59548",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Wed, 16 Sep 2026 12:50:35 GMT",
+      "chars": 3024,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/",
+      "title": "Paytm, Groww, Saatvik Green among buzzing stocks as SENSEX climbs 430 pts; NIFTY trades above 23,250",
+      "published": "Wed, 16 Sep 2026 07:49:39 GMT",
+      "chars": 7035,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.aviationpros.com/aircraft-maintenance-technology/aircraft-technology/defense/press-release/55404799/ge-aerospace-secures-contract-for-hypersonic-test-bed-development-from-defense-innovation-unit",
+      "title": "GE Aerospace Secures Contract for Hypersonic Test Bed Development from Defense Innovation Unit",
+      "published": "Wed, 16 Sep 2026 17:33:19 GMT",
+      "chars": 1131,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.thelec.net/news/articleView.html?idxno=13965",
+      "title": "HD Construction Equipment Wins Order for 45 Excavators in Hong Kong",
+      "published": "Wed, 16 Sep 2026 09:26:41 GMT",
+      "chars": 852,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.cnbctv18.com/market/stocks/alembic-pharmaceuticals-share-price-gets-usfda-inspection-closure-for-vadodara-bioequivalence-facility-19992117.htm",
+      "title": "Alembic Pharmaceuticals gets USFDA inspection closure for Vadodara bioequivalence facility",
+      "published": "Wed, 16 Sep 2026 13:18:04 GMT",
+      "chars": 2951,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/neurology-neurosurgery/news/us-fda-clears-roches-elecsys-ptau217-blood-test-developed-in-collaboration-with-lilly-to-aid-identification-of-amyloid-pathology-associated-with-alzheimers-disease-179336",
+      "title": "US FDA clears Roche's Elecsys pTau217 blood test, developed in collaboration with Lilly, to aid...",
+      "published": "Wed, 16 Sep 2026 06:40:34 GMT",
+      "chars": 5411,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/alembic-pharma-receives-usfda-eir-closing-vadodara-bioequivalence-facility-inspection",
+      "title": "Alembic Pharma Receives USFDA EIR Closing Vadodara Bioequivalence Facility Inspection",
+      "published": "Wed, 16 Sep 2026 13:28:17 GMT",
+      "chars": 4517,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://vohnetwork.com/news/hospitals-providers/aiims-workshop-brings-experts-together-to-strengthen-cardiometabolic-health-education",
+      "title": "AIIMS Workshop Focuses on Cardiometabolic Education",
+      "published": "Wed, 16 Sep 2026 07:50:00 GMT",
+      "chars": 1355,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://businessupturn.com/business/alembic-pharmaceuticals-receives-usfda-inspection-closure-for-vadodara-facility/",
+      "title": "Alembic Pharmaceuticals receives USFDA inspection closure for Vadodara facility",
+      "published": "Wed, 16 Sep 2026 12:44:20 GMT",
+      "chars": 2263,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112",
+      "title": "HG Infra Engineering receives ₹9.4 Cr GST notice from Karnataka",
+      "published": "Wed, 16 Sep 2026 12:26:31 GMT",
+      "chars": 2862,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.biospace.com/drug-delivery/fda-warning-letter-accuses-bausch-lomb-of-lacking-commitment-to-remediation",
+      "title": "FDA warning letter accuses Bausch & Lomb of lacking commitment to remediation",
+      "published": "Wed, 16 Sep 2026 14:31:55 GMT",
+      "chars": 3184,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/alembic-pharma-receives-usfda-eir-closing-vadodara-bioequivalence-facility-inspection",
+      "title": "Alembic Pharma Receives USFDA EIR Closing Vadodara Bioequivalence Facility Inspection",
+      "published": "Wed, 16 Sep 2026 13:28:17 GMT",
+      "chars": 4517,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://3news.com/news/agbodza-issues-warning-letter-to-contractor-over-slow-progress-on-cape-coast-takoradi-dualisation",
+      "title": "Agbodza issues warning letter to contractor over slow progress on Cape Coast-Takoradi dualisation",
+      "published": "Wed, 16 Sep 2026 17:26:58 GMT",
+      "chars": 2892,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.jurishour.in/gst/gst-notice-order-physical-digital-signature-non-est/",
+      "title": "GST Notice And Order Without Physical Or Digital Signature Are Non-Est: Rajasthan High Court",
+      "published": "Wed, 16 Sep 2026 07:52:02 GMT",
+      "chars": 12157,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/prakash-steelage-hold-35th-agm-via-video-conference-september-28/49874682",
+      "title": "Prakash Steelage revenue up 17% in FY26; profit falls 35% to ₹84 lakh",
+      "published": "Wed, 16 Sep 2026 15:21:27 GMT",
+      "chars": 3929,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/fiberweb-schedules-41st-agm-september-29-nani-daman/49982345",
+      "title": "Fiberweb shares web-link for FY26 annual report ahead of AGM",
+      "published": "Wed, 16 Sep 2026 18:46:05 GMT",
+      "chars": 3057,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/dhanashree-electronics-seeks-approval-250-crore-related-party-deals/51099327",
+      "title": "Dhanashree Electronics seeks approval for ₹250 crore related-party deals at AGM",
+      "published": "Wed, 16 Sep 2026 10:19:53 GMT",
+      "chars": 4852,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tjx-raises-fiscal-2027-outlook-161300972.html",
+      "title": "TJX Raises Fiscal 2027 Outlook as Q2 Results Show Broad-Based Growth",
+      "published": "Wed, 16 Sep 2026 16:13:00 GMT",
+      "chars": 4236,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/united-airlines-stock-falls-after-options-surge-and-strong-q2-results/70109683",
+      "title": "United Airlines stock falls after options surge and strong Q2 results - ad-hoc-news.de",
+      "published": "Wed, 16 Sep 2026 08:23:05 GMT",
+      "chars": 4978,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/acme-solar-commissions-66-7mw-solar-300mwh-bess-capacity-in-rajasthan/articleshow/134283399.cms",
+      "title": "ACME Solar commissions 66.7MW solar, 300MWh BESS capacity in Rajasthan",
+      "published": "Wed, 16 Sep 2026 09:07:00 GMT",
+      "chars": 1492,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/09/16/acme-solar-commissions-66-68-mw-solar-and-300-mwh-bess-capacity-in-rajasthan/",
+      "title": "ACME Solar commissions 66.68 MW solar and 300 MWh BESS capacity in Rajasthan",
+      "published": "Wed, 16 Sep 2026 08:10:49 GMT",
+      "chars": 1638,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarbytes.info/india-bytes/acme-solar-commissions-66-68-mw-solar-and-300-mwh-bess-india-12541375",
+      "title": "ACME Solar commissions 66.68 MW solar and 300 MWh BESS in Rajasthan",
+      "published": "Wed, 16 Sep 2026 12:55:33 GMT",
+      "chars": 932,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/acme-solar-commissions-67-mw-solar-300-mwh-storage-in-rajasthan/54417620260916",
+      "title": "ACME Solar Commissions 67 MW Solar, 300 MWh Storage in Rajasthan",
+      "published": "Wed, 16 Sep 2026 09:12:13 GMT",
+      "chars": 733,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/energy/geon-commissions-10-mw-battery-storage-system-in-rajasthan-to-boost-grid-stability-19991879.htm",
+      "title": "GEON commissions 10 MW battery storage system in Rajasthan to boost grid stability",
+      "published": "Wed, 16 Sep 2026 09:29:57 GMT",
+      "chars": 3123,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://energy.economictimes.indiatimes.com/amp/news/power/acme-solar-commissions-66-68-mw-solar-300-mwh-bess-in-rajasthan/134280498",
+      "title": "ACME Solar commissions 66.68 MW solar, 300 MWh BESS in Rajasthan",
+      "published": "Wed, 16 Sep 2026 06:52:29 GMT",
+      "chars": 589,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/news/English/renewables/ACME-Solar-Commissions-300-MWh-Storage-67-MW-Solar-Units/6aaa5fa20416c068539e4fad",
+      "title": "ACME Solar Commissions 300 MWh Storage, 67 MW Solar Units",
+      "published": "Wed, 16 Sep 2026 09:21:38 GMT",
+      "chars": 2822,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html",
+      "title": "Fortis moves SC against HC forensic audit order in company transactions",
+      "published": "Wed, 16 Sep 2026 11:51:27 GMT",
+      "chars": 7062,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-sons-ipo-order-backs-tycoon-shapoor-mistry-s-long-running-ask-126091600750_1.html",
+      "title": "Tata Sons IPO order backs tycoon Shapoor Mistry's long-running ask",
+      "published": "Wed, 16 Sep 2026 10:23:45 GMT",
+      "chars": 7918,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sahajanand-medical-technologies-secures-regulatory-approval-in-egypt-for-supraflex-cruz-coronary-stent-126091600554_1.html",
+      "title": "Sahajanand Medical Technologies Secures Regulatory Approval in Egypt for Supraflex Cruz Coronary Stent",
+      "published": "Wed, 16 Sep 2026 08:30:06 GMT",
+      "chars": 4467,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/grew-solar-partners-us-firm-to-produce-4-gw-hybrid-tandem-solar-modules-126091601129_1.html",
+      "title": "GREW Solar partners US firm to produce 4 GW hybrid-tandem solar modules",
+      "published": "Wed, 16 Sep 2026 14:11:50 GMT",
+      "chars": 2688,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/bharatpe-moves-delhi-hc-against-centrum-jbcg-over-unity-bank-warrants-126091601388_1.html",
+      "title": "BharatPe moves Delhi HC against Centrum, JBCG over Unity Bank warrants",
+      "published": "Wed, 16 Sep 2026 16:52:49 GMT",
+      "chars": 3450,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "chars": 5337,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-hc-seeks-centre-s-response-on-plea-against-addictive-social-media-126091601387_1.html",
+      "title": "Delhi HC seeks Centre's response on plea against addictive social media",
+      "published": "Wed, 16 Sep 2026 16:50:03 GMT",
+      "chars": 4908,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/editorial/rules-beyond-borders-126091601421_1.html",
+      "title": "Rules beyond borders",
+      "published": "Wed, 16 Sep 2026 17:16:28 GMT",
+      "chars": 3501,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-17-nse-bse-sensex-today-nifty-gift-nifty-fed-rate-hike-nse-ipo-hero-motors-ipo-today-126091700079_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asia mkts mixed post US Fed's rate hike",
+      "published": "Thu, 17 Sep 2026 08:02:52 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-september-17-mazagon-dock-jsw-energy-highway-infra-fortis-infosys-126091700085_1.html",
+      "title": "Stocks to watch: Mazagon Dock, JSW Energy, Highway Infra, Fortis & Infosys",
+      "published": "Thu, 17 Sep 2026 08:01:43 +0530",
+      "chars": 186,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-50-s-structure-remains-weak-pvr-inox-among-top-picks-ajit-mishra-126091700084_1.html",
+      "title": "Nifty 50's structure remains weak; PVR INOX among top picks: Ajit Mishra",
+      "published": "Thu, 17 Sep 2026 07:52:37 +0530",
+      "chars": 116,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/radico-khaitan-among-3-stock-ideas-for-today-by-bonanza-s-kunal-kamble-126091700078_1.html",
+      "title": "Radico Khaitan among 3 stock ideas for today by Bonanza's Kunal Kamble",
+      "published": "Thu, 17 Sep 2026 07:36:11 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-saudi-crude-cargoes-ease-fears-of-supply-disruption-126091700070_1.html",
+      "title": "Oil prices fall as Saudi crude cargoes ease fears of supply disruption",
+      "published": "Thu, 17 Sep 2026 07:35:42 +0530",
+      "chars": 134,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/pricey-affair-is-nse-s-valuation-premium-to-global-peers-justified-126091600604_1.html",
+      "title": "Pricey affair! Is NSE's valuation premium to global peers justified?",
+      "published": "Thu, 17 Sep 2026 07:14:35 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/nse-ipo-subscription-status-apply-or-avoid-review-latest-gmp-today-share-price-allotment-date-126091601151_1.html",
+      "title": "NSE's much-awaited IPO opens today; should you apply? Check reviews, GMP",
+      "published": "Thu, 17 Sep 2026 07:10:34 +0530",
+      "chars": 194,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/economy/news/gst-council-to-take-up-process-reforms-at-october-7-meeting-fm-sitharaman-126091600955_1.html",
+      "title": "GST Council to take up process reforms at October 7 meeting: FM Sitharaman",
+      "published": "Wed, 16 Sep 2026 17:59:48 +0530",
+      "chars": 160,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-17-crude-oil-falls-below-105-even-as-middle-east-tensions-simmer-heres-why/articleshow/134299659.cms",
+      "title": "Oil Price Today (September 17): Crude oil falls below $105 even as Middle East tensions simmer. Here’s why",
+      "published": "Thu, 17 Sep 2026 07:46:41 +0530",
+      "chars": 205,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-opens-today-with-9-gmp-should-you-subscribe-to-rs-22569-crore-issue/articleshow/134299405.cms",
+      "title": "NSE IPO opens today with 9% GMP. Should you subscribe to Rs 22,569 crore issue?",
+      "published": "Thu, 17 Sep 2026 07:43:19 +0530",
+      "chars": 268,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/134299639.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Thu, 17 Sep 2026 07:37:00 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-ticks-up-from-near-six-week-low-as-investors-weigh-fed-outlook/articleshow/134298832.cms",
+      "title": "Gold ticks up from near six-week low as investors weigh Fed outlook",
+      "published": "Thu, 17 Sep 2026 07:29:14 +0530",
+      "chars": 438,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-extend-losses-as-fears-of-middle-east-supply-disruptions-ease/articleshow/134298582.cms",
+      "title": "Oil prices extend losses as fears of Middle East supply disruptions ease",
+      "published": "Thu, 17 Sep 2026 07:25:25 +0530",
+      "chars": 443,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/kamlesh-chandra-varshney-reappointed-as-sebi-whole-time-member/articleshow/134297428.cms",
+      "title": "Kamlesh Chandra Varshney reappointed as Sebi whole-time member",
+      "published": "Thu, 17 Sep 2026 07:13:56 +0530",
+      "chars": 370,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-bars-two-entities-over-alleged-price-manipulation/articleshow/134297126.cms",
+      "title": "Sebi bars two entities over alleged price manipulation",
+      "published": "Thu, 17 Sep 2026 06:52:34 +0530",
+      "chars": 462,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/fortis-healthcare-files-special-leave-petition-before-supreme-court-against-delhi-hc-judgment",
+      "title": "Fortis Healthcare Files SC Petition Against HC Order & Signs Agreement for 400+ Bed Hospital",
+      "published": "Wed, 16 Sep 2026 17:14:31 GMT",
+      "chars": 4191,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 158.7
+}

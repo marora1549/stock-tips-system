@@ -1,0 +1,1331 @@
+{
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 14
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 14
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 1,
+      "events": 0
+    }
+  },
+  "events_read": 27,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "75da6192c7",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 13,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹248cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+10 fundamentals 72/100",
+        "-6 13.4% below the 200-day average — fighting the trend",
+        "+12 published Wed 22:17, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 30043.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 22:17, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2501.0,
+        "atr_pct": 2.32,
+        "expected_day_range_inr": 58.02,
+        "expected_day_range_pct": 2.32,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 72,
+      "fund_why": [
+        "+12 ROCE 38.4%",
+        "+8 ROE 32.5%",
+        "+6 P/E 17.9",
+        "+8 3y profit CAGR 99%",
+        "+6 3y sales CAGR 58%",
+        "+4 return on capital has improved from 29.7% to 39%",
+        "+5 D/E 0.22",
+        "+4 promoter 64.12%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹71,942 cr",
+        "+3 operating cash flow ₹1,627cr, only 42% of profit",
+        "+4 interest cover 20.57×",
+        "-4 interest cost up 63% year on year",
+        "-10 borrowings up 168% year on year",
+        "-4 price to book 4.98",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 143% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 31.0%"
+      ],
+      "screener_cons": [],
+      "ltp": 2501.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 33.5,
+        "adx": 34.4,
+        "atr_pct": 2.32,
+        "vol_ratio": 1.24,
+        "chg_1d_pct": -2.11,
+        "chg_5d_pct": -2.61,
+        "dist_52w_high_pct": -32.75,
+        "dist_ema200_pct": -13.36,
+        "avg_turnover_cr": 131.45,
+        "high_52w": 3718.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 71942.0,
+        "pe": 17.9,
+        "roce": 38.4,
+        "roe": 32.5,
+        "sales_growth_3_years": 58.0,
+        "profit_growth_3_years": 99.0,
+        "promoter_pct": 64.12,
+        "debt_to_equity": 0.22,
+        "revenue_ttm_cr": 30043.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "74ea232d9a",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 11,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-2 Broker downgrade (50% firm, sympathy at 32%)",
+        " 0 ₹248cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 60/100",
+        "+3 down 4.1% into the news — less crowded",
+        "-6 23.4% below the 200-day average — fighting the trend",
+        "+12 published Wed 22:17, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 1203.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 22:17, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 72.75,
+        "atr_pct": 4.47,
+        "expected_day_range_inr": 3.25,
+        "expected_day_range_pct": 4.47,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 60,
+      "fund_why": [
+        "+12 ROCE 63.2%",
+        "+8 ROE 66.9%",
+        "+6 P/E 9.97",
+        "+8 3y profit CAGR 154%",
+        "+6 3y sales CAGR 284%",
+        "+4 return on capital has improved from -1.2% to 36%",
+        "+5 D/E 0.21",
+        "-3 promoter 29.72%",
+        "+4 latest qtr PAT YoY 16.4%",
+        "+0 mcap ₹3,131 cr",
+        "+8 operating cash flow ₹255cr, 84% of profit — profit is turning into cash",
+        "-8 sales growth has stalled: 87.0% last year against 1903.8% the year before",
+        "+4 interest cover 31.5×",
+        "-4 price to book 4.97",
+        "+4 ROCE 63.2% at 4.97× book is 12.7% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted +8 of +14 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "⚑ capped at 60: the page did not read cleanly — sales growth prev 1y pct came out at 1,904% — the growth read is unsafe"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — sales growth prev 1y pct came out at 1,904% — the growth read is unsafe"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — sales growth prev 1y pct came out at 1,904% — the growth read is unsafe"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 99.1% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 56.4%"
+      ],
+      "screener_cons": [
+        "Promoter holding is low: 29.7%",
+        "Promoters have pledged 89.4% of their holding."
+      ],
+      "ltp": 72.75,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 33.0,
+        "adx": 31.1,
+        "atr_pct": 4.47,
+        "vol_ratio": 0.85,
+        "chg_1d_pct": -4.07,
+        "chg_5d_pct": -3.01,
+        "dist_52w_high_pct": -47.24,
+        "dist_ema200_pct": -23.43,
+        "avg_turnover_cr": 15.85,
+        "high_52w": 137.9,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 3131.0,
+        "pe": 9.97,
+        "roce": 63.2,
+        "roe": 66.9,
+        "sales_growth_3_years": 284.0,
+        "profit_growth_3_years": 154.0,
+        "promoter_pct": 29.72,
+        "debt_to_equity": 0.21,
+        "revenue_ttm_cr": 1203.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "64204e9483",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹248 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 4000.0,
+        "unit": "MW",
+        "text": "4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html",
+      "title": "Delhi HC directs Bombay Shaving Company to withdraw the disputed razor ad",
+      "published": "Wed, 16 Sep 2026 16:47:48 GMT",
+      "published_utc": "2026-09-16T16:47:48+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-directs-bombay-shaving-company-to-withdraw-the-disputed-razor-ad-126091601380_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 10,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹248cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 66/100",
+        "+3 down 4.9% into the news — less crowded",
+        "-6 9.0% below the 200-day average — fighting the trend",
+        "+12 published Wed 22:17, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 8466.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 22:17, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 899.0,
+        "atr_pct": 3.06,
+        "expected_day_range_inr": 27.51,
+        "expected_day_range_pct": 3.06,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 66,
+      "fund_why": [
+        "+12 ROCE 33.3%",
+        "+8 ROE 42.4%",
+        "+6 P/E 24.5",
+        "+8 3y profit CAGR 370%",
+        "+6 3y sales CAGR 76%",
+        "+4 return on capital has improved from 7.7% to 33%",
+        "-2 D/E 0.86",
+        "+4 promoter 58.48%",
+        "-6 promoters sold 5.46pp in the last quarter alone",
+        "+4 latest qtr PAT YoY 53.2%",
+        "+2 mcap ₹40,810 cr",
+        "+8 operating cash flow ₹1,261cr, 84% of profit — profit is turning into cash",
+        "-8 sales growth has stalled: 20.0% last year against 107.3% the year before",
+        "+4 interest cover 16.23×",
+        "-6 borrowings up 90% year on year",
+        "+3 institutions hold 25.89%",
+        "-8 price to book 9.45",
+        "-6 ROCE 33.3% bought at 9.45× book is 3.5% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +14 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 133% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 45.8%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 9.45 times its book value",
+        "Promoter holding has decreased over last quarter: -5.46%",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 899.0,
+      "ta": {
+        "trend": "down",
+        "rsi": 25.6,
+        "adx": 33.2,
+        "atr_pct": 3.06,
+        "vol_ratio": 3.15,
+        "chg_1d_pct": -4.87,
+        "chg_5d_pct": -7.88,
+        "dist_52w_high_pct": -20.72,
+        "dist_ema200_pct": -9.01,
+        "avg_turnover_cr": 119.77,
+        "high_52w": 1134.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 40810.0,
+        "pe": 24.5,
+        "roce": 33.3,
+        "roe": 42.4,
+        "sales_growth_3_years": 76.0,
+        "profit_growth_3_years": 370.0,
+        "promoter_pct": 58.48,
+        "debt_to_equity": 0.86,
+        "revenue_ttm_cr": 8466.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "849e73f095",
+      "symbol": "INFY",
+      "company": "Infosys Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 28.1,
+        "unit": "MW",
+        "text": "28.1 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
+      "published": "Wed, 16 Sep 2026 17:18:53 GMT",
+      "published_utc": "2026-09-16T17:18:53+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 80/100",
+        "-6 15.1% below the 200-day average — fighting the trend",
+        "+12 published Wed 22:48, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 184582.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 22:48, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1060.0,
+        "atr_pct": 2.72,
+        "expected_day_range_inr": 28.83,
+        "expected_day_range_pct": 2.72,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 80,
+      "fund_why": [
+        "+12 ROCE 40%",
+        "+8 ROE 31.9%",
+        "+6 P/E 13.8",
+        "+0 3y profit CAGR 8%",
+        "+0 3y sales CAGR 7%",
+        "+4 return on capital has improved from 35.2% to 39.3%",
+        "+5 D/E 0.1",
+        "-3 promoter 13.82%",
+        "+0 latest qtr PAT YoY 12.3%",
+        "+4 mcap ₹430,173 cr",
+        "+8 operating cash flow ₹33,986cr, 115% of profit — profit is turning into cash",
+        "+3 institutions hold 69.87%",
+        "-4 price to book 4.71",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is providing a good dividend yield of 4.53%.",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 30.8%",
+        "Company has been maintaining a healthy dividend payout of 68.5%",
+        "Company's working capital requirements have reduced from 42.0 days to 32.7 days"
+      ],
+      "screener_cons": [
+        "Promoter holding has decreased over last quarter: -0.56%",
+        "Promoter holding is low: 13.8%"
+      ],
+      "ltp": 1060.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 40.9,
+        "adx": 17.5,
+        "atr_pct": 2.72,
+        "vol_ratio": 0.78,
+        "chg_1d_pct": -1.58,
+        "chg_5d_pct": 2.42,
+        "dist_52w_high_pct": -38.66,
+        "dist_ema200_pct": -15.05,
+        "avg_turnover_cr": 886.22,
+        "high_52w": 1728.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 430173.0,
+        "pe": 13.8,
+        "roce": 40.0,
+        "roe": 31.9,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 8.0,
+        "promoter_pct": 13.82,
+        "debt_to_equity": 0.1,
+        "revenue_ttm_cr": 184582.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ec179abb9f",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112",
+      "title": "HG Infra Engineering receives ₹9.4 Cr GST notice from Karnataka",
+      "published": "Wed, 16 Sep 2026 12:26:31 GMT",
+      "published_utc": "2026-09-16T12:26:31+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hg-infra-engineering-receives-9-4-cr-gst-notice-karnataka/51107112"
+      ],
+      "n_reports": 1,
+      "catalyst": -1,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 64/100",
+        "+5 ADX 33 with the trend up — moves carry here",
+        "+12 published Wed 17:56, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 9039.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 17:56, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 318.2,
+        "atr_pct": 2.97,
+        "expected_day_range_inr": 9.45,
+        "expected_day_range_pct": 2.97,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 64,
+      "fund_why": [
+        "+12 net NPA 0.87% of the book",
+        "+0 gross NPA 2.58%",
+        "+6 return on assets 1.05%",
+        "+0 ROE 10.4%",
+        "-4 net interest margin 2.49% of assets",
+        "-8 net interest income -5.8% last year",
+        "+6 price to book 0.91",
+        "+4 P/E 8.38",
+        "+4 institutions hold 28.85%",
+        "  (value counted +5 of +10 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 0.91 times its book value"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 7.43% over past five years.",
+        "Company has a low return on equity of 11.6% over last 3 years.",
+        "Contingent liabilities of Rs.13,148 Cr.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 318.20001220703125,
+      "ta": {
+        "trend": "up",
+        "rsi": 46.8,
+        "adx": 33.4,
+        "atr_pct": 2.97,
+        "vol_ratio": 0.85,
+        "chg_1d_pct": 0.71,
+        "chg_5d_pct": -3.94,
+        "dist_52w_high_pct": -8.01,
+        "dist_ema200_pct": 21.88,
+        "avg_turnover_cr": 80.9,
+        "high_52w": 345.9,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 12040.0,
+        "pe": 8.38,
+        "roce": 6.06,
+        "roe": 10.4,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 4.0,
+        "revenue_ttm_cr": 9039.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "bfa5190ded",
+      "symbol": "FORTIS",
+      "company": "Fortis Healthcare Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledged shares",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html",
+      "title": "Fortis moves SC against HC forensic audit order in company transactions",
+      "published": "Wed, 16 Sep 2026 11:51:27 GMT",
+      "published_utc": "2026-09-16T11:51:27+00:00",
+      "sentence": "pledged shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/fortis-moves-sc-against-hc-forensic-audit-order-in-company-transactions-126091600891_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -8,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-18 Promoter pledge / stake sale",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 62/100",
+        "-6 3.7% below the 200-day average — fighting the trend",
+        "+12 published Wed 17:21, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 9506.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 17:21, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -18,
+      "direction": "short",
+      "plan": {
+        "reference_close": 880.1,
+        "atr_pct": 2.01,
+        "expected_day_range_inr": 17.69,
+        "expected_day_range_pct": 2.01,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 62,
+      "fund_why": [
+        "+0 ROCE 13.4%",
+        "+0 ROE 11.2%",
+        "-2 P/E 61.6",
+        "+8 3y profit CAGR 27%",
+        "+3 3y sales CAGR 13%",
+        "+4 return on capital has improved from 6.4% to 11.7%",
+        "+2 D/E 0.35",
+        "+0 promoter 31.17%",
+        "+0 latest qtr PAT YoY 2.2%",
+        "+4 mcap ₹65,704 cr",
+        "+8 operating cash flow ₹1,601cr, 150% of profit — profit is turning into cash",
+        "+3 institutions hold 57.43%",
+        "-4 price to book 6.64",
+        "-6 ROCE 13.4% bought at 6.64× book is 2% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +15 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 64.3% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 6.64 times its book value",
+        "Company has a low return on equity of 9.87% over last 3 years."
+      ],
+      "ltp": 880.0999755859375,
+      "ta": {
+        "trend": "down",
+        "rsi": 35.6,
+        "adx": 8.6,
+        "atr_pct": 2.01,
+        "vol_ratio": 0.88,
+        "chg_1d_pct": -0.87,
+        "chg_5d_pct": -3.07,
+        "dist_52w_high_pct": -20.3,
+        "dist_ema200_pct": -3.69,
+        "avg_turnover_cr": 87.76,
+        "high_52w": 1104.3,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 65704.0,
+        "pe": 61.6,
+        "roce": 13.4,
+        "roe": 11.2,
+        "sales_growth_3_years": 13.0,
+        "profit_growth_3_years": 27.0,
+        "promoter_pct": 31.17,
+        "debt_to_equity": 0.35,
+        "revenue_ttm_cr": 9506.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "fd361148b4",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 28.1,
+        "unit": "MW",
+        "text": "28.1 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
+      "published": "Wed, 16 Sep 2026 17:18:53 GMT",
+      "published_utc": "2026-09-16T17:18:53+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-infosys-mazagon-dock-shares-on-thursday-17-sept-triggers-11789574580431.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -8,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        " 0 fundamentals 40/100",
+        "-6 10.6% below the 200-day average — fighting the trend",
+        "+12 published Wed 22:48, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 13323.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 22:48, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2231.9,
+        "atr_pct": 2.81,
+        "expected_day_range_inr": 62.72,
+        "expected_day_range_pct": 2.81,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 40,
+      "fund_why": [
+        "+12 ROCE 36%",
+        "+8 ROE 29.2%",
+        "+2 P/E 31.5",
+        "+8 3y profit CAGR 32%",
+        "+6 3y sales CAGR 18%",
+        "+4 return on capital has improved from 25.6% to 41%",
+        "+5 D/E 0.05",
+        "+4 promoter 81.22%",
+        "+4 latest qtr PAT YoY 21.7%",
+        "+4 mcap ₹90,030 cr",
+        "-14 operating cash flow ₹-2,654cr — the business consumed cash last year",
+        "-5 the profit 3-year CAGR of 32% is history — last year was 6.8%",
+        "+4 interest cover 10.16×",
+        "-10 borrowings up 2135% year on year",
+        "-8 price to book 9.22",
+        "-6 ROCE 36% bought at 9.22× book is 3.9% on what you pay",
+        "-6 PEG 4.64 — priced for growth it is not delivering",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -18 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +17 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 40: borrowings up 2135% while the business burned cash — the growth is being funded, not earned"
+      ],
+      "fund_flags": [
+        "borrowings up 2135% while the business burned cash — the growth is being funded, not earned"
+      ],
+      "fund_caps": [
+        "capped at 40: borrowings up 2135% while the business burned cash — the growth is being funded, not earned"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 33.5% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 32.3%",
+        "Company has been maintaining a healthy dividend payout of 28.6%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 9.23 times its book value",
+        "Contingent liabilities of Rs.28,181 Cr.",
+        "Earnings include an other income of Rs.1,129 Cr.",
+        "Debtor days have increased from 59.5 to 73.1 days."
+      ],
+      "ltp": 2231.89990234375,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 23.5,
+        "adx": 24.6,
+        "atr_pct": 2.81,
+        "vol_ratio": 0.91,
+        "chg_1d_pct": -0.18,
+        "chg_5d_pct": -7.34,
+        "dist_52w_high_pct": -27.1,
+        "dist_ema200_pct": -10.58,
+        "avg_turnover_cr": 149.82,
+        "high_52w": 3061.4,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 90030.0,
+        "pe": 31.5,
+        "roce": 36.0,
+        "roe": 29.2,
+        "sales_growth_3_years": 18.0,
+        "profit_growth_3_years": 32.0,
+        "promoter_pct": 81.22,
+        "debt_to_equity": 0.05,
+        "revenue_ttm_cr": 13323.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "36c51a67ab",
+      "symbol": "GROWW",
+      "company": "Billionbrains Garage Ventures Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/",
+      "title": "Paytm, Groww, Saatvik Green among buzzing stocks as SENSEX climbs 430 pts; NIFTY trades above 23,250",
+      "published": "Wed, 16 Sep 2026 07:49:39 GMT",
+      "published_utc": "2026-09-16T07:49:39+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/paytm-groww-saatvik-green-among-buzzing-stocks-as-sensex-climbs-430-pts-nifty-trades-above-23-250/article-200349/"
+      ],
+      "n_reports": 1,
+      "catalyst": -11,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Broker downgrade (50% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "-8 published 13:19 during the session — the market has already seen it"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 5241.0,
+      "freshness": {
+        "points": -8,
+        "window": "in-session",
+        "why": "published 13:19 during the session — the market has already seen it"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 189.76,
+        "atr_pct": 2.85,
+        "expected_day_range_inr": 5.41,
+        "expected_day_range_pct": 2.85,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_flags": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_caps": [],
+      "fund_unrated": true,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 33.9%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 12.3 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend"
+      ],
+      "ltp": 189.75999450683594,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 41.7,
+        "adx": 10.8,
+        "atr_pct": 2.85,
+        "vol_ratio": 2.8,
+        "chg_1d_pct": -3.96,
+        "chg_5d_pct": -2.5,
+        "dist_52w_high_pct": -16.48,
+        "dist_ema200_pct": 3.97,
+        "avg_turnover_cr": 1026.37,
+        "high_52w": 227.2,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-16"
+      },
+      "fundamentals": {
+        "market_cap_cr": 119048.0,
+        "pe": 48.8,
+        "roce": 37.3,
+        "roe": 28.8,
+        "sales_growth_3_years": 60.0,
+        "profit_growth_3_years": 66.0,
+        "promoter_pct": 27.14,
+        "debt_to_equity": 0.03,
+        "revenue_ttm_cr": 5241.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
