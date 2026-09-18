@@ -1,0 +1,463 @@
+{
+  "date": "2026-09-18",
+  "top": [
+    {
+      "symbol": "TALBROAUTO",
+      "company": "Talbros Automotive Components Limited",
+      "tip_id": "474529a0b1",
+      "source_id": "broker:marketsmith",
+      "corroborating_sources": [
+        "mint_gnews"
+      ],
+      "n_mentions": 1,
+      "src_targets": [
+        500.0
+      ],
+      "src_stop": 408.0,
+      "src_entry": 431.0,
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-18-september-from-marketsmith-india-11789649089348.html"
+      ],
+      "brokerages": [
+        "marketsmith"
+      ],
+      "sentence": "Buy: Talbros Automotive Components Limited (current price: ₹ 435) Why is it recommended: Electric Vehicle (EV) Expansion: Securing strategic orders for localized EV platforms and projecting EV components to scale up to ~5% of total revenue within the next two years. High-Growth Joint Ventures: Rapid",
+      "ltp": 435.20001220703125,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 435.2,
+        "entry_zone": [
+          433.02,
+          437.38
+        ],
+        "stop_loss": 401.53,
+        "stop_loss_pct": 7.74,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          482.33,
+          513.75,
+          560.88
+        ],
+        "target_pct": [
+          10.83,
+          18.05,
+          28.88
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.33,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 74,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 61.4 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 1.56× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+4 pattern momentum_aligned",
+          "-10 T1 needs ~61d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          500.0
+        ],
+        "src_stop": 408.0,
+        "momentum_score": 37,
+        "efficiency": 0.21,
+        "amplitude_pct_day": 0.841,
+        "eta_days": [
+          61,
+          90,
+          90
+        ],
+        "eta_basis": "0.177%/session of net directional progress",
+        "pace_pct_day": 0.177,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.4,
+        "atr_pct": 3.61,
+        "adx": 18.7,
+        "vol_ratio": 1.56,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "momentum_aligned"
+        ],
+        "dist_52w_high_pct": -3.63,
+        "dist_ema20_pct": 3.79,
+        "dist_ema200_pct": 24.19,
+        "avg_turnover_cr": 9.82,
+        "chg_5d_pct": 3.57,
+        "chg_20d_pct": 5.63,
+        "high_52w": 451.6,
+        "last_bar_date": "2026-09-17",
+        "momentum_score": 37,
+        "drift_pct_day": 0.177,
+        "efficiency": 0.21,
+        "amplitude_pct_day": 0.841,
+        "up_day_share": 0.4
+      },
+      "resistances": [
+        {
+          "price": 441.85,
+          "touches": 1
+        },
+        {
+          "price": 451.6,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 403.55,
+          "touches": 1
+        },
+        {
+          "price": 394.5,
+          "touches": 1
+        },
+        {
+          "price": 382.73,
+          "touches": 2
+        },
+        {
+          "price": 350.0,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 74,
+      "fund_score": 85,
+      "fund_why": [
+        "+6 ROCE 18.4%",
+        "+4 ROE 14.9%",
+        "+6 P/E 24",
+        "+8 3y profit CAGR 23%",
+        "+3 3y sales CAGR 10%",
+        "+4 return on capital has improved from 14.8% to 19.3%",
+        "+5 D/E 0.11",
+        "+4 promoter 58.43%",
+        "+4 latest qtr PAT YoY 36.4%",
+        "+0 mcap ₹2,686 cr",
+        "+8 operating cash flow ₹85cr, 82% of profit — profit is turning into cash",
+        "+4 interest cover 13×",
+        "-5 institutions hold 1.45% — desks with their own analysts are staying out",
+        "+0 price to book 3.62",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted +8 of +19 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 32.8% CAGR over last 5 years"
+      ],
+      "screener_cons": [],
+      "fundamentals": {
+        "market_cap_cr": 2686.0,
+        "pe": 24.0,
+        "roce": 18.4,
+        "roe": 14.9,
+        "sales_growth_3_years": 10.0,
+        "profit_growth_3_years": 23.0,
+        "promoter_pct": 58.43,
+        "debt_to_equity": 0.11,
+        "np_yoy_growth_pct": 36.4,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 5.2,
+        "profit_growth_1y_pct": 10.64,
+        "cfo_cr": 85.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": -10.6,
+        "interest_cover": 13.0,
+        "institutional_pct": 1.45,
+        "sector": "Automobile and Auto Components",
+        "industry": "Auto Components"
+      },
+      "source_weight": 0.55,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 74"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 61 sessions against a 30-session stop"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "LGEINDIA",
+      "company": "LG Electronics India Limited",
+      "tip_id": "461a63abf9",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "n_mentions": 1,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/lgeindia.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy LG Electronics India Ltd (NSE: LGEINDIA) LTP 1652.9 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.52%, volume 398578.",
+      "ltp": 1652.9000244140625,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 1652.9,
+        "entry_zone": [
+          1644.64,
+          1661.16
+        ],
+        "stop_loss": 1591.0,
+        "stop_loss_pct": 3.74,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          1755.0,
+          1845.3,
+          1960.74
+        ],
+        "target_pct": [
+          6.18,
+          11.64,
+          18.62
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.11,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 74,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 53.4 healthy momentum",
+          "+4 ADX 27.3 trending",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+4 reward:risk to T2 3.11",
+          "-10 T1 needs ~90d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 11,
+        "efficiency": 0.064,
+        "amplitude_pct_day": 0.772,
+        "eta_days": [
+          90,
+          90,
+          90
+        ],
+        "eta_basis": "0.05%/session of net directional progress",
+        "pace_pct_day": 0.05,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.4,
+        "atr_pct": 2.33,
+        "adx": 27.3,
+        "vol_ratio": 0.85,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -5.82,
+        "dist_ema20_pct": 0.56,
+        "dist_ema200_pct": 4.4,
+        "avg_turnover_cr": 77.84,
+        "chg_5d_pct": 0.18,
+        "chg_20d_pct": 1.23,
+        "high_52w": 1755.0,
+        "last_bar_date": "2026-09-17",
+        "momentum_score": 11,
+        "drift_pct_day": 0.05,
+        "efficiency": 0.064,
+        "amplitude_pct_day": 0.772,
+        "up_day_share": 0.45
+      },
+      "resistances": [
+        {
+          "price": 1661.6,
+          "touches": 1
+        },
+        {
+          "price": 1716.15,
+          "touches": 2
+        },
+        {
+          "price": 1755.0,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 1517.85,
+          "touches": 4
+        },
+        {
+          "price": 1472.73,
+          "touches": 4
+        },
+        {
+          "price": 1392.0,
+          "touches": 1
+        },
+        {
+          "price": 1304.1,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 74,
+      "fund_score": 67,
+      "fund_why": [
+        "+12 ROCE 32.3%",
+        "+8 ROE 24.7%",
+        "-2 P/E 61.5",
+        "+0 3y profit CAGR 8%",
+        "+0 3y sales CAGR 7%",
+        "+4 return on capital has improved from 32.7% to 45.3%",
+        "+5 D/E 0.06",
+        "+4 promoter 85%",
+        "+4 latest qtr PAT YoY 27.3%",
+        "+4 mcap ₹112,194 cr",
+        "+8 operating cash flow ₹1,721cr, 102% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: -23.5% last year against 45.8% the year before",
+        "-8 price to book 14.63",
+        "-6 ROCE 32.3% bought at 14.63× book is 2.2% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 34.2%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 14.6 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "The company has delivered a poor sales growth of 10.3% over past five years."
+      ],
+      "fundamentals": {
+        "market_cap_cr": 112194.0,
+        "pe": 61.5,
+        "roce": 32.3,
+        "roe": 24.7,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 8.0,
+        "promoter_pct": 85.0,
+        "debt_to_equity": 0.06,
+        "np_yoy_growth_pct": 27.3,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 0.98,
+        "profit_growth_1y_pct": -23.51,
+        "cfo_cr": 1721.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": 7.2,
+        "institutional_pct": 10.97,
+        "sector": "Consumer Durables",
+        "industry": "Consumer Durables"
+      },
+      "source_weight": 0.5,
+      "source_confidence": 50,
+      "composite": 65,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound fundamentals",
+          "tone": "good",
+          "why": "business score 67"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 74"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace 0.05%/session — mostly chop"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 90 sessions against a 30-session stop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.11"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 868.6,
+  "watch": [
+    "ECLERX",
+    "ACE",
+    "IPCALAB",
+    "JKPAPER",
+    "HYUNDAI",
+    "HAL",
+    "AVALON",
+    "KPIL"
+  ]
+}
