@@ -81,3 +81,11 @@ sources:
   clause: ( {cash} ( latest rsi( 14 ) > 30 and 1 day ago rsi( 14 ) <= 30 and latest close > 1 day ago close and latest volume > latest sma( latest volume , 20 ) * 1.2 and latest sma( latest volume , 20
     ) * latest close > 50000000 ) )
   default_timeframe: weekly
+- id: chartink_volume_shock
+  name: Chartink — volume shock (3x 20d avg volume, up day)
+  kind: chartink
+  category: screener
+  enabled: true
+  clause: ( {cash} ( latest volume > latest sma( latest volume , 20 ) * 3 and latest close > 1 day ago close * 1.02 and latest close > 20 and latest sma( latest volume , 20 ) * latest close > 50000000 )
+    )
+  default_timeframe: weekly
