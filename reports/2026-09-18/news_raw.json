@@ -1,0 +1,1487 @@
+{
+  "date": "2026-09-18",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 3,
+      "events": 11
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 8
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "9f7d9490ce",
+      "symbol": "GPTINFRA",
+      "company": "GPT Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 818.0,
+      "size_estimated": false,
+      "size_basis": "₹818 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [
+        "corp_stocks_to_watch"
+      ],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+        "https://www.business-standard.com/markets/news/stocks-to-watch-september-18-tata-group-stocks-wipro-bel-asian-paints-puravankara-126091800111_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "407ab06b6b",
+      "symbol": "PRESTIGE",
+      "company": "Prestige Estates Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures water pumping systems project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/prestige-estates-launches-10-acre-residential-project-in-sarjapur-126091700940_1.html",
+      "title": "Prestige Estates launches 10-acre residential project in Sarjapur",
+      "published": "Thu, 17 Sep 2026 11:46:02 GMT",
+      "published_utc": "2026-09-17T11:46:02+00:00",
+      "sentence": "secures water pumping systems project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/prestige-estates-launches-10-acre-residential-project-in-sarjapur-126091700940_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "67cf47520e",
+      "symbol": "PURVA",
+      "company": "Puravankara Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures water pumping systems project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2600.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,600 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/puravankara-secures-4-68-acre-redevelopment-project-in-goregaon-west-mumbai-126091700892_1.html",
+      "title": "Puravankara secures 4.68-acre redevelopment project in Goregaon West, Mumbai",
+      "published": "Thu, 17 Sep 2026 11:20:52 GMT",
+      "published_utc": "2026-09-17T11:20:52+00:00",
+      "sentence": "secures water pumping systems project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/puravankara-secures-4-68-acre-redevelopment-project-in-goregaon-west-mumbai-126091700892_1.html",
+        "https://www.business-standard.com/content/press-releases-ani/puravankara-secures-rs-2-600-crore-redevelopment-project-in-goregaon-west-mumbai-126091700825_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/puravankara-secures-redevelopment-project-in-goregaon-west-worth-rs-2-600-crore-126091700830_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "796977d94d",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 484.0,
+      "size_estimated": false,
+      "size_basis": "₹484 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6192cf7e1d",
+      "symbol": "DGCONTENT",
+      "company": "Digicontent Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures rs 2,600 crore redevelopment project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/puravankara-secures-rs-2-600-crore-redevelopment-project-in-goregaon-west-mumbai-126091700825_1.html",
+      "title": "Puravankara secures Rs 2,600 crore redevelopment project in Goregaon West, Mumbai",
+      "published": "Thu, 17 Sep 2026 11:00:12 GMT",
+      "published_utc": "2026-09-17T11:00:12+00:00",
+      "sentence": "secures rs 2,600 crore redevelopment project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/puravankara-secures-rs-2-600-crore-redevelopment-project-in-goregaon-west-mumbai-126091700825_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "372f393c95",
+      "symbol": "RAJESHEXPO",
+      "company": "Rajesh Exports Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "sebi said rajesh exports ltd received repeated summons",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html",
+      "title": "Sebi order bars Rajesh Mehta from Rajesh Exports securities over alleged misstatements",
+      "published": "Thu, 17 Sep 2026 09:16:21 GMT",
+      "published_utc": "2026-09-17T09:16:21+00:00",
+      "sentence": "sebi said rajesh exports ltd received repeated summons",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ab23319aba",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "railways"
+      ],
+      "size_inr_cr": 648.0,
+      "size_estimated": false,
+      "size_basis": "Rs 648 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+      "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
+      "published": "Fri, 18 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-18T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "30c8c4bf63",
+      "symbol": "WIPRO",
+      "company": "Wipro Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+      "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
+      "published": "Fri, 18 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-18T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "36b6e5a952",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned bess capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1200.0,
+        "unit": "MWh",
+        "text": "1,200 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-52-32-mw-bess-phase-rajasthan/51215018",
+      "title": "ACME Solar commissions 52.32 MW BESS phase in Rajasthan",
+      "published": "Thu, 17 Sep 2026 18:25:10 GMT",
+      "published_utc": "2026-09-17T18:25:10+00:00",
+      "sentence": "commissioned bess capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-52-32-mw-bess-phase-rajasthan/51215018",
+        "https://businessupturn.com/business/acme-solar-commissions-52-32-mw-209-28-mwh-battery-energy-storage-system-in-rajasthan/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "b03b71242c",
+      "symbol": "TIMETECHNO",
+      "company": "Time Technoplast Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 6,000-tonne greenfield packaging plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/market/stocks/time-technoplast-share-price-commissions-6000-tonne-greenfield-packaging-plant-in-bhilad-gujarat-19993178.htm",
+      "title": "Time Technoplast commissions 6,000-tonne greenfield packaging plant in Bhilad, Gujarat",
+      "published": "Thu, 17 Sep 2026 16:50:06 GMT",
+      "published_utc": "2026-09-17T16:50:06+00:00",
+      "sentence": "commissions 6,000-tonne greenfield packaging plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/time-technoplast-share-price-commissions-6000-tonne-greenfield-packaging-plant-in-bhilad-gujarat-19993178.htm",
+        "https://scanx.trade/stock-market-news/companies/time-technoplast-completes-greenfield-plant-bhilad-6-000-tonne/51198229"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "42edfeb6bf",
+      "symbol": "NLCINDIA",
+      "company": "NLC India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nlc-india-bharat-forge-skyways-air-services-bel-veegaland-gpt-infra-wipro-pb-fintech-interglobe-aviation-in-focus-on-18-september-14032516.html",
+      "title": "Stocks to Watch Today: NLC India, Bharat Forge, Skyways Air Services, BEL, Veegaland, GPT Infra, Wipro, PB...",
+      "published": "Thu, 17 Sep 2026 20:59:17 GMT",
+      "published_utc": "2026-09-17T20:59:17+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nlc-india-bharat-forge-skyways-air-services-bel-veegaland-gpt-infra-wipro-pb-fintech-interglobe-aviation-in-focus-on-18-september-14032516.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9c0b562c1a",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures water pumping systems project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2600.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,600 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html",
+      "title": "Jain Irrigation secures water pumping systems project of Rs 117.96 cr",
+      "published": "Thu, 17 Sep 2026 11:20:44 GMT",
+      "published_utc": "2026-09-17T11:20:44+00:00",
+      "sentence": "secures water pumping systems project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "211d4079e5",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures water pumping systems project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2600.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,600 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html",
+      "title": "Jain Irrigation secures water pumping systems project of Rs 117.96 cr",
+      "published": "Thu, 17 Sep 2026 11:20:44 GMT",
+      "published_utc": "2026-09-17T11:20:44+00:00",
+      "sentence": "secures water pumping systems project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5fdab085eb",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "final approval",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 107.47,
+      "size_estimated": false,
+      "size_basis": "₹107.47 Cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "published_utc": "2026-09-17T18:40:28+00:00",
+      "sentence": "final approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d1d2a2398a",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "final approval",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 107.47,
+      "size_estimated": false,
+      "size_basis": "₹107.47 Cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "published_utc": "2026-09-17T18:40:28+00:00",
+      "sentence": "final approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9f36c91ff7",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "final approval",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 107.47,
+      "size_estimated": false,
+      "size_basis": "₹107.47 Cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "published_utc": "2026-09-17T18:40:28+00:00",
+      "sentence": "final approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "015f21ad0d",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "final approval",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 107.47,
+      "size_estimated": false,
+      "size_basis": "₹107.47 Cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "published_utc": "2026-09-17T18:40:28+00:00",
+      "sentence": "final approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "67f9d51021",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 818.0,
+      "size_estimated": false,
+      "size_basis": "₹818 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5007eb2e32",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 818.0,
+      "size_estimated": false,
+      "size_basis": "₹818 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a9114fd525",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures water pumping systems project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2600.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,600 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html",
+      "title": "Jain Irrigation secures water pumping systems project of Rs 117.96 cr",
+      "published": "Thu, 17 Sep 2026 11:20:44 GMT",
+      "published_utc": "2026-09-17T11:20:44+00:00",
+      "sentence": "secures water pumping systems project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "beff33e12a",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "final approval",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 107.47,
+      "size_estimated": false,
+      "size_basis": "₹107.47 Cr",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "published_utc": "2026-09-17T18:40:28+00:00",
+      "sentence": "final approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c5610bd36a",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 818.0,
+      "size_estimated": false,
+      "size_basis": "₹818 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5770737465",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 818.0,
+      "size_estimated": false,
+      "size_basis": "₹818 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "published_utc": "2026-09-17T15:20:30+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8aa9d6626d",
+      "symbol": "APLLTD",
+      "company": "Alembic Pharmaceuticals Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/alembic-pharmas-vadodara-bioequivalence-facility-gets-usfda-inspection-closure-eir-issued-179459",
+      "title": "Alembic Pharma's Vadodara Bioequivalence Facility Gets USFDA Inspection Closure, EIR Issued",
+      "published": "Thu, 17 Sep 2026 18:35:40 GMT",
+      "published_utc": "2026-09-17T18:35:40+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [],
+      "urls": [
+        "https://medicaldialogues.in/amp/news/industry/pharma/alembic-pharmas-vadodara-bioequivalence-facility-gets-usfda-inspection-closure-eir-issued-179459"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9f2657ec6f",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 440.0,
+      "size_estimated": false,
+      "size_basis": "$50 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061",
+      "title": "MagnaChip Q2FY26 Results: Revenue falls 6%, adjusted loss widens",
+      "published": "Thu, 17 Sep 2026 09:16:29 GMT",
+      "published_utc": "2026-09-17T09:16:29+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a2a89dc3c4",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 440.0,
+      "size_estimated": false,
+      "size_basis": "$50 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061",
+      "title": "MagnaChip Q2FY26 Results: Revenue falls 6%, adjusted loss widens",
+      "published": "Thu, 17 Sep 2026 09:16:29 GMT",
+      "published_utc": "2026-09-17T09:16:29+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "00af5bc410",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 440.0,
+      "size_estimated": false,
+      "size_basis": "$50 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061",
+      "title": "MagnaChip Q2FY26 Results: Revenue falls 6%, adjusted loss widens",
+      "published": "Thu, 17 Sep 2026 09:16:29 GMT",
+      "published_utc": "2026-09-17T09:16:29+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-september-18-tata-group-stocks-wipro-bel-asian-paints-puravankara-126091800111_1.html",
+      "title": "Stocks to watch: Tata group stocks, Wipro, BEL, Asian Paints, Puravankara",
+      "published": "Fri, 18 Sep 2026 02:31:20 GMT",
+      "chars": 5095,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+      "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
+      "published": "Fri, 18 Sep 2026 00:30:00 GMT",
+      "chars": 7586,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-18-tata-group-activity-7506342929632747520-mEhO",
+      "title": "Stocks to watch for September 18: Tata Group Stocks, BEL, HAL, PB Fintech and more - CNBC TV18",
+      "published": "Thu, 17 Sep 2026 13:26:55 GMT",
+      "chars": 428,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nlc-india-bharat-forge-skyways-air-services-bel-veegaland-gpt-infra-wipro-pb-fintech-interglobe-aviation-in-focus-on-18-september-14032516.html",
+      "title": "Stocks to Watch Today: NLC India, Bharat Forge, Skyways Air Services, BEL, Veegaland, GPT Infra, Wipro, PB...",
+      "published": "Thu, 17 Sep 2026 20:59:17 GMT",
+      "chars": 8995,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://insights.dsij.in/dsijarticledetail/stocks-to-watch-tomorrow-59590",
+      "title": "Stocks to Watch Tomorrow",
+      "published": "Thu, 17 Sep 2026 19:33:16 GMT",
+      "chars": 2883,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-wipro-bharat-electronics-dmart-shares-on-fri-18-sept-triggers-11789641035492.html",
+      "title": "Top stocks in focus today: Investors must watch Wipro, Bharat Electronics, DMart shares on Friday, 18 Sept | Triggers",
+      "published": "Thu, 17 Sep 2026 14:55:14 GMT",
+      "chars": 4493,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/ukraines-spetstechnoexport-emerges-as-l1-bidder-for-iaf-mig-29upg-spares-tender-with-rs107-47-cr-bid.18740/",
+      "title": "Ukraine's SpetsTechnoExport Emerges as L1 Bidder for IAF MiG-29UPG Spares Tender with ₹107.47 Cr Bid",
+      "published": "Thu, 17 Sep 2026 18:40:28 GMT",
+      "chars": 3306,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.indiaipo.in/news/detail/gpt-infraprojects-bags-order-worth-484-crore-from-rvnl-for-railway-bridge-construction",
+      "title": "GPT Infraprojects bags order worth ₹484 crore from RVNL for railway bridge construction",
+      "published": "Thu, 17 Sep 2026 15:20:30 GMT",
+      "chars": 1140,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/johnson-lifts-bags-order-worth-over-rs-143-crore-for-chennai-metro",
+      "title": "Johnson Lifts bags order worth over Rs 143 crore for Chennai Metro",
+      "published": "Thu, 17 Sep 2026 18:41:18 GMT",
+      "chars": 749,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/alembic-pharmas-vadodara-bioequivalence-facility-gets-usfda-inspection-closure-eir-issued-179459",
+      "title": "Alembic Pharma's Vadodara Bioequivalence Facility Gets USFDA Inspection Closure, EIR Issued",
+      "published": "Thu, 17 Sep 2026 18:35:40 GMT",
+      "chars": 1984,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.personalcareinsights.com/news/fda-removes-paba-sunscreen.html",
+      "title": "US FDA eliminates outdated UV filters as regulatory modernization continues.",
+      "published": "Thu, 17 Sep 2026 14:09:24 GMT",
+      "chars": 7772,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/usfda-inspection-ends-with-1-observation-at-aurobindo-pharmas-apitoria-api-facility-179458",
+      "title": "USFDA Inspection Ends With 1 Observation at Aurobindo Pharma's Apitoria API Facility",
+      "published": "Thu, 17 Sep 2026 18:27:30 GMT",
+      "chars": 3057,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://whbl.com/2026/09/17/us-fda-approves-ultragenyxs-gene-therapy-for-rare-disorder/",
+      "title": "US FDA approves Ultragenyx’s gene therapy for rare disorder",
+      "published": "Thu, 17 Sep 2026 23:50:12 GMT",
+      "chars": 2132,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/cohance-lifesciences-host-investor-meets-mumbai-hyderabad/51176386",
+      "title": "Cohance Lifesciences to host investor meets in Mumbai, Hyderabad",
+      "published": "Thu, 17 Sep 2026 11:42:30 GMT",
+      "chars": 2201,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html",
+      "title": "Sebi order bars Rajesh Mehta from Rajesh Exports securities over alleged misstatements",
+      "published": "Thu, 17 Sep 2026 09:16:21 GMT",
+      "chars": 2961,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.prnewswire.com/news-releases/bbnx-shareholder-alert-beta-bionics-inc-securities-class-action-lawsuit---investors-should-contact-suewallst-302881759.html",
+      "title": "BBNX Shareholder Alert: Beta Bionics, Inc. Securities Class Action Lawsuit - Investors Should Contact SueWallSt",
+      "published": "Thu, 17 Sep 2026 14:09:00 GMT",
+      "chars": 6983,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.bgnes.com/entertainment/universal-may-drop-international-distribution-of-elon-musk-documentary",
+      "title": "Universal May Drop International Distribution of Elon Musk Documentary",
+      "published": "Thu, 17 Sep 2026 09:32:08 GMT",
+      "chars": 1988,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/hcc-share-price-to-set-up-new-company-with-ceigall-india-share-price-for-infrastructure-projects-19992945.htm",
+      "title": "HCC to set up new company with Ceigall India for infrastructure projects",
+      "published": "Thu, 17 Sep 2026 11:23:30 GMT",
+      "chars": 3553,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/camping-world-holdings-stock-falls-after-soft-q2-results-and-guidance-miss/70119267",
+      "title": "Camping World Holdings stock falls after soft Q2 results and guidance miss - ad-hoc-news.de",
+      "published": "Thu, 17 Sep 2026 16:16:17 GMT",
+      "chars": 3900,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vintage-securities-agm-set-sep-29-fy26-profit-jumps-725/50072781",
+      "title": "Vintage Securities profit jumps 725% in FY26; AGM set for Sep 29",
+      "published": "Thu, 17 Sep 2026 08:00:29 GMT",
+      "chars": 3569,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/upexi-q4-results-eps-misses-estimate-sales-fall-4-yoy/51224571",
+      "title": "Upexi Q4 Results: EPS misses estimate, sales fall 4% YoY",
+      "published": "Thu, 17 Sep 2026 21:17:24 GMT",
+      "chars": 2644,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/magnachip-q2fy26-results-revenue-falls-6-adjusted-loss-widens/51180061",
+      "title": "MagnaChip Q2FY26 Results: Revenue falls 6%, adjusted loss widens",
+      "published": "Thu, 17 Sep 2026 09:16:29 GMT",
+      "chars": 5007,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/apollo-ingredients-board-discuss-healthcare-integration-sustainability/51210061",
+      "title": "Apollo Ingredients board to discuss healthcare integration, sustainability",
+      "published": "Thu, 17 Sep 2026 17:06:50 GMT",
+      "chars": 2707,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/spectrum-foods-appoints-rahul-tiwari-company-secretary/51195907",
+      "title": "Spectrum Foods appoints Rahul Tiwari as company secretary",
+      "published": "Thu, 17 Sep 2026 13:15:59 GMT",
+      "chars": 2511,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.sahi.com/news/time-technoplast-commissions-bhilad-packaging-plant-with-6-000-tonne-capacity-for-24-crore",
+      "title": "Time Technoplast Commissions Bhilad Packaging Plant With 6,000 Tonne Capacity For ₹24 Crore",
+      "published": "Fri, 18 Sep 2026 00:43:07 GMT",
+      "chars": 4709,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/juniper-commissions-35-mw-wind-capacity-in-gujarat-hybrid-project/97506",
+      "title": "Juniper Commissions 35 MW Wind Capacity in Gujarat Hybrid Project",
+      "published": "Thu, 17 Sep 2026 07:34:28 GMT",
+      "chars": 5652,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/market/stocks/time-technoplast-share-price-commissions-6000-tonne-greenfield-packaging-plant-in-bhilad-gujarat-19993178.htm",
+      "title": "Time Technoplast commissions 6,000-tonne greenfield packaging plant in Bhilad, Gujarat",
+      "published": "Thu, 17 Sep 2026 16:50:06 GMT",
+      "chars": 2054,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/time-technoplast-completes-greenfield-plant-bhilad-6-000-tonne/51198229",
+      "title": "Time Technoplast commissions Bhilad packaging plant with 6,000-tonne capacity",
+      "published": "Thu, 17 Sep 2026 13:46:46 GMT",
+      "chars": 2568,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-52-32-mw-bess-phase-rajasthan/51215018",
+      "title": "ACME Solar commissions 52.32 MW BESS phase in Rajasthan",
+      "published": "Thu, 17 Sep 2026 18:25:10 GMT",
+      "chars": 2800,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/acme-solar-commissions-52-32-mw-209-28-mwh-battery-energy-storage-system-in-rajasthan/",
+      "title": "Acme Solar commissions 52.32 MW/209.28 MWh Battery Energy Storage System in Rajasthan",
+      "published": "Thu, 17 Sep 2026 18:33:24 GMT",
+      "chars": 1793,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/corporate-news/English/renewables/Juniper-Green-Commissions-75-MW-Hybrid-Power-Project/6aac193df2017017ae6c986c",
+      "title": "Juniper Green Commissions 75 MW Hybrid Power Project",
+      "published": "Thu, 17 Sep 2026 16:52:03 GMT",
+      "chars": 2535,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jain-irrigation-secures-water-pumping-systems-project-of-rs-117-96-cr-126091700891_1.html",
+      "title": "Jain Irrigation secures water pumping systems project of Rs 117.96 cr",
+      "published": "Thu, 17 Sep 2026 11:20:44 GMT",
+      "chars": 1608,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/puravankara-secures-4-68-acre-redevelopment-project-in-goregaon-west-mumbai-126091700892_1.html",
+      "title": "Puravankara secures 4.68-acre redevelopment project in Goregaon West, Mumbai",
+      "published": "Thu, 17 Sep 2026 11:20:52 GMT",
+      "chars": 1319,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/puravankara-secures-2-600-cr-redevelopment-rights-in-mumbai-s-goregaon-126091701220_1.html",
+      "title": "Puravankara secures ₹2,600 cr redevelopment rights in Mumbai's Goregaon",
+      "published": "Thu, 17 Sep 2026 14:05:43 GMT",
+      "chars": 3703,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-secures-2-8-million-tonnes-european-union-steel-quota-official-126091700633_1.html",
+      "title": "India secures 2.8 million tonnes European Union steel quota: Official",
+      "published": "Thu, 17 Sep 2026 09:53:04 GMT",
+      "chars": 4020,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/puravankara-secures-rs-2-600-crore-redevelopment-project-in-goregaon-west-mumbai-126091700825_1.html",
+      "title": "Puravankara secures Rs 2,600 crore redevelopment project in Goregaon West, Mumbai",
+      "published": "Thu, 17 Sep 2026 11:00:12 GMT",
+      "chars": 3215,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/puravankara-secures-redevelopment-project-in-goregaon-west-worth-rs-2-600-crore-126091700830_1.html",
+      "title": "Puravankara secures redevelopment project in Goregaon West worth Rs 2,600 crore",
+      "published": "Thu, 17 Sep 2026 11:01:25 GMT",
+      "chars": 3030,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/prestige-estates-launches-10-acre-residential-project-in-sarjapur-126091700940_1.html",
+      "title": "Prestige Estates launches 10-acre residential project in Sarjapur",
+      "published": "Thu, 17 Sep 2026 11:46:02 GMT",
+      "chars": 1467,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-records-takedown-of-bombay-shaving-co-ad-in-gillette-dispute-126091701047_1.html",
+      "title": "Delhi HC records takedown of Bombay Shaving Co ad in Gillette dispute",
+      "published": "Thu, 17 Sep 2026 12:40:32 GMT",
+      "chars": 4606,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-september-18-tata-group-stocks-wipro-bel-asian-paints-puravankara-126091800111_1.html",
+      "title": "Stocks to watch: Tata group stocks, Wipro, BEL, Asian Paints, Puravankara",
+      "published": "Fri, 18 Sep 2026 08:01:20 +0530",
+      "chars": 116,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-18-nse-bse-sensex-today-nifty-gift-nifty-crude-oil-price-today-126091800108_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Asia markets rise; Brent crude near $104",
+      "published": "Fri, 18 Sep 2026 07:56:37 +0530",
+      "chars": 189,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/gold-us-treasuries-surge-as-crude-oil-slide-eases-inflation-concerns-126091701533_1.html",
+      "title": "Gold, US Treasuries surge as crude oil slide eases inflation concerns",
+      "published": "Thu, 17 Sep 2026 22:40:20 +0530",
+      "chars": 112,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/insurance-stocks-gain-on-expectations-of-lower-distributor-commissions-126091701302_1.html",
+      "title": "Insurance stocks gain on expectations of lower distributor commissions",
+      "published": "Thu, 17 Sep 2026 20:23:06 +0530",
+      "chars": 176,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/six-companies-make-record-stock-market-debut-in-a-day-five-end-higher-126091701203_1.html",
+      "title": "Thursday's listings: 6 IPOs take the stage in record debut-day rush",
+      "published": "Thu, 17 Sep 2026 19:30:16 +0530",
+      "chars": 164,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/india-s-textile-exports-up-around-10-on-year-in-first-five-months-of-fy27-126091701126_1.html",
+      "title": "India's textile exports up around 10% on year in first five months of FY27",
+      "published": "Thu, 17 Sep 2026 18:50:01 +0530",
+      "chars": 37,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-ipo-subscribed-43-on-first-day-as-non-institutional-investors-lead-126091701088_1.html",
+      "title": "NSE IPO subscribed 43% on the first day of bidding, QIBs' share 19%",
+      "published": "Thu, 17 Sep 2026 18:34:56 +0530",
+      "chars": 155,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/coal-india-announces-appointment-of-director-on-board-of-northern-coalfields-126091701085_1.html",
+      "title": "Coal India announces appointment of director on board of Northern Coalfields",
+      "published": "Thu, 17 Sep 2026 18:31:17 +0530",
+      "chars": 1225,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ss-retail-ipo-day-3-subscription-surpasses-6-times-gmp-hints-at-19-listing-premium-check-key-details-inside/articleshow/134323936.cms",
+      "title": "SS Retail IPO Day 3: Subscription surpasses 6 times; GMP hints at 19% listing premium; check key details inside",
+      "published": "Fri, 18 Sep 2026 07:49:26 +0530",
+      "chars": 189,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-18-crude-oil-falls-below-104-down-for-third-session-what-are-experts-saying/articleshow/134323992.cms",
+      "title": "Oil Price Today (September 18): Crude oil falls below $104, down for third session. What are experts saying?",
+      "published": "Fri, 18 Sep 2026 07:48:32 +0530",
+      "chars": 235,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/six-companies-debut-on-bourses-four-deliver-premium-listings/articleshow/134323853.cms",
+      "title": "Six companies debut on bourses; four deliver premium listings",
+      "published": "Fri, 18 Sep 2026 07:45:40 +0530",
+      "chars": 381,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-day-2-gmp-at-8-subscription-reaches-44-should-you-apply/articleshow/134323874.cms",
+      "title": "NSE IPO Day 2: GMP at 8%, subscription reaches 44% — Should you apply?",
+      "published": "Fri, 18 Sep 2026 07:40:07 +0530",
+      "chars": 396,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-rises-slightly-on-lower-oil-prices-subdued-dollar/articleshow/134323843.cms",
+      "title": "Gold rises slightly on lower oil prices, subdued dollar",
+      "published": "Fri, 18 Sep 2026 07:32:27 +0530",
+      "chars": 406,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/yen-weak-ahead-of-boj-decision-rate-hike-expected/articleshow/134323834.cms",
+      "title": "Yen weak ahead of BOJ decision; rate hike expected",
+      "published": "Fri, 18 Sep 2026 07:29:18 +0530",
+      "chars": 444,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-fall-1-on-hopes-of-limited-supply-disruptions/articleshow/134323802.cms",
+      "title": "Oil prices fall 1% on hopes of limited supply disruptions",
+      "published": "Fri, 18 Sep 2026 07:27:38 +0530",
+      "chars": 443,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/artemis-medicare-services-stock-surges-26-as-expansion-plans-boost-investor-confidence/articleshow/134323761.cms",
+      "title": "Artemis Medicare shares gain 26% in 3 months; analysts see 30% upside",
+      "published": "Fri, 18 Sep 2026 07:22:28 +0530",
+      "chars": 459,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 198.8
+}
