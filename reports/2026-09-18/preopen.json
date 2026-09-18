@@ -1,0 +1,381 @@
+{
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18 08:12",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 3,
+      "events": 11
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 8
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 27,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "30c8c4bf63",
+      "symbol": "WIPRO",
+      "company": "Wipro Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+      "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
+      "published": "Fri, 18 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-18T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms"
+      ],
+      "n_reports": 1,
+      "catalyst": 2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 80/100",
+        "-6 16.9% below the 200-day average — fighting the trend",
+        "+12 published Fri 06:00, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 94968.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 06:00, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 166.4,
+        "atr_pct": 2.15,
+        "expected_day_range_inr": 3.58,
+        "expected_day_range_pct": 2.15,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 80,
+      "fund_why": [
+        "+6 ROCE 17.8%",
+        "+4 ROE 15.5%",
+        "+6 P/E 12.5",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 1%",
+        "+5 D/E 0.23",
+        "+4 promoter 72.59%",
+        "+0 latest qtr PAT YoY 0.6%",
+        "+4 mcap ₹164,818 cr",
+        "+8 operating cash flow ₹14,932cr, 113% of profit — profit is turning into cash",
+        "+3 price to book 1.98",
+        "-6 PEG 34.72 — priced for growth it is not delivering",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is providing a good dividend yield of 6.61%.",
+        "Company has been maintaining a healthy dividend payout of 46.7%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 8.38% over past five years."
+      ],
+      "ltp": 166.39999389648438,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 34.2,
+        "adx": 16.8,
+        "atr_pct": 2.15,
+        "vol_ratio": 1.02,
+        "chg_1d_pct": -0.29,
+        "chg_5d_pct": 0.06,
+        "dist_52w_high_pct": -39.07,
+        "dist_ema200_pct": -16.95,
+        "avg_turnover_cr": 157.1,
+        "high_52w": 273.1,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-17"
+      },
+      "fundamentals": {
+        "market_cap_cr": 164818.0,
+        "pe": 12.5,
+        "roce": 17.8,
+        "roe": 15.5,
+        "sales_growth_3_years": 1.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 72.59,
+        "debt_to_equity": 0.23,
+        "revenue_ttm_cr": 94968.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ab23319aba",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "railways"
+      ],
+      "size_inr_cr": 648.0,
+      "size_estimated": false,
+      "size_basis": "Rs 648 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+      "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
+      "published": "Fri, 18 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-18T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms"
+      ],
+      "n_reports": 1,
+      "catalyst": -2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        "+2 ₹648cr against ₹28,717cr of revenue — 0.0× a year's sales, small against revenue",
+        "+4 fundamentals 61/100",
+        "-6 3.4% below the 200-day average — fighting the trend",
+        "+12 published Fri 06:00, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.023,
+      "revenue_ttm_cr": 28717.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 06:00, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 395.45,
+        "atr_pct": 1.94,
+        "expected_day_range_inr": 7.67,
+        "expected_day_range_pct": 1.94,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 61,
+      "fund_why": [
+        "+12 ROCE 36.4%",
+        "+8 ROE 27.4%",
+        "-2 P/E 47",
+        "+8 3y profit CAGR 27%",
+        "+6 3y sales CAGR 16%",
+        "+4 return on capital has improved from 28.2% to 36.7%",
+        "+5 D/E 0",
+        "+4 promoter 51.14%",
+        "+0 latest qtr PAT YoY 8.9%",
+        "+4 mcap ₹289,065 cr",
+        "-6 operating cash flow ₹1,541cr, just 25% of profit",
+        "+3 institutions hold 39.04%",
+        "-8 price to book 12.04",
+        "-6 ROCE 36.4% bought at 12.04× book is 3% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +18 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 23.5% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 27.7%",
+        "Company has been maintaining a healthy dividend payout of 34.5%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 12.0 times its book value",
+        "Company has high debtors of 170 days.",
+        "Working capital days have increased from 79.4 days to 135 days"
+      ],
+      "ltp": 395.45001220703125,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 43.3,
+        "adx": 14.6,
+        "atr_pct": 1.94,
+        "vol_ratio": 0.8,
+        "chg_1d_pct": 2.51,
+        "chg_5d_pct": -2.36,
+        "dist_52w_high_pct": -16.47,
+        "dist_ema200_pct": -3.39,
+        "avg_turnover_cr": 395.12,
+        "high_52w": 473.45,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-17"
+      },
+      "fundamentals": {
+        "market_cap_cr": 289065.0,
+        "pe": 47.0,
+        "roce": 36.4,
+        "roe": 27.4,
+        "sales_growth_3_years": 16.0,
+        "profit_growth_3_years": 27.0,
+        "promoter_pct": 51.14,
+        "debt_to_equity": 0.0,
+        "revenue_ttm_cr": 28717.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
