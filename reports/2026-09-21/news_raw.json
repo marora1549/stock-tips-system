@@ -1,0 +1,1305 @@
+{
+  "date": "2026-09-21",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 5
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 5
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 7
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 6,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "8ec167e459",
+      "symbol": "BPCL",
+      "company": "Bharat Petroleum Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a significant order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 173.45,
+      "size_estimated": false,
+      "size_basis": "Rs 173.45 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343",
+      "title": "Kotyark Industries secures Rs 173.45 crore biodiesel order from IOCL, BPCL, HPCL",
+      "published": "Sun, 20 Sep 2026 08:54:59 GMT",
+      "published_utc": "2026-09-20T08:54:59+00:00",
+      "sentence": "received a significant order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "605537a763",
+      "symbol": "KOTYARK",
+      "company": "Kotyark Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a significant order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 173.45,
+      "size_estimated": false,
+      "size_basis": "Rs 173.45 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343",
+      "title": "Kotyark Industries secures Rs 173.45 crore biodiesel order from IOCL, BPCL, HPCL",
+      "published": "Sun, 20 Sep 2026 08:54:59 GMT",
+      "published_utc": "2026-09-20T08:54:59+00:00",
+      "sentence": "received a significant order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2f5be20128",
+      "symbol": "HINDPETRO",
+      "company": "Hindustan Petroleum Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a significant order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 173.45,
+      "size_estimated": false,
+      "size_basis": "Rs 173.45 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343",
+      "title": "Kotyark Industries secures Rs 173.45 crore biodiesel order from IOCL, BPCL, HPCL",
+      "published": "Sun, 20 Sep 2026 08:54:59 GMT",
+      "published_utc": "2026-09-20T08:54:59+00:00",
+      "sentence": "received a significant order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2bcc10e778",
+      "symbol": "IOC",
+      "company": "Indian Oil Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a significant order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 173.45,
+      "size_estimated": false,
+      "size_basis": "Rs 173.45 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343",
+      "title": "Kotyark Industries secures Rs 173.45 crore biodiesel order from IOCL, BPCL, HPCL",
+      "published": "Sun, 20 Sep 2026 08:54:59 GMT",
+      "published_utc": "2026-09-20T08:54:59+00:00",
+      "sentence": "received a significant order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "213ff64cc6",
+      "symbol": "WELCORP",
+      "company": "Welspun Corp Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags another ₹2,000 crore order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 17200.0,
+      "size_estimated": false,
+      "size_basis": "₹17,200 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/cnbctv:805c52329094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-20 — cnbctv:805c52329094b:0",
+      "published": "Sun, 20 Sep 2026 23:27:56 GMT",
+      "published_utc": "2026-09-20T23:27:56+00:00",
+      "sentence": "bags another ₹2,000 crore order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:805c52329094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8ddde4338f",
+      "symbol": "SHAKTIPUMP",
+      "company": "Shakti Pumps (India) Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 522.0,
+      "size_estimated": false,
+      "size_basis": "₹5,220 million",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2200.0,
+        "unit": "MW",
+        "text": "2.2 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+      "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+      "published": "Sun, 20 Sep 2026 08:23:45 GMT",
+      "published_utc": "2026-09-20T08:23:45+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7836f9505f",
+      "symbol": "APLLTD",
+      "company": "Alembic Pharmaceuticals Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012",
+      "title": "USFDA Warning Letter Issued to Alembic Pharmaceuticals Clinical Investigator Over ICF Observations",
+      "published": "Sun, 20 Sep 2026 09:31:37 GMT",
+      "published_utc": "2026-09-20T09:31:37+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "299f0edaef",
+      "symbol": "ELECTHERM",
+      "company": "Electrotherm (India) Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012",
+      "title": "USFDA Warning Letter Issued to Alembic Pharmaceuticals Clinical Investigator Over ICF Observations",
+      "published": "Sun, 20 Sep 2026 09:31:37 GMT",
+      "published_utc": "2026-09-20T09:31:37+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "aa103e1d5f",
+      "symbol": "IPL",
+      "company": "India Pesticides Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledge additional shares",
+      "also_matched": [
+        "order_win",
+        "regulatory_approval",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853",
+      "title": "Stocks to Watch Today, September 21, 2026: Mason Infratech, India Pesticides, Hindustan Oil Exploration, NESTLE INDIA and Methodhub Software",
+      "published": "Mon, 21 Sep 2026 01:38:01 GMT",
+      "published_utc": "2026-09-21T01:38:01+00:00",
+      "sentence": "pledge additional shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3f5934a82c",
+      "symbol": "CCAVENUE",
+      "company": "AvenuesAI Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/avenuesai-q1-results-revenue-surges-109-yoy-pat-up-45/47986284",
+      "title": "AvenuesAI gross revenue surges 109% in Q1FY27; net revenue falls 3%",
+      "published": "Sun, 20 Sep 2026 08:34:47 GMT",
+      "published_utc": "2026-09-20T08:34:47+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/avenuesai-q1-results-revenue-surges-109-yoy-pat-up-45/47986284"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "703b97c327",
+      "symbol": "COALINDIA",
+      "company": "Coal India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 269 mw solar plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902",
+      "title": "KPI Green Energy commissions 269 MW solar plant for Coal India",
+      "published": "Sun, 20 Sep 2026 08:11:05 GMT",
+      "published_utc": "2026-09-20T08:11:05+00:00",
+      "sentence": "commissions 269 mw solar plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7989a9a5c8",
+      "symbol": "HINDOILEXP",
+      "company": "Hindustan Oil Exploration Company Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion : hindustan oil exploration expands its dirok gas plant capacity",
+      "also_matched": [
+        "order_win",
+        "regulatory_approval",
+        "pledge"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853",
+      "title": "Stocks to Watch Today, September 21, 2026: Mason Infratech, India Pesticides, Hindustan Oil Exploration, NESTLE INDIA and Methodhub Software",
+      "published": "Mon, 21 Sep 2026 01:38:01 GMT",
+      "published_utc": "2026-09-21T01:38:01+00:00",
+      "sentence": "expansion : hindustan oil exploration expands its dirok gas plant capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "004c21a3f5",
+      "symbol": "KPIGREEN",
+      "company": "KPI Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 269 mw solar plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902",
+      "title": "KPI Green Energy commissions 269 MW solar plant for Coal India",
+      "published": "Sun, 20 Sep 2026 08:11:05 GMT",
+      "published_utc": "2026-09-20T08:11:05+00:00",
+      "sentence": "commissions 269 mw solar plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5e2b215c9c",
+      "symbol": "LENSKART",
+      "company": "Lenskart Solutions Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 5.0,
+        "unit": "km",
+        "text": "5 km"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html",
+      "title": "Stocks to Watch Today: Lenskart, Rail Vikas Nigam, GR Infraprojects, Knowledge Marine, HEG, Nibe, Manika...",
+      "published": "Sun, 20 Sep 2026 20:04:47 GMT",
+      "published_utc": "2026-09-20T20:04:47+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5c96b89ef1",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "railways",
+        "pharma_approval",
+        "shipping_ports",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-mazagon-dock-rvnl-nestle-india-shares-to-move-sensex-nifty-monday-21-sept-triggers-11789897835796.html",
+      "title": "Top stocks in focus tomorrow: Mazagon Dock, RVNL, Nestle India shares to move Sensex, Nifty? Monday, 21 Sept | Triggers",
+      "published": "Sun, 20 Sep 2026 10:34:26 GMT",
+      "published_utc": "2026-09-20T10:34:26+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-mazagon-dock-rvnl-nestle-india-shares-to-move-sensex-nifty-monday-21-sept-triggers-11789897835796.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "83579b4e02",
+      "symbol": "NIBE",
+      "company": "NIBE Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 5.0,
+        "unit": "km",
+        "text": "5 km"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html",
+      "title": "Stocks to Watch Today: Lenskart, Rail Vikas Nigam, GR Infraprojects, Knowledge Marine, HEG, Nibe, Manika...",
+      "published": "Sun, 20 Sep 2026 20:04:47 GMT",
+      "published_utc": "2026-09-20T20:04:47+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html",
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "2001e1ec51",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 522.0,
+      "size_estimated": false,
+      "size_basis": "₹5,220 million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2200.0,
+        "unit": "MW",
+        "text": "2.2 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+      "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+      "published": "Sun, 20 Sep 2026 08:23:45 GMT",
+      "published_utc": "2026-09-20T08:23:45+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6bbe14820f",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 522.0,
+      "size_estimated": false,
+      "size_basis": "₹5,220 million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2200.0,
+        "unit": "MW",
+        "text": "2.2 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+      "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+      "published": "Sun, 20 Sep 2026 08:23:45 GMT",
+      "published_utc": "2026-09-20T08:23:45+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9c0c32ef0b",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 522.0,
+      "size_estimated": false,
+      "size_basis": "₹5,220 million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2200.0,
+        "unit": "MW",
+        "text": "2.2 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+      "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+      "published": "Sun, 20 Sep 2026 08:23:45 GMT",
+      "published_utc": "2026-09-20T08:23:45+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6aef9bceda",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 269 mw solar plant",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 3500.0,
+      "size_estimated": true,
+      "size_basis": "10 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902",
+      "title": "KPI Green Energy commissions 269 MW solar plant for Coal India",
+      "published": "Sun, 20 Sep 2026 08:11:05 GMT",
+      "published_utc": "2026-09-20T08:11:05+00:00",
+      "sentence": "commissions 269 mw solar plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9af94dcd49",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning details the company informed stock exchanges that the facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 12500.0,
+      "size_estimated": false,
+      "size_basis": "₹12,500 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 11100.0,
+        "unit": "MW",
+        "text": "11.1 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/premier-energies-commences-operations-at-5-6-gw-solar-panel-manufacturing-facility-in-telangana/36398098",
+      "title": "Premier Energies Officially Commissions 5.6 GW Solar Manufacturing Facility",
+      "published": "Sun, 20 Sep 2026 08:47:09 GMT",
+      "published_utc": "2026-09-20T08:47:09+00:00",
+      "sentence": "commissioning details the company informed stock exchanges that the facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/premier-energies-commences-operations-at-5-6-gw-solar-panel-manufacturing-facility-in-telangana/36398098",
+        "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "16fdd1a8ab",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning details the company informed stock exchanges that the facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 12500.0,
+      "size_estimated": false,
+      "size_basis": "₹12,500 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 11100.0,
+        "unit": "MW",
+        "text": "11.1 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/premier-energies-commences-operations-at-5-6-gw-solar-panel-manufacturing-facility-in-telangana/36398098",
+      "title": "Premier Energies Officially Commissions 5.6 GW Solar Manufacturing Facility",
+      "published": "Sun, 20 Sep 2026 08:47:09 GMT",
+      "published_utc": "2026-09-20T08:47:09+00:00",
+      "sentence": "commissioning details the company informed stock exchanges that the facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/premier-energies-commences-operations-at-5-6-gw-solar-panel-manufacturing-facility-in-telangana/36398098",
+        "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902"
+      ],
+      "n_reports": 2
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-rvnl-lenskart-mazagon-dock-maruti-suzuki-india-and-nestle-india/articleshow/134372744.cms",
+      "title": "Stocks in news: RVNL, Lenskart, Mazagon Dock, Maruti Suzuki India and Nestle India",
+      "published": "Mon, 21 Sep 2026 00:30:00 GMT",
+      "chars": 8346,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html",
+      "title": "Stocks to Watch Today: Lenskart, Rail Vikas Nigam, GR Infraprojects, Knowledge Marine, HEG, Nibe, Manika...",
+      "published": "Sun, 20 Sep 2026 20:04:47 GMT",
+      "chars": 12799,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.tradingview.com/news/stocktwits:fd8fbeb34094b:0-mu-sndk-skhy-stocks-in-focus-memory-rebound-gains-steam-even-as-china-s-cxmt-touts-faster-production/",
+      "title": "MU, SNDK, SKHY Stocks In Focus: Memory Rebound Gains Steam Even As China’s CXMT Touts Faster Production",
+      "published": "Mon, 21 Sep 2026 02:01:00 GMT",
+      "chars": 3463,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-mazagon-dock-rvnl-nestle-india-shares-to-move-sensex-nifty-monday-21-sept-triggers-11789897835796.html",
+      "title": "Top stocks in focus tomorrow: Mazagon Dock, RVNL, Nestle India shares to move Sensex, Nifty? Monday, 21 Sept | Triggers",
+      "published": "Sun, 20 Sep 2026 10:34:26 GMT",
+      "chars": 3526,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/fr/software/epa-swp/sword-group-shares/news/3-ai-safety-stocks-to-watch-as-cybersecurity-spending-meets/amp",
+      "title": "3 AI Safety Stocks To Watch As Cybersecurity Spending Meets Regulation",
+      "published": "Mon, 21 Sep 2026 00:02:40 GMT",
+      "chars": 6403,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/09/21/2026/GPT-Infra-Bags-Major-Railway-Infrastructure-Order--Oil-India-Plans-Major-Deepwater-Exploration-Push--Top-Buzzing-Stocks-Today",
+      "title": "GPT Infra Bags Major Railway Infrastructure Order | Oil India Plans Major Deepwater Exploration Push | Top Buzzing Stocks Today",
+      "published": "Mon, 21 Sep 2026 00:30:00 GMT",
+      "chars": 9003,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853",
+      "title": "Stocks to Watch Today, September 21, 2026: Mason Infratech, India Pesticides, Hindustan Oil Exploration, NESTLE INDIA and Methodhub Software",
+      "published": "Mon, 21 Sep 2026 01:38:01 GMT",
+      "chars": 6086,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/welspun-enterprises-secures-7-300-crore-pune-shirur-highway-project-order-book-rises-to-18-755-crore/39073079",
+      "title": "Welspun Enterprises Receives ₹7,300 Crore Pune-Shirur Highway Project Letter of Award",
+      "published": "Sun, 20 Sep 2026 09:26:52 GMT",
+      "chars": 5783,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/mason-infratech-wins-73-26-crore-residential-construction-order-from-magicmind",
+      "title": "Mason Infratech Wins ₹73.26 Crore Residential Construction Order From Magicmind",
+      "published": "Mon, 21 Sep 2026 00:25:53 GMT",
+      "chars": 4513,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/cnbctv:805c52329094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-20 — cnbctv:805c52329094b:0",
+      "published": "Sun, 20 Sep 2026 23:27:56 GMT",
+      "chars": 2255,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.thehindu.com/news/national/assam/northeasts-largest-power-project-initiated-in-assams-dhubri/article71487935.ece/amp/",
+      "title": "Northeast’s largest power project initiated in Assam’s Dhubri",
+      "published": "Sun, 20 Sep 2026 13:19:24 GMT",
+      "chars": 2978,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/kotyark-industries-receives-rs-15-41-crore-loi-from-bpcl-hpcl-for-biodiesel/47465343",
+      "title": "Kotyark Industries secures Rs 173.45 crore biodiesel order from IOCL, BPCL, HPCL",
+      "published": "Sun, 20 Sep 2026 08:54:59 GMT",
+      "chars": 7652,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/shilpa-medicare-usfda-hyderabad-inspection-concludes-with-one-procedural-observation",
+      "title": "Shilpa Medicare USFDA Hyderabad Inspection Concludes With One Procedural Observation",
+      "published": "Mon, 21 Sep 2026 01:04:25 GMT",
+      "chars": 4280,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012",
+      "title": "USFDA Warning Letter Issued to Alembic Pharmaceuticals Clinical Investigator Over ICF Observations",
+      "published": "Sun, 20 Sep 2026 09:31:37 GMT",
+      "chars": 3641,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://biz.chosun.com/en/en-finance/2026/09/21/DZIU67RXBRDFJLHXMP7S3I4YUQ/",
+      "title": "IBK Securities backs Alteogen as patent edge fuels global SC shift - CHOSUNBIZ",
+      "published": "Sun, 20 Sep 2026 23:05:00 GMT",
+      "chars": 9246,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.majalahceo.com/2026/09/advokat-david-s.html",
+      "title": "The lawsuit has been registered at the South Jakarta District Court with Case Number: 1058/Pdt.G/2026/PNJaksel",
+      "published": "Sun, 20 Sep 2026 20:35:00 GMT",
+      "chars": 7291,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+      "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+      "published": "Sun, 20 Sep 2026 08:23:45 GMT",
+      "chars": 6703,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/avenuesai-q1-results-revenue-surges-109-yoy-pat-up-45/47986284",
+      "title": "AvenuesAI gross revenue surges 109% in Q1FY27; net revenue falls 3%",
+      "published": "Sun, 20 Sep 2026 08:34:47 GMT",
+      "chars": 7109,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/hlv-q1-results-net-loss-narrows-to-78-lakh-as-revenue-rises-15/46772295",
+      "title": "HLV narrows net loss to ₹78 lakh as revenue rises 13.6% in Q1FY27",
+      "published": "Sun, 20 Sep 2026 07:30:37 GMT",
+      "chars": 4894,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/akums-drugs-q1-results-net-profit-surges-56-yoy-to-1-009-crore/47731409",
+      "title": "Akums Drugs Q1FY27 net profit surges 56%; concall flags API turnaround",
+      "published": "Sun, 20 Sep 2026 12:15:31 GMT",
+      "chars": 7490,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/klaviyo-q3-results-sales-beat-estimates-with-377-381m-range/47519507",
+      "title": "Klaviyo Q3 Results: Sales beat estimates with $377-381M range",
+      "published": "Sun, 20 Sep 2026 11:16:03 GMT",
+      "chars": 2677,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/premier-energies-commences-operations-at-5-6-gw-solar-panel-manufacturing-facility-in-telangana/36398098",
+      "title": "Premier Energies Officially Commissions 5.6 GW Solar Manufacturing Facility",
+      "published": "Sun, 20 Sep 2026 08:47:09 GMT",
+      "chars": 4380,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/kpi-green-energy-commissions-269-mw-solar-plant-for-coal-india/46074902",
+      "title": "KPI Green Energy commissions 269 MW solar plant for Coal India",
+      "published": "Sun, 20 Sep 2026 08:11:05 GMT",
+      "chars": 2555,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/dispute-over-third-term-for-chandrasekaran-the-many-shades-of-aoa-126092000908_1.html",
+      "title": "Dispute over third term for Chandrasekaran: The many shades of AoA",
+      "published": "Sun, 20 Sep 2026 18:35:25 GMT",
+      "chars": 6246,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/icai-issues-new-standard-on-sustainability-assurance-effective-april-2027-126092000336_1.html",
+      "title": "ICAI issues new standard on sustainability assurance, effective April 2027",
+      "published": "Sun, 20 Sep 2026 08:55:11 GMT",
+      "chars": 3650,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/icai-tirumala-tirupati-devasthanams-work-on-reits-to-monetise-land-assets-126092000296_1.html",
+      "title": "ICAI, Tirumala Tirupati Devasthanams work on Reits to monetise land assets",
+      "published": "Sun, 20 Sep 2026 09:17:52 GMT",
+      "chars": 3876,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/bhutan-s-gelephu-city-opens-new-fund-family-office-regime-from-oct-1-126092000514_1.html",
+      "title": "Bhutan's Gelephu City opens new fund, family office regime from Oct 1",
+      "published": "Sun, 20 Sep 2026 11:37:36 GMT",
+      "chars": 4440,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/columns/ibc-the-personal-guarantee-puzzle-126092000317_1.html",
+      "title": "IBC: The personal guarantee puzzle",
+      "published": "Sun, 20 Sep 2026 08:29:01 GMT",
+      "chars": 9098,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/bankers-face-eu-privacy-wall-in-race-to-stem-evolving-credit-risk-126092000281_1.html",
+      "title": "Bankers face EU privacy wall in race to stem evolving credit risk",
+      "published": "Sun, 20 Sep 2026 07:57:34 GMT",
+      "chars": 7757,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/rapp-8-begins-fuel-loading-commercial-operations-targeted-this-fiscal-126092000801_1.html",
+      "title": "RAPP-8 begins fuel loading, commercial operations targeted this fiscal",
+      "published": "Sun, 20 Sep 2026 16:14:33 GMT",
+      "chars": 5031,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/book/canada-more-than-america-s-polite-neighbour-126092000842_1.html",
+      "title": "Canada: More than America's polite neighbour",
+      "published": "Sun, 20 Sep 2026 17:00:24 GMT",
+      "chars": 6903,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-strategy-tilaknagar-physicswallah-among-3-stock-picks-by-angel-one-126092100068_1.html",
+      "title": "Nifty strategy; Tilaknagar, Physicswallah among 3 stock picks by Angel One",
+      "published": "Mon, 21 Sep 2026 08:01:02 +0530",
+      "chars": 185,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-tata-group-omcs-welspun-corp-mazagon-dock-apollo-pipes-126092100064_1.html",
+      "title": "Stocks to watch: Tata Group, OMCs, Welspun Corp, Mazagon Dock, Apollo Pipes",
+      "published": "Mon, 21 Sep 2026 07:57:17 +0530",
+      "chars": 111,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-21-bse-sensex-today-nifty-gift-nifty-nse-ipo-manika-plastech-listing-126092100059_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Asia markets rise on positive US-China talks",
+      "published": "Mon, 21 Sep 2026 07:49:00 +0530",
+      "chars": 153,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/here-s-why-choice-broking-is-bullish-on-jubilant-food-rbl-bank-ab-capital-126092100058_1.html",
+      "title": "Here's why Choice Broking is bullish on Jubilant Food, RBL Bank, AB Capital",
+      "published": "Mon, 21 Sep 2026 07:42:27 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/asian-markets-edge-higher-as-ai-driven-chip-demand-lifts-tech-stocks-126092100039_1.html",
+      "title": "Asian markets edge higher as AI-driven chip demand lifts tech stocks",
+      "published": "Mon, 21 Sep 2026 07:36:47 +0530",
+      "chars": 95,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-slips-as-investors-assess-saudi-export-recovery-despite-houthi-attacks-126092100037_1.html",
+      "title": "Oil slips as investors assess Saudi export recovery despite Houthi attacks",
+      "published": "Mon, 21 Sep 2026 07:33:39 +0530",
+      "chars": 116,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/liqvd-digital-india-issue-to-open-on-sep-23-price-band-fixed-at-51-54-126092000345_1.html",
+      "title": "Liqvd Digital India issue to open on Sep 23, price band fixed at ₹51-54",
+      "published": "Sun, 20 Sep 2026 14:49:01 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-21-crude-oil-falls-for-4th-day-below-102-whats-triggering-the-fall/articleshow/134378118.cms",
+      "title": "Oil Price Today (September 21): Crude oil falls for 4th day, below $102. What’s triggering the fall?",
+      "published": "Mon, 21 Sep 2026 07:46:15 +0530",
+      "chars": 237,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-12-midcap-stocks-cross-above-their-200-dmas/slideshow/134378090.cms",
+      "title": "Positive Breakout: These 12 midcap stocks cross above their 200 DMAs",
+      "published": "Mon, 21 Sep 2026 07:34:28 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/volatile-yen-draws-intervention-watch-other-currencies-subdued/articleshow/134378010.cms",
+      "title": "Volatile yen draws intervention watch, other currencies subdued",
+      "published": "Mon, 21 Sep 2026 07:32:25 +0530",
+      "chars": 459,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-eases-on-inflation-woes-rate-hike-fears/articleshow/134377983.cms",
+      "title": "Gold eases on inflation woes, rate hike fears",
+      "published": "Mon, 21 Sep 2026 07:30:20 +0530",
+      "chars": 451,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-slips-as-investors-assess-saudi-export-recovery/articleshow/134377961.cms",
+      "title": "Oil slips as investors assess Saudi export recovery",
+      "published": "Mon, 21 Sep 2026 07:26:58 +0530",
+      "chars": 308,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-turn-sellers-in-september-financials-auto-oil-gas-see-biggest-selling/articleshow/134377564.cms",
+      "title": "FII selling returns in first half of September  as financials, auto stocks face heavy outflows",
+      "published": "Mon, 21 Sep 2026 06:48:52 +0530",
+      "chars": 438,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/jane-street-bets-big-on-leveraged-etf-swaps/articleshow/134377456.cms",
+      "title": "Jane Street bets big on leveraged ETF swaps",
+      "published": "Mon, 21 Sep 2026 06:26:38 +0530",
+      "chars": 334,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/methodhub-software-subsidiary-nemera-secures-161-crore-telecom-order-in-thailand",
+      "title": "Methodhub Software Subsidiary Nemera Secures ₹161 Crore Telecom Order In Thailand",
+      "published": "Mon, 21 Sep 2026 00:45:00 GMT",
+      "chars": 3406,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/refex-industries-wins-160-crore-pond-ash-lifting-contract-from-mp-psu",
+      "title": "Refex Industries Wins ₹160 Crore Pond Ash Lifting Contract From MP PSU",
+      "published": "Mon, 21 Sep 2026 01:24:27 GMT",
+      "chars": 3522,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/mason-infratech-wins-73-26-crore-residential-construction-order-from-magicmind",
+      "title": "Mason Infratech Wins ₹73.26 Crore Residential Construction Order From Magicmind",
+      "published": "Mon, 21 Sep 2026 00:25:53 GMT",
+      "chars": 4513,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/east-india-drums-barrels-secures-59-02-crore-order-from-hpcl-for-bitumen-drums",
+      "title": "East India Drums & Barrels Secures ₹59.02 Crore Order From HPCL For Bitumen Drums",
+      "published": "Mon, 21 Sep 2026 01:20:25 GMT",
+      "chars": 3642,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/category/breaking-news",
+      "title": "Breaking News",
+      "published": "Mon, 21 Sep 2026 01:34:58 GMT",
+      "chars": 2190,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/gmr-airports-secures-favorable-court-ruling-on-aera-delhi-airport-tariff-appeal",
+      "title": "GMR Airports Secures Favorable Court Ruling On AERA Delhi Airport Tariff Appeal",
+      "published": "Mon, 21 Sep 2026 02:35:00 GMT",
+      "chars": 4679,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 103.7
+}
