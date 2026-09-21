@@ -73,8 +73,16 @@ Two or three sentences, and prefer the uncomfortable version:
 
 ## 3. Commit and push
 ```bash
-git add -A && git commit -m "intraday <date> <hh:mm>" && git push
+python -m stocktips publish --message "intraday <date> <hh:mm>" --what intraday
 ```
+`publish` regenerates `docs/data.json`, refuses to push a site it cannot prove renders (strict
+JSON, no bare NaN, the page's own script parses), commits, and pushes to **main** — rebasing onto
+anything another run landed while this one was working. The website is GitHub Pages serving `main`
++ `/docs`, so main is the only place a commit reaches the reader. Nobody merges anything by hand.
+
+It exits non-zero if the site did not reach main, and prints where the work went instead. **Send
+the email either way** — it was computed from live data a minute ago and needs nothing from git —
+but when publish failed, say so in the first line and quote what it printed.
 
 ## 4. Deliver it, then reply
 

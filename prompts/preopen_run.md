@@ -104,9 +104,18 @@ from the article. If a name deserves a plan the run did not give it, say what is
 
 ## 4. Commit and push
 ```bash
-git add -A && git commit -m "preopen <date>" && git push
+python -m stocktips publish --message "preopen <date>" --what preopen
 ```
-The commit is what the portal reads, so the Intraday tab is live the moment this finishes.
+`publish` regenerates `docs/data.json`, refuses to push a site it cannot prove renders (strict
+JSON, no bare NaN, the page's own script parses), commits, and pushes to **main** — rebasing onto
+anything another run landed while this one was working. The website is GitHub Pages serving `main`
++ `/docs`, so main is the only place a commit reaches the reader. Nobody merges anything by hand.
+
+It exits non-zero if the site did not reach main, and prints where the work went instead. **Send
+the email either way** — it was computed from live data a minute ago and needs nothing from git —
+but when publish failed, say so in the first line and quote what it printed.
+
+The Intraday tab is live the moment this finishes.
 
 **If the push fails, send the email anyway.** The email is the product of this run and it needs
 nothing from git — everything in it was computed from live data a minute ago. A failed push costs the
