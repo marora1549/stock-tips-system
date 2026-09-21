@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18",
+  "generated": "2026-09-21",
   "stats": {
     "capital": 100000,
     "equity": 99817.6,
@@ -71,7 +71,7 @@
       ],
       "order_line": "BUY 45 CGPOWER NSE CNC limit ₹894.90 · SL-M ₹855.90 · GTT ₹977.23 / 1,012.90 / 1,079.95",
       "progress_t1_pct": 0,
-      "days_elapsed": 8
+      "days_elapsed": 9
     },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -121,7 +121,7 @@
       ],
       "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,881.40 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86",
       "progress_t1_pct": 9,
-      "days_elapsed": 8
+      "days_elapsed": 9
     },
     {
       "pos_id": "2026-09-16-KPIL",
@@ -179,75 +179,13 @@
       ],
       "order_line": "BUY 21 KPIL NSE CNC limit ₹1,403.50 · SL-M ₹1,368.22 · GTT ₹1,548.41 / 1,623.55 / 1,736.26",
       "progress_t1_pct": 29,
-      "days_elapsed": 2,
+      "days_elapsed": 3,
       "eta_t1_days": 38,
       "pace": "on-track",
-      "days_left_on_eta": 36
+      "days_left_on_eta": 35
     }
   ],
   "sparks": {
-    "CGPOWER": [
-      956.25,
-      952.15,
-      976.5,
-      959.4,
-      892.55,
-      925.05,
-      910.5,
-      908.1,
-      910.9,
-      916.6,
-      905.5,
-      913.85,
-      929.15,
-      921.95,
-      905.0,
-      912.45,
-      914.85,
-      912.85,
-      883.8,
-      867.7,
-      877.3,
-      844.1,
-      829.5,
-      832.6,
-      863.4,
-      826.1,
-      880.05,
-      889.5,
-      876.0,
-      879.0,
-      879.0,
-      881.0,
-      888.0,
-      886.55,
-      890.15,
-      898.8,
-      894.2,
-      863.05,
-      876.3,
-      867.0,
-      877.5,
-      878.5,
-      865.05,
-      897.9,
-      889.0,
-      916.0,
-      885.5,
-      877.75,
-      895.0,
-      891.0,
-      895.0,
-      910.7,
-      926.95,
-      914.55,
-      909.0,
-      909.0,
-      858.0,
-      851.55,
-      880.0,
-      892.0
-    ],
     "LALPATHLAB": [
       1689.2,
       1689.2,
@@ -309,6 +247,68 @@
       1906.4,
       1895.7,
       1896.9
+    ],
+    "CGPOWER": [
+      956.25,
+      952.15,
+      976.5,
+      959.4,
+      892.55,
+      925.05,
+      910.5,
+      908.1,
+      910.9,
+      916.6,
+      905.5,
+      913.85,
+      929.15,
+      921.95,
+      905.0,
+      912.45,
+      914.85,
+      912.85,
+      883.8,
+      867.7,
+      877.3,
+      844.1,
+      829.5,
+      832.6,
+      863.4,
+      826.1,
+      880.05,
+      889.5,
+      876.0,
+      879.0,
+      879.0,
+      881.0,
+      888.0,
+      886.55,
+      890.15,
+      898.8,
+      894.2,
+      863.05,
+      876.3,
+      867.0,
+      877.5,
+      878.5,
+      865.05,
+      897.9,
+      889.0,
+      916.0,
+      885.5,
+      877.75,
+      895.0,
+      891.0,
+      895.0,
+      910.7,
+      926.95,
+      914.55,
+      909.0,
+      909.0,
+      858.0,
+      851.55,
+      880.0,
+      892.0
     ],
     "KPIL": [
       1398.2,
@@ -1187,7 +1187,7 @@
   "latest_picks": {},
   "latest_analysis": [],
   "contenders": [],
-  "analysis_day": "2026-09-18",
+  "analysis_day": "2026-09-21",
   "cash_flows": [],
   "book": {
     "max_open_positions": 4,
@@ -1201,78 +1201,268 @@
     "max_single_stock_pct": 50
   },
   "intraday": {
-    "day": "2026-09-18",
-    "generated_at": "2026-09-18 08:12",
+    "day": "2026-09-21",
+    "generated_at": "2026-09-21 08:10",
     "checked_at": null,
-    "events_read": 27,
+    "events_read": 22,
     "wires": {
       "corp_stocks_to_watch": {
-        "docs": 6,
-        "events": 4
+        "docs": 7,
+        "events": 6
       },
       "corp_orders": {
-        "docs": 3,
-        "events": 11
+        "docs": 5,
+        "events": 5
       },
       "corp_orders_bse": {
         "docs": 0,
         "events": 0
       },
       "corp_approvals": {
-        "docs": 4,
-        "events": 1
+        "docs": 3,
+        "events": 2
       },
       "corp_regulatory_action": {
-        "docs": 4,
-        "events": 1
+        "docs": 1,
+        "events": 0
       },
       "corp_results": {
-        "docs": 7,
-        "events": 3
+        "docs": 5,
+        "events": 5
       },
       "corp_expansion": {
-        "docs": 7,
-        "events": 4
+        "docs": 2,
+        "events": 7
       },
       "corp_bs_capitalmarket": {
         "docs": 8,
-        "events": 8
+        "events": 0
       },
       "corp_bs_markets_rss": {
-        "docs": 8,
+        "docs": 7,
         "events": 0
       },
       "corp_et_markets_rss": {
-        "docs": 8,
+        "docs": 7,
         "events": 0
       },
       "corp_sahi": {
-        "docs": 0,
-        "events": 0,
-        "skipped": true
+        "docs": 6,
+        "events": 0
       }
     },
     "trade": [],
-    "watch": [],
+    "watch": [
+      {
+        "symbol": "WELCORP",
+        "company": "Welspun Corp Limited",
+        "event": "order_win",
+        "event_label": "Order win",
+        "catalyst": 49,
+        "verdict": "WATCH",
+        "verdict_note": "real but not enough on its own — watch how it opens",
+        "size_inr_cr": 17200.0,
+        "size_estimated": false,
+        "size_basis": "₹17,200 crore",
+        "materiality_ratio": 0.994,
+        "revenue_ttm_cr": 17300.0,
+        "fund_score": 71,
+        "fund_why": [
+          "+12 ROCE 22.9%",
+          "+8 ROE 19.4%",
+          "+2 P/E 30.4",
+          "+8 3y profit CAGR 119%",
+          "+6 3y sales CAGR 20%",
+          "+4 return on capital has improved from 16.2% to 21.3%",
+          "+5 D/E 0.26",
+          "+0 promoter 49.73%",
+          "+4 latest qtr PAT YoY 200.3%",
+          "+4 mcap ₹70,171 cr",
+          "+8 operating cash flow ₹3,204cr, 198% of profit — profit is turning into cash",
+          "-8 profit growth has stalled: -14.8% last year against 67.4% the year before",
+          "-5 the profit 3-year CAGR of 119% is history — last year was -14.8%",
+          "+4 interest cover 15.38×",
+          "-10 borrowings up 110% year on year",
+          "+3 institutions hold 34.57%",
+          "-4 price to book 7.67",
+          "-6 ROCE 22.9% bought at 7.67× book is 3% on what you pay",
+          "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+          "  (growth counted +8 of +9 — its terms measure the same thing more than once, so the most it can add is +8)",
+          "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+        ],
+        "fund_flags": [],
+        "fund_caps": [],
+        "fund_unrated": false,
+        "screener_pros": [
+          "Company has delivered good profit growth of 20.9% CAGR over last 5 years"
+        ],
+        "screener_cons": [
+          "Stock is trading at 7.66 times its book value",
+          "Earnings include an other income of Rs.1,078 Cr."
+        ],
+        "source_id": "corp_orders",
+        "corroborating_sources": [],
+        "url": "https://www.tradingview.com/news/cnbctv:805c52329094b:0/",
+        "title": "News by CNBC TV18 on TradingView, 2026-09-20 — cnbctv:805c52329094b:0",
+        "published": "Sun, 20 Sep 2026 23:27:56 GMT",
+        "directness": 0.85,
+        "route": "named",
+        "why_this_name": "named in the story",
+        "theme": null,
+        "ltp": 2660.10009765625,
+        "ta": {
+          "trend": "strong_up",
+          "rsi": 64.5,
+          "adx": 48.4,
+          "atr_pct": 4.77,
+          "vol_ratio": 1.72,
+          "chg_1d_pct": 8.12,
+          "chg_5d_pct": -0.62,
+          "dist_52w_high_pct": -4.48,
+          "dist_ema200_pct": 78.66,
+          "avg_turnover_cr": 672.6,
+          "high_52w": 2784.8,
+          "momentum_score": 73,
+          "last_bar_date": "2026-09-18"
+        },
+        "fundamentals": {
+          "market_cap_cr": 70171.0,
+          "pe": 30.4,
+          "roce": 22.9,
+          "roe": 19.4,
+          "sales_growth_3_years": 20.0,
+          "profit_growth_3_years": 119.0,
+          "promoter_pct": 49.73,
+          "debt_to_equity": 0.26,
+          "revenue_ttm_cr": 17300.0,
+          "revenue_basis": "trailing 4 quarters"
+        },
+        "freshness": {
+          "points": 12,
+          "window": "overnight",
+          "why": "published Mon 04:57, outside market hours — the move is still ahead of the open"
+        },
+        "class_score": {
+          "n": 1,
+          "avg_open_to_high_pct": 0.21,
+          "avg_open_to_close_pct": -4.83,
+          "hit_rate": 0.0,
+          "adjust": -5.16,
+          "untested": false
+        },
+        "plan": {
+          "reference_close": 2660.1,
+          "atr_pct": 4.77,
+          "expected_day_range_inr": 126.89,
+          "expected_day_range_pct": 4.77,
+          "opening_range_minutes": 15,
+          "gap_ladder": [
+            {
+              "band": "modest",
+              "gap_upto_pct": 2.0,
+              "rule": "buy the break of the opening-range high",
+              "acts": true
+            },
+            {
+              "band": "wide",
+              "gap_upto_pct": 5.0,
+              "rule": "buy the opening-range break only if it closes strong on real volume",
+              "acts": true
+            },
+            {
+              "band": "runaway",
+              "gap_upto_pct": null,
+              "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+              "acts": false
+            }
+          ],
+          "max_stop_pct": 1.5,
+          "min_stop_pct": 0.5,
+          "no_new_entry_after": "14:00",
+          "force_flat_at": "15:10",
+          "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+        },
+        "certainty": 1.0,
+        "n_reports": 1,
+        "catalyst_reasons": [
+          "+21 Order win (named at 85%)",
+          "+15 ₹17,200cr against ₹17,300cr of revenue — 1.0× a year's sales, over half a year of revenue",
+          "+10 fundamentals 71/100",
+          "-14 already up 8.1% in the last session — the move may be behind you",
+          "+5 ADX 48 with the trend up — moves carry here",
+          "+12 published Mon 04:57, outside market hours — the move is still ahead of the open"
+        ]
+      }
+    ],
     "avoid": [
       {
-        "symbol": "WIPRO",
-        "company": "Wipro Limited",
-        "event_label": "Equity dilution",
-        "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
-        "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+        "symbol": "LENSKART",
+        "company": "Lenskart Solutions Limited",
+        "event_label": "Broker downgrade",
+        "title": "Stocks to Watch Today: Lenskart, Rail Vikas Nigam, GR Infraprojects, Knowledge Marine, HEG, Nibe, Manika...",
+        "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lenskart-rail-vikas-nigam-gr-infraprojects-knowledge-marine-heg-nibe-manika-plastech-welspun-enterprises-in-focus-on-21-september-14034032.html",
         "source_id": "corp_stocks_to_watch",
-        "catalyst": 2,
+        "catalyst": 22,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       },
       {
-        "symbol": "BEL",
-        "company": "Bharat Electronics Limited",
-        "event_label": "Equity dilution",
-        "title": "Stocks in news: Tata Group, Wipro, BEL, HAL, Petronet LNG and Bharat Forge",
-        "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-wipro-bel-hal-petronet-lng-and-bharat-forge/articleshow/134318416.cms",
+        "symbol": "IPL",
+        "company": "India Pesticides Limited",
+        "event_label": "Promoter pledge / stake sale",
+        "title": "Stocks to Watch Today, September 21, 2026: Mason Infratech, India Pesticides, Hindustan Oil Exploration, NESTLE INDIA and Methodhub Software",
+        "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-21-2026-mason-infratech-india-pesticides/51499853",
         "source_id": "corp_stocks_to_watch",
-        "catalyst": -2,
+        "catalyst": -8,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "WAAREEENER",
+        "company": "Waaree Energies Limited",
+        "event_label": "Earnings miss",
+        "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+        "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+        "source_id": "corp_results",
+        "catalyst": -12,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "WEBELSOLAR",
+        "company": "Websol Energy System Limited",
+        "event_label": "Earnings miss",
+        "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+        "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+        "source_id": "corp_results",
+        "catalyst": -16,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "APLLTD",
+        "company": "Alembic Pharmaceuticals Limited",
+        "event_label": "Regulatory action",
+        "title": "USFDA Warning Letter Issued to Alembic Pharmaceuticals Clinical Investigator Over ICF Observations",
+        "url": "https://scanx.trade/stock-market-news/companies/usfda-warning-letter-issued-to-alembic-pharmaceuticals-investigator/45501012",
+        "source_id": "corp_approvals",
+        "catalyst": -17,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "PREMIERENE",
+        "company": "Premier Energies Limited",
+        "event_label": "Earnings miss",
+        "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+        "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+        "source_id": "corp_results",
+        "catalyst": -18,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "SHAKTIPUMP",
+        "company": "Shakti Pumps (India) Limited",
+        "event_label": "Earnings miss",
+        "title": "Shakti Pumps Q1FY27 Revenue Surges 37.9%, PAT Falls 47% on Margin Squeeze",
+        "url": "https://scanx.trade/stock-market-news/companies/shakti-pumps-q1-results-net-profit-jumps-145-yoy-to-52-cr/46515112",
+        "source_id": "corp_results",
+        "catalyst": -37,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       }
     ],
@@ -1394,8 +1584,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "ca22907",
-    "branch": "claude/gifted-albattani-66jbo9",
+    "head": "38b4154",
+    "branch": "claude/inspiring-cray-crds11",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
@@ -1444,7 +1634,8 @@
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
-    "2026-09-18"
+    "2026-09-18",
+    "2026-09-21"
   ],
   "lessons_tail": "gap example (+55 vs markets_mojo's 37 sell) until a real trade settles. Book full (cash Rs1,512), no room for new picks.\n\n### 2026-09-11 [machine]\nEvents: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n\n### 2026-09-11 [analyst]\n2026-09-11: V2RETAIL stopped at 213.56 day 3, -3.89%, breaking the 214.63 6-touch support at ~1.5x ATR — real breakdown, not noise. Pattern (squeeze+momentum+pullback) was genuine but ADX 13.9 flagged 'no trend' at entry and composite still scored it 73 BUY; weight ADX harder against squeeze setups. First resolved outcome for broker:motilal (50->23), brokerage_gnews/mc_stock_ideas_gnews (50->35 each), n_resolved=1 — no auto-disable/commendation threshold reached. fund-audit: nothing settled, no inversion; markets_mojo bias unchanged +6.5/n=4, under the 8-pt bar. CGPOWER/LALPATHLAB untouched, cash freed to Rs30,342.\n\n### 2026-09-11 [analyst]\n2026-09-11 (Friday input growth): registered chartink_rsi_oversold_bounce at confidence 0 — the existing 3 screener sources (52w breakout, EMA20 pullback, Bollinger squeeze) are all trend-continuation setups; nothing in the source table screens a reversal-from-oversold bounce, and double_bottom_confirmed is a named TA pattern with no dedicated feeder. Clause: RSI crossing back above 30 with an up day and volume >1.2x 20d avg, liquid names only. No login/payment required (public Chartink scan).\n\n### 2026-09-15 [analyst]\n2026-09-15: quiet day, no stop/target/time-stop events, day 5 for CGPOWER/LALPATHLAB (deadline 2026-10-20). CGPOWER -4.1% has drifted to within 0.2% of its 855.9 stop on no unusual volume -- worth a look tomorrow, not yet a breakdown; LALPATHLAB +1.3% still clean toward T1. All sources still n_resolved=1 (V2RETAIL only), so no auto-disable/commendation thresholds fire. fund-audit: nothing settled in any fundamentals band, so no inversion to report -- score remains unproven. markets_mojo bias unchanged at +6.5/n=4, still under the 8-point bar. Book full at 2 open (cash Rs30,342), no new picks regardless.\n\n### 2026-09-17 [analyst]\n2026-09-17: only event was KPIL's fill at 1403.5, 2.2% below its 1428.52-1442.88 entry zone (plan 1435.7) -- favorable slippage on a monthly chartink_squeeze pick, not a gap-up to cancel; pace flag already on record (38d to T1 vs 30d clock) so this one is a watch for the time stop, not a hold-capable free pass. CGPOWER -1.7%, LALPATHLAB +2.3%, both clean inside SL, no action. No source crossed n_resolved>=8 (max is 1 across 50 sources), so no auto-disable or commendation to report. fund-audit: no inversion (nothing settled in any fundamentals band, 92 EIEL still the only 20+pt gap on record) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated, said plainly again.\n\n### 2026-09-18 [analyst]\n2026-09-18: quiet day, no stop/target/time-stop events. CGPOWER recovered to -0.32% (892 vs 855.9 SL), no longer near breakdown flagged 9/15; LALPATHLAB +0.8% clean toward T1; KPIL +3.0%, still on watch for its 30d time-stop pace flag from 9/17. All sources still n_resolved<=1 (max 1 of 50), so no auto-disable/commendation threshold fires. fund-audit: nothing settled in any fundamentals band (75-100 has 1 scored, 0 settled) -- no inversion to report, score remains unproven. markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar. Book full at 3 open, cash Rs869, no new picks regardless.\n\n### 2026-09-18 [analyst]\n2026-09-18 (Friday input growth): registered chartink_volume_shock at confidence 0 -- the 4 existing screener sources (52w breakout, EMA20 pullback, Bollinger squeeze, RSI oversold bounce) all require an established trend or consolidation; nothing screens a fresh volume spark before it clears the 52-week high, which is where several early-stage breakouts get missed. Clause: volume > 3x 20d avg on an up day (>=2%), liquid cash names only (>Rs5cr 20d turnover), price > Rs20. No login/payment required (public Chartink scan).\n",
   "settings": {
