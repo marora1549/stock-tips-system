@@ -2,11 +2,11 @@
   "order_win": {
     "id": "order_win",
     "prior": 30,
-    "adjust": -5.158,
-    "n": 1,
-    "n_up": 0,
-    "sum_open_to_high_pct": 0.21,
-    "sum_open_to_close_pct": -4.83,
+    "adjust": -3.784,
+    "n": 2,
+    "n_up": 1,
+    "sum_open_to_high_pct": 1.45,
+    "sum_open_to_close_pct": -4.53,
     "history": [
       {
         "date": "2026-09-15",
@@ -14,10 +14,17 @@
         "open_to_high_pct": 0.21,
         "open_to_close_pct": -4.83,
         "delta": -5.16
+      },
+      {
+        "date": "2026-09-21",
+        "symbol": "WELCORP",
+        "open_to_high_pct": 1.24,
+        "open_to_close_pct": 0.3,
+        "delta": 1.12
       }
     ],
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-15"
+    "last_seen": "2026-09-21"
   },
   "regulatory_approval": {
     "id": "regulatory_approval",

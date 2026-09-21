@@ -24067,12 +24067,12 @@
       {
         "event": "order_win",
         "prior": 30,
-        "effective": 24.84,
-        "n": 1,
-        "avg_open_to_high_pct": 0.21,
-        "avg_open_to_close_pct": -4.83,
-        "hit_rate": 0.0,
-        "adjust": -5.16,
+        "effective": 26.22,
+        "n": 2,
+        "avg_open_to_high_pct": 0.72,
+        "avg_open_to_close_pct": -2.27,
+        "hit_rate": 0.5,
+        "adjust": -3.78,
         "untested": false
       },
       {
@@ -24159,8 +24159,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "cb5026a",
-    "branch": "main",
+    "head": "e36e01b",
+    "branch": "claude/lucid-heisenberg-m0fxdd",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
