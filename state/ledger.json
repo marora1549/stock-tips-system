@@ -43,8 +43,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 4.03,
       "notes": [],
-      "ltp": 892.0,
-      "unrealised_pct": -0.32
+      "ltp": 908.5,
+      "unrealised_pct": 1.52
     },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -84,8 +84,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 4.28,
       "notes": [],
-      "ltp": 1896.9000244140625,
-      "unrealised_pct": 0.82
+      "ltp": 1924.5999755859375,
+      "unrealised_pct": 2.3
     },
     {
       "pos_id": "2026-09-16-KPIL",
@@ -131,10 +131,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 3.81,
+      "max_favourable_pct": 4.07,
       "notes": [],
-      "ltp": 1445.5,
-      "unrealised_pct": 2.99
+      "ltp": 1439.9000244140625,
+      "unrealised_pct": 2.59
     }
   ],
   "closed": [
@@ -229,6 +229,10 @@
     {
       "date": "2026-09-18",
       "equity": 99817.6
+    },
+    {
+      "date": "2026-09-21",
+      "equity": 100858.0
     }
   ],
   "created": "2026-09-07",

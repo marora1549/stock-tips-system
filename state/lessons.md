@@ -38,3 +38,6 @@ Events: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)
 
 ### 2026-09-18 [analyst]
 2026-09-18 (Friday input growth): registered chartink_volume_shock at confidence 0 -- the 4 existing screener sources (52w breakout, EMA20 pullback, Bollinger squeeze, RSI oversold bounce) all require an established trend or consolidation; nothing screens a fresh volume spark before it clears the 52-week high, which is where several early-stage breakouts get missed. Clause: volume > 3x 20d avg on an up day (>=2%), liquid cash names only (>Rs5cr 20d turnover), price > Rs20. No login/payment required (public Chartink scan).
+
+### 2026-09-21 [analyst]
+2026-09-21: quiet day, no stop/target/time-stop events after the weekend gap. CGPOWER +1.52%, LALPATHLAB +2.3%, KPIL +2.59%, all clean inside SL, deadlines (Oct 20/29) far off, no action. No source crossed n_resolved>=8 (still 0 of 50+), so no auto-disable/commendation to report. fund-audit: no inversion (75-100 band has 1 scored, 0 settled, score remains unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar. Book full at 3 open, cash Rs869, no new picks regardless.
