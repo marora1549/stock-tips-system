@@ -28,6 +28,7 @@ import argparse
 import json
 import logging
 import sys
+import time
 from pathlib import Path
 
 import yaml
@@ -760,6 +761,68 @@ def _intraday_for_dashboard(cand: dict, session: dict) -> dict:
     return out
 
 
+def cmd_publish(a):
+    """Regenerate the site, prove it renders, and put it on main. The whole loop, one command.
+
+    The website is GitHub Pages serving `main` + `/docs`, so nothing reaches the reader until a
+    commit lands on main. Two of the four runs pushed to their own branch instead, and two never
+    regenerated `docs/data.json` at all — so the portal showed whatever the last run that happened
+    to do both had left behind, and closing the gap meant a human opening a pull request and
+    merging it before the page caught up.
+
+    A routine pushing straight to main is only safe if something checks the payload first, because
+    a NaN or a broken page blanks the dashboard completely and there is no reviewer left to catch
+    it. So this refuses to push a site it cannot prove renders: strict JSON, no bare NaN, and the
+    page's own script parses. A run that fails that check keeps its report and says so, rather
+    than publishing a blank page.
+    """
+    import subprocess
+
+    def git(*args, check=True):
+        r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+        if check and r.returncode != 0:
+            raise RuntimeError(f"git {' '.join(args)}: {r.stderr.strip() or r.stdout.strip()}")
+        return r
+
+    cmd_dashboard_data(argparse.Namespace(**{**vars(a), "no_dashboard": True}))
+
+    check = subprocess.run([sys.executable, str(ROOT / "scripts" / "check_dashboard.py")],
+                           cwd=ROOT, capture_output=True, text=True)
+    print(check.stdout.strip())
+    if check.returncode != 0:
+        print(check.stderr.strip(), file=sys.stderr)
+        sys.exit("refusing to publish: the dashboard would not render. The report is still on disk "
+                 "and the email is still worth sending — say in it that the site was not updated.")
+
+    git("add", "-A")
+    if not git("diff", "--cached", "--quiet", check=False).returncode:
+        print("nothing to publish — the site is already current")
+        return
+    git("commit", "-m", a.message or f"{today_str()}: update the desk")
+
+    pushed = ""
+    for attempt in range(3):
+        git("pull", "--rebase", "--autostash", "-q", "origin", "main", check=False)
+        if git("push", "-q", "origin", "HEAD:main", check=False).returncode == 0:
+            pushed = "main"
+            break
+        time.sleep((attempt + 1) * 4)
+    if not pushed:
+        # never leave the run's work in a container that is about to be reclaimed
+        branch = f"claude/{a.what or 'desk'}-{today_str()}"
+        if git("push", "-q", "-u", "origin", f"HEAD:{branch}", check=False).returncode == 0:
+            pushed = branch
+
+    ok, rows = selfcheck.run()
+    print(json.dumps({"published_to": pushed or None, "head": selfcheck.head(),
+                      "canaries_pass": ok,
+                      "failing_canaries": [r["name"] for r in rows if not r["ok"]],
+                      "site": "https://marora1549.github.io/stock-tips-system/"}, indent=1))
+    if pushed != "main":
+        sys.exit(f"published to {pushed or 'NOTHING'}, not main — the website will not update until "
+                 f"this reaches main. Say so in the email.")
+
+
 def cmd_dashboard_data(a):
     led = ledgermod.load()
     conf = confidence.summary(confidence.load())
@@ -939,6 +1002,11 @@ def main(argv=None):
     p.add_argument("--threshold", type=float, default=20.0)
     p.set_defaults(fn=cmd_fund_audit)
     p = sub.add_parser("dashboard-data"); p.set_defaults(fn=cmd_dashboard_data)
+    p = sub.add_parser("publish", help="regenerate the site, prove it renders, push it to main")
+    p.add_argument("--message", default=None, help="commit message")
+    p.add_argument("--what", default=None, help="run name, used only if main refuses the push")
+    p.add_argument("--no-dashboard", action="store_true", help=argparse.SUPPRESS)
+    p.set_defaults(fn=cmd_publish)
     a = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO if a.verbose else logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     a.fn(a)

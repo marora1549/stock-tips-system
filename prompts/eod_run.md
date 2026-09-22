@@ -72,26 +72,15 @@ Record why you added it in the lesson. Never add a source that requires login or
 
 ## 4. Commit, push, notify
 ```bash
-python -m stocktips dashboard-data
-git add -A && git commit -qm "eod $(date +%F)"
-# Push to main, rebasing on anything an interactive session landed while this run was working.
-pushed=""
-for i in 1 2 3; do
-  git pull --rebase --autostash -q origin main && git push -q origin HEAD:main && pushed="main" && break
-  sleep $((i * 4))
-done
-# If main still refuses, never leave the run's work stranded in this container: park it on a
-# claude/-prefixed branch, which the push proxy always accepts.
-if [ -z "$pushed" ]; then
-  branch="claude/eod-$(date +%F)"
-  git push -q -u origin "HEAD:$branch" && pushed="$branch"
-fi
-echo "pushed to: ${pushed:-NOTHING}"
+python -m stocktips publish --message "eod $(date +%F)" --what eod
 ```
-If `pushed` is anything other than `main`, name that branch in the notification and say the ledger needs
-merging by hand — the state is only real once it is on `main`, which is what the next run clones from.
-If it printed `NOTHING`, say that plainly: this run's work exists nowhere but a container that is about
-to be reclaimed.
+`publish` regenerates `docs/data.json`, refuses to push a site it cannot prove renders, commits,
+and pushes to **main**, rebasing onto anything another run landed meanwhile. Main is what GitHub
+Pages serves, so it is the only place a commit reaches the reader — and nobody merges by hand.
+
+It exits non-zero if the work did not reach main and prints where it went instead. If that
+happens, say so in the first line of your message and quote what it printed; the ledger is only
+real once it is on main, which is what the next run clones from.
 Final message (≤ 700 chars):
 ```
 🧾 <date> EOD — equity ₹<equity> (<ret>%), cash ₹<cash>, open <n>, hold <n>
