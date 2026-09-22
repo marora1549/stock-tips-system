@@ -2,11 +2,11 @@
   "order_win": {
     "id": "order_win",
     "prior": 30,
-    "adjust": -3.784,
-    "n": 2,
-    "n_up": 1,
-    "sum_open_to_high_pct": 1.45,
-    "sum_open_to_close_pct": -4.53,
+    "adjust": -3.595,
+    "n": 3,
+    "n_up": 2,
+    "sum_open_to_high_pct": 2.5,
+    "sum_open_to_close_pct": -5.58,
     "history": [
       {
         "date": "2026-09-15",
@@ -21,10 +21,17 @@
         "open_to_high_pct": 1.24,
         "open_to_close_pct": 0.3,
         "delta": 1.12
+      },
+      {
+        "date": "2026-09-22",
+        "symbol": "GKENERGY",
+        "open_to_high_pct": 1.05,
+        "open_to_close_pct": -1.05,
+        "delta": 0.0
       }
     ],
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-21"
+    "last_seen": "2026-09-22"
   },
   "regulatory_approval": {
     "id": "regulatory_approval",
