@@ -41,3 +41,6 @@ Events: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)
 
 ### 2026-09-21 [analyst]
 2026-09-21: quiet day, no stop/target/time-stop events after the weekend gap. CGPOWER +1.52%, LALPATHLAB +2.3%, KPIL +2.59%, all clean inside SL, deadlines (Oct 20/29) far off, no action. No source crossed n_resolved>=8 (still 0 of 50+), so no auto-disable/commendation to report. fund-audit: no inversion (75-100 band has 1 scored, 0 settled, score remains unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar. Book full at 3 open, cash Rs869, no new picks regardless.
+
+### 2026-09-22 [analyst]
+2026-09-22: quiet day, no stop/target/time-stop events. CGPOWER +0.13%, LALPATHLAB +1.51%, KPIL -0.24%, all clean inside SL, deadlines (Oct 20/29) far off, no action. No source crossed n_resolved>=8 (still 0 of 50+), so no auto-disable/commendation to report. fund-audit: no inversion (75-100 band still 1 scored, 0 settled, score remains unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.
