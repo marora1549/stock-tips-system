@@ -1,0 +1,2179 @@
+{
+  "date": "2026-09-22",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 8
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 12
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 10
+    },
+    "corp_approvals": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 4,
+      "events": 15
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 16
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "09cde40ae4",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html",
+      "title": "Dilip Buildcon bags project for establishment of 400 KV Gis Solapur/ Paranda Switching Station",
+      "published": "Mon, 21 Sep 2026 07:20:38 GMT",
+      "published_utc": "2026-09-21T07:20:38+00:00",
+      "sentence": "bags project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a756a78e26",
+      "symbol": "DIACABS",
+      "company": "Diamond Power Infrastructure Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order worth",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 116.49,
+      "size_estimated": false,
+      "size_basis": "Rs 116.49 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 655.0,
+        "unit": "km",
+        "text": "655 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+      "title": "Diamond Power Infra gains after securing power cables supply order worth Rs 116 crore",
+      "published": "Mon, 21 Sep 2026 09:34:39 GMT",
+      "published_utc": "2026-09-21T09:34:39+00:00",
+      "sentence": "order worth",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e7f6418790",
+      "symbol": "GKENERGY",
+      "company": "GK Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 454.5,
+      "size_estimated": false,
+      "size_basis": "₹454.5 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MWh",
+        "text": "300 MWh"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/gk-energy-jumps-on-securing-loa-from-maharashtra-state-electricity-distribution-company371514",
+      "title": "GK Energy jumps on securing LoA from Maharashtra State Electricity Distribution Company",
+      "published": "Mon, 21 Sep 2026 11:53:47 GMT",
+      "published_utc": "2026-09-21T11:53:47+00:00",
+      "sentence": "received a letter of award (loa",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/gk-energy-jumps-on-securing-loa-from-maharashtra-state-electricity-distribution-company371514",
+        "https://www.business-standard.com/markets/capital-market-news/gk-energy-secures-150-mw-300-mwh-bess-project-from-msedcl-126092100546_1.html",
+        "https://www.tradingview.com/news/cnbctv:55cce0fb8094b:0/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "49087c346d",
+      "symbol": "ONWARDTEC",
+      "company": "Onward Technologies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 3-year renewal of managed digital services contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 44.46,
+      "size_estimated": false,
+      "size_basis": "Rs 44.46 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/onward-technologies-secures-3-year-renewal-of-managed-digital-services-contract-126092101092_1.html",
+      "title": "Onward Technologies secures 3-year renewal of managed digital services contract",
+      "published": "Mon, 21 Sep 2026 13:46:08 GMT",
+      "published_utc": "2026-09-21T13:46:08+00:00",
+      "sentence": "secures 3-year renewal of managed digital services contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/onward-technologies-secures-3-year-renewal-of-managed-digital-services-contract-126092101092_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7df5862aa3",
+      "symbol": "PACEDIGITK",
+      "company": "Pace Digitek Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins bess order worth ₹488 crore from ngsl; shares decline 17% ytd the order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 488.46,
+      "size_estimated": false,
+      "size_basis": "₹488.46 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/pace-digitek-shares-in-focus-as-arm-bags-wins-bess-order-worth-488-crore-from-ngsl/article-200620/",
+      "title": "Pace Digitek arm wins BESS order worth ₹488 crore from NGSL; shares decline 17% YTD",
+      "published": "Mon, 21 Sep 2026 14:20:52 GMT",
+      "published_utc": "2026-09-21T14:20:52+00:00",
+      "sentence": "wins bess order worth ₹488 crore from ngsl; shares decline 17% ytd the order",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/pace-digitek-shares-in-focus-as-arm-bags-wins-bess-order-worth-488-crore-from-ngsl/article-200620/",
+        "https://www.business-standard.com/amp/markets/capital-market-news/pace-digitek-arm-receives-bess-order-worth-rs-488-46-cr-126092101091_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/pace-digitek-arm-receives-bess-order-worth-rs-488-46-cr-126092101091_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "b899132a32",
+      "symbol": "PIGL",
+      "company": "Power & Instrumentation (Gujarat) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a domestic work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 6.06,
+      "size_estimated": false,
+      "size_basis": "₹6.06 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/industrials/power-instrumentation-gujarat-nsepigl-secures-606-crore-solar-equipment-order",
+      "title": "Power & Instrumentation (Gujarat) (NSE:PIGL) Wins ₹6.06 Crore Solar Equipment Order",
+      "published": "Mon, 21 Sep 2026 11:02:00 GMT",
+      "published_utc": "2026-09-21T11:02:00+00:00",
+      "sentence": "secured a domestic work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/industrials/power-instrumentation-gujarat-nsepigl-secures-606-crore-solar-equipment-order"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "425976f88e",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "transmission_epc",
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 385.0,
+        "unit": "km",
+        "text": "385 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/rvnl-secures-rs-404-88-cr-project-from-east-coast-railway-126092100482_1.html",
+      "title": "RVNL secures Rs 404.88-cr project from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:20:18 GMT",
+      "published_utc": "2026-09-21T08:20:18+00:00",
+      "sentence": "received loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/rvnl-secures-rs-404-88-cr-project-from-east-coast-railway-126092100482_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "179e3ec24d",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 404 crore contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 404.0,
+      "size_estimated": false,
+      "size_basis": "Rs 404 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "published_utc": "2026-09-21T08:38:12+00:00",
+      "sentence": "wins rs 404 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "488606c987",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 404 crore contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 404.0,
+      "size_estimated": false,
+      "size_basis": "Rs 404 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "published_utc": "2026-09-21T08:38:12+00:00",
+      "sentence": "wins rs 404 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0ac0c1c423",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received an order",
+      "also_matched": [
+        "dilution",
+        "analyst_downgrade",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "power_cables",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 900000.0,
+        "unit": "MTPA",
+        "text": "900,000 MTPA"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-pine-labs-waaree-energies-grse-shares-on-tue-22-sept-triggers-11789998888451.html",
+      "title": "Top stocks in focus today: Investors must watch Pine Labs, Waaree Energies, GRSE shares on Tue, 22 Sept | Triggers",
+      "published": "Mon, 21 Sep 2026 14:28:01 GMT",
+      "published_utc": "2026-09-21T14:28:01+00:00",
+      "sentence": "received an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-pine-labs-waaree-energies-grse-shares-on-tue-22-sept-triggers-11789998888451.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9408a9dbee",
+      "symbol": "WELENT",
+      "company": "Welspun Enterprises Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins sewer rehabilitation project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 351.24,
+      "size_estimated": false,
+      "size_basis": "Rs 351.24 cr",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1363.0,
+        "unit": "MW",
+        "text": "1,363 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/welspun-enterprises-arm-wins-sewer-rehabilitation-project-worth-rs-351-24-cr-126092100483_1.html",
+      "title": "Welspun Enterprises' arm wins sewer rehabilitation project worth Rs 351.24 cr",
+      "published": "Mon, 21 Sep 2026 08:20:25 GMT",
+      "published_utc": "2026-09-21T08:20:25+00:00",
+      "sentence": "wins sewer rehabilitation project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/welspun-enterprises-arm-wins-sewer-rehabilitation-project-worth-rs-351-24-cr-126092100483_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c5cb434114",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 404 crore contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 404.0,
+      "size_estimated": false,
+      "size_basis": "Rs 404 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "published_utc": "2026-09-21T08:38:12+00:00",
+      "sentence": "wins rs 404 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c87d358b0c",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order book worth",
+      "also_matched": [
+        "earnings_beat",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 15000.0,
+      "size_estimated": false,
+      "size_basis": "INR 150 billion",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://taiyangnews.info/markets/premier-energies-commissions-indias-largest-solar-cell-fab",
+      "title": "Premier Energies Commissions India’s ‘Largest’ Solar Cell Fab",
+      "published": "Mon, 21 Sep 2026 07:06:31 GMT",
+      "published_utc": "2026-09-21T07:06:31+00:00",
+      "sentence": "order book worth",
+      "corroborating_sources": [],
+      "urls": [
+        "https://taiyangnews.info/markets/premier-energies-commissions-indias-largest-solar-cell-fab"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c065935770",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a domestic work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 6.06,
+      "size_estimated": false,
+      "size_basis": "₹6.06 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/industrials/power-instrumentation-gujarat-nsepigl-secures-606-crore-solar-equipment-order",
+      "title": "Power & Instrumentation (Gujarat) (NSE:PIGL) Wins ₹6.06 Crore Solar Equipment Order",
+      "published": "Mon, 21 Sep 2026 11:02:00 GMT",
+      "published_utc": "2026-09-21T11:02:00+00:00",
+      "sentence": "secured a domestic work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/industrials/power-instrumentation-gujarat-nsepigl-secures-606-crore-solar-equipment-order"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3b9929b0b7",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 404 crore contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 404.0,
+      "size_estimated": false,
+      "size_basis": "Rs 404 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "published_utc": "2026-09-21T08:38:12+00:00",
+      "sentence": "wins rs 404 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2d527b942a",
+      "symbol": "COHANCE",
+      "company": "Cohance Lifesciences Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 158.4,
+      "size_estimated": false,
+      "size_basis": "$18 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/cohance-lifesciences-share-price-api-facility-andhra-pradesh-usfda-form-483-five-observations-impact-19994720.htm",
+      "title": "Cohance Lifesciences shares gain over 5% even as Andhra API unit gets five USFDA observations",
+      "published": "Mon, 21 Sep 2026 07:14:42 GMT",
+      "published_utc": "2026-09-21T07:14:42+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/cohance-lifesciences-share-price-api-facility-andhra-pradesh-usfda-form-483-five-observations-impact-19994720.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9e9fbe14ae",
+      "symbol": "VOLTAS",
+      "company": "Voltas Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/voltas-receives-gst-notice-alleging-15-43-crore-tax-shortfall-fy23/51539096",
+      "title": "Voltas receives GST notice alleging ₹15.43 crore tax shortfall for FY23",
+      "published": "Mon, 21 Sep 2026 16:41:07 GMT",
+      "published_utc": "2026-09-21T16:41:07+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/voltas-receives-gst-notice-alleging-15-43-crore-tax-shortfall-fy23/51539096"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2a44aaa84b",
+      "symbol": "BEML",
+      "company": "BEML Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 404 crore contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.7,
+      "why_this_name": "metro coaches and rail equipment",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 404.0,
+      "size_estimated": false,
+      "size_basis": "Rs 404 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "published_utc": "2026-09-21T08:38:12+00:00",
+      "sentence": "wins rs 404 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a530c8647f",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9ce96bfaed",
+      "symbol": "AUGMONT",
+      "company": "Augmont Enterprises Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1270.0,
+      "size_estimated": false,
+      "size_basis": "₹1,270 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/augmont-enterprises-profit-falls-15-despite-30-jump-in-revenue-19995267.htm",
+      "title": "Augmont Enterprises profit falls 15% despite 30% jump in revenue",
+      "published": "Mon, 21 Sep 2026 18:07:20 GMT",
+      "published_utc": "2026-09-21T18:07:20+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/augmont-enterprises-profit-falls-15-despite-30-jump-in-revenue-19995267.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ae99c18c03",
+      "symbol": "GRSE",
+      "company": "Garden Reach Shipbuilders & Engineers Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "greenfield shipyard at raichak, aimed at enhancing shipbuilding capacity",
+      "also_matched": [
+        "order_win",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "power_cables",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 92400.0,
+        "unit": "MTPA",
+        "text": "92,400 MTPA"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html",
+      "title": "Stocks to watch: ONGC, Pine Labs, GRSE, Waaree Lloyds Metals, Aarti Inds",
+      "published": "Tue, 22 Sep 2026 02:28:00 GMT",
+      "published_utc": "2026-09-22T02:28:00+00:00",
+      "sentence": "greenfield shipyard at raichak, aimed at enhancing shipbuilding capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0586294b50",
+      "symbol": "LLOYDSME",
+      "company": "Lloyds Metals And Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand the capacity",
+      "also_matched": [
+        "order_win",
+        "analyst_upgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MWh",
+        "text": "300 MWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-ongc-lloyds-metals-canara-bank-rays-of-belief-and-grse/articleshow/134394479.cms",
+      "title": "Stocks in news: ONGC, Lloyds Metals, Canara Bank, Rays of Belief and GRSE",
+      "published": "Tue, 22 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-22T00:30:00+00:00",
+      "sentence": "expand the capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-ongc-lloyds-metals-canara-bank-rays-of-belief-and-grse/articleshow/134394479.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e1bcf82abe",
+      "symbol": "PINELABS",
+      "company": "Pine Labs Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 892.0,
+      "size_estimated": false,
+      "size_basis": "₹892 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 92400.0,
+        "unit": "MTPA",
+        "text": "92,400 MTPA"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html",
+      "title": "Stocks to watch: ONGC, Pine Labs, GRSE, Waaree Lloyds Metals, Aarti Inds",
+      "published": "Tue, 22 Sep 2026 02:28:00 GMT",
+      "published_utc": "2026-09-22T02:28:00+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html",
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-pine-labs-waaree-energies-grse-shares-on-tue-22-sept-triggers-11789998888451.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "501ef395cf",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹3,293 cr solar cell facility",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 3710.0,
+      "size_estimated": true,
+      "size_basis": "10.6 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+      "title": "Premier Energies commissions ₹3,293 cr solar cell facility in Andhra",
+      "published": "Mon, 21 Sep 2026 13:36:07 GMT",
+      "published_utc": "2026-09-21T13:36:07+00:00",
+      "sentence": "commissions ₹3,293 cr solar cell facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+        "https://www.financialexpress.com/business/industry-premier-energies-commissions-indias-largest-solar-cell-facility-capacity-hits-10-6-gw-4343685/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "08a85a9afa",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order worth",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 116.49,
+      "size_estimated": false,
+      "size_basis": "Rs 116.49 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 655.0,
+        "unit": "km",
+        "text": "655 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+      "title": "Diamond Power Infra gains after securing power cables supply order worth Rs 116 crore",
+      "published": "Mon, 21 Sep 2026 09:34:39 GMT",
+      "published_utc": "2026-09-21T09:34:39+00:00",
+      "sentence": "order worth",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/rvnl-secures-rs-404-88-cr-project-from-east-coast-railway-126092100482_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/welspun-corp-s-associate-company-bags-rs-2-000-cr-contract-from-aramco-126092100420_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "be32927adc",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order worth",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 116.49,
+      "size_estimated": false,
+      "size_basis": "Rs 116.49 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 655.0,
+        "unit": "km",
+        "text": "655 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+      "title": "Diamond Power Infra gains after securing power cables supply order worth Rs 116 crore",
+      "published": "Mon, 21 Sep 2026 09:34:39 GMT",
+      "published_utc": "2026-09-21T09:34:39+00:00",
+      "sentence": "order worth",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/rvnl-secures-rs-404-88-cr-project-from-east-coast-railway-126092100482_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/welspun-corp-s-associate-company-bags-rs-2-000-cr-contract-from-aramco-126092100420_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "3404c9b941",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [
+        "corp_expansion"
+      ],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+        "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "e149a8e3f7",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [
+        "corp_expansion"
+      ],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+        "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "82489c0c39",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b76b18d928",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [
+        "corp_expansion"
+      ],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+        "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "a94ec6f7a5",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order worth",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 116.49,
+      "size_estimated": false,
+      "size_basis": "Rs 116.49 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 655.0,
+        "unit": "km",
+        "text": "655 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+      "title": "Diamond Power Infra gains after securing power cables supply order worth Rs 116 crore",
+      "published": "Mon, 21 Sep 2026 09:34:39 GMT",
+      "published_utc": "2026-09-21T09:34:39+00:00",
+      "sentence": "order worth",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/welspun-corp-s-associate-company-bags-rs-2-000-cr-contract-from-aramco-126092100420_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "27d374fd0f",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order book worth",
+      "also_matched": [
+        "earnings_beat",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 15000.0,
+      "size_estimated": false,
+      "size_basis": "INR 150 billion",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://taiyangnews.info/markets/premier-energies-commissions-indias-largest-solar-cell-fab",
+      "title": "Premier Energies Commissions India’s ‘Largest’ Solar Cell Fab",
+      "published": "Mon, 21 Sep 2026 07:06:31 GMT",
+      "published_utc": "2026-09-21T07:06:31+00:00",
+      "sentence": "order book worth",
+      "corroborating_sources": [],
+      "urls": [
+        "https://taiyangnews.info/markets/premier-energies-commissions-indias-largest-solar-cell-fab"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a8fdb7fd47",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "largest private port operator",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "shipping_ports"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "₹1,265 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "published_utc": "2026-09-21T07:13:02+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "65d91276ba",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 12500.0,
+      "size_estimated": false,
+      "size_basis": "₹12,500 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/",
+      "title": "Premier Energies Commissions 7 GW Solar Cell Facility, Takes Total Capacity to 10.6 GW",
+      "published": "Mon, 21 Sep 2026 06:45:04 GMT",
+      "published_utc": "2026-09-21T06:45:04+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "89b61d5ef5",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 12500.0,
+      "size_estimated": false,
+      "size_basis": "₹12,500 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/",
+      "title": "Premier Energies Commissions 7 GW Solar Cell Facility, Takes Total Capacity to 10.6 GW",
+      "published": "Mon, 21 Sep 2026 06:45:04 GMT",
+      "published_utc": "2026-09-21T06:45:04+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fe2aaf839b",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹3,293 cr solar cell facility",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 3011.0,
+      "size_estimated": false,
+      "size_basis": "Rs 3,011 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+      "title": "Premier Energies commissions ₹3,293 cr solar cell facility in Andhra",
+      "published": "Mon, 21 Sep 2026 13:36:07 GMT",
+      "published_utc": "2026-09-21T13:36:07+00:00",
+      "sentence": "commissions ₹3,293 cr solar cell facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "aef46af00a",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of us manufacturing capacity through the new jersey facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp",
+      "title": "3 Indian Growth Stocks To Watch With At Least 20% Revenue Growth",
+      "published": "Mon, 21 Sep 2026 19:40:22 GMT",
+      "published_utc": "2026-09-21T19:40:22+00:00",
+      "sentence": "expansion of us manufacturing capacity through the new jersey facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3a21472eb1",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of us manufacturing capacity through the new jersey facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp",
+      "title": "3 Indian Growth Stocks To Watch With At Least 20% Revenue Growth",
+      "published": "Mon, 21 Sep 2026 19:40:22 GMT",
+      "published_utc": "2026-09-21T19:40:22+00:00",
+      "sentence": "expansion of us manufacturing capacity through the new jersey facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bf7ee81c0e",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹3,293 cr solar cell facility",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 3011.0,
+      "size_estimated": false,
+      "size_basis": "Rs 3,011 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+      "title": "Premier Energies commissions ₹3,293 cr solar cell facility in Andhra",
+      "published": "Mon, 21 Sep 2026 13:36:07 GMT",
+      "published_utc": "2026-09-21T13:36:07+00:00",
+      "sentence": "commissions ₹3,293 cr solar cell facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+        "https://www.financialexpress.com/business/industry-premier-energies-commissions-indias-largest-solar-cell-facility-capacity-hits-10-6-gw-4343685/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "4098030731",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of us manufacturing capacity through the new jersey facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp",
+      "title": "3 Indian Growth Stocks To Watch With At Least 20% Revenue Growth",
+      "published": "Mon, 21 Sep 2026 19:40:22 GMT",
+      "published_utc": "2026-09-21T19:40:22+00:00",
+      "sentence": "expansion of us manufacturing capacity through the new jersey facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0548c78c53",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹3,293 cr solar cell facility",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 3011.0,
+      "size_estimated": false,
+      "size_basis": "Rs 3,011 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MWh",
+        "text": "12 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+      "title": "Premier Energies commissions ₹3,293 cr solar cell facility in Andhra",
+      "published": "Mon, 21 Sep 2026 13:36:07 GMT",
+      "published_utc": "2026-09-21T13:36:07+00:00",
+      "sentence": "commissions ₹3,293 cr solar cell facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a1c5fa8a4f",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions india’s largest solar cell facility, capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 3710.0,
+      "size_estimated": true,
+      "size_basis": "10.6 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10600.0,
+        "unit": "MW",
+        "text": "10.6 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.financialexpress.com/business/industry-premier-energies-commissions-indias-largest-solar-cell-facility-capacity-hits-10-6-gw-4343685/",
+      "title": "Premier Energies commissions India’s largest solar cell facility, capacity hits 10.6 GW",
+      "published": "Mon, 21 Sep 2026 06:43:43 GMT",
+      "published_utc": "2026-09-21T06:43:43+00:00",
+      "sentence": "commissions india’s largest solar cell facility, capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.financialexpress.com/business/industry-premier-energies-commissions-indias-largest-solar-cell-facility-capacity-hits-10-6-gw-4343685/"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html",
+      "title": "Stocks to watch: ONGC, Pine Labs, GRSE, Waaree Lloyds Metals, Aarti Inds",
+      "published": "Tue, 22 Sep 2026 02:28:00 GMT",
+      "chars": 5554,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-ongc-lloyds-metals-canara-bank-rays-of-belief-and-grse/articleshow/134394479.cms",
+      "title": "Stocks in news: ONGC, Lloyds Metals, Canara Bank, Rays of Belief and GRSE",
+      "published": "Tue, 22 Sep 2026 00:30:00 GMT",
+      "chars": 8696,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-rubicon/rubicon-research-shares/news/3-indian-growth-stocks-to-watch-with-at-least-20-revenue-gro/amp",
+      "title": "3 Indian Growth Stocks To Watch With At Least 20% Revenue Growth",
+      "published": "Mon, 21 Sep 2026 19:40:22 GMT",
+      "chars": 6041,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-pine-labs-lumino-industries-symbiotec-pharmalab-augmont-enterprises-waaree-energies-pace-digitek-shakti-polytarp-in-focus-on-22-september-14034893.html/amp",
+      "title": "Stocks to Watch Today: Pine labs, Lumino Industries, Symbiotec Pharmalab, Augmont Enterprises, Waaree...",
+      "published": "Mon, 21 Sep 2026 20:19:26 GMT",
+      "chars": 7819,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/09/22/2026/HEG-Materials-Receives-Battery-Storage-Orders--Coforge-Expands-AI-Vehicle-Inspection-Capabilities--Top-Buzzing-Stocks-Today?utm_source=homepage&utm_medium=website&utm_campaign=Content&utm_content=TM",
+      "title": "HEG Materials Receives Battery Storage Orders | Coforge Expands AI Vehicle Inspection Capabilities | Top Buzzing Stocks Today",
+      "published": "Tue, 22 Sep 2026 00:30:00 GMT",
+      "chars": 8426,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-pine-labs-waaree-energies-grse-shares-on-tue-22-sept-triggers-11789998888451.html",
+      "title": "Top stocks in focus today: Investors must watch Pine Labs, Waaree Energies, GRSE shares on Tue, 22 Sept | Triggers",
+      "published": "Mon, 21 Sep 2026 14:28:01 GMT",
+      "chars": 4689,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/oriana-power-bags-order-worth-rs-3870-crore",
+      "title": "Oriana Power bags order worth Rs 3,870 crore",
+      "published": "Mon, 21 Sep 2026 19:26:41 GMT",
+      "chars": 755,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/pace-digitek-shares-in-focus-as-arm-bags-wins-bess-order-worth-488-crore-from-ngsl/article-200620/",
+      "title": "Pace Digitek arm wins BESS order worth ₹488 crore from NGSL; shares decline 17% YTD",
+      "published": "Mon, 21 Sep 2026 14:20:52 GMT",
+      "chars": 2918,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/diamond-power-infra-gains-after-securing-power-cables-supply-order-worth-rs-116-crore-126092100608_1.html",
+      "title": "Diamond Power Infra gains after securing power cables supply order worth Rs 116 crore",
+      "published": "Mon, 21 Sep 2026 09:34:39 GMT",
+      "chars": 3265,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/garment-mantra-lifestyle-trades-higher-on-bagging-export-order-worth-rs-10-37-crore801685",
+      "title": "Garment Mantra Lifestyle trades higher on bagging export order worth Rs 10.37 crore",
+      "published": "Mon, 21 Sep 2026 07:07:12 GMT",
+      "chars": 1243,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://solarquarter.com/2026/09/21/dilip-buildcon-emerges-lowest-bidder-for-400-kv-recpdcl-maharashtra-transmission-project/",
+      "title": "Dilip Buildcon Emerges Lowest Bidder For 400 kV RECPDCL Maharashtra Transmission Project",
+      "published": "Mon, 21 Sep 2026 07:13:02 GMT",
+      "chars": 5154,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/pace-digitek-arm-receives-bess-order-worth-rs-488-46-cr-126092101091_1.html",
+      "title": "Pace Digitek arm receives BESS order worth Rs 488.46 cr",
+      "published": "Mon, 21 Sep 2026 13:46:01 GMT",
+      "chars": 2169,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/industrials/power-instrumentation-gujarat-nsepigl-secures-606-crore-solar-equipment-order",
+      "title": "Power & Instrumentation (Gujarat) (NSE:PIGL) Wins ₹6.06 Crore Solar Equipment Order",
+      "published": "Mon, 21 Sep 2026 11:02:00 GMT",
+      "chars": 6794,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:55cce0fb8094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-21 — cnbctv:55cce0fb8094b:0",
+      "published": "Mon, 21 Sep 2026 09:01:42 GMT",
+      "chars": 2362,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/gk-energy-jumps-on-securing-loa-from-maharashtra-state-electricity-distribution-company371514",
+      "title": "GK Energy jumps on securing LoA from Maharashtra State Electricity Distribution Company",
+      "published": "Mon, 21 Sep 2026 11:53:47 GMT",
+      "chars": 1476,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiatvnews.com/business/markets/navratna-rvnl-in-focus-as-company-wins-rs-404-crore-contract-from-east-coast-railway-2026-09-21-1054836",
+      "title": "Navratna RVNL in focus as company wins Rs 404 crore contract from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:38:12 GMT",
+      "chars": 2420,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/icotrokinra-plaque-psoriasis-european-commission/",
+      "title": "J&J's Icotyde adds EU approval for plaque psoriasis.",
+      "published": "Mon, 21 Sep 2026 16:41:14 GMT",
+      "chars": 1025,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://finance.biggo.com/news/8da2577f-fa06-4be9-9eac-18bb785f8484",
+      "title": "Pharmosa Biopharm's Inhaled Drug L608 Wins FDA Approval for Phase 2 Trial; Shares Hit Daily Limit Up Intraday",
+      "published": "Mon, 21 Sep 2026 18:23:00 GMT",
+      "chars": 6116,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/eli-lillys-inluriyo-verzenio-combo-gets-usfda-nod-for-esr1-mutated-metastatic-breast-cancer-179707",
+      "title": "Eli Lilly's Inluriyo-Verzenio Combo Gets USFDA Nod for ESR1-Mutated Metastatic Breast Cancer",
+      "published": "Mon, 21 Sep 2026 13:10:34 GMT",
+      "chars": 1940,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/aurobindo-pharma-host-jp-morgan-analyst-meet-hyderabad-sep-24/51533363",
+      "title": "Aurobindo Pharma to host JP Morgan analyst meet in Hyderabad",
+      "published": "Mon, 21 Sep 2026 10:53:05 GMT",
+      "chars": 2341,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://natlawreview.com/press-releases/intrabio-announces-us-fda-approval-aqneursar-levacetylleucine-ataxia",
+      "title": "IntraBio Announces U.S. FDA Approval of AQNEURSA® (levacetylleucine) for Ataxia-Telangiectasia",
+      "published": "Mon, 21 Sep 2026 07:11:58 GMT",
+      "chars": 11480,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://med-techinsights.com/2026/09/21/zeiss-expands-retinal-imaging-portfolio-with-alta-duo-300/",
+      "title": "ZEISS Expands Retinal Imaging Portfolio with ALTA DUO 300 - med-techinsights.com",
+      "published": "Mon, 21 Sep 2026 14:28:25 GMT",
+      "chars": 2191,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/inluriyo-verzenio-breast-cancer-fda-approval/",
+      "title": "Lilly wins FDA approval for Inluriyo-Verzenio breast cancer combo",
+      "published": "Mon, 21 Sep 2026 15:49:50 GMT",
+      "chars": 2904,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/voltas-receives-gst-notice-alleging-15-43-crore-tax-shortfall-fy23/51539096",
+      "title": "Voltas receives GST notice alleging ₹15.43 crore tax shortfall for FY23",
+      "published": "Mon, 21 Sep 2026 16:41:07 GMT",
+      "chars": 2480,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/cohance-lifesciences-share-price-api-facility-andhra-pradesh-usfda-form-483-five-observations-impact-19994720.htm",
+      "title": "Cohance Lifesciences shares gain over 5% even as Andhra API unit gets five USFDA observations",
+      "published": "Mon, 21 Sep 2026 07:14:42 GMT",
+      "chars": 3364,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/cohance-lifesciences-host-investor-meets-mumbai-hyderabad/51176386",
+      "title": "Cohance Lifesciences to host investor meets in Mumbai, Hyderabad",
+      "published": "Mon, 21 Sep 2026 13:14:53 GMT",
+      "chars": 2195,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.afr.com/technology/ai-bots-or-teenage-boys-business-urged-to-match-growing-cyber-threats-20260921-p60z7k",
+      "title": "AI bots or teenage boys? Business urged to match growing cyber threats",
+      "published": "Mon, 21 Sep 2026 08:06:00 GMT",
+      "chars": 1100,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://natlawreview.com/press-releases/bbnx-lawsuit-beta-bionics-inc-sued-securities-fraud-investors-losses-should",
+      "title": "BBNX LAWSUIT: Beta Bionics, Inc. Sued For Securities Fraud; Inves",
+      "published": "Mon, 21 Sep 2026 19:37:45 GMT",
+      "chars": 4130,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.newstalkkzrg.com/2026/09/21/missouri-ag-sounds-alarm-over-chinese-ingredients-used-in-popular-weight-loss-drugs/",
+      "title": "Missouri AG sounds alarm over Chinese ingredients used in popular weight-loss drugs",
+      "published": "Mon, 21 Sep 2026 19:10:17 GMT",
+      "chars": 1822,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/ennis-q2-results-eps-misses-estimate-sales-beat/51532370",
+      "title": "Ennis Q2 Results: EPS misses estimate as sales beat",
+      "published": "Mon, 21 Sep 2026 10:44:39 GMT",
+      "chars": 2107,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/tirupati-starch-chemicals-schedules-40th-agm-september-21-2026/48677158",
+      "title": "Tirupati Starch sets Sep 21 AGM; FY26 PAT falls 13% to ₹658.04 crore",
+      "published": "Mon, 21 Sep 2026 09:31:33 GMT",
+      "chars": 4737,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/augmont-enterprises-profit-falls-15-despite-30-jump-in-revenue-19995267.htm",
+      "title": "Augmont Enterprises profit falls 15% despite 30% jump in revenue",
+      "published": "Mon, 21 Sep 2026 18:07:20 GMT",
+      "chars": 2484,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/etsy-q2-results-eps-beats-estimates-sales-miss-yoy-growth/47515944",
+      "title": "Etsy Q2 Results: EPS beats estimates, sales miss YoY growth",
+      "published": "Mon, 21 Sep 2026 08:01:19 GMT",
+      "chars": 3203,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/jk-bank-share-price-signs-escrow-agreement-for-sale-of-0-5-pnb-metlife-stake-for-rs-120-crore-19995263.htm",
+      "title": "J&K Bank signs escrow agreement for sale of 0.5% PNB MetLife stake for ₹120 crore",
+      "published": "Mon, 21 Sep 2026 17:42:19 GMT",
+      "chars": 1915,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/super-bakers-appoints-thakkar-udhwani-independent-directors/51540936",
+      "title": "Super Bakers shareholders approve all 32nd AGM resolutions with 100% support",
+      "published": "Mon, 21 Sep 2026 13:24:03 GMT",
+      "chars": 3977,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://taiyangnews.info/markets/premier-energies-commissions-indias-largest-solar-cell-fab",
+      "title": "Premier Energies Commissions India’s ‘Largest’ Solar Cell Fab",
+      "published": "Mon, 21 Sep 2026 07:06:31 GMT",
+      "chars": 2557,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/09/21/premier-energies-commissions-7-gw-solar-cell-facility-takes-total-capacity-to-10-6-gw/",
+      "title": "Premier Energies Commissions 7 GW Solar Cell Facility, Takes Total Capacity to 10.6 GW",
+      "published": "Mon, 21 Sep 2026 06:45:04 GMT",
+      "chars": 5193,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/news/premier-energies-commissions-3-293-cr-solar-cell-facility-in-andhra-126092101084_1.html",
+      "title": "Premier Energies commissions ₹3,293 cr solar cell facility in Andhra",
+      "published": "Mon, 21 Sep 2026 13:36:07 GMT",
+      "chars": 3715,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.financialexpress.com/business/industry-premier-energies-commissions-indias-largest-solar-cell-facility-capacity-hits-10-6-gw-4343685/",
+      "title": "Premier Energies commissions India’s largest solar cell facility, capacity hits 10.6 GW",
+      "published": "Mon, 21 Sep 2026 06:43:43 GMT",
+      "chars": 3605,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/gk-energy-secures-150-mw-300-mwh-bess-project-from-msedcl-126092100546_1.html",
+      "title": "GK Energy secures 150 MW / 300 MWh BESS project from MSEDCL",
+      "published": "Mon, 21 Sep 2026 09:01:21 GMT",
+      "chars": 1336,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/dilip-buildcon-bags-project-for-establishment-of-400-kv-gis-solapur-paranda-switching-station-126092100397_1.html",
+      "title": "Dilip Buildcon bags project for establishment of 400 KV Gis Solapur/ Paranda Switching Station",
+      "published": "Mon, 21 Sep 2026 07:20:38 GMT",
+      "chars": 1606,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/rvnl-secures-rs-404-88-cr-project-from-east-coast-railway-126092100482_1.html",
+      "title": "RVNL secures Rs 404.88-cr project from East Coast Railway",
+      "published": "Mon, 21 Sep 2026 08:20:18 GMT",
+      "chars": 1506,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/onward-technologies-secures-3-year-renewal-of-managed-digital-services-contract-126092101092_1.html",
+      "title": "Onward Technologies secures 3-year renewal of managed digital services contract",
+      "published": "Mon, 21 Sep 2026 13:46:08 GMT",
+      "chars": 1469,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/welspun-enterprises-arm-wins-sewer-rehabilitation-project-worth-rs-351-24-cr-126092100483_1.html",
+      "title": "Welspun Enterprises' arm wins sewer rehabilitation project worth Rs 351.24 cr",
+      "published": "Mon, 21 Sep 2026 08:20:25 GMT",
+      "chars": 1941,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/pace-digitek-arm-receives-bess-order-worth-rs-488-46-cr-126092101091_1.html",
+      "title": "Pace Digitek arm receives BESS order worth Rs 488.46 cr",
+      "published": "Mon, 21 Sep 2026 13:46:01 GMT",
+      "chars": 1377,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-reserves-order-on-coc-plea-to-be-heard-in-byju-s-glas-trust-dispute-126092101229_1.html",
+      "title": "SC reserves order on CoC plea to be heard in Byju's-GLAS Trust dispute",
+      "published": "Mon, 21 Sep 2026 14:55:58 GMT",
+      "chars": 3622,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/welspun-corp-s-associate-company-bags-rs-2-000-cr-contract-from-aramco-126092100420_1.html",
+      "title": "Welspun Corp's associate company bags Rs 2,000-cr contract from Aramco",
+      "published": "Mon, 21 Sep 2026 07:34:19 GMT",
+      "chars": 1782,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-ongc-pine-labs-grse-waaree-lloyds-metals-aarti-inds-126092200098_1.html",
+      "title": "Stocks to watch: ONGC, Pine Labs, GRSE, Waaree Lloyds Metals, Aarti Inds",
+      "published": "Tue, 22 Sep 2026 07:58:00 +0530",
+      "chars": 123,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-lic-axis-bank-kotak-securities-explains-why-they-prefer-these-2-stocks-126092200091_1.html",
+      "title": "LIC, Axis Bank: Kotak Securities explains why they prefer these 2 stocks",
+      "published": "Tue, 22 Sep 2026 07:51:45 +0530",
+      "chars": 119,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/lupin-akums-heritage-foods-look-relatively-strong-on-charts-anand-james-126092200095_1.html",
+      "title": "Lupin, Akums, Heritage Foods look relatively strong on charts: Anand James",
+      "published": "Tue, 22 Sep 2026 07:46:09 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-22-nse-bse-sensex-today-nifty50-gift-nifty-brent-crude-oil-price-ipo-today-126092200090_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Asia markets rise as tech shares advance",
+      "published": "Tue, 22 Sep 2026 07:46:02 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/why-nse-s-mega-22-560-crore-ipo-met-a-rather-small-retail-appetite-126092200089_1.html",
+      "title": "Why NSE's mega ₹22,562 crore IPO met a rather small retail appetite",
+      "published": "Tue, 22 Sep 2026 07:25:55 +0530",
+      "chars": 182,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sp-group-bonds-offered-at-premium-on-tata-sons-stake-sale-plan-bankers-say-126092100827_1.html",
+      "title": "SP Group bonds offered at premium on Tata Sons stake-sale plan: Report",
+      "published": "Mon, 21 Sep 2026 23:02:33 +0530",
+      "chars": 134,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/98-transactions-to-remain-unaffected-by-mdr-on-upi-hdfc-securities-126092101409_1.html",
+      "title": "98% transactions to remain unaffected by MDR on UPI: HDFC Securities",
+      "published": "Mon, 21 Sep 2026 22:41:48 +0530",
+      "chars": 130,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/tata-capital-growth-outlook-stays-positive-despite-near-term-headwinds-126092101277_1.html",
+      "title": "Tata Capital growth outlook stays positive despite near-term headwinds",
+      "published": "Mon, 21 Sep 2026 20:54:39 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_et_markets_rss",
+      "why": "out of article budget"
+    },
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 124.6
+}
