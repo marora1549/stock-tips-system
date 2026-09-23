@@ -120,7 +120,7 @@
   },
   "broker:citi": {
     "score": 0.0,
-    "n_tips": 9,
+    "n_tips": 10,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -132,12 +132,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "broker:citi"
   },
   "broker:clsa": {
     "score": 0.0,
-    "n_tips": 13,
+    "n_tips": 14,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -149,12 +149,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-21",
+    "last_seen": "2026-09-23",
     "id": "broker:clsa"
   },
   "broker:elara": {
     "score": 0.0,
-    "n_tips": 12,
+    "n_tips": 14,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -166,7 +166,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-09-21",
+    "last_seen": "2026-09-23",
     "id": "broker:elara"
   },
   "broker:emkay": {
@@ -290,7 +290,7 @@
   },
   "broker:motilal": {
     "score": -15.0,
-    "n_tips": 63,
+    "n_tips": 65,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -310,7 +310,7 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "broker:motilal"
   },
   "broker:nomura": {
@@ -332,7 +332,7 @@
   },
   "broker:nuvama": {
     "score": 0.0,
-    "n_tips": 19,
+    "n_tips": 20,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -344,7 +344,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-21",
+    "last_seen": "2026-09-23",
     "id": "broker:nuvama"
   },
   "broker:parekh": {
@@ -459,7 +459,7 @@
   },
   "bs_recos": {
     "score": 0.0,
-    "n_tips": 20,
+    "n_tips": 22,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -471,12 +471,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "bs_recos"
   },
   "chartink_52w_breakout": {
     "score": 0.0,
-    "n_tips": 78,
+    "n_tips": 83,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -488,12 +488,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "chartink_52w_breakout"
   },
   "chartink_ema_pullback": {
     "score": 0.0,
-    "n_tips": 440,
+    "n_tips": 480,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -505,12 +505,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": 0.0,
-    "n_tips": 440,
+    "n_tips": 480,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -522,7 +522,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "chartink_squeeze"
   },
   "corp_approvals": {
@@ -731,7 +731,7 @@
   },
   "et_recos_page": {
     "score": 0.0,
-    "n_tips": 101,
+    "n_tips": 109,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -743,7 +743,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-09-21",
+    "last_seen": "2026-09-23",
     "id": "et_recos_page"
   },
   "fe_gnews": {
@@ -841,7 +841,7 @@
   },
   "chartink_rsi_oversold_bounce": {
     "score": 0.0,
-    "n_tips": 56,
+    "n_tips": 64,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -853,7 +853,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "chartink_rsi_oversold_bounce"
   },
   "broker:goldman": {
@@ -875,7 +875,7 @@
   },
   "chartink_volume_shock": {
     "score": 0.0,
-    "n_tips": 78,
+    "n_tips": 114,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -887,7 +887,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-18",
-    "last_seen": "2026-09-22",
+    "last_seen": "2026-09-23",
     "id": "chartink_volume_shock"
   },
   "broker:mirae": {
