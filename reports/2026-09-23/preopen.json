@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23 08:14",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0
+    }
+  },
+  "events_read": 1,
+  "trade": [],
+  "watch": [],
+  "avoid": [],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

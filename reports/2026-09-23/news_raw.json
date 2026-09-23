@@ -1,0 +1,221 @@
+{
+  "date": "2026-09-23",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "676390910f",
+      "symbol": "OPTIEMUS",
+      "company": "Optiemus Infracom Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "jv with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/optiemus-infracom-board-approves-jv-with-london-based-nothing-electronics-126092201176_1.html",
+      "title": "Optiemus Infracom board approves JV with London-based Nothing Electronics",
+      "published": "Tue, 22 Sep 2026 19:16:17 +0530",
+      "published_utc": "2026-09-22T13:46:17+00:00",
+      "sentence": "jv with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/optiemus-infracom-board-approves-jv-with-london-based-nothing-electronics-126092201176_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-adani-group-stocks-coforge-aditya-infotech-innovision-126092300117_1.html",
+      "title": "Stocks to watch: Adani Group stocks, Coforge, Aditya Infotech, Innovision",
+      "published": "Wed, 23 Sep 2026 07:58:36 +0530",
+      "chars": 102,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-nse-bse-sensex-today-nifty-gift-nifty-brent-crude-oil-price-russia-war-jindal-supreme-share-price-september-23-126092300112_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Brent crude falls on progress in US-Iran talks",
+      "published": "Wed, 23 Sep 2026 07:46:39 +0530",
+      "chars": 156,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/chandan-taparia-bets-on-sona-blw-bandhan-bank-sees-nifty-support-at-23-200-126092300107_1.html",
+      "title": "Chandan Taparia bets on Sona BLW, Bandhan Bk; sees Nifty support at 23,200",
+      "published": "Wed, 23 Sep 2026 07:21:45 +0530",
+      "chars": 107,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/binance-invests-100-mn-in-circle-expands-partnership-to-promote-usdc-126092201323_1.html",
+      "title": "Binance invests $100 mn in Circle, expands partnership to promote USDC",
+      "published": "Tue, 22 Sep 2026 20:36:57 +0530",
+      "chars": 163,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/orient-cables-acevector-german-green-steel-announce-ipo-price-bands-126092201229_1.html",
+      "title": "Orient Cables, AceVector, German Green Steel announce IPO price bands",
+      "published": "Tue, 22 Sep 2026 19:42:42 +0530",
+      "chars": 160,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-ipo-20-investment-bankers-earn-186-crore-in-fees-commissions-126092201221_1.html",
+      "title": "NSE IPO: 20 investment bankers earn ₹186 crore in fees, commissions",
+      "published": "Tue, 22 Sep 2026 19:39:58 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/optiemus-infracom-board-approves-jv-with-london-based-nothing-electronics-126092201176_1.html",
+      "title": "Optiemus Infracom board approves JV with London-based Nothing Electronics",
+      "published": "Tue, 22 Sep 2026 19:16:17 +0530",
+      "chars": 36,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/lg-electronics-launches-new-range-of-semi-automatic-washing-machines-126092201175_1.html",
+      "title": "LG Electronics launches new range of Semi-Automatic Washing Machines",
+      "published": "Tue, 22 Sep 2026 19:16:10 +0530",
+      "chars": 496,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/armee-infotech-ipo-opens-today-check-gmp-price-band-issue-details-should-you-subscribe/articleshow/134424262.cms",
+      "title": "ArMee Infotech IPO opens today: Check GMP, price band, issue details. Should you subscribe?",
+      "published": "Wed, 23 Sep 2026 08:05:35 +0530",
+      "chars": 262,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hero-motors-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134424218.cms",
+      "title": "Hero Motors shares to list today. Check GMP ahead of debut",
+      "published": "Wed, 23 Sep 2026 07:56:16 +0530",
+      "chars": 297,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-23-crude-oil-below-100-on-hopes-of-us-iran-talks-what-did-trump-say/articleshow/134424196.cms",
+      "title": "Oil Price Today (September 23): Crude oil below $100 on hopes of US-Iran talks. What did Trump say?",
+      "published": "Wed, 23 Sep 2026 07:48:31 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/amd-joins-1-trillion-club-amid-ai-boom/articleshow/134424103.cms",
+      "title": "AMD joins $1 trillion club amid AI boom",
+      "published": "Wed, 23 Sep 2026 07:46:48 +0530",
+      "chars": 419,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/5-sme-ipos-to-open-today-check-issue-size-price-band-and-key-detail/articleshow/134424137.cms",
+      "title": "5 SME IPOs to open today: Check issue size, price band and key detail",
+      "published": "Wed, 23 Sep 2026 07:43:57 +0530",
+      "chars": 370,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/jindal-supreme-shares-to-list-today-gmp-signals-31-listing-gains/articleshow/134424107.cms",
+      "title": "Jindal Supreme shares to list today; GMP signals 31% listing gains",
+      "published": "Wed, 23 Sep 2026 07:43:51 +0530",
+      "chars": 248,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-5-stocks-cross-above-their-200-dmas/slideshow/134424087.cms",
+      "title": "Positive Breakout: These 5 stocks cross above their 200 DMAs",
+      "published": "Wed, 23 Sep 2026 07:31:50 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-holds-near-2-month-high-as-markets-weigh-rate-hikes-iran-diplomacy/articleshow/134424038.cms",
+      "title": "Dollar holds near 2-month high as markets weigh rate hikes, Iran diplomacy",
+      "published": "Wed, 23 Sep 2026 07:30:13 +0530",
+      "chars": 395,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 389.7
+}
