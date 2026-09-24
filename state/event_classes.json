@@ -2,11 +2,11 @@
   "order_win": {
     "id": "order_win",
     "prior": 30,
-    "adjust": -3.595,
-    "n": 3,
+    "adjust": -7.511,
+    "n": 4,
     "n_up": 2,
-    "sum_open_to_high_pct": 2.5,
-    "sum_open_to_close_pct": -5.58,
+    "sum_open_to_high_pct": 2.62,
+    "sum_open_to_close_pct": -9.14,
     "history": [
       {
         "date": "2026-09-15",
@@ -28,10 +28,17 @@
         "open_to_high_pct": 1.05,
         "open_to_close_pct": -1.05,
         "delta": 0.0
+      },
+      {
+        "date": "2026-09-24",
+        "symbol": "SUZLON",
+        "open_to_high_pct": 0.12,
+        "open_to_close_pct": -3.56,
+        "delta": -4.1
       }
     ],
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-22"
+    "last_seen": "2026-09-24"
   },
   "regulatory_approval": {
     "id": "regulatory_approval",
