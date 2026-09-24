@@ -1,0 +1,249 @@
+{
+  "date": "2026-09-24",
+  "top": [
+    {
+      "symbol": "HEROMOTOCO",
+      "company": "Hero MotoCorp Limited",
+      "tip_id": "9b59c59645",
+      "source_id": "chartink_ema_pullback",
+      "corroborating_sources": [
+        "broker:pl",
+        "mc_stock_ideas_gnews"
+      ],
+      "n_mentions": 2,
+      "src_targets": [
+        4800.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/heromotoco.html",
+        "https://www.moneycontrol.com/india/stockpricequote/auto-ancillaries-gears/heromotors/HML02"
+      ],
+      "brokerages": [
+        "pl"
+      ],
+      "sentence": "Buy Hero Motocorp Limited (NSE: HEROMOTOCO) LTP 5394 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 0.39%, volume 304703.",
+      "ltp": 5373.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5373.0,
+        "entry_zone": [
+          5346.14,
+          5399.86
+        ],
+        "stop_loss": 5140.67,
+        "stop_loss_pct": 4.32,
+        "stop_basis": "below support",
+        "targets": [
+          5542.32,
+          5803.0,
+          5937.0
+        ],
+        "target_pct": [
+          3.15,
+          8.0,
+          10.5
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 1.85,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 50.1 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 25.1 trending",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-4 source target ₹4800 below our T1 — source sees less upside",
+          "-6 no directional drift to put a date on T1"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          4800.0
+        ],
+        "src_stop": null,
+        "momentum_score": 0,
+        "efficiency": 0.178,
+        "amplitude_pct_day": 1.085,
+        "eta_days": [
+          null,
+          null,
+          null
+        ],
+        "eta_basis": "no measurable directional drift",
+        "pace_pct_day": -0.193,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 50.1,
+        "atr_pct": 2.1,
+        "adx": 25.1,
+        "vol_ratio": 0.96,
+        "patterns": [
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -15.9,
+        "dist_ema20_pct": 0.29,
+        "dist_ema200_pct": 2.08,
+        "avg_turnover_cr": 303.72,
+        "chg_5d_pct": 4.01,
+        "chg_20d_pct": -4.47,
+        "high_52w": 6388.5,
+        "last_bar_date": "2026-09-22",
+        "momentum_score": 0,
+        "drift_pct_day": -0.193,
+        "efficiency": 0.178,
+        "amplitude_pct_day": 1.085,
+        "up_day_share": 0.4
+      },
+      "resistances": [
+        {
+          "price": 5471.5,
+          "touches": 2
+        },
+        {
+          "price": 5803.0,
+          "touches": 2
+        },
+        {
+          "price": 5937.0,
+          "touches": 1
+        },
+        {
+          "price": 6388.5,
+          "touches": 1
+        }
+      ],
+      "supports": [
+        {
+          "price": 5166.5,
+          "touches": 2
+        },
+        {
+          "price": 4918.88,
+          "touches": 4
+        },
+        {
+          "price": 4747.1,
+          "touches": 1
+        },
+        {
+          "price": 4671.5,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 70,
+      "fund_score": 87,
+      "fund_why": [
+        "+12 ROCE 35.2%",
+        "+8 ROE 28.1%",
+        "+6 P/E 19.5",
+        "+8 3y profit CAGR 28%",
+        "+3 3y sales CAGR 12%",
+        "+4 return on capital has improved from 26.2% to 31.3%",
+        "+5 D/E 0.04",
+        "+0 promoter 34.73%",
+        "-5 latest qtr PAT YoY -16.9%",
+        "+4 mcap ₹107,956 cr",
+        "+8 operating cash flow ₹8,315cr, 144% of profit — profit is turning into cash",
+        "+3 institutions hold 55.35%",
+        "-4 price to book 4.99",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +10 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Stock is providing a good dividend yield of 3.43%.",
+        "Company has been maintaining a healthy dividend payout of 71.5%",
+        "Debtor days have improved from 24.5 to 18.0 days."
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 8.90% over past five years."
+      ],
+      "fundamentals": {
+        "market_cap_cr": 107956.0,
+        "pe": 19.5,
+        "roce": 35.2,
+        "roe": 28.1,
+        "sales_growth_3_years": 12.0,
+        "profit_growth_3_years": 28.0,
+        "promoter_pct": 34.73,
+        "debt_to_equity": 0.04,
+        "np_yoy_growth_pct": -16.9,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 15.85,
+        "profit_growth_1y_pct": 31.99,
+        "cfo_cr": 8315.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": 11.3,
+        "institutional_pct": 55.35,
+        "sector": "Automobile and Auto Components",
+        "industry": "Automobiles"
+      },
+      "source_weight": 0.593,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 70"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace -0.193%/session — mostly chop"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 868.6,
+  "watch": [
+    "CHALET",
+    "GLENMARK",
+    "LGEINDIA",
+    "BOSCHLTD",
+    "LALPATHLAB",
+    "ECLERX",
+    "LLOYDSME",
+    "BUILDPRO"
+  ]
+}
