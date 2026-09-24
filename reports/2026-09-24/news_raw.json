@@ -1,0 +1,1500 @@
+{
+  "date": "2026-09-24",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 7
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 1
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 5
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "c1debc6e7c",
+      "symbol": "AVANTEL",
+      "company": "Avantel Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.0,
+      "size_estimated": false,
+      "size_basis": "₹177 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "efd62d4942",
+      "symbol": "OSWALPUMPS",
+      "company": "Oswal Pumps Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 273.0,
+      "size_estimated": false,
+      "size_basis": "Rs 273 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 46.7,
+        "unit": "MW",
+        "text": "46.7 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/oswal-pumps-bags-order-worth-rs-273-crore",
+      "title": "Oswal Pumps bags order worth Rs 273 crore",
+      "published": "Wed, 23 Sep 2026 19:41:25 GMT",
+      "published_utc": "2026-09-23T19:41:25+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/oswal-pumps-bags-order-worth-rs-273-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "601492d71e",
+      "symbol": "SUZLON",
+      "company": "Suzlon Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 200 mw wind energy order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 10500.0,
+      "size_estimated": false,
+      "size_basis": "₹10,500 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html",
+      "title": "India is on track to hit 100GW wind energy target by 2030: Suzlon's Tanti",
+      "published": "Wed, 23 Sep 2026 17:23:42 GMT",
+      "published_utc": "2026-09-23T17:23:42+00:00",
+      "sentence": "secures 200 mw wind energy order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a9e5a9535f",
+      "symbol": "EQUITASBNK",
+      "company": "Equitas Small Finance Bank Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/equitas-small-finance-bank-receives-gst-notice-demanding-533-81-crore/51605970",
+      "title": "Equitas Small Finance Bank receives ₹533.81 crore GST notice for FY23",
+      "published": "Wed, 23 Sep 2026 12:23:20 GMT",
+      "published_utc": "2026-09-23T12:23:20+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/equitas-small-finance-bank-receives-gst-notice-demanding-533-81-crore/51605970"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "76a3f1d74a",
+      "symbol": "GREENPOWER",
+      "company": "Orient Green Power Company Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 34.44,
+        "unit": "MW",
+        "text": "34.44 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/orient-green-power-nse-greenpower-commissions-176-mw-solar-plant-in-tamil-nadu",
+      "title": "Orient Green Power (NSE: GREENPOWER) Solar Capacity Expansion and Renewable Energy Update",
+      "published": "Wed, 23 Sep 2026 13:11:00 GMT",
+      "published_utc": "2026-09-23T13:11:00+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/orient-green-power-nse-greenpower-commissions-176-mw-solar-plant-in-tamil-nadu"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b11b1ae7f2",
+      "symbol": "MEESHO",
+      "company": "Meesho Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-spectraa-technology-sonaselection-meesho-sedemac-mechatronics-welspun-living-bharat-dynamics-max-estates-in-focus-on-24-september-14036780.html/amp",
+      "title": "Stocks to Watch Today: NSE, SpectraA Technology, Sonaselection, Meesho, Sedemac Mechatronics, Welspun...",
+      "published": "Wed, 23 Sep 2026 21:42:32 GMT",
+      "published_utc": "2026-09-23T21:42:32+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-spectraa-technology-sonaselection-meesho-sedemac-mechatronics-welspun-living-bharat-dynamics-max-estates-in-focus-on-24-september-14036780.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "61c4825e66",
+      "symbol": "OLAELEC",
+      "company": "Ola Electric Mobility Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/trending-stocks/story/gift-nifty-down-190-pts-nse-sedemac-nephrocare-ola-electric-telcos-among-top-stocks-in-focus-557423-2026-09-24",
+      "title": "GIFT Nifty down 190 pts; NSE, Sedemac, Nephrocare, Ola Electric, telcos among top stocks in focus",
+      "published": "Thu, 24 Sep 2026 01:54:25 GMT",
+      "published_utc": "2026-09-24T01:54:25+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.businesstoday.in/markets/trending-stocks/story/gift-nifty-down-190-pts-nse-sedemac-nephrocare-ola-electric-telcos-among-top-stocks-in-focus-557423-2026-09-24",
+        "https://www.business-standard.com/companies/news/ola-electric-seeks-board-nod-for-proposed-rights-issue-of-equity-shares-126092301551_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "4b4f778d0f",
+      "symbol": "SEDEMAC",
+      "company": "SEDEMAC Mechatronics Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 0.44,
+      "size_estimated": false,
+      "size_basis": "44.3 lakh",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-spectraa-technology-sonaselection-meesho-sedemac-mechatronics-welspun-living-bharat-dynamics-max-estates-in-focus-on-24-september-14036780.html/amp",
+      "title": "Stocks to Watch Today: NSE, SpectraA Technology, Sonaselection, Meesho, Sedemac Mechatronics, Welspun...",
+      "published": "Wed, 23 Sep 2026 21:42:32 GMT",
+      "published_utc": "2026-09-23T21:42:32+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-spectraa-technology-sonaselection-meesho-sedemac-mechatronics-welspun-living-bharat-dynamics-max-estates-in-focus-on-24-september-14036780.html/amp",
+        "https://www.businesstoday.in/markets/trending-stocks/story/gift-nifty-down-190-pts-nse-sedemac-nephrocare-ola-electric-telcos-among-top-stocks-in-focus-557423-2026-09-24"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "49142f1e89",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 810.79,
+      "size_estimated": false,
+      "size_basis": "Rs 810.79 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms",
+      "title": "Stocks in news: Bharat Dynamics, NTPC, Canara Bank and Waaree Energies",
+      "published": "Thu, 24 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-24T00:30:00+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ad4bfecffc",
+      "symbol": "EXIDEIND",
+      "company": "Exide Industries Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 6 gwh lithium-ion facility",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/exide-industries-subsidiary-commissions-6-gwh-lithium-ion-facility/51714201",
+      "title": "Exide Industries subsidiary commissions 6 GWh lithium-ion facility",
+      "published": "Wed, 23 Sep 2026 13:08:38 GMT",
+      "published_utc": "2026-09-23T13:08:38+00:00",
+      "sentence": "commissions 6 gwh lithium-ion facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/exide-industries-subsidiary-commissions-6-gwh-lithium-ion-facility/51714201"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "516f9a84d0",
+      "symbol": "NTPC",
+      "company": "NTPC Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms",
+      "title": "Stocks in news: Bharat Dynamics, NTPC, Canara Bank and Waaree Energies",
+      "published": "Thu, 24 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-24T00:30:00+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c566b5a76a",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 34.44,
+        "unit": "MW",
+        "text": "34.44 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/orient-green-power-nse-greenpower-commissions-176-mw-solar-plant-in-tamil-nadu",
+      "title": "Orient Green Power (NSE: GREENPOWER) Solar Capacity Expansion and Renewable Energy Update",
+      "published": "Wed, 23 Sep 2026 13:11:00 GMT",
+      "published_utc": "2026-09-23T13:11:00+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/orient-green-power-nse-greenpower-commissions-176-mw-solar-plant-in-tamil-nadu"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "917a1f2e05",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.35,
+      "size_estimated": false,
+      "size_basis": "₹177.35 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f4289a140d",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.35,
+      "size_estimated": false,
+      "size_basis": "₹177.35 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b875caab3d",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.35,
+      "size_estimated": false,
+      "size_basis": "₹177.35 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3e888f7cac",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.35,
+      "size_estimated": false,
+      "size_basis": "₹177.35 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "76b0f8b52f",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 200 mw wind energy order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5280000.0,
+      "size_estimated": false,
+      "size_basis": "USD 600 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html",
+      "title": "India is on track to hit 100GW wind energy target by 2030: Suzlon's Tanti",
+      "published": "Wed, 23 Sep 2026 17:23:42 GMT",
+      "published_utc": "2026-09-23T17:23:42+00:00",
+      "sentence": "secures 200 mw wind energy order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6fef4cfa6b",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 200 mw wind energy order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5280000.0,
+      "size_estimated": false,
+      "size_basis": "USD 600 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html",
+      "title": "India is on track to hit 100GW wind energy target by 2030: Suzlon's Tanti",
+      "published": "Wed, 23 Sep 2026 17:23:42 GMT",
+      "published_utc": "2026-09-23T17:23:42+00:00",
+      "sentence": "secures 200 mw wind energy order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "cbbdfe0b5a",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning of the solar facility",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 24.6,
+        "unit": "MW",
+        "text": "24.6 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/orient-green-power-company-limited-nse-greenpower-expands-solar-portfolio-with-176-mw-project-in-tamil-nadu",
+      "title": "Orient Green Power Commissions 17.6 MW Solar Project in Tamil Nadu",
+      "published": "Wed, 23 Sep 2026 07:31:00 GMT",
+      "published_utc": "2026-09-23T07:31:00+00:00",
+      "sentence": "commissioning of the solar facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/orient-green-power-company-limited-nse-greenpower-expands-solar-portfolio-with-176-mw-project-in-tamil-nadu"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0931c1daa5",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a major order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 177.35,
+      "size_estimated": false,
+      "size_basis": "₹177.35 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "published_utc": "2026-09-23T12:25:21+00:00",
+      "sentence": "secured a major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "cb67efbdcb",
+      "symbol": "OMINFRAL",
+      "company": "OM INFRA LIMITED",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": 32.18,
+      "size_estimated": false,
+      "size_basis": "₹32.18 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/industrials/om-infra-limited-nse-ominfral-joint-venture-secures-3218-crore-maharashtra-irrigation-contract",
+      "title": "OM Infra Joint Venture Wins ₹32.18 Crore Irrigation Infrastructure Order",
+      "published": "Wed, 23 Sep 2026 07:37:00 GMT",
+      "published_utc": "2026-09-23T07:37:00+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/industrials/om-infra-limited-nse-ominfral-joint-venture-secures-3218-crore-maharashtra-irrigation-contract"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9bea44342f",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 200 mw wind energy order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5280000.0,
+      "size_estimated": false,
+      "size_basis": "USD 600 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html",
+      "title": "India is on track to hit 100GW wind energy target by 2030: Suzlon's Tanti",
+      "published": "Wed, 23 Sep 2026 17:23:42 GMT",
+      "published_utc": "2026-09-23T17:23:42+00:00",
+      "sentence": "secures 200 mw wind energy order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "000e03dd14",
+      "symbol": "GLENMARK",
+      "company": "Glenmark Pharmaceuticals Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/glenmark-pharmaceuticals-nse-glenmark-receives-us-fda-eir-for-goa-manufacturing-facility",
+      "title": "Glenmark Pharmaceuticals (NSE: GLENMARK) U.S. FDA Compliance Update for Goa Facility",
+      "published": "Wed, 23 Sep 2026 13:12:00 GMT",
+      "published_utc": "2026-09-23T13:12:00+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/healthcare/glenmark-pharmaceuticals-nse-glenmark-receives-us-fda-eir-for-goa-manufacturing-facility",
+        "https://www.business-standard.com/markets/capital-market-news/glenmark-pharma-gets-eir-for-goa-facility-from-us-fda-126092300741_1.html",
+        "https://medicaldialogues.in/news/industry/pharma/glenmark-receives-usfda-eir-for-goa-facility-with-vai-status-179849"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "9d1e4963b8",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit expected to rise",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/materials/nse-monolith/monolithisch-india-shares/news/top-3-indian-growth-stocks-to-watch-in-september-2026",
+      "title": "Top 3 Indian Growth Stocks To Watch In September 2026",
+      "published": "Thu, 24 Sep 2026 00:42:01 GMT",
+      "published_utc": "2026-09-24T00:42:01+00:00",
+      "sentence": "profit expected to rise",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/materials/nse-monolith/monolithisch-india-shares/news/top-3-indian-growth-stocks-to-watch-in-september-2026"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7f018676e2",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit expected to rise",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/materials/nse-monolith/monolithisch-india-shares/news/top-3-indian-growth-stocks-to-watch-in-september-2026",
+      "title": "Top 3 Indian Growth Stocks To Watch In September 2026",
+      "published": "Thu, 24 Sep 2026 00:42:01 GMT",
+      "published_utc": "2026-09-24T00:42:01+00:00",
+      "sentence": "profit expected to rise",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/materials/nse-monolith/monolithisch-india-shares/news/top-3-indian-growth-stocks-to-watch-in-september-2026"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "68dd9d162f",
+      "symbol": "CONCORDBIO",
+      "company": "Concord Biotech Limited",
+      "event": "corporate_action",
+      "event_label": "Dividend / bonus / split",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 8,
+      "phrase": "bonus issue",
+      "also_matched": [
+        "order_win",
+        "analyst_downgrade",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6000.0,
+        "unit": "MWh",
+        "text": "6 GWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms",
+      "title": "Stocks in news: Bharat Dynamics, NTPC, Canara Bank and Waaree Energies",
+      "published": "Thu, 24 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-24T00:30:00+00:00",
+      "sentence": "bonus issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-bharat-dynamics-ntpc-canara-bank-and-waaree-energies/articleshow/134443179.cms",
+      "title": "Stocks in news: Bharat Dynamics, NTPC, Canara Bank and Waaree Energies",
+      "published": "Thu, 24 Sep 2026 00:30:00 GMT",
+      "chars": 8149,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/materials/nse-monolith/monolithisch-india-shares/news/top-3-indian-growth-stocks-to-watch-in-september-2026",
+      "title": "Top 3 Indian Growth Stocks To Watch In September 2026",
+      "published": "Thu, 24 Sep 2026 00:42:01 GMT",
+      "chars": 12537,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-spectraa-technology-sonaselection-meesho-sedemac-mechatronics-welspun-living-bharat-dynamics-max-estates-in-focus-on-24-september-14036780.html/amp",
+      "title": "Stocks to Watch Today: NSE, SpectraA Technology, Sonaselection, Meesho, Sedemac Mechatronics, Welspun...",
+      "published": "Wed, 23 Sep 2026 21:42:32 GMT",
+      "chars": 9292,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/top-stocks-in-focus-tomorrow-investors-must-watch-ghcl-max-estates-bharat-dynamics-shares-on-thu-24-sept-triggers-11790174249617.html",
+      "title": "Top stocks in focus today: Investors must watch GHCL, Max Estates, Bharat Dynamics shares on Thu, 24 Sept | Triggers",
+      "published": "Wed, 23 Sep 2026 15:39:00 GMT",
+      "chars": 5231,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/09/24/2026/Spectrum-Electrical-Partners-Maharashtra-Government-on-ITI--360-ONE-WAM-Appoints-Aashish-Agarwal-CEO--Top-Buzzing-Stocks-Today?utm_source=homepage&utm_medium=website&utm_campaign=Content&utm_content=TM",
+      "title": "Spectrum Electrical Partners Maharashtra Government on ITI | 360 ONE WAM Appoints Aashish Agarwal CEO | Top Buzzing Stocks Today",
+      "published": "Thu, 24 Sep 2026 00:30:00 GMT",
+      "chars": 8502,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.businesstoday.in/markets/trending-stocks/story/gift-nifty-down-190-pts-nse-sedemac-nephrocare-ola-electric-telcos-among-top-stocks-in-focus-557423-2026-09-24",
+      "title": "GIFT Nifty down 190 pts; NSE, Sedemac, Nephrocare, Ola Electric, telcos among top stocks in focus",
+      "published": "Thu, 24 Sep 2026 01:54:25 GMT",
+      "chars": 5756,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/modular_finance:0dc18af489468:0-flexqube-advances-high-potential-amr-project-with-follow-on-order-worth-approximately-1-1-musd/",
+      "title": "FlexQube advances high-potential AMR project with follow-on order worth approximately 1.1 MUSD",
+      "published": "Wed, 23 Sep 2026 21:00:00 GMT",
+      "chars": 3885,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/oswal-pumps-bags-order-worth-rs-273-crore",
+      "title": "Oswal Pumps bags order worth Rs 273 crore",
+      "published": "Wed, 23 Sep 2026 19:41:25 GMT",
+      "chars": 778,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/avantel-shares-in-focus-on-bagging-order-worth-over-177-crore-from-zetwerk-manufacturing/article-200764/",
+      "title": "Avantel shares in focus on bagging order worth over ₹177 crore from Zetwerk Manufacturing",
+      "published": "Wed, 23 Sep 2026 12:25:21 GMT",
+      "chars": 3196,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/desco-infratech-moves-up-on-bagging-purchase-order-worth-rs-2-34-crore746776",
+      "title": "Desco Infratech moves up on bagging purchase order worth Rs 2.34 crore",
+      "published": "Wed, 23 Sep 2026 09:49:53 GMT",
+      "chars": 1353,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/modular_finance:20cc4b7bba98b:0-image-systems-business-unit-motion-analysis-receives-order-worth-sek-1-million-from-a-major-european-defense-organization/",
+      "title": "Image Systems’ Business Unit Motion Analysis Receives Order Worth SEK 1 Million from a Major European Defense Organization",
+      "published": "Wed, 23 Sep 2026 07:43:00 GMT",
+      "chars": 1666,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/industrials/om-infra-limited-nse-ominfral-joint-venture-secures-3218-crore-maharashtra-irrigation-contract",
+      "title": "OM Infra Joint Venture Wins ₹32.18 Crore Irrigation Infrastructure Order",
+      "published": "Wed, 23 Sep 2026 07:37:00 GMT",
+      "chars": 6998,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/glenmark-receives-usfda-eir-for-goa-facility-with-vai-status-179849",
+      "title": "Glenmark Receives USFDA EIR for Goa Facility With VAI Status",
+      "published": "Wed, 23 Sep 2026 08:30:00 GMT",
+      "chars": 856,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/glenmark-pharmaceuticals-nse-glenmark-receives-us-fda-eir-for-goa-manufacturing-facility",
+      "title": "Glenmark Pharmaceuticals (NSE: GLENMARK) U.S. FDA Compliance Update for Goa Facility",
+      "published": "Wed, 23 Sep 2026 13:12:00 GMT",
+      "chars": 6188,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://en.sedaily.com/finance/2026/09/24/hlb-wins-us-fda-approval-for-bile-duct-cancer-drug-lypiktu",
+      "title": "HLB Wins U.S. FDA Approval for Bile Duct Cancer Drug Lypiktu",
+      "published": "Thu, 24 Sep 2026 01:41:34 GMT",
+      "chars": 3308,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.business-standard.com/markets/capital-market-news/glenmark-pharma-gets-eir-for-goa-facility-from-us-fda-126092300741_1.html",
+      "title": "Glenmark Pharma gets EIR for Goa facility from US FDA",
+      "published": "Wed, 23 Sep 2026 09:46:51 GMT",
+      "chars": 2345,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/lords-mark-targets-april-2027-launch-ai-breast-cancer-screening/51678907",
+      "title": "Lords Mark targets April 2027 launch for AI breast cancer screening",
+      "published": "Wed, 23 Sep 2026 14:38:51 GMT",
+      "chars": 3599,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.tradingview.com/news/seekingalpha:bbf3f130d094b:0-gossamer-bio-submits-nda-for-seralutinib-for-pulmonary-arterial-hypertension/",
+      "title": "Gossamer Bio submits NDA for seralutinib for pulmonary arterial hypertension",
+      "published": "Wed, 23 Sep 2026 22:16:27 GMT",
+      "chars": 976,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/equitas-small-finance-bank-receives-gst-notice-demanding-533-81-crore/51605970",
+      "title": "Equitas Small Finance Bank receives ₹533.81 crore GST notice for FY23",
+      "published": "Wed, 23 Sep 2026 12:23:20 GMT",
+      "chars": 3852,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/jtl-defence-approves-fy26-results-appoints-two-whole-time-directors/51724872",
+      "title": "JTL Defence approves FY26 results, appoints two whole-time directors",
+      "published": "Wed, 23 Sep 2026 16:04:04 GMT",
+      "chars": 4441,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/typhoon-financial-services-adopts-fy26-results-re-appoints-md-chhajer/51714008",
+      "title": "Typhoon Financial shareholders confirm Chhajer as MD for 5 years",
+      "published": "Wed, 23 Sep 2026 13:03:12 GMT",
+      "chars": 4589,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.morningstar.com/news/pr-newswire/20260923ny54517/bbnx-investor-alert-beta-bionics-inc-securities-class-action-notice-contact-levi-korsinsky",
+      "title": "BBNX Investor Alert: Beta Bionics, Inc. Securities Class Action Notice - Contact Levi & Korsinsky",
+      "published": "Wed, 23 Sep 2026 14:09:00 GMT",
+      "chars": 7713,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.morningstar.com/news/pr-newswire/20260923ph55223/bbnx-investor-alert-johnson-fistel-encourages-beta-bionics-inc-investors-to-contact-the-firm-ahead-of-november-3-2026-lead-plaintiff-deadline",
+      "title": "BBNX Investor Alert: Johnson Fistel Encourages Beta Bionics, Inc. Investors to Contact the Firm Ahead of November 3, 2026 Lead Plaintiff Deadline",
+      "published": "Wed, 23 Sep 2026 18:48:00 GMT",
+      "chars": 5301,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/companhia-energetica-de-minas-gerais-stock-reports-mixed-q2-results/70172478",
+      "title": "Companhia Energética de Minas Gerais stock reports mixed Q2 results",
+      "published": "Thu, 24 Sep 2026 02:23:53 GMT",
+      "chars": 2210,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/banco-macro-stock-falls-2-43-percent-after-q2-results/70168767",
+      "title": "Banco Macro stock falls 2.43 percent after Q2 results",
+      "published": "Wed, 23 Sep 2026 16:39:01 GMT",
+      "chars": 2240,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/ito-en-stock-falls-2-10-percent-after-q1-profit-surge/70168436",
+      "title": "Ito En stock falls 2.10 percent after Q1 profit surge",
+      "published": "Wed, 23 Sep 2026 15:39:40 GMT",
+      "chars": 2495,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/civista-bancshares-stock-falls-1-13-percent-on-nasdaq/70168967",
+      "title": "Civista Bancshares stock falls 1.13 percent on Nasdaq",
+      "published": "Wed, 23 Sep 2026 17:06:59 GMT",
+      "chars": 2239,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.livemint.com/market/stock-market-news/bluestone-jewellery-share-price-falls-52-week-low-today-whats-behind-the-plunge-11790143391033.html",
+      "title": "BlueStone Jewellery share price falls 9% today | What's behind the plunge?",
+      "published": "Wed, 23 Sep 2026 06:49:02 GMT",
+      "chars": 3018,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/volkswagen-stock-falls-as-2026-margin-guidance-drops-to-1-percent/70165984",
+      "title": "Volkswagen stock falls as 2026 margin guidance drops to 1 percent",
+      "published": "Wed, 23 Sep 2026 10:50:28 GMT",
+      "chars": 3165,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/orient-green-power-nse-greenpower-commissions-176-mw-solar-plant-in-tamil-nadu",
+      "title": "Orient Green Power (NSE: GREENPOWER) Solar Capacity Expansion and Renewable Energy Update",
+      "published": "Wed, 23 Sep 2026 13:11:00 GMT",
+      "chars": 5724,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ceigall-india-schedules-analyst-meet-mumbai-late-september/51713968",
+      "title": "Ceigall India schedules analyst meet in Mumbai for late September",
+      "published": "Wed, 23 Sep 2026 13:17:16 GMT",
+      "chars": 2834,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://windinsider.com/2026/09/23/ntpc-adds-56-7-mw-wind-capacity-in-gujarat-group-capacity-reaches-91221-mw/",
+      "title": "NTPC Adds 56.7 MW Wind Capacity In Gujarat, Group Capacity Reaches 91,221 MW",
+      "published": "Wed, 23 Sep 2026 08:04:53 GMT",
+      "chars": 2022,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/exide-industries-subsidiary-commissions-6-gwh-lithium-ion-facility/51714201",
+      "title": "Exide Industries subsidiary commissions 6 GWh lithium-ion facility",
+      "published": "Wed, 23 Sep 2026 13:08:38 GMT",
+      "chars": 3187,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/orient-green-power-company-limited-nse-greenpower-expands-solar-portfolio-with-176-mw-project-in-tamil-nadu",
+      "title": "Orient Green Power Commissions 17.6 MW Solar Project in Tamil Nadu",
+      "published": "Wed, 23 Sep 2026 07:31:00 GMT",
+      "chars": 6354,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ntpc-green-energy-unit-commissions-68-22-mw-dahod-solar-phase/51336382",
+      "title": "NTPC Green Energy adds 56.7 MW wind, total capacity hits 10,920.53 MW",
+      "published": "Wed, 23 Sep 2026 14:48:55 GMT",
+      "chars": 3662,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.trend.az/casia/tajikistan/4226974.html",
+      "title": "Tajikistan commissions lime production facility with 200 tons daily capacity",
+      "published": "Wed, 23 Sep 2026 08:25:46 GMT",
+      "chars": 193,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/motilal-oswal-group-secures-licence-for-custodian-services-from-sebi-126092301267_1.html",
+      "title": "Motilal Oswal group secures licence for custodian services from SEBI",
+      "published": "Wed, 23 Sep 2026 14:01:09 GMT",
+      "chars": 1461,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-hc-rejects-cbi-plea-against-chitra-ramkrishna-s-bail-in-nse-case-126092301511_1.html",
+      "title": "Delhi HC rejects CBI plea against Chitra Ramkrishna's bail in NSE case",
+      "published": "Wed, 23 Sep 2026 16:48:46 GMT",
+      "chars": 2410,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/subhash-chandra-challenges-nclt-asset-restraint-in-repayment-plan-case-126092301512_1.html",
+      "title": "Subhash Chandra challenges NCLT asset restraint in repayment plan case",
+      "published": "Wed, 23 Sep 2026 16:49:49 GMT",
+      "chars": 3942,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/india-is-on-track-to-hit-100gw-wind-energy-target-by-2030-suzlon-s-tanti-126092301065_1.html",
+      "title": "India is on track to hit 100GW wind energy target by 2030: Suzlon's Tanti",
+      "published": "Wed, 23 Sep 2026 17:23:42 GMT",
+      "chars": 4384,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ntpc-adani-power-get-nod-for-nuclear-plant-feasibility-studies-in-odisha-126092301415_1.html",
+      "title": "NTPC, Adani Power get nod for nuclear plant feasibility studies in Odisha",
+      "published": "Wed, 23 Sep 2026 15:27:00 GMT",
+      "chars": 6221,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/banking/banks-to-remain-open-on-sunday-ahead-of-proposed-3-day-strike-from-sep-28-126092300574_1.html",
+      "title": "Banks to remain open on Sunday ahead of proposed 3-day strike from Sep 28",
+      "published": "Wed, 23 Sep 2026 08:28:06 GMT",
+      "chars": 4121,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ola-electric-seeks-board-nod-for-proposed-rights-issue-of-equity-shares-126092301551_1.html",
+      "title": "Ola Electric seeks board nod for proposed rights issue of equity shares",
+      "published": "Wed, 23 Sep 2026 17:22:40 GMT",
+      "chars": 3761,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/choice-equity-broking-launches-trader-mode-on-choice-finx-bringing-advanced-execution-tools-to-active-traders-126092300703_1.html",
+      "title": "Choice Equity Broking Launches Trader Mode on Choice FinX, Bringing Advanced Execution Tools to Active Traders",
+      "published": "Wed, 23 Sep 2026 09:30:03 GMT",
+      "chars": 6139,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/here-s-why-ajit-mishra-is-bullish-on-mcx-apollo-hospitals-bearish-on-tcs-126092400124_1.html",
+      "title": "Here's why Ajit Mishra is bullish on MCX, Apollo Hospitals; bearish on TCS",
+      "published": "Thu, 24 Sep 2026 07:47:39 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-nifty-showing-signs-of-trend-reversal-buy-the-dips-says-jatin-gedia-126092400120_1.html",
+      "title": "Nifty showing signs of trend reversal; buy the dips says Jatin Gedia",
+      "published": "Thu, 24 Sep 2026 07:42:43 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-to-debut-today-in-test-of-investor-faith-in-india-s-long-term-growth-126092400121_1.html",
+      "title": "NSE shares to debut today in test of investor faith in India's growth",
+      "published": "Thu, 24 Sep 2026 07:33:26 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/meesho-shares-worth-900-cr-change-hands-in-softbank-arm-s-mega-block-deal-126092301183_1.html",
+      "title": "Meesho shares worth ₹900 cr change hands in block deal; stock falls 1.6%",
+      "published": "Wed, 23 Sep 2026 20:40:25 +0530",
+      "chars": 71,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-weighs-steps-to-make-derivatives-mkt-more-balanced-tuhin-kanta-pandey-126092301321_1.html",
+      "title": "Sebi plans to make derivatives market more balanced: Tuhin Kanta Pandey",
+      "published": "Wed, 23 Sep 2026 20:05:58 +0530",
+      "chars": 107,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/motilal-oswal-group-secures-licence-for-custodian-services-from-sebi-126092301267_1.html",
+      "title": "Motilal Oswal group secures licence for custodian services from SEBI",
+      "published": "Wed, 23 Sep 2026 19:31:09 +0530",
+      "chars": 265,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/pyramid-technoplast-receives-gpcb-s-amended-authorisation-to-recycle-industrial-packaging-waste-126092301266_1.html",
+      "title": "Pyramid Technoplast receives GPCB's amended authorisation to recycle industrial packaging waste",
+      "published": "Wed, 23 Sep 2026 19:31:01 +0530",
+      "chars": 358,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/jagsonpal-pharmaceuticals-to-acquire-wellness-portfolio-of-group-pharmaceuticals-126092301231_1.html",
+      "title": "Jagsonpal Pharmaceuticals to acquire wellness portfolio of Group Pharmaceuticals",
+      "published": "Wed, 23 Sep 2026 19:16:06 +0530",
+      "chars": 298,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nse-ipo-listing-today-on-bse-check-listing-time-gmp-share-price-prediction-other-details/articleshow/134449552.cms",
+      "title": "NSE shares to list today: GMP signals 2% listing gains ahead of market debut",
+      "published": "Thu, 24 Sep 2026 07:47:55 +0530",
+      "chars": 208,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-perched-at-two-month-high-as-hot-pmi-fuels-inflation-fears-rate-hike-bets/articleshow/134449513.cms",
+      "title": "Dollar perched at two-month high as hot PMI fuels inflation fears, rate hike bets",
+      "published": "Thu, 24 Sep 2026 07:45:16 +0530",
+      "chars": 416,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-12-stocks-cross-above-their-200-dmas/slideshow/134449506.cms",
+      "title": "Positive Breakout: These 12 stocks cross above their 200 DMAs",
+      "published": "Thu, 24 Sep 2026 07:36:40 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 122.2
+}
