@@ -59,5 +59,25 @@
     ],
     "first_seen": "2026-09-15",
     "last_seen": "2026-09-15"
+  },
+  "l1_bidder": {
+    "id": "l1_bidder",
+    "prior": 24,
+    "adjust": -0.729,
+    "n": 1,
+    "n_up": 0,
+    "sum_open_to_high_pct": 0.61,
+    "sum_open_to_close_pct": -1.42,
+    "history": [
+      {
+        "date": "2026-09-25",
+        "symbol": "KPIL",
+        "open_to_high_pct": 0.61,
+        "open_to_close_pct": -1.42,
+        "delta": -0.73
+      }
+    ],
+    "first_seen": "2026-09-25",
+    "last_seen": "2026-09-25"
   }
 }
