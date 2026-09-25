@@ -1,0 +1,1007 @@
+{
+  "date": "2026-09-25",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 6
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 3
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "bd360f2e1c",
+      "symbol": "GENESYS",
+      "company": "Genesys International Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags new order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 283.0,
+      "size_estimated": false,
+      "size_basis": "Rs 283 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/genesys-international-bags-new-order-worth-rs-283-crore",
+      "title": "Genesys International bags new order worth Rs 283 crore",
+      "published": "Thu, 24 Sep 2026 20:22:34 GMT",
+      "published_utc": "2026-09-24T20:22:34+00:00",
+      "sentence": "bags new order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/genesys-international-bags-new-order-worth-rs-283-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "87d743d304",
+      "symbol": "VIKRAN",
+      "company": "Vikran Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a new order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 153.76,
+      "size_estimated": false,
+      "size_basis": "Rs 153.76 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2700.0,
+        "unit": "MW",
+        "text": "2.7 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/vikran-engineering-soars-on-winning-order-worth-rs-153-76-crore-from-powergrid583166",
+      "title": "Vikran Engineering soars on winning order worth Rs 153.76 crore from POWERGRID",
+      "published": "Thu, 24 Sep 2026 06:55:23 GMT",
+      "published_utc": "2026-09-24T06:55:23+00:00",
+      "sentence": "secured a new order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/vikran-engineering-soars-on-winning-order-worth-rs-153-76-crore-from-powergrid583166"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3275ed4de8",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 1265.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,265 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/dilip-buildcon-emerges-lowest-bidder-for-project-rs-1265-crore",
+      "title": "Dilip Buildcon emerges lowest bidder for project Rs 1,265 crore",
+      "published": "Thu, 24 Sep 2026 20:17:33 GMT",
+      "published_utc": "2026-09-24T20:17:33+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/dilip-buildcon-emerges-lowest-bidder-for-project-rs-1265-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9d062660b2",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 12000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 12,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/kalpataru-projects-international-bags-new-orders-worth-over-2-000-crore-126092401169_1.html",
+      "title": "Kalpataru Projects International bags new orders worth over ₹2,000 crore",
+      "published": "Thu, 24 Sep 2026 17:56:23 GMT",
+      "published_utc": "2026-09-24T17:56:23+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/kalpataru-projects-international-bags-new-orders-worth-over-2-000-crore-126092401169_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "41fa5f4380",
+      "symbol": "LCCPROJECT",
+      "company": "LCC Projects Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": 653.34,
+      "size_estimated": false,
+      "size_basis": "₹653.34 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "published_utc": "2026-09-24T16:55:22+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7f47e75339",
+      "symbol": "POLICYBZR",
+      "company": "PB Fintech Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-today-september-25-tata-group-lemon-tree-hotels-pb-fintech-jsw-cement-and-more/article71506860.ece",
+      "title": "Buzzing stocks today: Tata Group, PB Fintech, JSW Cement and 10 other stocks in focus",
+      "published": "Fri, 25 Sep 2026 01:25:28 GMT",
+      "published_utc": "2026-09-25T01:25:28+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-today-september-25-tata-group-lemon-tree-hotels-pb-fintech-jsw-cement-and-more/article71506860.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8b4df4bec7",
+      "symbol": "MARUTI",
+      "company": "Maruti Suzuki India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 300 kw green hydrogen (gh2) electrolyzer plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 561.0,
+      "size_estimated": false,
+      "size_basis": "Rs 5,610 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1.0,
+        "unit": "MWh",
+        "text": "1 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/auto/auto-news/maruti-suzuki-india-commissions-300-kw-green-hydrogen-gh2-electrolyzer-plant/amp_articleshow/134454172.cms",
+      "title": "Maruti Suzuki India commissions 300 kW Green Hydrogen (GH2) electrolyzer plant",
+      "published": "Thu, 24 Sep 2026 07:16:00 GMT",
+      "published_utc": "2026-09-24T07:16:00+00:00",
+      "sentence": "commissions 300 kw green hydrogen (gh2) electrolyzer plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/auto/auto-news/maruti-suzuki-india-commissions-300-kw-green-hydrogen-gh2-electrolyzer-plant/amp_articleshow/134454172.cms",
+        "https://www.indianchemicalnews.com/hydrogen/maruti-suzuki-commissions-first-green-hydrogen-plant-at-manesar-plant-32030"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "13ef2e5f44",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion includes greenfield unit",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 210.1,
+        "unit": "MTPA",
+        "text": "210.1 mtpa"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Thu, 24 Sep 2026 12:25:43 GMT",
+      "published_utc": "2026-09-24T12:25:43+00:00",
+      "sentence": "expansion includes greenfield unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "10a16c4d9d",
+      "symbol": "INOXGREEN",
+      "company": "Inox Green Energy Services Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-waaree-energies-pb-fintech-lemon-tree-hotels-and-dr-lal-pathlabs/articleshow/134467817.cms",
+      "title": "Stocks in news: Waaree Energies, PB Fintech, Lemon Tree Hotels and Dr Lal PathLabs",
+      "published": "Fri, 25 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-25T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-waaree-energies-pb-fintech-lemon-tree-hotels-and-dr-lal-pathlabs/articleshow/134467817.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c4fd8199ae",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 297.5,
+      "size_estimated": false,
+      "size_basis": "₹297.50 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government",
+      "title": "Oswal Pumps Wins Major ₹297.50 Crore Solar Project Order in Telangana",
+      "published": "Thu, 24 Sep 2026 10:47:00 GMT",
+      "published_utc": "2026-09-24T10:47:00+00:00",
+      "sentence": "awarded contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "76d4f66d8c",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 297.5,
+      "size_estimated": false,
+      "size_basis": "₹297.50 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government",
+      "title": "Oswal Pumps Wins Major ₹297.50 Crore Solar Project Order in Telangana",
+      "published": "Thu, 24 Sep 2026 10:47:00 GMT",
+      "published_utc": "2026-09-24T10:47:00+00:00",
+      "sentence": "awarded contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ee19b32279",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded contract",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 297.5,
+      "size_estimated": false,
+      "size_basis": "₹297.50 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government",
+      "title": "Oswal Pumps Wins Major ₹297.50 Crore Solar Project Order in Telangana",
+      "published": "Thu, 24 Sep 2026 10:47:00 GMT",
+      "published_utc": "2026-09-24T10:47:00+00:00",
+      "sentence": "awarded contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2d2df9029d",
+      "symbol": "WABAG",
+      "company": "VA Tech Wabag Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "offer for sale",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "VA Tech Wabag — water and wastewater treatment EPC",
+      "theme": "water_infra",
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": 653.34,
+      "size_estimated": false,
+      "size_basis": "₹653.34 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "published_utc": "2026-09-24T16:55:22+00:00",
+      "sentence": "offer for sale",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "240829ab67",
+      "symbol": "IONEXCHANG",
+      "company": "ION Exchange (India) Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "offer for sale",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Ion Exchange — water treatment",
+      "theme": "water_infra",
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": 653.34,
+      "size_estimated": false,
+      "size_basis": "₹653.34 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "published_utc": "2026-09-24T16:55:22+00:00",
+      "sentence": "offer for sale",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-today-september-25-tata-group-lemon-tree-hotels-pb-fintech-jsw-cement-and-more/article71506860.ece",
+      "title": "Buzzing stocks today: Tata Group, PB Fintech, JSW Cement and 10 other stocks in focus",
+      "published": "Fri, 25 Sep 2026 01:25:28 GMT",
+      "chars": 9664,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/us-federal-reserve-fed-rate-hike-rate-sensitive-stocks-11790251770744.html",
+      "title": "Rate-sensitive stocks to watch after the Fed hike",
+      "published": "Fri, 25 Sep 2026 01:30:20 GMT",
+      "chars": 7816,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-waaree-energies-pb-fintech-lemon-tree-hotels-and-dr-lal-pathlabs/articleshow/134467817.cms",
+      "title": "Stocks in news: Waaree Energies, PB Fintech, Lemon Tree Hotels and Dr Lal PathLabs",
+      "published": "Fri, 25 Sep 2026 00:30:00 GMT",
+      "chars": 7569,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-25-pb-fintech-activity-7508879509572718592-yMj0",
+      "title": "Stocks to Watch for September 25: PB Fintech, Inox Green Energy, Dr Lal Path, JSW Cement and more - CNBC TV18",
+      "published": "Thu, 24 Sep 2026 13:26:23 GMT",
+      "chars": 386,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-esds-software-purple-style-labs-axiom-gas-dr-lal-pathlabs-lcc-projects-waaree-energies-inox-green-energy-in-focus-on-25-september-14037797.html/amp",
+      "title": "Stocks to Watch Today: ESDS Software, Purple Style Labs, Axiom Gas, Dr Lal PathLabs, LCC Projects, Waaree...",
+      "published": "Thu, 24 Sep 2026 21:05:08 GMT",
+      "chars": 8046,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=09/25/2026&story=1&title=4-Power-Stocks-to-Watch-for-Long%2DTerm-Growth&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "4 Power Stocks to Watch for Long-Term Growth",
+      "published": "Fri, 25 Sep 2026 00:30:00 GMT",
+      "chars": 14763,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://univest.in/blogs/stocks-to-watch-today-25092026",
+      "title": "Stocks to Watch Today: PB Fintech, Mazagon Dock, More",
+      "published": "Thu, 24 Sep 2026 19:13:00 GMT",
+      "chars": 7803,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "chars": 2458,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/dilip-buildcon-emerges-lowest-bidder-for-project-rs-1265-crore",
+      "title": "Dilip Buildcon emerges lowest bidder for project Rs 1,265 crore",
+      "published": "Thu, 24 Sep 2026 20:17:33 GMT",
+      "chars": 1075,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/euphoria-infotech-india-zooms-on-bagging-work-order-worth-rs-4-03-crore585145",
+      "title": "Euphoria Infotech (India) zooms on bagging work order worth Rs 4.03 crore",
+      "published": "Thu, 24 Sep 2026 09:58:44 GMT",
+      "chars": 1679,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/genesys-international-bags-new-order-worth-rs-283-crore",
+      "title": "Genesys International bags new order worth Rs 283 crore",
+      "published": "Thu, 24 Sep 2026 20:22:34 GMT",
+      "chars": 790,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/vikran-engineering-soars-on-winning-order-worth-rs-153-76-crore-from-powergrid583166",
+      "title": "Vikran Engineering soars on winning order worth Rs 153.76 crore from POWERGRID",
+      "published": "Thu, 24 Sep 2026 06:55:23 GMT",
+      "chars": 2128,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/oswal-pumps-nse-oswalpumps-secures-29750-crore-solar-order-from-telangana-government",
+      "title": "Oswal Pumps Wins Major ₹297.50 Crore Solar Project Order in Telangana",
+      "published": "Thu, 24 Sep 2026 10:47:00 GMT",
+      "chars": 4614,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/euphoria-infotech-india-zooms-on-bagging-work-order-worth-rs-4-03-crore585145",
+      "title": "Euphoria Infotech (India) zooms on bagging work order worth Rs 4.03 crore",
+      "published": "Thu, 24 Sep 2026 09:58:44 GMT",
+      "chars": 1679,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/onswik-weekly-insulin-fda-approves-lillys-second/",
+      "title": "Lilly wins FDA approval for once-weekly basal insulin Onswik",
+      "published": "Thu, 24 Sep 2026 18:17:01 GMT",
+      "chars": 2173,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.deccanherald.com/amp/story/health%2Fprostate-cancer-paradox-men-who-wait-too-long-those-who-worry-too-early-4158407",
+      "title": "Prostate cancer paradox: Men who wait too long, those who worry too early",
+      "published": "Thu, 24 Sep 2026 15:07:00 GMT",
+      "chars": 7004,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://grafa.com/en/news/united-states/eli-lilly-onswik-weekly-basal-insulin-fda-approval",
+      "title": "Eli Lilly receives FDA approval for weekly basal insulin",
+      "published": "Thu, 24 Sep 2026 14:58:00 GMT",
+      "chars": 1975,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.stocktitan.net/news/LLY/u-s-food-and-drug-administration-fda-approves-lilly-s-onswik-tm-7ef9xmbyiabi.html",
+      "title": "Lilly's FDA-approved weekly insulin could mean over 300 fewer shots a year than daily insulin",
+      "published": "Thu, 24 Sep 2026 10:45:00 GMT",
+      "chars": 20000,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://lawstreetmedia.com/insights/a-hedge-fund-rolls-the-dice-on-ultragenyx/?amp=1",
+      "title": "A Hedge Fund Rolls the Dice on Ultragenyx",
+      "published": "Thu, 24 Sep 2026 14:07:37 GMT",
+      "chars": 7746,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.wect.com/2026/09/24/notice-letter-pfas-pollution-chemours-facility-violates-consent-order/?outputType=amp",
+      "title": "Notice letter: PFAS pollution from Chemours facility violates consent order",
+      "published": "Thu, 24 Sep 2026 21:47:00 GMT",
+      "chars": 3696,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://desotocountynews.com/desoto-county-news/ag-fitch-urges-administration-to-protect-glp-1-drugs-from-chinese-exploitation/",
+      "title": "AG Fitch Urges Administration to Protect GLP-1 Drugs from Chinese Exploitation",
+      "published": "Thu, 24 Sep 2026 15:28:43 GMT",
+      "chars": 2506,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/bharat-petroleum-stock-falls-2-74-percent-ahead-of-q2-results/70179359",
+      "title": "Bharat Petroleum stock falls 2.74 percent ahead of Q2 results",
+      "published": "Thu, 24 Sep 2026 20:06:11 GMT",
+      "chars": 2029,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/trio-tech-intl-q4-results-eps-falls-0-02-sales-up-39-92-14-931m/51801989",
+      "title": "Trio-Tech Intl Q4 Results: EPS falls to $(0.02), sales up 39.92% to $14.931M",
+      "published": "Thu, 24 Sep 2026 13:56:13 GMT",
+      "chars": 2263,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.tradingview.com/news/zacks:cdaf2e28e094b:0-stitch-fix-stock-falls-18-despite-narrower-q4-loss-higher-revenues/",
+      "title": "Stitch Fix Stock Falls 18% Despite Narrower Q4 Loss & Higher Revenues",
+      "published": "Thu, 24 Sep 2026 14:56:00 GMT",
+      "chars": 7514,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vesuvius-india-hr-director-rohit-khandelwal-resigns-effective-sep-24/51802572",
+      "title": "Vesuvius India HR Director Rohit Khandelwal resigns effective Sep 24",
+      "published": "Thu, 24 Sep 2026 13:47:38 GMT",
+      "chars": 2859,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/handelsbanken-stock-holds-near-its-yearly-high-after-q2-results/70177086",
+      "title": "Handelsbanken stock holds near its yearly high after Q2 results",
+      "published": "Thu, 24 Sep 2026 10:40:55 GMT",
+      "chars": 2194,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/onewater-marine-stock-falls-3-12-percent-after-q3-results/70176681",
+      "title": "OneWater Marine stock falls 3.12 percent after Q3 results",
+      "published": "Thu, 24 Sep 2026 09:43:57 GMT",
+      "chars": 2374,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/naturite-agro-products-activates-new-isin-share-sub-division/51799690",
+      "title": "Naturite Agro Products activates new ISIN for share sub-division",
+      "published": "Thu, 24 Sep 2026 12:57:48 GMT",
+      "chars": 3032,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cemnet.com/News/story/182154/ultratech-commissions-4-6mta-of-cement-capacity.html",
+      "title": "UltraTech commissions 4.6Mta of cement capacity",
+      "published": "Thu, 24 Sep 2026 08:06:00 GMT",
+      "chars": 868,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Thu, 24 Sep 2026 12:25:43 GMT",
+      "chars": 3253,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/ntpc-green-energy-commissions-68.22-mw-solar-capacity-in-gujarat/97652",
+      "title": "NTPC Green Energy Commissions 68.22 MW Solar Capacity in Gujarat",
+      "published": "Thu, 24 Sep 2026 11:09:30 GMT",
+      "chars": 5352,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://english.hindusthansamachar.in/Encyc/2026/9/24/Maruti-Suzuki-commissioned-fir.php",
+      "title": "Maruti Suzuki Commissions First Green Hydrogen Plant at Manesar",
+      "published": "Thu, 24 Sep 2026 13:24:53 GMT",
+      "chars": 3331,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/amp/companies/news/belden-ruckus-wireless-to-raise-local-manufacturing-capacity-in-india-126092400734_1.html",
+      "title": "Belden-Ruckus Wireless to expand local manufacturing capacity in India",
+      "published": "Thu, 24 Sep 2026 09:57:22 GMT",
+      "chars": 2246,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/auto/auto-news/maruti-suzuki-india-commissions-300-kw-green-hydrogen-gh2-electrolyzer-plant/amp_articleshow/134454172.cms",
+      "title": "Maruti Suzuki India commissions 300 kW Green Hydrogen (GH2) electrolyzer plant",
+      "published": "Thu, 24 Sep 2026 07:16:00 GMT",
+      "chars": 2531,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://thedailybrief.zerodha.com/p/insurance-commissions-cut-irdai-distributors-credit-rating-country-debt",
+      "title": "What happens when insurance commissions are cut?",
+      "published": "Fri, 25 Sep 2026 01:41:57 GMT",
+      "chars": 20000,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.indianchemicalnews.com/hydrogen/maruti-suzuki-commissions-first-green-hydrogen-plant-at-manesar-plant-32030",
+      "title": "Maruti Suzuki commissions first green hydrogen plant at Manesar plant",
+      "published": "Thu, 24 Sep 2026 17:32:15 GMT",
+      "chars": 7080,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/sports/business/t20-mumbai-league-aspect-sports-wins-ninth-franchise-for-rs-106-88-crore-126092400712_1.html",
+      "title": "T20 Mumbai League: Aspect Sports wins ninth franchise for Rs 106.88 crore",
+      "published": "Thu, 24 Sep 2026 09:46:13 GMT",
+      "chars": 2223,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/atul-pandey-s-main-nida-wins-best-arts-culture-film-at-72nd-national-film-awards-126092400941_1.html",
+      "title": "Atul Pandey's Main Nida wins Best Arts/Culture Film at 72nd National Film Awards",
+      "published": "Thu, 24 Sep 2026 11:45:20 GMT",
+      "chars": 5701,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/supreme-court-noida-dm-medha-roopam-case-allahabad-hc-strictures-stay-126092400744_1.html",
+      "title": "SC revises order in Noida DM Roopam's case; limits stay to HC strictures",
+      "published": "Thu, 24 Sep 2026 10:08:43 GMT",
+      "chars": 4607,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/kalpataru-projects-international-bags-new-orders-worth-over-2-000-crore-126092401169_1.html",
+      "title": "Kalpataru Projects International bags new orders worth over ₹2,000 crore",
+      "published": "Thu, 24 Sep 2026 17:56:23 GMT",
+      "chars": 2167,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/aviation/akasa-air-in-talks-to-order-more-than-200-boeing-737-max-aircrafts-126092500034_1.html",
+      "title": "Akasa Air in talks to order more than 200 Boeing 737 MAX aircrafts",
+      "published": "Fri, 25 Sep 2026 02:19:34 GMT",
+      "chars": 2213,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/rio-health-raises-4-5-mn-in-pre-series-a-led-by-version-one-ventures-126092400853_1.html",
+      "title": "Rio Health raises $4.5 mn in pre-Series A led by Version One Ventures",
+      "published": "Thu, 24 Sep 2026 11:03:35 GMT",
+      "chars": 4275,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/arya-samaj-marriage-certificate-hindu-marriage-act-allahabad-high-court-126092401525_1.html",
+      "title": "Certificate or ceremony: What legally validates an Arya Samaj marriage?",
+      "published": "Thu, 24 Sep 2026 17:32:46 GMT",
+      "chars": 10323,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/election-commission-row-gyanesh-kumar-must-resign-immediately-says-rahul-126092401008_1.html",
+      "title": "Election Commission row: Gyanesh Kumar must resign immediately, says Rahul",
+      "published": "Thu, 24 Sep 2026 12:25:14 GMT",
+      "chars": 4513,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-updates-september-25-sensex-today-nifty50-gift-nifty-crude-oil-prices-nse-share-price-126092500092_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Nikkei rises 1%; Brent crude near $106",
+      "published": "Fri, 25 Sep 2026 07:53:51 +0530",
+      "chars": 161,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/f-o-analyst-suggests-bear-bull-spreads-on-bank-nifty-canara-bank-126092500088_1.html",
+      "title": "F&O: Analyst suggests bear, bull spreads on Bank Nifty, Canara Bank",
+      "published": "Fri, 25 Sep 2026 07:37:52 +0530",
+      "chars": 109,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-hits-over-five-month-low-as-banks-nbfcs-slide-amid-high-oil-prices-126092401078_1.html",
+      "title": "Nifty plunges 1.6% to five-month low; Sensex ends 1,248 points lower",
+      "published": "Thu, 24 Sep 2026 19:21:50 +0530",
+      "chars": 133,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-approves-reforms-to-pms-regulations-settlement-proceedings-126092401149_1.html",
+      "title": "Sebi approves PMS-mutual fund route and overhauls settlement rules",
+      "published": "Thu, 24 Sep 2026 19:05:11 +0530",
+      "chars": 51,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/h2fy27-hiring-intent-seen-at-5-4-e-commerce-leads-growth-report-126092401098_1.html",
+      "title": "H2FY27 hiring intent seen at 5.4%, e-commerce leads growth: Report",
+      "published": "Thu, 24 Sep 2026 18:42:31 +0530",
+      "chars": 155,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-debuts-at-1-800-md-ceo-says-india-s-growth-will-drive-exchange-126092400968_1.html",
+      "title": "NSE makes debut on BSE at ₹1,800 per share, mcap hits ₹4.5 trillion",
+      "published": "Thu, 24 Sep 2026 17:28:23 +0530",
+      "chars": 60,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/cj-darcl-eyes-10-revenue-growth-expands-into-new-logistics-verticals-126092400932_1.html",
+      "title": "CJ Darcl eyes 10% revenue growth, expands into new logistics verticals",
+      "published": "Thu, 24 Sep 2026 17:11:13 +0530",
+      "chars": 149,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/rio-health-raises-4-5-mn-in-pre-series-a-led-by-version-one-ventures-126092400853_1.html",
+      "title": "Rio Health raises $4.5 mn in pre-Series A led by Version One Ventures",
+      "published": "Thu, 24 Sep 2026 16:33:35 +0530",
+      "chars": 155,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/orient-cables-ipo-opens-today-gmp-signals-19-listing-gain-check-key-details/articleshow/134473285.cms",
+      "title": "Orient Cables IPO opens today: GMP signals 19% listing gain; check key details",
+      "published": "Fri, 25 Sep 2026 07:54:36 +0530",
+      "chars": 190,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/runwal-enterprises-ipo-opens-today-check-gmp-and-key-details-should-you-subscribe/articleshow/134473268.cms",
+      "title": "Runwal Enterprises IPO opens today: Check GMP and key details. Should you subscribe?",
+      "published": "Fri, 25 Sep 2026 07:54:31 +0530",
+      "chars": 124,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-midcap-stocks-cross-below-their-200-dmas/slideshow/134473242.cms",
+      "title": "Negative Breakout: These 8 midcap stocks cross below their 200 DMAs",
+      "published": "Fri, 25 Sep 2026 07:38:58 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 187.0
+}

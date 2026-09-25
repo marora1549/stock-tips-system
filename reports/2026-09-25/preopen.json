@@ -1,0 +1,840 @@
+{
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 6
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 3
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 14,
+  "trade": [],
+  "watch": [
+    {
+      "id": "9d062660b2",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 12000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 12,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/kalpataru-projects-international-bags-new-orders-worth-over-2-000-crore-126092401169_1.html",
+      "title": "Kalpataru Projects International bags new orders worth over ₹2,000 crore",
+      "published": "Thu, 24 Sep 2026 17:56:23 GMT",
+      "published_utc": "2026-09-24T17:56:23+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/kalpataru-projects-international-bags-new-orders-worth-over-2-000-crore-126092401169_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 58,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+19 L1 bidder (80% firm)",
+        "+12 ₹12,000cr against ₹27,380cr of revenue — 0.4× a year's sales, a quarter of a year's revenue",
+        "+10 fundamentals 87/100",
+        "+5 ADX 29 with the trend up — moves carry here",
+        "+12 published Thu 23:26, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.438,
+      "revenue_ttm_cr": 27380.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 23:26, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 24,
+      "direction": "long",
+      "plan": {
+        "reference_close": 1411.8,
+        "atr_pct": 2.7,
+        "expected_day_range_inr": 38.12,
+        "expected_day_range_pct": 2.7,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 87,
+      "fund_why": [
+        "+6 ROCE 18.3%",
+        "+4 ROE 13.7%",
+        "+6 P/E 21.5",
+        "+8 3y profit CAGR 36%",
+        "+6 3y sales CAGR 18%",
+        "+2 D/E 0.46",
+        "+0 promoter 33.58%",
+        "+4 latest qtr PAT YoY 45.8%",
+        "+2 mcap ₹23,901 cr",
+        "+8 operating cash flow ₹1,534cr, 149% of profit — profit is turning into cash",
+        "+3 institutions hold 55.61%",
+        "+0 price to book 3.08",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted +8 of +18 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 23.3%"
+      ],
+      "screener_cons": [
+        "Company has a low return on equity of 11.5% over last 3 years.",
+        "Company's cost of borrowing seems high",
+        "Promoter holding has decreased over last 3 years: -7.49%"
+      ],
+      "ltp": 1411.800048828125,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.6,
+        "adx": 28.6,
+        "atr_pct": 2.7,
+        "vol_ratio": 0.72,
+        "chg_1d_pct": 0.84,
+        "chg_5d_pct": 1.5,
+        "dist_52w_high_pct": -4.58,
+        "dist_ema200_pct": 9.79,
+        "avg_turnover_cr": 20.84,
+        "high_52w": 1479.6,
+        "momentum_score": 12,
+        "last_bar_date": "2026-09-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 23901.0,
+        "pe": 21.5,
+        "roce": 18.3,
+        "roe": 13.7,
+        "sales_growth_3_years": 18.0,
+        "profit_growth_3_years": 36.0,
+        "promoter_pct": 33.58,
+        "debt_to_equity": 0.46,
+        "revenue_ttm_cr": 27380.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "avoid": [
+    {
+      "id": "2d2df9029d",
+      "symbol": "WABAG",
+      "company": "VA Tech Wabag Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "offer for sale",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "VA Tech Wabag — water and wastewater treatment EPC",
+      "theme": "water_infra",
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹653.34 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "published_utc": "2026-09-24T16:55:22+00:00",
+      "sentence": "offer for sale",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": 16,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-6 Equity dilution (90% firm, sympathy at 40%)",
+        " 0 ₹653cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+10 fundamentals 72/100",
+        "+12 published Thu 22:25, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 4096.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 22:25, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2029.2,
+        "atr_pct": 3.98,
+        "expected_day_range_inr": 80.76,
+        "expected_day_range_pct": 3.98,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 72,
+      "fund_why": [
+        "+12 ROCE 21.3%",
+        "+4 ROE 15.9%",
+        "+2 P/E 31.8",
+        "+8 3y profit CAGR 93%",
+        "+3 3y sales CAGR 10%",
+        "+4 return on capital has improved from 14.2% to 20.3%",
+        "+5 D/E 0.09",
+        "-3 promoter 19.08%",
+        "+4 latest qtr PAT YoY 36.4%",
+        "+2 mcap ₹12,681 cr",
+        "+3 operating cash flow ₹207cr, only 56% of profit",
+        "-3 interest cover 4.71×",
+        "+3 institutions hold 24.58%",
+        "-4 price to book 4.92",
+        "  (returns counted +10 of +16 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +19 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 27.7% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 6.83% over past five years.",
+        "Promoter holding is low: 19.1%",
+        "Earnings include an other income of Rs.152 Cr.",
+        "Company has high debtors of 234 days."
+      ],
+      "ltp": 2029.199951171875,
+      "ta": {
+        "trend": "up",
+        "rsi": 46.6,
+        "adx": 13.4,
+        "atr_pct": 3.98,
+        "vol_ratio": 0.99,
+        "chg_1d_pct": -0.95,
+        "chg_5d_pct": -2.2,
+        "dist_52w_high_pct": -12.5,
+        "dist_ema200_pct": 17.49,
+        "avg_turnover_cr": 147.06,
+        "high_52w": 2319.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-24"
+      },
+      "fundamentals": {
+        "market_cap_cr": 12681.0,
+        "pe": 31.8,
+        "roce": 21.3,
+        "roe": 15.9,
+        "sales_growth_3_years": 10.0,
+        "profit_growth_3_years": 93.0,
+        "promoter_pct": 19.08,
+        "debt_to_equity": 0.09,
+        "revenue_ttm_cr": 4096.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "240829ab67",
+      "symbol": "IONEXCHANG",
+      "company": "ION Exchange (India) Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "offer for sale",
+      "also_matched": [
+        "l1_bidder"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Ion Exchange — water treatment",
+      "theme": "water_infra",
+      "themes_matched": [
+        "water_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹653.34 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "published": "Thu, 24 Sep 2026 16:55:22 GMT",
+      "published_utc": "2026-09-24T16:55:22+00:00",
+      "sentence": "offer for sale",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/lcc-projects-emerges-as-lowest-bidder-for-%E2%82%B9653-crore-rajasthan-irrigation-project-19997870.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": 2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-5 Equity dilution (90% firm, sympathy at 32%)",
+        " 0 ₹653cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "-10 fundamentals 0/100 — a pop on a weak balance sheet fades",
+        "+5 ADX 32 with the trend up — moves carry here",
+        "+12 published Thu 22:25, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 3032.11,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 22:25, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 430.1,
+        "atr_pct": 3.87,
+        "expected_day_range_inr": 16.64,
+        "expected_day_range_pct": 3.87,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 0,
+      "fund_why": [
+        "+0 ROCE 14.2%",
+        "+4 ROE 12%",
+        "-2 P/E 56",
+        "-6 3y profit CAGR -8%",
+        "+3 3y sales CAGR 14%",
+        "-6 return on capital has drifted from 35.6% to 21% — the newer capital earns less than the old",
+        "-4 ROCE 14.2% is the lowest in the years on the page",
+        "+2 D/E 0.36",
+        "-3 promoter 25.43%",
+        "-5 latest qtr PAT YoY -93.7%",
+        "+0 mcap ₹6,168 cr",
+        "-14 operating cash flow ₹-28cr — the business consumed cash last year",
+        "-3 interest cover 3.55×",
+        "-4 interest cost up 250% year on year",
+        "+3 institutions hold 20.18%",
+        "-10 profit has come in below the year-ago quarter 4 quarters running",
+        "-4 price to book 4.61",
+        "-6 ROCE 14.2% bought at 4.61× book is 3.1% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted -16 of -18 — its terms measure the same thing more than once, so the most it can cost is -16)"
+      ],
+      "fund_flags": [
+        "4 consecutive quarters of falling profit"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Promoter holding is low: 25.4%",
+        "Company might be capitalizing the interest cost",
+        "Dividend payout has been low at 11.2% of profits over last 3 years"
+      ],
+      "ltp": 430.1000061035156,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 57.7,
+        "adx": 31.6,
+        "atr_pct": 3.87,
+        "vol_ratio": 0.19,
+        "chg_1d_pct": 0.07,
+        "chg_5d_pct": 0.9,
+        "dist_52w_high_pct": -11.5,
+        "dist_ema200_pct": 6.82,
+        "avg_turnover_cr": 27.3,
+        "high_52w": 486.0,
+        "momentum_score": 77,
+        "last_bar_date": "2026-09-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 6168.0,
+        "pe": 56.0,
+        "roce": 14.2,
+        "roe": 12.0,
+        "sales_growth_3_years": 14.0,
+        "profit_growth_3_years": -8.0,
+        "promoter_pct": 25.43,
+        "debt_to_equity": 0.36,
+        "revenue_ttm_cr": 3032.11,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "7f47e75339",
+      "symbol": "POLICYBZR",
+      "company": "PB Fintech Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-today-september-25-tata-group-lemon-tree-hotels-pb-fintech-jsw-cement-and-more/article71506860.ece",
+      "title": "Buzzing stocks today: Tata Group, PB Fintech, JSW Cement and 10 other stocks in focus",
+      "published": "Fri, 25 Sep 2026 01:25:28 GMT",
+      "published_utc": "2026-09-25T01:25:28+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-today-september-25-tata-group-lemon-tree-hotels-pb-fintech-jsw-cement-and-more/article71506860.ece"
+      ],
+      "n_reports": 1,
+      "catalyst": -1,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "+3 down 36.0% into the news — less crowded",
+        "-6 28.1% below the 200-day average — fighting the trend",
+        "+12 published Fri 06:55, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 7334.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 06:55, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1207.2,
+        "atr_pct": 8.71,
+        "expected_day_range_inr": 105.15,
+        "expected_day_range_pct": 8.71,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_flags": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_caps": [],
+      "fund_unrated": true,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 41.9% CAGR over last 5 years",
+        "Company's median sales growth is 46.1% of last 10 years",
+        "Company's working capital requirements have reduced from 171 days to 68.1 days"
+      ],
+      "screener_cons": [
+        "Stock is trading at 7.64 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Tax rate seems low",
+        "Company has a low return on equity of 5.58% over last 3 years.",
+        "Earnings include an other income of Rs.370 Cr."
+      ],
+      "ltp": 1207.199951171875,
+      "ta": {
+        "trend": "down",
+        "rsi": 24.5,
+        "adx": 28.1,
+        "atr_pct": 8.71,
+        "vol_ratio": 10.55,
+        "chg_1d_pct": -36.0,
+        "chg_5d_pct": -31.6,
+        "dist_52w_high_pct": -38.54,
+        "dist_ema200_pct": -28.09,
+        "avg_turnover_cr": 386.41,
+        "high_52w": 1964.2,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-24"
+      },
+      "fundamentals": {
+        "market_cap_cr": 55864.0,
+        "pe": 74.7,
+        "roce": 10.3,
+        "roe": 9.75,
+        "sales_growth_3_years": 38.0,
+        "profit_growth_3_years": 50.0,
+        "debt_to_equity": 0.05,
+        "revenue_ttm_cr": 7334.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "10a16c4d9d",
+      "symbol": "INOXGREEN",
+      "company": "Inox Green Energy Services Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-waaree-energies-pb-fintech-lemon-tree-hotels-and-dr-lal-pathlabs/articleshow/134467817.cms",
+      "title": "Stocks in news: Waaree Energies, PB Fintech, Lemon Tree Hotels and Dr Lal PathLabs",
+      "published": "Fri, 25 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-25T00:30:00+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-waaree-energies-pb-fintech-lemon-tree-hotels-and-dr-lal-pathlabs/articleshow/134467817.cms"
+      ],
+      "n_reports": 1,
+      "catalyst": -6,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-12 Equity dilution (90% firm, named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        " 0 fundamentals 43/100",
+        "-6 3.2% below the 200-day average — fighting the trend",
+        "+12 published Fri 06:00, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 276.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 06:00, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 174.81,
+        "atr_pct": 3.81,
+        "expected_day_range_inr": 6.66,
+        "expected_day_range_pct": 3.81,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 43,
+      "fund_why": [
+        "+0 ROCE 8.42%",
+        "-4 ROE 5.62%",
+        "-2 P/E 57.2",
+        "+8 3y profit CAGR 69%",
+        "+0 3y sales CAGR 3%",
+        "+5 D/E 0.05",
+        "+4 promoter 56.12%",
+        "+4 latest qtr PAT YoY 86.4%",
+        "+0 mcap ₹7,012 cr",
+        "+3 operating cash flow ₹67cr, only 65% of profit",
+        "-12 interest cover -0.5× — thin",
+        "-4 price to book 4.12",
+        "-6 ROCE 8.42% bought at 4.12× book is 2% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +12 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 21.5% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 4.11 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "The company has delivered a poor sales growth of 10.3% over past five years.",
+        "Company has a low return on equity of 3.18% over last 3 years.",
+        "Earnings include an other income of Rs.175 Cr.",
+        "Company has high debtors of 216 days."
+      ],
+      "ltp": 174.80999755859375,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 49.6,
+        "adx": 16.8,
+        "atr_pct": 3.81,
+        "vol_ratio": 1.82,
+        "chg_1d_pct": 1.98,
+        "chg_5d_pct": 0.98,
+        "dist_52w_high_pct": -37.34,
+        "dist_ema200_pct": -3.25,
+        "avg_turnover_cr": 22.78,
+        "high_52w": 279.0,
+        "momentum_score": 2,
+        "last_bar_date": "2026-09-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 7012.0,
+        "pe": 57.2,
+        "roce": 8.42,
+        "roe": 5.62,
+        "sales_growth_3_years": 3.0,
+        "profit_growth_3_years": 69.0,
+        "promoter_pct": 56.12,
+        "debt_to_equity": 0.05,
+        "revenue_ttm_cr": 276.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "symbol": "LCCPROJECT",
+      "event": "l1_bidder",
+      "title": "LCC Projects emerges as lowest bidder for ₹653 crore Rajasthan irrigation project",
+      "source_id": "corp_orders",
+      "why": "no price history"
+    }
+  ],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
