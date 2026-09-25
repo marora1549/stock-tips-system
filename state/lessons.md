@@ -50,3 +50,9 @@ Events: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)
 
 ### 2026-09-24 [analyst]
 2026-09-24: quiet day, no stop/target/time-stop events. CGPOWER -0.92% (886.7 vs 894.9 entry, SL 855.9), LALPATHLAB +4.25% clean toward T1, KPIL -0.28%, all inside SL, deadlines (Oct 20/29) far off, no action. No source at n_resolved>=8 (max 1 of 50+), no auto-disable/commendation to report. fund-audit: no inversion (75-100 band still 1 scored, 0 settled, unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.
+
+### 2026-09-25 [analyst]
+2026-09-25: quiet day, no stop/target/time-stop events. CGPOWER -0.99% (886.0 vs 894.9 entry, SL 855.9), LALPATHLAB +3.77% clean toward T1, KPIL -0.88%, all inside SL, deadlines (Oct 20/29) far off, no action. No source at n_resolved>=8 (max 1 of 50+, V2RETAIL SL closed weeks back), no auto-disable/commendation to report. fund-audit: no inversion (75-100 band still 1 scored, 0 settled, unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.
+
+### 2026-09-25 [analyst]
+2026-09-25 (Friday input growth): registered chartink_double_bottom at confidence 0 -- the 5 existing screener sources (52w breakout, EMA20 pullback, Bollinger squeeze, RSI oversold bounce, volume shock) are all single-leg momentum/consolidation setups; the persona names confirmed double bottom as a valid pattern but nothing screens it. Clause: current low within 3% of a prior low over a 30-day lookback, breakout above the interim high on >1.3x 20d avg volume, liquid cash names only (>Rs5cr 20d turnover), price > Rs20. No login/payment required (public Chartink scan).
