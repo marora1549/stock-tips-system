@@ -509,17 +509,25 @@
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
-    "score": 0.0,
+    "score": -15.0,
     "n_tips": 600,
-    "n_resolved": 0,
+    "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 0,
+    "n_sl": 1,
     "n_timestop": 0,
-    "sum_return_pct": 0.0,
+    "sum_return_pct": -2.51,
     "days_to_t1": [],
-    "history": [],
+    "history": [
+      {
+        "date": "2026-09-28",
+        "symbol": "KPIL",
+        "outcome": "stop_loss",
+        "ret_pct": -2.51,
+        "delta": -15.0
+      }
+    ],
     "enabled": true,
     "first_seen": "2026-09-07",
     "last_seen": "2026-09-28",

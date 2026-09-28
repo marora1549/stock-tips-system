@@ -59,3 +59,17 @@ Events: V2RETAIL: STOP-LOSS @ 213.56 → closed, P&L ₹-1166.4 (-3.89%)
 
 ### 2026-09-28 [analyst]
 2026-09-28 (preopen): the only TRADE-grade catalyst, TCS 'earnings beat', was a stale story -- Goodreturns republished its July 9 2026 Q1FY27 results piece with a Sept 27 dateline, and freshness scoring gave it +12 for looking same-day. Dropped from trade after WebFetch confirmed the original publish date; the market has had 11 weeks to price it, and the chart (strong_down, 37.9% off 52w high) is consistent with stale news, not a fresh beat. Also found two theme-routing bugs polluting AVOID: solar_manufacturing's ' gw ' keyword matched Suzlon's (wind) '6.1 GW record deliveries' phrase and sympathy-routed WAAREEENER/PREMIERENE/WEBELSOLAR, which had nothing to do with Suzlon's results; power_generation's 'nuclear' keyword matched an unrelated Trump/Iran-war geopolitics story and routed a bogus 'Broker downgrade' to BHEL/THERMAX/TRITURBINE/LT. All 8 events stripped from today's news_raw.json before publish (backup kept alongside). This is a code fix, not a hand-edit: solar_manufacturing needs 'gw' gated on a solar-specific co-occurring term, and power_generation's 'nuclear' keyword needs narrowing (e.g. 'nuclear power plant'/'nuclear reactor') or a require: clause like solar_manufacturing already has, plus a regression fixture on this Suzlon/Iran-war pair in tests/test_events (or wherever theme routing is tested).
+
+### 2026-09-28 [machine]
+Events: KPIL: STOP-LOSS @ 1368.22 → closed, P&L ₹-740.88 (-2.51%)
+
+| factor | n | win% | avg ret% |
+|---|---|---|---|
+| bucket=hold-capable | 2 | 0 | -3.20 |
+| pattern=bollinger_squeeze | 2 | 0 | -3.20 |
+| pattern=momentum_aligned | 2 | 0 | -3.20 |
+| ta_conf=>=70 | 2 | 0 | -3.20 |
+| fund=>=65 | 2 | 0 | -3.20 |
+
+### 2026-09-28 [analyst]
+KPIL: stop hit in 8 days, only 0.94 ATR from the actual gap-down fill (1403.5), not the planned entry (1435.7) -- the fill landing 2.2% below plan quietly tightened the effective stop from 4.7% to 2.51%, after price had touched +4.07% favourable. Pattern (bollinger_squeeze) and hold-capable fundamentals (87) were sound; reads as a fill-price artifact, not a bad call. chartink_squeeze now at n_resolved=1, score -15 -- one point, not evidence yet. fund-audit: no inversion, no bias (markets_mojo mean gap +6.5, under the 8pt bar); still unproven, only 1 settled in the 75-100 band.

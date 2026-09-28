@@ -3,11 +3,12 @@
     "75-100": {
       "id": "75-100",
       "n": 1,
-      "n_settled": 0,
+      "n_settled": 1,
       "n_up": 0,
-      "sum_return_pct": 0.0,
+      "sum_return_pct": -2.51,
       "n_flagged": 0,
-      "first_seen": "2026-09-16"
+      "first_seen": "2026-09-16",
+      "last_settled": "2026-09-28"
     }
   },
   "entries": [
@@ -19,8 +20,9 @@
       "flags": [],
       "caps": [],
       "unrated": false,
-      "outcome": null,
-      "ret_pct": null
+      "outcome": "stop_loss",
+      "ret_pct": -2.51,
+      "settled_on": "2026-09-28"
     }
   ]
 }

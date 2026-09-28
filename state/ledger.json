@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 868.6,
+  "cash_inr": 29601.22,
   "positions": [
     {
       "pos_id": "2026-09-08-CGPOWER",
@@ -43,8 +43,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 4.03,
       "notes": [],
-      "ltp": 886.0,
-      "unrealised_pct": -0.99
+      "ltp": 865.0,
+      "unrealised_pct": -3.34
     },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -84,57 +84,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.6,
       "notes": [],
-      "ltp": 1952.300048828125,
-      "unrealised_pct": 3.77
-    },
-    {
-      "pos_id": "2026-09-16-KPIL",
-      "tip_id": "b5c9f95563",
-      "symbol": "KPIL",
-      "company": "Kalpataru Projects International Limited",
-      "opened": "2026-09-16",
-      "booked": "2026-09-16 08:41",
-      "status": "open",
-      "entry_plan": 1435.7,
-      "entry": 1403.5,
-      "qty": 21,
-      "qty_open": 21,
-      "capital_inr": 29473.5,
-      "stop_loss": 1368.22,
-      "initial_stop": 1368.22,
-      "targets": [
-        1548.41,
-        1623.55,
-        1736.26
-      ],
-      "targets_hit": [],
-      "fund_score_at_entry": 87,
-      "timeframe": "monthly",
-      "time_stop_days": 30,
-      "deadline": "2026-10-29",
-      "eta_days": [
-        38,
-        63,
-        90
-      ],
-      "pace_pct_day": 0.208,
-      "momentum_score": 43,
-      "source_id": "chartink_squeeze",
-      "corroborating_sources": [],
-      "ta_confidence": 71,
-      "fund_score": 87,
-      "composite": 68,
-      "bucket": "hold-capable",
-      "patterns": [
-        "bollinger_squeeze",
-        "momentum_aligned"
-      ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 4.07,
-      "notes": [],
-      "ltp": 1391.199951171875,
-      "unrealised_pct": -0.88
+      "ltp": 1942.0999755859375,
+      "unrealised_pct": 3.23
     }
   ],
   "closed": [
@@ -195,6 +146,68 @@
       "pnl_inr": -1166.4,
       "pnl_pct": -3.89,
       "days_held": 3
+    },
+    {
+      "pos_id": "2026-09-16-KPIL",
+      "tip_id": "b5c9f95563",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "opened": "2026-09-16",
+      "booked": "2026-09-16 08:41",
+      "status": "closed",
+      "entry_plan": 1435.7,
+      "entry": 1403.5,
+      "qty": 21,
+      "qty_open": 0,
+      "capital_inr": 29473.5,
+      "stop_loss": 1368.22,
+      "initial_stop": 1368.22,
+      "targets": [
+        1548.41,
+        1623.55,
+        1736.26
+      ],
+      "targets_hit": [],
+      "fund_score_at_entry": 87,
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": "2026-10-29",
+      "eta_days": [
+        38,
+        63,
+        90
+      ],
+      "pace_pct_day": 0.208,
+      "momentum_score": 43,
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "ta_confidence": 71,
+      "fund_score": 87,
+      "composite": 68,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned"
+      ],
+      "exits": [
+        {
+          "date": "2026-09-28",
+          "qty": 21,
+          "price": 1368.22,
+          "reason": "stop_loss",
+          "pnl_inr": -740.88
+        }
+      ],
+      "realised_inr": -740.88,
+      "max_favourable_pct": 4.07,
+      "notes": [],
+      "ltp": 1375.5999755859375,
+      "unrealised_pct": -1.99,
+      "closed": "2026-09-28",
+      "outcome": "stop_loss",
+      "pnl_inr": -740.88,
+      "pnl_pct": -2.51,
+      "days_held": 8
     }
   ],
   "equity_curve": [
@@ -249,6 +262,10 @@
     {
       "date": "2026-09-25",
       "equity": 99238.3
+    },
+    {
+      "date": "2026-09-28",
+      "equity": 97657.72
     }
   ],
   "created": "2026-09-07",
