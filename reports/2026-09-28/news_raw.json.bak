@@ -1,0 +1,1274 @@
+{
+  "date": "2026-09-28",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 4
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 8
+    },
+    "corp_expansion": {
+      "docs": 3,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 5,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "867826214d",
+      "symbol": "BLKASHYAP",
+      "company": "B. L. Kashyap and Sons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded a confirmed work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 183.18,
+      "size_estimated": false,
+      "size_basis": "Rs 183.18 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/b-l-kashyap-sons-wins-rs-91-57-crore-order-from-embassy-development-ltd-for-verde-phase-ii/46865845",
+      "title": "B L Kashyap & Sons wins Rs 183.18 crore order from Realkraft Ventures for civil works",
+      "published": "Sun, 27 Sep 2026 12:37:43 GMT",
+      "published_utc": "2026-09-27T12:37:43+00:00",
+      "sentence": "awarded a confirmed work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/b-l-kashyap-sons-wins-rs-91-57-crore-order-from-embassy-development-ltd-for-verde-phase-ii/46865845"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "50e9a0d985",
+      "symbol": "TCS",
+      "company": "Tata Consultancy Services Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat up 5% yoy to rs 13,349 crore, revenue jumps",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 358160.0,
+      "size_estimated": false,
+      "size_basis": "$40.7 billion",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.goodreturns.in/news/tcs-q1-results-full-report-it-giant-beats-estimates-cons-pat-up-5-to-rs-13349-crore-revenue-jumps-14-1521143.html",
+      "title": "TCS Q1 Results Full Report: IT Giant Beats Estimates, Cons PAT Up 5% YoY To Rs 13,349 Crore, Revenue Jumps 14%",
+      "published": "Sun, 27 Sep 2026 15:38:22 GMT",
+      "published_utc": "2026-09-27T15:38:22+00:00",
+      "sentence": "pat up 5% yoy to rs 13,349 crore, revenue jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/tcs-q1-results-full-report-it-giant-beats-estimates-cons-pat-up-5-to-rs-13349-crore-revenue-jumps-14-1521143.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "14a206295b",
+      "symbol": "AVL",
+      "company": "Aditya Vision Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/specials/news/india-s-space-sector-slow-burn-hard-won-successes-and-then-liftoff-126092700859_1.html",
+      "title": "India's space sector: Slow burn, hard-won successes - and then liftoff",
+      "published": "Sun, 27 Sep 2026 18:07:21 GMT",
+      "published_utc": "2026-09-27T18:07:21+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/specials/news/india-s-space-sector-slow-burn-hard-won-successes-and-then-liftoff-126092700859_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "831f5b493c",
+      "symbol": "VIKRAMSOLR",
+      "company": "Vikram Solar Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/specials/news/india-s-space-sector-slow-burn-hard-won-successes-and-then-liftoff-126092700859_1.html",
+      "title": "India's space sector: Slow burn, hard-won successes - and then liftoff",
+      "published": "Sun, 27 Sep 2026 18:07:21 GMT",
+      "published_utc": "2026-09-27T18:07:21+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/specials/news/india-s-space-sector-slow-burn-hard-won-successes-and-then-liftoff-126092700859_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b6e3328286",
+      "symbol": "BALRAMCHIN",
+      "company": "Balrampur Chini Mills Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/balrampur-chini-mills-q1-results-earnings-call-set-for-aug-12/47742008",
+      "title": "Balrampur Chini Mills profit falls 10% in Q1FY27; appoints Vartika Shukla",
+      "published": "Sun, 27 Sep 2026 12:46:56 GMT",
+      "published_utc": "2026-09-27T12:46:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/balrampur-chini-mills-q1-results-earnings-call-set-for-aug-12/47742008"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5d5513861e",
+      "symbol": "ROHLTD",
+      "company": "Royal Orchid Hotels Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit drops",
+      "also_matched": [
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/royal-orchid-hotels-q1-results-net-profit-falls-22-yoy-to-282-49-lakhs/47983430",
+      "title": "Royal Orchid Hotels consolidated profit drops 39% in Q1FY26",
+      "published": "Sun, 27 Sep 2026 12:23:01 GMT",
+      "published_utc": "2026-09-27T12:23:01+00:00",
+      "sentence": "profit drops",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/royal-orchid-hotels-q1-results-net-profit-falls-22-yoy-to-282-49-lakhs/47983430"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0f16a323fd",
+      "symbol": "SUZLON",
+      "company": "Suzlon Energy Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6100.0,
+        "unit": "MW",
+        "text": "6.1 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437",
+      "title": "Suzlon Energy net profit falls 6% in Q1FY27 despite record deliveries",
+      "published": "Sun, 27 Sep 2026 13:43:23 GMT",
+      "published_utc": "2026-09-27T13:43:23+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4e15d8bd60",
+      "symbol": "VSTL",
+      "company": "Vibhor Steel Tubes Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 293.69,
+      "size_estimated": false,
+      "size_basis": "₹293.69 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 156000.0,
+        "unit": "MTPA",
+        "text": "156,000 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vibhor-steel-tubes-q1-results-net-profit-falls-38-yoy-to-1-93-crore/47567001",
+      "title": "Vibhor Steel Tubes profit falls 39% as costs offset revenue surge",
+      "published": "Sun, 27 Sep 2026 13:37:19 GMT",
+      "published_utc": "2026-09-27T13:37:19+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/vibhor-steel-tubes-q1-results-net-profit-falls-38-yoy-to-1-93-crore/47567001"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0b4423ec72",
+      "symbol": "ADANIPOWER",
+      "company": "Adani Power Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+      "title": "Stocks in news: Adani Power, SAIL, BCCL, SAIL, Cupid and CleanMax Enviro",
+      "published": "Mon, 28 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-28T00:30:00+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9bdaf6bace",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html",
+      "title": "Iran war will be won very soon, pre-midterm strikes possible, says Trump",
+      "published": "Mon, 28 Sep 2026 01:57:21 GMT",
+      "published_utc": "2026-09-28T01:57:21+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e39de83ad1",
+      "symbol": "CLEANMAX",
+      "company": "Clean Max Enviro Energy Solutions Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "dilution",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 11058.57,
+        "unit": "MW",
+        "text": "11,058.57 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-fortis-healthcare-unichem-labs-clean-max-enviro-prestige-estates-signature-global-aequs-robokidz-eduventures-in-focus-on-28-september-14039471.html/amp",
+      "title": "Stocks to Watch Today: Fortis Healthcare, Unichem Labs, Clean Max Enviro, Prestige Estates, Signature...",
+      "published": "Mon, 28 Sep 2026 01:00:52 GMT",
+      "published_utc": "2026-09-28T01:00:52+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-fortis-healthcare-unichem-labs-clean-max-enviro-prestige-estates-signature-global-aequs-robokidz-eduventures-in-focus-on-28-september-14039471.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ca0325728c",
+      "symbol": "NMDC",
+      "company": "NMDC Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions ₹5,427 crore iron ore processing and pellet plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 135.0,
+        "unit": "km",
+        "text": "135 km"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/nmdc-commissions-5-427-crore-iron-ore-processing-pellet-plant/52052587",
+      "title": "NMDC commissions ₹5,427 crore iron ore processing and pellet plant in Chhattisgarh",
+      "published": "Sun, 27 Sep 2026 11:06:50 GMT",
+      "published_utc": "2026-09-27T11:06:50+00:00",
+      "sentence": "commissions ₹5,427 crore iron ore processing and pellet plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/nmdc-commissions-5-427-crore-iron-ore-processing-pellet-plant/52052587"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0d4357a615",
+      "symbol": "AEQUS",
+      "company": "Aequs Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "preferential issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+      "title": "Stocks in news: Adani Power, SAIL, BCCL, SAIL, Cupid and CleanMax Enviro",
+      "published": "Mon, 28 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-28T00:30:00+00:00",
+      "sentence": "preferential issue",
+      "corroborating_sources": [
+        "corp_orders"
+      ],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+        "https://www.tradingview.com/news/moodys:513e2c0fb99d8:0-top-stocks-in-focus-tomorrow-why-adani-power-sail-bccl-power-grid-cupid-kpi-must-be-on-radar-list-for-mon-28-sep/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "2186951236",
+      "symbol": "SAIL",
+      "company": "Steel Authority of India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "dilution",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-power-grid-cupid-sail-shares-on-monday-28-sept-triggers-11790558892670.html",
+      "title": "Top stocks in focus today: Investors must watch Power Grid, Cupid, SAIL shares on Monday, 28 Sept | Triggers",
+      "published": "Mon, 28 Sep 2026 02:04:57 GMT",
+      "published_utc": "2026-09-28T02:04:57+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [
+        "corp_orders"
+      ],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-power-grid-cupid-sail-shares-on-monday-28-sept-triggers-11790558892670.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+        "https://www.tradingview.com/news/moodys:513e2c0fb99d8:0-top-stocks-in-focus-tomorrow-why-adani-power-sail-bccl-power-grid-cupid-kpi-must-be-on-radar-list-for-mon-28-sep/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "5c08b995eb",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html",
+      "title": "Iran war will be won very soon, pre-midterm strikes possible, says Trump",
+      "published": "Mon, 28 Sep 2026 01:57:21 GMT",
+      "published_utc": "2026-09-28T01:57:21+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1962623efa",
+      "symbol": "BHARATCOAL",
+      "company": "Bharat Coking Coal Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+      "title": "Stocks in news: Adani Power, SAIL, BCCL, SAIL, Cupid and CleanMax Enviro",
+      "published": "Mon, 28 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-28T00:30:00+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [
+        "corp_orders"
+      ],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+        "https://www.tradingview.com/news/moodys:513e2c0fb99d8:0-top-stocks-in-focus-tomorrow-why-adani-power-sail-bccl-power-grid-cupid-kpi-must-be-on-radar-list-for-mon-28-sep/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "c0541af810",
+      "symbol": "TRITURBINE",
+      "company": "Triveni Turbine Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "theme",
+      "directness": 0.6,
+      "why_this_name": "Triveni Turbine — industrial steam turbines",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html",
+      "title": "Iran war will be won very soon, pre-midterm strikes possible, says Trump",
+      "published": "Mon, 28 Sep 2026 01:57:21 GMT",
+      "published_utc": "2026-09-28T01:57:21+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "27b58e2dd6",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 3174.31,
+      "size_estimated": false,
+      "size_basis": "₹3,174.31 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6100.0,
+        "unit": "MW",
+        "text": "6.1 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437",
+      "title": "Suzlon Energy net profit falls 6% in Q1FY27 despite record deliveries",
+      "published": "Sun, 27 Sep 2026 13:43:23 GMT",
+      "published_utc": "2026-09-27T13:43:23+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9ed08e929e",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 3174.31,
+      "size_estimated": false,
+      "size_basis": "₹3,174.31 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6100.0,
+        "unit": "MW",
+        "text": "6.1 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437",
+      "title": "Suzlon Energy net profit falls 6% in Q1FY27 despite record deliveries",
+      "published": "Sun, 27 Sep 2026 13:43:23 GMT",
+      "published_utc": "2026-09-27T13:43:23+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b70cb0b47d",
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "theme",
+      "directness": 0.5,
+      "why_this_name": "power EPC and heavy engineering",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html",
+      "title": "Iran war will be won very soon, pre-midterm strikes possible, says Trump",
+      "published": "Mon, 28 Sep 2026 01:57:21 GMT",
+      "published_utc": "2026-09-28T01:57:21+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a992c020a9",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 3174.31,
+      "size_estimated": false,
+      "size_basis": "₹3,174.31 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6100.0,
+        "unit": "MW",
+        "text": "6.1 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437",
+      "title": "Suzlon Energy net profit falls 6% in Q1FY27 despite record deliveries",
+      "published": "Sun, 27 Sep 2026 13:43:23 GMT",
+      "published_utc": "2026-09-27T13:43:23+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-today-investors-must-watch-power-grid-cupid-sail-shares-on-monday-28-sept-triggers-11790558892670.html",
+      "title": "Top stocks in focus today: Investors must watch Power Grid, Cupid, SAIL shares on Monday, 28 Sept | Triggers",
+      "published": "Mon, 28 Sep 2026 02:04:57 GMT",
+      "chars": 3761,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-fortis-healthcare-unichem-labs-clean-max-enviro-prestige-estates-signature-global-aequs-robokidz-eduventures-in-focus-on-28-september-14039471.html/amp",
+      "title": "Stocks to Watch Today: Fortis Healthcare, Unichem Labs, Clean Max Enviro, Prestige Estates, Signature...",
+      "published": "Mon, 28 Sep 2026 01:00:52 GMT",
+      "chars": 9874,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-505872/wpil-shares/news/3-indian-value-stocks-to-watch-in-september-2026",
+      "title": "3 Indian Value Stocks To Watch In September 2026",
+      "published": "Sun, 27 Sep 2026 20:31:29 GMT",
+      "chars": 11496,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-adani-power-sail-bccl-sail-cupid-and-cleanmax-enviro/articleshow/134495513.cms",
+      "title": "Stocks in news: Adani Power, SAIL, BCCL, SAIL, Cupid and CleanMax Enviro",
+      "published": "Mon, 28 Sep 2026 00:30:00 GMT",
+      "chars": 7007,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-september-28-2026-signatureglobal-indian-energy/52104646",
+      "title": "Stocks to Watch Today, September 28, 2026: Signatureglobal, Indian Energy Exchange, Rhetan TMT, Optivalue Tek Consulting and RPG Life Sciences",
+      "published": "Mon, 28 Sep 2026 01:35:20 GMT",
+      "chars": 5481,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://ca.finance.yahoo.com/news/lsl-property-services-2-other-001610228.html",
+      "title": "LSL Property Services And 2 Other British Undervalued Stocks To Watch",
+      "published": "Mon, 28 Sep 2026 00:16:00 GMT",
+      "chars": 3692,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/chartist-talk-technical-setup-suggests-nifty-may-find-it-challenging-to-defend-23-000-this-week-avoid-taking-fresh-exposure-in-hdfc-bank-says-sudeep-shah-14039469.html",
+      "title": "Chartist Talk: Nifty’s 23,000 support at risk next week? SBI Securities flags key levels, 2 stocks to...",
+      "published": "Mon, 28 Sep 2026 01:05:53 GMT",
+      "chars": 11169,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/moodys:513e2c0fb99d8:0-top-stocks-in-focus-tomorrow-why-adani-power-sail-bccl-power-grid-cupid-kpi-must-be-on-radar-list-for-mon-28-sep/",
+      "title": "Top stocks in focus tomorrow. Why Adani Power, SAIL, BCCL, Power Grid, Cupid, KPI must be on radar - List for Mon 28 Sep",
+      "published": "Sun, 27 Sep 2026 12:48:55 GMT",
+      "chars": 3574,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.upstreamonline.com/field-development/us-player-wins-survey-deal-for-iraqi-project/2-1-2049498",
+      "title": "US player wins survey deal for Iraqi project",
+      "published": "Mon, 28 Sep 2026 01:32:55 GMT",
+      "chars": 20000,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/rheinmetall-s-order-book-swells-as-investors-focus-on-the-36-percent/70188500",
+      "title": "Rheinmetall's Order Book Swells as Investors Focus on the 36% Year-to-Date Slide",
+      "published": "Sun, 27 Sep 2026 07:11:19 GMT",
+      "chars": 4022,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://scanx.trade/stock-market-news/companies/b-l-kashyap-sons-wins-rs-91-57-crore-order-from-embassy-development-ltd-for-verde-phase-ii/46865845",
+      "title": "B L Kashyap & Sons wins Rs 183.18 crore order from Realkraft Ventures for civil works",
+      "published": "Sun, 27 Sep 2026 12:37:43 GMT",
+      "chars": 5978,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://finance.biggo.com/news/3ddc1602-12c3-47d7-a38d-23c529d44e8a",
+      "title": "U.S. FDA Recommends Additional Clinical Trial for ABL Bio's Biliary Tract Cancer Drug, Clouding Approval Timeline",
+      "published": "Sun, 27 Sep 2026 22:25:00 GMT",
+      "chars": 6757,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/unichem-goa-facility-gets-5-usfda-observations-180109",
+      "title": "Unichem Goa Facility Gets 5 USFDA Observations",
+      "published": "Sun, 27 Sep 2026 15:49:19 GMT",
+      "chars": 2706,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/sanofi-india-faces-rs-2374-crore-gst-demand-over-alleged-excess-itc-claim-for-fy23-180108",
+      "title": "Sanofi India Faces Rs 23.74 Crore GST Demand Over Alleged Excess ITC Claim for FY23",
+      "published": "Sun, 27 Sep 2026 15:23:49 GMT",
+      "chars": 1588,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/us-fda-puts-hyderabad-firms-fish-masala-on-salmonella-import-alert-list/articleshow/134525704.cms",
+      "title": "US FDA puts Hyderabad firm’s Fish Masala on Salmonella import-alert list",
+      "published": "Sun, 27 Sep 2026 19:09:00 GMT",
+      "chars": 2552,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/unichem-laboratories-usfda-inspection-at-goa-facility-concludes-with-5-procedural-observations",
+      "title": "Unichem Laboratories USFDA Inspection At Goa Facility Concludes With 5 Procedural Observations",
+      "published": "Mon, 28 Sep 2026 01:16:54 GMT",
+      "chars": 3803,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/kkalpana-industries-q1-results-net-profit-falls-64-1-99-lakh/48091739",
+      "title": "Kkalpana Industries Q1 Results: Net profit falls 64% to ₹1.99 lakh",
+      "published": "Sun, 27 Sep 2026 12:44:21 GMT",
+      "chars": 3452,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.goodreturns.in/news/tcs-q1-results-full-report-it-giant-beats-estimates-cons-pat-up-5-to-rs-13349-crore-revenue-jumps-14-1521143.html",
+      "title": "TCS Q1 Results Full Report: IT Giant Beats Estimates, Cons PAT Up 5% YoY To Rs 13,349 Crore, Revenue Jumps 14%",
+      "published": "Sun, 27 Sep 2026 15:38:22 GMT",
+      "chars": 2919,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/jammu-kashmir-bank-q1-results-net-profit-falls-to-4-2b-yoy-revenue-up/46859510",
+      "title": "JK Bank Q1FY27 profit falls 12.5% as tax costs rise",
+      "published": "Mon, 28 Sep 2026 01:15:05 GMT",
+      "chars": 5940,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/suzlon-energy-q1-results-net-profit-falls-yoy-to-3-05b-margin-contracts/46773437",
+      "title": "Suzlon Energy net profit falls 6% in Q1FY27 despite record deliveries",
+      "published": "Sun, 27 Sep 2026 13:43:23 GMT",
+      "chars": 6036,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/vibhor-steel-tubes-q1-results-net-profit-falls-38-yoy-to-1-93-crore/47567001",
+      "title": "Vibhor Steel Tubes profit falls 39% as costs offset revenue surge",
+      "published": "Sun, 27 Sep 2026 13:37:19 GMT",
+      "chars": 5664,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/balrampur-chini-mills-q1-results-earnings-call-set-for-aug-12/47742008",
+      "title": "Balrampur Chini Mills profit falls 10% in Q1FY27; appoints Vartika Shukla",
+      "published": "Sun, 27 Sep 2026 12:46:56 GMT",
+      "chars": 5778,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/royal-orchid-hotels-q1-results-net-profit-falls-22-yoy-to-282-49-lakhs/47983430",
+      "title": "Royal Orchid Hotels consolidated profit drops 39% in Q1FY26",
+      "published": "Sun, 27 Sep 2026 12:23:01 GMT",
+      "chars": 5003,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/nmdc-commissions-5427-crore-integrated-slurry-pipeline-iron-ore-processing-and-pellet-project-in-chhattisgarh/articleshow/134521928.cms",
+      "title": "NMDC commissions ₹5,427-crore integrated slurry pipeline, iron ore processing and pellet project in Chhat",
+      "published": "Sun, 27 Sep 2026 14:31:00 GMT",
+      "chars": 2229,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/nmdc-commissions-rs-5-4k-cr-integrated-project-in-chhattisgarh/amp_articleshow/134528902.cms",
+      "title": "NMDC commissions Rs 5.4k cr integrated project in Chhattisgarh",
+      "published": "Sun, 27 Sep 2026 23:27:00 GMT",
+      "chars": 665,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/nmdc-commissions-5-427-crore-iron-ore-processing-pellet-plant/52052587",
+      "title": "NMDC commissions ₹5,427 crore iron ore processing and pellet plant in Chhattisgarh",
+      "published": "Sun, 27 Sep 2026 11:06:50 GMT",
+      "chars": 3867,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/trump-confirms-meeting-with-anthropic-ceo-repeats-dismissal-of-ai-fears-126092800065_1.html",
+      "title": "Trump confirms meeting with Anthropic CEO, repeats dismissal of AI fears",
+      "published": "Mon, 28 Sep 2026 02:27:29 GMT",
+      "chars": 4556,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/iran-war-will-be-won-very-soon-pre-midterm-strikes-possible-says-trump-126092800044_1.html",
+      "title": "Iran war will be won very soon, pre-midterm strikes possible, says Trump",
+      "published": "Mon, 28 Sep 2026 01:57:21 GMT",
+      "chars": 5059,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/aviation/indigo-flight-suffers-tail-strike-during-2nd-landing-attempt-at-bengaluru-126092700811_1.html",
+      "title": "IndiGo flight suffers tail strike during 2nd landing attempt at Bengaluru",
+      "published": "Sun, 27 Sep 2026 17:31:17 GMT",
+      "chars": 2250,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/cricket/news/india-vs-west-indies-1st-odi-live-streaming-when-and-where-to-watch-live-126092700245_1.html",
+      "title": "India vs West Indies 1st ODI live streaming: When and where to watch live",
+      "published": "Sun, 27 Sep 2026 07:50:52 GMT",
+      "chars": 5654,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/politics/cm-suvendu-adhikari-defends-ec-blames-mamata-for-deletions-in-bengal-sir-126092700381_1.html",
+      "title": "CM Suvendu Adhikari defends EC, blames Mamata for deletions in Bengal SIR",
+      "published": "Sun, 27 Sep 2026 14:42:23 GMT",
+      "chars": 7259,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/ed-attaches-rs-442-crore-assets-rummyculture-gameskraft-money-laundering-case-126092700382_1.html",
+      "title": "ED attaches ₹442 crore assets in RummyCulture money laundering case",
+      "published": "Sun, 27 Sep 2026 10:03:56 GMT",
+      "chars": 5618,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/amp/opinion/editorial/the-art-of-diplotainment-126092700826_1.html",
+      "title": "The art of 'diplotainment'",
+      "published": "Sun, 27 Sep 2026 17:32:55 GMT",
+      "chars": 2808,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/specials/news/india-s-space-sector-slow-burn-hard-won-successes-and-then-liftoff-126092700859_1.html",
+      "title": "India's space sector: Slow burn, hard-won successes - and then liftoff",
+      "published": "Sun, 27 Sep 2026 18:07:21 GMT",
+      "chars": 10367,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/hyundai-among-3-stock-ideas-for-today-from-sachin-gupta-of-choice-broking-126092800063_1.html",
+      "title": "Hyundai among 3 stock ideas for today from Sachin Gupta of Choice Broking",
+      "published": "Mon, 28 Sep 2026 07:48:35 +0530",
+      "chars": 167,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-updates-september-28-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126092800062_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Kospi down 2%; Brent rises on US-Iran tension",
+      "published": "Mon, 28 Sep 2026 07:42:36 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rebound-after-trump-rejects-peace-deal-to-resolve-iran-conflict-126092800042_1.html",
+      "title": "Oil prices rebound after Trump rejects peace deal to resolve Iran conflict",
+      "published": "Mon, 28 Sep 2026 07:37:15 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/markets-pricing-an-excessive-125bps-rate-hike-over-the-next-one-year-nomura-126092800059_1.html",
+      "title": "Markets pricing an excessive 125bps rate hike over the next one year: Nomura",
+      "published": "Mon, 28 Sep 2026 07:29:22 +0530",
+      "chars": 143,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/feeling-blue-near-40-of-nifty-stocks-down-over-20-31-trn-wiped-out-126092700709_1.html",
+      "title": "₹31 trn wiped out; nearly 40% of Nifty stocks down over 20% from 52-wk high",
+      "published": "Mon, 28 Sep 2026 07:19:12 +0530",
+      "chars": 164,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-falls-for-seventh-week-as-oil-us-yields-deepen-market-pressure-126092700635_1.html",
+      "title": "'Brace for more correction': Mkt outlook cautious after 7 weeks of decline",
+      "published": "Sun, 27 Sep 2026 23:58:57 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/trans-acnr-maharashtra-oil-among-nine-firms-filing-ipo-papers-with-sebi-126092700435_1.html",
+      "title": "Trans ACNR, Maharashtra Oil among nine firms filing IPO papers with Sebi",
+      "published": "Sun, 27 Sep 2026 17:38:03 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/bullion-may-stay-volatile-as-us-data-w-asia-tensions-take-focus-analysts-126092700447_1.html",
+      "title": "Bullion may stay volatile as US data, W Asia tensions take focus: Analysts",
+      "published": "Sun, 27 Sep 2026 17:12:43 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-28-crude-oil-gains-to-106-as-trump-rejects-iran-deal-where-are-prices-headed/articleshow/134529904.cms",
+      "title": "Oil Price Today (September 28): Crude oil gains to $106 as Trump rejects Iran deal. Where are prices headed?",
+      "published": "Mon, 28 Sep 2026 07:42:24 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-6-stocks-cross-above-their-200-dmas/slideshow/134529896.cms",
+      "title": "Positive Breakout: These 6 stocks cross above their 200 DMAs",
+      "published": "Mon, 28 Sep 2026 07:36:42 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-outlook-analysts-pick-key-levels-and-stocks-to-watch/articleshow/134529707.cms",
+      "title": "Nifty faces crucial test at key support level of 23,000: Analysts",
+      "published": "Mon, 28 Sep 2026 07:36:14 +0530",
+      "chars": 390,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/precious-fed-tightening-bets-weigh-on-gold-prices/articleshow/134529772.cms",
+      "title": "PRECIOUS-Fed tightening bets weigh on gold prices",
+      "published": "Mon, 28 Sep 2026 07:31:45 +0530",
+      "chars": 460,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-heads-higher-as-us-iran-peace-talks-in-stalemate/articleshow/134529749.cms",
+      "title": "Oil heads higher as US-Iran peace talks in stalemate",
+      "published": "Mon, 28 Sep 2026 07:29:41 +0530",
+      "chars": 455,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-firms-as-us-iran-tensions-lift-oil-hawkish-fed-bets-build/articleshow/134529719.cms",
+      "title": "Dollar firms as US-Iran tensions lift oil, hawkish Fed bets build",
+      "published": "Mon, 28 Sep 2026 07:28:22 +0530",
+      "chars": 406,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-rupee-bonds-vulnerable-to-oil-pangs-on-waning-iran-diplomacy-hopes/articleshow/134529686.cms",
+      "title": "Indian rupee, bonds vulnerable to oil pangs on waning Iran diplomacy hopes",
+      "published": "Mon, 28 Sep 2026 07:26:47 +0530",
+      "chars": 425,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/silver-touch-technologies-receives-isro-purchase-order-for-workstations-delivery-by-february-2-2027",
+      "title": "Silver Touch Technologies Receives ISRO Purchase Order For Workstations Delivery By February 2, 2027",
+      "published": "Mon, 28 Sep 2026 01:12:53 GMT",
+      "chars": 5065,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/signatureglobal-acquires-and-collaborates-for-194-22-acre-gurugram-land-parcel-with-5-500-6-000-crore-estimated-gdv",
+      "title": "Signatureglobal Acquires and Collaborates For 194.22-Acre Gurugram Land Parcel With ₹5,500-6,000 Crore Estimated GDV",
+      "published": "Mon, 28 Sep 2026 00:46:56 GMT",
+      "chars": 3982,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/rhetan-tmt-executes-mou-with-bajaj-tubular-estimating-250-300-crore-potential",
+      "title": "Rhetan TMT Executes MOU With Bajaj Tubular, Estimating ₹250-300 Crore Potential",
+      "published": "Mon, 28 Sep 2026 00:58:18 GMT",
+      "chars": 4878,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/indian-energy-exchange-subsidiary-applies-for-coal-exchange-registration",
+      "title": "Indian Energy Exchange Subsidiary Applies For Coal Exchange Registration",
+      "published": "Mon, 28 Sep 2026 00:50:48 GMT",
+      "chars": 4331,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/unichem-laboratories-usfda-inspection-at-goa-facility-concludes-with-5-procedural-observations",
+      "title": "Unichem Laboratories USFDA Inspection At Goa Facility Concludes With 5 Procedural Observations",
+      "published": "Mon, 28 Sep 2026 01:16:54 GMT",
+      "chars": 3803,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 114.8
+}
