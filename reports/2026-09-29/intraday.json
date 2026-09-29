@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-29",
+  "checked_at": "2026-09-29 09:36",
+  "candidates": [
+    {
+      "symbol": "ELLEN",
+      "company": "Ellenbarrie Industrial Gases Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "catalyst": 67,
+      "verdict": "TRADE",
+      "verdict_note": "worth a plan for the open",
+      "reasons": [
+        "opened at ₹394.95, a +7.18% gap on ₹368.50",
+        "first 15 minutes ran ₹368.20–₹394.95 (7.27%) and closed 8% up that range"
+      ],
+      "size_inr_cr": 480.73,
+      "size_estimated": false,
+      "materiality_ratio": 1.35,
+      "revenue_ttm_cr": 356.0,
+      "fund_score": 64,
+      "fund_why": [
+        "+0 ROCE 14.5%",
+        "+4 ROE 12.9%",
+        "-2 P/E 41.9",
+        "+8 3y profit CAGR 64%",
+        "+6 3y sales CAGR 19%",
+        "-6 return on capital has drifted from 21% to 15% — the newer capital earns less than the old",
+        "+5 D/E 0.19",
+        "+4 promoter 77.15%",
+        "+4 latest qtr PAT YoY 84.2%",
+        "+0 mcap ₹5,060 cr",
+        "+8 operating cash flow ₹133cr, 128% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: 25.3% last year against 84.4% the year before",
+        "+4 interest cover 19×",
+        "-4 price to book 5.18",
+        "-6 ROCE 14.5% bought at 5.18× book is 2.8% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)"
+      ],
+      "source_id": "corp_orders",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "directness": 1.0,
+      "route": "named",
+      "why_this_name": "named in the story",
+      "theme": null,
+      "ltp": 368.5,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.4,
+        "adx": 23.4,
+        "atr_pct": 5.28,
+        "vol_ratio": 0.62,
+        "chg_1d_pct": 3.02,
+        "chg_5d_pct": -1.23,
+        "dist_52w_high_pct": -26.59,
+        "dist_ema200_pct": 15.21,
+        "avg_turnover_cr": 38.09,
+        "high_52w": 502.0,
+        "momentum_score": 88,
+        "last_bar_date": "2026-09-25"
+      },
+      "fundamentals": {
+        "market_cap_cr": 5060.0,
+        "pe": 41.9,
+        "roce": 14.5,
+        "roe": 12.9,
+        "sales_growth_3_years": 19.0,
+        "profit_growth_3_years": 64.0,
+        "promoter_pct": 77.15,
+        "debt_to_equity": 0.19,
+        "revenue_ttm_cr": 356.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 19:04, outside market hours — the move is still ahead of the open"
+      },
+      "class_score": {
+        "n": 4,
+        "avg_open_to_high_pct": 0.66,
+        "avg_open_to_close_pct": -2.29,
+        "hit_rate": 0.5,
+        "adjust": -7.51,
+        "untested": false
+      },
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "catalyst_reasons": [
+        "+22 Order win",
+        "+26 ₹481cr against ₹356cr of revenue — 1.4× a year's sales, more than a full year of revenue",
+        "+4 fundamentals 64/100",
+        "+12 published Mon 19:04, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "band": "runaway",
+      "band_rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+      "gap_pct": 7.18,
+      "open": 394.95,
+      "prev_close": 368.5,
+      "opening_range": {
+        "open": 394.95,
+        "high": 394.95,
+        "low": 368.2,
+        "close": 370.35,
+        "span_inr": 26.75,
+        "span_pct": 7.27,
+        "close_position": 0.08,
+        "volume": 1430174.0,
+        "bars": 3,
+        "minutes": 15,
+        "from": "09:15",
+        "to": "09:25"
+      },
+      "vwap": 376.92,
+      "last": 374.25,
+      "day_high": 394.95,
+      "day_low": 368.2,
+      "or_volume_multiple": 30.84,
+      "from_open_pct": -5.24,
+      "acts": false,
+      "why_not": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+      "watch": {
+        "kind": "vwap_reclaim",
+        "vwap": 376.92,
+        "has_traded_below_vwap": true,
+        "reclaimed_now": false,
+        "note": "waiting for a pullback to VWAP ₹376.92; there is no entry until then"
+      },
+      "state": "voided",
+      "size": {
+        "qty": 0
+      }
+    }
+  ],
+  "trades": [],
+  "book": {
+    "notional_inr": 100000.0,
+    "n_trades": 0,
+    "n_open": 0,
+    "open_symbols": [],
+    "n_wins": 0,
+    "n_losses": 0,
+    "hit_rate": null,
+    "pnl_inr": 0,
+    "return_on_notional_pct": 0.0,
+    "avg_r": null,
+    "best_inr": 0,
+    "worst_inr": 0,
+    "avg_win_inr": null,
+    "avg_loss_inr": null,
+    "n_days_traded": 0,
+    "pnl_by_day": {},
+    "n_candidates_seen": 1
+  },
+  "settled": false
+}
