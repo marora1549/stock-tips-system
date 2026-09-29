@@ -2,7 +2,7 @@
   "buckets": {
     "75-100": {
       "id": "75-100",
-      "n": 1,
+      "n": 2,
       "n_settled": 1,
       "n_up": 0,
       "sum_return_pct": -2.51,
@@ -23,6 +23,17 @@
       "outcome": "stop_loss",
       "ret_pct": -2.51,
       "settled_on": "2026-09-28"
+    },
+    {
+      "date": "2026-09-29",
+      "symbol": "HEROMOTOCO",
+      "score": 87,
+      "bucket": "75-100",
+      "flags": [],
+      "caps": [],
+      "unrated": false,
+      "outcome": null,
+      "ret_pct": null
     }
   ]
 }

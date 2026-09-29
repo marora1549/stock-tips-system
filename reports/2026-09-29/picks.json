@@ -1,0 +1,489 @@
+{
+  "date": "2026-09-29",
+  "top": [
+    {
+      "symbol": "HEROMOTOCO",
+      "company": "Hero MotoCorp Limited",
+      "tip_id": "9b59c59645",
+      "source_id": "chartink_ema_pullback",
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "n_mentions": 2,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/heromotoco.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Hero Motocorp Limited (NSE: HEROMOTOCO) LTP 5390 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 0.56%, volume 340540.",
+      "ltp": 5390.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 5390.0,
+        "entry_zone": [
+          5363.05,
+          5416.95
+        ],
+        "stop_loss": 5140.67,
+        "stop_loss_pct": 4.63,
+        "stop_basis": "below support",
+        "targets": [
+          5551.39,
+          5803.0,
+          5937.0
+        ],
+        "target_pct": [
+          2.99,
+          7.66,
+          10.15
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "resistance",
+          "resistance"
+        ],
+        "reward_risk_t2": 1.66,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 73,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 51.3 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+3 pattern bollinger_squeeze",
+          "+4 pattern momentum_aligned",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-6 no directional drift to put a date on T1"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 0,
+        "efficiency": 0.044,
+        "amplitude_pct_day": 1.148,
+        "eta_days": [
+          null,
+          null,
+          null
+        ],
+        "eta_basis": "no measurable directional drift",
+        "pace_pct_day": -0.051,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 51.3,
+        "atr_pct": 2.0,
+        "adx": 19.5,
+        "vol_ratio": 0.63,
+        "patterns": [
+          "bollinger_squeeze",
+          "momentum_aligned",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -15.63,
+        "dist_ema20_pct": 0.59,
+        "dist_ema200_pct": 2.4,
+        "avg_turnover_cr": 286.6,
+        "chg_5d_pct": -0.54,
+        "chg_20d_pct": -1.1,
+        "high_52w": 6388.5,
+        "last_bar_date": "2026-09-28",
+        "momentum_score": 0,
+        "drift_pct_day": -0.051,
+        "efficiency": 0.044,
+        "amplitude_pct_day": 1.148,
+        "up_day_share": 0.5
+      },
+      "resistances": [
+        {
+          "price": 5471.5,
+          "touches": 2
+        },
+        {
+          "price": 5803.0,
+          "touches": 2
+        },
+        {
+          "price": 5937.0,
+          "touches": 1
+        },
+        {
+          "price": 6388.5,
+          "touches": 1
+        }
+      ],
+      "supports": [
+        {
+          "price": 5166.5,
+          "touches": 2
+        },
+        {
+          "price": 4918.88,
+          "touches": 4
+        },
+        {
+          "price": 4747.1,
+          "touches": 1
+        },
+        {
+          "price": 4671.5,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 73,
+      "fund_score": 87,
+      "fund_why": [
+        "+12 ROCE 35.2%",
+        "+8 ROE 28.1%",
+        "+6 P/E 19.5",
+        "+8 3y profit CAGR 28%",
+        "+3 3y sales CAGR 12%",
+        "+4 return on capital has improved from 26.2% to 31.3%",
+        "+5 D/E 0.04",
+        "+0 promoter 34.73%",
+        "-5 latest qtr PAT YoY -16.9%",
+        "+4 mcap ₹107,876 cr",
+        "+8 operating cash flow ₹8,315cr, 144% of profit — profit is turning into cash",
+        "+3 institutions hold 55.35%",
+        "-4 price to book 4.99",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +10 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Stock is providing a good dividend yield of 3.43%.",
+        "Company has been maintaining a healthy dividend payout of 71.5%",
+        "Debtor days have improved from 24.5 to 18.0 days."
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 8.90% over past five years."
+      ],
+      "fundamentals": {
+        "market_cap_cr": 107876.0,
+        "pe": 19.5,
+        "roce": 35.2,
+        "roe": 28.1,
+        "sales_growth_3_years": 12.0,
+        "profit_growth_3_years": 28.0,
+        "promoter_pct": 34.73,
+        "debt_to_equity": 0.04,
+        "np_yoy_growth_pct": -16.9,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 15.85,
+        "profit_growth_1y_pct": 31.99,
+        "cfo_cr": 8315.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": 11.3,
+        "institutional_pct": 55.35,
+        "sector": "Automobile and Auto Components",
+        "industry": "Automobiles"
+      },
+      "source_weight": 0.523,
+      "source_confidence": 50,
+      "composite": 70,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 87"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 73"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace -0.051%/session — mostly chop"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 26950.0,
+      "alloc_qty": 5
+    },
+    {
+      "symbol": "PETRONET",
+      "company": "Petronet LNG",
+      "tip_id": "262b7fad00",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "broker:emkay",
+        "brokerage_gnews",
+        "broker:nomura"
+      ],
+      "n_mentions": 5,
+      "src_targets": [
+        345.0,
+        360.0,
+        362.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/petronet-lng-shares-nomura-retains-buy-target-price-rs345-kochi-pipeline-seen-driving-utilisation-14039677.html",
+        "https://www.moneycontrol.com/news/business/stocks/buy-petronet-lng-target-of-rs-360-emkay-global-financial-14039736.html",
+        "https://www.moneycontrol.com/news/business/stocks/buy-petronet-lng-target-of-rs-360-emkay-global-financial-14039736.html/amp",
+        "https://www.moneycontrol.com/news/business/stocks/buy-petronet-lng-target-of-rs-362-motilal-oswal-2-14039893.html"
+      ],
+      "brokerages": [
+        "emkay",
+        "motilal",
+        "nomura"
+      ],
+      "sentence": "Buy Petronet LNG; target of Rs 362: Motilal Oswal. In this note, we highlight the following: 1) Kochi terminal could emerge as a new earnings driver for PLNG: a) Gassing Up and Cooling Down (GUCD) is emerging as a new earnings stream, with annual revenue potential of INR1b, as turnaround time has al",
+      "ltp": 289.8500061035156,
+      "plan": {
+        "timeframe": "long",
+        "entry": 289.85,
+        "entry_zone": [
+          288.4,
+          291.3
+        ],
+        "stop_loss": 276.86,
+        "stop_loss_pct": 4.48,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          307.19,
+          318.75,
+          326.4
+        ],
+        "target_pct": [
+          5.98,
+          9.97,
+          12.61
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "52w high"
+        ],
+        "reward_risk_t2": 2.22,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 75,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 54.0 healthy momentum",
+          "+5 volume 2.03× avg on up day",
+          "+3 pattern bollinger_squeeze",
+          "+6 pattern double_bottom_confirmed",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "-6 no directional drift to put a date on T1"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          345.0,
+          360.0,
+          362.0
+        ],
+        "src_stop": null,
+        "momentum_score": 0,
+        "efficiency": 0.178,
+        "amplitude_pct_day": 0.984,
+        "eta_days": [
+          null,
+          null,
+          null
+        ],
+        "eta_basis": "no measurable directional drift",
+        "pace_pct_day": -0.176,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.0,
+        "atr_pct": 1.99,
+        "adx": 18.5,
+        "vol_ratio": 2.03,
+        "patterns": [
+          "bollinger_squeeze",
+          "double_bottom_confirmed",
+          "pullback_to_ema20_in_uptrend"
+        ],
+        "dist_52w_high_pct": -11.2,
+        "dist_ema20_pct": 1.0,
+        "dist_ema200_pct": 2.44,
+        "avg_turnover_cr": 41.57,
+        "chg_5d_pct": 0.82,
+        "chg_20d_pct": -3.58,
+        "high_52w": 326.4,
+        "last_bar_date": "2026-09-28",
+        "momentum_score": 0,
+        "drift_pct_day": -0.176,
+        "efficiency": 0.178,
+        "amplitude_pct_day": 0.984,
+        "up_day_share": 0.45
+      },
+      "resistances": [
+        {
+          "price": 293.35,
+          "touches": 2
+        },
+        {
+          "price": 301.28,
+          "touches": 2
+        },
+        {
+          "price": 326.4,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 278.25,
+          "touches": 1
+        },
+        {
+          "price": 270.65,
+          "touches": 4
+        },
+        {
+          "price": 260.68,
+          "touches": 2
+        },
+        {
+          "price": 235.35,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 75,
+      "fund_score": 76,
+      "fund_why": [
+        "+12 ROCE 22.6%",
+        "+8 ROE 18.3%",
+        "+6 P/E 10.3",
+        "+0 3y profit CAGR 5%",
+        "-4 3y sales CAGR -10%",
+        "-6 return on capital has drifted from 28.6% to 24.7% — the newer capital earns less than the old",
+        "+5 D/E 0.11",
+        "+4 promoter 50%",
+        "+4 latest qtr PAT YoY 35%",
+        "+2 mcap ₹43,478 cr",
+        "+8 operating cash flow ₹4,750cr, 121% of profit — profit is turning into cash",
+        "+4 interest cover 30.1×",
+        "+3 institutions hold 39.95%",
+        "+3 price to book 1.95",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 39.0%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 10.8% over past five years."
+      ],
+      "fundamentals": {
+        "market_cap_cr": 43478.0,
+        "pe": 10.3,
+        "roce": 22.6,
+        "roe": 18.3,
+        "sales_growth_3_years": -10.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 50.0,
+        "debt_to_equity": 0.11,
+        "np_yoy_growth_pct": 35.0,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": -14.69,
+        "profit_growth_1y_pct": -1.51,
+        "cfo_cr": 4750.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": -11.9,
+        "interest_cover": 30.1,
+        "institutional_pct": 39.95,
+        "sector": "Oil, Gas & Consumable Fuels",
+        "industry": "Gas"
+      },
+      "source_weight": 0.424,
+      "source_confidence": 23,
+      "composite": 65,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound fundamentals",
+          "tone": "good",
+          "why": "business score 76"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 75"
+        },
+        {
+          "key": "sluggish",
+          "label": "Sluggish",
+          "tone": "warn",
+          "why": "pace -0.176%/session — mostly chop"
+        },
+        {
+          "key": "corroborated",
+          "label": "5 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [
+    {
+      "symbol": "HEROMOTOCO",
+      "composite": 70,
+      "alloc_inr": 26950.0,
+      "alloc_qty": 5
+    }
+  ],
+  "booked": [
+    "2026-09-29-HEROMOTOCO"
+  ],
+  "cash_after": 2651.22,
+  "watch": [
+    "VADILALIND",
+    "GLAXO",
+    "APLAPOLLO",
+    "LALPATHLAB",
+    "OBEROIRLTY",
+    "AJANTPHARM",
+    "SKFINDUS",
+    "EMIL"
+  ]
+}
