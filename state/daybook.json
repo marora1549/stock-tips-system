@@ -66,6 +66,30 @@
       "candidates": [],
       "trades": [],
       "settled": true
+    },
+    "2026-09-29": {
+      "date": "2026-09-29",
+      "candidates": [
+        {
+          "symbol": "ELLEN",
+          "company": "Ellenbarrie Industrial Gases Limited",
+          "event": "order_win",
+          "event_label": "Order win",
+          "catalyst": 67,
+          "verdict": "TRADE",
+          "size_inr_cr": 480.73,
+          "materiality_ratio": 1.35,
+          "fund_score": 64,
+          "source_id": "corp_orders",
+          "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+          "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+          "directness": 1.0,
+          "route": "named",
+          "ltp": 368.5
+        }
+      ],
+      "trades": [],
+      "settled": false
     }
   },
   "closed": []

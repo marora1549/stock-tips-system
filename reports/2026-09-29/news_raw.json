@@ -1,0 +1,1400 @@
+{
+  "date": "2026-09-29",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 3,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "a8aeb86e16",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 480.73,
+      "size_estimated": false,
+      "size_basis": "Rs 480.73 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "published_utc": "2026-09-28T13:34:16+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "69d4f77439",
+      "symbol": "ELLEN",
+      "company": "Ellenbarrie Industrial Gases Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 480.73,
+      "size_estimated": false,
+      "size_basis": "Rs 480.73 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "published_utc": "2026-09-28T13:34:16+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "57891b8c2d",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:140c00f7db77c:0-kalpataru-projects-rises-2-5-despite-market-sell-off-here-s-what-s-in-focus/",
+      "title": "Kalpataru Projects rises 2.5% despite market sell-off | Here's what's in focus",
+      "published": "Mon, 28 Sep 2026 13:10:25 GMT",
+      "published_utc": "2026-09-28T13:10:25+00:00",
+      "sentence": "received a letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:140c00f7db77c:0-kalpataru-projects-rises-2-5-despite-market-sell-off-here-s-what-s-in-focus/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7ae7092370",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures multi-village drinking water project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1076.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,076 cr",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ncc-secures-multi-village-drinking-water-project-worth-rs-1-076-cr-126092801134_1.html",
+      "title": "NCC secures multi-village drinking water project worth Rs 1,076 cr",
+      "published": "Mon, 28 Sep 2026 13:46:02 GMT",
+      "published_utc": "2026-09-28T13:46:02+00:00",
+      "sentence": "secures multi-village drinking water project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/ncc-secures-multi-village-drinking-water-project-worth-rs-1-076-cr-126092801134_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "35585fd022",
+      "symbol": "NEWGEN",
+      "company": "Newgen Software Technologies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags rs 53-cr contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/newgen-software-bags-rs-53-cr-contract-from-us-health-insurer-126092900101_1.html",
+      "title": "Newgen Software bags Rs 53-cr contract from US health insurer",
+      "published": "Tue, 29 Sep 2026 08:04:02 +0530",
+      "published_utc": "2026-09-29T02:34:02+00:00",
+      "sentence": "bags rs 53-cr contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/newgen-software-bags-rs-53-cr-contract-from-us-health-insurer-126092900101_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "64f0b7dfa5",
+      "symbol": "PARAS",
+      "company": "Paras Defence and Space Technologies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Paras Defence — optics and drones",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 26.59,
+      "size_estimated": false,
+      "size_basis": "Rs 26.59 cr",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/paras-receives-order-worth-rs-26-59-cr-from-drdo-126092800694_1.html",
+      "title": "Paras receives order worth Rs 26.59 cr from DRDO",
+      "published": "Mon, 28 Sep 2026 10:01:34 GMT",
+      "published_utc": "2026-09-28T10:01:34+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/paras-receives-order-worth-rs-26-59-cr-from-drdo-126092800694_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/nifty-september-futures-trade-at-a-premium-126092800794_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "12005fc4a9",
+      "symbol": "POWERMECH",
+      "company": "Power Mech Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures o&m order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 279.2,
+      "size_estimated": false,
+      "size_basis": "Rs 279.20 cr",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 800.0,
+        "unit": "MW",
+        "text": "800 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/power-mech-projects-secures-o-m-order-worth-rs-279-20-cr-126092801110_1.html",
+      "title": "Power Mech Projects secures O&M order worth Rs 279.20 cr",
+      "published": "Mon, 28 Sep 2026 13:34:08 GMT",
+      "published_utc": "2026-09-28T13:34:08+00:00",
+      "sentence": "secures o&m order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/power-mech-projects-secures-o-m-order-worth-rs-279-20-cr-126092801110_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3cea9211ef",
+      "symbol": "VIKRAMSOLR",
+      "company": "Vikram Solar Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 400 mw module supply order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html",
+      "title": "Vikram Solar secures 400 MW module supply order from renowned EPC customer",
+      "published": "Mon, 28 Sep 2026 13:46:10 GMT",
+      "published_utc": "2026-09-28T13:46:10+00:00",
+      "sentence": "secures 400 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5032727df3",
+      "symbol": "ASTRAZEN",
+      "company": "AstraZeneca Pharma India Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "us fda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://finance.yahoo.com/healthcare/articles/astrazeneca-files-us-fda-approval-004229117.html",
+      "title": "AstraZeneca files for US FDA approval of HUTCHMED lung cancer drug combination",
+      "published": "Tue, 29 Sep 2026 00:42:00 GMT",
+      "published_utc": "2026-09-29T00:42:00+00:00",
+      "sentence": "us fda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://finance.yahoo.com/healthcare/articles/astrazeneca-files-us-fda-approval-004229117.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0e992d0269",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "us fda lupin receives tentative approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/lupin-receives-tentative-approval-for-anticoagulant-apixaban-from-us-fda-126092800607_1.html",
+      "title": "Lupin receives tentative approval for anticoagulant Apixaban from US FDA",
+      "published": "Mon, 28 Sep 2026 09:20:49 GMT",
+      "published_utc": "2026-09-28T09:20:49+00:00",
+      "sentence": "us fda lupin receives tentative approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/lupin-receives-tentative-approval-for-anticoagulant-apixaban-from-us-fda-126092800607_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "be565df869",
+      "symbol": "DEEPA",
+      "company": "Deepa Jewellers Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/deepa-jewellers-q1-results-net-profit-rises-27-to-rs-26-76-crore-revenue-up-39/",
+      "title": "Deepa Jewellers Q1 results: Net profit rises 27% YoY to Rs 26.76 crore, revenue up 39%",
+      "published": "Mon, 28 Sep 2026 08:05:39 GMT",
+      "published_utc": "2026-09-28T08:05:39+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/finance/stock-market/quarterly-results/deepa-jewellers-q1-results-net-profit-rises-27-to-rs-26-76-crore-revenue-up-39/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fb6abd7b7f",
+      "symbol": "DYCL",
+      "company": "Dynamic Cables Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.1,
+      "size_estimated": false,
+      "size_basis": "₹10 lakh",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dynamic-cables-reports-insider-trading-violation-designated-person/52139617",
+      "title": "Dynamic Cables reports insider trading violation by designated person",
+      "published": "Mon, 28 Sep 2026 11:17:59 GMT",
+      "published_utc": "2026-09-28T11:17:59+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/dynamic-cables-reports-insider-trading-violation-designated-person/52139617"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f92919a7a6",
+      "symbol": "KIRLOSENG",
+      "company": "Kirloskar Oil Engines Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/kirloskar-oil-engines-gets-9-06-crore-gst-notice-fy23/52152479",
+      "title": "Kirloskar Oil Engines gets ₹9.06 crore GST notice for FY23",
+      "published": "Mon, 28 Sep 2026 14:50:16 GMT",
+      "published_utc": "2026-09-28T14:50:16+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kirloskar-oil-engines-gets-9-06-crore-gst-notice-fy23/52152479"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c0984b155d",
+      "symbol": "UNITEDTEA",
+      "company": "The United Nilgiri Tea Estates Company Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "import alert",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/us-fda-flags-hyd-exporters-rice-shipments-over-pesticide-residue-concerns/amp_articleshow/134548910.cms",
+      "title": "US FDA flags Hyd exporter’s rice shipments over pesticide residue concerns",
+      "published": "Mon, 28 Sep 2026 18:20:00 GMT",
+      "published_utc": "2026-09-28T18:20:00+00:00",
+      "sentence": "import alert",
+      "corroborating_sources": [],
+      "urls": [
+        "https://timesofindia.indiatimes.com/city/hyderabad/us-fda-flags-hyd-exporters-rice-shipments-over-pesticide-residue-concerns/amp_articleshow/134548910.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ace1765245",
+      "symbol": "IRFC",
+      "company": "Indian Railway Finance Corporation Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 4200.0,
+      "size_estimated": false,
+      "size_basis": "₹ 4,200 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html",
+      "title": "Top stocks to watch today: Why IRFC, Ola, NCC, Tata stocks must be on radar? Full list for Tuesday, 29 September",
+      "published": "Tue, 29 Sep 2026 01:59:40 GMT",
+      "published_utc": "2026-09-29T01:59:40+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b95d13cb04",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1076.71,
+      "size_estimated": false,
+      "size_basis": "₹ 1,076.71 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html",
+      "title": "Top stocks to watch today: Why IRFC, Ola, NCC, Tata stocks must be on radar? Full list for Tuesday, 29 September",
+      "published": "Tue, 29 Sep 2026 01:59:40 GMT",
+      "published_utc": "2026-09-29T01:59:40+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ce04d9e1c8",
+      "symbol": "OLAELEC",
+      "company": "Ola Electric Mobility Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html",
+      "title": "Stocks to watch: Tata stocks, pharma stocks, Ola Electric, Voda Idea, ITC",
+      "published": "Tue, 29 Sep 2026 02:24:19 GMT",
+      "published_utc": "2026-09-29T02:24:19+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c6c7e67d73",
+      "symbol": "HONASA",
+      "company": "Honasa Consumer Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-honasa-consumer-hcl-tech-varmora-granito-ellenbarrie-ncc-vikram-solar-prasol-chemicals-rays-of-belief-in-focus-on-29-september-14040416.html",
+      "title": "Stocks to Watch Today: Honasa Consumer, HCL Tech, Varmora Granito, Ellenbarrie, NCC, Vikram Solar, Prasol...",
+      "published": "Tue, 29 Sep 2026 01:00:19 GMT",
+      "published_utc": "2026-09-29T01:00:19+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-honasa-consumer-hcl-tech-varmora-granito-ellenbarrie-ncc-vikram-solar-prasol-chemicals-rays-of-belief-in-focus-on-29-september-14040416.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ea4ef0823f",
+      "symbol": "NMDC",
+      "company": "NMDC Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning of integrated capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/mining/nmdc-nsenmdc-commissions-integrated-iron-ore-project-in-chhattisgarh",
+      "title": "NMDC (NSE:NMDC) Commissions Integrated Iron Ore Project in Chhattisgarh",
+      "published": "Mon, 28 Sep 2026 12:59:00 GMT",
+      "published_utc": "2026-09-28T12:59:00+00:00",
+      "sentence": "commissioning of integrated capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/mining/nmdc-nsenmdc-commissions-integrated-iron-ore-project-in-chhattisgarh"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b94ddb93c6",
+      "symbol": "IRFC",
+      "company": "Indian Railway Finance Corporation Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 4200.0,
+      "size_estimated": false,
+      "size_basis": "₹4,200 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-29-irfc-ncc-activity-7510329460169093120-vSvq",
+      "title": "Stocks to watch for September 29: IRFC, NCC, Clean Max and more - CNBC TV18",
+      "published": "Mon, 28 Sep 2026 13:27:58 GMT",
+      "published_utc": "2026-09-28T13:27:58+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-29-irfc-ncc-activity-7510329460169093120-vSvq"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "408797c011",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-29-irfc-ncc-activity-7510329460169093120-vSvq",
+      "title": "Stocks to watch for September 29: IRFC, NCC, Clean Max and more - CNBC TV18",
+      "published": "Mon, 28 Sep 2026 13:27:58 GMT",
+      "published_utc": "2026-09-28T13:27:58+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-29-irfc-ncc-activity-7510329460169093120-vSvq"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "487003e68b",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 400 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1076.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,076 cr",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html",
+      "title": "Vikram Solar secures 400 MW module supply order from renowned EPC customer",
+      "published": "Mon, 28 Sep 2026 13:46:10 GMT",
+      "published_utc": "2026-09-28T13:46:10+00:00",
+      "sentence": "secures 400 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a25333b821",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 400 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1076.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,076 cr",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html",
+      "title": "Vikram Solar secures 400 MW module supply order from renowned EPC customer",
+      "published": "Mon, 28 Sep 2026 13:46:10 GMT",
+      "published_utc": "2026-09-28T13:46:10+00:00",
+      "sentence": "secures 400 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5bd8c2c568",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 400 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1076.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,076 cr",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html",
+      "title": "Vikram Solar secures 400 MW module supply order from renowned EPC customer",
+      "published": "Mon, 28 Sep 2026 13:46:10 GMT",
+      "published_utc": "2026-09-28T13:46:10+00:00",
+      "sentence": "secures 400 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f40b318a64",
+      "symbol": "ZYDUSLIFE",
+      "company": "Zydus Lifesciences Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "nil observations",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 3098.0,
+      "size_estimated": false,
+      "size_basis": "₹3,098 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.cnbctv18.com/business/companies/zydus-life-share-price-usfda-inspection-at-ahmedabad-plant-concludes-with-1-observation-20000239.htm/amp",
+      "title": "Zydus Life USFDA inspection at Ahmedabad plant concludes with 1 observation",
+      "published": "Mon, 28 Sep 2026 13:30:31 GMT",
+      "published_utc": "2026-09-28T13:30:31+00:00",
+      "sentence": "nil observations",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/zydus-life-share-price-usfda-inspection-at-ahmedabad-plant-concludes-with-1-observation-20000239.htm/amp"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-honasa-consumer-hcl-tech-varmora-granito-ellenbarrie-ncc-vikram-solar-prasol-chemicals-rays-of-belief-in-focus-on-29-september-14040416.html",
+      "title": "Stocks to Watch Today: Honasa Consumer, HCL Tech, Varmora Granito, Ellenbarrie, NCC, Vikram Solar, Prasol...",
+      "published": "Tue, 29 Sep 2026 01:00:19 GMT",
+      "chars": 9323,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html",
+      "title": "Stocks to watch: Tata stocks, pharma stocks, Ola Electric, Voda Idea, ITC",
+      "published": "Tue, 29 Sep 2026 02:24:19 GMT",
+      "chars": 5083,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html",
+      "title": "Top stocks to watch today: Why IRFC, Ola, NCC, Tata stocks must be on radar? Full list for Tuesday, 29 September",
+      "published": "Tue, 29 Sep 2026 01:59:40 GMT",
+      "chars": 3684,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-group-itc-irfc-ncc-zydus-lifesciences-and-jsw-energy/articleshow/134548442.cms",
+      "title": "Stocks in news: Tata Group, ITC, IRFC, NCC, Zydus Lifesciences and JSW Energy",
+      "published": "Tue, 29 Sep 2026 00:30:00 GMT",
+      "chars": 7764,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-september-29-irfc-ncc-activity-7510329460169093120-vSvq",
+      "title": "Stocks to watch for September 29: IRFC, NCC, Clean Max and more - CNBC TV18",
+      "published": "Mon, 28 Sep 2026 13:27:58 GMT",
+      "chars": 493,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/09/29/2026/NTPC-Green-Energy-Boosts-Renewable-Capacity--Fujiyama-Expands-Solar-Cell-Manufacturing-Capacity--Top-Buzzing-Stocks-Today",
+      "title": "NTPC Green Energy Boosts Renewable Capacity | Fujiyama Expands Solar Cell Manufacturing Capacity | Top Buzzing Stocks Today",
+      "published": "Tue, 29 Sep 2026 00:30:00 GMT",
+      "chars": 8687,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/switch-mobility-bags-order-for-840-electric-buses",
+      "title": "Switch Mobility bags order for 840 electric buses",
+      "published": "Mon, 28 Sep 2026 19:51:53 GMT",
+      "chars": 813,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.moneycontrol.com/news/business/dk-shivakumar-seeks-defence-ministry-nod-lower-licence-fee-for-2-acres-needed-for-bengaluru-tunnel-road-where-adani-is-lowest-bidder-14040219.html",
+      "title": "DK Shivakumar seeks Defence Ministry nod, lower licence fee for 2 acres needed for Bengaluru tunnel road...",
+      "published": "Mon, 28 Sep 2026 12:27:38 GMT",
+      "chars": 6408,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "chars": 2576,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/shayona-engineering-shines-on-bagging-purchase-order-worth-rs-55-80-lakh608207",
+      "title": "Shayona Engineering shines on bagging purchase order worth Rs 55.80 lakh",
+      "published": "Mon, 28 Sep 2026 10:24:28 GMT",
+      "chars": 1266,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://lngprime.com/asia/hanwha-ocean-bags-order-for-lng-carrier-duo/197578/",
+      "title": "Hanwha Ocean bags order for LNG carrier duo",
+      "published": "Mon, 28 Sep 2026 09:20:51 GMT",
+      "chars": 2263,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.business-standard.com/markets/capital-market-news/nifty-september-futures-trade-at-a-premium-126092800794_1.html",
+      "title": "Nifty September futures trade at a premium",
+      "published": "Mon, 28 Sep 2026 11:01:02 GMT",
+      "chars": 1385,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:140c00f7db77c:0-kalpataru-projects-rises-2-5-despite-market-sell-off-here-s-what-s-in-focus/",
+      "title": "Kalpataru Projects rises 2.5% despite market sell-off | Here's what's in focus",
+      "published": "Mon, 28 Sep 2026 13:10:25 GMT",
+      "chars": 3564,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/ep-biocomposites-gains-on-bagging-work-order-worth-rs-92-04-lakh591901",
+      "title": "EP Biocomposites gains on bagging work order worth Rs 92.04 lakh",
+      "published": "Mon, 28 Sep 2026 10:40:33 GMT",
+      "chars": 1194,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/lupin-gets-tentative-usfda-approval-for-apixaban-oral-suspension-180188",
+      "title": "Lupin Gets Tentative USFDA Approval for Apixaban Oral Suspension",
+      "published": "Mon, 28 Sep 2026 12:54:40 GMT",
+      "chars": 1956,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://finance.yahoo.com/healthcare/articles/astrazeneca-files-us-fda-approval-004229117.html",
+      "title": "AstraZeneca files for US FDA approval of HUTCHMED lung cancer drug combination",
+      "published": "Tue, 29 Sep 2026 00:42:00 GMT",
+      "chars": 1193,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.prnewswire.com/news-releases/lupin-receives-tentative-approval-from-us-fda-for-novel-apixaban-oral-suspension-302891524.html",
+      "title": "Lupin Receives Tentative Approval from U.S. FDA for Novel Apixaban Oral Suspension",
+      "published": "Mon, 28 Sep 2026 13:09:00 GMT",
+      "chars": 2560,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.cnbctv18.com/business/companies/zydus-life-share-price-usfda-inspection-at-ahmedabad-plant-concludes-with-1-observation-20000239.htm/amp",
+      "title": "Zydus Life USFDA inspection at Ahmedabad plant concludes with 1 observation",
+      "published": "Mon, 28 Sep 2026 13:30:31 GMT",
+      "chars": 2169,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/kirloskar-oil-engines-gets-9-06-crore-gst-notice-fy23/52152479",
+      "title": "Kirloskar Oil Engines gets ₹9.06 crore GST notice for FY23",
+      "published": "Mon, 28 Sep 2026 14:50:16 GMT",
+      "chars": 2786,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://m.thewire.in/article/business/gautam-adani-13-other-adani-group-directors-settle-sebi-proceedings-for-rs-1-48-crore/amp",
+      "title": "Gautam Adani, 13 Other Adani Group Directors Settle SEBI Proceedings For Rs 1.48 Crore",
+      "published": "Mon, 28 Sep 2026 16:40:01 GMT",
+      "chars": 1883,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/us-fda-flags-hyd-exporters-rice-shipments-over-pesticide-residue-concerns/amp_articleshow/134548910.cms",
+      "title": "US FDA flags Hyd exporter’s rice shipments over pesticide residue concerns",
+      "published": "Mon, 28 Sep 2026 18:20:00 GMT",
+      "chars": 1812,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dynamic-cables-reports-insider-trading-violation-designated-person/52139617",
+      "title": "Dynamic Cables reports insider trading violation by designated person",
+      "published": "Mon, 28 Sep 2026 11:17:59 GMT",
+      "chars": 2804,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://legal.economictimes.indiatimes.com/amp/news/regulators/two-entities-pay-over-rs-81-lakh-to-settle-growpital-case-with-sebi/134549271",
+      "title": "Two entities pay over Rs 81 lakh to settle Growpital case with Sebi",
+      "published": "Mon, 28 Sep 2026 18:46:53 GMT",
+      "chars": 3384,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/unipol-stock-trades-at-eur-27-23-as-profit-beats-estimates/70192056",
+      "title": "Unipol stock trades at EUR 27.23 as profit beats estimates",
+      "published": "Mon, 28 Sep 2026 09:48:22 GMT",
+      "chars": 2491,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/public-storage-stock-falls-1-20-percent-as-analysts-hold/70193814",
+      "title": "Public Storage stock falls 1.20 percent as analysts hold",
+      "published": "Mon, 28 Sep 2026 15:41:41 GMT",
+      "chars": 2698,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/deepa-jewellers-q1-results-net-profit-rises-27-to-rs-26-76-crore-revenue-up-39/",
+      "title": "Deepa Jewellers Q1 results: Net profit rises 27% YoY to Rs 26.76 crore, revenue up 39%",
+      "published": "Mon, 28 Sep 2026 08:05:39 GMT",
+      "chars": 2054,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/09/28/ntpc-green-commissions-81-34-mw-solar-in-bikaner/",
+      "title": "NTPC Green commissions 81.34 MW solar in Bikaner",
+      "published": "Mon, 28 Sep 2026 07:42:27 GMT",
+      "chars": 867,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/mining/nmdc-nsenmdc-commissions-integrated-iron-ore-project-in-chhattisgarh",
+      "title": "NMDC (NSE:NMDC) Commissions Integrated Iron Ore Project in Chhattisgarh",
+      "published": "Mon, 28 Sep 2026 12:59:00 GMT",
+      "chars": 7907,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://psuwatch.com/amp/story/newsupdates/ministry-of-power-orders-captive-coal-plants-to-run-at-maximum-capacity-from-october-1-to-dec-31",
+      "title": "Ministry of Power orders captive coal plants to run at maximum capacity from October 1 to Dec 31",
+      "published": "Mon, 28 Sep 2026 10:37:52 GMT",
+      "chars": 4506,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.energetica-india.net/news/exide-commissions-6-gwh-phase-i-lithium-ion-cell-manufacturing-facility",
+      "title": "Exide Commissions 6 GWh Phase-I Lithium-ion Cell Manufacturing Facility - energetica-india.net",
+      "published": "Mon, 28 Sep 2026 07:19:21 GMT",
+      "chars": 1108,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ncc-secures-multi-village-drinking-water-project-worth-rs-1-076-cr-126092801134_1.html",
+      "title": "NCC secures multi-village drinking water project worth Rs 1,076 cr",
+      "published": "Mon, 28 Sep 2026 13:46:02 GMT",
+      "chars": 1257,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/power-mech-projects-secures-o-m-order-worth-rs-279-20-cr-126092801110_1.html",
+      "title": "Power Mech Projects secures O&M order worth Rs 279.20 cr",
+      "published": "Mon, 28 Sep 2026 13:34:08 GMT",
+      "chars": 1260,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/vikram-solar-secures-400-mw-module-supply-order-from-renowned-epc-customer-126092801135_1.html",
+      "title": "Vikram Solar secures 400 MW module supply order from renowned EPC customer",
+      "published": "Mon, 28 Sep 2026 13:46:10 GMT",
+      "chars": 1569,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "chars": 1285,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/paras-receives-order-worth-rs-26-59-cr-from-drdo-126092800694_1.html",
+      "title": "Paras receives order worth Rs 26.59 cr from DRDO",
+      "published": "Mon, 28 Sep 2026 10:01:34 GMT",
+      "chars": 1298,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-reserves-order-on-front-of-pack-labels-questions-fssai-over-timeline-126092801182_1.html",
+      "title": "SC reserves order on front-of-pack labels, questions FSSAI over timeline",
+      "published": "Mon, 28 Sep 2026 14:08:54 GMT",
+      "chars": 4729,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/anscer-robotics-advances-global-expansion-with-u-s-conditional-approval-126092800381_1.html",
+      "title": "ANSCER Robotics Advances Global Expansion with U.S. Conditional Approval",
+      "published": "Mon, 28 Sep 2026 07:00:03 GMT",
+      "chars": 2996,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/lupin-receives-tentative-approval-for-anticoagulant-apixaban-from-us-fda-126092800607_1.html",
+      "title": "Lupin receives tentative approval for anticoagulant Apixaban from US FDA",
+      "published": "Mon, 28 Sep 2026 09:20:49 GMT",
+      "chars": 2740,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/newgen-software-bags-rs-53-cr-contract-from-us-health-insurer-126092900101_1.html",
+      "title": "Newgen Software bags Rs 53-cr contract from US health insurer",
+      "published": "Tue, 29 Sep 2026 08:04:02 +0530",
+      "chars": 240,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-updates-september-29-sensex-today-nifty50-gift-nifty-crude-oil-price-ipo-today-126092900092_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals flat open; Asian markets decline; Brent crude near $107",
+      "published": "Tue, 29 Sep 2026 07:56:59 +0530",
+      "chars": 146,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html",
+      "title": "Stocks to watch: Tata stocks, pharma stocks, Ola Electric, Voda Idea, ITC",
+      "published": "Tue, 29 Sep 2026 07:54:49 +0530",
+      "chars": 175,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/eternal-on-radar-as-quick-commerce-regains-momentum-motilal-oswal-126092900088_1.html",
+      "title": "Eternal on radar as quick commerce regains momentum: Motilal Oswal",
+      "published": "Tue, 29 Sep 2026 07:28:53 +0530",
+      "chars": 195,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-ujjivan-sfb-cello-here-s-why-kotak-securities-is-upbeat-on-these-2-stocks-126092900083_1.html",
+      "title": "Ujjivan SFB, Cello: Here's why Kotak Securities is upbeat on these 2 stocks",
+      "published": "Tue, 29 Sep 2026 07:20:30 +0530",
+      "chars": 187,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-falls-1-56-as-brent-futures-near-108-riskoff-mood-deepens-126092801185_1.html",
+      "title": "Nifty falls 1.56% as Brent futures near $108, riskoff mood deepens",
+      "published": "Mon, 28 Sep 2026 23:06:53 +0530",
+      "chars": 92,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-finds-no-evidence-vinod-adani-controlled-fpis-drops-adani-mps-case-126092801441_1.html",
+      "title": "Sebi finds no evidence Vinod Adani controlled FPIs, drops Adani MPS case",
+      "published": "Mon, 28 Sep 2026 22:15:38 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-ipo-index-is-up-19-5-ytd-as-the-broad-market-slips-126092801118_1.html",
+      "title": "Nifty IPO index up 19.5% in 2026 as broad market slips, shows data",
+      "published": "Mon, 28 Sep 2026 20:51:46 +0530",
+      "chars": 52,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/moneyview-ipo-allotment-to-be-finalised-today-check-status-gmp-and-likely-listing-price/articleshow/134554311.cms",
+      "title": "Moneyview IPO allotment to be finalised today; Check status, GMP and likely listing price",
+      "published": "Tue, 29 Sep 2026 08:08:33 +0530",
+      "chars": 305,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/last-day-to-bid-runwal-enterprises-ipo-enters-day-3-check-subscription-status-latest-gmp-and-other-key-details/articleshow/134554258.cms",
+      "title": "Last day to bid! Runwal Enterprises IPO enters Day 3: Check subscription status, latest GMP and other key details",
+      "published": "Tue, 29 Sep 2026 08:05:55 +0530",
+      "chars": 244,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/a-one-steels-india-allotment-likely-today-gmp-signals-7-listing-gain-heres-how-to-check-status/articleshow/134554182.cms",
+      "title": "A-One Steels India allotment likely today: GMP signals 7% listing gain. Here’s how to check status",
+      "published": "Tue, 29 Sep 2026 08:02:57 +0530",
+      "chars": 299,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/himalaya-nutravedics-anand-seamless-shares-to-list-today-check-ipo-subscription-and-key-details/articleshow/134554144.cms",
+      "title": "Himalaya Nutravedics, Anand Seamless shares to list today; Check IPO subscription and key details",
+      "published": "Tue, 29 Sep 2026 07:58:45 +0530",
+      "chars": 182,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-10-stocks-cross-below-their-200-dmas/slideshow/134554119.cms",
+      "title": "Negative Breakout: These 10 stocks cross below their 200 DMAs",
+      "published": "Tue, 29 Sep 2026 07:43:22 +0530",
+      "chars": 106,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-29-crude-oil-rises-to-107-as-us-iran-deal-stalemate-ups-supply-fears-120-in-sight/articleshow/134553998.cms",
+      "title": "Oil Price Today (September 29): Crude oil rises to $107 as US-Iran deal stalemate ups supply fears. $120 in sight?",
+      "published": "Tue, 29 Sep 2026 07:41:46 +0530",
+      "chars": 140,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-hold-near-two-month-peak-as-yields-rise-fed-data-looms/articleshow/134553967.cms",
+      "title": "Dollar hold near two-month peak as yields rise, Fed data looms",
+      "published": "Tue, 29 Sep 2026 07:37:44 +0530",
+      "chars": 416,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-holds-near-seven-week-low-us-economic-data-on-tap/articleshow/134553921.cms",
+      "title": "Gold holds near seven-week low, US economic data on tap",
+      "published": "Tue, 29 Sep 2026 07:36:06 +0530",
+      "chars": 434,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 151.2
+}

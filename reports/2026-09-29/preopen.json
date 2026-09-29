@@ -1,0 +1,1158 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29 08:10",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 3,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0
+    }
+  },
+  "events_read": 25,
+  "trade": [
+    {
+      "id": "69d4f77439",
+      "symbol": "ELLEN",
+      "company": "Ellenbarrie Industrial Gases Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 480.73,
+      "size_estimated": false,
+      "size_basis": "Rs 480.73 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+      "title": "Ellenbarrie Industrial Gases secures contract worth Rs 480 cr from BHEL",
+      "published": "Mon, 28 Sep 2026 13:34:16 GMT",
+      "published_utc": "2026-09-28T13:34:16+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/amp/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html",
+        "https://www.business-standard.com/markets/capital-market-news/ellenbarrie-industrial-gases-secures-contract-worth-rs-480-cr-from-bhel-126092801111_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": 67,
+      "verdict": "TRADE",
+      "verdict_note": "worth a plan for the open",
+      "reasons": [
+        "+22 Order win",
+        "+26 ₹481cr against ₹356cr of revenue — 1.4× a year's sales, more than a full year of revenue",
+        "+4 fundamentals 64/100",
+        "+12 published Mon 19:04, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": 1.35,
+      "revenue_ttm_cr": 356.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 19:04, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 22.49,
+      "direction": "long",
+      "plan": {
+        "reference_close": 368.5,
+        "atr_pct": 5.28,
+        "expected_day_range_inr": 19.46,
+        "expected_day_range_pct": 5.28,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 64,
+      "fund_why": [
+        "+0 ROCE 14.5%",
+        "+4 ROE 12.9%",
+        "-2 P/E 41.9",
+        "+8 3y profit CAGR 64%",
+        "+6 3y sales CAGR 19%",
+        "-6 return on capital has drifted from 21% to 15% — the newer capital earns less than the old",
+        "+5 D/E 0.19",
+        "+4 promoter 77.15%",
+        "+4 latest qtr PAT YoY 84.2%",
+        "+0 mcap ₹5,060 cr",
+        "+8 operating cash flow ₹133cr, 128% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: 25.3% last year against 84.4% the year before",
+        "+4 interest cover 19×",
+        "-4 price to book 5.18",
+        "-6 ROCE 14.5% bought at 5.18× book is 2.8% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company has delivered good profit growth of 31.6% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 13.7% over last 3 years.",
+        "Earnings include an other income of Rs.60.3 Cr."
+      ],
+      "ltp": 368.5,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 58.4,
+        "adx": 23.4,
+        "atr_pct": 5.28,
+        "vol_ratio": 0.62,
+        "chg_1d_pct": 3.02,
+        "chg_5d_pct": -1.23,
+        "dist_52w_high_pct": -26.59,
+        "dist_ema200_pct": 15.21,
+        "avg_turnover_cr": 38.09,
+        "high_52w": 502.0,
+        "momentum_score": 88,
+        "last_bar_date": "2026-09-25"
+      },
+      "fundamentals": {
+        "market_cap_cr": 5060.0,
+        "pe": 41.9,
+        "roce": 14.5,
+        "roe": 12.9,
+        "sales_growth_3_years": 19.0,
+        "profit_growth_3_years": 64.0,
+        "promoter_pct": 77.15,
+        "debt_to_equity": 0.19,
+        "revenue_ttm_cr": 356.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 4,
+        "avg_open_to_high_pct": 0.66,
+        "avg_open_to_close_pct": -2.29,
+        "hit_rate": 0.5,
+        "adjust": -7.51,
+        "untested": false
+      }
+    }
+  ],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "c6c7e67d73",
+      "symbol": "HONASA",
+      "company": "Honasa Consumer Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-honasa-consumer-hcl-tech-varmora-granito-ellenbarrie-ncc-vikram-solar-prasol-chemicals-rays-of-belief-in-focus-on-29-september-14040416.html",
+      "title": "Stocks to Watch Today: Honasa Consumer, HCL Tech, Varmora Granito, Ellenbarrie, NCC, Vikram Solar, Prasol...",
+      "published": "Tue, 29 Sep 2026 01:00:19 GMT",
+      "published_utc": "2026-09-29T01:00:19+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-honasa-consumer-hcl-tech-varmora-granito-ellenbarrie-ncc-vikram-solar-prasol-chemicals-rays-of-belief-in-focus-on-29-september-14040416.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 15,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Broker downgrade (50% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 70/100",
+        "+12 published Tue 06:30, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2553.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 06:30, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 465.5,
+        "atr_pct": 3.41,
+        "expected_day_range_inr": 15.87,
+        "expected_day_range_pct": 3.41,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 70,
+      "fund_why": [
+        "+6 ROCE 19.2%",
+        "+4 ROE 15.7%",
+        "-2 P/E 60.2",
+        "+8 3y profit CAGR 118%",
+        "+6 3y sales CAGR 17%",
+        "+4 return on capital has improved from 4% to 14.3%",
+        "+5 D/E 0.1",
+        "+0 promoter 35.47%",
+        "+4 latest qtr PAT YoY 119.5%",
+        "+2 mcap ₹15,194 cr",
+        "+3 operating cash flow ₹141cr, only 70% of profit",
+        "+4 interest cover 36.67×",
+        "+3 institutions hold 35.22%",
+        "-8 price to book 10.74",
+        "-6 ROCE 19.2% bought at 10.74× book is 1.8% on what you pay",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Stock is trading at 10.7 times its book value"
+      ],
+      "ltp": 465.5,
+      "ta": {
+        "trend": "up",
+        "rsi": 47.0,
+        "adx": 14.0,
+        "atr_pct": 3.41,
+        "vol_ratio": 0.58,
+        "chg_1d_pct": -1.58,
+        "chg_5d_pct": -2.93,
+        "dist_52w_high_pct": -8.69,
+        "dist_ema200_pct": 17.79,
+        "avg_turnover_cr": 35.9,
+        "high_52w": 509.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-25"
+      },
+      "fundamentals": {
+        "market_cap_cr": 15194.0,
+        "pe": 60.2,
+        "roce": 19.2,
+        "roe": 15.7,
+        "sales_growth_3_years": 17.0,
+        "profit_growth_3_years": 118.0,
+        "promoter_pct": 35.47,
+        "debt_to_equity": 0.1,
+        "revenue_ttm_cr": 2553.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "fb6abd7b7f",
+      "symbol": "DYCL",
+      "company": "Dynamic Cables Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.1,
+      "size_estimated": false,
+      "size_basis": "₹10 lakh",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dynamic-cables-reports-insider-trading-violation-designated-person/52139617",
+      "title": "Dynamic Cables reports insider trading violation by designated person",
+      "published": "Mon, 28 Sep 2026 11:17:59 GMT",
+      "published_utc": "2026-09-28T11:17:59+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/dynamic-cables-reports-insider-trading-violation-designated-person/52139617"
+      ],
+      "n_reports": 1,
+      "catalyst": 5,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        "+2 ₹0cr against ₹1,285cr of revenue — 0.0× a year's sales, small against revenue",
+        "+10 fundamentals 77/100",
+        "+3 down 4.8% into the news — less crowded",
+        "+12 published Mon 16:47, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.0,
+      "revenue_ttm_cr": 1285.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 16:47, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 435.15,
+        "atr_pct": 5.49,
+        "expected_day_range_inr": 23.89,
+        "expected_day_range_pct": 5.49,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 77,
+      "fund_why": [
+        "+12 ROCE 26.2%",
+        "+8 ROE 19.9%",
+        "+6 P/E 23.1",
+        "+8 3y profit CAGR 39%",
+        "+6 3y sales CAGR 21%",
+        "+4 return on capital has improved from 19.4% to 25.3%",
+        "+5 D/E 0.09",
+        "+4 promoter 68.18%",
+        "+4 latest qtr PAT YoY 38.9%",
+        "+0 mcap ₹2,109 cr",
+        "+3 operating cash flow ₹62cr, only 74% of profit",
+        "+4 interest cover 12.67×",
+        "-5 institutions hold 1.65% — desks with their own analysts are staying out",
+        "-4 price to book 4.61",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 53.2% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Promoter holding has decreased over last 3 years: -6.26%"
+      ],
+      "ltp": 435.1499938964844,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 43.7,
+        "adx": 16.5,
+        "atr_pct": 5.49,
+        "vol_ratio": 0.31,
+        "chg_1d_pct": -4.77,
+        "chg_5d_pct": -4.93,
+        "dist_52w_high_pct": -22.29,
+        "dist_ema200_pct": 13.08,
+        "avg_turnover_cr": 57.62,
+        "high_52w": 560.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-28"
+      },
+      "fundamentals": {
+        "market_cap_cr": 2109.0,
+        "pe": 23.1,
+        "roce": 26.2,
+        "roe": 19.9,
+        "sales_growth_3_years": 21.0,
+        "profit_growth_3_years": 39.0,
+        "promoter_pct": 68.18,
+        "debt_to_equity": 0.09,
+        "revenue_ttm_cr": 1285.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ace1765245",
+      "symbol": "IRFC",
+      "company": "Indian Railway Finance Corporation Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 4200.0,
+      "size_estimated": false,
+      "size_basis": "₹ 4,200 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html",
+      "title": "Top stocks to watch today: Why IRFC, Ola, NCC, Tata stocks must be on radar? Full list for Tuesday, 29 September",
+      "published": "Tue, 29 Sep 2026 01:59:40 GMT",
+      "published_utc": "2026-09-29T01:59:40+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 3,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        "+7 ₹4,200cr against ₹28,630cr of revenue — 0.1× a year's sales, a tenth of a year's revenue",
+        "+4 fundamentals 50/100",
+        "-6 19.9% below the 200-day average — fighting the trend",
+        "+12 published Tue 07:29, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.147,
+      "revenue_ttm_cr": 28630.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 07:29, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 78.55,
+        "atr_pct": 1.77,
+        "expected_day_range_inr": 1.39,
+        "expected_day_range_pct": 1.77,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_flags": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_caps": [],
+      "fund_unrated": true,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 34.0%"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 11.6% over past five years.",
+        "Tax rate seems low",
+        "Company has a low return on equity of 13.0% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Company has high debtors of 5,136 days."
+      ],
+      "ltp": 78.55000305175781,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 32.2,
+        "adx": 46.6,
+        "atr_pct": 1.77,
+        "vol_ratio": 1.24,
+        "chg_1d_pct": -1.75,
+        "chg_5d_pct": -2.08,
+        "dist_52w_high_pct": -42.74,
+        "dist_ema200_pct": -19.85,
+        "avg_turnover_cr": 56.0,
+        "high_52w": 137.17,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-28"
+      },
+      "fundamentals": {
+        "market_cap_cr": 102653.0,
+        "pe": 14.3,
+        "roce": 5.64,
+        "roe": 12.8,
+        "sales_growth_3_years": 5.0,
+        "profit_growth_3_years": 3.0,
+        "promoter_pct": 82.9,
+        "revenue_ttm_cr": 28630.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "f92919a7a6",
+      "symbol": "KIRLOSENG",
+      "company": "Kirloskar Oil Engines Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/kirloskar-oil-engines-gets-9-06-crore-gst-notice-fy23/52152479",
+      "title": "Kirloskar Oil Engines gets ₹9.06 crore GST notice for FY23",
+      "published": "Mon, 28 Sep 2026 14:50:16 GMT",
+      "published_utc": "2026-09-28T14:50:16+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/kirloskar-oil-engines-gets-9-06-crore-gst-notice-fy23/52152479"
+      ],
+      "n_reports": 1,
+      "catalyst": -6,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "+12 published Mon 20:20, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 7937.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 20:20, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2137.2,
+        "atr_pct": 4.24,
+        "expected_day_range_inr": 90.62,
+        "expected_day_range_pct": 4.24,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "+0 ROCE 14.6%",
+        "+4 ROE 17.5%",
+        "-2 P/E 54.7",
+        "+8 3y profit CAGR 22%",
+        "+6 3y sales CAGR 15%",
+        "-2 D/E 1.48",
+        "+0 promoter 41.06%",
+        "-5 latest qtr PAT YoY -20.1%",
+        "+2 mcap ₹31,169 cr",
+        "+8 operating cash flow ₹932cr, 166% of profit — profit is turning into cash",
+        "-12 interest cover 2.59× — thin",
+        "+3 institutions hold 37.33%",
+        "-8 price to book 8.6",
+        "-6 ROCE 14.6% bought at 8.6× book is 1.7% on what you pay",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +9 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 25.1% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 18.9%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 8.60 times its book value"
+      ],
+      "ltp": 2137.199951171875,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 48.6,
+        "adx": 14.4,
+        "atr_pct": 4.24,
+        "vol_ratio": 0.39,
+        "chg_1d_pct": -1.26,
+        "chg_5d_pct": -1.06,
+        "dist_52w_high_pct": -21.43,
+        "dist_ema200_pct": 18.71,
+        "avg_turnover_cr": 91.9,
+        "high_52w": 2720.0,
+        "momentum_score": 6,
+        "last_bar_date": "2026-09-25"
+      },
+      "fundamentals": {
+        "market_cap_cr": 31169.0,
+        "pe": 54.7,
+        "roce": 14.6,
+        "roe": 17.5,
+        "sales_growth_3_years": 15.0,
+        "profit_growth_3_years": 22.0,
+        "promoter_pct": 41.06,
+        "debt_to_equity": 1.48,
+        "revenue_ttm_cr": 7937.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "b95d13cb04",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1076.71,
+      "size_estimated": false,
+      "size_basis": "₹ 1,076.71 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 400.0,
+        "unit": "MW",
+        "text": "400 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html",
+      "title": "Top stocks to watch today: Why IRFC, Ola, NCC, Tata stocks must be on radar? Full list for Tuesday, 29 September",
+      "published": "Tue, 29 Sep 2026 01:59:40 GMT",
+      "published_utc": "2026-09-29T01:59:40+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-why-irfc-ola-ncc-tata-stocks-must-be-on-radar-full-list-for-tuesday-29-september-11790645272995.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -16,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        "+2 ₹1,077cr against ₹21,456cr of revenue — 0.1× a year's sales, small against revenue",
+        "-10 fundamentals 36/100 — a pop on a weak balance sheet fades",
+        "-6 15.0% below the 200-day average — fighting the trend",
+        "+12 published Tue 07:29, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.05,
+      "revenue_ttm_cr": 21456.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 07:29, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 132.82,
+        "atr_pct": 2.93,
+        "expected_day_range_inr": 3.89,
+        "expected_day_range_pct": 2.93,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 36,
+      "fund_why": [
+        "+6 ROCE 16.8%",
+        "+0 ROE 9.19%",
+        "+6 P/E 11.3",
+        "+0 3y profit CAGR 6%",
+        "+3 3y sales CAGR 10%",
+        "+4 return on capital has improved from 15.2% to 20.3%",
+        "+2 D/E 0.44",
+        "-3 promoter 23.09%",
+        "+0 latest qtr PAT YoY 11.7%",
+        "+0 mcap ₹8,180 cr",
+        "-14 operating cash flow ₹-459cr — the business consumed cash last year",
+        "-12 interest cover 2.75× — thin",
+        "-10 borrowings up 117% year on year",
+        "+3 institutions hold 29.17%",
+        "+3 price to book 1.04",
+        "+4 ROCE 16.8% at 1.04× book is 16.2% on what you pay",
+        "  (value counted +5 of +13 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (balance counted -18 of -20 — its terms measure the same thing more than once, so the most it can cost is -18)"
+      ],
+      "fund_flags": [
+        "borrowings up 117% while the business burned cash — the growth is being funded, not earned"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 1.04 times its book value",
+        "Company has been maintaining a healthy dividend payout of 18.9%"
+      ],
+      "screener_cons": [
+        "Promoter holding is low: 23.1%",
+        "Company has a low return on equity of 10.5% over last 3 years.",
+        "Company's cost of borrowing seems high"
+      ],
+      "ltp": 132.82000732421875,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 34.8,
+        "adx": 21.3,
+        "atr_pct": 2.93,
+        "vol_ratio": 1.04,
+        "chg_1d_pct": -0.45,
+        "chg_5d_pct": -3.14,
+        "dist_52w_high_pct": -38.86,
+        "dist_ema200_pct": -15.03,
+        "avg_turnover_cr": 28.71,
+        "high_52w": 217.25,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-25"
+      },
+      "fundamentals": {
+        "market_cap_cr": 8180.0,
+        "pe": 11.3,
+        "roce": 16.8,
+        "roe": 9.19,
+        "sales_growth_3_years": 10.0,
+        "profit_growth_3_years": 6.0,
+        "promoter_pct": 23.09,
+        "debt_to_equity": 0.44,
+        "revenue_ttm_cr": 21456.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ce04d9e1c8",
+      "symbol": "OLAELEC",
+      "company": "Ola Electric Mobility Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html",
+      "title": "Stocks to watch: Tata stocks, pharma stocks, Ola Electric, Voda Idea, ITC",
+      "published": "Tue, 29 Sep 2026 02:24:19 GMT",
+      "published_utc": "2026-09-29T02:24:19+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-sept-29-tata-stocks-pharma-stocks-ola-electric-voda-idea-itc-126092900099_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -18,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 0/100 — a pop on a weak balance sheet fades",
+        "-6 4.5% below the 200-day average — fighting the trend",
+        "+12 published Tue 07:54, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 1880.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Tue 07:54, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 37.86,
+        "atr_pct": 5.33,
+        "expected_day_range_inr": 2.02,
+        "expected_day_range_pct": 5.33,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 0,
+      "fund_why": [
+        "-4 ROCE -19.9%",
+        "-4 ROE -43.2%",
+        "-8 loss-making (no P/E)",
+        "-6 3y profit CAGR -12%",
+        "-4 3y sales CAGR -5%",
+        "-2 D/E 0.82",
+        "+0 promoter 32.96%",
+        "-6 promoters sold 1.63pp in the last quarter alone",
+        "-5 latest qtr PAT YoY -178.5%",
+        "+2 mcap ₹17,523 cr",
+        "-14 operating cash flow ₹-775cr — the business consumed cash last year",
+        "-12 interest cover -2.26× — thin",
+        "+3 institutions hold 16.27%",
+        "-4 price to book 4.99",
+        "-6 ROCE -19.9% bought at 4.99× book is -4% on what you pay",
+        "  (value counted -10 of -18 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "operating cash flow has been negative 6 years running",
+        "the page did not read cleanly — profit growth 1y pct came out at -181% — the growth read is unsafe",
+        "the page did not read cleanly — profit growth prev 1y pct came out at -244% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt."
+      ],
+      "screener_cons": [
+        "Stock is trading at 4.98 times its book value",
+        "Company has low interest coverage ratio.",
+        "Promoter holding has decreased over last quarter: -1.63%"
+      ],
+      "ltp": 37.86000061035156,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 47.5,
+        "adx": 22.4,
+        "atr_pct": 5.33,
+        "vol_ratio": 0.89,
+        "chg_1d_pct": -1.61,
+        "chg_5d_pct": 2.32,
+        "dist_52w_high_pct": -35.45,
+        "dist_ema200_pct": -4.51,
+        "avg_turnover_cr": 375.91,
+        "high_52w": 58.65,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-28"
+      },
+      "fundamentals": {
+        "market_cap_cr": 17523.0,
+        "pe": null,
+        "roce": -19.9,
+        "roe": -43.2,
+        "sales_growth_3_years": -5.0,
+        "profit_growth_3_years": -12.0,
+        "promoter_pct": 32.96,
+        "debt_to_equity": 0.82,
+        "revenue_ttm_cr": 1880.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "symbol": "DEEPA",
+      "event": "earnings_beat",
+      "title": "Deepa Jewellers Q1 results: Net profit rises 27% YoY to Rs 26.76 crore, revenue up 39%",
+      "source_id": "corp_results",
+      "why": "no price history"
+    }
+  ],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
