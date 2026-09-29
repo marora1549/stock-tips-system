@@ -289,15 +289,15 @@
     "id": "broker:morganstanley"
   },
   "broker:motilal": {
-    "score": -15.0,
+    "score": -29.25,
     "n_tips": 89,
-    "n_resolved": 1,
+    "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 1,
+    "n_sl": 2,
     "n_timestop": 0,
-    "sum_return_pct": -3.89,
+    "sum_return_pct": -8.25,
     "days_to_t1": [],
     "history": [
       {
@@ -305,6 +305,13 @@
         "symbol": "V2RETAIL",
         "outcome": "stop_loss",
         "ret_pct": -3.89,
+        "delta": -15.0
+      },
+      {
+        "date": "2026-09-29",
+        "symbol": "CGPOWER",
+        "outcome": "stop_loss",
+        "ret_pct": -4.36,
         "delta": -15.0
       }
     ],
@@ -433,15 +440,15 @@
     "id": "broker:ubs"
   },
   "brokerage_gnews": {
-    "score": -7.5,
+    "score": -14.625,
     "n_tips": 139,
-    "n_resolved": 1,
+    "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 1,
+    "n_sl": 2,
     "n_timestop": 0,
-    "sum_return_pct": -3.89,
+    "sum_return_pct": -8.25,
     "days_to_t1": [],
     "history": [
       {
@@ -449,6 +456,13 @@
         "symbol": "V2RETAIL",
         "outcome": "stop_loss",
         "ret_pct": -3.89,
+        "delta": -7.5
+      },
+      {
+        "date": "2026-09-29",
+        "symbol": "CGPOWER",
+        "outcome": "stop_loss",
+        "ret_pct": -4.36,
         "delta": -7.5
       }
     ],

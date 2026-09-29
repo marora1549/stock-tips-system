@@ -1,51 +1,7 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 2651.22,
+  "cash_inr": 41241.72,
   "positions": [
-    {
-      "pos_id": "2026-09-08-CGPOWER",
-      "tip_id": "d2e96d14dd",
-      "symbol": "CGPOWER",
-      "company": "CG Power and Industrial Solutions",
-      "opened": "2026-09-08",
-      "booked": "2026-09-07 15:00",
-      "status": "open",
-      "entry_plan": 901.15,
-      "entry": 894.9,
-      "qty": 45,
-      "qty_open": 45,
-      "capital_inr": 40270.5,
-      "stop_loss": 855.9,
-      "initial_stop": 855.9,
-      "targets": [
-        977.23,
-        1012.9,
-        1079.95
-      ],
-      "targets_hit": [],
-      "timeframe": "monthly",
-      "time_stop_days": 30,
-      "deadline": "2026-10-20",
-      "source_id": "broker:motilal",
-      "corroborating_sources": [
-        "brokerage_gnews"
-      ],
-      "ta_confidence": 84,
-      "fund_score": 91,
-      "composite": 77,
-      "bucket": "hold-capable",
-      "patterns": [
-        "bollinger_squeeze",
-        "momentum_aligned",
-        "pullback_to_ema20_in_uptrend"
-      ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 4.03,
-      "notes": [],
-      "ltp": 865.0,
-      "unrealised_pct": -3.34
-    },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
       "tip_id": "9f766df819",
@@ -84,8 +40,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.6,
       "notes": [],
-      "ltp": 1942.0999755859375,
-      "unrealised_pct": 3.23
+      "ltp": 1950.4000244140625,
+      "unrealised_pct": 3.67
     },
     {
       "pos_id": "2026-09-29-HEROMOTOCO",
@@ -94,12 +50,12 @@
       "company": "Hero MotoCorp Limited",
       "opened": "2026-09-29",
       "booked": "2026-09-29 08:27",
-      "status": "pending",
+      "status": "open",
       "entry_plan": 5390.0,
-      "entry": null,
+      "entry": 5375.0,
       "qty": 5,
       "qty_open": 5,
-      "capital_inr": 26950.0,
+      "capital_inr": 26875.0,
       "stop_loss": 5140.67,
       "initial_stop": 5140.67,
       "targets": [
@@ -111,7 +67,7 @@
       "fund_score_at_entry": 87,
       "timeframe": "weekly",
       "time_stop_days": 10,
-      "deadline": null,
+      "deadline": "2026-10-13",
       "eta_days": [
         null,
         null,
@@ -134,8 +90,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 0.0,
-      "notes": []
+      "max_favourable_pct": 0.17,
+      "notes": [],
+      "ltp": 5208.0,
+      "unrealised_pct": -3.11
     }
   ],
   "closed": [
@@ -258,6 +216,63 @@
       "pnl_inr": -740.88,
       "pnl_pct": -2.51,
       "days_held": 8
+    },
+    {
+      "pos_id": "2026-09-08-CGPOWER",
+      "tip_id": "d2e96d14dd",
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "closed",
+      "entry_plan": 901.15,
+      "entry": 894.9,
+      "qty": 45,
+      "qty_open": 0,
+      "capital_inr": 40270.5,
+      "stop_loss": 855.9,
+      "initial_stop": 855.9,
+      "targets": [
+        977.23,
+        1012.9,
+        1079.95
+      ],
+      "targets_hit": [],
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": "2026-10-20",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "ta_confidence": 84,
+      "fund_score": 91,
+      "composite": 77,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [
+        {
+          "date": "2026-09-29",
+          "qty": 45,
+          "price": 855.9,
+          "reason": "stop_loss",
+          "pnl_inr": -1755.0
+        }
+      ],
+      "realised_inr": -1755.0,
+      "max_favourable_pct": 4.03,
+      "notes": [],
+      "ltp": 858.0499877929688,
+      "unrealised_pct": -4.12,
+      "closed": "2026-09-29",
+      "outcome": "stop_loss",
+      "pnl_inr": -1755.0,
+      "pnl_pct": -4.36,
+      "days_held": 15
     }
   ],
   "equity_curve": [
@@ -316,6 +331,10 @@
     {
       "date": "2026-09-28",
       "equity": 97657.72
+    },
+    {
+      "date": "2026-09-29",
+      "equity": 96537.72
     }
   ],
   "created": "2026-09-07",

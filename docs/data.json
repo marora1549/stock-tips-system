@@ -2,77 +2,24 @@
   "generated": "2026-09-29",
   "stats": {
     "capital": 100000,
-    "equity": 97657.72,
-    "return_pct": -2.34,
-    "simple_return_pct": -2.34,
+    "equity": 96537.72,
+    "return_pct": -3.46,
+    "simple_return_pct": -3.46,
     "initial_capital": 100000,
     "net_flows_inr": 0,
     "n_flows": 0,
-    "deployed_inr": 95441.5,
-    "cash": 2651.22,
+    "deployed_inr": 55096.0,
+    "cash": 41241.72,
     "open": 2,
-    "pending": 1,
+    "pending": 0,
     "hold": 0,
-    "closed": 2,
+    "closed": 3,
     "win_rate": 0,
     "avg_win_pct": null,
-    "avg_loss_pct": -3.2,
-    "realised_inr": -1907.28
+    "avg_loss_pct": -3.59,
+    "realised_inr": -3662.28
   },
   "positions": [
-    {
-      "pos_id": "2026-09-08-CGPOWER",
-      "tip_id": "d2e96d14dd",
-      "symbol": "CGPOWER",
-      "company": "CG Power and Industrial Solutions",
-      "opened": "2026-09-08",
-      "booked": "2026-09-07 15:00",
-      "status": "open",
-      "entry_plan": 901.15,
-      "entry": 894.9,
-      "qty": 45,
-      "qty_open": 45,
-      "capital_inr": 40270.5,
-      "stop_loss": 855.9,
-      "initial_stop": 855.9,
-      "targets": [
-        977.23,
-        1012.9,
-        1079.95
-      ],
-      "targets_hit": [],
-      "timeframe": "monthly",
-      "time_stop_days": 30,
-      "deadline": "2026-10-20",
-      "source_id": "broker:motilal",
-      "corroborating_sources": [
-        "brokerage_gnews"
-      ],
-      "ta_confidence": 84,
-      "fund_score": 91,
-      "composite": 77,
-      "bucket": "hold-capable",
-      "patterns": [
-        "bollinger_squeeze",
-        "momentum_aligned",
-        "pullback_to_ema20_in_uptrend"
-      ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 4.03,
-      "notes": [],
-      "ltp": 865.0,
-      "unrealised_pct": -3.34,
-      "stop_loss_pct": -4.36,
-      "target_pct": [
-        9.2,
-        13.19,
-        20.68
-      ],
-      "order_line": "BUY 45 CGPOWER NSE CNC limit ₹894.90 · SL-M ₹855.90 · GTT ₹977.23 / 1,012.90 / 1,079.95",
-      "progress_t1_pct": 0,
-      "days_elapsed": 15
-    },
     {
       "pos_id": "2026-09-08-LALPATHLAB",
       "tip_id": "9f766df819",
@@ -111,8 +58,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.6,
       "notes": [],
-      "ltp": 1942.0999755859375,
-      "unrealised_pct": 3.23,
+      "ltp": 1950.4000244140625,
+      "unrealised_pct": 3.67,
       "stop_loss_pct": -1.1,
       "target_pct": [
         9.13,
@@ -120,7 +67,7 @@
         22.56
       ],
       "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,881.40 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86",
-      "progress_t1_pct": 35,
+      "progress_t1_pct": 40,
       "days_elapsed": 15
     },
     {
@@ -130,12 +77,12 @@
       "company": "Hero MotoCorp Limited",
       "opened": "2026-09-29",
       "booked": "2026-09-29 08:27",
-      "status": "pending",
+      "status": "open",
       "entry_plan": 5390.0,
-      "entry": null,
+      "entry": 5375.0,
       "qty": 5,
       "qty_open": 5,
-      "capital_inr": 26950.0,
+      "capital_inr": 26875.0,
       "stop_loss": 5140.67,
       "initial_stop": 5140.67,
       "targets": [
@@ -147,7 +94,7 @@
       "fund_score_at_entry": 87,
       "timeframe": "weekly",
       "time_stop_days": 10,
-      "deadline": null,
+      "deadline": "2026-10-13",
       "eta_days": [
         null,
         null,
@@ -170,21 +117,23 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 0.0,
+      "max_favourable_pct": 0.17,
       "notes": [],
-      "stop_loss_pct": -4.63,
+      "ltp": 5208.0,
+      "unrealised_pct": -3.11,
+      "stop_loss_pct": -4.36,
       "target_pct": [
-        2.99,
-        7.66,
-        10.15
+        3.28,
+        7.96,
+        10.46
       ],
-      "order_line": "BUY 5 HEROMOTOCO NSE CNC limit ₹5,390.00 · SL-M ₹5,140.67 · GTT ₹5,551.39 / 5,803.00 / 5,937.00"
+      "order_line": "BUY 5 HEROMOTOCO NSE CNC limit ₹5,375.00 · SL-M ₹5,140.67 · GTT ₹5,551.39 / 5,803.00 / 5,937.00",
+      "progress_t1_pct": 0,
+      "days_elapsed": 0
     }
   ],
   "sparks": {
     "LALPATHLAB": [
-      1686.0,
-      1680.8,
       1653.5,
       1684.6,
       1692.8,
@@ -242,7 +191,9 @@
       1909.8,
       1924.3,
       1961.3,
-      1952.3
+      1952.3,
+      1942.1,
+      1950.4
     ],
     "PETRONET": [
       279.6,
@@ -305,6 +256,68 @@
       286.6,
       286.5,
       289.85
+    ],
+    "HEROMOTOCO": [
+      4892.8,
+      4898.5,
+      4949.1,
+      4952.1,
+      4878.3,
+      4876.2,
+      4898.0,
+      4909.9,
+      4977.7,
+      5034.1,
+      4987.1,
+      5173.8,
+      5011.1,
+      5113.8,
+      5154.3,
+      5149.1,
+      5325.0,
+      5386.0,
+      5460.0,
+      5548.0,
+      5690.0,
+      5550.5,
+      5725.0,
+      5860.0,
+      5865.5,
+      5895.0,
+      5850.0,
+      5790.0,
+      5745.0,
+      5745.5,
+      5709.5,
+      5740.5,
+      5735.0,
+      5685.0,
+      5624.5,
+      5595.0,
+      5550.0,
+      5600.0,
+      5450.0,
+      5555.0,
+      5300.0,
+      5308.5,
+      5300.0,
+      5270.0,
+      5333.5,
+      5218.0,
+      5280.0,
+      5221.5,
+      5221.5,
+      5166.0,
+      5235.0,
+      5325.0,
+      5285.5,
+      5419.0,
+      5373.0,
+      5394.0,
+      5296.0,
+      5360.0,
+      5390.0,
+      5208.0
     ]
   },
   "actions_log": [],
@@ -428,6 +441,63 @@
       "pnl_inr": -740.88,
       "pnl_pct": -2.51,
       "days_held": 8
+    },
+    {
+      "pos_id": "2026-09-08-CGPOWER",
+      "tip_id": "d2e96d14dd",
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "closed",
+      "entry_plan": 901.15,
+      "entry": 894.9,
+      "qty": 45,
+      "qty_open": 0,
+      "capital_inr": 40270.5,
+      "stop_loss": 855.9,
+      "initial_stop": 855.9,
+      "targets": [
+        977.23,
+        1012.9,
+        1079.95
+      ],
+      "targets_hit": [],
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": "2026-10-20",
+      "source_id": "broker:motilal",
+      "corroborating_sources": [
+        "brokerage_gnews"
+      ],
+      "ta_confidence": 84,
+      "fund_score": 91,
+      "composite": 77,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [
+        {
+          "date": "2026-09-29",
+          "qty": 45,
+          "price": 855.9,
+          "reason": "stop_loss",
+          "pnl_inr": -1755.0
+        }
+      ],
+      "realised_inr": -1755.0,
+      "max_favourable_pct": 4.03,
+      "notes": [],
+      "ltp": 858.0499877929688,
+      "unrealised_pct": -4.12,
+      "closed": "2026-09-29",
+      "outcome": "stop_loss",
+      "pnl_inr": -1755.0,
+      "pnl_pct": -4.36,
+      "days_held": 15
     }
   ],
   "equity_curve": [
@@ -486,6 +556,10 @@
     {
       "date": "2026-09-28",
       "equity": 97657.72
+    },
+    {
+      "date": "2026-09-29",
+      "equity": 96537.72
     }
   ],
   "sources": [
@@ -1288,20 +1362,6 @@
       "last_seen": "2026-09-29"
     },
     {
-      "source_id": "brokerage_gnews",
-      "score": -7.5,
-      "confidence": 35,
-      "weight": 0.354,
-      "n_tips": 139,
-      "n_resolved": 1,
-      "t1_hit_rate": 0,
-      "stop_rate": 100,
-      "expectancy_pct": -3.89,
-      "avg_days_to_t1": null,
-      "enabled": true,
-      "last_seen": "2026-09-29"
-    },
-    {
       "source_id": "mc_stock_ideas_gnews",
       "score": -7.5,
       "confidence": 35,
@@ -1316,15 +1376,15 @@
       "last_seen": "2026-09-29"
     },
     {
-      "source_id": "broker:motilal",
-      "score": -15.0,
-      "confidence": 23,
-      "weight": 0.231,
-      "n_tips": 89,
-      "n_resolved": 1,
+      "source_id": "brokerage_gnews",
+      "score": -14.6,
+      "confidence": 24,
+      "weight": 0.237,
+      "n_tips": 139,
+      "n_resolved": 2,
       "t1_hit_rate": 0,
       "stop_rate": 100,
-      "expectancy_pct": -3.89,
+      "expectancy_pct": -4.12,
       "avg_days_to_t1": null,
       "enabled": true,
       "last_seen": "2026-09-29"
@@ -1339,6 +1399,20 @@
       "t1_hit_rate": 0,
       "stop_rate": 100,
       "expectancy_pct": -2.51,
+      "avg_days_to_t1": null,
+      "enabled": true,
+      "last_seen": "2026-09-29"
+    },
+    {
+      "source_id": "broker:motilal",
+      "score": -29.2,
+      "confidence": 9,
+      "weight": 0.088,
+      "n_tips": 89,
+      "n_resolved": 2,
+      "t1_hit_rate": 0,
+      "stop_rate": 100,
+      "expectancy_pct": -4.12,
       "avg_days_to_t1": null,
       "enabled": true,
       "last_seen": "2026-09-29"
@@ -17567,9 +17641,9 @@
   "cash_flows": [],
   "book": {
     "max_open_positions": 4,
-    "open_or_pending": 3,
-    "slots_left": 1,
-    "deployable_cash": 2651.22,
+    "open_or_pending": 2,
+    "slots_left": 2,
+    "deployable_cash": 41241.72,
     "capital_inr": 100000,
     "min_alloc_inr": 15000.0,
     "max_alloc_inr": 50000.0,
@@ -18028,8 +18102,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "0f07226",
-    "branch": "main",
+    "head": "7129009",
+    "branch": "claude/gifted-albattani-840abq",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
@@ -18087,7 +18161,7 @@
     "2026-09-28",
     "2026-09-29"
   ],
-  "lessons_tail": "-24: quiet day, no stop/target/time-stop events. CGPOWER -0.92% (886.7 vs 894.9 entry, SL 855.9), LALPATHLAB +4.25% clean toward T1, KPIL -0.28%, all inside SL, deadlines (Oct 20/29) far off, no action. No source at n_resolved>=8 (max 1 of 50+), no auto-disable/commendation to report. fund-audit: no inversion (75-100 band still 1 scored, 0 settled, unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.\n\n### 2026-09-25 [analyst]\n2026-09-25: quiet day, no stop/target/time-stop events. CGPOWER -0.99% (886.0 vs 894.9 entry, SL 855.9), LALPATHLAB +3.77% clean toward T1, KPIL -0.88%, all inside SL, deadlines (Oct 20/29) far off, no action. No source at n_resolved>=8 (max 1 of 50+, V2RETAIL SL closed weeks back), no auto-disable/commendation to report. fund-audit: no inversion (75-100 band still 1 scored, 0 settled, unproven) and markets_mojo bias unchanged at +6.5/n=4, under the 8-point bar -- unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.\n\n### 2026-09-25 [analyst]\n2026-09-25 (Friday input growth): registered chartink_double_bottom at confidence 0 -- the 5 existing screener sources (52w breakout, EMA20 pullback, Bollinger squeeze, RSI oversold bounce, volume shock) are all single-leg momentum/consolidation setups; the persona names confirmed double bottom as a valid pattern but nothing screens it. Clause: current low within 3% of a prior low over a 30-day lookback, breakout above the interim high on >1.3x 20d avg volume, liquid cash names only (>Rs5cr 20d turnover), price > Rs20. No login/payment required (public Chartink scan).\n\n### 2026-09-28 [analyst]\n2026-09-28 (preopen): the only TRADE-grade catalyst, TCS 'earnings beat', was a stale story -- Goodreturns republished its July 9 2026 Q1FY27 results piece with a Sept 27 dateline, and freshness scoring gave it +12 for looking same-day. Dropped from trade after WebFetch confirmed the original publish date; the market has had 11 weeks to price it, and the chart (strong_down, 37.9% off 52w high) is consistent with stale news, not a fresh beat. Also found two theme-routing bugs polluting AVOID: solar_manufacturing's ' gw ' keyword matched Suzlon's (wind) '6.1 GW record deliveries' phrase and sympathy-routed WAAREEENER/PREMIERENE/WEBELSOLAR, which had nothing to do with Suzlon's results; power_generation's 'nuclear' keyword matched an unrelated Trump/Iran-war geopolitics story and routed a bogus 'Broker downgrade' to BHEL/THERMAX/TRITURBINE/LT. All 8 events stripped from today's news_raw.json before publish (backup kept alongside). This is a code fix, not a hand-edit: solar_manufacturing needs 'gw' gated on a solar-specific co-occurring term, and power_generation's 'nuclear' keyword needs narrowing (e.g. 'nuclear power plant'/'nuclear reactor') or a require: clause like solar_manufacturing already has, plus a regression fixture on this Suzlon/Iran-war pair in tests/test_events (or wherever theme routing is tested).\n\n### 2026-09-28 [machine]\nEvents: KPIL: STOP-LOSS @ 1368.22 → closed, P&L ₹-740.88 (-2.51%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 2 | 0 | -3.20 |\n| pattern=bollinger_squeeze | 2 | 0 | -3.20 |\n| pattern=momentum_aligned | 2 | 0 | -3.20 |\n| ta_conf=>=70 | 2 | 0 | -3.20 |\n| fund=>=65 | 2 | 0 | -3.20 |\n\n### 2026-09-28 [analyst]\nKPIL: stop hit in 8 days, only 0.94 ATR from the actual gap-down fill (1403.5), not the planned entry (1435.7) -- the fill landing 2.2% below plan quietly tightened the effective stop from 4.7% to 2.51%, after price had touched +4.07% favourable. Pattern (bollinger_squeeze) and hold-capable fundamentals (87) were sound; reads as a fill-price artifact, not a bad call. chartink_squeeze now at n_resolved=1, score -15 -- one point, not evidence yet. fund-audit: no inversion, no bias (markets_mojo mean gap +6.5, under the 8pt bar); still unproven, only 1 settled in the 75-100 band.\n",
+  "lessons_tail": " unproven, not validated. Book full at 3 open, cash Rs869, no new picks regardless.\n\n### 2026-09-25 [analyst]\n2026-09-25 (Friday input growth): registered chartink_double_bottom at confidence 0 -- the 5 existing screener sources (52w breakout, EMA20 pullback, Bollinger squeeze, RSI oversold bounce, volume shock) are all single-leg momentum/consolidation setups; the persona names confirmed double bottom as a valid pattern but nothing screens it. Clause: current low within 3% of a prior low over a 30-day lookback, breakout above the interim high on >1.3x 20d avg volume, liquid cash names only (>Rs5cr 20d turnover), price > Rs20. No login/payment required (public Chartink scan).\n\n### 2026-09-28 [analyst]\n2026-09-28 (preopen): the only TRADE-grade catalyst, TCS 'earnings beat', was a stale story -- Goodreturns republished its July 9 2026 Q1FY27 results piece with a Sept 27 dateline, and freshness scoring gave it +12 for looking same-day. Dropped from trade after WebFetch confirmed the original publish date; the market has had 11 weeks to price it, and the chart (strong_down, 37.9% off 52w high) is consistent with stale news, not a fresh beat. Also found two theme-routing bugs polluting AVOID: solar_manufacturing's ' gw ' keyword matched Suzlon's (wind) '6.1 GW record deliveries' phrase and sympathy-routed WAAREEENER/PREMIERENE/WEBELSOLAR, which had nothing to do with Suzlon's results; power_generation's 'nuclear' keyword matched an unrelated Trump/Iran-war geopolitics story and routed a bogus 'Broker downgrade' to BHEL/THERMAX/TRITURBINE/LT. All 8 events stripped from today's news_raw.json before publish (backup kept alongside). This is a code fix, not a hand-edit: solar_manufacturing needs 'gw' gated on a solar-specific co-occurring term, and power_generation's 'nuclear' keyword needs narrowing (e.g. 'nuclear power plant'/'nuclear reactor') or a require: clause like solar_manufacturing already has, plus a regression fixture on this Suzlon/Iran-war pair in tests/test_events (or wherever theme routing is tested).\n\n### 2026-09-28 [machine]\nEvents: KPIL: STOP-LOSS @ 1368.22 → closed, P&L ₹-740.88 (-2.51%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 2 | 0 | -3.20 |\n| pattern=bollinger_squeeze | 2 | 0 | -3.20 |\n| pattern=momentum_aligned | 2 | 0 | -3.20 |\n| ta_conf=>=70 | 2 | 0 | -3.20 |\n| fund=>=65 | 2 | 0 | -3.20 |\n\n### 2026-09-28 [analyst]\nKPIL: stop hit in 8 days, only 0.94 ATR from the actual gap-down fill (1403.5), not the planned entry (1435.7) -- the fill landing 2.2% below plan quietly tightened the effective stop from 4.7% to 2.51%, after price had touched +4.07% favourable. Pattern (bollinger_squeeze) and hold-capable fundamentals (87) were sound; reads as a fill-price artifact, not a bad call. chartink_squeeze now at n_resolved=1, score -15 -- one point, not evidence yet. fund-audit: no inversion, no bias (markets_mojo mean gap +6.5, under the 8pt bar); still unproven, only 1 settled in the 75-100 band.\n\n### 2026-09-29 [machine]\nEvents: CGPOWER: STOP-LOSS @ 855.9 → closed, P&L ₹-1755.0 (-4.36%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 3 | 0 | -3.59 |\n| pattern=bollinger_squeeze | 3 | 0 | -3.59 |\n| pattern=momentum_aligned | 3 | 0 | -3.59 |\n| ta_conf=>=70 | 3 | 0 | -3.59 |\n| fund=>=65 | 3 | 0 | -3.59 |\n| pattern=pullback_to_ema20_in_uptrend | 2 | 0 | -4.12 |\n| timeframe=monthly | 2 | 0 | -3.44 |\n\n### 2026-09-29 [analyst]\n2026-09-29 desk review: CGPOWER stop-loss @855.9 (-4.36%, 3rd straight hold-capable/bollinger_squeeze loss; 0/3 wins, n too small to change rules). Pattern failure vs noise not verified against ATR; fund score (>=65) has not earned its keep yet: fund-audit shows 0 inversion, no bias (markets_mojo gap +6.5 <8pt), still only 1 settled in 75-100 band. HEROMOTOCO filled 5375 (plan 5390), already -3.1% on day one. Motilal (-29, conf 9) and brokerage_gnews (-14.6) keep taking hits; none auto-disabled (n_resolved<8). No source at >=60% T1 hit-rate.\n",
   "settings": {
     "capital": {
       "total_inr": 100000,
