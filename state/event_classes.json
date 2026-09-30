@@ -2,11 +2,11 @@
   "order_win": {
     "id": "order_win",
     "prior": 30,
-    "adjust": -13.535,
-    "n": 5,
+    "adjust": -19.258,
+    "n": 6,
     "n_up": 2,
     "sum_open_to_high_pct": 2.62,
-    "sum_open_to_close_pct": -15.89,
+    "sum_open_to_close_pct": -22.41,
     "history": [
       {
         "date": "2026-09-15",
@@ -42,10 +42,17 @@
         "open_to_high_pct": 0.0,
         "open_to_close_pct": -6.75,
         "delta": -6.4
+      },
+      {
+        "date": "2026-09-30",
+        "symbol": "KPIGREEN",
+        "open_to_high_pct": 0.0,
+        "open_to_close_pct": -6.52,
+        "delta": -6.4
       }
     ],
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-29"
+    "last_seen": "2026-09-30"
   },
   "regulatory_approval": {
     "id": "regulatory_approval",
