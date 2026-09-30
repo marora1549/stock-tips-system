@@ -1,0 +1,1538 @@
+{
+  "date": "2026-09-30",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 6
+    },
+    "corp_orders_bse": {
+      "docs": 5,
+      "events": 24
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 2
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 1
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "16a3a31ca4",
+      "symbol": "KPIGREEN",
+      "company": "KPI Green Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, fundraising plans, strategic moves and project",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2025 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1080.0,
+        "unit": "MW",
+        "text": "1,080 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-kpi-green-tata-steel-nlc-nalco-shares-in-focus-on-wednesday-30-september-full-list-11790731759782.html",
+      "title": "Top stocks to watch today: KPI Green, Tata Steel, NLC, NALCO shares in focus on Wednesday, 30 September | Full list",
+      "published": "Wed, 30 Sep 2026 02:09:37 GMT",
+      "published_utc": "2026-09-30T02:09:37+00:00",
+      "sentence": "wins, fundraising plans, strategic moves and project",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-kpi-green-tata-steel-nlc-nalco-shares-in-focus-on-wednesday-30-september-full-list-11790731759782.html",
+        "https://biginfo.in/news/kpi-green-bags-new-order-worth-rs-2025-crore",
+        "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/",
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "dc3edc2ecf",
+      "symbol": "KSB",
+      "company": "Ksb Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins ₹118 crore boiler feed pump order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 118.0,
+      "size_estimated": false,
+      "size_basis": "₹118 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/ksb-share-price-wins-rs-118-crore-boiler-feed-pump-order-from-dangote-projects-free-zone-enterprise-20001433.htm/amp",
+      "title": "KSB wins ₹118 crore boiler feed pump order from Dangote Projects Free Zone Enterprise",
+      "published": "Tue, 29 Sep 2026 17:14:18 GMT",
+      "published_utc": "2026-09-29T17:14:18+00:00",
+      "sentence": "wins ₹118 crore boiler feed pump order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/ksb-share-price-wins-rs-118-crore-boiler-feed-pump-order-from-dangote-projects-free-zone-enterprise-20001433.htm/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ff8f33a0e3",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a letter of award (loa",
+      "also_matched": [
+        "dilution",
+        "regulatory_clearance"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1077.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,077 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/coforge-azad-eng-ncc-axiscade-among-buzzing-stocks-as-sensex-falls-400-pts-nifty-trades-below-22-700/article-201052/",
+      "title": "Coforge, Azad Eng, NCC, AXISCADE among buzzing stocks as SENSEX falls 400 pts; NIFTY trades below 22,700",
+      "published": "Tue, 29 Sep 2026 08:01:27 GMT",
+      "published_utc": "2026-09-29T08:01:27+00:00",
+      "sentence": "secured a letter of award (loa",
+      "corroborating_sources": [
+        "corp_orders",
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/coforge-azad-eng-ncc-axiscade-among-buzzing-stocks-as-sensex-falls-400-pts-nifty-trades-below-22-700/article-201052/",
+        "https://www.business-standard.com/markets/capital-market-news/ncc-jumps-after-bagging-order-worth-rs-1-077-crore-126092900586_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "2b1641c696",
+      "symbol": "TATASTEEL",
+      "company": "Tata Steel Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins, fundraising plans, strategic moves and project",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1080.0,
+        "unit": "MW",
+        "text": "1,080 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-kpi-green-tata-steel-nlc-nalco-shares-in-focus-on-wednesday-30-september-full-list-11790731759782.html",
+      "title": "Top stocks to watch today: KPI Green, Tata Steel, NLC, NALCO shares in focus on Wednesday, 30 September | Full list",
+      "published": "Wed, 30 Sep 2026 02:09:37 GMT",
+      "published_utc": "2026-09-30T02:09:37+00:00",
+      "sentence": "wins, fundraising plans, strategic moves and project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-kpi-green-tata-steel-nlc-nalco-shares-in-focus-on-wednesday-30-september-full-list-11790731759782.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-steel-kpi-green-energy-nlc-india-poonawalla-fincorp-and-cummins-india/articleshow/134571657.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "f069be6fa9",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹2,025 crore solar epc project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 500.0,
+        "unit": "MW",
+        "text": "500 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+      "title": "KPI Green Energy (NSE:KPIGREEN) Secures ₹2,025 Crore Solar EPC Project",
+      "published": "Tue, 29 Sep 2026 15:35:00 GMT",
+      "published_utc": "2026-09-29T15:35:00+00:00",
+      "sentence": "secures ₹2,025 crore solar epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "dbdc24759d",
+      "symbol": "RAILTEL",
+      "company": "Railtel Corporation Of India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm",
+      "title": "STL Networks emerges lowest bidder for ₹250 crore RailTel cloud infrastructure contract",
+      "published": "Tue, 29 Sep 2026 11:39:58 GMT",
+      "published_utc": "2026-09-29T11:39:58+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "be700b81a9",
+      "symbol": "STLNETWORK",
+      "company": "STL Networks Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm",
+      "title": "STL Networks emerges lowest bidder for ₹250 crore RailTel cloud infrastructure contract",
+      "published": "Tue, 29 Sep 2026 11:39:58 GMT",
+      "published_utc": "2026-09-29T11:39:58+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5d80f21cda",
+      "symbol": "ARTEMISMED",
+      "company": "Artemis Medicare Services Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 11.11,
+      "size_estimated": false,
+      "size_basis": "₹11.11 Cr (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/artemis-medicare-gets-11-11-cr-gst-show-cause-notice-fy23/52238092",
+      "title": "Artemis Medicare gets ₹11.11 Cr GST notice for FY23",
+      "published": "Tue, 29 Sep 2026 14:36:51 GMT",
+      "published_utc": "2026-09-29T14:36:51+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/artemis-medicare-gets-11-11-cr-gst-show-cause-notice-fy23/52238092"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "372f393c95",
+      "symbol": "RAJESHEXPO",
+      "company": "Rajesh Exports Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "sebi said rajesh exports ltd received repeated summons",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html",
+      "title": "Sebi order bars Rajesh Mehta from Rajesh Exports securities over alleged misstatements",
+      "published": "Tue, 29 Sep 2026 11:42:21 GMT",
+      "published_utc": "2026-09-29T11:42:21+00:00",
+      "sentence": "sebi said rajesh exports ltd received repeated summons",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e1c3a2b01",
+      "symbol": "UMESLTD",
+      "company": "Usha Martin Education & Solutions Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jump",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Tue, 29 Sep 2026 12:40:00 GMT",
+      "published_utc": "2026-09-29T12:40:00+00:00",
+      "sentence": "profit jump",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ce8880e41a",
+      "symbol": "NEOGEN",
+      "company": "Neogen Chemicals Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.dvm360.com/view/fungus-contaminated-wound-product-linked-to-infections-in-nearly-100-horses-at-least-20-euthanized",
+      "title": "Fungus-contaminated wound product linked to infections in nearly 100 horses, at least 20 euthanized",
+      "published": "Tue, 29 Sep 2026 23:21:24 GMT",
+      "published_utc": "2026-09-29T23:21:24+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.dvm360.com/view/fungus-contaminated-wound-product-linked-to-infections-in-nearly-100-horses-at-least-20-euthanized"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5ff9291d40",
+      "symbol": "FORTIS",
+      "company": "Fortis Healthcare Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledged shares",
+      "also_matched": [
+        "dilution",
+        "stake_buy",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 4000.0,
+      "size_estimated": false,
+      "size_basis": "₹4,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ihh-plans-to-raise-stake-in-fortis-to-51-after-sc-s-forensic-audit-order-126092901248_1.html",
+      "title": "Following SC order on forensic audit, IHH may raise Fortis stake to 51%",
+      "published": "Tue, 29 Sep 2026 14:53:00 GMT",
+      "published_utc": "2026-09-29T14:53:00+00:00",
+      "sentence": "pledged shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/ihh-plans-to-raise-stake-in-fortis-to-51-after-sc-s-forensic-audit-order-126092901248_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b048d4fec0",
+      "symbol": "ARMEE",
+      "company": "ArMee Infotech Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 300.0,
+      "size_estimated": false,
+      "size_basis": "Rs 300 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/armee-infotech-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134577604.cms",
+      "title": "ArMee Infotech shares to list today: Check GMP ahead of debut",
+      "published": "Wed, 30 Sep 2026 07:55:11 +0530",
+      "published_utc": "2026-09-30T02:25:11+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/news/armee-infotech-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134577604.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3c31864c5a",
+      "symbol": "DAICHI",
+      "company": "Dai-Ichi Karkaria Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "pledged shares",
+      "also_matched": [
+        "dilution",
+        "stake_buy",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2562.0,
+      "size_estimated": false,
+      "size_basis": "₹2,562 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ihh-plans-to-raise-stake-in-fortis-to-51-after-sc-s-forensic-audit-order-126092901248_1.html",
+      "title": "Following SC order on forensic audit, IHH may raise Fortis stake to 51%",
+      "published": "Tue, 29 Sep 2026 14:53:00 GMT",
+      "published_utc": "2026-09-29T14:53:00+00:00",
+      "sentence": "pledged shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/ihh-plans-to-raise-stake-in-fortis-to-51-after-sc-s-forensic-audit-order-126092901248_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4c34c961ce",
+      "symbol": "AVALON",
+      "company": "Avalon Technologies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "l1_bidder",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 861.9,
+      "size_estimated": false,
+      "size_basis": "Rs 861.9 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1080.0,
+        "unit": "MW",
+        "text": "1,080 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-gspl-transmission-avalon-tech-elevate-campuses-adroit-industries-power-mech-arisinfra-solutions-ganesh-benzoplast-ksb-in-focus-on-30-september-14041435.html/amp",
+      "title": "Stocks to Watch Today: GSPL Transmission, Avalon Tech, Elevate Campuses, Adroit Industries, Power Mech,...",
+      "published": "Wed, 30 Sep 2026 00:46:55 GMT",
+      "published_utc": "2026-09-30T00:46:55+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-gspl-transmission-avalon-tech-elevate-campuses-adroit-industries-power-mech-arisinfra-solutions-ganesh-benzoplast-ksb-in-focus-on-30-september-14041435.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e7e4e4fea2",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned bess capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 600.0,
+        "unit": "MWh",
+        "text": "600 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-commissions-100-64-mwh-bess-bikaner-phase-ii/52247992",
+      "title": "Juniper Green Energy commissions 100.64 MWh BESS at Bikaner Phase II",
+      "published": "Tue, 29 Sep 2026 17:22:02 GMT",
+      "published_utc": "2026-09-29T17:22:02+00:00",
+      "sentence": "commissioned bess capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/juniper-green-energy-commissions-100-64-mwh-bess-bikaner-phase-ii/52247992"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "08326f7dc2",
+      "symbol": "NAVINFLUOR",
+      "company": "Navin Fluorine International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions dahej plant capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/navin-fluorine-begins-commercial-production-dahej-plant/52221481",
+      "title": "Navin Fluorine subsidiary commissions Dahej plant capacity",
+      "published": "Tue, 29 Sep 2026 10:06:43 GMT",
+      "published_utc": "2026-09-29T10:06:43+00:00",
+      "sentence": "commissions dahej plant capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/navin-fluorine-begins-commercial-production-dahej-plant/52221481"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ea6a66b689",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 5000.0,
+        "unit": "MW",
+        "text": "5,000 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-29 — cnbctv:781d7527b094b:0",
+      "published": "Tue, 29 Sep 2026 10:23:32 GMT",
+      "published_utc": "2026-09-29T10:23:32+00:00",
+      "sentence": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "b54c1709c6",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 5000.0,
+        "unit": "MW",
+        "text": "5,000 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-29 — cnbctv:781d7527b094b:0",
+      "published": "Tue, 29 Sep 2026 10:23:32 GMT",
+      "published_utc": "2026-09-29T10:23:32+00:00",
+      "sentence": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "eb705e3d1a",
+      "symbol": "NLCINDIA",
+      "company": "NLC India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win",
+        "l1_bidder",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1080.0,
+        "unit": "MW",
+        "text": "1,080 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-steel-kpi-green-energy-nlc-india-poonawalla-fincorp-and-cummins-india/articleshow/134571657.cms",
+      "title": "Stocks in news: Tata Steel, KPI Green Energy, NLC India, Poonawalla Fincorp and Cummins India",
+      "published": "Wed, 30 Sep 2026 00:30:00 GMT",
+      "published_utc": "2026-09-30T00:30:00+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-steel-kpi-green-energy-nlc-india-poonawalla-fincorp-and-cummins-india/articleshow/134571657.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2241b6f257",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹2,025 crore solar epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500.0,
+        "unit": "MW",
+        "text": "500 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+      "title": "KPI Green Energy (NSE:KPIGREEN) Secures ₹2,025 Crore Solar EPC Project",
+      "published": "Tue, 29 Sep 2026 15:35:00 GMT",
+      "published_utc": "2026-09-29T15:35:00+00:00",
+      "sentence": "secures ₹2,025 crore solar epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "5074d38124",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹2,025 crore solar epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500.0,
+        "unit": "MW",
+        "text": "500 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+      "title": "KPI Green Energy (NSE:KPIGREEN) Secures ₹2,025 Crore Solar EPC Project",
+      "published": "Tue, 29 Sep 2026 15:35:00 GMT",
+      "published_utc": "2026-09-29T15:35:00+00:00",
+      "sentence": "secures ₹2,025 crore solar epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "adfca0dee4",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 5000.0,
+        "unit": "MW",
+        "text": "5,000 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-29 — cnbctv:781d7527b094b:0",
+      "published": "Tue, 29 Sep 2026 10:23:32 GMT",
+      "published_utc": "2026-09-29T10:23:32+00:00",
+      "sentence": "bags ₹2,025 crore solar epc order for 500 mw project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+        "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+        "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "f90ff5703a",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹2,025 crore solar epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 2025.0,
+      "size_estimated": false,
+      "size_basis": "₹2,025 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500.0,
+        "unit": "MW",
+        "text": "500 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+      "title": "KPI Green Energy (NSE:KPIGREEN) Secures ₹2,025 Crore Solar EPC Project",
+      "published": "Tue, 29 Sep 2026 15:35:00 GMT",
+      "published_utc": "2026-09-29T15:35:00+00:00",
+      "sentence": "secures ₹2,025 crore solar epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0bba2ad3fd",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm",
+      "title": "STL Networks emerges lowest bidder for ₹250 crore RailTel cloud infrastructure contract",
+      "published": "Tue, 29 Sep 2026 11:39:58 GMT",
+      "published_utc": "2026-09-29T11:39:58+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e859bd556b",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm",
+      "title": "STL Networks emerges lowest bidder for ₹250 crore RailTel cloud infrastructure contract",
+      "published": "Tue, 29 Sep 2026 11:39:58 GMT",
+      "published_utc": "2026-09-29T11:39:58+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e3ffbdb931",
+      "symbol": "AASTHA",
+      "company": "Aastha Spintex Limited",
+      "event": "corporate_action",
+      "event_label": "Dividend / bonus / split",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 8,
+      "phrase": "bonus shares",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 88.28,
+      "size_estimated": false,
+      "size_basis": "₹88.28 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/aastha-spintex-allots-4-41-crore-bonus-shares-1-1-ratio/52210888",
+      "title": "Aastha Spintex allots 4.41 crore bonus shares in 1:1 ratio",
+      "published": "Tue, 29 Sep 2026 07:09:45 GMT",
+      "published_utc": "2026-09-29T07:09:45+00:00",
+      "sentence": "bonus shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/aastha-spintex-allots-4-41-crore-bonus-shares-1-1-ratio/52210888"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-kpi-green-tata-steel-nlc-nalco-shares-in-focus-on-wednesday-30-september-full-list-11790731759782.html",
+      "title": "Top stocks to watch today: KPI Green, Tata Steel, NLC, NALCO shares in focus on Wednesday, 30 September | Full list",
+      "published": "Wed, 30 Sep 2026 02:09:37 GMT",
+      "chars": 4323,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-gspl-transmission-avalon-tech-elevate-campuses-adroit-industries-power-mech-arisinfra-solutions-ganesh-benzoplast-ksb-in-focus-on-30-september-14041435.html/amp",
+      "title": "Stocks to Watch Today: GSPL Transmission, Avalon Tech, Elevate Campuses, Adroit Industries, Power Mech,...",
+      "published": "Wed, 30 Sep 2026 00:46:55 GMT",
+      "chars": 12358,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tata-steel-kpi-green-energy-nlc-india-poonawalla-fincorp-and-cummins-india/articleshow/134571657.cms",
+      "title": "Stocks in news: Tata Steel, KPI Green Energy, NLC India, Poonawalla Fincorp and Cummins India",
+      "published": "Wed, 30 Sep 2026 00:30:00 GMT",
+      "chars": 9848,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/nse-kirloseng/kirloskar-oil-engines-shares/news/kirloskar-oil-engines-and-2-indian-nuclear-power-stocks-to-w-1",
+      "title": "Kirloskar Oil Engines And 2 Indian Nuclear Power Stocks To Watch",
+      "published": "Tue, 29 Sep 2026 21:29:47 GMT",
+      "chars": 12087,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/09/30/2026/Vikram-Solar-Secures-Major-Module-Supply-Deal--Ellenbarrie-Secures-Large-Scale-BHEL-Contract--Top-Buzzing-Stocks-Today?utm_source=homepage&utm_medium=website&utm_campaign=Content&utm_content=TM",
+      "title": "Vikram Solar Secures Major Module Supply Deal | Ellenbarrie Secures Large-Scale BHEL Contract | Top Buzzing Stocks Today",
+      "published": "Wed, 30 Sep 2026 00:30:01 GMT",
+      "chars": 8716,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/coforge-azad-eng-ncc-axiscade-among-buzzing-stocks-as-sensex-falls-400-pts-nifty-trades-below-22-700/article-201052/",
+      "title": "Coforge, Azad Eng, NCC, AXISCADE among buzzing stocks as SENSEX falls 400 pts; NIFTY trades below 22,700",
+      "published": "Tue, 29 Sep 2026 08:01:27 GMT",
+      "chars": 8873,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/kpi-green-bags-new-order-worth-rs-2025-crore",
+      "title": "KPI Green bags new order worth Rs 2025 crore",
+      "published": "Tue, 29 Sep 2026 19:47:02 GMT",
+      "chars": 1095,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/tradingview:260e72a305cb8:0-tiger-financial-services-inc-banq-wins-order-for-1-000-more-pos-devices-in-vietnam/",
+      "title": "Tiger Financial Services Inc. (BANQ) Wins Order for 1,000 More POS Devices in Vietnam",
+      "published": "Tue, 29 Sep 2026 17:30:03 GMT",
+      "chars": 1601,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.cnbctv18.com/market/stocks/stl-networks-emerges-lowest-bidder-for-rs-250-crore-railtel-cloud-infrastructure-contract-20000953.htm",
+      "title": "STL Networks emerges lowest bidder for ₹250 crore RailTel cloud infrastructure contract",
+      "published": "Tue, 29 Sep 2026 11:39:58 GMT",
+      "chars": 1748,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ncc-jumps-after-bagging-order-worth-rs-1-077-crore-126092900586_1.html",
+      "title": "NCC jumps after bagging order worth Rs 1,077 crore",
+      "published": "Tue, 29 Sep 2026 08:46:18 GMT",
+      "chars": 1773,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.africabusinessplus.com/en/839761/madagascar-wietc-secures-contract-to-upgrade-national-road-6-ahead-of-sogea-satom/",
+      "title": "Madagascar: WIETC secures contract to upgrade National Road 6, ahead of Sogea Satom.",
+      "published": "Tue, 29 Sep 2026 14:21:32 GMT",
+      "chars": 105,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/energy/kpi-green-energy-nsekpigreen-secures-2025-crore-solar-epc-order-from-nacof-oorja",
+      "title": "KPI Green Energy (NSE:KPIGREEN) Secures ₹2,025 Crore Solar EPC Project",
+      "published": "Tue, 29 Sep 2026 15:35:00 GMT",
+      "chars": 7510,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:781d7527b094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-29 — cnbctv:781d7527b094b:0",
+      "published": "Tue, 29 Sep 2026 10:23:32 GMT",
+      "chars": 2559,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.indiaipo.in/news/detail/kpi-green-energy-bags-2025-crore-solar-epc-order-for-500-mw-project-in-rajasthan",
+      "title": "KPI Green Energy bags ₹2,025 crore solar EPC order for 500 MW project in Rajasthan",
+      "published": "Tue, 29 Sep 2026 11:10:09 GMT",
+      "chars": 1944,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/aastha-spintex-allots-4-41-crore-bonus-shares-1-1-ratio/52210888",
+      "title": "Aastha Spintex allots 4.41 crore bonus shares in 1:1 ratio",
+      "published": "Tue, 29 Sep 2026 07:09:45 GMT",
+      "chars": 2317,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://businessupturn.com/business/kpi-green-energy-secures-rs2-025-crore-solar-epc-project-from-nacof-oorja/",
+      "title": "KPI Green Energy secures ₹2,025 crore solar EPC project from NACOF Oorja",
+      "published": "Tue, 29 Sep 2026 10:01:55 GMT",
+      "chars": 2035,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://indovizka.com/news/detail/23028/teva-continues-biosimilar-momentum-with-us-fda-approval-of-degevma-denosumabadet-a-biosimilar-to-xgeva-denosumab",
+      "title": "Teva Continues Biosimilar Momentum with U.S. FDA Approval of DEGEVMA (denosumab-adet), a Biosimilar to Xgeva (denosumab)",
+      "published": "Tue, 29 Sep 2026 13:04:36 GMT",
+      "chars": 14459,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://oncodaily.com/not-to-miss/denosumab-biosimilar-596674",
+      "title": "Teva Receives U.S. FDA Approval for Denosumab Biosimilar for Oncology Indications",
+      "published": "Tue, 29 Sep 2026 10:36:17 GMT",
+      "chars": 3326,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.taxscan.in/gst/taxpayer-premises-locked-by-bank-gst-notice-returned-undelivered-karnataka-hc-quashes-adjudication-order",
+      "title": "Karnataka HC Quashes GST Adjudication Order",
+      "published": "Tue, 29 Sep 2026 17:34:58 GMT",
+      "chars": 3380,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/artemis-medicare-gets-11-11-cr-gst-show-cause-notice-fy23/52238092",
+      "title": "Artemis Medicare gets ₹11.11 Cr GST notice for FY23",
+      "published": "Tue, 29 Sep 2026 14:36:51 GMT",
+      "chars": 3525,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.dvm360.com/view/fungus-contaminated-wound-product-linked-to-infections-in-nearly-100-horses-at-least-20-euthanized",
+      "title": "Fungus-contaminated wound product linked to infections in nearly 100 horses, at least 20 euthanized",
+      "published": "Tue, 29 Sep 2026 23:21:24 GMT",
+      "chars": 7161,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.clinicaltrialvanguard.com/clinops-watchdog/ab-sciences-calendar-update-is-a-gcp-inspection-disclosure-in-disguise/",
+      "title": "AB Science’s “Calendar Update” Is a GCP Inspection Disclosure in Disguise",
+      "published": "Tue, 29 Sep 2026 07:43:59 GMT",
+      "chars": 10911,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://finance.biggo.com/news/165da00d-2b74-42a9-a4df-ecc1377b9867",
+      "title": "Adani Group Settles Six-Year SEBI Shareholding Probe for $154,100",
+      "published": "Tue, 29 Sep 2026 23:25:00 GMT",
+      "chars": 6057,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/sebi-bars-rajesh-exports-ceo-rajesh-mehta-over-alleged-fund-diversion-011-1512923.html",
+      "title": "Sebi order bars Rajesh Mehta from Rajesh Exports securities over alleged misstatements",
+      "published": "Tue, 29 Sep 2026 11:42:21 GMT",
+      "chars": 2961,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/usha-martin-education-schedules-29th-agm-september-30-2026/50350724",
+      "title": "Usha Martin Education posts 122% profit jump in FY26; schedules AGM",
+      "published": "Tue, 29 Sep 2026 12:40:00 GMT",
+      "chars": 4579,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://investorsking.com/2026/09/29/gtco-profit-falls-7-8-to-n414-19bn-as-tax-charge-jumps-24/",
+      "title": "GTCO Profit Falls 7.8% To N414.19bn As Tax Charge Jumps 24%",
+      "published": "Tue, 29 Sep 2026 09:37:19 GMT",
+      "chars": 5984,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/denka-stock-falls-1-45-percent-as-dividend-goes-ex/70196637",
+      "title": "Denka stock falls 1.45 percent as dividend goes ex",
+      "published": "Tue, 29 Sep 2026 06:44:37 GMT",
+      "chars": 2533,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/ksb-share-price-wins-rs-118-crore-boiler-feed-pump-order-from-dangote-projects-free-zone-enterprise-20001433.htm/amp",
+      "title": "KSB wins ₹118 crore boiler feed pump order from Dangote Projects Free Zone Enterprise",
+      "published": "Tue, 29 Sep 2026 17:14:18 GMT",
+      "chars": 1604,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://money.rediff.com/amp/news/market/coinswitch-fy26-revenue-doubles-achieves-profitability/55274020260929",
+      "title": "CoinSwitch FY26 Revenue Doubles, Achieves Profitability",
+      "published": "Tue, 29 Sep 2026 15:41:16 GMT",
+      "chars": 1979,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/jefferies-financial-q3-results-eps-1-09-beats-estimates-targets-cut/52241449",
+      "title": "Jefferies Financial Q3 Results: EPS $1.09 beats estimates, targets cut",
+      "published": "Tue, 29 Sep 2026 19:20:59 GMT",
+      "chars": 3158,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-commissions-100-64-mwh-bess-bikaner-phase-ii/52247992",
+      "title": "Juniper Green Energy commissions 100.64 MWh BESS at Bikaner Phase II",
+      "published": "Tue, 29 Sep 2026 17:22:02 GMT",
+      "chars": 2745,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/navin-fluorine-begins-commercial-production-dahej-plant/52221481",
+      "title": "Navin Fluorine subsidiary commissions Dahej plant capacity",
+      "published": "Tue, 29 Sep 2026 10:06:43 GMT",
+      "chars": 2770,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ihh-plans-to-raise-stake-in-fortis-to-51-after-sc-s-forensic-audit-order-126092901248_1.html",
+      "title": "Following SC order on forensic audit, IHH may raise Fortis stake to 51%",
+      "published": "Tue, 29 Sep 2026 14:53:00 GMT",
+      "chars": 5143,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/nclat-seeks-creditors-response-to-subhash-chandra-plea-against-nclt-order-126092901304_1.html",
+      "title": "NCLAT seeks creditors' response to Subhash Chandra plea against NCLT order",
+      "published": "Tue, 29 Sep 2026 15:27:49 GMT",
+      "chars": 5167,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/delhi-hc-quashes-fssai-order-barring-red-bull-from-using-energy-drink-label-126092900476_1.html",
+      "title": "Delhi HC quashes FSSAI order barring Red Bull from using energy drink label",
+      "published": "Tue, 29 Sep 2026 07:52:03 GMT",
+      "chars": 4121,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/sugs-lloyd-secures-2mw-solar-power-project-from-the-golden-temple-amritsar-126092900888_1.html",
+      "title": "Sugs Lloyd secures 2MW solar power project from The Golden Temple, Amritsar",
+      "published": "Tue, 29 Sep 2026 11:46:06 GMT",
+      "chars": 1320,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/ncc-jumps-after-bagging-order-worth-rs-1-077-crore-126092900586_1.html",
+      "title": "NCC jumps after bagging order worth Rs 1,077 crore",
+      "published": "Tue, 29 Sep 2026 08:46:18 GMT",
+      "chars": 1773,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/bondada-engineering-secures-multiple-orders-worth-rs-146-90-cr-126092900825_1.html",
+      "title": "Bondada Engineering secures multiple orders worth Rs 146.90 cr",
+      "published": "Tue, 29 Sep 2026 11:20:01 GMT",
+      "chars": 1647,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/maharashtra-fda-orders-tighter-regulation-of-infant-foods-across-the-state-126092901299_1.html",
+      "title": "Maharashtra FDA orders tighter regulation of infant foods across the state",
+      "published": "Tue, 29 Sep 2026 15:25:49 GMT",
+      "chars": 5380,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-quashes-sambhal-violence-accused-s-nsa-detention-fines-up-govt-10-lakh-126092900486_1.html",
+      "title": "SC quashes Sambhal violence accused's NSA detention, fines UP govt ₹10 lakh",
+      "published": "Tue, 29 Sep 2026 07:45:15 GMT",
+      "chars": 4437,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-september-30-sensex-today-nifty-gift-nifty-crude-oil-price-adroit-industries-share-ipo-today-126093000100_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asian markets advance on oil price decline",
+      "published": "Wed, 30 Sep 2026 07:55:50 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-here-s-why-chandan-taparia-is-bullish-on-paytm-sona-blw-126093000097_1.html",
+      "title": "Here's why Chandan Taparia is bullish on Paytm, Sona BLW",
+      "published": "Wed, 30 Sep 2026 07:36:33 +0530",
+      "chars": 192,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-rejig-kicks-in-bse-joins-as-wipro-exits-what-investors-need-to-know-126093000096_1.html",
+      "title": "Nifty rejig kicks in: BSE joins as Wipro exits; what investors need to know",
+      "published": "Wed, 30 Sep 2026 07:20:32 +0530",
+      "chars": 164,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-50-logs-worst-september-performance-in-8-years-as-40-stocks-slide-126093000095_1.html",
+      "title": "Nifty 50 set to log worst September in 8 years as market sell-off deepens",
+      "published": "Wed, 30 Sep 2026 07:16:44 +0530",
+      "chars": 136,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/tata-stocks-drop-amid-listing-concerns-titan-and-tcs-lead-decline-126092901125_1.html",
+      "title": "Tata stocks drop amid concerns over listing; Titan and TCS lead decline",
+      "published": "Tue, 29 Sep 2026 21:08:11 +0530",
+      "chars": 149,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/markets-ride-expiry-day-seesaw-as-derivatives-swings-jolt-nifty-126092901048_1.html",
+      "title": "High derivatives activity lead to swings in Indian market on expiry day",
+      "published": "Tue, 29 Sep 2026 20:04:40 +0530",
+      "chars": 76,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/only-62-mn-invest-in-mfs-despite-500-550-mn-upi-users-in-india-ey-report-126092901161_1.html",
+      "title": "Only 62 million invest in MFs despite 500-550 million UPI users: EY report",
+      "published": "Tue, 29 Sep 2026 19:37:52 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nomura-sees-earnings-resilience-but-oil-geopolitics-weigh-on-valuations-126092901090_1.html",
+      "title": "Nomura sees earnings resilience, but oil, geopolitics weigh on valuations",
+      "published": "Tue, 29 Sep 2026 19:02:45 +0530",
+      "chars": 163,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/armee-infotech-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134577604.cms",
+      "title": "ArMee Infotech shares to list today: Check GMP ahead of debut",
+      "published": "Wed, 30 Sep 2026 07:55:11 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/134577592.cms",
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "published": "Wed, 30 Sep 2026 07:44:44 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/robinhood-to-allow-24-hour-weekend-trading-of-us-stocks-as-industry-shifts-to-wider-access/articleshow/134577438.cms",
+      "title": "Robinhood to allow 24-hour weekend trading of US stocks as industry shifts to wider access",
+      "published": "Wed, 30 Sep 2026 07:42:46 +0530",
+      "chars": 335,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-september-30-crude-oil-at-104-as-trump-rejects-easing-iran-sanctions-what-are-experts-saying/articleshow/134577453.cms",
+      "title": "Oil Price Today (September 30): Crude oil at $104 as Trump rejects easing Iran sanctions. What are experts saying?",
+      "published": "Wed, 30 Sep 2026 07:42:01 +0530",
+      "chars": 339,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dividends-bonus-issues-last-day-to-buy-igl-natco-pharma-among-7-stocks-before-record-date/slideshow/134577619.cms",
+      "title": "Dividends, bonus issues: Last day to buy IGL, Natco Pharma among 7 stocks before record date",
+      "published": "Wed, 30 Sep 2026 07:40:36 +0530",
+      "chars": 154,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-heads-for-monthly-decline-us-inflation-data-looms/articleshow/134577383.cms",
+      "title": "Gold heads for monthly decline, US inflation data looms",
+      "published": "Wed, 30 Sep 2026 07:37:17 +0530",
+      "chars": 426,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-set-for-september-rise-mainly-at-euros-expense/articleshow/134577360.cms",
+      "title": "Dollar set for September rise, mainly at euro's expense",
+      "published": "Wed, 30 Sep 2026 07:33:30 +0530",
+      "chars": 377,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 132.8
+}
