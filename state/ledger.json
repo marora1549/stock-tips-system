@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 83.02,
+  "cash_inr": 757.52,
   "positions": [
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -38,10 +38,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 5.6,
+      "max_favourable_pct": 5.98,
       "notes": [],
-      "ltp": 1950.4000244140625,
-      "unrealised_pct": 3.67
+      "ltp": 1987.0,
+      "unrealised_pct": 5.61
     },
     {
       "pos_id": "2026-09-29-HEROMOTOCO",
@@ -92,8 +92,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 0.17,
       "notes": [],
-      "ltp": 5208.0,
-      "unrealised_pct": -3.11
+      "ltp": 5241.0,
+      "unrealised_pct": -2.49
     },
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -102,12 +102,12 @@
       "company": "Petronet LNG",
       "opened": "2026-09-30",
       "booked": "2026-09-30 08:31",
-      "status": "pending",
+      "status": "open",
       "entry_plan": 289.85,
-      "entry": null,
+      "entry": 285.1,
       "qty": 142,
       "qty_open": 142,
-      "capital_inr": 41158.7,
+      "capital_inr": 40484.2,
       "stop_loss": 276.86,
       "initial_stop": 276.86,
       "targets": [
@@ -119,7 +119,7 @@
       "fund_score_at_entry": 76,
       "timeframe": "long",
       "time_stop_days": 30,
-      "deadline": null,
+      "deadline": "2026-11-11",
       "eta_days": [
         null,
         null,
@@ -142,8 +142,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 0.0,
-      "notes": []
+      "max_favourable_pct": 1.33,
+      "notes": [],
+      "ltp": 284.5,
+      "unrealised_pct": -0.21
     }
   ],
   "closed": [
@@ -385,6 +387,10 @@
     {
       "date": "2026-09-29",
       "equity": 96537.72
+    },
+    {
+      "date": "2026-09-30",
+      "equity": 97166.52
     }
   ],
   "created": "2026-09-07",
