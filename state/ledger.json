@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 41241.72,
+  "cash_inr": 83.02,
   "positions": [
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -94,6 +94,56 @@
       "notes": [],
       "ltp": 5208.0,
       "unrealised_pct": -3.11
+    },
+    {
+      "pos_id": "2026-09-30-PETRONET",
+      "tip_id": "d0b8ebf0d2",
+      "symbol": "PETRONET",
+      "company": "Petronet LNG",
+      "opened": "2026-09-30",
+      "booked": "2026-09-30 08:31",
+      "status": "pending",
+      "entry_plan": 289.85,
+      "entry": null,
+      "qty": 142,
+      "qty_open": 142,
+      "capital_inr": 41158.7,
+      "stop_loss": 276.86,
+      "initial_stop": 276.86,
+      "targets": [
+        307.19,
+        318.75,
+        326.4
+      ],
+      "targets_hit": [],
+      "fund_score_at_entry": 76,
+      "timeframe": "long",
+      "time_stop_days": 30,
+      "deadline": null,
+      "eta_days": [
+        null,
+        null,
+        null
+      ],
+      "pace_pct_day": -0.176,
+      "momentum_score": 0,
+      "source_id": "broker:nuvama",
+      "corroborating_sources": [
+        "fe_gnews"
+      ],
+      "ta_confidence": 75,
+      "fund_score": 76,
+      "composite": 69,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "double_bottom_confirmed",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
     }
   ],
   "closed": [

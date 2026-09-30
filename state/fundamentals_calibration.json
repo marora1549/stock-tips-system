@@ -2,7 +2,7 @@
   "buckets": {
     "75-100": {
       "id": "75-100",
-      "n": 2,
+      "n": 3,
       "n_settled": 1,
       "n_up": 0,
       "sum_return_pct": -2.51,
@@ -28,6 +28,17 @@
       "date": "2026-09-29",
       "symbol": "HEROMOTOCO",
       "score": 87,
+      "bucket": "75-100",
+      "flags": [],
+      "caps": [],
+      "unrated": false,
+      "outcome": null,
+      "ret_pct": null
+    },
+    {
+      "date": "2026-09-30",
+      "symbol": "PETRONET",
+      "score": 76,
       "bucket": "75-100",
       "flags": [],
       "caps": [],
