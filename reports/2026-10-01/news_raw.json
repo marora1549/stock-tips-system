@@ -1,0 +1,1317 @@
+{
+  "date": "2026-10-01",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 8
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 9
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "ffb1680990",
+      "symbol": "POWERMECH",
+      "company": "Power Mech Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged an operations and maintenance order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 970.0,
+      "size_estimated": false,
+      "size_basis": "₹970 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 800.0,
+        "unit": "MW",
+        "text": "800 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/",
+      "title": "Power Mech Projects shares soar 6% on bagging order worth ₹549 crore from Moxie Power Generation",
+      "published": "Wed, 30 Sep 2026 09:16:51 GMT",
+      "published_utc": "2026-09-30T09:16:51+00:00",
+      "sentence": "bagged an operations and maintenance order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9b7a552e1d",
+      "symbol": "STLNETWORK",
+      "company": "STL Networks Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "Rs 250 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/stl-networks-emerges-as-the-lowest-bidder-for-railtels-project-worth-rs-250-crore",
+      "title": "STL Networks emerges as the lowest bidder for RailTel's project worth Rs 250 crore",
+      "published": "Wed, 30 Sep 2026 19:31:33 GMT",
+      "published_utc": "2026-09-30T19:31:33+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://biginfo.in/news/stl-networks-emerges-as-the-lowest-bidder-for-railtels-project-worth-rs-250-crore",
+        "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+        "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "ce5a23910d",
+      "symbol": "STLTECH",
+      "company": "Sterlite Technologies Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/",
+      "title": "Upper circuit bonanza! STL Networks, Sterlite Tech rally 5% - What's fuelling surge and what lies ahead for investors",
+      "published": "Wed, 30 Sep 2026 10:32:15 GMT",
+      "published_utc": "2026-09-30T10:32:15+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c3d5376cf0",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804",
+      "title": "Prince Pipes gets ₹65.93 Cr GST notice from Karnataka for FY23",
+      "published": "Wed, 30 Sep 2026 14:44:33 GMT",
+      "published_utc": "2026-09-30T14:44:33+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "729c3bf9c9",
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange of India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm",
+      "title": "MCX receives GST notice proposing ₹103 crore tax, interest and penalty for FY23",
+      "published": "Wed, 30 Sep 2026 17:47:13 GMT",
+      "published_utc": "2026-09-30T17:47:13+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3066758496",
+      "symbol": "PRINCEPIPE",
+      "company": "Prince Pipes And Fittings Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804",
+      "title": "Prince Pipes gets ₹65.93 Cr GST notice from Karnataka for FY23",
+      "published": "Wed, 30 Sep 2026 14:44:33 GMT",
+      "published_utc": "2026-09-30T14:44:33+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ff84fa3791",
+      "symbol": "RAILTEL",
+      "company": "Railtel Corporation Of India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 249.0,
+      "size_estimated": false,
+      "size_basis": "249 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+      "title": "STL Networks emerges as L1 bidder for RailTel's ₹250 Crore Integrated Next-Generation Cloud Infrastructure & Data Center Transformation Project across Data Centre and DR sites",
+      "published": "Wed, 30 Sep 2026 21:50:28 GMT",
+      "published_utc": "2026-09-30T21:50:28+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+        "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "6443ecffec",
+      "symbol": "AVALON",
+      "company": "Avalon Technologies Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "promoters sold a 6% stake",
+      "also_matched": [
+        "order_win",
+        "regulatory_action",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways",
+        "data_centre"
+      ],
+      "size_inr_cr": 871.0,
+      "size_estimated": false,
+      "size_basis": "₹871 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MTPA",
+        "text": "12,000 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/",
+      "title": "Stocks to watch today, October 1: NCC, TCI buyback, Avalon, Apollo Hospitals",
+      "published": "Thu, 01 Oct 2026 01:59:05 GMT",
+      "published_utc": "2026-10-01T01:59:05+00:00",
+      "sentence": "promoters sold a 6% stake",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "030e105509",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions phase-i bess, total capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1069.0,
+        "unit": "MWh",
+        "text": "1069 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/infrastructure/acme-solar-commissions-53-63-mw-bess-phase-rajasthan/52344173",
+      "title": "ACME Solar commissions Phase-I BESS, total capacity hits 213.31 MW",
+      "published": "Thu, 01 Oct 2026 02:00:48 GMT",
+      "published_utc": "2026-10-01T02:00:48+00:00",
+      "sentence": "commissions phase-i bess, total capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/infrastructure/acme-solar-commissions-53-63-mw-bess-phase-rajasthan/52344173"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3ec3866ebf",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions additional 100 mwh bess capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 8900.0,
+        "unit": "MWh",
+        "text": "8.9 GWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/09/30/juniper-green-energy-commissions-additional-100-mwh-bess-capacity-at-bikaner/",
+      "title": "Juniper Green Energy commissions additional 100 MWh BESS capacity at Bikaner",
+      "published": "Wed, 30 Sep 2026 17:03:16 GMT",
+      "published_utc": "2026-09-30T17:03:16+00:00",
+      "sentence": "commissions additional 100 mwh bess capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.pv-magazine-india.com/2026/09/30/juniper-green-energy-commissions-additional-100-mwh-bess-capacity-at-bikaner/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "20a6047377",
+      "symbol": "MILKYMIST",
+      "company": "Milky Mist Dairy Food Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 10 mw solar plant, takes renewable capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 109.6,
+      "size_estimated": false,
+      "size_basis": "₹109.6 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 41.0,
+        "unit": "MW",
+        "text": "41 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://energy.economictimes.indiatimes.com/amp/news/renewable/milky-mist-commissions-10-mw-solar-plant-takes-renewable-capacity-to-41-mw/134596972",
+      "title": "Milky Mist commissions 10 MW solar plant, takes renewable capacity to 41 MW",
+      "published": "Wed, 30 Sep 2026 14:35:28 GMT",
+      "published_utc": "2026-09-30T14:35:28+00:00",
+      "sentence": "commissions 10 mw solar plant, takes renewable capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://energy.economictimes.indiatimes.com/amp/news/renewable/milky-mist-commissions-10-mw-solar-plant-takes-renewable-capacity-to-41-mw/134596972",
+        "https://www.thehindubusinessline.com/companies/milky-mist-commissions-25-mw-of-solar-capacity-achieves-100-renewable-energy/article71528472.ece"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "0df2850a58",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged an operations and maintenance order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 970.0,
+      "size_estimated": false,
+      "size_basis": "₹970 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 800.0,
+        "unit": "MW",
+        "text": "800 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/",
+      "title": "Power Mech Projects shares soar 6% on bagging order worth ₹549 crore from Moxie Power Generation",
+      "published": "Wed, 30 Sep 2026 09:16:51 GMT",
+      "published_utc": "2026-09-30T09:16:51+00:00",
+      "sentence": "bagged an operations and maintenance order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "70ffef713c",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received by the company on september 16 for the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 220.66,
+      "size_estimated": false,
+      "size_basis": "₹220.66 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-30 — cnbctv:632181d2e094b:0",
+      "published": "Wed, 30 Sep 2026 12:37:38 GMT",
+      "published_utc": "2026-09-30T12:37:38+00:00",
+      "sentence": "received by the company on september 16 for the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "669eff9df7",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received by the company on september 16 for the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 220.66,
+      "size_estimated": false,
+      "size_basis": "₹220.66 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-30 — cnbctv:632181d2e094b:0",
+      "published": "Wed, 30 Sep 2026 12:37:38 GMT",
+      "published_utc": "2026-09-30T12:37:38+00:00",
+      "sentence": "received by the company on september 16 for the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3c759fa00b",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received by the company on september 16 for the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 220.66,
+      "size_estimated": false,
+      "size_basis": "₹220.66 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-30 — cnbctv:632181d2e094b:0",
+      "published": "Wed, 30 Sep 2026 12:37:38 GMT",
+      "published_utc": "2026-09-30T12:37:38+00:00",
+      "sentence": "received by the company on september 16 for the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "18ca68651b",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions phase-i bess, total capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1069.0,
+        "unit": "MWh",
+        "text": "1069 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/infrastructure/acme-solar-commissions-53-63-mw-bess-phase-rajasthan/52344173",
+      "title": "ACME Solar commissions Phase-I BESS, total capacity hits 213.31 MW",
+      "published": "Thu, 01 Oct 2026 02:00:48 GMT",
+      "published_utc": "2026-10-01T02:00:48+00:00",
+      "sentence": "commissions phase-i bess, total capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/infrastructure/acme-solar-commissions-53-63-mw-bess-phase-rajasthan/52344173"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8ee54f8f7e",
+      "symbol": "GRINFRA",
+      "company": "G R Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received by the company on september 16 for the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "G R Infraprojects",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 220.66,
+      "size_estimated": false,
+      "size_basis": "₹220.66 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-30 — cnbctv:632181d2e094b:0",
+      "published": "Wed, 30 Sep 2026 12:37:38 GMT",
+      "published_utc": "2026-09-30T12:37:38+00:00",
+      "sentence": "received by the company on september 16 for the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a0c78863f3",
+      "symbol": "INDUSTOWER",
+      "company": "Indus Towers Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12.0,
+        "unit": "km",
+        "text": "12 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/lt-dubai-rta-latifa-bint-hamdan-corridor-contracts-126093000616_1.html",
+      "title": "L&T Transportation Infra vertical secures ₹3,500 cr contracts in Dubai",
+      "published": "Wed, 30 Sep 2026 08:55:12 GMT",
+      "published_utc": "2026-09-30T08:55:12+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/lt-dubai-rta-latifa-bint-hamdan-corridor-contracts-126093000616_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f048febbaf",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged an operations and maintenance order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 970.0,
+      "size_estimated": false,
+      "size_basis": "₹970 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 800.0,
+        "unit": "MW",
+        "text": "800 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/",
+      "title": "Power Mech Projects shares soar 6% on bagging order worth ₹549 crore from Moxie Power Generation",
+      "published": "Wed, 30 Sep 2026 09:16:51 GMT",
+      "published_utc": "2026-09-30T09:16:51+00:00",
+      "sentence": "bagged an operations and maintenance order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "999e85e52a",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 Crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+      "title": "STL Networks emerges as L1 bidder for RailTel's ₹250 Crore Integrated Next-Generation Cloud Infrastructure & Data Center Transformation Project across Data Centre and DR sites",
+      "published": "Wed, 30 Sep 2026 21:50:28 GMT",
+      "published_utc": "2026-09-30T21:50:28+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+        "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "bc144165bd",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 250.0,
+      "size_estimated": false,
+      "size_basis": "₹250 Crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+      "title": "STL Networks emerges as L1 bidder for RailTel's ₹250 Crore Integrated Next-Generation Cloud Infrastructure & Data Center Transformation Project across Data Centre and DR sites",
+      "published": "Wed, 30 Sep 2026 21:50:28 GMT",
+      "published_utc": "2026-09-30T21:50:28+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+        "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "e7a736061b",
+      "symbol": "SYMBIOTEC",
+      "company": "Symbiotec Pharmalab Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/symbiotec-pharmalab-receives-u-s-fda-vai-status-pithampur-plant/52205382",
+      "title": "Symbiotec Pharmalab receives US FDA VAI status for Pithampur plant",
+      "published": "Wed, 30 Sep 2026 20:22:04 GMT",
+      "published_utc": "2026-09-30T20:22:04+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/symbiotec-pharmalab-receives-u-s-fda-vai-status-pithampur-plant/52205382"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/moneycontrol_stocks-to-watch-today-aurobindo-pharma-activity-7511233705730859008-Sn2Q",
+      "title": "Stocks to Watch Today: Aurobindo Pharma, Highway Infra, NCC, Blue Dart, Symbiotec Pharma, Shadowfax, Moneyview, Bata in focus on 01 October- Moneycontrol.com",
+      "published": "Thu, 01 Oct 2026 01:21:07 GMT",
+      "chars": 504,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-aurobindo-pharma-highway-infra-ncc-blue-dart-symbiotec-pharma-shadowfax-moneyview-bata-in-focus-on-01-october-14042348.html",
+      "title": "Stocks to Watch Today: Aurobindo Pharma, Highway Infra, NCC, Blue Dart, Symbiotec Pharma, Shadowfax,...",
+      "published": "Thu, 01 Oct 2026 01:13:32 GMT",
+      "chars": 11803,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-and-why-infosys-irfc-muthoot-finance-among-shares-in-focus-on-thursday-1-oct-full-list-11790817912219.html",
+      "title": "Top stocks to watch today: Infosys, IRFC, Muthoot Finance among shares in focus on Thursday, 1 Oct | Full list",
+      "published": "Thu, 01 Oct 2026 02:05:02 GMT",
+      "chars": 3622,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.tradingview.com/news/moodys:34803d297cf81:0-top-stocks-in-focus-tomorrow-investors-must-watch-jio-financial-infosys-ncc-shares-on-thu-1-oct-triggers/",
+      "title": "Top stocks in focus tomorrow: Investors must watch Jio Financial, Infosys, NCC shares on Thu, 1 Oct | Triggers",
+      "published": "Wed, 30 Sep 2026 17:41:39 GMT",
+      "chars": 3078,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-1-auto-stocks-tech-mahindra-ncc-aurobindo-pharma-linde-india-power-stocks-transrail-lighting/article-201161/",
+      "title": "Stocks to watch, Oct 1: Auto stocks, Tech Mahindra, NCC, Aurobindo Pharma, Linde India, power stocks, Transrail Lighting",
+      "published": "Thu, 01 Oct 2026 02:31:57 GMT",
+      "chars": 10787,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-infosys-hdfc-bank-jio-financial-irfc-ncc-and-blue-dart/articleshow/134599953.cms",
+      "title": "Stocks in news: Infosys, HDFC Bank, Jio Financial, IRFC, NCC and Blue Dart",
+      "published": "Thu, 01 Oct 2026 00:30:00 GMT",
+      "chars": 7372,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/tm/tm.asp?date=10/1/2026&title=Coal-India-Explores-New-Urea-Production-Project--JSW-Cement-Approves-Shiva-Cement-Merger-Plan--Top-Buzzing-Stocks-Today",
+      "title": "Coal India Explores New Urea Production Project | JSW Cement Approves Shiva Cement Merger Plan | Top Buzzing Stocks Today",
+      "published": "Thu, 01 Oct 2026 00:30:00 GMT",
+      "chars": 8185,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/stl-networks-emerges-as-the-lowest-bidder-for-railtels-project-worth-rs-250-crore",
+      "title": "STL Networks emerges as the lowest bidder for RailTel's project worth Rs 250 crore",
+      "published": "Wed, 30 Sep 2026 19:31:33 GMT",
+      "chars": 1055,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://technuter.com/channel-news/stl-networks-emerges-as-l1-bidder-for-railtels-%E2%82%B9250-crore-integrated-next-generation-cloud-infrastructure-data-center-transformation-project-across-data-centre-and-dr-sites.html",
+      "title": "STL Networks emerges as L1 bidder for RailTel's ₹250 Crore Integrated Next-Generation Cloud Infrastructure & Data Center Transformation Project across Data Centre and DR sites",
+      "published": "Wed, 30 Sep 2026 21:50:28 GMT",
+      "chars": 2773,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/ceigall-india-secures-contract-valued-at-214-crore",
+      "title": "Ceigall India Secures Contract Valued At ₹214 Crore",
+      "published": "Wed, 30 Sep 2026 06:58:05 GMT",
+      "chars": 4310,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/power-mech-projects-shares-soar-6-on-bagging-order-worth-549-crore-from-moxie-power-generation/article-201133/",
+      "title": "Power Mech Projects shares soar 6% on bagging order worth ₹549 crore from Moxie Power Generation",
+      "published": "Wed, 30 Sep 2026 09:16:51 GMT",
+      "chars": 3156,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/admach-systems-hits-52-week-high-on-bagging-purchase-order-worth-rs-53-10-lakh547627",
+      "title": "Admach Systems hits 52-week high on bagging purchase order worth Rs 53.10 lakh",
+      "published": "Wed, 30 Sep 2026 09:44:26 GMT",
+      "chars": 1321,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:632181d2e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-09-30 — cnbctv:632181d2e094b:0",
+      "published": "Wed, 30 Sep 2026 12:37:38 GMT",
+      "chars": 2180,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:782eeb2134931:0-upper-circuit-bonanza-stl-networks-sterlite-tech-rally-5-what-s-fuelling-surge-and-what-lies-ahead-for-investors/",
+      "title": "Upper circuit bonanza! STL Networks, Sterlite Tech rally 5% - What's fuelling surge and what lies ahead for investors",
+      "published": "Wed, 30 Sep 2026 10:32:15 GMT",
+      "chars": 3322,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/symbiotec-pharmalab-receives-u-s-fda-vai-status-pithampur-plant/52205382",
+      "title": "Symbiotec Pharmalab receives US FDA VAI status for Pithampur plant",
+      "published": "Wed, 30 Sep 2026 20:22:04 GMT",
+      "chars": 2606,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/symbiotec-s-knovea-partners-with-global-pharma-for-us-sales-of-two-dual-chamber-vial-products",
+      "title": "Symbiotec's Knovea Partners With Global Pharma For US Sales Of Two Dual Chamber Vial Products",
+      "published": "Wed, 30 Sep 2026 15:14:52 GMT",
+      "chars": 4502,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804",
+      "title": "Prince Pipes gets ₹65.93 Cr GST notice from Karnataka for FY23",
+      "published": "Wed, 30 Sep 2026 14:44:33 GMT",
+      "chars": 3460,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/debock-industries-nsedil-what-does-the-sebi-final-order-mean-for-the-company",
+      "title": "Debock Industries SEBI Order: Market Ban and Penalty on Noticee",
+      "published": "Wed, 30 Sep 2026 08:33:00 GMT",
+      "chars": 3833,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm",
+      "title": "MCX receives GST notice proposing ₹103 crore tax, interest and penalty for FY23",
+      "published": "Wed, 30 Sep 2026 17:47:13 GMT",
+      "chars": 3198,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/rbl-bank-nserblbank-what-does-a-rs-173-crore-gst-show-cause-notice-mean",
+      "title": "RBL Bank GST Notice FY2022-23: What Investors Should Know",
+      "published": "Wed, 30 Sep 2026 07:56:00 GMT",
+      "chars": 4312,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://247wallst.com/investing/2026/09/30/chargepoint-jumps-7-as-electric-september-run-persists-evgo-falls-3-blink-charging-slips/",
+      "title": "ChargePoint Jumps 7% as Electric September Run Persists; EVgo Falls 3%, Blink Charging Slips",
+      "published": "Wed, 30 Sep 2026 17:42:00 GMT",
+      "chars": 6869,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/cboe-global-markets-q2-results-eps-beats-estimates-sales-rise-24-57/47045076",
+      "title": "Cboe Global Markets Q2 Results: EPS beats estimates, sales rise 24.57%",
+      "published": "Wed, 30 Sep 2026 18:05:02 GMT",
+      "chars": 3629,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/nath-industries-shareholders-approve-fy26-accounts-director-re/52315749",
+      "title": "Nath Industries shareholders approve FY26 accounts and director re-appointments",
+      "published": "Wed, 30 Sep 2026 12:09:27 GMT",
+      "chars": 3688,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/viscofan-stock-sets-october-22-date-for-q3-results/70204739",
+      "title": "Viscofan stock sets October 22 date for Q3 results",
+      "published": "Wed, 30 Sep 2026 13:36:57 GMT",
+      "chars": 2367,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/",
+      "title": "Stocks to watch today, October 1: NCC, TCI buyback, Avalon, Apollo Hospitals",
+      "published": "Thu, 01 Oct 2026 01:59:05 GMT",
+      "chars": 9566,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://energy.economictimes.indiatimes.com/amp/news/renewable/milky-mist-commissions-10-mw-solar-plant-takes-renewable-capacity-to-41-mw/134596972",
+      "title": "Milky Mist commissions 10 MW solar plant, takes renewable capacity to 41 MW",
+      "published": "Wed, 30 Sep 2026 14:35:28 GMT",
+      "chars": 625,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/09/30/juniper-green-energy-commissions-additional-100-mwh-bess-capacity-at-bikaner/",
+      "title": "Juniper Green Energy commissions additional 100 MWh BESS capacity at Bikaner",
+      "published": "Wed, 30 Sep 2026 17:03:16 GMT",
+      "chars": 2201,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.energetica-india.net/news/juniper-green-energy-commissions-additional-100-mwh-bess-capacity-in-rajasthan",
+      "title": "Juniper Green Energy Commissions Additional 100 MWh BESS Capacity in Rajasthan",
+      "published": "Wed, 30 Sep 2026 10:54:41 GMT",
+      "chars": 3376,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.thehindubusinessline.com/companies/milky-mist-commissions-25-mw-of-solar-capacity-achieves-100-renewable-energy/article71528472.ece",
+      "title": "Milky Mist commissions 25 MW of solar capacity; achieves 100% renewable energy",
+      "published": "Wed, 30 Sep 2026 12:46:23 GMT",
+      "chars": 7398,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/infrastructure/acme-solar-commissions-53-63-mw-bess-phase-rajasthan/52344173",
+      "title": "ACME Solar commissions Phase-I BESS, total capacity hits 213.31 MW",
+      "published": "Thu, 01 Oct 2026 02:00:48 GMT",
+      "chars": 3162,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-limited-secures-prestigious-rs-8-90-crore-order-from-the-golden-temple-amritsar-for-a-2-mw-solar-power-project-126093001010_1.html",
+      "title": "Sugs Lloyd Limited Secures prestigious Rs. 8.90 Crore Order from The Golden Temple, Amritsar for a 2 MW Solar Power Project",
+      "published": "Wed, 30 Sep 2026 16:50:12 GMT",
+      "chars": 3546,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/the-postcard-hotel-wins-12-honours-at-the-world-travel-awards-2026-more-than-any-other-hotel-brand-in-asia-126093000705_1.html",
+      "title": "The Postcard Hotel Wins 12 Honours at the World Travel Awards 2026 - More Than Any Other Hotel Brand in Asia",
+      "published": "Wed, 30 Sep 2026 09:40:19 GMT",
+      "chars": 6991,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/lt-dubai-rta-latifa-bint-hamdan-corridor-contracts-126093000616_1.html",
+      "title": "L&T Transportation Infra vertical secures ₹3,500 cr contracts in Dubai",
+      "published": "Wed, 30 Sep 2026 08:55:12 GMT",
+      "chars": 2775,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-reserves-verdict-on-coc-s-power-to-withdraw-approved-resolution-plan-126093001312_1.html",
+      "title": "SC reserves verdict on CoC's power to withdraw approved resolution plan",
+      "published": "Wed, 30 Sep 2026 14:27:00 GMT",
+      "chars": 4796,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/webstories/bs-edit-election-commission-has-not-addressed-key-weaknesses-in-sir-1260930151817ws",
+      "title": "BS EDIT: Election Commission has not addressed key weaknesses in SIR",
+      "published": "Wed, 30 Sep 2026 09:48:17 GMT",
+      "chars": 1100,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-hc-denies-bail-to-umar-khalid-sharjeel-imam-in-2020-riots-case-126093000415_1.html",
+      "title": "Delhi HC denies bail to Umar Khalid, Sharjeel Imam in 2020 riots case",
+      "published": "Wed, 30 Sep 2026 06:49:30 GMT",
+      "chars": 3256,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/midwest-energy-ltd-share-price-4041/announcements/bse-exchange-51107194",
+      "title": "Share Market Today | Latest Stock Market News, Sensex Today and Nifty Live Updates",
+      "published": "Wed, 30 Sep 2026 10:09:00 GMT",
+      "chars": 2668,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/mangalore-refinery-petrochem-cancels-fuel-export-tenders-after-fire-at-site-126093000934_1.html",
+      "title": "Mangalore Refinery Petrochem cancels fuel export tenders after fire at site",
+      "published": "Wed, 30 Sep 2026 12:13:20 GMT",
+      "chars": 2060,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-1-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-126100100095_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; most Asian markets fall; Brent crude below $100",
+      "published": "Thu, 01 Oct 2026 08:01:12 +0530",
+      "chars": 161,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-bank-nifty-nifty-it-technical-analysts-decode-outlook-for-h2-fy27-126100100103_1.html",
+      "title": "Nifty, Bank Nifty, Nifty IT: Technical analysts decode outlook for H2 FY27",
+      "published": "Thu, 01 Oct 2026 07:58:54 +0530",
+      "chars": 197,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/fpi-outflows-top-1-trillion-in-h1fy27-financials-oil-gas-worst-hit-126093000747_1.html",
+      "title": "FPI outflows top ₹1 trillion in H1FY27; financials, oil & gas worst hit",
+      "published": "Thu, 01 Oct 2026 07:57:28 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-jatin-gedia-bullish-on-jsw-infra-varroc-engg-flags-caution-on-powergrid-126100100098_1.html",
+      "title": "Jatin Gedia bullish on JSW Infra, Varroc Engg; flags caution on PowerGrid",
+      "published": "Thu, 01 Oct 2026 07:52:29 +0530",
+      "chars": 124,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-steady-as-investors-assess-us-iran-peace-talks-supply-outlook-126100100084_1.html",
+      "title": "Oil prices steady as investors assess US-Iran peace talks, supply outlook",
+      "published": "Thu, 01 Oct 2026 07:47:06 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-sona-blw-jsw-infra-among-3-stock-ideas-by-bonanza-check-key-levels-here-126100100096_1.html",
+      "title": "Sona BLW, JSW Infra among 3 stock ideas by Bonanza; check key levels here",
+      "published": "Thu, 01 Oct 2026 07:43:19 +0530",
+      "chars": 177,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/realty-pharma-investors-tap-into-domestic-economy-focused-sectors-in-h1-126100100090_1.html",
+      "title": "Realty, pharma: Investors tap into domestic-economy focused sectors in H1",
+      "published": "Thu, 01 Oct 2026 07:09:05 +0530",
+      "chars": 135,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/yields-dollar-hold-key-to-gold-silver-trajectory-in-h2fy27-apurva-seth-126093000772_1.html",
+      "title": "Yields, dollar hold key to gold, silver trajectory in H2FY27: Apurva Seth",
+      "published": "Thu, 01 Oct 2026 07:02:01 +0530",
+      "chars": 116,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-1-crude-oil-at-98-as-investors-assess-supply-recovery-peace-deal-talks-what-are-analysts-saying/articleshow/134606298.cms",
+      "title": "Oil Price Today (October 1): Crude oil at $98 as investors assess supply recovery, peace deal talks. What are analysts saying?",
+      "published": "Thu, 01 Oct 2026 07:49:53 +0530",
+      "chars": 236,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/134606283.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Thu, 01 Oct 2026 07:43:17 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-flat-ahead-of-us-jobs-data/articleshow/134606175.cms",
+      "title": "Gold prices flat ahead of US jobs data",
+      "published": "Thu, 01 Oct 2026 07:41:16 +0530",
+      "chars": 441,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-gets-lift-from-higher-yields/articleshow/134606140.cms",
+      "title": "Dollar gets lift from higher yields",
+      "published": "Thu, 01 Oct 2026 07:37:07 +0530",
+      "chars": 409,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/solar-industries-omnia-bet-may-bring-some-pain-before-the-payoff/articleshow/134606016.cms",
+      "title": "Solar Industries’ Omnia acquisition to reshape growth, debt outlook",
+      "published": "Thu, 01 Oct 2026 07:36:21 +0530",
+      "chars": 431,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-barely-changed-as-investors-assess-us-iran-peace-talks-and-gulf-exports/articleshow/134606116.cms",
+      "title": "Oil prices barely changed as investors assess US-Iran peace talks and Gulf exports",
+      "published": "Thu, 01 Oct 2026 07:35:06 +0530",
+      "chars": 481,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/growpital-case-sebi-to-refund-money-directly-to-investors-for-first-time/articleshow/134605764.cms",
+      "title": "Growpital case: Sebi to refund money directly to investors for first time",
+      "published": "Thu, 01 Oct 2026 07:01:56 +0530",
+      "chars": 407,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/interarch-building-solutions-secures-89-crore-data-centre-pre-engineered-steel-building-order",
+      "title": "Interarch Building Solutions Secures ₹89 Crore Data Centre Pre-Engineered Steel Building Order",
+      "published": "Thu, 01 Oct 2026 00:46:18 GMT",
+      "chars": 4569,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/nlc-india-subsidiary-nirl-receives-loa-for-265-mw-530-mwh-haryana-bess-project",
+      "title": "NLC India Subsidiary NIRL Receives LoA For 265 MW/530 MWh Haryana BESS Project",
+      "published": "Thu, 01 Oct 2026 01:06:16 GMT",
+      "chars": 3809,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 133.3
+}

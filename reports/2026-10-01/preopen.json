@@ -1,0 +1,521 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 8
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 9
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events_read": 22,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "6443ecffec",
+      "symbol": "AVALON",
+      "company": "Avalon Technologies Limited",
+      "event": "pledge",
+      "event_label": "Promoter pledge / stake sale",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -18,
+      "phrase": "promoters sold a 6% stake",
+      "also_matched": [
+        "order_win",
+        "regulatory_action",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways",
+        "data_centre"
+      ],
+      "size_inr_cr": 871.0,
+      "size_estimated": false,
+      "size_basis": "₹871 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 12000.0,
+        "unit": "MTPA",
+        "text": "12,000 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/",
+      "title": "Stocks to watch today, October 1: NCC, TCI buyback, Avalon, Apollo Hospitals",
+      "published": "Thu, 01 Oct 2026 01:59:05 GMT",
+      "published_utc": "2026-10-01T01:59:05+00:00",
+      "sentence": "promoters sold a 6% stake",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/"
+      ],
+      "n_reports": 1,
+      "catalyst": 16,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-18 Promoter pledge / stake sale",
+        "+12 ₹871cr against ₹1,764cr of revenue — 0.5× a year's sales, a quarter of a year's revenue",
+        "+10 fundamentals 70/100",
+        "+12 published Thu 07:29, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.494,
+      "revenue_ttm_cr": 1764.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 07:29, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -18,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2296.7,
+        "atr_pct": 5.77,
+        "expected_day_range_inr": 132.52,
+        "expected_day_range_pct": 5.77,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 70,
+      "fund_why": [
+        "+6 ROCE 19.3%",
+        "+4 ROE 16.5%",
+        "-6 P/E 115",
+        "+8 3y profit CAGR 28%",
+        "+6 3y sales CAGR 19%",
+        "-6 return on capital has drifted from 19.7% to 12.7% — the newer capital earns less than the old",
+        "+2 D/E 0.3",
+        "+0 promoter 44.39%",
+        "+4 latest qtr PAT YoY 150%",
+        "+2 mcap ₹15,361 cr",
+        "+3 operating cash flow ₹57cr, only 50% of profit",
+        "+4 interest cover 19.33×",
+        "+3 institutions hold 32.53%",
+        "-8 price to book 21.27",
+        "-6 ROCE 19.3% bought at 21.27× book is 0.9% on what you pay",
+        "  (value counted -10 of -20 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +12 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 39.2% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 21.2 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 10.7% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -6.70%"
+      ],
+      "ltp": 2296.699951171875,
+      "ta": {
+        "trend": "up",
+        "rsi": 52.1,
+        "adx": 22.9,
+        "atr_pct": 5.77,
+        "vol_ratio": 2.71,
+        "chg_1d_pct": -0.23,
+        "chg_5d_pct": -6.09,
+        "dist_52w_high_pct": -12.27,
+        "dist_ema200_pct": 43.84,
+        "avg_turnover_cr": 176.01,
+        "high_52w": 2618.0,
+        "momentum_score": 36,
+        "last_bar_date": "2026-09-30"
+      },
+      "fundamentals": {
+        "market_cap_cr": 15361.0,
+        "pe": 115.0,
+        "roce": 19.3,
+        "roe": 16.5,
+        "sales_growth_3_years": 19.0,
+        "profit_growth_3_years": 28.0,
+        "promoter_pct": 44.39,
+        "debt_to_equity": 0.3,
+        "revenue_ttm_cr": 1764.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "c3d5376cf0",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804",
+      "title": "Prince Pipes gets ₹65.93 Cr GST notice from Karnataka for FY23",
+      "published": "Wed, 30 Sep 2026 14:44:33 GMT",
+      "published_utc": "2026-09-30T14:44:33+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804"
+      ],
+      "n_reports": 1,
+      "catalyst": -6,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 64/100",
+        "+12 published Wed 20:14, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 9039.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 20:14, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 329.0,
+        "atr_pct": 3.1,
+        "expected_day_range_inr": 10.2,
+        "expected_day_range_pct": 3.1,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 64,
+      "fund_why": [
+        "+12 net NPA 0.87% of the book",
+        "+0 gross NPA 2.58%",
+        "+6 return on assets 1.05%",
+        "+0 ROE 10.4%",
+        "-4 net interest margin 2.49% of assets",
+        "-8 net interest income -5.8% last year",
+        "+6 price to book 0.94",
+        "+4 P/E 8.66",
+        "+4 institutions hold 28.85%",
+        "  (value counted +5 of +10 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 0.94 times its book value"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 7.43% over past five years.",
+        "Company has a low return on equity of 11.6% over last 3 years.",
+        "Contingent liabilities of Rs.13,148 Cr.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 329.0,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 53.1,
+        "adx": 23.2,
+        "atr_pct": 3.1,
+        "vol_ratio": 0.55,
+        "chg_1d_pct": 1.46,
+        "chg_5d_pct": -4.1,
+        "dist_52w_high_pct": -4.89,
+        "dist_ema200_pct": 23.06,
+        "avg_turnover_cr": 60.27,
+        "high_52w": 345.9,
+        "momentum_score": 0,
+        "last_bar_date": "2026-09-30"
+      },
+      "fundamentals": {
+        "market_cap_cr": 12449.0,
+        "pe": 8.66,
+        "roce": 6.06,
+        "roe": 10.4,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 4.0,
+        "revenue_ttm_cr": 9039.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "729c3bf9c9",
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange of India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm",
+      "title": "MCX receives GST notice proposing ₹103 crore tax, interest and penalty for FY23",
+      "published": "Wed, 30 Sep 2026 17:47:13 GMT",
+      "published_utc": "2026-09-30T17:47:13+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": -6,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "+12 published Wed 23:17, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2631.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 23:17, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 3300.4,
+        "atr_pct": 3.27,
+        "expected_day_range_inr": 107.92,
+        "expected_day_range_pct": 3.27,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_flags": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_caps": [],
+      "fund_unrated": true,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 48.7% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 36.4%",
+        "Company has been maintaining a healthy dividend payout of 29.8%",
+        "Company's median sales growth is 24.0% of last 10 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 29.6 times its book value"
+      ],
+      "ltp": 3300.39990234375,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 54.3,
+        "adx": 19.8,
+        "atr_pct": 3.27,
+        "vol_ratio": 1.11,
+        "chg_1d_pct": 2.12,
+        "chg_5d_pct": -2.18,
+        "dist_52w_high_pct": -5.2,
+        "dist_ema200_pct": 20.52,
+        "avg_turnover_cr": 612.21,
+        "high_52w": 3481.4,
+        "momentum_score": 5,
+        "last_bar_date": "2026-09-30"
+      },
+      "fundamentals": {
+        "market_cap_cr": 84158.0,
+        "pe": 54.6,
+        "roce": 71.4,
+        "roe": 56.3,
+        "sales_growth_3_years": 65.0,
+        "profit_growth_3_years": 108.0,
+        "debt_to_equity": 0.0,
+        "revenue_ttm_cr": 2631.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "symbol": "SYMBIOTEC",
+      "event": "regulatory_clearance",
+      "title": "Symbiotec Pharmalab receives US FDA VAI status for Pithampur plant",
+      "source_id": "corp_approvals",
+      "why": "no price history"
+    }
+  ],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
