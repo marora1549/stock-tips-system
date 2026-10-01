@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 757.52,
+  "cash_inr": 26460.87,
   "positions": [
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -38,62 +38,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 5.98,
+      "max_favourable_pct": 7.77,
       "notes": [],
-      "ltp": 1987.0,
-      "unrealised_pct": 5.61
-    },
-    {
-      "pos_id": "2026-09-29-HEROMOTOCO",
-      "tip_id": "9b59c59645",
-      "symbol": "HEROMOTOCO",
-      "company": "Hero MotoCorp Limited",
-      "opened": "2026-09-29",
-      "booked": "2026-09-29 08:27",
-      "status": "open",
-      "entry_plan": 5390.0,
-      "entry": 5375.0,
-      "qty": 5,
-      "qty_open": 5,
-      "capital_inr": 26875.0,
-      "stop_loss": 5140.67,
-      "initial_stop": 5140.67,
-      "targets": [
-        5551.39,
-        5803.0,
-        5937.0
-      ],
-      "targets_hit": [],
-      "fund_score_at_entry": 87,
-      "timeframe": "weekly",
-      "time_stop_days": 10,
-      "deadline": "2026-10-13",
-      "eta_days": [
-        null,
-        null,
-        null
-      ],
-      "pace_pct_day": -0.051,
-      "momentum_score": 0,
-      "source_id": "chartink_ema_pullback",
-      "corroborating_sources": [
-        "chartink_squeeze"
-      ],
-      "ta_confidence": 73,
-      "fund_score": 87,
-      "composite": 70,
-      "bucket": "hold-capable",
-      "patterns": [
-        "bollinger_squeeze",
-        "momentum_aligned",
-        "pullback_to_ema20_in_uptrend"
-      ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 0.17,
-      "notes": [],
-      "ltp": 5241.0,
-      "unrealised_pct": -2.49
+      "ltp": 2005.0999755859375,
+      "unrealised_pct": 6.57
     },
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -144,8 +92,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 1.33,
       "notes": [],
-      "ltp": 284.5,
-      "unrealised_pct": -0.21
+      "ltp": 285.5,
+      "unrealised_pct": 0.14
     }
   ],
   "closed": [
@@ -325,6 +273,71 @@
       "pnl_inr": -1755.0,
       "pnl_pct": -4.36,
       "days_held": 15
+    },
+    {
+      "pos_id": "2026-09-29-HEROMOTOCO",
+      "tip_id": "9b59c59645",
+      "symbol": "HEROMOTOCO",
+      "company": "Hero MotoCorp Limited",
+      "opened": "2026-09-29",
+      "booked": "2026-09-29 08:27",
+      "status": "closed",
+      "entry_plan": 5390.0,
+      "entry": 5375.0,
+      "qty": 5,
+      "qty_open": 0,
+      "capital_inr": 26875.0,
+      "stop_loss": 5140.67,
+      "initial_stop": 5140.67,
+      "targets": [
+        5551.39,
+        5803.0,
+        5937.0
+      ],
+      "targets_hit": [],
+      "fund_score_at_entry": 87,
+      "timeframe": "weekly",
+      "time_stop_days": 10,
+      "deadline": "2026-10-13",
+      "eta_days": [
+        null,
+        null,
+        null
+      ],
+      "pace_pct_day": -0.051,
+      "momentum_score": 0,
+      "source_id": "chartink_ema_pullback",
+      "corroborating_sources": [
+        "chartink_squeeze"
+      ],
+      "ta_confidence": 73,
+      "fund_score": 87,
+      "composite": 70,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "momentum_aligned",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [
+        {
+          "date": "2026-10-01",
+          "qty": 5,
+          "price": 5140.67,
+          "reason": "stop_loss",
+          "pnl_inr": -1171.65
+        }
+      ],
+      "realised_inr": -1171.65,
+      "max_favourable_pct": 0.17,
+      "notes": [],
+      "ltp": 5168.0,
+      "unrealised_pct": -3.85,
+      "closed": "2026-10-01",
+      "outcome": "stop_loss",
+      "pnl_inr": -1171.65,
+      "pnl_pct": -4.36,
+      "days_held": 2
     }
   ],
   "equity_curve": [
@@ -391,6 +404,10 @@
     {
       "date": "2026-09-30",
       "equity": 97166.52
+    },
+    {
+      "date": "2026-10-01",
+      "equity": 97078.37
     }
   ],
   "created": "2026-09-07",

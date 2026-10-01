@@ -506,32 +506,40 @@
     "id": "chartink_52w_breakout"
   },
   "chartink_ema_pullback": {
-    "score": 0.0,
-    "n_tips": 720,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-10-01",
-    "id": "chartink_ema_pullback"
-  },
-  "chartink_squeeze": {
     "score": -15.0,
-    "n_tips": 709,
+    "n_tips": 720,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
     "n_sl": 1,
     "n_timestop": 0,
-    "sum_return_pct": -2.51,
+    "sum_return_pct": -4.36,
+    "days_to_t1": [],
+    "history": [
+      {
+        "date": "2026-10-01",
+        "symbol": "HEROMOTOCO",
+        "outcome": "stop_loss",
+        "ret_pct": -4.36,
+        "delta": -15.0
+      }
+    ],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-01",
+    "id": "chartink_ema_pullback"
+  },
+  "chartink_squeeze": {
+    "score": -21.75,
+    "n_tips": 709,
+    "n_resolved": 2,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 2,
+    "n_timestop": 0,
+    "sum_return_pct": -6.87,
     "days_to_t1": [],
     "history": [
       {
@@ -540,6 +548,13 @@
         "outcome": "stop_loss",
         "ret_pct": -2.51,
         "delta": -15.0
+      },
+      {
+        "date": "2026-10-01",
+        "symbol": "HEROMOTOCO",
+        "outcome": "stop_loss",
+        "ret_pct": -4.36,
+        "delta": -7.5
       }
     ],
     "enabled": true,
