@@ -1,0 +1,770 @@
+{
+  "date": "2026-10-05",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_regulatory_action": {
+      "docs": 1,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_expansion": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 7,
+      "events": 2
+    }
+  },
+  "events": [
+    {
+      "id": "b88c8028c4",
+      "symbol": "RAJESHEXPO",
+      "company": "Rajesh Exports Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order alleged revenue inflation of rs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1515000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 15.15 lakh crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html",
+      "title": "Rajesh Exports says it will resubmit documents to SEBI, disputes EBITDA listed as revenue",
+      "published": "Sun, 04 Oct 2026 17:26:53 GMT",
+      "published_utc": "2026-10-04T17:26:53+00:00",
+      "sentence": "order alleged revenue inflation of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4a58b2dd8c",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 589.6,
+      "size_estimated": false,
+      "size_basis": "USD 67 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+      "title": "Aurobindo Pharma shares in focus on final USFDA approval for Perampanel tablets",
+      "published": "Mon, 05 Oct 2026 01:37:12 GMT",
+      "published_utc": "2026-10-05T01:37:12+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+        "https://www.indianpharmapost.com/regulatory/aurobindo-pharma-secures-usfda-final-approval-for-multi-strength-perampanel-tablets-22059",
+        "https://manufacturing.economictimes.indiatimes.com/amp/news/life-sciences/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets/134677446",
+        "https://money.rediff.com/news/market/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-drug/55567120261004",
+        "https://www.freepressjournal.in/india/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets"
+      ],
+      "n_reports": 5
+    },
+    {
+      "id": "9a1d8109b7",
+      "symbol": "NDTV",
+      "company": "New Delhi Television Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/news/market/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-drug/55567120261004",
+      "title": "Aurobindo Pharma Gets USFDA Nod for Generic Epilepsy Drug",
+      "published": "Sun, 04 Oct 2026 12:05:57 GMT",
+      "published_utc": "2026-10-04T12:05:57+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-drug/55567120261004"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "67d9d04ddb",
+      "symbol": "BAJAJHFL",
+      "company": "Bajaj Housing Finance Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst search",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+      "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+      "published": "Mon, 05 Oct 2026 02:17:42 GMT",
+      "published_utc": "2026-10-05T02:17:42+00:00",
+      "sentence": "gst search",
+      "corroborating_sources": [
+        "corp_sahi"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+        "https://www.sahi.com/news/bajaj-housing-finance-q2-disbursements-touch-19-930-crore-aum-grows-25-to-1-58-190-crore"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "5e4339f2c4",
+      "symbol": "CIPLA",
+      "company": "Cipla Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst search",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+      "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+      "published": "Mon, 05 Oct 2026 02:17:42 GMT",
+      "published_utc": "2026-10-05T02:17:42+00:00",
+      "sentence": "gst search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a8a1e59e99",
+      "symbol": "SUDARSCHEM",
+      "company": "Sudarshan Chemical Industries Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst officials conduct search",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67",
+      "title": "Sudarshan Chemical: Maharashtra GST Officials Conduct Search Under Section 67",
+      "published": "Mon, 05 Oct 2026 01:26:29 GMT",
+      "published_utc": "2026-10-05T01:26:29+00:00",
+      "sentence": "gst officials conduct search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a89a612dbd",
+      "symbol": "BAJFINANCE",
+      "company": "Bajaj Finance Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+      "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+      "published": "Mon, 05 Oct 2026 02:26:53 GMT",
+      "published_utc": "2026-10-05T02:26:53+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-infosys-yes-bank-hindustan-zinc-and-rvnl/articleshow/134678258.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "ad8c9d2f1b",
+      "symbol": "BAJAJFINSV",
+      "company": "Bajaj Finserv Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+      "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+      "published": "Mon, 05 Oct 2026 02:26:53 GMT",
+      "published_utc": "2026-10-05T02:26:53+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+      "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+      "published": "Mon, 05 Oct 2026 02:26:53 GMT",
+      "chars": 5703,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hdfc-bank-acevector-orient-cables-manipal-payment-pranav-constructions-dlf-aurobindo-pharma-knack-packaging-tcs-hindalco-in-focus-on-05-october-14044356.html/amp",
+      "title": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF,...",
+      "published": "Mon, 05 Oct 2026 00:59:55 GMT",
+      "chars": 9967,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-and-why-today-ola-hdfc-bank-nykaa-infosys-shares-in-focus-on-monday-5-oct-full-list-11791163751403.html",
+      "title": "Top stocks to watch and why today: Ola, HDFC Bank, Nykaa, Infosys shares in focus on Monday, 5 Oct | Full list",
+      "published": "Mon, 05 Oct 2026 01:59:40 GMT",
+      "chars": 3870,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=10/05/2026&story=1&title=6-Copper-Stocks-to-Watch-as-India-Races-to-Close-Its-Copper-Deficit&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "6 Copper Stocks to Watch as India Races to Close Its Copper Deficit",
+      "published": "Mon, 05 Oct 2026 00:30:00 GMT",
+      "chars": 17834,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-infosys-yes-bank-hindustan-zinc-and-rvnl/articleshow/134678258.cms",
+      "title": "Stocks in news: HDFC Bank, Infosys, Yes Bank, Hindustan Zinc and RVNL",
+      "published": "Mon, 05 Oct 2026 00:30:00 GMT",
+      "chars": 9508,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/technology/ai/articles/3-great-ai-stocks-watch-020606838.html",
+      "title": "3 Great AI Stocks To Watch In October 2026",
+      "published": "Mon, 05 Oct 2026 02:06:00 GMT",
+      "chars": 3506,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-5-2026-sai-silks-kalamandir-redington/52709446",
+      "title": "Stocks to Watch Today, October 5, 2026: Sai Silks (Kalamandir), Redington, Studds Accessories, Cipla and Bajaj Housing Finance",
+      "published": "Mon, 05 Oct 2026 01:40:32 GMT",
+      "chars": 4001,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://agrospectrumindia.com/news/24/33605/spray-engineering-devices-bags-order-to-modernise-bindals-bijnor-sugar-refinery.html",
+      "title": "Spray Engineering Devices bags order to modernise Bindals’ Bijnor sugar refinery",
+      "published": "Sun, 04 Oct 2026 17:00:46 GMT",
+      "chars": 2597,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.argaam.com/en/article/articledetail/id/1941115",
+      "title": "MIS gets HUMAIN work order worth over 148% of 2025 revenue - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+      "published": "Sun, 04 Oct 2026 08:36:30 GMT",
+      "chars": 1431,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/fedex-stock-gets-a-2-000-truck-order-worth-more-than-usd-300-million/70223992",
+      "title": "FedEx stock gets a 2,000-truck order worth more than USD 300 million.",
+      "published": "Sun, 04 Oct 2026 08:41:55 GMT",
+      "chars": 2655,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.gulf-times.com/article/734750/business/mekdam-holding-receives-ashghal-award-for-contract-worth-up-to-qr2625-mn",
+      "title": "Mekdam Holding receives Ashghal award for contract worth up to QR262.5 mn | Gulf Times",
+      "published": "Sun, 04 Oct 2026 07:41:00 GMT",
+      "chars": 1182,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://bangladeshpost.net/posts/new-food-contractor-appointed-amid-irregularity-allegations-174043",
+      "title": "New food contractor appointed amid irregularity allegations",
+      "published": "Sun, 04 Oct 2026 06:39:12 GMT",
+      "chars": 3603,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.bairdmaritime.com/amp/story/security/naval/naval-ships/danish-navy-environmental-vessels-contract",
+      "title": "Danish consortium secures contract for four naval environmental and minelaying vessels",
+      "published": "Mon, 05 Oct 2026 00:35:34 GMT",
+      "chars": 2242,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+      "title": "Aurobindo Pharma shares in focus on final USFDA approval for Perampanel tablets",
+      "published": "Mon, 05 Oct 2026 01:37:12 GMT",
+      "chars": 1822,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/aurobindo-pharma-secures-usfda-final-approval-for-multi-strength-perampanel-tablets-22059",
+      "title": "Aurobindo Pharma secures USFDA final approval for multi-strength Perampanel tablets",
+      "published": "Sun, 04 Oct 2026 18:26:43 GMT",
+      "chars": 3061,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/news/market/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-drug/55567120261004",
+      "title": "Aurobindo Pharma Gets USFDA Nod for Generic Epilepsy Drug",
+      "published": "Sun, 04 Oct 2026 12:05:57 GMT",
+      "chars": 1493,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://manufacturing.economictimes.indiatimes.com/amp/news/life-sciences/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets/134677446",
+      "title": "Aurobindo Pharma gets USFDA nod for generic epilepsy tablets",
+      "published": "Sun, 04 Oct 2026 15:47:33 GMT",
+      "chars": 611,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://aliceblueonline.com/news/zydus-lifesciences-zooms-4-after-getting-usfda-nod-for-dapagliflozin-tablets%2C-5-mg-10-mg",
+      "title": "Zydus Lifesciences zooms 4% after getting USFDA nod for Dapagliflozin Tablets, 5 mg & 10 mg",
+      "published": "Sun, 04 Oct 2026 08:50:25 GMT",
+      "chars": 149,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.freepressjournal.in/india/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets",
+      "title": "Aurobindo Pharma Gets USFDA Nod For Generic Epilepsy Tablets",
+      "published": "Sun, 04 Oct 2026 15:48:47 GMT",
+      "chars": 1277,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html",
+      "title": "Rajesh Exports says it will resubmit documents to SEBI, disputes EBITDA listed as revenue",
+      "published": "Sun, 04 Oct 2026 17:26:53 GMT",
+      "chars": 4389,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ctbc-financial-stock-trades-at-twd-67-30-after-q2-results/70224310",
+      "title": "CTBC Financial stock trades at TWD 67.30 after Q2 results",
+      "published": "Sun, 04 Oct 2026 09:38:47 GMT",
+      "chars": 2450,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/itochu-stock-falls-1-23-percent-despite-q1-profit-beat/70223607",
+      "title": "Itochu stock falls 1.23 percent despite Q1 profit beat",
+      "published": "Sun, 04 Oct 2026 07:24:42 GMT",
+      "chars": 2291,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mbank-stock-falls-1-24-percent-as-q3-report-date-is-set/70224385",
+      "title": "mBank stock falls 1.24 percent as Q3 report date is set",
+      "published": "Sun, 04 Oct 2026 09:52:24 GMT",
+      "chars": 2547,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+      "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+      "published": "Mon, 05 Oct 2026 02:17:42 GMT",
+      "chars": 3638,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/elon-musk-to-rename-spacex-ai-arm-spacexsi-after-trump-s-directive-126100500037_1.html",
+      "title": "Elon Musk to rename SpaceX AI arm SpaceXSI after Trump's directive",
+      "published": "Mon, 05 Oct 2026 02:16:13 GMT",
+      "chars": 4039,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/brazilians-head-to-polls-in-high-stakes-polarized-presidential-election-126100400788_1.html",
+      "title": "Brazilians head to polls in high-stakes, polarized presidential election",
+      "published": "Sun, 04 Oct 2026 17:54:45 GMT",
+      "chars": 2312,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/saag-rr-infra-share-price-6499/announcements/bse-exchange-138069",
+      "title": "Share Market Today | Latest Stock Market News, Sensex Today and Nifty Live Updates",
+      "published": "Sun, 04 Oct 2026 18:16:13 GMT",
+      "chars": 4322,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/personal-finance/30-and-plan-to-start-investing-what-to-do-in-the-first-of-your-plans-126100100852_1.html",
+      "title": "30 and plan to start investing? What to do in the first of your plans",
+      "published": "Sun, 04 Oct 2026 09:30:00 GMT",
+      "chars": 6959,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/economy/news/gst-set-for-next-big-reform-officers-arrest-powers-may-be-scrapped-126100400534_1.html",
+      "title": "GST set for next big reform; officers' arrest powers may be scrapped",
+      "published": "Sun, 04 Oct 2026 15:35:01 GMT",
+      "chars": 8519,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/britain-s-reliance-on-us-cloud-giants-sparks-concern-among-politicians-126100400259_1.html",
+      "title": "Britain's reliance on US cloud giants sparks concern among politicians",
+      "published": "Sun, 04 Oct 2026 08:40:41 GMT",
+      "chars": 7108,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/columns/next-gen-gst-and-india-s-next-phase-of-growth-126100400667_1.html",
+      "title": "Next-Gen GST and India's next phase of growth",
+      "published": "Sun, 04 Oct 2026 18:35:46 GMT",
+      "chars": 8205,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/fssai-suspends-creative-bakers-licence-over-severe-hygiene-lapses-126100400360_1.html",
+      "title": "FSSAI suspends Creative Bakers licence over severe hygiene lapses",
+      "published": "Sun, 04 Oct 2026 10:21:50 GMT",
+      "chars": 4034,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-5-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-snapdeal-listing-today-rvnl-share-price-today-ipo-today-126100500057_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty rises 100 pts; Asian markets gain on reduced rate-hike bet",
+      "published": "Mon, 05 Oct 2026 07:49:31 +0530",
+      "chars": 153,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-idbi-bank-lal-pathlabs-welspun-living-top-stock-ideas-by-choice-broking-126100500055_1.html",
+      "title": "IDBI Bank, Lal PathLabs, Welspun Living: Top stock ideas by Choice Broking",
+      "published": "Mon, 05 Oct 2026 07:35:31 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sme-listings-sink-as-mainboard-ipo-index-delivers-over-10-annual-return-126100400367_1.html",
+      "title": "SME listings sink as mainboard IPO index delivers over 10% annual return",
+      "published": "Sun, 04 Oct 2026 23:50:25 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/bullion-faces-choppy-week-as-dollar-us-iran-risks-test-sentiment-analysts-126100400484_1.html",
+      "title": "Bullion faces choppy week as dollar, US-Iran risks test sentiment: Analysts",
+      "published": "Sun, 04 Oct 2026 20:13:47 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/markets-news-cdmo-players-to-maintain-outperformance-on-growth-triggers-126100400339_1.html",
+      "title": "CDMO players to maintain outperformance on multiple growth triggers",
+      "published": "Sun, 04 Oct 2026 15:24:32 +0530",
+      "chars": 128,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/rbi-mpc-policy-oil-prices-bond-yields-may-drive-market-this-week-126100400285_1.html",
+      "title": "RBI MPC policy, oil prices, bond yields may drive market this week",
+      "published": "Sun, 04 Oct 2026 15:11:52 +0530",
+      "chars": 999,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/start-ups/companies-start-ups-ofbusiness-plans-600-800-million-ipo-drhp-in-november-126100400194_1.html",
+      "title": "B2B commerce firm OfBusiness plan IPO next year, DRHP likely in Nov",
+      "published": "Sun, 04 Oct 2026 12:52:45 +0530",
+      "chars": 136,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/acevector-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134684039.cms",
+      "title": "AceVector shares to list today; Check GMP ahead of debut",
+      "published": "Mon, 05 Oct 2026 07:53:08 +0530",
+      "chars": 275,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/vishal-nirmiti-ipo-day-3-gmp-at-9-check-subscription-key-details-and-analyst-view/articleshow/134684003.cms",
+      "title": "Vishal Nirmiti IPO Day 3: GMP at 9%; Check subscription, key details and analyst view",
+      "published": "Mon, 05 Oct 2026 07:49:22 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/will-niftys-8-week-losing-streak-trigger-a-relief-rally-but-the-big-bottom-isnt-in-yet/articleshow/134683940.cms",
+      "title": "Will Nifty's 8-week losing streak trigger a relief rally but the big bottom isn't in yet",
+      "published": "Mon, 05 Oct 2026 07:45:37 +0530",
+      "chars": 390,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-5-crude-oil-dips-101-despite-simmering-iran-war-tensions-heres-why/articleshow/134683960.cms",
+      "title": "Oil Price Today (October 5): Crude oil dips to $101 despite simmering Iran war tensions. Here’s why",
+      "published": "Mon, 05 Oct 2026 07:40:42 +0530",
+      "chars": 153,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets-bet-on-rbi-rate-hike-as-inflation-pressure-builds/articleshow/134683865.cms",
+      "title": "Markets bet on RBI rate hike as inflation pressure builds",
+      "published": "Mon, 05 Oct 2026 07:37:42 +0530",
+      "chars": 418,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nifty-under-pressure-after-8-week-losing-streak-but-technical-rebound-may-be-near/articleshow/134683776.cms",
+      "title": "Nifty rebound in sight after record 8-week losing streak: Analysts",
+      "published": "Mon, 05 Oct 2026 07:35:30 +0530",
+      "chars": 493,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-7-stocks-cross-below-their-200-dmas/slideshow/134683932.cms",
+      "title": "Negative Breakout: These 7 stocks cross below their 200 DMAs",
+      "published": "Mon, 05 Oct 2026 07:30:59 +0530",
+      "chars": 106,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-holds-firm-as-french-fiscal-woes-keep-euro-on-back-foot/articleshow/134683809.cms",
+      "title": "Dollar holds firm as French fiscal woes keep euro on back foot",
+      "published": "Mon, 05 Oct 2026 07:29:24 +0530",
+      "chars": 401,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/cipla-unit-s-pune-drug-licence-cancelled-by-maharashtra-fda-over-violations",
+      "title": "Cipla Unit's Pune Drug Licence Cancelled By Maharashtra FDA Over Violations",
+      "published": "Mon, 05 Oct 2026 01:01:32 GMT",
+      "chars": 4641,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sai-silks-reports-q2-fy27-turnover-at-434-crore-opens-4-new-stores",
+      "title": "Sai Silks Reports Q2 FY27 Turnover At ₹434 Crore, Opens 4 New Stores",
+      "published": "Mon, 05 Oct 2026 00:51:43 GMT",
+      "chars": 4101,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67",
+      "title": "Sudarshan Chemical: Maharashtra GST Officials Conduct Search Under Section 67",
+      "published": "Mon, 05 Oct 2026 01:26:29 GMT",
+      "chars": 4066,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/viceroy-hotels-signs-38-45-crore-loan-agreement-with-subsidiary-sln-terminus",
+      "title": "Viceroy Hotels Signs ₹38.45 Crore Loan Agreement With Subsidiary SLN Terminus",
+      "published": "Mon, 05 Oct 2026 01:21:38 GMT",
+      "chars": 3921,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/bajaj-housing-finance-q2-disbursements-touch-19-930-crore-aum-grows-25-to-1-58-190-crore",
+      "title": "Bajaj Housing Finance Q2 Disbursements Touch ₹19,930 Crore; AUM Grows 25% to ₹1,58,190 Crore",
+      "published": "Mon, 05 Oct 2026 01:11:45 GMT",
+      "chars": 4018,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/redington-signs-distribution-deal-with-opswat-to-scale-critical-infrastructure-protection",
+      "title": "Redington Signs Distribution Deal With OPSWAT To Scale Critical Infrastructure Protection",
+      "published": "Mon, 05 Oct 2026 00:57:40 GMT",
+      "chars": 4987,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/asia-pac-equities-begin-week-higher-as-softer-us-jobs-data-shifts-fed-expectations",
+      "title": "Asia-Pac Equities Begin Week Higher As Softer US Jobs Data Shifts Fed Expectations",
+      "published": "Mon, 05 Oct 2026 01:55:56 GMT",
+      "chars": 4031,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 119.2
+}

@@ -1,0 +1,979 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05 08:10",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_regulatory_action": {
+      "docs": 1,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_expansion": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 7,
+      "events": 2
+    }
+  },
+  "events_read": 8,
+  "trade": [],
+  "watch": [
+    {
+      "id": "4a58b2dd8c",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 589.6,
+      "size_estimated": false,
+      "size_basis": "USD 67 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+      "title": "Aurobindo Pharma shares in focus on final USFDA approval for Perampanel tablets",
+      "published": "Mon, 05 Oct 2026 01:37:12 GMT",
+      "published_utc": "2026-10-05T01:37:12+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+        "https://www.indianpharmapost.com/regulatory/aurobindo-pharma-secures-usfda-final-approval-for-multi-strength-perampanel-tablets-22059",
+        "https://manufacturing.economictimes.indiatimes.com/amp/news/life-sciences/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets/134677446",
+        "https://money.rediff.com/news/market/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-drug/55567120261004",
+        "https://www.freepressjournal.in/india/aurobindo-pharma-gets-usfda-nod-for-generic-epilepsy-tablets"
+      ],
+      "n_reports": 5,
+      "catalyst": 46,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+22 Approval (95% firm)",
+        "+2 ₹590cr against ₹34,935cr of revenue — 0.0× a year's sales, small against revenue",
+        "+10 fundamentals 71/100",
+        "+12 published Mon 07:07, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.017,
+      "revenue_ttm_cr": 34935.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 07:07, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 22.86,
+      "direction": "long",
+      "plan": {
+        "reference_close": 1676.8,
+        "atr_pct": 2.21,
+        "expected_day_range_inr": 37.06,
+        "expected_day_range_pct": 2.21,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 71,
+      "fund_why": [
+        "+0 ROCE 12.9%",
+        "+0 ROE 10.1%",
+        "+2 P/E 25.5",
+        "+8 3y profit CAGR 23%",
+        "+3 3y sales CAGR 11%",
+        "+5 D/E 0.21",
+        "+4 promoter 51.88%",
+        "+4 latest qtr PAT YoY 25.2%",
+        "+4 mcap ₹96,479 cr",
+        "+8 operating cash flow ₹5,526cr, 158% of profit — profit is turning into cash",
+        "+4 interest cover 18.43×",
+        "+3 institutions hold 41.43%",
+        "+0 price to book 2.57",
+        "-6 PEG 46.36 — priced for growth it is not delivering",
+        "  (growth counted +8 of +15 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Stock is trading at 2.57 times its book value",
+        "The company has delivered a poor sales growth of 6.32% over past five years.",
+        "Company has a low return on equity of 10.8% over last 3 years.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 1676.800048828125,
+      "ta": {
+        "trend": "up",
+        "rsi": 50.1,
+        "adx": 18.0,
+        "atr_pct": 2.21,
+        "vol_ratio": 1.41,
+        "chg_1d_pct": 0.29,
+        "chg_5d_pct": -2.28,
+        "dist_52w_high_pct": -3.63,
+        "dist_ema200_pct": 14.11,
+        "avg_turnover_cr": 128.51,
+        "high_52w": 1740.0,
+        "momentum_score": 23,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 96479.0,
+        "pe": 25.5,
+        "roce": 12.9,
+        "roe": 10.1,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 23.0,
+        "promoter_pct": 51.88,
+        "debt_to_equity": 0.21,
+        "revenue_ttm_cr": 34935.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 1,
+        "avg_open_to_high_pct": 0.0,
+        "avg_open_to_close_pct": -2.38,
+        "hit_rate": 0.0,
+        "adjust": -3.14,
+        "untested": false
+      }
+    }
+  ],
+  "avoid": [
+    {
+      "id": "a89a612dbd",
+      "symbol": "BAJFINANCE",
+      "company": "Bajaj Finance Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+      "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+      "published": "Mon, 05 Oct 2026 02:26:53 GMT",
+      "published_utc": "2026-10-05T02:26:53+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hdfc-bank-infosys-yes-bank-hindustan-zinc-and-rvnl/articleshow/134678258.cms"
+      ],
+      "n_reports": 2,
+      "catalyst": 2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-14 Equity dilution (90% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 81/100",
+        "-6 4.3% below the 200-day average — fighting the trend",
+        "+12 published Mon 07:56, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 85963.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 07:56, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 948.3,
+        "atr_pct": 2.54,
+        "expected_day_range_inr": 24.09,
+        "expected_day_range_pct": 2.54,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 81,
+      "fund_why": [
+        "+12 net NPA 0.39% of the book",
+        "+4 gross NPA 0.96%",
+        "+10 return on assets 3.77%",
+        "+6 ROE 18.2%",
+        "+4 net interest margin 10.35% of assets",
+        "+8 net interest income +21.1% last year",
+        "+3 the book grew 20%",
+        "-4 price to book 5.18",
+        "+0 P/E 28.8",
+        "+4 institutions hold 36.5%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +11 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 34.2% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 18.6%",
+        "Company's median sales growth is 29.4% of last 10 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 5.18 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 948.2999877929688,
+      "ta": {
+        "trend": "down",
+        "rsi": 32.0,
+        "adx": 35.4,
+        "atr_pct": 2.54,
+        "vol_ratio": 0.95,
+        "chg_1d_pct": -1.16,
+        "chg_5d_pct": -3.43,
+        "dist_52w_high_pct": -19.39,
+        "dist_ema200_pct": -4.29,
+        "avg_turnover_cr": 604.43,
+        "high_52w": 1176.4,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 590407.0,
+        "pe": 28.8,
+        "roce": 10.9,
+        "roe": 18.2,
+        "sales_growth_3_years": 26.0,
+        "profit_growth_3_years": 19.0,
+        "promoter_pct": 54.68,
+        "revenue_ttm_cr": 85963.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ad8c9d2f1b",
+      "symbol": "BAJAJFINSV",
+      "company": "Bajaj Finserv Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+      "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+      "published": "Mon, 05 Oct 2026 02:26:53 GMT",
+      "published_utc": "2026-10-05T02:26:53+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-12 Equity dilution (90% firm, named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "-6 8.5% below the 200-day average — fighting the trend",
+        "+12 published Mon 07:56, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 157642.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 07:56, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1732.6,
+        "atr_pct": 2.09,
+        "expected_day_range_inr": 36.21,
+        "expected_day_range_pct": 2.09,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_flags": [
+        "not rated: this is a lender, but Screener's page for it carries no NPA rows, and a loan book that cannot be inspected cannot be graded"
+      ],
+      "fund_caps": [],
+      "fund_unrated": true,
+      "screener_pros": [
+        "Company's median sales growth is 20.2% of last 10 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 3.56 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 13.8% over last 3 years."
+      ],
+      "ltp": 1732.5999755859375,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 24.8,
+        "adx": 51.9,
+        "atr_pct": 2.09,
+        "vol_ratio": 3.04,
+        "chg_1d_pct": 0.09,
+        "chg_5d_pct": -1.69,
+        "dist_52w_high_pct": -21.07,
+        "dist_ema200_pct": -8.52,
+        "avg_turnover_cr": 137.25,
+        "high_52w": 2195.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 277573.0,
+        "pe": 27.0,
+        "roce": 10.6,
+        "roe": 13.2,
+        "sales_growth_3_years": 22.0,
+        "profit_growth_3_years": 16.0,
+        "promoter_pct": 58.72,
+        "debt_to_equity": 5.52,
+        "revenue_ttm_cr": 157642.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "67d9d04ddb",
+      "symbol": "BAJAJHFL",
+      "company": "Bajaj Housing Finance Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst search",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+      "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+      "published": "Mon, 05 Oct 2026 02:17:42 GMT",
+      "published_utc": "2026-10-05T02:17:42+00:00",
+      "sentence": "gst search",
+      "corroborating_sources": [
+        "corp_sahi"
+      ],
+      "urls": [
+        "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+        "https://www.sahi.com/news/bajaj-housing-finance-q2-disbursements-touch-19-930-crore-aum-grows-25-to-1-58-190-crore"
+      ],
+      "n_reports": 2,
+      "catalyst": -3,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 76/100",
+        "-6 7.4% below the 200-day average — fighting the trend",
+        "+12 published Mon 07:47, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 11605.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 07:47, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 82.91,
+        "atr_pct": 1.88,
+        "expected_day_range_inr": 1.56,
+        "expected_day_range_pct": 1.88,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 76,
+      "fund_why": [
+        "+12 net NPA 0.12% of the book",
+        "+4 gross NPA 0.29%",
+        "+10 return on assets 2.23%",
+        "+3 ROE 12.1%",
+        "+2 net interest margin 3.82% of assets",
+        "+8 net interest income +22.8% last year",
+        "+3 the book grew 24%",
+        "+0 price to book 3.07",
+        "+2 P/E 25.6",
+        "-5 promoter stake down 2pp over four quarters",
+        "-4 institutions hold 1.9%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (returns counted +10 of +15 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +11 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted -8 of -9 — its terms measure the same thing more than once, so the most it can cost is -8)",
+        "  (read as a lender: Screener files this under Finance, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 41.5% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 3.07 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 13.3% over last 3 years.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 82.91000366210938,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 47.0,
+        "adx": 9.3,
+        "atr_pct": 1.88,
+        "vol_ratio": 1.79,
+        "chg_1d_pct": 1.11,
+        "chg_5d_pct": -0.06,
+        "dist_52w_high_pct": -26.92,
+        "dist_ema200_pct": -7.39,
+        "avg_turnover_cr": 26.07,
+        "high_52w": 113.45,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 69083.0,
+        "pe": 25.6,
+        "roce": 8.85,
+        "roe": 12.1,
+        "sales_growth_3_years": 25.0,
+        "profit_growth_3_years": 27.0,
+        "promoter_pct": 86.7,
+        "revenue_ttm_cr": 11605.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "5e4339f2c4",
+      "symbol": "CIPLA",
+      "company": "Cipla Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst search",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+      "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+      "published": "Mon, 05 Oct 2026 02:17:42 GMT",
+      "published_utc": "2026-10-05T02:17:42+00:00",
+      "sentence": "gst search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/"
+      ],
+      "n_reports": 1,
+      "catalyst": -12,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 50/100",
+        "-6 4.5% below the 200-day average — fighting the trend",
+        "+12 published Mon 07:47, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 28323.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 07:47, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1344.0,
+        "atr_pct": 1.91,
+        "expected_day_range_inr": 25.67,
+        "expected_day_range_pct": 1.91,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 50,
+      "fund_why": [
+        "+6 ROCE 15.5%",
+        "+0 ROE 11.6%",
+        "+2 P/E 30.3",
+        "+4 3y profit CAGR 10%",
+        "+0 3y sales CAGR 7%",
+        "+4 return on capital has improved from 15% to 20.3%",
+        "+5 D/E 0.02",
+        "-3 promoter 29.22%",
+        "-5 latest qtr PAT YoY -39.2%",
+        "+4 mcap ₹108,578 cr",
+        "+8 operating cash flow ₹3,940cr, 102% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: -26.7% last year against 26.8% the year before",
+        "+3 institutions hold 54.55%",
+        "-10 profit has come in below the year-ago quarter 3 quarters running",
+        "+0 price to book 3.15",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 50: 3 consecutive quarters of falling profit"
+      ],
+      "fund_flags": [
+        "3 consecutive quarters of falling profit"
+      ],
+      "fund_caps": [
+        "capped at 50: 3 consecutive quarters of falling profit"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 25.7%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 8.01% over past five years.",
+        "Promoter holding has decreased over last 3 years: -4.24%"
+      ],
+      "ltp": 1344.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 34.7,
+        "adx": 22.3,
+        "atr_pct": 1.91,
+        "vol_ratio": 0.95,
+        "chg_1d_pct": -0.15,
+        "chg_5d_pct": -3.93,
+        "dist_52w_high_pct": -19.67,
+        "dist_ema200_pct": -4.53,
+        "avg_turnover_cr": 134.07,
+        "high_52w": 1673.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 108578.0,
+        "pe": 30.3,
+        "roce": 15.5,
+        "roe": 11.6,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 10.0,
+        "promoter_pct": 29.22,
+        "debt_to_equity": 0.02,
+        "revenue_ttm_cr": 28323.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "a8a1e59e99",
+      "symbol": "SUDARSCHEM",
+      "company": "Sudarshan Chemical Industries Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst officials conduct search",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67",
+      "title": "Sudarshan Chemical: Maharashtra GST Officials Conduct Search Under Section 67",
+      "published": "Mon, 05 Oct 2026 01:26:29 GMT",
+      "published_utc": "2026-10-05T01:26:29+00:00",
+      "sentence": "gst officials conduct search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67"
+      ],
+      "n_reports": 1,
+      "catalyst": -20,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 31/100 — a pop on a weak balance sheet fades",
+        "+12 published Mon 06:56, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 9922.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 06:56, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1241.5,
+        "atr_pct": 3.63,
+        "expected_day_range_inr": 45.07,
+        "expected_day_range_pct": 3.63,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 31,
+      "fund_why": [
+        "-4 ROCE 5.46%",
+        "-4 ROE 0.54%",
+        "-6 P/E 97.3",
+        "-6 3y profit CAGR -25%",
+        "+6 3y sales CAGR 62%",
+        "-6 return on capital has drifted from 14.2% to 7.3% — the newer capital earns less than the old",
+        "-4 ROCE 5.46% is the lowest in the years on the page",
+        "+2 D/E 0.72",
+        "-3 promoter 8.19%",
+        "-5 promoter stake down 8.22pp over four quarters",
+        "+4 latest qtr PAT YoY 87.3%",
+        "+0 mcap ₹9,884 cr",
+        "+8 operating cash flow ₹344cr, 839% of profit — profit is turning into cash",
+        "+3 institutions hold 34.89%",
+        "+0 price to book 2.83",
+        "-6 ROCE 5.46% bought at 2.83× book is 1.9% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — operating cash flow is 839% of net profit — one of the two figures is being read from the wrong row"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has been maintaining a healthy dividend payout of 82.7%",
+        "Debtor days have improved from 93.5 to 62.6 days.",
+        "Company's working capital requirements have reduced from 91.5 days to 62.2 days"
+      ],
+      "screener_cons": [
+        "Stock is trading at 2.83 times its book value",
+        "Promoter holding is low: 8.19%",
+        "Company has a low return on equity of 3.01% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -27.6%"
+      ],
+      "ltp": 1241.5,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 56.3,
+        "adx": 18.4,
+        "atr_pct": 3.63,
+        "vol_ratio": 2.09,
+        "chg_1d_pct": 3.12,
+        "chg_5d_pct": 1.93,
+        "dist_52w_high_pct": -8.74,
+        "dist_ema200_pct": 17.93,
+        "avg_turnover_cr": 25.14,
+        "high_52w": 1360.4,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-01"
+      },
+      "fundamentals": {
+        "market_cap_cr": 9884.0,
+        "pe": 97.3,
+        "roce": 5.46,
+        "roe": 0.54,
+        "sales_growth_3_years": 62.0,
+        "profit_growth_3_years": -25.0,
+        "promoter_pct": 8.19,
+        "debt_to_equity": 0.72,
+        "revenue_ttm_cr": 9922.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

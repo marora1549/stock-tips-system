@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-05",
   "stats": {
     "capital": 100000,
     "equity": 97078.37,
@@ -68,7 +68,7 @@
       ],
       "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,881.40 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86",
       "progress_t1_pct": 72,
-      "days_elapsed": 18
+      "days_elapsed": 19
     },
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -129,7 +129,7 @@
       ],
       "order_line": "BUY 142 PETRONET NSE CNC limit ₹285.10 · SL-M ₹276.86 · GTT ₹307.19 / 318.75 / 326.40",
       "progress_t1_pct": 2,
-      "days_elapsed": 2
+      "days_elapsed": 3
     }
   ],
   "sparks": {
@@ -1446,7 +1446,7 @@
   "latest_picks": {},
   "latest_analysis": [],
   "contenders": [],
-  "analysis_day": "2026-10-02",
+  "analysis_day": "2026-10-05",
   "cash_flows": [],
   "book": {
     "max_open_positions": 4,
@@ -1460,99 +1460,247 @@
     "max_single_stock_pct": 50
   },
   "intraday": {
-    "day": "2026-10-01",
-    "generated_at": "2026-10-01 08:11",
-    "checked_at": "2026-10-01 09:36",
-    "events_read": 22,
+    "day": "2026-10-05",
+    "generated_at": "2026-10-05 08:10",
+    "checked_at": null,
+    "events_read": 8,
     "wires": {
       "corp_stocks_to_watch": {
         "docs": 7,
-        "events": 0
-      },
-      "corp_orders": {
-        "docs": 5,
-        "events": 8
-      },
-      "corp_orders_bse": {
-        "docs": 2,
-        "events": 9
-      },
-      "corp_approvals": {
-        "docs": 2,
-        "events": 1
-      },
-      "corp_regulatory_action": {
-        "docs": 4,
         "events": 3
       },
-      "corp_results": {
-        "docs": 5,
+      "corp_orders": {
+        "docs": 6,
+        "events": 0
+      },
+      "corp_orders_bse": {
+        "docs": 0,
+        "events": 0
+      },
+      "corp_approvals": {
+        "docs": 6,
+        "events": 6
+      },
+      "corp_regulatory_action": {
+        "docs": 1,
         "events": 1
       },
+      "corp_results": {
+        "docs": 4,
+        "events": 2
+      },
       "corp_expansion": {
-        "docs": 5,
-        "events": 5
+        "docs": 0,
+        "events": 0
       },
       "corp_bs_capitalmarket": {
         "docs": 8,
-        "events": 1
-      },
-      "corp_bs_markets_rss": {
-        "docs": 8,
         "events": 0
       },
-      "corp_et_markets_rss": {
+      "corp_bs_markets_rss": {
         "docs": 7,
         "events": 0
       },
-      "corp_sahi": {
-        "docs": 2,
+      "corp_et_markets_rss": {
+        "docs": 8,
         "events": 0
+      },
+      "corp_sahi": {
+        "docs": 7,
+        "events": 2
       }
     },
     "trade": [],
-    "watch": [],
+    "watch": [
+      {
+        "symbol": "AUROPHARMA",
+        "company": "Aurobindo Pharma Limited",
+        "event": "regulatory_approval",
+        "event_label": "Approval",
+        "catalyst": 46,
+        "verdict": "WATCH",
+        "verdict_note": "real but not enough on its own — watch how it opens",
+        "size_inr_cr": 589.6,
+        "size_estimated": false,
+        "size_basis": "USD 67 million (no order wording nearby)",
+        "materiality_ratio": 0.017,
+        "revenue_ttm_cr": 34935.0,
+        "fund_score": 71,
+        "fund_why": [
+          "+0 ROCE 12.9%",
+          "+0 ROE 10.1%",
+          "+2 P/E 25.5",
+          "+8 3y profit CAGR 23%",
+          "+3 3y sales CAGR 11%",
+          "+5 D/E 0.21",
+          "+4 promoter 51.88%",
+          "+4 latest qtr PAT YoY 25.2%",
+          "+4 mcap ₹96,479 cr",
+          "+8 operating cash flow ₹5,526cr, 158% of profit — profit is turning into cash",
+          "+4 interest cover 18.43×",
+          "+3 institutions hold 41.43%",
+          "+0 price to book 2.57",
+          "-6 PEG 46.36 — priced for growth it is not delivering",
+          "  (growth counted +8 of +15 — its terms measure the same thing more than once, so the most it can add is +8)",
+          "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+          "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+          "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+        ],
+        "fund_flags": [],
+        "fund_caps": [],
+        "fund_unrated": false,
+        "screener_pros": [],
+        "screener_cons": [
+          "Stock is trading at 2.57 times its book value",
+          "The company has delivered a poor sales growth of 6.32% over past five years.",
+          "Company has a low return on equity of 10.8% over last 3 years.",
+          "Company might be capitalizing the interest cost"
+        ],
+        "source_id": "corp_approvals",
+        "corroborating_sources": [],
+        "url": "https://www.moneycontrol.com/news/business/markets/aurobindo-pharma-shares-in-focus-on-final-usfda-approval-for-perampanel-tablets-14044105.html/amp",
+        "title": "Aurobindo Pharma shares in focus on final USFDA approval for Perampanel tablets",
+        "published": "Mon, 05 Oct 2026 01:37:12 GMT",
+        "directness": 1.0,
+        "route": "named",
+        "why_this_name": "named in the story",
+        "theme": null,
+        "ltp": 1676.800048828125,
+        "ta": {
+          "trend": "up",
+          "rsi": 50.1,
+          "adx": 18.0,
+          "atr_pct": 2.21,
+          "vol_ratio": 1.41,
+          "chg_1d_pct": 0.29,
+          "chg_5d_pct": -2.28,
+          "dist_52w_high_pct": -3.63,
+          "dist_ema200_pct": 14.11,
+          "avg_turnover_cr": 128.51,
+          "high_52w": 1740.0,
+          "momentum_score": 23,
+          "last_bar_date": "2026-10-01"
+        },
+        "fundamentals": {
+          "market_cap_cr": 96479.0,
+          "pe": 25.5,
+          "roce": 12.9,
+          "roe": 10.1,
+          "sales_growth_3_years": 11.0,
+          "profit_growth_3_years": 23.0,
+          "promoter_pct": 51.88,
+          "debt_to_equity": 0.21,
+          "revenue_ttm_cr": 34935.0,
+          "revenue_basis": "trailing 4 quarters"
+        },
+        "freshness": {
+          "points": 12,
+          "window": "overnight",
+          "why": "published Mon 07:07, outside market hours — the move is still ahead of the open"
+        },
+        "class_score": {
+          "n": 1,
+          "avg_open_to_high_pct": 0.0,
+          "avg_open_to_close_pct": -2.38,
+          "hit_rate": 0.0,
+          "adjust": -3.14,
+          "untested": false
+        },
+        "plan": {
+          "reference_close": 1676.8,
+          "atr_pct": 2.21,
+          "expected_day_range_inr": 37.06,
+          "expected_day_range_pct": 2.21,
+          "opening_range_minutes": 15,
+          "gap_ladder": [
+            {
+              "band": "modest",
+              "gap_upto_pct": 2.0,
+              "rule": "buy the break of the opening-range high",
+              "acts": true
+            },
+            {
+              "band": "wide",
+              "gap_upto_pct": 5.0,
+              "rule": "buy the opening-range break only if it closes strong on real volume",
+              "acts": true
+            },
+            {
+              "band": "runaway",
+              "gap_upto_pct": null,
+              "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+              "acts": false
+            }
+          ],
+          "max_stop_pct": 1.5,
+          "min_stop_pct": 0.5,
+          "no_new_entry_after": "14:00",
+          "force_flat_at": "15:10",
+          "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+        },
+        "certainty": 0.95,
+        "n_reports": 5,
+        "catalyst_reasons": [
+          "+22 Approval (95% firm)",
+          "+2 ₹590cr against ₹34,935cr of revenue — 0.0× a year's sales, small against revenue",
+          "+10 fundamentals 71/100",
+          "+12 published Mon 07:07, outside market hours — the move is still ahead of the open"
+        ]
+      }
+    ],
     "avoid": [
       {
-        "symbol": "AVALON",
-        "company": "Avalon Technologies Limited",
-        "event_label": "Promoter pledge / stake sale",
-        "title": "Stocks to watch today, October 1: NCC, TCI buyback, Avalon, Apollo Hospitals",
-        "url": "https://businessupturn.com/finance/stock-market/stocks-to-watch-on-thursday-ncc-tci-avalon-apollo-hospitals-blue-dart-october-1/",
+        "symbol": "BAJFINANCE",
+        "company": "Bajaj Finance Limited",
+        "event_label": "Equity dilution",
+        "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+        "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+        "source_id": "corp_stocks_to_watch",
+        "catalyst": 2,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "BAJAJFINSV",
+        "company": "Bajaj Finserv Limited",
+        "event_label": "Equity dilution",
+        "title": "Stocks to watch: HDFC Bank, Ola Electric, D-Mart, YES Bank, Bajaj Finance",
+        "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-5-hdfc-bank-ola-electric-d-mart-yes-bank-bajaj-finance-126100500058_1.html",
+        "source_id": "corp_stocks_to_watch",
+        "catalyst": -2,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "BAJAJHFL",
+        "company": "Bajaj Housing Finance Limited",
+        "event_label": "Regulatory action",
+        "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+        "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
         "source_id": "corp_results",
-        "catalyst": 16,
+        "catalyst": -3,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       },
       {
-        "symbol": "KTKBANK",
-        "company": "The Karnataka Bank Limited",
+        "symbol": "CIPLA",
+        "company": "Cipla Limited",
         "event_label": "Regulatory action",
-        "title": "Prince Pipes gets ₹65.93 Cr GST notice from Karnataka for FY23",
-        "url": "https://scanx.trade/stock-market-news/companies/prince-pipes-gets-65-93-cr-gst-notice-karnataka-fy23/52324804",
-        "source_id": "corp_regulatory_action",
-        "catalyst": -6,
+        "title": "Stocks to watch today, October 5: Cipla licence, Sudarshan GST search, Bajaj Housing Finance Q2",
+        "url": "https://www.businessupturn.com/finance/stock-market/stocks-to-watch-on-october-5-cipla-bajaj-housing-finance-sudarshan-chemical-redington-sai-silks/",
+        "source_id": "corp_results",
+        "catalyst": -12,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       },
       {
-        "symbol": "MCX",
-        "company": "Multi Commodity Exchange of India Limited",
+        "symbol": "SUDARSCHEM",
+        "company": "Sudarshan Chemical Industries Limited",
         "event_label": "Regulatory action",
-        "title": "MCX receives GST notice proposing ₹103 crore tax, interest and penalty for FY23",
-        "url": "https://www.cnbctv18.com/market/stocks/mcx-share-price-receives-gst-notice-proposing-rs-103-crore-tax-interest-and-penalty-for-fy23-20002494.htm",
-        "source_id": "corp_regulatory_action",
-        "catalyst": -6,
+        "title": "Sudarshan Chemical: Maharashtra GST Officials Conduct Search Under Section 67",
+        "url": "https://www.sahi.com/news/sudarshan-chemical-maharashtra-gst-officials-conduct-search-under-section-67",
+        "source_id": "corp_sahi",
+        "catalyst": -20,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       }
     ],
-    "skipped": [
-      {
-        "symbol": "SYMBIOTEC",
-        "event": "regulatory_clearance",
-        "title": "Symbiotec Pharmalab receives US FDA VAI status for Pithampur plant",
-        "source_id": "corp_approvals",
-        "why": "no price history"
-      }
-    ],
+    "skipped": [],
     "trades": [],
     "stats": {
       "notional_inr": 100000.0,
@@ -1681,8 +1829,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "0f688a6",
-    "branch": "claude/gifted-albattani-mallcv",
+    "head": "9412ddb",
+    "branch": "main",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
@@ -1741,7 +1889,8 @@
     "2026-09-29",
     "2026-09-30",
     "2026-10-01",
-    "2026-10-02"
+    "2026-10-02",
+    "2026-10-05"
   ],
   "lessons_tail": "is a code fix, not a hand-edit: solar_manufacturing needs 'gw' gated on a solar-specific co-occurring term, and power_generation's 'nuclear' keyword needs narrowing (e.g. 'nuclear power plant'/'nuclear reactor') or a require: clause like solar_manufacturing already has, plus a regression fixture on this Suzlon/Iran-war pair in tests/test_events (or wherever theme routing is tested).\n\n### 2026-09-28 [machine]\nEvents: KPIL: STOP-LOSS @ 1368.22 → closed, P&L ₹-740.88 (-2.51%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 2 | 0 | -3.20 |\n| pattern=bollinger_squeeze | 2 | 0 | -3.20 |\n| pattern=momentum_aligned | 2 | 0 | -3.20 |\n| ta_conf=>=70 | 2 | 0 | -3.20 |\n| fund=>=65 | 2 | 0 | -3.20 |\n\n### 2026-09-28 [analyst]\nKPIL: stop hit in 8 days, only 0.94 ATR from the actual gap-down fill (1403.5), not the planned entry (1435.7) -- the fill landing 2.2% below plan quietly tightened the effective stop from 4.7% to 2.51%, after price had touched +4.07% favourable. Pattern (bollinger_squeeze) and hold-capable fundamentals (87) were sound; reads as a fill-price artifact, not a bad call. chartink_squeeze now at n_resolved=1, score -15 -- one point, not evidence yet. fund-audit: no inversion, no bias (markets_mojo mean gap +6.5, under the 8pt bar); still unproven, only 1 settled in the 75-100 band.\n\n### 2026-09-29 [machine]\nEvents: CGPOWER: STOP-LOSS @ 855.9 → closed, P&L ₹-1755.0 (-4.36%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 3 | 0 | -3.59 |\n| pattern=bollinger_squeeze | 3 | 0 | -3.59 |\n| pattern=momentum_aligned | 3 | 0 | -3.59 |\n| ta_conf=>=70 | 3 | 0 | -3.59 |\n| fund=>=65 | 3 | 0 | -3.59 |\n| pattern=pullback_to_ema20_in_uptrend | 2 | 0 | -4.12 |\n| timeframe=monthly | 2 | 0 | -3.44 |\n\n### 2026-09-29 [analyst]\n2026-09-29 desk review: CGPOWER stop-loss @855.9 (-4.36%, 3rd straight hold-capable/bollinger_squeeze loss; 0/3 wins, n too small to change rules). Pattern failure vs noise not verified against ATR; fund score (>=65) has not earned its keep yet: fund-audit shows 0 inversion, no bias (markets_mojo gap +6.5 <8pt), still only 1 settled in 75-100 band. HEROMOTOCO filled 5375 (plan 5390), already -3.1% on day one. Motilal (-29, conf 9) and brokerage_gnews (-14.6) keep taking hits; none auto-disabled (n_resolved<8). No source at >=60% T1 hit-rate.\n\n### 2026-09-30 [analyst]\n2026-09-30 desk review: only event was PETRONET fill 285.10 (plan 289.85, 1.6% below plan, gap-down fill; no stop/target hit). Book: LALPATHLAB +5.6% (T1 unhit), HEROMOTOCO -2.5% (stop 5140.67 is 1.9% away, inside ~1 ATR), PETRONET -0.2%. Still 0/3 closed, all hold-capable. fund-audit: no inversion, no bias (markets_mojo gap +6.5, under 8pt); only 1 settled in 75-100 band so fund score remains unproven. No source auto-disabled (max n_resolved=2); none at 60% T1 hit-rate. Not Friday: no new source added.\n\n### 2026-10-01 [machine]\nEvents: HEROMOTOCO: STOP-LOSS @ 5140.67 → closed, P&L ₹-1171.65 (-4.36%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 4 | 0 | -3.78 |\n| pattern=bollinger_squeeze | 4 | 0 | -3.78 |\n| pattern=momentum_aligned | 4 | 0 | -3.78 |\n| ta_conf=>=70 | 4 | 0 | -3.78 |\n| fund=>=65 | 4 | 0 | -3.78 |\n| pattern=pullback_to_ema20_in_uptrend | 3 | 0 | -4.20 |\n| timeframe=monthly | 2 | 0 | -3.44 |\n\n### 2026-10-01 [analyst]\n2026-10-01 desk review: HEROMOTOCO stop 5140.67 (-4.36%), 4th straight hold-capable loss (0/4). Stop was ~1.9% away, inside ~1 ATR, so noise-sized; the fill 5375 sat under plan 5390 and price faded from day one, so the pattern (momentum_aligned/pullback) gave no follow-through and the tip likely arrived after the move. Fund score (>=65) not yet earning its keep: 0% hit in 75-100 band, 2 settled, too few to call. fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt). chartink_ema_pullback -15, chartink_squeeze -21.8; Motilal -29 and brokerage_gnews -14.6 lag, none auto-disabled (n_resolved<8). No source at >=60% T1. Thursday: no new source.\n",
   "settings": {
