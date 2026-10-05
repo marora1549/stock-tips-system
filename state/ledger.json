@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 104.82,
+  "cash_inr": 126.87,
   "positions": [
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -40,8 +40,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 7.77,
       "notes": [],
-      "ltp": 2005.0999755859375,
-      "unrealised_pct": 6.57
+      "ltp": 1971.300048828125,
+      "unrealised_pct": 4.78
     },
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -90,10 +90,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 1.33,
+      "max_favourable_pct": 3.12,
       "notes": [],
-      "ltp": 285.5,
-      "unrealised_pct": 0.14
+      "ltp": 290.0,
+      "unrealised_pct": 1.72
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -102,12 +102,12 @@
       "company": "Kotak Mahindra Bank",
       "opened": "2026-10-05",
       "booked": "2026-10-05 08:28",
-      "status": "pending",
+      "status": "open",
       "entry_plan": 418.35,
-      "entry": null,
+      "entry": 418.0,
       "qty": 63,
       "qty_open": 63,
-      "capital_inr": 26356.05,
+      "capital_inr": 26334.0,
       "stop_loss": 407.2,
       "initial_stop": 407.2,
       "targets": [
@@ -119,7 +119,7 @@
       "fund_score_at_entry": 85,
       "timeframe": "long",
       "time_stop_days": 30,
-      "deadline": null,
+      "deadline": "2026-11-16",
       "eta_days": [
         null,
         null,
@@ -141,8 +141,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 0.0,
-      "notes": []
+      "max_favourable_pct": 1.54,
+      "notes": [],
+      "ltp": 416.0,
+      "unrealised_pct": -0.48
     }
   ],
   "closed": [
@@ -457,6 +459,10 @@
     {
       "date": "2026-10-01",
       "equity": 97078.37
+    },
+    {
+      "date": "2026-10-05",
+      "equity": 97084.37
     }
   ],
   "created": "2026-09-07",
