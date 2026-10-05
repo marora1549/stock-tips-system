@@ -57,11 +57,11 @@
   "regulatory_approval": {
     "id": "regulatory_approval",
     "prior": 26,
-    "adjust": -3.142,
-    "n": 1,
+    "adjust": -4.579,
+    "n": 2,
     "n_up": 0,
-    "sum_open_to_high_pct": 0.0,
-    "sum_open_to_close_pct": -2.38,
+    "sum_open_to_high_pct": 0.47,
+    "sum_open_to_close_pct": -3.51,
     "history": [
       {
         "date": "2026-09-15",
@@ -69,10 +69,17 @@
         "open_to_high_pct": 0.0,
         "open_to_close_pct": -2.38,
         "delta": -3.14
+      },
+      {
+        "date": "2026-10-05",
+        "symbol": "AUROPHARMA",
+        "open_to_high_pct": 0.47,
+        "open_to_close_pct": -1.13,
+        "delta": -1.59
       }
     ],
     "first_seen": "2026-09-15",
-    "last_seen": "2026-09-15"
+    "last_seen": "2026-10-05"
   },
   "l1_bidder": {
     "id": "l1_bidder",
