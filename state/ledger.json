@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 26460.87,
+  "cash_inr": 104.82,
   "positions": [
     {
       "pos_id": "2026-09-08-LALPATHLAB",
@@ -94,6 +94,55 @@
       "notes": [],
       "ltp": 285.5,
       "unrealised_pct": 0.14
+    },
+    {
+      "pos_id": "2026-10-05-KOTAKBANK",
+      "tip_id": "3683cbb8f8",
+      "symbol": "KOTAKBANK",
+      "company": "Kotak Mahindra Bank",
+      "opened": "2026-10-05",
+      "booked": "2026-10-05 08:28",
+      "status": "pending",
+      "entry_plan": 418.35,
+      "entry": null,
+      "qty": 63,
+      "qty_open": 63,
+      "capital_inr": 26356.05,
+      "stop_loss": 407.2,
+      "initial_stop": 407.2,
+      "targets": [
+        453.2,
+        466.4,
+        488.75
+      ],
+      "targets_hit": [],
+      "fund_score_at_entry": 85,
+      "timeframe": "long",
+      "time_stop_days": 30,
+      "deadline": null,
+      "eta_days": [
+        null,
+        null,
+        null
+      ],
+      "pace_pct_day": -0.024,
+      "momentum_score": 0,
+      "source_id": "broker:pl",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "ta_confidence": 75,
+      "fund_score": 85,
+      "composite": 71,
+      "bucket": "hold-capable",
+      "patterns": [
+        "pullback_to_ema20_in_uptrend",
+        "volume_spike"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
     }
   ],
   "closed": [

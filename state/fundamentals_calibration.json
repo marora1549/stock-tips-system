@@ -2,7 +2,7 @@
   "buckets": {
     "75-100": {
       "id": "75-100",
-      "n": 3,
+      "n": 4,
       "n_settled": 2,
       "n_up": 0,
       "sum_return_pct": -6.87,
@@ -40,6 +40,17 @@
       "date": "2026-09-30",
       "symbol": "PETRONET",
       "score": 76,
+      "bucket": "75-100",
+      "flags": [],
+      "caps": [],
+      "unrated": false,
+      "outcome": null,
+      "ret_pct": null
+    },
+    {
+      "date": "2026-10-05",
+      "symbol": "KOTAKBANK",
+      "score": 85,
       "bucket": "75-100",
       "flags": [],
       "caps": [],
