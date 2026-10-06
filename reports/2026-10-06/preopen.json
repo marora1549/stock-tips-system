@@ -1,0 +1,541 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 4
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 25,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "9c35b63838",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "$32 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "published_utc": "2026-10-05T07:08:04+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -30,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-6 Equity dilution (90% firm, sympathy at 40%)",
+        " 0 ₹281,600cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "-10 fundamentals 17/100 — a pop on a weak balance sheet fades",
+        "-6 30.6% below the 200-day average — fighting the trend",
+        "-8 published 12:38 during the session — the market has already seen it"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 23507.0,
+      "freshness": {
+        "points": -8,
+        "window": "in-session",
+        "why": "published 12:38 during the session — the market has already seen it"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 370.55,
+        "atr_pct": 2.92,
+        "expected_day_range_inr": 10.82,
+        "expected_day_range_pct": 2.92,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 17,
+      "fund_why": [
+        "+6 ROCE 16.5%",
+        "+0 ROE 11.4%",
+        "+6 P/E 16.4",
+        "+8 3y profit CAGR 55%",
+        "+3 3y sales CAGR 11%",
+        "-6 return on capital has drifted from 20.2% to 17% — the newer capital earns less than the old",
+        "-2 D/E 0.87",
+        "+4 promoter 50.1%",
+        "-5 latest qtr PAT YoY -41.6%",
+        "+0 mcap ₹9,864 cr",
+        "-14 operating cash flow ₹-414cr — the business consumed cash last year",
+        "-8 profit growth has stalled: 6.1% last year against 64.5% the year before",
+        "-5 the profit 3-year CAGR of 55% is history — last year was 6.1%",
+        "-12 interest cover 1.77× — thin",
+        "+3 institutions hold 33.26%",
+        "-10 profit has come in below the year-ago quarter 3 quarters running",
+        "+3 price to book 1.61",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)"
+      ],
+      "fund_flags": [
+        "interest cover has fallen every quarter to 1.77×",
+        "3 consecutive quarters of falling profit"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 26.5%"
+      ],
+      "screener_cons": [
+        "Company has a low return on equity of 10.8% over last 3 years."
+      ],
+      "ltp": 370.54998779296875,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 28.9,
+        "adx": 43.3,
+        "atr_pct": 2.92,
+        "vol_ratio": 0.48,
+        "chg_1d_pct": -0.48,
+        "chg_5d_pct": -5.12,
+        "dist_52w_high_pct": -58.51,
+        "dist_ema200_pct": -30.59,
+        "avg_turnover_cr": 40.44,
+        "high_52w": 893.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-05"
+      },
+      "fundamentals": {
+        "market_cap_cr": 9864.0,
+        "pe": 16.4,
+        "roce": 16.5,
+        "roe": 11.4,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 55.0,
+        "promoter_pct": 50.1,
+        "debt_to_equity": 0.87,
+        "revenue_ttm_cr": 23507.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "494986f2b5",
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.goodreturns.in/news/reliance-industries-q4-results-pat-falls-by-13-yoy-west-asia-war-hits-o2c-oil-gas-biz-full-report-1504417.html",
+      "title": "Reliance Industries Q4 Results: PAT Falls 13% YoY, West Asia War Hits O2C, Oil & Gas Biz; Full Earnings Report",
+      "published": "Mon, 05 Oct 2026 07:00:43 GMT",
+      "published_utc": "2026-10-05T07:00:43+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/reliance-industries-q4-results-pat-falls-by-13-yoy-west-asia-war-hits-o2c-oil-gas-biz-full-report-1504417.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -30,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 55/100",
+        "-6 10.9% below the 200-day average — fighting the trend",
+        "-8 published 12:30 during the session — the market has already seen it"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 1123055.0,
+      "freshness": {
+        "points": -8,
+        "window": "in-session",
+        "why": "published 12:30 during the session — the market has already seen it"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1186.4,
+        "atr_pct": 1.61,
+        "expected_day_range_inr": 19.1,
+        "expected_day_range_pct": 1.61,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 55,
+      "fund_why": [
+        "+0 ROCE 10.3%",
+        "+0 ROE 8.91%",
+        "+6 P/E 21.5",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 6%",
+        "+2 D/E 0.45",
+        "+4 promoter 50.48%",
+        "-5 latest qtr PAT YoY -24.6%",
+        "+4 mcap ₹1,605,500 cr",
+        "+8 operating cash flow ₹192,113cr, 201% of profit — profit is turning into cash",
+        "-6 interest cover 5.7× and falling",
+        "+3 institutions hold 38.29%",
+        "-4 profit has come in below the year-ago quarter two quarters running",
+        "+3 price to book 1.78",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 55: interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_flags": [
+        "interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_caps": [
+        "capped at 55: interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has a low return on equity of 8.77% over last 3 years.",
+        "Dividend payout has been low at 10.2% of profits over last 3 years"
+      ],
+      "ltp": 1186.4000244140625,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 35.4,
+        "adx": 43.1,
+        "atr_pct": 1.61,
+        "vol_ratio": 1.25,
+        "chg_1d_pct": 1.6,
+        "chg_5d_pct": -0.94,
+        "dist_52w_high_pct": -26.39,
+        "dist_ema200_pct": -10.93,
+        "avg_turnover_cr": 1393.94,
+        "high_52w": 1611.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-05"
+      },
+      "fundamentals": {
+        "market_cap_cr": 1605500.0,
+        "pe": 21.5,
+        "roce": 10.3,
+        "roe": 8.91,
+        "sales_growth_3_years": 6.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 50.48,
+        "debt_to_equity": 0.45,
+        "revenue_ttm_cr": 1123055.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "b66fc79450",
+      "symbol": "OLAELEC",
+      "company": "Ola Electric Mobility Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "published_utc": "2026-10-05T07:08:04+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+        "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": -36,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-12 Equity dilution (90% firm, named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 0/100 — a pop on a weak balance sheet fades",
+        "-6 7.1% below the 200-day average — fighting the trend",
+        "-8 published 12:38 during the session — the market has already seen it"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 1880.0,
+      "freshness": {
+        "points": -8,
+        "window": "in-session",
+        "why": "published 12:38 during the session — the market has already seen it"
+      },
+      "veto": null,
+      "class_prior_used": -16,
+      "direction": "short",
+      "plan": {
+        "reference_close": 36.68,
+        "atr_pct": 4.66,
+        "expected_day_range_inr": 1.71,
+        "expected_day_range_pct": 4.66,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 0,
+      "fund_why": [
+        "-4 ROCE -19.9%",
+        "-4 ROE -43.2%",
+        "-8 loss-making (no P/E)",
+        "-6 3y profit CAGR -12%",
+        "-4 3y sales CAGR -5%",
+        "-2 D/E 0.82",
+        "+0 promoter 32.96%",
+        "-6 promoters sold 1.63pp in the last quarter alone",
+        "-5 latest qtr PAT YoY -178.5%",
+        "+2 mcap ₹16,977 cr",
+        "-14 operating cash flow ₹-775cr — the business consumed cash last year",
+        "-12 interest cover -2.26× — thin",
+        "+3 institutions hold 16.27%",
+        "-4 price to book 4.83",
+        "-6 ROCE -19.9% bought at 4.83× book is -4.1% on what you pay",
+        "  (value counted -10 of -18 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "operating cash flow has been negative 6 years running",
+        "the page did not read cleanly — profit growth 1y pct came out at -181% — the growth read is unsafe",
+        "the page did not read cleanly — profit growth prev 1y pct came out at -244% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt."
+      ],
+      "screener_cons": [
+        "Stock is trading at 4.83 times its book value",
+        "Company has low interest coverage ratio.",
+        "Promoter holding has decreased over last quarter: -1.63%"
+      ],
+      "ltp": 36.68000030517578,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 43.7,
+        "adx": 18.8,
+        "atr_pct": 4.66,
+        "vol_ratio": 0.38,
+        "chg_1d_pct": -1.08,
+        "chg_5d_pct": -3.12,
+        "dist_52w_high_pct": -36.7,
+        "dist_ema200_pct": -7.07,
+        "avg_turnover_cr": 372.97,
+        "high_52w": 57.95,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-05"
+      },
+      "fundamentals": {
+        "market_cap_cr": 16977.0,
+        "pe": null,
+        "roce": -19.9,
+        "roe": -43.2,
+        "sales_growth_3_years": -5.0,
+        "profit_growth_3_years": -12.0,
+        "promoter_pct": 32.96,
+        "debt_to_equity": 0.82,
+        "revenue_ttm_cr": 1880.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

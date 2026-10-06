@@ -1,0 +1,1451 @@
+{
+  "date": "2026-10-06",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 4
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "07b4129247",
+      "symbol": "AURIONPRO",
+      "company": "Aurionpro Solutions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags new order",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 150.0,
+      "size_estimated": false,
+      "size_basis": "Rs 150 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/aurionpro-bags-new-order-worth-rs-150-crore-from-navi-mumbai",
+      "title": "Aurionpro bags new order worth Rs 150 crore from Navi Mumbai",
+      "published": "Mon, 05 Oct 2026 19:23:19 GMT",
+      "published_utc": "2026-10-05T19:23:19+00:00",
+      "sentence": "bags new order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/aurionpro-bags-new-order-worth-rs-150-crore-from-navi-mumbai"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d6aefa5c36",
+      "symbol": "BHARATFORG",
+      "company": "Bharat Forge Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.thehindubusinessline.com/economy/logistics/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components/article71546406.ece",
+      "title": "Bharat Forge secures contract from Pratt & Whitney Canada for aerospace engine components",
+      "published": "Mon, 05 Oct 2026 08:59:10 GMT",
+      "published_utc": "2026-10-05T08:59:10+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.thehindubusinessline.com/economy/logistics/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components/article71546406.ece",
+        "https://www.business-standard.com/external-affairs-defence-security/news/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components-126100500447_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "788253bff4",
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 15000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 15,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/larsen--toubro-lt-bags-order-worth-around-rs-15000-crore",
+      "title": "Larsen & Toubro (L&T) bags order worth around Rs 15,000 crore",
+      "published": "Mon, 05 Oct 2026 19:28:19 GMT",
+      "published_utc": "2026-10-05T19:28:19+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/larsen--toubro-lt-bags-order-worth-around-rs-15000-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0c961ac8cb",
+      "symbol": "TDPOWERSYS",
+      "company": "TD Power Systems Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins rs 192 crore work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 192.0,
+      "size_estimated": false,
+      "size_basis": "Rs 192 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/td-power-systems-wins-rs-192-crore-work-order-multinational/52381808",
+      "title": "TD Power Systems wins Rs 192 crore work order from Multinational Corporation for US Gas Turbine Applications",
+      "published": "Mon, 05 Oct 2026 14:04:58 GMT",
+      "published_utc": "2026-10-05T14:04:58+00:00",
+      "sentence": "wins rs 192 crore work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/td-power-systems-wins-rs-192-crore-work-order-multinational/52381808"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fdd7606eb0",
+      "symbol": "SOLEX",
+      "company": "Solex Energy Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 75.96,
+      "size_estimated": false,
+      "size_basis": "Rs 75.96 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win",
+      "title": "Solex Energy NSE:SOLEX Wins Rs 75.96 Crore Solar Module Order",
+      "published": "Mon, 05 Oct 2026 09:21:00 GMT",
+      "published_utc": "2026-10-05T09:21:00+00:00",
+      "sentence": "secured a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f4a3ef537a",
+      "symbol": "AUROPHARMA",
+      "company": "Aurobindo Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/aurobindo-pharma-secures-final-usfda-approval-for-perampanel-tablets-eyes-us-launch",
+      "title": "Aurobindo Pharma Gets USFDA Nod for Perampanel",
+      "published": "Mon, 05 Oct 2026 11:52:00 GMT",
+      "published_utc": "2026-10-05T11:52:00+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/healthcare/aurobindo-pharma-secures-final-usfda-approval-for-perampanel-tablets-eyes-us-launch"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "494986f2b5",
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.goodreturns.in/news/reliance-industries-q4-results-pat-falls-by-13-yoy-west-asia-war-hits-o2c-oil-gas-biz-full-report-1504417.html",
+      "title": "Reliance Industries Q4 Results: PAT Falls 13% YoY, West Asia War Hits O2C, Oil & Gas Biz; Full Earnings Report",
+      "published": "Mon, 05 Oct 2026 07:00:43 GMT",
+      "published_utc": "2026-10-05T07:00:43+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/reliance-industries-q4-results-pat-falls-by-13-yoy-west-asia-war-hits-o2c-oil-gas-biz-full-report-1504417.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7644f23d21",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MW",
+        "text": "300 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-subsidiary-commissions-additional-66-68-mw-bikaner/52758445",
+      "title": "Acme Solar subsidiary commissions additional 66.68 MW in Bikaner",
+      "published": "Mon, 05 Oct 2026 19:25:58 GMT",
+      "published_utc": "2026-10-05T19:25:58+00:00",
+      "sentence": "commissioned capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-subsidiary-commissions-additional-66-68-mw-bikaner/52758445"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3218f258f8",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning of the aforesaid capacity, the company’s capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 603.0,
+        "unit": "MWh",
+        "text": "603 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://investmentguruindia.com/newsdetail/juniper-green-energy-moves-up-as-its-arm-commissions-15-5-mw-wind-power-capacity235414",
+      "title": "Juniper Green Energy moves up as its arm commissions 15.5 MW Wind Power capacity",
+      "published": "Mon, 05 Oct 2026 09:12:32 GMT",
+      "published_utc": "2026-10-05T09:12:32+00:00",
+      "sentence": "commissioning of the aforesaid capacity, the company’s capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/juniper-green-energy-moves-up-as-its-arm-commissions-15-5-mw-wind-power-capacity235414"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d7ee60a7bc",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b66fc79450",
+      "symbol": "OLAELEC",
+      "company": "Ola Electric Mobility Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "published_utc": "2026-10-05T07:08:04+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+        "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "24311e03f2",
+      "symbol": "INDUSTOWER",
+      "company": "Indus Towers Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MWh",
+        "text": "2 GWh"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html",
+      "title": "Cygni Energy signs MoU with Indus Towers to develop telecom BESS solutions",
+      "published": "Mon, 05 Oct 2026 07:52:19 GMT",
+      "published_utc": "2026-10-05T07:52:19+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html",
+        "https://www.business-standard.com/companies/news/jio-platforms-likely-to-launch-ipo-on-october-21-seeks-to-raise-3-8-bn-126100500424_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "b279051044",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 75.96,
+      "size_estimated": false,
+      "size_basis": "Rs 75.96 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win",
+      "title": "Solex Energy NSE:SOLEX Wins Rs 75.96 Crore Solar Module Order",
+      "published": "Mon, 05 Oct 2026 09:21:00 GMT",
+      "published_utc": "2026-10-05T09:21:00+00:00",
+      "sentence": "secured a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "72a21f2b21",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 75.96,
+      "size_estimated": false,
+      "size_basis": "Rs 75.96 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win",
+      "title": "Solex Energy NSE:SOLEX Wins Rs 75.96 Crore Solar Module Order",
+      "published": "Mon, 05 Oct 2026 09:21:00 GMT",
+      "published_utc": "2026-10-05T09:21:00+00:00",
+      "sentence": "secured a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "888a587dd7",
+      "symbol": "ZYDUSLIFE",
+      "company": "Zydus Lifesciences Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 7480.0,
+      "size_estimated": false,
+      "size_basis": "USD 850 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.thehindubusinessline.com/companies/zydus-msn-laboratories-launch-first-generic-adempas-in-us/article71549041.ece/amp/",
+      "title": "Zydus Lifesciences launches first generic Riociguat in US",
+      "published": "Tue, 06 Oct 2026 00:56:00 GMT",
+      "published_utc": "2026-10-06T00:56:00+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/companies/zydus-msn-laboratories-launch-first-generic-adempas-in-us/article71549041.ece/amp/",
+        "https://ca.finance.yahoo.com/news/zydus-msn-partner-launch-first-164100875.html",
+        "https://scanx.trade/stock-market-news/companies/zydus-lifesciences-launches-first-generic-riociguat-tablets-us/52759155"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "bfd123e43b",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ff9b8fb3d2",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MW",
+        "text": "300 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-subsidiary-commissions-additional-66-68-mw-bikaner/52758445",
+      "title": "Acme Solar subsidiary commissions additional 66.68 MW in Bikaner",
+      "published": "Mon, 05 Oct 2026 19:25:58 GMT",
+      "published_utc": "2026-10-05T19:25:58+00:00",
+      "sentence": "commissioned capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-subsidiary-commissions-additional-66-68-mw-bikaner/52758445"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8b364f866c",
+      "symbol": "IMAGICAA",
+      "company": "Imagicaaworld Entertainment Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-vedanta-kotak-mahindra-bank-marico-axis-bank-trent-and-zydus-lifesciences/articleshow/134712004.cms",
+      "title": "Stocks in news: Vedanta, Kotak Mahindra Bank, Marico, Axis Bank, Trent and Zydus Lifesciences",
+      "published": "Tue, 06 Oct 2026 00:30:00 GMT",
+      "published_utc": "2026-10-06T00:30:00+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-vedanta-kotak-mahindra-bank-marico-axis-bank-trent-and-zydus-lifesciences/articleshow/134712004.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9b20fb8457",
+      "symbol": "SHYAMMETL",
+      "company": "Shyam Metalics and Energy Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "published_utc": "2026-10-05T07:08:04+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+        "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html",
+        "https://www.business-standard.com/companies/news/jio-platforms-likely-to-launch-ipo-on-october-21-seeks-to-raise-3-8-bn-126100500424_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "324026c16a",
+      "symbol": "UNITEDTEA",
+      "company": "The United Nilgiri Tea Estates Company Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://ca.finance.yahoo.com/news/zydus-msn-partner-launch-first-164100875.html",
+      "title": "Zydus, MSN partner to Launch First Generic of Adempas® (Riociguat Tablets) in the U.S.",
+      "published": "Mon, 05 Oct 2026 16:41:00 GMT",
+      "published_utc": "2026-10-05T16:41:00+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://ca.finance.yahoo.com/news/zydus-msn-partner-launch-first-164100875.html",
+        "https://scanx.trade/stock-market-news/companies/zydus-lifesciences-launches-first-generic-riociguat-tablets-us/52759155"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "9c35b63838",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables"
+      ],
+      "size_inr_cr": 281600.0,
+      "size_estimated": false,
+      "size_basis": "$32 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "published_utc": "2026-10-05T07:08:04+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5fbbc81b73",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 88000.0,
+      "size_estimated": false,
+      "size_basis": "USD 10 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bcdd0a1044",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 88000.0,
+      "size_estimated": false,
+      "size_basis": "USD 10 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "247bd7527d",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 88000.0,
+      "size_estimated": false,
+      "size_basis": "USD 10 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "566341b393",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 88000.0,
+      "size_estimated": false,
+      "size_basis": "USD 10 billion (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "published_utc": "2026-10-05T09:18:00+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-vedanta-kotak-mahindra-bank-marico-axis-bank-trent-and-zydus-lifesciences/articleshow/134712004.cms",
+      "title": "Stocks in news: Vedanta, Kotak Mahindra Bank, Marico, Axis Bank, Trent and Zydus Lifesciences",
+      "published": "Tue, 06 Oct 2026 00:30:00 GMT",
+      "chars": 7376,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/diversified-financials/nse-paytm/one97-communications-shares/news/one97-communications-plus-2-indian-founder-led-stocks-to-wat",
+      "title": "One97 Communications Plus 2 Indian Founder Led Stocks To Watch",
+      "published": "Mon, 05 Oct 2026 19:27:55 GMT",
+      "chars": 11216,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-rentomojo-srit-india-lcc-projects-steamhouse-marico-juniper-hotels-awl-agri-kotak-mahindra-bank-in-focus-on-06-october-14045164.html/amp",
+      "title": "Stocks to Watch Today: Rentomojo, SRIT India, LCC Projects, Steamhouse, Marico, Juniper Hotels, AWL Agri,...",
+      "published": "Mon, 05 Oct 2026 20:51:58 GMT",
+      "chars": 9162,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-in-focus-tomorrow-investors-must-watch-trent-kotak-mahindra-bank-vedanta-shares-on-tue-6-oct-triggers-11791207911462.html",
+      "title": "Top stocks in focus tomorrow: Investors must watch Trent, Kotak Mahindra Bank, Vedanta shares on Tue, 6 Oct | Triggers",
+      "published": "Mon, 05 Oct 2026 14:17:20 GMT",
+      "chars": 4726,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.indiaipo.in/news/detail/nifty-outlook-analyst-sees-buy-on-dips-opportunity-aequs-aditya-vision-among-stocks-to-watch-businesstoday",
+      "title": "Nifty outlook: Analyst sees buy on dips opportunity; Aequs, Aditya Vision among stocks to watch - BusinessToday",
+      "published": "Mon, 05 Oct 2026 14:45:35 GMT",
+      "chars": 2225,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-2-top-founder-160932358.html",
+      "title": "Arista Networks And 2 Top Founder Led Stocks To Watch",
+      "published": "Mon, 05 Oct 2026 16:09:32 GMT",
+      "chars": 3512,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/texmaco-rail-emerges-as-l1-bidder-for-26-6-crore-vasai-railway-work",
+      "title": "Texmaco Rail Emerges As L1 Bidder For ₹26.6 Crore Vasai Railway Work",
+      "published": "Mon, 05 Oct 2026 15:06:07 GMT",
+      "chars": 4066,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/aurionpro-bags-new-order-worth-rs-150-crore-from-navi-mumbai",
+      "title": "Aurionpro bags new order worth Rs 150 crore from Navi Mumbai",
+      "published": "Mon, 05 Oct 2026 19:23:19 GMT",
+      "chars": 1028,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.thehindubusinessline.com/economy/logistics/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components/article71546406.ece",
+      "title": "Bharat Forge secures contract from Pratt & Whitney Canada for aerospace engine components",
+      "published": "Mon, 05 Oct 2026 08:59:10 GMT",
+      "chars": 7148,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://hdfcsky.com/news/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components",
+      "title": "Bharat Forge Secures Contract From Pratt & Whitney Canada for Aerospace Engine Components",
+      "published": "Mon, 05 Oct 2026 08:57:43 GMT",
+      "chars": 3631,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/larsen--toubro-lt-bags-order-worth-around-rs-15000-crore",
+      "title": "Larsen & Toubro (L&T) bags order worth around Rs 15,000 crore",
+      "published": "Mon, 05 Oct 2026 19:28:19 GMT",
+      "chars": 940,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://hrlawcanada.com/2026/10/hockey-therapist-who-reported-sexual-harassment-wins-order-forcing-ojhl-to-hand-over-minutes/",
+      "title": "Hockey therapist who reported sexual harassment wins order forcing OJHL to hand over minutes",
+      "published": "Mon, 05 Oct 2026 20:02:43 GMT",
+      "chars": 2183,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/solex-energy-nsesolex-what-is-behind-the-rs-7596-crore-work-order-win",
+      "title": "Solex Energy NSE:SOLEX Wins Rs 75.96 Crore Solar Module Order",
+      "published": "Mon, 05 Oct 2026 09:21:00 GMT",
+      "chars": 4017,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/td-power-systems-wins-rs-192-crore-work-order-multinational/52381808",
+      "title": "TD Power Systems wins Rs 192 crore work order from Multinational Corporation for US Gas Turbine Applications",
+      "published": "Mon, 05 Oct 2026 14:04:58 GMT",
+      "chars": 3597,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.freepressjournal.in/amp/business/solex-energy-secures-7596-crore-order-for-620-wp-n-type-topcon-solar-pv-modules",
+      "title": "Solex Energy Secures ₹75.96 Crore Order For 620 Wp N-Type TOPCon Solar PV Modules",
+      "published": "Mon, 05 Oct 2026 10:15:55 GMT",
+      "chars": 1682,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/aurobindo-pharma-gains-attention-after-key-usfda-approval",
+      "title": "Aurobindo Pharma Shares in Focus After USFDA Approval for Perampanel",
+      "published": "Mon, 05 Oct 2026 09:50:00 GMT",
+      "chars": 4321,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/aurobindo-pharma-secures-final-usfda-approval-for-perampanel-tablets-eyes-us-launch",
+      "title": "Aurobindo Pharma Gets USFDA Nod for Perampanel",
+      "published": "Mon, 05 Oct 2026 11:52:00 GMT",
+      "chars": 4234,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/aurobindo-pharma-gets-usfda-nod-for-epilepsy-drug-perampanel-targets-usd-67-mn-us-market-180586",
+      "title": "Aurobindo Pharma Gets USFDA Nod for Epilepsy Drug Perampanel, Targets USD 67 Mn US Market",
+      "published": "Mon, 05 Oct 2026 12:34:46 GMT",
+      "chars": 2152,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.thehindubusinessline.com/companies/zydus-msn-laboratories-launch-first-generic-adempas-in-us/article71549041.ece/amp/",
+      "title": "Zydus Lifesciences launches first generic Riociguat in US",
+      "published": "Tue, 06 Oct 2026 00:56:00 GMT",
+      "chars": 2127,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://ca.finance.yahoo.com/news/zydus-msn-partner-launch-first-164100875.html",
+      "title": "Zydus, MSN partner to Launch First Generic of Adempas® (Riociguat Tablets) in the U.S.",
+      "published": "Mon, 05 Oct 2026 16:41:00 GMT",
+      "chars": 4152,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/zydus-lifesciences-launches-first-generic-riociguat-tablets-us/52759155",
+      "title": "Zydus launches first generic Riociguat tablets in US",
+      "published": "Mon, 05 Oct 2026 18:09:58 GMT",
+      "chars": 3648,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/bausch-lomb-sets-oct-28-q3fy26-earnings-release/52746514",
+      "title": "Bausch + Lomb sets Oct 28 for Q3FY26 earnings release",
+      "published": "Mon, 05 Oct 2026 11:53:01 GMT",
+      "chars": 2923,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/rajesh-exports-sebi-case-rajesh-mehta-denies-revenue-inflation-charges-plans-fresh-400gb-document-1513791.html",
+      "title": "Rajesh Exports SEBI Case: Rajesh Mehta Denies Revenue Inflation Charges, Plans Fresh 400GB Document Submission",
+      "published": "Mon, 05 Oct 2026 09:47:28 GMT",
+      "chars": 5226,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://supplychaindigital.com/globenewswire/3374853",
+      "title": "NASDAQ: BBNX INVESTOR ALERT: Berger Montague Advises Beta Bionics, Inc. (NASDAQ: BBNX) Investors of a November 3, 2026 Deadline",
+      "published": "Tue, 06 Oct 2026 00:57:54 GMT",
+      "chars": 3249,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.jurishour.in/gst/no-time-verify-issue-gst-notice/",
+      "title": "No Time To Verify, But Time To Issue GST Notice? Gujarat Tax Officer Cites Workload For SCN",
+      "published": "Mon, 05 Oct 2026 13:21:31 GMT",
+      "chars": 6275,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/huaneng-power-stock-heads-toward-q3-results-after-profit-falls/70231692",
+      "title": "Huaneng Power stock heads toward Q3 results after profit falls",
+      "published": "Mon, 05 Oct 2026 09:28:58 GMT",
+      "chars": 2634,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.goodreturns.in/news/reliance-industries-q4-results-pat-falls-by-13-yoy-west-asia-war-hits-o2c-oil-gas-biz-full-report-1504417.html",
+      "title": "Reliance Industries Q4 Results: PAT Falls 13% YoY, West Asia War Hits O2C, Oil & Gas Biz; Full Earnings Report",
+      "published": "Mon, 05 Oct 2026 07:00:43 GMT",
+      "chars": 8160,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/badger-infrastructure-solutions-stock-falls-2-48-percent-before-q3-results/70235726",
+      "title": "Badger Infrastructure Solutions stock falls 2.48 percent before Q3 results",
+      "published": "Mon, 05 Oct 2026 17:46:29 GMT",
+      "chars": 2930,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/adani-energy-q2-fy27-results-company-to-consider-q2-results-on-october-22/",
+      "title": "Adani Energy Q2 FY27 Results: Company to consider Q2 results on October 22",
+      "published": "Mon, 05 Oct 2026 11:09:50 GMT",
+      "chars": 1326,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/wipro-q2-fy27-results-board-to-meet-on-october-14-15-to-approve-quarter-earnings/",
+      "title": "Wipro Q2 FY27 Results: Board to meet on October 14-15 to approve quarter earnings",
+      "published": "Mon, 05 Oct 2026 17:37:58 GMT",
+      "chars": 1496,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarbytes.info/battery-and-energy-storage-system/kabra-extrusiontechnik-geon-commissioning-10-mw-20-mwh-bess-capacity-phalodi-rajasthan-12626640",
+      "title": "GEON commissions 10 MW / 20 MWh BESS in India",
+      "published": "Mon, 05 Oct 2026 15:07:49 GMT",
+      "chars": 769,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/ntpc-commissions-153.94-mw-solar-capacity-in-rajasthan/98127",
+      "title": "NTPC Commissions 153.94 MW Solar Capacity in Rajasthan",
+      "published": "Mon, 05 Oct 2026 06:55:17 GMT",
+      "chars": 5612,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-subsidiary-commissions-additional-66-68-mw-bikaner/52758445",
+      "title": "Acme Solar subsidiary commissions additional 66.68 MW in Bikaner",
+      "published": "Mon, 05 Oct 2026 19:25:58 GMT",
+      "chars": 2815,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://investmentguruindia.com/newsdetail/juniper-green-energy-moves-up-as-its-arm-commissions-15-5-mw-wind-power-capacity235414",
+      "title": "Juniper Green Energy moves up as its arm commissions 15.5 MW Wind Power capacity",
+      "published": "Mon, 05 Oct 2026 09:12:32 GMT",
+      "chars": 1586,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://m.economictimes.com/industry/renewables/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity/amp_articleshow/134694976.cms",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Mon, 05 Oct 2026 09:18:00 GMT",
+      "chars": 3247,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://finance.yahoo.com/energy/articles/sumitomo-invest-500mwp-renewable-energy-155609465.html",
+      "title": "Sumitomo to invest in 500MWp renewable energy project in India",
+      "published": "Mon, 05 Oct 2026 15:56:09 GMT",
+      "chars": 2738,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/techd-cybersecurity-wins-record-rs-13-08-crore-order-order-book-stands-at-rs-70-crore-126100500761_1.html",
+      "title": "TechD Cybersecurity Wins Record Rs. 13.08 Crore Order; Order Book Stands at Rs. 70 Crore",
+      "published": "Mon, 05 Oct 2026 11:15:09 GMT",
+      "chars": 7313,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/switchlabs-order-book-crosses-450-ev-heavy-duty-trucks-targets-500-truck-deployment-by-fy-end-126100600008_1.html",
+      "title": "SwitchLabs' Order Book Crosses 450 EV Heavy-Duty Trucks; Targets 500-Truck Deployment by FY-End",
+      "published": "Mon, 05 Oct 2026 18:45:06 GMT",
+      "chars": 4460,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/felix-wins-in-ai-category-at-fffp-conference-bets-on-ai-to-help-mfds-grow-without-adding-headcount-126100600024_1.html",
+      "title": "Felix wins in AI category at FFFP Conference; bets on AI to help MFDs grow without adding headcount",
+      "published": "Mon, 05 Oct 2026 19:00:02 GMT",
+      "chars": 4685,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/larsen-toubro-power-transmission-orders-saudi-uae-india-renewable-energy-126100500349_1.html",
+      "title": "L&T wins ₹10K-cr orders for power transmission & distribution business",
+      "published": "Mon, 05 Oct 2026 07:08:04 GMT",
+      "chars": 2880,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/external-affairs-defence-security/news/bharat-forge-secures-contract-from-pratt-whitney-canada-for-aerospace-engine-components-126100500447_1.html",
+      "title": "Bharat Forge wins Pratt & Whitney Canada contract for aerospace components",
+      "published": "Mon, 05 Oct 2026 08:48:19 GMT",
+      "chars": 2381,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/amp/india-news/supreme-court-cec-gyanesh-kumar-suspension-ec-centre-notice-sir-row-126100500643_1.html",
+      "title": "SC refuses to pass order to suspend CEC; issues notices to EC, Centre",
+      "published": "Mon, 05 Oct 2026 10:02:51 GMT",
+      "chars": 5026,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/cygni-energy-signs-mou-with-indus-towers-to-develop-telecom-bess-solutions-126100500398_1.html",
+      "title": "Cygni Energy signs MoU with Indus Towers to develop telecom BESS solutions",
+      "published": "Mon, 05 Oct 2026 07:52:19 GMT",
+      "chars": 2991,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/jio-platforms-likely-to-launch-ipo-on-october-21-seeks-to-raise-3-8-bn-126100500424_1.html",
+      "title": "Jio Platforms likely to launch IPO on October 21, seeks to raise $3.8 bn",
+      "published": "Mon, 05 Oct 2026 08:36:24 GMT",
+      "chars": 3846,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-slips-as-traders-weigh-strong-west-asian-exports-against-gulf-tensions-126100600067_1.html",
+      "title": "Oil slips as traders weigh strong West Asian exports against Gulf tensions",
+      "published": "Tue, 06 Oct 2026 08:02:24 +0530",
+      "chars": 156,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-6-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-srit-india-ipo-listing-126100600087_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; most Asian markets rise on tech rally",
+      "published": "Tue, 06 Oct 2026 07:52:42 +0530",
+      "chars": 169,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-ideas-for-today-kotak-sec-is-bullish-on-hal-one-more-stock-126100600088_1.html",
+      "title": "Stock ideas for today: Kotak Sec is bullish on HAL & one more stock",
+      "published": "Tue, 06 Oct 2026 07:49:00 +0530",
+      "chars": 164,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/traders-cautious-amid-brent-pullback-markets-likely-to-stay-volatile-126100501042_1.html",
+      "title": "Traders cautious amid Brent pullback; markets likely to stay volatile",
+      "published": "Mon, 05 Oct 2026 20:39:58 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/hdfc-bank-slips-despite-nifty-bank-recovery-analysts-retain-buy-ratings-126100501082_1.html",
+      "title": "HDFC Bank slips despite Nifty Bank recovery, analysts retain buy ratings",
+      "published": "Mon, 05 Oct 2026 19:38:09 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-launches-nationwide-investor-campaign-cautions-against-finfluencers-126100500931_1.html",
+      "title": "Sebi launches nationwide investor campaign, cautions against finfluencers",
+      "published": "Mon, 05 Oct 2026 18:09:33 +0530",
+      "chars": 169,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/tvs-asl-raises-425-crore-from-crescent-enterprises-in-series-d-round-126100500892_1.html",
+      "title": "TVS ASL raises ₹425 crore from Crescent Enterprises in Series D round",
+      "published": "Mon, 05 Oct 2026 17:53:26 +0530",
+      "chars": 168,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/flipkart-invests-in-travclan-to-strengthen-international-travel-offerings-126100500832_1.html",
+      "title": "Flipkart invests in TravClan to strengthen international travel offerings",
+      "published": "Mon, 05 Oct 2026 17:24:59 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/srit-india-shares-to-list-today-gmp-signals-42-premium-over-issue-price/articleshow/134721093.cms",
+      "title": "SRIT India shares to list today; GMP signals 42% premium over issue price",
+      "published": "Tue, 06 Oct 2026 07:52:14 +0530",
+      "chars": 368,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-6-crude-oil-below-101-as-supply-concerns-ease-but-houthi-attack-keeps-traders-on-edge/articleshow/134721048.cms",
+      "title": "Oil Price Today (October 6): Crude oil below $101 as supply concerns ease but Houthi attack keeps traders on edge",
+      "published": "Tue, 06 Oct 2026 07:47:56 +0530",
+      "chars": 269,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/majority-of-banks-see-credit-growth-outpacing-deposits-in-q2-rbl-bank-leads-the-way/articleshow/134720959.cms",
+      "title": "Majority of banks see credit growth outpacing deposits in Q2, RBL Bank leads the way",
+      "published": "Tue, 06 Oct 2026 07:47:32 +0530",
+      "chars": 398,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 177.5
+}
