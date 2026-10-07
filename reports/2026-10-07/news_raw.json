@@ -1,0 +1,986 @@
+{
+  "date": "2026-10-07",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 3,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "e1bb401ccd",
+      "symbol": "INTERARCH",
+      "company": "Interarch Building Solutions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured an order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 61.0,
+      "size_estimated": false,
+      "size_basis": "Rs 61 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/interarch-building-solutions-surges-on-securing-order-worth-rs-61-crore756463",
+      "title": "Interarch Building Solutions surges on securing order worth Rs 61 crore",
+      "published": "Tue, 06 Oct 2026 11:56:48 GMT",
+      "published_utc": "2026-10-06T11:56:48+00:00",
+      "sentence": "secured an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/interarch-building-solutions-surges-on-securing-order-worth-rs-61-crore756463"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bad4c5969e",
+      "symbol": "IREDA",
+      "company": "Indian Renewable Energy Development Agency Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured the project from the solar energy corporation of india (seci) under a tender",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1200.0,
+        "unit": "MWh",
+        "text": "1,200 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/acme-solar-commissions-additional-6668-mw-of-300-mw-rajasthan-project-12629255",
+      "title": "ACME Solar Commissions Additional 66.68 MW of 300 MW Rajasthan Project",
+      "published": "Tue, 06 Oct 2026 10:41:33 GMT",
+      "published_utc": "2026-10-06T10:41:33+00:00",
+      "sentence": "secured the project from the solar energy corporation of india (seci) under a tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.saurenergy.com/solar-energy-news/acme-solar-commissions-additional-6668-mw-of-300-mw-rajasthan-project-12629255"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a499567919",
+      "symbol": "TENNIND",
+      "company": "Tenneco Clean Air India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst tax notice tenneco clean air india ltd has received a show cause",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.whalesbook.com/corporate-news/English/other/Tenneco-Clean-Air-India-Faces-Rs-567-Crore-GST-Tax-Notice/6ac52ecf680f2251a2a3f372",
+      "title": "Tenneco Clean Air India Faces Rs 56.7 Crore GST Tax Notice",
+      "published": "Tue, 06 Oct 2026 17:25:25 GMT",
+      "published_utc": "2026-10-06T17:25:25+00:00",
+      "sentence": "gst tax notice tenneco clean air india ltd has received a show cause",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.whalesbook.com/corporate-news/English/other/Tenneco-Clean-Air-India-Faces-Rs-567-Crore-GST-Tax-Notice/6ac52ecf680f2251a2a3f372"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4f13542de2",
+      "symbol": "BLUEDART",
+      "company": "Blue Dart Express Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-7-2026-mphasis-apollo-tyres-om-power/52882584",
+      "title": "Stocks to Watch Today, October 7, 2026: Mphasis, Apollo Tyres, Om Power Transmission, GRANULES INDIA and Utkarsh Small Finance Bank",
+      "published": "Wed, 07 Oct 2026 01:43:08 GMT",
+      "published_utc": "2026-10-07T01:43:08+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-7-2026-mphasis-apollo-tyres-om-power/52882584"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "eedebe470e",
+      "symbol": "KANOHAR",
+      "company": "Kanohar Electricals Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit jump",
+      "also_matched": [
+        "order_win",
+        "regulatory_action",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-7-2026-mphasis-apollo-tyres-om-power/52882584",
+      "title": "Stocks to Watch Today, October 7, 2026: Mphasis, Apollo Tyres, Om Power Transmission, GRANULES INDIA and Utkarsh Small Finance Bank",
+      "published": "Wed, 07 Oct 2026 01:43:08 GMT",
+      "published_utc": "2026-10-07T01:43:08+00:00",
+      "sentence": "net profit jump",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-7-2026-mphasis-apollo-tyres-om-power/52882584"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0df2199a0f",
+      "symbol": "HCLTECH",
+      "company": "HCL Technologies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning of the new unit, the company's total cement grinding capacity",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 25.1,
+        "unit": "MTPA",
+        "text": "25.1 MTPA"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-titan-hcl-tech-adani-ports-and-utkarsh-sfb/articleshow/134746122.cms",
+      "title": "Stocks in news: Titan, HCL Tech, Adani Ports and Utkarsh SFB",
+      "published": "Wed, 07 Oct 2026 00:30:00 GMT",
+      "published_utc": "2026-10-07T00:30:00+00:00",
+      "sentence": "commissioning of the new unit, the company's total cement grinding capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-titan-hcl-tech-adani-ports-and-utkarsh-sfb/articleshow/134746122.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fee1d13be7",
+      "symbol": "JSWCEMENT",
+      "company": "JSW Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 1 mtpa grinding unit in rajasthan, total capacity",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 25.1,
+        "unit": "MTPA",
+        "text": "25.1 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/market/stocks/jsw-cement-share-price-commissions-1-mtpa-grinding-unit-in-rajasthan-total-capacity-hits-25-1-mtpa-20005873.htm",
+      "title": "JSW Cement commissions 1 MTPA grinding unit in Rajasthan, total capacity hits 25.1 MTPA",
+      "published": "Tue, 06 Oct 2026 11:38:11 GMT",
+      "published_utc": "2026-10-06T11:38:11+00:00",
+      "sentence": "commissions 1 mtpa grinding unit in rajasthan, total capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/stocks/jsw-cement-share-price-commissions-1-mtpa-grinding-unit-in-rajasthan-total-capacity-hits-25-1-mtpa-20005873.htm",
+        "https://scanx.trade/stock-market-news/companies/jsw-cement-opens-1-mtpa-grinding-facility-nagaur-rajasthan/52831560"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "d83a68dd3a",
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-allows-reliance-to-sell-campa-as-energy-drink-stays-fssai-order-126100601324_1.html",
+      "title": "Delhi HC allows Reliance to sell Campa as 'energy drink', stays FSSAI order",
+      "published": "Tue, 06 Oct 2026 15:09:46 GMT",
+      "published_utc": "2026-10-06T15:09:46+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/delhi-hc-allows-reliance-to-sell-campa-as-energy-drink-stays-fssai-order-126100601324_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "89a5f6cac1",
+      "symbol": "TITAN",
+      "company": "Titan Company Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning of the new unit, the company's total cement grinding capacity",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 25.1,
+        "unit": "MTPA",
+        "text": "25.1 MTPA"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-titan-hcl-tech-adani-ports-and-utkarsh-sfb/articleshow/134746122.cms",
+      "title": "Stocks in news: Titan, HCL Tech, Adani Ports and Utkarsh SFB",
+      "published": "Wed, 07 Oct 2026 00:30:00 GMT",
+      "published_utc": "2026-10-07T00:30:00+00:00",
+      "sentence": "commissioning of the new unit, the company's total cement grinding capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-titan-hcl-tech-adani-ports-and-utkarsh-sfb/articleshow/134746122.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e5a7ab71ab",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 117.0,
+      "size_estimated": true,
+      "size_basis": "2.6 MW × ₹45.0cr/MW (hyperscale data centre, all-in)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2.6,
+        "unit": "MW",
+        "text": "2.6 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.lngindustry.com/liquid-natural-gas/06102026/capstone-energy-wins-order-to-power-critical-lng-infrastructure-in-argentina/",
+      "title": "Capstone Energy+ wins order to power critical LNG infrastructure in Argentina",
+      "published": "Tue, 06 Oct 2026 13:05:19 GMT",
+      "published_utc": "2026-10-06T13:05:19+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.lngindustry.com/liquid-natural-gas/06102026/capstone-energy-wins-order-to-power-critical-lng-infrastructure-in-argentina/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3974a2a787",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 117.0,
+      "size_estimated": true,
+      "size_basis": "2.6 MW × ₹45.0cr/MW (hyperscale data centre, all-in)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2.6,
+        "unit": "MW",
+        "text": "2.6 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.lngindustry.com/liquid-natural-gas/06102026/capstone-energy-wins-order-to-power-critical-lng-infrastructure-in-argentina/",
+      "title": "Capstone Energy+ wins order to power critical LNG infrastructure in Argentina",
+      "published": "Tue, 06 Oct 2026 13:05:19 GMT",
+      "published_utc": "2026-10-06T13:05:19+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.lngindustry.com/liquid-natural-gas/06102026/capstone-energy-wins-order-to-power-critical-lng-infrastructure-in-argentina/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f832addbb6",
+      "symbol": "UNITEDTEA",
+      "company": "The United Nilgiri Tea Estates Company Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/zydus-msn-launch-first-generic-of-adempas-riociguat-in-us-across-5-strengths-180701",
+      "title": "Zydus, MSN Launch First Generic of Adempas (Riociguat) in US Across 5 Strengths",
+      "published": "Tue, 06 Oct 2026 15:31:12 GMT",
+      "published_utc": "2026-10-06T15:31:12+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://medicaldialogues.in/amp/news/industry/pharma/zydus-msn-launch-first-generic-of-adempas-riociguat-in-us-across-5-strengths-180701"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f1247aeed2",
+      "symbol": "ZYDUSLIFE",
+      "company": "Zydus Lifesciences Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/zydus-msn-launch-first-generic-of-adempas-riociguat-in-us-across-5-strengths-180701",
+      "title": "Zydus, MSN Launch First Generic of Adempas (Riociguat) in US Across 5 Strengths",
+      "published": "Tue, 06 Oct 2026 15:31:12 GMT",
+      "published_utc": "2026-10-06T15:31:12+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://medicaldialogues.in/amp/news/industry/pharma/zydus-msn-launch-first-generic-of-adempas-riociguat-in-us-across-5-strengths-180701"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-on-october-7-over-a-dozen-companies-rate-sensitive-sectors-in-focus/article71554086.ece",
+      "title": "Stocks to watch on October 7: Over a dozen companies, rate-sensitive sectors in focus",
+      "published": "Wed, 07 Oct 2026 01:50:37 GMT",
+      "chars": 11776,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/diversified-financials/nse-paytm/one97-communications-shares/news/top-3-indian-founder-led-stocks-to-watch-in-october-2026-2",
+      "title": "Top 3 Indian Founder Led Stocks To Watch In October 2026",
+      "published": "Tue, 06 Oct 2026 23:33:33 GMT",
+      "chars": 11488,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-inox-wind-meesho-titan-ola-electric-shares-in-focus-on-wednesday-7-october-full-list-11791337997622.html",
+      "title": "Top stocks to watch today: Inox Green, Meesho, Titan, Ola Electric shares in focus on Wednesday, 7 October | Full list",
+      "published": "Wed, 07 Oct 2026 02:23:46 GMT",
+      "chars": 4301,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-titan-hcl-tech-adani-ports-and-utkarsh-sfb/articleshow/134746122.cms",
+      "title": "Stocks in news: Titan, HCL Tech, Adani Ports and Utkarsh SFB",
+      "published": "Wed, 07 Oct 2026 00:30:00 GMT",
+      "chars": 7611,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-titan-kanohar-electricals-glass-wall-systems-arcil-karamtara-engineering-apollo-tyres-mphasis-mahindra-lifespaces-in-focus-on-07-october-14046143.html/amp",
+      "title": "Stocks to Watch Today: Titan, Kanohar Electricals, Glass Wall Systems, Arcil, Karamtara Engineering,...",
+      "published": "Tue, 06 Oct 2026 20:31:05 GMT",
+      "chars": 8433,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-7-2026-mphasis-apollo-tyres-om-power/52882584",
+      "title": "Stocks to Watch Today, October 7, 2026: Mphasis, Apollo Tyres, Om Power Transmission, GRANULES INDIA and Utkarsh Small Finance Bank",
+      "published": "Wed, 07 Oct 2026 01:43:08 GMT",
+      "chars": 7303,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/stl-networks-emerges-lowest-bidder-for-rs.-2.5-bn-railtel-contract/98230",
+      "title": "STL Networks Emerges Lowest Bidder for Rs. 2.5 bn RailTel Contract",
+      "published": "Tue, 06 Oct 2026 15:15:39 GMT",
+      "chars": 5030,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.lngindustry.com/liquid-natural-gas/06102026/capstone-energy-wins-order-to-power-critical-lng-infrastructure-in-argentina/",
+      "title": "Capstone Energy+ wins order to power critical LNG infrastructure in Argentina",
+      "published": "Tue, 06 Oct 2026 13:05:19 GMT",
+      "chars": 2593,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.energetica-india.net/news/gujarat-inject-wins-order-for-3600-solar-pv-modules",
+      "title": "Gujarat Inject Wins Order for 3,600 Solar PV Modules",
+      "published": "Tue, 06 Oct 2026 06:45:44 GMT",
+      "chars": 3162,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/interarch-building-solutions-surges-on-securing-order-worth-rs-61-crore756463",
+      "title": "Interarch Building Solutions surges on securing order worth Rs 61 crore",
+      "published": "Tue, 06 Oct 2026 11:56:48 GMT",
+      "chars": 1237,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://oceannews.com/news/energy/macgregor-wins-order-to-equip-four-more-skywalker-class-csovs-with-motion-compensated-cranes-and-gangways/",
+      "title": "MacGregor Wins Order to Equip Four More Skywalker-Class CSOVs with Motion-Compensated Cranes and Gangways",
+      "published": "Tue, 06 Oct 2026 12:37:01 GMT",
+      "chars": 1044,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.freepressjournal.in/amp/business/shakti-pumps-gets-rs-11218-crore-maharashtra-solar-pump-empanelment-4755-systems-to-be-supplied",
+      "title": "Shakti Pumps Gets Rs 112.18 Crore Maharashtra Solar Pump Empanelment, 4,755 Systems To Be Supplied",
+      "published": "Tue, 06 Oct 2026 08:21:44 GMT",
+      "chars": 2462,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/zydus-msn-launch-first-generic-of-adempas-riociguat-in-us-across-5-strengths-180701",
+      "title": "Zydus, MSN Launch First Generic of Adempas (Riociguat) in US Across 5 Strengths",
+      "published": "Tue, 06 Oct 2026 15:31:12 GMT",
+      "chars": 3169,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/biotech/infigratinib-achondroplasia-fda-grants-priority/",
+      "title": "BridgeBio's oral infigratinib gets US FDA Priority Review in achondroplasia",
+      "published": "Tue, 06 Oct 2026 17:38:07 GMT",
+      "chars": 2222,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.hlc.com/en/publications/what-companies-need-to-know-about-crafting-effective-483-responses-today",
+      "title": "What companies need to know about crafting effective 483 responses today",
+      "published": "Tue, 06 Oct 2026 21:57:23 GMT",
+      "chars": 12312,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/news/veerkrupa-jewellers-bse-543545-a-qualified-audit-an-auditor-exit-and-a-sebi-order-in-one-year",
+      "title": "Veerkrupa Jewellers (BSE: 543545): Audit Qualification and SEBI Order",
+      "published": "Tue, 06 Oct 2026 13:27:00 GMT",
+      "chars": 6530,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.undercurrentnews.com/2026/10/06/us-maintains-import-alert-for-indonesian-shrimp-ban-on-bms-after-cs-137-review/",
+      "title": "US maintains import alert for Indonesian shrimp, ban on BMS after Cs-137 review",
+      "published": "Tue, 06 Oct 2026 15:12:00 GMT",
+      "chars": 1144,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.whalesbook.com/corporate-news/English/other/Tenneco-Clean-Air-India-Faces-Rs-567-Crore-GST-Tax-Notice/6ac52ecf680f2251a2a3f372",
+      "title": "Tenneco Clean Air India Faces Rs 56.7 Crore GST Tax Notice",
+      "published": "Tue, 06 Oct 2026 17:25:25 GMT",
+      "chars": 2493,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.foodsafetynews.com/2026/10/fda-report-shows-investigative-teams-reviewed-69-incidents-in-2025/",
+      "title": "FDA report shows investigative teams reviewed 69 incidents in 2025",
+      "published": "Wed, 07 Oct 2026 01:43:33 GMT",
+      "chars": 4753,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/nfra-launches-investigation-into-rajesh-exports-following-sebi-revenue-misstatement-claims-2026-014-1520681.html",
+      "title": "Rajesh Exports Case: NFRA Begins Investigation Over Alleged Rs 15.15 Lakh Crore Revenue Irregularities",
+      "published": "Tue, 06 Oct 2026 17:14:08 GMT",
+      "chars": 7256,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/dhanuka-agritech-receives-55-53-crore-entry-tax-demand-fy09-fy15/52844780",
+      "title": "Dhanuka Agritech receives ₹55.53 crore entry tax demand for FY09-FY15",
+      "published": "Tue, 06 Oct 2026 21:00:00 GMT",
+      "chars": 3219,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/lotte-chilsung-stock-faces-a-sharper-profit-test-after-q2-results/70247705",
+      "title": "Lotte Chilsung stock faces a sharper profit test after Q2 results",
+      "published": "Wed, 07 Oct 2026 00:32:25 GMT",
+      "chars": 2936,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/nifty-50-companies-likely-to-log-strong-double-digit-growth-in-q2/articleshow/134753164.cms",
+      "title": "Nifty 50 companies likely to log strong double-digit growth in Q2",
+      "published": "Wed, 07 Oct 2026 00:52:55 GMT",
+      "chars": 8242,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/saratoga-investment-q2-results-eps-falls-22-yoy-0-45/52863588",
+      "title": "Saratoga Investment Q2 Results: EPS falls 22% YoY to $0.45",
+      "published": "Tue, 06 Oct 2026 21:10:21 GMT",
+      "chars": 4241,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/market/stocks/jsw-cement-share-price-commissions-1-mtpa-grinding-unit-in-rajasthan-total-capacity-hits-25-1-mtpa-20005873.htm",
+      "title": "JSW Cement commissions 1 MTPA grinding unit in Rajasthan, total capacity hits 25.1 MTPA",
+      "published": "Tue, 06 Oct 2026 11:38:11 GMT",
+      "chars": 2870,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/jsw-cement-opens-1-mtpa-grinding-facility-nagaur-rajasthan/52831560",
+      "title": "JSW Cement commissions additional 1 MTPA unit in Nagaur, total hits 25.10",
+      "published": "Tue, 06 Oct 2026 15:50:06 GMT",
+      "chars": 4025,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.saurenergy.com/solar-energy-news/acme-solar-commissions-additional-6668-mw-of-300-mw-rajasthan-project-12629255",
+      "title": "ACME Solar Commissions Additional 66.68 MW of 300 MW Rajasthan Project",
+      "published": "Tue, 06 Oct 2026 10:41:33 GMT",
+      "chars": 1830,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/milky-mist-commissions-10-mw-solar-plant-at-arasanoor/98224",
+      "title": "Milky Mist Commissions 10 MW Solar Plant at Arasanoor",
+      "published": "Tue, 06 Oct 2026 13:59:00 GMT",
+      "chars": 6085,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/tgnpdcl-commissions-first-indoor-33/11-kv-substation-in-karimnagar/articleshow/134740431.cms",
+      "title": "TGNPDCL Commissions First Indoor 33/11 kV Substation in Karimnagar",
+      "published": "Tue, 06 Oct 2026 12:16:00 GMT",
+      "chars": 2513,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/soft-q2-order-inflows-commodity-inflation-weigh-on-capital-goods-firms-126100601103_1.html",
+      "title": "Soft Q2 order inflows, commodity inflation weigh on capital goods firms",
+      "published": "Tue, 06 Oct 2026 13:38:09 GMT",
+      "chars": 4849,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/bitchat-removal-govt-flags-law-and-order-risk-from-bluetooth-messaging-app-126100601060_1.html",
+      "title": "Bitchat removal: Govt flags law-and-order risk from bluetooth messaging app",
+      "published": "Tue, 06 Oct 2026 13:21:41 GMT",
+      "chars": 3052,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/francis-halzen-wins-physics-nobel-for-high-energy-neutrino-discovery-126100600715_1.html",
+      "title": "Francis Halzen wins Physics Nobel for high-energy neutrino discovery",
+      "published": "Tue, 06 Oct 2026 10:09:49 GMT",
+      "chars": 2410,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/delhi-hc-allows-reliance-to-sell-campa-as-energy-drink-stays-fssai-order-126100601324_1.html",
+      "title": "Delhi HC allows Reliance to sell Campa as 'energy drink', stays FSSAI order",
+      "published": "Tue, 06 Oct 2026 15:09:46 GMT",
+      "chars": 4266,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/reliance-gets-court-relief-over-fssai-ban-on-campa-s-energy-drink-label-126100600591_1.html",
+      "title": "Reliance gets court relief over FSSAI ban on Campa's 'energy drink' label",
+      "published": "Tue, 06 Oct 2026 08:44:11 GMT",
+      "chars": 3258,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/impera-worldwide-ltd-share-price-2435/announcements/bse-exchange-48127399",
+      "title": "Share Market Today | Latest Stock Market News, Sensex Today and Nifty Live Updates",
+      "published": "Tue, 06 Oct 2026 08:55:59 GMT",
+      "chars": 4182,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/jane-street-should-explain-trading-strategies-sebi-tells-sat-in-hearing-126100601048_1.html",
+      "title": "Jane Street should explain trading strategies, Sebi tells SAT in hearing",
+      "published": "Tue, 06 Oct 2026 18:15:09 GMT",
+      "chars": 4121,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/capital-market-news/invesco-motilal-oswal-lead-mid-tier-aum-growth-in-q2-sbi-mf-tops-tally-126100601096_1.html",
+      "title": "Invesco and Motilal Oswal lead AUM growth in Q2 FY27, shows data",
+      "published": "Tue, 06 Oct 2026 18:03:32 GMT",
+      "chars": 1982,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-7-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-rbi-mpc-repo-rate-ipo-today-126100700099_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open before RBI MPC meet outcome; Asia mkts decline",
+      "published": "Wed, 07 Oct 2026 07:58:17 +0530",
+      "chars": 142,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-as-gulf-of-mexico-storm-saudi-attacks-raise-supply-risks-126100700088_1.html",
+      "title": "Oil prices rise as Gulf of Mexico storm, Saudi attacks raise supply risks",
+      "published": "Wed, 07 Oct 2026 07:52:15 +0530",
+      "chars": 152,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-may-move-towards-22-900-says-mofsl-shares-3-stock-ideas-126100700100_1.html",
+      "title": "Nifty may move towards 22,900, says MOFSL; shares 3 stock ideas",
+      "published": "Wed, 07 Oct 2026 07:46:35 +0530",
+      "chars": 131,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/capital-market-news/invesco-motilal-oswal-lead-mid-tier-aum-growth-in-q2-sbi-mf-tops-tally-126100601096_1.html",
+      "title": "Invesco and Motilal Oswal lead AUM growth in Q2 FY27, shows data",
+      "published": "Tue, 06 Oct 2026 23:33:32 +0530",
+      "chars": 123,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/stock-market-news/kotak-indusind-axis-bank-shares-jump-on-strong-q2-business-updates-126100601269_1.html",
+      "title": "Kotak, IndusInd, Axis Bank shares jump on strong Q2 business updates",
+      "published": "Tue, 06 Oct 2026 21:23:59 +0530",
+      "chars": 122,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/interviews/banks-ril-power-nifty-s-1-rally-ahead-of-rbi-monetary-policy-decision-126100601305_1.html",
+      "title": "Mkts post best 1-day gain in 2 months as easing crude prices lift sentiment",
+      "published": "Tue, 06 Oct 2026 20:54:20 +0530",
+      "chars": 73,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/mutual-fund/mutual-funds-log-5-aum-growth-in-q2-despite-equity-market-volatility-126100601248_1.html",
+      "title": "Mutual funds log 5% AUM growth in Q2 despite equity market volatility",
+      "published": "Tue, 06 Oct 2026 19:56:33 +0530",
+      "chars": 167,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/trent-emerges-nifty-superstar-with-12-gain-after-strong-q2-update-126100601225_1.html",
+      "title": "Trent emerges Nifty superstar with 12% gain after strong Q2 update",
+      "published": "Tue, 06 Oct 2026 19:44:43 +0530",
+      "chars": 171,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-7-crude-oil-rises-to-101-up-45-in-3-months-two-reasons-behind-wednesdays-surge/articleshow/134754015.cms",
+      "title": "Oil Price Today (October 7): Crude oil rises to $101, up 45% in 3 months. Two reasons behind Wednesday’s surge",
+      "published": "Wed, 07 Oct 2026 07:52:22 +0530",
+      "chars": 142,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-9-stocks-cross-above-their-200-dmas/slideshow/134753798.cms",
+      "title": "Positive Breakout: These 9 stocks cross above their 200 DMAs",
+      "published": "Wed, 07 Oct 2026 07:30:42 +0530",
+      "chars": 132,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-flat-as-focus-turns-to-fed-minutes/articleshow/134753704.cms",
+      "title": "Gold flat as focus turns to Fed minutes",
+      "published": "Wed, 07 Oct 2026 07:28:13 +0530",
+      "chars": 418,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-holds-losses-as-markets-await-fed-minutes-speakers/articleshow/134753668.cms",
+      "title": "Dollar holds losses as markets await Fed minutes, speakers",
+      "published": "Wed, 07 Oct 2026 07:25:14 +0530",
+      "chars": 492,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-rise-as-storms-and-air-strikes-threaten-supply/articleshow/134753652.cms",
+      "title": "Oil prices rise as storms and air strikes threaten supply",
+      "published": "Wed, 07 Oct 2026 07:22:50 +0530",
+      "chars": 383,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/pimco-bets-on-bonds-as-24-year-high-yields-lure/articleshow/134753343.cms",
+      "title": "Pimco touts diversification need as yields lure at 24-year high",
+      "published": "Wed, 07 Oct 2026 06:52:44 +0530",
+      "chars": 399,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/trent-shares-surge-nearly-13-on-robust-q2-updates/articleshow/134753290.cms",
+      "title": "Trent surges 13% to 2-year high after strong Q2 update",
+      "published": "Wed, 07 Oct 2026 06:43:02 +0530",
+      "chars": 419,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/ola-electric-receives-exchange-approval-for-1-000-crore-rights-issue-board-meets-october-7",
+      "title": "Ola Electric Receives Exchange Approval For ₹1,000-Crore Rights Issue; Board Meets October 7",
+      "published": "Wed, 07 Oct 2026 01:19:57 GMT",
+      "chars": 4093,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/interarch-building-solutions-wins-contract-valued-at-61-crore",
+      "title": "Interarch Building Solutions Wins Contract Valued At ₹61 Crore",
+      "published": "Tue, 06 Oct 2026 12:35:14 GMT",
+      "chars": 4926,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/om-power-transmission-receives-69-19-crore-getco-loi-for-prantij-jantral-line-package",
+      "title": "Om Power Transmission Receives ₹69.19 Crore GETCO LOI For Prantij-Jantral Line Package",
+      "published": "Wed, 07 Oct 2026 00:47:57 GMT",
+      "chars": 3570,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 152.6
+}
