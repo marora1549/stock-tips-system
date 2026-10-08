@@ -103,7 +103,7 @@
   },
   "broker:choice": {
     "score": 0.0,
-    "n_tips": 12,
+    "n_tips": 13,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -115,12 +115,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:choice"
   },
   "broker:citi": {
     "score": 0.0,
-    "n_tips": 17,
+    "n_tips": 18,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -132,12 +132,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:citi"
   },
   "broker:clsa": {
     "score": 0.0,
-    "n_tips": 21,
+    "n_tips": 23,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -149,12 +149,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:clsa"
   },
   "broker:elara": {
     "score": 0.0,
-    "n_tips": 28,
+    "n_tips": 30,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -166,7 +166,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:elara"
   },
   "broker:emkay": {
@@ -188,7 +188,7 @@
   },
   "broker:geojit": {
     "score": 0.0,
-    "n_tips": 27,
+    "n_tips": 30,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -200,7 +200,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-05",
+    "last_seen": "2026-10-08",
     "id": "broker:geojit"
   },
   "broker:icicisec": {
@@ -273,7 +273,7 @@
   },
   "broker:morganstanley": {
     "score": 0.0,
-    "n_tips": 1,
+    "n_tips": 2,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -285,12 +285,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-06",
+    "last_seen": "2026-10-08",
     "id": "broker:morganstanley"
   },
   "broker:motilal": {
     "score": -29.25,
-    "n_tips": 116,
+    "n_tips": 119,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -317,12 +317,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:motilal"
   },
   "broker:nomura": {
     "score": 0.0,
-    "n_tips": 39,
+    "n_tips": 43,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -334,12 +334,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:nomura"
   },
   "broker:nuvama": {
     "score": 0.0,
-    "n_tips": 30,
+    "n_tips": 34,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -351,12 +351,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:nuvama"
   },
   "broker:parekh": {
     "score": 0.0,
-    "n_tips": 12,
+    "n_tips": 15,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -368,7 +368,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-09",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:parekh"
   },
   "broker:pl": {
@@ -441,7 +441,7 @@
   },
   "brokerage_gnews": {
     "score": -14.625,
-    "n_tips": 174,
+    "n_tips": 181,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -468,12 +468,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "brokerage_gnews"
   },
   "bs_recos": {
     "score": 0.0,
-    "n_tips": 35,
+    "n_tips": 36,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -485,12 +485,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-01",
+    "last_seen": "2026-10-08",
     "id": "bs_recos"
   },
   "chartink_52w_breakout": {
     "score": 0.0,
-    "n_tips": 129,
+    "n_tips": 139,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -502,12 +502,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "chartink_52w_breakout"
   },
   "chartink_ema_pullback": {
     "score": -15.0,
-    "n_tips": 840,
+    "n_tips": 880,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -527,12 +527,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": -21.75,
-    "n_tips": 826,
+    "n_tips": 864,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -559,7 +559,7 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "chartink_squeeze"
   },
   "corp_approvals": {
@@ -768,6 +768,23 @@
   },
   "et_recos_page": {
     "score": 0.0,
+    "n_tips": 158,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-08",
+    "id": "et_recos_page"
+  },
+  "fe_gnews": {
+    "score": 0.0,
     "n_tips": 152,
     "n_resolved": 0,
     "n_t1": 0,
@@ -780,29 +797,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
-    "id": "et_recos_page"
-  },
-  "fe_gnews": {
-    "score": 0.0,
-    "n_tips": 143,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
     "score": -7.5,
-    "n_tips": 247,
+    "n_tips": 256,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -822,12 +822,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "mc_stock_ideas_gnews"
   },
   "mint_gnews": {
     "score": 0.0,
-    "n_tips": 267,
+    "n_tips": 273,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -839,7 +839,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "mint_gnews"
   },
   "mojo": {
@@ -878,7 +878,7 @@
   },
   "chartink_rsi_oversold_bounce": {
     "score": 0.0,
-    "n_tips": 156,
+    "n_tips": 163,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -890,7 +890,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-11",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "chartink_rsi_oversold_bounce"
   },
   "broker:goldman": {
@@ -912,7 +912,7 @@
   },
   "chartink_volume_shock": {
     "score": 0.0,
-    "n_tips": 374,
+    "n_tips": 405,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -924,7 +924,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-18",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "chartink_volume_shock"
   },
   "broker:mirae": {
@@ -1099,7 +1099,7 @@
   },
   "broker:hsbc": {
     "score": 0.0,
-    "n_tips": 0,
+    "n_tips": 1,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -1111,12 +1111,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-30",
-    "last_seen": "2026-09-30",
+    "last_seen": "2026-10-08",
     "id": "broker:hsbc"
   },
   "broker:jpmorgan": {
     "score": 0.0,
-    "n_tips": 2,
+    "n_tips": 6,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -1128,7 +1128,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-10-07",
-    "last_seen": "2026-10-07",
+    "last_seen": "2026-10-08",
     "id": "broker:jpmorgan"
   }
 }
