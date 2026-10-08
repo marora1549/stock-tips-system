@@ -1,0 +1,1435 @@
+{
+  "date": "2026-10-08",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 13
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "cf59003db7",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bagged an order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1800.0,
+      "size_estimated": false,
+      "size_basis": "₹1,800 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/dilip-buildcon-shares-jump-nearly-4-on-bagging-order-worth-1-800-crore-from-pngrb/article-201439/",
+      "title": "Dilip Buildcon shares jump nearly 4% on bagging order worth ₹1,800 crore from PNGRB",
+      "published": "Wed, 07 Oct 2026 07:40:26 GMT",
+      "published_utc": "2026-10-07T07:40:26+00:00",
+      "sentence": "bagged an order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/dilip-buildcon-shares-jump-nearly-4-on-bagging-order-worth-1-800-crore-from-pngrb/article-201439/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bd9d2dad0e",
+      "symbol": "WELENT",
+      "company": "Welspun Enterprises Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 66.0,
+      "size_estimated": false,
+      "size_basis": "Rs 66 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/welspun-enterprises-soars-as-its-arm-secures-loa-worth-rs-66-crore450469",
+      "title": "Welspun Enterprises soars as its arm secures LoA worth Rs 66 crore",
+      "published": "Wed, 07 Oct 2026 11:22:17 GMT",
+      "published_utc": "2026-10-07T11:22:17+00:00",
+      "sentence": "secures loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/welspun-enterprises-soars-as-its-arm-secures-loa-worth-rs-66-crore450469"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0070275060",
+      "symbol": "SWASTIKAIN",
+      "company": "Swastika Infra Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 615.76,
+      "size_estimated": false,
+      "size_basis": "Rs.615.76 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:5d788e67c1eee:0-green-infra-stock-hits-5-upper-circuit-after-rs-615-crore-order-do-you-own/",
+      "title": "Green Infra stock hits 5% upper circuit after Rs.615 crore order | Do you own?",
+      "published": "Wed, 07 Oct 2026 12:04:26 GMT",
+      "published_utc": "2026-10-07T12:04:26+00:00",
+      "sentence": "secured a letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moodys:5d788e67c1eee:0-green-infra-stock-hits-5-upper-circuit-after-rs-615-crore-order-do-you-own/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "af546aae36",
+      "symbol": "MSPL",
+      "company": "MSP Steel & Power Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "cbi's challenge and issued notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-seeks-replies-on-cbi-challenge-to-relief-for-mspl-in-belekeri-ore-case-126100701225_1.html",
+      "title": "SC seeks replies on CBI challenge to relief for MSPL in Belekeri ore case",
+      "published": "Wed, 07 Oct 2026 14:31:50 GMT",
+      "published_utc": "2026-10-07T14:31:50+00:00",
+      "sentence": "cbi's challenge and issued notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/india-news/sc-seeks-replies-on-cbi-challenge-to-relief-for-mspl-in-belekeri-ore-case-126100701225_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "104150bc9a",
+      "symbol": "PFOCUS",
+      "company": "Prime Focus Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "income tax department initiates search",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/prime-focus-income-tax-department-initiates-search-at-mumbai-offices-and-auditor-premises",
+      "title": "Prime Focus: Income Tax Department Initiates Search At Mumbai Offices and Auditor Premises",
+      "published": "Wed, 07 Oct 2026 08:25:54 GMT",
+      "published_utc": "2026-10-07T08:25:54+00:00",
+      "sentence": "income tax department initiates search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/prime-focus-income-tax-department-initiates-search-at-mumbai-offices-and-auditor-premises",
+        "https://www.whalesbook.com/corporate-news/English/other/Prime-Focus-Confirms-Ongoing-Income-Tax-Search-Operations-Remain-Unaffected/6ac5fc6db2eb76fd08be3c76"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "607c6caff5",
+      "symbol": "SONA",
+      "company": "Sonaselection India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/smj-international-holdings-inc-receives-a-warning-letter-from-nyse-american-llc/2441192",
+      "title": "SMJ International Holdings Inc. Receives a Warning Letter from NYSE American LLC",
+      "published": "Wed, 07 Oct 2026 18:16:10 GMT",
+      "published_utc": "2026-10-07T18:16:10+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/smj-international-holdings-inc-receives-a-warning-letter-from-nyse-american-llc/2441192",
+        "https://www.stocktitan.net/news/SMJF/smj-international-holdings-inc-receives-a-warning-letter-from-nyse-bqa4o1zn752n.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "ae5c03891d",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d7ee60a7bc",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": 88000.0,
+      "size_estimated": false,
+      "size_basis": "USD 10 billion (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/Mzc4MDk=/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Wed, 07 Oct 2026 16:30:53 GMT",
+      "published_utc": "2026-10-07T16:30:53+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://propnewstime.com/latestnewsstories/Mzc4MDk=/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8999ec7dd9",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags major order",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 108000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.08 lakh crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/",
+      "title": "L&T arm bags major order worth up to ₹10,000 crore for thermal power plants in Jharkhand; stock trades lower",
+      "published": "Wed, 07 Oct 2026 06:58:46 GMT",
+      "published_utc": "2026-10-07T06:58:46+00:00",
+      "sentence": "bags major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "15ae6583b4",
+      "symbol": "GODREJPROP",
+      "company": "Godrej Properties Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "regulatory_action",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-godrej-properties-tata-power-rpp-infra-everestims-tech-vishal-nirmiti-ask-automotive-jubilant-foodworks-senco-gold-in-focus-on-08-october-14047112.html",
+      "title": "Stocks to Watch Today: Godrej Properties, Tata Power, RPP Infra, EverestIMS Tech, Vishal Nirmiti, ASK...",
+      "published": "Thu, 08 Oct 2026 00:57:52 GMT",
+      "published_utc": "2026-10-08T00:57:52+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-godrej-properties-tata-power-rpp-infra-everestims-tech-vishal-nirmiti-ask-automotive-jubilant-foodworks-senco-gold-in-focus-on-08-october-14047112.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "03f90a44cf",
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "985c8ae949",
+      "symbol": "COALINDIA",
+      "company": "Coal India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+        "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "7b6988ae51",
+      "symbol": "GPTINFRA",
+      "company": "GPT Infraprojects Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [
+        "order_win",
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "published_utc": "2026-10-07T11:58:42+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0ec93273f0",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "analyst_upgrade",
+      "event_label": "Broker upgrade",
+      "sign": 1,
+      "certainty": 0.5,
+      "event_prior": 10,
+      "phrase": "upgrade marks the highest-ever rating",
+      "also_matched": [
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tcs-adani-enterprises-ola-electric-hcl-tech-tata-power-and-varun-beverages/articleshow/134771196.cms",
+      "title": "Stocks in news: TCS, Adani Enterprises, Ola Electric, HCL Tech, Tata Power and Varun Beverages",
+      "published": "Thu, 08 Oct 2026 00:30:00 GMT",
+      "published_utc": "2026-10-08T00:30:00+00:00",
+      "sentence": "upgrade marks the highest-ever rating",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tcs-adani-enterprises-ola-electric-hcl-tech-tata-power-and-varun-beverages/articleshow/134771196.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fa0ad8f318",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 1201.36,
+      "size_estimated": false,
+      "size_basis": "Rs 1,201.36 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "published_utc": "2026-10-07T11:58:42+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "effe973d22",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 1201.36,
+      "size_estimated": false,
+      "size_basis": "Rs 1,201.36 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "published_utc": "2026-10-07T11:58:42+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "dfffdaa9de",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags major order",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 108000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.08 lakh crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/",
+      "title": "L&T arm bags major order worth up to ₹10,000 crore for thermal power plants in Jharkhand; stock trades lower",
+      "published": "Wed, 07 Oct 2026 06:58:46 GMT",
+      "published_utc": "2026-10-07T06:58:46+00:00",
+      "sentence": "bags major order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e3af58c588",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 1201.36,
+      "size_estimated": false,
+      "size_basis": "Rs 1,201.36 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "published_utc": "2026-10-07T11:58:42+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2d96920b01",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 1201.36,
+      "size_estimated": false,
+      "size_basis": "Rs 1,201.36 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "published_utc": "2026-10-07T11:58:42+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6300f04366",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "4e7f859f79",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expands bess capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 985.0,
+      "size_estimated": false,
+      "size_basis": "₹985 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 250000.0,
+        "unit": "MW",
+        "text": "250 Gw"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/people/india-s-wind-power-capacity-may-cross-250-gw-by-2035-suzlon-s-girish-tanti-126100701182_1.html",
+      "title": "India's wind power capacity may cross 250 Gw by 2035: Suzlon's Girish Tanti",
+      "published": "Wed, 07 Oct 2026 14:09:20 GMT",
+      "published_utc": "2026-10-07T14:09:20+00:00",
+      "sentence": "expands bess capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/people/india-s-wind-power-capacity-may-cross-250-gw-by-2035-suzlon-s-girish-tanti-126100701182_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fcbee6d991",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8d1a578540",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9c869b76d2",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 5000.0,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html"
+      ],
+      "n_reports": 2
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/diversified-financials/nse-paytm/one97-communications-shares/news/top-3-indian-founder-led-stocks-to-watch-in-october-2026-3",
+      "title": "Top 3 Indian Founder Led Stocks To Watch In October 2026",
+      "published": "Thu, 08 Oct 2026 02:06:09 GMT",
+      "chars": 11247,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-tcs-tata-steel-reliance-sun-pharma-shares-in-focus-on-thursday-8-october-full-list-11791422724767.html",
+      "title": "Top stocks to watch today: TCS, Tata Steel, Reliance, Sun Pharma shares in focus on Thursday, 8 October | Full list",
+      "published": "Thu, 08 Oct 2026 01:59:18 GMT",
+      "chars": 3524,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-october-8-jubilant-foodworks-activity-7513594123593900033-H_CM",
+      "title": "Stocks to watch for October 8: Jubilant FoodWorks, Tata Power, HCL Tech and more - CNBC TV18",
+      "published": "Wed, 07 Oct 2026 13:40:34 GMT",
+      "chars": 450,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-godrej-properties-tata-power-rpp-infra-everestims-tech-vishal-nirmiti-ask-automotive-jubilant-foodworks-senco-gold-in-focus-on-08-october-14047112.html",
+      "title": "Stocks to Watch Today: Godrej Properties, Tata Power, RPP Infra, EverestIMS Tech, Vishal Nirmiti, ASK...",
+      "published": "Thu, 08 Oct 2026 00:57:52 GMT",
+      "chars": 10020,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-tcs-adani-enterprises-ola-electric-hcl-tech-tata-power-and-varun-beverages/articleshow/134771196.cms",
+      "title": "Stocks in news: TCS, Adani Enterprises, Ola Electric, HCL Tech, Tata Power and Varun Beverages",
+      "published": "Thu, 08 Oct 2026 00:30:00 GMT",
+      "chars": 7372,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/08/2026/Titan-Company-Q2-FY27-Results--Marsons-Expands-Transformer-Business-Across-North-America--Top-Buzzing-Stocks-Today?utm_source=indian-share-markets&utm_medium=website&utm_campaign=content&utm_content=top-story",
+      "title": "Top Buzzing Stocks Today - Indian Stock Market News",
+      "published": "Thu, 08 Oct 2026 00:30:00 GMT",
+      "chars": 8799,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-electric-vehicle-stocks-watch-221608360.html",
+      "title": "3 Electric Vehicle Stocks To Watch In October 2026",
+      "published": "Wed, 07 Oct 2026 22:16:08 GMT",
+      "chars": 3542,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "chars": 2676,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/dilip-buildcon-shares-jump-nearly-4-on-bagging-order-worth-1-800-crore-from-pngrb/article-201439/",
+      "title": "Dilip Buildcon shares jump nearly 4% on bagging order worth ₹1,800 crore from PNGRB",
+      "published": "Wed, 07 Oct 2026 07:40:26 GMT",
+      "chars": 3451,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/l-and-t-arm-bags-major-order-worth-up-to-10-000-crore-for-thermal-power-plants-in-jharkhand-stock-trades-lower/article-201435/",
+      "title": "L&T arm bags major order worth up to ₹10,000 crore for thermal power plants in Jharkhand; stock trades lower",
+      "published": "Wed, 07 Oct 2026 06:58:46 GMT",
+      "chars": 4106,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.pv-magazine-india.com/2026/10/07/bondada-engineering-secures-inr-1153-93-crore-epc-order-for-270-mwp-solar-project-in-maharashtra/",
+      "title": "Bondada Engineering secures INR 1,153.93 crore EPC order for 270 MWp solar project in Maharashtra",
+      "published": "Wed, 07 Oct 2026 10:34:06 GMT",
+      "chars": 1341,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://aliceblueonline.com/news/rvnl-gpt-jv-gets-l1-nod-for-rs-1-201-cr-ganga-rail-cum-road-bridge-project/",
+      "title": "RVNL-GPT JV gets L1 nod for ₹1,201 Cr Ganga rail-cum-road bridge project",
+      "published": "Wed, 07 Oct 2026 11:58:42 GMT",
+      "chars": 2847,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.indexbox.io/blog/eidesvik-offshore-secures-contract-for-viking-queen-platform-supply-vessel/",
+      "title": "Eidesvik Offshore Wins Contract for Viking Queen PSV - News and Statistics",
+      "published": "Wed, 07 Oct 2026 17:44:38 GMT",
+      "chars": 2417,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:5d788e67c1eee:0-green-infra-stock-hits-5-upper-circuit-after-rs-615-crore-order-do-you-own/",
+      "title": "Green Infra stock hits 5% upper circuit after Rs.615 crore order | Do you own?",
+      "published": "Wed, 07 Oct 2026 12:04:26 GMT",
+      "chars": 3148,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.moneycontrol.com/news/business/newly-listed-shares-of-this-infra-firm-hit-5-upper-circuit-here-s-why-14046757.html",
+      "title": "Newly listed shares of this infra firm hit 5% upper circuit; here's why",
+      "published": "Wed, 07 Oct 2026 09:50:37 GMT",
+      "chars": 3479,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/welspun-enterprises-soars-as-its-arm-secures-loa-worth-rs-66-crore450469",
+      "title": "Welspun Enterprises soars as its arm secures LoA worth Rs 66 crore",
+      "published": "Wed, 07 Oct 2026 11:22:17 GMT",
+      "chars": 1627,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.nutritioninsight.com/news/us-fda-lallemand-bakers-yeast-vitamin-d2.html",
+      "title": "Lallemand wins US FDA approval for vitamin D2 inactive baker’s yeast in foods",
+      "published": "Wed, 07 Oct 2026 15:47:23 GMT",
+      "chars": 6516,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/granules-india-files-paragraph-iv-for-ruxolitinib-er-tablets-eyes-potential-180-day-us-exclusivity-180763",
+      "title": "Granules India Files Paragraph IV for Ruxolitinib ER Tablets, Eyes Potential 180-Day US Exclusivity",
+      "published": "Wed, 07 Oct 2026 13:22:36 GMT",
+      "chars": 2154,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://finance.biggo.com/news/f4677955-5cef-40c2-aced-72c357cc84ad",
+      "title": "Betta Pharmaceuticals' pan-RAS inhibitor wins U.S. FDA clinical approval, targeting pancreatic cancer and other hard-to-treat tumors",
+      "published": "Wed, 07 Oct 2026 11:55:00 GMT",
+      "chars": 7179,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.whalesbook.com/corporate-news/English/other/Prime-Focus-Confirms-Ongoing-Income-Tax-Search-Operations-Remain-Unaffected/6ac5fc6db2eb76fd08be3c76",
+      "title": "Prime Focus Confirms Ongoing Income Tax Search; Operations Remain Unaffected",
+      "published": "Wed, 07 Oct 2026 08:02:24 GMT",
+      "chars": 2456,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.manilatimes.net/2026/10/08/tmt-newswire/globenewswire/smj-international-holdings-inc-receives-a-warning-letter-from-nyse-american-llc/2441192",
+      "title": "SMJ International Holdings Inc. Receives a Warning Letter from NYSE American LLC",
+      "published": "Wed, 07 Oct 2026 18:16:10 GMT",
+      "chars": 4708,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.stocktitan.net/news/SMJF/smj-international-holdings-inc-receives-a-warning-letter-from-nyse-bqa4o1zn752n.html",
+      "title": "A flooring company's CFO resigned immediately; its director tendered her resignation",
+      "published": "Wed, 07 Oct 2026 18:00:00 GMT",
+      "chars": 9820,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.personalcareinsights.com/news/loreal-talc-liabilities-revlon-asbestos.html",
+      "title": "L’Oréal reportedly weighs talc liability exit as lawmakers press Revlon on asbestos testing",
+      "published": "Wed, 07 Oct 2026 14:03:14 GMT",
+      "chars": 10635,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/prime-focus-income-tax-department-initiates-search-at-mumbai-offices-and-auditor-premises",
+      "title": "Prime Focus: Income Tax Department Initiates Search At Mumbai Offices and Auditor Premises",
+      "published": "Wed, 07 Oct 2026 08:25:54 GMT",
+      "chars": 4994,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.prnewswire.com/news-releases/bbnx-upcoming-deadline-levi--korsinsky-alerts-beta-bionics-inc-stockholders-of-securities-class-action---contact-the-firm-302900698.html",
+      "title": "BBNX UPCOMING DEADLINE: Levi & Korsinsky Alerts Beta Bionics, Inc. Stockholders of Securities Class Action - Contact the Firm",
+      "published": "Wed, 07 Oct 2026 14:09:00 GMT",
+      "chars": 6321,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/alsea-stock-reports-weaker-q2-results-as-profit-falls-48-4-percent/70256562",
+      "title": "Alsea stock reports weaker Q2 results as profit falls 48.4 percent",
+      "published": "Wed, 07 Oct 2026 13:57:33 GMT",
+      "chars": 2689,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/richardson-electronics-q1-results-eps-jumps-107-69-yoy-0-27/52950887",
+      "title": "Richardson Electronics Q1 Results: EPS jumps 107.69% YoY to $0.27",
+      "published": "Wed, 07 Oct 2026 20:36:55 GMT",
+      "chars": 2597,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/asset-reconstruction-company-shares-surge-10-percent-q1-profit-doubles-arcil",
+      "title": "Asset Reconstruction Company Shares Surge 10%: Q1 Profit Doubles",
+      "published": "Wed, 07 Oct 2026 07:09:00 GMT",
+      "chars": 7385,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/caixabank-stock-falls-4-09-percent-before-q3-results/70255616",
+      "title": "CaixaBank stock falls 4.09 percent before Q3 results",
+      "published": "Wed, 07 Oct 2026 12:16:47 GMT",
+      "chars": 2594,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nokia-stock-falls-1-37-percent-as-q3-results-approach/70255249",
+      "title": "Nokia stock falls 1.37 percent as Q3 results approach",
+      "published": "Wed, 07 Oct 2026 11:40:06 GMT",
+      "chars": 2632,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/bajaj-auto-stock-falls-2-17-percent-ahead-of-q2-results-date/70253070",
+      "title": "Bajaj Auto stock falls 2.17 percent ahead of Q2 results date",
+      "published": "Wed, 07 Oct 2026 07:19:46 GMT",
+      "chars": 2626,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/samsung-electronics-stock-falls-1-29-percent-before-q3-results/70253777",
+      "title": "Samsung Electronics stock falls 1.29 percent before Q3 results",
+      "published": "Wed, 07 Oct 2026 08:07:26 GMT",
+      "chars": 3143,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/w-w-grainger-stock-falls-1-04-percent-ahead-of-q3-results/70256727",
+      "title": "W.W. Grainger stock falls 1.04 percent ahead of Q3 results",
+      "published": "Wed, 07 Oct 2026 14:10:38 GMT",
+      "chars": 2999,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/Mzc4MDk=/ultratech-commissions-116-55-mw-wind-project-1st-indian-co-to-hit-2-gw-captive-green-power-capacity",
+      "title": "UltraTech commissions 116.55-MW wind project; 1st Indian co to hit 2 GW captive green power capacity",
+      "published": "Wed, 07 Oct 2026 16:30:53 GMT",
+      "chars": 9494,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://therealtytoday.com/news/trending/ultratech-commissions-new-wind-and-whrs-capacity-crosses-2-gw-green-energy/",
+      "title": "UltraTech Commissions New Wind and WHRS Capacity, Crosses 2 GW Green Energy",
+      "published": "Wed, 07 Oct 2026 18:30:00 GMT",
+      "chars": 3883,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://energy.economictimes.indiatimes.com/amp/news/power/kptcl-commissions-12-km-220-kv-transmission-line-to-strengthen-bengaluru-grid/134761328",
+      "title": "KPTCL commissions 12-km 220 kV transmission line to strengthen Bengaluru grid",
+      "published": "Wed, 07 Oct 2026 09:06:08 GMT",
+      "chars": 627,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.business-standard.com/companies/people/india-s-wind-power-capacity-may-cross-250-gw-by-2035-suzlon-s-girish-tanti-126100701182_1.html",
+      "title": "India's wind power capacity may cross 250 Gw by 2035: Suzlon's Girish Tanti",
+      "published": "Wed, 07 Oct 2026 14:09:20 GMT",
+      "chars": 4410,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/pm-modi-calls-for-rules-based-maritime-order-amid-rising-hormuz-tensions-126100701444_1.html",
+      "title": "PM Modi calls for rules-based maritime order amid rising Hormuz tensions",
+      "published": "Wed, 07 Oct 2026 16:51:33 GMT",
+      "chars": 2497,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "chars": 2676,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/education/news/university-of-colorado-denver-gets-ugc-approval-for-hyderabad-campus-126100701226_1.html",
+      "title": "University of Colorado Denver gets UGC approval for Hyderabad campus",
+      "published": "Wed, 07 Oct 2026 14:31:55 GMT",
+      "chars": 4722,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/megamax-services-wins-cross-border-business-growth-award-at-entrepreneur-awards-2026-126100700832_1.html",
+      "title": "Megamax Services Wins Cross Border Business Growth Award at Entrepreneur Awards 2026",
+      "published": "Wed, 07 Oct 2026 11:00:09 GMT",
+      "chars": 3969,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/gujarat-inject-kerala-limited-accelerates-clean-energy-pivot-reports-robust-revenue-growth-and-secures-inr-4-86-crore-solar-order-126100700571_1.html",
+      "title": "Gujarat Inject (Kerala) Limited Accelerates Clean Energy Pivot: Reports Robust Revenue Growth and Secures INR 4.86 Crore Solar Order",
+      "published": "Wed, 07 Oct 2026 08:15:10 GMT",
+      "chars": 4094,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "chars": 3486,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-seeks-replies-on-cbi-challenge-to-relief-for-mspl-in-belekeri-ore-case-126100701225_1.html",
+      "title": "SC seeks replies on CBI challenge to relief for MSPL in Belekeri ore case",
+      "published": "Wed, 07 Oct 2026 14:31:50 GMT",
+      "chars": 4129,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/technology/tech-news/ericsson-to-export-india-made-antennas-to-europe-sees-edge-in-6g-126100700599_1.html",
+      "title": "Ericsson to export India-made antennas to Europe, sees edge in 6G",
+      "published": "Wed, 07 Oct 2026 17:59:29 GMT",
+      "chars": 4414,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/ajit-mishra-s-3-stock-recommendation-buy-indian-hotels-nuvama-sell-nalco-126100800117_1.html",
+      "title": "Indian Hotels, NALCO among Ajit Mishra's 3 stock recommendations for today",
+      "published": "Thu, 08 Oct 2026 08:00:58 +0530",
+      "chars": 114,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/asian-shares-fall-as-rising-oil-prices-tech-debt-plans-weigh-on-markets-126100800101_1.html",
+      "title": "Asian shares fall as rising oil prices, tech debt plans weigh on markets",
+      "published": "Thu, 08 Oct 2026 07:56:55 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-8-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-rbi-repo-rate-hike-ipo-today-126100800108_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asia markets fall as bond yields extend gains",
+      "published": "Thu, 08 Oct 2026 07:51:13 +0530",
+      "chars": 141,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/rba-black-box-tata-steel-jatin-gedia-shares-3-stock-ideas-for-today-126100800109_1.html",
+      "title": "RBA, Black Box, Tata Steel: Jatin Gedia shares 3 stock ideas for today",
+      "published": "Thu, 08 Oct 2026 07:46:18 +0530",
+      "chars": 131,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-as-west-asia-shipping-attacks-fuel-fresh-supply-concerns-126100800107_1.html",
+      "title": "Oil prices rise as West Asia shipping attacks fuel fresh supply concerns",
+      "published": "Thu, 08 Oct 2026 07:30:33 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/capital-market-stocks-add-1-2-trn-ytd-as-d-st-rout-fails-to-cloud-appeal-126100700735_1.html",
+      "title": "Capital market stocks add ₹1.2 trn YTD as D-St rout fails to cloud appeal",
+      "published": "Thu, 08 Oct 2026 07:15:40 +0530",
+      "chars": 139,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/repo-rate-hike-how-to-manage-home-loans-fds-and-debt-investments-126100800006_1.html",
+      "title": "Repo rate hike: How to manage home loans, FDs and debt investments",
+      "published": "Thu, 08 Oct 2026 00:06:37 +0530",
+      "chars": 101,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-brings-risk-o-meter-for-debt-securities-eases-norms-for-debt-raising-126100701525_1.html",
+      "title": "Sebi brings risk-o-meter for debt securities; eases norms for debt-raising",
+      "published": "Wed, 07 Oct 2026 23:32:07 +0530",
+      "chars": 114,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/nityas-gems-jewellery-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/134777921.cms",
+      "title": "Nityas Gems & Jewellery shares to list today; check GMP ahead of debut",
+      "published": "Thu, 08 Oct 2026 07:59:40 +0530",
+      "chars": 168,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-6-stocks-cross-below-their-200-dmas/slideshow/134777846.cms",
+      "title": "Negative Breakout: These 6 stocks cross below their 200 DMAs",
+      "published": "Thu, 08 Oct 2026 07:37:12 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 166.2
+}

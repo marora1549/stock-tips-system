@@ -1,0 +1,1220 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 13
+    },
+    "corp_orders_bse": {
+      "docs": 3,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 24,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "6300f04366",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": 24,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹5,000cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 58/100",
+        "+8 1.6% from the 52-week high on 1.9× volume — breakout-ready",
+        "+12 published Wed 16:22, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 35993.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 16:22, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 448.5,
+        "atr_pct": 2.71,
+        "expected_day_range_inr": 12.15,
+        "expected_day_range_pct": 2.71,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 58,
+      "fund_why": [
+        "+0 ROCE 9.14%",
+        "+0 ROE 6.23%",
+        "-2 P/E 64.2",
+        "+8 3y profit CAGR 36%",
+        "+3 3y sales CAGR 13%",
+        "+4 return on capital has improved from 0.8% to 5.7%",
+        "+2 D/E 0.31",
+        "+4 promoter 58.17%",
+        "-5 promoter stake down 5pp over four quarters",
+        "-5 latest qtr PAT YoY -17.3%",
+        "+4 mcap ₹156,171 cr",
+        "+8 operating cash flow ₹5,837cr, 365% of profit — profit is turning into cash",
+        "-3 interest cover 3.6×",
+        "+3 institutions hold 31.87%",
+        "-4 price to book 5.97",
+        "-6 ROCE 9.14% bought at 5.97× book is 1.5% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +10 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 20.9% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 31.3%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 5.97 times its book value",
+        "Company has a low return on equity of 3.18% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -5.00%"
+      ],
+      "ltp": 448.5,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 62.9,
+        "adx": 17.9,
+        "atr_pct": 2.71,
+        "vol_ratio": 1.93,
+        "chg_1d_pct": -0.77,
+        "chg_5d_pct": 7.94,
+        "dist_52w_high_pct": -1.63,
+        "dist_ema200_pct": 22.41,
+        "avg_turnover_cr": 320.74,
+        "high_52w": 455.95,
+        "momentum_score": 27,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 156171.0,
+        "pe": 64.2,
+        "roce": 9.14,
+        "roe": 6.23,
+        "sales_growth_3_years": 13.0,
+        "profit_growth_3_years": 36.0,
+        "promoter_pct": 58.17,
+        "debt_to_equity": 0.31,
+        "revenue_ttm_cr": 35993.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "8d1a578540",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 13,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹5,000cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+10 fundamentals 72/100",
+        "-6 15.0% below the 200-day average — fighting the trend",
+        "+12 published Wed 19:01, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 30043.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 19:01, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2401.0,
+        "atr_pct": 2.29,
+        "expected_day_range_inr": 54.98,
+        "expected_day_range_pct": 2.29,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 72,
+      "fund_why": [
+        "+12 ROCE 38.4%",
+        "+8 ROE 32.5%",
+        "+6 P/E 17.2",
+        "+8 3y profit CAGR 99%",
+        "+6 3y sales CAGR 58%",
+        "+4 return on capital has improved from 29.7% to 39%",
+        "+5 D/E 0.22",
+        "+4 promoter 64.12%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹69,065 cr",
+        "+3 operating cash flow ₹1,627cr, only 42% of profit",
+        "+4 interest cover 20.57×",
+        "-4 interest cost up 63% year on year",
+        "-10 borrowings up 168% year on year",
+        "-4 price to book 4.78",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 143% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 31.0%"
+      ],
+      "screener_cons": [],
+      "ltp": 2401.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 38.2,
+        "adx": 42.1,
+        "atr_pct": 2.29,
+        "vol_ratio": 0.75,
+        "chg_1d_pct": 0.13,
+        "chg_5d_pct": 1.12,
+        "dist_52w_high_pct": -35.44,
+        "dist_ema200_pct": -14.97,
+        "avg_turnover_cr": 142.34,
+        "high_52w": 3718.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 69065.0,
+        "pe": 17.2,
+        "roce": 38.4,
+        "roe": 32.5,
+        "sales_growth_3_years": 58.0,
+        "profit_growth_3_years": 99.0,
+        "promoter_pct": 64.12,
+        "debt_to_equity": 0.22,
+        "revenue_ttm_cr": 30043.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "fcbee6d991",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": 7,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹5,000cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 66/100",
+        "-6 6.6% below the 200-day average — fighting the trend",
+        "+12 published Wed 19:01, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 8466.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 19:01, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 910.0,
+        "atr_pct": 2.88,
+        "expected_day_range_inr": 26.21,
+        "expected_day_range_pct": 2.88,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 66,
+      "fund_why": [
+        "+12 ROCE 32.7%",
+        "+8 ROE 41%",
+        "+6 P/E 24.8",
+        "+8 3y profit CAGR 365%",
+        "+6 3y sales CAGR 76%",
+        "+4 return on capital has improved from 7.7% to 33%",
+        "-2 D/E 0.86",
+        "+4 promoter 58.48%",
+        "-6 promoters sold 5.46pp in the last quarter alone",
+        "+4 latest qtr PAT YoY 53.2%",
+        "+2 mcap ₹41,310 cr",
+        "+8 operating cash flow ₹1,261cr, 84% of profit — profit is turning into cash",
+        "-8 sales growth has stalled: 20.0% last year against 107.3% the year before",
+        "+4 interest cover 16.23×",
+        "-6 borrowings up 90% year on year",
+        "+3 institutions hold 25.89%",
+        "-8 price to book 9.57",
+        "-6 ROCE 32.7% bought at 9.57× book is 3.4% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +14 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 131% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 44.8%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 9.57 times its book value",
+        "Promoter holding has decreased over last quarter: -5.46%",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 910.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 44.5,
+        "adx": 43.0,
+        "atr_pct": 2.88,
+        "vol_ratio": 0.74,
+        "chg_1d_pct": 0.33,
+        "chg_5d_pct": 4.59,
+        "dist_52w_high_pct": -19.75,
+        "dist_ema200_pct": -6.6,
+        "avg_turnover_cr": 112.92,
+        "high_52w": 1134.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 41310.0,
+        "pe": 24.8,
+        "roce": 32.7,
+        "roe": 41.0,
+        "sales_growth_3_years": 76.0,
+        "profit_growth_3_years": 365.0,
+        "promoter_pct": 58.48,
+        "debt_to_equity": 0.86,
+        "revenue_ttm_cr": 8466.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "03f90a44cf",
+      "symbol": "RELIANCE",
+      "company": "Reliance Industries Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 3,
+      "catalyst": 7,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-6 Broker downgrade (50% firm, named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 55/100",
+        "-6 9.2% below the 200-day average — fighting the trend",
+        "+12 published Wed 16:22, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 1123055.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 16:22, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1207.7,
+        "atr_pct": 1.65,
+        "expected_day_range_inr": 19.93,
+        "expected_day_range_pct": 1.65,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 55,
+      "fund_why": [
+        "+0 ROCE 10.3%",
+        "+0 ROE 8.91%",
+        "+6 P/E 21.9",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 6%",
+        "+2 D/E 0.45",
+        "+4 promoter 50.48%",
+        "-5 latest qtr PAT YoY -24.6%",
+        "+4 mcap ₹1,634,324 cr",
+        "+8 operating cash flow ₹192,113cr, 201% of profit — profit is turning into cash",
+        "-6 interest cover 5.7× and falling",
+        "+3 institutions hold 38.29%",
+        "-4 profit has come in below the year-ago quarter two quarters running",
+        "+3 price to book 1.81",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 55: interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_flags": [
+        "interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_caps": [
+        "capped at 55: interest cover has fallen every quarter to 5.7×"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has a low return on equity of 8.77% over last 3 years.",
+        "Dividend payout has been low at 10.2% of profits over last 3 years"
+      ],
+      "ltp": 1207.699951171875,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 43.2,
+        "adx": 39.2,
+        "atr_pct": 1.65,
+        "vol_ratio": 1.01,
+        "chg_1d_pct": -0.85,
+        "chg_5d_pct": 1.74,
+        "dist_52w_high_pct": -25.07,
+        "dist_ema200_pct": -9.17,
+        "avg_turnover_cr": 1434.15,
+        "high_52w": 1611.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 1634324.0,
+        "pe": 21.9,
+        "roce": 10.3,
+        "roe": 8.91,
+        "sales_growth_3_years": 6.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 50.48,
+        "debt_to_equity": 0.45,
+        "revenue_ttm_cr": 1123055.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "9c869b76d2",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹5,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html",
+      "title": "L&T arm bags order worth over ₹5,000 crore for Jharkhand power project",
+      "published": "Wed, 07 Oct 2026 10:52:45 GMT",
+      "published_utc": "2026-10-07T10:52:45+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/news/l-t-arm-bags-order-worth-over-5-000-crore-for-jharkhand-power-project-126100700813_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": -3,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-2 Broker downgrade (50% firm, sympathy at 32%)",
+        " 0 ₹5,000cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "-10 fundamentals 35/100 — a pop on a weak balance sheet fades",
+        "-6 16.4% below the 200-day average — fighting the trend",
+        "+12 published Wed 16:22, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 10840.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 16:22, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 3230.4,
+        "atr_pct": 3.08,
+        "expected_day_range_inr": 99.5,
+        "expected_day_range_pct": 3.08,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 35,
+      "fund_why": [
+        "+0 ROCE 13.9%",
+        "+0 ROE 10.6%",
+        "-2 P/E 69.9",
+        "+0 3y profit CAGR 7%",
+        "+3 3y sales CAGR 10%",
+        "+2 D/E 0.42",
+        "+4 promoter 61.99%",
+        "-5 latest qtr PAT YoY -85.4%",
+        "+2 mcap ₹38,492 cr",
+        "+3 operating cash flow ₹542cr, only 75% of profit",
+        "-12 interest cover 1.97× — thin",
+        "+3 institutions hold 26.68%",
+        "-4 price to book 6.93",
+        "-6 ROCE 13.9% bought at 6.93× book is 2% on what you pay",
+        "-6 PEG 4.71 — priced for growth it is not delivering",
+        "  (value counted -10 of -18 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "interest cover has fallen every quarter to 1.97×"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has a low return on equity of 11.5% over last 3 years.",
+        "Earnings include an other income of Rs.331 Cr."
+      ],
+      "ltp": 3230.39990234375,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 26.1,
+        "adx": 60.1,
+        "atr_pct": 3.08,
+        "vol_ratio": 0.67,
+        "chg_1d_pct": 0.16,
+        "chg_5d_pct": -4.77,
+        "dist_52w_high_pct": -38.79,
+        "dist_ema200_pct": -16.44,
+        "avg_turnover_cr": 52.92,
+        "high_52w": 5277.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 38492.0,
+        "pe": 69.9,
+        "roce": 13.9,
+        "roe": 10.6,
+        "sales_growth_3_years": 10.0,
+        "profit_growth_3_years": 7.0,
+        "promoter_pct": 61.99,
+        "debt_to_equity": 0.42,
+        "revenue_ttm_cr": 10840.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ae5c03891d",
+      "symbol": "DBL",
+      "company": "Dilip Buildcon Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2000.0,
+        "unit": "MW",
+        "text": "2 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html",
+      "title": "From roads to solar: DBL plans ₹15,000 crore energy infrastructure push",
+      "published": "Wed, 07 Oct 2026 13:31:17 GMT",
+      "published_utc": "2026-10-07T13:31:17+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/from-roads-to-solar-dbl-plans-15-000-crore-energy-infrastructure-push-126100701109_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -11,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Broker downgrade (50% firm)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 36/100 — a pop on a weak balance sheet fades",
+        "-6 7.7% below the 200-day average — fighting the trend",
+        "+12 published Wed 19:01, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 8742.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Wed 19:01, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 400.8,
+        "atr_pct": 2.9,
+        "expected_day_range_inr": 11.62,
+        "expected_day_range_pct": 2.9,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 36,
+      "fund_why": [
+        "+0 ROCE 13.1%",
+        "-4 ROE 5.55%",
+        "+6 P/E 11.9",
+        "+8 3y profit CAGR 47%",
+        "-4 3y sales CAGR -5%",
+        "-2 D/E 1.18",
+        "+4 promoter 63.14%",
+        "-5 latest qtr PAT YoY -52.8%",
+        "+0 mcap ₹6,648 cr",
+        "+8 operating cash flow ₹1,204cr, 86% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: 66.4% last year against 317.9% the year before",
+        "-12 interest cover 1.75× — thin",
+        "-4 profit has come in below the year-ago quarter two quarters running",
+        "+3 price to book 0.97",
+        "+4 ROCE 13.1% at 0.97× book is 13.5% on what you pay",
+        "  (value counted +5 of +13 — its terms measure the same thing more than once, so the most it can add is +5)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 0.97 times its book value"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of -2.44% over past five years.",
+        "Tax rate seems low",
+        "Company has a low return on equity of 5.19% over last 3 years.",
+        "Earnings include an other income of Rs.1,058 Cr.",
+        "Debtor days have increased from 50.5 to 67.2 days.",
+        "Promoter holding has decreased over last 3 years: -7.01%",
+        "Working capital days have increased from 77.1 days to 122 days"
+      ],
+      "ltp": 400.79998779296875,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 43.9,
+        "adx": 16.5,
+        "atr_pct": 2.9,
+        "vol_ratio": 0.11,
+        "chg_1d_pct": 1.14,
+        "chg_5d_pct": -1.5,
+        "dist_52w_high_pct": -25.53,
+        "dist_ema200_pct": -7.72,
+        "avg_turnover_cr": 21.59,
+        "high_52w": 538.2,
+        "momentum_score": 20,
+        "last_bar_date": "2026-10-06"
+      },
+      "fundamentals": {
+        "market_cap_cr": 6648.0,
+        "pe": 11.9,
+        "roce": 13.1,
+        "roe": 5.55,
+        "sales_growth_3_years": -5.0,
+        "profit_growth_3_years": 47.0,
+        "promoter_pct": 63.14,
+        "debt_to_equity": 1.18,
+        "revenue_ttm_cr": 8742.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "104150bc9a",
+      "symbol": "PFOCUS",
+      "company": "Prime Focus Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "income tax department initiates search",
+      "also_matched": [
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/prime-focus-income-tax-department-initiates-search-at-mumbai-offices-and-auditor-premises",
+      "title": "Prime Focus: Income Tax Department Initiates Search At Mumbai Offices and Auditor Premises",
+      "published": "Wed, 07 Oct 2026 08:25:54 GMT",
+      "published_utc": "2026-10-07T08:25:54+00:00",
+      "sentence": "income tax department initiates search",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/prime-focus-income-tax-department-initiates-search-at-mumbai-offices-and-auditor-premises",
+        "https://www.whalesbook.com/corporate-news/English/other/Prime-Focus-Confirms-Ongoing-Income-Tax-Search-Operations-Remain-Unaffected/6ac5fc6db2eb76fd08be3c76"
+      ],
+      "n_reports": 2,
+      "catalyst": -40,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 29/100 — a pop on a weak balance sheet fades",
+        "-8 published 13:55 during the session — the market has already seen it"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 4919.0,
+      "freshness": {
+        "points": -8,
+        "window": "in-session",
+        "why": "published 13:55 during the session — the market has already seen it"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 284.0,
+        "atr_pct": 5.68,
+        "expected_day_range_inr": 16.13,
+        "expected_day_range_pct": 5.68,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 29,
+      "fund_why": [
+        "+0 ROCE 11.3%",
+        "+4 ROE 15.7%",
+        "-6 P/E 124",
+        "+0 3y profit CAGR 8%",
+        "+0 3y sales CAGR 0%",
+        "-6 D/E 2.74",
+        "+4 promoter 60.73%",
+        "-5 promoter stake down 6.88pp over four quarters",
+        "-5 latest qtr PAT YoY -141.8%",
+        "+2 mcap ₹22,117 cr",
+        "+8 operating cash flow ₹1,024cr, 340% of profit — profit is turning into cash",
+        "-12 interest cover 2.39× — thin",
+        "-8 price to book 10.56",
+        "-6 ROCE 11.3% bought at 10.56× book is 1.1% on what you pay",
+        "  (value counted -10 of -20 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — profit growth prev 1y pct came out at -194% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter"
+      ],
+      "screener_cons": [
+        "Stock is trading at 10.6 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of -14.5% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -9.22%"
+      ],
+      "ltp": 284.0,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 37.5,
+        "adx": 26.7,
+        "atr_pct": 5.68,
+        "vol_ratio": 2.22,
+        "chg_1d_pct": -2.97,
+        "chg_5d_pct": -10.13,
+        "dist_52w_high_pct": -22.62,
+        "dist_ema200_pct": 6.93,
+        "avg_turnover_cr": 115.77,
+        "high_52w": 367.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 22117.0,
+        "pe": 124.0,
+        "roce": 11.3,
+        "roe": 15.7,
+        "sales_growth_3_years": 0.0,
+        "profit_growth_3_years": 8.0,
+        "promoter_pct": 60.73,
+        "debt_to_equity": 2.74,
+        "revenue_ttm_cr": 4919.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "symbol": "SWASTIKAIN",
+      "event": "order_win",
+      "title": "Green Infra stock hits 5% upper circuit after Rs.615 crore order | Do you own?",
+      "source_id": "corp_orders_bse",
+      "why": "no price history"
+    },
+    {
+      "symbol": "SONA",
+      "event": "regulatory_action",
+      "title": "SMJ International Holdings Inc. Receives a Warning Letter from NYSE American LLC",
+      "source_id": "corp_regulatory_action",
+      "why": "no price history"
+    }
+  ],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
