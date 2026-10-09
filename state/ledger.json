@@ -40,8 +40,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 7.77,
       "notes": [],
-      "ltp": 1898.9000244140625,
-      "unrealised_pct": 0.93
+      "ltp": 1933.5999755859375,
+      "unrealised_pct": 2.77
     },
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -92,8 +92,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 288.5,
-      "unrealised_pct": 1.19
+      "ltp": 291.5,
+      "unrealised_pct": 2.24
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -141,10 +141,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 5.62,
+      "max_favourable_pct": 6.52,
       "notes": [],
-      "ltp": 435.0,
-      "unrealised_pct": 4.07
+      "ltp": 441.0,
+      "unrealised_pct": 5.5
     }
   ],
   "closed": [
@@ -475,6 +475,10 @@
     {
       "date": "2026-10-08",
       "equity": 96982.37
+    },
+    {
+      "date": "2026-10-09",
+      "equity": 98306.87
     }
   ],
   "created": "2026-09-07",
