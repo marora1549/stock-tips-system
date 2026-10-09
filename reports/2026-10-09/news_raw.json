@@ -1,0 +1,1447 @@
+{
+  "date": "2026-10-09",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 3
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 4
+    },
+    "corp_expansion": {
+      "docs": 8,
+      "events": 12
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 1,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "71e29f8a56",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received on october 8, 2026 the project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037",
+      "title": "Power Grid commissions 2,500 MW solar transmission scheme in Karnataka",
+      "published": "Thu, 08 Oct 2026 22:52:30 GMT",
+      "published_utc": "2026-10-08T22:52:30+00:00",
+      "sentence": "received on october 8, 2026 the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7a68ae7cdb",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "us fda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 460.24,
+      "size_estimated": false,
+      "size_basis": "$52.3 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/lupin-gets-us-fda-approval-phytonadione-injectable-emulsion/53019564",
+      "title": "Lupin gets US FDA approval for Phytonadione injectable emulsion",
+      "published": "Thu, 08 Oct 2026 19:32:06 GMT",
+      "published_utc": "2026-10-08T19:32:06+00:00",
+      "sentence": "us fda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/lupin-gets-us-fda-approval-phytonadione-injectable-emulsion/53019564",
+        "https://www.cnbctv18.com/market/lupin-gets-us-fda-nod-for-vitamin-k-injection-with-52-million-us-market-20008050.htm"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "1b57fd37b0",
+      "symbol": "RAILTEL",
+      "company": "Railtel Corporation Of India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a domestic connectivity work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 63.81,
+      "size_estimated": false,
+      "size_basis": "₹63.81 Crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations",
+      "title": "RailTel Secures ₹63.81 Crore MPLS VPN Contract for Five Years",
+      "published": "Thu, 08 Oct 2026 12:46:00 GMT",
+      "published_utc": "2026-10-08T12:46:00+00:00",
+      "sentence": "received a domestic connectivity work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "28b0e307ac",
+      "symbol": "INFY",
+      "company": "Infosys Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "revenue surges",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/us-suspends-8-it-firms-from-permanent-labour-certification-programme-126100801495_1.html",
+      "title": "Cognizant, Infy, Tata among IT firms suspended for US green card programme",
+      "published": "Thu, 08 Oct 2026 15:40:00 GMT",
+      "published_utc": "2026-10-08T15:40:00+00:00",
+      "sentence": "revenue surges",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/world-news/us-suspends-8-it-firms-from-permanent-labour-certification-programme-126100801495_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "772bde9d33",
+      "symbol": "TCS",
+      "company": "Tata Consultancy Services Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises 15% to ₹13,884 cr, beats",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 84480.0,
+      "size_estimated": false,
+      "size_basis": "$9.6 billion",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/info-tech/tcs-trumps-q2-estimates-net-profit-grows-15-to-13884-crore/article71559330.ece",
+      "title": "TCS Q2 Results: Net profit rises 15% to ₹13,884 cr, beats estimates",
+      "published": "Thu, 08 Oct 2026 11:14:29 GMT",
+      "published_utc": "2026-10-08T11:14:29+00:00",
+      "sentence": "net profit rises 15% to ₹13,884 cr, beats",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/info-tech/tcs-trumps-q2-estimates-net-profit-grows-15-to-13884-crore/article71559330.ece",
+        "https://www.outlookbusiness.com/corporate/tcs-q2-results-profit-revenue-dividend-ai-workforce-deals-margins-share-price",
+        "https://www.livemint.com/companies/company-results/tcs-q2-results-2026-27-ai-deals-revenue-profit-11791471403757.html",
+        "https://m.economictimes.com/markets/stocks/earnings/tcs-q2-results-profit-rises-15-yoy-to-rs-13884-crore-co-declares-rs-12-dividend/amp_articleshow/134787000.cms"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "ec20b92842",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-issues-form-483-two-observations-dr-reddy-s-fto-11-facility/53001585",
+      "title": "Dr Reddy's FTO-11 facility gets FDA Form 483 with two observations",
+      "published": "Thu, 08 Oct 2026 10:50:59 GMT",
+      "published_utc": "2026-10-08T10:50:59+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usfda-issues-form-483-two-observations-dr-reddy-s-fto-11-facility/53001585"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5dee33e8ea",
+      "symbol": "JSWCEMENT",
+      "company": "JSW Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions additional 1 mtpa grinding unit",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indiancementreview.com/2026/10/jsw-cement-commissions-additional-1-mtpa-grinding-unit-in-rajasthan/",
+      "title": "JSW Cement commissions additional 1 MTPA grinding unit in Rajasthan",
+      "published": "Thu, 08 Oct 2026 12:04:50 GMT",
+      "published_utc": "2026-10-08T12:04:50+00:00",
+      "sentence": "commissions additional 1 mtpa grinding unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indiancementreview.com/2026/10/jsw-cement-commissions-additional-1-mtpa-grinding-unit-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2fd0801497",
+      "symbol": "KANORICHEM",
+      "company": "Kanoria Chemicals & Industries Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions new triacetin plant",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1760000.0,
+      "size_estimated": false,
+      "size_basis": "$200 billion",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 4500.0,
+        "unit": "MW",
+        "text": "4.5 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.indianchemicalnews.com/chemical/kanoria-chemicals-industries-commissions-new-triacetin-plant-in-gujarat-32194",
+      "title": "Kanoria Chemicals & Industries commissions new Triacetin plant in Gujarat",
+      "published": "Thu, 08 Oct 2026 07:00:05 GMT",
+      "published_utc": "2026-10-08T07:00:05+00:00",
+      "sentence": "commissions new triacetin plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indianchemicalnews.com/chemical/kanoria-chemicals-industries-commissions-new-triacetin-plant-in-gujarat-32194"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b500a638b7",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/",
+      "title": "UltraTech Cement commissions 116.55 MW wind capacity in Rajasthan",
+      "published": "Thu, 08 Oct 2026 08:32:40 GMT",
+      "published_utc": "2026-10-08T08:32:40+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ab36c1560c",
+      "symbol": "WEWORK",
+      "company": "WeWork India Management Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expands capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 44.0,
+      "size_estimated": false,
+      "size_basis": "₹44 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/wework-india-management-expands-capacity-in-pune-with-rs44-crore-investment/",
+      "title": "WeWork India Management expands capacity in Pune with ₹44 crore investment",
+      "published": "Thu, 08 Oct 2026 12:58:05 GMT",
+      "published_utc": "2026-10-08T12:58:05+00:00",
+      "sentence": "expands capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/business/wework-india-management-expands-capacity-in-pune-with-rs44-crore-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "08f00e8710",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received on october 8, 2026 the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037",
+      "title": "Power Grid commissions 2,500 MW solar transmission scheme in Karnataka",
+      "published": "Thu, 08 Oct 2026 22:52:30 GMT",
+      "published_utc": "2026-10-08T22:52:30+00:00",
+      "sentence": "received on october 8, 2026 the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9ed22207dc",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received on october 8, 2026 the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037",
+      "title": "Power Grid commissions 2,500 MW solar transmission scheme in Karnataka",
+      "published": "Thu, 08 Oct 2026 22:52:30 GMT",
+      "published_utc": "2026-10-08T22:52:30+00:00",
+      "sentence": "received on october 8, 2026 the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9a8d30cbc0",
+      "symbol": "INDIACEM",
+      "company": "The India Cements Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions additional 1 mtpa grinding unit",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing",
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indiancementreview.com/2026/10/jsw-cement-commissions-additional-1-mtpa-grinding-unit-in-rajasthan/",
+      "title": "JSW Cement commissions additional 1 MTPA grinding unit in Rajasthan",
+      "published": "Thu, 08 Oct 2026 12:04:50 GMT",
+      "published_utc": "2026-10-08T12:04:50+00:00",
+      "sentence": "commissions additional 1 mtpa grinding unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indiancementreview.com/2026/10/jsw-cement-commissions-additional-1-mtpa-grinding-unit-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "047cb7e5a7",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a domestic connectivity work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 63.81,
+      "size_estimated": false,
+      "size_basis": "₹63.81 Crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations",
+      "title": "RailTel Secures ₹63.81 Crore MPLS VPN Contract for Five Years",
+      "published": "Thu, 08 Oct 2026 12:46:00 GMT",
+      "published_utc": "2026-10-08T12:46:00+00:00",
+      "sentence": "received a domestic connectivity work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "91f4ce2631",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a domestic connectivity work order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 63.81,
+      "size_estimated": false,
+      "size_basis": "₹63.81 Crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations",
+      "title": "RailTel Secures ₹63.81 Crore MPLS VPN Contract for Five Years",
+      "published": "Thu, 08 Oct 2026 12:46:00 GMT",
+      "published_utc": "2026-10-08T12:46:00+00:00",
+      "sentence": "received a domestic connectivity work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "67c3d5df01",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received on october 8, 2026 the project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2500.0,
+        "unit": "MW",
+        "text": "2,500 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037",
+      "title": "Power Grid commissions 2,500 MW solar transmission scheme in Karnataka",
+      "published": "Thu, 08 Oct 2026 22:52:30 GMT",
+      "published_utc": "2026-10-08T22:52:30+00:00",
+      "sentence": "received on october 8, 2026 the project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1bab171e0e",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/",
+      "title": "UltraTech Cement commissions 116.55 MW wind capacity in Rajasthan",
+      "published": "Thu, 08 Oct 2026 08:32:40 GMT",
+      "published_utc": "2026-10-08T08:32:40+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b4e7a7b646",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/",
+      "title": "UltraTech Cement commissions 116.55 MW wind capacity in Rajasthan",
+      "published": "Thu, 08 Oct 2026 08:32:40 GMT",
+      "published_utc": "2026-10-08T08:32:40+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d0bdb4ec57",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 1024.6,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4b0cdedad2",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 1024.6,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ff708b6b03",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 1024.6,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e4479b38c1",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 1024.6,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "155f3670d1",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 2024.0,
+        "unit": "MW",
+        "text": "2,024 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/",
+      "title": "UltraTech Cement commissions 116.55 MW wind capacity in Rajasthan",
+      "published": "Thu, 08 Oct 2026 08:32:40 GMT",
+      "published_utc": "2026-10-08T08:32:40+00:00",
+      "sentence": "commissioned 10 mw of waste heat recovery system (whrs) capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5c5da72ef8",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 70000.0,
+      "size_estimated": false,
+      "size_basis": "₹70,000 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html",
+      "title": "Jane Street to SAT: Sebi changed goalposts, seeks order logs",
+      "published": "Thu, 08 Oct 2026 14:00:10 GMT",
+      "published_utc": "2026-10-08T14:00:10+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "94354cf850",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "signs mou",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 70000.0,
+      "size_estimated": false,
+      "size_basis": "₹70,000 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html",
+      "title": "Jane Street to SAT: Sebi changed goalposts, seeks order logs",
+      "published": "Thu, 08 Oct 2026 14:00:10 GMT",
+      "published_utc": "2026-10-08T14:00:10+00:00",
+      "sentence": "signs mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-tcs-itc-infosys-cochin-shipyard-and-ril/articleshow/134798204.cms",
+      "title": "Stocks in news: TCS, ITC, Infosys, Cochin Shipyard and RIL",
+      "published": "Fri, 09 Oct 2026 00:30:00 GMT",
+      "chars": 5252,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-infosys-tcs-wipro-itc-power-grid-shares-in-focus-on-friday-9-october-full-list-11791508950716.html",
+      "title": "Top stocks to watch today: Infosys, TCS, Wipro, ITC, Power Grid shares in focus on Friday, 9 October | Full list",
+      "published": "Fri, 09 Oct 2026 02:05:09 GMT",
+      "chars": 4104,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "chars": 10683,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tcs-itc-kec-international-ncc-waaree-renewable-irb-infra-pace-digitek-lupin-acme-india-industries-in-focus-on-09-october-14048101.html/amp",
+      "title": "Stocks to Watch Today: TCS, ITC, KEC International, NCC, Waaree Renewable, IRB Infra, Pace Digitek, Lupin,...",
+      "published": "Fri, 09 Oct 2026 00:50:55 GMT",
+      "chars": 9443,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-october-9-tcs-jsw-steel-activity-7513951124245209089-Lcrj",
+      "title": "Stocks to Watch for October 9: TCS, JSW Steel, NCC and more - CNBC TV18",
+      "published": "Thu, 08 Oct 2026 13:19:10 GMT",
+      "chars": 335,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://uk.finance.yahoo.com/news/acm-research-2-other-automation-181203793.html",
+      "title": "ACM Research And 2 Other Automation Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 18:12:03 GMT",
+      "chars": 3686,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/09/2026/LT-Secures-Chandrapura-Power-Project-Order--Gabriel-India-Expands-Into-Advanced-Seating--Top-Buzzing-Stocks-Today?utm_source=indian-share-markets&utm_medium=website&utm_campaign=content&utm_content=top-story",
+      "title": "Indian Stock Market News, Equity Market and Sensex Today in India",
+      "published": "Fri, 09 Oct 2026 00:30:00 GMT",
+      "chars": 8997,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/railtel-nse-railtel-secures-6381-crore-network-connectivity-contract-for-mining-operations",
+      "title": "RailTel Secures ₹63.81 Crore MPLS VPN Contract for Five Years",
+      "published": "Thu, 08 Oct 2026 12:46:00 GMT",
+      "chars": 6308,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/dr-reddy-s-fto-11-facility-issued-usfda-form-483-with-two-observations",
+      "title": "Dr. Reddy's FTO-11 Facility Issued USFDA Form 483 With Two Observations",
+      "published": "Fri, 09 Oct 2026 00:31:38 GMT",
+      "chars": 3817,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.prnewswire.com/news-releases/lupin-receives-us-fda-approval-for-phytonadione-injectable-emulsion-usp-302902914.html",
+      "title": "Lupin Receives U.S. FDA Approval for Phytonadione Injectable Emulsion, USP",
+      "published": "Thu, 08 Oct 2026 19:16:00 GMT",
+      "chars": 2147,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/lupin-gets-us-fda-approval-phytonadione-injectable-emulsion/53019564",
+      "title": "Lupin gets US FDA approval for Phytonadione injectable emulsion",
+      "published": "Thu, 08 Oct 2026 19:32:06 GMT",
+      "chars": 2732,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.whalesbook.com/corporate-news/English/healthcarebiotech/Lupin-Receives-US-FDA-Approval-for-Phytonadione-Injectable-Emulsion/6ac7b6fdb2eb76fd08bfd78e",
+      "title": "Lupin Receives U.S. FDA Approval for Phytonadione Injectable Emulsion",
+      "published": "Thu, 08 Oct 2026 15:30:45 GMT",
+      "chars": 2490,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.cnbctv18.com/market/lupin-gets-us-fda-nod-for-vitamin-k-injection-with-52-million-us-market-20008050.htm",
+      "title": "Lupin gets US FDA nod for vitamin K injection with $52 million US market",
+      "published": "Thu, 08 Oct 2026 18:06:36 GMT",
+      "chars": 2193,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/dr-reddy-s-usfda-issues-form-483-with-two-observations-for-fto-11-facility",
+      "title": "Dr. Reddy's: USFDA Issues Form 483 With Two Observations For FTO-11 Facility",
+      "published": "Thu, 08 Oct 2026 10:56:38 GMT",
+      "chars": 3977,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.livelawbiz.com/amp/income-tax/high-court/an-individual-director-cannot-challenge-an-income-tax-search-and-seizure-conducted-against-a-company-when-the-search-is-not-directed-against-the-director-personally-553709",
+      "title": "Director Can't Challenge Income-Tax Search Against Company In Individual Capacity: Karnataka High Court",
+      "published": "Thu, 08 Oct 2026 09:06:42 GMT",
+      "chars": 2641,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-issues-form-483-two-observations-dr-reddy-s-fto-11-facility/53001585",
+      "title": "Dr Reddy's FTO-11 facility gets FDA Form 483 with two observations",
+      "published": "Thu, 08 Oct 2026 10:50:59 GMT",
+      "chars": 2394,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/dr-reddys-nsedrreddy-what-did-the-usfda-find-at-its-pydibhimavaram-plant",
+      "title": "Dr. Reddy's USFDA PAI Inspection: Form 483 at FTO-11 Plant",
+      "published": "Thu, 08 Oct 2026 10:27:00 GMT",
+      "chars": 3453,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://money.rediff.com/amp/news/market/dr-reddy-s-labs-gets-two-usfda-observations-for-ap-facility/55828020261008",
+      "title": "Dr Reddy's Labs Gets Two USFDA Observations for AP Facility",
+      "published": "Thu, 08 Oct 2026 12:13:48 GMT",
+      "chars": 1341,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/max-estates-nsemaxestates-what-does-the-rs-259-crore-gst-notice-mean",
+      "title": "Max Estates GST Notice: Rs 2.59 Crore Demand Explained",
+      "published": "Thu, 08 Oct 2026 07:41:00 GMT",
+      "chars": 3910,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/info-tech/tcs-trumps-q2-estimates-net-profit-grows-15-to-13884-crore/article71559330.ece",
+      "title": "TCS Q2 Results: Net profit rises 15% to ₹13,884 cr, beats estimates",
+      "published": "Thu, 08 Oct 2026 11:14:29 GMT",
+      "chars": 9779,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.outlookbusiness.com/corporate/tcs-q2-results-profit-revenue-dividend-ai-workforce-deals-margins-share-price",
+      "title": "TCS Q2 Results: Profit Rises To ₹13,884 Cr, Revenue At ₹73,188 Cr; ₹12 Dividend Declared",
+      "published": "Thu, 08 Oct 2026 11:06:45 GMT",
+      "chars": 3720,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.livemint.com/companies/company-results/tcs-q2-results-2026-27-ai-deals-revenue-profit-11791471403757.html",
+      "title": "TCS Q2 Results: Net profit up 11% as AI deal flow slowly picks up",
+      "published": "Thu, 08 Oct 2026 15:13:06 GMT",
+      "chars": 3089,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/tcs-q2-results-profit-rises-15-yoy-to-rs-13884-crore-co-declares-rs-12-dividend/amp_articleshow/134787000.cms",
+      "title": "TCS Q2 results: Profit rises 15% YoY to Rs 13,884 crore; co declares dividend at Rs 12 per share",
+      "published": "Thu, 08 Oct 2026 10:22:00 GMT",
+      "chars": 4633,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://indiancementreview.com/2026/10/jsw-cement-commissions-additional-1-mtpa-grinding-unit-in-rajasthan/",
+      "title": "JSW Cement commissions additional 1 MTPA grinding unit in Rajasthan",
+      "published": "Thu, 08 Oct 2026 12:04:50 GMT",
+      "chars": 9540,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/kabra-extrusiontechnik-nse-kabraextru-commissions-10-mw20-mwh-battery-storage-project-in-rajasthan",
+      "title": "Kabra Extrusiontechnik Commissions 10 MW/20 MWh Rajasthan BESS Project",
+      "published": "Thu, 08 Oct 2026 12:44:00 GMT",
+      "chars": 6658,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.indianchemicalnews.com/chemical/kanoria-chemicals-industries-commissions-new-triacetin-plant-in-gujarat-32194",
+      "title": "Kanoria Chemicals & Industries commissions new Triacetin plant in Gujarat",
+      "published": "Thu, 08 Oct 2026 07:00:05 GMT",
+      "chars": 4144,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/power-grid-commissions-2-500-mw-solar-transmission-scheme-karnataka/53024037",
+      "title": "Power Grid commissions 2,500 MW solar transmission scheme in Karnataka",
+      "published": "Thu, 08 Oct 2026 22:52:30 GMT",
+      "chars": 3821,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://indianinfrastructure.com/2026/10/08/ultratech-cement-commissions-116-55-mw-wind-capacity-in-rajasthan/",
+      "title": "UltraTech Cement commissions 116.55 MW wind capacity in Rajasthan",
+      "published": "Thu, 08 Oct 2026 08:32:40 GMT",
+      "chars": 475,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.tribuneindia.com/news/business/proposed-insurance-commission-caps-may-hit-nbfc-earnings-from-fy28-report/amp",
+      "title": "Proposed insurance commission caps may hit NBFC earnings from FY28: Report",
+      "published": "Thu, 08 Oct 2026 09:51:42 GMT",
+      "chars": 4824,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/power-grid-corporation-of-india-commissions-solar-energy-transmission-project-in-bidar/",
+      "title": "Power Grid Corporation of India commissions solar energy transmission project in Bidar",
+      "published": "Thu, 08 Oct 2026 16:59:46 GMT",
+      "chars": 2173,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/wework-india-management-expands-capacity-in-pune-with-rs44-crore-investment/",
+      "title": "WeWork India Management expands capacity in Pune with ₹44 crore investment",
+      "published": "Thu, 08 Oct 2026 12:58:05 GMT",
+      "chars": 1812,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html",
+      "title": "Jane Street to SAT: Sebi changed goalposts, seeks order logs",
+      "published": "Thu, 08 Oct 2026 14:00:10 GMT",
+      "chars": 5016,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/weak-execution-order-momentum-for-infrastructure-players-in-q2fy27-126100801128_1.html",
+      "title": "Weak execution, order momentum for infrastructure firms in Q2FY27",
+      "published": "Thu, 08 Oct 2026 12:38:36 GMT",
+      "chars": 5884,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/canadian-poet-and-essayist-anne-carson-wins-nobel-prize-in-literature-126100800916_1.html",
+      "title": "Canadian poet Anne Carson wins 2026 Nobel Prize for literature",
+      "published": "Thu, 08 Oct 2026 12:05:00 GMT",
+      "chars": 1374,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/awaiting-approval-of-satcom-services-bharti-airtel-s-sunil-bharti-mittal-126100800538_1.html",
+      "title": "Awaiting approval of Satcom services: Bharti Airtel's Sunil Bharti Mittal",
+      "published": "Thu, 08 Oct 2026 07:52:55 GMT",
+      "chars": 4275,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/liquor-shops-in-delhi-to-remain-closed-on-oct-9-and-10-ahead-of-protests-126100801150_1.html",
+      "title": "Liquor shops in Delhi to remain closed on Oct 9 and 10 ahead of protests",
+      "published": "Thu, 08 Oct 2026 18:32:26 GMT",
+      "chars": 2321,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/tsmc-q3-revenue-surges-50-to-46-71-billion-beats-market-forecast-126100801454_1.html",
+      "title": "TSMC Q3 revenue surges 50% to $46.71 billion, beats market forecast",
+      "published": "Thu, 08 Oct 2026 15:24:36 GMT",
+      "chars": 1634,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/us-suspends-8-it-firms-from-permanent-labour-certification-programme-126100801495_1.html",
+      "title": "Cognizant, Infy, Tata among IT firms suspended for US green card programme",
+      "published": "Thu, 08 Oct 2026 15:40:00 GMT",
+      "chars": 2258,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/trump-says-us-will-not-attack-iran-before-november-midterm-elections-126100801590_1.html",
+      "title": "Trump says US will not attack Iran before November midterm elections",
+      "published": "Thu, 08 Oct 2026 16:48:24 GMT",
+      "chars": 1817,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/global-shares-slip-as-oil-prices-jumps-and-bond-yields-remain-high-126100900062_1.html",
+      "title": "Global shares slip as oil prices jumps and bond yields remain high",
+      "published": "Fri, 09 Oct 2026 07:55:10 +0530",
+      "chars": 97,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-9-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-it-stocks-today-126100900099_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Asia markets fall as AI-led shares decline",
+      "published": "Fri, 09 Oct 2026 07:49:12 +0530",
+      "chars": 139,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/markets-fall-to-new-52-week-low-as-west-asia-tensions-push-crude-up-126100801376_1.html",
+      "title": "Markets tumble to 18-month low as US-Iran tensions lift crude oil",
+      "published": "Thu, 08 Oct 2026 21:04:16 +0530",
+      "chars": 122,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/gqg-partners-entities-sell-2-91-stake-in-itc-for-9-395-cr-in-block-deal-126100801410_1.html",
+      "title": "GQG Partners entities sell 2.91% stake in ITC for ₹9,395 cr in block deal",
+      "published": "Thu, 08 Oct 2026 20:28:47 +0530",
+      "chars": 169,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/fintech-stocks-decline-as-mdr-on-upi-likely-to-be-deferred-to-january-1-126100801370_1.html",
+      "title": "Fintech stocks decline as MDR on UPI likely to be deferred to January 1",
+      "published": "Thu, 08 Oct 2026 20:05:31 +0530",
+      "chars": 156,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/jane-street-accuses-sebi-of-shifting-goalposts-in-sat-hearing-on-documents-126100801282_1.html",
+      "title": "Sebi changed goalposts, seeks order logs: Trading firm Jane Street to SAT",
+      "published": "Thu, 08 Oct 2026 19:30:50 +0530",
+      "chars": 175,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/knowledge-marine-rallies-12-in-four-days-hits-new-peak-in-weak-market-126100800779_1.html",
+      "title": "Knowledge Marine rallies 12% in four days, hits new peak in weak market",
+      "published": "Thu, 08 Oct 2026 15:24:24 +0530",
+      "chars": 102,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/pngs-reva-diamond-jewellery-zooms-35-in-two-days-up-125-from-march-low-126100800659_1.html",
+      "title": "PNGS Reva Diamond Jewellery zooms 35% in two days; up 125% from March low",
+      "published": "Thu, 08 Oct 2026 14:31:19 +0530",
+      "chars": 176,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/3-sme-ipos-to-list-today-acme-india-industries-tna-solutions-paramount-syntex-check-key-details/articleshow/134804148.cms",
+      "title": "3 SME IPOs to list today: Acme India Industries, TNA Solutions, Paramount Syntex; check key details",
+      "published": "Fri, 09 Oct 2026 07:35:16 +0530",
+      "chars": 401,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/india-it-set-for-fourth-year-of-weak-growth-on-geopolitics-ai-risks/articleshow/134804013.cms",
+      "title": "India IT set for fourth year of weak growth on geopolitics, AI risks",
+      "published": "Fri, 09 Oct 2026 07:28:24 +0530",
+      "chars": 431,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-stocks-cross-below-their-200-dmas/slideshow/134804128.cms",
+      "title": "Negative Breakout: These 8 stocks cross below their 200 DMAs",
+      "published": "Fri, 09 Oct 2026 07:25:43 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-nudges-higher-with-inflation-risks-fed-rate-path-in-focus/articleshow/134804008.cms",
+      "title": "Gold nudges higher with inflation risks, Fed rate path in focus",
+      "published": "Fri, 09 Oct 2026 07:19:00 +0530",
+      "chars": 355,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/euro-skids-toward-fifth-weekly-fall-but-selling-pressure-slows/articleshow/134803988.cms",
+      "title": "Euro skids toward fifth weekly fall but selling pressure slows",
+      "published": "Fri, 09 Oct 2026 07:15:27 +0530",
+      "chars": 447,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-equities-face-sharp-sell-off-sensex-and-nifty-hit-2026-lows-amid-rising-rates-and-crude-prices/articleshow/134803853.cms",
+      "title": "Rising oil, weak rupee and rate fears hammer Dalal Street; VIX jumps 10%",
+      "published": "Fri, 09 Oct 2026 07:15:27 +0530",
+      "chars": 453,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/weak-rains-clouds-recovery-in-rs-3-3-lakh-crore-microfinance-sector/articleshow/134803775.cms",
+      "title": "Weak rains clouds recovery in Rs 3.3 lakh crore microfinance sector",
+      "published": "Fri, 09 Oct 2026 06:55:17 +0530",
+      "chars": 459,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/railtel-wins-63-81-crore-northern-coalfields-mpls-vpn-contract",
+      "title": "RailTel Wins ₹63.81 Crore Northern Coalfields MPLS VPN Contract",
+      "published": "Thu, 08 Oct 2026 09:11:38 GMT",
+      "chars": 4242,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 146.8
+}

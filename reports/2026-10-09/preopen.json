@@ -1,0 +1,863 @@
+{
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09 08:11",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 3
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 4
+    },
+    "corp_expansion": {
+      "docs": 8,
+      "events": 12
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 1,
+      "events": 0
+    }
+  },
+  "events_read": 25,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "e4479b38c1",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1,
+      "catalyst": 13,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 36%)",
+        " 0 ₹1,025cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 61/100",
+        "+12 published Fri 04:08, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2703.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 04:08, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 4715.1,
+        "atr_pct": 3.93,
+        "expected_day_range_inr": 185.3,
+        "expected_day_range_pct": 3.93,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 61,
+      "fund_why": [
+        "+12 ROCE 37.5%",
+        "+8 ROE 32.8%",
+        "-6 P/E 108",
+        "+8 3y profit CAGR 64%",
+        "+6 3y sales CAGR 70%",
+        "-6 return on capital has drifted from 45.8% to 35.7% — the newer capital earns less than the old",
+        "+2 D/E 0.39",
+        "+4 promoter 66.98%",
+        "-5 promoter stake down 4.05pp over four quarters",
+        "+4 latest qtr PAT YoY 183.3%",
+        "+2 mcap ₹28,030 cr",
+        "+8 operating cash flow ₹790cr, 383% of profit — profit is turning into cash",
+        "+4 interest cover 10.08×",
+        "-4 interest cost up 1100% year on year",
+        "-10 borrowings up 3425% year on year",
+        "+3 institutions hold 15.18%",
+        "-8 price to book 37.13",
+        "-6 ROCE 37.5% bought at 37.13× book is 1% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -20 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +12 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 90.3% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 29.0%",
+        "Company's working capital requirements have reduced from 62.2 days to 13.8 days"
+      ],
+      "screener_cons": [
+        "Stock is trading at 37.1 times its book value",
+        "Promoter holding has decreased over last 3 years: -8.47%"
+      ],
+      "ltp": 4715.10009765625,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 47.7,
+        "adx": 19.1,
+        "atr_pct": 3.93,
+        "vol_ratio": 2.16,
+        "chg_1d_pct": 0.63,
+        "chg_5d_pct": 3.67,
+        "dist_52w_high_pct": -18.89,
+        "dist_ema200_pct": 13.17,
+        "avg_turnover_cr": 513.24,
+        "high_52w": 5813.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 28030.0,
+        "pe": 108.0,
+        "roce": 37.5,
+        "roe": 32.8,
+        "sales_growth_3_years": 70.0,
+        "profit_growth_3_years": 64.0,
+        "promoter_pct": 66.98,
+        "debt_to_equity": 0.39,
+        "revenue_ttm_cr": 2703.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "4b0cdedad2",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1,
+      "catalyst": 13,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹1,025cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+10 fundamentals 72/100",
+        "-6 18.0% below the 200-day average — fighting the trend",
+        "+12 published Fri 04:08, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 30043.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 04:08, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 2317.0,
+        "atr_pct": 2.67,
+        "expected_day_range_inr": 61.86,
+        "expected_day_range_pct": 2.67,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 72,
+      "fund_why": [
+        "+12 ROCE 38.4%",
+        "+8 ROE 32.5%",
+        "+6 P/E 16.6",
+        "+8 3y profit CAGR 99%",
+        "+6 3y sales CAGR 58%",
+        "+4 return on capital has improved from 29.7% to 39%",
+        "+5 D/E 0.22",
+        "+4 promoter 64.12%",
+        "+4 latest qtr PAT YoY 15.4%",
+        "+4 mcap ₹66,649 cr",
+        "+3 operating cash flow ₹1,627cr, only 42% of profit",
+        "+4 interest cover 20.57×",
+        "-4 interest cost up 63% year on year",
+        "-10 borrowings up 168% year on year",
+        "-4 price to book 4.62",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 143% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 31.0%"
+      ],
+      "screener_cons": [],
+      "ltp": 2317.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 31.2,
+        "adx": 36.6,
+        "atr_pct": 2.67,
+        "vol_ratio": 0.99,
+        "chg_1d_pct": -3.5,
+        "chg_5d_pct": -2.42,
+        "dist_52w_high_pct": -37.69,
+        "dist_ema200_pct": -17.99,
+        "avg_turnover_cr": 153.05,
+        "high_52w": 3718.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 66649.0,
+        "pe": 16.6,
+        "roce": 38.4,
+        "roe": 32.5,
+        "sales_growth_3_years": 58.0,
+        "profit_growth_3_years": 99.0,
+        "promoter_pct": 64.12,
+        "debt_to_equity": 0.22,
+        "revenue_ttm_cr": 30043.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ff708b6b03",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1,
+      "catalyst": 9,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 36%)",
+        " 0 ₹1,025cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        " 0 fundamentals 48/100",
+        "+12 published Fri 04:08, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2551.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 04:08, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 612.15,
+        "atr_pct": 3.2,
+        "expected_day_range_inr": 19.59,
+        "expected_day_range_pct": 3.2,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 48,
+      "fund_why": [
+        "+0 ROCE 12.1%",
+        "+0 ROE 11.2%",
+        "+2 P/E 36.2",
+        "+8 3y profit CAGR 54%",
+        "+6 3y sales CAGR 38%",
+        "+4 return on capital has improved from 2.2% to 10.7%",
+        "+5 D/E 0.12",
+        "+4 promoter 57.43%",
+        "-5 promoter stake down 2.69pp over four quarters",
+        "+4 latest qtr PAT YoY 18.3%",
+        "+2 mcap ₹20,963 cr",
+        "-14 operating cash flow ₹-435cr — the business consumed cash last year",
+        "+3 institutions hold 15.34%",
+        "+0 price to book 3.61",
+        "-6 ROCE 12.1% bought at 3.61× book is 3.4% on what you pay",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 120% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 3.62 times its book value",
+        "Company has a low return on equity of 10.2% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -5.88%"
+      ],
+      "ltp": 612.1500244140625,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.4,
+        "adx": 13.5,
+        "atr_pct": 3.2,
+        "vol_ratio": 1.27,
+        "chg_1d_pct": 0.53,
+        "chg_5d_pct": 1.64,
+        "dist_52w_high_pct": -17.68,
+        "dist_ema200_pct": 7.28,
+        "avg_turnover_cr": 97.23,
+        "high_52w": 743.65,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-07"
+      },
+      "fundamentals": {
+        "market_cap_cr": 20963.0,
+        "pe": 36.2,
+        "roce": 12.1,
+        "roe": 11.2,
+        "sales_growth_3_years": 38.0,
+        "profit_growth_3_years": 54.0,
+        "promoter_pct": 57.43,
+        "debt_to_equity": 0.12,
+        "revenue_ttm_cr": 2551.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "d0bdb4ec57",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹10,246 million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45000.0,
+        "unit": "MW",
+        "text": "45 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to",
+      "title": "Shaily Engineering Plastics Heads 3 Indian Growth Stocks To Watch",
+      "published": "Thu, 08 Oct 2026 22:38:35 GMT",
+      "published_utc": "2026-10-08T22:38:35+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-3-indian-growth-stocks-to"
+      ],
+      "n_reports": 1,
+      "catalyst": 7,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-3 Broker downgrade (50% firm, sympathy at 40%)",
+        " 0 ₹1,025cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 66/100",
+        "-6 9.1% below the 200-day average — fighting the trend",
+        "+12 published Fri 04:08, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 8466.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Fri 04:08, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -14,
+      "direction": "short",
+      "plan": {
+        "reference_close": 884.65,
+        "atr_pct": 3.36,
+        "expected_day_range_inr": 29.72,
+        "expected_day_range_pct": 3.36,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 66,
+      "fund_why": [
+        "+12 ROCE 32.7%",
+        "+8 ROE 41%",
+        "+6 P/E 24.1",
+        "+8 3y profit CAGR 365%",
+        "+6 3y sales CAGR 76%",
+        "+4 return on capital has improved from 7.7% to 33%",
+        "-2 D/E 0.86",
+        "+4 promoter 58.48%",
+        "-6 promoters sold 5.46pp in the last quarter alone",
+        "+4 latest qtr PAT YoY 53.2%",
+        "+2 mcap ₹40,159 cr",
+        "+8 operating cash flow ₹1,261cr, 84% of profit — profit is turning into cash",
+        "-8 sales growth has stalled: 20.0% last year against 107.3% the year before",
+        "+4 interest cover 16.23×",
+        "-6 borrowings up 90% year on year",
+        "+3 institutions hold 25.89%",
+        "-8 price to book 9.31",
+        "-6 ROCE 32.7% bought at 9.31× book is 3.5% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted +8 of +14 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 131% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 44.8%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 9.30 times its book value",
+        "Promoter holding has decreased over last quarter: -5.46%",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 884.6500244140625,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 38.3,
+        "adx": 40.4,
+        "atr_pct": 3.36,
+        "vol_ratio": 0.94,
+        "chg_1d_pct": -2.79,
+        "chg_5d_pct": 1.67,
+        "dist_52w_high_pct": -21.99,
+        "dist_ema200_pct": -9.12,
+        "avg_turnover_cr": 121.37,
+        "high_52w": 1134.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 40159.0,
+        "pe": 24.1,
+        "roce": 32.7,
+        "roe": 41.0,
+        "sales_growth_3_years": 76.0,
+        "profit_growth_3_years": 365.0,
+        "promoter_pct": 58.48,
+        "debt_to_equity": 0.86,
+        "revenue_ttm_cr": 8466.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "ec20b92842",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/usfda-issues-form-483-two-observations-dr-reddy-s-fto-11-facility/53001585",
+      "title": "Dr Reddy's FTO-11 facility gets FDA Form 483 with two observations",
+      "published": "Thu, 08 Oct 2026 10:50:59 GMT",
+      "published_utc": "2026-10-08T10:50:59+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/usfda-issues-form-483-two-observations-dr-reddy-s-fto-11-facility/53001585"
+      ],
+      "n_reports": 1,
+      "catalyst": -13,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-19 Regulatory action (named at 85%)",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        " 0 fundamentals 42/100",
+        "-6 4.3% below the 200-day average — fighting the trend",
+        "+12 published Thu 16:20, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 33227.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 16:20, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1180.0,
+        "atr_pct": 2.18,
+        "expected_day_range_inr": 25.72,
+        "expected_day_range_pct": 2.18,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 42,
+      "fund_why": [
+        "+0 ROCE 13%",
+        "+0 ROE 11.2%",
+        "+2 P/E 30.6",
+        "-6 3y profit CAGR -4%",
+        "+3 3y sales CAGR 11%",
+        "+4 return on capital has improved from 16.2% to 21%",
+        "+5 D/E 0.2",
+        "-3 promoter 26.63%",
+        "-5 latest qtr PAT YoY -69.1%",
+        "+4 mcap ₹98,492 cr",
+        "+8 operating cash flow ₹5,674cr, 136% of profit — profit is turning into cash",
+        "-4 interest cost up 52% year on year",
+        "-6 borrowings up 65% year on year",
+        "+3 institutions hold 52.42%",
+        "-10 profit has come in below the year-ago quarter 4 quarters running",
+        "+0 price to book 2.6",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "4 consecutive quarters of falling profit"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company's working capital requirements have reduced from 85.1 days to 67.8 days"
+      ],
+      "screener_cons": [
+        "Dividend payout has been low at 13.2% of profits over last 3 years"
+      ],
+      "ltp": 1180.0,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 45.9,
+        "adx": 24.8,
+        "atr_pct": 2.18,
+        "vol_ratio": 1.0,
+        "chg_1d_pct": -1.98,
+        "chg_5d_pct": -4.3,
+        "dist_52w_high_pct": -16.6,
+        "dist_ema200_pct": -4.34,
+        "avg_turnover_cr": 274.59,
+        "high_52w": 1414.9,
+        "momentum_score": 23,
+        "last_bar_date": "2026-10-08"
+      },
+      "fundamentals": {
+        "market_cap_cr": 98492.0,
+        "pe": 30.6,
+        "roce": 13.0,
+        "roe": 11.2,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": -4.0,
+        "promoter_pct": 26.63,
+        "debt_to_equity": 0.2,
+        "revenue_ttm_cr": 33227.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
