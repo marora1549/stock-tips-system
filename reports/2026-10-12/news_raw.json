@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-12",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 1,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 7,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "bc02b6773a",
+      "symbol": "DMART",
+      "company": "Avenue Supermarts Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/companies/dmart-q2-results-store-network-grows-20-but-sales-per-sq-ft-rise-just-06-as-profit-falls-q-o-q/article71570812.ece",
+      "title": "DMart Q2 results: Store network grows 20%, but sales per sq ft rise just 0.6% as profit falls q-o-q",
+      "published": "Sun, 11 Oct 2026 06:59:35 GMT",
+      "published_utc": "2026-10-11T06:59:35+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/companies/dmart-q2-results-store-network-grows-20-but-sales-per-sq-ft-rise-just-06-as-profit-falls-q-o-q/article71570812.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e2d4747bed",
+      "symbol": "LENSKART",
+      "company": "Lenskart Solutions Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "regulatory_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "power_generation",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dmart-canara-robeco-amc-anand-rathi-wealth-poonawalla-fincorp-lenskart-kec-international-viviana-power-shilpa-medicare-in-focus-on-12-october-14049666.html/amp",
+      "title": "Stocks to Watch Today: DMart, Canara Robeco AMC, Anand Rathi Wealth, Poonawalla Fincorp, Lenskart, KEC...",
+      "published": "Mon, 12 Oct 2026 00:49:25 GMT",
+      "published_utc": "2026-10-12T00:49:25+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dmart-canara-robeco-amc-anand-rathi-wealth-poonawalla-fincorp-lenskart-kec-international-viviana-power-shilpa-medicare-in-focus-on-12-october-14049666.html/amp"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/diversified-financials/nse-paytm/one97-communications-shares/news/top-3-indian-founder-led-stocks-to-watch-in-october-2026-4",
+      "title": "Top 3 Indian Founder Led Stocks To Watch In October 2026",
+      "published": "Sun, 11 Oct 2026 20:04:55 GMT",
+      "chars": 10828,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-hcl-tech-dmart-poonawalla-fincorp-shares-in-focus-on-monday-12-october-full-list-11791768761109.html",
+      "title": "Top stocks to watch today: HCL Tech, DMart, Poonawalla Fincorp shares in focus on Monday, 12 October | Full list",
+      "published": "Mon, 12 Oct 2026 02:09:01 GMT",
+      "chars": 3395,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-banks-hcl-technologies-dmart-adani-green-energy-ptc-industries-and-anand-rathi-wealth/articleshow/134879753.cms",
+      "title": "Stocks in news: HCL Technologies, DMart, Adani Green Energy, PTC Industries and Anand Rathi Wealth",
+      "published": "Mon, 12 Oct 2026 00:30:00 GMT",
+      "chars": 10514,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-dmart-m-m-adani-green-kec-int-l-icici-pru-126101200059_1.html",
+      "title": "Stocks to watch: HCLTech, DMart, M&M, Adani Green, KEC Int'l, ICICI Pru",
+      "published": "Mon, 12 Oct 2026 02:26:29 GMT",
+      "chars": 4609,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dmart-canara-robeco-amc-anand-rathi-wealth-poonawalla-fincorp-lenskart-kec-international-viviana-power-shilpa-medicare-in-focus-on-12-october-14049666.html/amp",
+      "title": "Stocks to Watch Today: DMart, Canara Robeco AMC, Anand Rathi Wealth, Poonawalla Fincorp, Lenskart, KEC...",
+      "published": "Mon, 12 Oct 2026 00:49:25 GMT",
+      "chars": 11382,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-12-rbl-bank-d-mart-steel-stocks-hcl-tech-icici-pru-brigade-enterprises-adani-enterprises/article-201647/",
+      "title": "Stocks to watch, Oct 12: RBL Bank, DMart, steel stocks, HCLTech, ICICI Pru, Brigade Enterprises, Adani Enterprises",
+      "published": "Mon, 12 Oct 2026 02:31:24 GMT",
+      "chars": 10941,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=10/12/2026&story=2&title=5-Hospital-Stocks-to-Watch-as-Anti%2DCancer-Drug-Margin-Caps-Boost-Sentiment&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "5 Hospital Stocks to Watch as Anti-Cancer Drug Margin Caps Boost Sentiment",
+      "published": "Mon, 12 Oct 2026 01:30:00 GMT",
+      "chars": 14590,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/companies/dmart-q2-results-store-network-grows-20-but-sales-per-sq-ft-rise-just-06-as-profit-falls-q-o-q/article71570812.ece",
+      "title": "DMart Q2 results: Store network grows 20%, but sales per sq ft rise just 0.6% as profit falls q-o-q",
+      "published": "Sun, 11 Oct 2026 06:59:35 GMT",
+      "chars": 9661,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.businessupturn.com/business/power-grid-corporation-commissions-power-transmission-project-in-rajasthan/",
+      "title": "Power Grid Corporation commissions power transmission project in Rajasthan",
+      "published": "Sun, 11 Oct 2026 17:00:49 GMT",
+      "chars": 1906,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-protests-sc-says-no-illegal-detention-orders-metro-internet-back-126101100233_1.html",
+      "title": "Delhi protests: SC says no illegal detention, orders Metro, internet back",
+      "published": "Sun, 11 Oct 2026 07:31:36 GMT",
+      "chars": 4669,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/india-news-supreme-court-orders-normal-metro-rail-services-internet-restoration-in-delhi-126101100375_1.html",
+      "title": "Prima facie contempt in Metro curbs during Oct 10 protests: Supreme Court",
+      "published": "Sun, 11 Oct 2026 10:15:39 GMT",
+      "chars": 7245,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/pm-modi-unveils-13k-cr-projects-pledges-support-for-tamil-nadu-growth-126101100488_1.html",
+      "title": "PM Modi unveils ₹13K cr projects in TN, vows to work for state's growth",
+      "published": "Sun, 11 Oct 2026 12:08:54 GMT",
+      "chars": 4439,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-traffic-police-issues-advisory-warns-of-disruptions-on-october-12-126101100863_1.html",
+      "title": "Delhi Traffic Police issues advisory, warns of disruptions on October 12",
+      "published": "Sun, 11 Oct 2026 18:14:31 GMT",
+      "chars": 5990,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/external-affairs-defence-security/news/mea-rejects-un-rights-body-s-concerns-over-delhi-protest-restrictions-126101100424_1.html",
+      "title": "MEA rejects UN rights body's concerns over Delhi protest restrictions",
+      "published": "Sun, 11 Oct 2026 11:51:51 GMT",
+      "chars": 5846,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/house-panel-seeks-curbs-on-rallies-on-exam-days-as-part-of-nta-reforms-126101100250_1.html",
+      "title": "House panel seeks curbs on rallies on exam days as part of NTA reforms",
+      "published": "Sun, 11 Oct 2026 08:08:15 GMT",
+      "chars": 4126,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-dmart-m-m-adani-green-kec-int-l-icici-pru-126101200059_1.html",
+      "title": "Stocks to watch: HCLTech, DMart, M&M, Adani Green, KEC Int'l, ICICI Pru",
+      "published": "Mon, 12 Oct 2026 02:26:29 GMT",
+      "chars": 4609,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ecomm-sell-goods-worth-24-trn-in-first-two-days-of-festive-sales-redseer-126101100344_1.html",
+      "title": "Ecomm sell goods worth ₹24 trn in first two days of festive sales: Redseer",
+      "published": "Sun, 11 Oct 2026 10:06:48 GMT",
+      "chars": 5198,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-dmart-m-m-adani-green-kec-int-l-icici-pru-126101200059_1.html",
+      "title": "Stocks to watch: HCLTech, DMart, M&M, Adani Green, KEC Int'l, ICICI Pru",
+      "published": "Mon, 12 Oct 2026 07:56:29 +0530",
+      "chars": 143,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-12-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-today-126101200057_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Asia markets mixed",
+      "published": "Mon, 12 Oct 2026 07:51:29 +0530",
+      "chars": 139,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/3-bullish-stocks-to-track-glenmark-pharma-karur-vysya-bank-and-go-digit-126101200049_1.html",
+      "title": "3 bullish stocks to track: Glenmark Pharma, Karur Vysya Bank and Go Digit",
+      "published": "Mon, 12 Oct 2026 07:28:46 +0530",
+      "chars": 134,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-nifty-s-technical-setup-remains-weak-trent-among-3-stock-ideas-by-angel-one-126101200048_1.html",
+      "title": "Angel One: Nifty's technical setup remains weak; Trent among 3 stock ideas",
+      "published": "Mon, 12 Oct 2026 07:22:45 +0530",
+      "chars": 186,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/hcl-tech-q2-preview-dividend-6-key-things-to-watch-out-for-in-it-major-s-earnings-126100900666_1.html",
+      "title": "HCL Tech Q2 preview: 6 key things to watch out for in IT major's earnings",
+      "published": "Mon, 12 Oct 2026 07:15:11 +0530",
+      "chars": 103,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/around-1-000-ex-flipkart-staff-approach-walmart-over-stock-option-liquidity-126101100585_1.html",
+      "title": "1,000 ex-Flipkart staffers approach Walmart over stock option liquidity",
+      "published": "Sun, 11 Oct 2026 19:13:20 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/around-1-000-ex-flipkart-staff-approach-walmart-over-stock-option-liquidity-126101100587_1.html",
+      "title": "Around 1,000 ex-Flipkart staff approach Walmart over stock option liquidity",
+      "published": "Sun, 11 Oct 2026 19:13:05 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/crude-oil-futures-brace-for-volatility-amid-geopolitical-uncertainties-126101100308_1.html",
+      "title": "Crude oil futures brace for volatility amid geopolitical uncertainties",
+      "published": "Sun, 11 Oct 2026 15:18:54 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-stays-near-18-month-high-as-mideast-conflict-inflation-data-in-focus/articleshow/134880836.cms",
+      "title": "Dollar stays near 18-month high as Mideast conflict, inflation data in focus",
+      "published": "Mon, 12 Oct 2026 07:50:43 +0530",
+      "chars": 402,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-12-crude-oil-dips-to-103-despite-simmering-iran-war-tensions-heres-why/articleshow/134880718.cms",
+      "title": "Oil Price Today (October 12): Crude oil dips to $103 despite simmering Iran war tensions. Here’s why",
+      "published": "Mon, 12 Oct 2026 07:46:15 +0530",
+      "chars": 147,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-steady-as-markets-strap-in-for-inflation-data/articleshow/134880669.cms",
+      "title": "Gold steady as markets strap in for inflation data",
+      "published": "Mon, 12 Oct 2026 07:41:54 +0530",
+      "chars": 455,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/indian-central-bank-curbs-to-temper-corporate-rush-to-hedge-against-rupee-weakness/articleshow/134880614.cms",
+      "title": "Indian central bank curbs to temper corporate rush to hedge against rupee weakness",
+      "published": "Mon, 12 Oct 2026 07:38:58 +0530",
+      "chars": 428,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-climbs-as-mideast-conflict-tanker-attacks-persist/articleshow/134880638.cms",
+      "title": "Oil falls on hopes Russia-Ukraine energy ceasefire will boost supplies",
+      "published": "Mon, 12 Oct 2026 07:38:18 +0530",
+      "chars": 406,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/fmcg-revenues-to-rise-in-q2-but-costs-could-dent-margins/articleshow/134880368.cms",
+      "title": "FMCG revenues to rise in Q2, but costs could dent margins",
+      "published": "Mon, 12 Oct 2026 07:16:08 +0530",
+      "chars": 394,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/india-has-gone-from-half-full-to-half-empty-thats-excessive-vincent-mortier/articleshow/134880195.cms",
+      "title": "India has gone from half-full to half-empty. That's excessive: Vincent Mortier, Group CIO, Amundi",
+      "published": "Mon, 12 Oct 2026 06:50:16 +0530",
+      "chars": 440,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/viviana-power-tech-secures-466-74-crore-mgvcl-contracts-for-distribution-upgrades",
+      "title": "Viviana Power Tech Secures ₹466.74 Crore MGVCL Contracts For Distribution Upgrades",
+      "published": "Mon, 12 Oct 2026 01:47:05 GMT",
+      "chars": 3152,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/lcc-projects-receives-letter-of-commitment-from-reliance-industries-worth-62-32-crore",
+      "title": "LCC Projects Receives Letter Of Commitment From Reliance Industries Worth ₹62.32 Crore",
+      "published": "Mon, 12 Oct 2026 01:27:10 GMT",
+      "chars": 3094,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/premier-energies-secures-4-001-crore-q2-fy27-orders-for-solar-cell-module-supplies",
+      "title": "Premier Energies Secures ₹4,001 Crore Q2 FY27 Orders For Solar Cell Module Supplies",
+      "published": "Mon, 12 Oct 2026 01:21:22 GMT",
+      "chars": 3202,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/kec-international-secures-1-014-crore-t-d-orders-in-india",
+      "title": "KEC International Secures ₹1,014 Crore T&D Orders In India",
+      "published": "Mon, 12 Oct 2026 01:51:25 GMT",
+      "chars": 3404,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/bajel-projects-secures-200-crore-epc-order-for-mumbai-gis-substations",
+      "title": "Bajel Projects Secures ₹200 Crore+ EPC Order For Mumbai GIS Substations",
+      "published": "Mon, 12 Oct 2026 01:31:25 GMT",
+      "chars": 2857,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/ashoka-buildcon-secures-290-23-crore-north-eastern-railway-project-for-traction-sub-stations",
+      "title": "Ashoka Buildcon Secures ₹290.23 Crore North Eastern Railway Project For Traction Sub-Stations",
+      "published": "Mon, 12 Oct 2026 01:11:15 GMT",
+      "chars": 2666,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/category/breaking-news",
+      "title": "Breaking News",
+      "published": "Mon, 12 Oct 2026 01:35:39 GMT",
+      "chars": 2012,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 81.3
+}
