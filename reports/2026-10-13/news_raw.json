@@ -1,0 +1,995 @@
+{
+  "date": "2026-10-13",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 4
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 3,
+      "events": 1
+    }
+  },
+  "events": [
+    {
+      "id": "43bde58a78",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of acceptance for an epc contract",
+      "also_matched": [
+        "earnings_beat",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 862.46,
+      "size_estimated": false,
+      "size_basis": "₹862.46 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+      "title": "Stocks to watch: HCLTech, RBL Bank, IRCON, TMPV, Hero Motors, Nazara Tech",
+      "published": "Tue, 13 Oct 2026 02:28:17 GMT",
+      "published_utc": "2026-10-13T02:28:17+00:00",
+      "sentence": "received a letter of acceptance for an epc contract",
+      "corroborating_sources": [
+        "corp_orders_bse"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+        "http://m.dailyhunt.in/news/india/english/upstox-epaper-upstox/ircon+international+bags+epc+work+order+worth+862+crore+from+east+central+railway+shares+fall+41+ytd-newsid-n730133290"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "0474e35349",
+      "symbol": "IRFC",
+      "company": "Indian Railway Finance Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures epc contract",
+      "also_matched": [
+        "analyst_downgrade",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 23366.0,
+      "size_estimated": false,
+      "size_basis": "₹23,366 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/ircon-international-secures-epc-contract-from-east-central-railway",
+      "title": "IRCON International Secures EPC Contract From East Central Railway",
+      "published": "Mon, 12 Oct 2026 13:12:11 GMT",
+      "published_utc": "2026-10-12T13:12:11+00:00",
+      "sentence": "secures epc contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/ircon-international-secures-epc-contract-from-east-central-railway"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c42a062b67",
+      "symbol": "NCC",
+      "company": "NCC Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 1286.03,
+      "size_estimated": false,
+      "size_basis": "Rs 1,286.03 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/radial-road-project:-ncc-bags-order-worth-over-rs-1286-crore",
+      "title": "Radial Road Project: NCC bags order worth over Rs 1,286 crore",
+      "published": "Mon, 12 Oct 2026 18:54:59 GMT",
+      "published_utc": "2026-10-12T18:54:59+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/radial-road-project:-ncc-bags-order-worth-over-rs-1286-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9b9b6f5807",
+      "symbol": "KTKBANK",
+      "company": "The Karnataka Bank Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 520.0,
+        "unit": "km",
+        "text": "520 km"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/arss-infrastructure-nsearssinfra-what-is-the-rs-2267-crore-road-contract-it-won",
+      "title": "ARSS Infrastructure ARSSINFRA: Rs 22.67 Crore Cuttack Road Order",
+      "published": "Mon, 12 Oct 2026 13:16:00 GMT",
+      "published_utc": "2026-10-12T13:16:00+00:00",
+      "sentence": "received a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/arss-infrastructure-nsearssinfra-what-is-the-rs-2267-crore-road-contract-it-won"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fe1a3e82a0",
+      "symbol": "HCLTECH",
+      "company": "HCL Technologies Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 28688.0,
+      "size_estimated": false,
+      "size_basis": "$3.26 billion",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+      "title": "Stocks to watch: HCLTech, RBL Bank, IRCON, TMPV, Hero Motors, Nazara Tech",
+      "published": "Tue, 13 Oct 2026 02:28:17 GMT",
+      "published_utc": "2026-10-13T02:28:17+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [
+        "corp_results"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+        "https://apacnewsnetwork.com/2026/10/hcltech-q2-results-profit-dividend/",
+        "https://www.niftytrader.in/markets/hcltech-q2-fy27-ai-revenue-hclsoftware-falls/"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "caf0b5c625",
+      "symbol": "RBLBANK",
+      "company": "RBL Bank Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "order_win",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+      "title": "Stocks to watch: HCLTech, RBL Bank, IRCON, TMPV, Hero Motors, Nazara Tech",
+      "published": "Tue, 13 Oct 2026 02:28:17 GMT",
+      "published_utc": "2026-10-13T02:28:17+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [
+        "corp_results"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+        "https://apacnewsnetwork.com/2026/10/rbl-bank-q2-results-net-profit-jumps-170-percent-rs-482-crore/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "0b43035010",
+      "symbol": "VOLTAS",
+      "company": "Voltas Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/voltas-nsevoltas-did-the-gst-authority-drop-the-rs-3022-crore-tax-notice",
+      "title": "Voltas GST Notice Dropped: Rs 30.22 Crore Relief for NSE:VOLTAS",
+      "published": "Mon, 12 Oct 2026 11:23:00 GMT",
+      "published_utc": "2026-10-12T11:23:00+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/voltas-nsevoltas-did-the-gst-authority-drop-the-rs-3022-crore-tax-notice"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "179581bf4d",
+      "symbol": "UMIYA-MRO",
+      "company": "UMIYA BUILDCON LIMITED",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/umiya-buildcon-q2-results-fy27-pat-2-crore",
+      "title": "Umiya Buildcon Q2 Results FY27: PAT Falls to Rs 1.86 Cr",
+      "published": "Mon, 12 Oct 2026 12:33:00 GMT",
+      "published_utc": "2026-10-12T12:33:00+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/umiya-buildcon-q2-results-fy27-pat-2-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "621792cb31",
+      "symbol": "SONA",
+      "company": "Sonaselection India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "income tax reassessment notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.5,
+      "size_estimated": false,
+      "size_basis": "₹50 lakh (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.livelawbiz.com/amp/income-tax/high-court/reassessment-notice-for-ay-2015-16-issued-in-2026-time-barred-under-section-149-delhi-high-court-554294",
+      "title": "Reassessment Notice For AY 2015-16 Issued In 2026 Time-Barred: Delhi High Court",
+      "published": "Mon, 12 Oct 2026 11:51:00 GMT",
+      "published_utc": "2026-10-12T11:51:00+00:00",
+      "sentence": "income tax reassessment notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livelawbiz.com/amp/income-tax/high-court/reassessment-notice-for-ay-2015-16-issued-in-2026-time-barred-under-section-149-delhi-high-court-554294"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "416eed556b",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning, the aggregate operational capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 603.0,
+        "unit": "MWh",
+        "text": "603 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/business/companies/juniper-green-energy-commissions-150-mw-wind-solar-hybrid-project-in-gujarat-20010338.htm",
+      "title": "Juniper Green Energy commissions 150 MW wind-solar hybrid project in Gujarat",
+      "published": "Mon, 12 Oct 2026 17:50:07 GMT",
+      "published_utc": "2026-10-12T17:50:07+00:00",
+      "sentence": "commissioning, the aggregate operational capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/business/companies/juniper-green-energy-commissions-150-mw-wind-solar-hybrid-project-in-gujarat-20010338.htm",
+        "https://scanx.trade/stock-market-news/companies/juniper-green-energy-commissions-final-5-mw-150-mw-hybrid-project/53367705"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "92048b68ca",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 193.6,
+      "size_estimated": false,
+      "size_basis": "$22 Million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 107000.0,
+        "unit": "MW",
+        "text": "107 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/",
+      "title": "POWERGRID Commissions Rajasthan Renewable Energy Transmission Project Under Phase III, Part C1",
+      "published": "Mon, 12 Oct 2026 12:50:07 GMT",
+      "published_utc": "2026-10-12T12:50:07+00:00",
+      "sentence": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f25b48588d",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 193.6,
+      "size_estimated": false,
+      "size_basis": "$22 Million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 107000.0,
+        "unit": "MW",
+        "text": "107 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/",
+      "title": "POWERGRID Commissions Rajasthan Renewable Energy Transmission Project Under Phase III, Part C1",
+      "published": "Mon, 12 Oct 2026 12:50:07 GMT",
+      "published_utc": "2026-10-12T12:50:07+00:00",
+      "sentence": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "46d814e309",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 193.6,
+      "size_estimated": false,
+      "size_basis": "$22 Million (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 107000.0,
+        "unit": "MW",
+        "text": "107 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/",
+      "title": "POWERGRID Commissions Rajasthan Renewable Energy Transmission Project Under Phase III, Part C1",
+      "published": "Mon, 12 Oct 2026 12:50:07 GMT",
+      "published_utc": "2026-10-12T12:50:07+00:00",
+      "sentence": "secures 5 mwp solar epc order from psu with 10-year operations and maintenance contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-for-tuesday-hcl-tech-nazara-bank-of-india-td-power-juniper-green-airflow-rail-globus-power-vikran-engg-minda-corp-arss-infra-ceigall-india-ircon/article71577768.ece",
+      "title": "Buzzing stocks for Tuesday: HCL Tech, Nazara, Bank of India, TD Power, Juniper Green, Airflow Rail, Globus Power, Vikran Engg, Minda Corp, ARSS Infra Ceigall India, IRCON",
+      "published": "Tue, 13 Oct 2026 01:53:01 GMT",
+      "chars": 11925,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-hero-motors-hcl-tech-power-grid-ihcl-shares-in-focus-on-tuesday-13-oct-full-list-11791854343284.html",
+      "title": "Top stocks to watch today: Hero Motors, HCL Tech, Power Grid, IHCL shares in focus on Tuesday, 13 Oct | Full list",
+      "published": "Tue, 13 Oct 2026 01:54:03 GMT",
+      "chars": 4403,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+      "title": "Stocks to watch: HCLTech, RBL Bank, IRCON, TMPV, Hero Motors, Nazara Tech",
+      "published": "Tue, 13 Oct 2026 02:28:17 GMT",
+      "chars": 5705,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-hcl-tech-rbl-bank-nazara-tech-hero-motors-power-grid-and-ircon/articleshow/134902392.cms",
+      "title": "Stocks in news: HCL Tech, RBL Bank, Nazara Tech, Hero Motors, Power Grid and IRCON",
+      "published": "Tue, 13 Oct 2026 00:30:00 GMT",
+      "chars": 10261,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hcl-technologies-rbl-bank-bank-of-india-plastiblends-ircon-international-polycab-india-goodluck-defence-in-focus-on-13-october-14050480.html/amp",
+      "title": "Stocks to Watch Today: HCL Technologies, RBL Bank, Bank of India, Plastiblends, Ircon International,...",
+      "published": "Tue, 13 Oct 2026 00:58:21 GMT",
+      "chars": 10546,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-indian-export-stocks-watch-170916462.html",
+      "title": "3 Indian Export Stocks To Watch As Rupee Weakness Lifts Overseas Earnings",
+      "published": "Mon, 12 Oct 2026 17:09:16 GMT",
+      "chars": 3617,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/rajesh-power-bags-order-worth-rs-472-crore",
+      "title": "Rajesh Power bags order worth Rs 472 crore",
+      "published": "Mon, 12 Oct 2026 18:39:57 GMT",
+      "chars": 573,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/radial-road-project:-ncc-bags-order-worth-over-rs-1286-crore",
+      "title": "Radial Road Project: NCC bags order worth over Rs 1,286 crore",
+      "published": "Mon, 12 Oct 2026 18:54:59 GMT",
+      "chars": 681,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/arss-infrastructure-nsearssinfra-what-is-the-rs-2267-crore-road-contract-it-won",
+      "title": "ARSS Infrastructure ARSSINFRA: Rs 22.67 Crore Cuttack Road Order",
+      "published": "Mon, 12 Oct 2026 13:16:00 GMT",
+      "chars": 3788,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "http://m.dailyhunt.in/news/india/english/upstox-epaper-upstox/ircon+international+bags+epc+work+order+worth+862+crore+from+east+central+railway+shares+fall+41+ytd-newsid-n730133290",
+      "title": "Ircon International bags EPC work order worth ₹862 crore from East Central Railway; shares fall 41% YTD",
+      "published": "Mon, 12 Oct 2026 21:09:37 GMT",
+      "chars": 2744,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/asahi-kasei-wins-usfda-approval-for-oral-antiviral-hovilpri-pritelivir-for-refractory-herpes-181019",
+      "title": "Asahi Kasei Wins USFDA Approval for Oral Antiviral Hovilpri (Pritelivir) for Refractory Herpes",
+      "published": "Mon, 12 Oct 2026 09:43:53 GMT",
+      "chars": 2123,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.expresspharma.in/amp/akums-develops-moisturisation-formulations-for-evolving-skincare-needs/",
+      "title": "Akums develops moisturisation formulations for evolving skincare needs",
+      "published": "Mon, 12 Oct 2026 11:15:42 GMT",
+      "chars": 2268,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://allsci.com/news/approvals/weltruza-olanzapine-fda-approves-tevas-as-first/",
+      "title": "FDA approves Teva's Weltruza as first once-monthly subcutaneous LAI for schizophrenia",
+      "published": "Mon, 12 Oct 2026 15:11:16 GMT",
+      "chars": 2358,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/karnataka-mandates-landing-price-mrp-disclosure-on-medicine-medical-device-bills-from-november-1-181136",
+      "title": "Karnataka Mandates Landing Price, MRP Disclosure on Medicine, Medical Device Bills From November 1",
+      "published": "Mon, 12 Oct 2026 14:00:25 GMT",
+      "chars": 8331,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.expresspharma.in/amp/tdb-approves-%E2%82%B986-crore-rdi-support-for-peptris-ai-driven-drug-development/",
+      "title": "TDB approves ₹86 crore RDI support for Peptris’ AI-driven drug development",
+      "published": "Mon, 12 Oct 2026 09:28:20 GMT",
+      "chars": 3721,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://legal.economictimes.indiatimes.com/news/regulators/sebi-exempts-s-chands-family-trust-from-open-offer-obligation/134899373",
+      "title": "Sebi exempts S Chand's family trust from open offer obligation",
+      "published": "Mon, 12 Oct 2026 17:11:27 GMT",
+      "chars": 1784,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/voltas-nsevoltas-did-the-gst-authority-drop-the-rs-3022-crore-tax-notice",
+      "title": "Voltas GST Notice Dropped: Rs 30.22 Crore Relief for NSE:VOLTAS",
+      "published": "Mon, 12 Oct 2026 11:23:00 GMT",
+      "chars": 3470,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.livelawbiz.com/amp/income-tax/high-court/reassessment-notice-for-ay-2015-16-issued-in-2026-time-barred-under-section-149-delhi-high-court-554294",
+      "title": "Reassessment Notice For AY 2015-16 Issued In 2026 Time-Barred: Delhi High Court",
+      "published": "Mon, 12 Oct 2026 11:51:00 GMT",
+      "chars": 2273,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/dr-reddy-reports-two-fda-observations-citi-targets-dr-reddy-stock-at-inr/70298601",
+      "title": "Dr Reddy reports two FDA observations: Citi targets Dr Reddy stock at INR 1,450 - ad-hoc-news.de",
+      "published": "Mon, 12 Oct 2026 07:56:22 GMT",
+      "chars": 2755,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/10/rbl-bank-q2-results-net-profit-jumps-170-percent-rs-482-crore/",
+      "title": "RBL Bank Q2 Results: Net Profit Skyrocket 170% YoY to Rs 482 Crore, Beats Estimates",
+      "published": "Mon, 12 Oct 2026 13:08:57 GMT",
+      "chars": 3577,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/rudra-ecovation-q2-results-fy27-loss-1-crore",
+      "title": "Rudra Ecovation Q2 Results FY27: Revenue at Rs 0.55 Cr",
+      "published": "Mon, 12 Oct 2026 16:35:00 GMT",
+      "chars": 8658,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/umiya-buildcon-q2-results-fy27-pat-2-crore",
+      "title": "Umiya Buildcon Q2 Results FY27: PAT Falls to Rs 1.86 Cr",
+      "published": "Mon, 12 Oct 2026 12:33:00 GMT",
+      "chars": 8880,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/10/hcltech-q2-results-profit-dividend/",
+      "title": "HCL Tech Q2 Results: Net Profit Rises 21% YoY to ₹5,132 Crore; IT Major Declares Rs 12 Interim Dividend",
+      "published": "Mon, 12 Oct 2026 12:22:36 GMT",
+      "chars": 4108,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.niftytrader.in/markets/hcltech-q2-fy27-ai-revenue-hclsoftware-falls/",
+      "title": "HCLTech Q2 FY27: Advanced AI Revenue Jumps 78%, HCLSoftware Revenue Falls 11% gve strong",
+      "published": "Mon, 12 Oct 2026 13:40:53 GMT",
+      "chars": 7277,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.sahi.com/news/power-grid-launches-20-gw-renewable-energy-evacuation-project-in-rajasthan",
+      "title": "Power Grid Commissions 20 GW Rajasthan Renewable Energy Transmission Project",
+      "published": "Mon, 12 Oct 2026 18:12:11 GMT",
+      "chars": 3546,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/business/companies/juniper-green-energy-commissions-150-mw-wind-solar-hybrid-project-in-gujarat-20010338.htm",
+      "title": "Juniper Green Energy commissions 150 MW wind-solar hybrid project in Gujarat",
+      "published": "Mon, 12 Oct 2026 17:50:07 GMT",
+      "chars": 3580,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/12/powergrid-commissions-rajasthan-renewable-energy-transmission-project-under-phase-iii-part-c1/",
+      "title": "POWERGRID Commissions Rajasthan Renewable Energy Transmission Project Under Phase III, Part C1",
+      "published": "Mon, 12 Oct 2026 12:50:07 GMT",
+      "chars": 5063,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-commissions-final-5-mw-150-mw-hybrid-project/53367705",
+      "title": "Juniper Green Energy commissions final 5 MW of 150 MW hybrid project",
+      "published": "Mon, 12 Oct 2026 16:27:37 GMT",
+      "chars": 2888,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://psuwatch.com/newsupdates/power-grid-commissions-re-evacuation-transmission-project-in-rajasthan",
+      "title": "Power Grid commissions RE evacuation transmission project in Rajasthan",
+      "published": "Mon, 12 Oct 2026 06:54:21 GMT",
+      "chars": 1946,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/oilmax-eleven-consortium-wins-kutch-offshore-oil-gas-block-in-dsf-round-126101201270_1.html",
+      "title": "Oilmax-Eleven consortium wins Kutch offshore oil & gas block in DSF round",
+      "published": "Mon, 12 Oct 2026 15:47:40 GMT",
+      "chars": 3213,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/can-officials-face-punishment-for-defying-a-supreme-court-order-explained-126101200353_1.html",
+      "title": "Can officials face punishment for defying a Supreme Court order? Explained",
+      "published": "Mon, 12 Oct 2026 07:31:17 GMT",
+      "chars": 7015,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/technip-energies-wins-epc-contract-for-hpcl-s-mumbai-refinery-modernisation-126101201078_1.html",
+      "title": "Technip Energies wins EPC contract for HPCL's Mumbai refinery modernisation",
+      "published": "Mon, 12 Oct 2026 13:59:13 GMT",
+      "chars": 3947,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-jantar-mantar-protests-eci-internet-shutdown-telecom-rules-2024-126101200563_1.html",
+      "title": "Explained: What the law states about internet shutdown orders in India",
+      "published": "Mon, 12 Oct 2026 10:03:38 GMT",
+      "chars": 7853,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/rdi-fund-picks-first-19-second-level-fund-managers-commits-7-131-crore-126101201309_1.html",
+      "title": "RDI Fund picks first 19 second-level fund managers, commits ₹7,131 crore",
+      "published": "Mon, 12 Oct 2026 16:15:28 GMT",
+      "chars": 2938,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-clarifies-it-has-neither-endorsed-nor-rejected-eci-s-revised-form-6-126101201255_1.html",
+      "title": "SC clarifies it has neither endorsed nor rejected ECI's revised Form 6",
+      "published": "Mon, 12 Oct 2026 15:38:40 GMT",
+      "chars": 4137,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-backed-tejas-plans-entry-into-new-markets-in-europe-global-south-126101201146_1.html",
+      "title": "Tata-backed Tejas plans foray into new markets in Europe, Global South",
+      "published": "Mon, 12 Oct 2026 14:34:02 GMT",
+      "chars": 4239,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-police-de-notifies-jantar-mantar-as-protest-venue-names-three-sites-126101200407_1.html",
+      "title": "Delhi Police de-notify Jantar Mantar as protest venue, name three sites",
+      "published": "Mon, 12 Oct 2026 08:10:28 GMT",
+      "chars": 3911,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-weekly-expiry-in-focus-analysts-decode-charts-derivatives-positions-126101300086_1.html",
+      "title": "Nifty weekly expiry in focus; Analysts decode charts, derivatives positions",
+      "published": "Tue, 13 Oct 2026 08:02:34 +0530",
+      "chars": 190,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-dips-as-russia-diesel-supply-prospects-counter-gulf-supply-risks-126101300065_1.html",
+      "title": "Oil dips as Russia diesel supply prospects counter Gulf supply risks",
+      "published": "Tue, 13 Oct 2026 08:01:44 +0530",
+      "chars": 172,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/happiest-minds-imfa-brigade-enterprises-3-technical-stock-ideas-by-geojit-126101300082_1.html",
+      "title": "Happiest Minds among 3 stocks with bullish trend on tech charts: Geojit",
+      "published": "Tue, 13 Oct 2026 07:59:49 +0530",
+      "chars": 143,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hcltech-rbl-bank-ircon-tmpv-hero-motors-nazara-tech-126101300084_1.html",
+      "title": "Stocks to watch: HCLTech, RBL Bank, IRCON, TMPV, Hero Motors, Nazara Tech",
+      "published": "Tue, 13 Oct 2026 07:58:17 +0530",
+      "chars": 186,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-13-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101300081_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; KOSPI tumbles over 6%; Brent below $106",
+      "published": "Tue, 13 Oct 2026 07:52:33 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-kotak-neo-s-shrikant-chouhan-bullish-on-bel-greenply-check-targets-126101300077_1.html",
+      "title": "Kotak Neo's Shrikant Chouhan bullish on BEL, Greenply; check targets",
+      "published": "Tue, 13 Oct 2026 07:38:32 +0530",
+      "chars": 138,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/zetwerk-bonfiglioli-transmissions-tonbo-smt-announce-ipo-price-bands-126101201428_1.html",
+      "title": "Zetwerk, Bonfiglioli Transmissions, Tonbo, SMT announce IPO price bands",
+      "published": "Mon, 12 Oct 2026 23:24:29 +0530",
+      "chars": 177,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/rbi-measures-to-support-rupee-weigh-on-govt-bonds-domestic-equities-126101201121_1.html",
+      "title": "RBI measures to support rupee weigh on govt bonds, domestic equities",
+      "published": "Mon, 12 Oct 2026 21:20:12 +0530",
+      "chars": 135,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/hd-fire-protect-ipo-opens-today-gmp-signals-30-listing-gains-key-details-inside/articleshow/134906126.cms",
+      "title": "HD Fire Protect IPO opens today; GMP signals 30% listing gains, key details inside",
+      "published": "Tue, 13 Oct 2026 07:51:23 +0530",
+      "chars": 272,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/134906121.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Tue, 13 Oct 2026 07:40:11 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-13-crude-oil-falls-to-105-as-traders-assess-russian-supply-mideast-attacks-whats-next/articleshow/134906049.cms",
+      "title": "Oil Price Today (October 13): Crude oil falls to $105 as traders assess Russian supply, Mideast attacks. What’s next?",
+      "published": "Tue, 13 Oct 2026 07:38:35 +0530",
+      "chars": 338,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-holds-near-18-month-high-as-geopolitical-risks-rise/articleshow/134906029.cms",
+      "title": "Dollar holds near 18-month high as geopolitical risks rise",
+      "published": "Tue, 13 Oct 2026 07:34:24 +0530",
+      "chars": 440,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-subdued-with-spotlight-on-us-inflation-data/articleshow/134906003.cms",
+      "title": "Gold subdued with spotlight on US inflation data",
+      "published": "Tue, 13 Oct 2026 07:32:50 +0530",
+      "chars": 348,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-ticks-lower-as-russia-diesel-supply-prospects-counter-gulf-supply-risks/articleshow/134905984.cms",
+      "title": "Oil ticks lower as Russia diesel supply prospects counter Gulf supply risks",
+      "published": "Tue, 13 Oct 2026 07:29:13 +0530",
+      "chars": 340,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hcl-tech-stays-cautious-amid-global-upheavals-ai-deflation/articleshow/134905880.cms",
+      "title": "HCL Tech sees revenue rebound, but AI deflation remains a concern",
+      "published": "Tue, 13 Oct 2026 07:24:23 +0530",
+      "chars": 457,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/pace-digitek-board-approves-250-crore-debenture-issuance-via-private-placement",
+      "title": "Pace Digitek Board Approves ₹250 Crore Debenture Issuance Via Private Placement",
+      "published": "Mon, 12 Oct 2026 07:57:08 GMT",
+      "chars": 3523,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/jubilant-pharmova-board-approves-800-crore-ncd-issue-and-seeks-2-500-crore-debt-approval",
+      "title": "Jubilant Pharmova Board Approves ₹800 Crore NCD Issue And Seeks ₹2,500 Crore Debt Approval",
+      "published": "Mon, 12 Oct 2026 08:57:09 GMT",
+      "chars": 2905,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/ircon-international-secures-epc-contract-from-east-central-railway",
+      "title": "IRCON International Secures EPC Contract From East Central Railway",
+      "published": "Mon, 12 Oct 2026 13:12:11 GMT",
+      "chars": 3334,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 175.5
+}
