@@ -2,9 +2,9 @@
   "generated": "2026-10-13",
   "stats": {
     "capital": 100000,
-    "equity": 98857.57,
-    "return_pct": -1.14,
-    "simple_return_pct": -1.14,
+    "equity": 97622.87,
+    "return_pct": -2.38,
+    "simple_return_pct": -2.38,
     "initial_capital": 100000,
     "net_flows_inr": 0,
     "n_flows": 0,
@@ -58,8 +58,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 7.77,
       "notes": [],
-      "ltp": 1969.699951171875,
-      "unrealised_pct": 4.69,
+      "ltp": 1910.5999755859375,
+      "unrealised_pct": 1.55,
       "stop_loss_pct": -1.1,
       "target_pct": [
         9.13,
@@ -67,7 +67,7 @@
         22.56
       ],
       "order_line": "BUY 15 LALPATHLAB NSE CNC limit ₹1,881.40 · SL-M ₹1,860.75 · GTT ₹2,053.26 / 2,154.30 / 2,305.86",
-      "progress_t1_pct": 51,
+      "progress_t1_pct": 17,
       "days_elapsed": 25
     },
     {
@@ -119,8 +119,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 290.5,
-      "unrealised_pct": 1.89,
+      "ltp": 290.0,
+      "unrealised_pct": 1.72,
       "stop_loss_pct": -2.89,
       "target_pct": [
         7.75,
@@ -128,7 +128,7 @@
         14.49
       ],
       "order_line": "BUY 142 PETRONET NSE CNC limit ₹285.10 · SL-M ₹276.86 · GTT ₹307.19 / 318.75 / 326.40",
-      "progress_t1_pct": 24,
+      "progress_t1_pct": 22,
       "days_elapsed": 9
     },
     {
@@ -179,8 +179,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 6.52,
       "notes": [],
-      "ltp": 443.3999938964844,
-      "unrealised_pct": 6.08,
+      "ltp": 439.0,
+      "unrealised_pct": 5.02,
       "stop_loss_pct": -2.58,
       "target_pct": [
         8.42,
@@ -188,7 +188,7 @@
         16.93
       ],
       "order_line": "BUY 63 KOTAKBANK NSE CNC limit ₹418.00 · SL-M ₹407.20 · GTT ₹453.20 / 466.40 / 488.75",
-      "progress_t1_pct": 72,
+      "progress_t1_pct": 60,
       "days_elapsed": 6
     }
   ],
@@ -253,10 +253,71 @@
       297.0,
       288.5,
       291.5,
-      290.5
+      290.0
+    ],
+    "KOTAKBANK": [
+      389.95,
+      382.05,
+      385.95,
+      381.15,
+      383.35,
+      384.75,
+      384.65,
+      385.3,
+      390.2,
+      389.4,
+      390.3,
+      397.5,
+      398.0,
+      400.0,
+      394.0,
+      390.75,
+      393.5,
+      392.9,
+      390.5,
+      392.4,
+      391.15,
+      392.7,
+      387.65,
+      390.25,
+      397.35,
+      402.8,
+      401.45,
+      401.6,
+      416.7,
+      424.2,
+      423.7,
+      419.4,
+      425.0,
+      423.5,
+      421.15,
+      424.5,
+      422.1,
+      419.25,
+      414.0,
+      416.55,
+      419.0,
+      409.8,
+      415.0,
+      416.5,
+      412.5,
+      414.8,
+      412.65,
+      413.25,
+      405.0,
+      404.0,
+      401.55,
+      406.0,
+      417.0,
+      418.35,
+      416.0,
+      431.9,
+      440.0,
+      435.0,
+      441.0,
+      439.0
     ],
     "LALPATHLAB": [
-      1732.7,
       1687.4,
       1693.3,
       1700.1,
@@ -315,7 +376,8 @@
       1964.2,
       1945.1,
       1898.9,
-      1933.6
+      1933.6,
+      1910.6
     ]
   },
   "actions_log": [],
@@ -655,6 +717,10 @@
     {
       "date": "2026-10-12",
       "equity": 98857.57
+    },
+    {
+      "date": "2026-10-13",
+      "equity": 97622.87
     }
   ],
   "sources": [
@@ -22696,8 +22762,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "d7ebf17",
-    "branch": "main",
+    "head": "1b8ec1a",
+    "branch": "claude/gifted-albattani-jigzlq",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
@@ -22765,7 +22831,7 @@
     "2026-10-12",
     "2026-10-13"
   ],
-  "lessons_tail": "abled (max n_resolved=2); none at 60% T1 hit-rate. Not Friday: no new source added.\n\n### 2026-10-01 [machine]\nEvents: HEROMOTOCO: STOP-LOSS @ 5140.67 → closed, P&L ₹-1171.65 (-4.36%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 4 | 0 | -3.78 |\n| pattern=bollinger_squeeze | 4 | 0 | -3.78 |\n| pattern=momentum_aligned | 4 | 0 | -3.78 |\n| ta_conf=>=70 | 4 | 0 | -3.78 |\n| fund=>=65 | 4 | 0 | -3.78 |\n| pattern=pullback_to_ema20_in_uptrend | 3 | 0 | -4.20 |\n| timeframe=monthly | 2 | 0 | -3.44 |\n\n### 2026-10-01 [analyst]\n2026-10-01 desk review: HEROMOTOCO stop 5140.67 (-4.36%), 4th straight hold-capable loss (0/4). Stop was ~1.9% away, inside ~1 ATR, so noise-sized; the fill 5375 sat under plan 5390 and price faded from day one, so the pattern (momentum_aligned/pullback) gave no follow-through and the tip likely arrived after the move. Fund score (>=65) not yet earning its keep: 0% hit in 75-100 band, 2 settled, too few to call. fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt). chartink_ema_pullback -15, chartink_squeeze -21.8; Motilal -29 and brokerage_gnews -14.6 lag, none auto-disabled (n_resolved<8). No source at >=60% T1. Thursday: no new source.\n\n### 2026-10-05 [analyst]\n2026-10-05 desk review: only event was KOTAKBANK fill 418.00 (plan 418.35, ~flat; closed 416.0, -0.5% on day one); no stop/target/time-stop hit. Book: LALPATHLAB +4.8% (T1 unhit), PETRONET +1.7%, KOTAKBANK -0.5%; all hold-capable. Still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5, under 8pt); 75-100 band 2 settled, too few to read, so fund score remains unproven. No source auto-disabled, none at 60% T1. Not Friday: no new source.\n\n### 2026-10-06 [analyst]\n2026-10-06 desk review: quiet day, no events. LALPATHLAB +4.4%, PETRONET +4.35%, KOTAKBANK +3.3%, all hold-capable, T1/stops untouched. Still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled, none at 60% T1. Not Friday: no new source.\n\n### 2026-10-07 [analyst]\n2026-10-07 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +3.4%, PETRONET +4.2%, KOTAKBANK +5.3%, all hold-capable, T1 unhit, stops intact. Equity 99,197 (-0.8%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-08 [analyst]\n2026-10-08 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +0.9%, PETRONET +1.2%, KOTAKBANK +4.1%, all hold-capable, T1 unhit, stops intact; equity 96,982 (-3.0%), up-gains faded ~2pts from yesterday, still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-09 [analyst]\n2026-10-09 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +2.8%, PETRONET +2.2%, KOTAKBANK +5.5%, all hold-capable, T1 unhit, stops intact; equity 98,307 (-1.7%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled (max n_resolved=2), none at 60% T1. Friday: new-source add (tg_stockpro_online candidate) was blocked by permission classifier; none added.\n\n### 2026-10-12 [analyst]\n2026-10-12 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +4.7% (T1 unhit, stop 1860.75 ~5.5% below), PETRONET +1.9%, KOTAKBANK +6.1%, all hold-capable; equity 98,858 (-1.1%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Monday: no new source.\n",
+  "lessons_tail": "0_in_uptrend | 3 | 0 | -4.20 |\n| timeframe=monthly | 2 | 0 | -3.44 |\n\n### 2026-10-01 [analyst]\n2026-10-01 desk review: HEROMOTOCO stop 5140.67 (-4.36%), 4th straight hold-capable loss (0/4). Stop was ~1.9% away, inside ~1 ATR, so noise-sized; the fill 5375 sat under plan 5390 and price faded from day one, so the pattern (momentum_aligned/pullback) gave no follow-through and the tip likely arrived after the move. Fund score (>=65) not yet earning its keep: 0% hit in 75-100 band, 2 settled, too few to call. fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt). chartink_ema_pullback -15, chartink_squeeze -21.8; Motilal -29 and brokerage_gnews -14.6 lag, none auto-disabled (n_resolved<8). No source at >=60% T1. Thursday: no new source.\n\n### 2026-10-05 [analyst]\n2026-10-05 desk review: only event was KOTAKBANK fill 418.00 (plan 418.35, ~flat; closed 416.0, -0.5% on day one); no stop/target/time-stop hit. Book: LALPATHLAB +4.8% (T1 unhit), PETRONET +1.7%, KOTAKBANK -0.5%; all hold-capable. Still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5, under 8pt); 75-100 band 2 settled, too few to read, so fund score remains unproven. No source auto-disabled, none at 60% T1. Not Friday: no new source.\n\n### 2026-10-06 [analyst]\n2026-10-06 desk review: quiet day, no events. LALPATHLAB +4.4%, PETRONET +4.35%, KOTAKBANK +3.3%, all hold-capable, T1/stops untouched. Still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled, none at 60% T1. Not Friday: no new source.\n\n### 2026-10-07 [analyst]\n2026-10-07 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +3.4%, PETRONET +4.2%, KOTAKBANK +5.3%, all hold-capable, T1 unhit, stops intact. Equity 99,197 (-0.8%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-08 [analyst]\n2026-10-08 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +0.9%, PETRONET +1.2%, KOTAKBANK +4.1%, all hold-capable, T1 unhit, stops intact; equity 96,982 (-3.0%), up-gains faded ~2pts from yesterday, still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-09 [analyst]\n2026-10-09 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +2.8%, PETRONET +2.2%, KOTAKBANK +5.5%, all hold-capable, T1 unhit, stops intact; equity 98,307 (-1.7%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled (max n_resolved=2), none at 60% T1. Friday: new-source add (tg_stockpro_online candidate) was blocked by permission classifier; none added.\n\n### 2026-10-12 [analyst]\n2026-10-12 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +4.7% (T1 unhit, stop 1860.75 ~5.5% below), PETRONET +1.9%, KOTAKBANK +6.1%, all hold-capable; equity 98,858 (-1.1%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Monday: no new source.\n\n### 2026-10-13 [analyst]\n2026-10-13 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +1.5% (faded from +4.7%, T1 unhit, stop 1860.75 ~2.6% below), PETRONET +1.7%, KOTAKBANK +5.0%, all hold-capable; equity 97,623 (-2.4%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled, none at 60% T1. Tuesday: no new source.\n",
   "settings": {
     "capital": {
       "total_inr": 100000,
