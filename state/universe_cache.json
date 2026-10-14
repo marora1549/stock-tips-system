@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-07T02:38:45.120978",
+  "fetched": "2026-10-14T02:46:40.961008",
   "rows": [
     {
       "symbol": "20MICRONS",
@@ -101,7 +101,7 @@
       "symbol": "AARTECH",
       "name": "Aartech Solonics Limited",
       "isin": "INE01C001026",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "AARTIDRUGS",
@@ -785,7 +785,7 @@
       "symbol": "ALUFLUOR",
       "name": "Alufluoride Limited",
       "isin": "INE058F01019",
-      "series": "EQ"
+      "series": "BE"
     },
     {
       "symbol": "AMAGI",
@@ -1970,6 +1970,12 @@
       "series": "EQ"
     },
     {
+      "symbol": "BELDING",
+      "name": "Belding India Limited",
+      "isin": "INE363L01045",
+      "series": "EQ"
+    },
+    {
       "symbol": "BELLACASA",
       "name": "Bella Casa Fashion & Retail Limited",
       "isin": "INE344T01014",
@@ -2057,7 +2063,7 @@
       "symbol": "BHAGYANGR",
       "name": "Bhagyanagar India Limited",
       "isin": "INE458B01036",
-      "series": "EQ"
+      "series": "BE"
     },
     {
       "symbol": "BHANDARI",
@@ -2081,7 +2087,7 @@
       "symbol": "BHARATGEAR",
       "name": "Bharat Gears Limited",
       "isin": "INE561C01019",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "BHARATRAS",
@@ -2256,6 +2262,12 @@
       "name": "BLS E-Services Limited",
       "isin": "INE0NLT01028",
       "series": "EQ"
+    },
+    {
+      "symbol": "BLUECHIP",
+      "name": "Blue Chip India Limited",
+      "isin": "INE657B01025",
+      "series": "BE"
     },
     {
       "symbol": "BLUECLOUDS",
@@ -2471,12 +2483,12 @@
       "symbol": "BTTL",
       "name": "Bhilwara Technical Textiles Limited",
       "isin": "INE274K01012",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "BUILDPRO",
       "name": "Shankara Buildpro Limited",
-      "isin": "INE24OJ01011",
+      "isin": "INE24OJ01029",
       "series": "EQ"
     },
     {
@@ -2618,12 +2630,6 @@
       "series": "EQ"
     },
     {
-      "symbol": "CCAVENUE",
-      "name": "AvenuesAI Limited",
-      "isin": "INE483S01020",
-      "series": "EQ"
-    },
-    {
       "symbol": "CCCL",
       "name": "Consolidated Construction Consortium Limited",
       "isin": "INE429I01024",
@@ -2694,12 +2700,6 @@
       "name": "Century Extrusions Limited",
       "isin": "INE281A01026",
       "series": "EQ"
-    },
-    {
-      "symbol": "CENTEXT-RE",
-      "name": "Century Extrusions Limited-RE",
-      "isin": "INE281A20018",
-      "series": "BE"
     },
     {
       "symbol": "CENTRALBK",
@@ -2789,7 +2789,7 @@
       "symbol": "CHEMBONDCH",
       "name": "Chembond Chemicals Limited",
       "isin": "INE0TGX01019",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "CHEMCON",
@@ -3287,7 +3287,7 @@
       "symbol": "DAMODARIND",
       "name": "Damodar Industries Limited",
       "isin": "INE497D01022",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "DANGEE",
@@ -3347,7 +3347,7 @@
       "symbol": "DBSTOCKBRO",
       "name": "DB (International) Stock Brokers Limited",
       "isin": "INE921B01025",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "DCAL",
@@ -4859,7 +4859,7 @@
       "symbol": "GINNIFILA",
       "name": "Ginni Filaments Limited",
       "isin": "INE424C01010",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "GIPCL",
@@ -6641,7 +6641,7 @@
       "symbol": "IVP",
       "name": "IVP Limited",
       "isin": "INE043C01018",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "IWP",
@@ -7211,7 +7211,7 @@
       "symbol": "KAUSHALYA",
       "name": "Kaushalya Infrastructure Development Corporation Limited",
       "isin": "INE234I01028",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "KAVDEFENCE",
@@ -8537,7 +8537,7 @@
       "symbol": "MAZDA",
       "name": "Mazda Limited",
       "isin": "INE885E01042",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "MAZDOCK",
@@ -8960,10 +8960,16 @@
       "series": "EQ"
     },
     {
+      "symbol": "MORARJEE",
+      "name": "Morarjee Textiles Limited",
+      "isin": "INE161G01027",
+      "series": "BZ"
+    },
+    {
       "symbol": "MOREPENLAB",
       "name": "Morepen Laboratories Limited",
       "isin": "INE083A01026",
-      "series": "EQ"
+      "series": "BE"
     },
     {
       "symbol": "MOSCHIP",
@@ -9227,6 +9233,12 @@
       "symbol": "NATCAPSUQ",
       "name": "Natural Capsules Limited",
       "isin": "INE936B01015",
+      "series": "BE"
+    },
+    {
+      "symbol": "NATCO-RE",
+      "name": "Natco Pharma Limited-RE",
+      "isin": "INE987B20018",
       "series": "BE"
     },
     {
@@ -9590,6 +9602,12 @@
       "series": "EQ"
     },
     {
+      "symbol": "NITYAS",
+      "name": "Nityas Gems and Jewellery Limited",
+      "isin": "INE211501023",
+      "series": "BE"
+    },
+    {
       "symbol": "NIVABUPA",
       "name": "Niva Bupa Health Insurance Company Limited",
       "isin": "INE995S01015",
@@ -9755,7 +9773,7 @@
       "symbol": "OCCLLTD",
       "name": "OCCL Limited",
       "isin": "INE0PK601023",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "ODIGMA",
@@ -9881,7 +9899,7 @@
       "symbol": "ONMOBILE",
       "name": "OnMobile Global Limited",
       "isin": "INE809I01019",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "ONWARDTEC",
@@ -11699,7 +11717,7 @@
       "symbol": "SADHNANIQ",
       "name": "Sadhana Nitrochem Limited",
       "isin": "INE888C01040",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "SAFARI",
@@ -12161,7 +12179,7 @@
       "symbol": "SETCO",
       "name": "Setco Automotive Limited",
       "isin": "INE878E01021",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "SETL",
@@ -12839,7 +12857,7 @@
       "symbol": "SONA",
       "name": "Sonaselection India Limited",
       "isin": "INE0LLZ01011",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "SONACOMS",
@@ -13121,7 +13139,7 @@
       "symbol": "STLSTRINF",
       "name": "Steel Strips Infrastructures Limited",
       "isin": "INE205F01016",
-      "series": "EQ"
+      "series": "BE"
     },
     {
       "symbol": "STLTECH",
@@ -13607,7 +13625,7 @@
       "symbol": "TAMBOLIIN",
       "name": "Tamboli Industries Limited",
       "isin": "INE864J01012",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "TANAA",
@@ -13979,7 +13997,7 @@
       "symbol": "TICL",
       "name": "Twamev Construction and Infrastructure Limited",
       "isin": "INE388G01026",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "TIGERLOGS",
@@ -14256,6 +14274,12 @@
       "name": "Triveni Engineering & Industries Limited",
       "isin": "INE256C01024",
       "series": "EQ"
+    },
+    {
+      "symbol": "TRIVENIPT",
+      "name": "Triveni Power Transmission Limited",
+      "isin": "INE2WKE01011",
+      "series": "BE"
     },
     {
       "symbol": "TRU",
@@ -14957,7 +14981,7 @@
       "symbol": "VIPULLTD",
       "name": "Vipul Limited",
       "isin": "INE946H01037",
-      "series": "BE"
+      "series": "EQ"
     },
     {
       "symbol": "VIRAT",
@@ -15078,6 +15102,12 @@
       "name": "VMS TMT Limited",
       "isin": "INE0SJA01013",
       "series": "EQ"
+    },
+    {
+      "symbol": "VNL",
+      "name": "Vishal Nirmiti Limited",
+      "isin": "INE1O5L01025",
+      "series": "BE"
     },
     {
       "symbol": "VOEPL",
