@@ -1,0 +1,1395 @@
+{
+  "date": "2026-10-14",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 4
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 11
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 5
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "9560b1b01f",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order worth ₹533 crore; check details the order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 730.0,
+      "size_estimated": false,
+      "size_basis": "₹730 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/",
+      "title": "Bharat Electronics shares in focus as firm bags order worth ₹533 crore; check details",
+      "published": "Tue, 13 Oct 2026 13:52:07 GMT",
+      "published_utc": "2026-10-13T13:52:07+00:00",
+      "sentence": "bags order worth ₹533 crore; check details the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "faa9e28138",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 20000.0,
+      "size_estimated": false,
+      "size_basis": "₹20,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/kalpataru-projects-international-bags-order-worth-2-031-crore-shares-trade-lower/article-201748/",
+      "title": "Kalpataru Projects International bags order worth ₹2,031 crore; shares trade lower",
+      "published": "Tue, 13 Oct 2026 06:55:52 GMT",
+      "published_utc": "2026-10-13T06:55:52+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/kalpataru-projects-international-bags-order-worth-2-031-crore-shares-trade-lower/article-201748/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4da775640a",
+      "symbol": "RAILTEL",
+      "company": "Railtel Corporation Of India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 48.98,
+      "size_estimated": false,
+      "size_basis": "Rs 48.98 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/railtel-nserailtel-did-it-win-an-odisha-govt-order-worth-rs-4897-cr",
+      "title": "RailTel (NSE:RAILTEL) Bags Rs 48.97 Cr Odisha Govt Order",
+      "published": "Tue, 13 Oct 2026 12:04:00 GMT",
+      "published_utc": "2026-10-13T12:04:00+00:00",
+      "sentence": "received a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/railtel-nserailtel-did-it-win-an-odisha-govt-order-worth-rs-4897-cr"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0657c4e095",
+      "symbol": "ZYDUSLIFE",
+      "company": "Zydus Lifesciences Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/zydus-lifesciences-limited-nsezyduslife-what-does-usfda-review-acceptance-mean-for-its-fyb206-cancer-biosimilar",
+      "title": "Zydus Lifesciences (NSE:ZYDUSLIFE) FYB206 Accepted for USFDA Review",
+      "published": "Tue, 13 Oct 2026 12:59:00 GMT",
+      "published_utc": "2026-10-13T12:59:00+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/healthcare/zydus-lifesciences-limited-nsezyduslife-what-does-usfda-review-acceptance-mean-for-its-fyb206-cancer-biosimilar"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3a5fd8086d",
+      "symbol": "DEN",
+      "company": "Den Networks Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/den-networks-q2-results-fy27-pat-28-crore",
+      "title": "Den Networks Q2 Results FY27: PAT up 21.74% on Rs 237 Cr revenue",
+      "published": "Tue, 13 Oct 2026 14:06:00 GMT",
+      "published_utc": "2026-10-13T14:06:00+00:00",
+      "sentence": "pat up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/den-networks-q2-results-fy27-pat-28-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b7e90d6965",
+      "symbol": "HEROMOTORS",
+      "company": "Hero Motors Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit jumps",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 256.0,
+      "size_estimated": false,
+      "size_basis": "₹256 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/hero-motors-q2-results-net-profit-jumps-117-yoy-to-rs-10-2-crore-revenue-up-24-9/",
+      "title": "Hero Motors Q2 results: Net profit jumps 117% YoY to Rs 10.2 crore, revenue up 24.9%",
+      "published": "Tue, 13 Oct 2026 15:58:33 GMT",
+      "published_utc": "2026-10-13T15:58:33+00:00",
+      "sentence": "net profit jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/finance/stock-market/quarterly-results/hero-motors-q2-results-net-profit-jumps-117-yoy-to-rs-10-2-crore-revenue-up-24-9/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7754871aa6",
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/larsen-and-toubro-grows-profit-14-00-percent-larsen-and-toubro-stock/70314377",
+      "title": "Larsen & Toubro grows profit 14.00 percent: Larsen & Toubro stock gains 1.31 percent - ad-hoc-news.de",
+      "published": "Tue, 13 Oct 2026 11:59:38 GMT",
+      "published_utc": "2026-10-13T11:59:38+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.ad-hoc-news.de/boerse/news/corporate-news/larsen-and-toubro-grows-profit-14-00-percent-larsen-and-toubro-stock/70314377"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "69e848aab5",
+      "symbol": "NEOGEN",
+      "company": "Neogen Chemicals Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 36.96,
+      "size_estimated": false,
+      "size_basis": "$4.2 million (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/fda-issues-warning-letter-neogen-contaminated-hycoat/52248115",
+      "title": "Neogen faces third securities probe over HYCOAT deaths",
+      "published": "Tue, 13 Oct 2026 11:44:15 GMT",
+      "published_utc": "2026-10-13T11:44:15+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/fda-issues-warning-letter-neogen-contaminated-hycoat/52248115"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3b6fc3ad5f",
+      "symbol": "DEN",
+      "company": "Den Networks Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit rises to ₹365m as revenue falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 241.0,
+      "size_estimated": false,
+      "size_basis": "₹2.41 billion (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/den-networks-q2-net-profit-rises-365m-revenue-falls/53438654",
+      "title": "DEN Networks Q2 net profit rises to ₹365M as revenue falls",
+      "published": "Tue, 13 Oct 2026 16:05:33 GMT",
+      "published_utc": "2026-10-13T16:05:33+00:00",
+      "sentence": "net profit rises to ₹365m as revenue falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/den-networks-q2-net-profit-rises-365m-revenue-falls/53438654"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f4f42eb38a",
+      "symbol": "JNPR",
+      "company": "Juniper Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned the remaining 5 mw wind turbine capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 603.0,
+        "unit": "MWh",
+        "text": "603 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/juniper-green-energy-limited-nsejnpr-how-does-its-150-mw-hybrid-project-expand-renewable-capacity",
+      "title": "Juniper Green Energy (NSE:JNPR) Commissions 150 MW Hybrid Project in Gujarat",
+      "published": "Tue, 13 Oct 2026 12:59:00 GMT",
+      "published_utc": "2026-10-13T12:59:00+00:00",
+      "sentence": "commissioned the remaining 5 mw wind turbine capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/energy/juniper-green-energy-limited-nsejnpr-how-does-its-150-mw-hybrid-project-expand-renewable-capacity"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "220d3134f4",
+      "symbol": "SHREECEM",
+      "company": "SHREE CEMENT LIMITED",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 3 mtpa energy-efficient cement grinding facility",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 7.0,
+        "unit": "MTPA",
+        "text": "7 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://manufacturing.economictimes.indiatimes.com/amp/news/industry/shree-cement-commissions-3-mtpa-energy-efficient-cement-grinding-facility-in-uae/134913672",
+      "title": "Shree Cement commissions 3 MTPA energy-efficient cement grinding facility in UAE",
+      "published": "Tue, 13 Oct 2026 09:29:33 GMT",
+      "published_utc": "2026-10-13T09:29:33+00:00",
+      "sentence": "commissions 3 mtpa energy-efficient cement grinding facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://manufacturing.economictimes.indiatimes.com/amp/news/industry/shree-cement-commissions-3-mtpa-energy-efficient-cement-grinding-facility-in-uae/134913672",
+        "https://economictimes.indiatimes.com/industry/indl-goods/svs/cement/shree-cement-commissions-3-mtpa-cement-grinding-facility-in-uae/articleshow/134913716.cms",
+        "https://money.rediff.com/amp/news/market/shree-cement-commissions-3-mtpa-facility-in-uae-boosts-capacity/56127620261013"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "b54ae279bb",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "memorandum of understanding",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-watch-out-for-these-16-stocks-including-adani-enterprises-polycab-icici-life-insurance-aegis-logistics-railtel-dr-lal-path-bel/article71582092.ece",
+      "title": "Buzzing stocks: Watch out for these 16 stocks including Adani Enterprises, Polycab, ICICI Life Insurance, Aegis Logistics, RailTel, Dr Lal Path, BEL",
+      "published": "Wed, 14 Oct 2026 01:46:06 GMT",
+      "published_utc": "2026-10-14T01:46:06+00:00",
+      "sentence": "memorandum of understanding",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-watch-out-for-these-16-stocks-including-adani-enterprises-polycab-icici-life-insurance-aegis-logistics-railtel-dr-lal-path-bel/article71582092.ece",
+        "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-adani-enterprises-hyundai-motor-india-bhel-bel-groww-tata-elxsi-and-railtel/articleshow/134922286.cms",
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bhel-adani-enterprises-bharat-electronics-shares-in-focus-on-wednesday-14-oct-full-list-11791941091905.html",
+        "https://www.business-standard.com/markets/news/stocks-to-watch-hyundai-tata-elxsi-bhel-hdb-fin-adani-enterprises-126101400117_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "a51eeb6ef1",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order worth ₹533 crore; check details the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 730.0,
+      "size_estimated": false,
+      "size_basis": "₹730 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/",
+      "title": "Bharat Electronics shares in focus as firm bags order worth ₹533 crore; check details",
+      "published": "Tue, 13 Oct 2026 13:52:07 GMT",
+      "published_utc": "2026-10-13T13:52:07+00:00",
+      "sentence": "bags order worth ₹533 crore; check details the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fd314b3f05",
+      "symbol": "CSM",
+      "company": "CSM Technologies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/csm-tech-wins-174-000-deal-to-digitise-mozambique-s-beira-trade-corridor-126101301146_1.html",
+      "title": "CSM Tech wins $174,000 deal to digitise Mozambique's Beira trade corridor",
+      "published": "Tue, 13 Oct 2026 14:00:25 GMT",
+      "published_utc": "2026-10-13T14:00:25+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/csm-tech-wins-174-000-deal-to-digitise-mozambique-s-beira-trade-corridor-126101301146_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7415fcc73e",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c67600054e",
+      "symbol": "KEI",
+      "company": "KEI Industries Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "EHV cables and house wire",
+      "theme": "power_cables",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "459900445c",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5595f2472d",
+      "symbol": "POLYCAB",
+      "company": "Polycab India Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "largest listed cables and wires maker",
+      "theme": "power_cables",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "7738416aaf",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "59184ff577",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "sign mou",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "power_cables",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 59850.0,
+      "size_estimated": true,
+      "size_basis": "171 GW × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 171000.0,
+        "unit": "MW",
+        "text": "171 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "published_utc": "2026-10-13T08:19:27+00:00",
+      "sentence": "sign mou",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9cf6442fd6",
+      "symbol": "INDIACEM",
+      "company": "The India Cements Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 3 mtpa facility in uae, boosts capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 634.5,
+        "unit": "MW",
+        "text": "634.5 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/amp/news/market/shree-cement-commissions-3-mtpa-facility-in-uae-boosts-capacity/56127620261013",
+      "title": "Shree Cement Commissions 3 MTPA Facility in UAE, Boosts Capacity",
+      "published": "Tue, 13 Oct 2026 09:23:18 GMT",
+      "published_utc": "2026-10-13T09:23:18+00:00",
+      "sentence": "commissions 3 mtpa facility in uae, boosts capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/shree-cement-commissions-3-mtpa-facility-in-uae-boosts-capacity/56127620261013"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e89a3ce326",
+      "symbol": "ONGC",
+      "company": "Oil & Natural Gas Corporation Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 6400.0,
+        "unit": "MW",
+        "text": "6.4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/renew-secures-100-million-from-dutch-development-bank-fmo-for-projects-126101301102_1.html",
+      "title": "ReNew secures $100 million from Dutch development bank FMO for projects",
+      "published": "Tue, 13 Oct 2026 13:05:37 GMT",
+      "published_utc": "2026-10-13T13:05:37+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/renew-secures-100-million-from-dutch-development-bank-fmo-for-projects-126101301102_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b806ef4604",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order worth ₹533 crore; check details the order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 730.0,
+      "size_estimated": false,
+      "size_basis": "₹730 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/",
+      "title": "Bharat Electronics shares in focus as firm bags order worth ₹533 crore; check details",
+      "published": "Tue, 13 Oct 2026 13:52:07 GMT",
+      "published_utc": "2026-10-13T13:52:07+00:00",
+      "sentence": "bags order worth ₹533 crore; check details the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "12698cca16",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "joint venture",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 7225.0,
+      "size_estimated": false,
+      "size_basis": "₹7,225 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 6400.0,
+        "unit": "MW",
+        "text": "6.4 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/renew-secures-100-million-from-dutch-development-bank-fmo-for-projects-126101301102_1.html",
+      "title": "ReNew secures $100 million from Dutch development bank FMO for projects",
+      "published": "Tue, 13 Oct 2026 13:05:37 GMT",
+      "published_utc": "2026-10-13T13:05:37+00:00",
+      "sentence": "joint venture",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/renew-secures-100-million-from-dutch-development-bank-fmo-for-projects-126101301102_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-watch-out-for-these-16-stocks-including-adani-enterprises-polycab-icici-life-insurance-aegis-logistics-railtel-dr-lal-path-bel/article71582092.ece",
+      "title": "Buzzing stocks: Watch out for these 16 stocks including Adani Enterprises, Polycab, ICICI Life Insurance, Aegis Logistics, RailTel, Dr Lal Path, BEL",
+      "published": "Wed, 14 Oct 2026 01:46:06 GMT",
+      "chars": 12111,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-adani-enterprises-hyundai-motor-india-bhel-bel-groww-tata-elxsi-and-railtel/articleshow/134922286.cms",
+      "title": "Stocks in news: Adani Enterprises, Hyundai Motor India, BHEL, BEL, Groww, Tata Elxsi and RailTel",
+      "published": "Wed, 14 Oct 2026 00:30:00 GMT",
+      "chars": 9021,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bhel-adani-enterprises-bharat-electronics-shares-in-focus-on-wednesday-14-oct-full-list-11791941091905.html",
+      "title": "Top stocks to watch today: BHEL, Adani Enterprises, Bharat Electronics shares in focus on Wednesday, 14 Oct | Full list",
+      "published": "Wed, 14 Oct 2026 01:59:36 GMT",
+      "chars": 4049,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-hero-motors-tata-elxsi-ss-retail-anand-rathi-share-zydus-life-hyundai-motor-bharat-electronics-bank-of-baroda-in-focus-on-14-october-14051423.html",
+      "title": "Stocks to Watch Today: Hero Motors, Tata Elxsi, SS Retail, Anand Rathi Share, Zydus Life, Hyundai Motor,...",
+      "published": "Wed, 14 Oct 2026 01:00:03 GMT",
+      "chars": 9154,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hyundai-tata-elxsi-bhel-hdb-fin-adani-enterprises-126101400117_1.html",
+      "title": "Stocks to watch: Hyundai, Tata Elxsi, BHEL, HDB Fin, Adani Enterprises",
+      "published": "Wed, 14 Oct 2026 02:22:08 GMT",
+      "chars": 5515,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/3-indian-growth-stocks-to-watch-in-october-2026",
+      "title": "3 Indian Growth Stocks To Watch In October 2026",
+      "published": "Tue, 13 Oct 2026 13:38:37 GMT",
+      "chars": 12049,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.energyglobal.com/wind/13102026/kongsberg-maritime-secures-contract-with-integrated-wind-solutions/",
+      "title": "Kongsberg Maritime secures contract with Integrated Wind Solutions",
+      "published": "Tue, 13 Oct 2026 15:37:24 GMT",
+      "chars": 4393,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/bharat-electronics-bel-shares-in-focus-as-firm-bags-order-worth-533-crore-check-details/article-201780/",
+      "title": "Bharat Electronics shares in focus as firm bags order worth ₹533 crore; check details",
+      "published": "Tue, 13 Oct 2026 13:52:07 GMT",
+      "chars": 3401,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://finance.yahoo.com/energy/articles/enerflex-secures-contract-assemble-natural-112451546.html",
+      "title": "Enerflex Secures Contract to Assemble Natural Gas-Fired Power Generation Units for Data Center",
+      "published": "Tue, 13 Oct 2026 11:24:51 GMT",
+      "chars": 545,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://upstox.com/news/market-news/stocks/kalpataru-projects-international-bags-order-worth-2-031-crore-shares-trade-lower/article-201748/",
+      "title": "Kalpataru Projects International bags order worth ₹2,031 crore; shares trade lower",
+      "published": "Tue, 13 Oct 2026 06:55:52 GMT",
+      "chars": 3491,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/railtel-nserailtel-did-it-win-an-odisha-govt-order-worth-rs-4897-cr",
+      "title": "RailTel (NSE:RAILTEL) Bags Rs 48.97 Cr Odisha Govt Order",
+      "published": "Tue, 13 Oct 2026 12:04:00 GMT",
+      "chars": 3365,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/larsen-and-toubro-grows-profit-14-00-percent-larsen-and-toubro-stock/70314377",
+      "title": "Larsen & Toubro grows profit 14.00 percent: Larsen & Toubro stock gains 1.31 percent - ad-hoc-news.de",
+      "published": "Tue, 13 Oct 2026 11:59:38 GMT",
+      "chars": 3364,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/zydus-lifesciences-keytruda-biosimilar-fyb206-accepted-for-usfda-review",
+      "title": "Zydus Lifesciences Achieves First USFDA Review Acceptance For Keytruda Biosimilar FYB206",
+      "published": "Tue, 13 Oct 2026 15:42:20 GMT",
+      "chars": 3644,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.expresspharma.in/amp/zydus-formycons-keytruda-biosimilar-fyb206-accepted-for-usfda-review/",
+      "title": "Zydus, Formycon’s Keytruda biosimilar FYB206 accepted for USFDA review",
+      "published": "Tue, 13 Oct 2026 07:35:30 GMT",
+      "chars": 3395,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/usfda-approves-tevas-once-monthly-schizophrenia-injection-weltruza-181185",
+      "title": "USFDA Approves Teva's Once-Monthly Schizophrenia Injection Weltruza",
+      "published": "Tue, 13 Oct 2026 11:49:25 GMT",
+      "chars": 1811,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/zydus-lifesciences-usfda-inspection-moraiya-plant-yields-5/53449894",
+      "title": "Zydus Lifesciences USFDA inspection at Moraiya yields 5 observations",
+      "published": "Tue, 13 Oct 2026 15:25:03 GMT",
+      "chars": 2212,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://timesofindia.indiatimes.com/city/ahmedabad/usfda-accepts-zydus-backed-keytruda-biosimilar-for-review/articleshow/134919613.cms",
+      "title": "USFDA accepts Zydus-backed Keytruda biosimilar for review",
+      "published": "Tue, 13 Oct 2026 13:40:00 GMT",
+      "chars": 1781,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/healthcare/zydus-lifesciences-limited-nsezyduslife-what-does-usfda-review-acceptance-mean-for-its-fyb206-cancer-biosimilar",
+      "title": "Zydus Lifesciences (NSE:ZYDUSLIFE) FYB206 Accepted for USFDA Review",
+      "published": "Tue, 13 Oct 2026 12:59:00 GMT",
+      "chars": 5550,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/zydus-formycon-hit-major-usfda-milestone-for-first-usd-31-billion-keytruda-biosimilar-181198",
+      "title": "Zydus, Formycon Hit Major USFDA Milestone for First USD 31 Billion Keytruda Biosimilar",
+      "published": "Tue, 13 Oct 2026 13:03:19 GMT",
+      "chars": 6385,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/dcgi-seeks-ipc-explanation-over-unapproved-drugs-in-nfi-2026-181240",
+      "title": "DCGI Seeks IPC Explanation Over Unapproved Drugs in NFI 2026",
+      "published": "Tue, 13 Oct 2026 14:15:26 GMT",
+      "chars": 3114,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/jk-tyre-nsejktyre-what-does-the-gst-show-cause-notice-mean",
+      "title": "JK Tyre GST Notice: Rs 94.86 Cr Demand for FY 2022-23",
+      "published": "Tue, 13 Oct 2026 12:38:00 GMT",
+      "chars": 3859,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/fda-issues-warning-letter-neogen-contaminated-hycoat/52248115",
+      "title": "Neogen faces third securities probe over HYCOAT deaths",
+      "published": "Tue, 13 Oct 2026 11:44:15 GMT",
+      "chars": 7860,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/den-networks-q2-results-fy27-pat-28-crore",
+      "title": "Den Networks Q2 Results FY27: PAT up 21.74% on Rs 237 Cr revenue",
+      "published": "Tue, 13 Oct 2026 14:06:00 GMT",
+      "chars": 9044,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/unitedhealth-group-q3-results-net-profit-beats-estimates-sales-rise/53434142",
+      "title": "UnitedHealth Group Q3 Results: Net profit beats estimates, sales rise",
+      "published": "Tue, 13 Oct 2026 11:10:36 GMT",
+      "chars": 5717,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/den-networks-q2-net-profit-rises-365m-revenue-falls/53438654",
+      "title": "DEN Networks Q2 net profit rises to ₹365M as revenue falls",
+      "published": "Tue, 13 Oct 2026 16:05:33 GMT",
+      "chars": 2948,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://finance.biggo.com/news/JP_4825.T_2026-10-14",
+      "title": "[Weathernews FY2027 Q1 Earnings Call] Gross Margin Improves 8.6pt but Operating Profit Falls 2.2% — Q1 Revenue Hits Record ¥6.34 Billion, ¥220 Million Increase in Advertising Costs Weighs on Profit",
+      "published": "Wed, 14 Oct 2026 01:14:00 GMT",
+      "chars": 10988,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/anand-rathi-share-q2-results-net-profit-jumps-79-yoy-to-rs41-9-crore/",
+      "title": "Anand Rathi Share Q2 results: Net profit jumps 79% YoY to ₹41.9 crore",
+      "published": "Tue, 13 Oct 2026 17:32:35 GMT",
+      "chars": 1112,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/hero-motors-q2-results-net-profit-jumps-117-yoy-to-rs-10-2-crore-revenue-up-24-9/",
+      "title": "Hero Motors Q2 results: Net profit jumps 117% YoY to Rs 10.2 crore, revenue up 24.9%",
+      "published": "Tue, 13 Oct 2026 15:58:33 GMT",
+      "chars": 1619,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/cement-news/jsw-cement-commissions-1-mtpa-grinding-unit-at-nagaur/98722",
+      "title": "JSW Cement Commissions 1 MTPA Grinding Unit at Nagaur",
+      "published": "Tue, 13 Oct 2026 15:12:52 GMT",
+      "chars": 5398,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.kalkine.co.in/article/energy/juniper-green-energy-limited-nsejnpr-how-does-its-150-mw-hybrid-project-expand-renewable-capacity",
+      "title": "Juniper Green Energy (NSE:JNPR) Commissions 150 MW Hybrid Project in Gujarat",
+      "published": "Tue, 13 Oct 2026 12:59:00 GMT",
+      "chars": 6058,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/amp/news/market/shree-cement-commissions-3-mtpa-facility-in-uae-boosts-capacity/56127620261013",
+      "title": "Shree Cement Commissions 3 MTPA Facility in UAE, Boosts Capacity",
+      "published": "Tue, 13 Oct 2026 09:23:18 GMT",
+      "chars": 2036,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://manufacturing.economictimes.indiatimes.com/amp/news/industry/shree-cement-commissions-3-mtpa-energy-efficient-cement-grinding-facility-in-uae/134913672",
+      "title": "Shree Cement commissions 3 MTPA energy-efficient cement grinding facility in UAE",
+      "published": "Tue, 13 Oct 2026 09:29:33 GMT",
+      "chars": 571,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/13/resonia-commissions-two-transmission-projects-in-rajasthan-adding-9-gw-renewable-energy-evacuation-capacity/",
+      "title": "Resonia Commissions Two Transmission Projects in Rajasthan, Adding 9 GW Renewable Energy Evacuation Capacity",
+      "published": "Tue, 13 Oct 2026 08:19:27 GMT",
+      "chars": 7219,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/cement/shree-cement-commissions-3-mtpa-cement-grinding-facility-in-uae/articleshow/134913716.cms",
+      "title": "Shree Cement commissions 3 MTPA cement grinding facility in UAE",
+      "published": "Tue, 13 Oct 2026 09:30:32 GMT",
+      "chars": 2366,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/odisha-finance-department-cautions-against-schemes-without-prior-approval-126101300772_1.html",
+      "title": "Odisha Finance dept cautions against schemes without prior approval",
+      "published": "Tue, 13 Oct 2026 10:15:55 GMT",
+      "chars": 3384,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/renew-secures-100-million-from-dutch-development-bank-fmo-for-projects-126101301102_1.html",
+      "title": "ReNew secures $100 million from Dutch development bank FMO for projects",
+      "published": "Tue, 13 Oct 2026 13:05:37 GMT",
+      "chars": 2328,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/csm-tech-wins-174-000-deal-to-digitise-mozambique-s-beira-trade-corridor-126101301146_1.html",
+      "title": "CSM Tech wins $174,000 deal to digitise Mozambique's Beira trade corridor",
+      "published": "Tue, 13 Oct 2026 14:00:25 GMT",
+      "chars": 5708,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-rejects-mmtc-plea-against-1-950-crore-nsel-settlement-scheme-126101301198_1.html",
+      "title": "SC rejects MMTC plea against ₹1,950 crore NSEL settlement scheme",
+      "published": "Tue, 13 Oct 2026 15:05:56 GMT",
+      "chars": 3708,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/wscs-india-strengthens-its-position-in-the-global-paper-packaging-industry-126101400029_1.html",
+      "title": "WSCS India Strengthens Its Position in the Global Paper Packaging Industry",
+      "published": "Tue, 13 Oct 2026 18:45:03 GMT",
+      "chars": 4488,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/amp/markets/news/hcltech-s-next-test-sustaining-margins-deal-momentum-amid-rich-valuations-126101301119_1.html",
+      "title": "HCLTech's next test: Sustaining margins, deal momentum amid rich valuations",
+      "published": "Tue, 13 Oct 2026 14:27:36 GMT",
+      "chars": 2968,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/nhai-mandates-independent-design-checks-for-bridges-tunnels-from-december-126101300463_1.html",
+      "title": "NHAI mandates independent design checks for bridges, tunnels from December",
+      "published": "Tue, 13 Oct 2026 07:01:11 GMT",
+      "chars": 4960,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/aviation/delhi-hc-rejects-spicejet-s-property-security-plea-over-144-crore-dues-126101301207_1.html",
+      "title": "Delhi HC rejects SpiceJet's property security plea over ₹144 crore dues",
+      "published": "Tue, 13 Oct 2026 15:55:08 GMT",
+      "chars": 4679,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/technical-view-chandan-taparia-bullish-on-hal-shriram-finance-1-more-126101400112_1.html",
+      "title": "Technical view: Chandan Taparia bullish on HAL, Shriram Finance & 1 more",
+      "published": "Wed, 14 Oct 2026 07:59:10 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-14-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101400113_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open as Brent crude extends gains; Asia markets rise",
+      "published": "Wed, 14 Oct 2026 07:52:43 +0530",
+      "chars": 148,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-hyundai-tata-elxsi-bhel-hdb-fin-adani-enterprises-126101400117_1.html",
+      "title": "Stocks to watch: Hyundai, Tata Elxsi, BHEL, HDB Fin, Adani Enterprises",
+      "published": "Wed, 14 Oct 2026 07:52:08 +0530",
+      "chars": 150,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/mirae-asset-oil-volatility-to-rise-ahead-of-midterm-brent-may-test-120-126101300514_1.html",
+      "title": "Oil volatility to rise ahead of midterm; Brent may test $120: Analyst",
+      "published": "Wed, 14 Oct 2026 07:29:40 +0530",
+      "chars": 177,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/fpis-keep-ipo-faith-amid-stock-selloff-for-3rd-year-running-will-trend-last-126101400110_1.html",
+      "title": "FPIs keep IPO faith amid stock selloff for 3rd yr running; will trend last?",
+      "published": "Wed, 14 Oct 2026 07:26:59 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-proposes-tighter-ipo-proceeds-monitoring-fines-for-defaulting-firms-126101301204_1.html",
+      "title": "Sebi proposes tighter IPO proceeds monitoring, fines for defaulting firms",
+      "published": "Tue, 13 Oct 2026 21:11:40 +0530",
+      "chars": 175,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/it-stocks-post-best-day-in-17-months-markets-log-biggest-gain-in-4-months-126101301151_1.html",
+      "title": "IT stocks lead markets to biggest rally in four months on HCLTech boost",
+      "published": "Tue, 13 Oct 2026 19:37:20 +0530",
+      "chars": 113,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/sebi-extends-relaxation-to-revise-fresh-issue-size-till-march-2027-126101300928_1.html",
+      "title": "Sebi extends relaxation to revise fresh issue size till March 2027",
+      "published": "Tue, 13 Oct 2026 17:12:41 +0530",
+      "chars": 186,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-14-crude-oil-gains-to-107-as-houthis-attack-saudi-aramco-building-in-new-attacks-what-are-experts-saying/articleshow/134930013.cms",
+      "title": "Oil Price Today (October 14): Crude oil gains to $107 as Houthis attack Saudi Aramco building in new attacks. What are experts saying?",
+      "published": "Wed, 14 Oct 2026 07:34:58 +0530",
+      "chars": 205,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-flat-as-markets-await-us-cpi-data/articleshow/134929941.cms",
+      "title": "Gold prices flat as markets await US CPI data",
+      "published": "Wed, 14 Oct 2026 07:30:13 +0530",
+      "chars": 476,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-languishes-as-focus-turns-to-cpi-fed-speakers/articleshow/134929930.cms",
+      "title": "Dollar languishes as focus turns to CPI, Fed speakers",
+      "published": "Wed, 14 Oct 2026 07:27:04 +0530",
+      "chars": 410,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/icici-life-q2-net-profit-rises-25-on-better-product-mix/articleshow/134929830.cms",
+      "title": "ICICI Life Q2 net profit rises 25% on better product mix",
+      "published": "Wed, 14 Oct 2026 07:25:55 +0530",
+      "chars": 408,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-prices-climb-as-traders-weigh-saudi-supply-risk-russian-diesel-flow/articleshow/134929867.cms",
+      "title": "Oil prices climb as traders weigh Saudi supply risk, Russian diesel flow",
+      "published": "Wed, 14 Oct 2026 07:24:18 +0530",
+      "chars": 476,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 129.6
+}
