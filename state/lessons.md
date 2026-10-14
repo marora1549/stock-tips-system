@@ -129,3 +129,6 @@ Events: HEROMOTOCO: STOP-LOSS @ 5140.67 → closed, P&L ₹-1171.65 (-4.36%)
 
 ### 2026-10-13 [analyst]
 2026-10-13 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +1.5% (faded from +4.7%, T1 unhit, stop 1860.75 ~2.6% below), PETRONET +1.7%, KOTAKBANK +5.0%, all hold-capable; equity 97,623 (-2.4%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled, none at 60% T1. Tuesday: no new source.
+
+### 2026-10-14 [analyst]
+2026-10-14 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +3.0% (T1 unhit, stop 1860.75), PETRONET +2.8%, KOTAKBANK +4.8%, all hold-capable; equity 98,393 (-1.6%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled (max n_resolved=2), none at 60% T1. Wednesday: no new source.
