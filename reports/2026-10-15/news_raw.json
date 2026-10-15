@@ -1,0 +1,1631 @@
+{
+  "date": "2026-10-15",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 7
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 5
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_regulatory_action": {
+      "docs": 8,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 3,
+      "events": 5
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 7
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 7,
+      "events": 6
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "631116699a",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ae47be093b",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c2a07c29df",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e592c06a37",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "50cdd724c6",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9d739cd55c",
+      "symbol": "GRSE",
+      "company": "Garden Reach Shipbuilders & Engineers Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures contract",
+      "also_matched": [],
+      "route": "theme",
+      "directness": 0.9,
+      "why_this_name": "Garden Reach — warships",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "published_utc": "2026-10-14T09:16:33+00:00",
+      "sentence": "secures contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c271b59a25",
+      "symbol": "AFCONS",
+      "company": "Afcons Infrastructure Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1632.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,632 cr",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://psuwatch.com/newsupdates/with-rs-1632-cr-bid-afcons-infra-lowest-bidder-for-construction-of-part-of-lucknow-metro",
+      "title": "With Rs 1,632 cr bid, Afcons Infra lowest bidder for construction of part of Lucknow Metro",
+      "published": "Wed, 14 Oct 2026 16:12:59 GMT",
+      "published_utc": "2026-10-14T16:12:59+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://psuwatch.com/newsupdates/with-rs-1632-cr-bid-afcons-infra-lowest-bidder-for-construction-of-part-of-lucknow-metro"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2188e78e13",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "order_win",
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 200.0,
+        "unit": "MWh",
+        "text": "200 MWh"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-eyes-on-these-14-including-lic-reliance-idbi-bank-nlc-india-dr-reddys-lab-morepen-lab-aeroflex/article71586480.ece",
+      "title": "Buzzing stocks: Eyes on these 14 including LIC, Reliance, IDBI Bank, NLC India, Dr Reddy’s Lab, Morepen Lab, Aeroflex",
+      "published": "Thu, 15 Oct 2026 02:01:57 GMT",
+      "published_utc": "2026-10-15T02:01:57+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-eyes-on-these-14-including-lic-reliance-idbi-bank-nlc-india-dr-reddys-lab-morepen-lab-aeroflex/article71586480.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f33054339f",
+      "symbol": "MOREPENLAB",
+      "company": "Morepen Laboratories Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hp-high-court-quashes-117-94-crore-gst-notice-against-morepen-labs/53530189",
+      "title": "HP High Court quashes ₹117.94 crore GST notice against Morepen Labs",
+      "published": "Wed, 14 Oct 2026 13:35:08 GMT",
+      "published_utc": "2026-10-14T13:35:08+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hp-high-court-quashes-117-94-crore-gst-notice-against-morepen-labs/53530189"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a4bd658415",
+      "symbol": "UNIECOM",
+      "company": "Unicommerce Esolutions Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 3.3,
+      "size_estimated": false,
+      "size_basis": "33 million",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ecom-order-volumes-rise-31-in-first-week-of-festive-sales-unicommerce-126101401136_1.html",
+      "title": "Ecom order volumes rise 31% in first week of festival sales: Unicommerce",
+      "published": "Wed, 14 Oct 2026 18:29:40 GMT",
+      "published_utc": "2026-10-14T18:29:40+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/ecom-order-volumes-rise-31-in-first-week-of-festive-sales-unicommerce-126101401136_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4bdc582aa9",
+      "symbol": "HATHWAY",
+      "company": "Hathway Cable & Datacom Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/hathway-cable-q2-results-net-profit-falls-44-ebitda-margin-shrinks-20012046.htm",
+      "title": "Hathway Cable Q2 results: Net profit falls 44%, EBITDA margin shrinks",
+      "published": "Wed, 14 Oct 2026 15:33:15 GMT",
+      "published_utc": "2026-10-14T15:33:15+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/hathway-cable-q2-results-net-profit-falls-44-ebitda-margin-shrinks-20012046.htm",
+        "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "b9eae4b7aa",
+      "symbol": "CANBK",
+      "company": "Canara Bank",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ecom-order-volumes-rise-31-in-first-week-of-festive-sales-unicommerce-126101401136_1.html",
+      "title": "Ecom order volumes rise 31% in first week of festival sales: Unicommerce",
+      "published": "Wed, 14 Oct 2026 18:29:40 GMT",
+      "published_utc": "2026-10-14T18:29:40+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/ecom-order-volumes-rise-31-in-first-week-of-festive-sales-unicommerce-126101401136_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "78617123b4",
+      "symbol": "UNITEDTEA",
+      "company": "The United Nilgiri Tea Estates Company Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/announcements/dr-reddys-laboratories-nsedrreddy-what-did-the-usfda-find-at-its-visakhapatnam-plant",
+      "title": "Dr. Reddy's DRREDDY USFDA Form 483 Visakhapatnam FTO-9",
+      "published": "Wed, 14 Oct 2026 14:46:00 GMT",
+      "published_utc": "2026-10-14T14:46:00+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [
+        "corp_regulatory_action"
+      ],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/dr-reddys-laboratories-nsedrreddy-what-did-the-usfda-find-at-its-visakhapatnam-plant"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "9cdc3e8135",
+      "symbol": "HARIOMPIPE",
+      "company": "Hariom Pipe Industries Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned two 5 mw solar plants total group solar capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 15.0,
+        "unit": "MW",
+        "text": "15 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+      "title": "Hariom Pipe subsidiary commissions 10 MW solar plants in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:50:10 GMT",
+      "published_utc": "2026-10-14T14:50:10+00:00",
+      "sentence": "commissioned two 5 mw solar plants total group solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+        "https://www.businessupturn.com/business/hariom-pipe-industries-commissions-solar-plants-with-10-mw-capacity-in-maharashtra/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "13ef2e5f44",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion includes greenfield unit",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 210.1,
+        "unit": "MTPA",
+        "text": "210.1 mtpa"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Thu, 15 Oct 2026 01:28:36 GMT",
+      "published_utc": "2026-10-15T01:28:36+00:00",
+      "sentence": "expansion includes greenfield unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5c90aae3b3",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a limited notice to proceed for a 1,600 mw ultra-supercritical thermal power project",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 13600.0,
+      "size_estimated": true,
+      "size_basis": "1,600 MW × ₹8.5cr/MW (supercritical thermal, EPC)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/nifty-50/larsen-toubro-nse-lt-sets-q2-fy27-results-date-order-inflow-execution-and-segments-in-focus",
+      "title": "L&T Q2 FY27 Results Date: What to Track This Quarter",
+      "published": "Wed, 14 Oct 2026 11:26:00 GMT",
+      "published_utc": "2026-10-14T11:26:00+00:00",
+      "sentence": "secured a limited notice to proceed for a 1,600 mw ultra-supercritical thermal power project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/nifty-50/larsen-toubro-nse-lt-sets-q2-fy27-results-date-order-inflow-execution-and-segments-in-focus"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4f03bb009a",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins include a greenfield gas insulated substation (gis) epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2429.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,429 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore",
+      "title": "Transrail Lighting TRANSRAILL Rs 408 Crore New Orders Oct 2026",
+      "published": "Wed, 14 Oct 2026 07:15:00 GMT",
+      "published_utc": "2026-10-14T07:15:00+00:00",
+      "sentence": "wins include a greenfield gas insulated substation (gis) epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0eaf3c0d0a",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins include a greenfield gas insulated substation (gis) epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2429.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,429 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore",
+      "title": "Transrail Lighting TRANSRAILL Rs 408 Crore New Orders Oct 2026",
+      "published": "Wed, 14 Oct 2026 07:15:00 GMT",
+      "published_utc": "2026-10-14T07:15:00+00:00",
+      "sentence": "wins include a greenfield gas insulated substation (gis) epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "39ee2faa3d",
+      "symbol": "HYUNDAI",
+      "company": "Hyundai Motor India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions new manufacturing plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://thetaxcorp.in/article/hyundai-motor-india-opens-advanced-talegaon-plant-in-pune-capacity-investment",
+      "title": "Hyundai Motor India Opens Advanced Talegaon Plant in Pune: Capacity, Investment, and Export Plans Explained",
+      "published": "Wed, 14 Oct 2026 18:42:27 GMT",
+      "published_utc": "2026-10-14T18:42:27+00:00",
+      "sentence": "commissions new manufacturing plant",
+      "corroborating_sources": [],
+      "urls": [
+        "https://thetaxcorp.in/article/hyundai-motor-india-opens-advanced-talegaon-plant-in-pune-capacity-investment"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ddebb76009",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags largest-ever order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 132000.0,
+      "size_estimated": false,
+      "size_basis": "$15 bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/volvo-buses-india-bags-largest-ever-order-for-200-buses-from-msrtc-126101400566_1.html",
+      "title": "Volvo Buses India bags largest-ever order for 200 buses from MSRTC",
+      "published": "Wed, 14 Oct 2026 08:48:20 GMT",
+      "published_utc": "2026-10-14T08:48:20+00:00",
+      "sentence": "bags largest-ever order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/volvo-buses-india-bags-largest-ever-order-for-200-buses-from-msrtc-126101400566_1.html",
+        "https://www.business-standard.com/companies/news/reliance-consumer-products-rolls-out-20-flavoured-milk-in-tamil-nadu-126101400845_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "d1ea73d7cc",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags largest-ever order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 132000.0,
+      "size_estimated": false,
+      "size_basis": "$15 bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/volvo-buses-india-bags-largest-ever-order-for-200-buses-from-msrtc-126101400566_1.html",
+      "title": "Volvo Buses India bags largest-ever order for 200 buses from MSRTC",
+      "published": "Wed, 14 Oct 2026 08:48:20 GMT",
+      "published_utc": "2026-10-14T08:48:20+00:00",
+      "sentence": "bags largest-ever order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/volvo-buses-india-bags-largest-ever-order-for-200-buses-from-msrtc-126101400566_1.html",
+        "https://www.business-standard.com/companies/news/reliance-consumer-products-rolls-out-20-flavoured-milk-in-tamil-nadu-126101400845_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "3c564e9521",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins include a greenfield gas insulated substation (gis) epc project",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2429.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,429 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore",
+      "title": "Transrail Lighting TRANSRAILL Rs 408 Crore New Orders Oct 2026",
+      "published": "Wed, 14 Oct 2026 07:15:00 GMT",
+      "published_utc": "2026-10-14T07:15:00+00:00",
+      "sentence": "wins include a greenfield gas insulated substation (gis) epc project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "db4bb4b395",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a limited notice to proceed for a 1,600 mw ultra-supercritical thermal power project",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 13600.0,
+      "size_estimated": true,
+      "size_basis": "1,600 MW × ₹8.5cr/MW (supercritical thermal, EPC)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1600.0,
+        "unit": "MW",
+        "text": "1,600 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/nifty-50/larsen-toubro-nse-lt-sets-q2-fy27-results-date-order-inflow-execution-and-segments-in-focus",
+      "title": "L&T Q2 FY27 Results Date: What to Track This Quarter",
+      "published": "Wed, 14 Oct 2026 11:26:00 GMT",
+      "published_utc": "2026-10-14T11:26:00+00:00",
+      "sentence": "secured a limited notice to proceed for a 1,600 mw ultra-supercritical thermal power project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/nifty-50/larsen-toubro-nse-lt-sets-q2-fy27-results-date-order-inflow-execution-and-segments-in-focus"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "620e8c030c",
+      "symbol": "KEI",
+      "company": "KEI Industries Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "EHV cables and house wire",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 598.6,
+      "size_estimated": false,
+      "size_basis": "Rs 598.6 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014",
+      "title": "Hathway Q2 Profit Falls 44% to Rs 10.16 Cr; Revenue Up 5.7%",
+      "published": "Wed, 14 Oct 2026 15:39:56 GMT",
+      "published_utc": "2026-10-14T15:39:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "deadb6a2cd",
+      "symbol": "NEULANDLAB",
+      "company": "Neuland Laboratories Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [
+        "regulatory_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/announcements/neuland-laboratories-nseneulandlab-what-does-the-us-fdas-closed-eir-mean-for-unit-3",
+      "title": "Neuland Laboratories (NSE:NEULANDLAB): What Does the US FDA's Closed EIR Mean for Unit 3?",
+      "published": "Wed, 14 Oct 2026 16:13:00 GMT",
+      "published_utc": "2026-10-14T16:13:00+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/neuland-laboratories-nseneulandlab-what-does-the-us-fdas-closed-eir-mean-for-unit-3"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2efa2003ef",
+      "symbol": "POLYCAB",
+      "company": "Polycab India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed cables and wires maker",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 598.6,
+      "size_estimated": false,
+      "size_basis": "Rs 598.6 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014",
+      "title": "Hathway Q2 Profit Falls 44% to Rs 10.16 Cr; Revenue Up 5.7%",
+      "published": "Wed, 14 Oct 2026 15:39:56 GMT",
+      "published_utc": "2026-10-14T15:39:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "973a5e0d93",
+      "symbol": "UNITEDTEA",
+      "company": "The United Nilgiri Tea Estates Company Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "establishment inspection report",
+      "also_matched": [
+        "regulatory_action"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/announcements/neuland-laboratories-nseneulandlab-what-does-the-us-fdas-closed-eir-mean-for-unit-3",
+      "title": "Neuland Laboratories (NSE:NEULANDLAB): What Does the US FDA's Closed EIR Mean for Unit 3?",
+      "published": "Wed, 14 Oct 2026 16:13:00 GMT",
+      "published_utc": "2026-10-14T16:13:00+00:00",
+      "sentence": "establishment inspection report",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/announcements/neuland-laboratories-nseneulandlab-what-does-the-us-fdas-closed-eir-mean-for-unit-3"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "984a14120d",
+      "symbol": "APARINDS",
+      "company": "Apar Industries Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "conductors, speciality oils, cables",
+      "theme": "power_cables",
+      "themes_matched": [
+        "power_cables"
+      ],
+      "size_inr_cr": 598.6,
+      "size_estimated": false,
+      "size_basis": "Rs 598.6 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014",
+      "title": "Hathway Q2 Profit Falls 44% to Rs 10.16 Cr; Revenue Up 5.7%",
+      "published": "Wed, 14 Oct 2026 15:39:56 GMT",
+      "published_utc": "2026-10-14T15:39:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b8a017ae7b",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned two 5 mw solar plants total group solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 15.0,
+        "unit": "MW",
+        "text": "15 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+      "title": "Hariom Pipe subsidiary commissions 10 MW solar plants in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:50:10 GMT",
+      "published_utc": "2026-10-14T14:50:10+00:00",
+      "sentence": "commissioned two 5 mw solar plants total group solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b7ca4916ca",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned two 5 mw solar plants total group solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 15.0,
+        "unit": "MW",
+        "text": "15 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+      "title": "Hariom Pipe subsidiary commissions 10 MW solar plants in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:50:10 GMT",
+      "published_utc": "2026-10-14T14:50:10+00:00",
+      "sentence": "commissioned two 5 mw solar plants total group solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "57a6e8cccc",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned two 5 mw solar plants total group solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 15.0,
+        "unit": "MW",
+        "text": "15 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+      "title": "Hariom Pipe subsidiary commissions 10 MW solar plants in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:50:10 GMT",
+      "published_utc": "2026-10-14T14:50:10+00:00",
+      "sentence": "commissioned two 5 mw solar plants total group solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-eyes-on-these-14-including-lic-reliance-idbi-bank-nlc-india-dr-reddys-lab-morepen-lab-aeroflex/article71586480.ece",
+      "title": "Buzzing stocks: Eyes on these 14 including LIC, Reliance, IDBI Bank, NLC India, Dr Reddy’s Lab, Morepen Lab, Aeroflex",
+      "published": "Thu, 15 Oct 2026 02:01:57 GMT",
+      "chars": 11677,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-idbi-bank-dr-reddys-labs-ril-enviro-infra-om-power-transmission-bajaj-consumer-hdb-financial-icici-lombard-in-focus-on-15-october-14052418.html",
+      "title": "Stocks to Watch Today: IDBI Bank, Dr Reddys Labs, RIL, Enviro Infra, Om Power Transmission, Bajaj...",
+      "published": "Thu, 15 Oct 2026 00:55:19 GMT",
+      "chars": 11499,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-reliance-industries-jio-financial-tata-tech-hdb-financial-and-wipro/articleshow/134954445.cms",
+      "title": "Stocks in news: Reliance Industries, Jio Financial, Tata Tech, HDB Financial and Wipro",
+      "published": "Thu, 15 Oct 2026 00:30:00 GMT",
+      "chars": 10521,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-october-15-ril-idbi-activity-7516129823946076160-qJbS",
+      "title": "Stocks To Watch For October 15: RIL, IDBI Bank, CSB Bank, Tata Tech, HDB Financial and more - CNBC TV18",
+      "published": "Wed, 14 Oct 2026 13:36:32 GMT",
+      "chars": 464,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-reliance-industries-idbi-bank-wipro-shares-in-focus-on-thursday-15-oct-full-list/amp-11792027834869.html",
+      "title": "Top stocks to watch today: Reliance Industries, IDBI Bank, Wipro shares in focus on Thursday, 15 Oct | Full list",
+      "published": "Thu, 15 Oct 2026 02:01:09 GMT",
+      "chars": 3835,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-avgo/broadcom/news/top-3-undervalued-stocks-to-watch-in-october-2026-2",
+      "title": "Top 3 Undervalued Stocks To Watch In October 2026",
+      "published": "Thu, 15 Oct 2026 00:36:17 GMT",
+      "chars": 12482,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/chaleit-holdings-2-more-british-211258282.html",
+      "title": "Chaleit Holdings And 2 More British Quality Stocks To Watch",
+      "published": "Wed, 14 Oct 2026 21:12:58 GMT",
+      "chars": 4986,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/om-power-transmission-secures-letter-of-award-for-102-crore-contract",
+      "title": "Om Power Transmission Secures Letter Of Award For ₹102 Crore Contract",
+      "published": "Thu, 15 Oct 2026 00:51:29 GMT",
+      "chars": 2897,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://psuwatch.com/newsupdates/with-rs-1632-cr-bid-afcons-infra-lowest-bidder-for-construction-of-part-of-lucknow-metro",
+      "title": "With Rs 1,632 cr bid, Afcons Infra lowest bidder for construction of part of Lucknow Metro",
+      "published": "Wed, 14 Oct 2026 16:12:59 GMT",
+      "chars": 1992,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://defence.in/threads/aerodrone-robotics-secures-contract-for-225-fpv-drones-after-rigorous-high-altitude-indian-army-trials.18881/",
+      "title": "AeroDrone Robotics Secures Contract for 225 FPV Drones After Rigorous High-Altitude Indian Army Trials",
+      "published": "Wed, 14 Oct 2026 09:16:33 GMT",
+      "chars": 2897,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://iamabiker.com/avin/2026/volvo-buses-india-bags-order-for-200-units-of-volvo-9600-coaches-from-msrtc/",
+      "title": "Volvo Buses India Bags Order for 200 Units of Volvo 9600 Coaches from MSRTC",
+      "published": "Wed, 14 Oct 2026 08:09:45 GMT",
+      "chars": 2284,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://belgashare.be/newsrooms/70/press-releases/37630/deme-secures-contract-to-install-wind-turbines-for-dutch-zeevonk-wind-farm/",
+      "title": "DEME secures contract to install wind turbines for Dutch Zeevonk wind farm",
+      "published": "Wed, 14 Oct 2026 18:41:27 GMT",
+      "chars": 1497,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/nifty-50/larsen-toubro-nse-lt-sets-q2-fy27-results-date-order-inflow-execution-and-segments-in-focus",
+      "title": "L&T Q2 FY27 Results Date: What to Track This Quarter",
+      "published": "Wed, 14 Oct 2026 11:26:00 GMT",
+      "chars": 7133,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/announcements/transrail-lighting-nsetransraill-what-are-the-new-orders-worth-rs-408-crore",
+      "title": "Transrail Lighting TRANSRAILL Rs 408 Crore New Orders Oct 2026",
+      "published": "Wed, 14 Oct 2026 07:15:00 GMT",
+      "chars": 4339,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/dr-reddy-s-laboratories-reports-usfda-pre-approval-inspection-at-fto-9-facility",
+      "title": "Dr. Reddy's Laboratories Reports USFDA Pre-Approval Inspection At FTO-9 Facility",
+      "published": "Thu, 15 Oct 2026 00:57:31 GMT",
+      "chars": 3021,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.stocktitan.net/sec-filings/RDY/6-k-dr-reddys-laboratories-ltd-current-report-foreign-issuer-5be80ac3b2d1.html",
+      "title": "An FDA pre-approval inspection ends with observations at Dr. Reddy’s (RDY) Visakhapatnam plant.",
+      "published": "Wed, 14 Oct 2026 16:43:43 GMT",
+      "chars": 7054,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/announcements/dr-reddys-laboratories-nsedrreddy-what-did-the-usfda-find-at-its-visakhapatnam-plant",
+      "title": "Dr. Reddy's DRREDDY USFDA Form 483 Visakhapatnam FTO-9",
+      "published": "Wed, 14 Oct 2026 14:46:00 GMT",
+      "chars": 4014,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/neuland-laboratories-signals-us-fda-inspection-closure-for-unit-3-manufacturing-facility",
+      "title": "Neuland Laboratories Signals US FDA Inspection Closure For Unit 3 Manufacturing Facility",
+      "published": "Wed, 14 Oct 2026 20:23:38 GMT",
+      "chars": 3067,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.kalkine.co.in/article/announcements/neuland-laboratories-nseneulandlab-what-does-the-us-fdas-closed-eir-mean-for-unit-3",
+      "title": "Neuland Laboratories (NSE:NEULANDLAB): What Does the US FDA's Closed EIR Mean for Unit 3?",
+      "published": "Wed, 14 Oct 2026 16:13:00 GMT",
+      "chars": 3900,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.bwhealthcareworld.com/article/zydus-formycon-keytruda-biosimilar-fyb206-accepted-for-usfda-review-628396",
+      "title": "Zydus-Formycon Keytruda Biosimilar FYB206 Accepted For USFDA Review",
+      "published": "Wed, 14 Oct 2026 07:02:03 GMT",
+      "chars": 2379,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.sahi.com/news/dr-reddy-s-laboratories-reports-usfda-pre-approval-inspection-at-fto-9-facility",
+      "title": "Dr. Reddy's Laboratories Reports USFDA Pre-Approval Inspection At FTO-9 Facility",
+      "published": "Thu, 15 Oct 2026 00:57:31 GMT",
+      "chars": 3021,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/hp-high-court-quashes-117-94-crore-gst-notice-against-morepen-labs/53530189",
+      "title": "HP High Court quashes ₹117.94 crore GST notice against Morepen Labs",
+      "published": "Wed, 14 Oct 2026 13:35:08 GMT",
+      "chars": 3863,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/morepen-laboratories-nsemorepenlab-did-hc-quash-the-rs-11794-cr-gst-notice",
+      "title": "Morepen Laboratories GST Notice Quashed by Himachal Pradesh HC",
+      "published": "Wed, 14 Oct 2026 12:51:00 GMT",
+      "chars": 3890,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.mpo-mag.com/breaking-news/six-olympus-facilities-draw-fda-scrutiny-in-warning-letter/",
+      "title": "Six Olympus Facilities Draw FDA Scrutiny in Warning Letter",
+      "published": "Wed, 14 Oct 2026 16:16:14 GMT",
+      "chars": 5789,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://efoodalert.com/2026/10/14/viva-raws-contract-manufacturer-failed-two-fda-inspections/",
+      "title": "Viva Raw’s contract manufacturer failed two FDA inspections",
+      "published": "Wed, 14 Oct 2026 22:28:04 GMT",
+      "chars": 7017,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/dr-reddys-laboratories-nsedrreddy-what-did-the-usfda-find-at-its-visakhapatnam-plant",
+      "title": "Dr. Reddy's DRREDDY USFDA Form 483 Visakhapatnam FTO-9",
+      "published": "Wed, 14 Oct 2026 14:46:00 GMT",
+      "chars": 4014,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.stocktitan.net/sec-filings/RDY/6-k-dr-reddys-laboratories-ltd-current-report-foreign-issuer-5be80ac3b2d1.html",
+      "title": "An FDA pre-approval inspection ends with observations at Dr. Reddy’s (RDY) Visakhapatnam plant.",
+      "published": "Wed, 14 Oct 2026 16:43:43 GMT",
+      "chars": 7054,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.consumerfinancialserviceslawmonitor.com/2026/10/when-the-price-you-see-isnt-the-price-you-pay-the-ftcs-recent-auto-settlement/",
+      "title": "When “The Price You See” Isn’t the Price You Pay: The FTC’s Recent Auto Settlement",
+      "published": "Wed, 14 Oct 2026 20:13:29 GMT",
+      "chars": 302,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/hathway-cable-q2-results-net-profit-falls-44-ebitda-margin-shrinks-20012046.htm",
+      "title": "Hathway Cable Q2 results: Net profit falls 44%, EBITDA margin shrinks",
+      "published": "Wed, 14 Oct 2026 15:33:15 GMT",
+      "chars": 3299,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/ceat-q2-results-fy27-pat-112-crore",
+      "title": "CEAT Q2 Results FY27: Revenue Up, PAT Down",
+      "published": "Wed, 14 Oct 2026 13:03:00 GMT",
+      "chars": 8763,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://money.rediff.com/amp/news/market/hathway-q2-profit-falls-44-to-rs-10-16-cr-revenue-up-5-7/56238920261014",
+      "title": "Hathway Q2 Profit Falls 44% to Rs 10.16 Cr; Revenue Up 5.7%",
+      "published": "Wed, 14 Oct 2026 15:39:56 GMT",
+      "chars": 1480,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Thu, 15 Oct 2026 01:28:36 GMT",
+      "chars": 3253,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/cement-news/jsw-cement-commissions-1-mtpa-unit-in-rajasthan/98825",
+      "title": "JSW Cement Commissions 1 MTPA Unit in Rajasthan",
+      "published": "Wed, 14 Oct 2026 18:07:08 GMT",
+      "chars": 5657,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/hariom-pipe-subsidiary-commissions-10-mw-solar-plants-maharashtra/53534792",
+      "title": "Hariom Pipe subsidiary commissions 10 MW solar plants in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:50:10 GMT",
+      "chars": 2805,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://thetaxcorp.in/article/hyundai-motor-india-opens-advanced-talegaon-plant-in-pune-capacity-investment",
+      "title": "Hyundai Motor India Opens Advanced Talegaon Plant in Pune: Capacity, Investment, and Export Plans Explained",
+      "published": "Wed, 14 Oct 2026 18:42:27 GMT",
+      "chars": 2638,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.businessupturn.com/business/hariom-pipe-industries-commissions-solar-plants-with-10-mw-capacity-in-maharashtra/",
+      "title": "Hariom Pipe Industries commissions solar plants with 10 MW capacity in Maharashtra",
+      "published": "Wed, 14 Oct 2026 14:48:35 GMT",
+      "chars": 2186,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ecom-order-volumes-rise-31-in-first-week-of-festive-sales-unicommerce-126101401136_1.html",
+      "title": "Ecom order volumes rise 31% in first week of festival sales: Unicommerce",
+      "published": "Wed, 14 Oct 2026 18:29:40 GMT",
+      "chars": 3163,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/sports/business/netflix-secures-exclusive-rights-to-broadcast-2030-fifa-world-cup-in-spain-126101400561_1.html",
+      "title": "Netflix secures exclusive rights to broadcast 2030 FIFA World Cup in Spain",
+      "published": "Wed, 14 Oct 2026 08:00:24 GMT",
+      "chars": 5862,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/himadri-speciality-chemical-ltd-wins-golden-peacock-award-for-sustainability-2026-126101500002_1.html",
+      "title": "Himadri Speciality Chemical Ltd Wins Golden Peacock Award for Sustainability 2026",
+      "published": "Wed, 14 Oct 2026 18:35:02 GMT",
+      "chars": 4362,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/volvo-buses-india-bags-largest-ever-order-for-200-buses-from-msrtc-126101400566_1.html",
+      "title": "Volvo Buses India bags largest-ever order for 200 buses from MSRTC",
+      "published": "Wed, 14 Oct 2026 08:48:20 GMT",
+      "chars": 2206,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/eutelsat-oneweb-starlink-india-approval-sunil-mittal-elon-musk-126101400522_1.html",
+      "title": "We are ahead of Starlink in approval queue, says Sunil Bharti Mittal",
+      "published": "Wed, 14 Oct 2026 15:14:28 GMT",
+      "chars": 9799,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/sebi-confirms-rajesh-exports-curbs-flags-incomplete-information-in-probe-126101401226_1.html",
+      "title": "Sebi confirms Rajesh Exports curbs, flags incomplete information in probe",
+      "published": "Wed, 14 Oct 2026 13:52:36 GMT",
+      "chars": 4253,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/reliance-consumer-products-rolls-out-20-flavoured-milk-in-tamil-nadu-126101400845_1.html",
+      "title": "Reliance Consumer Products rolls out ₹20 flavoured milk in Tamil Nadu",
+      "published": "Wed, 14 Oct 2026 10:53:44 GMT",
+      "chars": 2388,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/inflation-puts-fmcg-firms-margins-at-risk-analysts-back-marico-nestle-126101500088_1.html",
+      "title": "Inflation puts FMCG firms' margins at risk; analysts back Marico, Nestle",
+      "published": "Thu, 15 Oct 2026 08:00:56 +0530",
+      "chars": 194,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-15-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101500089_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Kospi tumbles 7% as chip shares decline",
+      "published": "Thu, 15 Oct 2026 07:56:51 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-short-covering-rally-may-take-nifty-to-23-000-23-150-says-analyst-126101500086_1.html",
+      "title": "Short-covering rally may take Nifty to 23,000-23,150, says analyst",
+      "published": "Thu, 15 Oct 2026 07:48:15 +0530",
+      "chars": 185,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-idbi-bank-reliance-wipro-techm-nestle-jio-financial-126101500090_1.html",
+      "title": "Stocks to watch: IDBI Bank, Reliance, Wipro, TechM, Nestle, Jio Financial",
+      "published": "Thu, 15 Oct 2026 07:46:50 +0530",
+      "chars": 125,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/idbi-bank-stake-sale-price-a-surprise-no-rub-off-on-psu-stocks-analysts-126101401323_1.html",
+      "title": "IDBI Bank stake sale price a surprise; no rub-off on PSU stocks: Analysts",
+      "published": "Thu, 15 Oct 2026 07:33:44 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/logistics-qc-stocks-a-proxy-play-for-consumption-theme-analysts-decode-126101500083_1.html",
+      "title": "Logistics, QC stocks: A proxy play for consumption theme? Analysts decode",
+      "published": "Thu, 15 Oct 2026 07:28:39 +0530",
+      "chars": 143,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-fall-as-us-weighs-easing-sanctions-on-west-asian-crude-supply-126101500082_1.html",
+      "title": "Oil prices fall as US weighs easing sanctions on West Asian crude supply",
+      "published": "Thu, 15 Oct 2026 07:28:14 +0530",
+      "chars": 190,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/finance/personal-finance/sbi-warns-of-30-monthly-return-scams-4-red-flags-investors-must-watch-for-126101400640_1.html",
+      "title": "SBI warns of 30% monthly return scams: 4 red flags investors must watch for",
+      "published": "Wed, 14 Oct 2026 14:22:00 +0530",
+      "chars": 133,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/zetwerk-manufacturing-business-ipo-opens-today-gmp-signals-15-listing-gain-check-key-details/articleshow/134955495.cms",
+      "title": "Zetwerk Manufacturing Business IPO opens today; GMP signals 15% listing gain, check key details",
+      "published": "Thu, 15 Oct 2026 07:51:47 +0530",
+      "chars": 170,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-feast-6-issues-including-tonbo-imaging-bonfiglioli-fusion-cx-available-for-subscription-check-gmp-other-details/articleshow/134955477.cms",
+      "title": "IPO Feast: 6 issues including Tonbo Imaging, Bonfiglioli & Fusion CX available for subscription; check GMP, other details",
+      "published": "Thu, 15 Oct 2026 07:50:33 +0530",
+      "chars": 293,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-15-crude-oil-dips-to-105-despite-rising-middle-east-tensions-heres-why/articleshow/134955455.cms",
+      "title": "Oil Price Today (October 15): Crude oil dips to $105 despite rising Middle East tensions. Here’s why",
+      "published": "Thu, 15 Oct 2026 07:43:16 +0530",
+      "chars": 216,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/hyundai-motor-to-invest-15-5-billion-in-india-by-2032/articleshow/134955345.cms",
+      "title": "Hyundai Motor to invest $15.5 billion in India by 2032",
+      "published": "Thu, 15 Oct 2026 07:40:09 +0530",
+      "chars": 394,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 166.6
+}
