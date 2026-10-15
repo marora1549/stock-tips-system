@@ -1,48 +1,7 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 126.87,
+  "cash_inr": 28038.12,
   "positions": [
-    {
-      "pos_id": "2026-09-08-LALPATHLAB",
-      "tip_id": "9f766df819",
-      "symbol": "LALPATHLAB",
-      "company": "Dr. Lal Path Labs Ltd.",
-      "opened": "2026-09-08",
-      "booked": "2026-09-07 15:00",
-      "status": "open",
-      "entry_plan": 1901.7,
-      "entry": 1881.4,
-      "qty": 15,
-      "qty_open": 15,
-      "capital_inr": 28221.0,
-      "stop_loss": 1860.75,
-      "initial_stop": 1860.75,
-      "targets": [
-        2053.26,
-        2154.3,
-        2305.86
-      ],
-      "targets_hit": [],
-      "timeframe": "monthly",
-      "time_stop_days": 30,
-      "deadline": "2026-10-20",
-      "source_id": "chartink_squeeze",
-      "corroborating_sources": [],
-      "ta_confidence": 78,
-      "fund_score": 94,
-      "composite": 73,
-      "bucket": "hold-capable",
-      "patterns": [
-        "bollinger_squeeze",
-        "pullback_to_ema20_in_uptrend"
-      ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 7.77,
-      "notes": [],
-      "ltp": 1938.0,
-      "unrealised_pct": 3.01
-    },
     {
       "pos_id": "2026-09-30-PETRONET",
       "tip_id": "d0b8ebf0d2",
@@ -92,8 +51,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 292.95001220703125,
-      "unrealised_pct": 2.75
+      "ltp": 295.20001220703125,
+      "unrealised_pct": 3.54
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -141,10 +100,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 6.52,
+      "max_favourable_pct": 7.17,
       "notes": [],
-      "ltp": 438.04998779296875,
-      "unrealised_pct": 4.8
+      "ltp": 447.95001220703125,
+      "unrealised_pct": 7.17
     }
   ],
   "closed": [
@@ -389,6 +348,60 @@
       "pnl_inr": -1171.65,
       "pnl_pct": -4.36,
       "days_held": 2
+    },
+    {
+      "pos_id": "2026-09-08-LALPATHLAB",
+      "tip_id": "9f766df819",
+      "symbol": "LALPATHLAB",
+      "company": "Dr. Lal Path Labs Ltd.",
+      "opened": "2026-09-08",
+      "booked": "2026-09-07 15:00",
+      "status": "closed",
+      "entry_plan": 1901.7,
+      "entry": 1881.4,
+      "qty": 15,
+      "qty_open": 0,
+      "capital_inr": 28221.0,
+      "stop_loss": 1860.75,
+      "initial_stop": 1860.75,
+      "targets": [
+        2053.26,
+        2154.3,
+        2305.86
+      ],
+      "targets_hit": [],
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": "2026-10-20",
+      "source_id": "chartink_squeeze",
+      "corroborating_sources": [],
+      "ta_confidence": 78,
+      "fund_score": 94,
+      "composite": 73,
+      "bucket": "hold-capable",
+      "patterns": [
+        "bollinger_squeeze",
+        "pullback_to_ema20_in_uptrend"
+      ],
+      "exits": [
+        {
+          "date": "2026-10-15",
+          "qty": 15,
+          "price": 1860.75,
+          "reason": "stop_loss",
+          "pnl_inr": -309.75
+        }
+      ],
+      "realised_inr": -309.75,
+      "max_favourable_pct": 7.77,
+      "notes": [],
+      "ltp": 1885.0999755859375,
+      "unrealised_pct": 0.2,
+      "closed": "2026-10-15",
+      "outcome": "stop_loss",
+      "pnl_inr": -309.75,
+      "pnl_pct": -1.1,
+      "days_held": 27
     }
   ],
   "equity_curve": [
@@ -491,6 +504,10 @@
     {
       "date": "2026-10-14",
       "equity": 98392.92
+    },
+    {
+      "date": "2026-10-15",
+      "equity": 98177.37
     }
   ],
   "created": "2026-09-07",

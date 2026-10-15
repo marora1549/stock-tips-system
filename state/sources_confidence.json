@@ -531,15 +531,15 @@
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
-    "score": -21.75,
+    "score": -35.662499999999994,
     "n_tips": 1043,
-    "n_resolved": 2,
+    "n_resolved": 3,
     "n_t1": 0,
     "n_t2": 0,
     "n_t3": 0,
-    "n_sl": 2,
+    "n_sl": 3,
     "n_timestop": 0,
-    "sum_return_pct": -6.87,
+    "sum_return_pct": -7.970000000000001,
     "days_to_t1": [],
     "history": [
       {
@@ -555,6 +555,13 @@
         "outcome": "stop_loss",
         "ret_pct": -4.36,
         "delta": -7.5
+      },
+      {
+        "date": "2026-10-15",
+        "symbol": "LALPATHLAB",
+        "outcome": "stop_loss",
+        "ret_pct": -1.1,
+        "delta": -15.0
       }
     ],
     "enabled": true,
