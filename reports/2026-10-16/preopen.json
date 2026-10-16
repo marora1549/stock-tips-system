@@ -1,0 +1,700 @@
+{
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16 08:10",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 11
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events_read": 22,
+  "trade": [],
+  "watch": [
+    {
+      "id": "b69af124d0",
+      "symbol": "SOUTHBANK",
+      "company": "The South Indian Bank Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1116.0,
+      "size_estimated": false,
+      "size_basis": "₹1,116 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/south-indian-bank-q2-profit-rises-21-to-426-cr-on-higher-interest-income-126101501433_1.html",
+      "title": "South Indian Bank Q2 profit rises 21% to ₹426 cr on higher interest income",
+      "published": "Thu, 15 Oct 2026 20:23:15 +0530",
+      "published_utc": "2026-10-15T14:53:15+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/south-indian-bank-q2-profit-rises-21-to-426-cr-on-higher-interest-income-126101501433_1.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 2,
+      "catalyst": 56,
+      "verdict": "WATCH",
+      "verdict_note": "real but not enough on its own — watch how it opens",
+      "reasons": [
+        "+22 Earnings beat",
+        "+7 ₹1,116cr against ₹10,501cr of revenue — 0.1× a year's sales, a tenth of a year's revenue",
+        "+4 fundamentals 63/100",
+        "+8 1.1% from the 52-week high on 4.2× volume — breakout-ready",
+        "+12 published Thu 20:23, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": 0.106,
+      "revenue_ttm_cr": 10501.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 20:23, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": 22,
+      "direction": "long",
+      "plan": {
+        "reference_close": 51.48,
+        "atr_pct": 3.28,
+        "expected_day_range_inr": 1.69,
+        "expected_day_range_pct": 3.28,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 63,
+      "fund_why": [
+        "+12 net NPA 0.09% of the book",
+        "+4 gross NPA 1.24%",
+        "+0 return on assets 0.98%",
+        "+3 ROE 13.5%",
+        "-4 net interest margin 2.31% of assets",
+        "-8 net interest income -1.4% last year",
+        "+6 price to book 1.12",
+        "+4 P/E 8.5",
+        "+4 institutions hold 42.35%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (value counted +5 of +10 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 1.12 times its book value",
+        "Company has delivered good profit growth of 88.0% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 6.15% over past five years.",
+        "Company has a low return on equity of 13.7% over last 3 years.",
+        "Contingent liabilities of Rs.14,248 Cr.",
+        "Company might be capitalizing the interest cost"
+      ],
+      "ltp": 51.47999954223633,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 67.0,
+        "adx": 19.7,
+        "atr_pct": 3.28,
+        "vol_ratio": 4.17,
+        "chg_1d_pct": 3.71,
+        "chg_5d_pct": 10.97,
+        "dist_52w_high_pct": -1.15,
+        "dist_ema200_pct": 19.97,
+        "avg_turnover_cr": 90.32,
+        "high_52w": 52.08,
+        "momentum_score": 85,
+        "last_bar_date": "2026-10-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 13485.0,
+        "pe": 8.5,
+        "roce": 6.42,
+        "roe": 13.5,
+        "sales_growth_3_years": 11.0,
+        "profit_growth_3_years": 23.0,
+        "revenue_ttm_cr": 10501.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "avoid": [
+    {
+      "id": "44a64057e8",
+      "symbol": "PERSISTENT",
+      "company": "Persistent Systems Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://hdfcsky.com/news/persistent-systems-q2-net-profit-falls-25-pc-to-rs-351-cr-revenue-up-30-pc",
+      "title": "Persistent Systems Q2 Net Profit Falls 25% to Rs 351 Cr; Revenue Up 30%",
+      "published": "Thu, 15 Oct 2026 11:38:05 GMT",
+      "published_utc": "2026-10-15T11:38:05+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://hdfcsky.com/news/persistent-systems-q2-net-profit-falls-25-pc-to-rs-351-cr-revenue-up-30-pc"
+      ],
+      "n_reports": 1,
+      "catalyst": -4,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 60/100",
+        "+12 published Thu 17:08, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 16801.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 17:08, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 5840.0,
+        "atr_pct": 2.94,
+        "expected_day_range_inr": 171.7,
+        "expected_day_range_pct": 2.94,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 60,
+      "fund_why": [
+        "+12 ROCE 34.4%",
+        "+8 ROE 27.2%",
+        "-2 P/E 49.3",
+        "+8 3y profit CAGR 28%",
+        "+6 3y sales CAGR 21%",
+        "+4 return on capital has improved from 23% to 31.3%",
+        "+5 D/E 0.07",
+        "+0 promoter 30.29%",
+        "-5 latest qtr PAT YoY -25.3%",
+        "+4 mcap ₹92,126 cr",
+        "+8 operating cash flow ₹1,767cr, 95% of profit — profit is turning into cash",
+        "+4 interest cover 16.66×",
+        "-4 interest cost up 111% year on year",
+        "+3 institutions hold 52.75%",
+        "-8 price to book 10.74",
+        "-6 ROCE 34.4% bought at 10.74× book is 3.2% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +13 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has delivered good profit growth of 35.8% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 25.6%",
+        "Company has been maintaining a healthy dividend payout of 36.5%",
+        "Company's median sales growth is 19.6% of last 10 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 10.7 times its book value"
+      ],
+      "ltp": 5840.0,
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 61.5,
+        "adx": 22.1,
+        "atr_pct": 2.94,
+        "vol_ratio": 2.66,
+        "chg_1d_pct": -0.98,
+        "chg_5d_pct": 6.8,
+        "dist_52w_high_pct": -11.5,
+        "dist_ema200_pct": 8.31,
+        "avg_turnover_cr": 280.2,
+        "high_52w": 6599.0,
+        "momentum_score": 56,
+        "last_bar_date": "2026-10-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 92126.0,
+        "pe": 49.3,
+        "roce": 34.4,
+        "roe": 27.2,
+        "sales_growth_3_years": 21.0,
+        "profit_growth_3_years": 28.0,
+        "promoter_pct": 30.29,
+        "debt_to_equity": 0.07,
+        "revenue_ttm_cr": 16801.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "b9d0200ea2",
+      "symbol": "WIPRO",
+      "company": "Wipro Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 6160.0,
+      "size_estimated": false,
+      "size_basis": "$0.7 billion",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+      "title": "Wipro Q2 results: Net profit falls 1.4% to ₹3,201 crore, revenue rises 9.1%",
+      "published": "Thu, 15 Oct 2026 14:27:02 GMT",
+      "published_utc": "2026-10-15T14:27:02+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+        "https://www.livemint.com/market/stock-market-news/wipro-q2-results-net-profit-falls-2-yoy-to-rs-3-200-crore-revenue-rises-9-11792059725645.html",
+        "https://www.fortuneindia.com/business-news/wipro-q2-results-net-profit-falls-19-yoy-to-3200-crore-q3-revenue-growth-seen-at-15-to-05/164993",
+        "https://www.tradingview.com/news/moneycontrol:5e5ff3e04094b:0-wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-q3-guidance-remains-weak/",
+        "https://www.moneycontrol.com/news/business/earnings/wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-14052984.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 6,
+      "catalyst": -5,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        "+2 ₹6,160cr against ₹97,024cr of revenue — 0.1× a year's sales, small against revenue",
+        "+4 fundamentals 60/100",
+        "-6 10.6% below the 200-day average — fighting the trend",
+        "+12 published Thu 19:57, outside market hours — the move is still ahead of the open",
+        "+3 reported independently by 1 other source"
+      ],
+      "materiality_ratio": 0.063,
+      "revenue_ttm_cr": 97024.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 19:57, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 174.05,
+        "atr_pct": 2.28,
+        "expected_day_range_inr": 3.97,
+        "expected_day_range_pct": 2.28,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 60,
+      "fund_why": [
+        "+6 ROCE 17.8%",
+        "+4 ROE 15.5%",
+        "+6 P/E 13.1",
+        "+0 3y profit CAGR 5%",
+        "+0 3y sales CAGR 1%",
+        "+5 D/E 0.28",
+        "+4 promoter 72.57%",
+        "+0 latest qtr PAT YoY -1.9%",
+        "+4 mcap ₹172,404 cr",
+        "+8 operating cash flow ₹14,932cr, 113% of profit — profit is turning into cash",
+        "-4 interest cost up 51% year on year",
+        "+0 price to book 2.18",
+        "-6 PEG 36.39 — priced for growth it is not delivering",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is providing a good dividend yield of 6.32%.",
+        "Company has been maintaining a healthy dividend payout of 46.7%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 8.38% over past five years."
+      ],
+      "ltp": 174.0500030517578,
+      "ta": {
+        "trend": "down",
+        "rsi": 62.1,
+        "adx": 23.6,
+        "atr_pct": 2.28,
+        "vol_ratio": 0.54,
+        "chg_1d_pct": 1.83,
+        "chg_5d_pct": 9.89,
+        "dist_52w_high_pct": -36.27,
+        "dist_ema200_pct": -10.57,
+        "avg_turnover_cr": 360.65,
+        "high_52w": 273.1,
+        "momentum_score": 36,
+        "last_bar_date": "2026-10-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 172404.0,
+        "pe": 13.1,
+        "roce": 17.8,
+        "roe": 15.5,
+        "sales_growth_3_years": 1.0,
+        "profit_growth_3_years": 5.0,
+        "promoter_pct": 72.57,
+        "debt_to_equity": 0.28,
+        "revenue_ttm_cr": 97024.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "5334de02b0",
+      "symbol": "SWSOLAR",
+      "company": "Sterling and Wilson Renewable Energy Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit at ₹19 crore, revenue falls",
+      "also_matched": [
+        "earnings_beat",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/sterling-and-wilson-renewable-energy-q2-results-company-returns-to-profit-at-rs19-crore-revenue-falls-13-20012910.htm",
+      "title": "Sterling and Wilson Renewable Energy Q2 results: Company returns to profit at ₹19 crore, revenue falls 13%",
+      "published": "Thu, 15 Oct 2026 13:29:15 GMT",
+      "published_utc": "2026-10-15T13:29:15+00:00",
+      "sentence": "profit at ₹19 crore, revenue falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/sterling-and-wilson-renewable-energy-q2-results-company-returns-to-profit-at-rs19-crore-revenue-falls-13-20012910.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": -24,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 34/100 — a pop on a weak balance sheet fades",
+        "-6 15.8% below the 200-day average — fighting the trend",
+        "+12 published Thu 18:59, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 7156.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 18:59, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 174.96,
+        "atr_pct": 3.75,
+        "expected_day_range_inr": 6.56,
+        "expected_day_range_pct": 3.75,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 34,
+      "fund_why": [
+        "+12 ROCE 26.8%",
+        "+8 ROE 40.1%",
+        "+6 P/E 17.8",
+        "+8 3y profit CAGR 32%",
+        "+6 3y sales CAGR 55%",
+        "+4 return on capital has improved from -14.4% to 16%",
+        "-2 D/E 1.31",
+        "+0 promoter 45.73%",
+        "-5 latest qtr PAT YoY -96.4%",
+        "+0 mcap ₹4,086 cr",
+        "-14 operating cash flow ₹-257cr — the business consumed cash last year",
+        "-8 sales growth has stalled: 19.8% last year against 107.6% the year before",
+        "-5 the profit 3-year CAGR of 32% is history — last year was -444.2%",
+        "-12 interest cover 1.12× — thin",
+        "-4 price to book 5.65",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates",
+        "the page did not read cleanly — profit growth 1y pct came out at -444% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 25.9% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Tax rate seems low",
+        "Company has a low return on equity of 9.18% over last 3 years.",
+        "Promoters have pledged 27.6% of their holding.",
+        "Promoter holding has decreased over last 3 years: -21.8%"
+      ],
+      "ltp": 174.9600067138672,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 50.0,
+        "adx": 15.2,
+        "atr_pct": 3.75,
+        "vol_ratio": 1.16,
+        "chg_1d_pct": 1.87,
+        "chg_5d_pct": 9.29,
+        "dist_52w_high_pct": -32.91,
+        "dist_ema200_pct": -15.81,
+        "avg_turnover_cr": 21.59,
+        "high_52w": 260.8,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-15"
+      },
+      "fundamentals": {
+        "market_cap_cr": 4086.0,
+        "pe": 17.8,
+        "roce": 26.8,
+        "roe": 40.1,
+        "sales_growth_3_years": 55.0,
+        "profit_growth_3_years": 32.0,
+        "promoter_pct": 45.73,
+        "debt_to_equity": 1.31,
+        "revenue_ttm_cr": 7156.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

@@ -1,0 +1,1320 @@
+{
+  "date": "2026-10-16",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 1
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 10
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 11
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 6,
+      "events": 9
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 2,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "deca930fa4",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 1307.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,307 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.businesstoday.in/markets/stocks/story/bharat-dynamics-wins-order-worth-rs-1307-crore-from-indian-navy-561843-2026-10-15",
+      "title": "Bharat Dynamics wins order worth Rs 1,307 crore from Indian Navy",
+      "published": "Thu, 15 Oct 2026 10:56:44 GMT",
+      "published_utc": "2026-10-15T10:56:44+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.businesstoday.in/markets/stocks/story/bharat-dynamics-wins-order-worth-rs-1307-crore-from-indian-navy-561843-2026-10-15"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b69af124d0",
+      "symbol": "SOUTHBANK",
+      "company": "The South Indian Bank Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1116.0,
+      "size_estimated": false,
+      "size_basis": "₹1,116 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/south-indian-bank-q2-profit-rises-21-to-426-cr-on-higher-interest-income-126101501433_1.html",
+      "title": "South Indian Bank Q2 profit rises 21% to ₹426 cr on higher interest income",
+      "published": "Thu, 15 Oct 2026 20:23:15 +0530",
+      "published_utc": "2026-10-15T14:53:15+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/south-indian-bank-q2-profit-rises-21-to-426-cr-on-higher-interest-income-126101501433_1.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "b7a684b1ea",
+      "symbol": "SWIGGY",
+      "company": "Swiggy Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/food-delivery-platform-swiggy-launches-multi-restaurant-ordering-feature-126101501257_1.html",
+      "title": "Food delivery platform Swiggy launches multi-restaurant ordering feature",
+      "published": "Thu, 15 Oct 2026 13:26:21 GMT",
+      "published_utc": "2026-10-15T13:26:21+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/food-delivery-platform-swiggy-launches-multi-restaurant-ordering-feature-126101501257_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "07cc71b5e6",
+      "symbol": "WIPRO",
+      "company": "Wipro Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit slips 2%, revenue up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/wipro-q2-results-net-profit-falls-2-percent-yoy-to-rs-3200-crore-revenue-rises-9-percent",
+      "title": "Wipro Q2 FY27 Results: Profit Slips 2%, Revenue Up 9%",
+      "published": "Thu, 15 Oct 2026 11:55:21 GMT",
+      "published_utc": "2026-10-15T11:55:21+00:00",
+      "sentence": "profit slips 2%, revenue up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/wipro-q2-results-net-profit-falls-2-percent-yoy-to-rs-3200-crore-revenue-rises-9-percent"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "44a64057e8",
+      "symbol": "PERSISTENT",
+      "company": "Persistent Systems Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://hdfcsky.com/news/persistent-systems-q2-net-profit-falls-25-pc-to-rs-351-cr-revenue-up-30-pc",
+      "title": "Persistent Systems Q2 Net Profit Falls 25% to Rs 351 Cr; Revenue Up 30%",
+      "published": "Thu, 15 Oct 2026 11:38:05 GMT",
+      "published_utc": "2026-10-15T11:38:05+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://hdfcsky.com/news/persistent-systems-q2-net-profit-falls-25-pc-to-rs-351-cr-revenue-up-30-pc"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5334de02b0",
+      "symbol": "SWSOLAR",
+      "company": "Sterling and Wilson Renewable Energy Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit at ₹19 crore, revenue falls",
+      "also_matched": [
+        "earnings_beat",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/sterling-and-wilson-renewable-energy-q2-results-company-returns-to-profit-at-rs19-crore-revenue-falls-13-20012910.htm",
+      "title": "Sterling and Wilson Renewable Energy Q2 results: Company returns to profit at ₹19 crore, revenue falls 13%",
+      "published": "Thu, 15 Oct 2026 13:29:15 GMT",
+      "published_utc": "2026-10-15T13:29:15+00:00",
+      "sentence": "profit at ₹19 crore, revenue falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/sterling-and-wilson-renewable-energy-q2-results-company-returns-to-profit-at-rs19-crore-revenue-falls-13-20012910.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b9d0200ea2",
+      "symbol": "WIPRO",
+      "company": "Wipro Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 6160.0,
+      "size_estimated": false,
+      "size_basis": "$0.7 billion",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+      "title": "Wipro Q2 results: Net profit falls 1.4% to ₹3,201 crore, revenue rises 9.1%",
+      "published": "Thu, 15 Oct 2026 14:27:02 GMT",
+      "published_utc": "2026-10-15T14:27:02+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+        "https://www.livemint.com/market/stock-market-news/wipro-q2-results-net-profit-falls-2-yoy-to-rs-3-200-crore-revenue-rises-9-11792059725645.html",
+        "https://www.fortuneindia.com/business-news/wipro-q2-results-net-profit-falls-19-yoy-to-3200-crore-q3-revenue-growth-seen-at-15-to-05/164993",
+        "https://www.tradingview.com/news/moneycontrol:5e5ff3e04094b:0-wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-q3-guidance-remains-weak/",
+        "https://www.moneycontrol.com/news/business/earnings/wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-14052984.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 6
+    },
+    {
+      "id": "0c7f5d6450",
+      "symbol": "INDIANB",
+      "company": "Indian Bank",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+      "title": "Wipro Q2 results: Net profit falls 1.4% to ₹3,201 crore, revenue rises 9.1%",
+      "published": "Thu, 15 Oct 2026 14:27:02 GMT",
+      "published_utc": "2026-10-15T14:27:02+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+        "https://www.business-standard.com/markets/news/cas-review-sebi-announces-last-30-minute-vwap-method-for-settlement-126101501571_1.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "5fa08d7536",
+      "symbol": "NESTLEIND",
+      "company": "Nestle India Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+      "title": "Wipro Q2 results: Net profit falls 1.4% to ₹3,201 crore, revenue rises 9.1%",
+      "published": "Thu, 15 Oct 2026 14:27:02 GMT",
+      "published_utc": "2026-10-15T14:27:02+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+        "https://www.business-standard.com/companies/news/food-delivery-platform-swiggy-launches-multi-restaurant-ordering-feature-126101501257_1.html",
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "2e58ba15a5",
+      "symbol": "TATACOMM",
+      "company": "Tata Communications Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises",
+      "also_matched": [
+        "earnings_miss",
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html",
+      "title": "Tech Mahindra Q2 profit rises 32.7% to ₹1,586 crore; revenue up 15.6%",
+      "published": "Thu, 15 Oct 2026 14:17:07 GMT",
+      "published_utc": "2026-10-15T14:17:07+00:00",
+      "sentence": "profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fa471cc084",
+      "symbol": "UCOBANK",
+      "company": "UCO Bank",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/pernod-ricard-india-sales-grow-19-in-sep-quarter-ipo-plan-awaits-approval-126101501204_1.html",
+      "title": "Pernod Ricard India sales grow 19% in Sep quarter; IPO plan awaits approval",
+      "published": "Thu, 15 Oct 2026 18:12:36 GMT",
+      "published_utc": "2026-10-15T18:12:36+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/pernod-ricard-india-sales-grow-19-in-sep-quarter-ipo-plan-awaits-approval-126101501204_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "488eb73020",
+      "symbol": "AEGISLOG",
+      "company": "Aegis Logistics Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 35,000 mt lpg bottling plant",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/aegis-logistics-starts-35-000-mt-yearly-lpg-bottling-plant-jnpt/53619642",
+      "title": "Aegis Logistics commissions 35,000 MT LPG bottling plant at JNPA",
+      "published": "Thu, 15 Oct 2026 18:36:05 GMT",
+      "published_utc": "2026-10-15T18:36:05+00:00",
+      "sentence": "commissions 35,000 mt lpg bottling plant",
+      "corroborating_sources": [
+        "corp_stocks_to_watch"
+      ],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/aegis-logistics-starts-35-000-mt-yearly-lpg-bottling-plant-jnpt/53619642",
+        "https://www.business-standard.com/markets/news/stocks-to-watch-jio-fin-yes-bank-wipro-l-t-fin-angel-one-urban-co-126101600086_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "508fb24ac1",
+      "symbol": "SHREECEM",
+      "company": "SHREE CEMENT LIMITED",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 3 mtpa grinding facility",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 634.5,
+        "unit": "MW",
+        "text": "634.5 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/MzgzMTk=/shree-cement-commissions-3-mtpa-grinding-facility-in-uae-with-inr-300-crore-investment",
+      "title": "Shree Cement commissions 3 MTPA grinding facility in UAE with INR 300 crore investment",
+      "published": "Thu, 15 Oct 2026 10:49:48 GMT",
+      "published_utc": "2026-10-15T10:49:48+00:00",
+      "sentence": "commissions 3 mtpa grinding facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://propnewstime.com/latestnewsstories/MzgzMTk=/shree-cement-commissions-3-mtpa-grinding-facility-in-uae-with-inr-300-crore-investment"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "69d63f52d2",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 187 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5112.8,
+      "size_estimated": false,
+      "size_basis": "$581 Million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 9000.0,
+        "unit": "MW",
+        "text": "9 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "published_utc": "2026-10-15T12:13:16+00:00",
+      "sentence": "secures 187 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c688838b7e",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 187 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5112.8,
+      "size_estimated": false,
+      "size_basis": "$581 Million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 9000.0,
+        "unit": "MW",
+        "text": "9 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "published_utc": "2026-10-15T12:13:16+00:00",
+      "sentence": "secures 187 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "376b1920d5",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 187 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5112.8,
+      "size_estimated": false,
+      "size_basis": "$581 Million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 9000.0,
+        "unit": "MW",
+        "text": "9 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "published_utc": "2026-10-15T12:13:16+00:00",
+      "sentence": "secures 187 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9df50a73a6",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 187 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5112.8,
+      "size_estimated": false,
+      "size_basis": "$581 Million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 9000.0,
+        "unit": "MW",
+        "text": "9 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "published_utc": "2026-10-15T12:13:16+00:00",
+      "sentence": "secures 187 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9b73b2449d",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 10 mw solar capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 60.0,
+        "unit": "MW",
+        "text": "60 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw",
+      "title": "Hariom Pipe's subsidiary commissions 10 MW solar capacity in Maharashtra, lifting group total to 15 MW",
+      "published": "Thu, 15 Oct 2026 09:39:30 GMT",
+      "published_utc": "2026-10-15T09:39:30+00:00",
+      "sentence": "commissions 10 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d879f57c4f",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures 187 mw module supply order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 5112.8,
+      "size_estimated": false,
+      "size_basis": "$581 Million",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 9000.0,
+        "unit": "MW",
+        "text": "9 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "published_utc": "2026-10-15T12:13:16+00:00",
+      "sentence": "secures 187 mw module supply order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1ddb62964e",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 10 mw solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 429.18,
+      "size_estimated": false,
+      "size_basis": "Rs 429.18 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60.0,
+        "unit": "MW",
+        "text": "60 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw",
+      "title": "Hariom Pipe's subsidiary commissions 10 MW solar capacity in Maharashtra, lifting group total to 15 MW",
+      "published": "Thu, 15 Oct 2026 09:39:30 GMT",
+      "published_utc": "2026-10-15T09:39:30+00:00",
+      "sentence": "commissions 10 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d5ecaed672",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 10 mw solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 429.18,
+      "size_estimated": false,
+      "size_basis": "Rs 429.18 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60.0,
+        "unit": "MW",
+        "text": "60 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw",
+      "title": "Hariom Pipe's subsidiary commissions 10 MW solar capacity in Maharashtra, lifting group total to 15 MW",
+      "published": "Thu, 15 Oct 2026 09:39:30 GMT",
+      "published_utc": "2026-10-15T09:39:30+00:00",
+      "sentence": "commissions 10 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "74e02ba18d",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 10 mw solar capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 429.18,
+      "size_estimated": false,
+      "size_basis": "Rs 429.18 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60.0,
+        "unit": "MW",
+        "text": "60 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw",
+      "title": "Hariom Pipe's subsidiary commissions 10 MW solar capacity in Maharashtra, lifting group total to 15 MW",
+      "published": "Thu, 15 Oct 2026 09:39:30 GMT",
+      "published_utc": "2026-10-15T09:39:30+00:00",
+      "sentence": "commissions 10 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-reliance-industries-urban-company-wipro-shares-in-focus-on-friday-16-oct-full-list-11792113871349.html",
+      "title": "Top stocks to watch today: Reliance Industries, Urban Company, Wipro shares in focus on Friday, 16 Oct | Full list",
+      "published": "Fri, 16 Oct 2026 01:56:18 GMT",
+      "chars": 3989,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-ril-wipro-jio-financial-tata-communications-yes-bank-pnb-and-others-in-focus/articleshow/134979883.cms",
+      "title": "Stocks in news: RIL, Wipro, Jio Financial, Tata Communications, YES Bank, PNB",
+      "published": "Fri, 16 Oct 2026 01:17:42 GMT",
+      "chars": 8029,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-jio-fin-yes-bank-wipro-l-t-fin-angel-one-urban-co-126101600086_1.html",
+      "title": "Stocks to watch: Jio Fin, Yes Bank, Wipro, L&T Fin, Angel One, Urban Co",
+      "published": "Fri, 16 Oct 2026 02:29:14 GMT",
+      "chars": 9149,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tech-mahindra-iifl-finance-persistent-angel-one-lotus-developers-solar-industries-mankind-agastya-energy-premier-energies-in-focus-on-16-october-14053393.html/amp",
+      "title": "Stocks to Watch Today: Tech Mahindra, IIFL Finance, Persistent, Angel One, Lotus Developers, Solar...",
+      "published": "Fri, 16 Oct 2026 01:13:54 GMT",
+      "chars": 10335,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-on-october-5-what-is-buzzing-around-these-20-companies/article71545670.ece",
+      "title": "20 Stocks to watch today: HDFC Bank, ICICI life, Wipro, DLF, Ola Electric & Gland Pharma",
+      "published": "Thu, 15 Oct 2026 15:26:09 GMT",
+      "chars": 14937,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/us/software/nyse-orcl/oracle/news/3-high-growth-insider-stocks-to-watch-in-october-2026",
+      "title": "3 High Growth Insider Stocks To Watch In October 2026",
+      "published": "Thu, 15 Oct 2026 22:48:30 GMT",
+      "chars": 13291,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.businesstoday.in/markets/stocks/story/bharat-dynamics-wins-order-worth-rs-1307-crore-from-indian-navy-561843-2026-10-15",
+      "title": "Bharat Dynamics wins order worth Rs 1,307 crore from Indian Navy",
+      "published": "Thu, 15 Oct 2026 10:56:44 GMT",
+      "chars": 2260,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://news.bequoted.com/newsroom/seamless-distribution-systems/pressreleases/sds-wins-order-worth-sek-3-0-million-from-an-existing-custom-72637/",
+      "title": "SDS wins order worth SEK 3.0 million from an existing customer in Sudan",
+      "published": "Thu, 15 Oct 2026 08:30:00 GMT",
+      "chars": 3015,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/bondada-engineering-receives-nse-principle-approval-main-board/53592915",
+      "title": "Bondada Engineering receives NSE in-principle approval for main board migration",
+      "published": "Thu, 15 Oct 2026 06:58:54 GMT",
+      "chars": 3388,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/rajesh-power-services-zooms-on-securing-loa-worth-rs-69-crore797073",
+      "title": "Rajesh Power Services zooms on securing LoA worth Rs 69 crore",
+      "published": "Thu, 15 Oct 2026 07:12:31 GMT",
+      "chars": 2293,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/gilead-vir-biotechnology-sign-usd-188-billion-deal-to-develop-cancer-treatments-181355",
+      "title": "Gilead, Vir Biotechnology Sign USD 1.88 Billion Deal to Develop Cancer Treatments",
+      "published": "Thu, 15 Oct 2026 11:27:12 GMT",
+      "chars": 1193,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/lupin-esg-rating-falls-70-fy26-lower-social-governance-scores/53615235",
+      "title": "Lupin ESG rating falls to 70 in FY26 on lower social, governance scores",
+      "published": "Thu, 15 Oct 2026 13:10:52 GMT",
+      "chars": 2712,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://finance.biggo.com/news/57a91a54-3c7c-4e22-872a-2ebe46b3a94b",
+      "title": "HLB Makes Fourth FDA Bid for Liver Cancer Drug—\"Manufacturing Issues Resolved, Approval Expected This Year\"",
+      "published": "Thu, 15 Oct 2026 09:35:00 GMT",
+      "chars": 6835,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/rajesh-exports-nserajeshexpo-what-did-sebis-october-2026-order-direct-the-company-to-do",
+      "title": "Rajesh Exports SEBI Order Oct 2026: Key Directions",
+      "published": "Thu, 15 Oct 2026 12:58:00 GMT",
+      "chars": 3470,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.straitstimes.com/world/united-states/black-mould-bugs-found-at-chinese-plants-making-glp-1-compounding-agents?ref=latest",
+      "title": "Black mould, bugs found at Chinese plants making GLP-1 compounding agents",
+      "published": "Thu, 15 Oct 2026 12:35:00 GMT",
+      "chars": 5333,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/southern-lehigh-county/olympus-acknowledges-new-warning-letter-from-fda/article_30dcb49a-1cde-4d3d-b53b-c13b4d473ecd.html",
+      "title": "Olympus acknowledges new Warning Letter from FDA",
+      "published": "Thu, 15 Oct 2026 14:53:00 GMT",
+      "chars": 2597,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.hlc.com/en/publications/health-hazard-evaluations-under-scrutiny",
+      "title": "Health hazard evaluations under scrutiny",
+      "published": "Thu, 15 Oct 2026 10:01:55 GMT",
+      "chars": 14298,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/wipro-q2-results-net-profit-falls-1-4-to-3-200-6-cr-revenue-rises-9-126101500857_1.html",
+      "title": "Wipro Q2 results: Net profit falls 1.4% to ₹3,201 crore, revenue rises 9.1%",
+      "published": "Thu, 15 Oct 2026 14:27:02 GMT",
+      "chars": 5889,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.livemint.com/market/stock-market-news/wipro-q2-results-net-profit-falls-2-yoy-to-rs-3-200-crore-revenue-rises-9-11792059725645.html",
+      "title": "Wipro Q2 results: Net profit falls 2% YoY to ₹3,200 crore; revenue rises 9%",
+      "published": "Thu, 15 Oct 2026 10:36:42 GMT",
+      "chars": 4042,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.fortuneindia.com/business-news/wipro-q2-results-net-profit-falls-19-yoy-to-3200-crore-q3-revenue-growth-seen-at-15-to-05/164993",
+      "title": "Wipro Q2 results: Net profit falls 1.9% YoY to ₹3,200 crore; Q3 revenue growth seen at -1.5% to 0.5%",
+      "published": "Thu, 15 Oct 2026 11:12:07 GMT",
+      "chars": 2590,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.tradingview.com/news/moneycontrol:5e5ff3e04094b:0-wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-q3-guidance-remains-weak/",
+      "title": "Wipro Q2 results: Net profit falls 4.5% QoQ to Rs 3,201 crore; revenue rises 1.1%",
+      "published": "Thu, 15 Oct 2026 10:22:22 GMT",
+      "chars": 4454,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/wipro-q2-results-net-profit-falls-4-5-qoq-to-rs-3-201-crore-revenue-rises-1-1-14052984.html",
+      "title": "Wipro Q2 results: Net profit falls 4.5% QoQ to Rs 3,201 crore; revenue rises 1.1%, Q3 guidance remains...",
+      "published": "Thu, 15 Oct 2026 10:22:22 GMT",
+      "chars": 8340,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://hdfcsky.com/news/persistent-systems-q2-net-profit-falls-25-pc-to-rs-351-cr-revenue-up-30-pc",
+      "title": "Persistent Systems Q2 Net Profit Falls 25% to Rs 351 Cr; Revenue Up 30%",
+      "published": "Thu, 15 Oct 2026 11:38:05 GMT",
+      "chars": 3487,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/sterling-and-wilson-renewable-energy-q2-results-company-returns-to-profit-at-rs19-crore-revenue-falls-13-20012910.htm",
+      "title": "Sterling and Wilson Renewable Energy Q2 results: Company returns to profit at ₹19 crore, revenue falls 13%",
+      "published": "Thu, 15 Oct 2026 13:29:15 GMT",
+      "chars": 2578,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/wipro-q2-results-net-profit-falls-2-percent-yoy-to-rs-3200-crore-revenue-rises-9-percent",
+      "title": "Wipro Q2 FY27 Results: Profit Slips 2%, Revenue Up 9%",
+      "published": "Thu, 15 Oct 2026 11:55:21 GMT",
+      "chars": 6724,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://finance.yahoo.com/energy/articles/indias-largest-utility-ntpc-deploy-170400810.html",
+      "title": "India's largest utility, NTPC, to deploy 247Solar's advanced solar thermal technology in its first commercial project",
+      "published": "Thu, 15 Oct 2026 17:04:00 GMT",
+      "chars": 3827,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/aegis-logistics-starts-35-000-mt-yearly-lpg-bottling-plant-jnpt/53619642",
+      "title": "Aegis Logistics commissions 35,000 MT LPG bottling plant at JNPA",
+      "published": "Thu, 15 Oct 2026 18:36:05 GMT",
+      "chars": 2618,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/MzgzMTk=/shree-cement-commissions-3-mtpa-grinding-facility-in-uae-with-inr-300-crore-investment",
+      "title": "Shree Cement commissions 3 MTPA grinding facility in UAE with INR 300 crore investment",
+      "published": "Thu, 15 Oct 2026 10:49:48 GMT",
+      "chars": 8741,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://insights.dsij.in/dsijarticledetail/hariom-pipes-subsidiary-commissions-10-mw-solar-capacity-in-maharashtra-lifting-group-total-to-15-mw",
+      "title": "Hariom Pipe's subsidiary commissions 10 MW solar capacity in Maharashtra, lifting group total to 15 MW",
+      "published": "Thu, 15 Oct 2026 09:39:30 GMT",
+      "chars": 4177,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/MzgzNjU=/resonia-commissions-two-4-5-gw-rajasthan-transmission-projects-for-renewable-power-evacuation",
+      "title": "Resonia commissions two 4.5 GW Rajasthan transmission projects for renewable power evacuation",
+      "published": "Thu, 15 Oct 2026 19:03:44 GMT",
+      "chars": 9215,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://solarquarter.com/2026/10/15/helleniq-energy-commissions-100-mw-200-mwh-battery-storage-park-in-greece-with-e50-million-investment/",
+      "title": "HELLENiQ ENERGY Commissions 100 MW/200 MWh Battery Storage Park In Greece With €50 Million Investment",
+      "published": "Thu, 15 Oct 2026 12:13:16 GMT",
+      "chars": 6443,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/pernod-ricard-india-sales-grow-19-in-sep-quarter-ipo-plan-awaits-approval-126101501204_1.html",
+      "title": "Pernod Ricard India sales grow 19% in Sep quarter; IPO plan awaits approval",
+      "published": "Thu, 15 Oct 2026 18:12:36 GMT",
+      "chars": 4431,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/protest-curbs-helped-avert-major-law-and-order-crisis-delhi-police-to-sc-126101500446_1.html",
+      "title": "Delhi Police chief tenders 'unconditional apology' to SC, defends curbs",
+      "published": "Thu, 15 Oct 2026 07:06:59 GMT",
+      "chars": 4168,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/supreme-court-hears-contempt-plea-on-order-against-metro-restrictions-126101600012_1.html",
+      "title": "Supreme Court hears contempt plea on order against Metro restrictions",
+      "published": "Thu, 15 Oct 2026 18:51:52 GMT",
+      "chars": 6718,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/food-delivery-platform-swiggy-launches-multi-restaurant-ordering-feature-126101501257_1.html",
+      "title": "Food delivery platform Swiggy launches multi-restaurant ordering feature",
+      "published": "Thu, 15 Oct 2026 13:26:21 GMT",
+      "chars": 3243,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/cas-review-sebi-announces-last-30-minute-vwap-method-for-settlement-126101501571_1.html",
+      "title": "CAS review: Sebi announces last 30-minute VWAP method for settlement",
+      "published": "Thu, 15 Oct 2026 16:18:00 GMT",
+      "chars": 6006,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/tech-mahindra-q2-profit-rises-32-7-to-1-586-crore-revenue-up-15-6-126101501369_1.html",
+      "title": "Tech Mahindra Q2 profit rises 32.7% to ₹1,586 crore; revenue up 15.6%",
+      "published": "Thu, 15 Oct 2026 14:17:07 GMT",
+      "chars": 4130,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-jio-fin-yes-bank-wipro-l-t-fin-angel-one-urban-co-126101600086_1.html",
+      "title": "Stocks to watch: Jio Fin, Yes Bank, Wipro, L&T Fin, Angel One, Urban Co",
+      "published": "Fri, 16 Oct 2026 07:59:14 +0530",
+      "chars": 198,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-16-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126101600083_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals positive open; Asian markets rebound as tech shares recover",
+      "published": "Fri, 16 Oct 2026 07:54:09 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/pernod-ricard-india-sales-grow-19-in-sep-quarter-ipo-plan-awaits-approval-126101501204_1.html",
+      "title": "Pernod Ricard India sales grow 19% in Sep quarter; IPO plan awaits approval",
+      "published": "Thu, 15 Oct 2026 23:42:36 +0530",
+      "chars": 998,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/reliance-industries-bse-lead-mutual-fund-buys-in-september-shows-data-126101501245_1.html",
+      "title": "Reliance Industries, BSE lead mutual fund buys in September, shows data",
+      "published": "Thu, 15 Oct 2026 22:45:46 +0530",
+      "chars": 164,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/tonbo-imaging-ipo-subscribed-4-times-on-day-1-led-by-strong-nii-demand-126101501609_1.html",
+      "title": "Tonbo Imaging IPO subscribed 4 times on Day 1, led by strong NII demand",
+      "published": "Thu, 15 Oct 2026 22:12:55 +0530",
+      "chars": 176,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/cas-review-sebi-announces-last-30-minute-vwap-method-for-settlement-126101501571_1.html",
+      "title": "CAS review: Sebi announces last 30-minute VWAP method for settlement",
+      "published": "Thu, 15 Oct 2026 21:48:53 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/jio-s-30-213-cr-ipo-priced-at-34x-earnings-below-bharti-airtel-s-39x-126101501478_1.html",
+      "title": "IPO proceeds will make us net-debt-free company: Jio Platforms MD",
+      "published": "Thu, 15 Oct 2026 20:54:46 +0530",
+      "chars": 130,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/south-indian-bank-q2-profit-rises-21-to-426-cr-on-higher-interest-income-126101501433_1.html",
+      "title": "South Indian Bank Q2 profit rises 21% to ₹426 cr on higher interest income",
+      "published": "Thu, 15 Oct 2026 20:23:15 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-16-crude-oil-dips-to-105-as-trump-mulls-easing-restrictions-on-sanction-facing-nations-whats-next/articleshow/134980559.cms",
+      "title": "Oil Price Today (October 16): Crude oil dips to $105 as Trump mulls easing restrictions on sanction-facing nations. What’s next?",
+      "published": "Fri, 16 Oct 2026 07:55:46 +0530",
+      "chars": 287,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/wipros-slow-growth-to-test-investors-patience/articleshow/134980498.cms",
+      "title": "Wipro’s Slow Growth to Test Investors’ Patience",
+      "published": "Fri, 16 Oct 2026 07:52:11 +0530",
+      "chars": 457,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/alpha-alternatives-raises-6000-crore/articleshow/134980480.cms",
+      "title": "Alpha Alternatives Raises `6,000 crore",
+      "published": "Fri, 16 Oct 2026 07:49:17 +0530",
+      "chars": 462,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/bonds/kotak-mf-suspends-subscriptions-in-two-debt-funds-holding-yes-bank-at1-bonds/articleshow/134980424.cms",
+      "title": "Kotak MF suspends subscriptions in two debt funds holding Yes Bank AT1 bonds",
+      "published": "Fri, 16 Oct 2026 07:41:49 +0530",
+      "chars": 445,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-eases-after-climbing-over-1-in-previous-session/articleshow/134980375.cms",
+      "title": "Gold eases after climbing over 1% in previous session",
+      "published": "Fri, 16 Oct 2026 07:38:44 +0530",
+      "chars": 496,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/euro-gets-much-needed-reprieve-as-ai-wobbles-rock-the-dollar/articleshow/134980354.cms",
+      "title": "Euro gets much-needed reprieve as AI wobbles rock the dollar",
+      "published": "Fri, 16 Oct 2026 07:34:37 +0530",
+      "chars": 368,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-edges-down-as-investors-weigh-possible-us-sanctions-on-shadow-fleet/articleshow/134980324.cms",
+      "title": "Oil edges down as investors weigh possible US sanctions on 'shadow fleet'",
+      "published": "Fri, 16 Oct 2026 07:32:51 +0530",
+      "chars": 470,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/bharat-dynamics-expands-defense-order-book-following-recent-ministry-contracts",
+      "title": "Bharat Dynamics Expands Defense Order Book Following Recent Ministry Contracts",
+      "published": "Thu, 15 Oct 2026 11:27:35 GMT",
+      "chars": 3287,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/enviro-infra-engineers-unit-receives-loi-for-100-mw-wind-project-worth-228-crore",
+      "title": "Enviro Infra Engineers Subsidiary Receives LOI For ₹228 Crore 100 MW Wind Power Project",
+      "published": "Thu, 15 Oct 2026 12:07:36 GMT",
+      "chars": 3188,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 146.5
+}
