@@ -148,3 +148,6 @@ Events: LALPATHLAB: STOP-LOSS @ 1860.75 → closed, P&L ₹-309.75 (-1.1%)
 
 ### 2026-10-15 [analyst]
 2026-10-15 desk review: LALPATHLAB stopped at 1860.75 (-1.1%, ₹-310) after fading from +4.7% on 12 Oct without ever reaching T1; stop was ~2.6% below, inside normal swing noise, and the bollinger_squeeze call never followed through. Closed book now 0/5 (avg -3.24%), all bollinger/hold-capable fund>=65; open PETRONET +3.5%, KOTAKBANK +7.2%, T1 unhit. chartink_squeeze fell -21.8 to -35.7 (n=3), nearing auto-disable at -40. fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade the score. Not Friday: no new source.
+
+### 2026-10-19 [analyst]
+2026-10-19 desk review: quiet day, no events, no stops/targets/time-stops. PETRONET +3.0%, KOTAKBANK +5.8% (both hold-capable, T1 unhit); equity 97,601 (-2.4%), closed book still 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade the score. chartink_squeeze still -35.7 (n=3), 4 pts from auto-disable; no source auto-disabled, none at 60% T1. Monday: no new source.
