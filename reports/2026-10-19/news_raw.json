@@ -1,0 +1,938 @@
+{
+  "date": "2026-10-19",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 5,
+      "events": 4
+    },
+    "corp_bs_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 6,
+      "events": 2
+    }
+  },
+  "events": [
+    {
+      "id": "969540c43d",
+      "symbol": "GAYAHWS",
+      "company": "Gayatri Highways Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "contract price of rs",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 45.0,
+        "unit": "km",
+        "text": "45 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html",
+      "title": "Highways ministry invokes catastrophic failure clause against 2 developers",
+      "published": "Sun, 18 Oct 2026 10:11:35 GMT",
+      "published_utc": "2026-10-18T10:11:35+00:00",
+      "sentence": "contract price of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "298fe5056c",
+      "symbol": "KSB",
+      "company": "Ksb Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ksb-limited-bags-order-from-ongc",
+      "title": "KSB Limited bags order from ONGC",
+      "published": "Sun, 18 Oct 2026 21:23:19 GMT",
+      "published_utc": "2026-10-18T21:23:19+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/ksb-limited-bags-order-from-ongc"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d2666c01a9",
+      "symbol": "ONGC",
+      "company": "Oil & Natural Gas Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ksb-limited-bags-order-from-ongc",
+      "title": "KSB Limited bags order from ONGC",
+      "published": "Sun, 18 Oct 2026 21:23:19 GMT",
+      "published_utc": "2026-10-18T21:23:19+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/ksb-limited-bags-order-from-ongc"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "25a0c04fd1",
+      "symbol": "AXISBANK",
+      "company": "Axis Bank Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 151.57,
+      "size_estimated": false,
+      "size_basis": "₹151.57 Crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/axis-bank-q2-net-profit-rises-to-7-000-crore-as-revenue-reaches-36-400-crore",
+      "title": "Axis Bank Q2 Net Profit Rises To ₹7,000 Crore As Revenue Reaches ₹36,400 Crore",
+      "published": "Mon, 19 Oct 2026 01:07:30 GMT",
+      "published_utc": "2026-10-19T01:07:30+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [
+        "corp_stocks_to_watch"
+      ],
+      "urls": [
+        "https://www.sahi.com/news/axis-bank-q2-net-profit-rises-to-7-000-crore-as-revenue-reaches-36-400-crore",
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-19-2026-jindal-saw-ltm-gpt-infraprojects/53919356"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "3d398897f4",
+      "symbol": "ALKEM",
+      "company": "Alkem Laboratories Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/alkem-laboratories-q1-results-net-profit-falls-21-yoy/48242478",
+      "title": "Alkem Laboratories profit falls 22% in Q1FY27 despite 11% revenue growth",
+      "published": "Sun, 18 Oct 2026 08:58:31 GMT",
+      "published_utc": "2026-10-18T08:58:31+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/alkem-laboratories-q1-results-net-profit-falls-21-yoy/48242478"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9f4b9f6b3b",
+      "symbol": "DLF",
+      "company": "DLF Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit alongside a revenue decline",
+      "also_matched": [
+        "order_win",
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/dlf-q2-net-profit-rises-to-1-300-crore-despite-revenue-falling-to-1-260-crore",
+      "title": "DLF Q2 Net Profit Rises To ₹1,300 Crore Despite Revenue Falling To ₹1,260 Crore",
+      "published": "Mon, 19 Oct 2026 00:56:21 GMT",
+      "published_utc": "2026-10-19T00:56:21+00:00",
+      "sentence": "net profit alongside a revenue decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/dlf-q2-net-profit-rises-to-1-300-crore-despite-revenue-falling-to-1-260-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0e6160c374",
+      "symbol": "SKFINDUS",
+      "company": "SKF India (Industrial) Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 57000.0,
+        "unit": "MW",
+        "text": "57 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972",
+      "title": "SKF India Industrial Q1 net profit falls 14% as costs outpace revenue growth",
+      "published": "Sun, 18 Oct 2026 07:16:01 GMT",
+      "published_utc": "2026-10-18T07:16:01+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "24bd805b5e",
+      "symbol": "CENTRALBK",
+      "company": "Central Bank of India",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit jumps",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-19-2026-jindal-saw-ltm-gpt-infraprojects/53919356",
+      "title": "Stocks to Watch Today, October 19, 2026: Jindal SAW, LTM, GPT Infraprojects, Paushak and Urban Company",
+      "published": "Mon, 19 Oct 2026 01:55:54 GMT",
+      "published_utc": "2026-10-19T01:55:54+00:00",
+      "sentence": "net profit jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-19-2026-jindal-saw-ltm-gpt-infraprojects/53919356"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "df21542f64",
+      "symbol": "SKFINDIA",
+      "company": "SKF India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 140.0,
+      "size_estimated": false,
+      "size_basis": "₹140 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 57000.0,
+        "unit": "MW",
+        "text": "57 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972",
+      "title": "SKF India Industrial Q1 net profit falls 14% as costs outpace revenue growth",
+      "published": "Sun, 18 Oct 2026 07:16:01 GMT",
+      "published_utc": "2026-10-18T07:16:01+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fde08204b7",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 8070.0,
+        "unit": "MW",
+        "text": "8,070 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819",
+      "title": "Acme Solar completes ₹2,800 crore Qualified Institutional Placement",
+      "published": "Sun, 18 Oct 2026 11:32:35 GMT",
+      "published_utc": "2026-10-18T11:32:35+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "04ee97dd18",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 8070.0,
+        "unit": "MW",
+        "text": "8,070 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819",
+      "title": "Acme Solar completes ₹2,800 crore Qualified Institutional Placement",
+      "published": "Sun, 18 Oct 2026 11:32:35 GMT",
+      "published_utc": "2026-10-18T11:32:35+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "56ccff1be8",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "contract price of rs",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 613.0,
+      "size_estimated": false,
+      "size_basis": "Rs 613 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45.0,
+        "unit": "km",
+        "text": "45 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html",
+      "title": "Highways ministry invokes catastrophic failure clause against 2 developers",
+      "published": "Sun, 18 Oct 2026 10:11:35 GMT",
+      "published_utc": "2026-10-18T10:11:35+00:00",
+      "sentence": "contract price of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e20d949f9",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "contract price of rs",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 613.0,
+      "size_estimated": false,
+      "size_basis": "Rs 613 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45.0,
+        "unit": "km",
+        "text": "45 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html",
+      "title": "Highways ministry invokes catastrophic failure clause against 2 developers",
+      "published": "Sun, 18 Oct 2026 10:11:35 GMT",
+      "published_utc": "2026-10-18T10:11:35+00:00",
+      "sentence": "contract price of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "74a38a83fe",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "contract price of rs",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 613.0,
+      "size_estimated": false,
+      "size_basis": "Rs 613 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 45.0,
+        "unit": "km",
+        "text": "45 km"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html",
+      "title": "Highways ministry invokes catastrophic failure clause against 2 developers",
+      "published": "Sun, 18 Oct 2026 10:11:35 GMT",
+      "published_utc": "2026-10-18T10:11:35+00:00",
+      "sentence": "contract price of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/in/capital-goods/bse-501423/shaily-engineering-plastics-shares/news/shaily-engineering-plastics-heads-these-3-indian-growth-stoc",
+      "title": "Shaily Engineering Plastics Heads These 3 Indian Growth Stocks To Watch",
+      "published": "Mon, 19 Oct 2026 00:59:34 GMT",
+      "chars": 13754,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-hindustan-zinc-ireda-hdfc-bank-axis-bank-shares-in-focus-on-monday-19-oct-full-list-11792372968971.html",
+      "title": "Top stocks to watch today: Hindustan Zinc, IREDA, HDFC Bank, Axis Bank shares in focus on Monday, 19 Oct | Full list",
+      "published": "Mon, 19 Oct 2026 01:56:29 GMT",
+      "chars": 3821,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-icici-bank-hdfc-bank-axis-bank-gpt-infra-railtel-acme-solar-yes-bank-urban-company-ixigo-lcc-projects-zen-tech-in-focus-on-19-october-14054929.html",
+      "title": "Stocks to Watch Today: ICICI Bank, HDFC Bank, Axis Bank, GPT Infra, RailTel, ACME Solar, Yes Bank, Urban...",
+      "published": "Mon, 19 Oct 2026 00:35:15 GMT",
+      "chars": 12920,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-vedanta-hdfc-bank-icici-bank-axis-bank-hfcl-ireda-zen-tech-and-oil-india/articleshow/135037012.cms",
+      "title": "Stocks in news: Vedanta, HDFC Bank, ICICI Bank, Axis Bank, HFCL, IREDA, Zen Tech and Oil India",
+      "published": "Mon, 19 Oct 2026 00:30:00 GMT",
+      "chars": 11301,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/19/2026/Persistent-System-Q2-FY27-Results--HDFC-Life-Insurance-Q2-FY27-Results--Top-Buzzing-Stocks-Today",
+      "title": "Persistent System Q2 FY27 Results | HDFC Life Insurance Q2 FY27 Results | Top Buzzing Stocks Today",
+      "published": "Mon, 19 Oct 2026 00:30:00 GMT",
+      "chars": 8519,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-october-19-2026-jindal-saw-ltm-gpt-infraprojects/53919356",
+      "title": "Stocks to Watch Today, October 19, 2026: Jindal SAW, LTM, GPT Infraprojects, Paushak and Urban Company",
+      "published": "Mon, 19 Oct 2026 01:55:54 GMT",
+      "chars": 5084,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/technology/ai/articles/beeks-financial-cloud-group-2-171632109.html",
+      "title": "Beeks Financial Cloud Group And 2 British AI Stocks To Watch",
+      "published": "Sun, 18 Oct 2026 17:16:32 GMT",
+      "chars": 3539,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ksb-limited-bags-order-from-ongc",
+      "title": "KSB Limited bags order from ONGC",
+      "published": "Sun, 18 Oct 2026 21:23:19 GMT",
+      "chars": 670,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/Sai-Urja-Indo-Ventures-Declared-L1-Bidder-for-Rs-1298-Crore-Contract/6ad483b7b2eb76fd08c60dce",
+      "title": "Sai Urja Indo Ventures Declared L1 Bidder for Rs 12.98 Crore NTPC Contract",
+      "published": "Sun, 18 Oct 2026 08:31:50 GMT",
+      "chars": 2167,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.businesstimes.com.sg/companies-markets/stocks-watch-bumitama-agri-wee-hur-holdings-indofood-agri-resources",
+      "title": "Stocks to watch: Bumitama Agri, Wee Hur Holdings, Indofood Agri Resources",
+      "published": "Mon, 19 Oct 2026 00:48:00 GMT",
+      "chars": 2214,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biz.chosun.com/en/en-industry/2026/10/19/IEOZOW24WZCSZEQVBG7CWU6TTA/",
+      "title": "Korea’s LS Electric wins KRW 169b US AI data center power gear deal - CHOSUNBIZ",
+      "published": "Mon, 19 Oct 2026 01:35:00 GMT",
+      "chars": 2236,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/up-hotels-shareholders-reject-resolution-voluntary-delisting-extension/53677433",
+      "title": "UP Hotels shareholders reject resolution for voluntary delisting extension",
+      "published": "Sun, 18 Oct 2026 09:14:31 GMT",
+      "chars": 3726,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/avadh-sugar-energy-q1-results-net-profit-falls-99-yoy-to-23-43-lakh/47290855",
+      "title": "Avadh Sugar & Energy turns profitable in Q1FY27 with ₹0.24 Cr net profit",
+      "published": "Sun, 18 Oct 2026 09:40:33 GMT",
+      "chars": 5254,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972",
+      "title": "SKF India Industrial Q1 net profit falls 14% as costs outpace revenue growth",
+      "published": "Sun, 18 Oct 2026 07:16:01 GMT",
+      "chars": 6415,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/alkem-laboratories-q1-results-net-profit-falls-21-yoy/48242478",
+      "title": "Alkem Laboratories profit falls 22% in Q1FY27 despite 11% revenue growth",
+      "published": "Sun, 18 Oct 2026 08:58:31 GMT",
+      "chars": 8361,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/top-q2-results-today-october-19-bajaj-finance-hindustan-zinc-ultratech-cement-l-t-technology-among-companies-to-announce-earnings/",
+      "title": "Top Q2 results today, October 19: Bajaj Finance, Hindustan Zinc, UltraTech Cement, L&T Technology among companies to announce earnings",
+      "published": "Mon, 19 Oct 2026 02:05:43 GMT",
+      "chars": 2541,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/top-q2-results-next-week-october-19-24-infosys-bajaj-finance-swiggy-bank-of-india-and-adani-power-among-companies-to-report-earnings/",
+      "title": "Top Q2 results next week, October 19 - 24: Infosys, Bajaj Finance, Swiggy, Bank of India and Adani Power among companies to report earnings",
+      "published": "Sun, 18 Oct 2026 06:44:00 GMT",
+      "chars": 5918,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://swarajyamag.com/news-brief/jindal-steel-commissions-125-mtpa-cargo-terminal-ahead-of-schedule-at-paradip-port",
+      "title": "Jindal Steel Commissions 12.5 MTPA Cargo Terminal Ahead Of Schedule At Paradip Port",
+      "published": "Sun, 18 Oct 2026 08:51:59 GMT",
+      "chars": 2200,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819",
+      "title": "Acme Solar completes ₹2,800 crore Qualified Institutional Placement",
+      "published": "Sun, 18 Oct 2026 11:32:35 GMT",
+      "chars": 3009,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/highways-ministry-invokes-catastrophic-failure-clause-against-2-developers-126101800376_1.html",
+      "title": "Highways ministry invokes catastrophic failure clause against 2 developers",
+      "published": "Sun, 18 Oct 2026 10:11:35 GMT",
+      "chars": 4323,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/technology/tech-news/govt-asks-meta-to-diversify-recommendations-check-misleading-content-126101800717_1.html",
+      "title": "Govt asks Meta to diversify recommendations, check misleading content",
+      "published": "Sun, 18 Oct 2026 16:29:02 GMT",
+      "chars": 6654,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/cockroach-protests-pose-fresh-challenge-for-modi-govt-amid-voter-roll-row-126101800369_1.html",
+      "title": "Cockroach protests pose fresh challenge for Modi govt amid voter roll row",
+      "published": "Sun, 18 Oct 2026 09:41:17 GMT",
+      "chars": 9228,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-high-court-form-6-voter-registration-sir-deleted-names-election-commission-126101800366_1.html",
+      "title": "Delhi HC says voters deleted during SIR can seek re-entry using Form 6",
+      "published": "Sun, 18 Oct 2026 09:38:01 GMT",
+      "chars": 5310,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/delhi-cabinet-approves-go-delhi-foundation-to-support-startups-innovation-126101800441_1.html",
+      "title": "Delhi Cabinet approves Go-Delhi Foundation to support startups, innovation",
+      "published": "Sun, 18 Oct 2026 11:37:32 GMT",
+      "chars": 4392,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/risk-reward-setup-favours-bears-lemon-tree-among-3-stock-ideas-angel-one-126101900057_1.html",
+      "title": "Risk-reward setup favours bears; Lemon Tree among 3 stock ideas: Angel One",
+      "published": "Mon, 19 Oct 2026 07:55:51 +0530",
+      "chars": 144,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-19-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-bond-yields-q2-results-hind-zinc-share-price-today-ipo-today-126101900052_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Asian markets down; Brent falls 1.5%",
+      "published": "Mon, 19 Oct 2026 07:52:01 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-slips-as-trump-s-sanction-waiver-may-lead-to-more-russian-fuel-supplies-126101900025_1.html",
+      "title": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies",
+      "published": "Mon, 19 Oct 2026 07:51:12 +0530",
+      "chars": 128,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-groww-nazara-hcl-tech-choice-broking-is-bullish-on-3-stocks-here-s-why-126101900054_1.html",
+      "title": "Groww, Nazara, HCL Tech: Choice Broking is bullish on 3 stocks; here's why",
+      "published": "Mon, 19 Oct 2026 07:35:27 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/asian-stocks-skid-on-ai-worries-wall-street-and-bonds-aided-by-oil-slip-126101900040_1.html",
+      "title": "Asian stocks skid on AI worries, Wall Street and bonds aided by oil slip",
+      "published": "Mon, 19 Oct 2026 07:33:57 +0530",
+      "chars": 105,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/earnings-crude-oil-jio-ipo-key-monitorables-for-investors-next-week-126101800241_1.html",
+      "title": "Earnings, crude oil, Jio IPO key monitorables for investors next week",
+      "published": "Sun, 18 Oct 2026 12:55:37 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/mcap-of-nine-of-top-10-most-valued-firms-surges-by-3-65-trn-tcs-shines-126101800187_1.html",
+      "title": "Mcap of nine of top-10 most valued firms surges by ₹3.65 trn, TCS shines",
+      "published": "Sun, 18 Oct 2026 12:11:19 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-6-stocks-cross-above-their-200-dmas/slideshow/135037931.cms",
+      "title": "Positive Breakout: These 6 stocks cross above their 200 DMAs",
+      "published": "Mon, 19 Oct 2026 07:42:41 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-edges-higher-as-investors-assess-fed-rate-hike-odds/articleshow/135037837.cms",
+      "title": "Gold edges higher as investors assess Fed rate-hike odds",
+      "published": "Mon, 19 Oct 2026 07:39:14 +0530",
+      "chars": 448,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-firmer-euro-weakens-as-french-protests-turn-violent/articleshow/135037823.cms",
+      "title": "Dollar firmer, euro weakens as French protests turn violent",
+      "published": "Mon, 19 Oct 2026 07:35:41 +0530",
+      "chars": 440,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-slips-as-trumps-sanction-waiver-may-lead-to-more-russian-fuel-supplies/articleshow/135037803.cms",
+      "title": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies",
+      "published": "Mon, 19 Oct 2026 07:34:10 +0530",
+      "chars": 338,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/bonds/at-1-payout-yes-banks-book-value-could-fall-up-to-26-sc-ruling-dents-banks-cushion-against-losses-in-near-term/articleshow/135037404.cms",
+      "title": "YES Bank book value may fall up to 26% after SC ruling on AT-1 bonds",
+      "published": "Mon, 19 Oct 2026 06:44:57 +0530",
+      "chars": 393,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-shares-fall-as-ai-spending-worries-weigh-on-sentiment/articleshow/135037337.cms",
+      "title": "Global Market Today: Asian shares fall as AI spending worries weigh on sentiment",
+      "published": "Mon, 19 Oct 2026 06:27:09 +0530",
+      "chars": 267,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-platforms-to-lead-ipo-parade-this-week/articleshow/135037311.cms",
+      "title": "Jio Platforms IPO, Paras Healthcare issue to drive primary market activity this week",
+      "published": "Mon, 19 Oct 2026 06:20:34 +0530",
+      "chars": 458,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/b-right-realestate-adds-3-sites-with-1-993-crore-gdv-in-h1-fy27",
+      "title": "B-Right Realestate Adds 3 Sites With ₹1,993 Crore GDV in H1 FY27",
+      "published": "Mon, 19 Oct 2026 00:53:19 GMT",
+      "chars": 2971,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/gpt-infraprojects-wins-149-5-crore-signalling-contract-from-western-railway",
+      "title": "GPT Infraprojects Wins ₹149.5 Crore Signalling Contract From Western Railway",
+      "published": "Mon, 19 Oct 2026 00:48:21 GMT",
+      "chars": 3117,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/dlf-q2-net-profit-rises-to-1-300-crore-despite-revenue-falling-to-1-260-crore",
+      "title": "DLF Q2 Net Profit Rises To ₹1,300 Crore Despite Revenue Falling To ₹1,260 Crore",
+      "published": "Mon, 19 Oct 2026 00:56:21 GMT",
+      "chars": 3023,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/lcc-projects-receives-tender-acceptance-for-151-57-crore-gujarat-epc-water-supply-contract",
+      "title": "LCC Projects Receives Tender Acceptance For ₹151.57 Crore Gujarat EPC Water Supply Contract",
+      "published": "Mon, 19 Oct 2026 01:03:19 GMT",
+      "chars": 3173,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/category/breaking-news",
+      "title": "Breaking News",
+      "published": "Mon, 19 Oct 2026 01:12:37 GMT",
+      "chars": 2021,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/axis-bank-q2-net-profit-rises-to-7-000-crore-as-revenue-reaches-36-400-crore",
+      "title": "Axis Bank Q2 Net Profit Rises To ₹7,000 Crore As Revenue Reaches ₹36,400 Crore",
+      "published": "Mon, 19 Oct 2026 01:07:30 GMT",
+      "chars": 2856,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 92.1
+}
