@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-19",
+  "top": [
+    {
+      "symbol": "COFORGE",
+      "company": "Coforge",
+      "tip_id": "3741743885",
+      "source_id": "broker:parekh",
+      "corroborating_sources": [
+        "mint_gnews"
+      ],
+      "n_mentions": 1,
+      "src_targets": [
+        2030.0
+      ],
+      "src_stop": 1900.0,
+      "src_entry": 1950.0,
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/vaishali-parekh-recommends-3-stocks-to-buy-today-coforge-lalithaa-jewellery-titan-target-stop-loss-market-outlook-11792342947926.html"
+      ],
+      "brokerages": [
+        "parekh"
+      ],
+      "sentence": "Coforge: Buy at ₹ 1,950 | Target ₹ 2,030 | Stop Loss ₹ 1,900; 2] Lalithaa Jewellery Mart: Buy at ₹ 371 | Target ₹ 385 | Stop Loss ₹ 360; and 3] Titan: Buy at ₹ 4,480 | Target ₹ 4,650 | Stop Loss ₹ 4,400. The views and recommendations above are those of individual analysts or broking companies, not M",
+      "ltp": 1951.9000244140625,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 1951.9,
+        "entry_zone": [
+          1942.14,
+          1961.66
+        ],
+        "stop_loss": 1862.16,
+        "stop_loss_pct": 4.6,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          2021.2,
+          2131.39,
+          2221.14
+        ],
+        "target_pct": [
+          3.55,
+          9.2,
+          13.79
+        ],
+        "target_basis": [
+          "resistance",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 64.3 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 pattern momentum_aligned"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          2030.0
+        ],
+        "src_stop": 1900.0,
+        "momentum_score": 65,
+        "efficiency": 0.303,
+        "amplitude_pct_day": 1.141,
+        "eta_days": [
+          10,
+          27,
+          30
+        ],
+        "eta_basis": "0.346%/session of net directional progress",
+        "pace_pct_day": 0.346,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 64.3,
+        "atr_pct": 3.07,
+        "adx": 19.7,
+        "vol_ratio": 0.99,
+        "patterns": [
+          "momentum_aligned"
+        ],
+        "dist_52w_high_pct": -3.43,
+        "dist_ema20_pct": 4.86,
+        "dist_ema200_pct": 19.28,
+        "avg_turnover_cr": 386.6,
+        "chg_5d_pct": 4.5,
+        "chg_20d_pct": 8.86,
+        "high_52w": 2021.2,
+        "last_bar_date": "2026-10-16",
+        "momentum_score": 65,
+        "drift_pct_day": 0.346,
+        "efficiency": 0.303,
+        "amplitude_pct_day": 1.141,
+        "up_day_share": 0.45
+      },
+      "resistances": [
+        {
+          "price": 2021.2,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 1762.2,
+          "touches": 1
+        },
+        {
+          "price": 1719.5,
+          "touches": 2
+        },
+        {
+          "price": 1430.0,
+          "touches": 1
+        },
+        {
+          "price": 1359.2,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 70,
+      "fund_score": 67,
+      "fund_why": [
+        "+12 ROCE 23.5%",
+        "+8 ROE 21.4%",
+        "-2 P/E 45.1",
+        "+8 3y profit CAGR 33%",
+        "+6 3y sales CAGR 27%",
+        "-6 return on capital has drifted from 29% to 24.3% — the newer capital earns less than the old",
+        "+5 D/E 0.08",
+        "-3 promoter 0%",
+        "-5 promoter stake down 30.16pp over four quarters",
+        "+4 latest qtr PAT YoY 49.4%",
+        "+4 mcap ₹86,477 cr",
+        "+8 operating cash flow ₹1,792cr, 103% of profit — profit is turning into cash",
+        "+4 interest cover 12.16×",
+        "-4 interest cost up 89% year on year",
+        "+3 institutions hold 66.93%",
+        "-4 price to book 6.87",
+        "-6 ROCE 23.5% bought at 6.87× book is 3.4% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +12 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 29.4% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 36.0%",
+        "Company's median sales growth is 18.4% of last 10 years"
+      ],
+      "screener_cons": [
+        "Tax rate seems low"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 86477.0,
+        "pe": 45.1,
+        "roce": 23.5,
+        "roe": 21.4,
+        "sales_growth_3_years": 27.0,
+        "profit_growth_3_years": 33.0,
+        "promoter_pct": 0.0,
+        "debt_to_equity": 0.08,
+        "np_yoy_growth_pct": 49.4,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 35.87,
+        "profit_growth_1y_pct": 86.43,
+        "cfo_cr": 1792.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": -32.0,
+        "interest_cover": 12.16,
+        "institutional_pct": 66.93,
+        "sector": "Information Technology",
+        "industry": "IT - Software"
+      },
+      "source_weight": 0.55,
+      "source_confidence": 50,
+      "composite": 65,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Sound fundamentals",
+          "tone": "good",
+          "why": "business score 67"
+        },
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 70"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "JAYNECOIND",
+      "company": "Jayaswal Neco Industries Limited",
+      "tip_id": "76b6c75d17",
+      "source_id": "chartink_volume_shock",
+      "corroborating_sources": [],
+      "n_mentions": 1,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/jaynecoind.html"
+      ],
+      "brokerages": [],
+      "sentence": "Buy Jayaswal Neco Industries Limited (NSE: JAYNECOIND) LTP 100.62 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 4.43%, volume 17313134.",
+      "ltp": 100.62000274658203,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 100.62,
+        "entry_zone": [
+          100.12,
+          101.12
+        ],
+        "stop_loss": 94.03,
+        "stop_loss_pct": 6.55,
+        "stop_basis": "below support",
+        "targets": [
+          105.17,
+          117.0,
+          120.25
+        ],
+        "target_pct": [
+          4.52,
+          16.28,
+          19.51
+        ],
+        "target_basis": [
+          "resistance",
+          "resistance",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.49,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 76,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.3 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 4.52× avg on up day",
+          "+4 pattern momentum_aligned",
+          "+1 pattern volume_spike"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 85,
+        "efficiency": 0.311,
+        "amplitude_pct_day": 1.815,
+        "eta_days": [
+          8,
+          29,
+          30
+        ],
+        "eta_basis": "0.564%/session of net directional progress",
+        "pace_pct_day": 0.564,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.3,
+        "atr_pct": 4.03,
+        "adx": 16.7,
+        "vol_ratio": 4.52,
+        "patterns": [
+          "momentum_aligned",
+          "volume_spike"
+        ],
+        "dist_52w_high_pct": -14.0,
+        "dist_ema20_pct": 7.04,
+        "dist_ema200_pct": 16.07,
+        "avg_turnover_cr": 36.43,
+        "chg_5d_pct": 10.09,
+        "chg_20d_pct": 13.13,
+        "high_52w": 117.0,
+        "last_bar_date": "2026-10-16",
+        "momentum_score": 85,
+        "drift_pct_day": 0.564,
+        "efficiency": 0.311,
+        "amplitude_pct_day": 1.815,
+        "up_day_share": 0.55
+      },
+      "resistances": [
+        {
+          "price": 105.17,
+          "touches": 1
+        },
+        {
+          "price": 109.19,
+          "touches": 1
+        },
+        {
+          "price": 117.0,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 98.51,
+          "touches": 1
+        },
+        {
+          "price": 94.5,
+          "touches": 1
+        },
+        {
+          "price": 86.26,
+          "touches": 5
+        },
+        {
+          "price": 83.13,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 76,
+      "fund_score": 60,
+      "fund_why": [
+        "+12 ROCE 20.7%",
+        "+8 ROE 18%",
+        "+6 P/E 14",
+        "+8 3y profit CAGR 20%",
+        "+0 3y sales CAGR 4%",
+        "+4 return on capital has improved from 10.2% to 16%",
+        "+2 D/E 0.45",
+        "+4 promoter 55.15%",
+        "+4 latest qtr PAT YoY 119%",
+        "+0 mcap ₹9,770 cr",
+        "+8 operating cash flow ₹1,367cr, 295% of profit — profit is turning into cash",
+        "+0 price to book 2.95",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted +8 of +16 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company has delivered good profit growth of 23.2% CAGR over last 5 years",
+        "Company's working capital requirements have reduced from 56.4 days to 20.6 days"
+      ],
+      "screener_cons": [
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 11.3% over last 3 years.",
+        "Promoters have pledged 99.9% of their holding.",
+        "Company's cost of borrowing seems high"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 9770.0,
+        "pe": 14.0,
+        "roce": 20.7,
+        "roe": 18.0,
+        "sales_growth_3_years": 4.0,
+        "profit_growth_3_years": 20.0,
+        "promoter_pct": 55.15,
+        "debt_to_equity": 0.45,
+        "np_yoy_growth_pct": 119.0,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 19.0,
+        "profit_growth_1y_pct": 309.73,
+        "cfo_cr": 1367.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": -29.1,
+        "interest_cover": 7.1,
+        "institutional_pct": 2.1,
+        "sector": "Capital Goods",
+        "industry": "Industrial Products"
+      },
+      "source_weight": 0.5,
+      "source_confidence": 50,
+      "composite": 65,
+      "verdict": "BUY",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 76"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 28038.12,
+  "watch": [
+    "ORIENTHOT",
+    "NYKAA",
+    "NITINSPIN",
+    "SOLARA",
+    "GROWW",
+    "VOLTAMP",
+    "PARACABLES"
+  ]
+}
