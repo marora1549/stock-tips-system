@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 1.12,
+  "cash_inr": -136.88,
   "positions": [
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -51,8 +51,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 293.6499938964844,
-      "unrealised_pct": 3.0
+      "ltp": 295.0,
+      "unrealised_pct": 3.47
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -102,8 +102,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 7.17,
       "notes": [],
-      "ltp": 442.29998779296875,
-      "unrealised_pct": 5.81
+      "ltp": 437.79998779296875,
+      "unrealised_pct": 4.74
     },
     {
       "pos_id": "2026-10-21-PNB",
@@ -112,12 +112,12 @@
       "company": "Punjab National Bank",
       "opened": "2026-10-21",
       "booked": "2026-10-21 08:28",
-      "status": "pending",
+      "status": "open",
       "entry_plan": 121.9,
-      "entry": null,
+      "entry": 122.5,
       "qty": 230,
       "qty_open": 230,
-      "capital_inr": 28037.0,
+      "capital_inr": 28175.0,
       "stop_loss": 113.95,
       "initial_stop": 113.95,
       "targets": [
@@ -129,7 +129,7 @@
       "fund_score_at_entry": 60,
       "timeframe": "monthly",
       "time_stop_days": 30,
-      "deadline": null,
+      "deadline": "2026-12-02",
       "eta_days": [
         78,
         90,
@@ -154,8 +154,10 @@
       ],
       "exits": [],
       "realised_inr": 0.0,
-      "max_favourable_pct": 0.0,
-      "notes": []
+      "max_favourable_pct": 1.39,
+      "notes": [],
+      "ltp": 122.5,
+      "unrealised_pct": 0.0
     }
   ],
   "closed": [
@@ -564,6 +566,10 @@
     {
       "date": "2026-10-19",
       "equity": 97601.32
+    },
+    {
+      "date": "2026-10-21",
+      "equity": 97509.52
     }
   ],
   "created": "2026-09-07",
