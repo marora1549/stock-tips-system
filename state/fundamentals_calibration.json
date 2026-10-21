@@ -9,6 +9,15 @@
       "n_flagged": 0,
       "first_seen": "2026-09-16",
       "last_settled": "2026-10-01"
+    },
+    "60-75": {
+      "id": "60-75",
+      "n": 1,
+      "n_settled": 0,
+      "n_up": 0,
+      "sum_return_pct": 0.0,
+      "n_flagged": 0,
+      "first_seen": "2026-10-21"
     }
   },
   "entries": [
@@ -52,6 +61,17 @@
       "symbol": "KOTAKBANK",
       "score": 85,
       "bucket": "75-100",
+      "flags": [],
+      "caps": [],
+      "unrated": false,
+      "outcome": null,
+      "ret_pct": null
+    },
+    {
+      "date": "2026-10-21",
+      "symbol": "PNB",
+      "score": 60,
+      "bucket": "60-75",
       "flags": [],
       "caps": [],
       "unrated": false,

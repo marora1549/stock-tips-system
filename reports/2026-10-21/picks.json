@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-21",
+  "top": [
+    {
+      "symbol": "PNB",
+      "company": "Punjab National Bank",
+      "tip_id": "0c9d054539",
+      "source_id": "chartink_volume_shock",
+      "corroborating_sources": [
+        "broker:motilal",
+        "brokerage_gnews"
+      ],
+      "n_mentions": 2,
+      "src_targets": [
+        140.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/pnb.html",
+        "https://investmentguruindia.com/newsdetail/buy-punjab-national-bank-ltd-for-the-target-rs-140-by-motilal-oswal-financial-services-ltd477701"
+      ],
+      "brokerages": [
+        "motilal"
+      ],
+      "sentence": "Buy Punjab National Bank Ltd (NSE: PNB) LTP 121.9 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 4.82%, volume 78115490.",
+      "ltp": 121.9000015258789,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 121.9,
+        "entry_zone": [
+          121.29,
+          122.51
+        ],
+        "stop_loss": 113.95,
+        "stop_loss_pct": 6.52,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          135.15,
+          140.13,
+          148.46
+        ],
+        "target_pct": [
+          10.87,
+          14.95,
+          21.79
+        ],
+        "target_basis": [
+          "resistance",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.29,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 80,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 63.1 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 4.58× avg on up day",
+          "+8 pattern breakout_60d_high_volume",
+          "+6 pattern double_bottom_confirmed",
+          "+4 pattern momentum_aligned",
+          "+1 pattern volume_spike",
+          "-10 T1 needs ~78d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          140.0
+        ],
+        "src_stop": null,
+        "momentum_score": 30,
+        "efficiency": 0.127,
+        "amplitude_pct_day": 1.099,
+        "eta_days": [
+          78,
+          90,
+          90
+        ],
+        "eta_basis": "0.14%/session of net directional progress",
+        "pace_pct_day": 0.14,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 63.1,
+        "atr_pct": 2.73,
+        "adx": 19.2,
+        "vol_ratio": 4.58,
+        "patterns": [
+          "breakout_60d_high_volume",
+          "double_bottom_confirmed",
+          "momentum_aligned",
+          "volume_spike"
+        ],
+        "dist_52w_high_pct": -9.8,
+        "dist_ema20_pct": 5.05,
+        "dist_ema200_pct": 7.8,
+        "avg_turnover_cr": 198.74,
+        "chg_5d_pct": 5.09,
+        "chg_20d_pct": 3.95,
+        "high_52w": 135.15,
+        "last_bar_date": "2026-10-19",
+        "momentum_score": 30,
+        "drift_pct_day": 0.14,
+        "efficiency": 0.127,
+        "amplitude_pct_day": 1.099,
+        "up_day_share": 0.55
+      },
+      "resistances": [
+        {
+          "price": 135.15,
+          "touches": 1
+        }
+      ],
+      "supports": [
+        {
+          "price": 114.52,
+          "touches": 1
+        },
+        {
+          "price": 112.73,
+          "touches": 2
+        },
+        {
+          "price": 109.37,
+          "touches": 1
+        },
+        {
+          "price": 104.37,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 80,
+      "fund_score": 60,
+      "fund_why": [
+        "+12 net NPA 0.25% of the book",
+        "+0 gross NPA 2.55%",
+        "+0 return on assets 0.83%",
+        "+3 ROE 12.5%",
+        "-4 net interest margin 2.06% of assets",
+        "-8 net interest income -1.9% last year",
+        "+6 price to book 0.92",
+        "+4 P/E 6.64",
+        "+2 institutions hold 22.8%",
+        "  (value counted +5 of +10 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Stock is trading at 0.92 times its book value",
+        "Company has delivered good profit growth of 52.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 20.2%"
+      ],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 9.67% over past five years.",
+        "Company has a low return on equity of 11.8% over last 3 years.",
+        "Contingent liabilities of Rs.5,23,154 Cr.",
+        "Company might be capitalizing the interest cost",
+        "Promoter holding has decreased over last 3 years: -3.07%"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 140099.0,
+        "pe": 6.64,
+        "roce": 6.09,
+        "roe": 12.5,
+        "sales_growth_3_years": 15.0,
+        "profit_growth_3_years": 89.0,
+        "promoter_pct": 70.08,
+        "np_yoy_growth_pct": 12.8,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 5.31,
+        "profit_growth_1y_pct": 1.65,
+        "cfo_cr": 26302.0,
+        "cfo_negative_streak": 0,
+        "institutional_pct": 22.8,
+        "sector": "Financial Services",
+        "industry": "Banks"
+      },
+      "source_weight": 0.566,
+      "source_confidence": 50,
+      "composite": 69,
+      "verdict": "BUY",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 80"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 78 sessions against a 30-session stop"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
+      "alloc_inr": 28037.0,
+      "alloc_qty": 230
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "company": "The Federal Bank  Limited",
+      "tip_id": "174d00c4b7",
+      "source_id": "chartink_volume_shock",
+      "corroborating_sources": [
+        "broker:motilal",
+        "brokerage_gnews"
+      ],
+      "n_mentions": 2,
+      "src_targets": [
+        385.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/buy-federal-bank-ltd-for-the-target-rs-385-by-motilal-oswal-financial-services-ltd396097",
+        "https://chartink.com/stocks/federalbnk.html"
+      ],
+      "brokerages": [
+        "motilal"
+      ],
+      "sentence": "Buy The Federal Bank  Limited (NSE: FEDERALBNK) LTP 348.85 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 3.21%, volume 31072948.",
+      "ltp": 348.8500061035156,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 348.85,
+        "entry_zone": [
+          347.11,
+          350.59
+        ],
+        "stop_loss": 335.91,
+        "stop_loss_pct": 3.71,
+        "stop_basis": "below support",
+        "targets": [
+          379.0,
+          399.1,
+          429.25
+        ],
+        "target_pct": [
+          8.64,
+          14.4,
+          23.05
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 3.88,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 64,
+        "reasons": [
+          "+8 trend up",
+          "+7 RSI 64.4 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+5 volume 3.54× avg on up day",
+          "+4 pattern momentum_aligned",
+          "+1 pattern volume_spike",
+          "+4 reward:risk to T2 3.88",
+          "-10 T1 needs ~45d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          385.0
+        ],
+        "src_stop": null,
+        "momentum_score": 40,
+        "efficiency": 0.19,
+        "amplitude_pct_day": 1.013,
+        "eta_days": [
+          45,
+          75,
+          90
+        ],
+        "eta_basis": "0.192%/session of net directional progress",
+        "pace_pct_day": 0.192,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "up",
+        "rsi": 64.4,
+        "atr_pct": 2.88,
+        "adx": 23.0,
+        "vol_ratio": 3.54,
+        "patterns": [
+          "momentum_aligned",
+          "volume_spike"
+        ],
+        "dist_52w_high_pct": -6.15,
+        "dist_ema20_pct": 5.0,
+        "dist_ema200_pct": 13.35,
+        "avg_turnover_cr": 290.4,
+        "chg_5d_pct": 6.29,
+        "chg_20d_pct": 4.84,
+        "high_52w": 371.7,
+        "last_bar_date": "2026-10-19",
+        "momentum_score": 40,
+        "drift_pct_day": 0.192,
+        "efficiency": 0.19,
+        "amplitude_pct_day": 1.013,
+        "up_day_share": 0.55
+      },
+      "resistances": [
+        {
+          "price": 356.95,
+          "touches": 1
+        },
+        {
+          "price": 364.2,
+          "touches": 1
+        },
+        {
+          "price": 371.7,
+          "touches": 2
+        }
+      ],
+      "supports": [
+        {
+          "price": 337.6,
+          "touches": 1
+        },
+        {
+          "price": 323.2,
+          "touches": 2
+        },
+        {
+          "price": 315.98,
+          "touches": 2
+        },
+        {
+          "price": 278.55,
+          "touches": 2
+        }
+      ],
+      "ta_confidence": 64,
+      "fund_score": 83,
+      "fund_why": [
+        "+12 net NPA 0.63% of the book",
+        "+4 gross NPA 2.11%",
+        "+6 return on assets 1.06%",
+        "+0 ROE 11.6%",
+        "+0 net interest margin 2.82% of assets",
+        "+5 net interest income +13.6% last year",
+        "+3 price to book 2.02",
+        "+4 P/E 16.6",
+        "+4 institutions hold 77.82%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (value counted +5 of +7 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 12.9% over last 3 years.",
+        "Contingent liabilities of Rs.2,99,451 Cr.",
+        "Company might be capitalizing the interest cost",
+        "Dividend payout has been low at 7.14% of profits over last 3 years"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 86263.0,
+        "pe": 16.6,
+        "roce": 6.39,
+        "roe": 11.6,
+        "sales_growth_3_years": 19.0,
+        "profit_growth_3_years": 11.0,
+        "np_yoy_growth_pct": 53.3,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 5.58,
+        "profit_growth_1y_pct": 6.07,
+        "cfo_cr": 4349.0,
+        "cfo_negative_streak": 0,
+        "institutional_pct": 77.82,
+        "sector": "Financial Services",
+        "industry": "Banks"
+      },
+      "source_weight": 0.566,
+      "source_confidence": 50,
+      "composite": 66,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 83"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 45 sessions against a 30-session stop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 3.88"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [
+    {
+      "symbol": "PNB",
+      "composite": 69,
+      "alloc_inr": 28037.0,
+      "alloc_qty": 230
+    }
+  ],
+  "booked": [
+    "2026-10-21-PNB"
+  ],
+  "cash_after": 1.12,
+  "watch": [
+    "VRLLOG",
+    "JUSTDIAL",
+    "GABRIEL",
+    "JAYBARMARU",
+    "UNIONBANK",
+    "NYKAA",
+    "INDNIPPON",
+    "ADANIPORTS"
+  ]
+}

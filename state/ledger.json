@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": 28038.12,
+  "cash_inr": 1.12,
   "positions": [
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -104,6 +104,58 @@
       "notes": [],
       "ltp": 442.29998779296875,
       "unrealised_pct": 5.81
+    },
+    {
+      "pos_id": "2026-10-21-PNB",
+      "tip_id": "0c9d054539",
+      "symbol": "PNB",
+      "company": "Punjab National Bank",
+      "opened": "2026-10-21",
+      "booked": "2026-10-21 08:28",
+      "status": "pending",
+      "entry_plan": 121.9,
+      "entry": null,
+      "qty": 230,
+      "qty_open": 230,
+      "capital_inr": 28037.0,
+      "stop_loss": 113.95,
+      "initial_stop": 113.95,
+      "targets": [
+        135.15,
+        140.13,
+        148.46
+      ],
+      "targets_hit": [],
+      "fund_score_at_entry": 60,
+      "timeframe": "monthly",
+      "time_stop_days": 30,
+      "deadline": null,
+      "eta_days": [
+        78,
+        90,
+        90
+      ],
+      "pace_pct_day": 0.14,
+      "momentum_score": 30,
+      "source_id": "chartink_volume_shock",
+      "corroborating_sources": [
+        "broker:motilal",
+        "brokerage_gnews"
+      ],
+      "ta_confidence": 80,
+      "fund_score": 60,
+      "composite": 69,
+      "bucket": "hot-potato",
+      "patterns": [
+        "breakout_60d_high_volume",
+        "double_bottom_confirmed",
+        "momentum_aligned",
+        "volume_spike"
+      ],
+      "exits": [],
+      "realised_inr": 0.0,
+      "max_favourable_pct": 0.0,
+      "notes": []
     }
   ],
   "closed": [

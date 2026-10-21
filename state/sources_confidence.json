@@ -18,7 +18,7 @@
   },
   "broker:anandrathi": {
     "score": 0.0,
-    "n_tips": 13,
+    "n_tips": 15,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -30,7 +30,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "broker:anandrathi"
   },
   "broker:angelone": {
@@ -103,7 +103,7 @@
   },
   "broker:choice": {
     "score": 0.0,
-    "n_tips": 16,
+    "n_tips": 17,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -115,12 +115,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:choice"
   },
   "broker:citi": {
     "score": 0.0,
-    "n_tips": 27,
+    "n_tips": 28,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -132,12 +132,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-14",
+    "last_seen": "2026-10-21",
     "id": "broker:citi"
   },
   "broker:clsa": {
     "score": 0.0,
-    "n_tips": 27,
+    "n_tips": 28,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -149,12 +149,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-14",
+    "last_seen": "2026-10-21",
     "id": "broker:clsa"
   },
   "broker:elara": {
     "score": 0.0,
-    "n_tips": 38,
+    "n_tips": 40,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -166,12 +166,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-14",
+    "last_seen": "2026-10-21",
     "id": "broker:elara"
   },
   "broker:emkay": {
     "score": 0.0,
-    "n_tips": 47,
+    "n_tips": 53,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -183,10 +183,27 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:emkay"
   },
   "broker:geojit": {
+    "score": 0.0,
+    "n_tips": 37,
+    "n_resolved": 0,
+    "n_t1": 0,
+    "n_t2": 0,
+    "n_t3": 0,
+    "n_sl": 0,
+    "n_timestop": 0,
+    "sum_return_pct": 0.0,
+    "days_to_t1": [],
+    "history": [],
+    "enabled": true,
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-21",
+    "id": "broker:geojit"
+  },
+  "broker:icicisec": {
     "score": 0.0,
     "n_tips": 36,
     "n_resolved": 0,
@@ -200,29 +217,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
-    "id": "broker:geojit"
-  },
-  "broker:icicisec": {
-    "score": 0.0,
-    "n_tips": 35,
-    "n_resolved": 0,
-    "n_t1": 0,
-    "n_t2": 0,
-    "n_t3": 0,
-    "n_sl": 0,
-    "n_timestop": 0,
-    "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
-    "enabled": true,
-    "first_seen": "2026-09-07",
-    "last_seen": "2026-10-15",
+    "last_seen": "2026-10-21",
     "id": "broker:icicisec"
   },
   "broker:jefferies": {
     "score": 0.0,
-    "n_tips": 62,
+    "n_tips": 65,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -234,7 +234,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:jefferies"
   },
   "broker:kotaksec": {
@@ -290,7 +290,7 @@
   },
   "broker:motilal": {
     "score": -29.25,
-    "n_tips": 146,
+    "n_tips": 160,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -317,12 +317,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:motilal"
   },
   "broker:nomura": {
     "score": 0.0,
-    "n_tips": 49,
+    "n_tips": 50,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -334,12 +334,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:nomura"
   },
   "broker:nuvama": {
     "score": 0.0,
-    "n_tips": 42,
+    "n_tips": 44,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -351,7 +351,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "broker:nuvama"
   },
   "broker:parekh": {
@@ -441,7 +441,7 @@
   },
   "brokerage_gnews": {
     "score": -14.625,
-    "n_tips": 231,
+    "n_tips": 247,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -468,12 +468,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "brokerage_gnews"
   },
   "bs_recos": {
     "score": 0.0,
-    "n_tips": 50,
+    "n_tips": 52,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -485,7 +485,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "bs_recos"
   },
   "chartink_52w_breakout": {
@@ -507,7 +507,7 @@
   },
   "chartink_ema_pullback": {
     "score": -15.0,
-    "n_tips": 1159,
+    "n_tips": 1199,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -527,12 +527,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": -35.662499999999994,
-    "n_tips": 1110,
+    "n_tips": 1148,
     "n_resolved": 3,
     "n_t1": 0,
     "n_t2": 0,
@@ -566,7 +566,7 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "chartink_squeeze"
   },
   "corp_approvals": {
@@ -775,7 +775,7 @@
   },
   "et_recos_page": {
     "score": 0.0,
-    "n_tips": 184,
+    "n_tips": 190,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -787,12 +787,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "et_recos_page"
   },
   "fe_gnews": {
     "score": 0.0,
-    "n_tips": 178,
+    "n_tips": 181,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -804,12 +804,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
     "score": -7.5,
-    "n_tips": 303,
+    "n_tips": 310,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -829,12 +829,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "mc_stock_ideas_gnews"
   },
   "mint_gnews": {
     "score": 0.0,
-    "n_tips": 337,
+    "n_tips": 345,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -846,7 +846,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "mint_gnews"
   },
   "mojo": {
@@ -919,7 +919,7 @@
   },
   "chartink_volume_shock": {
     "score": 0.0,
-    "n_tips": 584,
+    "n_tips": 605,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -931,7 +931,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-18",
-    "last_seen": "2026-10-19",
+    "last_seen": "2026-10-21",
     "id": "chartink_volume_shock"
   },
   "broker:mirae": {
@@ -1106,7 +1106,7 @@
   },
   "broker:hsbc": {
     "score": 0.0,
-    "n_tips": 3,
+    "n_tips": 4,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -1118,7 +1118,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-30",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-21",
     "id": "broker:hsbc"
   },
   "broker:jpmorgan": {
