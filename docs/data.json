@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20",
+  "generated": "2026-10-21",
   "stats": {
     "capital": 100000,
     "equity": 97601.32,
@@ -79,7 +79,7 @@
       ],
       "order_line": "BUY 142 PETRONET NSE CNC limit ₹285.10 · SL-M ₹276.86 · GTT ₹307.19 / 318.75 / 326.40",
       "progress_t1_pct": 39,
-      "days_elapsed": 14
+      "days_elapsed": 15
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -139,72 +139,10 @@
       ],
       "order_line": "BUY 63 KOTAKBANK NSE CNC limit ₹418.00 · SL-M ₹407.20 · GTT ₹453.20 / 466.40 / 488.75",
       "progress_t1_pct": 69,
-      "days_elapsed": 11
+      "days_elapsed": 12
     }
   ],
   "sparks": {
-    "PETRONET": [
-      274.7,
-      272.9,
-      277.8,
-      277.1,
-      278.9,
-      280.75,
-      284.85,
-      285.0,
-      280.8,
-      276.95,
-      280.6,
-      280.0,
-      277.0,
-      279.85,
-      279.3,
-      282.6,
-      281.8,
-      286.25,
-      288.15,
-      291.4,
-      293.0,
-      295.95,
-      292.5,
-      289.0,
-      290.95,
-      292.0,
-      300.6,
-      292.3,
-      289.2,
-      289.5,
-      288.1,
-      290.95,
-      285.8,
-      285.9,
-      288.7,
-      287.2,
-      283.95,
-      282.1,
-      283.45,
-      292.6,
-      287.5,
-      281.75,
-      285.85,
-      286.6,
-      286.5,
-      289.85,
-      282.95,
-      284.5,
-      285.5,
-      290.0,
-      297.5,
-      297.0,
-      288.5,
-      291.5,
-      290.5,
-      290.0,
-      292.95,
-      295.2,
-      293.0,
-      293.65
-    ],
     "KOTAKBANK": [
       384.75,
       384.65,
@@ -266,6 +204,68 @@
       447.95,
       447.4,
       442.3
+    ],
+    "PETRONET": [
+      274.7,
+      272.9,
+      277.8,
+      277.1,
+      278.9,
+      280.75,
+      284.85,
+      285.0,
+      280.8,
+      276.95,
+      280.6,
+      280.0,
+      277.0,
+      279.85,
+      279.3,
+      282.6,
+      281.8,
+      286.25,
+      288.15,
+      291.4,
+      293.0,
+      295.95,
+      292.5,
+      289.0,
+      290.95,
+      292.0,
+      300.6,
+      292.3,
+      289.2,
+      289.5,
+      288.1,
+      290.95,
+      285.8,
+      285.9,
+      288.7,
+      287.2,
+      283.95,
+      282.1,
+      283.45,
+      292.6,
+      287.5,
+      281.75,
+      285.85,
+      286.6,
+      286.5,
+      289.85,
+      282.95,
+      284.5,
+      285.5,
+      290.0,
+      297.5,
+      297.0,
+      288.5,
+      291.5,
+      290.5,
+      290.0,
+      292.95,
+      295.2,
+      293.0,
+      293.65
     ]
   },
   "actions_log": [],
@@ -1592,7 +1592,7 @@
   "latest_picks": {},
   "latest_analysis": [],
   "contenders": [],
-  "analysis_day": "2026-10-20",
+  "analysis_day": "2026-10-21",
   "cash_flows": [],
   "book": {
     "max_open_positions": 4,
@@ -1606,42 +1606,42 @@
     "max_single_stock_pct": 50
   },
   "intraday": {
-    "day": "2026-10-19",
-    "generated_at": "2026-10-19 08:10",
-    "checked_at": "2026-10-19 09:37",
-    "events_read": 14,
+    "day": "2026-10-21",
+    "generated_at": "2026-10-21 08:12",
+    "checked_at": null,
+    "events_read": 15,
     "wires": {
       "corp_stocks_to_watch": {
         "docs": 7,
         "events": 2
       },
       "corp_orders": {
-        "docs": 4,
-        "events": 2
-      },
-      "corp_orders_bse": {
         "docs": 0,
         "events": 0
       },
+      "corp_orders_bse": {
+        "docs": 4,
+        "events": 5
+      },
       "corp_approvals": {
-        "docs": 0,
+        "docs": 5,
         "events": 0
       },
       "corp_regulatory_action": {
-        "docs": 1,
-        "events": 0
-      },
-      "corp_results": {
         "docs": 5,
         "events": 3
       },
+      "corp_results": {
+        "docs": 3,
+        "events": 1
+      },
       "corp_expansion": {
-        "docs": 2,
-        "events": 2
+        "docs": 1,
+        "events": 0
       },
       "corp_bs_capitalmarket": {
-        "docs": 5,
-        "events": 4
+        "docs": 8,
+        "events": 3
       },
       "corp_bs_markets_rss": {
         "docs": 7,
@@ -1653,258 +1653,60 @@
       },
       "corp_sahi": {
         "docs": 6,
-        "events": 2
+        "events": 1
       }
     },
     "trade": [],
-    "watch": [
-      {
-        "symbol": "AXISBANK",
-        "company": "Axis Bank Limited",
-        "event": "earnings_beat",
-        "event_label": "Earnings beat",
-        "catalyst": 49,
-        "verdict": "WATCH",
-        "verdict_note": "real but not enough on its own — watch how it opens",
-        "size_inr_cr": 151.57,
-        "size_estimated": false,
-        "size_basis": "₹151.57 Crore",
-        "materiality_ratio": 0.001,
-        "revenue_ttm_cr": 135403.0,
-        "fund_score": 81,
-        "fund_why": [
-          "+12 net NPA 0.35% of the book",
-          "+4 gross NPA 1.16%",
-          "+6 return on assets 1.24%",
-          "+3 ROE 12.7%",
-          "+0 net interest margin 2.85% of assets",
-          "+0 net interest income +3.1% last year",
-          "+3 price to book 1.83",
-          "+4 P/E 14.5",
-          "+4 institutions hold 82.59%",
-          "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
-          "  (value counted +5 of +7 — its terms measure the same thing more than once, so the most it can add is +5)",
-          "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
-          "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
-        ],
-        "fund_flags": [],
-        "fund_caps": [],
-        "fund_unrated": false,
-        "screener_pros": [
-          "Company has delivered good profit growth of 30.0% CAGR over last 5 years",
-          "Company's working capital requirements have reduced from 52.8 days to 18.3 days"
-        ],
-        "screener_cons": [
-          "Company has low interest coverage ratio.",
-          "Promoter holding is low: 7.86%",
-          "Contingent liabilities of Rs.31,19,816 Cr.",
-          "Company might be capitalizing the interest cost"
-        ],
-        "source_id": "corp_sahi",
-        "corroborating_sources": [
-          "corp_stocks_to_watch"
-        ],
-        "url": "https://www.sahi.com/news/axis-bank-q2-net-profit-rises-to-7-000-crore-as-revenue-reaches-36-400-crore",
-        "title": "Axis Bank Q2 Net Profit Rises To ₹7,000 Crore As Revenue Reaches ₹36,400 Crore",
-        "published": "Mon, 19 Oct 2026 01:07:30 GMT",
-        "directness": 1.0,
-        "route": "named",
-        "why_this_name": "named in the story",
-        "theme": null,
-        "ltp": 1290.0,
-        "ta": {
-          "trend": "sideways",
-          "rsi": 62.8,
-          "adx": 18.1,
-          "atr_pct": 2.01,
-          "vol_ratio": 1.3,
-          "chg_1d_pct": 0.16,
-          "chg_5d_pct": 2.45,
-          "dist_52w_high_pct": -9.05,
-          "dist_ema200_pct": 2.39,
-          "avg_turnover_cr": 837.81,
-          "high_52w": 1418.3,
-          "momentum_score": 27,
-          "last_bar_date": "2026-10-16"
-        },
-        "fundamentals": {
-          "market_cap_cr": 401689.0,
-          "pe": 14.5,
-          "roce": 6.07,
-          "roe": 12.7,
-          "sales_growth_3_years": 14.0,
-          "profit_growth_3_years": 37.0,
-          "promoter_pct": 7.86,
-          "revenue_ttm_cr": 135403.0,
-          "revenue_basis": "trailing 4 quarters"
-        },
-        "freshness": {
-          "points": 12,
-          "window": "overnight",
-          "why": "published Mon 06:37, outside market hours — the move is still ahead of the open"
-        },
-        "class_score": {
-          "n": 0,
-          "avg_open_to_high_pct": null,
-          "hit_rate": null,
-          "adjust": 0.0,
-          "untested": true
-        },
-        "plan": {
-          "reference_close": 1290.0,
-          "atr_pct": 2.01,
-          "expected_day_range_inr": 25.93,
-          "expected_day_range_pct": 2.01,
-          "opening_range_minutes": 15,
-          "gap_ladder": [
-            {
-              "band": "modest",
-              "gap_upto_pct": 2.0,
-              "rule": "buy the break of the opening-range high",
-              "acts": true
-            },
-            {
-              "band": "wide",
-              "gap_upto_pct": 5.0,
-              "rule": "buy the opening-range break only if it closes strong on real volume",
-              "acts": true
-            },
-            {
-              "band": "runaway",
-              "gap_upto_pct": null,
-              "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
-              "acts": false
-            }
-          ],
-          "max_stop_pct": 1.5,
-          "min_stop_pct": 0.5,
-          "no_new_entry_after": "14:00",
-          "force_flat_at": "15:10",
-          "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
-        },
-        "certainty": 1.0,
-        "n_reports": 2,
-        "catalyst_reasons": [
-          "+22 Earnings beat",
-          "+2 ₹152cr against ₹135,403cr of revenue — 0.0× a year's sales, small against revenue",
-          "+10 fundamentals 81/100",
-          "+12 published Mon 06:37, outside market hours — the move is still ahead of the open",
-          "+3 reported independently by 1 other source"
-        ],
-        "session": {
-          "state": "voided",
-          "band": "gap_down",
-          "band_rule": "the market disagrees with the news — stand aside and let it settle",
-          "gap_pct": -2.49,
-          "open": 1257.9,
-          "prev_close": 1290.0,
-          "vwap": 1237.65,
-          "last": 1239.5,
-          "day_high": 1257.9,
-          "day_low": 1225.4,
-          "from_open_pct": -1.46,
-          "opening_range": {
-            "open": 1257.9,
-            "high": 1257.9,
-            "low": 1226.9,
-            "close": 1228.0,
-            "span_inr": 31.0,
-            "span_pct": 2.53,
-            "close_position": 0.035,
-            "volume": 1675257.0,
-            "bars": 3,
-            "minutes": 15,
-            "from": "09:15",
-            "to": "09:25"
-          },
-          "or_volume_multiple": 6.33,
-          "acts": false,
-          "why_not": "the market disagrees with the news — stand aside and let it settle",
-          "watch": null,
-          "trigger": null,
-          "stop": null,
-          "stop_pct": null,
-          "stop_note": null,
-          "targets": null,
-          "target_pct": null,
-          "target_basis": null,
-          "reward_risk_t2": null,
-          "targets_hit": null,
-          "triggered": null,
-          "stopped": null,
-          "entered_at": null,
-          "stopped_at": null,
-          "max_favourable_pct": null,
-          "size": {
-            "qty": 0
-          },
-          "order_line": null,
-          "reasons": [
-            "opened at ₹1,257.90, a -2.49% gap on ₹1,290.00",
-            "first 15 minutes ran ₹1,226.90–₹1,257.90 (2.53%) and closed 4% up that range"
-          ]
-        }
-      }
-    ],
+    "watch": [],
     "avoid": [
       {
-        "symbol": "SOLARINDS",
-        "company": "Solar Industries India Limited",
+        "symbol": "EDELWEISS",
+        "company": "Edelweiss Financial Services Limited",
         "event_label": "Equity dilution",
-        "title": "Acme Solar completes ₹2,800 crore Qualified Institutional Placement",
-        "url": "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819",
-        "source_id": "corp_expansion",
-        "catalyst": 4,
+        "title": "EAAA India Alternatives Fixes Price Band at ₹1,585 to ₹1,665 per Share for ₹1,200 Crore IPO",
+        "url": "https://www.equitybulls.com/news/377313/eaaa-india-alternatives-fixes-price-band-at-1-585-to-1-665-per-share-for-1-200-c",
+        "source_id": "corp_orders_bse",
+        "catalyst": 13,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       },
       {
-        "symbol": "ACMESOLAR",
-        "company": "Acme Solar Holdings Limited",
-        "event_label": "Equity dilution",
-        "title": "Acme Solar completes ₹2,800 crore Qualified Institutional Placement",
-        "url": "https://scanx.trade/stock-market-news/companies/acme-solar-holdings-likely-to-launch-qip-soon-to-raise-up-to-2500-crore-cnbc-tv18/41840819",
-        "source_id": "corp_expansion",
+        "symbol": "NETWEB",
+        "company": "Netweb Technologies India Limited",
+        "event_label": "Regulatory action",
+        "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+        "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+        "source_id": "corp_regulatory_action",
+        "catalyst": 8,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "ANANTRAJ",
+        "company": "Anant Raj Limited",
+        "event_label": "Regulatory action",
+        "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+        "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+        "source_id": "corp_regulatory_action",
         "catalyst": -2,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       },
       {
-        "symbol": "DLF",
-        "company": "DLF Limited",
+        "symbol": "ORCHPHARMA",
+        "company": "Orchid Pharma Limited",
+        "event_label": "Equity dilution",
+        "title": "Stocks to watch out for today, October 21: Infosys, Ceigall, Dhampur Bio, JSW Dulux, Venus Pipes, Transrail, Orchid Pharma among 15 stocks in focus",
+        "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece",
+        "source_id": "corp_stocks_to_watch",
+        "catalyst": -2,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "SOBHA",
+        "company": "Sobha Limited",
         "event_label": "Earnings miss",
-        "title": "DLF Q2 Net Profit Rises To ₹1,300 Crore Despite Revenue Falling To ₹1,260 Crore",
-        "url": "https://www.sahi.com/news/dlf-q2-net-profit-rises-to-1-300-crore-despite-revenue-falling-to-1-260-crore",
+        "title": "Sobha Q2 Net Profit Declines YoY To ₹33 Crore On ₹970 Crore Revenue",
+        "url": "https://www.sahi.com/news/sobha-q2-net-profit-declines-yoy-to-33-crore-on-970-crore-revenue",
         "source_id": "corp_sahi",
-        "catalyst": -18,
-        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
-      },
-      {
-        "symbol": "SKFINDIA",
-        "company": "SKF India Limited",
-        "event_label": "Earnings miss",
-        "title": "SKF India Industrial Q1 net profit falls 14% as costs outpace revenue growth",
-        "url": "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972",
-        "source_id": "corp_results",
-        "catalyst": -25,
-        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
-      },
-      {
-        "symbol": "ALKEM",
-        "company": "Alkem Laboratories Limited",
-        "event_label": "Earnings miss",
-        "title": "Alkem Laboratories profit falls 22% in Q1FY27 despite 11% revenue growth",
-        "url": "https://scanx.trade/stock-market-news/companies/alkem-laboratories-q1-results-net-profit-falls-21-yoy/48242478",
-        "source_id": "corp_results",
-        "catalyst": -30,
-        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
-      },
-      {
-        "symbol": "SKFINDUS",
-        "company": "SKF India (Industrial) Limited",
-        "event_label": "Earnings miss",
-        "title": "SKF India Industrial Q1 net profit falls 14% as costs outpace revenue growth",
-        "url": "https://scanx.trade/stock-market-news/companies/skf-india-industrial-q1-results-net-profit-falls-14-yoy-to-619-2-million/48054972",
-        "source_id": "corp_results",
-        "catalyst": -30,
+        "catalyst": -12,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       }
     ],
@@ -2048,8 +1850,8 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "d4e327a",
-    "branch": "claude/gifted-albattani-tps9tz",
+    "head": "e8c82ee",
+    "branch": "main",
     "canaries": [
       {
         "name": "a cash-burning company is not excellent",
@@ -2120,7 +1922,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ],
   "lessons_tail": "d, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-08 [analyst]\n2026-10-08 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +0.9%, PETRONET +1.2%, KOTAKBANK +4.1%, all hold-capable, T1 unhit, stops intact; equity 96,982 (-3.0%), up-gains faded ~2pts from yesterday, still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Not Friday: no new source.\n\n### 2026-10-09 [analyst]\n2026-10-09 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +2.8%, PETRONET +2.2%, KOTAKBANK +5.5%, all hold-capable, T1 unhit, stops intact; equity 98,307 (-1.7%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled (max n_resolved=2), none at 60% T1. Friday: new-source add (tg_stockpro_online candidate) was blocked by permission classifier; none added.\n\n### 2026-10-12 [analyst]\n2026-10-12 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +4.7% (T1 unhit, stop 1860.75 ~5.5% below), PETRONET +1.9%, KOTAKBANK +6.1%, all hold-capable; equity 98,858 (-1.1%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade the score. No source auto-disabled (max n_resolved=2), none at 60% T1. Monday: no new source.\n\n### 2026-10-13 [analyst]\n2026-10-13 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +1.5% (faded from +4.7%, T1 unhit, stop 1860.75 ~2.6% below), PETRONET +1.7%, KOTAKBANK +5.0%, all hold-capable; equity 97,623 (-2.4%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled, none at 60% T1. Tuesday: no new source.\n\n### 2026-10-14 [analyst]\n2026-10-14 desk review: quiet day, no events, no stops/targets/time-stops. LALPATHLAB +3.0% (T1 unhit, stop 1860.75), PETRONET +2.8%, KOTAKBANK +4.8%, all hold-capable; equity 98,393 (-1.6%), still 0/4 closed (avg -3.78%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled, too few to grade score. No source auto-disabled (max n_resolved=2), none at 60% T1. Wednesday: no new source.\n\n### 2026-10-15 [machine]\nEvents: LALPATHLAB: STOP-LOSS @ 1860.75 → closed, P&L ₹-309.75 (-1.1%)\n\n| factor | n | win% | avg ret% |\n|---|---|---|---|\n| bucket=hold-capable | 5 | 0 | -3.24 |\n| pattern=bollinger_squeeze | 5 | 0 | -3.24 |\n| ta_conf=>=70 | 5 | 0 | -3.24 |\n| fund=>=65 | 5 | 0 | -3.24 |\n| pattern=momentum_aligned | 4 | 0 | -3.78 |\n| pattern=pullback_to_ema20_in_uptrend | 4 | 0 | -3.43 |\n| timeframe=monthly | 3 | 0 | -2.66 |\n\n### 2026-10-15 [analyst]\n2026-10-15 desk review: LALPATHLAB stopped at 1860.75 (-1.1%, ₹-310) after fading from +4.7% on 12 Oct without ever reaching T1; stop was ~2.6% below, inside normal swing noise, and the bollinger_squeeze call never followed through. Closed book now 0/5 (avg -3.24%), all bollinger/hold-capable fund>=65; open PETRONET +3.5%, KOTAKBANK +7.2%, T1 unhit. chartink_squeeze fell -21.8 to -35.7 (n=3), nearing auto-disable at -40. fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade the score. Not Friday: no new source.\n\n### 2026-10-19 [analyst]\n2026-10-19 desk review: quiet day, no events, no stops/targets/time-stops. PETRONET +3.0%, KOTAKBANK +5.8% (both hold-capable, T1 unhit); equity 97,601 (-2.4%), closed book still 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade the score. chartink_squeeze still -35.7 (n=3), 4 pts from auto-disable; no source auto-disabled, none at 60% T1. Monday: no new source.\n",
   "settings": {

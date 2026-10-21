@@ -1,0 +1,1031 @@
+{
+  "date": "2026-10-21",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 5
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_results": {
+      "docs": 3,
+      "events": 1
+    },
+    "corp_expansion": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 6,
+      "events": 1
+    }
+  },
+  "events": [
+    {
+      "id": "b0201c3717",
+      "symbol": "JSWDULUX",
+      "company": "JSW Dulux Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a revised demand order",
+      "also_matched": [
+        "dilution",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 42.04,
+      "size_estimated": false,
+      "size_basis": "₹42.04 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece",
+      "title": "Stocks to watch out for today, October 21: Infosys, Ceigall, Dhampur Bio, JSW Dulux, Venus Pipes, Transrail, Orchid Pharma among 15 stocks in focus",
+      "published": "Wed, 21 Oct 2026 02:23:06 GMT",
+      "published_utc": "2026-10-21T02:23:06+00:00",
+      "sentence": "received a revised demand order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f2e9867dec",
+      "symbol": "ELECTHERM",
+      "company": "Electrotherm (India) Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 950400.0,
+      "size_estimated": false,
+      "size_basis": "$108bn (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+      "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+      "published": "Tue, 20 Oct 2026 12:13:12 GMT",
+      "published_utc": "2026-10-20T12:13:12+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3fd71ffc04",
+      "symbol": "SOBHA",
+      "company": "Sobha Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit declines",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1400.0,
+      "size_estimated": false,
+      "size_basis": "₹1,400 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sobha-q2-net-profit-declines-yoy-to-33-crore-on-970-crore-revenue",
+      "title": "Sobha Q2 Net Profit Declines YoY To ₹33 Crore On ₹970 Crore Revenue",
+      "published": "Wed, 21 Oct 2026 01:33:23 GMT",
+      "published_utc": "2026-10-21T01:33:23+00:00",
+      "sentence": "net profit declines",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.sahi.com/news/sobha-q2-net-profit-declines-yoy-to-33-crore-on-970-crore-revenue"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c313b2bc8c",
+      "symbol": "SRTL",
+      "company": "Shree Ram Twistex Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/shree-ram-twistex-q2-results-fy27-pat-5-crore",
+      "title": "Shree Ram Twistex Q2 Results FY27: Revenue Jumps 97.62%, PAT Rs 4.66 Cr",
+      "published": "Tue, 20 Oct 2026 16:22:00 GMT",
+      "published_utc": "2026-10-20T16:22:00+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/shree-ram-twistex-q2-results-fy27-pat-5-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6048036d70",
+      "symbol": "ORCHPHARMA",
+      "company": "Orchid Pharma Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "order_win",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece",
+      "title": "Stocks to watch out for today, October 21: Infosys, Ceigall, Dhampur Bio, JSW Dulux, Venus Pipes, Transrail, Orchid Pharma among 15 stocks in focus",
+      "published": "Wed, 21 Oct 2026 02:23:06 GMT",
+      "published_utc": "2026-10-21T02:23:06+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5f39fc60b6",
+      "symbol": "EDELWEISS",
+      "company": "Edelweiss Financial Services Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1200.0,
+      "size_estimated": false,
+      "size_basis": "₹1,200 Crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377313/eaaa-india-alternatives-fixes-price-band-at-1-585-to-1-665-per-share-for-1-200-c",
+      "title": "EAAA India Alternatives Fixes Price Band at ₹1,585 to ₹1,665 per Share for ₹1,200 Crore IPO",
+      "published": "Tue, 20 Oct 2026 12:04:19 GMT",
+      "published_utc": "2026-10-20T12:04:19+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377313/eaaa-india-alternatives-fixes-price-band-at-1-585-to-1-665-per-share-for-1-200-c"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "17b12e82a4",
+      "symbol": "CARERATING",
+      "company": "CARE Ratings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "greenfield facility",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2432.0,
+      "size_estimated": false,
+      "size_basis": "₹24,320 million",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl",
+      "title": "India Ratings Upgrades Karamtara Engineering’s Bank Loan Ratings to ‘IND AA-’/Stable and ‘IND A1+’",
+      "published": "Tue, 20 Oct 2026 12:13:27 GMT",
+      "published_utc": "2026-10-20T12:13:27+00:00",
+      "sentence": "greenfield facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "47ee1550cc",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives finmin's in-principle approval",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 21000.0,
+      "size_estimated": true,
+      "size_basis": "60 Gw × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60000.0,
+        "unit": "MW",
+        "text": "60 Gw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html",
+      "title": "Polysilicon support scheme receives FinMin's in-principle approval",
+      "published": "Tue, 20 Oct 2026 14:00:16 GMT",
+      "published_utc": "2026-10-20T14:00:16+00:00",
+      "sentence": "receives finmin's in-principle approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "67c4b7fe39",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives finmin's in-principle approval",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 21000.0,
+      "size_estimated": true,
+      "size_basis": "60 Gw × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60000.0,
+        "unit": "MW",
+        "text": "60 Gw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html",
+      "title": "Polysilicon support scheme receives FinMin's in-principle approval",
+      "published": "Tue, 20 Oct 2026 14:00:16 GMT",
+      "published_utc": "2026-10-20T14:00:16+00:00",
+      "sentence": "receives finmin's in-principle approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4e45ed1259",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "receives finmin's in-principle approval",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 21000.0,
+      "size_estimated": true,
+      "size_basis": "60 Gw × ₹0.35cr/MW (module supply, domestic content)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 60000.0,
+        "unit": "MW",
+        "text": "60 Gw"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html",
+      "title": "Polysilicon support scheme receives FinMin's in-principle approval",
+      "published": "Tue, 20 Oct 2026 14:00:16 GMT",
+      "published_utc": "2026-10-20T14:00:16+00:00",
+      "sentence": "receives finmin's in-principle approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "64a05acd01",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 950400.0,
+      "size_estimated": false,
+      "size_basis": "$108bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+      "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+      "published": "Tue, 20 Oct 2026 12:13:12 GMT",
+      "published_utc": "2026-10-20T12:13:12+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "75991001ce",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 950400.0,
+      "size_estimated": false,
+      "size_basis": "$108bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+      "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+      "published": "Tue, 20 Oct 2026 12:13:12 GMT",
+      "published_utc": "2026-10-20T12:13:12+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2c15b482ca",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "greenfield facility",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2432.0,
+      "size_estimated": false,
+      "size_basis": "₹24,320 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl",
+      "title": "India Ratings Upgrades Karamtara Engineering’s Bank Loan Ratings to ‘IND AA-’/Stable and ‘IND A1+’",
+      "published": "Tue, 20 Oct 2026 12:13:27 GMT",
+      "published_utc": "2026-10-20T12:13:27+00:00",
+      "sentence": "greenfield facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fb25776eea",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "greenfield facility",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2432.0,
+      "size_estimated": false,
+      "size_basis": "₹24,320 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl",
+      "title": "India Ratings Upgrades Karamtara Engineering’s Bank Loan Ratings to ‘IND AA-’/Stable and ‘IND A1+’",
+      "published": "Tue, 20 Oct 2026 12:13:27 GMT",
+      "published_utc": "2026-10-20T12:13:27+00:00",
+      "sentence": "greenfield facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "dbd010176e",
+      "symbol": "TARIL",
+      "company": "Transformers And Rectifiers (India) Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "greenfield facility",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Transformers and Rectifiers — power transformers into substations",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": 2432.0,
+      "size_estimated": false,
+      "size_basis": "₹24,320 million",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl",
+      "title": "India Ratings Upgrades Karamtara Engineering’s Bank Loan Ratings to ‘IND AA-’/Stable and ‘IND A1+’",
+      "published": "Tue, 20 Oct 2026 12:13:27 GMT",
+      "published_utc": "2026-10-20T12:13:27+00:00",
+      "sentence": "greenfield facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-out-for-today-october-21-infosys-ceigall-dhampur-bio-jsw-dulux-venus-pipes-transrail-orchid-pharma-among-15-stocks-in-focus/article71606076.ece",
+      "title": "Stocks to watch out for today, October 21: Infosys, Ceigall, Dhampur Bio, JSW Dulux, Venus Pipes, Transrail, Orchid Pharma among 15 stocks in focus",
+      "published": "Wed, 21 Oct 2026 02:23:06 GMT",
+      "chars": 13133,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-ireda-yes-bank-trent-and-hindustan-zinc/articleshow/135074022.cms",
+      "title": "Stocks in news: Reliance Industries, Eternal, IREDA, Yes Bank, Trent and Hindustan Zinc",
+      "published": "Wed, 21 Oct 2026 00:30:00 GMT",
+      "chars": 14462,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-eternal-reliance-industries-ireda-railtel-shares-in-focus-on-wed-21-oct-full-list-11792546323951.html",
+      "title": "Top stocks to watch today: Eternal, Reliance Industries, IREDA, RailTel shares in focus on Wed, 21 Oct | Full list",
+      "published": "Wed, 21 Oct 2026 01:55:58 GMT",
+      "chars": 4016,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-21-pc-jeweller-ril-bajaj-finance-schaeffler-india-oil-sensitives-ihcl-srf/article-202112/",
+      "title": "Stocks to watch, Oct 21: PC Jeweller, RIL, Bajaj Finance, Schaeffler India, oil-sensitives, IHCL, SRF",
+      "published": "Wed, 21 Oct 2026 02:25:34 GMT",
+      "chars": 9038,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-l-t-technology-bajaj-finance-hd-fire-protect-piramal-finance-hindustan-zinc-infosys-dhampur-bio-organics-ceigall-india-in-focus-on-21-october-14056093.html/amp",
+      "title": "Stocks to Watch Today: L&T Technology, Bajaj Finance, HD Fire Protect, Piramal Finance, Hindustan...",
+      "published": "Tue, 20 Oct 2026 19:16:01 GMT",
+      "chars": 8308,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stock-2-more-undervalued-191209109.html",
+      "title": "Alphabet Stock And 2 More Undervalued Stocks To Watch",
+      "published": "Tue, 20 Oct 2026 19:12:09 GMT",
+      "chars": 3549,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://simplywall.st/stocks/fr/capital-goods/epa-exa/exail-technologies-shares/news/defense-stocks-to-watch-as-gulf-tensions-put-military-spendi",
+      "title": "Defense Stocks To Watch As Gulf Tensions Put Military Spending In Focus",
+      "published": "Wed, 21 Oct 2026 02:00:23 GMT",
+      "chars": 10506,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377313/eaaa-india-alternatives-fixes-price-band-at-1-585-to-1-665-per-share-for-1-200-c",
+      "title": "EAAA India Alternatives Fixes Price Band at ₹1,585 to ₹1,665 per Share for ₹1,200 Crore IPO",
+      "published": "Tue, 20 Oct 2026 12:04:19 GMT",
+      "chars": 1950,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377316/india-ratings-upgrades-karamtara-engineering-s-bank-loan-ratings-to-ind-aa-stabl",
+      "title": "India Ratings Upgrades Karamtara Engineering’s Bank Loan Ratings to ‘IND AA-’/Stable and ‘IND A1+’",
+      "published": "Tue, 20 Oct 2026 12:13:27 GMT",
+      "chars": 3407,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377310/evervie-health-signs-loi-with-sweden-s-elekta-for-11-15-million-linac-procuremen",
+      "title": "Evervie Health Signs LOI with Sweden’s Elekta for $11–15 Million LINAC Procurement, Launches New Website",
+      "published": "Tue, 20 Oct 2026 11:53:56 GMT",
+      "chars": 2521,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377311/shardul-securities-reports-q2-fy27-net-loss-amid-fair-value-adjustments-h1-conso",
+      "title": "Shardul Securities Reports Q2 FY27 Net Loss Amid Fair Value Adjustments, H1 Consolidated Net Profit Stands at ₹109.85 Crore",
+      "published": "Tue, 20 Oct 2026 11:59:50 GMT",
+      "chars": 4450,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.bwhealthcareworld.com/article/alembic-pharmaceuticals-gets-usfda-final-approval-for-ear-infection-drug-629548",
+      "title": "Alembic Pharmaceuticals Gets USFDA Final Approval For Ear Infection Drug",
+      "published": "Tue, 20 Oct 2026 12:49:04 GMT",
+      "chars": 1841,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.equitybulls.com/news/377302/orchid-pharma-board-approves-enabling-resolution-to-raise-up-to-600-crore-via-eq",
+      "title": "Orchid Pharma Board Approves Enabling Resolution to Raise Up to ₹600 Crore via Equity or Debt Instruments",
+      "published": "Tue, 20 Oct 2026 07:02:26 GMT",
+      "chars": 1779,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.ksl.com/article/51638828/us-fda-approves-gsks-hepatitis-b-drug-offering-patients-chance-to-stop-long-term-treatment",
+      "title": "US FDA approves GSK's hepatitis B drug, offering patients chance to stop long-term treatment",
+      "published": "Wed, 21 Oct 2026 01:26:32 GMT",
+      "chars": 2209,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.thebionews.net/news/articleViewAmp.html?idxno=29245",
+      "title": "[Interview] SkyLabs takes ring-type blood pressure monitor to U.S. FDA – \"De Novo approval in 2027, commercialization in 2028\"",
+      "published": "Tue, 20 Oct 2026 08:20:13 GMT",
+      "chars": 10228,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ucb-reports-fda-approval-for-zilbrysq-device-ucb-stock-gains-2-05-percent/70370921",
+      "title": "UCB reports FDA approval for Zilbrysq device: UCB stock gains 2.05 percent - ad-hoc-news.de",
+      "published": "Tue, 20 Oct 2026 08:42:40 GMT",
+      "chars": 2791,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.gurufocus.com/news/9131852/fda-issues-warning-letter-to-baxter-international-bax-over-manufacturing-violations",
+      "title": "FDA Issues Warning Letter to Baxter International (BAX) Over Man",
+      "published": "Tue, 20 Oct 2026 14:02:14 GMT",
+      "chars": 6375,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/stockstory:8170f9cfc094b:0-why-baxter-bax-stock-is-down-today/",
+      "title": "Why Baxter (BAX) Stock Is Down Today",
+      "published": "Tue, 20 Oct 2026 16:55:38 GMT",
+      "chars": 3073,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://simplywall.st/stocks/jp/healthcare/tse-7733/olympus-shares/news/olympus-tse7733-could-be-21-undervalued-following-fda-warnin",
+      "title": "Olympus (TSE:7733) Could Be 21% Undervalued Following FDA Warning Letter",
+      "published": "Tue, 20 Oct 2026 12:13:12 GMT",
+      "chars": 10028,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://finance.yahoo.com/healthcare/articles/olympus-tse-7733-received-fda-080952414.html",
+      "title": "Olympus (TSE:7733) Received An FDA Warning Letter Over Quality Systems",
+      "published": "Tue, 20 Oct 2026 08:09:52 GMT",
+      "chars": 3232,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.financialcontent.com/article/gnwcq-2026-10-20-investor-alert-pomerantz-law-firm-investigates-claims-on-behalf-of-investors-of-medline-inc-mdln",
+      "title": "INVESTOR ALERT: Pomerantz Law Firm Investigates Claims On Behalf of Investors of Medline Inc. - MDLN",
+      "published": "Tue, 20 Oct 2026 20:15:00 GMT",
+      "chars": 2143,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/essen-speciality-films-q2-results-fy27-loss-0-28-crore",
+      "title": "Essen Speciality Films Q2 Results FY27: Revenue, PAT Fall",
+      "published": "Tue, 20 Oct 2026 17:17:00 GMT",
+      "chars": 8803,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/shree-ram-twistex-q2-results-fy27-pat-5-crore",
+      "title": "Shree Ram Twistex Q2 Results FY27: Revenue Jumps 97.62%, PAT Rs 4.66 Cr",
+      "published": "Tue, 20 Oct 2026 16:22:00 GMT",
+      "chars": 8348,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://businessupturn.com/finance/stock-market/quarterly-results/top-q2-results-today-october-21-adani-green-eternal-ihcl-aditya-birla-sun-srf-among-companies-to-announce-earnings/",
+      "title": "Top Q2 results today, October 21: Adani Green, Eternal, IHCL, Aditya Birla Sun, SRF among companies to announce earnings",
+      "published": "Wed, 21 Oct 2026 02:31:28 GMT",
+      "chars": 2234,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377304/crisil-reaffirms-credit-ratings-for-uflex-limited-s-4-600-crore-bank-loan-facili",
+      "title": "CRISIL Reaffirms Credit Ratings for Uflex Limited's ₹4,600 Crore Bank Loan Facilities",
+      "published": "Tue, 20 Oct 2026 07:04:32 GMT",
+      "chars": 1378,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/finmin-gives-in-principle-nod-to-scheme-for-solar-polysilicon-manufacturing-126102000713_1.html",
+      "title": "Polysilicon support scheme receives FinMin's in-principle approval",
+      "published": "Tue, 20 Oct 2026 14:00:16 GMT",
+      "chars": 4052,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/manipur-cm-holds-meeting-with-oppn-leaders-reviews-security-situation-126102000523_1.html",
+      "title": "Manipur CM holds meeting with Oppn leaders, reviews security situation",
+      "published": "Tue, 20 Oct 2026 16:47:06 GMT",
+      "chars": 3534,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/indiabulls-enter-share-price-75906/announcements/bse-exchange-43483415",
+      "title": "Share Market Today | Latest Stock Market News, Sensex Today and Nifty Live Updates",
+      "published": "Tue, 20 Oct 2026 15:49:00 GMT",
+      "chars": 4844,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/trump-announces-8-billion-fuel-aid-for-us-farmers-amid-diesel-price-surge-126102000867_1.html",
+      "title": "Trump announces $8 billion fuel aid for US farmers amid diesel price surge",
+      "published": "Tue, 20 Oct 2026 16:47:17 GMT",
+      "chars": 3764,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems-126102000438_1.html",
+      "title": "China defends DeepSeek after US ban of its AI from government systems",
+      "published": "Tue, 20 Oct 2026 10:18:41 GMT",
+      "chars": 4468,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/investment/il-fs-crisis-after-8-years-how-india-s-biggest-default-reshaped-regulation-126102000885_1.html",
+      "title": "IL&FS crisis after 8 years: How India's biggest default reshaped regulation",
+      "published": "Tue, 20 Oct 2026 17:05:10 GMT",
+      "chars": 6965,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/crompton-q2-fy27-results-ecd-growth-margins-brokerages-126102000373_1.html",
+      "title": "Growth prospects remain strong for Crompton Greaves Consumer: Brokerages",
+      "published": "Tue, 20 Oct 2026 08:45:17 GMT",
+      "chars": 4927,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/bvg-india-focusing-on-long-term-contracts-with-better-margins-cmd-126102000688_1.html",
+      "title": "BVG India focusing on long-term contracts with better margins: CMD",
+      "published": "Tue, 20 Oct 2026 17:48:47 GMT",
+      "chars": 6551,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-21-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-jio-platforms-ipo-today-hd-fire-protect-share-price-126102100078_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty rises 100 pts; Asian markets gain; Brent near $110",
+      "published": "Wed, 21 Oct 2026 07:57:56 +0530",
+      "chars": 149,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/ncc-j-k-bank-vrl-logistics-top-stock-picks-by-anand-james-of-geojit-126102100079_1.html",
+      "title": "NCC, J&K Bank, VRL Logistics top stock picks by Anand James of Geojit",
+      "published": "Wed, 21 Oct 2026 07:47:35 +0530",
+      "chars": 177,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-on-red-sea-shipping-risks-threats-to-saudi-oil-sites-126102100052_1.html",
+      "title": "Oil prices rise on Red Sea shipping risks, threats to Saudi oil sites",
+      "published": "Wed, 21 Oct 2026 07:45:39 +0530",
+      "chars": 169,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/here-s-why-shrikant-chouhan-is-bullish-on-jsw-steel-groww-126102100071_1.html",
+      "title": "Here's why Shrikant Chouhan of Kotak Neo is bullish on JSW Steel, Groww",
+      "published": "Wed, 21 Oct 2026 07:39:55 +0530",
+      "chars": 192,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/consumer-durables-demand-mixed-prefer-lg-electronics-polycab-india-motilal-oswal-126102100068_1.html",
+      "title": "Consumer durables demand mixed; prefer LG, Polycab India: Motilal Oswal",
+      "published": "Wed, 21 Oct 2026 07:22:48 +0530",
+      "chars": 175,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/finance/personal-finance/form-141-replaces-4-tds-forms-what-property-buyers-tenants-must-know-126102000376_1.html",
+      "title": "Form 141 replaces 4 TDS forms: What property buyers, tenants must know",
+      "published": "Tue, 20 Oct 2026 14:18:57 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/global-stocks-fall-as-ai-spending-concerns-resurface-oil-prices-surge-126102000915_1.html",
+      "title": "Global stocks fall as AI spending concerns resurface, oil prices surge",
+      "published": "Tue, 20 Oct 2026 23:14:12 +0530",
+      "chars": 172,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-8-large-cap-stocks-cross-below-their-200-dmas/slideshow/135080058.cms",
+      "title": "Negative Breakout: These 8 large-cap stocks cross below their 200 DMAs",
+      "published": "Wed, 21 Oct 2026 07:44:41 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-21-crude-oil-crosses-110-amid-middle-east-supply-concerns-what-lies-ahead/articleshow/135079942.cms",
+      "title": "Oil Price Today (October 21): Crude oil crosses $110 amid Middle East supply concerns. What lies ahead?",
+      "published": "Wed, 21 Oct 2026 07:42:44 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-as-investors-await-fed-rate-signals/articleshow/135079883.cms",
+      "title": "Gold slips as investors await Fed rate signals",
+      "published": "Wed, 21 Oct 2026 07:39:30 +0530",
+      "chars": 436,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-on-back-foot-as-us-yields-crude-prices-dip-aussie-buoyed-by-hawkish-rba/articleshow/135079865.cms",
+      "title": "Dollar on back foot as US yields, crude prices dip; Aussie buoyed by hawkish RBA",
+      "published": "Wed, 21 Oct 2026 07:36:37 +0530",
+      "chars": 346,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-rises-on-middle-east-supply-worries/articleshow/135079848.cms",
+      "title": "Oil rises on Middle East supply worries",
+      "published": "Wed, 21 Oct 2026 07:35:23 +0530",
+      "chars": 427,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/ai-debutants-flameout-stokes-fears-boom-is-ending/articleshow/135079415.cms",
+      "title": "AI debutant’s flameout stokes fears boom is ending",
+      "published": "Wed, 21 Oct 2026 07:08:41 +0530",
+      "chars": 483,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sun-pharma-to-raise-rs-10k-crore-to-part-finance-organon-deal/articleshow/135079260.cms",
+      "title": "Sun Pharma to raise Rs 10,000 crore to part-finance Organon deal",
+      "published": "Wed, 21 Oct 2026 06:46:56 +0530",
+      "chars": 422,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/railtel-wins-47-4-crore-haryana-state-electronics-network-installation-contract",
+      "title": "RailTel Wins ₹47.4 Crore Haryana State Electronics Network Installation Contract",
+      "published": "Tue, 20 Oct 2026 13:43:24 GMT",
+      "chars": 2642,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/quality-power-starts-production-at-new-coil-factory-in-sangli",
+      "title": "Quality Power Starts Production At New Coil Factory In Sangli",
+      "published": "Tue, 20 Oct 2026 13:43:24 GMT",
+      "chars": 3517,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/venus-pipes-starts-pipe-spooling-early-secures-185-crore-data-centre-loi",
+      "title": "Venus Pipes Starts Pipe Spooling Early, Secures ₹185 Crore Data Centre LOI",
+      "published": "Tue, 20 Oct 2026 13:43:24 GMT",
+      "chars": 2939,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sobha-q2-net-profit-declines-yoy-to-33-crore-on-970-crore-revenue",
+      "title": "Sobha Q2 Net Profit Declines YoY To ₹33 Crore On ₹970 Crore Revenue",
+      "published": "Wed, 21 Oct 2026 01:33:23 GMT",
+      "chars": 3338,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/sun-pharma-announces-nccn-category-2a-preferred-designation-for-unloxcyt-in-advanced-cscc",
+      "title": "Sun Pharma Announces NCCN Category 2A Preferred Designation For Unloxcyt In Advanced CSCC",
+      "published": "Wed, 21 Oct 2026 01:38:26 GMT",
+      "chars": 2989,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/category/breaking-news",
+      "title": "Breaking News",
+      "published": "Wed, 21 Oct 2026 01:37:47 GMT",
+      "chars": 1989,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 121.3
+}
