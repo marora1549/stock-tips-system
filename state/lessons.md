@@ -154,3 +154,6 @@ Events: LALPATHLAB: STOP-LOSS @ 1860.75 → closed, P&L ₹-309.75 (-1.1%)
 
 ### 2026-10-21 [analyst]
 2026-10-21 desk review: PNB filled 230 @ 122.5 (plan 121.9, hot-potato, momentum only; stop 113.95 ~7% below). No stops/targets/time-stops today. PETRONET +3.5%, KOTAKBANK +4.7% (hold-capable, T1 unhit); equity 97,510 (-2.5%), closed book 0/5 (avg -3.24%), cash -137 after PNB fill (fill above plan; watch sizing). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade. chartink_squeeze -35.7 (n=3), 4 pts from auto-disable; none at 60% T1. Wednesday: no new source.
+
+### 2026-10-22 [analyst]
+2026-10-22 desk review: quiet day, no stops/targets/time-stops. PETRONET +1.9%, KOTAKBANK +4.5% (hold-capable, T1 unhit), PNB 0.0% (hot-potato, 2nd day, LTP equals fill 122.5); equity 96,806 (-3.2%), cash -137 (PNB over-fill, watch sizing), closed book 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade the score. chartink_squeeze -35.7 (n=3), 4 pts from auto-disable; none at 60% T1. Thursday: no new source.

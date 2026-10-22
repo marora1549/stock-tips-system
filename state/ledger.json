@@ -51,8 +51,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 295.0,
-      "unrealised_pct": 3.47
+      "ltp": 290.3999938964844,
+      "unrealised_pct": 1.86
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -102,8 +102,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 7.17,
       "notes": [],
-      "ltp": 437.79998779296875,
-      "unrealised_pct": 4.74
+      "ltp": 437.0,
+      "unrealised_pct": 4.55
     },
     {
       "pos_id": "2026-10-21-PNB",
@@ -570,6 +570,10 @@
     {
       "date": "2026-10-21",
       "equity": 97509.52
+    },
+    {
+      "date": "2026-10-22",
+      "equity": 96805.92
     }
   ],
   "created": "2026-09-07",
