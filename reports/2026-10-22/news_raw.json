@@ -1,0 +1,1449 @@
+{
+  "date": "2026-10-22",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 1
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 5
+    },
+    "corp_expansion": {
+      "docs": 6,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 7,
+      "events": 4
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "781795bbde",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded bel a ₹ 770 crore contract",
+      "also_matched": [
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": 770.0,
+      "size_estimated": false,
+      "size_basis": "₹ 770 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-swiggy-adani-green-eternal-gmdc-bel-shares-in-focus-on-thurs-22-oct-full-list-11792632766011.html",
+      "title": "Top stocks to watch today: Swiggy, Adani Green, Eternal, GMDC, BEL shares in focus on Thurs, 22 Oct | Full list",
+      "published": "Thu, 22 Oct 2026 01:56:59 GMT",
+      "published_utc": "2026-10-22T01:56:59+00:00",
+      "sentence": "awarded bel a ₹ 770 crore contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-swiggy-adani-green-eternal-gmdc-bel-shares-in-focus-on-thurs-22-oct-full-list-11792632766011.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0574c55a2a",
+      "symbol": "REFEX",
+      "company": "Refex Industries Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores",
+      "title": "Refex Industries Ltd receives order worth Rs. 31.44 crores",
+      "published": "Wed, 21 Oct 2026 11:03:34 GMT",
+      "published_utc": "2026-10-21T11:03:34+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d640ef6262",
+      "symbol": "SEAMECLTD",
+      "company": "Seamec Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "contract worth",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "data_centre"
+      ],
+      "size_inr_cr": 484.0,
+      "size_estimated": false,
+      "size_basis": "$55 million",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-22-sagility-india-tata-communications-bharat-electronics-omnitech-pds-seamec/article71609876.ece",
+      "title": "Stocks to watch, Oct 22: Sagility India, Tata Communications, Bharat Electronics, Omnitech, PDS, SEAMEC",
+      "published": "Thu, 22 Oct 2026 02:03:36 GMT",
+      "published_utc": "2026-10-22T02:03:36+00:00",
+      "sentence": "contract worth",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-22-sagility-india-tata-communications-bharat-electronics-omnitech-pds-seamec/article71609876.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0707284d8d",
+      "symbol": "NDTV",
+      "company": "New Delhi Television Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/news/market/zydus-gets-usfda-nod-for-menopause-treatment-drug/56590720261021",
+      "title": "Zydus Gets USFDA Nod for Menopause Treatment Drug",
+      "published": "Wed, 21 Oct 2026 08:14:13 GMT",
+      "published_utc": "2026-10-21T08:14:13+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/zydus-gets-usfda-nod-for-menopause-treatment-drug/56590720261021"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "09abaf29df",
+      "symbol": "ZYDUSLIFE",
+      "company": "Zydus Lifesciences Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/news/market/zydus-gets-usfda-nod-for-menopause-treatment-drug/56590720261021",
+      "title": "Zydus Gets USFDA Nod for Menopause Treatment Drug",
+      "published": "Wed, 21 Oct 2026 08:14:13 GMT",
+      "published_utc": "2026-10-21T08:14:13+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/zydus-gets-usfda-nod-for-menopause-treatment-drug/56590720261021"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ddb08c3a85",
+      "symbol": "AYE",
+      "company": "Aye Finance Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit more than doubles",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/aye-finance-q2-results-net-profit-more-than-doubles-to-rs-87-crore/articleshow/135092689.cms",
+      "title": "Aye Finance Q2 Results: Net profit more than doubles to Rs 87 crore",
+      "published": "Wed, 21 Oct 2026 12:35:05 GMT",
+      "published_utc": "2026-10-21T12:35:05+00:00",
+      "sentence": "net profit more than doubles",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/aye-finance-q2-results-net-profit-more-than-doubles-to-rs-87-crore/articleshow/135092689.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d53b02758a",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 4019.0,
+      "size_estimated": false,
+      "size_basis": "Rs 4,019 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 20800.0,
+        "unit": "MW",
+        "text": "20.8 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "published_utc": "2026-10-21T12:14:31+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "97018cd2d5",
+      "symbol": "SIL",
+      "company": "Standard Industries Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/tradingview:a6dba34eef20c:0-nuburu-disclosed-failure-to-satisfy-a-continued-listing-rule-or-standard/",
+      "title": "Nuburu Disclosed Failure to Satisfy a Continued Listing Rule or Standard",
+      "published": "Wed, 21 Oct 2026 10:13:00 GMT",
+      "published_utc": "2026-10-21T10:13:00+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/tradingview:a6dba34eef20c:0-nuburu-disclosed-failure-to-satisfy-a-continued-listing-rule-or-standard/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "54dbf48bb7",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "theme",
+      "directness": 1.0,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 4019.0,
+      "size_estimated": false,
+      "size_basis": "Rs 4,019 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 20800.0,
+        "unit": "MW",
+        "text": "20.8 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "published_utc": "2026-10-21T12:14:31+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "950457567f",
+      "symbol": "ABSLAMC",
+      "company": "Aditya Birla Sun Life AMC Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/aditya-birla-sun-life-amc-q2-results-revenue-up-4-8b-rupees-yoy/54117877",
+      "title": "Aditya Birla Sun Life AMC Q2FY27 Results: Net profit falls 8% YoY",
+      "published": "Wed, 21 Oct 2026 08:59:54 GMT",
+      "published_utc": "2026-10-21T08:59:54+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/aditya-birla-sun-life-amc-q2-results-revenue-up-4-8b-rupees-yoy/54117877"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "331ac982d5",
+      "symbol": "MARATHON",
+      "company": "Marathon Nextgen Realty Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/marathon-nextgen-realty-q2-results-fy27-pat-45-crore",
+      "title": "Marathon Nextgen Realty Q2 Results FY27: PAT Falls 32% to Rs 45.19 Cr, Revenue Rs 128.95 Cr",
+      "published": "Wed, 21 Oct 2026 16:17:00 GMT",
+      "published_utc": "2026-10-21T16:17:00+00:00",
+      "sentence": "pat falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/marathon-nextgen-realty-q2-results-fy27-pat-45-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8f20e3606c",
+      "symbol": "VMM",
+      "company": "Vishal Mega Mart Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/markets/news/vishal-mega-mart-falls-6-as-festive-shift-weighs-on-margins-sssg-in-q2-126102100565_1.html",
+      "title": "Vishal Mega Mart falls 6% as festive shift weighs on margins, SSSG in Q2",
+      "published": "Wed, 21 Oct 2026 08:32:37 GMT",
+      "published_utc": "2026-10-21T08:32:37+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/vishal-mega-mart-falls-6-as-festive-shift-weighs-on-margins-sssg-in-q2-126102100565_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5b906fa8f5",
+      "symbol": "WAAREEINDO",
+      "company": "Indosolar Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "pat drops",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/indosolar-q2-results-fy27-pat-5-crore",
+      "title": "Indosolar Q2 Results FY27: Revenue Falls 23.18%, PAT Drops to Rs 5.02 Cr, Operating Profit Slips",
+      "published": "Wed, 21 Oct 2026 15:02:00 GMT",
+      "published_utc": "2026-10-21T15:02:00+00:00",
+      "sentence": "pat drops",
+      "corroborating_sources": [],
+      "urls": [
+        "https://univest.in/blogs/indosolar-q2-results-fy27-pat-5-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "5b2cff5dc7",
+      "symbol": "SONA",
+      "company": "Sonaselection India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/tradingview:a6dba34eef20c:0-nuburu-disclosed-failure-to-satisfy-a-continued-listing-rule-or-standard/",
+      "title": "Nuburu Disclosed Failure to Satisfy a Continued Listing Rule or Standard",
+      "published": "Wed, 21 Oct 2026 10:13:00 GMT",
+      "published_utc": "2026-10-21T10:13:00+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/tradingview:a6dba34eef20c:0-nuburu-disclosed-failure-to-satisfy-a-continued-listing-rule-or-standard/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ca1f4bdc88",
+      "symbol": "WEBELSOLAR",
+      "company": "Websol Energy System Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "theme",
+      "directness": 0.8,
+      "why_this_name": "Websol Energy — cells",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 4019.0,
+      "size_estimated": false,
+      "size_basis": "Rs 4,019 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 20800.0,
+        "unit": "MW",
+        "text": "20.8 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "published_utc": "2026-10-21T12:14:31+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "329cfea30c",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit plunges",
+      "also_matched": [
+        "regulatory_approval",
+        "l1_bidder"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/dr-reddys-zytorvi-dcgi-approval-oesophageal-cancer-toripalimab-126102100639_1.html",
+      "title": "Dr Reddy's gets DCGI nod for cancer drug's second indication in India",
+      "published": "Wed, 21 Oct 2026 09:27:21 GMT",
+      "published_utc": "2026-10-21T09:27:21+00:00",
+      "sentence": "net profit plunges",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/dr-reddys-zytorvi-dcgi-approval-oesophageal-cancer-toripalimab-126102100639_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6efa55b5e5",
+      "symbol": "PERSISTENT",
+      "company": "Persistent Systems Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "qip",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-22-persistent-systems-eternal-ihcl-pc-jeweller-swiggy-ril-oil-sensitives-havells-india/article-202184/",
+      "title": "Stocks to watch, Oct 22: Persistent Systems, Eternal, IHCL, PC Jeweller, Swiggy, RIL, oil-sensitives, Havells India",
+      "published": "Thu, 22 Oct 2026 02:22:31 GMT",
+      "published_utc": "2026-10-22T02:22:31+00:00",
+      "sentence": "qip",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-22-persistent-systems-eternal-ihcl-pc-jeweller-swiggy-ril-oil-sensitives-havells-india/article-202184/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "28552aa629",
+      "symbol": "BORORENEW",
+      "company": "BOROSIL RENEWABLES LIMITED",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "theme",
+      "directness": 0.7,
+      "why_this_name": "Borosil Renewables — solar glass",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 4019.0,
+      "size_estimated": false,
+      "size_basis": "Rs 4,019 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 20800.0,
+        "unit": "MW",
+        "text": "20.8 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "published_utc": "2026-10-21T12:14:31+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8dfb3b27da",
+      "symbol": "SWSOLAR",
+      "company": "Sterling and Wilson Renewable Energy Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "theme",
+      "directness": 0.6,
+      "why_this_name": "Sterling and Wilson Renewable — solar EPC",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 4019.0,
+      "size_estimated": false,
+      "size_basis": "Rs 4,019 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 20800.0,
+        "unit": "MW",
+        "text": "20.8 GW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "published_utc": "2026-10-21T12:14:31+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0ae83101b6",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores",
+      "title": "Refex Industries Ltd receives order worth Rs. 31.44 crores",
+      "published": "Wed, 21 Oct 2026 11:03:34 GMT",
+      "published_utc": "2026-10-21T11:03:34+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "969d4d95b5",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores",
+      "title": "Refex Industries Ltd receives order worth Rs. 31.44 crores",
+      "published": "Wed, 21 Oct 2026 11:03:34 GMT",
+      "published_utc": "2026-10-21T11:03:34+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4b44ca1467",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores",
+      "title": "Refex Industries Ltd receives order worth Rs. 31.44 crores",
+      "published": "Wed, 21 Oct 2026 11:03:34 GMT",
+      "published_utc": "2026-10-21T11:03:34+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "402178c948",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins ₹2,276 crore tuna tekra terminal project",
+      "also_matched": [
+        "regulatory_approval",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "largest private port operator",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 158400.0,
+      "size_estimated": false,
+      "size_basis": "$18 bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html",
+      "title": "Essar Ports wins ₹2,276 crore Tuna Tekra terminal project at Kandla",
+      "published": "Wed, 21 Oct 2026 10:22:46 GMT",
+      "published_utc": "2026-10-21T10:22:46+00:00",
+      "sentence": "wins ₹2,276 crore tuna tekra terminal project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3157396091",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins ₹2,276 crore tuna tekra terminal project",
+      "also_matched": [
+        "regulatory_approval",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "commercial and defence shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 158400.0,
+      "size_estimated": false,
+      "size_basis": "$18 bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html",
+      "title": "Essar Ports wins ₹2,276 crore Tuna Tekra terminal project at Kandla",
+      "published": "Wed, 21 Oct 2026 10:22:46 GMT",
+      "published_utc": "2026-10-21T10:22:46+00:00",
+      "sentence": "wins ₹2,276 crore tuna tekra terminal project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8fee8bd60c",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins ₹2,276 crore tuna tekra terminal project",
+      "also_matched": [
+        "regulatory_approval",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 158400.0,
+      "size_estimated": false,
+      "size_basis": "$18 bn (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html",
+      "title": "Essar Ports wins ₹2,276 crore Tuna Tekra terminal project at Kandla",
+      "published": "Wed, 21 Oct 2026 10:22:46 GMT",
+      "published_utc": "2026-10-21T10:22:46+00:00",
+      "sentence": "wins ₹2,276 crore tuna tekra terminal project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c10e7c760d",
+      "symbol": "NEUEON",
+      "company": "Neueon Corporation Limited",
+      "event": "corporate_action",
+      "event_label": "Dividend / bonus / split",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 8,
+      "phrase": "special dividend",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/neueon-corporation-board-decide-disposal-telangana-undertaking/54121488",
+      "title": "Neueon Corporation board to decide on disposal of Telangana undertaking",
+      "published": "Wed, 21 Oct 2026 09:48:03 GMT",
+      "published_utc": "2026-10-21T09:48:03+00:00",
+      "sentence": "special dividend",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/neueon-corporation-board-decide-disposal-telangana-undertaking/54121488"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-22-sagility-india-tata-communications-bharat-electronics-omnitech-pds-seamec/article71609876.ece",
+      "title": "Stocks to watch, Oct 22: Sagility India, Tata Communications, Bharat Electronics, Omnitech, PDS, SEAMEC",
+      "published": "Thu, 22 Oct 2026 02:03:36 GMT",
+      "chars": 8402,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-swiggy-adani-green-eternal-gmdc-bel-shares-in-focus-on-thurs-22-oct-full-list-11792632766011.html",
+      "title": "Top stocks to watch today: Swiggy, Adani Green, Eternal, GMDC, BEL shares in focus on Thurs, 22 Oct | Full list",
+      "published": "Thu, 22 Oct 2026 01:56:59 GMT",
+      "chars": 3301,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-reliance-industries-eternal-alkem-labs-bel-hpcl-swiggy-and-gmdc/articleshow/135102947.cms",
+      "title": "Stocks in news: Reliance Industries, Eternal, Alkem Labs, BEL, HPCL, Swiggy and GMDC",
+      "published": "Thu, 22 Oct 2026 00:30:00 GMT",
+      "chars": 10408,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-oct-22-persistent-systems-eternal-ihcl-pc-jeweller-swiggy-ril-oil-sensitives-havells-india/article-202184/",
+      "title": "Stocks to watch, Oct 22: Persistent Systems, Eternal, IHCL, PC Jeweller, Swiggy, RIL, oil-sensitives, Havells India",
+      "published": "Thu, 22 Oct 2026 02:22:31 GMT",
+      "chars": 12284,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/technicals/stocks-to-watch-today-indian-hotels-pc-jeweller-seamec-bharat-electronics-tata-communications-persistent-systems-fusion-cx-mahindra-finance-in-focus-on-22-october-14057041.html",
+      "title": "Stocks to Watch Today: Indian Hotels, PC Jeweller, Seamec, Bharat Electronics, Tata Communications,...",
+      "published": "Wed, 21 Oct 2026 19:16:50 GMT",
+      "chars": 9512,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/22/2026/Bajaj-Finance-Q2-FY27-Results--UltraTech-Cement-Q2-FY27-Results--Top-Buzzing-Stocks-Today",
+      "title": "Bajaj Finance Q2 FY27 Results | UltraTech Cement Q2 FY27 Results | Top Buzzing Stocks Today",
+      "published": "Thu, 22 Oct 2026 00:30:00 GMT",
+      "chars": 8338,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/bharat-electronics-secures-ministry-of-defence-radar-contract-for-indian-army",
+      "title": "Bharat Electronics Secures MoD Order Worth ₹770 Crore And Additional ₹1,011 Crore Contracts",
+      "published": "Wed, 21 Oct 2026 15:14:02 GMT",
+      "chars": 2991,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/lt-bags-order-for-construction-work-in-amaravati",
+      "title": "L&T bags order for construction work in Amaravati",
+      "published": "Wed, 21 Oct 2026 18:49:12 GMT",
+      "chars": 1336,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.indexbox.io/blog/essar-ports-wins-letter-of-award-for-multipurpose-cargo-terminal-at-tuna-tekra-kandla/",
+      "title": "Essar Ports Secures Tuna Tekra Cargo Terminal Award from Deendayal Port Authority - News and Statistics",
+      "published": "Thu, 22 Oct 2026 00:21:51 GMT",
+      "chars": 3466,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.constructionworld.in/transport-infrastructure/metro-rail-and-railways-infrastructure/afcons-infrastructure-emerges-as-l1-bidder-for-lucknow-metro/99064",
+      "title": "Afcons Infrastructure Emerges as L1 Bidder for Lucknow Metro",
+      "published": "Wed, 21 Oct 2026 07:02:53 GMT",
+      "chars": 5278,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377375/refex-industries-ltd-receives-order-worth-rs-31-44-crores",
+      "title": "Refex Industries Ltd receives order worth Rs. 31.44 crores",
+      "published": "Wed, 21 Oct 2026 11:03:34 GMT",
+      "chars": 812,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://m.economictimes.com/industry/transportation/shipping-/-transport/deendayal-port-authority-issues-loa-to-essar-ports-ltd-to-develop-multi-purpose-cargo-terminal-at-tuna-tekra/articleshow/135086904.cms",
+      "title": "Deendayal Port Authority issues LoA to Essar Ports Ltd. to develop Multi-Purpose Cargo Terminal at Tuna Te",
+      "published": "Wed, 21 Oct 2026 08:43:24 GMT",
+      "chars": 2139,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377376/shayona-engineering-ltd-receives-order-worth-rs-4-96-crore",
+      "title": "Shayona Engineering Ltd receives order worth Rs. 4.96 crore",
+      "published": "Wed, 21 Oct 2026 11:05:51 GMT",
+      "chars": 612,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/neueon-corporation-board-decide-disposal-telangana-undertaking/54121488",
+      "title": "Neueon Corporation board to decide on disposal of Telangana undertaking",
+      "published": "Wed, 21 Oct 2026 09:48:03 GMT",
+      "chars": 2748,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377385/leo-dryfruits-spices-trading-limited-partners-with-bollywood-actor-sonu-sood-for",
+      "title": "Leo Dryfruits & Spices Trading Limited Partners with Bollywood Actor Sonu Sood for Brand Endorsement",
+      "published": "Wed, 21 Oct 2026 11:17:36 GMT",
+      "chars": 2279,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377384/crisil-ratings-reaffirms-credit-ratings-for-zeal-aqua-limited-and-enhances-bank",
+      "title": "CRISIL Ratings Reaffirms Credit Ratings for Zeal Aqua Limited and Enhances Bank Facility Quantum to Rs 246 Crore",
+      "published": "Wed, 21 Oct 2026 11:16:14 GMT",
+      "chars": 4840,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377349/monarch-surveyors-wins-48-10-crore-west-central-railway-mandate-to-help-shape-in",
+      "title": "Monarch Surveyors Wins ₹48.10 Crore West Central Railway Mandate to Help Shape India’s Expanding Rail Network",
+      "published": "Wed, 21 Oct 2026 08:45:47 GMT",
+      "chars": 3240,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://hdfcsky.com/news/zydus-lifesciences-gets-usfda-approval-for-hormone-patch",
+      "title": "Zydus Lifesciences Gets USFDA Approval for Hormone Patch",
+      "published": "Wed, 21 Oct 2026 06:42:15 GMT",
+      "chars": 4038,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/zydus-lifesciences-secures-usfda-final-approval-for-menopause-treatment-patch-with-usd-457-million-us-sales-181733",
+      "title": "Zydus Lifesciences Secures USFDA Final Approval for Menopause Treatment Patch with USD 45.7 Million US...",
+      "published": "Wed, 21 Oct 2026 14:12:58 GMT",
+      "chars": 1924,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/news/market/zydus-gets-usfda-nod-for-menopause-treatment-drug/56590720261021",
+      "title": "Zydus Gets USFDA Nod for Menopause Treatment Drug",
+      "published": "Wed, 21 Oct 2026 08:14:13 GMT",
+      "chars": 1688,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://theprint.in/feature/roche-breast-cancer-pill-giredestrant-fda-approval/3078003/",
+      "title": "A daily pill to fight breast cancer? Swiss firm’s new drug completes 3 phases of human trials",
+      "published": "Wed, 21 Oct 2026 13:47:43 GMT",
+      "chars": 4133,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/amp/news/market/sanofi-gets-cdsco-nod-for-qfitlia-haemophilia-bleeding-drug/56595620261021",
+      "title": "Sanofi Gets CDSCO Nod for Qfitlia: Haemophilia Bleeding Drug",
+      "published": "Wed, 21 Oct 2026 09:46:10 GMT",
+      "chars": 1870,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/southern-lehigh-county/fda-issues-import-alert-for-devices-made-by-olympus/article_49b3c706-2b29-4cab-8ad9-1b90ec499d41.html",
+      "title": "FDA issues import alert for devices made by Olympus",
+      "published": "Wed, 21 Oct 2026 19:25:00 GMT",
+      "chars": 3008,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.morningstar.com/news/pr-newswire/20261021ny77260/bbnx-shareholder-alert-beta-bionics-inc-securities-class-action-lawsuit-investors-should-contact-levi-korsinsky",
+      "title": "BBNX Shareholder Alert: Beta Bionics, Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky",
+      "published": "Wed, 21 Oct 2026 14:11:00 GMT",
+      "chars": 8469,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.postandcourier.com/columbia/business/nephron-pharmaceuticals-lawsuit-lou-kennedy/article_7619a59b-b5ca-474d-9ff1-256715f0d682.html",
+      "title": "Discrimination lawsuit, violations update, CEO out: What’s been going on at SC company Nephron?",
+      "published": "Wed, 21 Oct 2026 09:00:00 GMT",
+      "chars": 3250,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.tradingview.com/news/tradingview:a6dba34eef20c:0-nuburu-disclosed-failure-to-satisfy-a-continued-listing-rule-or-standard/",
+      "title": "Nuburu Disclosed Failure to Satisfy a Continued Listing Rule or Standard",
+      "published": "Wed, 21 Oct 2026 10:13:00 GMT",
+      "chars": 825,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/indosolar-q2-results-fy27-pat-5-crore",
+      "title": "Indosolar Q2 Results FY27: Revenue Falls 23.18%, PAT Drops to Rs 5.02 Cr, Operating Profit Slips",
+      "published": "Wed, 21 Oct 2026 15:02:00 GMT",
+      "chars": 8535,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/markets/news/vishal-mega-mart-falls-6-as-festive-shift-weighs-on-margins-sssg-in-q2-126102100565_1.html",
+      "title": "Vishal Mega Mart falls 6% as festive shift weighs on margins, SSSG in Q2",
+      "published": "Wed, 21 Oct 2026 08:32:37 GMT",
+      "chars": 3696,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/marathon-nextgen-realty-q2-results-fy27-pat-45-crore",
+      "title": "Marathon Nextgen Realty Q2 Results FY27: PAT Falls 32% to Rs 45.19 Cr, Revenue Rs 128.95 Cr",
+      "published": "Wed, 21 Oct 2026 16:17:00 GMT",
+      "chars": 8624,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/aditya-birla-sun-life-amc-q2-results-revenue-up-4-8b-rupees-yoy/54117877",
+      "title": "Aditya Birla Sun Life AMC Q2FY27 Results: Net profit falls 8% YoY",
+      "published": "Wed, 21 Oct 2026 08:59:54 GMT",
+      "chars": 4673,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/why-bajaj-finance-shares-fell-3-percent-after-q2-results-2026-should-you-buy-sell-or-hold-what-experts-suggest-to-investors",
+      "title": "Bajaj Finance Share Price Falls After Q2: Buy, Sell or Hold?",
+      "published": "Wed, 21 Oct 2026 07:52:58 GMT",
+      "chars": 9302,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/aye-finance-q2-results-net-profit-more-than-doubles-to-rs-87-crore/articleshow/135092689.cms",
+      "title": "Aye Finance Q2 Results: Net profit more than doubles to Rs 87 crore",
+      "published": "Wed, 21 Oct 2026 12:35:05 GMT",
+      "chars": 3183,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/envision-commissions-gw-scale-ai-data-center-campus-in-china/135095922",
+      "title": "Envision commissions GW-scale AI data center campus in China",
+      "published": "Wed, 21 Oct 2026 21:22:30 GMT",
+      "chars": 1989,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.cnbctv18.com/energy/nhpc-commissions-fifth-subansiri-unit-takes-project-capacity-to-1250-mw-20016415.htm/amp",
+      "title": "NHPC commissions fifth Subansiri unit, takes project capacity to 1,250 MW",
+      "published": "Wed, 21 Oct 2026 16:40:14 GMT",
+      "chars": 2715,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/steel-news/jindal-steel-arm-commissions-phase-i-cargo-terminal-in-odisha/99114",
+      "title": "Jindal Steel Arm Commissions Phase-I Cargo Terminal in Odisha",
+      "published": "Wed, 21 Oct 2026 07:02:53 GMT",
+      "chars": 4934,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/juniper-green-energy-incorporates-two-renewable-energy-subsidiaries/53807191",
+      "title": "Juniper Green Energy incorporates two new renewable subsidiaries",
+      "published": "Wed, 21 Oct 2026 16:23:37 GMT",
+      "chars": 3310,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.constructionworld.in/energy-infrastructure/power-and-renewable-energy/rajasthan-awards-2.45-gw-solar-plus-bess-tender/99094",
+      "title": "Rajasthan Awards 2.45 GW Solar-Plus-BESS Tender",
+      "published": "Wed, 21 Oct 2026 07:02:53 GMT",
+      "chars": 5567,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/amp/business/adani-green-q2-net-profit-rises-16-to-rs-747-crore-strong-revenue-growth-boosts-earnings",
+      "title": "Adani Green Q2 Net Profit Rises 16% To Rs 747 Crore, Strong Revenue Growth Boosts Earnings",
+      "published": "Wed, 21 Oct 2026 12:14:31 GMT",
+      "chars": 3473,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/jane-street-appeal-sat-reserves-order-on-plea-for-additional-sebi-records-126102100972_1.html",
+      "title": "Jane Street appeal: SAT reserves order on plea for additional Sebi records",
+      "published": "Wed, 21 Oct 2026 11:54:00 GMT",
+      "chars": 3105,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/ndmc-to-issue-list-of-works-exempt-from-building-plan-approval-chairman-126102100586_1.html",
+      "title": "NDMC to issue list of works exempt from building plan approval: Chairman",
+      "published": "Wed, 21 Oct 2026 08:56:02 GMT",
+      "chars": 2433,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/essar-ports-wins-2-276-crore-tuna-tekra-terminal-project-at-kandla-126102100628_1.html",
+      "title": "Essar Ports wins ₹2,276 crore Tuna Tekra terminal project at Kandla",
+      "published": "Wed, 21 Oct 2026 10:22:46 GMT",
+      "chars": 5236,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/dr-reddys-zytorvi-dcgi-approval-oesophageal-cancer-toripalimab-126102100639_1.html",
+      "title": "Dr Reddy's gets DCGI nod for cancer drug's second indication in India",
+      "published": "Wed, 21 Oct 2026 09:27:21 GMT",
+      "chars": 4360,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/carlsberg-india-prepares-to-file-ipo-papers-this-week-eyes-700-million-126102100539_1.html",
+      "title": "Carlsberg India prepares to file IPO papers this week, eyes $700 million",
+      "published": "Wed, 21 Oct 2026 08:09:54 GMT",
+      "chars": 2733,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/people/ai-will-be-revenue-accretive-ltts-sees-no-risk-from-us-perm-rajeev-gupta-126102101236_1.html",
+      "title": "AI will be revenue-accretive, LTTS sees no risk from US PERM: Rajeev Gupta",
+      "published": "Wed, 21 Oct 2026 14:13:17 GMT",
+      "chars": 7577,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-as-houthi-attacks-in-saudi-arabia-fuel-supply-concerns-126102200066_1.html",
+      "title": "Oil prices rise as Houthi attacks in Saudi Arabia fuel supply concerns",
+      "published": "Thu, 22 Oct 2026 02:24:43 GMT",
+      "chars": 4323,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/market-outlook-and-three-stock-trading-ideas-for-today-by-jatin-gedia-126102200090_1.html",
+      "title": "Market outlook and three stock trading ideas for today by Jatin Gedia",
+      "published": "Thu, 22 Oct 2026 07:59:53 +0530",
+      "chars": 133,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-as-houthi-attacks-in-saudi-arabia-fuel-supply-concerns-126102200066_1.html",
+      "title": "Oil prices rise as Houthi attacks in Saudi Arabia fuel supply concerns",
+      "published": "Thu, 22 Oct 2026 07:54:43 +0530",
+      "chars": 196,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-22-nse-bse-sensex-today-nifty50-gift-nifty-jio-ipo-today-126102200085_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asian markets decline on concern over AI trade",
+      "published": "Thu, 22 Oct 2026 07:52:09 +0530",
+      "chars": 125,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/near-term-market-outlook-weak-drl-among-3-stocks-to-buy-today-ajit-mishra-126102200084_1.html",
+      "title": "Near-term market outlook weak; DRL among 3 stock ideas: Ajit Mishra",
+      "published": "Thu, 22 Oct 2026 07:43:13 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/esds-advit-among-9-listings-with-up-to-220-rally-ytd-more-steam-left-126102200082_1.html",
+      "title": "ESDS, Advit among 9 listings with up to 220% rally YTD; more steam left?",
+      "published": "Thu, 22 Oct 2026 07:32:58 +0530",
+      "chars": 200,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sundaram-mf-enters-sif-space-choice-mf-launches-first-active-equity-fund-126102101488_1.html",
+      "title": "Sundaram MF enters SIF space; Choice MF launches first active equity fund",
+      "published": "Wed, 21 Oct 2026 23:08:36 +0530",
+      "chars": 185,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/it-stocks-gain-77-000-crore-in-value-as-banking-shares-weigh-on-nifty-126102101234_1.html",
+      "title": "IT stocks gain ₹77,000 crore in value as banking shares weigh on Nifty",
+      "published": "Wed, 21 Oct 2026 21:18:56 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/economy/news/rbi-rejects-all-bids-at-treasury-bill-auction-as-short-term-yields-surge-126102101191_1.html",
+      "title": "RBI rejects all bids at govt's T-bill auction as short-term yields surge",
+      "published": "Wed, 21 Oct 2026 19:25:37 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dip-in-the-dollar-takes-a-breather-with-fed-in-focus/articleshow/135104703.cms",
+      "title": "Dip in the dollar takes a breather with Fed in focus",
+      "published": "Thu, 22 Oct 2026 07:52:41 +0530",
+      "chars": 415,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-22-crude-oil-above-110-as-energy-infra-attacks-heighten-supply-fears-more-tension-ahead/articleshow/135104474.cms",
+      "title": "Oil Price Today (October 22): Crude oil above $110 as energy infra attacks heighten supply fears. More tension ahead?",
+      "published": "Thu, 22 Oct 2026 07:44:19 +0530",
+      "chars": 213,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 193.6
+}
