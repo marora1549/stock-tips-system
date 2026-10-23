@@ -1,0 +1,378 @@
+{
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23 08:12",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders_bse": {
+      "docs": 5,
+      "events": 6
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 16,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "9a6373aa81",
+      "symbol": "RALLIS",
+      "company": "Rallis India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/rallis-india-q2-results-crop-care-grows-but-profit-falls-17-pc-amid-weak-demand-20017311.htm",
+      "title": "Rallis India Q2 Results: Crop Care grows, but profit falls 17% amid weak demand",
+      "published": "Thu, 22 Oct 2026 13:33:09 GMT",
+      "published_utc": "2026-10-22T13:33:09+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/rallis-india-q2-results-crop-care-grows-but-profit-falls-17-pc-amid-weak-demand-20017311.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": -10,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 58/100",
+        "-6 12.9% below the 200-day average — fighting the trend",
+        "+12 published Thu 19:03, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2959.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 19:03, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 204.29,
+        "atr_pct": 2.22,
+        "expected_day_range_inr": 4.54,
+        "expected_day_range_pct": 2.22,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 58,
+      "fund_why": [
+        "+0 ROCE 14.1%",
+        "+0 ROE 10.2%",
+        "+6 P/E 19.3",
+        "+8 3y profit CAGR 30%",
+        "-4 3y sales CAGR -1%",
+        "-6 return on capital has drifted from 15.2% to 11.7% — the newer capital earns less than the old",
+        "+5 D/E 0.05",
+        "+4 promoter 55.08%",
+        "-5 latest qtr PAT YoY -16.7%",
+        "+0 mcap ₹3,959 cr",
+        "+8 operating cash flow ₹172cr, 93% of profit — profit is turning into cash",
+        "-6 borrowings up 62% year on year",
+        "+3 institutions hold 16.71%",
+        "+3 price to book 1.81",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 34.5%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 3.58% over past five years.",
+        "Company has a low return on equity of 8.41% over last 3 years."
+      ],
+      "ltp": 204.2899932861328,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 54.0,
+        "adx": 17.9,
+        "atr_pct": 2.22,
+        "vol_ratio": 0.99,
+        "chg_1d_pct": -0.18,
+        "chg_5d_pct": 2.12,
+        "dist_52w_high_pct": -32.8,
+        "dist_ema200_pct": -12.86,
+        "avg_turnover_cr": 8.19,
+        "high_52w": 304.0,
+        "momentum_score": 7,
+        "last_bar_date": "2026-10-21"
+      },
+      "fundamentals": {
+        "market_cap_cr": 3959.0,
+        "pe": 19.3,
+        "roce": 14.1,
+        "roe": 10.2,
+        "sales_growth_3_years": -1.0,
+        "profit_growth_3_years": 30.0,
+        "promoter_pct": 55.08,
+        "debt_to_equity": 0.05,
+        "revenue_ttm_cr": 2959.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "c724651101",
+      "symbol": "SWIGGY",
+      "company": "Swiggy Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html",
+      "title": "Swiggy Q2 net loss narrows 15.6% to ₹922 crore, revenue rises 36%",
+      "published": "Thu, 22 Oct 2026 13:49:30 GMT",
+      "published_utc": "2026-10-22T13:49:30+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -21,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "-10 fundamentals 20/100 — a pop on a weak balance sheet fades",
+        "+3 down 5.5% into the news — less crowded",
+        "-6 26.6% below the 200-day average — fighting the trend",
+        "+12 published Thu 19:19, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 26914.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Thu 19:19, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 211.4,
+        "atr_pct": 4.26,
+        "expected_day_range_inr": 9.01,
+        "expected_day_range_pct": 4.26,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 20,
+      "fund_why": [
+        "-4 ROCE -24.1%",
+        "-4 ROE -29.1%",
+        "-8 loss-making (no P/E)",
+        "+0 3y profit CAGR 0%",
+        "+6 3y sales CAGR 41%",
+        "+4 return on capital has improved from -47.3% to -25.7%",
+        "+5 D/E 0.15",
+        "-5 latest qtr PAT YoY -184.4%",
+        "+4 mcap ₹58,353 cr",
+        "-14 operating cash flow ₹-2,898cr — the business consumed cash last year",
+        "-12 interest cover -14.3× — thin",
+        "+3 institutions hold 43.35%",
+        "+0 price to book 3.43",
+        "-6 ROCE -24.1% bought at 3.43× book is -7% on what you pay",
+        "  (value counted -10 of -14 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "operating cash flow has been negative 7 years running",
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates",
+        "the page did not read cleanly — profit growth 1y pct came out at -233% — the growth read is unsafe",
+        "the page did not read cleanly — profit growth prev 1y pct came out at -233% — the growth read is unsafe"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter"
+      ],
+      "screener_cons": [
+        "Stock is trading at 3.44 times its book value",
+        "Company has low interest coverage ratio.",
+        "Debtor days have increased from 51.5 to 64.1 days.",
+        "Working capital days have increased from 29.1 days to 65.5 days"
+      ],
+      "ltp": 211.39999389648438,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 24.2,
+        "adx": 30.6,
+        "atr_pct": 4.26,
+        "vol_ratio": 2.47,
+        "chg_1d_pct": -5.48,
+        "chg_5d_pct": -8.47,
+        "dist_52w_high_pct": -52.71,
+        "dist_ema200_pct": -26.63,
+        "avg_turnover_cr": 266.02,
+        "high_52w": 447.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-22"
+      },
+      "fundamentals": {
+        "market_cap_cr": 58353.0,
+        "pe": null,
+        "roce": -24.1,
+        "roe": -29.1,
+        "sales_growth_3_years": 41.0,
+        "profit_growth_3_years": 0.0,
+        "debt_to_equity": 0.15,
+        "revenue_ttm_cr": 26914.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

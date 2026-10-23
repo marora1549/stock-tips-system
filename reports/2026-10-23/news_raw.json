@@ -1,0 +1,1062 @@
+{
+  "date": "2026-10-23",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders_bse": {
+      "docs": 5,
+      "events": 6
+    },
+    "corp_approvals": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 5,
+      "events": 3
+    },
+    "corp_expansion": {
+      "docs": 7,
+      "events": 5
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "55c84facf8",
+      "symbol": "POWERICA",
+      "company": "Powerica Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a work order",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 14.07,
+      "size_estimated": false,
+      "size_basis": "₹14.07 Cr",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://tradebrains.in/indian-markets/lakshya-powertech-secures-1407-cr-work-order-from-powerica-for-diesel-generator-installation-12737819",
+      "title": "Lakshya Powertech secures ₹14.07 Cr work order from Powerica for diesel generator installation",
+      "published": "Thu, 22 Oct 2026 11:59:49 GMT",
+      "published_utc": "2026-10-22T11:59:49+00:00",
+      "sentence": "secured a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://tradebrains.in/indian-markets/lakshya-powertech-secures-1407-cr-work-order-from-powerica-for-diesel-generator-installation-12737819"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "60bce52544",
+      "symbol": "MCLOUD",
+      "company": "Magellanic Cloud Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1 bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 115.0,
+      "size_estimated": false,
+      "size_basis": "Rs 115 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/magellanic-cloud-surges-as-its-arm-emerges-as-l1-bidder-for-bank-of-maharashtra-s-tender871163",
+      "title": "Magellanic Cloud surges as its arm emerges as L1 bidder for Bank of Maharashtra's tender",
+      "published": "Thu, 22 Oct 2026 07:15:45 GMT",
+      "published_utc": "2026-10-22T07:15:45+00:00",
+      "sentence": "l1 bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/magellanic-cloud-surges-as-its-arm-emerges-as-l1-bidder-for-bank-of-maharashtra-s-tender871163"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "062c296ca1",
+      "symbol": "ETERNAL",
+      "company": "ETERNAL LIMITED",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit stood at rs 125 crore, up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/eternal-eyes-faster-blinkit-expansion-as-margins-and-order-values-grow-126102201467_1.html",
+      "title": "Eternal eyes faster Blinkit expansion as margins and order values grow",
+      "published": "Thu, 22 Oct 2026 14:30:41 GMT",
+      "published_utc": "2026-10-22T14:30:41+00:00",
+      "sentence": "net profit stood at rs 125 crore, up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/eternal-eyes-faster-blinkit-expansion-as-margins-and-order-values-grow-126102201467_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ec0f547eb4",
+      "symbol": "ORIENTCEM",
+      "company": "Orient Cement Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat",
+        "guidance_raise"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 165.0,
+      "size_estimated": false,
+      "size_basis": "₹165 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/orient-cement-q2-results-profit-falls-35-as-revenue-and-margins-weaken-20017352.htm",
+      "title": "Orient Cement Q2 Results: Profit falls 35% as revenue and margins weaken",
+      "published": "Thu, 22 Oct 2026 14:55:56 GMT",
+      "published_utc": "2026-10-22T14:55:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/orient-cement-q2-results-profit-falls-35-as-revenue-and-margins-weaken-20017352.htm",
+        "https://www.tradingview.com/news/cnbctv:b7173b99e094b:0/"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "9a6373aa81",
+      "symbol": "RALLIS",
+      "company": "Rallis India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/rallis-india-q2-results-crop-care-grows-but-profit-falls-17-pc-amid-weak-demand-20017311.htm",
+      "title": "Rallis India Q2 Results: Crop Care grows, but profit falls 17% amid weak demand",
+      "published": "Thu, 22 Oct 2026 13:33:09 GMT",
+      "published_utc": "2026-10-22T13:33:09+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/rallis-india-q2-results-crop-care-grows-but-profit-falls-17-pc-amid-weak-demand-20017311.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c724651101",
+      "symbol": "SWIGGY",
+      "company": "Swiggy Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html",
+      "title": "Swiggy Q2 net loss narrows 15.6% to ₹922 crore, revenue rises 36%",
+      "published": "Thu, 22 Oct 2026 13:49:30 GMT",
+      "published_utc": "2026-10-22T13:49:30+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8471aec539",
+      "symbol": "HAVELLS",
+      "company": "Havells India Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html",
+      "title": "Swiggy Q2 net loss narrows 15.6% to ₹922 crore, revenue rises 36%",
+      "published": "Thu, 22 Oct 2026 13:49:30 GMT",
+      "published_utc": "2026-10-22T13:49:30+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0389a69887",
+      "symbol": "RANEHOLDIN",
+      "company": "Rane Holdings Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 113.74,
+      "size_estimated": false,
+      "size_basis": "Rs. 113.74 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377455/rane-holdings-ltd-approves-further-investment-of-rs-80-85-crore-in-zf-lifetec-ra",
+      "title": "Rane Holdings Ltd approves Further Investment of Rs 80.85 Crore in ZF LIFETEC Rane Automotive India Private Limited",
+      "published": "Thu, 22 Oct 2026 10:19:08 GMT",
+      "published_utc": "2026-10-22T10:19:08+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [
+        "corp_expansion"
+      ],
+      "urls": [
+        "https://www.equitybulls.com/news/377455/rane-holdings-ltd-approves-further-investment-of-rs-80-85-crore-in-zf-lifetec-ra"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "30c8994718",
+      "symbol": "APOLLO",
+      "company": "Apollo Micro Systems Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions new unit",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.moneycontrol.com/news/business/apollo-systems-subsidiary-commissions-new-unit-in-bengal-shares-see-profit-booking-14057758.html/amp",
+      "title": "Apollo Systems subsidiary commissions new unit in Bengal, shares see profit booking",
+      "published": "Thu, 22 Oct 2026 11:25:42 GMT",
+      "published_utc": "2026-10-22T11:25:42+00:00",
+      "sentence": "commissions new unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/apollo-systems-subsidiary-commissions-new-unit-in-bengal-shares-see-profit-booking-14057758.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "29dc24c6a8",
+      "symbol": "BENGALASM",
+      "company": "Bengal & Assam Company Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions new unit",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.moneycontrol.com/news/business/apollo-systems-subsidiary-commissions-new-unit-in-bengal-shares-see-profit-booking-14057758.html/amp",
+      "title": "Apollo Systems subsidiary commissions new unit in Bengal, shares see profit booking",
+      "published": "Thu, 22 Oct 2026 11:25:42 GMT",
+      "published_utc": "2026-10-22T11:25:42+00:00",
+      "sentence": "commissions new unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/apollo-systems-subsidiary-commissions-new-unit-in-bengal-shares-see-profit-booking-14057758.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9282e1180f",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 94.97,
+      "size_estimated": false,
+      "size_basis": "Rs 94.97 Crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra",
+      "title": "Innovision Limited Secures Rs 94.97 Crore Toll Collection and Maintenance Contract from NHAI in Chhattisgarh",
+      "published": "Thu, 22 Oct 2026 16:04:42 GMT",
+      "published_utc": "2026-10-22T16:04:42+00:00",
+      "sentence": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4f0cd454f2",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 94.97,
+      "size_estimated": false,
+      "size_basis": "Rs 94.97 Crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra",
+      "title": "Innovision Limited Secures Rs 94.97 Crore Toll Collection and Maintenance Contract from NHAI in Chhattisgarh",
+      "published": "Thu, 22 Oct 2026 16:04:42 GMT",
+      "published_utc": "2026-10-22T16:04:42+00:00",
+      "sentence": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3424f13dbd",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 94.97,
+      "size_estimated": false,
+      "size_basis": "Rs 94.97 Crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra",
+      "title": "Innovision Limited Secures Rs 94.97 Crore Toll Collection and Maintenance Contract from NHAI in Chhattisgarh",
+      "published": "Thu, 22 Oct 2026 16:04:42 GMT",
+      "published_utc": "2026-10-22T16:04:42+00:00",
+      "sentence": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d713eb9d3f",
+      "symbol": "GRINFRA",
+      "company": "G R Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "G R Infraprojects",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 94.97,
+      "size_estimated": false,
+      "size_basis": "Rs 94.97 Crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra",
+      "title": "Innovision Limited Secures Rs 94.97 Crore Toll Collection and Maintenance Contract from NHAI in Chhattisgarh",
+      "published": "Thu, 22 Oct 2026 16:04:42 GMT",
+      "published_utc": "2026-10-22T16:04:42+00:00",
+      "sentence": "awarded on october 21, 2026, following competitive bidding through an e-tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "62e3871567",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion project underway to scale machining capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377513/pitti-engineering-limited-approves-rs-450-crore-capex-plan-for-strategic-capacit",
+      "title": "Pitti Engineering Limited Approves Rs 450 Crore Capex Plan for Strategic Capacity Expansion and Facilities Consolidation",
+      "published": "Thu, 22 Oct 2026 16:42:33 GMT",
+      "published_utc": "2026-10-22T16:42:33+00:00",
+      "sentence": "expansion project underway to scale machining capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377513/pitti-engineering-limited-approves-rs-450-crore-capex-plan-for-strategic-capacit"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3a33ffa1b2",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion project underway to scale machining capacity",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377513/pitti-engineering-limited-approves-rs-450-crore-capex-plan-for-strategic-capacit",
+      "title": "Pitti Engineering Limited Approves Rs 450 Crore Capex Plan for Strategic Capacity Expansion and Facilities Consolidation",
+      "published": "Thu, 22 Oct 2026 16:42:33 GMT",
+      "published_utc": "2026-10-22T16:42:33+00:00",
+      "sentence": "expansion project underway to scale machining capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/377513/pitti-engineering-limited-approves-rs-450-crore-capex-plan-for-strategic-capacit"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-swiggy-cyient-nuvoco-vistas-bluestone-jewellery-creditaccess-nlc-zetwerk-bonfiglioli-transmissions-tonbo-imaging-in-focus-on-23-october-14058032.html",
+      "title": "Stocks to Watch Today: Swiggy, Cyient, Nuvoco Vistas, Bluestone Jewellery, CreditAccess, NLC, Zetwerk,...",
+      "published": "Fri, 23 Oct 2026 01:09:05 GMT",
+      "chars": 8665,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-swiggy-infosys-hpcl-emudhra-adani-power-shriram-finance-tata-motors-and-nlc-india/articleshow/135123918.cms",
+      "title": "Stocks in news: Swiggy, Infosys, HPCL, eMudhra, Adani Power, Shriram Finance, Tata Motors and NLC India",
+      "published": "Fri, 23 Oct 2026 00:30:00 GMT",
+      "chars": 12013,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-infosys-tata-motors-swiggy-cyient-shares-in-focus-on-friday-23-oct-full-list-11792719056861.html",
+      "title": "Top stocks to watch today: Infosys, Tata Motors, Swiggy, Cyient shares in focus on Friday, 23 Oct | Full list",
+      "published": "Fri, 23 Oct 2026 01:54:20 GMT",
+      "chars": 3698,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=10/23/2026&story=1&title=4-Smallcap-Stocks-to-Watch-for-Long%2DTerm-Growth&utm_source=homepage&utm_medium=website&utm_campaign=top-articles&utm_content=link",
+      "title": "4 Smallcap Stocks to Watch for Long-Term Growth",
+      "published": "Fri, 23 Oct 2026 00:30:00 GMT",
+      "chars": 14638,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/computacenter-2-british-owner-operator-001845518.html",
+      "title": "Computacenter And 2 British Owner Operator Stocks To Watch",
+      "published": "Fri, 23 Oct 2026 00:18:00 GMT",
+      "chars": 3784,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/kvrr-infrastructure-emerges-as-the-lowest-bidder-for-a-mining-project-worth-over-rs-108-crore-in-mah",
+      "title": "KVRR Infrastructure emerges as the lowest bidder for a mining project worth over Rs 108 crore in Maharashtra",
+      "published": "Thu, 22 Oct 2026 18:35:34 GMT",
+      "chars": 887,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.qcintel.com/ammonia/article/kbr-secures-contract-to-revamp-two-agf-nitrogen-ammonia-plants-trim-gas-usage-75799.html",
+      "title": "KBR secures contract to revamp two AGF Nitrogen ammonia plants, trim gas usage",
+      "published": "Thu, 22 Oct 2026 14:16:47 GMT",
+      "chars": 351,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/magellanic-cloud-surges-as-its-arm-emerges-as-l1-bidder-for-bank-of-maharashtra-s-tender871163",
+      "title": "Magellanic Cloud surges as its arm emerges as L1 bidder for Bank of Maharashtra's tender",
+      "published": "Thu, 22 Oct 2026 07:15:45 GMT",
+      "chars": 1506,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/hartek-power-bags-order-worth-rs-200-crore-from-uttar-pradesh",
+      "title": "Hartek Power bags order worth Rs 200 crore from Uttar Pradesh",
+      "published": "Thu, 22 Oct 2026 18:35:34 GMT",
+      "chars": 920,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377518/acme-universal-safezone-9-ltd-secures-order-worth-rs-70-17-lakhs",
+      "title": "Acme Universal Safezone 9 Ltd secures order worth Rs. 70.17 lakhs",
+      "published": "Thu, 22 Oct 2026 16:57:29 GMT",
+      "chars": 509,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377502/acme-universal-safezone-9-ltd-receives-order-worth-rs-2-14-crore",
+      "title": "Acme Universal Safezone 9 Ltd receives order worth Rs. 2.14 crore",
+      "published": "Thu, 22 Oct 2026 16:16:41 GMT",
+      "chars": 482,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/ltm-nseltm-formerly-ltimindtree-details-ai-push-and-workforce-trends-in-q2-fy27-earnings-call",
+      "title": "LTM (NSE:LTM) Q2 FY27 Call: AI Platforms, Hiring and Order Inflow",
+      "published": "Thu, 22 Oct 2026 09:46:00 GMT",
+      "chars": 4788,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377497/innovision-limited-secures-rs-94-97-crore-toll-collection-and-maintenance-contra",
+      "title": "Innovision Limited Secures Rs 94.97 Crore Toll Collection and Maintenance Contract from NHAI in Chhattisgarh",
+      "published": "Thu, 22 Oct 2026 16:04:42 GMT",
+      "chars": 2224,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377456/neueon-corporation-ltd-approves-disposal-of-manufacturing-undertaking-in-telanga",
+      "title": "Neueon Corporation Ltd Approves Disposal of Manufacturing Undertaking in Telangana to Aparna Enterprises",
+      "published": "Thu, 22 Oct 2026 10:20:56 GMT",
+      "chars": 2462,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377455/rane-holdings-ltd-approves-further-investment-of-rs-80-85-crore-in-zf-lifetec-ra",
+      "title": "Rane Holdings Ltd approves Further Investment of Rs 80.85 Crore in ZF LIFETEC Rane Automotive India Private Limited",
+      "published": "Thu, 22 Oct 2026 10:19:08 GMT",
+      "chars": 2662,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://tradebrains.in/indian-markets/lakshya-powertech-secures-1407-cr-work-order-from-powerica-for-diesel-generator-installation-12737819",
+      "title": "Lakshya Powertech secures ₹14.07 Cr work order from Powerica for diesel generator installation",
+      "published": "Thu, 22 Oct 2026 11:59:49 GMT",
+      "chars": 4859,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.raps.org/resource/fda-warns-baxter-olympus-for-gmp-and-qsr-violations.html",
+      "title": "FDA warns Baxter, Olympus for GMP and QSR violations",
+      "published": "Thu, 22 Oct 2026 21:29:00 GMT",
+      "chars": 6946,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.medtechdive.com/news/fda-flags-more-olympus-safety-problems-in-import-block-and-warning-letter/833730/",
+      "title": "FDA flags more Olympus safety problems in import block and warning letter",
+      "published": "Thu, 22 Oct 2026 17:14:50 GMT",
+      "chars": 4856,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.morningstar.com/news/pr-newswire/20261022ny77952/bbnx-upcoming-deadline-suewallst-alerts-beta-bionics-inc-stockholders-of-securities-class-action-contact-the-firm",
+      "title": "BBNX UPCOMING DEADLINE: SueWallSt Alerts Beta Bionics, Inc. Stockholders of Securities Class Action - Contact the Firm",
+      "published": "Thu, 22 Oct 2026 14:11:00 GMT",
+      "chars": 8226,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://en.sedaily.com/finance/2026/10/22/rokit-healthcare-moves-to-end-us-distributor-deal-after-fda",
+      "title": "Rokit Healthcare Moves to End U.S. Distributor Deal After FDA Warning",
+      "published": "Thu, 22 Oct 2026 09:13:43 GMT",
+      "chars": 3144,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/orient-cement-q2-results-profit-falls-35-as-revenue-and-margins-weaken-20017352.htm",
+      "title": "Orient Cement Q2 Results: Profit falls 35% as revenue and margins weaken",
+      "published": "Thu, 22 Oct 2026 14:55:56 GMT",
+      "chars": 1927,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/hpcl-q2-results-profit-falls-9-to-rs-3-483-crore-despite-26-sales-jump-as-crude-oil-prices-bite-14057867.html",
+      "title": "HPCL Q2 Results: Profit falls 9% to Rs 3,483 crore despite 26% sales jump as crude oil prices bite",
+      "published": "Thu, 22 Oct 2026 12:32:02 GMT",
+      "chars": 5793,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.tradingview.com/news/cnbctv:b7173b99e094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-10-22 — cnbctv:b7173b99e094b:0",
+      "published": "Thu, 22 Oct 2026 14:55:56 GMT",
+      "chars": 943,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/hpcl-consolidated-net-profit-falls-6-yoy-to-rs-3-625-crore-in-q2fy27-14057841.html/amp",
+      "title": "HPCL consolidated net profit falls 6% YoY to Rs 3,625 crore in Q2FY27",
+      "published": "Thu, 22 Oct 2026 12:13:06 GMT",
+      "chars": 5879,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/rallis-india-q2-results-crop-care-grows-but-profit-falls-17-pc-amid-weak-demand-20017311.htm",
+      "title": "Rallis India Q2 Results: Crop Care grows, but profit falls 17% amid weak demand",
+      "published": "Thu, 22 Oct 2026 13:33:09 GMT",
+      "chars": 3525,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.thehindu.com/business/idl-commissions-bulk-explosives-silo-plant-in-west-bengal/article71612448.ece/amp/",
+      "title": "IDL commissions bulk explosives silo plant in West Bengal",
+      "published": "Thu, 22 Oct 2026 15:58:44 GMT",
+      "chars": 2169,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.moneycontrol.com/news/business/apollo-systems-subsidiary-commissions-new-unit-in-bengal-shares-see-profit-booking-14057758.html/amp",
+      "title": "Apollo Systems subsidiary commissions new unit in Bengal, shares see profit booking",
+      "published": "Thu, 22 Oct 2026 11:25:42 GMT",
+      "chars": 4090,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://hdfcsky.com/news/apollo-micro-systems-idl-explosives-commissions-9000-mt-plant",
+      "title": "Apollo Micro Systems' IDL Explosives Commissions 9,000 MT Plant; Shares Fall 1.79%",
+      "published": "Thu, 22 Oct 2026 07:23:50 GMT",
+      "chars": 3888,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377454/juniper-green-stellar-pvt-ltd-commissions-33-mw-wind-power-capacity",
+      "title": "Juniper Green Stellar Pvt Ltd commissions 33 MW wind power capacity",
+      "published": "Thu, 22 Oct 2026 10:17:24 GMT",
+      "chars": 856,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377455/rane-holdings-ltd-approves-further-investment-of-rs-80-85-crore-in-zf-lifetec-ra",
+      "title": "Rane Holdings Ltd approves Further Investment of Rs 80.85 Crore in ZF LIFETEC Rane Automotive India Private Limited",
+      "published": "Thu, 22 Oct 2026 10:19:08 GMT",
+      "chars": 2662,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.tradingview.com/news/moodys:4e2de037a2456:0-multibagger-defence-stock-commissions-new-unit-up-3200-in-5-years-strong-dividend-stock-split-history-do-you-own/",
+      "title": "Multibagger defence stock commissions new unit; up 3200% in 5 years - strong dividend, stock-split history | Do you own?",
+      "published": "Thu, 22 Oct 2026 12:50:21 GMT",
+      "chars": 4578,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377513/pitti-engineering-limited-approves-rs-450-crore-capex-plan-for-strategic-capacit",
+      "title": "Pitti Engineering Limited Approves Rs 450 Crore Capex Plan for Strategic Capacity Expansion and Facilities Consolidation",
+      "published": "Thu, 22 Oct 2026 16:42:33 GMT",
+      "chars": 2622,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/eternal-eyes-faster-blinkit-expansion-as-margins-and-order-values-grow-126102201467_1.html",
+      "title": "Eternal eyes faster Blinkit expansion as margins and order values grow",
+      "published": "Thu, 22 Oct 2026 14:30:41 GMT",
+      "chars": 5669,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/nippon-life-india-amc-gets-sebi-nod-to-settle-yes-bank-at-1-bond-case-126102201003_1.html",
+      "title": "Nippon Life India AMC gets Sebi nod to settle Yes Bank AT-1 bond case",
+      "published": "Thu, 22 Oct 2026 11:11:45 GMT",
+      "chars": 3284,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/pm-modi-attacks-congress-says-it-dreams-of-disorder-amid-global-change-126102201665_1.html",
+      "title": "PM Modi attacks Congress, says it dreams of disorder amid global change",
+      "published": "Thu, 22 Oct 2026 16:52:44 GMT",
+      "chars": 4178,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/apple-limits-iphone-duo-orders-to-two-per-customer-amid-supply-crunch-126102200610_1.html",
+      "title": "Apple limits iPhone Duo orders to two per customer amid supply crunch",
+      "published": "Thu, 22 Oct 2026 08:08:06 GMT",
+      "chars": 2498,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/sebi-allows-margin-relief-on-subsequent-trades-against-early-pay-in-126102201148_1.html",
+      "title": "Sebi allows margin relief on subsequent trades against early pay-in",
+      "published": "Thu, 22 Oct 2026 13:27:22 GMT",
+      "chars": 3729,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/swiggy-q2-net-loss-narrows-15-6-to-922-crore-revenue-rises-36-126102201389_1.html",
+      "title": "Swiggy Q2 net loss narrows 15.6% to ₹922 crore, revenue rises 36%",
+      "published": "Thu, 22 Oct 2026 13:49:30 GMT",
+      "chars": 4548,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/well-catered-sees-india-as-a-key-sourcing-destination-for-quality-paper-packaging-at-competitive-prices-126102201052_1.html",
+      "title": "Well Catered Sees India as a Key Sourcing Destination for Quality Paper Packaging at Competitive Prices",
+      "published": "Thu, 22 Oct 2026 14:00:06 GMT",
+      "chars": 6832,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/personal-finance/fund-review-hdfc-mid-cap-fund-126102200964_1.html",
+      "title": "Fund Review: HDFC Mid Cap Fund",
+      "published": "Thu, 22 Oct 2026 10:51:04 GMT",
+      "chars": 1015,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/asian-shares-slip-as-tech-rout-boosts-bonds-dents-rate-hike-bets-126102300074_1.html",
+      "title": "Asian shares slip as tech rout boosts bonds, dents rate hike bets",
+      "published": "Fri, 23 Oct 2026 08:00:52 +0530",
+      "chars": 160,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-126102300065_1.html",
+      "title": "Oil little changed as supply concern lingers amid Houthi attacks on Saudi",
+      "published": "Fri, 23 Oct 2026 08:00:30 +0530",
+      "chars": 161,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-jio-ipo-q2-results-today-126102300078_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty rises over 100 pts; Asia markets tumble on AI-spending concern",
+      "published": "Fri, 23 Oct 2026 07:55:30 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-logs-third-longest-technical-correction-shallowest-in-its-history-126102300066_1.html",
+      "title": "Nifty set to log 3rd longest technical correction; shallowest in history",
+      "published": "Fri, 23 Oct 2026 07:10:44 +0530",
+      "chars": 198,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/content/press-releases-ani/zebpay-celebrates-12-years-of-advancing-bitcoin-adoption-in-india-126102201127_1.html",
+      "title": "ZebPay Celebrates 12 Years of Advancing Bitcoin Adoption in India",
+      "published": "Thu, 22 Oct 2026 17:25:12 +0530",
+      "chars": 642,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/jio-platforms-ipo-subscribed-5-57x-on-day-2-qibs-led-with-13-29x-bids-126102201448_1.html",
+      "title": "Jio Platforms IPO subscribed 5.57x on day 2; QIBs led with 13.29x bids",
+      "published": "Thu, 22 Oct 2026 21:49:53 +0530",
+      "chars": 120,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-warns-investors-against-fraudulent-whatsapp-stock-tip-groups-126102201541_1.html",
+      "title": "Sebi warns investors against fraudulent WhatsApp stock tip groups",
+      "published": "Thu, 22 Oct 2026 20:45:42 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/oil-price-surge-keeps-nifty-in-red-sensex-sheds-460-points-on-thursday-126102201522_1.html",
+      "title": "Oil price surge keeps Nifty in red, Sensex sheds 460 points on Thursday",
+      "published": "Thu, 22 Oct 2026 20:33:06 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/yen-shines-as-ai-jitters-spur-safe-haven-rush/articleshow/135131944.cms",
+      "title": "Yen shines as AI jitters spur safe-haven rush",
+      "published": "Fri, 23 Oct 2026 07:58:47 +0530",
+      "chars": 383,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-heads-for-sharpest-weekly-decline-in-four-months-on-fed-rate-outlook/articleshow/135131910.cms",
+      "title": "Gold heads for sharpest weekly decline in four months on Fed rate outlook",
+      "published": "Fri, 23 Oct 2026 07:56:14 +0530",
+      "chars": 306,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/zetwerk-manufacturing-business-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/135131780.cms",
+      "title": "Zetwerk Manufacturing Business shares to list today: Check GMP ahead of debut",
+      "published": "Fri, 23 Oct 2026 07:48:56 +0530",
+      "chars": 288,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bonfiglioli-transmissions-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/135131771.cms",
+      "title": "Bonfiglioli Transmissions shares to list today: Check GMP ahead of debut",
+      "published": "Fri, 23 Oct 2026 07:47:11 +0530",
+      "chars": 286,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dragon-enters-bear-cave-with-2-4-trillion-lost-since-may-peak/articleshow/135131775.cms",
+      "title": "Dragon enters bear cave with $2.4 trillion lost since May peak",
+      "published": "Fri, 23 Oct 2026 07:45:22 +0530",
+      "chars": 406,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/sahajanand-medical-technologies-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/135131726.cms",
+      "title": "Sahajanand Medical Technologies shares to list today: Check GMP ahead of debut",
+      "published": "Fri, 23 Oct 2026 07:38:26 +0530",
+      "chars": 258,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-23-crude-oil-ticks-over-114-jumps-nearly-8-this-week-as-energy-attacks-intensify-what-are-experts-saying/articleshow/135131739.cms",
+      "title": "Oil Price Today (October 23): Crude oil ticks over $114, jumps nearly 8% this week as energy attacks intensify. What are experts saying?",
+      "published": "Fri, 23 Oct 2026 07:37:30 +0530",
+      "chars": 146,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 147.4
+}
