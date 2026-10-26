@@ -160,3 +160,6 @@ Events: LALPATHLAB: STOP-LOSS @ 1860.75 → closed, P&L ₹-309.75 (-1.1%)
 
 ### 2026-10-23 [analyst]
 2026-10-23 desk review: quiet day, no stops/targets/time-stops. PETRONET +0.4%, KOTAKBANK +3.0% (hold-capable, T1 unhit), PNB -1.7% (hot-potato, entry 122.5 vs LTP 120.37, stop 113.95); equity 95,324 (-4.7%), cash -137, closed book 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade. chartink_squeeze -35.7 (n=3), 4 pts from auto-disable; none auto-disabled, none at 60% T1. Friday: added tg_stockmarketindia_official at confidence 0 (public, no login; mostly generic levels/F&O-ban posts, so expect low yield).
+
+### 2026-10-26 [analyst]
+2026-10-26 desk review: quiet day, no stops/targets/time-stops. PETRONET +2.3%, KOTAKBANK +5.4% (hold-capable, T1 unhit), PNB -1.3% (hot-potato, entry 122.5, stop 113.95); equity 96,864 (-3.1%), cash -137, closed book 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled at -3.4%, too few to grade. chartink_squeeze -35.7 (n=3), 4 pts from auto-disable; none auto-disabled, none at 60% T1. Monday: no new source.
