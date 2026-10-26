@@ -1,0 +1,668 @@
+{
+  "date": "2026-10-26",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 6,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "b88c8028c4",
+      "symbol": "RAJESHEXPO",
+      "company": "Rajesh Exports Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "order alleged revenue inflation of rs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1515000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 15.15 lakh crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html",
+      "title": "Rajesh Exports says it will resubmit documents to SEBI, disputes EBITDA listed as revenue",
+      "published": "Sun, 25 Oct 2026 09:18:53 GMT",
+      "published_utc": "2026-10-25T09:18:53+00:00",
+      "sentence": "order alleged revenue inflation of rs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "75293d7686",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://investmentguruindia.com/newsdetail/neutral-dr-reddy-s-labs-ltd-for-target-rs-1-180-by-motilal-oswal-financial-services-ltd763558",
+      "title": "Neutral Dr Reddy's Labs Ltd For Target Rs.1,180 by Motilal Oswal Financial Services Ltd",
+      "published": "Sun, 25 Oct 2026 09:14:20 GMT",
+      "published_utc": "2026-10-25T09:14:20+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/neutral-dr-reddy-s-labs-ltd-for-target-rs-1-180-by-motilal-oswal-financial-services-ltd763558"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "022ce25a5c",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-infosys-kotak-bank-lupin-kec-international-bank-of-india-coforge-bharat-coking-coal-dcb-bank-netweb-apollo-micro-in-focus-on-26-october-14059620.html",
+      "title": "Stocks to Watch Today: Infosys, Kotak Bank, Lupin, KEC International, Bank of India, Coforge, Bharat...",
+      "published": "Sun, 25 Oct 2026 19:49:22 GMT",
+      "published_utc": "2026-10-25T19:49:22+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-infosys-kotak-bank-lupin-kec-international-bank-of-india-coforge-bharat-coking-coal-dcb-bank-netweb-apollo-micro-in-focus-on-26-october-14059620.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e40e5b9007",
+      "symbol": "CONCORDBIO",
+      "company": "Concord Biotech Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit to ₹ 260 crore and a 12% drop",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1200.1,
+      "size_estimated": false,
+      "size_basis": "₹ 1,200.1 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/concord-biotech-to-consider-q4fy26-results-on-may-29/41058933",
+      "title": "Concord Biotech expects FY27 growth to exceed historical rates",
+      "published": "Sun, 25 Oct 2026 11:02:51 GMT",
+      "published_utc": "2026-10-25T11:02:51+00:00",
+      "sentence": "net profit to ₹ 260 crore and a 12% drop",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/concord-biotech-to-consider-q4fy26-results-on-may-29/41058933"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "da9a4ad490",
+      "symbol": "SONA",
+      "company": "Sonaselection India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://thetaxcorp.in/article/gauhati-hc-explains-how-to-count-gst-notice-period-in-calendar-months-under",
+      "title": "Gauhati HC Explains How to Count GST Notice Period in Calendar Months Under Section 73(2)",
+      "published": "Sun, 25 Oct 2026 12:45:16 GMT",
+      "published_utc": "2026-10-25T12:45:16+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://thetaxcorp.in/article/gauhati-hc-explains-how-to-count-gst-notice-period-in-calendar-months-under"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1e0fed65a8",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned bess capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 5380.0,
+        "unit": "MW",
+        "text": "5,380 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-signs-300-mw-fdre-ppa-seci-6-unit/53926026",
+      "title": "ACME Solar commissions 17.91 MW BESS for FDRE project in Rajasthan",
+      "published": "Sun, 25 Oct 2026 12:35:43 GMT",
+      "published_utc": "2026-10-25T12:35:43+00:00",
+      "sentence": "commissioned bess capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-signs-300-mw-fdre-ppa-seci-6-unit/53926026"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "13ef2e5f44",
+      "symbol": "ULTRACEMCO",
+      "company": "UltraTech Cement Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion includes greenfield unit",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 210.1,
+        "unit": "MTPA",
+        "text": "210.1 mtpa"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Sun, 25 Oct 2026 12:19:21 GMT",
+      "published_utc": "2026-10-25T12:19:21+00:00",
+      "sentence": "expansion includes greenfield unit",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-26-raymond-railtel-kec-intl-honasa-bl-kashyap-lupin-orchid-pharma-gland-pharma-among-15-stocks-to-remain-in-focus/article71624286.ece",
+      "title": "Stocks to watch October 26: Raymond, RailTel, KEC Intl, Honasa, BL Kashyap, Lupin, Orchid Pharma, Gland Pharma among 15 stocks to be in focus",
+      "published": "Mon, 26 Oct 2026 01:17:39 GMT",
+      "chars": 12251,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-infosys-kotak-mahindra-bank-yes-bank-raymond-bpcl-coforge-and-senco-gold/articleshow/135195002.cms",
+      "title": "Stocks in news: Infosys, Kotak Mahindra Bank, YES Bank, Raymond, BPCL, Coforge and Senco Gold",
+      "published": "Mon, 26 Oct 2026 00:30:00 GMT",
+      "chars": 12299,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-paytm-mankind-pharma-infosys-bpcl-shares-in-focus-on-monday-26-oct-full-list-11792978063209.html",
+      "title": "Top stocks to watch today: Paytm, Mankind Pharma, Infosys, BPCL shares in focus on Monday, 26 Oct | Full list",
+      "published": "Mon, 26 Oct 2026 02:01:46 GMT",
+      "chars": 3808,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-infosys-kotak-bank-lupin-kec-international-bank-of-india-coforge-bharat-coking-coal-dcb-bank-netweb-apollo-micro-in-focus-on-26-october-14059620.html",
+      "title": "Stocks to Watch Today: Infosys, Kotak Bank, Lupin, KEC International, Bank of India, Coforge, Bharat...",
+      "published": "Sun, 25 Oct 2026 19:49:22 GMT",
+      "chars": 9395,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-october-26-ril-infosys-activity-7520040560175468544-jV8b",
+      "title": "Stocks to Watch for October 26: RIL, Infosys, BPCL, Kotak Mahindra Bank, Torrent Pharma and more - CNBC TV18",
+      "published": "Sun, 25 Oct 2026 08:36:25 GMT",
+      "chars": 367,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/26/2026/Shree-Cement-Q2-FY27-Results--BlueStone-Jewellery-Q2-FY27-Results--Top-Buzzing-Stocks-Today?utm_source=homepage&utm_medium=website&utm_campaign=Content&utm_content=TM",
+      "title": "Shree Cement Q2 FY27 Results | BlueStone Jewellery Q2 FY27 Results | Top Buzzing Stocks Today",
+      "published": "Mon, 26 Oct 2026 00:30:00 GMT",
+      "chars": 8544,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/microteck-plans-expansion-of-solar-business-with-an-investment-of-rs-400-crore",
+      "title": "Microteck plans expansion of solar business with an investment of Rs 400 crore",
+      "published": "Sun, 25 Oct 2026 21:06:01 GMT",
+      "chars": 668,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377670/raymond-ltd-proposes-name-change-to-raymond-aerospace-defence-engineering-limite",
+      "title": "Raymond Ltd Proposes Name Change to Raymond Aerospace, Defence & Engineering Limited",
+      "published": "Sun, 25 Oct 2026 08:36:30 GMT",
+      "chars": 2075,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/377669/transworld-sea-connect-ifsc-private-limited-to-purchase-vessels-oel-surya-and-oe",
+      "title": "Transworld Sea-Connect IFSC Private Limited to Purchase Vessels OEL Surya and OEL Varun",
+      "published": "Sun, 25 Oct 2026 08:17:31 GMT",
+      "chars": 2110,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/377670/raymond-ltd-proposes-name-change-to-raymond-aerospace-defence-engineering-limite",
+      "title": "Raymond Ltd Proposes Name Change to Raymond Aerospace, Defence & Engineering Limited",
+      "published": "Sun, 25 Oct 2026 08:36:30 GMT",
+      "chars": 2075,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/concord-biotech-to-consider-q4fy26-results-on-may-29/41058933",
+      "title": "Concord Biotech expects FY27 growth to exceed historical rates",
+      "published": "Sun, 25 Oct 2026 11:02:51 GMT",
+      "chars": 4178,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://investmentguruindia.com/newsdetail/neutral-dr-reddy-s-labs-ltd-for-target-rs-1-180-by-motilal-oswal-financial-services-ltd763558",
+      "title": "Neutral Dr Reddy's Labs Ltd For Target Rs.1,180 by Motilal Oswal Financial Services Ltd",
+      "published": "Sun, 25 Oct 2026 09:14:20 GMT",
+      "chars": 4473,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://thetaxcorp.in/article/gauhati-hc-explains-how-to-count-gst-notice-period-in-calendar-months-under",
+      "title": "Gauhati HC Explains How to Count GST Notice Period in Calendar Months Under Section 73(2)",
+      "published": "Sun, 25 Oct 2026 12:45:16 GMT",
+      "chars": 6238,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.goodreturns.in/news/rajesh-exports-sebi-document-resubmission-ebitda-vs-revenue-claim-011-1513753.html",
+      "title": "Rajesh Exports says it will resubmit documents to SEBI, disputes EBITDA listed as revenue",
+      "published": "Sun, 25 Oct 2026 09:18:53 GMT",
+      "chars": 4389,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/ultratech-cement-commissions-4-6-mtpa-capacity-global-output-hits-210/51728676",
+      "title": "UltraTech Cement commissions 4.6 mtpa, global output hits 210.1 mtpa",
+      "published": "Sun, 25 Oct 2026 12:19:21 GMT",
+      "chars": 3252,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-signs-300-mw-fdre-ppa-seci-6-unit/53926026",
+      "title": "ACME Solar commissions 17.91 MW BESS for FDRE project in Rajasthan",
+      "published": "Sun, 25 Oct 2026 12:35:43 GMT",
+      "chars": 3744,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/politics/abvp-s-campus-wins-energise-bjp-but-biju-janata-dal-retains-its-footing-126102500791_1.html",
+      "title": "ABVP's campus wins energise BJP, but Biju Janata Dal retains its footing",
+      "published": "Sun, 25 Oct 2026 17:42:35 GMT",
+      "chars": 7363,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/lula-wins-record-fourth-term-in-brazil-defeats-bolsonaro-in-runoff-vote-126102600055_1.html",
+      "title": "Lula wins record fourth term in Brazil, defeats Bolsonaro in runoff vote",
+      "published": "Mon, 26 Oct 2026 02:03:12 GMT",
+      "chars": 10367,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/columns/from-pca-to-prem-watsa-idbi-bank-s-long-road-to-privatisation-126102500372_1.html",
+      "title": "From PCA to Prem Watsa: IDBI Bank's long road to privatisation",
+      "published": "Sun, 25 Oct 2026 10:07:55 GMT",
+      "chars": 8146,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/senco-gold-to-acquire-68-stake-in-august-jewellery-for-68-crore-126102500549_1.html",
+      "title": "Senco Gold to acquire 68% stake in August Jewellery for ₹68 crore",
+      "published": "Sun, 25 Oct 2026 14:16:02 GMT",
+      "chars": 2289,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ccpa-fines-hogar-technologies-1-lakh-over-misleading-walkie-talkie-ads-126102500492_1.html",
+      "title": "CCPA fines Hogar Technologies ₹1 lakh over misleading walkie-talkie ads",
+      "published": "Sun, 25 Oct 2026 12:16:53 GMT",
+      "chars": 2478,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/opinion/columns/market-reforms-the-unfinished-agenda-126102500251_1.html",
+      "title": "Market reforms: The unfinished agenda",
+      "published": "Sun, 25 Oct 2026 17:35:30 GMT",
+      "chars": 4952,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/us-alaska-lng-project-russia-novatek-secret-funding-sanctions-polar-train-126102500240_1.html",
+      "title": "Top executives quit $25 bn US gas project over alleged Russian control",
+      "published": "Sun, 25 Oct 2026 07:47:46 GMT",
+      "chars": 7623,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/serbia-s-vucic-loses-election-after-14-years-amid-student-led-protests-126102600015_1.html",
+      "title": "Serbia's Vucic loses election after 14 years amid student-led protests",
+      "published": "Mon, 26 Oct 2026 02:22:00 GMT",
+      "chars": 1937,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-26-infosys-tata-motors-paytm-indusind-bank-senco-gold-126102600062_1.html",
+      "title": "Stocks to watch: Infosys, Tata Motors, Paytm, IndusInd Bank, Senco Gold",
+      "published": "Mon, 26 Oct 2026 08:02:09 +0530",
+      "chars": 147,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-slip-from-near-six-months-highs-despite-supply-concerns-126102600042_1.html",
+      "title": "Oil prices slip from near six-months highs despite supply concerns",
+      "published": "Mon, 26 Oct 2026 08:00:29 +0530",
+      "chars": 139,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/asian-shares-cautious-ahead-of-central-bank-meetings-ai-earnings-126102600044_1.html",
+      "title": "Asian shares cautious ahead of central bank meetings, AI earnings",
+      "published": "Mon, 26 Oct 2026 08:00:15 +0530",
+      "chars": 126,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nifty-support-at-22-500-jsw-cement-among-3-weekly-stock-ideas-angel-one-126102600060_1.html",
+      "title": "Nifty support at 22,500; JSW Cement among 3 weekly stock ideas: Angel One",
+      "published": "Mon, 26 Oct 2026 07:58:15 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-choice-broking-positive-on-chennai-petro-ask-automotive-here-s-why-126102600056_1.html",
+      "title": "Choice Broking positive on Chennai Petro, ASK Automotive; here's why",
+      "published": "Mon, 26 Oct 2026 07:57:38 +0530",
+      "chars": 168,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-26-nse-bse-sensex-today-nifty50-gift-nifty-brent-crude-oil-prices-eaa-india-ipo-126102600053_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty marginally down; Asia markets trade negative; Brent crude at $115",
+      "published": "Mon, 26 Oct 2026 07:45:09 +0530",
+      "chars": 173,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/si-arena-debuts-at-bfsi-summit-bringing-market-experts-closer-to-investors-126102301279_1.html",
+      "title": "SI Arena debuts at BFSI Summit: Bringing market experts closer to investors",
+      "published": "Mon, 26 Oct 2026 06:30:19 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/senco-gold-to-acquire-68-stake-in-august-jewellery-for-68-crore-126102500549_1.html",
+      "title": "Senco Gold to acquire 68% stake in August Jewellery for ₹68 crore",
+      "published": "Sun, 25 Oct 2026 19:46:02 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/currency-markets-subdued-ahead-of-pivotal-central-bank-week/articleshow/135200680.cms",
+      "title": "Currency markets subdued ahead of pivotal central bank week",
+      "published": "Mon, 26 Oct 2026 07:37:17 +0530",
+      "chars": 446,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/expert-view/crude-oil-is-the-key-to-bringing-fii-money-back-to-dalal-street-equirus-amcs-ashutosh-tiwari/articleshow/135200515.cms",
+      "title": "Crude oil is the key to bringing FII money back to Dalal Street: Equirus AMC’s Ashutosh Tiwari",
+      "published": "Mon, 26 Oct 2026 07:28:05 +0530",
+      "chars": 414,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/negative-breakout-these-5-stocks-cross-below-their-200-dmas/slideshow/135200624.cms",
+      "title": "Negative Breakout: These 5 stocks cross below their 200 DMAs",
+      "published": "Mon, 26 Oct 2026 07:26:07 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-lingers-near-three-month-low-ahead-of-fed-policy-meeting/articleshow/135200563.cms",
+      "title": "Gold lingers near three-month low ahead of Fed policy meeting",
+      "published": "Mon, 26 Oct 2026 07:24:08 +0530",
+      "chars": 322,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-slips-from-near-six-months-highs-despite-supply-concerns/articleshow/135200551.cms",
+      "title": "Oil slips from near six-months highs despite supply concerns",
+      "published": "Mon, 26 Oct 2026 07:20:54 +0530",
+      "chars": 328,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/fed-expected-to-pause-rate-hikes-ahead-of-us-midterms/articleshow/135200484.cms",
+      "title": "Fed expected to pause rate hikes ahead of US midterms",
+      "published": "Mon, 26 Oct 2026 07:14:05 +0530",
+      "chars": 409,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/sinking-profits-turn-chinas-3-5-trillion-rout-into-trap/articleshow/135200415.cms",
+      "title": "Sinking profits turn China’s $3.5 trillion rout into trap",
+      "published": "Mon, 26 Oct 2026 07:06:47 +0530",
+      "chars": 547,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/category/breaking-news",
+      "title": "Breaking News",
+      "published": "Mon, 26 Oct 2026 01:59:34 GMT",
+      "chars": 1965,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/donald-trump-criticizes-volodymyr-zelenskyy-over-russian-diesel-refinery-attacks",
+      "title": "Donald Trump Criticizes Volodymyr Zelenskyy Over Russian Diesel Refinery Attacks",
+      "published": "Sun, 25 Oct 2026 23:14:43 GMT",
+      "chars": 2846,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/infosys-reports-q2-net-profit-of-7-823-crore-and-revenue-of-49-244-crore",
+      "title": "Infosys Reports Q2 Net Profit of ₹7,823 Crore and Revenue of ₹49,244 Crore",
+      "published": "Mon, 26 Oct 2026 01:54:44 GMT",
+      "chars": 2900,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/tata-motors-commercial-vehicles-reports-q2-net-profit-of-21-4b-on-238-4b-revenue",
+      "title": "Tata Motors Commercial Vehicles Reports Q2 Net Profit Of ₹21.4B On ₹238.4B Revenue",
+      "published": "Mon, 26 Oct 2026 01:44:44 GMT",
+      "chars": 2889,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/crisil-reports-q2-net-profit-of-205-crore-and-declares-17-dividend",
+      "title": "CRISIL Reports Q2 Net Profit Of ₹205 Crore And Declares ₹17 Dividend",
+      "published": "Mon, 26 Oct 2026 02:04:44 GMT",
+      "chars": 3173,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/coforge-posts-q2-net-profit-of-5-9-billion-with-revenue-of-61-7-billion",
+      "title": "Coforge Posts Q2 Net Profit of ₹5.9 Billion with Revenue of ₹61.7 Billion",
+      "published": "Mon, 26 Oct 2026 01:59:44 GMT",
+      "chars": 2943,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 88.9
+}

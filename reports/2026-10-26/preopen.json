@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26 08:12",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_orders": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 0,
+      "events": 0
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 6,
+      "events": 0
+    }
+  },
+  "events_read": 7,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "e40e5b9007",
+      "symbol": "CONCORDBIO",
+      "company": "Concord Biotech Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit to ₹ 260 crore and a 12% drop",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1200.1,
+      "size_estimated": false,
+      "size_basis": "₹ 1,200.1 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/concord-biotech-to-consider-q4fy26-results-on-may-29/41058933",
+      "title": "Concord Biotech expects FY27 growth to exceed historical rates",
+      "published": "Sun, 25 Oct 2026 11:02:51 GMT",
+      "published_utc": "2026-10-25T11:02:51+00:00",
+      "sentence": "net profit to ₹ 260 crore and a 12% drop",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/concord-biotech-to-consider-q4fy26-results-on-may-29/41058933"
+      ],
+      "n_reports": 1,
+      "catalyst": 16,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        "+26 ₹1,200cr against ₹1,108cr of revenue — 1.1× a year's sales, more than a full year of revenue",
+        "+4 fundamentals 67/100",
+        "-6 9.8% below the 200-day average — fighting the trend",
+        "+12 published Sun 16:32, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 1.083,
+      "revenue_ttm_cr": 1108.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Sun 16:32, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1229.3,
+        "atr_pct": 4.12,
+        "expected_day_range_inr": 50.65,
+        "expected_day_range_pct": 4.12,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 67,
+      "fund_why": [
+        "+6 ROCE 17.1%",
+        "+4 ROE 12.5%",
+        "-2 P/E 46.3",
+        "+0 3y profit CAGR 0%",
+        "+0 3y sales CAGR 7%",
+        "-4 ROCE 17.1% is the lowest in the years on the page",
+        "+5 D/E 0",
+        "+0 promoter 44.09%",
+        "+4 latest qtr PAT YoY 31.8%",
+        "+2 mcap ₹12,860 cr",
+        "+8 operating cash flow ₹267cr, 103% of profit — profit is turning into cash",
+        "+3 institutions hold 18.23%",
+        "-4 price to book 6.37",
+        "-6 ROCE 17.1% bought at 6.37× book is 2.7% on what you pay",
+        "  (value counted -10 of -12 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 28.2%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 11.3% over past five years.",
+        "Company has high debtors of 159 days."
+      ],
+      "ltp": 1229.300048828125,
+      "ta": {
+        "trend": "down",
+        "rsi": 28.8,
+        "adx": 30.1,
+        "atr_pct": 4.12,
+        "vol_ratio": 0.96,
+        "chg_1d_pct": -3.26,
+        "chg_5d_pct": -9.16,
+        "dist_52w_high_pct": -23.88,
+        "dist_ema200_pct": -9.76,
+        "avg_turnover_cr": 13.89,
+        "high_52w": 1615.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 12860.0,
+        "pe": 46.3,
+        "roce": 17.1,
+        "roe": 12.5,
+        "sales_growth_3_years": 7.0,
+        "profit_growth_3_years": 0.0,
+        "promoter_pct": 44.09,
+        "debt_to_equity": 0.0,
+        "revenue_ttm_cr": 1108.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "022ce25a5c",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [
+        "order_win",
+        "earnings_beat",
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-infosys-kotak-bank-lupin-kec-international-bank-of-india-coforge-bharat-coking-coal-dcb-bank-netweb-apollo-micro-in-focus-on-26-october-14059620.html",
+      "title": "Stocks to Watch Today: Infosys, Kotak Bank, Lupin, KEC International, Bank of India, Coforge, Bharat...",
+      "published": "Sun, 25 Oct 2026 19:49:22 GMT",
+      "published_utc": "2026-10-25T19:49:22+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-infosys-kotak-bank-lupin-kec-international-bank-of-india-coforge-bharat-coking-coal-dcb-bank-netweb-apollo-micro-in-focus-on-26-october-14059620.html"
+      ],
+      "n_reports": 1,
+      "catalyst": -6,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+10 fundamentals 90/100",
+        "-6 11.8% below the 200-day average — fighting the trend",
+        "+12 published Mon 01:19, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 29968.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 01:19, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 1928.9,
+        "atr_pct": 2.12,
+        "expected_day_range_inr": 40.89,
+        "expected_day_range_pct": 2.12,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 90,
+      "fund_why": [
+        "+12 ROCE 29.9%",
+        "+8 ROE 28.7%",
+        "+6 P/E 14.8",
+        "+8 3y profit CAGR 140%",
+        "+6 3y sales CAGR 19%",
+        "+4 return on capital has improved from 5.4% to 22.3%",
+        "+5 D/E 0.29",
+        "+0 promoter 46.84%",
+        "+4 latest qtr PAT YoY 16.1%",
+        "+4 mcap ₹88,207 cr",
+        "+8 operating cash flow ₹7,334cr, 137% of profit — profit is turning into cash",
+        "+4 interest cover 22.27×",
+        "+3 institutions hold 47.06%",
+        "+0 price to book 3.93",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted +5 of +6 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 37.0% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 17.1%",
+        "Company's working capital requirements have reduced from 46.4 days to 28.0 days"
+      ],
+      "screener_cons": [],
+      "ltp": 1928.9000244140625,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 34.7,
+        "adx": 45.2,
+        "atr_pct": 2.12,
+        "vol_ratio": 1.02,
+        "chg_1d_pct": 0.36,
+        "chg_5d_pct": -2.63,
+        "dist_52w_high_pct": -23.74,
+        "dist_ema200_pct": -11.83,
+        "avg_turnover_cr": 137.3,
+        "high_52w": 2529.5,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 88207.0,
+        "pe": 14.8,
+        "roce": 29.9,
+        "roe": 28.7,
+        "sales_growth_3_years": 19.0,
+        "profit_growth_3_years": 140.0,
+        "promoter_pct": 46.84,
+        "debt_to_equity": 0.29,
+        "revenue_ttm_cr": 29968.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "symbol": "SONA",
+      "event": "regulatory_action",
+      "title": "Gauhati HC Explains How to Count GST Notice Period in Calendar Months Under Section 73(2)",
+      "source_id": "corp_regulatory_action",
+      "why": "no price history"
+    }
+  ],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}
