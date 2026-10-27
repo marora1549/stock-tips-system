@@ -1,0 +1,859 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27 08:15",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 7
+    },
+    "corp_expansion": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events_read": 19,
+  "trade": [],
+  "watch": [],
+  "avoid": [
+    {
+      "id": "8bcf27472c",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:32:49 GMT",
+      "published_utc": "2026-10-26T14:32:49+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline"
+      ],
+      "n_reports": 1,
+      "catalyst": 9,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Earnings miss (sympathy at 36%)",
+        " 0 ₹914cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 60/100",
+        "+12 published Mon 20:02, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 3722.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 20:02, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 4286.0,
+        "atr_pct": 5.4,
+        "expected_day_range_inr": 231.44,
+        "expected_day_range_pct": 5.4,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 60,
+      "fund_why": [
+        "+12 ROCE 37.5%",
+        "+8 ROE 32.8%",
+        "-2 P/E 69.6",
+        "+8 3y profit CAGR 64%",
+        "+6 3y sales CAGR 70%",
+        "-6 return on capital has drifted from 45.8% to 35.7% — the newer capital earns less than the old",
+        "+5 D/E 0.16",
+        "+4 promoter 64.16%",
+        "-6 promoters sold 2.82pp in the last quarter alone",
+        "+4 latest qtr PAT YoY 341.9%",
+        "+2 mcap ₹25,479 cr",
+        "+8 operating cash flow ₹790cr, 383% of profit — profit is turning into cash",
+        "-4 interest cost up 2300% year on year",
+        "+3 institutions hold 16.69%",
+        "-8 price to book 12.11",
+        "-6 ROCE 37.5% bought at 12.11× book is 3.1% on what you pay",
+        "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +12 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 90.3% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 29.0%",
+        "Company's working capital requirements have reduced from 62.2 days to 13.8 days"
+      ],
+      "screener_cons": [
+        "Stock is trading at 12.1 times its book value",
+        "Promoter holding has decreased over last quarter: -2.82%"
+      ],
+      "ltp": 4286.0,
+      "ta": {
+        "trend": "sideways",
+        "rsi": 33.4,
+        "adx": 16.5,
+        "atr_pct": 5.4,
+        "vol_ratio": 2.64,
+        "chg_1d_pct": -1.15,
+        "chg_5d_pct": -9.42,
+        "dist_52w_high_pct": -26.27,
+        "dist_ema200_pct": 1.5,
+        "avg_turnover_cr": 672.51,
+        "high_52w": 5813.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-26"
+      },
+      "fundamentals": {
+        "market_cap_cr": 25479.0,
+        "pe": 69.6,
+        "roce": 37.5,
+        "roe": 32.8,
+        "sales_growth_3_years": 70.0,
+        "profit_growth_3_years": 64.0,
+        "promoter_pct": 64.16,
+        "debt_to_equity": 0.16,
+        "revenue_ttm_cr": 3722.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "f157f5fce2",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:32:49 GMT",
+      "published_utc": "2026-10-26T14:32:49+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline"
+      ],
+      "n_reports": 1,
+      "catalyst": 3,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-7 Earnings miss (sympathy at 36%)",
+        " 0 ₹914cr, but that is the order the winner took — this name is a peer, so there is no materiality to measure against its own revenue",
+        "+4 fundamentals 54/100",
+        "-6 18.6% below the 200-day average — fighting the trend",
+        "+12 published Mon 20:02, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 2551.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 20:02, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 460.4,
+        "atr_pct": 4.85,
+        "expected_day_range_inr": 22.33,
+        "expected_day_range_pct": 4.85,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 54,
+      "fund_why": [
+        "+0 ROCE 12.1%",
+        "+0 ROE 11.2%",
+        "+2 P/E 28.5",
+        "+8 3y profit CAGR 54%",
+        "+6 3y sales CAGR 38%",
+        "+4 return on capital has improved from 2.2% to 10.7%",
+        "+5 D/E 0.12",
+        "+4 promoter 57.43%",
+        "-5 promoter stake down 2.69pp over four quarters",
+        "+4 latest qtr PAT YoY 18.3%",
+        "+2 mcap ₹16,513 cr",
+        "-14 operating cash flow ₹-435cr — the business consumed cash last year",
+        "+3 institutions hold 15.51%",
+        "+0 price to book 2.85",
+        "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has delivered good profit growth of 120% CAGR over last 5 years"
+      ],
+      "screener_cons": [
+        "Stock is trading at 2.85 times its book value",
+        "Company has a low return on equity of 10.2% over last 3 years.",
+        "Promoter holding has decreased over last 3 years: -5.88%"
+      ],
+      "ltp": 460.3999938964844,
+      "ta": {
+        "trend": "down",
+        "rsi": 19.6,
+        "adx": 31.7,
+        "atr_pct": 4.85,
+        "vol_ratio": 1.14,
+        "chg_1d_pct": -2.46,
+        "chg_5d_pct": -12.15,
+        "dist_52w_high_pct": -29.95,
+        "dist_ema200_pct": -18.59,
+        "avg_turnover_cr": 87.76,
+        "high_52w": 657.25,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-23"
+      },
+      "fundamentals": {
+        "market_cap_cr": 16513.0,
+        "pe": 28.5,
+        "roce": 12.1,
+        "roe": 11.2,
+        "sales_growth_3_years": 38.0,
+        "profit_growth_3_years": 54.0,
+        "promoter_pct": 57.43,
+        "debt_to_equity": 0.12,
+        "revenue_ttm_cr": 2551.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "c0648145af",
+      "symbol": "SUMICHEM",
+      "company": "Sumitomo Chemical India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 914.0,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_sumitomo-chemical-q2-results-net-profit-activity-7520488396486610944--__4",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline - CNBC TV18",
+      "published": "Mon, 26 Oct 2026 14:15:57 GMT",
+      "published_utc": "2026-10-26T14:15:57+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_sumitomo-chemical-q2-results-net-profit-activity-7520488396486610944--__4",
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+        "https://www.cnbctv18.com/market/stocks/sumitomo-chemical-india-share-price-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline-20019687.htm",
+        "https://scanx.trade/stock-market-news/companies/sumitomo-chemical-q2-results-net-profit-falls-12-yoy-1-57-billion/54557791"
+      ],
+      "n_reports": 4,
+      "catalyst": 2,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        "+12 ₹914cr against ₹3,222cr of revenue — 0.3× a year's sales, a quarter of a year's revenue",
+        "+4 fundamentals 53/100",
+        "-6 24.3% below the 200-day average — fighting the trend",
+        "+12 published Mon 19:45, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.284,
+      "revenue_ttm_cr": 3222.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 19:45, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 354.3,
+        "atr_pct": 4.31,
+        "expected_day_range_inr": 15.27,
+        "expected_day_range_pct": 4.31,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 53,
+      "fund_why": [
+        "+12 ROCE 22.1%",
+        "+4 ROE 16.2%",
+        "+2 P/E 32.1",
+        "+0 3y profit CAGR 2%",
+        "-4 3y sales CAGR -3%",
+        "-6 return on capital has drifted from 29.4% to 22.3% — the newer capital earns less than the old",
+        "+5 D/E 0.02",
+        "+4 promoter 75%",
+        "+0 latest qtr PAT YoY -11.8%",
+        "+2 mcap ₹17,685 cr",
+        "+8 operating cash flow ₹446cr, 82% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: 7.3% last year against 36.8% the year before",
+        "-4 price to book 4.78",
+        "-6 PEG 4.39 — priced for growth it is not delivering",
+        "  (returns counted +10 of +16 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (growth counted -16 of -18 — its terms measure the same thing more than once, so the most it can cost is -16)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 34.5%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 4.13% over past five years."
+      ],
+      "ltp": 354.29998779296875,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 14.9,
+        "adx": 41.9,
+        "atr_pct": 4.31,
+        "vol_ratio": 1.1,
+        "chg_1d_pct": -1.75,
+        "chg_5d_pct": -12.46,
+        "dist_52w_high_pct": -38.06,
+        "dist_ema200_pct": -24.29,
+        "avg_turnover_cr": 13.28,
+        "high_52w": 572.05,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-26"
+      },
+      "fundamentals": {
+        "market_cap_cr": 17685.0,
+        "pe": 32.1,
+        "roce": 22.1,
+        "roe": 16.2,
+        "sales_growth_3_years": -3.0,
+        "profit_growth_3_years": 2.0,
+        "promoter_pct": 75.0,
+        "debt_to_equity": 0.02,
+        "revenue_ttm_cr": 3222.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "6e1df5f603",
+      "symbol": "DCMSHRIRAM",
+      "company": "DCM Shriram Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat",
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 8.0,
+        "unit": "MW",
+        "text": "8 MW"
+      },
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/dcm-shriram-q2-results-profit-falls-34-despite-revenue-growth-of-21-declares-dividend-20019621.htm",
+      "title": "DCM Shriram Q2 results: Profit falls 34% despite revenue growth of 21%; declares dividend",
+      "published": "Mon, 26 Oct 2026 12:39:49 GMT",
+      "published_utc": "2026-10-26T12:39:49+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/dcm-shriram-q2-results-profit-falls-34-despite-revenue-growth-of-21-declares-dividend-20019621.htm"
+      ],
+      "n_reports": 1,
+      "catalyst": -10,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-20 Earnings miss",
+        " 0 no size in the announcement and none estimable — materiality unknown",
+        "+4 fundamentals 56/100",
+        "-6 8.9% below the 200-day average — fighting the trend",
+        "+12 published Mon 18:09, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": null,
+      "revenue_ttm_cr": 14545.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 18:09, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -20,
+      "direction": "short",
+      "plan": {
+        "reference_close": 968.35,
+        "atr_pct": 4.34,
+        "expected_day_range_inr": 42.03,
+        "expected_day_range_pct": 4.34,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 56,
+      "fund_why": [
+        "+0 ROCE 11.5%",
+        "+0 ROE 11.5%",
+        "+6 P/E 11.5",
+        "-6 3y profit CAGR -1%",
+        "+0 3y sales CAGR 5%",
+        "-6 return on capital has drifted from 21.4% to 10.7% — the newer capital earns less than the old",
+        "+5 D/E 0.24",
+        "+4 promoter 66.52%",
+        "-5 latest qtr PAT YoY -33.3%",
+        "+2 mcap ₹15,101 cr",
+        "+8 operating cash flow ₹1,234cr, 144% of profit — profit is turning into cash",
+        "+3 price to book 1.79",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted -16 of -17 — its terms measure the same thing more than once, so the most it can cost is -16)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has reduced debt.",
+        "Company has been maintaining a healthy dividend payout of 22.4%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 10.3% over past five years.",
+        "Tax rate seems low",
+        "Company has a low return on equity of 8.95% over last 3 years."
+      ],
+      "ltp": 968.3499755859375,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 46.2,
+        "adx": 32.6,
+        "atr_pct": 4.34,
+        "vol_ratio": 0.4,
+        "chg_1d_pct": 0.4,
+        "chg_5d_pct": -4.52,
+        "dist_52w_high_pct": -31.27,
+        "dist_ema200_pct": -8.89,
+        "avg_turnover_cr": 20.61,
+        "high_52w": 1409.0,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-26"
+      },
+      "fundamentals": {
+        "market_cap_cr": 15101.0,
+        "pe": 11.5,
+        "roce": 11.5,
+        "roe": 11.5,
+        "sales_growth_3_years": 5.0,
+        "profit_growth_3_years": -1.0,
+        "promoter_pct": 66.52,
+        "debt_to_equity": 0.24,
+        "revenue_ttm_cr": 14545.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    },
+    {
+      "id": "c02aa222f6",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 72.41,
+      "size_estimated": false,
+      "size_basis": "Rs 72.41 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://psuwatch.com/newsupdates/ircon-moves-uttarakhand-high-court-against-rs-7241-crore-gst-notice",
+      "title": "IRCON moves Uttarakhand High Court against Rs 72.41 crore GST notice",
+      "published": "Mon, 26 Oct 2026 16:04:57 GMT",
+      "published_utc": "2026-10-26T16:04:57+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://psuwatch.com/newsupdates/ircon-moves-uttarakhand-high-court-against-rs-7241-crore-gst-notice",
+        "https://scanx.trade/stock-market-news/companies/ircon-international-high-court-grants-4-weeks-gst-notice-reply/54566264"
+      ],
+      "n_reports": 2,
+      "catalyst": -24,
+      "verdict": "AVOID",
+      "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it",
+      "reasons": [
+        "-22 Regulatory action",
+        "+2 ₹72cr against ₹9,241cr of revenue — 0.0× a year's sales, small against revenue",
+        "-10 fundamentals 7/100 — a pop on a weak balance sheet fades",
+        "-6 26.4% below the 200-day average — fighting the trend",
+        "+12 published Mon 21:34, outside market hours — the move is still ahead of the open"
+      ],
+      "materiality_ratio": 0.008,
+      "revenue_ttm_cr": 9241.0,
+      "freshness": {
+        "points": 12,
+        "window": "overnight",
+        "why": "published Mon 21:34, outside market hours — the move is still ahead of the open"
+      },
+      "veto": null,
+      "class_prior_used": -22,
+      "direction": "short",
+      "plan": {
+        "reference_close": 97.58,
+        "atr_pct": 3.94,
+        "expected_day_range_inr": 3.84,
+        "expected_day_range_pct": 3.94,
+        "opening_range_minutes": 15,
+        "gap_ladder": [
+          {
+            "band": "modest",
+            "gap_upto_pct": 2.0,
+            "rule": "buy the break of the opening-range high",
+            "acts": true
+          },
+          {
+            "band": "wide",
+            "gap_upto_pct": 5.0,
+            "rule": "buy the opening-range break only if it closes strong on real volume",
+            "acts": true
+          },
+          {
+            "band": "runaway",
+            "gap_upto_pct": null,
+            "rule": "no fresh entry at the open — wait for a pullback that reclaims VWAP, or stand aside",
+            "acts": false
+          }
+        ],
+        "max_stop_pct": 1.5,
+        "min_stop_pct": 0.5,
+        "no_new_entry_after": "14:00",
+        "force_flat_at": "15:10",
+        "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
+      },
+      "fund_score": 7,
+      "fund_why": [
+        "+0 ROCE 9.27%",
+        "+0 ROE 8.19%",
+        "+6 P/E 17.5",
+        "-6 3y profit CAGR -12%",
+        "-4 3y sales CAGR -4%",
+        "-4 ROCE 9.27% is the lowest in the years on the page",
+        "-2 D/E 0.86",
+        "+4 promoter 65.17%",
+        "-5 latest qtr PAT YoY -43.9%",
+        "+0 mcap ₹9,178 cr",
+        "-14 operating cash flow ₹-618cr — the business consumed cash last year",
+        "-12 interest cover 1.79× — thin",
+        "-4 interest cost up 43% year on year",
+        "-4 profit has come in below the year-ago quarter two quarters running",
+        "+3 price to book 1.38",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (growth counted -16 of -19 — its terms measure the same thing more than once, so the most it can cost is -16)"
+      ],
+      "fund_flags": [
+        "operating cash flow has been negative 4 years running"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 31.9%"
+      ],
+      "screener_cons": [
+        "The company has delivered a poor sales growth of 11.2% over past five years.",
+        "Company has a low return on equity of 11.6% over last 3 years.",
+        "Earnings include an other income of Rs.476 Cr.",
+        "Debtor days have increased from 41.6 to 56.3 days.",
+        "Promoter holding has decreased over last 3 years: -8.01%"
+      ],
+      "ltp": 97.58000183105469,
+      "ta": {
+        "trend": "strong_down",
+        "rsi": 31.2,
+        "adx": 21.1,
+        "atr_pct": 3.94,
+        "vol_ratio": 0.24,
+        "chg_1d_pct": -0.04,
+        "chg_5d_pct": -8.48,
+        "dist_52w_high_pct": -47.66,
+        "dist_ema200_pct": -26.44,
+        "avg_turnover_cr": 90.15,
+        "high_52w": 186.44,
+        "momentum_score": 0,
+        "last_bar_date": "2026-10-26"
+      },
+      "fundamentals": {
+        "market_cap_cr": 9178.0,
+        "pe": 17.5,
+        "roce": 9.27,
+        "roe": 8.19,
+        "sales_growth_3_years": -4.0,
+        "profit_growth_3_years": -12.0,
+        "promoter_pct": 65.17,
+        "debt_to_equity": 0.86,
+        "revenue_ttm_cr": 9241.0,
+        "revenue_basis": "trailing 4 quarters"
+      },
+      "class_score": {
+        "n": 0,
+        "avg_open_to_high_pct": null,
+        "hit_rate": null,
+        "adjust": 0.0,
+        "untested": true
+      }
+    }
+  ],
+  "skipped": [],
+  "settings": {
+    "gap_modest_pct": 2.0,
+    "gap_wide_pct": 5.0,
+    "max_stop_pct": 1.5,
+    "force_flat_at": "15:10",
+    "notional_inr": 100000,
+    "risk_per_trade_pct": 0.75,
+    "max_positions": 2
+  }
+}

@@ -1,0 +1,1187 @@
+{
+  "date": "2026-10-27",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 7,
+      "events": 2
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 7
+    },
+    "corp_expansion": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 6
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "5f68027148",
+      "symbol": "IRFC",
+      "company": "Indian Railway Finance Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order dropping ₹549 crore gst demand irfc receives order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 549.32,
+      "size_estimated": false,
+      "size_basis": "₹ 549.32 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/irfc-receives-order-dropping-549-crore-gst-demand/54311069",
+      "title": "IRFC receives order dropping ₹549 crore GST demand",
+      "published": "Mon, 26 Oct 2026 09:29:34 GMT",
+      "published_utc": "2026-10-26T09:29:34+00:00",
+      "sentence": "receives order dropping ₹549 crore gst demand irfc receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/irfc-receives-order-dropping-549-crore-gst-demand/54311069"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "661bfed31d",
+      "symbol": "LANDMARK",
+      "company": "Landmark Cars Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures landmark 10-year contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/paradeep-parivahan-limited-secures-landmark-10-year-contract-with-jsw-group-for-100-electric-trucks-126102600523_1.html",
+      "title": "Paradeep Parivahan Limited Secures Landmark 10-Year Contract with JSW Group for 100 Electric Trucks",
+      "published": "Mon, 26 Oct 2026 08:30:08 GMT",
+      "published_utc": "2026-10-26T08:30:08+00:00",
+      "sentence": "secures landmark 10-year contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/paradeep-parivahan-limited-secures-landmark-10-year-contract-with-jsw-group-for-100-electric-trucks-126102600523_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "11e91f7f92",
+      "symbol": "RAMKY",
+      "company": "Ramky Infrastructure Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 588.57,
+      "size_estimated": false,
+      "size_basis": "Rs 588.57 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ramky-infrastructure-bags-order-worth-over-rs-588-crore-from-rvnl",
+      "title": "Ramky Infrastructure bags order worth over Rs 588 crore from RVNL",
+      "published": "Mon, 26 Oct 2026 18:40:41 GMT",
+      "published_utc": "2026-10-26T18:40:41+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/ramky-infrastructure-bags-order-worth-over-rs-588-crore-from-rvnl"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c3e4fcee58",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 588.57,
+      "size_estimated": false,
+      "size_basis": "Rs 588.57 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ramky-infrastructure-bags-order-worth-over-rs-588-crore-from-rvnl",
+      "title": "Ramky Infrastructure bags order worth over Rs 588 crore from RVNL",
+      "published": "Mon, 26 Oct 2026 18:40:41 GMT",
+      "published_utc": "2026-10-26T18:40:41+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/ramky-infrastructure-bags-order-worth-over-rs-588-crore-from-rvnl"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2cdd20745b",
+      "symbol": "ACC",
+      "company": "ACC Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of acceptance (loa",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "roads_infra"
+      ],
+      "size_inr_cr": 212000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2.12 lakh crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-paytm-tata-consumer-dalmia-bharat-rec-and-dcm-shriram/articleshow/135216594.cms",
+      "title": "Stocks in news: Paytm, Tata Consumer, Dalmia Bharat, REC and DCM Shriram",
+      "published": "Tue, 27 Oct 2026 00:30:00 GMT",
+      "published_utc": "2026-10-27T00:30:00+00:00",
+      "sentence": "received a letter of acceptance (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-paytm-tata-consumer-dalmia-bharat-rec-and-dcm-shriram/articleshow/135216594.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "068ee3fe65",
+      "symbol": "CPEDU",
+      "company": "Career Point Edutech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received and accepted a work order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/fusion-klassroom-edutech-bse544856-receives-work-order-of-about-910-crore-for-educational-content-licensing-and-development",
+      "title": "Fusion Klassroom Edutech (BSE:544856) Wins ₹9.10 Crore Content Work Order",
+      "published": "Mon, 26 Oct 2026 14:41:00 GMT",
+      "published_utc": "2026-10-26T14:41:00+00:00",
+      "sentence": "received and accepted a work order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.kalkine.co.in/article/technology/fusion-klassroom-edutech-bse544856-receives-work-order-of-about-910-crore-for-educational-content-licensing-and-development"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0749b1d4bb",
+      "symbol": "DGCONTENT",
+      "company": "Digicontent Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures landmark 10-year contract",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/paradeep-parivahan-limited-secures-landmark-10-year-contract-with-jsw-group-for-100-electric-trucks-126102600523_1.html",
+      "title": "Paradeep Parivahan Limited Secures Landmark 10-Year Contract with JSW Group for 100 Electric Trucks",
+      "published": "Mon, 26 Oct 2026 08:30:08 GMT",
+      "published_utc": "2026-10-26T08:30:08+00:00",
+      "sentence": "secures landmark 10-year contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/paradeep-parivahan-limited-secures-landmark-10-year-contract-with-jsw-group-for-100-electric-trucks-126102600523_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e7465f5e80",
+      "symbol": "CEMPRO",
+      "company": "Cemindia Projects Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jaipur-metro:-cemindia-projects-emerges-as-the-lowest-bidder-for-twin-tunnels-construction-work",
+      "title": "Jaipur Metro: Cemindia Projects emerges as the lowest bidder for twin tunnels construction work",
+      "published": "Mon, 26 Oct 2026 18:35:41 GMT",
+      "published_utc": "2026-10-26T18:35:41+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/jaipur-metro:-cemindia-projects-emerges-as-the-lowest-bidder-for-twin-tunnels-construction-work"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0c2301b084",
+      "symbol": "ETERNAL",
+      "company": "ETERNAL LIMITED",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat rises 51% to ₹201 cr, revpar up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/eternal-extends-rally-stock-soars-8-in-two-days-post-q2-results-126102600750_1.html",
+      "title": "Eternal extends rally; stock soars 8% in two days post Q2 results",
+      "published": "Mon, 26 Oct 2026 10:14:46 GMT",
+      "published_utc": "2026-10-26T10:14:46+00:00",
+      "sentence": "pat rises 51% to ₹201 cr, revpar up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/eternal-extends-rally-stock-soars-8-in-two-days-post-q2-results-126102600750_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c02aa222f6",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 72.41,
+      "size_estimated": false,
+      "size_basis": "Rs 72.41 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://psuwatch.com/newsupdates/ircon-moves-uttarakhand-high-court-against-rs-7241-crore-gst-notice",
+      "title": "IRCON moves Uttarakhand High Court against Rs 72.41 crore GST notice",
+      "published": "Mon, 26 Oct 2026 16:04:57 GMT",
+      "published_utc": "2026-10-26T16:04:57+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://psuwatch.com/newsupdates/ircon-moves-uttarakhand-high-court-against-rs-7241-crore-gst-notice",
+        "https://scanx.trade/stock-market-news/companies/ircon-international-high-court-grants-4-weeks-gst-notice-reply/54566264"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "f404c2e2c8",
+      "symbol": "ITCHOTELS",
+      "company": "ITC Hotels Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat rises 51% to ₹201 cr, revpar up",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/itc-hotels-shares-gain-8-as-q2-pat-rises-51-to-201-cr-revpar-up-21-126102600738_1.html",
+      "title": "ITC Hotels shares gain 8% as Q2 PAT rises 51% to ₹201 cr, RevPAR up 21%",
+      "published": "Mon, 26 Oct 2026 09:56:43 GMT",
+      "published_utc": "2026-10-26T09:56:43+00:00",
+      "sentence": "pat rises 51% to ₹201 cr, revpar up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/itc-hotels-shares-gain-8-as-q2-pat-rises-51-to-201-cr-revpar-up-21-126102600738_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "655d743a97",
+      "symbol": "PAYTM",
+      "company": "One 97 Communications Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit jumps 10-fold to ₹225 crore, revenue up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "km",
+        "text": "10,000 km"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-27-tata-group-stocks-paytm-ather-energy-l-t-maruti-suzuki-126102700089_1.html",
+      "title": "Stocks to watch: Tata group stocks, Paytm, Ather Energy, L&T, Maruti Suzuki",
+      "published": "Tue, 27 Oct 2026 02:24:45 GMT",
+      "published_utc": "2026-10-27T02:24:45+00:00",
+      "sentence": "net profit jumps 10-fold to ₹225 crore, revenue up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-27-tata-group-stocks-paytm-ather-energy-l-t-maruti-suzuki-126102700089_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "af9d5c2d1c",
+      "symbol": "SSWL",
+      "company": "Steel Strips Wheels Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/steel-strips-wheels-zooms-36-in-two-days-what-s-driving-auto-parts-stock-126102600555_1.html",
+      "title": "Steel Strips Wheels zooms 36% in two days; what's driving auto parts stock?",
+      "published": "Mon, 26 Oct 2026 08:56:25 GMT",
+      "published_utc": "2026-10-26T08:56:25+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/steel-strips-wheels-zooms-36-in-two-days-what-s-driving-auto-parts-stock-126102600555_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6e1df5f603",
+      "symbol": "DCMSHRIRAM",
+      "company": "DCM Shriram Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat",
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 8.0,
+        "unit": "MW",
+        "text": "8 MW"
+      },
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/dcm-shriram-q2-results-profit-falls-34-despite-revenue-growth-of-21-declares-dividend-20019621.htm",
+      "title": "DCM Shriram Q2 results: Profit falls 34% despite revenue growth of 21%; declares dividend",
+      "published": "Mon, 26 Oct 2026 12:39:49 GMT",
+      "published_utc": "2026-10-26T12:39:49+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/dcm-shriram-q2-results-profit-falls-34-despite-revenue-growth-of-21-declares-dividend-20019621.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c0648145af",
+      "symbol": "SUMICHEM",
+      "company": "Sumitomo Chemical India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 914.0,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_sumitomo-chemical-q2-results-net-profit-activity-7520488396486610944--__4",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline - CNBC TV18",
+      "published": "Mon, 26 Oct 2026 14:15:57 GMT",
+      "published_utc": "2026-10-26T14:15:57+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_sumitomo-chemical-q2-results-net-profit-activity-7520488396486610944--__4",
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+        "https://www.cnbctv18.com/market/stocks/sumitomo-chemical-india-share-price-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline-20019687.htm",
+        "https://scanx.trade/stock-market-news/companies/sumitomo-chemical-q2-results-net-profit-falls-12-yoy-1-57-billion/54557791"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "2b8f9b4b74",
+      "symbol": "IOB",
+      "company": "Indian Overseas Bank",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "analyst_upgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/steel-strips-wheels-zooms-36-in-two-days-what-s-driving-auto-parts-stock-126102600555_1.html",
+      "title": "Steel Strips Wheels zooms 36% in two days; what's driving auto parts stock?",
+      "published": "Mon, 26 Oct 2026 08:56:25 GMT",
+      "published_utc": "2026-10-26T08:56:25+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/steel-strips-wheels-zooms-36-in-two-days-what-s-driving-auto-parts-stock-126102600555_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "28a975b90a",
+      "symbol": "RUDRA",
+      "company": "Rudra Global Infra Products Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "rights issue",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 7500.0,
+        "unit": "MW",
+        "text": "7.5 GW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-tata-motors-tvs-holdings-basel-projects-hcl-technologies-global-infra-sigma-adanced-highway-infra-genus-power-gabion-tech/article71629586.ece",
+      "title": "Stocks to watch, October 27: Tata Motors, TVS Holdings, Basel Projects, HCL Technologies, Global Infra, Sigma Adanced, Highway Infra, Genus Power, Gabion Tech",
+      "published": "Tue, 27 Oct 2026 01:22:18 GMT",
+      "published_utc": "2026-10-27T01:22:18+00:00",
+      "sentence": "rights issue",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-tata-motors-tvs-holdings-basel-projects-hcl-technologies-global-infra-sigma-adanced-highway-infra-genus-power-gabion-tech/article71629586.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f157f5fce2",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 914.0,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:32:49 GMT",
+      "published_utc": "2026-10-26T14:32:49+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8bcf27472c",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 12% as revenue and ebitda decline",
+      "also_matched": [
+        "capacity_expansion",
+        "jv_partnership"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "data_centre"
+      ],
+      "size_inr_cr": 914.0,
+      "size_estimated": false,
+      "size_basis": "₹914 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:32:49 GMT",
+      "published_utc": "2026-10-26T14:32:49+00:00",
+      "sentence": "net profit falls 12% as revenue and ebitda decline",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-tata-motors-tvs-holdings-basel-projects-hcl-technologies-global-infra-sigma-adanced-highway-infra-genus-power-gabion-tech/article71629586.ece",
+      "title": "Stocks to watch, October 27: Tata Motors, TVS Holdings, Basel Projects, HCL Technologies, Global Infra, Sigma Adanced, Highway Infra, Genus Power, Gabion Tech",
+      "published": "Tue, 27 Oct 2026 01:22:18 GMT",
+      "chars": 10608,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-tata-consumer-paytm-nazara-tech-kfin-rec-sigma-advanced-highway-infrastructure-raymond-realty-aequs-in-focus-on-27-october-14060612.html",
+      "title": "Stocks to Watch Today: Tata Consumer, Paytm, Nazara Tech, KFin, REC, Sigma Advanced, Highway...",
+      "published": "Tue, 27 Oct 2026 00:49:06 GMT",
+      "chars": 9182,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-paytm-tata-consumer-dalmia-bharat-rec-and-dcm-shriram/articleshow/135216594.cms",
+      "title": "Stocks in news: Paytm, Tata Consumer, Dalmia Bharat, REC and DCM Shriram",
+      "published": "Tue, 27 Oct 2026 00:30:00 GMT",
+      "chars": 11096,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-27-tata-group-stocks-paytm-ather-energy-l-t-maruti-suzuki-126102700089_1.html",
+      "title": "Stocks to watch: Tata group stocks, Paytm, Ather Energy, L&T, Maruti Suzuki",
+      "published": "Tue, 27 Oct 2026 02:24:45 GMT",
+      "chars": 5759,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_stocks-to-watch-for-october-27-tata-consumer-activity-7520490128251944960--BSm",
+      "title": "Stocks to Watch for October 27: Tata Consumer, REC, DCM Shriram, Dalmia Bharat, Defence stocks and more - CNBC TV18",
+      "published": "Mon, 26 Oct 2026 14:22:50 GMT",
+      "chars": 360,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/detail.asp?date=10/27/2026&story=2&title=4-Stocks-to-Watch-as-Government-Policies-Redefine-Sector-Growth&utm_source=bottomviews&utm_medium=website&utm_campaign=related-articles&utm_content=articlelinks",
+      "title": "4 Stocks to Watch as Government Policies Redefine Sector Growth",
+      "published": "Tue, 27 Oct 2026 01:30:00 GMT",
+      "chars": 17245,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://bwautoworld.com/article/jakson-green-e-mobility-wins-order-for-220-electric-buses-in-gujarat-630536",
+      "title": "JAKSON Green E-Mobility Wins Order For 220 Electric Buses In Gujarat",
+      "published": "Mon, 26 Oct 2026 14:42:26 GMT",
+      "chars": 1682,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jaipur-metro:-cemindia-projects-emerges-as-the-lowest-bidder-for-twin-tunnels-construction-work",
+      "title": "Jaipur Metro: Cemindia Projects emerges as the lowest bidder for twin tunnels construction work",
+      "published": "Mon, 26 Oct 2026 18:35:41 GMT",
+      "chars": 808,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.moneycontrol.com/news/business/markets/this-rs-1-100-crore-m-cap-firm-bags-order-worth-rs-949-crore-stock-jumps-10-14060355.html",
+      "title": "This Rs 1,100-crore m-cap firm bags order worth Rs 949 crore; stock jumps 10%",
+      "published": "Mon, 26 Oct 2026 10:52:47 GMT",
+      "chars": 3432,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.outlookbusiness.com/spotlight/news-wire/provigil-surveillance-emerges-as-l1-bidder-in-rs-228-crore-bank-of-maharashtra-tender",
+      "title": "Provigil Surveillance Emerges As L1 Bidder In Rs 228 Crore Bank Of Maharashtra Tender",
+      "published": "Mon, 26 Oct 2026 11:17:27 GMT",
+      "chars": 5723,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://asiapacificdefencereporter.com/posts/kongsberg-secures-contract-with-pilbara-ports-in-australia",
+      "title": "KONGSBERG secures contract with Pilbara Ports in Australia",
+      "published": "Mon, 26 Oct 2026 21:14:44 GMT",
+      "chars": 2504,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/ramky-infrastructure-bags-order-worth-over-rs-588-crore-from-rvnl",
+      "title": "Ramky Infrastructure bags order worth over Rs 588 crore from RVNL",
+      "published": "Mon, 26 Oct 2026 18:40:41 GMT",
+      "chars": 681,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.moneycontrol.com/news/business/markets/highway-infrastructure-share-in-focus-on-loa-worth-rs-91-78-crore-14060507.html",
+      "title": "Highway Infrastructure share in focus on LoA worth Rs 91.78 crore",
+      "published": "Tue, 27 Oct 2026 02:06:45 GMT",
+      "chars": 1845,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.kalkine.co.in/article/technology/fusion-klassroom-edutech-bse544856-receives-work-order-of-about-910-crore-for-educational-content-licensing-and-development",
+      "title": "Fusion Klassroom Edutech (BSE:544856) Wins ₹9.10 Crore Content Work Order",
+      "published": "Mon, 26 Oct 2026 14:41:00 GMT",
+      "chars": 5451,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://scanx.trade/stock-market-news/companies/irfc-receives-order-dropping-549-crore-gst-demand/54311069",
+      "title": "IRFC receives order dropping ₹549 crore GST demand",
+      "published": "Mon, 26 Oct 2026 09:29:34 GMT",
+      "chars": 2487,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/pl-capital-keeps-inr-452-00-target-for-bharat-electronics-stock/70415034",
+      "title": "PL Capital keeps INR 452.00 target for Bharat Electronics stock - ad-hoc-news.de",
+      "published": "Mon, 26 Oct 2026 14:34:10 GMT",
+      "chars": 2539,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/lupin-receives-one-usfda-observation-for-goa-facility-182009",
+      "title": "Lupin Receives One USFDA Observation for Goa Facility",
+      "published": "Mon, 26 Oct 2026 10:48:18 GMT",
+      "chars": 995,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.tradingview.com/news/moneycontrol:f274d90ca094b:0-buy-dr-reddys-laboratories-target-of-rs-1430-icici-securities/",
+      "title": "Buy Dr Reddys Laboratories: target of Rs 1430: ICICI Securities",
+      "published": "Mon, 26 Oct 2026 08:59:11 GMT",
+      "chars": 1513,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/sudeep-pharma-receives-fda-approval-for-51-200-mt-greenfield-facility-in-nandesari",
+      "title": "Sudeep Pharma Receives FDA Approval For 51,200 MT Greenfield Facility In Nandesari",
+      "published": "Mon, 26 Oct 2026 09:24:44 GMT",
+      "chars": 3140,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://tradebrains.in/indian-markets/zydus-lifesciences-faces-5-us-fda-observations-at-moraiya-plant-could-us-sales-be-at-risk-12753288",
+      "title": "Zydus Lifesciences Faces 5 US FDA Observations at Moraiya Plant; Could US Sales Be at Risk?",
+      "published": "Mon, 26 Oct 2026 10:39:47 GMT",
+      "chars": 5660,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://psuwatch.com/newsupdates/ircon-moves-uttarakhand-high-court-against-rs-7241-crore-gst-notice",
+      "title": "IRCON moves Uttarakhand High Court against Rs 72.41 crore GST notice",
+      "published": "Mon, 26 Oct 2026 16:04:57 GMT",
+      "chars": 1584,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/ircon-international-high-court-grants-4-weeks-gst-notice-reply/54566264",
+      "title": "Ircon International: High Court grants 4 weeks for GST notice reply",
+      "published": "Mon, 26 Oct 2026 13:36:58 GMT",
+      "chars": 3842,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://medicaldialogues.in/news/industry/pharma/lupin-receives-one-usfda-observation-for-goa-facility-182009",
+      "title": "Lupin Receives One USFDA Observation for Goa Facility",
+      "published": "Mon, 26 Oct 2026 10:48:18 GMT",
+      "chars": 995,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.hcamag.com/asia/specialisation/employment-law/managing-directors-secret-recording-sinks-wrongful-dismissal-claim/594916",
+      "title": "Managing director's secret recording sinks wrongful dismissal claim",
+      "published": "Mon, 26 Oct 2026 23:57:57 GMT",
+      "chars": 8415,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/general/sebi-orders-trading-academy-to-refund-collections-over-unregistered-advisory-services",
+      "title": "SEBI Order on Avadhut Sathe Trading Academy: Refund, Penalty and Market Restrictions",
+      "published": "Mon, 26 Oct 2026 11:38:00 GMT",
+      "chars": 7900,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/dynamic-cables-installs-machinery-new-rajasthan-plant-capacity-up-20/54553496",
+      "title": "Dynamic Cables installs machinery at new Rajasthan plant, capacity up 20%",
+      "published": "Mon, 26 Oct 2026 09:47:58 GMT",
+      "chars": 2561,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.thecooldown.com/green-home/state-farm-roof-claim-denial-warning-letter/",
+      "title": "State Farm denied the roof claim, then warned homeowner over 'activity' on the account",
+      "published": "Mon, 26 Oct 2026 11:49:00 GMT",
+      "chars": 4599,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_sumitomo-chemical-q2-results-net-profit-activity-7520488396486610944--__4",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline - CNBC TV18",
+      "published": "Mon, 26 Oct 2026 14:15:57 GMT",
+      "chars": 293,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/sumitomo-chemical-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:32:49 GMT",
+      "chars": 1844,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/stocks/sumitomo-chemical-india-share-price-q2-results-net-profit-falls-12-as-revenue-and-ebitda-decline-20019687.htm",
+      "title": "Sumitomo Chemical Q2 Results: Net profit falls 12% as revenue and EBITDA decline",
+      "published": "Mon, 26 Oct 2026 14:12:48 GMT",
+      "chars": 3796,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/sumitomo-chemical-q2-results-net-profit-falls-12-yoy-1-57-billion/54557791",
+      "title": "Sumitomo Chemical Q2FY27 net profit falls 11% YoY to ₹157 crore",
+      "published": "Mon, 26 Oct 2026 17:47:01 GMT",
+      "chars": 4956,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/dcm-shriram-q2-results-profit-falls-34-despite-revenue-growth-of-21-declares-dividend-20019621.htm",
+      "title": "DCM Shriram Q2 results: Profit falls 34% despite revenue growth of 21%; declares dividend",
+      "published": "Mon, 26 Oct 2026 12:39:49 GMT",
+      "chars": 4137,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://univest.in/blogs/achyut-healthcare-q2-results-fy27-pat-0-05-crore",
+      "title": "Achyut Healthcare Q2 Results FY27: PAT Falls 64.29% to Rs 0.05 Cr, Revenue Rs 1.66 Cr",
+      "published": "Mon, 26 Oct 2026 18:39:00 GMT",
+      "chars": 8559,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/pngs-reva-share-price-q2-results-profit-jumps-ebitda-margin-expands-20019313.htm",
+      "title": "PNGS Reva Q2 results: Profit jumps 78%, but stock falls over 13%",
+      "published": "Mon, 26 Oct 2026 08:03:34 GMT",
+      "chars": 4489,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.thetidenewsonline.com/2026/10/fg-commissions-640mw-transmission-capacity-to-national-grid/",
+      "title": "FG Commissions 640MW Transmission Capacity To National Grid",
+      "published": "Mon, 26 Oct 2026 08:42:14 GMT",
+      "chars": 13362,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/paradeep-parivahan-limited-secures-landmark-10-year-contract-with-jsw-group-for-100-electric-trucks-126102600523_1.html",
+      "title": "Paradeep Parivahan Limited Secures Landmark 10-Year Contract with JSW Group for 100 Electric Trucks",
+      "published": "Mon, 26 Oct 2026 08:30:08 GMT",
+      "chars": 6077,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/ccpa-imposes-1-lakh-fine-on-britannia-over-100-whole-wheat-bread-claim-126102600645_1.html",
+      "title": "CCPA imposes ₹1 lakh fine on Britannia over '100% whole wheat bread' claim",
+      "published": "Mon, 26 Oct 2026 09:33:38 GMT",
+      "chars": 4313,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/piramal-enterp-share-price-412/announcements/nse-exchange-25605907",
+      "title": "Share Market Today | Latest Stock Market News, Sensex Today and Nifty Live Updates",
+      "published": "Mon, 26 Oct 2026 19:14:00 GMT",
+      "chars": 3228,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/amp/webinars/bs-dialogue/tapping-the-satcom-wave-41",
+      "title": "Tapping the Satcom Wave",
+      "published": "Mon, 26 Oct 2026 09:11:00 GMT",
+      "chars": 120,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/personal-finance/can-a-husband-avoid-paying-maintenance-by-claiming-he-has-no-income-126102600899_1.html",
+      "title": "Can a husband avoid paying maintenance by claiming he has no income?",
+      "published": "Mon, 26 Oct 2026 11:17:56 GMT",
+      "chars": 7779,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/itc-hotels-shares-gain-8-as-q2-pat-rises-51-to-201-cr-revpar-up-21-126102600738_1.html",
+      "title": "ITC Hotels shares gain 8% as Q2 PAT rises 51% to ₹201 cr, RevPAR up 21%",
+      "published": "Mon, 26 Oct 2026 09:56:43 GMT",
+      "chars": 4126,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/eternal-extends-rally-stock-soars-8-in-two-days-post-q2-results-126102600750_1.html",
+      "title": "Eternal extends rally; stock soars 8% in two days post Q2 results",
+      "published": "Mon, 26 Oct 2026 10:14:46 GMT",
+      "chars": 6380,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/steel-strips-wheels-zooms-36-in-two-days-what-s-driving-auto-parts-stock-126102600555_1.html",
+      "title": "Steel Strips Wheels zooms 36% in two days; what's driving auto parts stock?",
+      "published": "Mon, 26 Oct 2026 08:56:25 GMT",
+      "chars": 4695,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-october-27-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-jio-ipo-listing-price-126102700086_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty down 88 points; Asia markets turn positive; Brent crude below $115",
+      "published": "Tue, 27 Oct 2026 08:04:22 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/finolex-cables-td-power-among-3-technical-stock-ideas-by-geojit-today-126102700090_1.html",
+      "title": "Finolex Cables, TD Power among 3 technical stock ideas by Geojit",
+      "published": "Tue, 27 Oct 2026 07:57:17 +0530",
+      "chars": 194,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-here-s-why-kotak-neo-recommends-buy-rating-on-icici-bank-add-nykaa-126102700085_1.html",
+      "title": "Here's why Kotak Neo recommends 'Buy' rating on ICICI Bank; 'Add' Nykaa",
+      "published": "Tue, 27 Oct 2026 07:55:27 +0530",
+      "chars": 194,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-27-tata-group-stocks-paytm-ather-energy-l-t-maruti-suzuki-126102700089_1.html",
+      "title": "Stocks to watch: Tata group stocks, Paytm, Ather Energy, L&T, Maruti Suzuki",
+      "published": "Tue, 27 Oct 2026 07:54:45 +0530",
+      "chars": 170,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/finance/personal-finance/tokenisation-can-unlock-hidden-wealth-cut-borrowing-costs-mudrex-ceo-126102600426_1.html",
+      "title": "Tokenisation can unlock hidden wealth, cut borrowing costs: Mudrex CEO",
+      "published": "Mon, 26 Oct 2026 12:55:43 +0530",
+      "chars": 163,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/tokenisation-offers-common-ledger-for-real-world-assets-says-edul-patel-126102601423_1.html",
+      "title": "Tokenisation offers common ledger for real-world assets, says Edul Patel",
+      "published": "Tue, 27 Oct 2026 00:40:04 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/retail-participation-has-been-very-strong-in-india-says-vikas-satija-126102601279_1.html",
+      "title": "Retail participation has been very strong in India, says Vikas Satija",
+      "published": "Tue, 27 Oct 2026 00:32:21 +0530",
+      "chars": 170,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-markets-rebound-after-4-day-slump-sensex-jumps-483-points-126102601657_1.html",
+      "title": "Stock markets rebound after 4-day slump; Sensex jumps 483 points",
+      "published": "Mon, 26 Oct 2026 23:15:11 +0530",
+      "chars": 170,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/yen-slips-ahead-of-central-bank-bonanza-dollar-firms-on-tech-rebound/articleshow/135222721.cms",
+      "title": "Yen slips ahead of central bank bonanza, dollar firms on tech rebound",
+      "published": "Tue, 27 Oct 2026 07:45:58 +0530",
+      "chars": 423,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-27-crude-oil-below-115-amid-peace-talk-hopes-but-attacks-continue-what-are-experts-saying/articleshow/135222687.cms",
+      "title": "Oil Price Today (October 27): Crude oil below $115 amid peace talk hopes but attacks continue. What are experts saying?",
+      "published": "Tue, 27 Oct 2026 07:43:29 +0530",
+      "chars": 148,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/in-china-the-ai-bubble-has-already-burst/articleshow/135222613.cms",
+      "title": "In China, the AI bubble has already burst",
+      "published": "Tue, 27 Oct 2026 07:39:35 +0530",
+      "chars": 505,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-eases-as-stronger-dollar-weighs-fed-meeting-in-focus/articleshow/135222653.cms",
+      "title": "Gold eases as stronger dollar weighs, Fed meeting in focus",
+      "published": "Tue, 27 Oct 2026 07:39:00 +0530",
+      "chars": 460,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 137.7
+}
