@@ -18,7 +18,7 @@
   },
   "broker:anandrathi": {
     "score": 0.0,
-    "n_tips": 17,
+    "n_tips": 20,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -30,7 +30,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-22",
+    "last_seen": "2026-10-27",
     "id": "broker:anandrathi"
   },
   "broker:angelone": {
@@ -52,7 +52,7 @@
   },
   "broker:axissec": {
     "score": 0.0,
-    "n_tips": 2,
+    "n_tips": 3,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -64,7 +64,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-13",
+    "last_seen": "2026-10-27",
     "id": "broker:axissec"
   },
   "broker:bagadia": {
@@ -171,7 +171,7 @@
   },
   "broker:emkay": {
     "score": 0.0,
-    "n_tips": 59,
+    "n_tips": 60,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -183,7 +183,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "broker:emkay"
   },
   "broker:geojit": {
@@ -205,7 +205,7 @@
   },
   "broker:icicisec": {
     "score": 0.0,
-    "n_tips": 56,
+    "n_tips": 61,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -217,12 +217,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "broker:icicisec"
   },
   "broker:jefferies": {
     "score": 0.0,
-    "n_tips": 71,
+    "n_tips": 76,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -234,7 +234,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-08",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "broker:jefferies"
   },
   "broker:kotaksec": {
@@ -290,7 +290,7 @@
   },
   "broker:motilal": {
     "score": -29.25,
-    "n_tips": 189,
+    "n_tips": 203,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -317,12 +317,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "broker:motilal"
   },
   "broker:nomura": {
     "score": 0.0,
-    "n_tips": 62,
+    "n_tips": 63,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -334,7 +334,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "broker:nomura"
   },
   "broker:nuvama": {
@@ -373,7 +373,7 @@
   },
   "broker:pl": {
     "score": 0.0,
-    "n_tips": 43,
+    "n_tips": 50,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -385,7 +385,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-23",
+    "last_seen": "2026-10-27",
     "id": "broker:pl"
   },
   "broker:rupakde": {
@@ -441,7 +441,7 @@
   },
   "brokerage_gnews": {
     "score": -14.625,
-    "n_tips": 279,
+    "n_tips": 292,
     "n_resolved": 2,
     "n_t1": 0,
     "n_t2": 0,
@@ -468,12 +468,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "brokerage_gnews"
   },
   "bs_recos": {
     "score": 0.0,
-    "n_tips": 55,
+    "n_tips": 56,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -485,7 +485,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "bs_recos"
   },
   "chartink_52w_breakout": {
@@ -507,7 +507,7 @@
   },
   "chartink_ema_pullback": {
     "score": -15.0,
-    "n_tips": 1319,
+    "n_tips": 1356,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -527,12 +527,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "chartink_ema_pullback"
   },
   "chartink_squeeze": {
     "score": -35.662499999999994,
-    "n_tips": 1245,
+    "n_tips": 1262,
     "n_resolved": 3,
     "n_t1": 0,
     "n_t2": 0,
@@ -566,7 +566,7 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "chartink_squeeze"
   },
   "corp_approvals": {
@@ -758,7 +758,7 @@
   },
   "et_recos_gnews": {
     "score": 0.0,
-    "n_tips": 23,
+    "n_tips": 24,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -770,7 +770,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "et_recos_gnews"
   },
   "et_recos_page": {
@@ -792,7 +792,7 @@
   },
   "fe_gnews": {
     "score": 0.0,
-    "n_tips": 200,
+    "n_tips": 207,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -804,12 +804,12 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
     "score": -7.5,
-    "n_tips": 354,
+    "n_tips": 368,
     "n_resolved": 1,
     "n_t1": 0,
     "n_t2": 0,
@@ -829,12 +829,12 @@
     ],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "mc_stock_ideas_gnews"
   },
   "mint_gnews": {
     "score": 0.0,
-    "n_tips": 366,
+    "n_tips": 367,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -846,7 +846,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-07",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "mint_gnews"
   },
   "mojo": {
@@ -885,7 +885,7 @@
   },
   "chartink_rsi_oversold_bounce": {
     "score": 0.0,
-    "n_tips": 235,
+    "n_tips": 252,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -897,7 +897,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-11",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "chartink_rsi_oversold_bounce"
   },
   "broker:goldman": {
@@ -919,7 +919,7 @@
   },
   "chartink_volume_shock": {
     "score": 0.0,
-    "n_tips": 640,
+    "n_tips": 655,
     "n_resolved": 0,
     "n_t1": 0,
     "n_t2": 0,
@@ -931,7 +931,7 @@
     "history": [],
     "enabled": true,
     "first_seen": "2026-09-18",
-    "last_seen": "2026-10-26",
+    "last_seen": "2026-10-27",
     "id": "chartink_volume_shock"
   },
   "broker:mirae": {
