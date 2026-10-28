@@ -111,11 +111,11 @@
   "earnings_beat": {
     "id": "earnings_beat",
     "prior": 22,
-    "adjust": -2.53,
-    "n": 1,
-    "n_up": 0,
-    "sum_open_to_high_pct": 0.0,
-    "sum_open_to_close_pct": -1.7,
+    "adjust": -0.936,
+    "n": 2,
+    "n_up": 1,
+    "sum_open_to_high_pct": 1.89,
+    "sum_open_to_close_pct": -1.96,
     "history": [
       {
         "date": "2026-10-19",
@@ -123,9 +123,16 @@
         "open_to_high_pct": 0.0,
         "open_to_close_pct": -1.7,
         "delta": -2.53
+      },
+      {
+        "date": "2026-10-28",
+        "symbol": "LT",
+        "open_to_high_pct": 1.89,
+        "open_to_close_pct": -0.26,
+        "delta": 1.47
       }
     ],
     "first_seen": "2026-10-19",
-    "last_seen": "2026-10-19"
+    "last_seen": "2026-10-28"
   }
 }
