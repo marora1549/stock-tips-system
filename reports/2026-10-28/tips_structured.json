@@ -1,0 +1,3266 @@
+[
+  {
+    "symbol": "TATACONSUM",
+    "company": "TATA CONSUMER PRODUCTS LIMITED",
+    "tip_id": "30a88a067c",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [
+      "broker:nuvama",
+      "et_recos_gnews",
+      "mint_gnews"
+    ],
+    "n_mentions": 3,
+    "src_targets": [
+      1275.0,
+      1450.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy TATA Consumer Products Ltd (NSE: TATACONSUM) LTP 1000 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 6.78%, volume 7578802.",
+    "urls": [
+      "https://economictimes.indiatimes.com/markets/stocks/news/tata-consumer-shares-in-focus-as-q2-net-profit-rises-16-yoy-why-jefferies-other-brokerages-are-bullish-despite-target-price-cuts/articleshow/135223973.cms",
+      "https://www.livemint.com/market/stock-market-news/paytm-vodafone-idea-itc-hotels-sona-blw-to-tata-consumer-shares-jefferies-sees-up-to-34-upside-target-rationale-11793071569997.html",
+      "https://chartink.com/stocks/tataconsum.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "nuvama"
+    ]
+  },
+  {
+    "symbol": "INDIGO",
+    "company": "IndiGo",
+    "tip_id": "4418ac93fb",
+    "source_id": "broker:citi",
+    "corroborating_sources": [
+      "et_recos_page"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "retained a Buy on IndiGo but cut its target price amid cost pressures and geopolitical disruptions, while Motilal Oswal sees strong upside in Maruti Suzuki supported by product launches and exports. Now, gift ETPrime subscription to your friend for Free! Connect with an ETPrime expert for personaliz",
+    "urls": [
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-morgan-stanley-maintains-underweight-on-dixon-citi-cuts-target-price-on-indigo/articleshow/129490401.cms"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "citi"
+    ]
+  },
+  {
+    "symbol": "BPCL",
+    "company": "Bharat Petroleum Corporation",
+    "tip_id": "ed9637a4be",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "broker:jefferies",
+      "fe_gnews",
+      "broker:elara",
+      "et_recos_page"
+    ],
+    "n_mentions": 4,
+    "src_targets": [
+      380.0,
+      385.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "retained its Buy rating on Bharat Petroleum Corporation but lowered its target price to Rs 385 from Rs 395, warning that elevated crude oil prices could weigh on near-term earnings and lead to a weaker Q3FY27. BPCL reported standalone EBITDA of Rs 90 billion in Q2FY27, compared with Nomura's estimat",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/bpcl-target-cut-to-rs-385-as-high-crude-prices-threaten-near-term-earnings-14061221.html",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms",
+      "https://www.financialexpress.com/market/6-buy-recommendations-by-jefferies-with-34-to-63-upside/4369625/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "elara",
+      "jefferies",
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "KOTAKBANK",
+    "company": "Kotak Mahindra",
+    "tip_id": "f9fe46c1d9",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "fe_gnews",
+      "broker:elara",
+      "et_recos_page"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      500.0
+    ],
+    "src_stop": null,
+    "src_entry": 442.0,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "has a ‘Buy’ call on Kotak Mahindra with a target price of Rs 500, implying an upside of 13% from the current price of Rs 442 apiece. It mobilised around Rs 55,300 crore of FCNR (B) deposits, or 8% of its total deposits. “Of this, it lent INR161bn (Rs 16,100 crore) against these deposits through its ",
+    "urls": [
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms",
+      "https://www.financialexpress.com/market/idfc-first-to-indusind-bank-nomura-picks-3-bank-stocks-for-up-to-33-upside-4370330/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "elara",
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "GRASIM",
+    "company": "Grasim Industries",
+    "tip_id": "cdfb608e45",
+    "source_id": "broker:nuvama",
+    "corroborating_sources": [
+      "et_recos_page"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "reiterating Buy on Grasim Industries, Nuvama raising its target on TCS post Q3 results, and CLSA maintaining an Outperform rating on HDFC Bank amid valuation comfort and earnings visibility. Now, gift ETPrime subscription to your friend for Free! Connect with an ETPrime expert for personalized suppo",
+    "urls": [
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "nuvama"
+    ]
+  },
+  {
+    "symbol": "HDFCBANK",
+    "company": "HDFC Bank",
+    "tip_id": "a0932da1bf",
+    "source_id": "broker:clsa",
+    "corroborating_sources": [
+      "et_recos_page"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "maintaining an Outperform rating on HDFC Bank amid valuation comfort and earnings visibility. Now, gift ETPrime subscription to your friend for Free! Connect with an ETPrime expert for personalized support and guidance Get a Call Back +91 9484700004 What’s Included with Get daily trade ideas from SE",
+    "urls": [
+      "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-nuvama-raises-target-price-on-tcs-post-results-clsa-maintains-outperform-on-hdfc-bank/articleshow/126496383.cms",
+      "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "clsa"
+    ]
+  },
+  {
+    "symbol": "ITCHOTELS",
+    "company": "ITCHOTEL",
+    "tip_id": "4c6762b9d5",
+    "source_id": "broker:choice",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews",
+      "broker:nomura",
+      "fe_gnews"
+    ],
+    "n_mentions": 3,
+    "src_targets": [
+      205.0,
+      210.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy ITCHOTEL; target of Rs 210: Choice Institutional Equities. Broker Research October 27, 2026 / 10:47 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exit 'Why",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-itchotel-target-of-rs-210-choice-institutional-equities-2-14060993.html",
+      "https://www.financialexpress.com/market/5-buy-recommendations-by-nomura-with-25-to-63-upside-potential-4370404/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "choice",
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "ADANIPOWER",
+    "company": "Adani Power",
+    "tip_id": "2eb62e26ff",
+    "source_id": "broker:pl",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      259.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Adani Power; target of Rs 259: Prabhudas Lilladher. Broker Research October 27, 2026 / 13:02 IST --> buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Microsoft tec",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/earnings/buy-adani-power-target-of-rs-259-prabhudas-lilladher-2-14061104.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "pl"
+    ]
+  },
+  {
+    "symbol": "DALBHARAT",
+    "company": "Dalmia Bharat",
+    "tip_id": "868a22d4f8",
+    "source_id": "broker:pl",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "broker:choice",
+      "broker:citi",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 4,
+    "src_targets": [
+      1900.0,
+      1970.0,
+      2180.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Dalmia Bharat; target of Rs 1970: Prabhudas Lilladher. Broker Research October 27, 2026 / 13:01 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Microsoft ",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/earnings/buy-dalmia-bharat-target-of-rs-1970-prabhudas-lilladher-14061103.html",
+      "https://www.moneycontrol.com/news/business/stocks/buy-dalmia-bharat-target-of-rs-2180-choice-institutional-equities-14060991.html",
+      "https://www.moneycontrol.com/news/business/stocks/dalmia-bharat-shares-plunge-7-to-over-4-year-low-after-weak-q2-results-six-brokerages-cut-target-prices-14061220.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "choice",
+      "citi",
+      "pl"
+    ]
+  },
+  {
+    "symbol": "MAHLIFE",
+    "company": "Mahindra Lifespace Developers",
+    "tip_id": "4be1d8f149",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      500.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Mahindra Lifespace Developers; target of Rs 500: Emkay Global Financial. Broker Research October 27, 2026 / 13:55 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till",
+    "urls": [
+      "https://www.tradingview.com/news/moneycontrol:9763ac0e0094b:0-buy-mahindra-lifespace-developers-target-of-rs-500-emkay-global-financial/",
+      "https://www.moneycontrol.com/news/business/stocks/buy-mahindra-lifespace-developers-target-of-rs-500-emkay-global-financial-2-14061230.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "ADANIGREEN",
+    "company": "Adani Green Energy",
+    "tip_id": "a7e6a2f8f7",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      1700.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Adani Green Energy; target of Rs 1700: Emkay Global Financial. Broker Research October 27, 2026 / 13:50 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exit ",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-adani-green-energy-target-of-rs-1700-emkay-global-financial-14061223.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "SWIGGY",
+    "company": "Swiggy",
+    "tip_id": "826b6d38cd",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      310.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Swiggy; target of Rs 310: Emkay Global Financial. Broker Research October 27, 2026 / 13:12 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exit 'Why is it th",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-swiggy-target-of-rs-310-emkay-global-financial-14061166.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "SAGILITY",
+    "company": "Sagility",
+    "tip_id": "6b541cf1a9",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      55.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Sagility; target of Rs 55: Emkay Global Financial. Broker Research October 27, 2026 / 13:16 IST --> buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exit 'Why is it t",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-sagility-target-of-rs-55-emkay-global-financial-2-14061173.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "SAPPHIRE",
+    "company": "Sapphire Foods",
+    "tip_id": "1316a744b1",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      260.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy Sapphire Foods; target of Rs 260: Emkay Global Financial. Broker Research October 27, 2026 / 14:45 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exit 'Why ",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-sapphire-foods-target-of-rs-260-emkay-global-financial-14061237.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "CREDITACC",
+    "company": "CreditAccess Grameen",
+    "tip_id": "9a32151365",
+    "source_id": "broker:emkay",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      1500.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy CreditAccess Grameen; target of Rs 1500: Emkay Global Financial. Broker Research October 27, 2026 / 13:35 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Microsoft techie who topped performance ratings says he'll take VEP, but won't work till his exi",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/stocks/buy-creditaccess-grameen-target-of-rs-1500-emkay-global-financial-14061205.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "AAVAS",
+    "company": "AAVAS Financiers",
+    "tip_id": "eb3670eab4",
+    "source_id": "broker:pl",
+    "corroborating_sources": [
+      "mc_stock_ideas_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1685.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy AAVAS Financiers; target of Rs 1685: Prabhudas Lilladher. Broker Research October 27, 2026 / 13:02 IST --> buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Advertisement Remove Ad Microso",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/earnings/buy-aavas-financiers-target-of-rs-1685-prabhudas-lilladher-2-14061108.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "pl"
+    ]
+  },
+  {
+    "symbol": "ERIS",
+    "company": "Eris Lifesciences Limited",
+    "tip_id": "42d402a8e5",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock",
+      "broker:pl",
+      "mc_stock_ideas_gnews"
+    ],
+    "n_mentions": 3,
+    "src_targets": [
+      1500.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Eris Lifesciences Ltd (NSE: ERIS) LTP 1198.4 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 8.43%, volume 742044.",
+    "urls": [
+      "https://chartink.com/stocks/eris.html",
+      "https://www.moneycontrol.com/news/business/earnings/buy-eris-lifesciences-target-of-rs-1500-prabhudas-lilladher-14061105.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "pl"
+    ]
+  },
+  {
+    "symbol": "NAM-INDIA",
+    "company": "Nippon Life India Asset Management Limited",
+    "tip_id": "1fef903471",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "broker:emkay",
+      "mc_stock_ideas_gnews",
+      "brokerage_gnews"
+    ],
+    "n_mentions": 4,
+    "src_targets": [
+      1300.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Nippon Life India Asset Management Ltd (NSE: NAM-INDIA) LTP 943 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 2.6%, volume 1686710.",
+    "urls": [
+      "https://chartink.com/stocks/nam-india.html",
+      "https://www.moneycontrol.com/news/business/stocks/buy-nippon-life-india-asset-management-target-of-rs-1300-emkay-global-financial-14061194.html/amp",
+      "https://www.tradingview.com/news/moneycontrol:88fa15d57094b:0-buy-nippon-life-india-asset-management-target-of-rs-1300-emkay-global-financial/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "emkay"
+    ]
+  },
+  {
+    "symbol": "ATHERENERG",
+    "company": "Ather Energy Limited",
+    "tip_id": "4eacd3a12d",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [
+      "broker:nomura",
+      "mc_stock_ideas_gnews",
+      "fe_gnews"
+    ],
+    "n_mentions": 3,
+    "src_targets": [
+      2070.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Ather Energy Ltd (NSE: ATHERENERG) LTP 1674 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 6.29%, volume 13021843.",
+    "urls": [
+      "https://www.moneycontrol.com/news/business/markets/ather-energy-stock-jumps-another-4-after-14-rally-nomura-hsbc-raise-targets-following-strong-q2-results-14060902.html",
+      "https://www.financialexpress.com/market/5-buy-recommendations-by-nomura-with-25-to-63-upside-potential-4370404/",
+      "https://chartink.com/stocks/atherenerg.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "TIPSMUSIC",
+    "company": "Tips Music Ltd",
+    "tip_id": "9e800ee45f",
+    "source_id": "broker:marketsmith",
+    "corroborating_sources": [
+      "mint_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": 741.6,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy: Tips Music Ltd (current price: ₹ 741.6) Why it’s recommended: Strong monetization of its extensive music catalog through rising digital streaming, YouTube, OTT, and licensing revenues, creating a scalable royalty-led business model. Growing demand for music licensing, synchronization rights, an",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-28-october-from-marketsmith-india-11793111732152.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": [
+      "marketsmith"
+    ]
+  },
+  {
+    "symbol": "ACUTAAS",
+    "company": "Acutaas Chemicals Limited",
+    "tip_id": "d8c8f6f7a8",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [
+      "mint_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Acutaas Chemicals Ltd (NSE: ACUTAAS) LTP 3793.3 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 13.27%, volume 4746620.",
+    "urls": [
+      "https://chartink.com/stocks/acutaas.html",
+      "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-28-october-from-marketsmith-india-11793111732152.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "APOLLO",
+    "company": "Apollo Micro Systems Limited",
+    "tip_id": "12a12dc331",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [
+      "broker:marketsmith",
+      "mint_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Apollo Micro Systems Ltd (NSE: APOLLO) LTP 425.4 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 3.53%, volume 39162735.",
+    "urls": [
+      "https://chartink.com/stocks/apollo.html",
+      "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-27-october-from-marketsmith-india-11793021378923.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "marketsmith"
+    ]
+  },
+  {
+    "symbol": "DRREDDY",
+    "company": "Dr. Reddy's Laboratories Limited",
+    "tip_id": "196e04d304",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": 1310.0,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Buy: Dr. Reddy's Laboratories Limited (current price: ₹ 1,310) Why it’s recommended: Diverse global generics franchise, strong API integration, and expanding biosimilars/specialty portfolio provide multiple long-term growth avenues across regulated and emerging markets. Growth in India and emerging ",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-27-october-from-marketsmith-india-11793021378923.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": []
+  },
+  {
+    "symbol": "NEPHROPLUS",
+    "company": "Nephrocare Health Services",
+    "tip_id": "c46ea66dc9",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      710.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "We recommend a BUY on the stock.Nephrocare Health Services: Target - ₹710",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/top-diwali-2026-muhurat-stocks-to-buy-axis-securities-lists-9-shares-for-samvat-2083-check-target-upside-11793090694908.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": []
+  },
+  {
+    "symbol": "INDHOTEL",
+    "company": "CMP.Indian Hotels Company",
+    "tip_id": "4b230206ab",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      900.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "We recommend a BUY on the stock, with the TP implying an upside potential of 19% from the CMP.Indian Hotels Company: Target - ₹900",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/top-diwali-2026-muhurat-stocks-to-buy-axis-securities-lists-9-shares-for-samvat-2083-check-target-upside-11793090694908.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": []
+  },
+  {
+    "symbol": "COFORGE",
+    "company": "Coforge",
+    "tip_id": "51e20e0f1f",
+    "source_id": "mint_gnews",
+    "corroborating_sources": [
+      "brokerage_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      2245.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "We recommend a BUY on the stock.Coforge: Target - ₹2,245",
+    "urls": [
+      "https://www.livemint.com/market/stock-market-news/top-diwali-2026-muhurat-stocks-to-buy-axis-securities-lists-9-shares-for-samvat-2083-check-target-upside-11793090694908.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": []
+  },
+  {
+    "symbol": "GODREJPROP",
+    "company": "Godrej Properties",
+    "tip_id": "496a12165a",
+    "source_id": "broker:jefferies",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      2550.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "has a 'Buy' on Godrej Properties, with a target price of Rs 2,550, implying an upside potential of 63%. In its October 23 report, the brokerage pointed to improved collections, stronger operating cash generation and a healthy project launch pipeline. Collections rose 31% year on year in the Septembe",
+    "urls": [
+      "https://www.financialexpress.com/market/6-buy-recommendations-by-jefferies-with-34-to-63-upside/4369625/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "jefferies"
+    ]
+  },
+  {
+    "symbol": "ADANIENSOL",
+    "company": "Adani Energy Solutions",
+    "tip_id": "d456f6ada7",
+    "source_id": "broker:jefferies",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1980.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "has a 'Buy' on Adani Energy Solutions, with a target price of Rs 1,980, implying an upside potential of 62%. In its October 25 report, the brokerage said the company’s September-quarter earnings before interest, taxes, depreciation and amortisation (EBITDA) exceeded expectations, led by its trading ",
+    "urls": [
+      "https://www.financialexpress.com/market/6-buy-recommendations-by-jefferies-with-34-to-63-upside/4369625/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "jefferies"
+    ]
+  },
+  {
+    "symbol": "INDUSINDBK",
+    "company": "IndusInd Bank",
+    "tip_id": "768323a53a",
+    "source_id": "broker:jefferies",
+    "corroborating_sources": [
+      "fe_gnews",
+      "broker:nomura"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      1060.0,
+      1130.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "has a 'Buy' on IndusInd Bank, with a target price of Rs 1,130, implying an upside potential of 35%. In its October 23 report, the brokerage said the bank’s September-quarter profit was ahead of expectations, supported by lower credit costs and stronger fee and treasury income. Loans increased 11% ye",
+    "urls": [
+      "https://www.financialexpress.com/market/idfc-first-to-indusind-bank-nomura-picks-3-bank-stocks-for-up-to-33-upside-4370330/",
+      "https://www.financialexpress.com/market/6-buy-recommendations-by-jefferies-with-34-to-63-upside/4369625/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "jefferies",
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "AUBANK",
+    "company": "AU Small Finance Bank",
+    "tip_id": "2eaae199b1",
+    "source_id": "broker:jefferies",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1250.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "has a 'Buy' on AU Small Finance Bank, with a target price of Rs 1,250, implying an upside potential of 34%. In its October 26 report, the brokerage said the bank’s September-quarter profit rose 53% year on year to Rs 860 crore, broadly in line with its estimate. Net interest income increased 32%, su",
+    "urls": [
+      "https://www.financialexpress.com/market/6-buy-recommendations-by-jefferies-with-34-to-63-upside/4369625/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "jefferies"
+    ]
+  },
+  {
+    "symbol": "STLTECH",
+    "company": "Sterlite Technologies",
+    "tip_id": "faa5e45f29",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1350.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Nomura on Sterlite Technologies: 'Buy' Nomura has set a target price of Rs 1,350 for Sterlite Technologies, implying an upside of 63.2% from current levels.",
+    "urls": [
+      "https://www.financialexpress.com/market/5-buy-recommendations-by-nomura-with-25-to-63-upside-potential-4370404/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": [
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "ABREL",
+    "company": "Aditya Birla Real Estate",
+    "tip_id": "6f8a463dcd",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1600.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Nomura on Aditya Birla Real Estate: 'Buy' Nomura has set a target price of Rs 1,600 for Aditya Birla Real Estate, implying an upside of 48.4% from current rate.",
+    "urls": [
+      "https://www.financialexpress.com/market/5-buy-recommendations-by-nomura-with-25-to-63-upside-potential-4370404/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": [
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "JINDALSTEL",
+    "company": "Jindal Steel",
+    "tip_id": "221f6e5e33",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      1300.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Nomura on Jindal Steel: 'Buy' Nomura has set a target price of Rs 1,300 for Jindal Steel, implying an upside of 28.2%.",
+    "urls": [
+      "https://www.financialexpress.com/market/5-buy-recommendations-by-nomura-with-25-to-63-upside-potential-4370404/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": [
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "PARACABLES",
+    "company": "Paramount Communications Limited",
+    "tip_id": "6175639070",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [
+      "broker:goldman",
+      "fe_gnews"
+    ],
+    "n_mentions": 2,
+    "src_targets": [
+      2010.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Paramount Communications Limited (NSE: PARACABLES) LTP 65.55 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 9.91%, volume 41228598.",
+    "urls": [
+      "https://chartink.com/stocks/paracables.html",
+      "https://www.financialexpress.com/market/paytm-share-price-goldman-jefferies-see-up-to-33-upside-but-ubs-warns-of-19-downside-4370136/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": [
+      "goldman"
+    ]
+  },
+  {
+    "symbol": "PAYTM",
+    "company": "Paytm",
+    "tip_id": "115902ea6c",
+    "source_id": "broker:jefferies",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      2150.0
+    ],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "maintained a ‘Buy’ rating on Paytm, setting a target price of Rs 2,150 and indicating an upside potential of 33.4%. The brokerage’s positive stance is supported by the company’s revenue growth, improved operating performance and the opportunity to strengthen its payments business as its merchant net",
+    "urls": [
+      "https://www.financialexpress.com/market/paytm-share-price-goldman-jefferies-see-up-to-33-upside-but-ubs-warns-of-19-downside-4370136/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "jefferies"
+    ]
+  },
+  {
+    "symbol": "IDFCFIRSTB",
+    "company": "IDFC First Bank The",
+    "tip_id": "3666e90b4e",
+    "source_id": "broker:nomura",
+    "corroborating_sources": [
+      "fe_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      95.0
+    ],
+    "src_stop": null,
+    "src_entry": 71.54,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "Nomura on IDFC First Bank The Japanese brokerage maintained its ‘Buy’ rating on the stock with a target price of Rs 95, implying an upside of nearly 33% from the current price of Rs 71.54 apiece.",
+    "urls": [
+      "https://www.financialexpress.com/market/idfc-first-to-indusind-bank-nomura-picks-3-bank-stocks-for-up-to-33-upside-4370330/"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.6,
+    "brokerages": [
+      "nomura"
+    ]
+  },
+  {
+    "symbol": "ICICIBANK",
+    "company": "ICICI Bank",
+    "tip_id": "0ad427706e",
+    "source_id": "brokerage_gnews",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "recommends 'Buy' rating on ICICI Bank; 'Add' Nykaa. Here's why Kotak Neo recommends 'Buy' rating on ICICI Bank; 'Add' Nykaa Nykaa offers an attractive combination of category leadership, strong execution, multiple growth levers, and improving profitability, says Shrikant Chouhan, Head of Equity Rese",
+    "urls": [
+      "https://www.business-standard.com/markets/news/stocks-to-buy-today-here-s-why-kotak-neo-recommends-buy-rating-on-icici-bank-add-nykaa-126102700085_1.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.7,
+    "brokerages": []
+  },
+  {
+    "symbol": "UTLSOLAR",
+    "company": "Fujiyama Power Systems",
+    "tip_id": "0992e290f8",
+    "source_id": "broker:motilal",
+    "corroborating_sources": [
+      "brokerage_gnews"
+    ],
+    "n_mentions": 1,
+    "src_targets": [
+      500.0
+    ],
+    "src_stop": null,
+    "src_entry": 373.65,
+    "src_duration": null,
+    "default_timeframe": null,
+    "sentence": "reiterated its Buy rating on Fujiyama Power Systems with a target price of Rs 500. From the current price of Rs 373.65, the target indicates a potential upside of approximately 33.8%. The brokerage expects the company to deliver a compound annual growth rate (CAGR) of 52% in revenue, 57% in EBITDA a",
+    "urls": [
+      "https://www.goodreturns.in/news/fujiyama-power-systems-stock-gains-should-you-buy-this-small-cap-solar-stock-motilal-oswal-ratings-t-1543455.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 0.9,
+    "brokerages": [
+      "motilal"
+    ]
+  },
+  {
+    "symbol": "LAURUSLABS",
+    "company": "Laurus Labs Limited",
+    "tip_id": "bcb950b4dd",
+    "source_id": "chartink_52w_breakout",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Laurus Labs Limited (NSE: LAURUSLABS) LTP 2142 — matched scan 'Chartink — 52-week-high breakout with 1.5x volume', day change 4.04%, volume 3117057.",
+    "urls": [
+      "https://chartink.com/stocks/lauruslabs.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PTCIL",
+    "company": "PTC Industries Limited",
+    "tip_id": "543d13c184",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy PTC Industries Ltd (NSE: PTCIL) LTP 24055 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.73%, volume 14697.",
+    "urls": [
+      "https://chartink.com/stocks/ptcil.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CRAFTSMAN",
+    "company": "Craftsman Automation Limited",
+    "tip_id": "bb140ef4f7",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Craftsman Automation Ltd (NSE: CRAFTSMAN) LTP 11011 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.66%, volume 48833.",
+    "urls": [
+      "https://chartink.com/stocks/craftsman.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BAJAJHLDNG",
+    "company": "Bajaj Holdings & Investment Limited",
+    "tip_id": "f269011c59",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Bajaj Holdings & Investment Limited (NSE: BAJAJHLDNG) LTP 10901 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -1.35%, volume 84252.",
+    "urls": [
+      "https://chartink.com/stocks/bajajhldng.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "DIVISLAB",
+    "company": "Divi's Laboratories Limited",
+    "tip_id": "ed5a3ea936",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Divi's Laboratories Limited (NSE: DIVISLAB) LTP 9505.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 5.03%, volume 802780.",
+    "urls": [
+      "https://chartink.com/stocks/divislab.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GRWRHITECH",
+    "company": "Garware Hi-Tech Films Limited",
+    "tip_id": "bf35beec71",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Garware Hi Tech Films Ltd (NSE: GRWRHITECH) LTP 7160 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.62%, volume 46147.",
+    "urls": [
+      "https://chartink.com/stocks/grwrhitech.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PERSISTENT",
+    "company": "Persistent Systems Limited",
+    "tip_id": "f179cc69b3",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Persistent Systems Limited (NSE: PERSISTENT) LTP 5832.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -0.3%, volume 930218.",
+    "urls": [
+      "https://chartink.com/stocks/persistent.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "HAL",
+    "company": "Hindustan Aeronautics Limited",
+    "tip_id": "5576c74ba1",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Hindustan Aeronautics Ltd (NSE: HAL) LTP 4855 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 1.68%, volume 1046088.",
+    "urls": [
+      "https://chartink.com/stocks/hal.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CRISIL",
+    "company": "Crisil Limited",
+    "tip_id": "2e4227ce32",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Crisil Limited (NSE: CRISIL) LTP 4694 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -1.75%, volume 109666.",
+    "urls": [
+      "https://chartink.com/stocks/crisil.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SHRIPISTON",
+    "company": "SPR Auto Technologies Limited",
+    "tip_id": "2bda9b1e5f",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Shriram Pistons & Rings Limited (NSE: SHRIPISTON) LTP 4474.4 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 4.08%, volume 32393.",
+    "urls": [
+      "https://chartink.com/stocks/shripiston.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SANSERA",
+    "company": "Sansera Engineering Limited",
+    "tip_id": "f6325a218c",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Sansera Engineering Ltd (NSE: SANSERA) LTP 4290.6 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.45%, volume 189785.",
+    "urls": [
+      "https://chartink.com/stocks/sansera.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CENTUM",
+    "company": "Centum Electronics Limited",
+    "tip_id": "77ba455162",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Centum Electronics Limited (NSE: CENTUM) LTP 4081.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.51%, volume 33096.",
+    "urls": [
+      "https://chartink.com/stocks/centum.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CPPLUS",
+    "company": "Aditya Infotech Limited",
+    "tip_id": "88d5c8ccc6",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Aditya Infotech Ltd (NSE: CPPLUS) LTP 3968.2 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.61%, volume 144828.",
+    "urls": [
+      "https://chartink.com/stocks/cpplus.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KDDL",
+    "company": "KDDL Limited",
+    "tip_id": "c17710c948",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Kddl Limited (NSE: KDDL) LTP 3794.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.82%, volume 11522.",
+    "urls": [
+      "https://chartink.com/stocks/kddl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KPL",
+    "company": "Kwality Pharmaceuticals Limited",
+    "tip_id": "bc06cd1cc9",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Kwality Pharmaceuticals Ltd (NSE: KPL) LTP 3599.4 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.98%, volume 20524.",
+    "urls": [
+      "https://chartink.com/stocks/kpl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KMEW",
+    "company": "Knowledge Marine & Engineering Works Limited",
+    "tip_id": "f9222b4c1a",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Knowledge Marine & Engineering Works Ltd (NSE: KMEW) LTP 3230.2 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -1.59%, volume 156514.",
+    "urls": [
+      "https://chartink.com/stocks/kmew.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MCX",
+    "company": "Multi Commodity Exchange of India Limited",
+    "tip_id": "488a518b01",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Multi Commodity Exchange Of India Limited (NSE: MCX) LTP 3186.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.41%, volume 1527959.",
+    "urls": [
+      "https://chartink.com/stocks/mcx.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GLAND",
+    "company": "Gland Pharma Limited",
+    "tip_id": "562858c569",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Gland Pharma Ltd (NSE: GLAND) LTP 2960.3 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 4.09%, volume 397406.",
+    "urls": [
+      "https://chartink.com/stocks/gland.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "RPGLIFE",
+    "company": "RPG Life Sciences Limited",
+    "tip_id": "fef8935a4f",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Rpg Life Sciences Limited (NSE: RPGLIFE) LTP 2836.1 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.69%, volume 10776.",
+    "urls": [
+      "https://chartink.com/stocks/rpglife.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "WHEELS",
+    "company": "Wheels India Limited",
+    "tip_id": "65916004b0",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Wheels India Limited (NSE: WHEELS) LTP 2251.6 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.08%, volume 83531.",
+    "urls": [
+      "https://chartink.com/stocks/wheels.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "APLAPOLLO",
+    "company": "APL Apollo Tubes Limited",
+    "tip_id": "4575459f95",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Apl Apollo Tubes Limited (NSE: APLAPOLLO) LTP 2213.9 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 6.55%, volume 2074071.",
+    "urls": [
+      "https://chartink.com/stocks/aplapollo.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "AVALON",
+    "company": "Avalon Technologies Limited",
+    "tip_id": "dc53cf2196",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Avalon Technologies Ltd (NSE: AVALON) LTP 2168.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 8.32%, volume 587902.",
+    "urls": [
+      "https://chartink.com/stocks/avalon.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "DPABHUSHAN",
+    "company": "D. P. Abhushan Limited",
+    "tip_id": "25ce45d630",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy D.P. Abhushan Ltd (NSE: DPABHUSHAN) LTP 2081.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -1.77%, volume 55244.",
+    "urls": [
+      "https://chartink.com/stocks/dpabhushan.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "IPCALAB",
+    "company": "IPCA Laboratories Limited",
+    "tip_id": "91966409cc",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Ipca Laboratories Limited (NSE: IPCALAB) LTP 1980.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.18%, volume 189254.",
+    "urls": [
+      "https://chartink.com/stocks/ipcalab.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "LUMAXTECH",
+    "company": "Lumax Auto Technologies Limited",
+    "tip_id": "ee78c8a7e7",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Lumax Auto Technologies Limited (NSE: LUMAXTECH) LTP 1910.4 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.34%, volume 184403.",
+    "urls": [
+      "https://chartink.com/stocks/lumaxtech.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MACPOWER",
+    "company": "Macpower CNC Machines Limited",
+    "tip_id": "490ee65c5c",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Macpower CNC Machines Ltd (NSE: MACPOWER) LTP 1903.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -0.03%, volume 48998.",
+    "urls": [
+      "https://chartink.com/stocks/macpower.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "LALPATHLAB",
+    "company": "Dr. Lal Path Labs Ltd.",
+    "tip_id": "565d989dcc",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Dr. Lal Path Labs Ltd. (NSE: LALPATHLAB) LTP 1901.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.49%, volume 273785.",
+    "urls": [
+      "https://chartink.com/stocks/lalpathlab.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ECLERX",
+    "company": "eClerx Services Limited",
+    "tip_id": "694f469aba",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Eclerx Services Limited (NSE: ECLERX) LTP 1896.7 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 1.07%, volume 100439.",
+    "urls": [
+      "https://chartink.com/stocks/eclerx.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ADANIPORTS",
+    "company": "Adani Ports and Special Economic Zone Limited",
+    "tip_id": "efb657703a",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [
+      "chartink_squeeze"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Adani Ports And Special Economic Zone Limited (NSE: ADANIPORTS) LTP 1754.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 0.11%, volume 1271538.",
+    "urls": [
+      "https://chartink.com/stocks/adaniports.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "RPEL",
+    "company": "Raghav Productivity Enhancers Limited",
+    "tip_id": "485c60c7a8",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Raghav Productivity Enhancers Ltd (NSE: RPEL) LTP 1742.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.8%, volume 60389.",
+    "urls": [
+      "https://chartink.com/stocks/rpel.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "UNIMECH",
+    "company": "Unimech Aerospace and Manufacturing Limited",
+    "tip_id": "6803f01d0f",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Unimech Aerospace and Manufacturing Ltd (NSE: UNIMECH) LTP 1691.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 4.68%, volume 282940.",
+    "urls": [
+      "https://chartink.com/stocks/unimech.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "LGEINDIA",
+    "company": "LG Electronics India Limited",
+    "tip_id": "c2b2596cfe",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy LG Electronics India Ltd (NSE: LGEINDIA) LTP 1677.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.48%, volume 232029.",
+    "urls": [
+      "https://chartink.com/stocks/lgeindia.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GESHIP",
+    "company": "The Great Eastern Shipping Company Limited",
+    "tip_id": "25c77ce9d8",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [
+      "chartink_squeeze"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy The Great Eastern Shipping Company Limited (NSE: GESHIP) LTP 1550.9 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 1.21%, volume 1088726.",
+    "urls": [
+      "https://chartink.com/stocks/geship.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "DHOOTTRANS",
+    "company": "Dhoot Transmission Limited",
+    "tip_id": "1ad3c9bf32",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Dhoot Transmission Ltd (NSE: DHOOTTRANS) LTP 1469.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 4.12%, volume 742636.",
+    "urls": [
+      "https://chartink.com/stocks/dhoottrans.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GABRIEL",
+    "company": "Gabriel India Limited",
+    "tip_id": "1af0d1f9c6",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Gabriel India Limited (NSE: GABRIEL) LTP 1449.7 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 3.97%, volume 199759.",
+    "urls": [
+      "https://chartink.com/stocks/gabriel.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ZOTA",
+    "company": "Zota Health Care LImited",
+    "tip_id": "adafbf4058",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Zota Health Care Ltd (NSE: ZOTA) LTP 1280 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 7.1%, volume 142622.",
+    "urls": [
+      "https://chartink.com/stocks/zota.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CYIENT",
+    "company": "Cyient Limited",
+    "tip_id": "0eebbf4779",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Cyient Limited (NSE: CYIENT) LTP 1182.3 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -4.88%, volume 1203367.",
+    "urls": [
+      "https://chartink.com/stocks/cyient.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ZYDUSLIFE",
+    "company": "Zydus Lifesciences Limited",
+    "tip_id": "bf64224e76",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Zydus Lifesciences Ltd (NSE: ZYDUSLIFE) LTP 1172.9 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 1.08%, volume 1272268.",
+    "urls": [
+      "https://chartink.com/stocks/zyduslife.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KRISHNADEF",
+    "company": "Krishna Defence And Allied Industries Limited",
+    "tip_id": "d51699b095",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Krishna Defence & Allied Industries Ltd (NSE: KRISHNADEF) LTP 1172.5 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 5.16%, volume 132120.",
+    "urls": [
+      "https://chartink.com/stocks/krishnadef.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SHYAMMETL",
+    "company": "Shyam Metalics and Energy Limited",
+    "tip_id": "318c406d16",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Shyam Metalics & Energy Ltd (NSE: SHYAMMETL) LTP 1153.8 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change 2.45%, volume 82245.",
+    "urls": [
+      "https://chartink.com/stocks/shyammetl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ANTELOPUS",
+    "company": "Antelopus Selan Energy Limited",
+    "tip_id": "10c0294369",
+    "source_id": "chartink_ema_pullback",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Antelopus Selan Energy Ltd (NSE: ANTELOPUS) LTP 1091.2 — matched scan 'Chartink — pullback to 20 EMA in strong uptrend', day change -8.21%, volume 818358.",
+    "urls": [
+      "https://chartink.com/stocks/antelopus.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TVSMOTOR",
+    "company": "TVS Motor Company Limited",
+    "tip_id": "7bf65cc8dd",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Tvs Motor Company Limited (NSE: TVSMOTOR) LTP 4087 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 2.28%, volume 753342.",
+    "urls": [
+      "https://chartink.com/stocks/tvsmotor.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SHAILY",
+    "company": "Shaily Engineering Plastics Limited",
+    "tip_id": "a6f3a99119",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Shaily Engineering Plastics Ltd (NSE: SHAILY) LTP 3081.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 3.22%, volume 74477.",
+    "urls": [
+      "https://chartink.com/stocks/shaily.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CORONA",
+    "company": "CORONA Remedies Limited",
+    "tip_id": "411a8d8353",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Corona Remedies Ltd (NSE: CORONA) LTP 2152 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 5.42%, volume 34892.",
+    "urls": [
+      "https://chartink.com/stocks/corona.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "LLOYDSME",
+    "company": "Lloyds Metals And Energy Limited",
+    "tip_id": "bc6c3a36f5",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Lloyds Metals & Energy Ltd (NSE: LLOYDSME) LTP 1773.6 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change -0.76%, volume 195556.",
+    "urls": [
+      "https://chartink.com/stocks/lloydsme.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "NAUKRI",
+    "company": "Info Edge (India) Limited",
+    "tip_id": "cc13dbaad3",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Info Edge (india) Limited (NSE: NAUKRI) LTP 1216.3 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.65%, volume 766212.",
+    "urls": [
+      "https://chartink.com/stocks/naukri.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ISGEC",
+    "company": "Isgec Heavy Engineering Limited",
+    "tip_id": "d54c816f79",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy ISGEC Heavy Engineering  Ltd (NSE: ISGEC) LTP 914.4 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 3.06%, volume 29673.",
+    "urls": [
+      "https://chartink.com/stocks/isgec.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "DLF",
+    "company": "DLF Limited",
+    "tip_id": "9628a463c0",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Dlf Limited (NSE: DLF) LTP 671 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.31%, volume 1288977.",
+    "urls": [
+      "https://chartink.com/stocks/dlf.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "INDGN",
+    "company": "Indegene Limited",
+    "tip_id": "45568c1363",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Indegene Ltd (NSE: INDGN) LTP 599.95 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change -0.3%, volume 780326.",
+    "urls": [
+      "https://chartink.com/stocks/indgn.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "STARHEALTH",
+    "company": "Star Health and Allied Insurance Company Limited",
+    "tip_id": "6ec144058d",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Star Health & Allied Insurance Company Ltd (NSE: STARHEALTH) LTP 546.75 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.58%, volume 144679.",
+    "urls": [
+      "https://chartink.com/stocks/starhealth.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SAREGAMA",
+    "company": "Saregama India Limited",
+    "tip_id": "418a7ba777",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Saregama India Limited (NSE: SAREGAMA) LTP 509.5 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 4.18%, volume 266996.",
+    "urls": [
+      "https://chartink.com/stocks/saregama.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "OIL",
+    "company": "Oil India Limited",
+    "tip_id": "561fcde938",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Oil India Limited (NSE: OIL) LTP 457.35 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 0.54%, volume 808336.",
+    "urls": [
+      "https://chartink.com/stocks/oil.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "IIFLCAPS",
+    "company": "IIFL Capital Services Limited",
+    "tip_id": "6a65d4ff48",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy IIFL Capital Services Ltd (NSE: IIFLCAPS) LTP 341.95 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 0.35%, volume 820010.",
+    "urls": [
+      "https://chartink.com/stocks/iiflcaps.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PETRONET",
+    "company": "Petronet LNG Limited",
+    "tip_id": "f51cc47cd2",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Petronet Lng Limited (NSE: PETRONET) LTP 296 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 1.46%, volume 2461969.",
+    "urls": [
+      "https://chartink.com/stocks/petronet.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MBAPL",
+    "company": "Madhya Bharat Agro Products Limited",
+    "tip_id": "e17fb8b9f8",
+    "source_id": "chartink_squeeze",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "monthly",
+    "sentence": "Buy Madhya Bharat Agro Products Ltd (NSE: MBAPL) LTP 167.26 — matched scan 'Chartink — Bollinger squeeze (pre-breakout consolidation)', day change 4.5%, volume 691170.",
+    "urls": [
+      "https://chartink.com/stocks/mbapl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TVSHLTD",
+    "company": "TVS Holdings Limited",
+    "tip_id": "405b1adb82",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy TVS Holdings Ltd (NSE: TVSHLTD) LTP 11451 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 5%, volume 31406.",
+    "urls": [
+      "https://chartink.com/stocks/tvshltd.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "AMBER",
+    "company": "Amber Enterprises India Limited",
+    "tip_id": "eef33279e1",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Amber Enterprises India Ltd (NSE: AMBER) LTP 6030 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 2.07%, volume 230292.",
+    "urls": [
+      "https://chartink.com/stocks/amber.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CUMMINSIND",
+    "company": "Cummins India Limited",
+    "tip_id": "463a5927a1",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Cummins India Limited (NSE: CUMMINSIND) LTP 4532 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.34%, volume 583979.",
+    "urls": [
+      "https://chartink.com/stocks/cumminsind.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "DATAPATTNS",
+    "company": "Data Patterns (India) Limited",
+    "tip_id": "4fbb4a792b",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Data Patterns (India) Ltd (NSE: DATAPATTNS) LTP 4119.4 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 9.16%, volume 1518318.",
+    "urls": [
+      "https://chartink.com/stocks/datapattns.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "AIAENG",
+    "company": "AIA Engineering Limited",
+    "tip_id": "425c281b51",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Aia Engineering Limited (NSE: AIAENG) LTP 3593.6 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 0.42%, volume 63557.",
+    "urls": [
+      "https://chartink.com/stocks/aiaeng.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TIMKEN",
+    "company": "Timken India Limited",
+    "tip_id": "5a5866a2cd",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Timken India Limited (NSE: TIMKEN) LTP 2775.5 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 0.58%, volume 100076.",
+    "urls": [
+      "https://chartink.com/stocks/timken.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PIIND",
+    "company": "PI Industries Limited",
+    "tip_id": "6f5b2fd026",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Pi Industries Limited (NSE: PIIND) LTP 2086.1 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.27%, volume 583285.",
+    "urls": [
+      "https://chartink.com/stocks/piind.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GRSE",
+    "company": "Garden Reach Shipbuilders & Engineers Limited",
+    "tip_id": "1fb8e84189",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Garden Reach Shipbuilders & Engineers Ltd (NSE: GRSE) LTP 1930.9 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.31%, volume 1043497.",
+    "urls": [
+      "https://chartink.com/stocks/grse.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "WABAG",
+    "company": "VA Tech Wabag Limited",
+    "tip_id": "78499e9e90",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Va Tech Wabag Limited (NSE: WABAG) LTP 1836.3 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 7.55%, volume 1063462.",
+    "urls": [
+      "https://chartink.com/stocks/wabag.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GODFRYPHLP",
+    "company": "Godfrey Phillips India Limited",
+    "tip_id": "0d57aafafc",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Godfrey Phillips India Limited (NSE: GODFRYPHLP) LTP 1725.7 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.71%, volume 312177.",
+    "urls": [
+      "https://chartink.com/stocks/godfryphlp.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ENTERO",
+    "company": "Entero Healthcare Solutions Limited",
+    "tip_id": "e285030558",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Entero Healthcare Solutions Ltd (NSE: ENTERO) LTP 1578.2 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 6.99%, volume 204595.",
+    "urls": [
+      "https://chartink.com/stocks/entero.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TBOTEK",
+    "company": "TBO Tek Limited",
+    "tip_id": "1087fdf39c",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy TBO Tek Ltd (NSE: TBOTEK) LTP 1542.1 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 1.8%, volume 327386.",
+    "urls": [
+      "https://chartink.com/stocks/tbotek.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "UNITDSPR",
+    "company": "United Spirits Limited",
+    "tip_id": "93fd23b5ba",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy United Spirits Ltd (NSE: UNITDSPR) LTP 1270 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 2.5%, volume 2768463.",
+    "urls": [
+      "https://chartink.com/stocks/unitdspr.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KAJARIACER",
+    "company": "Kajaria Ceramics Limited",
+    "tip_id": "d640fb8949",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Kajaria Ceramics Limited (NSE: KAJARIACER) LTP 1144.2 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 2.31%, volume 1525152.",
+    "urls": [
+      "https://chartink.com/stocks/kajariacer.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GSPCROP",
+    "company": "GSP Crop Science Limited",
+    "tip_id": "ee8c8493c7",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy GSP Crop Science Ltd (NSE: GSPCROP) LTP 451.85 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 4.56%, volume 1020110.",
+    "urls": [
+      "https://chartink.com/stocks/gspcrop.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BALUFORGE",
+    "company": "Balu Forge Industries Limited",
+    "tip_id": "18c2cc4e23",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Balu Forge Industries Ltd (NSE: BALUFORGE) LTP 440.55 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.76%, volume 1124444.",
+    "urls": [
+      "https://chartink.com/stocks/baluforge.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TMCV",
+    "company": "Tata Motors Limited",
+    "tip_id": "822457c827",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Tata Motors Commercial Vehicles Ltd (NSE: TMCV) LTP 399.2 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.94%, volume 7538890.",
+    "urls": [
+      "https://chartink.com/stocks/tmcv.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GHCL",
+    "company": "GHCL Limited",
+    "tip_id": "c024d3ebfd",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Ghcl Limited (NSE: GHCL) LTP 394.25 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 4.19%, volume 251350.",
+    "urls": [
+      "https://chartink.com/stocks/ghcl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "EUREKAFORB",
+    "company": "Eureka Forbes Limited",
+    "tip_id": "e45da9011d",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Eureka Forbes Ltd (NSE: EUREKAFORB) LTP 315.85 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.95%, volume 946706.",
+    "urls": [
+      "https://chartink.com/stocks/eurekaforb.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "NTPC",
+    "company": "NTPC Limited",
+    "tip_id": "dc8bc1c60a",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Ntpc Limited (NSE: NTPC) LTP 301.8 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 0.6%, volume 11861441.",
+    "urls": [
+      "https://chartink.com/stocks/ntpc.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "TATACAP",
+    "company": "Tata Capital Limited",
+    "tip_id": "77be791ff6",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Tata Capital Ltd (NSE: TATACAP) LTP 300.45 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 0.3%, volume 2219159.",
+    "urls": [
+      "https://chartink.com/stocks/tatacap.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PCBL",
+    "company": "PCBL Chemical Limited",
+    "tip_id": "5a039c2db6",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy PCBL Ltd (NSE: PCBL) LTP 287.95 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 4.54%, volume 1101879.",
+    "urls": [
+      "https://chartink.com/stocks/pcbl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "JINDALSAW",
+    "company": "Jindal Saw Limited",
+    "tip_id": "dd51f5be4e",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Jindal Saw Limited (NSE: JINDALSAW) LTP 244.85 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 5.63%, volume 4120834.",
+    "urls": [
+      "https://chartink.com/stocks/jindalsaw.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "AGIIL",
+    "company": "Agi Infra Limited",
+    "tip_id": "b9478f3466",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy AGI Infra Ltd (NSE: AGIIL) LTP 233 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 16.18%, volume 13883507.",
+    "urls": [
+      "https://chartink.com/stocks/agiil.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BELRISE",
+    "company": "Belrise Industries Limited",
+    "tip_id": "e98fe3dc9c",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Belrise Industries Ltd (NSE: BELRISE) LTP 212.65 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 5.04%, volume 3399558.",
+    "urls": [
+      "https://chartink.com/stocks/belrise.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GOKULAGRO",
+    "company": "Gokul Agro Resources Limited",
+    "tip_id": "02f621a3cf",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Gokul Agro Resources Limited (NSE: GOKULAGRO) LTP 208.85 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 6.92%, volume 550252.",
+    "urls": [
+      "https://chartink.com/stocks/gokulagro.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BHARATSE",
+    "company": "Bharat Seats Limited",
+    "tip_id": "efb789ab62",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Bharat Seats Ltd (NSE: BHARATSE) LTP 208.58 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 12.61%, volume 4064530.",
+    "urls": [
+      "https://chartink.com/stocks/bharatse.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "CROMPTON",
+    "company": "Crompton Greaves Consumer Electricals Limited",
+    "tip_id": "56094f3825",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Crompton Greaves Consumer Electricals Limited (NSE: CROMPTON) LTP 196.25 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 1.19%, volume 6446103.",
+    "urls": [
+      "https://chartink.com/stocks/crompton.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MOSCHIP",
+    "company": "Moschip Technologies Limited",
+    "tip_id": "82836c9d81",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Moschip Technologies Ltd (NSE: MOSCHIP) LTP 173.42 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 4.55%, volume 1615920.",
+    "urls": [
+      "https://chartink.com/stocks/moschip.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ZAGGLE",
+    "company": "Zaggle Prepaid Ocean Services Limited",
+    "tip_id": "1a395c06c1",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Zaggle Prepaid Ocean Services Ltd (NSE: ZAGGLE) LTP 164.78 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 8.79%, volume 12645009.",
+    "urls": [
+      "https://chartink.com/stocks/zaggle.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SANDUMA",
+    "company": "Sandur Manganese & Iron Ores Limited",
+    "tip_id": "71bf9055aa",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Sandur Manganese & Iron Ores Ltd (NSE: SANDUMA) LTP 163.07 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.86%, volume 569556.",
+    "urls": [
+      "https://chartink.com/stocks/sanduma.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "GIPCL",
+    "company": "Gujarat Industries Power Company Limited",
+    "tip_id": "f79d75f1b8",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Gujarat Industries Power Company Limited (NSE: GIPCL) LTP 158.29 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.56%, volume 430965.",
+    "urls": [
+      "https://chartink.com/stocks/gipcl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "EXICOM",
+    "company": "Exicom Tele-Systems Limited",
+    "tip_id": "9e4b507303",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Exicom Tele-Systems Ltd (NSE: EXICOM) LTP 131.44 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 3.97%, volume 740760.",
+    "urls": [
+      "https://chartink.com/stocks/exicom.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "J&KBANK",
+    "company": "The Jammu & Kashmir Bank Limited",
+    "tip_id": "2d7ee0ee00",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy The Jammu & Kashmir Bank Limited (NSE: J&KBANK) LTP 123.91 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 5.89%, volume 5351548.",
+    "urls": [
+      "https://chartink.com/stocks/j&kbank.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MANINFRA",
+    "company": "Man Infraconstruction Limited",
+    "tip_id": "1884bbc934",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Man Infraconstruction Limited (NSE: MANINFRA) LTP 108.14 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 5.16%, volume 1532367.",
+    "urls": [
+      "https://chartink.com/stocks/maninfra.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SBFC",
+    "company": "SBFC Finance Limited",
+    "tip_id": "2f29bb9ff4",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy SBFC Finance Ltd (NSE: SBFC) LTP 82.54 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 6.45%, volume 3012251.",
+    "urls": [
+      "https://chartink.com/stocks/sbfc.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "OLAELEC",
+    "company": "Ola Electric Mobility Limited",
+    "tip_id": "377ec33402",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Ola Electric Mobility Ltd (NSE: OLAELEC) LTP 34.8 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 16.23%, volume 332028207.",
+    "urls": [
+      "https://chartink.com/stocks/olaelec.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "JISLJALEQS",
+    "company": "Jain Irrigation Systems Limited",
+    "tip_id": "bee19a8ee9",
+    "source_id": "chartink_rsi_oversold_bounce",
+    "corroborating_sources": [
+      "chartink_volume_shock"
+    ],
+    "n_mentions": 2,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Jain Irrigation Systems Limited (NSE: JISLJALEQS) LTP 25.08 — matched scan 'Chartink — RSI oversold bounce with volume confirmation', day change 8.2%, volume 44359622.",
+    "urls": [
+      "https://chartink.com/stocks/jisljaleqs.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "RADICO",
+    "company": "Radico Khaitan Limited",
+    "tip_id": "5a63775d8e",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Radico Khaitan Limited (NSE: RADICO) LTP 4290 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 2.14%, volume 1384149.",
+    "urls": [
+      "https://chartink.com/stocks/radico.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BBL",
+    "company": "Bharat Bijlee Limited",
+    "tip_id": "61e36cea3e",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Bharat Bijlee Limited (NSE: BBL) LTP 2585.8 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 14.65%, volume 654123.",
+    "urls": [
+      "https://chartink.com/stocks/bbl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MANKIND",
+    "company": "Mankind Pharma Limited",
+    "tip_id": "0dbbcf176b",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Mankind Pharma Ltd (NSE: MANKIND) LTP 2502.5 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 8.24%, volume 3030899.",
+    "urls": [
+      "https://chartink.com/stocks/mankind.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BEML",
+    "company": "BEML Limited",
+    "tip_id": "252aaa6741",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Beml Limited (NSE: BEML) LTP 1998.6 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 8.35%, volume 672024.",
+    "urls": [
+      "https://chartink.com/stocks/beml.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "INDIAMART",
+    "company": "Indiamart Intermesh Limited",
+    "tip_id": "947e9bec67",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Indiamart Intermesh Ltd (NSE: INDIAMART) LTP 1627.8 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 4.21%, volume 202015.",
+    "urls": [
+      "https://chartink.com/stocks/indiamart.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ONESOURCE",
+    "company": "Onesource Specialty Pharma Limited",
+    "tip_id": "9ca1b63717",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy OneSource Specialty Pharma Ltd (NSE: ONESOURCE) LTP 1589.8 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 13.78%, volume 7803594.",
+    "urls": [
+      "https://chartink.com/stocks/onesource.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "STAR",
+    "company": "Strides Pharma Science Limited",
+    "tip_id": "869eaaf546",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Strides Shasun Limited (NSE: STAR) LTP 1093.3 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 5.83%, volume 787306.",
+    "urls": [
+      "https://chartink.com/stocks/star.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "KFINTECH",
+    "company": "Kfin Technologies Limited",
+    "tip_id": "27e7ad3cae",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy KFin Technologies Ltd (NSE: KFINTECH) LTP 869.65 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 4.9%, volume 3850615.",
+    "urls": [
+      "https://chartink.com/stocks/kfintech.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "SONACOMS",
+    "company": "Sona BLW Precision Forgings Limited",
+    "tip_id": "f73d9d2b59",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Sona BLW Precision Forgings Ltd (NSE: SONACOMS) LTP 851.85 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 8.95%, volume 19084943.",
+    "urls": [
+      "https://chartink.com/stocks/sonacoms.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BATAINDIA",
+    "company": "Bata India Limited",
+    "tip_id": "2cb3b8e30a",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Bata India Limited (NSE: BATAINDIA) LTP 662.4 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 6.09%, volume 1171362.",
+    "urls": [
+      "https://chartink.com/stocks/bataindia.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "INDIASHLTR",
+    "company": "India Shelter Finance Corporation Limited",
+    "tip_id": "239debaf80",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy India Shelter Finance Corporation Ltd (NSE: INDIASHLTR) LTP 644.65 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 3.54%, volume 302808.",
+    "urls": [
+      "https://chartink.com/stocks/indiashltr.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MANIPALHOS",
+    "company": "Manipal Health Enterprises Limited",
+    "tip_id": "f8427fc14c",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Manipal Health Enterprises Ltd (NSE: MANIPALHOS) LTP 638.05 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 2.3%, volume 3128712.",
+    "urls": [
+      "https://chartink.com/stocks/manipalhos.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "JUBLINGREA",
+    "company": "Jubilant Ingrevia Limited",
+    "tip_id": "b2971d0786",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Jubilant Ingrevia Ltd (NSE: JUBLINGREA) LTP 632.35 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 4.35%, volume 2707855.",
+    "urls": [
+      "https://chartink.com/stocks/jublingrea.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "MAHLOG",
+    "company": "Mahindra Logistics Limited",
+    "tip_id": "70e3240a7b",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Mahindra Logistics Ltd (NSE: MAHLOG) LTP 434.2 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 11.29%, volume 4748814.",
+    "urls": [
+      "https://chartink.com/stocks/mahlog.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "VSSL",
+    "company": "Vardhman Special Steels Limited",
+    "tip_id": "12274f2465",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Vardhman Special Steels Limited (NSE: VSSL) LTP 364.1 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 5.92%, volume 1637007.",
+    "urls": [
+      "https://chartink.com/stocks/vssl.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "BAJEL",
+    "company": "Bajel Projects Limited",
+    "tip_id": "3478c8126a",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Bajel Projects Ltd (NSE: BAJEL) LTP 168.34 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 7.88%, volume 4733197.",
+    "urls": [
+      "https://chartink.com/stocks/bajel.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "PASHUPATI",
+    "company": "Pashupati Cotspin Limited",
+    "tip_id": "05be004c8c",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Pashupati Cotspin Ltd (NSE: PASHUPATI) LTP 115.58 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 5.2%, volume 9198042.",
+    "urls": [
+      "https://chartink.com/stocks/pashupati.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  },
+  {
+    "symbol": "ARIHANTCAP",
+    "company": "Arihant Capital Markets Limited",
+    "tip_id": "48614ea275",
+    "source_id": "chartink_volume_shock",
+    "corroborating_sources": [],
+    "n_mentions": 1,
+    "src_targets": [],
+    "src_stop": null,
+    "src_entry": null,
+    "src_duration": null,
+    "default_timeframe": "weekly",
+    "sentence": "Buy Arihant Capital Markets Ltd (NSE: ARIHANTCAP) LTP 92.51 — matched scan 'Chartink — volume shock (3x 20d avg volume, up day)', day change 2.88%, volume 3716315.",
+    "urls": [
+      "https://chartink.com/stocks/arihantcap.html"
+    ],
+    "needs_review": false,
+    "extraction_confidence": 1.0,
+    "brokerages": []
+  }
+]
