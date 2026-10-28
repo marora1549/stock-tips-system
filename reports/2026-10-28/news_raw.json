@@ -1,0 +1,1512 @@
+{
+  "date": "2026-10-28",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 2
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 6
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_approvals": {
+      "docs": 6,
+      "events": 4
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 12
+    },
+    "corp_expansion": {
+      "docs": 3,
+      "events": 1
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 4,
+      "events": 2
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "1cb91a08d9",
+      "symbol": "BAJEL",
+      "company": "Bajel Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "transmission_epc",
+        "solar_manufacturing"
+      ],
+      "size_inr_cr": 1500.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,500 crore",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 14000.0,
+        "unit": "MW",
+        "text": "14 GW"
+      },
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/bajel-projects-bags-order-worth-rs-1500-crore-from-gujarat",
+      "title": "Bajel Projects bags order worth Rs 1,500 crore from Gujarat",
+      "published": "Tue, 27 Oct 2026 18:35:03 GMT",
+      "published_utc": "2026-10-27T18:35:03+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/bajel-projects-bags-order-worth-rs-1500-crore-from-gujarat"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fb126dee68",
+      "symbol": "APLLTD",
+      "company": "Alembic Pharmaceuticals Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/alembic-pharmaceuticals-secures-usfda-approval-valganciclovir-oral/54641454",
+      "title": "Alembic Pharmaceuticals secures USFDA approval for Valganciclovir oral solution",
+      "published": "Tue, 27 Oct 2026 10:12:20 GMT",
+      "published_utc": "2026-10-27T10:12:20+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/alembic-pharmaceuticals-secures-usfda-approval-valganciclovir-oral/54641454",
+        "https://www.indianpharmapost.com/regulatory/alembic-pharmaceuticals-secures-usfda-final-approval-for-valganciclovir-oral-solution-22255"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "f38215ef4a",
+      "symbol": "CONCORDBIO",
+      "company": "Concord Biotech Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 250.2,
+      "size_estimated": false,
+      "size_basis": "₹ 250.2 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/concord-biotech-q2-net-profit-up-20-757-million/54654529",
+      "title": "Concord Biotech Q2FY27 Results: Revenue up 25% YoY, margins dip on costs",
+      "published": "Tue, 27 Oct 2026 15:22:16 GMT",
+      "published_utc": "2026-10-27T15:22:16+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/concord-biotech-q2-net-profit-up-20-757-million/54654529"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "397df6d3ef",
+      "symbol": "BAJAJ-AUTO",
+      "company": "Bajaj Auto Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-auto-q2-net-profit-up-35-on-strong-exports-product-mix/articleshow/135249431.cms",
+      "title": "Bajaj Auto Q2 net profit up 35% on strong exports, product mix",
+      "published": "Wed, 28 Oct 2026 07:48:25 +0530",
+      "published_utc": "2026-10-28T02:18:25+00:00",
+      "sentence": "net profit up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-auto-q2-net-profit-up-35-on-strong-exports-product-mix/articleshow/135249431.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "cd7df1a14a",
+      "symbol": "LT",
+      "company": "Larsen & Toubro Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit surges",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 255678.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,55,678 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/larsen-toubro-q2-results-profit-surges-33-yoy-to-rs-5202-crore-revenue-grows-16/amp_articleshow/135233297.cms",
+      "title": "Larsen & Toubro Q2 Results: Profit surges 33% YoY to Rs 5,202 crore, revenue grows 16%",
+      "published": "Tue, 27 Oct 2026 12:09:00 GMT",
+      "published_utc": "2026-10-27T12:09:00+00:00",
+      "sentence": "profit surges",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/larsen-toubro-q2-results-profit-surges-33-yoy-to-rs-5202-crore-revenue-grows-16/amp_articleshow/135233297.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8a2dce4510",
+      "symbol": "STARHEALTH",
+      "company": "Star Health and Allied Insurance Company Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit surge",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/star-health-and-allied-insurance-reports-232-profit-surge-at-rs-264-4-crore/articleshow/135249329.cms",
+      "title": "Star Health and Allied Insurance reports 232% profit surge at Rs 264.4 crore",
+      "published": "Wed, 28 Oct 2026 07:41:00 +0530",
+      "published_utc": "2026-10-28T02:11:00+00:00",
+      "sentence": "profit surge",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/star-health-and-allied-insurance-reports-232-profit-surge-at-rs-264-4-crore/articleshow/135249329.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b29f4b6b5f",
+      "symbol": "VISL",
+      "company": "Vedanta Iron and Steel Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "gst notice",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/vedanta-iron-steel-subsidiary-esl-steel-gets-11-77-crore-gst-notice/54654854",
+      "title": "Vedanta Iron & Steel subsidiary ESL Steel gets ₹11.77 crore GST notice",
+      "published": "Tue, 27 Oct 2026 13:57:25 GMT",
+      "published_utc": "2026-10-27T13:57:25+00:00",
+      "sentence": "gst notice",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/vedanta-iron-steel-subsidiary-esl-steel-gets-11-77-crore-gst-notice/54654854"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b30c2c7154",
+      "symbol": "CIPLA",
+      "company": "Cipla Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 7498.0,
+      "size_estimated": false,
+      "size_basis": "₹ 7,498 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/cipla-q2-net-profit-falls-35-yoy-8-8-billion/54633782",
+      "title": "Cipla Q2FY27 Results: Net profit falls 35% YoY to ₹878 crore",
+      "published": "Tue, 27 Oct 2026 08:31:47 GMT",
+      "published_utc": "2026-10-27T08:31:47+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/cipla-q2-net-profit-falls-35-yoy-8-8-billion/54633782"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4f670f4aa4",
+      "symbol": "JSWINFRA",
+      "company": "JSW Infrastructure Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 13.0,
+        "unit": "MTPA",
+        "text": "13 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms",
+      "title": "JSW Infrastructure Q2 Results: Net profit falls 11% to Rs 328 crore",
+      "published": "Tue, 27 Oct 2026 13:26:43 GMT",
+      "published_utc": "2026-10-27T13:26:43+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "bbc31c91d1",
+      "symbol": "MARUTI",
+      "company": "Maruti Suzuki India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 100574.6,
+      "size_estimated": false,
+      "size_basis": "Rs 1,00,574.6 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.tradingview.com/news/moneycontrol:919a6ac59094b:0-maruti-suzuki-q2-results-net-profit-falls-26-to-rs-2-466-crore-even-as-revenue-jumps-26-on-year/",
+      "title": "Maruti Suzuki Q2 results: Net profit falls 26% to Rs 2,466 crore, even as revenue jumps 26% on-year",
+      "published": "Tue, 27 Oct 2026 10:06:26 GMT",
+      "published_utc": "2026-10-27T10:06:26+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [
+        "corp_bs_capitalmarket"
+      ],
+      "urls": [
+        "https://www.tradingview.com/news/moneycontrol:919a6ac59094b:0-maruti-suzuki-q2-results-net-profit-falls-26-to-rs-2-466-crore-even-as-revenue-jumps-26-on-year/",
+        "https://www.moneycontrol.com/news/business/earnings/maruti-suzuki-q2-results-net-profit-falls-26-to-rs-2-466-crore-even-as-revenue-jumps-26-on-year-14061167.html",
+        "https://m.economictimes.com/markets/stocks/earnings/maruti-suzuki-q2-results-profit-falls-26-yoy-to-rs-2466-crore-but-revenue-rises-26/articleshow/135230515.cms",
+        "https://www.business-standard.com/companies/quarterly-results/l-t-q2-net-profit-rises-33-to-5-202-crore-on-strong-order-inflows-126102701204_1.html"
+      ],
+      "n_reports": 4
+    },
+    {
+      "id": "59e408e609",
+      "symbol": "RAYMONDREL",
+      "company": "Raymond Realty Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_raymond-realty-q2-results-profit-falls-despite-activity-7520830678167572481-KnsL",
+      "title": "Raymond Realty Q2 Results: Profit falls despite strong sales momentum; booking value jumps 98% - CNBC TV18",
+      "published": "Tue, 27 Oct 2026 12:56:03 GMT",
+      "published_utc": "2026-10-27T12:56:03+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_raymond-realty-q2-results-profit-falls-despite-activity-7520830678167572481-KnsL"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e53c0cfa03",
+      "symbol": "WAAREEENER",
+      "company": "Waaree Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "largest listed module maker",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms",
+      "title": "Waaree Energies Q2 Results: Profit falls 15% YoY to Rs 719 crore, revenue rises 24%",
+      "published": "Tue, 27 Oct 2026 15:26:33 GMT",
+      "published_utc": "2026-10-27T15:26:33+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ec531cf099",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning, the cumulative capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1200.0,
+        "unit": "MWh",
+        "text": "1200 MWh"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/acme-solar-commissions-35-77-mw-bess-component-at-rajasthan-project/",
+      "title": "ACME Solar commissions 35.77 MW BESS component at Rajasthan project",
+      "published": "Tue, 27 Oct 2026 14:12:10 GMT",
+      "published_utc": "2026-10-27T14:12:10+00:00",
+      "sentence": "commissioning, the cumulative capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://businessupturn.com/business/acme-solar-commissions-35-77-mw-bess-component-at-rajasthan-project/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1259a349f5",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "downgrades",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html",
+      "title": "Stocks to watch: Jio Platforms, HUL, Adani Enterprises, Maruti Suzuki, L&T",
+      "published": "Wed, 28 Oct 2026 02:26:44 GMT",
+      "published_utc": "2026-10-28T02:26:44+00:00",
+      "sentence": "downgrades",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "89e08e594c",
+      "symbol": "MARUTI",
+      "company": "Maruti Suzuki India Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "downgrades",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html",
+      "title": "Stocks to watch: Jio Platforms, HUL, Adani Enterprises, Maruti Suzuki, L&T",
+      "published": "Wed, 28 Oct 2026 02:26:44 GMT",
+      "published_utc": "2026-10-28T02:26:44+00:00",
+      "sentence": "downgrades",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "829b8d3f8b",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 10000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 10,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 31.0,
+        "unit": "km",
+        "text": "31 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "published_utc": "2026-10-27T11:39:07+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fa7687ac1f",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 10000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 10,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 31.0,
+        "unit": "km",
+        "text": "31 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "published_utc": "2026-10-27T11:39:07+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2d3ad8a520",
+      "symbol": "AEQUS",
+      "company": "Aequs Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "downgraded",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moneycontrol:fcfa86788094b:0-taking-stock-sensex-nifty-end-flat-amid-f-o-expiry-volatility-fed-decision-in-focus/",
+      "title": "Taking Stock: Sensex, Nifty end flat amid F&O expiry volatility; Fed decision in focus",
+      "published": "Tue, 27 Oct 2026 10:18:32 GMT",
+      "published_utc": "2026-10-27T10:18:32+00:00",
+      "sentence": "downgraded",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/moneycontrol:fcfa86788094b:0-taking-stock-sensex-nifty-end-flat-amid-f-o-expiry-volatility-fed-decision-in-focus/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3db3d54282",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 10000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 10,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 31.0,
+        "unit": "km",
+        "text": "31 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "published_utc": "2026-10-27T11:39:07+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c44d923ccf",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 10000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 10,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 31.0,
+        "unit": "km",
+        "text": "31 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "published_utc": "2026-10-27T11:39:07+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9bf06e5078",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins order",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 10000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 10,000 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 31.0,
+        "unit": "km",
+        "text": "31 km"
+      },
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "published_utc": "2026-10-27T11:39:07+00:00",
+      "sentence": "wins order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6bf6778c48",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 7518.0,
+      "size_estimated": false,
+      "size_basis": "Rs 7,518 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms",
+      "title": "Waaree Energies Q2 Results: Profit falls 15% YoY to Rs 719 crore, revenue rises 24%",
+      "published": "Tue, 27 Oct 2026 15:26:33 GMT",
+      "published_utc": "2026-10-27T15:26:33+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a21d41da75",
+      "symbol": "ADANIPORTS",
+      "company": "Adani Ports and Special Economic Zone Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "largest private port operator",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 166947.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,669,47 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 13.0,
+        "unit": "MTPA",
+        "text": "13 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms",
+      "title": "JSW Infrastructure Q2 Results: Net profit falls 11% to Rs 328 crore",
+      "published": "Tue, 27 Oct 2026 13:26:43 GMT",
+      "published_utc": "2026-10-27T13:26:43+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f2163d9255",
+      "symbol": "ANANTRAJ",
+      "company": "Anant Raj Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "data centre build-out",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 7518.0,
+      "size_estimated": false,
+      "size_basis": "Rs 7,518 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms",
+      "title": "Waaree Energies Q2 Results: Profit falls 15% YoY to Rs 719 crore, revenue rises 24%",
+      "published": "Tue, 27 Oct 2026 15:26:33 GMT",
+      "published_utc": "2026-10-27T15:26:33+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4297b3e537",
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "servers and HPC/AI systems",
+      "theme": "data_centre",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 7518.0,
+      "size_estimated": false,
+      "size_basis": "Rs 7,518 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms",
+      "title": "Waaree Energies Q2 Results: Profit falls 15% YoY to Rs 719 crore, revenue rises 24%",
+      "published": "Tue, 27 Oct 2026 15:26:33 GMT",
+      "published_utc": "2026-10-27T15:26:33+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "11db488db6",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "commercial and defence shipbuilding",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 166947.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,669,47 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 13.0,
+        "unit": "MTPA",
+        "text": "13 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms",
+      "title": "JSW Infrastructure Q2 Results: Net profit falls 11% to Rs 328 crore",
+      "published": "Tue, 27 Oct 2026 13:26:43 GMT",
+      "published_utc": "2026-10-27T13:26:43+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2269070025",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "shipbuilding capacity",
+      "theme": "shipping_ports",
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 166947.0,
+      "size_estimated": false,
+      "size_basis": "Rs 1,669,47 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 13.0,
+        "unit": "MTPA",
+        "text": "13 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms",
+      "title": "JSW Infrastructure Q2 Results: Net profit falls 11% to Rs 328 crore",
+      "published": "Tue, 27 Oct 2026 13:26:43 GMT",
+      "published_utc": "2026-10-27T13:26:43+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-jio-platforms-paras-healthcare-maruti-suzuki-gandhar-oil-home-first-capri-global-piramal-pharma-tata-capital-sail-l-t-in-focus-on-28-october-14061653.html",
+      "title": "Stocks to Watch Today: Jio Platforms, Paras Healthcare, Maruti Suzuki, Gandhar Oil, Home First, Capri...",
+      "published": "Wed, 28 Oct 2026 01:25:08 GMT",
+      "chars": 10253,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-jio-platforms-ril-hul-adani-enterprises-shares-in-focus-on-wed-28-oct-full-list-11793152271100.html",
+      "title": "Top stocks to watch today: Jio Platforms, RIL, HUL, Adani Enterprises shares in focus on Wed, 28 Oct | Full list",
+      "published": "Wed, 28 Oct 2026 02:20:47 GMT",
+      "chars": 4059,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html",
+      "title": "Stocks to watch: Jio Platforms, HUL, Adani Enterprises, Maruti Suzuki, L&T",
+      "published": "Wed, 28 Oct 2026 02:26:44 GMT",
+      "chars": 5305,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-jio-platforms-ril-infosys-lt-tata-capital-waaree-energies-and-vedanta-iron/articleshow/135245790.cms",
+      "title": "Stocks in news: Jio Platforms, RIL, Infosys, L&T, Tata Capital, Waaree Energies and Vedanta Iron",
+      "published": "Wed, 28 Oct 2026 00:30:00 GMT",
+      "chars": 10555,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-indian-founder-led-stocks-201200564.html",
+      "title": "3 Indian Founder Led Stocks To Watch With Revenue Growth Up To 22%",
+      "published": "Tue, 27 Oct 2026 20:12:00 GMT",
+      "chars": 5162,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/28/2026/Tata-Communications-Plans-Major-AI-Fibre-Investment--Indian-Overseas-Bank-Q2-FY27-Results--Top-Buzzing-Stocks-Today",
+      "title": "Tata Communications Plans Major AI Fibre Investment | Indian Overseas Bank Q2 FY27 Results | Top Buzzing Stocks Today",
+      "published": "Wed, 28 Oct 2026 00:44:34 GMT",
+      "chars": 10431,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/bajel-projects-bags-order-worth-rs-1500-crore-from-gujarat",
+      "title": "Bajel Projects bags order worth Rs 1,500 crore from Gujarat",
+      "published": "Tue, 27 Oct 2026 18:35:03 GMT",
+      "chars": 875,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://uasweekly.com/2026/10/27/somewear-labs-secures-contract-to-strengthen-communications-for-uncrewed-systems/",
+      "title": "Somewear Labs Secures Contract to Strengthen Communications for Uncrewed Systems",
+      "published": "Tue, 27 Oct 2026 11:24:59 GMT",
+      "chars": 6936,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.deccanherald.com/india/maharashtra/lt-wins-order-from-dhaka-metro-4196976",
+      "title": "L&T wins order from Dhaka Metro",
+      "published": "Tue, 27 Oct 2026 11:39:07 GMT",
+      "chars": 1833,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://defensehere.com/en/airbus-contract-two-additional-galileo-g2-satellites/",
+      "title": "Airbus secures contract for two more Galileo G2 navigation satellites",
+      "published": "Tue, 27 Oct 2026 14:29:02 GMT",
+      "chars": 4104,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://smallcapspotlight.in/news/safety-controls-devices-bags-%E2%82%B910-16-crore-upptcl-contract-for-lucknow-substation-upgrade/",
+      "title": "Safety Controls & Devices Bags ₹10.16 Crore UPPTCL Contract for Lucknow Substation Upgrade",
+      "published": "Tue, 27 Oct 2026 13:11:59 GMT",
+      "chars": 1762,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.moneycontrol.com/news/business/earnings/l-t-q2-results-net-profit-rises-33-to-rs-5-202-crore-revenue-up-16-14061421.html",
+      "title": "L&T Q2 results: Net profit rises 33% to Rs 5,202 crore, revenue up 16%",
+      "published": "Tue, 27 Oct 2026 11:49:21 GMT",
+      "chars": 7587,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moneycontrol:fcfa86788094b:0-taking-stock-sensex-nifty-end-flat-amid-f-o-expiry-volatility-fed-decision-in-focus/",
+      "title": "Taking Stock: Sensex, Nifty end flat amid F&O expiry volatility; Fed decision in focus",
+      "published": "Tue, 27 Oct 2026 10:18:32 GMT",
+      "chars": 5059,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/larsen-toubro-q2-results-profit-surges-33-yoy-to-rs-5202-crore-revenue-grows-16/amp_articleshow/135233297.cms",
+      "title": "Larsen & Toubro Q2 Results: Profit surges 33% YoY to Rs 5,202 crore, revenue grows 16%",
+      "published": "Tue, 27 Oct 2026 12:09:00 GMT",
+      "chars": 6171,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/alembic-pharmaceuticals-secures-usfda-approval-valganciclovir-oral/54641454",
+      "title": "Alembic Pharmaceuticals secures USFDA approval for Valganciclovir oral solution",
+      "published": "Tue, 27 Oct 2026 10:12:20 GMT",
+      "chars": 3155,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/alembic-pharmaceuticals-secures-usfda-final-approval-for-valganciclovir-oral-solution-22255",
+      "title": "Alembic Pharmaceuticals secures USFDA final approval for Valganciclovir oral solution",
+      "published": "Tue, 27 Oct 2026 12:39:07 GMT",
+      "chars": 3224,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/indocos-anacipher-receives-anvisa-brazil-approval-for-clinical-and-bioanalytical-facilities-22256",
+      "title": "Indoco’s AnaCipher receives ANVISA Brazil approval for clinical and bioanalytical facilities",
+      "published": "Tue, 27 Oct 2026 12:44:07 GMT",
+      "chars": 4004,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/concord-biotech-q2-net-profit-up-20-757-million/54654529",
+      "title": "Concord Biotech Q2FY27 Results: Revenue up 25% YoY, margins dip on costs",
+      "published": "Tue, 27 Oct 2026 15:22:16 GMT",
+      "chars": 4190,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.sahi.com/news/concord-biotech-reports-q2-revenue-of-312-crore-versus-247-crore-yoy",
+      "title": "Concord Biotech Reports Q2 Revenue of ₹312 Crore Versus ₹247 Crore YoY",
+      "published": "Tue, 27 Oct 2026 14:02:10 GMT",
+      "chars": 3030,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/cipla-q2-net-profit-falls-35-yoy-8-8-billion/54633782",
+      "title": "Cipla Q2FY27 Results: Net profit falls 35% YoY to ₹878 crore",
+      "published": "Tue, 27 Oct 2026 08:31:47 GMT",
+      "chars": 4854,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://lawstreet.co/judiciary/himachal-pradesh-hc-quashes-gst-notice-for-mechanical-allegation-of-fraud",
+      "title": "Himachal Pradesh HC Quashes GST Notice for Mechanical Allegation of Fraud [Read Order]",
+      "published": "Tue, 27 Oct 2026 10:37:48 GMT",
+      "chars": 5180,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.irishmirror.ie/lifestyle/furious-mum-urges-childs-school-37813931",
+      "title": "Furious mum urges child's school to mind its own business after warning letter",
+      "published": "Tue, 27 Oct 2026 10:41:41 GMT",
+      "chars": 3416,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/vedanta-iron-steel-subsidiary-esl-steel-gets-11-77-crore-gst-notice/54654854",
+      "title": "Vedanta Iron & Steel subsidiary ESL Steel gets ₹11.77 crore GST notice",
+      "published": "Tue, 27 Oct 2026 13:57:25 GMT",
+      "chars": 2690,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.liverpoolecho.co.uk/whats-on/family-kids-news/mum-red-faced-school-send-34822666",
+      "title": "Mum red-faced as school send official warning letter over what she wore at pick up",
+      "published": "Tue, 27 Oct 2026 10:28:47 GMT",
+      "chars": 3787,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.mirror.co.uk/lifestyle/family/furious-mum-sent-official-warning-37813753.amp",
+      "title": "Furious mum sent official warning letter for what she wore on school run",
+      "published": "Tue, 27 Oct 2026 09:53:00 GMT",
+      "chars": 3387,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/jsw-infrastructure-q2-results-net-profit-falls-11-to-rs-328-crore/articleshow/135236084.cms",
+      "title": "JSW Infrastructure Q2 Results: Net profit falls 11% to Rs 328 crore",
+      "published": "Tue, 27 Oct 2026 13:26:43 GMT",
+      "chars": 3941,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/indus-towers-q2-results-net-profit-slips-2-5-to-rs-1793-crore/articleshow/135240759.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Indus Towers Q2 Results: Net profit slips 2.5% to Rs 1,793 crore",
+      "published": "Tue, 27 Oct 2026 16:56:07 GMT",
+      "chars": 3912,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_raymond-realty-q2-results-profit-falls-despite-activity-7520830678167572481-KnsL",
+      "title": "Raymond Realty Q2 Results: Profit falls despite strong sales momentum; booking value jumps 98% - CNBC TV18",
+      "published": "Tue, 27 Oct 2026 12:56:03 GMT",
+      "chars": 307,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.tradingview.com/news/moneycontrol:919a6ac59094b:0-maruti-suzuki-q2-results-net-profit-falls-26-to-rs-2-466-crore-even-as-revenue-jumps-26-on-year/",
+      "title": "Maruti Suzuki Q2 results: Net profit falls 26% to Rs 2,466 crore, even as revenue jumps 26% on-year",
+      "published": "Tue, 27 Oct 2026 10:06:26 GMT",
+      "chars": 3268,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/maruti-suzuki-q2-results-net-profit-falls-26-to-rs-2-466-crore-even-as-revenue-jumps-26-on-year-14061167.html",
+      "title": "Maruti Suzuki Q2 results: Net profit falls 26% to Rs 2,466 crore as West Asia conflict hits margins,...",
+      "published": "Tue, 27 Oct 2026 10:06:26 GMT",
+      "chars": 7350,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/maruti-suzuki-q2-results-profit-falls-26-yoy-to-rs-2466-crore-but-revenue-rises-26/articleshow/135230515.cms",
+      "title": "Maruti Suzuki Q2 Results: Profit falls 26% YoY to Rs 2,466 crore, but revenue rises 26%",
+      "published": "Tue, 27 Oct 2026 10:13:00 GMT",
+      "chars": 5915,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/waaree-energies-q2-results-profit-falls-15-yoy-to-rs-719-crore-revenue-rises-24/articleshow/135239084.cms",
+      "title": "Waaree Energies Q2 Results: Profit falls 15% YoY to Rs 719 crore, revenue rises 24%",
+      "published": "Tue, 27 Oct 2026 15:26:33 GMT",
+      "chars": 5993,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/jindal-india-commissions-revamped-galvanising-line-boosts-capacity/56985120261027",
+      "title": "Jindal India Commissions Revamped Galvanising Line, Boosts Capacity",
+      "published": "Tue, 27 Oct 2026 14:27:52 GMT",
+      "chars": 2597,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.freepressjournal.in/business/acc-ltd-q2-fy27-net-profit-down-to-93-crore-commissions-34-mtpa-cement-capacity-ambuja-merger-proceeds-to-nclt",
+      "title": "ACC Ltd Q2 FY27 Net Profit Down To ₹93 Crore, Commissions 3.4 MTPA Cement Capacity; Ambuja Merger Proceeds",
+      "published": "Tue, 27 Oct 2026 10:36:55 GMT",
+      "chars": 1742,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://businessupturn.com/business/acme-solar-commissions-35-77-mw-bess-component-at-rajasthan-project/",
+      "title": "ACME Solar commissions 35.77 MW BESS component at Rajasthan project",
+      "published": "Tue, 27 Oct 2026 14:12:10 GMT",
+      "chars": 2196,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/robnu-launches-the-world-s-first-whatsapp-ecommerce-oms-bringing-full-order-management-to-online-sellers-126102800010_1.html",
+      "title": "Robnu Launches the World's First WhatsApp ecommerce OMS, Bringing Full Order Management to Online Sellers",
+      "published": "Tue, 27 Oct 2026 18:45:02 GMT",
+      "chars": 4053,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/diebold-nixdorf-india-secures-great-place-to-work-certification-for-third-consecutive-year-126102800043_1.html",
+      "title": "Diebold Nixdorf India Secures Great Place To Work® Certification for Third Consecutive Year",
+      "published": "Tue, 27 Oct 2026 19:20:10 GMT",
+      "chars": 2450,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/lt-dhaka-metro-line-1-bangladesh-major-orders-transportation-126102700703_1.html",
+      "title": "L&T secures ₹5,000 crore-plus orders for Dhaka Metro Line 1 systems",
+      "published": "Tue, 27 Oct 2026 08:16:40 GMT",
+      "chars": 3575,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/quarterly-results/l-t-q2-net-profit-rises-33-to-5-202-crore-on-strong-order-inflows-126102701204_1.html",
+      "title": "L&T Q2 profit jumps 33% to ₹5,202 cr, order inflow at ₹1.47 trillion",
+      "published": "Tue, 27 Oct 2026 12:07:12 GMT",
+      "chars": 5992,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/wabtec-bags-94-mn-vande-bharat-sleeper-deal-eyes-india-as-export-hub-126102701409_1.html",
+      "title": "Wabtec developing India as a global centre of excellence for export",
+      "published": "Tue, 27 Oct 2026 13:30:38 GMT",
+      "chars": 4954,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-hc-refuses-to-stay-probe-against-woman-scribe-in-sc-st-act-case-126102700681_1.html",
+      "title": "Delhi HC refuses to stay probe against woman scribe in SC/ST Act case",
+      "published": "Tue, 27 Oct 2026 08:58:00 GMT",
+      "chars": 3477,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/economy/news/govt-may-ease-fdi-paperwork-for-entities-with-up-to-10-lbc-ownership-126102701570_1.html",
+      "title": "Govt may ease FDI paperwork for entities with up to 10% LBC ownership",
+      "published": "Tue, 27 Oct 2026 19:44:21 GMT",
+      "chars": 3794,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/amp/content/press-releases-ani/avp-infracon-reports-25-h1-fy27-revenue-growth-recovers-80-of-fy26-receivables-targets-rs-600-crore-fy27-revenue-126102800004_1.html",
+      "title": "AVP Infracon reports ~25% H1 FY27 revenue growth, recovers ~80% of FY26 receivables; targets Rs 600 crore FY27 revenue",
+      "published": "Tue, 27 Oct 2026 18:40:09 GMT",
+      "chars": 5084,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-oct-28-nse-bse-sensex-today-nifty-gift-nifty-us-iran-tension-iran-strikes-brent-crude-ipos-jio-listing-jio-share-price-it-stocks-maruti-share-price-q1-result-today-share-market-today-126102800114_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty tanks 150 points as oil tops $115; Jio Platforms listing in focus",
+      "published": "Wed, 28 Oct 2026 07:56:49 +0530",
+      "chars": 165,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-28-jio-platforms-hul-adani-enterprises-maruti-suzuki-l-t-126102800115_1.html",
+      "title": "Stocks to watch: Jio Platforms, HUL, Adani Enterprises, Maruti Suzuki, L&T",
+      "published": "Wed, 28 Oct 2026 07:56:44 +0530",
+      "chars": 126,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-bharti-airtel-mcx-laurus-labs-look-bullish-on-charts-chandan-taparia-126102800106_1.html",
+      "title": "Bharti Airtel, MCX, Laurus Labs look bullish on charts: Chandan Taparia",
+      "published": "Wed, 28 Oct 2026 07:55:53 +0530",
+      "chars": 181,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/vinay-rajani-expects-nifty-to-rally-above-22-800-shares-2-stock-ideas-126102800112_1.html",
+      "title": "Vinay Rajani expects Nifty to rally above 22,800; shares 2 stock ideas",
+      "published": "Wed, 28 Oct 2026 07:53:11 +0530",
+      "chars": 175,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-rises-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns-126102800104_1.html",
+      "title": "Oil rises after attack on Saudi Arabian refinery reignites supply concerns",
+      "published": "Wed, 28 Oct 2026 07:43:45 +0530",
+      "chars": 145,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/crypto-investors-must-research-invest-only-what-they-can-lose-experts-126102701726_1.html",
+      "title": "Crypto investors must research; invest only what they can lose: Experts",
+      "published": "Wed, 28 Oct 2026 01:00:06 +0530",
+      "chars": 190,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/crypto-boom-or-risk-trap-experts-explain-what-young-investors-need-to-know-126102700935_1.html",
+      "title": "Crypto boom or risk trap? Experts explain what young investors need to know",
+      "published": "Tue, 27 Oct 2026 16:01:46 +0530",
+      "chars": 158,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/know-your-risks-diversify-skip-tips-lessons-from-smart-investor-arena-126102701502_1.html",
+      "title": "Know your risks, diversify, & skip tips: Lessons from Smart Investor Arena",
+      "published": "Wed, 28 Oct 2026 01:14:43 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-auto-q2-net-profit-up-35-on-strong-exports-product-mix/articleshow/135249431.cms",
+      "title": "Bajaj Auto Q2 net profit up 35% on strong exports, product mix",
+      "published": "Wed, 28 Oct 2026 07:48:25 +0530",
+      "chars": 429,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/star-health-and-allied-insurance-reports-232-profit-surge-at-rs-264-4-crore/articleshow/135249329.cms",
+      "title": "Star Health and Allied Insurance reports 232% profit surge at Rs 264.4 crore",
+      "published": "Wed, 28 Oct 2026 07:41:00 +0530",
+      "chars": 414,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/135249422.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Wed, 28 Oct 2026 07:39:07 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-28-crude-oil-at-116-as-saudi-arabian-refinery-comes-under-attack-120-in-sight/articleshow/135249336.cms",
+      "title": "Oil Price Today (October 28): Crude oil at $116 as Saudi Arabian refinery comes under attack $120 in sight?",
+      "published": "Wed, 28 Oct 2026 07:37:43 +0530",
+      "chars": 517,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 114.7
+}
