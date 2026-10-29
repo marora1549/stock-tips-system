@@ -1,0 +1,1188 @@
+{
+  "date": "2026-10-29",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 2,
+      "events": 2
+    },
+    "corp_orders_bse": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 3
+    },
+    "corp_regulatory_action": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_results": {
+      "docs": 7,
+      "events": 10
+    },
+    "corp_expansion": {
+      "docs": 2,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 3
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_sahi": {
+      "docs": 3,
+      "events": 0
+    }
+  },
+  "events": [
+    {
+      "id": "a79546e9f4",
+      "symbol": "GSFC",
+      "company": "Gujarat State Fertilizers & Chemicals Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures order from gsfc for acid complex in gujarat tata projects secures order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-projects-secures-order-from-gsfc-for-acid-complex-in-gujarat-126102801007_1.html",
+      "title": "Tata Projects secures order from GSFC for acid complex in Gujarat",
+      "published": "Wed, 28 Oct 2026 09:51:47 GMT",
+      "published_utc": "2026-10-28T09:51:47+00:00",
+      "sentence": "secures order from gsfc for acid complex in gujarat tata projects secures order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/tata-projects-secures-order-from-gsfc-for-acid-complex-in-gujarat-126102801007_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "38e503ead3",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received an additional order",
+      "also_matched": [
+        "earnings_beat",
+        "earnings_miss",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 1716.9,
+      "size_estimated": false,
+      "size_basis": "Rs 1,716.90 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dr-reddys-labs-fortis-healthcare-titagarh-rail-hero-motocorp-rr-kabel-meesho-pnb-housing-aeroflex-industries-in-focus-on-29-october-14062861.html",
+      "title": "Stocks to Watch Today: Dr Reddys Labs, Fortis Healthcare, Titagarh Rail, Hero MotoCorp, RR Kabel, Meesho,...",
+      "published": "Thu, 29 Oct 2026 01:01:00 GMT",
+      "published_utc": "2026-10-29T01:01:00+00:00",
+      "sentence": "received an additional order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dr-reddys-labs-fortis-healthcare-titagarh-rail-hero-motocorp-rr-kabel-meesho-pnb-housing-aeroflex-industries-in-focus-on-29-october-14062861.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "23149381f6",
+      "symbol": "WAAREERTL",
+      "company": "Waaree Renewable Technologies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order for solar project",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/waaree-renewable-bags-order-for-solar-project-from-rajasthan",
+      "title": "Waaree Renewable bags order for solar project from Rajasthan",
+      "published": "Wed, 28 Oct 2026 19:25:44 GMT",
+      "published_utc": "2026-10-28T19:25:44+00:00",
+      "sentence": "bags order for solar project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/waaree-renewable-bags-order-for-solar-project-from-rajasthan"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d6da49a6e0",
+      "symbol": "NECCLTD",
+      "company": "North Eastern Carrying Corporation Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/modular_finance:c936901175db9:0-c-rad-receives-order-worth-approximately-8-msek-strengthening-presence-in-the-northeast-u-s/",
+      "title": "C-RAD receives order worth approximately 8 MSEK, strengthening presence in the Northeast U.S.",
+      "published": "Wed, 28 Oct 2026 07:00:00 GMT",
+      "published_utc": "2026-10-28T07:00:00+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/modular_finance:c936901175db9:0-c-rad-receives-order-worth-approximately-8-msek-strengthening-presence-in-the-northeast-u-s/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "82c021504c",
+      "symbol": "ALEMBICLTD",
+      "company": "Alembic Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda final approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/alembic-pharma-gets-usfda-final-approval-for-generic-valganciclovir-oral-solution-182169",
+      "title": "Alembic Pharma Gets USFDA Final Approval for Generic Valganciclovir Oral Solution",
+      "published": "Wed, 28 Oct 2026 15:00:58 GMT",
+      "published_utc": "2026-10-28T15:00:58+00:00",
+      "sentence": "usfda final approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://medicaldialogues.in/news/industry/pharma/alembic-pharma-gets-usfda-final-approval-for-generic-valganciclovir-oral-solution-182169"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ca046a0c8b",
+      "symbol": "ADANIENT",
+      "company": "Adani Enterprises Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "order_win",
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 40000.0,
+      "size_estimated": false,
+      "size_basis": "₹40,000 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+      "title": "Adani Enterprises Q2 net profit falls 55% despite 75% increase in revenue",
+      "published": "Thu, 29 Oct 2026 02:04:58 GMT",
+      "published_utc": "2026-10-29T02:04:58+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [
+        "corp_et_markets_rss"
+      ],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "68418b498a",
+      "symbol": "FORCEMOT",
+      "company": "FORCE MOTORS LTD",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/force-motors-q2-results-profit-falls-16-to-rs294-crore-despite-41-revenue-growth-20021587.htm",
+      "title": "Force Motors Q2 results: Profit falls 16% to ₹294 crore despite 41% revenue growth",
+      "published": "Wed, 28 Oct 2026 11:49:25 GMT",
+      "published_utc": "2026-10-28T11:49:25+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/force-motors-q2-results-profit-falls-16-to-rs294-crore-despite-41-revenue-growth-20021587.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "045f71b925",
+      "symbol": "HYUNDAI",
+      "company": "Hyundai Motor India Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/10/hyundai-motor-india-q2-results-profit-falls-24-revenue-rises-19/",
+      "title": "Hyundai Motor India Q2 Results: Stan Net Profit Falls 24% to Rs 11,962 Crore, Revenue Rises 19%",
+      "published": "Wed, 28 Oct 2026 12:43:50 GMT",
+      "published_utc": "2026-10-28T12:43:50+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://apacnewsnetwork.com/2026/10/hyundai-motor-india-q2-results-profit-falls-24-revenue-rises-19/",
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/hyundai-motor-india-q2-results-standalone-profit-falls-24-to-rs-1189-crore-but-revenue-gains-18-yoy/articleshow/135259321.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+        "https://www.moneycontrol.com/news/business/earnings/hyundai-motor-q2-results-net-profit-falls-24-on-year-to-rs-1-196-crore-while-revenue-grows-18-5-14062490.html"
+      ],
+      "n_reports": 3
+    },
+    {
+      "id": "1bd0b6f403",
+      "symbol": "RAYMONDLSL",
+      "company": "Raymond Lifestyle Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/raymond-lifestyle-q2-results-profit-falls-10-as-higher-raw-material-freight-costs-squeeze-margins",
+      "title": "Raymond Lifestyle Q2 Results: Profit falls 10% as higher raw material, freight costs squeeze margins",
+      "published": "Wed, 28 Oct 2026 14:34:59 GMT",
+      "published_utc": "2026-10-28T14:34:59+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/raymond-lifestyle-q2-results-profit-falls-10-as-higher-raw-material-freight-costs-squeeze-margins"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f7b45bbdfa",
+      "symbol": "UNITDSPR",
+      "company": "United Spirits Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls 2%, misses",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_united-spirits-q2-results-net-profit-falls-activity-7521194181319610368-mjyj",
+      "title": "United Spirits Q2 Results: Net profit falls 2%, misses estimates as Popular segment slumps - CNBC TV18",
+      "published": "Wed, 28 Oct 2026 13:00:29 GMT",
+      "published_utc": "2026-10-28T13:00:29+00:00",
+      "sentence": "net profit falls 2%, misses",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_united-spirits-q2-results-net-profit-falls-activity-7521194181319610368-mjyj"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ec988a6dde",
+      "symbol": "BANDHANBNK",
+      "company": "Bandhan Bank Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jumps",
+      "also_matched": [
+        "order_win",
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+      "title": "Adani Enterprises Q2 net profit falls 55% despite 75% increase in revenue",
+      "published": "Thu, 29 Oct 2026 02:04:58 GMT",
+      "published_utc": "2026-10-29T02:04:58+00:00",
+      "sentence": "profit jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4edb5cdc45",
+      "symbol": "CGPOWER",
+      "company": "CG Power and Industrial Solutions Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jumps",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre",
+        "pharma_approval",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/haryana-electricity-regulator-stays-parallel-distribution-licence-order-126102801846_1.html",
+      "title": "HERC halts Eleven Power's parallel distribution licence for Gurugram, Nuh",
+      "published": "Wed, 28 Oct 2026 15:24:38 GMT",
+      "published_utc": "2026-10-28T15:24:38+00:00",
+      "sentence": "profit jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/haryana-electricity-regulator-stays-parallel-distribution-licence-order-126102801846_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b848b76529",
+      "symbol": "RAYMOND",
+      "company": "Raymond Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/raymond-lifestyle-q2-results-profit-falls-10-as-higher-raw-material-freight-costs-squeeze-margins",
+      "title": "Raymond Lifestyle Q2 Results: Profit falls 10% as higher raw material, freight costs squeeze margins",
+      "published": "Wed, 28 Oct 2026 14:34:59 GMT",
+      "published_utc": "2026-10-28T14:34:59+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indiaipo.in/news/detail/raymond-lifestyle-q2-results-profit-falls-10-as-higher-raw-material-freight-costs-squeeze-margins"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "70574ba7e0",
+      "symbol": "JPL",
+      "company": "Jio Platforms Limited",
+      "event": "dilution",
+      "event_label": "Equity dilution",
+      "sign": -1,
+      "certainty": 0.9,
+      "event_prior": -16,
+      "phrase": "ofs",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/jio-platforms-l-and-t-among-buzzing-stocks-sensex-recovers-over-700-pts-from-day-s-low-nifty-below-22-750/article-202543/",
+      "title": "Jio Platforms, L&T among buzzing stocks: SENSEX recovers over 700 pts from day’s low, NIFTY below 22,750",
+      "published": "Wed, 28 Oct 2026 08:11:23 GMT",
+      "published_utc": "2026-10-28T08:11:23+00:00",
+      "sentence": "ofs",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/stocks/jio-platforms-l-and-t-among-buzzing-stocks-sensex-recovers-over-700-pts-from-day-s-low-nifty-below-22-750/article-202543/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "181b99370b",
+      "symbol": "HDFIRE",
+      "company": "HD Fire Protect Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of its existing facility",
+      "also_matched": [
+        "order_win",
+        "regulatory_clearance"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-tvs-motor-fortis-healthcare-dr-reddys-bajaj-electricals-titagarh-zaggle-awfis-hd-fire-kims-shalby/article71638820.ece",
+      "title": "Stocks to watch, October 29: TVS Motor, Fortis Healthcare, Dr Reddy’s, Bajaj Electricals, Titagarh, Zaggle, Awfis, HD Fire, KIMS, Shalby",
+      "published": "Thu, 29 Oct 2026 02:27:30 GMT",
+      "published_utc": "2026-10-29T02:27:30+00:00",
+      "sentence": "expansion of its existing facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-tvs-motor-fortis-healthcare-dr-reddys-bajaj-electricals-titagarh-zaggle-awfis-hd-fire-kims-shalby/article71638820.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "68a3aba6e8",
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange of India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion, sourcing gains ahead for jsw steel as capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 1.76,
+      "size_estimated": false,
+      "size_basis": "Rs 1.76 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/sat-sets-aside-1-49-crore-mcx-penalty-on-ventura-over-invalid-order-126102801676_1.html",
+      "title": "SAT sets aside ₹1.49 crore MCX penalty on Ventura over invalid order",
+      "published": "Wed, 28 Oct 2026 13:57:16 GMT",
+      "published_utc": "2026-10-28T13:57:16+00:00",
+      "sentence": "expansion, sourcing gains ahead for jsw steel as capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/sat-sets-aside-1-49-crore-mcx-penalty-on-ventura-over-invalid-order-126102801676_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "55ef436a98",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "order_win",
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "solar_manufacturing",
+        "data_centre"
+      ],
+      "size_inr_cr": 36021.0,
+      "size_estimated": false,
+      "size_basis": "₹36,021 crore (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 10000.0,
+        "unit": "MW",
+        "text": "10 GW"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+      "title": "Adani Enterprises Q2 net profit falls 55% despite 75% increase in revenue",
+      "published": "Thu, 29 Oct 2026 02:04:58 GMT",
+      "published_utc": "2026-10-29T02:04:58+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2c100f0ca6",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "voluntary action indicated",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/amp/news/market/dr-reddy-s-srikakulam-plant-gets-usfda-vai-classification/57076520261028",
+      "title": "Dr Reddy's Srikakulam Plant Gets USFDA VAI Classification",
+      "published": "Wed, 28 Oct 2026 16:58:33 GMT",
+      "published_utc": "2026-10-28T16:58:33+00:00",
+      "sentence": "voluntary action indicated",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/dr-reddy-s-srikakulam-plant-gets-usfda-vai-classification/57076520261028"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c19ad0573e",
+      "symbol": "NDTV",
+      "company": "New Delhi Television Limited",
+      "event": "regulatory_clearance",
+      "event_label": "Inspection cleared",
+      "sign": 1,
+      "certainty": 0.9,
+      "event_prior": 8,
+      "phrase": "voluntary action indicated",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/amp/news/market/dr-reddy-s-srikakulam-plant-gets-usfda-vai-classification/57076520261028",
+      "title": "Dr Reddy's Srikakulam Plant Gets USFDA VAI Classification",
+      "published": "Wed, 28 Oct 2026 16:58:33 GMT",
+      "published_utc": "2026-10-28T16:58:33+00:00",
+      "sentence": "voluntary action indicated",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/amp/news/market/dr-reddy-s-srikakulam-plant-gets-usfda-vai-classification/57076520261028"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-tvs-motor-fortis-healthcare-dr-reddys-bajaj-electricals-titagarh-zaggle-awfis-hd-fire-kims-shalby/article71638820.ece",
+      "title": "Stocks to watch, October 29: TVS Motor, Fortis Healthcare, Dr Reddy’s, Bajaj Electricals, Titagarh, Zaggle, Awfis, HD Fire, KIMS, Shalby",
+      "published": "Thu, 29 Oct 2026 02:27:30 GMT",
+      "chars": 12191,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-dr-reddys-labs-fortis-healthcare-titagarh-rail-hero-motocorp-rr-kabel-meesho-pnb-housing-aeroflex-industries-in-focus-on-29-october-14062861.html",
+      "title": "Stocks to Watch Today: Dr Reddys Labs, Fortis Healthcare, Titagarh Rail, Hero MotoCorp, RR Kabel, Meesho,...",
+      "published": "Thu, 29 Oct 2026 01:01:00 GMT",
+      "chars": 8759,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-29-jio-platforms-meesho-hero-motocorp-pnb-housing-ola-126102900092_1.html",
+      "title": "Stocks to watch: Jio Platforms, Meesho, Hero MotoCorp, PNB Housing & Ola",
+      "published": "Thu, 29 Oct 2026 02:22:29 GMT",
+      "chars": 5095,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-defense-stocks-watch-india-010918691.html",
+      "title": "3 Defense Stocks to Watch After India’s 2.12 Trillion Rupee Military Upgrade",
+      "published": "Thu, 29 Oct 2026 01:09:00 GMT",
+      "chars": 3762,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-jio-platforms-indigo-coal-india-meesho-shares-in-focus-on-thursday-29-oct-full-list-11793236670600.html",
+      "title": "Top stocks to watch today: Jio Platforms, IndiGo, Coal India, Meesho shares in focus on Thursday, 29 Oct | Full list",
+      "published": "Thu, 29 Oct 2026 01:49:12 GMT",
+      "chars": 3171,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-jio-platforms-ril-hero-motocorp-meesho-tvs-motor-vedanta-aluminium-and-suzlon-energy/articleshow/135273790.cms",
+      "title": "Stocks in news: Jio Platforms, RIL, Hero MotoCorp, Meesho, TVS Motor, Vedanta Aluminium and Suzlon Energy",
+      "published": "Thu, 29 Oct 2026 00:30:00 GMT",
+      "chars": 9478,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.equitymaster.com/indian-share-markets/10/29/2026/Baja-Auto-Q2-FY27-Results--Cipla-Q2-FY27-Results--Top-Buzzing-Stocks-Today",
+      "title": "Baja Auto Q2 FY27 Results | Cipla Q2 FY27 Results | Top Buzzing Stocks Today",
+      "published": "Thu, 29 Oct 2026 00:30:00 GMT",
+      "chars": 8992,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/jio-platforms-l-and-t-among-buzzing-stocks-sensex-recovers-over-700-pts-from-day-s-low-nifty-below-22-750/article-202543/",
+      "title": "Jio Platforms, L&T among buzzing stocks: SENSEX recovers over 700 pts from day’s low, NIFTY below 22,750",
+      "published": "Wed, 28 Oct 2026 08:11:23 GMT",
+      "chars": 6820,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/waaree-renewable-bags-order-for-solar-project-from-rajasthan",
+      "title": "Waaree Renewable bags order for solar project from Rajasthan",
+      "published": "Wed, 28 Oct 2026 19:25:44 GMT",
+      "chars": 853,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/modular_finance:c936901175db9:0-c-rad-receives-order-worth-approximately-8-msek-strengthening-presence-in-the-northeast-u-s/",
+      "title": "C-RAD receives order worth approximately 8 MSEK, strengthening presence in the Northeast U.S.",
+      "published": "Wed, 28 Oct 2026 07:00:00 GMT",
+      "chars": 2788,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/tradingview:3f5ff4b4aa9f2:0-key-facts-nse-lt-q2-profit-33-margins-narrowed-to-7-8/",
+      "title": "Key facts: NSE:LT Q2 profit +33%; margins narrowed to 7–8%",
+      "published": "Thu, 29 Oct 2026 02:00:00 GMT",
+      "chars": 1211,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://money.rediff.com/news/market/l-t-shares-climb-4-on-strong-q2-profit-revenue-growth/57042820261028",
+      "title": "L&T Shares Climb 4% on Strong Q2 Profit & Revenue Growth",
+      "published": "Wed, 28 Oct 2026 12:55:31 GMT",
+      "chars": 2321,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://univest.in/blogs/l-and-t-share-price-jumps-6-percent-after-q2-fy27-results-buy-sell-or-hold-target-upside-order-book-margins-and-risks",
+      "title": "L&T Share Price Jumps 6% on Q2 Results: Target, Upside",
+      "published": "Wed, 28 Oct 2026 06:43:00 GMT",
+      "chars": 8730,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/moodys:9044233a27acd:0-l-t-share-price-jumps-6-after-strong-q2-results-2026-should-you-buy-sell-or-hold-check-target-upside/",
+      "title": "L&T share price jumps 6% after strong Q2 results 2026 | Should you buy, sell or hold? Check target, upside",
+      "published": "Wed, 28 Oct 2026 10:23:28 GMT",
+      "chars": 3352,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/news/industry/pharma/alembic-pharma-gets-usfda-final-approval-for-generic-valganciclovir-oral-solution-182169",
+      "title": "Alembic Pharma Gets USFDA Final Approval for Generic Valganciclovir Oral Solution",
+      "published": "Wed, 28 Oct 2026 15:00:58 GMT",
+      "chars": 1571,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://money.rediff.com/amp/news/market/dr-reddy-s-srikakulam-plant-gets-usfda-vai-classification/57076520261028",
+      "title": "Dr Reddy's Srikakulam Plant Gets USFDA VAI Classification",
+      "published": "Wed, 28 Oct 2026 16:58:33 GMT",
+      "chars": 1380,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.manilatimes.net/2026/10/29/tmt-newswire/globenewswire/hutchmed-announces-sovleplenib-granted-us-fda-orphan-drug-designation-for-primary-immune-thrombocytopenia/2456771",
+      "title": "HUTCHMED Announces Sovleplenib Granted US FDA Orphan Drug Designation for Primary Immune Thrombocytopenia",
+      "published": "Thu, 29 Oct 2026 00:10:14 GMT",
+      "chars": 8505,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.prnewswire.com/news-releases/bbnx-shareholder-alert-november-3-2026-lead-plaintiff-deadline-in-beta-bionics-inc-securities-class-action---contact-levi--korsinsky-302922577.html",
+      "title": "BBNX Shareholder Alert: November 3, 2026 Lead Plaintiff Deadline in Beta Bionics, Inc. Securities Class Action - Contact Levi & Korsinsky",
+      "published": "Wed, 28 Oct 2026 20:02:00 GMT",
+      "chars": 6558,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.manchestereveningnews.co.uk/news/uk-news/mum-fuming-school-sends-warning-34827024.amp",
+      "title": "Mum fuming as school sends her warning letter over her clothing choices at pick up time",
+      "published": "Wed, 28 Oct 2026 08:31:00 GMT",
+      "chars": 3233,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+      "title": "Adani Enterprises Q2 net profit falls 55% despite 75% increase in revenue",
+      "published": "Thu, 29 Oct 2026 02:04:58 GMT",
+      "chars": 4547,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_united-spirits-q2-results-net-profit-falls-activity-7521194181319610368-mjyj",
+      "title": "United Spirits Q2 Results: Net profit falls 2%, misses estimates as Popular segment slumps - CNBC TV18",
+      "published": "Wed, 28 Oct 2026 13:00:29 GMT",
+      "chars": 303,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/10/hyundai-motor-india-q2-results-profit-falls-24-revenue-rises-19/",
+      "title": "Hyundai Motor India Q2 Results: Stan Net Profit Falls 24% to Rs 11,962 Crore, Revenue Rises 19%",
+      "published": "Wed, 28 Oct 2026 12:43:50 GMT",
+      "chars": 2933,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.indiaipo.in/news/detail/raymond-lifestyle-q2-results-profit-falls-10-as-higher-raw-material-freight-costs-squeeze-margins",
+      "title": "Raymond Lifestyle Q2 Results: Profit falls 10% as higher raw material, freight costs squeeze margins",
+      "published": "Wed, 28 Oct 2026 14:34:59 GMT",
+      "chars": 3817,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hyundai-motor-india-q2-results-standalone-profit-falls-24-to-rs-1189-crore-but-revenue-gains-18-yoy/articleshow/135259321.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+      "title": "Hyundai Motor India Q2 Results: Standalone profit falls 24% to Rs 1,189 crore, but revenue rises 18% YoY",
+      "published": "Wed, 28 Oct 2026 09:19:48 GMT",
+      "chars": 4650,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/force-motors-q2-results-profit-falls-16-to-rs294-crore-despite-41-revenue-growth-20021587.htm",
+      "title": "Force Motors Q2 results: Profit falls 16% to ₹294 crore despite 41% revenue growth",
+      "published": "Wed, 28 Oct 2026 11:49:25 GMT",
+      "chars": 2384,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/hyundai-motor-q2-results-net-profit-falls-24-on-year-to-rs-1-196-crore-while-revenue-grows-18-5-14062490.html",
+      "title": "Hyundai Motor Q2 results: Profit falls 24% as expenses outpace revenue growth; shares gain 1%",
+      "published": "Wed, 28 Oct 2026 09:12:49 GMT",
+      "chars": 7431,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/infrastructure/indigrid-trust-commissions-250-mw-500-mwh-bess-project-rajasthan/54719603",
+      "title": "IndiGrid Trust commissions 250 MW/500 MWh BESS project in Rajasthan",
+      "published": "Wed, 28 Oct 2026 08:01:59 GMT",
+      "chars": 3847,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.equitybulls.com/news/377919/rs-software-india-limited-reports-audited-standalone-and-consolidated-results-fo",
+      "title": "RS Software (India) Limited Reports Audited Standalone and Consolidated Results for Q2 and H1 FY 2026-27",
+      "published": "Wed, 28 Oct 2026 09:23:35 GMT",
+      "chars": 4535,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-projects-secures-order-from-gsfc-for-acid-complex-in-gujarat-126102801007_1.html",
+      "title": "Tata Projects secures order from GSFC for acid complex in Gujarat",
+      "published": "Wed, 28 Oct 2026 09:51:47 GMT",
+      "chars": 3938,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/power-creator-awards-2026-sagar-kumar-mishra-of-ev-ki-report-wins-best-auto-content-creator-popular-choice-126102900015_1.html",
+      "title": "Power Creator Awards 2026: Sagar Kumar Mishra of EV Ki Report Wins Best Auto Content Creator (Popular Choice)",
+      "published": "Wed, 28 Oct 2026 18:55:06 GMT",
+      "chars": 5872,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/markets/news/sat-sets-aside-1-49-crore-mcx-penalty-on-ventura-over-invalid-order-126102801676_1.html",
+      "title": "SAT sets aside ₹1.49 crore MCX penalty on Ventura over invalid order",
+      "published": "Wed, 28 Oct 2026 13:57:16 GMT",
+      "chars": 3410,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/in-setback-to-bjp-congress-retains-nagpur-mlc-seat-wanjari-wins-126102900065_1.html",
+      "title": "In setback to BJP, Congress retains Nagpur MLC seat; Wanjari wins",
+      "published": "Thu, 29 Oct 2026 02:32:17 GMT",
+      "chars": 3035,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/haryana-electricity-regulator-stays-parallel-distribution-licence-order-126102801846_1.html",
+      "title": "HERC halts Eleven Power's parallel distribution licence for Gurugram, Nuh",
+      "published": "Wed, 28 Oct 2026 15:24:38 GMT",
+      "chars": 4919,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-hc-flags-prosecutor-shortage-says-criminal-trials-affected-126102800780_1.html",
+      "title": "Delhi HC flags prosecutor shortage, says criminal trials affected",
+      "published": "Wed, 28 Oct 2026 08:27:47 GMT",
+      "chars": 4787,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/delhi-liquor-booking-app-online-ordering-no-home-delivery-126102800973_1.html",
+      "title": "Delhi's liquor booking app goes live, but doorstep delivery stays absent",
+      "published": "Wed, 28 Oct 2026 09:28:08 GMT",
+      "chars": 3596,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-pulls-up-nclat-for-not-hearing-appeal-despite-earlier-request-126102801862_1.html",
+      "title": "SC pulls up NCLAT for not hearing appeal despite earlier request",
+      "published": "Wed, 28 Oct 2026 15:32:22 GMT",
+      "chars": 3974,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/ajit-mishra-bullish-on-airtel-bse-tvs-motor-wary-on-nifty-below-22-825-126102900093_1.html",
+      "title": "Ajit Mishra bullish on Airtel, BSE, TVS Motor; wary on Nifty below 22,825",
+      "published": "Thu, 29 Oct 2026 07:58:26 +0530",
+      "chars": 187,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-oct-29-nse-bse-sensex-today-nifty-gift-nifty-jpl-share-price-ipo-today-126102900090_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty down 56 points; Asia markets turn mixed; Brent crude trades at $114",
+      "published": "Thu, 29 Oct 2026 07:57:49 +0530",
+      "chars": 161,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-29-jio-platforms-meesho-hero-motocorp-pnb-housing-ola-126102900092_1.html",
+      "title": "Stocks to watch: Jio Platforms, Meesho, Hero MotoCorp, PNB Housing & Ola",
+      "published": "Thu, 29 Oct 2026 07:52:40 +0530",
+      "chars": 187,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/tanla-platforms-hbl-engineering-bharti-hexacom-stock-ideas-by-jatin-gedia-on-thursday-126102900088_1.html",
+      "title": "Tanla Platforms, HBL Engineering, Bharti Hexacom stock ideas by Jatin Gedia",
+      "published": "Thu, 29 Oct 2026 07:50:56 +0530",
+      "chars": 157,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/google-revenue-misses-estimates-despite-25-growth-alphabet-shares-fall-126102900051_1.html",
+      "title": "Google revenue misses estimates despite 25% growth; Alphabet shares fall",
+      "published": "Thu, 29 Oct 2026 07:28:13 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/ipo/jio-platforms-soars-on-debut-recasting-market-capitalisation-leaderboard-126102801887_1.html",
+      "title": "Jio Platforms soars on debut, recasting market capitalisation leaderboard",
+      "published": "Thu, 29 Oct 2026 00:26:14 +0530",
+      "chars": 58,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/bfsi-insight-summit-sebi-explores-domestic-ai-model-for-securities-market-126102801985_1.html",
+      "title": "BFSI Insight Summit: Sebi explores domestic AI model for securities market",
+      "published": "Thu, 29 Oct 2026 00:13:19 +0530",
+      "chars": 104,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/specials/bs-events/bfsi-insight-summit-sifs-new-pms-rules-to-democratise-wealth-management-126102801336_1.html",
+      "title": "BFSI Summit: 'Potential for Indian asset managers to be global players'",
+      "published": "Wed, 28 Oct 2026 23:23:07 +0530",
+      "chars": 177,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-29-crude-oil-dips-to-113-as-diplomatic-talks-outweigh-infra-attacks-can-oil-fall-further/articleshow/135286659.cms",
+      "title": "Oil Price Today (October 29): Crude oil dips to $113 as diplomatic talks outweigh infra attacks. Can oil fall further?",
+      "published": "Thu, 29 Oct 2026 07:54:49 +0530",
+      "chars": 428,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/ub-expects-q3-profit-growth-to-moderate-on-rising-costs/articleshow/135286589.cms",
+      "title": "UB expects Q3 profit growth to moderate on rising costs",
+      "published": "Thu, 29 Oct 2026 07:49:44 +0530",
+      "chars": 439,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-plans-for-indian-bottling-arms-on-track-coca-cola/articleshow/135286438.cms",
+      "title": "IPO plans for Indian bottling arm’s on track: Coca-Cola",
+      "published": "Thu, 29 Oct 2026 07:43:39 +0530",
+      "chars": 429,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/135286614.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Thu, 29 Oct 2026 07:41:50 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-steady-after-fed-hold-leaves-rate-path-murky/articleshow/135286431.cms",
+      "title": "Dollar steady after Fed hold leaves rate path murky",
+      "published": "Thu, 29 Oct 2026 07:39:27 +0530",
+      "chars": 453,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/the-bond-market-swings-but-us-stocks-remain-steady-after-the-fed-says-it-wont-raise-interest-rates/articleshow/135286393.cms",
+      "title": "The bond market swings, but US stocks remain steady after the Fed says it won't raise interest rates",
+      "published": "Thu, 29 Oct 2026 07:37:42 +0530",
+      "chars": 467,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-dips-on-firmer-dollar-us-inflation-data-in-focus/articleshow/135286296.cms",
+      "title": "Gold dips on firmer dollar; US inflation data in focus",
+      "published": "Thu, 29 Oct 2026 07:35:05 +0530",
+      "chars": 423,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-enterprises-q2-net-profit-falls-55-despite-75-increase-in-revenue/articleshow/135286291.cms",
+      "title": "Adani Enterprises Q2 net profit falls 55% despite 75% increase in revenue",
+      "published": "Thu, 29 Oct 2026 07:34:58 +0530",
+      "chars": 389,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/news/nlc-india-renewables-secures-300-mw-wind-power-tender-from-guvnl",
+      "title": "NLC India Renewables Secures 300 MW Wind Power Tender From GUVNL",
+      "published": "Wed, 28 Oct 2026 10:02:15 GMT",
+      "chars": 2749,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/faq/trade-api/can-i-modify-an-order-how-many-times",
+      "title": "Can I modify an order? How many times?",
+      "published": "Wed, 28 Oct 2026 15:34:15 GMT",
+      "chars": 507,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_sahi",
+      "url": "https://www.sahi.com/faq/trade-api/which-order-types-are-supported",
+      "title": "Which order types are supported?",
+      "published": "Wed, 28 Oct 2026 15:01:23 GMT",
+      "chars": 251,
+      "body_how": "paragraphs"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [],
+  "seconds": 176.7
+}
