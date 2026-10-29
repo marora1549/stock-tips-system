@@ -1,6 +1,6 @@
 {
   "capital_inr": 100000,
-  "cash_inr": -136.88,
+  "cash_inr": 11193.12,
   "positions": [
     {
       "pos_id": "2026-09-30-PETRONET",
@@ -51,8 +51,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 5.09,
       "notes": [],
-      "ltp": 284.8999938964844,
-      "unrealised_pct": -0.07
+      "ltp": 289.1499938964844,
+      "unrealised_pct": 1.42
     },
     {
       "pos_id": "2026-10-05-KOTAKBANK",
@@ -65,16 +65,18 @@
       "entry_plan": 418.35,
       "entry": 418.0,
       "qty": 63,
-      "qty_open": 63,
+      "qty_open": 38,
       "capital_inr": 26334.0,
-      "stop_loss": 407.2,
+      "stop_loss": 418.0,
       "initial_stop": 407.2,
       "targets": [
         453.2,
         466.4,
         488.75
       ],
-      "targets_hit": [],
+      "targets_hit": [
+        1
+      ],
       "fund_score_at_entry": 85,
       "timeframe": "long",
       "time_stop_days": 30,
@@ -98,12 +100,21 @@
         "pullback_to_ema20_in_uptrend",
         "volume_spike"
       ],
-      "exits": [],
-      "realised_inr": 0.0,
-      "max_favourable_pct": 7.17,
+      "exits": [
+        {
+          "date": "2026-10-29",
+          "qty": 25,
+          "price": 453.2,
+          "reason": "t1",
+          "pnl_inr": 880.0
+        }
+      ],
+      "realised_inr": 880.0,
+      "max_favourable_pct": 10.1,
       "notes": [],
-      "ltp": 440.0,
-      "unrealised_pct": 5.26
+      "ltp": 459.0,
+      "unrealised_pct": 9.81,
+      "proceeds_credited": 11330.0
     },
     {
       "pos_id": "2026-10-21-PNB",
@@ -156,8 +167,8 @@
       "realised_inr": 0.0,
       "max_favourable_pct": 1.39,
       "notes": [],
-      "ltp": 120.30999755859375,
-      "unrealised_pct": -1.79
+      "ltp": 123.9000015258789,
+      "unrealised_pct": 1.14
     }
   ],
   "closed": [
@@ -590,6 +601,10 @@
     {
       "date": "2026-10-28",
       "equity": 95710.22
+    },
+    {
+      "date": "2026-10-29",
+      "equity": 98191.42
     }
   ],
   "created": "2026-09-07",

@@ -372,17 +372,27 @@
     "id": "broker:parekh"
   },
   "broker:pl": {
-    "score": 0.0,
+    "score": 10.0,
     "n_tips": 66,
     "n_resolved": 0,
-    "n_t1": 0,
+    "n_t1": 1,
     "n_t2": 0,
     "n_t3": 0,
     "n_sl": 0,
     "n_timestop": 0,
     "sum_return_pct": 0.0,
-    "days_to_t1": [],
-    "history": [],
+    "days_to_t1": [
+      18
+    ],
+    "history": [
+      {
+        "date": "2026-10-29",
+        "symbol": "KOTAKBANK",
+        "outcome": "t1",
+        "ret_pct": 8.42,
+        "delta": 10.0
+      }
+    ],
     "enabled": true,
     "first_seen": "2026-09-07",
     "last_seen": "2026-10-29",
@@ -808,16 +818,18 @@
     "id": "fe_gnews"
   },
   "mc_stock_ideas_gnews": {
-    "score": -7.5,
+    "score": -2.125,
     "n_tips": 411,
     "n_resolved": 1,
-    "n_t1": 0,
+    "n_t1": 1,
     "n_t2": 0,
     "n_t3": 0,
     "n_sl": 1,
     "n_timestop": 0,
     "sum_return_pct": -3.89,
-    "days_to_t1": [],
+    "days_to_t1": [
+      18
+    ],
     "history": [
       {
         "date": "2026-09-11",
@@ -825,6 +837,13 @@
         "outcome": "stop_loss",
         "ret_pct": -3.89,
         "delta": -7.5
+      },
+      {
+        "date": "2026-10-29",
+        "symbol": "KOTAKBANK",
+        "outcome": "t1",
+        "ret_pct": 8.42,
+        "delta": 5.0
       }
     ],
     "enabled": true,

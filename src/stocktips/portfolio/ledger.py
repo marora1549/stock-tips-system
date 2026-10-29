@@ -117,7 +117,8 @@ def _close(led: dict, pos: dict, outcome: str, on: str) -> None:
     pos["pnl_inr"] = round(pos["realised_inr"], 2)
     pos["pnl_pct"] = round(pos["realised_inr"] / invested * 100, 2) if invested else 0.0
     pos["days_held"] = trading_days_between(pos["opened"], on)
-    led["cash_inr"] = round(led["cash_inr"] + invested + pos["realised_inr"], 2)
+    # proceeds of partial exits were credited as they happened; credit only what is still owed
+    led["cash_inr"] = round(led["cash_inr"] + invested + pos["realised_inr"] - pos.get("proceeds_credited", 0.0), 2)
     led["positions"] = [p for p in led["positions"] if p["pos_id"] != pos["pos_id"]]
     led["closed"].append(pos)
     if pos.get("fund_score_at_entry") is not None:
@@ -269,6 +270,11 @@ def mark_to_market(led: dict, conf: dict, on: str | None = None, report: dict | 
             fill = max(o, tgt) if o > tgt else tgt
             qty = int(round(pos["qty"] * fracs[i - 1])) if i < 3 else pos["qty_open"]
             _book(pos, qty, fill, f"t{i}", on)
+            if pos["qty_open"] > 0:   # a partial exit puts cash back on the books now, not at close
+                booked = pos["exits"][-1]
+                proceeds = round(booked["qty"] * booked["price"], 2)
+                led["cash_inr"] = round(led["cash_inr"] + proceeds, 2)
+                pos["proceeds_credited"] = round(pos.get("proceeds_credited", 0.0) + proceeds, 2)
             pos["targets_hit"].append(i)
             days = trading_days_between(pos["opened"], on)
             for sid, share in srcs:
