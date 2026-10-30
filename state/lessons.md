@@ -185,3 +185,6 @@ Events: KOTAKBANK: T1 HIT @ 453.2 — booked 25 sh (+₹880.0), SL → 418.0
 
 ### 2026-10-29 [analyst]
 2026-10-29 desk review: KOTAKBANK T1 @453.2 (25sh +880), stop→418 breakeven, 38sh open; PETRONET +1.4%, PNB +1.1%. LEDGER BUG: partial exits never credited cash, so equity read 86,861 (-13.1%) vs true 98,191 (-1.8%); fixed _close/T-exit to credit proceeds at partial exit, cash +11,330 corrected. Earlier -4% equity readings were unaffected (no partials before today). fund-audit: no inversion, no bias, 75-100 band 2 settled -3.4%, too few to grade. No source auto-disabled. Thursday: no new source.
+
+### 2026-10-30 [analyst]
+2026-10-30 desk review: quiet day, no stops/targets/time-stops. PETRONET +1.5%, KOTAKBANK +10.4% (hold-capable, T1 hit 29 Oct, stop at breakeven 418), PNB +0.3% (hot-potato); equity 98,098 (-1.9%), cash 11,193, closed book 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled -3.4%, too few to grade. chartink_squeeze -35.7 (n=3) still enabled; none auto-disabled. Friday: added tg_stockpro_online (public, no login, active feed) at confidence 0 to widen input side.

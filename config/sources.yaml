@@ -103,3 +103,9 @@ sources:
   category: tipster
   enabled: true
   channel: stockmarketindia_official
+- id: tg_stockpro_online
+  name: Telegram — @stockpro_online
+  kind: telegram
+  category: tipster
+  enabled: true
+  channel: stockpro_online
