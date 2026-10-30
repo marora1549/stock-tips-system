@@ -1,0 +1,1359 @@
+{
+  "date": "2026-10-30",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 3
+    },
+    "corp_orders": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 5,
+      "events": 4
+    },
+    "corp_approvals": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 6,
+      "events": 8
+    },
+    "corp_expansion": {
+      "docs": 3,
+      "events": 0
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 7,
+      "events": 11
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "e952f5ad96",
+      "symbol": "AFCONS",
+      "company": "Afcons Infrastructure Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 19438.0,
+      "size_estimated": false,
+      "size_basis": "₹19,438 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4d8bb6dbb7",
+      "symbol": "JWL",
+      "company": "Jupiter Wagons Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags ₹1,140 crore indian railways order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Jupiter Wagons",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 2000.0,
+      "size_estimated": false,
+      "size_basis": "₹2,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html",
+      "title": "Jupiter Wagons bags ₹1,140 crore Indian Railways order for 2,583 wagons",
+      "published": "Thu, 29 Oct 2026 16:17:47 GMT",
+      "published_utc": "2026-10-29T16:17:47+00:00",
+      "sentence": "bags ₹1,140 crore indian railways order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d09358e9cc",
+      "symbol": "RAILTEL",
+      "company": "Railtel Corporation Of India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received the letter of acceptance (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/railtel-corporation-of-india-moves-up-on-bagging-loa-from-department-of-posts755204",
+      "title": "RailTel Corporation of India moves up on bagging LoA from Department of Posts",
+      "published": "Thu, 29 Oct 2026 10:50:13 GMT",
+      "published_utc": "2026-10-29T10:50:13+00:00",
+      "sentence": "received the letter of acceptance (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/railtel-corporation-of-india-moves-up-on-bagging-loa-from-department-of-posts755204"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1a72dd664c",
+      "symbol": "RVNL",
+      "company": "Rail Vikas Nigam Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured a letter of award (loa",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "railway project execution",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 710.0,
+        "unit": "MW",
+        "text": "710 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-reliance-jio-platforms-trent-bel-rvnl-shares-in-focus-on-friday-30-oct-full-list-11793323032394.html",
+      "title": "Top stocks to watch today: Reliance, Jio Platforms, Trent, BEL, RVNL shares in focus on Friday, 30 Oct | Full list",
+      "published": "Fri, 30 Oct 2026 01:51:52 GMT",
+      "published_utc": "2026-10-30T01:51:52+00:00",
+      "sentence": "secured a letter of award (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-reliance-jio-platforms-trent-bel-rvnl-shares-in-focus-on-friday-30-oct-full-list-11793323032394.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fb46efa695",
+      "symbol": "GODREJCP",
+      "company": "Godrej Consumer Products Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises 14% yoy to rs 523 crore, revenue jumps",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/godrej-consumer-q2-results-profit-rises-14-yoy-to-rs-523-crore-revenue-jumps-19-co-declares-rs-5/share-dividend/articleshow/135306134.cms",
+      "title": "Godrej Consumer Q2 Results: Profit rises 14% YoY to Rs 523 crore, revenue jumps 19%; co declares Rs 5/shar",
+      "published": "Thu, 29 Oct 2026 11:44:32 GMT",
+      "published_utc": "2026-10-29T11:44:32+00:00",
+      "sentence": "profit rises 14% yoy to rs 523 crore, revenue jumps",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/godrej-consumer-q2-results-profit-rises-14-yoy-to-rs-523-crore-revenue-jumps-19-co-declares-rs-5/share-dividend/articleshow/135306134.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c36420b137",
+      "symbol": "KOTYARK",
+      "company": "Kotyark Industries Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat surges",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378123/kotyark-industries-q2-fy27-pat-surges-148-yoy-to-6-24-crore-ebitda-margin-expand",
+      "title": "Kotyark Industries Q2 FY27 PAT Surges 148% YoY to ₹6.24 Crore; EBITDA Margin Expands to 20.72%",
+      "published": "Thu, 29 Oct 2026 15:56:58 GMT",
+      "published_utc": "2026-10-29T15:56:58+00:00",
+      "sentence": "pat surges",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.equitybulls.com/news/378123/kotyark-industries-q2-fy27-pat-surges-148-yoy-to-6-24-crore-ebitda-margin-expand"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c4ec1da19b",
+      "symbol": "TRENT",
+      "company": "Trent Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/trent-net-profit-up-25-despite-cost-pressures-and-stiff-competition/articleshow/135339383.cms",
+      "title": "Trent net profit up 25% despite cost pressures and stiff competition",
+      "published": "Fri, 30 Oct 2026 07:51:10 +0530",
+      "published_utc": "2026-10-30T02:21:10+00:00",
+      "sentence": "net profit up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/trent-net-profit-up-25-despite-cost-pressures-and-stiff-competition/articleshow/135339383.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "33096fcca9",
+      "symbol": "VEDPOWER",
+      "company": "Vedanta Power Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit at rs 83 crore; revenue rises",
+      "also_matched": [
+        "index_inclusion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 1000.0,
+        "unit": "MW",
+        "text": "1,000 MW"
+      },
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/vedanta-power-q2-results-company-swings-to-profit-at-rs-83-crore-revenue-rises-38-yoy/articleshow/135317122.cms",
+      "title": "Vedanta Power Q2 results: Company swings to profit at Rs 83 crore; revenue rises 38% YoY",
+      "published": "Thu, 29 Oct 2026 13:18:34 GMT",
+      "published_utc": "2026-10-29T13:18:34+00:00",
+      "sentence": "profit at rs 83 crore; revenue rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/vedanta-power-q2-results-company-swings-to-profit-at-rs-83-crore-revenue-rises-38-yoy/articleshow/135317122.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "55312c3135",
+      "symbol": "AMBUJACEM",
+      "company": "Ambuja Cements Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls 90%, normalised pat drops",
+      "also_matched": [
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 3.2,
+        "unit": "MTPA",
+        "text": "3.2 MTPA"
+      },
+      "source_id": "corp_results",
+      "url": "https://www.niftytrader.in/markets/ambuja-cements-q2-results-profit-falls/",
+      "title": "Ambuja Cements Q2 Results: Profit Falls 90%, Normalised PAT Drops 54%",
+      "published": "Thu, 29 Oct 2026 16:29:44 GMT",
+      "published_utc": "2026-10-29T16:29:44+00:00",
+      "sentence": "profit falls 90%, normalised pat drops",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.niftytrader.in/markets/ambuja-cements-q2-results-profit-falls/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c62b3a2f1a",
+      "symbol": "ARKADE",
+      "company": "Arkade Developers Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit drops sharply as revenue falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/arkade-developers-q2-results-profit-drops-sharply-as-revenue-falls-45/article71640058.ece",
+      "title": "Arkade Developers Q2 Results: Profit drops sharply as revenue falls 45%",
+      "published": "Thu, 29 Oct 2026 11:20:09 GMT",
+      "published_utc": "2026-10-29T11:20:09+00:00",
+      "sentence": "profit drops sharply as revenue falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stock-markets/arkade-developers-q2-results-profit-drops-sharply-as-revenue-falls-45/article71640058.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4408027ef1",
+      "symbol": "RPGLIFE",
+      "company": "RPG Life Sciences Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 5023.0,
+      "size_estimated": false,
+      "size_basis": "₹ 5,023 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/rpg-life-sciences-q2-results-net-profit-falls-37-yoy-233-crore/54836365",
+      "title": "RPG Life Sciences Q2 Results: Net profit falls 37% YoY to ₹233 crore",
+      "published": "Thu, 29 Oct 2026 16:28:30 GMT",
+      "published_utc": "2026-10-29T16:28:30+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/rpg-life-sciences-q2-results-net-profit-falls-37-yoy-233-crore/54836365"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "44504cd932",
+      "symbol": "THYROCARE",
+      "company": "Thyrocare Technologies Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/thyrocare-q2-results-profit-falls-68-as-%E2%82%B945-crore-impairment-charge-weighs-on-earnings-20022596.htm",
+      "title": "Thyrocare Q2 results: Profit falls as impairment charge weighs on earnings",
+      "published": "Thu, 29 Oct 2026 13:07:56 GMT",
+      "published_utc": "2026-10-29T13:07:56+00:00",
+      "sentence": "profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/earnings/thyrocare-q2-results-profit-falls-68-as-%E2%82%B945-crore-impairment-charge-weighs-on-earnings-20022596.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8b09b95e07",
+      "symbol": "STEAMHOUSE",
+      "company": "Steamhouse India Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.robertkinglawfirm.com/mass-torts/olympus-scopes-lawsuit/about-the-october-2026-fda-warning-letter-sent-to-olympus-corporation/",
+      "title": "About the October 2026 FDA Warning Letter Sent to Olympus Corporation",
+      "published": "Thu, 29 Oct 2026 19:53:22 GMT",
+      "published_utc": "2026-10-29T19:53:22+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.robertkinglawfirm.com/mass-torts/olympus-scopes-lawsuit/about-the-october-2026-fda-warning-letter-sent-to-olympus-corporation/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c244ca7537",
+      "symbol": "SAGILITY",
+      "company": "SAGILITY LIMITED",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "earnings_beat",
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2377.0,
+      "size_estimated": false,
+      "size_basis": "Rs 2,377 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-sagility-coal-india-trent-interglobe-blue-star-capital-sfb-brigade-enterprises-garware-technical-cams-vedanta-power-in-focus-on-30-october-14063892.html/amp",
+      "title": "Stocks to Watch Today: Sagility, Coal India, Trent, InterGlobe, Blue Star, Capital SFB, Brigade...",
+      "published": "Fri, 30 Oct 2026 00:45:00 GMT",
+      "published_utc": "2026-10-30T00:45:00+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-sagility-coal-india-trent-interglobe-blue-star-capital-sfb-brigade-enterprises-garware-technical-cams-vedanta-power-in-focus-on-30-october-14063892.html/amp"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b550326af2",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 147000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.47 trillion",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "93b63a6a2e",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 147000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.47 trillion",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "4a21cce8ad",
+      "symbol": "ONMOBILE",
+      "company": "OnMobile Global Limited",
+      "event": "jv_partnership",
+      "event_label": "JV / partnership",
+      "sign": 1,
+      "certainty": 0.6,
+      "event_prior": 12,
+      "phrase": "partnership with",
+      "also_matched": [
+        "order_win",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-reliance-jio-platforms-niit-learning-sagility-onmobile-idbi-bank-nbcc-rvnl/article71643389.ece",
+      "title": "Stocks to watch October 30: Reliance, Jio Platforms, NIIT Learning, Sagility, OnMobile, IDBI Bank, NBCC, RVNL",
+      "published": "Fri, 30 Oct 2026 01:57:41 GMT",
+      "published_utc": "2026-10-30T01:57:41+00:00",
+      "sentence": "partnership with",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-reliance-jio-platforms-niit-learning-sagility-onmobile-idbi-bank-nbcc-rvnl/article71643389.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3087464b3f",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 147000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.47 trillion",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "49fc44ca39",
+      "symbol": "TEXRAIL",
+      "company": "Texmaco Rail & Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Texmaco — wagons and rail EPC",
+      "theme": "railways",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 147000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.47 trillion",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+        "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "da131de863",
+      "symbol": "TITAGARH",
+      "company": "TITAGARH RAIL SYSTEMS LIMITED",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "awarded the jewar contract",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "wagons and metro rolling stock",
+      "theme": "railways",
+      "themes_matched": [
+        "railways",
+        "roads_infra"
+      ],
+      "size_inr_cr": 147000.0,
+      "size_estimated": false,
+      "size_basis": "₹1.47 trillion",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "published_utc": "2026-10-29T15:22:02+00:00",
+      "sentence": "awarded the jewar contract",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+        "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "7aabefa101",
+      "symbol": "IRCON",
+      "company": "Ircon International Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags ₹1,140 crore indian railways order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "railway construction",
+      "theme": "railways",
+      "themes_matched": [
+        "railways"
+      ],
+      "size_inr_cr": 2000.0,
+      "size_estimated": false,
+      "size_basis": "₹2,000 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html",
+      "title": "Jupiter Wagons bags ₹1,140 crore Indian Railways order for 2,583 wagons",
+      "published": "Thu, 29 Oct 2026 16:17:47 GMT",
+      "published_utc": "2026-10-29T16:17:47+00:00",
+      "sentence": "bags ₹1,140 crore indian railways order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9676ebfba9",
+      "symbol": "BHEL",
+      "company": "Bharat Heavy Electricals Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat) before exceptional items up",
+      "also_matched": [
+        "index_inclusion",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "boiler-turbine-generator sets for thermal and nuclear",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 101.0,
+      "size_estimated": false,
+      "size_basis": "INR 101 Cr (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1000.0,
+        "unit": "MW",
+        "text": "1,000 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378126/vedanta-power-reports-highest-ever-quarterly-performance-in-q2-fy27",
+      "title": "Vedanta Power Reports Highest-Ever Quarterly Performance in Q2 FY27",
+      "published": "Thu, 29 Oct 2026 16:02:12 GMT",
+      "published_utc": "2026-10-29T16:02:12+00:00",
+      "sentence": "pat) before exceptional items up",
+      "corroborating_sources": [
+        "corp_results"
+      ],
+      "urls": [
+        "https://www.equitybulls.com/news/378126/vedanta-power-reports-highest-ever-quarterly-performance-in-q2-fy27",
+        "https://m.economictimes.com/markets/stocks/earnings/vedanta-power-q2-results-company-swings-to-profit-at-rs-83-crore-revenue-rises-38-yoy/articleshow/135317122.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "9b2f149bd3",
+      "symbol": "THERMAX",
+      "company": "Thermax Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "pat) before exceptional items up",
+      "also_matched": [
+        "index_inclusion",
+        "capacity_expansion"
+      ],
+      "route": "sympathy",
+      "directness": 0.32,
+      "why_this_name": "boilers and heat recovery",
+      "theme": "power_generation",
+      "themes_matched": [
+        "power_generation"
+      ],
+      "size_inr_cr": 101.0,
+      "size_estimated": false,
+      "size_basis": "INR 101 Cr (no order wording nearby)",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 1000.0,
+        "unit": "MW",
+        "text": "1,000 MW"
+      },
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378126/vedanta-power-reports-highest-ever-quarterly-performance-in-q2-fy27",
+      "title": "Vedanta Power Reports Highest-Ever Quarterly Performance in Q2 FY27",
+      "published": "Thu, 29 Oct 2026 16:02:12 GMT",
+      "published_utc": "2026-10-29T16:02:12+00:00",
+      "sentence": "pat) before exceptional items up",
+      "corroborating_sources": [
+        "corp_results"
+      ],
+      "urls": [
+        "https://www.equitybulls.com/news/378126/vedanta-power-reports-highest-ever-quarterly-performance-in-q2-fy27",
+        "https://m.economictimes.com/markets/stocks/earnings/vedanta-power-q2-results-company-swings-to-profit-at-rs-83-crore-revenue-rises-38-yoy/articleshow/135317122.cms"
+      ],
+      "n_reports": 2
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/stocks-to-watch-oct-reliance-jio-platforms-niit-learning-sagility-onmobile-idbi-bank-nbcc-rvnl/article71643389.ece",
+      "title": "Stocks to watch October 30: Reliance, Jio Platforms, NIIT Learning, Sagility, OnMobile, IDBI Bank, NBCC, RVNL",
+      "published": "Fri, 30 Oct 2026 01:57:41 GMT",
+      "chars": 9405,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-reliance-jio-platforms-trent-bel-rvnl-shares-in-focus-on-friday-30-oct-full-list-11793323032394.html",
+      "title": "Top stocks to watch today: Reliance, Jio Platforms, Trent, BEL, RVNL shares in focus on Friday, 30 Oct | Full list",
+      "published": "Fri, 30 Oct 2026 01:51:52 GMT",
+      "chars": 3415,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-30-ril-jio-platforms-bob-equitas-sfb-trent-coal-india-126103000076_1.html",
+      "title": "Stocks to watch: RIL, Jio Platforms, BoB, Equitas SFB, Trent, Coal India",
+      "published": "Fri, 30 Oct 2026 02:34:37 GMT",
+      "chars": 5332,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-sagility-coal-india-trent-interglobe-blue-star-capital-sfb-brigade-enterprises-garware-technical-cams-vedanta-power-in-focus-on-30-october-14063892.html/amp",
+      "title": "Stocks to Watch Today: Sagility, Coal India, Trent, InterGlobe, Blue Star, Capital SFB, Brigade...",
+      "published": "Fri, 30 Oct 2026 00:45:00 GMT",
+      "chars": 9345,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-ril-jio-trent-suzlon-energy-indigo-vedanta-power-and-rvnl/articleshow/135324704.cms",
+      "title": "Stocks in news: RIL, Jio, Trent, Suzlon Energy, IndiGo, Vedanta Power and RVNL",
+      "published": "Fri, 30 Oct 2026 00:30:00 GMT",
+      "chars": 8359,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/porr-2-other-undervalued-stocks-231409548.html",
+      "title": "PORR And 2 Other Undervalued Stocks To Watch",
+      "published": "Thu, 29 Oct 2026 23:14:09 GMT",
+      "chars": 3664,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/jsw-greentech-bags-order-for-100-electric-tractor-trucks",
+      "title": "JSW Greentech bags order for 100 electric tractor trucks",
+      "published": "Thu, 29 Oct 2026 20:19:56 GMT",
+      "chars": 691,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.tradingview.com/news/seekingalpha:5a78e2560094b:0-caci-international-wins-five-year-u-s-army-task-order-worth-185m/",
+      "title": "CACI International wins five-year U.S. Army task order worth $185M",
+      "published": "Thu, 29 Oct 2026 12:26:49 GMT",
+      "chars": 909,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.stvincent.edu/news/2026/10/svcs-alpha-lambda-delta-chapter-wins-order-of-the-torch-award.html",
+      "title": "SVC’s Alpha Lambda Delta chapter wins Order of the Torch award",
+      "published": "Thu, 29 Oct 2026 15:14:17 GMT",
+      "chars": 4784,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/378038/siyaram-recycling-industries-ltd-receives-order-worth-rs-3-09-crore",
+      "title": "Siyaram Recycling Industries Ltd receives order worth Rs. 3.09 crore",
+      "published": "Thu, 29 Oct 2026 09:09:29 GMT",
+      "chars": 514,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378132/3i-infotech-reported-q2fy27-revenue-of-182-0-crore-4-1-growth-yoy",
+      "title": "3i Infotech Reported Q2FY27 Revenue of ₹ 182.0 crore (4.1% Growth YoY)",
+      "published": "Thu, 29 Oct 2026 16:23:19 GMT",
+      "chars": 4682,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://investmentguruindia.com/newsdetail/railtel-corporation-of-india-moves-up-on-bagging-loa-from-department-of-posts755204",
+      "title": "RailTel Corporation of India moves up on bagging LoA from Department of Posts",
+      "published": "Thu, 29 Oct 2026 10:50:13 GMT",
+      "chars": 1272,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378127/horizon-industrial-parks-reports-strong-q2-fy27-performance-with-revenue-up-30",
+      "title": "Horizon Industrial Parks reports strong Q2 FY27 performance with Revenue up 30%",
+      "published": "Thu, 29 Oct 2026 16:04:10 GMT",
+      "chars": 2098,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378126/vedanta-power-reports-highest-ever-quarterly-performance-in-q2-fy27",
+      "title": "Vedanta Power Reports Highest-Ever Quarterly Performance in Q2 FY27",
+      "published": "Thu, 29 Oct 2026 16:02:12 GMT",
+      "chars": 4980,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.equitybulls.com/news/378123/kotyark-industries-q2-fy27-pat-surges-148-yoy-to-6-24-crore-ebitda-margin-expand",
+      "title": "Kotyark Industries Q2 FY27 PAT Surges 148% YoY to ₹6.24 Crore; EBITDA Margin Expands to 20.72%",
+      "published": "Thu, 29 Oct 2026 15:56:58 GMT",
+      "chars": 2845,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.manilatimes.net/2026/10/29/tmt-newswire/pr-newswire/asymchem-completes-its-first-usfda-pre-approval-inspection-pai-of-the-tianjin-4-tides-manufacturing-site/2457516/amp",
+      "title": "Asymchem Completes its First USFDA Pre-Approval Inspection (PAI) of the Tianjin 4 TIDES Manufacturing Site",
+      "published": "Thu, 29 Oct 2026 14:33:25 GMT",
+      "chars": 2268,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.whalesbook.com/corporate-news/English/healthcarebiotech/Rubicon-Research-Receives-Five-USFDA-Observations-at-Ambernath-Facility/6ae396a0c6c6dccbb90bd4f6",
+      "title": "Rubicon Research Receives Five USFDA Observations at Ambernath Facility",
+      "published": "Fri, 30 Oct 2026 00:56:16 GMT",
+      "chars": 2720,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/indoco-remedies-anacipher-gets-brazil-anvisa-approval-for-clinical-bioanalytical-facilities-182209",
+      "title": "Indoco Remedies' AnaCipher Gets Brazil ANVISA Approval for Clinical, Bioanalytical Facilities",
+      "published": "Thu, 29 Oct 2026 10:47:17 GMT",
+      "chars": 2739,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://kalkinemedia.com/uk/news/announcements/hutchmed-hcm-secures-us-fda-orphan-drug-status-for-sovleplenib-in-treating-primary-immune-thrombocytopenia",
+      "title": "HUTCHMED (HCM) Secures US FDA Orphan Drug Status for Sovleplenib in Treating Primary Immune Thrombocytopenia",
+      "published": "Thu, 29 Oct 2026 07:01:27 GMT",
+      "chars": 4625,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/usfda-flags-amgens-vectibix-cancer-drug-ad-for-omitting-serious-safety-risks-182204",
+      "title": "USFDA Flags Amgen's Vectibix Cancer Drug Ad for Omitting Serious Safety Risks",
+      "published": "Thu, 29 Oct 2026 10:10:40 GMT",
+      "chars": 2510,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.livemint.com/market/stock-market-news/avadhut-sathe-case-why-asta-may-challenge-sebi-order-before-sat-over-grey-areas-in-stock-market-education-rules-11793276521913.html",
+      "title": "Avadhut Sathe case: Why ASTA may challenge SEBI order before SAT over ‘grey areas’ in stock-market education rules",
+      "published": "Thu, 29 Oct 2026 13:42:54 GMT",
+      "chars": 2834,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://ehealth.eletsonline.com/2026/10/dr-reddys-srikakulam-unit-usfda-vai-inspection-closed-form-483/",
+      "title": "USFDA Gives VAI Tag to Dr. Reddy's Srikakulam Unit, Closes Inspection After Three-Observation Form 483",
+      "published": "Thu, 29 Oct 2026 11:47:11 GMT",
+      "chars": 4809,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.robertkinglawfirm.com/mass-torts/olympus-scopes-lawsuit/about-the-october-2026-fda-warning-letter-sent-to-olympus-corporation/",
+      "title": "About the October 2026 FDA Warning Letter Sent to Olympus Corporation",
+      "published": "Thu, 29 Oct 2026 19:53:22 GMT",
+      "chars": 13415,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://finance.yahoo.com/healthcare/articles/baxter-international-bax-received-fda-011750086.html",
+      "title": "Baxter International (BAX) Received An FDA Warning Letter Over CGMP Violations",
+      "published": "Fri, 30 Oct 2026 01:17:00 GMT",
+      "chars": 2947,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.theguardian.com/uk-news/2026/oct/29/metropolitan-police-refers-itself-to-watchdog-over-meghan-warning-letter",
+      "title": "Met refers itself to police watchdog over Meghan warning letter",
+      "published": "Thu, 29 Oct 2026 17:36:00 GMT",
+      "chars": 4266,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/earnings/thyrocare-q2-results-profit-falls-68-as-%E2%82%B945-crore-impairment-charge-weighs-on-earnings-20022596.htm",
+      "title": "Thyrocare Q2 results: Profit falls as impairment charge weighs on earnings",
+      "published": "Thu, 29 Oct 2026 13:07:56 GMT",
+      "chars": 5002,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.niftytrader.in/markets/ambuja-cements-q2-results-profit-falls/",
+      "title": "Ambuja Cements Q2 Results: Profit Falls 90%, Normalised PAT Drops 54%",
+      "published": "Thu, 29 Oct 2026 16:29:44 GMT",
+      "chars": 13191,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/vedanta-power-q2-results-company-swings-to-profit-at-rs-83-crore-revenue-rises-38-yoy/articleshow/135317122.cms",
+      "title": "Vedanta Power Q2 results: Company swings to profit at Rs 83 crore; revenue rises 38% YoY",
+      "published": "Thu, 29 Oct 2026 13:18:34 GMT",
+      "chars": 8294,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://scanx.trade/stock-market-news/companies/rpg-life-sciences-q2-results-net-profit-falls-37-yoy-233-crore/54836365",
+      "title": "RPG Life Sciences Q2 Results: Net profit falls 37% YoY to ₹233 crore",
+      "published": "Thu, 29 Oct 2026 16:28:30 GMT",
+      "chars": 6006,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/arkade-developers-q2-results-profit-drops-sharply-as-revenue-falls-45/article71640058.ece",
+      "title": "Arkade Developers Q2 Results: Profit drops sharply as revenue falls 45%",
+      "published": "Thu, 29 Oct 2026 11:20:09 GMT",
+      "chars": 8137,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/godrej-consumer-q2-results-profit-rises-14-yoy-to-rs-523-crore-revenue-jumps-19-co-declares-rs-5/share-dividend/articleshow/135306134.cms",
+      "title": "Godrej Consumer Q2 Results: Profit rises 14% YoY to Rs 523 crore, revenue jumps 19%; co declares Rs 5/shar",
+      "published": "Thu, 29 Oct 2026 11:44:32 GMT",
+      "chars": 9240,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://investmentguruindia.com/newsdetail/ambuja-cements-q2-revenue-at-rs-9-197-crore-commissions-4-6-mtpa-capacity782004",
+      "title": "Ambuja Cements' Q2 revenue at Rs 9,197 crore; commissions 4.6 MTPA capacity",
+      "published": "Thu, 29 Oct 2026 10:50:12 GMT",
+      "chars": 2596,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.pv-magazine-india.com/2026/10/29/indigrid-commissions-250-mw-500-mwh-standalone-bess-project-in-rajasthan/",
+      "title": "IndiGrid commissions 250 MW/500 MWh standalone BESS project in Rajasthan",
+      "published": "Thu, 29 Oct 2026 11:21:45 GMT",
+      "chars": 1911,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.whalesbook.com/corporate-news/English/renewables/NTPC-Green-Energy-Commissions-956-MW-Solar-Capacity-in-Rajasthan/6ae371d8c6c6dccbb90bc8e3",
+      "title": "NTPC Green Energy Commissions 95.6 MW Solar Capacity in Rajasthan",
+      "published": "Thu, 29 Oct 2026 16:19:26 GMT",
+      "chars": 2057,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/neet-paper-leak-case-delhi-court-reserves-order-on-framing-charges-126102900618_1.html",
+      "title": "Neet paper leak case: Delhi court reserves order on framing charges",
+      "published": "Thu, 29 Oct 2026 08:18:16 GMT",
+      "chars": 2200,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/netanyahu-s-bloc-wins-53-seats-in-israel-polls-but-falls-short-of-majority-126103000056_1.html",
+      "title": "Netanyahu's bloc wins 53 seats in Israel polls but falls short of majority",
+      "published": "Fri, 30 Oct 2026 02:03:55 GMT",
+      "chars": 9183,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/afcons-wins-3-469-crore-contracts-for-jewar-expressway-lucknow-metro-126102901714_1.html",
+      "title": "Afcons wins ₹3,469 crore contracts for Jewar Expressway, Lucknow Metro",
+      "published": "Thu, 29 Oct 2026 15:22:02 GMT",
+      "chars": 3441,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/uttaranchal-university-online-bags-top-honour-at-college-vidya-s-online-university-awards-2026-25-learners-recognised-126102900717_1.html",
+      "title": "Uttaranchal University Online Bags Top Honour at College Vidya's Online University Awards 2026; 25 Learners Recognised",
+      "published": "Thu, 29 Oct 2026 08:45:14 GMT",
+      "chars": 6075,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ai-firm-am-intelligence-seeks-3-billion-financing-for-nvidia-chips-order-126103000083_1.html",
+      "title": "AI firm AM Intelligence seeks $3 billion financing for Nvidia chips order",
+      "published": "Fri, 30 Oct 2026 02:31:48 GMT",
+      "chars": 3710,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/jupiter-wagons-bags-1-140-crore-indian-railways-order-for-2-583-wagons-126102901792_1.html",
+      "title": "Jupiter Wagons bags ₹1,140 crore Indian Railways order for 2,583 wagons",
+      "published": "Thu, 29 Oct 2026 16:17:47 GMT",
+      "chars": 2013,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-early-compensation-126102900531_1.html",
+      "title": "Cyclone Arnab: Andhra CM orders fast-track relief, early compensation",
+      "published": "Thu, 29 Oct 2026 08:23:36 GMT",
+      "chars": 4333,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-october-30-ril-jio-platforms-bob-equitas-sfb-trent-coal-india-126103000076_1.html",
+      "title": "Stocks to watch: RIL, Jio Platforms, BoB, Equitas SFB, Trent, Coal India",
+      "published": "Fri, 30 Oct 2026 08:04:37 +0530",
+      "chars": 134,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/can-sensex-nifty-extend-rally-on-friday-here-s-what-market-analysts-say-126103000078_1.html",
+      "title": "Can Sensex, Nifty extend rally on Friday? Here's what market analysts say",
+      "published": "Fri, 30 Oct 2026 07:56:44 +0530",
+      "chars": 196,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-ipo-today-q2-results-october-30-126103000074_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asia markets tumble on tech shares selloff",
+      "published": "Fri, 30 Oct 2026 07:53:30 +0530",
+      "chars": 160,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/cryptocurrency/binance-s-possible-hack-triggers-3-billion-freeze-in-crypto-assets-126103000072_1.html",
+      "title": "Binance's possible hack triggers $3 billion freeze in crypto assets",
+      "published": "Fri, 30 Oct 2026 07:25:30 +0530",
+      "chars": 182,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/content/press-releases-ani/unocoin-launches-india-s-first-bitcoin-lending-service-with-multisig-wallet-security-126102901265_1.html",
+      "title": "Unocoin Launches India's First Bitcoin Lending Service with Multisig Wallet Security",
+      "published": "Thu, 29 Oct 2026 17:10:09 +0530",
+      "chars": 612,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/emudhra-stock-recovers-slightly-after-sharp-fall-over-security-concerns-126102901616_1.html",
+      "title": "eMudhra stock recovers slightly after sharp fall over security concerns",
+      "published": "Thu, 29 Oct 2026 23:17:51 +0530",
+      "chars": 180,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sensex-nifty-rise-over-1-as-q2-earnings-easing-crude-boost-sentiment-126102901533_1.html",
+      "title": "Benchmarks rise over 1% on positive Q2 earnings, easing crude prices",
+      "published": "Thu, 29 Oct 2026 20:06:19 +0530",
+      "chars": 181,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/india-s-pharma-healthcare-deal-volumes-rise-23-in-q3-2026-report-126102901515_1.html",
+      "title": "India's pharma, healthcare deal volumes rise 23% in Q3 2026: Report",
+      "published": "Thu, 29 Oct 2026 19:14:11 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/trent-net-profit-up-25-despite-cost-pressures-and-stiff-competition/articleshow/135339383.cms",
+      "title": "Trent net profit up 25% despite cost pressures and stiff competition",
+      "published": "Fri, 30 Oct 2026 07:51:10 +0530",
+      "chars": 472,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-october-30-crude-oil-jumps-to-118-as-trump-weighs-fresh-attacks-after-midterm-what-are-experts-saying/articleshow/135339349.cms",
+      "title": "Oil Price Today (October 30): Crude oil jumps to $118 as Trump weighs fresh attacks after midterm. What are experts saying?",
+      "published": "Fri, 30 Oct 2026 07:50:58 +0530",
+      "chars": 404,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/godrej-consumer-profit-rises-14-weighs-calibrated-price-hikes-to-offset-inflation/articleshow/135339162.cms",
+      "title": "Godrej consumer profit rises 14%, weighs calibrated price hikes to offset inflation",
+      "published": "Fri, 30 Oct 2026 07:44:13 +0530",
+      "chars": 352,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-7-stocks-cross-above-their-200-dmas/slideshow/135339227.cms",
+      "title": "Positive Breakout: These 7 stocks cross above their 200 DMAs",
+      "published": "Fri, 30 Oct 2026 07:36:29 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/amazon-cloud-business-accelerates-but-shares-drop-on-profit-miss/articleshow/135338874.cms",
+      "title": "Amazon cloud business accelerates but shares drop on profit miss",
+      "published": "Fri, 30 Oct 2026 07:32:06 +0530",
+      "chars": 345,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/yen-steady-before-boj-ai-jitters-drive-treasury-rally-weigh-on-dollar/articleshow/135338954.cms",
+      "title": "Yen steady before BOJ, AI jitters drive Treasury rally, weigh on dollar",
+      "published": "Fri, 30 Oct 2026 07:31:19 +0530",
+      "chars": 422,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 165.8
+}
