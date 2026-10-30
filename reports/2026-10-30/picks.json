@@ -1,0 +1,691 @@
+{
+  "date": "2026-10-30",
+  "top": [
+    {
+      "symbol": "KOTAKBANK",
+      "company": "Kotak Mahindra Bank Limited",
+      "tip_id": "fbe837be49",
+      "source_id": "chartink_52w_breakout",
+      "corroborating_sources": [
+        "broker:elara",
+        "et_recos_page"
+      ],
+      "n_mentions": 3,
+      "src_targets": [],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://chartink.com/stocks/kotakbank.html",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/marketnewslist/3053611.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/recos/buy-sell-or-hold-goldman-sachs-hikes-target-price-on-ultratech-cements-elara-capital-upgrades-kotak-bank/articleshow/127595013.cms"
+      ],
+      "brokerages": [
+        "elara"
+      ],
+      "sentence": "Buy Kotak Mahindra Bank Limited (NSE: KOTAKBANK) LTP 459 — matched scan 'Chartink — 52-week-high breakout with 1.5x volume', day change 4.32%, volume 46501335.",
+      "ltp": 459.0,
+      "plan": {
+        "timeframe": "weekly",
+        "entry": 459.0,
+        "entry_zone": [
+          456.7,
+          461.29
+        ],
+        "stop_loss": 443.71,
+        "stop_loss_pct": 3.33,
+        "stop_basis": "1.5×ATR",
+        "targets": [
+          474.29,
+          489.57,
+          504.86
+        ],
+        "target_pct": [
+          3.33,
+          6.66,
+          9.99
+        ],
+        "target_basis": [
+          "1.5×ATR",
+          "3×ATR",
+          "4.5×ATR"
+        ],
+        "reward_risk_t2": 2.0,
+        "mandate_pct": 5.0,
+        "time_stop_days": 10,
+        "ta_confidence": 85,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 68.0 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 34.6 trending",
+          "+5 volume 1.64× avg on up day",
+          "+2 pattern at_52w_high",
+          "+8 pattern breakout_60d_high_volume"
+        ],
+        "tradeable": true,
+        "src_targets": [],
+        "src_stop": null,
+        "momentum_score": 79,
+        "efficiency": 0.448,
+        "amplitude_pct_day": 1.077,
+        "eta_days": [
+          7,
+          14,
+          21
+        ],
+        "eta_basis": "0.482%/session of net directional progress",
+        "pace_pct_day": 0.482,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 68.0,
+        "atr_pct": 2.22,
+        "adx": 34.6,
+        "vol_ratio": 1.64,
+        "patterns": [
+          "at_52w_high",
+          "breakout_60d_high_volume"
+        ],
+        "dist_52w_high_pct": -0.26,
+        "dist_ema20_pct": 5.15,
+        "dist_ema200_pct": 12.86,
+        "avg_turnover_cr": 1233.92,
+        "chg_5d_pct": 5.03,
+        "chg_20d_pct": 13.05,
+        "high_52w": 460.2,
+        "last_bar_date": "2026-10-29",
+        "momentum_score": 79,
+        "drift_pct_day": 0.482,
+        "efficiency": 0.448,
+        "amplitude_pct_day": 1.077,
+        "up_day_share": 0.5
+      },
+      "resistances": [],
+      "supports": [
+        {
+          "price": 409.25,
+          "touches": 1
+        },
+        {
+          "price": 394.7,
+          "touches": 1
+        },
+        {
+          "price": 386.62,
+          "touches": 2
+        },
+        {
+          "price": 372.2,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 85,
+      "fund_score": 85,
+      "fund_why": [
+        "+12 net NPA 0.36% of the book",
+        "+4 gross NPA 1.45%",
+        "+10 return on assets 1.81%",
+        "+0 ROE 11.4%",
+        "+2 net interest margin 3.77% of assets",
+        "+0 net interest income +7.4% last year",
+        "+3 the book grew 12%",
+        "+3 price to book 2.34",
+        "+2 P/E 21.5",
+        "+4 institutions hold 63.19%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (returns counted +10 of +12 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 13.7% over last 3 years.",
+        "Contingent liabilities of Rs.10,54,268 Cr.",
+        "Earnings include an other income of Rs.42,277 Cr.",
+        "Dividend payout has been low at 2.59% of profits over last 3 years",
+        "Working capital days have increased from 97.7 days to 145 days"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 456608.0,
+        "pe": 21.5,
+        "roce": 6.98,
+        "roe": 11.4,
+        "sales_growth_3_years": 18.0,
+        "profit_growth_3_years": 9.0,
+        "promoter_pct": 25.86,
+        "np_yoy_growth_pct": 26.3,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 6.26,
+        "profit_growth_1y_pct": -12.83,
+        "cfo_cr": 41727.0,
+        "cfo_negative_streak": 0,
+        "institutional_pct": 63.19,
+        "sector": "Financial Services",
+        "industry": "Banks"
+      },
+      "source_weight": 0.6,
+      "source_confidence": 50,
+      "composite": 78,
+      "verdict": "STRONG BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 85"
+        },
+        {
+          "key": "technicals",
+          "label": "Chart",
+          "tone": "good",
+          "why": "TA confidence 85"
+        },
+        {
+          "key": "corroborated",
+          "label": "3 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "company": "TVS Motor Company",
+      "tip_id": "2f450b2727",
+      "source_id": "broker:choice",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "broker:emkay",
+        "broker:anandrathi",
+        "broker:motilal",
+        "fe_gnews",
+        "broker:jefferies",
+        "brokerage_gnews",
+        "broker:marketsmith",
+        "mint_gnews"
+      ],
+      "n_mentions": 7,
+      "src_targets": [
+        4900.0,
+        5050.0,
+        5200.0,
+        5425.0,
+        5600.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-tvs-motor-company-target-of-rs-4900-choice-institutional-equities-14063139.html",
+        "https://www.moneycontrol.com/news/business/stocks/buy-tvs-motor-target-of-rs-5050-anand-rathi-14063291.html",
+        "https://www.moneycontrol.com/news/business/stocks/buy-tvs-motor-target-of-rs-5600-emkay-global-financial-14063365.html",
+        "https://www.financialexpress.com/market/tvs-motor-share-price-brokerages-see-28-upside-but-can-pli-schemes-end-slow-ev-growth-4372160/",
+        "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-29-october-from-marketsmith-india-11793209356671.html"
+      ],
+      "brokerages": [
+        "anandrathi",
+        "choice",
+        "emkay",
+        "jefferies",
+        "marketsmith",
+        "motilal"
+      ],
+      "sentence": "Buy TVS Motor Company; target of Rs 4900: Choice Institutional Equities. Broker Research October 29, 2026 / 10:05 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Pakistan techie applies for remote Innodata job, gets hybrid role in Delhi Pune techie says ",
+      "ltp": 4280.0,
+      "plan": {
+        "timeframe": "long",
+        "entry": 4280.0,
+        "entry_zone": [
+          4258.6,
+          4301.4
+        ],
+        "stop_loss": 4044.58,
+        "stop_loss_pct": 5.5,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          4644.38,
+          4887.3,
+          5251.68
+        ],
+        "target_pct": [
+          8.51,
+          14.19,
+          22.7
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 2.58,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 70,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 65.4 healthy momentum",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 26.4 trending",
+          "+5 volume 2.5× avg on up day",
+          "+1 pattern volume_spike",
+          "+4 reward:risk to T2 2.58",
+          "-10 T1 needs ~38d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          4900.0,
+          5050.0,
+          5200.0,
+          5425.0,
+          5600.0
+        ],
+        "src_stop": null,
+        "momentum_score": 46,
+        "efficiency": 0.177,
+        "amplitude_pct_day": 1.254,
+        "eta_days": [
+          38,
+          64,
+          90
+        ],
+        "eta_basis": "0.222%/session of net directional progress",
+        "pace_pct_day": 0.222,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 65.4,
+        "atr_pct": 2.84,
+        "adx": 26.4,
+        "vol_ratio": 2.5,
+        "patterns": [
+          "volume_spike"
+        ],
+        "dist_52w_high_pct": -4.56,
+        "dist_ema20_pct": 5.16,
+        "dist_ema200_pct": 12.4,
+        "avg_turnover_cr": 316.21,
+        "chg_5d_pct": 7.7,
+        "chg_20d_pct": 4.62,
+        "high_52w": 4484.5,
+        "last_bar_date": "2026-10-29",
+        "momentum_score": 46,
+        "drift_pct_day": 0.222,
+        "efficiency": 0.177,
+        "amplitude_pct_day": 1.254,
+        "up_day_share": 0.6
+      },
+      "resistances": [
+        {
+          "price": 4481.33,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 4064.9,
+          "touches": 1
+        },
+        {
+          "price": 4002.0,
+          "touches": 1
+        },
+        {
+          "price": 3741.9,
+          "touches": 1
+        },
+        {
+          "price": 3549.9,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 70,
+      "fund_score": 56,
+      "fund_why": [
+        "+6 ROCE 17.4%",
+        "+8 ROE 33.6%",
+        "-2 P/E 52.7",
+        "+8 3y profit CAGR 33%",
+        "+6 3y sales CAGR 21%",
+        "-6 D/E 3.48",
+        "+4 promoter 50.27%",
+        "+4 latest qtr PAT YoY 46.3%",
+        "+4 mcap ₹203,337 cr",
+        "+3 operating cash flow ₹1,867cr, only 59% of profit",
+        "-3 interest cover 4.06×",
+        "+3 institutions hold 41.69%",
+        "-8 price to book 17.91",
+        "-6 ROCE 17.4% bought at 17.91× book is 1% on what you pay",
+        "  (returns counted +10 of +14 — its terms measure the same thing more than once, so the most it can add is +10)",
+        "  (value counted -10 of -16 — its terms measure the same thing more than once, so the most it can cost is -10)",
+        "  (growth counted +8 of +18 — its terms measure the same thing more than once, so the most it can add is +8)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 38.2% CAGR over last 5 years",
+        "Company has a good return on equity (ROE) track record: 3 Years ROE 29.8%",
+        "Company has been maintaining a healthy dividend payout of 20.9%"
+      ],
+      "screener_cons": [
+        "Stock is trading at 17.9 times its book value",
+        "Company might be capitalizing the interest cost"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 203337.0,
+        "pe": 52.7,
+        "roce": 17.4,
+        "roe": 33.6,
+        "sales_growth_3_years": 21.0,
+        "profit_growth_3_years": 33.0,
+        "promoter_pct": 50.27,
+        "debt_to_equity": 3.48,
+        "np_yoy_growth_pct": 46.3,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 27.17,
+        "profit_growth_1y_pct": 33.87,
+        "cfo_cr": 1867.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": 20.3,
+        "interest_cover": 4.06,
+        "institutional_pct": 41.69,
+        "sector": "Automobile and Auto Components",
+        "industry": "Automobiles"
+      },
+      "source_weight": 0.942,
+      "source_confidence": 50,
+      "composite": 74,
+      "verdict": "BUY",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 70"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 38 sessions against a 30-session stop"
+        },
+        {
+          "key": "corroborated",
+          "label": "10 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
+      "alloc_inr": 0.0
+    },
+    {
+      "symbol": "CUB",
+      "company": "City Union Bank",
+      "tip_id": "a80af12f8e",
+      "source_id": "broker:emkay",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews",
+        "brokerage_gnews",
+        "broker:anandrathi"
+      ],
+      "n_mentions": 3,
+      "src_targets": [
+        299.0,
+        300.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/buy-city-union-bank-target-of-rs-300-emkay-global-financial-14063412.html",
+        "https://www.tradingview.com/news/moneycontrol:971d1e414094b:0-buy-city-union-bank-target-of-rs-299-anand-rathi/"
+      ],
+      "brokerages": [
+        "anandrathi",
+        "emkay"
+      ],
+      "sentence": "Buy City Union Bank; target of Rs 300: Emkay Global Financial. Broker Research October 29, 2026 / 13:27 IST --> Buy Trade Day High Day Low Volume (NSE) More × Add to Watchlist × Watch Previous Next Pakistan techie applies for remote Innodata job, gets hybrid role in Delhi Pune techie says lawyer ask",
+      "ltp": 226.89999389648438,
+      "plan": {
+        "timeframe": "long",
+        "entry": 226.9,
+        "entry_zone": [
+          225.77,
+          228.03
+        ],
+        "stop_loss": 215.34,
+        "stop_loss_pct": 5.09,
+        "stop_basis": "below support / near 50EMA",
+        "targets": [
+          255.76,
+          275.0,
+          303.86
+        ],
+        "target_pct": [
+          12.72,
+          21.2,
+          33.92
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 4.16,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 64,
+        "reasons": [
+          "+14 trend strong_up",
+          "+7 RSI 52.3 healthy momentum",
+          "-3 ADX 11.8 no trend",
+          "+5 volume 2.76× avg on up day",
+          "+6 pattern pullback_to_ema20_in_uptrend",
+          "+1 pattern volume_spike",
+          "+4 reward:risk to T2 4.16",
+          "-10 T1 needs ~64d at this pace vs a 30d clock"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          299.0,
+          300.0
+        ],
+        "src_stop": null,
+        "momentum_score": 41,
+        "efficiency": 0.121,
+        "amplitude_pct_day": 1.642,
+        "eta_days": [
+          64,
+          90,
+          90
+        ],
+        "eta_basis": "0.198%/session of net directional progress",
+        "pace_pct_day": 0.198,
+        "t1_inside_clock": false
+      },
+      "ta": {
+        "trend": "strong_up",
+        "rsi": 52.3,
+        "atr_pct": 4.24,
+        "adx": 11.8,
+        "vol_ratio": 2.76,
+        "patterns": [
+          "pullback_to_ema20_in_uptrend",
+          "volume_spike"
+        ],
+        "dist_52w_high_pct": -8.82,
+        "dist_ema20_pct": 1.57,
+        "dist_ema200_pct": 8.91,
+        "avg_turnover_cr": 69.48,
+        "chg_5d_pct": 0.28,
+        "chg_20d_pct": 5.58,
+        "high_52w": 248.85,
+        "last_bar_date": "2026-10-29",
+        "momentum_score": 41,
+        "drift_pct_day": 0.198,
+        "efficiency": 0.121,
+        "amplitude_pct_day": 1.642,
+        "up_day_share": 0.45
+      },
+      "resistances": [
+        {
+          "price": 233.5,
+          "touches": 2
+        },
+        {
+          "price": 238.95,
+          "touches": 1
+        },
+        {
+          "price": 247.69,
+          "touches": 3
+        }
+      ],
+      "supports": [
+        {
+          "price": 216.42,
+          "touches": 1
+        },
+        {
+          "price": 210.69,
+          "touches": 1
+        },
+        {
+          "price": 204.81,
+          "touches": 1
+        },
+        {
+          "price": 200.74,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 64,
+      "fund_score": 89,
+      "fund_why": [
+        "+12 net NPA 0.48% of the book",
+        "+4 gross NPA 1.44%",
+        "+6 return on assets 1.32%",
+        "+3 ROE 13.2%",
+        "+0 net interest margin 2.82% of assets",
+        "+8 net interest income +22.2% last year",
+        "+3 price to book 2.01",
+        "+4 P/E 15.1",
+        "+4 institutions hold 65.38%",
+        "  (asset quality counted +14 of +16 — its terms measure the same thing more than once, so the most it can add is +14)",
+        "  (value counted +5 of +7 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (read as a lender: Screener files this under Banks, where borrowings are the raw material and interest is the cost of goods — so it is read on asset quality, spread and return on assets, not on debt ratios and operating cash flow)"
+      ],
+      "fund_flags": [],
+      "fund_caps": [],
+      "fund_unrated": false,
+      "screener_pros": [],
+      "screener_cons": [
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of 10.7% over past five years.",
+        "Company has a low return on equity of 12.9% over last 3 years.",
+        "Contingent liabilities of Rs.16,490 Cr.",
+        "Company might be capitalizing the interest cost",
+        "Dividend payout has been low at 11.8% of profits over last 3 years"
+      ],
+      "fundamentals": {
+        "market_cap_cr": 22481.0,
+        "pe": 15.1,
+        "roce": 6.74,
+        "roe": 13.2,
+        "sales_growth_3_years": 13.0,
+        "profit_growth_3_years": 12.0,
+        "np_yoy_growth_pct": 26.4,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": 17.76,
+        "profit_growth_1y_pct": 17.97,
+        "cfo_cr": 802.0,
+        "cfo_negative_streak": 0,
+        "institutional_pct": 65.38,
+        "sector": "Financial Services",
+        "industry": "Banks"
+      },
+      "source_weight": 0.64,
+      "source_confidence": 50,
+      "composite": 69,
+      "verdict": "BUY",
+      "bucket": "hold-capable (fundamentally sound — can be held through a stall)",
+      "tags": [
+        {
+          "key": "fundamentals",
+          "label": "Fundamentals",
+          "tone": "good",
+          "why": "business score 89"
+        },
+        {
+          "key": "slow-clock",
+          "label": "Beats the clock?",
+          "tone": "warn",
+          "why": "T1 needs about 64 sessions against a 30-session stop"
+        },
+        {
+          "key": "asymmetric",
+          "label": "Asymmetric",
+          "tone": "good",
+          "why": "reward:risk to T2 is 4.16"
+        },
+        {
+          "key": "corroborated",
+          "label": "4 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Strong uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads strong up"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 11193.12,
+  "watch": [
+    "LAURUSLABS",
+    "PARAS",
+    "HAL",
+    "GESHIP",
+    "NAVINFLUOR",
+    "SAILIFE",
+    "VADILALIND",
+    "ACUTAAS"
+  ]
+}
