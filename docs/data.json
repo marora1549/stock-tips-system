@@ -16343,6 +16343,17 @@
         "untested": false
       },
       {
+        "event": "regulatory_approval",
+        "prior": 26,
+        "effective": 23.46,
+        "n": 3,
+        "avg_open_to_high_pct": 0.83,
+        "avg_open_to_close_pct": -0.84,
+        "hit_rate": 0.333,
+        "adjust": -2.54,
+        "untested": false
+      },
+      {
         "event": "l1_bidder",
         "prior": 24,
         "effective": 23.27,
@@ -16351,17 +16362,6 @@
         "avg_open_to_close_pct": -1.42,
         "hit_rate": 0.0,
         "adjust": -0.73,
-        "untested": false
-      },
-      {
-        "event": "regulatory_approval",
-        "prior": 26,
-        "effective": 21.42,
-        "n": 2,
-        "avg_open_to_high_pct": 0.23,
-        "avg_open_to_close_pct": -1.75,
-        "hit_rate": 0.0,
-        "adjust": -4.58,
         "untested": false
       }
     ],
@@ -16437,7 +16437,7 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "f4eb3bd",
+    "head": "84204ea",
     "branch": "main",
     "canaries": [
       {
