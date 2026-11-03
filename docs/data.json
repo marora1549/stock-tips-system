@@ -220,68 +220,6 @@
     }
   ],
   "sparks": {
-    "PETRONET": [
-      276.95,
-      280.6,
-      280.0,
-      277.0,
-      279.85,
-      279.3,
-      282.6,
-      281.8,
-      286.25,
-      288.15,
-      291.4,
-      293.0,
-      295.95,
-      292.5,
-      289.0,
-      290.95,
-      292.0,
-      300.6,
-      292.3,
-      289.2,
-      289.5,
-      288.1,
-      290.95,
-      285.8,
-      285.9,
-      288.7,
-      287.2,
-      283.95,
-      282.1,
-      283.45,
-      292.6,
-      287.5,
-      281.75,
-      285.85,
-      286.6,
-      286.5,
-      289.85,
-      282.95,
-      284.5,
-      285.5,
-      290.0,
-      297.5,
-      297.0,
-      288.5,
-      291.5,
-      290.5,
-      290.0,
-      292.95,
-      295.2,
-      293.0,
-      293.65,
-      295.0,
-      290.4,
-      286.3,
-      291.75,
-      296.0,
-      284.9,
-      289.15,
-      289.5,
-      300.95
-    ],
     "KOTAKBANK": [
       394.0,
       390.75,
@@ -343,6 +281,68 @@
       459.0,
       461.6,
       458.35
+    ],
+    "PETRONET": [
+      276.95,
+      280.6,
+      280.0,
+      277.0,
+      279.85,
+      279.3,
+      282.6,
+      281.8,
+      286.25,
+      288.15,
+      291.4,
+      293.0,
+      295.95,
+      292.5,
+      289.0,
+      290.95,
+      292.0,
+      300.6,
+      292.3,
+      289.2,
+      289.5,
+      288.1,
+      290.95,
+      285.8,
+      285.9,
+      288.7,
+      287.2,
+      283.95,
+      282.1,
+      283.45,
+      292.6,
+      287.5,
+      281.75,
+      285.85,
+      286.6,
+      286.5,
+      289.85,
+      282.95,
+      284.5,
+      285.5,
+      290.0,
+      297.5,
+      297.0,
+      288.5,
+      291.5,
+      290.5,
+      290.0,
+      292.95,
+      295.2,
+      293.0,
+      293.65,
+      295.0,
+      290.4,
+      286.3,
+      291.75,
+      296.0,
+      284.9,
+      289.15,
+      289.5,
+      300.95
     ],
     "PNB": [
       114.3,
@@ -26735,161 +26735,168 @@
     "max_single_stock_pct": 50
   },
   "intraday": {
-    "day": "2026-11-02",
-    "generated_at": "2026-11-02 08:11",
-    "checked_at": "2026-11-02 09:37",
-    "events_read": 7,
+    "day": "2026-11-03",
+    "generated_at": "2026-11-03 08:14",
+    "checked_at": null,
+    "events_read": 29,
     "wires": {
       "corp_stocks_to_watch": {
         "docs": 6,
-        "events": 2
+        "events": 6
       },
       "corp_orders": {
-        "docs": 0,
+        "docs": 5,
         "events": 0
       },
       "corp_orders_bse": {
         "docs": 1,
-        "events": 1
+        "events": 0
       },
       "corp_approvals": {
         "docs": 8,
-        "events": 1
+        "events": 2
       },
       "corp_regulatory_action": {
-        "docs": 1,
-        "events": 1
+        "docs": 5,
+        "events": 4
       },
       "corp_results": {
-        "docs": 1,
-        "events": 0
+        "docs": 4,
+        "events": 5
       },
       "corp_expansion": {
-        "docs": 1,
-        "events": 0
+        "docs": 3,
+        "events": 3
       },
       "corp_bs_capitalmarket": {
-        "docs": 6,
-        "events": 2
+        "docs": 8,
+        "events": 11
       },
       "corp_bs_markets_rss": {
         "docs": 8,
-        "events": 0
+        "events": 1
       },
       "corp_et_markets_rss": {
         "docs": 7,
-        "events": 0
+        "events": 1
       },
       "corp_sahi": {
-        "docs": 5,
-        "events": 0
+        "docs": 0,
+        "events": 0,
+        "skipped": true
       }
     },
     "trade": [],
     "watch": [
       {
-        "symbol": "RPGLIFE",
-        "company": "RPG Life Sciences Limited",
-        "event": "regulatory_approval",
-        "event_label": "Approval",
-        "catalyst": 57,
+        "symbol": "GRSE",
+        "company": "Garden Reach Shipbuilders & Engineers Limited",
+        "event": "l1_bidder",
+        "event_label": "L1 bidder",
+        "catalyst": 51,
         "verdict": "WATCH",
         "verdict_note": "real but not enough on its own — watch how it opens",
-        "size_inr_cr": 500.0,
+        "size_inr_cr": 32000.0,
         "size_estimated": false,
-        "size_basis": "₹500 crore (no order wording nearby)",
-        "materiality_ratio": 0.67,
-        "revenue_ttm_cr": 746.0,
-        "fund_score": 60,
+        "size_basis": "Rs 32,000 crore",
+        "materiality_ratio": 4.263,
+        "revenue_ttm_cr": 7507.0,
+        "fund_score": 40,
         "fund_why": [
-          "+12 ROCE 25.7%",
-          "+8 ROE 19.3%",
-          "+2 P/E 38.2",
-          "+4 3y profit CAGR 17%",
-          "+3 3y sales CAGR 11%",
-          "+4 return on capital has improved from 24.8% to 31.3%",
+          "+12 ROCE 42.8%",
+          "+8 ROE 31.6%",
+          "+2 P/E 29.3",
+          "+8 3y profit CAGR 50%",
+          "+6 3y sales CAGR 40%",
+          "+4 return on capital has improved from 20.2% to 35.7%",
           "+5 D/E 0.01",
-          "+4 promoter 72.95%",
-          "-5 latest qtr PAT YoY -37.8%",
-          "+0 mcap ₹4,260 cr",
-          "+3 operating cash flow ₹56cr, only 49% of profit",
-          "-8 profit growth has stalled: -37.2% last year against 108.0% the year before",
-          "-4 price to book 6.89",
-          "-6 ROCE 25.7% bought at 6.89× book is 3.7% on what you pay",
+          "+4 promoter 74.5%",
+          "+4 latest qtr PAT YoY 44.2%",
+          "+2 mcap ₹23,446 cr",
+          "-14 operating cash flow ₹-290cr — the business consumed cash last year",
+          "-10 borrowings up 270% year on year",
+          "-8 price to book 8.94",
           "  (returns counted +10 of +20 — its terms measure the same thing more than once, so the most it can add is +10)",
+          "  (growth counted +8 of +22 — its terms measure the same thing more than once, so the most it can add is +8)",
           "  (ownership counted +3 of +4 — its terms measure the same thing more than once, so the most it can add is +3)",
-          "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+          "  (size counted +1 of +2 — its terms measure the same thing more than once, so the most it can add is +1)",
+          "⚑ capped at 40: borrowings up 270% while the business burned cash — the growth is being funded, not earned"
         ],
         "fund_flags": [
-          "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+          "borrowings up 270% while the business burned cash — the growth is being funded, not earned"
         ],
         "fund_caps": [
-          "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+          "capped at 40: borrowings up 270% while the business burned cash — the growth is being funded, not earned"
         ],
         "fund_unrated": false,
         "screener_pros": [
           "Company is almost debt free.",
-          "Company has been maintaining a healthy dividend payout of 28.8%"
+          "Company is expected to give good quarter",
+          "Company has delivered good profit growth of 36.1% CAGR over last 5 years",
+          "Company has a good return on equity (ROE) track record: 3 Years ROE 27.7%",
+          "Company has been maintaining a healthy dividend payout of 29.1%"
         ],
         "screener_cons": [
-          "Debtor days have increased from 46.5 to 60.2 days.",
-          "Working capital days have increased from 44.6 days to 63.7 days"
+          "Stock is trading at 8.93 times its book value",
+          "Contingent liabilities of Rs.7,959 Cr.",
+          "Earnings include an other income of Rs.301 Cr.",
+          "Debtor days have increased from 34.0 to 63.6 days."
         ],
-        "source_id": "corp_approvals",
+        "source_id": "corp_stocks_to_watch",
         "corroborating_sources": [],
-        "url": "https://www.business-standard.com/amp/companies/people/rpg-life-sciences-eyes-another-acquisition-with-500-crore-capital-pool-126110100615_1.html",
-        "title": "RPG Life Sciences eyes another acquisition with ₹500 crore capital pool",
-        "published": "Sun, 01 Nov 2026 12:50:09 GMT",
+        "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-grse-dr-reddys-lupin-nbcc-hpcl-belrise-and-datakosa-in-focus/article71659200.ece",
+        "title": "Stocks to watch, Nov 3: GRSE, Dr Reddy’s, Lupin, NBCC, HPCL and others bag major orders, approvals",
+        "published": "Tue, 03 Nov 2026 01:29:02 GMT",
         "directness": 1.0,
         "route": "named",
-        "why_this_name": "named in the story",
-        "theme": null,
-        "ltp": 2575.699951171875,
+        "why_this_name": "Garden Reach — warships",
+        "theme": "defence",
+        "ltp": 2046.800048828125,
         "ta": {
-          "trend": "sideways",
-          "rsi": 41.5,
-          "adx": 18.0,
-          "atr_pct": 6.75,
-          "vol_ratio": 4.52,
-          "chg_1d_pct": -14.25,
-          "chg_5d_pct": -1.68,
-          "dist_52w_high_pct": -17.65,
-          "dist_ema200_pct": 2.16,
-          "avg_turnover_cr": 8.64,
-          "high_52w": 3127.8,
+          "trend": "strong_down",
+          "rsi": 46.4,
+          "adx": 39.9,
+          "atr_pct": 3.94,
+          "vol_ratio": 1.99,
+          "chg_1d_pct": 5.3,
+          "chg_5d_pct": 9.51,
+          "dist_52w_high_pct": -38.7,
+          "dist_ema200_pct": -16.08,
+          "avg_turnover_cr": 114.75,
+          "high_52w": 3339.0,
           "momentum_score": 0,
-          "last_bar_date": "2026-10-30"
+          "last_bar_date": "2026-11-02"
         },
         "fundamentals": {
-          "market_cap_cr": 4260.0,
-          "pe": 38.2,
-          "roce": 25.7,
-          "roe": 19.3,
-          "sales_growth_3_years": 11.0,
-          "profit_growth_3_years": 17.0,
-          "promoter_pct": 72.95,
+          "market_cap_cr": 23446.0,
+          "pe": 29.3,
+          "roce": 42.8,
+          "roe": 31.6,
+          "sales_growth_3_years": 40.0,
+          "profit_growth_3_years": 50.0,
+          "promoter_pct": 74.5,
           "debt_to_equity": 0.01,
-          "revenue_ttm_cr": 746.0,
+          "revenue_ttm_cr": 7507.0,
           "revenue_basis": "trailing 4 quarters"
         },
         "freshness": {
           "points": 12,
           "window": "overnight",
-          "why": "published Sun 18:20, outside market hours — the move is still ahead of the open"
+          "why": "published Tue 06:59, outside market hours — the move is still ahead of the open"
         },
         "class_score": {
-          "n": 2,
-          "avg_open_to_high_pct": 0.23,
-          "avg_open_to_close_pct": -1.75,
+          "n": 1,
+          "avg_open_to_high_pct": 0.61,
+          "avg_open_to_close_pct": -1.42,
           "hit_rate": 0.0,
-          "adjust": -4.58,
+          "adjust": -0.73,
           "untested": false
         },
         "plan": {
-          "reference_close": 2575.7,
-          "atr_pct": 6.75,
-          "expected_day_range_inr": 173.86,
-          "expected_day_range_pct": 6.75,
+          "reference_close": 2046.8,
+          "atr_pct": 3.94,
+          "expected_day_range_inr": 80.64,
+          "expected_day_range_pct": 3.94,
           "opening_range_minutes": 15,
           "gap_ladder": [
             {
@@ -26917,79 +26924,96 @@
           "force_flat_at": "15:10",
           "note": "The levels are not knowable before the open — they come from the range the market makes in its first minutes. What is knowable is the rule, and the rule is above."
         },
-        "certainty": 0.95,
+        "certainty": 0.8,
         "n_reports": 1,
         "catalyst_reasons": [
-          "+20 Approval (95% firm)",
-          "+18 ₹500cr against ₹746cr of revenue — 0.7× a year's sales, over half a year of revenue",
-          "+4 fundamentals 60/100",
-          "+3 down 14.2% into the news — less crowded",
-          "+12 published Sun 18:20, outside market hours — the move is still ahead of the open"
-        ],
-        "session": {
-          "state": "voided",
-          "band": "gap_down",
-          "band_rule": "the market disagrees with the news — stand aside and let it settle",
-          "gap_pct": -2.12,
-          "open": 2521.2,
-          "prev_close": 2575.7,
-          "vwap": 2511.72,
-          "last": 2509.0,
-          "day_high": 2539.2,
-          "day_low": 2483.5,
-          "from_open_pct": -0.48,
-          "opening_range": {
-            "open": 2521.2,
-            "high": 2539.2,
-            "low": 2483.5,
-            "close": 2513.9,
-            "span_inr": 55.7,
-            "span_pct": 2.24,
-            "close_position": 0.546,
-            "volume": 6095.0,
-            "bars": 3,
-            "minutes": 15,
-            "from": "09:15",
-            "to": "09:25"
-          },
-          "or_volume_multiple": 5.21,
-          "acts": false,
-          "why_not": "the market disagrees with the news — stand aside and let it settle",
-          "watch": null,
-          "trigger": null,
-          "stop": null,
-          "stop_pct": null,
-          "stop_note": null,
-          "targets": null,
-          "target_pct": null,
-          "target_basis": null,
-          "reward_risk_t2": null,
-          "targets_hit": null,
-          "triggered": null,
-          "stopped": null,
-          "entered_at": null,
-          "stopped_at": null,
-          "max_favourable_pct": null,
-          "size": {
-            "qty": 0
-          },
-          "order_line": null,
-          "reasons": [
-            "opened at ₹2,521.20, a -2.12% gap on ₹2,575.70",
-            "first 15 minutes ran ₹2,483.50–₹2,539.20 (2.24%) and closed 55% up that range"
-          ]
-        }
+          "+19 L1 bidder (80% firm)",
+          "+26 ₹32,000cr against ₹7,507cr of revenue — 4.3× a year's sales, more than a full year of revenue",
+          " 0 fundamentals 40/100",
+          "-6 16.1% below the 200-day average — fighting the trend",
+          "+12 published Tue 06:59, outside market hours — the move is still ahead of the open"
+        ]
       }
     ],
     "avoid": [
       {
-        "symbol": "CIPLA",
-        "company": "Cipla Limited",
+        "symbol": "COALINDIA",
+        "company": "Coal India Limited",
+        "event_label": "Broker downgrade",
+        "title": "Coal India files DRHP to sell 10% stake in subsidiary SECL through IPO",
+        "url": "https://www.business-standard.com/companies/news/coal-india-files-drhp-to-sell-10-stake-in-subsidiary-secl-through-ipo-126110201248_1.html",
+        "source_id": "corp_bs_markets_rss",
+        "catalyst": 5,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "ITC",
+        "company": "ITC Limited",
         "event_label": "Earnings miss",
-        "title": "Weekly Recap: Cipla Ltd Q2 revenue, profit decline and FDA VAI Verna Goa",
-        "url": "https://www.tradingview.com/news/tradingview:c9583b0e7ec7b:0-weekly-recap-cipla-ltd-q2-revenue-profit-decline-and-fda-vai-verna-goa/",
+        "title": "ITC Q2 net profit falls 20% as high taxes keep margins in check",
+        "url": "https://m.economictimes.com/markets/stocks/earnings/itc-q2-net-profit-falls-20-as-high-taxes-keep-margins-in-check/articleshow/135478635.cms",
+        "source_id": "corp_results",
+        "catalyst": -10,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "THOMASCOOK",
+        "company": "Thomas Cook  (India)  Limited",
+        "event_label": "Earnings miss",
+        "title": "Thomas Cook India Q2 Results: Net profit falls 22% to ₹51.6 crore, revenue down 6%",
+        "url": "https://www.cnbctv18.com/market/thomas-cook-india-share-price-q2-results-net-profit-falls-rs-51-6-crore-revenue-20025196.htm",
+        "source_id": "corp_results",
+        "catalyst": -10,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "ALKEM",
+        "company": "Alkem Laboratories Limited",
+        "event_label": "Regulatory action",
+        "title": "Alkem stock steadies as Mandva FDA inspection ends without Form 483 - ad-hoc-news.de",
+        "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/alkem-stock-steadies-as-mandva-fda-inspection-ends-without-form-483/70448215",
         "source_id": "corp_regulatory_action",
-        "catalyst": 2,
+        "catalyst": -12,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "PREMIERENE",
+        "company": "Premier Energies Limited",
+        "event_label": "Broker downgrade",
+        "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+        "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+        "source_id": "corp_bs_capitalmarket",
+        "catalyst": -13,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "UPL",
+        "company": "UPL Limited",
+        "event_label": "Earnings miss",
+        "title": "UPL Q2 Results: Net profit falls 24% YoY to ₹421 crore, EBITDA rises 5% - CNBC TV18",
+        "url": "https://www.linkedin.com/posts/cnbc-tv18_upl-q2-results-net-profit-falls-24-yoy-activity-7522968277543919618-1UCA",
+        "source_id": "corp_results",
+        "catalyst": -22,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "KNRCON",
+        "company": "KNR Constructions Limited",
+        "event_label": "Broker downgrade",
+        "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+        "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+        "source_id": "corp_bs_capitalmarket",
+        "catalyst": -27,
+        "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
+      },
+      {
+        "symbol": "PNCINFRA",
+        "company": "PNC Infratech Limited",
+        "event_label": "Broker downgrade",
+        "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+        "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+        "source_id": "corp_bs_capitalmarket",
+        "catalyst": -27,
         "verdict_note": "a negative catalyst — do not buy this today, and exit it if you hold it"
       }
     ],
@@ -27133,7 +27157,7 @@
     "ceiling": 90.0
   },
   "build": {
-    "head": "160d497",
+    "head": "1f65062",
     "branch": "main",
     "canaries": [
       {
