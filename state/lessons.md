@@ -191,3 +191,6 @@ Events: KOTAKBANK: T1 HIT @ 453.2 — booked 25 sh (+₹880.0), SL → 418.0
 
 ### 2026-11-02 [analyst]
 2026-11-02 desk review: quiet day, no stops/targets/time-stops. PETRONET +5.6% (hold-capable, T1 unhit), KOTAKBANK +9.7% (T1 hit 29 Oct, stop at breakeven 418), PNB +0.5% (hot-potato); equity 99,649 (-0.35%), cash 11,193, closed book 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled -3.4%, too few to grade. No source auto-disabled, none at 60% T1. Monday: no new source.
+
+### 2026-11-03 [analyst]
+2026-11-03 desk review: quiet day, no stops/targets/time-stops. PETRONET +6.3% (hold-capable, T1 unhit), KOTAKBANK +11.2% (T1 hit 29 Oct, stop at breakeven 418), PNB -1.3% (hot-potato, stop 113.95); equity 99,699 (-0.3%), cash 11,193, closed 0/5 (avg -3.24%). fund-audit: no inversion, no bias (markets_mojo gap +6.5 <8pt); 75-100 band 2 settled -3.4%, too few to grade. No source auto-disabled, none at 60% T1. Tuesday: no new source.
