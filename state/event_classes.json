@@ -98,11 +98,11 @@
   "l1_bidder": {
     "id": "l1_bidder",
     "prior": 24,
-    "adjust": -0.729,
-    "n": 1,
-    "n_up": 0,
-    "sum_open_to_high_pct": 0.61,
-    "sum_open_to_close_pct": -1.42,
+    "adjust": 4.707,
+    "n": 2,
+    "n_up": 1,
+    "sum_open_to_high_pct": 7.85,
+    "sum_open_to_close_pct": 0.81,
     "history": [
       {
         "date": "2026-09-25",
@@ -110,10 +110,17 @@
         "open_to_high_pct": 0.61,
         "open_to_close_pct": -1.42,
         "delta": -0.73
+      },
+      {
+        "date": "2026-11-03",
+        "symbol": "GRSE",
+        "open_to_high_pct": 7.24,
+        "open_to_close_pct": 2.23,
+        "delta": 5.4
       }
     ],
     "first_seen": "2026-09-25",
-    "last_seen": "2026-09-25"
+    "last_seen": "2026-11-03"
   },
   "earnings_beat": {
     "id": "earnings_beat",

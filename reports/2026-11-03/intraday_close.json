@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-03",
+  "settled_at": "2026-11-03 15:22",
+  "exits": [],
+  "graded": [
+    {
+      "symbol": "GRSE",
+      "event": "l1_bidder",
+      "open_to_high_pct": 7.24,
+      "open_to_close_pct": 2.23,
+      "verdict": "WATCH",
+      "catalyst": 51,
+      "triggered": null,
+      "counted_for_class": true
+    }
+  ],
+  "book": {
+    "notional_inr": 100000.0,
+    "n_trades": 0,
+    "n_open": 0,
+    "open_symbols": [],
+    "n_wins": 0,
+    "n_losses": 0,
+    "hit_rate": null,
+    "pnl_inr": 0,
+    "return_on_notional_pct": 0.0,
+    "avg_r": null,
+    "best_inr": 0,
+    "worst_inr": 0,
+    "avg_win_inr": null,
+    "avg_loss_inr": null,
+    "n_days_traded": 0,
+    "pnl_by_day": {},
+    "n_candidates_seen": 1
+  },
+  "classes": [
+    {
+      "event": "l1_bidder",
+      "prior": 24,
+      "effective": 28.71,
+      "n": 2,
+      "avg_open_to_high_pct": 3.92,
+      "avg_open_to_close_pct": 0.41,
+      "hit_rate": 0.5,
+      "adjust": 4.71,
+      "untested": false
+    },
+    {
+      "event": "earnings_beat",
+      "prior": 22,
+      "effective": 21.06,
+      "n": 2,
+      "avg_open_to_high_pct": 0.94,
+      "avg_open_to_close_pct": -0.98,
+      "hit_rate": 0.5,
+      "adjust": -0.94,
+      "untested": false
+    },
+    {
+      "event": "order_win",
+      "prior": 30,
+      "effective": 15.11,
+      "n": 7,
+      "avg_open_to_high_pct": 0.91,
+      "avg_open_to_close_pct": -3.19,
+      "hit_rate": 0.429,
+      "adjust": -14.89,
+      "untested": false
+    },
+    {
+      "event": "regulatory_approval",
+      "prior": 26,
+      "effective": 23.46,
+      "n": 3,
+      "avg_open_to_high_pct": 0.83,
+      "avg_open_to_close_pct": -0.84,
+      "hit_rate": 0.333,
+      "adjust": -2.54,
+      "untested": false
+    }
+  ]
+}
