@@ -1,0 +1,1587 @@
+{
+  "date": "2026-11-03",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 6
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 0
+    },
+    "corp_orders_bse": {
+      "docs": 1,
+      "events": 0
+    },
+    "corp_approvals": {
+      "docs": 8,
+      "events": 2
+    },
+    "corp_regulatory_action": {
+      "docs": 5,
+      "events": 4
+    },
+    "corp_results": {
+      "docs": 4,
+      "events": 5
+    },
+    "corp_expansion": {
+      "docs": 3,
+      "events": 3
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 11
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 1
+    },
+    "corp_et_markets_rss": {
+      "docs": 7,
+      "events": 1
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "bd431d9000",
+      "symbol": "EKI",
+      "company": "EKI Energy Services Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received the order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.88,
+      "size_estimated": false,
+      "size_basis": "Rs 88 lakh",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.multibagg.ai/market-pulse/articles/eki-energy-services-sebi-market-restraint-announcement-cmvzjkj01001z2vpe2kiw9id4",
+      "title": "EKI Energy Services faces two-month SEBI market restraint",
+      "published": "Mon, 02 Nov 2026 17:37:29 GMT",
+      "published_utc": "2026-11-02T17:37:29+00:00",
+      "sentence": "received the order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.multibagg.ai/market-pulse/articles/eki-energy-services-sebi-market-restraint-announcement-cmvzjkj01001z2vpe2kiw9id4"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "efb6396708",
+      "symbol": "NBCC",
+      "company": "NBCC (India) Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secured project",
+      "also_matched": [
+        "earnings_beat",
+        "earnings_miss",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": 70.5,
+      "size_estimated": false,
+      "size_basis": "Rs 70.50 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lupin-nbcc-itc-nalco-kec-international-gsfc-trident-marico-akums-drugs-granules-sfc-environmental-bls-polymers-in-focus-on-3-november-14066829.html",
+      "title": "Stocks to Watch Today: Lupin, NBCC, ITC, NALCO, KEC International, GSFC, Trident, Marico, Akums Drugs,...",
+      "published": "Tue, 03 Nov 2026 01:06:14 GMT",
+      "published_utc": "2026-11-03T01:06:14+00:00",
+      "sentence": "secured project",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lupin-nbcc-itc-nalco-kec-international-gsfc-trident-marico-akums-drugs-granules-sfc-environmental-bls-polymers-in-focus-on-3-november-14066829.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6dbba06f9e",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda) approv",
+      "also_matched": [
+        "regulatory_action",
+        "dilution",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "data_centre",
+        "pharma_approval",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MW",
+        "text": "300 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html",
+      "title": "Stocks to watch: ITC, Lupin, NBCC, SBI, Dr Reddy's, Bosch, Ola Electric",
+      "published": "Tue, 03 Nov 2026 02:30:24 GMT",
+      "published_utc": "2026-11-03T02:30:24+00:00",
+      "sentence": "usfda) approv",
+      "corroborating_sources": [
+        "corp_approvals"
+      ],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html",
+        "https://www.indianpharmapost.com/regulatory/lupin-receives-usfda-approval-for-amifampridine-tablets-22302"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "c0d25a78fe",
+      "symbol": "DGCONTENT",
+      "company": "Digicontent Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "wins prestigious pmfme scheme digital promotions tender",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/alok-infotech-wins-prestigious-pmfme-scheme-digital-promotions-tender-126110300008_1.html",
+      "title": "Alok Infotech Wins Prestigious PMFME Scheme Digital Promotions Tender",
+      "published": "Mon, 02 Nov 2026 18:45:11 GMT",
+      "published_utc": "2026-11-02T18:45:11+00:00",
+      "sentence": "wins prestigious pmfme scheme digital promotions tender",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/alok-infotech-wins-prestigious-pmfme-scheme-digital-promotions-tender-126110300008_1.html",
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "f5832c10c9",
+      "symbol": "GRSE",
+      "company": "Garden Reach Shipbuilders & Engineers Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "l1",
+      "also_matched": [
+        "order_win",
+        "regulatory_approval"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "Garden Reach — warships",
+      "theme": "defence",
+      "themes_matched": [
+        "defence",
+        "pharma_approval"
+      ],
+      "size_inr_cr": 32000.0,
+      "size_estimated": false,
+      "size_basis": "Rs 32,000 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-grse-dr-reddys-lupin-nbcc-hpcl-belrise-and-datakosa-in-focus/article71659200.ece",
+      "title": "Stocks to watch, Nov 3: GRSE, Dr Reddy’s, Lupin, NBCC, HPCL and others bag major orders, approvals",
+      "published": "Tue, 03 Nov 2026 01:29:02 GMT",
+      "published_utc": "2026-11-03T01:29:02+00:00",
+      "sentence": "l1",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.thehindubusinessline.com/markets/buzzing-stocks-grse-dr-reddys-lupin-nbcc-hpcl-belrise-and-datakosa-in-focus/article71659200.ece"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "10105f0e15",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "tentative approval",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.fortuneindia.com/business-news/dr-reddys-gets-us-fda-tentative-nod-for-generic-hiv-prevention-drug/168313",
+      "title": "Dr Reddy’s gets US FDA tentative nod for generic HIV prevention drug",
+      "published": "Mon, 02 Nov 2026 16:57:56 GMT",
+      "published_utc": "2026-11-02T16:57:56+00:00",
+      "sentence": "tentative approval",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.fortuneindia.com/business-news/dr-reddys-gets-us-fda-tentative-nod-for-generic-hiv-prevention-drug/168313"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "8eff4a9516",
+      "symbol": "ALKEM",
+      "company": "Alkem Laboratories Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "form 483",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/alkem-stock-steadies-as-mandva-fda-inspection-ends-without-form-483/70448215",
+      "title": "Alkem stock steadies as Mandva FDA inspection ends without Form 483 - ad-hoc-news.de",
+      "published": "Tue, 03 Nov 2026 01:37:42 GMT",
+      "published_utc": "2026-11-03T01:37:42+00:00",
+      "sentence": "form 483",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.ad-hoc-news.de/boerse/news/nebenwerte/alkem-stock-steadies-as-mandva-fda-inspection-ends-without-form-483/70448215"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "0a153ba5b9",
+      "symbol": "MARICO",
+      "company": "Marico Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jumps",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms",
+      "title": "Marico profit jumps 31%, flags rising input costs amid West Asia woes",
+      "published": "Tue, 03 Nov 2026 02:09:04 GMT",
+      "published_utc": "2026-11-03T02:09:04+00:00",
+      "sentence": "profit jumps",
+      "corroborating_sources": [
+        "corp_et_markets_rss"
+      ],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms",
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "937cf10b35",
+      "symbol": "PCJEWELLER",
+      "company": "PC Jeweller Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.dailyexcelsior.com/sebi-warns-pc-jeweller-promoter-compliance-officer-on-failure-to-maintain-insider-trading-database/amp/?utm=relatedarticles",
+      "title": "SEBI warns PC Jeweller promoter, compliance officer on failure to maintain insider-trading database",
+      "published": "Mon, 02 Nov 2026 10:52:47 GMT",
+      "published_utc": "2026-11-02T10:52:47+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.dailyexcelsior.com/sebi-warns-pc-jeweller-promoter-compliance-officer-on-failure-to-maintain-insider-trading-database/amp/?utm=relatedarticles"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fc1c3565e8",
+      "symbol": "ITC",
+      "company": "ITC Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/itc-q2-net-profit-falls-20-as-high-taxes-keep-margins-in-check/articleshow/135478635.cms",
+      "title": "ITC Q2 net profit falls 20% as high taxes keep margins in check",
+      "published": "Tue, 03 Nov 2026 01:59:06 GMT",
+      "published_utc": "2026-11-03T01:59:06+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/earnings/itc-q2-net-profit-falls-20-as-high-taxes-keep-margins-in-check/articleshow/135478635.cms",
+        "https://m.economictimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "e3c903f17e",
+      "symbol": "THOMASCOOK",
+      "company": "Thomas Cook  (India)  Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/thomas-cook-india-share-price-q2-results-net-profit-falls-rs-51-6-crore-revenue-20025196.htm",
+      "title": "Thomas Cook India Q2 Results: Net profit falls 22% to ₹51.6 crore, revenue down 6%",
+      "published": "Mon, 02 Nov 2026 14:44:10 GMT",
+      "published_utc": "2026-11-02T14:44:10+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.cnbctv18.com/market/thomas-cook-india-share-price-q2-results-net-profit-falls-rs-51-6-crore-revenue-20025196.htm"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "08eb39891f",
+      "symbol": "UPL",
+      "company": "UPL Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2312.0,
+      "size_estimated": false,
+      "size_basis": "₹2,312 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_upl-q2-results-net-profit-falls-24-yoy-activity-7522968277543919618-1UCA",
+      "title": "UPL Q2 Results: Net profit falls 24% YoY to ₹421 crore, EBITDA rises 5% - CNBC TV18",
+      "published": "Mon, 02 Nov 2026 10:30:07 GMT",
+      "published_utc": "2026-11-02T10:30:07+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.linkedin.com/posts/cnbc-tv18_upl-q2-results-net-profit-falls-24-yoy-activity-7522968277543919618-1UCA"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e6d46babf0",
+      "symbol": "NDTV",
+      "company": "New Delhi Television Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.dailyexcelsior.com/sebi-warns-pc-jeweller-promoter-compliance-officer-on-failure-to-maintain-insider-trading-database/amp/?utm=relatedarticles",
+      "title": "SEBI warns PC Jeweller promoter, compliance officer on failure to maintain insider-trading database",
+      "published": "Mon, 02 Nov 2026 10:52:47 GMT",
+      "published_utc": "2026-11-02T10:52:47+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.dailyexcelsior.com/sebi-warns-pc-jeweller-promoter-compliance-officer-on-failure-to-maintain-insider-trading-database/amp/?utm=relatedarticles"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "96341a3877",
+      "symbol": "ACMESOLAR",
+      "company": "Acme Solar Holdings Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioned solar capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MW",
+        "text": "300 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-66-68-mw-solar-component-rajasthan/55175197",
+      "title": "ACME Solar commissions 66.68 MW solar component in Rajasthan",
+      "published": "Mon, 02 Nov 2026 16:05:52 GMT",
+      "published_utc": "2026-11-02T16:05:52+00:00",
+      "sentence": "commissioned solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-66-68-mw-solar-component-rajasthan/55175197"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b85484236d",
+      "symbol": "COALINDIA",
+      "company": "Coal India Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 66.81,
+      "size_estimated": false,
+      "size_basis": "66.81 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/coal-india-files-drhp-to-sell-10-stake-in-subsidiary-secl-through-ipo-126110201248_1.html",
+      "title": "Coal India files DRHP to sell 10% stake in subsidiary SECL through IPO",
+      "published": "Mon, 02 Nov 2026 18:47:21 +0530",
+      "published_utc": "2026-11-02T13:17:21+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/coal-india-files-drhp-to-sell-10-stake-in-subsidiary-secl-through-ipo-126110201248_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "56c3cd6302",
+      "symbol": "NTPCGREEN",
+      "company": "NTPC Green Energy Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissioning and its contribution to the group's renewable energy capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 91668.0,
+        "unit": "MW",
+        "text": "91,668 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/Mzk0NTI=/ntpc-green-energy-commissions-95-6-mw-of-kalasar-solar-project-in-rajasthan",
+      "title": "NTPC Green Energy commissions 95.6 MW of Kalasar solar project in Rajasthan",
+      "published": "Mon, 02 Nov 2026 12:31:53 GMT",
+      "published_utc": "2026-11-02T12:31:53+00:00",
+      "sentence": "commissioning and its contribution to the group's renewable energy capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://propnewstime.com/latestnewsstories/Mzk0NTI=/ntpc-green-energy-commissions-95-6-mw-of-kalasar-solar-project-in-rajasthan"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "9d75e8d274",
+      "symbol": "BDL",
+      "company": "Bharat Dynamics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures drdo order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "missiles and torpedoes",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "published_utc": "2026-11-02T13:55:23+00:00",
+      "sentence": "secures drdo order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "cb31d2c912",
+      "symbol": "BEL",
+      "company": "Bharat Electronics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures drdo order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "radars, electronic warfare, missile electronics",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "published_utc": "2026-11-02T13:55:23+00:00",
+      "sentence": "secures drdo order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "17a3dcb419",
+      "symbol": "HAL",
+      "company": "Hindustan Aeronautics Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures drdo order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "aircraft, helicopters, engines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "published_utc": "2026-11-02T13:55:23+00:00",
+      "sentence": "secures drdo order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ae66294e00",
+      "symbol": "MAZDOCK",
+      "company": "Mazagon Dock Shipbuilders Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures drdo order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "warships and submarines",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "published_utc": "2026-11-02T13:55:23+00:00",
+      "sentence": "secures drdo order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "b5231e1efa",
+      "symbol": "VMSTMT",
+      "company": "VMS TMT Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions billet plant and 12 mw solar capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 15.0,
+        "unit": "MW",
+        "text": "15 MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.multibagg.ai/market-pulse/articles/vms-tmt-billet-solar-capacity-cmvzlgdmb002w2vpenasrcsp0",
+      "title": "VMS TMT Commissions Billet Plant and 12 MW Solar Capacity",
+      "published": "Mon, 02 Nov 2026 19:08:21 GMT",
+      "published_utc": "2026-11-02T19:08:21+00:00",
+      "sentence": "commissions billet plant and 12 mw solar capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.multibagg.ai/market-pulse/articles/vms-tmt-billet-solar-capacity-cmvzlgdmb002w2vpenasrcsp0"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "735a4f87ca",
+      "symbol": "COCHINSHIP",
+      "company": "Cochin Shipyard Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures drdo order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "shipbuilding and repair",
+      "theme": "defence",
+      "themes_matched": [
+        "defence"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "published_utc": "2026-11-02T13:55:23+00:00",
+      "sentence": "secures drdo order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a716e52b27",
+      "symbol": "BOSCHLTD",
+      "company": "Bosch Limited",
+      "event": "corporate_action",
+      "event_label": "Dividend / bonus / split",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 8,
+      "phrase": "bonus shares",
+      "also_matched": [
+        "regulatory_approval",
+        "regulatory_action",
+        "dilution"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "defence",
+        "data_centre",
+        "pharma_approval",
+        "shipping_ports"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 300.0,
+        "unit": "MW",
+        "text": "300 MW"
+      },
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html",
+      "title": "Stocks to watch: ITC, Lupin, NBCC, SBI, Dr Reddy's, Bosch, Ola Electric",
+      "published": "Tue, 03 Nov 2026 02:30:24 GMT",
+      "published_utc": "2026-11-03T02:30:24+00:00",
+      "sentence": "bonus shares",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3042ad02b6",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "solar_manufacturing",
+        "roads_infra"
+      ],
+      "size_inr_cr": 466.43,
+      "size_estimated": false,
+      "size_basis": "₹466.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+      "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+      "published": "Mon, 02 Nov 2026 08:45:12 GMT",
+      "published_utc": "2026-11-02T08:45:12+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "46608f2460",
+      "symbol": "KEC",
+      "company": "KEC International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of us manufacturing capacity through the new jersey facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "KEC International — transmission towers and turnkey lines",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-indian-growth-stocks-180850447.html",
+      "title": "Top 3 Indian Growth Stocks To Watch In November 2026",
+      "published": "Mon, 02 Nov 2026 18:08:50 GMT",
+      "published_utc": "2026-11-02T18:08:50+00:00",
+      "sentence": "expansion of us manufacturing capacity through the new jersey facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/top-3-indian-growth-stocks-180850447.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "479e8c3c07",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "solar_manufacturing",
+        "roads_infra"
+      ],
+      "size_inr_cr": 466.43,
+      "size_estimated": false,
+      "size_basis": "₹466.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+      "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+      "published": "Mon, 02 Nov 2026 08:45:12 GMT",
+      "published_utc": "2026-11-02T08:45:12+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "a9f7b741e4",
+      "symbol": "KPIL",
+      "company": "Kalpataru Projects International Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expansion of us manufacturing capacity through the new jersey facility",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Kalpataru Projects — transmission EPC order book",
+      "theme": "transmission_epc",
+      "themes_matched": [
+        "transmission_epc"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-indian-growth-stocks-180850447.html",
+      "title": "Top 3 Indian Growth Stocks To Watch In November 2026",
+      "published": "Mon, 02 Nov 2026 18:08:50 GMT",
+      "published_utc": "2026-11-02T18:08:50+00:00",
+      "sentence": "expansion of us manufacturing capacity through the new jersey facility",
+      "corroborating_sources": [],
+      "urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/top-3-indian-growth-stocks-180850447.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "633ac3ed51",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "railways",
+        "solar_manufacturing",
+        "roads_infra"
+      ],
+      "size_inr_cr": 466.43,
+      "size_estimated": false,
+      "size_basis": "₹466.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+      "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+      "published": "Mon, 02 Nov 2026 08:45:12 GMT",
+      "published_utc": "2026-11-02T08:45:12+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1dcbe0443c",
+      "symbol": "PREMIERENE",
+      "company": "Premier Energies Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win"
+      ],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "Premier Energies — cells and modules",
+      "theme": "solar_manufacturing",
+      "themes_matched": [
+        "railways",
+        "solar_manufacturing",
+        "roads_infra"
+      ],
+      "size_inr_cr": 466.43,
+      "size_estimated": false,
+      "size_basis": "₹466.43 crore",
+      "size_is_own_order": false,
+      "capacity": {
+        "value": 500000.0,
+        "unit": "MW",
+        "text": "500 GW"
+      },
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+      "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+      "published": "Mon, 02 Nov 2026 08:45:12 GMT",
+      "published_utc": "2026-11-02T08:45:12+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.thehindubusinessline.com/markets/buzzing-stocks-grse-dr-reddys-lupin-nbcc-hpcl-belrise-and-datakosa-in-focus/article71659200.ece",
+      "title": "Stocks to watch, Nov 3: GRSE, Dr Reddy’s, Lupin, NBCC, HPCL and others bag major orders, approvals",
+      "published": "Tue, 03 Nov 2026 01:29:02 GMT",
+      "chars": 9630,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-itc-marico-sbi-yatra-online-nse-container-corp-and-sun-pharma/articleshow/135474354.cms",
+      "title": "Stocks in news: ITC, Marico, SBI, Yatra Online, NSE, Container Corp and Sun Pharma",
+      "published": "Tue, 03 Nov 2026 00:30:00 GMT",
+      "chars": 9360,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html",
+      "title": "Stocks to watch: ITC, Lupin, NBCC, SBI, Dr Reddy's, Bosch, Ola Electric",
+      "published": "Tue, 03 Nov 2026 02:30:24 GMT",
+      "chars": 8518,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-lupin-nbcc-itc-nalco-kec-international-gsfc-trident-marico-akums-drugs-granules-sfc-environmental-bls-polymers-in-focus-on-3-november-14066829.html",
+      "title": "Stocks to Watch Today: Lupin, NBCC, ITC, NALCO, KEC International, GSFC, Trident, Marico, Akums Drugs,...",
+      "published": "Tue, 03 Nov 2026 01:06:14 GMT",
+      "chars": 9686,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-sbi-nse-itc-sun-pharma-idbi-bank-shares-in-focus-on-tuesday-3-nov-full-list-11793668822019.html",
+      "title": "Top stocks to watch today: SBI, NSE, ITC, Sun Pharma, IDBI Bank shares in focus on Tuesday, 3 Nov | Full list",
+      "published": "Tue, 03 Nov 2026 01:47:56 GMT",
+      "chars": 4085,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/top-3-indian-growth-stocks-180850447.html",
+      "title": "Top 3 Indian Growth Stocks To Watch In November 2026",
+      "published": "Mon, 02 Nov 2026 18:08:50 GMT",
+      "chars": 4956,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/vayona-energy-bags-order-for-projects-in-gujarat-and-rajasthan",
+      "title": "Vayona Energy bags order for projects in Gujarat and Rajasthan",
+      "published": "Mon, 02 Nov 2026 20:46:17 GMT",
+      "chars": 934,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://propnewstime.com/latestnewsstories/Mzk0MDY=/sungdo-engineering-construction-secures-order-worth-110-5-billion-won",
+      "title": "Sungdo Engineering & Construction secures order worth 110.5 billion won",
+      "published": "Mon, 02 Nov 2026 16:33:22 GMT",
+      "chars": 9516,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.sahi.com/news/rites-emerges-as-lowest-bidder-for-400-crore-sri-lanka-railways-dmu-order",
+      "title": "RITES Emerges as Lowest Bidder for ₹400-Crore Sri Lanka Railways DMU Order",
+      "published": "Mon, 02 Nov 2026 18:23:04 GMT",
+      "chars": 2791,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://firstindia.co.in/news/press-releases/srinibas-pradhan-constructions-limited-emerges-as-l1-bidder-for-rs-3081-cr-road-construction-project-in-odisha-1793602993",
+      "title": "Srinibas Pradhan Constructions Limited Emerges as L1 Bidder for Rs 30.81 Cr Road Construction Project in Odisha",
+      "published": "Mon, 02 Nov 2026 11:19:07 GMT",
+      "chars": 14660,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://www.equitybulls.com/news/378293/atishay-limited-receives-order-worth-rs-82-13-lakhs-from-travancore-devaswom-boa",
+      "title": "Atishay Limited receives order worth Rs. 82.13 lakhs from Travancore Devaswom Board",
+      "published": "Mon, 02 Nov 2026 09:13:59 GMT",
+      "chars": 821,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://hdfcsky.com/news/sunita-tools-receives-order-for-6000-sets-of-m1-shell-forging",
+      "title": "Sunita Tools Receives Order for 6,000 Sets of M1 Shell Forging",
+      "published": "Mon, 02 Nov 2026 10:09:29 GMT",
+      "chars": 4060,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.thehindu.com/business/Industry/dr-reddys-secures-us-fda-tentative-nod-for-hiv-drug-lenacapavir/article71657724.ece",
+      "title": "Dr. Reddy’s secures U.S. FDA tentative nod for HIV drug lenacapavir",
+      "published": "Mon, 02 Nov 2026 16:15:18 GMT",
+      "chars": 2458,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/lupin-receives-usfda-approval-for-amifampridine-tablets-22302",
+      "title": "Lupin receives USFDA approval for Amifampridine tablets",
+      "published": "Mon, 02 Nov 2026 14:47:11 GMT",
+      "chars": 2774,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.bwhealthcareworld.com/article/sun-pharma-secures-us-fda-approval-for-ilumya-in-psoriatic-arthritis-631736",
+      "title": "Sun Pharma Secures US FDA Approval For ILUMYA In Psoriatic Arthritis",
+      "published": "Mon, 02 Nov 2026 18:03:35 GMT",
+      "chars": 2471,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.tradingview.com/news/cnbctv:2b99bd3b5094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-02 — cnbctv:2b99bd3b5094b:0",
+      "published": "Mon, 02 Nov 2026 18:05:09 GMT",
+      "chars": 3576,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.moneycontrol.com/news/business/dr-reddy-s-gets-usfda-nod-for-generic-twice-a-year-hiv-prevention-shot-14066698.html/amp",
+      "title": "Dr Reddy’s gets USFDA nod for generic twice-a-year HIV prevention shot",
+      "published": "Mon, 02 Nov 2026 15:19:10 GMT",
+      "chars": 6597,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://unitaid.org/news-blog/u-s-fda-approves-first-generic-injectable-lenacapavir-for-hiv-prevention/",
+      "title": "U.S. FDA approves first generic injectable lenacapavir for HIV prevention",
+      "published": "Mon, 02 Nov 2026 14:04:17 GMT",
+      "chars": 9403,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.fortuneindia.com/business-news/dr-reddys-gets-us-fda-tentative-nod-for-generic-hiv-prevention-drug/168313",
+      "title": "Dr Reddy’s gets US FDA tentative nod for generic HIV prevention drug",
+      "published": "Mon, 02 Nov 2026 16:57:56 GMT",
+      "chars": 2295,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.healthandme.com/health-news/us-fda-approves-dr-reddys-generic-hiv-prevention-shot-what-cheaper-lenacapavir-means-for-india-other-countries-article-156454373",
+      "title": "US FDA Approves Dr Reddy's Generic HIV Prevention Shot: What Cheaper Lenacapavir Means For India, Other Countries",
+      "published": "Mon, 02 Nov 2026 18:02:47 GMT",
+      "chars": 4143,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.dailyexcelsior.com/sebi-warns-pc-jeweller-promoter-compliance-officer-on-failure-to-maintain-insider-trading-database/amp/?utm=relatedarticles",
+      "title": "SEBI warns PC Jeweller promoter, compliance officer on failure to maintain insider-trading database",
+      "published": "Mon, 02 Nov 2026 10:52:47 GMT",
+      "chars": 1083,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/alkem-stock-steadies-as-mandva-fda-inspection-ends-without-form-483/70448215",
+      "title": "Alkem stock steadies as Mandva FDA inspection ends without Form 483 - ad-hoc-news.de",
+      "published": "Tue, 03 Nov 2026 01:37:42 GMT",
+      "chars": 1967,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.multibagg.ai/market-pulse/articles/eki-energy-services-sebi-market-restraint-announcement-cmvzjkj01001z2vpe2kiw9id4",
+      "title": "EKI Energy Services faces two-month SEBI market restraint",
+      "published": "Mon, 02 Nov 2026 17:37:29 GMT",
+      "chars": 9726,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://finance.yahoo.com/healthcare/articles/amgen-amgn-gets-fda-warning-150653579.html",
+      "title": "Amgen (AMGN) Gets FDA Warning Letter Over Misleading Vectibix Promotion",
+      "published": "Mon, 02 Nov 2026 15:06:53 GMT",
+      "chars": 2812,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/nova-iron-steel-holds-34th-agm-approves-new-independent-director/54912012",
+      "title": "Nova Iron & Steel appoints Palak Jindal as Independent Director",
+      "published": "Mon, 02 Nov 2026 08:28:02 GMT",
+      "chars": 4517,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/itc-q2-net-profit-falls-20-as-high-taxes-keep-margins-in-check/articleshow/135478635.cms",
+      "title": "ITC Q2 net profit falls 20% as high taxes keep margins in check",
+      "published": "Tue, 03 Nov 2026 01:59:06 GMT",
+      "chars": 4927,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.cnbctv18.com/market/thomas-cook-india-share-price-q2-results-net-profit-falls-rs-51-6-crore-revenue-20025196.htm",
+      "title": "Thomas Cook India Q2 Results: Net profit falls 22% to ₹51.6 crore, revenue down 6%",
+      "published": "Mon, 02 Nov 2026 14:44:10 GMT",
+      "chars": 3343,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.linkedin.com/posts/cnbc-tv18_upl-q2-results-net-profit-falls-24-yoy-activity-7522968277543919618-1UCA",
+      "title": "UPL Q2 Results: Net profit falls 24% YoY to ₹421 crore, EBITDA rises 5% - CNBC TV18",
+      "published": "Mon, 02 Nov 2026 10:30:07 GMT",
+      "chars": 450,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://m.economictimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms",
+      "title": "Marico profit jumps 31%, flags rising input costs amid West Asia woes",
+      "published": "Tue, 03 Nov 2026 02:09:04 GMT",
+      "chars": 4185,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.multibagg.ai/market-pulse/articles/vms-tmt-billet-solar-capacity-cmvzlgdmb002w2vpenasrcsp0",
+      "title": "VMS TMT Commissions Billet Plant and 12 MW Solar Capacity",
+      "published": "Mon, 02 Nov 2026 19:08:21 GMT",
+      "chars": 9419,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://scanx.trade/stock-market-news/companies/acme-solar-commissions-66-68-mw-solar-component-rajasthan/55175197",
+      "title": "ACME Solar commissions 66.68 MW solar component in Rajasthan",
+      "published": "Mon, 02 Nov 2026 16:05:52 GMT",
+      "chars": 3030,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://propnewstime.com/latestnewsstories/Mzk0NTI=/ntpc-green-energy-commissions-95-6-mw-of-kalasar-solar-project-in-rajasthan",
+      "title": "NTPC Green Energy commissions 95.6 MW of Kalasar solar project in Rajasthan",
+      "published": "Mon, 02 Nov 2026 12:31:53 GMT",
+      "chars": 8056,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/finance/insurance/irdai-cuts-share-transfer-approval-fee-by-80-to-10-lakh-for-insurers-126110201469_1.html",
+      "title": "Irdai cuts share transfer approval fee by 80% to ₹10 lakh for insurers",
+      "published": "Mon, 02 Nov 2026 15:17:29 GMT",
+      "chars": 5091,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/l-t-bags-significant-orders-for-residential-commercial-projects-126110200755_1.html",
+      "title": "L&T secures significant orders for residential, commercial projects",
+      "published": "Mon, 02 Nov 2026 10:13:13 GMT",
+      "chars": 2441,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/alok-infotech-wins-prestigious-pmfme-scheme-digital-promotions-tender-126110300008_1.html",
+      "title": "Alok Infotech Wins Prestigious PMFME Scheme Digital Promotions Tender",
+      "published": "Mon, 02 Nov 2026 18:45:11 GMT",
+      "chars": 2174,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/k-sons-wins-two-prestigious-honours-at-realty-conclave-excellence-awards-north-2026-126110201257_1.html",
+      "title": "K.sons Wins Two Prestigious Honours at Realty+ Conclave & Excellence Awards North 2026",
+      "published": "Mon, 02 Nov 2026 13:20:16 GMT",
+      "chars": 4756,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/us-approves-generic-hiv-prevention-drug-lenacapavir-for-poorer-nations-126110201365_1.html",
+      "title": "Approval of India-made HIV-prevention shot raises hopes in poorer nations",
+      "published": "Mon, 02 Nov 2026 14:15:00 GMT",
+      "chars": 6242,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/izi-enterprise-secures-drdo-order-for-vana-its-indigenous-multi-mission-uav-platform-126110201328_1.html",
+      "title": "IZI Enterprise Secures DRDO Order for VANA, Its Indigenous Multi-Mission UAV Platform",
+      "published": "Mon, 02 Nov 2026 13:55:23 GMT",
+      "chars": 4346,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/health/us-fda-grants-tentative-nod-to-dr-reddy-s-twice-yearly-hiv-prevention-drug-126110201511_1.html",
+      "title": "US FDA grants tentative nod to Dr Reddy's twice-yearly HIV prevention drug",
+      "published": "Mon, 02 Nov 2026 15:35:59 GMT",
+      "chars": 5124,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/sugs-lloyd-reports-73-percent-revenue-growth-and-69-percent-rise-in-pat-in-h1-fy27-126110200563_1.html",
+      "title": "Sugs Lloyd Reports 73 Percent Revenue Growth and 69 Percent Rise in PAT in H1 FY27",
+      "published": "Mon, 02 Nov 2026 08:45:12 GMT",
+      "chars": 10912,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-watch-itc-lupin-nbcc-sbi-dr-reddy-s-bosch-ola-electric-126110300104_1.html",
+      "title": "Stocks to watch: ITC, Lupin, NBCC, SBI, Dr Reddy's, Bosch, Ola Electric",
+      "published": "Tue, 03 Nov 2026 08:00:24 +0530",
+      "chars": 193,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-november-3-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126110300101_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals gap-up open; Asia markets decline on tech selloff",
+      "published": "Tue, 03 Nov 2026 07:56:45 +0530",
+      "chars": 159,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stocks-to-buy-today-mankind-pharma-dr-lal-shrikant-chouhan-bullish-on-2-healthcare-stocks-126110300097_1.html",
+      "title": "Mankind Pharma, Dr Lal: Shrikant Chouhan bullish on 2 healthcare stocks",
+      "published": "Tue, 03 Nov 2026 07:42:15 +0530",
+      "chars": 138,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/commodities/oil-prices-rise-after-report-of-us-strikes-on-iran-s-qeshm-island-126110300096_1.html",
+      "title": "Oil prices rise after report of US strikes on Iran's Qeshm Island",
+      "published": "Tue, 03 Nov 2026 07:32:46 +0530",
+      "chars": 160,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/ipo-fundraising-rises-30-to-record-84-400-crore-in-h1fy27-report-126110201078_1.html",
+      "title": "IPO fundraising rises 30% to record ₹84,400 crore in H1FY27: Report",
+      "published": "Mon, 02 Nov 2026 23:19:35 +0530",
+      "chars": 1000,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/reliance-industries-takes-the-wheel-surges-12-to-steer-benchmarks-higher-126110201415_1.html",
+      "title": "Reliance Industries takes the wheel, surges 12% to steer benchmarks higher",
+      "published": "Mon, 02 Nov 2026 23:03:44 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/sebi-cuts-ofs-cooling-off-for-privately-listed-illiquid-invits-to-8-weeks-126110201342_1.html",
+      "title": "Sebi cuts cool-off period for OFS by off-market illiquid Invits to 8 weeks",
+      "published": "Mon, 02 Nov 2026 19:33:52 +0530",
+      "chars": 162,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/companies/news/coal-india-files-drhp-to-sell-10-stake-in-subsidiary-secl-through-ipo-126110201248_1.html",
+      "title": "Coal India files DRHP to sell 10% stake in subsidiary SECL through IPO",
+      "published": "Mon, 02 Nov 2026 18:47:21 +0530",
+      "chars": 174,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-price-prediction-will-gold-extend-gains-on-tuesday-check-outlook-for-november-3/articleshow/135479165.cms",
+      "title": "Gold price prediction: Will gold extend gains on Tuesday? Check outlook for November 3",
+      "published": "Tue, 03 Nov 2026 07:57:39 +0530",
+      "chars": 166,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-revenue-up-12x-in-q3-commits-895-billion-spending/articleshow/135478994.cms",
+      "title": "Anthropic revenue up 12x in Q3, commits $895 billion spending",
+      "published": "Tue, 03 Nov 2026 07:53:20 +0530",
+      "chars": 414,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-10-stocks-cross-above-their-200-dmas/slideshow/135479126.cms",
+      "title": "Positive Breakout: These 10 stocks cross above their 200 DMAs",
+      "published": "Tue, 03 Nov 2026 07:45:16 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-under-pressure-as-oil-prices-slump-australia-rate-decision-awaited/articleshow/135478890.cms",
+      "title": "Dollar under pressure as oil prices slump, Australia rate decision awaited",
+      "published": "Tue, 03 Nov 2026 07:42:44 +0530",
+      "chars": 483,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-edges-higher-on-softer-oil-us-midterm-elections-in-focus/articleshow/135478813.cms",
+      "title": "Gold edges higher on softer oil; US midterm elections in focus",
+      "published": "Tue, 03 Nov 2026 07:41:14 +0530",
+      "chars": 428,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/marico-profit-jumps-31-flags-rising-input-costs-amid-west-asia-woes/articleshow/135478761.cms",
+      "title": "Marico profit jumps 31%, flags rising input costs amid West Asia woes",
+      "published": "Tue, 03 Nov 2026 07:39:04 +0530",
+      "chars": 458,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-rises-after-report-of-us-strike-on-irans-qeshm-island/articleshow/135478796.cms",
+      "title": "Oil rises after report of US strike on Iran's Qeshm Island",
+      "published": "Tue, 03 Nov 2026 07:37:18 +0530",
+      "chars": 462,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 145.0
+}
