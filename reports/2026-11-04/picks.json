@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-04",
+  "top": [
+    {
+      "symbol": "GAIL",
+      "company": "GAIL and",
+      "tip_id": "6d9c973637",
+      "source_id": "broker:nomura",
+      "corroborating_sources": [
+        "mc_stock_ideas_gnews"
+      ],
+      "n_mentions": 1,
+      "src_targets": [
+        210.0
+      ],
+      "src_stop": null,
+      "src_entry": null,
+      "urls": [
+        "https://www.moneycontrol.com/news/business/stocks/gail-shares-up-nearly-3-after-strong-q2-results-nomura-raises-target-price-maintains-buy-14067529.html"
+      ],
+      "brokerages": [
+        "nomura"
+      ],
+      "sentence": "maintained its 'Buy' rating on GAIL and raised its target price to Rs 210 from Rs 195, following a broad-based beat in the company's second-quarter results and an increase in management's profit guidance for gas marketing. GAIL 's adjusted EBITDA for the September quarter stood at Rs 64.1 billion, u",
+      "ltp": 181.75,
+      "plan": {
+        "timeframe": "monthly",
+        "entry": 181.75,
+        "entry_zone": [
+          180.84,
+          182.66
+        ],
+        "stop_loss": 168.41,
+        "stop_loss_pct": 7.34,
+        "stop_basis": "below support",
+        "targets": [
+          194.83,
+          203.55,
+          216.63
+        ],
+        "target_pct": [
+          7.2,
+          11.99,
+          19.19
+        ],
+        "target_basis": [
+          "3×ATR",
+          "5×ATR",
+          "8×ATR"
+        ],
+        "reward_risk_t2": 1.63,
+        "mandate_pct": 10.0,
+        "time_stop_days": 30,
+        "ta_confidence": 76,
+        "reasons": [
+          "+8 trend up",
+          "+5 MACD histogram positive & rising",
+          "+4 ADX 25.9 trending",
+          "+5 volume 1.89× avg on up day",
+          "+8 pattern breakout_60d_high_volume",
+          "+6 pattern double_bottom_confirmed"
+        ],
+        "tradeable": true,
+        "src_targets": [
+          210.0
+        ],
+        "src_stop": null,
+        "momentum_score": 49,
+        "efficiency": 0.296,
+        "amplitude_pct_day": 0.814,
+        "eta_days": [
+          30,
+          50,
+          80
+        ],
+        "eta_basis": "0.241%/session of net directional progress",
+        "pace_pct_day": 0.241,
+        "t1_inside_clock": true
+      },
+      "ta": {
+        "trend": "up",
+        "rsi": 68.1,
+        "atr_pct": 2.4,
+        "adx": 25.9,
+        "vol_ratio": 1.89,
+        "patterns": [
+          "breakout_60d_high_volume",
+          "double_bottom_confirmed"
+        ],
+        "dist_52w_high_pct": -2.74,
+        "dist_ema20_pct": 6.95,
+        "dist_ema200_pct": 6.82,
+        "avg_turnover_cr": 138.67,
+        "chg_5d_pct": 9.7,
+        "chg_20d_pct": 8.51,
+        "high_52w": 186.87,
+        "last_bar_date": "2026-11-03",
+        "momentum_score": 49,
+        "drift_pct_day": 0.241,
+        "efficiency": 0.296,
+        "amplitude_pct_day": 0.814,
+        "up_day_share": 0.5
+      },
+      "resistances": [
+        {
+          "price": 182.38,
+          "touches": 1
+        },
+        {
+          "price": 186.87,
+          "touches": 1
+        }
+      ],
+      "supports": [
+        {
+          "price": 169.26,
+          "touches": 7
+        },
+        {
+          "price": 161.06,
+          "touches": 3
+        },
+        {
+          "price": 151.41,
+          "touches": 1
+        },
+        {
+          "price": 134.36,
+          "touches": 1
+        }
+      ],
+      "ta_confidence": 76,
+      "fund_score": 60,
+      "fund_why": [
+        "+0 ROCE 9.67%",
+        "+0 ROE 8.71%",
+        "+6 P/E 9.46",
+        "+4 3y profit CAGR 10%",
+        "-4 3y sales CAGR -1%",
+        "-6 return on capital has drifted from 17.6% to 13% — the newer capital earns less than the old",
+        "+5 D/E 0.25",
+        "+4 promoter 51.85%",
+        "+4 latest qtr PAT YoY 137.5%",
+        "+4 mcap ₹119,502 cr",
+        "+8 operating cash flow ₹11,249cr, 148% of profit — profit is turning into cash",
+        "-8 profit growth has stalled: -39.2% last year against 25.9% the year before",
+        "+4 interest cover 21.65×",
+        "+3 institutions hold 34.47%",
+        "+3 price to book 1.24",
+        "  (value counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (balance counted +5 of +9 — its terms measure the same thing more than once, so the most it can add is +5)",
+        "  (ownership counted +3 of +7 — its terms measure the same thing more than once, so the most it can add is +3)",
+        "  (size counted +1 of +4 — its terms measure the same thing more than once, so the most it can add is +1)",
+        "⚑ capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_flags": [
+        "the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_caps": [
+        "capped at 60: the page did not read cleanly — borrowings ends at Sep 2026 but the P&L ends at Mar 2026 — two sections read to different dates"
+      ],
+      "fund_unrated": false,
+      "screener_pros": [
+        "Company has been maintaining a healthy dividend payout of 41.3%"
+      ],
+      "screener_cons": [
+        "Company has a low return on equity of 11.3% over last 3 years."
+      ],
+      "fundamentals": {
+        "market_cap_cr": 119502.0,
+        "pe": 9.46,
+        "roce": 9.67,
+        "roe": 8.71,
+        "sales_growth_3_years": -1.0,
+        "profit_growth_3_years": 10.0,
+        "promoter_pct": 51.85,
+        "debt_to_equity": 0.25,
+        "np_yoy_growth_pct": 137.5,
+        "revenue_fy_label": "Mar 2026",
+        "sales_growth_1y_pct": -0.21,
+        "profit_growth_1y_pct": -39.16,
+        "cfo_cr": 11249.0,
+        "cfo_negative_streak": 0,
+        "borrowings_growth_pct": -2.6,
+        "interest_cover": 21.65,
+        "institutional_pct": 34.47,
+        "sector": "Oil, Gas & Consumable Fuels",
+        "industry": "Gas"
+      },
+      "source_weight": 0.546,
+      "source_confidence": 50,
+      "composite": 66,
+      "verdict": "BUY",
+      "bucket": "hot potato (momentum only — exit at target or stop, never hold)",
+      "tags": [
+        {
+          "key": "technicals",
+          "label": "Clean chart",
+          "tone": "good",
+          "why": "TA confidence 76"
+        },
+        {
+          "key": "corroborated",
+          "label": "2 sources",
+          "tone": "flat",
+          "why": "the same name from more than one place"
+        },
+        {
+          "key": "trend",
+          "label": "Uptrend",
+          "tone": "flat",
+          "why": "EMA 20/50/200 stack reads up"
+        },
+        {
+          "key": "hot-potato",
+          "label": "Hot potato",
+          "tone": "warn",
+          "why": "momentum only — exit at target or stop, never hold through a stall"
+        }
+      ],
+      "alloc_inr": 0.0
+    }
+  ],
+  "chosen": [],
+  "booked": [],
+  "cash_after": 11193.12,
+  "watch": [
+    "AKUMS",
+    "TFCILTD",
+    "ADANIPORTS",
+    "MINDACORP",
+    "MARICO",
+    "IPCALAB",
+    "EMCURE",
+    "VRLLOG"
+  ]
+}
