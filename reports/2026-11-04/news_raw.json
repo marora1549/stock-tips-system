@@ -1,0 +1,1603 @@
+{
+  "date": "2026-11-04",
+  "sources": {
+    "corp_stocks_to_watch": {
+      "docs": 6,
+      "events": 5
+    },
+    "corp_orders": {
+      "docs": 5,
+      "events": 4
+    },
+    "corp_orders_bse": {
+      "docs": 2,
+      "events": 5
+    },
+    "corp_approvals": {
+      "docs": 3,
+      "events": 3
+    },
+    "corp_regulatory_action": {
+      "docs": 6,
+      "events": 1
+    },
+    "corp_results": {
+      "docs": 8,
+      "events": 7
+    },
+    "corp_expansion": {
+      "docs": 5,
+      "events": 7
+    },
+    "corp_bs_capitalmarket": {
+      "docs": 8,
+      "events": 2
+    },
+    "corp_bs_markets_rss": {
+      "docs": 8,
+      "events": 0
+    },
+    "corp_et_markets_rss": {
+      "docs": 4,
+      "events": 0
+    },
+    "corp_sahi": {
+      "docs": 0,
+      "events": 0,
+      "skipped": true
+    }
+  },
+  "events": [
+    {
+      "id": "c33327e678",
+      "symbol": "GAYAPROJ",
+      "company": "Gayatri Projects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "receives order",
+      "also_matched": [
+        "jv_partnership"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 342.0,
+      "size_estimated": false,
+      "size_basis": "INR 342 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://propnewstime.com/latestnewsstories/Mzk0NjI=/gayatri-projects-says-joint-venture-receives-order-worth-inr-342-crore",
+      "title": "Gayatri Projects says joint venture receives order worth INR 342 crore",
+      "published": "Tue, 03 Nov 2026 09:48:15 GMT",
+      "published_utc": "2026-11-03T09:48:15+00:00",
+      "sentence": "receives order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://propnewstime.com/latestnewsstories/Mzk0NjI=/gayatri-projects-says-joint-venture-receives-order-worth-inr-342-crore"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "085c27707d",
+      "symbol": "HAPPSTMNDS",
+      "company": "Happiest Minds Technologies Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of acceptance (loa",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-nse-bse-sbi-happiest-minds-mcx-iex-and-minda-corp/articleshow/135508071.cms",
+      "title": "Stocks in news: NSE, BSE, SBI, Happiest Minds, MCX, IEX and Minda Corp",
+      "published": "Wed, 04 Nov 2026 00:30:00 GMT",
+      "published_utc": "2026-11-04T00:30:00+00:00",
+      "sentence": "received a letter of acceptance (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-nse-bse-sbi-happiest-minds-mcx-iex-and-minda-corp/articleshow/135508071.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "370bbf475a",
+      "symbol": "MANINFRA",
+      "company": "Man Infraconstruction Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "bags order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "shipping_ports"
+      ],
+      "size_inr_cr": 508.0,
+      "size_estimated": false,
+      "size_basis": "Rs 508 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/man-infraconstruction-bags-order-for-work-at-jn-port-mumbai",
+      "title": "Man Infraconstruction bags order for work at JN port Mumbai",
+      "published": "Tue, 03 Nov 2026 20:36:29 GMT",
+      "published_utc": "2026-11-03T20:36:29+00:00",
+      "sentence": "bags order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://biginfo.in/news/man-infraconstruction-bags-order-for-work-at-jn-port-mumbai"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "81b30ae344",
+      "symbol": "MCX",
+      "company": "Multi Commodity Exchange of India Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "received a letter of acceptance (loa",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-nse-bse-sbi-happiest-minds-mcx-iex-and-minda-corp/articleshow/135508071.cms",
+      "title": "Stocks in news: NSE, BSE, SBI, Happiest Minds, MCX, IEX and Minda Corp",
+      "published": "Wed, 04 Nov 2026 00:30:00 GMT",
+      "published_utc": "2026-11-04T00:30:00+00:00",
+      "sentence": "received a letter of acceptance (loa",
+      "corroborating_sources": [],
+      "urls": [
+        "https://m.economictimes.com/markets/stocks/news/stocks-in-news-nse-bse-sbi-happiest-minds-mcx-iex-and-minda-corp/articleshow/135508071.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "15c463d60e",
+      "symbol": "DRREDDY",
+      "company": "Dr. Reddy's Laboratories Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda's tentative approv",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://investmentguruindia.com/newsdetail/dr-reddy-s-laboratories-rises-on-securing-usfda-s-tentative-approval-for-injectable-lenacapavir766436",
+      "title": "Dr. Reddy's Laboratories rises on securing USFDA's tentative approval for injectable lenacapavir",
+      "published": "Tue, 03 Nov 2026 10:29:29 GMT",
+      "published_utc": "2026-11-03T10:29:29+00:00",
+      "sentence": "usfda's tentative approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://investmentguruindia.com/newsdetail/dr-reddy-s-laboratories-rises-on-securing-usfda-s-tentative-approval-for-injectable-lenacapavir766436"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "2e00c9b015",
+      "symbol": "GLAND",
+      "company": "Gland Pharma Limited",
+      "event": "regulatory_approval",
+      "event_label": "Approval",
+      "sign": 1,
+      "certainty": 0.95,
+      "event_prior": 26,
+      "phrase": "usfda approv",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "pharma_approval"
+      ],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/gland-pharma-wins-usfda-approval-for-methylprednisolone-acetate-injectable-vials-22312",
+      "title": "Gland Pharma wins USFDA approval for Methylprednisolone Acetate injectable vials",
+      "published": "Tue, 03 Nov 2026 13:26:54 GMT",
+      "published_utc": "2026-11-03T13:26:54+00:00",
+      "sentence": "usfda approv",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.indianpharmapost.com/regulatory/gland-pharma-wins-usfda-approval-for-methylprednisolone-acetate-injectable-vials-22312",
+        "https://scanx.trade/stock-market-news/companies/gland-pharma-gets-usfda-nod-methylprednisolone-injectable/55232119"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "37ac1cb1b7",
+      "symbol": "HILINFRA",
+      "company": "Highway Infrastructure Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹198 crore cpwd order",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 340.08,
+      "size_estimated": false,
+      "size_basis": "₹340.08 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "published_utc": "2026-11-03T17:50:43+00:00",
+      "sentence": "secures ₹198 crore cpwd order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ddada2310f",
+      "symbol": "RITES",
+      "company": "RITES Limited",
+      "event": "l1_bidder",
+      "event_label": "L1 bidder",
+      "sign": 1,
+      "certainty": 0.8,
+      "event_prior": 24,
+      "phrase": "lowest bidder",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 400.0,
+      "size_estimated": false,
+      "size_basis": "Rs 400 crore",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_orders",
+      "url": "https://psuwatch.com/newsupdates/rites-emerges-as-lowest-bidder-for-rs-400-crore-sri-lanka-railways-contract",
+      "title": "RITES emerges as lowest bidder for Rs 400 crore Sri Lanka Railways Contract",
+      "published": "Tue, 03 Nov 2026 12:51:18 GMT",
+      "published_utc": "2026-11-03T12:51:18+00:00",
+      "sentence": "lowest bidder",
+      "corroborating_sources": [],
+      "urls": [
+        "https://psuwatch.com/newsupdates/rites-emerges-as-lowest-bidder-for-rs-400-crore-sri-lanka-railways-contract",
+        "https://investmentguruindia.com/newsdetail/rites-rises-on-emerging-as-lowest-bidder-for-rs-400-crore-sri-lanka-railways-tender325829"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "6a2168c64f",
+      "symbol": "BAJAJFINSV",
+      "company": "Bajaj Finserv Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit jumps 23% to rs 2,758 crore; nii rises",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/11/bajaj-finserv-q2-results-fy27-net-profit-nii-bajaj-finance-aum/",
+      "title": "Bajaj Finserv Q2 Results: Net Profit Jumps 23% to Rs 2,758 Crore; NII Rises 24%, Beats Estimates",
+      "published": "Tue, 03 Nov 2026 13:34:58 GMT",
+      "published_utc": "2026-11-03T13:34:58+00:00",
+      "sentence": "net profit jumps 23% to rs 2,758 crore; nii rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://apacnewsnetwork.com/2026/11/bajaj-finserv-q2-results-fy27-net-profit-nii-bajaj-finance-aum/",
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-finserv-q2-results-net-profit-jumps-23-yoy-to-rs-2758-crore-shares-rise-2/articleshow/135487692.cms"
+      ],
+      "n_reports": 2
+    },
+    {
+      "id": "ac59e245aa",
+      "symbol": "FINCABLES",
+      "company": "Finolex Cables Limited",
+      "event": "regulatory_action",
+      "event_label": "Regulatory action",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -22,
+      "phrase": "warning letter",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 0.1,
+      "size_estimated": false,
+      "size_basis": "₹ 10 lakh",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/finolex-cables-reports-insider-trading-violation-advisor-ramesh-mohan/54969647",
+      "title": "Finolex Cables reports insider trading violation by advisor Ramesh Mohan Lalwani",
+      "published": "Tue, 03 Nov 2026 14:03:47 GMT",
+      "published_utc": "2026-11-03T14:03:47+00:00",
+      "sentence": "warning letter",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/companies/finolex-cables-reports-insider-trading-violation-advisor-ramesh-mohan/54969647"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "ef34a75254",
+      "symbol": "HAPPSTMNDS",
+      "company": "Happiest Minds Technologies Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises 15% to rs 62 crore; revenue up",
+      "also_matched": [
+        "corporate_action"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/happiest-minds-q2-results-profit-rises-15-to-rs-62-crore-revenue-up-12-to-rs-645-crore/articleshow/135501133.cms",
+      "title": "Happiest Minds Q2 Results: Profit rises 15% to Rs 62 crore; revenue up 12% to Rs 645 crore",
+      "published": "Tue, 03 Nov 2026 13:15:02 GMT",
+      "published_utc": "2026-11-03T13:15:02+00:00",
+      "sentence": "profit rises 15% to rs 62 crore; revenue up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://economictimes.indiatimes.com/markets/stocks/earnings/happiest-minds-q2-results-profit-rises-15-to-rs-62-crore-revenue-up-12-to-rs-645-crore/articleshow/135501133.cms"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c2bb794e6f",
+      "symbol": "IEX",
+      "company": "Indian Energy Exchange Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit to ₹ 23,038 crore in q2fy27, up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bse-nykaa-nse-sbi-iex-shares-in-focus-on-wednesday-4-nov-full-list-11793755813757.html",
+      "title": "Top stocks to watch today: BSE, Nykaa, NSE, SBI, IEX shares in focus on Wednesday, 4 Nov | Full list",
+      "published": "Wed, 04 Nov 2026 01:58:20 GMT",
+      "published_utc": "2026-11-04T01:58:20+00:00",
+      "sentence": "net profit to ₹ 23,038 crore in q2fy27, up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bse-nykaa-nse-sbi-iex-shares-in-focus-on-wednesday-4-nov-full-list-11793755813757.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "1380dbd880",
+      "symbol": "NYKAA",
+      "company": "FSN E-Commerce Ventures Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit to ₹ 23,038 crore in q2fy27, up",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bse-nykaa-nse-sbi-iex-shares-in-focus-on-wednesday-4-nov-full-list-11793755813757.html",
+      "title": "Top stocks to watch today: BSE, Nykaa, NSE, SBI, IEX shares in focus on Wednesday, 4 Nov | Full list",
+      "published": "Wed, 04 Nov 2026 01:58:20 GMT",
+      "published_utc": "2026-11-04T01:58:20+00:00",
+      "sentence": "net profit to ₹ 23,038 crore in q2fy27, up",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bse-nykaa-nse-sbi-iex-shares-in-focus-on-wednesday-4-nov-full-list-11793755813757.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "270759de5e",
+      "symbol": "LUPIN",
+      "company": "Lupin Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html",
+      "title": "Lupin Q2 results: Net profit falls 22% to ₹1,155 cr, revenue at ₹7,827 cr",
+      "published": "Wed, 04 Nov 2026 02:26:14 GMT",
+      "published_utc": "2026-11-04T02:26:14+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "21b914c835",
+      "symbol": "MGL",
+      "company": "Mahanagar Gas Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": 2778.05,
+      "size_estimated": false,
+      "size_basis": "₹2,778.05 crore (no order wording nearby)",
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://upstox.com/news/market-news/earnings/mahanagar-gas-q2-results-net-profit-falls-29-5-qo-q-to-136-crore-revenue-advances-7/article-202917/",
+      "title": "Mahanagar Gas Q2 results: Net profit falls 29.5% QoQ to ₹136 crore, revenue advances 7%",
+      "published": "Tue, 03 Nov 2026 13:03:11 GMT",
+      "published_utc": "2026-11-03T13:03:11+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://upstox.com/news/market-news/earnings/mahanagar-gas-q2-results-net-profit-falls-29-5-qo-q-to-136-crore-revenue-advances-7/article-202917/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "79b32fbe2b",
+      "symbol": "ARFIN",
+      "company": "Arfin India Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit rises 143% as revenue more than doubles",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_expansion",
+      "url": "https://www.multibagg.ai/market-pulse/articles/arfin-india-november-board-meeting-cmw0civ5d000r2qnfq1n17s25",
+      "title": "Arfin India Ltd Sets November 3 Board Meeting for Q2 Results",
+      "published": "Tue, 03 Nov 2026 07:08:00 GMT",
+      "published_utc": "2026-11-03T07:08:00+00:00",
+      "sentence": "profit rises 143% as revenue more than doubles",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.multibagg.ai/market-pulse/articles/arfin-india-november-board-meeting-cmw0civ5d000r2qnfq1n17s25"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "42141f855f",
+      "symbol": "EMCURE",
+      "company": "Emcure Pharmaceuticals Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html",
+      "title": "Lupin Q2 results: Net profit falls 22% to ₹1,155 cr, revenue at ₹7,827 cr",
+      "published": "Wed, 04 Nov 2026 02:26:14 GMT",
+      "published_utc": "2026-11-04T02:26:14+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "915cff2f9e",
+      "symbol": "LLOYDSME",
+      "company": "Lloyds Metals And Energy Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "profit jump",
+      "also_matched": [
+        "dilution",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-november-4-2026-camlin-fine-sciences-neuland/55301796",
+      "title": "Stocks to Watch Today, November 4, 2026: Camlin Fine Sciences, Neuland Laboratories, MEDANTA, Seamec and Savita Oil Technologies",
+      "published": "Wed, 04 Nov 2026 01:44:59 GMT",
+      "published_utc": "2026-11-04T01:44:59+00:00",
+      "sentence": "profit jump",
+      "corroborating_sources": [],
+      "urls": [
+        "https://scanx.trade/stock-market-news/markets/stocks-watch-today-november-4-2026-camlin-fine-sciences-neuland/55301796"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "43a059124e",
+      "symbol": "PFIZER",
+      "company": "Pfizer Limited",
+      "event": "earnings_beat",
+      "event_label": "Earnings beat",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 22,
+      "phrase": "net profit rises",
+      "also_matched": [
+        "earnings_miss"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html",
+      "title": "Lupin Q2 results: Net profit falls 22% to ₹1,155 cr, revenue at ₹7,827 cr",
+      "published": "Wed, 04 Nov 2026 02:26:14 GMT",
+      "published_utc": "2026-11-04T02:26:14+00:00",
+      "sentence": "net profit rises",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "f9fa1c2c74",
+      "symbol": "THOMASCOOK",
+      "company": "Thomas Cook  (India)  Limited",
+      "event": "earnings_miss",
+      "event_label": "Earnings miss",
+      "sign": -1,
+      "certainty": 1.0,
+      "event_prior": -20,
+      "phrase": "net profit falls",
+      "also_matched": [
+        "order_win",
+        "capacity_expansion",
+        "analyst_downgrade"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-projects-wins-major-contract-for-global-automaker-s-maharashtra-plant-126110300665_1.html",
+      "title": "Tata Projects wins major contract for global automaker's Maharashtra plant",
+      "published": "Tue, 03 Nov 2026 07:51:02 GMT",
+      "published_utc": "2026-11-03T07:51:02+00:00",
+      "sentence": "net profit falls",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/tata-projects-wins-major-contract-for-global-automaker-s-maharashtra-plant-126110300665_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "43b849cf5e",
+      "symbol": "AMBUJACEM",
+      "company": "Ambuja Cements Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand its cement manufacturing capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 1.0,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 240.0,
+        "unit": "MTPA",
+        "text": "240 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "published_utc": "2026-11-03T11:33:50+00:00",
+      "sentence": "expand its cement manufacturing capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "d0bf4a21cc",
+      "symbol": "HGINFRA",
+      "company": "H.G. Infra Engineering Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹198 crore cpwd order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway and rail EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 340.08,
+      "size_estimated": false,
+      "size_basis": "₹340.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "published_utc": "2026-11-03T17:50:43+00:00",
+      "sentence": "secures ₹198 crore cpwd order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "3f6dfdbb4c",
+      "symbol": "KNRCON",
+      "company": "KNR Constructions Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹198 crore cpwd order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 340.08,
+      "size_estimated": false,
+      "size_basis": "₹340.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "published_utc": "2026-11-03T17:50:43+00:00",
+      "sentence": "secures ₹198 crore cpwd order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "c04632b343",
+      "symbol": "PNCINFRA",
+      "company": "PNC Infratech Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹198 crore cpwd order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.4,
+      "why_this_name": "highway EPC",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 340.08,
+      "size_estimated": false,
+      "size_basis": "₹340.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "published_utc": "2026-11-03T17:50:43+00:00",
+      "sentence": "secures ₹198 crore cpwd order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "99de4579b4",
+      "symbol": "ACL",
+      "company": "Andhra Cements Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand its cement manufacturing capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 240.0,
+        "unit": "MTPA",
+        "text": "240 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "published_utc": "2026-11-03T11:33:50+00:00",
+      "sentence": "expand its cement manufacturing capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fa0704043c",
+      "symbol": "COALINDIA",
+      "company": "Coal India Limited",
+      "event": "analyst_downgrade",
+      "event_label": "Broker downgrade",
+      "sign": -1,
+      "certainty": 0.5,
+      "event_prior": -14,
+      "phrase": "to sell",
+      "also_matched": [
+        "order_win",
+        "earnings_miss",
+        "capacity_expansion"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": null,
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-projects-wins-major-contract-for-global-automaker-s-maharashtra-plant-126110300665_1.html",
+      "title": "Tata Projects wins major contract for global automaker's Maharashtra plant",
+      "published": "Tue, 03 Nov 2026 07:51:02 GMT",
+      "published_utc": "2026-11-03T07:51:02+00:00",
+      "sentence": "to sell",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.business-standard.com/companies/news/tata-projects-wins-major-contract-for-global-automaker-s-maharashtra-plant-126110300665_1.html"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "6c2166478e",
+      "symbol": "IBULLSLTD",
+      "company": "Indiabulls Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand its cement manufacturing capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 240.0,
+        "unit": "MTPA",
+        "text": "240 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "published_utc": "2026-11-03T11:33:50+00:00",
+      "sentence": "expand its cement manufacturing capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "dfe6ee5615",
+      "symbol": "INDIACEM",
+      "company": "The India Cements Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand its cement manufacturing capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 240.0,
+        "unit": "MTPA",
+        "text": "240 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "published_utc": "2026-11-03T11:33:50+00:00",
+      "sentence": "expand its cement manufacturing capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "648b84e54d",
+      "symbol": "NDTV",
+      "company": "New Delhi Television Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "expand its cement manufacturing capacity",
+      "also_matched": [],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 240.0,
+        "unit": "MTPA",
+        "text": "240 MTPA"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "published_utc": "2026-11-03T11:33:50+00:00",
+      "sentence": "expand its cement manufacturing capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "e06e722efa",
+      "symbol": "SOLARINDS",
+      "company": "Solar Industries India Limited",
+      "event": "capacity_expansion",
+      "event_label": "Capacity expansion",
+      "sign": 1,
+      "certainty": 0.85,
+      "event_prior": 14,
+      "phrase": "commissions 28mw solar plant, expands capacity",
+      "also_matched": [
+        "earnings_beat"
+      ],
+      "route": "named",
+      "directness": 0.85,
+      "why_this_name": "named in the story",
+      "theme": null,
+      "themes_matched": [],
+      "size_inr_cr": null,
+      "size_estimated": false,
+      "size_basis": null,
+      "size_is_own_order": true,
+      "capacity": {
+        "value": 31.0,
+        "unit": "MW",
+        "text": "31MW"
+      },
+      "source_id": "corp_expansion",
+      "url": "https://www.investify.pk/news/100000160095/pioc-commissions-28mw-solar-plant-expands-capacity-to-31mw",
+      "title": "PIOC commissions 28MW solar plant, expands capacity to 31MW",
+      "published": "Tue, 03 Nov 2026 08:24:05 GMT",
+      "published_utc": "2026-11-03T08:24:05+00:00",
+      "sentence": "commissions 28mw solar plant, expands capacity",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.investify.pk/news/100000160095/pioc-commissions-28mw-solar-plant-expands-capacity-to-31mw"
+      ],
+      "n_reports": 1
+    },
+    {
+      "id": "fc3fd4649f",
+      "symbol": "GRINFRA",
+      "company": "G R Infraprojects Limited",
+      "event": "order_win",
+      "event_label": "Order win",
+      "sign": 1,
+      "certainty": 1.0,
+      "event_prior": 30,
+      "phrase": "secures ₹198 crore cpwd order",
+      "also_matched": [],
+      "route": "sympathy",
+      "directness": 0.36,
+      "why_this_name": "G R Infraprojects",
+      "theme": "roads_infra",
+      "themes_matched": [
+        "roads_infra"
+      ],
+      "size_inr_cr": 340.08,
+      "size_estimated": false,
+      "size_basis": "₹340.08 crore",
+      "size_is_own_order": false,
+      "capacity": null,
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "published_utc": "2026-11-03T17:50:43+00:00",
+      "sentence": "secures ₹198 crore cpwd order",
+      "corroborating_sources": [],
+      "urls": [
+        "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/"
+      ],
+      "n_reports": 1
+    }
+  ],
+  "docs": [
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://m.economictimes.com/markets/stocks/news/stocks-in-news-nse-bse-sbi-happiest-minds-mcx-iex-and-minda-corp/articleshow/135508071.cms",
+      "title": "Stocks in news: NSE, BSE, SBI, Happiest Minds, MCX, IEX and Minda Corp",
+      "published": "Wed, 04 Nov 2026 00:30:00 GMT",
+      "chars": 12872,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.livemint.com/market/stock-market-news/top-stocks-to-watch-today-bse-nykaa-nse-sbi-iex-shares-in-focus-on-wednesday-4-nov-full-list-11793755813757.html",
+      "title": "Top stocks to watch today: BSE, Nykaa, NSE, SBI, IEX shares in focus on Wednesday, 4 Nov | Full list",
+      "published": "Wed, 04 Nov 2026 01:58:20 GMT",
+      "chars": 3610,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://www.moneycontrol.com/news/business/markets/stocks-to-watch-today-nse-lupin-metropolis-mk-jewels-lloyds-metals-mcx-india-awfis-space-aarti-drugs-global-health-vijaya-diagnostic-in-focus-on-4-november-14068109.html",
+      "title": "Stocks to Watch Today: NSE, Lupin, Metropolis, MK Jewels, Lloyds Metals, MCX India, Awfis Space, Aarti Drugs, Global Health, Vijaya Diagnostic in focus on 4 November",
+      "published": "Wed, 04 Nov 2026 01:30:07 GMT",
+      "chars": 9431,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://upstox.com/news/market-news/stocks/stocks-to-watch-nov-4-lupin-nse-bse-nykaa-pfc-premier-energies-waaree-energies-yatharth-hospital/article-202926/",
+      "title": "Stocks to watch, Nov 4: Lupin, NSE, BSE, Nykaa, PFC, Premier Energies, Waaree Energies, Yatharth Hospital",
+      "published": "Wed, 04 Nov 2026 02:23:32 GMT",
+      "chars": 15375,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-sindall-group-2-british-002149321.html",
+      "title": "Morgan Sindall Group And 2 British Undervalued Stocks To Watch",
+      "published": "Wed, 04 Nov 2026 00:32:01 GMT",
+      "chars": 3679,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_stocks_to_watch",
+      "url": "https://scanx.trade/stock-market-news/markets/stocks-watch-today-november-4-2026-camlin-fine-sciences-neuland/55301796",
+      "title": "Stocks to Watch Today, November 4, 2026: Camlin Fine Sciences, Neuland Laboratories, MEDANTA, Seamec and Savita Oil Technologies",
+      "published": "Wed, 04 Nov 2026 01:44:59 GMT",
+      "chars": 7937,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/man-infraconstruction-bags-order-for-work-at-jn-port-mumbai",
+      "title": "Man Infraconstruction bags order for work at JN port Mumbai",
+      "published": "Tue, 03 Nov 2026 20:36:29 GMT",
+      "chars": 839,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://psuwatch.com/newsupdates/rites-emerges-as-lowest-bidder-for-rs-400-crore-sri-lanka-railways-contract",
+      "title": "RITES emerges as lowest bidder for Rs 400 crore Sri Lanka Railways Contract",
+      "published": "Tue, 03 Nov 2026 12:51:18 GMT",
+      "chars": 1720,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://propnewstime.com/latestnewsstories/Mzk0NjI=/gayatri-projects-says-joint-venture-receives-order-worth-inr-342-crore",
+      "title": "Gayatri Projects says joint venture receives order worth INR 342 crore",
+      "published": "Tue, 03 Nov 2026 09:48:15 GMT",
+      "chars": 9193,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://investmentguruindia.com/newsdetail/rites-rises-on-emerging-as-lowest-bidder-for-rs-400-crore-sri-lanka-railways-tender325829",
+      "title": "Rites rises on emerging as lowest bidder for Rs 400 crore Sri Lanka Railways tender",
+      "published": "Tue, 03 Nov 2026 07:33:11 GMT",
+      "chars": 1278,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders",
+      "url": "https://biginfo.in/news/tata-projects-bags-order-for-greenfield-facility-in-sambhajinagar",
+      "title": "Tata Projects bags order for greenfield facility in Sambhajinagar",
+      "published": "Tue, 03 Nov 2026 20:36:29 GMT",
+      "chars": 953,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://www.tradingview.com/news/cnbctv:bc5fb0aa9094b:0/",
+      "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:bc5fb0aa9094b:0",
+      "published": "Tue, 03 Nov 2026 17:50:43 GMT",
+      "chars": 2182,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_orders_bse",
+      "url": "https://businessupturn.com/business/jyoti-cnc-automation-reports-an-impressive-order-inflow-exceeding-rs800-crores/",
+      "title": "Jyoti CNC Automation reports an impressive order inflow exceeding ₹800 crores",
+      "published": "Tue, 03 Nov 2026 06:43:44 GMT",
+      "chars": 2941,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://www.indianpharmapost.com/regulatory/gland-pharma-wins-usfda-approval-for-methylprednisolone-acetate-injectable-vials-22312",
+      "title": "Gland Pharma wins USFDA approval for Methylprednisolone Acetate injectable vials",
+      "published": "Tue, 03 Nov 2026 13:26:54 GMT",
+      "chars": 3139,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://investmentguruindia.com/newsdetail/dr-reddy-s-laboratories-rises-on-securing-usfda-s-tentative-approval-for-injectable-lenacapavir766436",
+      "title": "Dr. Reddy's Laboratories rises on securing USFDA's tentative approval for injectable lenacapavir",
+      "published": "Tue, 03 Nov 2026 10:29:29 GMT",
+      "chars": 1719,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_approvals",
+      "url": "https://scanx.trade/stock-market-news/companies/gland-pharma-gets-usfda-nod-methylprednisolone-injectable/55232119",
+      "title": "Gland Pharma gets USFDA nod for methylprednisolone injectable",
+      "published": "Tue, 03 Nov 2026 07:11:12 GMT",
+      "chars": 3151,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://uk.finance.yahoo.com/news/viatris-gears-report-q3-earnings-135100303.html",
+      "title": "Viatris Gears Up to Report Q3 Earnings: Is a Beat in the Cards?",
+      "published": "Tue, 03 Nov 2026 13:51:00 GMT",
+      "chars": 6133,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.kalkine.co.in/article/announcements/easy-trip-planners-nseeasemytrip-what-does-the-dggi-show-cause-notice-mean",
+      "title": "Easy Trip Planners EASEMYTRIP DGGI GST Notice 2026",
+      "published": "Tue, 03 Nov 2026 14:53:00 GMT",
+      "chars": 3910,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://scanx.trade/stock-market-news/companies/finolex-cables-reports-insider-trading-violation-advisor-ramesh-mohan/54969647",
+      "title": "Finolex Cables reports insider trading violation by advisor Ramesh Mohan Lalwani",
+      "published": "Tue, 03 Nov 2026 14:03:47 GMT",
+      "chars": 3829,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-investor-alert-pomerantz-law-firm-reminds-investors-with-losses-on-their-investment-in-beta-bionics-inc-of-class-action-lawsuit-and-upcoming-deadlines-bbnx",
+      "title": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Beta Bionics, Inc. of Class Action Lawsuit and Upcoming Deadlines – BBNX",
+      "published": "Tue, 03 Nov 2026 22:32:00 GMT",
+      "chars": 3983,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.local3news.com/regional-national/raw-rnc-sends-warning-letter-over-michigan-poll-workers/video_959dd23b-803a-5854-af2d-bc352bed00d7.html",
+      "title": "RAW: RNC SENDS WARNING LETTER OVER MICHIGAN POLL WORKERS",
+      "published": "Tue, 03 Nov 2026 23:57:01 GMT",
+      "chars": 292,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_regulatory_action",
+      "url": "https://www.financialcontent.com/article/gnwcq-2026-11-3-suewallst-reminds-shareholders-of-a-lead-plaintiff-deadline-of-november-3-2026-in-beta-bionics-inc-lawsuit-bbnx",
+      "title": "SueWallSt Reminds Shareholders of a Lead Plaintiff Deadline of November 3, 2026 in Beta Bionics, Inc. Lawsuit - BBNX",
+      "published": "Tue, 03 Nov 2026 15:11:00 GMT",
+      "chars": 6535,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/lupin-q2-results-net-profit-falls-22-to-1-155-cr-revenue-at-7-827-cr-126110400050_1.html",
+      "title": "Lupin Q2 results: Net profit falls 22% to ₹1,155 cr, revenue at ₹7,827 cr",
+      "published": "Wed, 04 Nov 2026 02:26:14 GMT",
+      "chars": 3856,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://upstox.com/news/market-news/earnings/mahanagar-gas-q2-results-net-profit-falls-29-5-qo-q-to-136-crore-revenue-advances-7/article-202917/",
+      "title": "Mahanagar Gas Q2 results: Net profit falls 29.5% QoQ to ₹136 crore, revenue advances 7%",
+      "published": "Tue, 03 Nov 2026 13:03:11 GMT",
+      "chars": 2638,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/happiest-minds-q2-results-profit-rises-15-to-rs-62-crore-revenue-up-12-to-rs-645-crore/articleshow/135501133.cms",
+      "title": "Happiest Minds Q2 Results: Profit rises 15% to Rs 62 crore; revenue up 12% to Rs 645 crore",
+      "published": "Tue, 03 Nov 2026 13:15:02 GMT",
+      "chars": 4149,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://apacnewsnetwork.com/2026/11/bajaj-finserv-q2-results-fy27-net-profit-nii-bajaj-finance-aum/",
+      "title": "Bajaj Finserv Q2 Results: Net Profit Jumps 23% to Rs 2,758 Crore; NII Rises 24%, Beats Estimates",
+      "published": "Tue, 03 Nov 2026 13:34:58 GMT",
+      "chars": 4562,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.moneycontrol.com/news/business/earnings/sbi-q2-results-net-profit-rises-14-on-year-to-rs-23-038-crore-nii-climbs-to-rs-49-142-crore-14067572.html",
+      "title": "SBI Q2 results: Net profit rises 14% to Rs 23,038 crore, aided by exceptional gain; NII beats estimates",
+      "published": "Tue, 03 Nov 2026 08:27:12 GMT",
+      "chars": 6626,
+      "body_how": "paragraphs"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://sg.finance.yahoo.com/news/nh-foods-tse-2282-q2-211517224.html",
+      "title": "NH Foods (TSE:2282) Q2 Results Expose A Sharp Profit Squeeze",
+      "published": "Tue, 03 Nov 2026 21:15:17 GMT",
+      "chars": 3962,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-finserv-q2-results-net-profit-jumps-23-yoy-to-rs-2758-crore-shares-rise-2/articleshow/135487692.cms",
+      "title": "Bajaj Finserv Q2 Results: Net profit jumps 23% YoY to Rs 2,758 crore, shares rise 2%",
+      "published": "Tue, 03 Nov 2026 07:37:38 GMT",
+      "chars": 6026,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_results",
+      "url": "https://www.business-standard.com/companies/quarterly-results/samhi-hospitality-q2-net-profit-falls-59-to-41-cr-despite-revenue-rise-126110302030_1.html",
+      "title": "Samhi Hospitality Q2 net profit falls 59% to ₹41 cr despite revenue rise",
+      "published": "Tue, 03 Nov 2026 17:08:37 GMT",
+      "chars": 3563,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://money.rediff.com/news/market/ambuja-cements-to-invest-14-500-cr-for-149-mt-capacity-by-fy29/57427920261103",
+      "title": "Ambuja Cements to Invest ₹14,500 Cr for 149 MT Capacity by FY29",
+      "published": "Tue, 03 Nov 2026 11:33:50 GMT",
+      "chars": 4394,
+      "body_how": "jsonld"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.multibagg.ai/market-pulse/articles/kpi-green-energy-sjvn-ppa-announcement-cmw1gsydt00ab31qlu1e87vwg",
+      "title": "KPI Green Energy Limited signs 300 MW SJVN wind PPA at Rs 3.64/unit",
+      "published": "Wed, 04 Nov 2026 01:55:35 GMT",
+      "chars": 7768,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.multibagg.ai/market-pulse/articles/arfin-india-november-board-meeting-cmw0civ5d000r2qnfq1n17s25",
+      "title": "Arfin India Ltd Sets November 3 Board Meeting for Q2 Results",
+      "published": "Tue, 03 Nov 2026 07:08:00 GMT",
+      "chars": 9606,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.investify.pk/news/100000160095/pioc-commissions-28mw-solar-plant-expands-capacity-to-31mw",
+      "title": "PIOC commissions 28MW solar plant, expands capacity to 31MW",
+      "published": "Tue, 03 Nov 2026 08:24:05 GMT",
+      "chars": 2490,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_expansion",
+      "url": "https://www.investify.pk/news/100000160091/pioneer-cement-commissions-28-265-mw-solar-plant-expands-capacity-to-31-mw",
+      "title": "Pioneer Cement commissions 28.265 MW solar plant, expands capacity to 31 MW",
+      "published": "Tue, 03 Nov 2026 07:35:00 GMT",
+      "chars": 2622,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/pharma-industry-seeks-clarity-on-cdsco-solvent-order-s-export-ambit-126110301630_1.html",
+      "title": "Pharma industry seeks clarity on CDSCO solvent order's export ambit",
+      "published": "Tue, 03 Nov 2026 13:23:06 GMT",
+      "chars": 5909,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/content/press-releases-ani/team-bhive-secures-first-place-in-corporate-relay-at-ironman-goa-126110301592_1.html",
+      "title": "Team BHIVE Secures First Place in Corporate Relay at IRONMAN Goa",
+      "published": "Tue, 03 Nov 2026 13:05:16 GMT",
+      "chars": 6796,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/tata-projects-wins-major-contract-for-global-automaker-s-maharashtra-plant-126110300665_1.html",
+      "title": "Tata Projects wins major contract for global automaker's Maharashtra plant",
+      "published": "Tue, 03 Nov 2026 07:51:02 GMT",
+      "chars": 3709,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/andhra-pradesh-school-holiday-schools-to-stay-closed-on-nov-4-5-know-why-nc-126110301193_1.html",
+      "title": "Andhra Pradesh school holiday: Schools to stay closed on Nov 4, 5; know why",
+      "published": "Tue, 03 Nov 2026 11:01:25 GMT",
+      "chars": 3701,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/india-news/sc-points-to-report-on-unrestricted-sale-of-crackers-seeks-centre-s-action-126110300663_1.html",
+      "title": "SC points to report on unrestricted sale of crackers, seeks Centre's action",
+      "published": "Tue, 03 Nov 2026 07:45:17 GMT",
+      "chars": 4211,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/industry/news/maharashtra-government-bombay-hc-fssai-food-safety-regulations-india-rules-126110300975_1.html",
+      "title": "Explained: Why Maharashtra govt moved Bombay High Court against FSSAI",
+      "published": "Tue, 03 Nov 2026 09:22:15 GMT",
+      "chars": 8755,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/companies/news/ed-attaches-2-aircraft-in-probe-against-reliance-anil-ambani-group-126110301691_1.html",
+      "title": "ED attaches 2 aircraft in probe against Reliance Anil Ambani Group",
+      "published": "Tue, 03 Nov 2026 17:52:40 GMT",
+      "chars": 3399,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_capitalmarket",
+      "url": "https://www.business-standard.com/world-news/russia-to-extend-diesel-export-curbs-with-exemptions-for-global-markets-126110301445_1.html",
+      "title": "Russia to extend diesel export curbs with exemptions for global markets",
+      "published": "Tue, 03 Nov 2026 12:06:38 GMT",
+      "chars": 3370,
+      "body_how": "container"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/stock-market-live-november-4-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-q2-results-ipo-today-126110400107_1.html",
+      "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asia markets decline; Brent near $103",
+      "published": "Wed, 04 Nov 2026 07:59:43 +0530",
+      "chars": 163,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/breakout-stocks-chandan-taparia-bets-on-bharti-airtel-paytm-divi-s-lab-126110400106_1.html",
+      "title": "Breakout stocks: Chandan Taparia bets on Bharti Airtel, Paytm, Divi's Lab",
+      "published": "Wed, 04 Nov 2026 07:43:00 +0530",
+      "chars": 115,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/are-large-cap-stocks-reclaiming-their-strategic-leadership-analysts-view-126110400087_1.html",
+      "title": "Are large-cap stocks reclaiming their strategic leadership? Analysts' view",
+      "published": "Wed, 04 Nov 2026 06:30:27 +0530",
+      "chars": 190,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/world-news/binance-s-6-3-billion-hack-creates-windfall-for-crypto-arbitrage-traders-126110302014_1.html",
+      "title": "Binance's $6.3 billion hack creates windfall for crypto arbitrage traders",
+      "published": "Tue, 03 Nov 2026 22:30:14 +0530",
+      "chars": 184,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/markets-extend-gains-for-fourth-day-fpi-buying-highest-in-a-year-126110301699_1.html",
+      "title": "Markets extend gains for fourth day; FPI buying highest in a year",
+      "published": "Tue, 03 Nov 2026 22:50:16 +0530",
+      "chars": 53,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/what-will-new-samvat-bring-for-investors-experts-to-discuss-at-bs-webinar-126110301735_1.html",
+      "title": "What will new Samvat bring for investors? Experts to discuss at BS webinar",
+      "published": "Tue, 03 Nov 2026 19:46:36 +0530",
+      "chars": 171,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/rupee-extends-gains-for-third-day-settles-at-94-75-against-the-dollar-126110301693_1.html",
+      "title": "Rupee extends gains for third day, settles at 94.75 against the dollar",
+      "published": "Tue, 03 Nov 2026 19:26:55 +0530",
+      "chars": 187,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_bs_markets_rss",
+      "url": "https://www.business-standard.com/markets/news/nse-q2fy27-net-profit-rises-23-to-2-578-crore-revenue-grows-10-6-126110301688_1.html",
+      "title": "NSE Q2FY27 results: Consolidated net profit rises 23% YoY to ₹2,578 crore",
+      "published": "Tue, 03 Nov 2026 19:23:16 +0530",
+      "chars": 64,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-price-prediction-will-gold-bounce-back-on-wednesday-check-outlook-for-november-4/articleshow/135518967.cms",
+      "title": "Gold price prediction: Will gold bounce back on Wednesday? Check outlook for November 4",
+      "published": "Wed, 04 Nov 2026 07:57:00 +0530",
+      "chars": 269,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-4-crude-oil-falls-below-104-ahead-of-us-midterm-elections-what-are-analysts-saying/articleshow/135518787.cms",
+      "title": "Oil Price Today (November 4): Crude oil falls below $104 ahead of US midterm elections outcome. What are analysts saying?",
+      "published": "Wed, 04 Nov 2026 07:54:04 +0530",
+      "chars": 364,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/oil-edges-down-as-investors-await-us-midterm-election-results/articleshow/135518721.cms",
+      "title": "Oil edges down as investors await US midterm election results",
+      "published": "Wed, 04 Nov 2026 07:47:27 +0530",
+      "chars": 427,
+      "body_how": "feed"
+    },
+    {
+      "source_id": "corp_et_markets_rss",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/positive-breakout-these-8-stocks-cross-above-their-200-dmas/slideshow/135518684.cms",
+      "title": "Positive Breakout: These 8 stocks cross above their 200 DMAs",
+      "published": "Wed, 04 Nov 2026 07:39:24 +0530",
+      "chars": 151,
+      "body_how": "feed"
+    }
+  ],
+  "budget": {
+    "per_source": 8,
+    "total": 55,
+    "deadline_s": 420
+  },
+  "cut_short": [
+    {
+      "source_id": "corp_sahi",
+      "why": "out of article budget"
+    }
+  ],
+  "seconds": 136.6
+}
